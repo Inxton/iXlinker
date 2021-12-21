@@ -13,12 +13,6 @@ namespace TsprojFile.Scan
             ExportPdoEntryStructuresToDirectory(exportDir);
         }
 
-        private void ExportPdoEntryStructures()
-        {
-            string exportDir = Path.GetDirectoryName(Path.GetDirectoryName(TsProjFilePath)) + "\\" + ExportSubDirName + "\\DUTs";
-            ExportPdoEntryStructuresToDirectory(exportDir);
-        }
-
         private void ExportPdoEntryStructuresToDirectory(string exportDir)
         {
             System.Console.WriteLine("Exporting Pdo entry structures to the folder {0}", exportDir);

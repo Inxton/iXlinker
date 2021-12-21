@@ -13,12 +13,6 @@ namespace TsprojFile.Scan
             ExportTopologyStructuresToDirectory(exportDir);
         }
 
-        private void ExportTopologyStructures()
-        {
-            string exportDir = Path.GetDirectoryName(Path.GetDirectoryName(TsProjFilePath)) + "\\" + ExportSubDirName + "\\DUTs";
-            ExportTopologyStructuresToDirectory(exportDir);
-        }
-
         private void ExportTopologyStructuresToDirectory(string exportDir)
         {
             System.Console.WriteLine(@"Exporting Topology structures to the folder ""{0}""", exportDir);

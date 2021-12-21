@@ -6,7 +6,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddEthercatDevice(TcSmProjectProjectIODevice device)
+        private void AddEthercatDevice(SolutionViewModel vs,TcSmProjectProjectIODevice device)
         {
             DeviceViewModel deviceViewModel = FillEthercatDeviceData(device);
 
@@ -19,7 +19,7 @@ namespace TsprojFile.Scan
                     {
                         if (devDefBox != null)
                         {
-                            if (DoNotGenerateDisabled && devDefBox.DisabledSpecified && devDefBox.Disabled && devDefBox.Box != null)
+                            if (vs.DoNotGenerateDisabled && devDefBox.DisabledSpecified && devDefBox.Disabled && devDefBox.Box != null)
                             {
                                 foreach (TcSmBoxDefBox boxDefBox in devDefBox.Box)
                                 {
@@ -27,9 +27,9 @@ namespace TsprojFile.Scan
                                     boxDefBox.Disabled = devDefBox.Disabled;
                                 }
                             }
-                            if (!DoNotGenerateDisabled || !devDefBox.DisabledSpecified || !devDefBox.Disabled)
+                            if (!vs.DoNotGenerateDisabled || !devDefBox.DisabledSpecified || !devDefBox.Disabled)
                             {
-                                boxViewModel = CreateBox(device, ref deviceViewModel, devDefBox, "TIID" + tmpLevelSeparator + device.Name);
+                                boxViewModel = CreateBox(vs, device, ref deviceViewModel, devDefBox, "TIID" + tmpLevelSeparator + device.Name);
                                 deviceViewModel.Boxes.Add(boxViewModel);
 
                                 deviceViewModel.MapableObjects.Add(boxViewModel.MapableObjectGrouped);

@@ -13,12 +13,6 @@ namespace TsprojFile.Scan
             ExportDeviceStructuresToDirectory(exportDir);
         }
 
-        private void ExportDeviceStructures()
-        {
-            string exportDir = Path.GetDirectoryName(Path.GetDirectoryName(TsProjFilePath)) + "\\" + ExportSubDirName + "\\DUTs";
-            ExportDeviceStructuresToDirectory(exportDir);
-        }
-
         private void ExportDeviceStructuresToDirectory(string exportDir)
         {
             System.Console.WriteLine(@"Exporting Device structures to the folder ""{0}""", exportDir);

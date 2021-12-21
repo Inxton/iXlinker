@@ -8,11 +8,11 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void SearchDevices(VisualStudioDTEViewModel vs)
+        private void SearchDevices(SolutionViewModel vs)
         {
 
             XmlSerializer serializer = new XmlSerializer(typeof(TcSmProject));
-            StreamReader reader = new StreamReader(vs.TsProject.Details.CompletePathInFileSystem);
+            StreamReader reader = new StreamReader(vs.TsProject.CompletePathInFileSystem);
 
             try
             {
@@ -29,11 +29,11 @@ namespace TsprojFile.Scan
             }
 
 
-            Console.WriteLine(@"Reading IO devices in the XAE project: ""{0}""!!!", vs.TsProject.Details.Name);
+            Console.WriteLine(@"Reading IO devices in the XAE project: ""{0}""!!!", vs.TsProject.Name);
             TcSmProjectProjectPlcProject plcProj = new TcSmProjectProjectPlcProject();
             for (int i = 0; i < Tc.Project.Plc.Project.Length; i++)
             {
-                string dtePlcProjName = vs.PlcProject.Details.Name;
+                string dtePlcProjName = vs.PlcProject.Name;
                 string tcPlcProjName = Tc.Project.Plc.Project[i].Name;
                 if (dtePlcProjName.Equals(tcPlcProjName))
                 {
@@ -66,9 +66,9 @@ namespace TsprojFile.Scan
                     {
                         foreach (TcSmProjectProjectIODevice device in Tc.Project.Io.Items)
                         {
-                            if (!DoNotGenerateDisabled || !device.DisabledSpecified || !device.Disabled)
+                            if (!vs.DoNotGenerateDisabled || !device.DisabledSpecified || !device.Disabled)
                             {
-                                AddDevice(device);
+                                AddDevice(vs, device);
                             }
                         }
 

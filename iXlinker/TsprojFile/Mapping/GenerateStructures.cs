@@ -7,7 +7,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void GenerateStructures(VisualStudioDTEViewModel vs)
+        private void GenerateStructures(SolutionViewModel vs)
         {
             //Reading out of the content of the associated PLC project to be able to modify it.
             Project tcPlcProj = ReadoutPlcProj(vs);

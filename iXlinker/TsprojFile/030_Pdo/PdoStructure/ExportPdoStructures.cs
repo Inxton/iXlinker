@@ -12,13 +12,6 @@ namespace TsprojFile.Scan
         {
             ExportPdoStructuresToDirectory(exportDir);
         }
-
-        private void ExportPdoStructures()
-        {
-            string exportDir = Path.GetDirectoryName(Path.GetDirectoryName(TsProjFilePath)) + "\\" + ExportSubDirName + "\\DUTs";
-            ExportPdoStructuresToDirectory(exportDir);
-        }
-
         private void ExportPdoStructuresToDirectory(string exportDir)
         {
             System.Console.WriteLine(@"Exporting Pdo structures to the folder ""{0}""", exportDir);

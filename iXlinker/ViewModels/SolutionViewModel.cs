@@ -2,50 +2,35 @@
 
 namespace ViewModels
 {
-    public class VisualStudioDTEViewModel : BaseViewModel
+    public class SolutionViewModel : BaseViewModel
     {
-
-        private EnvDTE80.DTE2 dte2;
-        public EnvDTE80.DTE2 Dte2
+        private ProjectItemViewModel sln;
+        public ProjectItemViewModel Sln
         {
-            get { return this.dte2; }
+            get { return this.sln; }
             set
             {
-                if (value != null)
-                {
-                    this.dte2 = value;
-                    NotifyPropertyChanged(nameof(Dte2));
-                }
+                this.sln = value ?? new ProjectItemViewModel();
+                NotifyPropertyChanged(nameof(Sln));
             }
         }
 
-        private int processID;
-        public int ProcessID
+        private string devenvPath;
+        public string DevenvPath
         {
-            get { return this.processID; }
-            set
-            {
-                this.processID = value;
-                NotifyPropertyChanged(nameof(ProcessID));
-            }
-        }
-
-        private string devenv;
-        public string Devenv
-        {
-            get { return this.devenv; }
+            get { return this.devenvPath; }
             set
             {
                 if (!string.IsNullOrEmpty(value))
                 {
-                    this.devenv = value;
-                    NotifyPropertyChanged(nameof(Devenv));
+                    this.devenvPath = value;
+                    NotifyPropertyChanged(nameof(DevenvPath));
                 }
             }
         }
 
-        private EnvDteTsProjectViewModel tsProject;
-        public EnvDteTsProjectViewModel TsProject
+        private TsProjectViewModel tsProject;
+        public TsProjectViewModel TsProject
         {
             get { return this.tsProject; }
             set
@@ -58,8 +43,8 @@ namespace ViewModels
             }
         }
 
-        private EnvDtePlcProjectViewModel plcProject;
-        public EnvDtePlcProjectViewModel PlcProject
+        private PlcProjectViewModel plcProject;
+        public PlcProjectViewModel PlcProject
         {
             get { return this.plcProject; }
             set
@@ -69,17 +54,6 @@ namespace ViewModels
                     this.plcProject = value;
                     NotifyPropertyChanged(nameof(PlcProject));
                 }
-            }
-        }
-
-        private ProjectItemViewModel sln;
-        public ProjectItemViewModel Sln
-        {
-            get { return this.sln; }
-            set
-            {
-                this.sln = value ?? new ProjectItemViewModel();
-                NotifyPropertyChanged(nameof(Sln));
             }
         }
 
@@ -93,6 +67,23 @@ namespace ViewModels
                 {
                     this.activeTargetPlatform = value;
                     NotifyPropertyChanged(nameof(ActiveTargetPlatform));
+                }
+            }
+        }
+
+        private bool doNotGenerateDisabled;
+        public bool DoNotGenerateDisabled
+        {
+            get
+            {
+                return this.doNotGenerateDisabled;
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.doNotGenerateDisabled = value;
+                    NotifyPropertyChanged(nameof(DoNotGenerateDisabled));
                 }
             }
         }

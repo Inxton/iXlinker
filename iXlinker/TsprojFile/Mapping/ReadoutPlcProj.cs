@@ -7,9 +7,9 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private Project ReadoutPlcProj(VisualStudioDTEViewModel vs)
+        private Project ReadoutPlcProj(SolutionViewModel vs)
         {
-            string plcProjPath = vs.PlcProject.Details.CompletePathInFileSystem;
+            string plcProjPath = vs.PlcProject.CompletePathInFileSystem;
             XmlSerializer serializer = new XmlSerializer(typeof(Project));
             StreamReader reader = new StreamReader(plcProjPath);
             Project plcProj = (Project)serializer.Deserialize(reader);

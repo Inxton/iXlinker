@@ -2,7 +2,7 @@
 using TwincatXmlSchemas.TcPlcProj;
 using iXlinker.TsprojFile.Mapping;
 using System.Threading;
-using iXlinker.Utils;
+//using iXlinker.Utils;
 using System.Diagnostics;
 using System;
 
@@ -10,13 +10,13 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        public void GenerateOutputsIntoTwincatProject(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath)
+        public void RuniXlinker(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath,bool doNotGenerateDisabled, string devenvPath)
         {
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
             //Get details like paths, platform etc.
-            VisualStudioDTEViewModel vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath);
+            SolutionViewModel vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath);
 
             //Search all devices and their boxes in the Twincat project.
             SearchDevices(vs);
@@ -28,9 +28,6 @@ namespace TsprojFile.Scan
             GenerateMappingsToTsProj(vs);
             //Build XAE project
             //VS.BuildProjectUsingCli(vs, VS.TcXaeObject.XAE_project);
-
-            //Open solution
-            VS.OpenSolution(vs);
 
             sw.Stop();
             Console.WriteLine("Complete process {0} ms!!!", sw.ElapsedMilliseconds);

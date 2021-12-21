@@ -8,7 +8,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void ClearDutsIoFolder(VisualStudioDTEViewModel vs , ref Project plcProj)
+        private void ClearDutsIoFolder(SolutionViewModel vs , ref Project plcProj)
         {
             Console.WriteLine("Cleaning existing DUTs!");
             List<ProjectItemViewModel> FoldersToClear= new List<ProjectItemViewModel>();

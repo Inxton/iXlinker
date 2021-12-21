@@ -1,10 +1,7 @@
-﻿using EnvDTE;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
 using System.Xml.Serialization;
 using TwincatXmlSchemas.TcSmProject;
-using ViewModels;
 
 namespace iXlinker.TsprojFile.Mapping
 {

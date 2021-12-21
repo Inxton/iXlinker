@@ -2,14 +2,14 @@
 
 namespace ViewModels
 {
-    public class EnvDteTsProjectViewModel : EnvDTEProjectViewModel
+    public class TsProjectViewModel : ProjectItemViewModel
     {
-        private ObservableCollection<EnvDtePlcProjectViewModel> plcProjects;
-        public ObservableCollection<EnvDtePlcProjectViewModel> PlcProjects
+        private ObservableCollection<PlcProjectViewModel> plcProjects;
+        public ObservableCollection<PlcProjectViewModel> PlcProjects
         {
             get
             {
-                return this.plcProjects ?? (this.plcProjects = new ObservableCollection<EnvDtePlcProjectViewModel>());
+                return this.plcProjects ?? (this.plcProjects = new ObservableCollection<PlcProjectViewModel>());
             }
             set
             {

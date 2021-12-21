@@ -6,18 +6,17 @@ namespace iXlinker.TsprojFile.Mapping
 {
     partial class VS
     {
-        public static VisualStudioDTEViewModel GetXaeProjectDetails(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath)
+        public static SolutionViewModel GetXaeProjectDetails(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath, bool doNotGenerateDisabled, string devenvPath)
         {
-            VisualStudioDTEViewModel vs = new VisualStudioDTEViewModel();
+            SolutionViewModel vs = new SolutionViewModel();
 
             //Tsproj details
             if (File.Exists(tsProjFilePath))
             {
-                vs.TsProject = new EnvDteTsProjectViewModel();
-                vs.TsProject.Details = new ProjectItemViewModel();
-                vs.TsProject.Details.CompletePathInFileSystem = tsProjFilePath;
-                vs.TsProject.Details.FolderPathInFileSystem = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\"));
-                vs.TsProject.Details.FileNameInFileSystem = tsProjFilePath.Substring(tsProjFilePath.LastIndexOf("\\") + 1);
+                vs.TsProject = new TsProjectViewModel();
+                vs.TsProject.CompletePathInFileSystem = tsProjFilePath;
+                vs.TsProject.FolderPathInFileSystem = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\"));
+                vs.TsProject.FileNameInFileSystem = tsProjFilePath.Substring(tsProjFilePath.LastIndexOf("\\") + 1);
 
                 //Solution
                 string slnPath = GetSolutionPathFromTsprojPath(tsProjFilePath);
@@ -64,46 +63,45 @@ namespace iXlinker.TsprojFile.Mapping
                 {
                     if(CheckIfXaeContainsPlcproj(tsProjFilePath, plcProjFilePath))
                     {
-                        vs.PlcProject = new EnvDtePlcProjectViewModel();
-                        vs.PlcProject.Details = new ProjectItemViewModel();
-                        vs.PlcProject.Details.CompletePathInFileSystem = plcProjFilePath;
-                        vs.PlcProject.Details.FolderPathInFileSystem = plcProjFilePath.Substring(0, plcProjFilePath.LastIndexOf("\\"));
-                        vs.PlcProject.Details.FileNameInFileSystem = plcProjFilePath.Substring(plcProjFilePath.LastIndexOf("\\") + 1);
-                        vs.PlcProject.Details.Name = vs.PlcProject.Details.FileNameInFileSystem.Replace(".plcproj", "");
-                        vs.PlcProject.Details.Path = vs.PlcProject.Details.FolderPathInFileSystem.Replace(vs.TsProject.Details.FolderPathInFileSystem + "\\", "");
-                        vs.PlcProject.Details.CompleteName = vs.PlcProject.Details.Path + "\\" + vs.PlcProject.Details.FileNameInFileSystem;
+                        vs.PlcProject = new PlcProjectViewModel();
+                        vs.PlcProject.CompletePathInFileSystem = plcProjFilePath;
+                        vs.PlcProject.FolderPathInFileSystem = plcProjFilePath.Substring(0, plcProjFilePath.LastIndexOf("\\"));
+                        vs.PlcProject.FileNameInFileSystem = plcProjFilePath.Substring(plcProjFilePath.LastIndexOf("\\") + 1);
+                        vs.PlcProject.Name = vs.PlcProject.FileNameInFileSystem.Replace(".plcproj", "");
+                        vs.PlcProject.Path = vs.PlcProject.FolderPathInFileSystem.Replace(vs.TsProject.FolderPathInFileSystem + "\\", "");
+                        vs.PlcProject.CompleteName = vs.PlcProject.Path + "\\" + vs.PlcProject.FileNameInFileSystem;
 
                         vs.GvlExported = new ProjectItemViewModel() { Name = "GVL_iXlinker" };
                         vs.GvlExported.Path = "GVLs";
-                        vs.GvlExported.FolderPathInFileSystem = vs.PlcProject.Details.FolderPathInFileSystem + "\\" + vs.GvlExported.Path;
-                        vs.GvlExported.CompleteName = vs.PlcProject.Details.CompleteName + "\\" + vs.GvlExported.Path + "\\" + vs.GvlExported.Name;
+                        vs.GvlExported.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.GvlExported.Path;
+                        vs.GvlExported.CompleteName = vs.PlcProject.CompleteName + "\\" + vs.GvlExported.Path + "\\" + vs.GvlExported.Name;
                         vs.GvlExported.FileNameInFileSystem = vs.GvlExported.Name + ".TcGVL";
                         vs.GvlExported.CompletePathInFileSystem = vs.GvlExported.FolderPathInFileSystem + "\\" + vs.GvlExported.FileNameInFileSystem;
                         TcModel.NameOfTheExportedGVL = vs.GvlExported.Name;
 
                         vs.DutsIo = new ProjectItemViewModel() { Name = "DUTs_IO_folder" };
                         vs.DutsIo.Path = "DUTs\\IO";
-                        vs.DutsIo.FolderPathInFileSystem = vs.PlcProject.Details.FolderPathInFileSystem + "\\" + vs.DutsIo.Path;
+                        vs.DutsIo.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIo.Path;
 
                         vs.DutsIoPdoEntry = new ProjectItemViewModel() { Name = "DUTs_IO_PdoEntry_folder" };
                         vs.DutsIoPdoEntry.Path = vs.DutsIo.Path + "\\PdoEntries";
-                        vs.DutsIoPdoEntry.FolderPathInFileSystem = vs.PlcProject.Details.FolderPathInFileSystem + "\\" + vs.DutsIoPdoEntry.Path;
+                        vs.DutsIoPdoEntry.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoPdoEntry.Path;
 
                         vs.DutsIoPdo = new ProjectItemViewModel() { Name = "DUTs_IO_Pdo_folder" };
                         vs.DutsIoPdo.Path = vs.DutsIo.Path + "\\PDOs";
-                        vs.DutsIoPdo.FolderPathInFileSystem = vs.PlcProject.Details.FolderPathInFileSystem + "\\" + vs.DutsIoPdo.Path;
+                        vs.DutsIoPdo.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoPdo.Path;
 
                         vs.DutsIoBox = new ProjectItemViewModel() { Name = "DUTs_IO_Box_folder" };
                         vs.DutsIoBox.Path = vs.DutsIo.Path + "\\Boxes";
-                        vs.DutsIoBox.FolderPathInFileSystem = vs.PlcProject.Details.FolderPathInFileSystem + "\\" + vs.DutsIoBox.Path;
+                        vs.DutsIoBox.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoBox.Path;
 
                         vs.DutsIoDevice = new ProjectItemViewModel() { Name = "DUTs_IO_Device_folder" };
                         vs.DutsIoDevice.Path = vs.DutsIo.Path + "\\Devices";
-                        vs.DutsIoDevice.FolderPathInFileSystem = vs.PlcProject.Details.FolderPathInFileSystem + "\\" + vs.DutsIoDevice.Path;
+                        vs.DutsIoDevice.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoDevice.Path;
 
                         vs.DutsIoTopology = new ProjectItemViewModel() { Name = "DUTs_IO_Topology_folder" };
                         vs.DutsIoTopology.Path = vs.DutsIo.Path + "\\Topology";
-                        vs.DutsIoTopology.FolderPathInFileSystem = vs.PlcProject.Details.FolderPathInFileSystem + "\\" + vs.DutsIoTopology.Path;
+                        vs.DutsIoTopology.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoTopology.Path;
                     }
                 }
                 else
@@ -114,19 +112,36 @@ namespace iXlinker.TsprojFile.Mapping
                     Environment.Exit(0);
                 }
 
-                //Devenv
-                Version minSupportedVersion = new Version(16, 0, 0, 0);
-                Version maxSupportedVersion = new Version(16, 65536, 65536, 65536);
+                //DoNotGenerateDisabled 
+                vs.DoNotGenerateDisabled = doNotGenerateDisabled;
 
-                string devenPath = GetDevenvPath(minSupportedVersion, maxSupportedVersion);
-                if (string.IsNullOrEmpty(devenPath))
+                //Devenv
+                if (string.IsNullOrEmpty(devenvPath))
                 {
-                    Console.WriteLine(@"Unable to discover Visual Studio installed. Versions supported: <{0},{1}>!!!", minSupportedVersion.ToString(), maxSupportedVersion.ToString());
+                    Version minSupportedVersion = new Version(16, 0, 0, 0);
+                    Version maxSupportedVersion = new Version(16, 65536, 65536, 65536);
+
+                    string _devenvPath = GetDevenvPath(minSupportedVersion, maxSupportedVersion);
+                    if (string.IsNullOrEmpty(_devenvPath))
+                    {
+                        Console.WriteLine(@"Unable to discover Visual Studio installed. Versions supported: <{0},{1}>!!!", minSupportedVersion.ToString(), maxSupportedVersion.ToString());
+                        Console.WriteLine("Press any key to close the application!!!");
+                        Console.ReadKey();
+                        Environment.Exit(0);
+                    }
+                    vs.DevenvPath = _devenvPath;
+                }
+                else if(File.Exists(devenvPath))
+                {
+                    vs.DevenvPath = devenvPath;
+                }
+                else
+                {
+                    Console.WriteLine(@"Unable to find file: ""{0}""!!!", devenvPath);
                     Console.WriteLine("Press any key to close the application!!!");
                     Console.ReadKey();
                     Environment.Exit(0);
                 }
-                vs.Devenv = devenPath;
             }
             else
             {

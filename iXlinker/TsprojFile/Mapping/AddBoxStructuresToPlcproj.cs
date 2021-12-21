@@ -5,18 +5,18 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddTopologyStructuresToPlcproj(VisualStudioDTEViewModel vs , ref Project tcPlcProj)
+        private void AddBoxStructuresToPlcproj(SolutionViewModel vs , ref Project tcPlcProj)
         {
-            ExportTopologyStructures(vs.DutsIoTopology.FolderPathInFileSystem);
+            ExportBoxStructures(vs.DutsIoBox.FolderPathInFileSystem);
 
-            System.Console.WriteLine("Adding Topology structures into the PLC project!!!");
+            System.Console.WriteLine("Adding Box structures into the PLC project!!!");
 
             foreach (ProjectItemGroup item in tcPlcProj.ItemGroup)
             {
                 if (item.Compile != null)
                 {
                     int oldCompileItemsCount = item.Compile.Length;
-                    int compileItemToAdd = TopologyStructures.Count;
+                    int compileItemToAdd = BoxStructures.Count;
                     int compileIndex = 0;
 
                     int newCompileItemsCount = oldCompileItemsCount + compileItemToAdd;
@@ -28,9 +28,9 @@ namespace TsprojFile.Scan
                         compileIndex++;
                     }
 
-                    foreach (TopologyStructViewModel topologyStructViewModel in TopologyStructures)
+                    foreach (BoxStructViewModel boxStructViewModel in BoxStructures)
                     {
-                        string structName = vs.DutsIoTopology.Path+ "\\" + topologyStructViewModel.Name + ".TcDUT";
+                        string structName = vs.DutsIoBox.Path+ "\\" + boxStructViewModel.Name + ".TcDUT";
                         ProjectItemGroupCompile itemCompile = new ProjectItemGroupCompile() { Include = structName, SubType = "Code" };
                         newItemCompile[compileIndex] = itemCompile;
                         compileIndex++;
@@ -39,7 +39,7 @@ namespace TsprojFile.Scan
                     item.Compile = newItemCompile;
                 }
             }
-            System.Console.WriteLine("Topology structures added into the PLC project!!!");
+            System.Console.WriteLine("Box structures added into the PLC project!!!");
          }
     }
 }

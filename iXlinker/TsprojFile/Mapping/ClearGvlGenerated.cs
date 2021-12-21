@@ -7,7 +7,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void ClearGvlGenerated(VisualStudioDTEViewModel vs , ref Project tcPlcProj)
+        private void ClearGvlGenerated(SolutionViewModel vs , ref Project tcPlcProj)
         {
             Console.WriteLine("Cleaning existing GVL!");
 

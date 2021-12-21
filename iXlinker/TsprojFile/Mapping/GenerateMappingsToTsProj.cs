@@ -10,13 +10,13 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void GenerateMappingsToTsProj(VisualStudioDTEViewModel vs)
+        private void GenerateMappingsToTsProj(SolutionViewModel vs)
         {
-            Console.WriteLine("Generating mappings into the project file {0}!!!", vs.TsProject.Details.CompletePathInFileSystem);
+            Console.WriteLine("Generating mappings into the project file {0}!!!", vs.TsProject.CompletePathInFileSystem);
 
             TcSmProject tsProj = new TcSmProject();
             XmlSerializer deserializer = new XmlSerializer(typeof(TcSmProject));
-            StreamReader reader = new StreamReader(vs.TsProject.Details.CompletePathInFileSystem);
+            StreamReader reader = new StreamReader(vs.TsProject.CompletePathInFileSystem);
             tsProj = (TcSmProject)deserializer.Deserialize(reader);
             reader.Close();
 
@@ -57,11 +57,11 @@ namespace TsprojFile.Scan
             tsProj.Mappings.OwnerA = new MappingsTypeOwnerA[1] {OwnerA};
 
             XmlSerializer serializer = new XmlSerializer(typeof(TcSmProject));
-            StreamWriter writer = new StreamWriter(vs.TsProject.Details.CompletePathInFileSystem);
+            StreamWriter writer = new StreamWriter(vs.TsProject.CompletePathInFileSystem);
             serializer.Serialize(writer, tsProj);
             writer.Close();
 
-            Console.WriteLine("Mappings generated into the project file {0}!!!", vs.TsProject.Details.CompletePathInFileSystem);
+            Console.WriteLine("Mappings generated into the project file {0}!!!", vs.TsProject.CompletePathInFileSystem);
         }
 
         private void AddOwnerBToOwnerBlist(ref MappingsTypeOwnerAOwnerB OwnerB, ref List<MappingsTypeOwnerAOwnerB> ownerBlist, ref List<MappingsTypeOwnerAOwnerBLink> linkList, string prevOwnerBname)

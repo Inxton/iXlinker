@@ -14,17 +14,26 @@ namespace ViewModels
             string tsProjFilePath = null;
             string activeTargetPlatform = null;
             string plcProjFilePath = null;
-            bool doNotGenerateDisabled; 
+            bool doNotGenerateDisabled = true;
+            string devenvPath = null;
 
-            tsProjFilePath = @"D:\_tmp\TwinCAT Project4\TwinCAT Project4\TwinCAT Project4.tsproj";
-            activeTargetPlatform = "Release|TwinCAT RT (x64)";
-            plcProjFilePath = @"D:\_tmp\TwinCAT Project4\TwinCAT Project4\Untitled1\Untitled1.plcproj";
-            doNotGenerateDisabled = true;
+            string defaultTsProjFilePath = null;
+            string defaultActiveTargetPlatform = null;
+            string defaultPlcProjFilePath = null;
+            bool defaultDoNotGenerateDisabled;
+            string defaultDevenvPath = null;
 
-            //tsProjFilePath = @"D:\_tmp\TwinCAT Project1\TwinCAT Project1\TwinCAT Project1.tsproj";
-            //activeTargetPlatform = "Release|TwinCAT RT (x86)";
-            //plcProjFilePath = @"D:\_tmp\TwinCAT Project1\TwinCAT Project1\Untitled1\Untitled1.plcproj";
-            //doNotGenerateDisabled = true;
+            defaultTsProjFilePath = @"D:\_tmp\TwinCAT Project4\TwinCAT Project4\TwinCAT Project4.tsproj";
+            defaultActiveTargetPlatform = "Release|TwinCAT RT (x64)";
+            defaultPlcProjFilePath = @"D:\_tmp\TwinCAT Project4\TwinCAT Project4\Untitled1\Untitled1.plcproj";
+            defaultDoNotGenerateDisabled = true;
+            defaultDevenvPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com";
+
+            //defaultTsProjFilePath = @"D:\_tmp\TwinCAT Project1\TwinCAT Project1\TwinCAT Project1.tsproj";
+            //defaultActiveTargetPlatform = "Release|TwinCAT RT (x86)";
+            //defaultPlcProjFilePath = @"D:\_tmp\TwinCAT Project1\TwinCAT Project1\Untitled1\Untitled1.plcproj";
+            //defaultDoNotGenerateDisabled = true;
+            //defaultDevenvPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com";
 
 
             if (i == 0)
@@ -32,10 +41,10 @@ namespace ViewModels
                 Console.WriteLine("No argument passed, default projectpath is going to be used.");
 
                 List<string> list = new List<string>();
-                list.Add(tsProjFilePath);
-                list.Add(activeTargetPlatform);
-                list.Add(plcProjFilePath);
-                list.Add(doNotGenerateDisabled.ToString());
+                list.Add(defaultTsProjFilePath);
+                list.Add(defaultActiveTargetPlatform);
+                list.Add(defaultPlcProjFilePath);
+                list.Add(defaultDoNotGenerateDisabled.ToString());
                 String[] str = list.ToArray();
                 args = str;
             }
@@ -45,46 +54,58 @@ namespace ViewModels
                 i = args.Length;
                 if (i == 1)
                 {
-                    TsProjFilePath = args[0];
-                    ActiveTargetPlatform = "";
-                    PlcProjFilePath = "";
-                    DoNotGenerateDisabled = true;
+                    tsProjFilePath = args[0];
+                    activeTargetPlatform = "";
+                    plcProjFilePath = "";
+                    doNotGenerateDisabled = true;
+                    devenvPath = "";
                 }
                 else if (i == 2)
                 {
-                    TsProjFilePath = args[0];
-                    ActiveTargetPlatform = args[1];
-                    PlcProjFilePath = "";
-                    DoNotGenerateDisabled = true;
+                    tsProjFilePath = args[0];
+                    activeTargetPlatform = args[1];
+                    plcProjFilePath = "";
+                    doNotGenerateDisabled = true;
+                    devenvPath = "";
                 }
                 else if (i == 3)
                 {
-                    TsProjFilePath = args[0];
-                    ActiveTargetPlatform = args[1];
-                    PlcProjFilePath = args[2];
-                    DoNotGenerateDisabled = true;
+                    tsProjFilePath = args[0];
+                    activeTargetPlatform = args[1];
+                    plcProjFilePath = args[2];
+                    doNotGenerateDisabled = true;
+                    devenvPath = "";
                 }
                 else if (i == 4)
                 {
-                    TsProjFilePath = args[0];
-                    ActiveTargetPlatform = args[1];
-                    PlcProjFilePath = args[2];
-                    DoNotGenerateDisabled = !args[3].ToLower().Contains("false");
+                    tsProjFilePath = args[0];
+                    activeTargetPlatform = args[1];
+                    plcProjFilePath = args[2];
+                    doNotGenerateDisabled = !args[3].ToLower().Contains("false");
+                    devenvPath = "";
                 }
-                if (i>=1 && i<=4)
+                else if (i == 5)
                 {
-                    if (File.Exists(TsProjFilePath))
+                    tsProjFilePath = args[0];
+                    activeTargetPlatform = args[1];
+                    plcProjFilePath = args[2];
+                    doNotGenerateDisabled = !args[3].ToLower().Contains("false");
+                    devenvPath = args[4];
+                }
+                if (i>=1 && i<=5)
+                {
+                    if (File.Exists(tsProjFilePath))
                     {
-                        Console.WriteLine("Opening file :" + TsProjFilePath);
+                        Console.WriteLine("Opening file :" + tsProjFilePath);
 
-                        GenerateOutputsIntoTwincatProject(TsProjFilePath, ActiveTargetPlatform, PlcProjFilePath);
+                        RuniXlinker(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath);
 
                         Console.WriteLine("Done");
                         System.Threading.Thread.Sleep(1000);
                     }
                     else
                     {
-                        Console.WriteLine(@"File ""{0}"" not found. Check the path and file name of the Twincat project!!!", TsProjFilePath);
+                        Console.WriteLine(@"File ""{0}"" not found. Check the path and file name of the Twincat project!!!", tsProjFilePath);
                         Console.WriteLine("Press any key to close the application!!!");
                         Console.ReadKey();
                         Environment.Exit(0);

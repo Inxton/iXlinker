@@ -13,12 +13,6 @@ namespace TsprojFile.Scan
             ExportBoxStructuresToDirectory(exportDir);
         }
 
-        private void ExportBoxStructures()
-        {
-            string exportDir = Path.GetDirectoryName(Path.GetDirectoryName(TsProjFilePath)) + "\\" + ExportSubDirName + "\\DUTs";
-            ExportBoxStructuresToDirectory(exportDir);
-        }
-
         private void ExportBoxStructuresToDirectory(string exportDir)
         {
             System.Console.WriteLine(@"Exporting Box structures to the folder ""{0}""", exportDir);

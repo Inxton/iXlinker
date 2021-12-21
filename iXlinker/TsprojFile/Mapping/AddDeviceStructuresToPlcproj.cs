@@ -5,18 +5,18 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddPdoEntryStructuresToPlcproj(VisualStudioDTEViewModel vs , ref Project tcPlcProj)
+        private void AddDeviceStructuresToPlcproj(SolutionViewModel vs , ref Project tcPlcProj)
         {
-            ExportPdoEntryStructures(vs.DutsIoPdoEntry.FolderPathInFileSystem);
+            ExportDeviceStructures(vs.DutsIoDevice.FolderPathInFileSystem);
 
-            System.Console.WriteLine("Adding PDO entry structures into the PLC project!!!");
+            System.Console.WriteLine("Adding Device structures into the PLC project!!!");
 
             foreach (ProjectItemGroup item in tcPlcProj.ItemGroup)
             {
                 if (item.Compile != null)
                 {
                     int oldCompileItemsCount = item.Compile.Length;
-                    int compileItemToAdd = PdoEntryStructures.Count;
+                    int compileItemToAdd = DeviceStructures.Count;
                     int compileIndex = 0;
 
                     int newCompileItemsCount = oldCompileItemsCount + compileItemToAdd;
@@ -28,9 +28,9 @@ namespace TsprojFile.Scan
                         compileIndex++;
                     }
 
-                    foreach (PdoEntryStructViewModel pdoEntryStructViewModel in PdoEntryStructures)
+                    foreach (DeviceStructViewModel deviceStructViewModel in DeviceStructures)
                     {
-                        string structName = vs.DutsIoPdoEntry.Path+ "\\" + pdoEntryStructViewModel.Name + ".TcDUT";
+                        string structName = vs.DutsIoDevice.Path+ "\\" + deviceStructViewModel.Name + ".TcDUT";
                         ProjectItemGroupCompile itemCompile = new ProjectItemGroupCompile() { Include = structName, SubType = "Code" };
                         newItemCompile[compileIndex] = itemCompile;
                         compileIndex++;
@@ -39,7 +39,7 @@ namespace TsprojFile.Scan
                     item.Compile = newItemCompile;
                 }
             }
-            System.Console.WriteLine("PDO entry structures added into the PLC project!!!");
+            System.Console.WriteLine("Device structures added into the PLC project!!!");
          }
     }
 }

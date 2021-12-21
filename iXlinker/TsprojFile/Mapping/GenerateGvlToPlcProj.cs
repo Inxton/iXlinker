@@ -6,7 +6,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void GenerateGvlToPlcProj(VisualStudioDTEViewModel vs)
+        private void GenerateGvlToPlcProj(SolutionViewModel vs)
         {
             string exportDir = vs.GvlExported.FolderPathInFileSystem;
             System.Console.WriteLine("Exporting GVL : {0} to the folder {1}", vs.GvlExported.Name, exportDir);

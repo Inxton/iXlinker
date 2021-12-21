@@ -5,7 +5,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddPdoStructuresToPlcproj(VisualStudioDTEViewModel vs , ref Project tcPlcProj)
+        private void AddPdoStructuresToPlcproj(SolutionViewModel vs , ref Project tcPlcProj)
         {
             ExportPdoStructures(vs.DutsIoPdo.FolderPathInFileSystem);
 
