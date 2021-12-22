@@ -1,16 +1,18 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.Setup.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using Microsoft.VisualStudio.Setup.Configuration;
 using ViewModels;
 
 namespace iXlinker.TsprojFile.Mapping
 {
     partial class VS
     {
-        private static string GetDevenvPath(Version minSupportedVersion, Version maxSupportedVersion)
+        private static string GetDevenvPath()
         {
             string ret = "";
+            Version minVersion = new Version(minVsSupportedVersionIncluded);
+            Version maxVersion = new Version(maxVsSupportedVersionExcluded);
 
             try
             {
@@ -32,7 +34,7 @@ namespace iXlinker.TsprojFile.Mapping
                         bool isComplete = state.Equals(InstanceState.Complete);
                         Version version = new Version((string)instances[0].GetInstallationVersion());
 
-                        if (isComplete && version >= minSupportedVersion && version <= maxSupportedVersion)
+                        if (isComplete && version >= minVersion && version < maxVersion)
                             if ((state & InstanceState.Local) == InstanceState.Local)
                             {
                                 VisualStudioInstalationViewModel visualStudioInstance = new VisualStudioInstalationViewModel(version, instance2.GetInstallationPath());

@@ -23,15 +23,15 @@ namespace ViewModels
             bool defaultDoNotGenerateDisabled;
             string defaultDevenvPath = null;
 
-            defaultTsProjFilePath = @"D:\_tmp\TwinCAT Project4\TwinCAT Project4\TwinCAT Project4.tsproj";
+            defaultTsProjFilePath = @"C:\x_tmp\TwinCAT Project4\TwinCAT Project4\TwinCAT Project4.tsproj";
             defaultActiveTargetPlatform = "Release|TwinCAT RT (x64)";
-            defaultPlcProjFilePath = @"D:\_tmp\TwinCAT Project4\TwinCAT Project4\Untitled1\Untitled1.plcproj";
+            defaultPlcProjFilePath = @"C:\x_tmp\TwinCAT Project4\TwinCAT Project4\Untitled1\Untitled1.plcproj";
             defaultDoNotGenerateDisabled = true;
             defaultDevenvPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com";
 
-            //defaultTsProjFilePath = @"D:\_tmp\TwinCAT Project1\TwinCAT Project1\TwinCAT Project1.tsproj";
+            //defaultTsProjFilePath = @"C:\x_tmp\TwinCAT Project1\TwinCAT Project1\TwinCAT Project1.tsproj";
             //defaultActiveTargetPlatform = "Release|TwinCAT RT (x86)";
-            //defaultPlcProjFilePath = @"D:\_tmp\TwinCAT Project1\TwinCAT Project1\Untitled1\Untitled1.plcproj";
+            //defaultPlcProjFilePath = @"C:\x_tmp\TwinCAT Project1\TwinCAT Project1\Untitled1\Untitled1.plcproj";
             //defaultDoNotGenerateDisabled = true;
             //defaultDevenvPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com";
 

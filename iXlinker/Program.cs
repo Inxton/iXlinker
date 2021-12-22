@@ -6,7 +6,8 @@ namespace iXlinker
     {
         static void Main(string[] args)
         {
-            MainViewModel mainViewModel = new MainViewModel(args);
+
+             MainViewModel mainViewModel = new MainViewModel(args);
         }
     }
 }

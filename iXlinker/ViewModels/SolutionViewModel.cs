@@ -4,17 +4,6 @@ namespace ViewModels
 {
     public class SolutionViewModel : BaseViewModel
     {
-        private ProjectItemViewModel sln;
-        public ProjectItemViewModel Sln
-        {
-            get { return this.sln; }
-            set
-            {
-                this.sln = value ?? new ProjectItemViewModel();
-                NotifyPropertyChanged(nameof(Sln));
-            }
-        }
-
         private string devenvPath;
         public string DevenvPath
         {

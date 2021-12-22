@@ -15,6 +15,8 @@ namespace TsprojFile.Scan
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
+            VS.CheckDotNetCore();
+
             //Get details like paths, platform etc.
             SolutionViewModel vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath);
 
@@ -23,15 +25,13 @@ namespace TsprojFile.Scan
             //Generate all structures and mappings           
             GenerateStructures(vs);
             //Build XAE project
-            VS.BuildProjectUsingCli(vs, VS.TcXaeObject.XAE_project);
+            VS.BuildXaeProjectUsingCli(vs);
             //Generate mappings and write them into the .tsproj file.
             GenerateMappingsToTsProj(vs);
-            //Build XAE project
-            //VS.BuildProjectUsingCli(vs, VS.TcXaeObject.XAE_project);
 
             sw.Stop();
             Console.WriteLine("Complete process {0} ms!!!", sw.ElapsedMilliseconds);
-            //Console.ReadLine();
+            Console.ReadLine();
         }
     }
 }

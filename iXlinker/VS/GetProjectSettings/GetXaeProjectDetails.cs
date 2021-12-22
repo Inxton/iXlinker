@@ -18,20 +18,6 @@ namespace iXlinker.TsprojFile.Mapping
                 vs.TsProject.FolderPathInFileSystem = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\"));
                 vs.TsProject.FileNameInFileSystem = tsProjFilePath.Substring(tsProjFilePath.LastIndexOf("\\") + 1);
 
-                //Solution
-                string slnPath = GetSolutionPathFromTsprojPath(tsProjFilePath);
-                if (!string.IsNullOrEmpty(slnPath))
-                {
-                    ProjectItemViewModel sln = new ProjectItemViewModel();
-                    sln.CompletePathInFileSystem = slnPath;
-                    sln.FolderPathInFileSystem = slnPath.Substring(0, slnPath.LastIndexOf("\\"));
-                    sln.FileNameInFileSystem = slnPath.Substring(slnPath.LastIndexOf("\\") + 1);
-                    sln.Name = sln.Name ?? slnPath.Substring(slnPath.LastIndexOf("\\") + 1).Replace(".sln", "").Replace(".slnf", "");
-                    sln.Path = "";
-                    sln.CompleteName = sln.Name;
-                    vs.Sln = sln;
-                }
-
                 //Active target platform
                 string defaultTargetPlatform = "Release|TwinCAT RT (x64)";
                 if (string.IsNullOrEmpty(activeTargetPlatform))
@@ -118,13 +104,10 @@ namespace iXlinker.TsprojFile.Mapping
                 //Devenv
                 if (string.IsNullOrEmpty(devenvPath))
                 {
-                    Version minSupportedVersion = new Version(16, 0, 0, 0);
-                    Version maxSupportedVersion = new Version(16, 65536, 65536, 65536);
-
-                    string _devenvPath = GetDevenvPath(minSupportedVersion, maxSupportedVersion);
+                    string _devenvPath = GetDevenvPath();
                     if (string.IsNullOrEmpty(_devenvPath))
                     {
-                        Console.WriteLine(@"Unable to discover Visual Studio installed. Versions supported: <{0},{1}>!!!", minSupportedVersion.ToString(), maxSupportedVersion.ToString());
+                        Console.WriteLine(@"Unable to discover Visual Studio installed. Versions supported: <{0},{1})!!!", minVsSupportedVersionIncluded.ToString(), maxVsSupportedVersionExcluded.ToString());
                         Console.WriteLine("Press any key to close the application!!!");
                         Console.ReadKey();
                         Environment.Exit(0);
