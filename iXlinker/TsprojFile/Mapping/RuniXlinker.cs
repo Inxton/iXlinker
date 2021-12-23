@@ -15,7 +15,7 @@ namespace TsprojFile.Scan
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
-            VS.CheckDotNetCore();
+            //VS.CheckDotNetCore();
 
             //Get details like paths, platform etc.
             SolutionViewModel vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath);
