@@ -31,7 +31,7 @@ namespace TsprojFile.Scan
 
             sw.Stop();
             Console.WriteLine("Complete process {0} ms!!!", sw.ElapsedMilliseconds);
-            Console.ReadLine();
+            //Console.ReadLine();
         }
     }
 }

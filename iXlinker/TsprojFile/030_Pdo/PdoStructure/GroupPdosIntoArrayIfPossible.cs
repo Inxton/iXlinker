@@ -34,8 +34,8 @@ namespace TsprojFile.Scan
                     bool firstIndexIsNumber = false;
                     if (membersUngroupped[i].Name.Contains("_"))
                     {
-                        firstMemberPrefix = membersUngroupped[i].Name.Substring(0, membersUngroupped[i].Name.LastIndexOf("_"));
-                        firstIndexIsNumber = Int32.TryParse(membersUngroupped[i].Name.Substring(membersUngroupped[i].Name.LastIndexOf("_") + 1), out firstIndex);
+                        firstMemberPrefix = membersUngroupped[i].Name.Substring(0, membersUngroupped[i].Name.LastIndexOf("_", StringComparison.Ordinal));
+                        firstIndexIsNumber = Int32.TryParse(membersUngroupped[i].Name.Substring(membersUngroupped[i].Name.LastIndexOf("_", StringComparison.Ordinal) + 1), out firstIndex);
                         if (arrayTypes.Contains(firstMemberPrefix))
                         {
                             sameNameIndex++;
@@ -53,7 +53,7 @@ namespace TsprojFile.Scan
                     while (j < membersCount && !string.IsNullOrEmpty(firstMemberPrefix) && firstIndexIsNumber &&
                         membersUngroupped[i].Type_Value == membersUngroupped[j].Type_Value &&
                         membersUngroupped[j].Name.Contains("_") &&
-                        membersUngroupped[j].Name.Substring(0, membersUngroupped[j].Name.LastIndexOf("_")) == firstMemberPrefix)
+                        membersUngroupped[j].Name.Substring(0, membersUngroupped[j].Name.LastIndexOf("_", StringComparison.Ordinal)) == firstMemberPrefix)
                     {
                         if (!firstItemAlreadyModified)
                         {
@@ -62,7 +62,6 @@ namespace TsprojFile.Scan
                                 arrayIndex = 0;
                                 if (mapableItems[k].VarA.StartsWith(firstMemberPrefix + "_" + firstIndex.ToString()))
                                 {
-                                    //mapableItems[k].VarA = ValidatePlcItem.Link(mapableItems[k].VarA.Replace(firstMemberPrefix + "_" + firstIndex.ToString(), firstMemberPrefix + firstMemberSuffix + "[" + firstIndex.ToString() + "]"));
                                     mapableItems[k].VarA = ValidatePlcItem.Link(mapableItems[k].VarA.Replace(firstMemberPrefix + "_" + firstIndex.ToString(), firstMemberPrefix + firstMemberSuffix + "[" + arrayIndex.ToString() + "]"));
                                     itemsModified++;
                                 }
@@ -80,8 +79,8 @@ namespace TsprojFile.Scan
                         int actIndex = 0;
                         if (membersUngroupped[j].Name.Contains("_"))
                         {
-                            actMemberPrefix = membersUngroupped[j].Name.Substring(0, membersUngroupped[j].Name.LastIndexOf("_"));
-                            actIndexIsNumber = Int32.TryParse(membersUngroupped[j].Name.Substring(membersUngroupped[j].Name.LastIndexOf("_") + 1), out actIndex);
+                            actMemberPrefix = membersUngroupped[j].Name.Substring(0, membersUngroupped[j].Name.LastIndexOf("_", StringComparison.Ordinal));
+                            actIndexIsNumber = Int32.TryParse(membersUngroupped[j].Name.Substring(membersUngroupped[j].Name.LastIndexOf("_", StringComparison.Ordinal) + 1), out actIndex);
                         }
 
                         if (!string.IsNullOrEmpty(actMemberPrefix) && actIndexIsNumber)
@@ -90,7 +89,6 @@ namespace TsprojFile.Scan
                             {
                                 if (mapableItems[k].VarA.StartsWith(actMemberPrefix + "_" + actIndex.ToString()))
                                 {
-                                    //mapableItems[k].VarA = ValidatePlcItem.Link(mapableItems[k].VarA.Replace(actMemberPrefix + "_" + actIndex.ToString(), actMemberPrefix + actMemberSuffix + "[" + actIndex.ToString() + "]"));
                                     mapableItems[k].VarA = ValidatePlcItem.Link(mapableItems[k].VarA.Replace(actMemberPrefix + "_" + actIndex.ToString(), actMemberPrefix + actMemberSuffix + "[" + arrayIndex.ToString() + "]"));
                                     itemsModified++;
                                     arrayIndex++;
@@ -105,8 +103,8 @@ namespace TsprojFile.Scan
                     }
                     if (j - i > 1)
                     {
-                        Int32.TryParse(membersUngroupped[i].Name.Substring(membersUngroupped[i].Name.LastIndexOf("_") + 1), out firstIndex);
-                        Int32.TryParse(membersUngroupped[j - 1].Name.Substring(membersUngroupped[j - 1].Name.LastIndexOf("_") + 1), out int lastIndex);
+                        Int32.TryParse(membersUngroupped[i].Name.Substring(membersUngroupped[i].Name.LastIndexOf("_", StringComparison.Ordinal) + 1), out firstIndex);
+                        Int32.TryParse(membersUngroupped[j - 1].Name.Substring(membersUngroupped[j - 1].Name.LastIndexOf("_", StringComparison.Ordinal) + 1), out int lastIndex);
                         //string arrayType = "ARRAY[" + firstIndex.ToString() + ".." + lastIndex.ToString() + "] OF " + membersUngroupped[i].Type_Value;
                         string arrayType = "ARRAY[0.."+ (arrayIndex -1).ToString() + "] OF " + membersUngroupped[i].Type_Value;
                         BoxStructMemberViewModel arrayMember = new BoxStructMemberViewModel();

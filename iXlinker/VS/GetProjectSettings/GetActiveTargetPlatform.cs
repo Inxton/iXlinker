@@ -25,12 +25,12 @@ namespace iXlinker.TsprojFile.Mapping
                 else if (dirs.Length > 1)
                 {
                     int maxVersionSuported = -1;
-                    bool maxVersionRetrieved = Int32.TryParse(VsProgID.Replace("VisualStudio.DTE.", "").Substring(0, VsProgID.Replace("VisualStudio.DTE.", "").IndexOf(".")), out maxVersionSuported);
+                    bool maxVersionRetrieved = Int32.TryParse(VsProgID.Replace("VisualStudio.DTE.", "").Substring(0, VsProgID.Replace("VisualStudio.DTE.", "").IndexOf(".", StringComparison.Ordinal)), out maxVersionSuported);
                     int prevFolderVersion = -1;
                     string folderWithHighestSupportedVersion = "";
                     foreach(string dir in dirs)
                     {
-                        string dirName = dir.Substring(dir.LastIndexOf("\\") + 1);
+                        string dirName = dir.Substring(dir.LastIndexOf("\\", StringComparison.Ordinal) + 1);
                         int currentFolderVersion = -1;
                         bool prevFolderVersionRetrieved = Int32.TryParse(dirName.Replace("v", ""), out currentFolderVersion);
                         if(maxVersionRetrieved && prevFolderVersionRetrieved && currentFolderVersion > prevFolderVersion && currentFolderVersion <= maxVersionSuported)
@@ -62,9 +62,9 @@ namespace iXlinker.TsprojFile.Mapping
                 List<string> configs = new List<string>();
                 while(str != null && str.Contains(configKeyWord))
                 {
-                    int configKeyWordIndex = str.IndexOf(configKeyWord);
+                    int configKeyWordIndex = str.IndexOf(configKeyWord, StringComparison.Ordinal);
                     config = str.Substring(configKeyWordIndex + configKeyWord.Length);
-                    config = config.Substring(0,config.IndexOf(";"));
+                    config = config.Substring(0,config.IndexOf(";", StringComparison.Ordinal));
                     configs.Add(config);
                     str = str.Substring(configKeyWordIndex + configKeyWord.Length + config.Length + 1 );
                 }

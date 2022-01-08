@@ -4,6 +4,7 @@ using Utils;
 using System.Linq;
 using PlcprojFile;
 using System.Collections.Generic;
+using System;
 
 namespace TsprojFile.Scan
 {
@@ -19,7 +20,7 @@ namespace TsprojFile.Scan
             {
                 if (pdo.Name.Contains(ioSlotSeparator))
                 {
-                    string slotName = ValidatePlcItem.Name(pdo.Name.Substring(0, pdo.Name.IndexOf(ioSlotSeparator)));
+                    string slotName = ValidatePlcItem.Name(pdo.Name.Substring(0, pdo.Name.IndexOf(ioSlotSeparator, StringComparison.Ordinal)));
                     
                     //Check if slot structure already exists
                     bool slotStructAlreadyExists = false;
@@ -51,12 +52,12 @@ namespace TsprojFile.Scan
                 {
                     //Create the struct member
                     PdoStructMemberViewModel member = new PdoStructMemberViewModel();
-                    string slotName = ValidatePlcItem.Name(pdo.Name.Substring(0, pdo.Name.IndexOf(ioSlotSeparator)));
-                    string pdoName = ValidatePlcItem.Name(pdo.Name.Substring(pdo.Name.LastIndexOf(ioSlotSeparator) + 1));
+                    string slotName = ValidatePlcItem.Name(pdo.Name.Substring(0, pdo.Name.IndexOf(ioSlotSeparator, StringComparison.Ordinal)));
+                    string pdoName = ValidatePlcItem.Name(pdo.Name.Substring(pdo.Name.LastIndexOf(ioSlotSeparator, StringComparison.Ordinal) + 1));
                     string typeValue = pdo.Type_Value;
                     if (typeValue.Contains(ioSlotSeparator))
                     {
-                        typeValue = typeValue.Substring(typeValue.LastIndexOf(ioSlotSeparator) + 1);
+                        typeValue = typeValue.Substring(typeValue.LastIndexOf(ioSlotSeparator, StringComparison.Ordinal) + 1);
                     }
                     member.Attributes.Add("{attribute addProperty Name \"" + pdoName + "\"}");
                     member.Name = pdoName;

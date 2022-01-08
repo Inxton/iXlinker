@@ -15,8 +15,8 @@ namespace iXlinker.TsprojFile.Mapping
             {
                 vs.TsProject = new TsProjectViewModel();
                 vs.TsProject.CompletePathInFileSystem = tsProjFilePath;
-                vs.TsProject.FolderPathInFileSystem = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\"));
-                vs.TsProject.FileNameInFileSystem = tsProjFilePath.Substring(tsProjFilePath.LastIndexOf("\\") + 1);
+                vs.TsProject.FolderPathInFileSystem = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\", StringComparison.Ordinal));
+                vs.TsProject.FileNameInFileSystem = tsProjFilePath.Substring(tsProjFilePath.LastIndexOf("\\", StringComparison.Ordinal) + 1);
 
                 //Active target platform
                 string defaultTargetPlatform = "Release|TwinCAT RT (x64)";
@@ -51,8 +51,8 @@ namespace iXlinker.TsprojFile.Mapping
                     {
                         vs.PlcProject = new PlcProjectViewModel();
                         vs.PlcProject.CompletePathInFileSystem = plcProjFilePath;
-                        vs.PlcProject.FolderPathInFileSystem = plcProjFilePath.Substring(0, plcProjFilePath.LastIndexOf("\\"));
-                        vs.PlcProject.FileNameInFileSystem = plcProjFilePath.Substring(plcProjFilePath.LastIndexOf("\\") + 1);
+                        vs.PlcProject.FolderPathInFileSystem = plcProjFilePath.Substring(0, plcProjFilePath.LastIndexOf("\\", StringComparison.Ordinal));
+                        vs.PlcProject.FileNameInFileSystem = plcProjFilePath.Substring(plcProjFilePath.LastIndexOf("\\", StringComparison.Ordinal) + 1);
                         vs.PlcProject.Name = vs.PlcProject.FileNameInFileSystem.Replace(".plcproj", "");
                         vs.PlcProject.Path = vs.PlcProject.FolderPathInFileSystem.Replace(vs.TsProject.FolderPathInFileSystem + "\\", "");
                         vs.PlcProject.CompleteName = vs.PlcProject.Path + "\\" + vs.PlcProject.FileNameInFileSystem;

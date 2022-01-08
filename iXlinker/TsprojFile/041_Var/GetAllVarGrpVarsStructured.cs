@@ -46,13 +46,13 @@ namespace TsprojFile.Scan
                 {
                     if (actVarStruct == null || actVarStruct.Prefix == null && actVarStruct.Id == null)   //First member of the structure
                     {
-                        actVarStruct = new PdoEntryStructViewModel() { Prefix = ValidatePlcItem.StructurePrefix(varUnstructured.Name.Substring(0, varUnstructured.Name.IndexOf("__"))) , Id = "", BoxOrderCode = varUnstructured.BoxOrderCode };
+                        actVarStruct = new PdoEntryStructViewModel() { Prefix = ValidatePlcItem.StructurePrefix(varUnstructured.Name.Substring(0, varUnstructured.Name.IndexOf("__", StringComparison.Ordinal))) , Id = "", BoxOrderCode = varUnstructured.BoxOrderCode };
                         structOpen = true;
                     }
                     if (structOpen && actVarStruct.PdoEntryVarA == null && varUnstructured.VarA != null)
-                        actVarStruct.PdoEntryVarA = varUnstructured.VarB.Substring(0, varUnstructured.VarB.LastIndexOf(tmpLevelSeparator));
+                        actVarStruct.PdoEntryVarA = varUnstructured.VarB.Substring(0, varUnstructured.VarB.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal));
                     if (structOpen && actVarStruct.PdoEntryVarB == null && varUnstructured.VarB != null)
-                        actVarStruct.PdoEntryVarB = varUnstructured.VarB.Substring(0, varUnstructured.VarB.LastIndexOf(tmpLevelSeparator));
+                        actVarStruct.PdoEntryVarB = varUnstructured.VarB.Substring(0, varUnstructured.VarB.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal));
 
                     //Get pdo entry name, if empty bites used, generate unique name with attribute hide
                     string pdoEntryName = ValidatePlcItem.Name(varUnstructured.Name.Substring(actVarStruct.Prefix.Length+2));

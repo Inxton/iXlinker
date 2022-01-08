@@ -38,7 +38,7 @@ namespace iXlinker.TsprojFile.Mapping
 
                     if (tc.Project.Plc.Project.Length == 1 && tc.Project.Plc.Project[0] != null && !string.IsNullOrEmpty(tc.Project.Plc.Project[0].PrjFilePath))
                     {
-                        string tsProjFolder = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\"));
+                        string tsProjFolder = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\", StringComparison.Ordinal));
                         plcProjFilePath = tsProjFolder + "\\" + tc.Project.Plc.Project[0].PrjFilePath;
                         Console.WriteLine(@"PLC project: ""{0}"" found in the XAE project: ""{1}"" will be used!!!", tsProjFilePath, plcProjFilePath);
                     }

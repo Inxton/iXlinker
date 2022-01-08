@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using Utils;
 using System.Linq;
 using PlcprojFile;
+using System;
 
 namespace TsprojFile.Scan
 {
@@ -13,7 +14,7 @@ namespace TsprojFile.Scan
             string pdoViewModelName = pdoViewModel.Name;
             if (pdoViewModelName.Contains(ioSlotSeparator))
             {
-                pdoViewModelName = pdoViewModelName.Substring(pdoViewModelName.LastIndexOf(ioSlotSeparator) + 1);
+                pdoViewModelName = pdoViewModelName.Substring(pdoViewModelName.LastIndexOf(ioSlotSeparator, StringComparison.Ordinal) + 1);
             }
             PdoStructViewModel actPdoStruct = new PdoStructViewModel() { Prefix = ValidatePlcItem.StructurePrefix(pdoViewModelName), Id = "", BoxOrderCode = pdoViewModel.BoxOrderCode };
             MapableObject mapableObject = new MapableObject();

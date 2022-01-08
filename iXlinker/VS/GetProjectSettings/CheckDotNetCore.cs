@@ -39,11 +39,11 @@ namespace iXlinker.TsprojFile.Mapping
                         cmdOutput = p.StandardOutput.ReadLine();
                         if (cmdOutput.Contains(dotnetcore))
                         {
-                            string version = cmdOutput.Substring(cmdOutput.IndexOf(dotnetcore) + dotnetcore.Length + 1);
+                            string version = cmdOutput.Substring(cmdOutput.IndexOf(dotnetcore, StringComparison.Ordinal) + dotnetcore.Length + 1);
                             if (version.Contains("["))
                             {
                                  
-                                version = version.Substring(0, version.LastIndexOf("["));
+                                version = version.Substring(0, version.LastIndexOf("[", StringComparison.Ordinal));
                                 if(Version.TryParse(version, out Version outVersion))
                                 {
                                     if(outVersion >= minVersion && outVersion < maxVersion)

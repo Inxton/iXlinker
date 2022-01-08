@@ -21,7 +21,7 @@ namespace iXlinker.TsprojFile.Mapping
 
                 if (tc != null && tc.Project != null && tc.Project.Plc != null && tc.Project.Plc.Project != null)
                 {
-                    string tsProjFolder = plcProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\"));
+                    string tsProjFolder = plcProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\", StringComparison.Ordinal));
                     string plcProjName = plcProjFilePath.Replace(tsProjFolder + "\\", "");
 
                     foreach (TcSmProjectProjectPlcProject plcProj in tc.Project.Plc.Project)

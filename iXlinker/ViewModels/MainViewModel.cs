@@ -29,13 +29,6 @@ namespace ViewModels
             defaultDoNotGenerateDisabled = true;
             defaultDevenvPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com";
 
-            //defaultTsProjFilePath = @"C:\x_tmp\TwinCAT Project1\TwinCAT Project1\TwinCAT Project1.tsproj";
-            //defaultActiveTargetPlatform = "Release|TwinCAT RT (x86)";
-            //defaultPlcProjFilePath = @"C:\x_tmp\TwinCAT Project1\TwinCAT Project1\Untitled1\Untitled1.plcproj";
-            //defaultDoNotGenerateDisabled = true;
-            //defaultDevenvPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com";
-
-
             if (i == 0)
             {
                 Console.WriteLine("No argument passed, default projectpath is going to be used.");
@@ -45,6 +38,7 @@ namespace ViewModels
                 list.Add(defaultActiveTargetPlatform);
                 list.Add(defaultPlcProjFilePath);
                 list.Add(defaultDoNotGenerateDisabled.ToString());
+                list.Add(defaultDevenvPath);
                 String[] str = list.ToArray();
                 args = str;
             }

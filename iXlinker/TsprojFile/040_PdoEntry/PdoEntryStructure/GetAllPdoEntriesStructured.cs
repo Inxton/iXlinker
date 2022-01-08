@@ -49,13 +49,13 @@ namespace TsprojFile.Scan
                     {
                         if (actPdoEntryStruct == null || actPdoEntryStruct.Prefix == null && actPdoEntryStruct.Id == null)   //First member of the structure
                         {
-                            actPdoEntryStruct = new PdoEntryStructViewModel() { Prefix = ValidatePlcItem.Name(pdoEntryUnstructured.Name.Substring(0, pdoEntryUnstructured.Name.IndexOf("__"))), Id = "", BoxOrderCode = pdoEntryUnstructured.BoxOrderCode };
+                            actPdoEntryStruct = new PdoEntryStructViewModel() { Prefix = ValidatePlcItem.Name(pdoEntryUnstructured.Name.Substring(0, pdoEntryUnstructured.Name.IndexOf("__", StringComparison.Ordinal))), Id = "", BoxOrderCode = pdoEntryUnstructured.BoxOrderCode };
                             structOpen = true;
                         }
                         if (structOpen && actPdoEntryStruct.PdoEntryVarA == null && pdoEntryUnstructured.VarA != null)
-                            actPdoEntryStruct.PdoEntryVarA = ValidatePlcItem.Name(pdoEntryUnstructured.VarB.Substring(0, pdoEntryUnstructured.VarB.LastIndexOf(tmpLevelSeparator)));
+                            actPdoEntryStruct.PdoEntryVarA = ValidatePlcItem.Name(pdoEntryUnstructured.VarB.Substring(0, pdoEntryUnstructured.VarB.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal)));
                         if (structOpen && actPdoEntryStruct.PdoEntryVarB == null && pdoEntryUnstructured.VarB != null)
-                            actPdoEntryStruct.PdoEntryVarB = pdoEntryUnstructured.VarB.Substring(0, pdoEntryUnstructured.VarB.LastIndexOf(tmpLevelSeparator));
+                            actPdoEntryStruct.PdoEntryVarB = pdoEntryUnstructured.VarB.Substring(0, pdoEntryUnstructured.VarB.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal));
 
                         //Get pdo entry name, if empty bites used, generate unique name with attribute hide
                         string pdoEntryName = ValidatePlcItem.Name(pdoEntryUnstructured.Name.Substring(actPdoEntryStruct.Prefix.Length + 2));

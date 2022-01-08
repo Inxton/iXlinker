@@ -20,7 +20,7 @@ namespace TsprojFile.Scan
             string structName = boxViewModel.BoxOrderCode;
             if (structName.Contains("-"))
             {
-                structName = structName.Substring(0, structName.IndexOf("-"));
+                structName = structName.Substring(0, structName.IndexOf("-", StringComparison.Ordinal));
             }
             BoxStructViewModel actBoxStruct = new BoxStructViewModel() { Prefix = ValidatePlcItem.Name(structName), Id = "", BoxOrderCode = boxViewModel.BoxOrderCode };
             foreach (PdoViewModel pdo in slotPdos)

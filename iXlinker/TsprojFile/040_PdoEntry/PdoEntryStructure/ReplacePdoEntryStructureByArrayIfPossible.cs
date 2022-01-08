@@ -17,12 +17,12 @@ namespace TsprojFile.Scan
                 string firstMemberNamePrefix = null;
                 if (firstMember.Name.Contains("_"))
                 {
-                    firstMemberNamePrefix = firstMember.Name.Substring(0, firstMember.Name.LastIndexOf("_"));
+                    firstMemberNamePrefix = firstMember.Name.Substring(0, firstMember.Name.LastIndexOf("_", StringComparison.Ordinal));
                 }
                 string firstMemberArrayIndex = null;
                 if (firstMember.Name.Contains("_"))
                 {
-                    firstMemberArrayIndex = firstMember.Name.Substring(firstMember.Name.LastIndexOf("_") + 1);
+                    firstMemberArrayIndex = firstMember.Name.Substring(firstMember.Name.LastIndexOf("_", StringComparison.Ordinal) + 1);
                 }
                 int firstIndex = 0;
                 int lastIndex = 0;
@@ -39,7 +39,7 @@ namespace TsprojFile.Scan
                         string memberNamePrefix = null;
                         if (member.Name.Contains("_"))
                         {
-                            memberNamePrefix = member.Name.Substring(0, member.Name.LastIndexOf("_"));
+                            memberNamePrefix = member.Name.Substring(0, member.Name.LastIndexOf("_", StringComparison.Ordinal));
                         }
                         if (memberNamePrefix != firstMemberNamePrefix || member.Type_Value != firstMember.Type_Value || member.Index != firstMember.Index || (member.SubIndex != firstMember.SubIndex && member.SubIndexNumber != prevMember.SubIndexNumber + 1))
                         {
@@ -51,7 +51,7 @@ namespace TsprojFile.Scan
                     string lastMemberArrayIndex = null;
                     if (prevMember.Name.Contains("_"))
                     {
-                        lastMemberArrayIndex = prevMember.Name.Substring(prevMember.Name.LastIndexOf("_") + 1);
+                        lastMemberArrayIndex = prevMember.Name.Substring(prevMember.Name.LastIndexOf("_", StringComparison.Ordinal) + 1);
                     }
 
                     if (lastMemberArrayIndex == null || !Int32.TryParse(lastMemberArrayIndex, out lastIndex))

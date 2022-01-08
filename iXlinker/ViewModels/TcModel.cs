@@ -6,7 +6,9 @@ namespace ViewModels
 {
     public class TcModel : BaseViewModel
     {
-        public const string tmpLevelSeparator = "\x1";
+        //public const string tmpLevelSeparator = "\x1";
+
+        public const string tmpLevelSeparator = "\u0001";
         public const string ioLevelSeparator = "^";
         public const string plcStructSeparator = ".";
         public const string ioSlotSeparator = "\x2";

@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using Utils;
 using System.Linq;
 using PlcprojFile;
+using System;
 
 namespace TsprojFile.Scan
 {
@@ -22,9 +23,9 @@ namespace TsprojFile.Scan
                         MapableItem item = new MapableItem();
                         item = mapableItem;
                         string varAprefix = item.VarAprefix;
-                        varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator));
+                        varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator , StringComparison.Ordinal));
                         string varA = item.VarAprefix;
-                        varA = ValidatePlcItem.Link(varA.Substring(varA.LastIndexOf(tmpLevelSeparator) + 1)) + tmpLevelSeparator + item.VarA;
+                        varA = ValidatePlcItem.Link(varA.Substring(varA.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal) + 1)) + tmpLevelSeparator + item.VarA;
                         item.VarAprefix = varAprefix;
                         item.VarA = varA;
                         mapableObjectVM.MapableItems.Add(item);
@@ -57,9 +58,9 @@ namespace TsprojFile.Scan
                             MapableItem item = new MapableItem();
                             item = mapableItem;
                             string varAprefix = item.VarAprefix;
-                            varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator));
+                            varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal));
                             string varA = item.VarAprefix;
-                            varA = ValidatePlcItem.Link(varA.Substring(varA.LastIndexOf(tmpLevelSeparator) + 1)) + tmpLevelSeparator + item.VarA;
+                            varA = ValidatePlcItem.Link(varA.Substring(varA.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal) + 1)) + tmpLevelSeparator + item.VarA;
                             item.VarAprefix = varAprefix;
                             item.VarA = varA;
                             mapableObjectVM.MapableItems.Add(item);
@@ -105,12 +106,25 @@ namespace TsprojFile.Scan
 
                 foreach (MapableItem mapableItem in mapableObject.MapableItems)
                 {
+
+                    //string test = "abcdefgh" + tmpLevelSeparator + "ABCDEFGH";
+                    //string test1 = "";
+                    //string test2 = "";
+                    //bool containsSeparator = test.Contains(tmpLevelSeparator);
+                    //if (containsSeparator)
+                    //{
+                    //    int sepPos = -1;
+                    //    sepPos = test.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal);
+                    //    test1 = test.Substring(0, test.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal));
+                    //    test2 = test.Substring(test.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal) + 1);
+                    //}
+
                     MapableItem item = new MapableItem();
                     item = mapableItem;
                     string varAprefix = item.VarAprefix;
-                    varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator));
+                    varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal));
                     string varA = item.VarAprefix;
-                    varA = ValidatePlcItem.Link(varA.Substring(varA.LastIndexOf(tmpLevelSeparator) + 1)) + tmpLevelSeparator + item.VarA;
+                    varA = ValidatePlcItem.Link(varA.Substring(varA.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal) + 1)) + tmpLevelSeparator + item.VarA;
                     item.VarAprefix = varAprefix;
                     item.VarA = varA;
                     mapableObjectVM.MapableItems.Add(item);
@@ -149,9 +163,9 @@ namespace TsprojFile.Scan
                         MapableItem item = new MapableItem();
                         item = mapableItem;
                         string varAprefix = item.VarAprefix;
-                        varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator));
+                        varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal));
                         string varA = item.VarAprefix;
-                        varA = ValidatePlcItem.Link(varA.Substring(varA.LastIndexOf(tmpLevelSeparator) + 1)) + tmpLevelSeparator + item.VarA;
+                        varA = ValidatePlcItem.Link(varA.Substring(varA.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal) + 1)) + tmpLevelSeparator + item.VarA;
                         item.VarAprefix = varAprefix;
                         item.VarA = varA;
                         mapableObjectVM.MapableItems.Add(item);

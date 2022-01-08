@@ -28,26 +28,24 @@ namespace TsprojFile.Scan
                     bool firstIndexIsNumber = false;
                     if (membersUngroupped[i].Name.Contains("_"))
                     {
-                        firstMemberPrefix = membersUngroupped[i].Name.Substring(0, membersUngroupped[i].Name.LastIndexOf("_"));
-                        firstIndexIsNumber = Int32.TryParse(mapableObject.MapableItems[i].VarA.Substring(mapableObject.MapableItems[i].VarA.LastIndexOf("_") + 1), out firstIndex);
+                        firstMemberPrefix = membersUngroupped[i].Name.Substring(0, membersUngroupped[i].Name.LastIndexOf("_", StringComparison.Ordinal));
+                        firstIndexIsNumber = Int32.TryParse(mapableObject.MapableItems[i].VarA.Substring(mapableObject.MapableItems[i].VarA.LastIndexOf("_", StringComparison.Ordinal) + 1), out firstIndex);
                     }
                     int j = i + 1;
                     while (j < membersCount && !string.IsNullOrEmpty(firstMemberPrefix) && firstIndexIsNumber &&
                         membersUngroupped[i].Type_Value == membersUngroupped[j].Type_Value &&
                         membersUngroupped[j].Name.Contains("_") &&
-                        membersUngroupped[j].Name.Substring(0, membersUngroupped[j].Name.LastIndexOf("_")) == firstMemberPrefix)
+                        membersUngroupped[j].Name.Substring(0, membersUngroupped[j].Name.LastIndexOf("_", StringComparison.Ordinal)) == firstMemberPrefix)
                     {
-                        if (mapableObject.MapableItems[i].VarA.Contains("_") && Int32.TryParse(mapableObject.MapableItems[i].VarA.Substring(mapableObject.MapableItems[i].VarA.LastIndexOf("_") + 1), out firstIndex))
+                        if (mapableObject.MapableItems[i].VarA.Contains("_") && Int32.TryParse(mapableObject.MapableItems[i].VarA.Substring(mapableObject.MapableItems[i].VarA.LastIndexOf("_", StringComparison.Ordinal) + 1), out firstIndex))
                         {
                             arrayIndex = 0;
-                            //mapableObject.MapableItems[i].VarA = mapableObject.MapableItems[i].VarA.Substring(0, mapableObject.MapableItems[i].VarA.LastIndexOf("_")) + "[" + firstIndex.ToString() + "]";
-                            mapableObject.MapableItems[i].VarA = mapableObject.MapableItems[i].VarA.Substring(0, mapableObject.MapableItems[i].VarA.LastIndexOf("_")) + "[" + arrayIndex.ToString() + "]";
+                            mapableObject.MapableItems[i].VarA = mapableObject.MapableItems[i].VarA.Substring(0, mapableObject.MapableItems[i].VarA.LastIndexOf("_", StringComparison.Ordinal)) + "[" + arrayIndex.ToString() + "]";
                             arrayIndex++;
                         }
-                        if (mapableObject.MapableItems[j].VarA.Contains("_") && Int32.TryParse(mapableObject.MapableItems[j].VarA.Substring(mapableObject.MapableItems[j].VarA.LastIndexOf("_") + 1), out int actIndex))
+                        if (mapableObject.MapableItems[j].VarA.Contains("_") && Int32.TryParse(mapableObject.MapableItems[j].VarA.Substring(mapableObject.MapableItems[j].VarA.LastIndexOf("_", StringComparison.Ordinal) + 1), out int actIndex))
                         {
-                            //mapableObject.MapableItems[j].VarA = mapableObject.MapableItems[j].VarA.Substring(0, mapableObject.MapableItems[j].VarA.LastIndexOf("_")) + "[" + actIndex.ToString() + "]";
-                            mapableObject.MapableItems[j].VarA = mapableObject.MapableItems[j].VarA.Substring(0, mapableObject.MapableItems[j].VarA.LastIndexOf("_")) + "[" + arrayIndex.ToString() + "]";
+                            mapableObject.MapableItems[j].VarA = mapableObject.MapableItems[j].VarA.Substring(0, mapableObject.MapableItems[j].VarA.LastIndexOf("_", StringComparison.Ordinal)) + "[" + arrayIndex.ToString() + "]";
                             arrayIndex++;
                         }
                         mapableObject.MapableItems[i].VarA = ValidatePlcItem.Link(mapableObject.MapableItems[i].VarA);
@@ -56,8 +54,8 @@ namespace TsprojFile.Scan
                     }
                     if (j - i > 1)
                     {
-                        Int32.TryParse(membersUngroupped[i].Name.Substring(membersUngroupped[i].Name.LastIndexOf("_") + 1), out firstIndex);
-                        Int32.TryParse(membersUngroupped[j - 1].Name.Substring(membersUngroupped[j - 1].Name.LastIndexOf("_") + 1), out int lastIndex);
+                        Int32.TryParse(membersUngroupped[i].Name.Substring(membersUngroupped[i].Name.LastIndexOf("_", StringComparison.Ordinal) + 1), out firstIndex);
+                        Int32.TryParse(membersUngroupped[j - 1].Name.Substring(membersUngroupped[j - 1].Name.LastIndexOf("_", StringComparison.Ordinal) + 1), out int lastIndex);
                         //string arrayType = "ARRAY[" + firstIndex.ToString() + ".." + lastIndex.ToString() + "] OF " + membersUngroupped[i].Type_Value;
                         string arrayType = "ARRAY[0 .." + (arrayIndex - 1).ToString() + "] OF " + membersUngroupped[i].Type_Value;
                         PdoStructMemberViewModel arrayMember = new PdoStructMemberViewModel();
