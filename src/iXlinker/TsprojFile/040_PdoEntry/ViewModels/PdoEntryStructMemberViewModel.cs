@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace ViewModels
+namespace iXlinkerDtos
 {
-    public class PdoEntryStructMemberViewModel : BaseViewModel
+    public class PdoEntryStructMemberViewModel : NotifiableBase
     {
         private List<string> attributes;
         public List<string> Attributes

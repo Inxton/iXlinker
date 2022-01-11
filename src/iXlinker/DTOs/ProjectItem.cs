@@ -1,6 +1,6 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
-    public class ProjectItemViewModel : BaseViewModel
+    public class ProjectItem : NotifiableBase
     {
 
         private string completePathInFileSystem;

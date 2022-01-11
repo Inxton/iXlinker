@@ -2,9 +2,9 @@
 using System.Collections.ObjectModel;
 using TwincatXmlSchemas.TcSmProject;
 
-namespace ViewModels
+namespace iXlinkerDtos
 {
-    public class TcModel : BaseViewModel
+    public class TcModel : NotifiableBase
     {
         //public const string tmpLevelSeparator = "\x1";
 

@@ -1,4 +1,4 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
     using System.Collections.ObjectModel;
 
@@ -161,7 +161,7 @@
         IODEVICETYPE_OPCUADEVICE = 155,			    //	Opc Ua Device 
     }
 
-    public class DeviceViewModel : BaseViewModel
+    public class DeviceViewModel : NotifiableBase
     {
         private string name;
         public string Name
@@ -379,12 +379,12 @@
             }
         }
 
-        private ObservableCollection<MapableObject> mapableObjects;
-        public ObservableCollection<MapableObject> MapableObjects
+        private ObservableCollection<MappableObject> mapableObjects;
+        public ObservableCollection<MappableObject> MapableObjects
         {
             get
             {
-                return this.mapableObjects ?? (this.mapableObjects = new ObservableCollection<MapableObject>());
+                return this.mapableObjects ?? (this.mapableObjects = new ObservableCollection<MappableObject>());
             }
             set
             {
@@ -396,12 +396,12 @@
             }
         }
 
-        private MapableObject mapableObjectGrouped;
-        public MapableObject MapableObjectGrouped
+        private MappableObject mapableObjectGrouped;
+        public MappableObject MapableObjectGrouped
         {
             get
             {
-                return this.mapableObjectGrouped ?? (this.mapableObjectGrouped = new MapableObject());
+                return this.mapableObjectGrouped ?? (this.mapableObjectGrouped = new MappableObject());
             }
             set
             {

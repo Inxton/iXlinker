@@ -1,4 +1,4 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
     using System.Collections.ObjectModel;
 
@@ -9,7 +9,7 @@
 
     }
 
-    public class BoxViewModel : BaseViewModel
+    public class BoxViewModel : NotifiableBase
     {
         private BoxTypes boxType;
         public BoxTypes BoxType
@@ -303,12 +303,12 @@
             }
         }
 
-        private ObservableCollection<MapableObject> mapableObjects;
-        public ObservableCollection<MapableObject> MapableObjects
+        private ObservableCollection<MappableObject> mapableObjects;
+        public ObservableCollection<MappableObject> MapableObjects
         {
             get
             {
-                return this.mapableObjects ?? (this.mapableObjects = new ObservableCollection<MapableObject>());
+                return this.mapableObjects ?? (this.mapableObjects = new ObservableCollection<MappableObject>());
             }
             set
             {
@@ -320,12 +320,12 @@
             }
         }
 
-        private MapableObject mapableObjectGrouped;
-        public MapableObject MapableObjectGrouped
+        private MappableObject mapableObjectGrouped;
+        public MappableObject MapableObjectGrouped
         {
             get
             {
-                return this.mapableObjectGrouped ?? (this.mapableObjectGrouped = new MapableObject());
+                return this.mapableObjectGrouped ?? (this.mapableObjectGrouped = new MappableObject());
             }
             set
             {
@@ -464,12 +464,12 @@
             }
         }
 
-        private ObservableCollection<ProfileViewModel> profiles;
-        public ObservableCollection<ProfileViewModel> Profiles
+        private ObservableCollection<Profile> profiles;
+        public ObservableCollection<Profile> Profiles
         {
             get
             {
-                return this.profiles ?? (this.profiles = new ObservableCollection<ProfileViewModel>());
+                return this.profiles ?? (this.profiles = new ObservableCollection<Profile>());
             }
             set
             {

@@ -1,4 +1,4 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using System.Collections.ObjectModel;
 using Utils;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace TsprojFile.Scan
         {
             List<PdoStructViewModel> slotStructs = new List<PdoStructViewModel>();
             List<PdoViewModel> pdoViewModels = new List<PdoViewModel>();
-            List<MapableObject> mapableObjects = new List<MapableObject>();
+            List<MappableObject> mapableObjects = new List<MappableObject>();
 
             foreach (PdoViewModel pdo in pdos)
             {
@@ -40,7 +40,7 @@ namespace TsprojFile.Scan
                         slotStructs.Add(actSlotStruct);
                         PdoViewModel pdoViewModel = new PdoViewModel() { Name = slotName };
                         pdoViewModels.Add(pdoViewModel);
-                        MapableObject mapableObject = new MapableObject() { Name = slotName };
+                        MappableObject mapableObject = new MappableObject() { Name = slotName };
                         mapableObjects.Add(mapableObject);
                     }
                 }
@@ -87,9 +87,9 @@ namespace TsprojFile.Scan
                         pdoViewModels[slotIndex].PdoEntriesStructured.Add(pdoEntry);
                     }
 
-                    foreach (MapableItem mapableItem in pdo.MapableObject.MapableItems)
+                    foreach (MappableItem mapableItem in pdo.MapableObject.MapableItems)
                     {
-                        mapableObjects[slotIndex].MapableItems.Add(new MapableItem() { VarAprefix = mapableItem.VarAprefix, OwnerBname = mapableItem.OwnerBname, VarA = mapableItem.VarA, VarB = mapableItem.VarB});
+                        mapableObjects[slotIndex].MapableItems.Add(new MappableItem() { VarAprefix = mapableItem.VarAprefix, OwnerBname = mapableItem.OwnerBname, VarA = mapableItem.VarA, VarB = mapableItem.VarB});
                     }
                 }
                 else

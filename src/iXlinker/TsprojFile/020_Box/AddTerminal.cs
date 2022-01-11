@@ -1,11 +1,11 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private BoxViewModel AddTerminal(SolutionViewModel vs,TcSmProjectProjectIODevice device, ref DeviceViewModel deviceVm, TcSmTermDef box, string parent_path)
+        private BoxViewModel AddTerminal(Solution vs,TcSmProjectProjectIODevice device, ref DeviceViewModel deviceVm, TcSmTermDef box, string parent_path)
         {
             BoxViewModel boxViewModel = new BoxViewModel();
 

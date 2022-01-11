@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace ViewModels
+namespace iXlinkerDtos
 {
-    public class MapableObject : BaseViewModel
+    public class MappableObject : NotifiableBase
     {
         private string name;
         public string Name
@@ -54,10 +54,10 @@ namespace ViewModels
             }
         }
 
-        private ObservableCollection<MapableItem> mapableItems;
-        public ObservableCollection<MapableItem> MapableItems 
+        private ObservableCollection<MappableItem> mapableItems;
+        public ObservableCollection<MappableItem> MapableItems 
         {
-            get { return this.mapableItems ?? (this.mapableItems = new ObservableCollection<MapableItem>()); }
+            get { return this.mapableItems ?? (this.mapableItems = new ObservableCollection<MappableItem>()); }
             set
             {
                 if (value != null)

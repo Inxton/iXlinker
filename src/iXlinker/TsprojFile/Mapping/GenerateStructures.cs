@@ -1,13 +1,13 @@
 ﻿using System;
 using System.IO;
-using ViewModels;
+using iXlinkerDtos;
 using TwincatXmlSchemas.TcPlcProj;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void GenerateStructures(SolutionViewModel vs)
+        private void GenerateStructures(Solution vs)
         {
             //Reading out of the content of the associated PLC project to be able to modify it.
             Project tcPlcProj = ReadoutPlcProj(vs);

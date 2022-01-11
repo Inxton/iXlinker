@@ -1,11 +1,11 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private BoxViewModel AddBox(SolutionViewModel vs,TcSmProjectProjectIODevice device, ref DeviceViewModel deviceVm, IBox box, string parent_path)
+        private BoxViewModel AddBox(Solution vs,TcSmProjectProjectIODevice device, ref DeviceViewModel deviceVm, IBox box, string parent_path)
         {
             BoxViewModel boxViewModel = new BoxViewModel();
             if ((!vs.DoNotGenerateDisabled || !box.DisabledSpecified || !box.Disabled) && box.BusCoupler == null)

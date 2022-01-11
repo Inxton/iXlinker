@@ -1,8 +1,8 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
     using System.Collections.ObjectModel;
 
-    public class DeviceStructViewModel : BaseStructViewModel
+    public class DeviceStructViewModel : PouStructBase
     {
 
         private ObservableCollection<DeviceStructMemberViewModel> structMembers;

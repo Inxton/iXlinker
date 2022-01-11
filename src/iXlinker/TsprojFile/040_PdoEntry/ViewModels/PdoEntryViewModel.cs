@@ -1,6 +1,6 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
-    public class PdoEntryViewModel : BaseViewModel
+    public class PdoEntryViewModel : NotifiableBase
     {
         private string name;
         public string Name

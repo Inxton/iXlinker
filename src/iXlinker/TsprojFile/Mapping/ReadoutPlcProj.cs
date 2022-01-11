@@ -1,13 +1,13 @@
 ﻿using System.IO;
 using TwincatXmlSchemas.TcPlcProj;
-using ViewModels;
+using iXlinkerDtos;
 using System.Xml.Serialization;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private Project ReadoutPlcProj(SolutionViewModel vs)
+        private Project ReadoutPlcProj(Solution vs)
         {
             string plcProjPath = vs.PlcProject.CompletePathInFileSystem;
             XmlSerializer serializer = new XmlSerializer(typeof(Project));

@@ -1,8 +1,8 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
     using System.Collections.Generic;
 
-    public class BoxStructMemberViewModel : BaseViewModel
+    public class BoxStructMemberViewModel : NotifiableBase
     {
         private List<string> attributes;
         public List<string> Attributes

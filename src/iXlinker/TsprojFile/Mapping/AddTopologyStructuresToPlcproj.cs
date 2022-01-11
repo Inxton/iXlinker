@@ -1,11 +1,11 @@
 ﻿using TwincatXmlSchemas.TcPlcProj;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddTopologyStructuresToPlcproj(SolutionViewModel vs , ref Project tcPlcProj)
+        private void AddTopologyStructuresToPlcproj(Solution vs , ref Project tcPlcProj)
         {
             ExportTopologyStructures(vs.DutsIoTopology.FolderPathInFileSystem);
 

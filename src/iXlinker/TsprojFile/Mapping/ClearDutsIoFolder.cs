@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using ViewModels;
+using iXlinkerDtos;
 using TwincatXmlSchemas.TcPlcProj;
 using System.Collections.Generic;
 
@@ -8,10 +8,10 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void ClearDutsIoFolder(SolutionViewModel vs , ref Project plcProj)
+        private void ClearDutsIoFolder(Solution vs , ref Project plcProj)
         {
             Console.WriteLine("Cleaning existing DUTs!");
-            List<ProjectItemViewModel> FoldersToClear= new List<ProjectItemViewModel>();
+            List<ProjectItem> FoldersToClear= new List<ProjectItem>();
 
             FoldersToClear.Add(vs.DutsIo);
             FoldersToClear.Add(vs.DutsIoPdoEntry);
@@ -35,7 +35,7 @@ namespace TsprojFile.Scan
                     foreach (ProjectItemGroupCompile itemCompile in item.Compile )
                     {
                         bool removeItem = false;
-                        foreach(ProjectItemViewModel folderToClear in FoldersToClear)
+                        foreach(ProjectItem folderToClear in FoldersToClear)
                         {
                             removeItem = false;
                             if (itemCompile.Include.Contains(folderToClear.Path))
@@ -58,7 +58,7 @@ namespace TsprojFile.Scan
                     foreach (ProjectItemGroupCompile itemCompile in item.Compile)
                     {
                         bool removeItem = false;
-                        foreach (ProjectItemViewModel folderToClear in FoldersToClear)
+                        foreach (ProjectItem folderToClear in FoldersToClear)
                         {
                             removeItem = false;
                             if (itemCompile.Include.Contains(folderToClear.Path))
@@ -83,7 +83,7 @@ namespace TsprojFile.Scan
             foreach (ProjectItemGroup item in plcProj.ItemGroup)
             {
                 bool folderExistsInThePlcProj = false;
-                foreach (ProjectItemViewModel folderToClear in FoldersToClear)
+                foreach (ProjectItem folderToClear in FoldersToClear)
                 {
                     folderExistsInThePlcProj = false;
 
@@ -119,7 +119,7 @@ namespace TsprojFile.Scan
 
             //Delete all files and folders in each of the folder in the "FoldersToClear" list in the file system, such a folder exists.
             //If not create it.
-            foreach (ProjectItemViewModel folderToClear in FoldersToClear)
+            foreach (ProjectItem folderToClear in FoldersToClear)
             {
                 if (Directory.Exists(folderToClear.FolderPathInFileSystem))
                 {

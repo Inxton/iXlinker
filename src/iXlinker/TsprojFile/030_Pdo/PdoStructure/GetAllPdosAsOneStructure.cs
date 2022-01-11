@@ -1,5 +1,5 @@
 ﻿using System;
-using ViewModels;
+using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.ObjectModel;
 using Utils;
@@ -15,7 +15,7 @@ namespace TsprojFile.Scan
 
             ObservableCollection<PdoViewModel> slotPdos = GetAllPdosAsOneStructuresOfSlotTypes(boxViewModel, pdos);
 
-            MapableObject mapableObject = new MapableObject();
+            MappableObject mapableObject = new MappableObject();
             PdoViewModel pdoViewModel = new PdoViewModel();
             string structName = boxViewModel.BoxOrderCode;
             if (structName.Contains("-"))
@@ -52,7 +52,7 @@ namespace TsprojFile.Scan
                     pdoViewModel.PdoEntriesStructured.Add(pdoEntry);
                 }
 
-                foreach (MapableItem mapableItem in pdo.MapableObject.MapableItems)
+                foreach (MappableItem mapableItem in pdo.MapableObject.MapableItems)
                 {
                     mapableObject.MapableItems.Add(mapableItem);
                 }

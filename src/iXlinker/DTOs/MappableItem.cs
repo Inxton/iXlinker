@@ -1,6 +1,6 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
-    public class MapableItem : BaseViewModel
+    public class MappableItem : NotifiableBase
     {
         private string varAprefix;
         public string VarAprefix

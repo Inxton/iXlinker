@@ -1,6 +1,6 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
-    public class SlotViewModel : BaseViewModel
+    public class SlotViewModel : NotifiableBase
     {
 
         private string name;

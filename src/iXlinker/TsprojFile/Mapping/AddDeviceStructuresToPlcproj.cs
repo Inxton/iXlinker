@@ -1,11 +1,11 @@
 ﻿using TwincatXmlSchemas.TcPlcProj;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddDeviceStructuresToPlcproj(SolutionViewModel vs , ref Project tcPlcProj)
+        private void AddDeviceStructuresToPlcproj(Solution vs , ref Project tcPlcProj)
         {
             ExportDeviceStructures(vs.DutsIoDevice.FolderPathInFileSystem);
 

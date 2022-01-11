@@ -1,13 +1,13 @@
 ﻿using System;
 using System.IO;
-using ViewModels;
+using iXlinkerDtos;
 using TwincatXmlSchemas.TcPlcProj;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void ClearGvlGenerated(SolutionViewModel vs , ref Project tcPlcProj)
+        private void ClearGvlGenerated(Solution vs , ref Project tcPlcProj)
         {
             Console.WriteLine("Cleaning existing GVL!");
 

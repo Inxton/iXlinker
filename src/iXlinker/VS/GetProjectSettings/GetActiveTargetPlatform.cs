@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace iXlinker.TsprojFile.Mapping
 {

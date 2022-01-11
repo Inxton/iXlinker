@@ -1,6 +1,6 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
-    public class DataTypeViewModel : BaseViewModel
+    public class DataType : NotifiableBase
     {
 
         private string name;

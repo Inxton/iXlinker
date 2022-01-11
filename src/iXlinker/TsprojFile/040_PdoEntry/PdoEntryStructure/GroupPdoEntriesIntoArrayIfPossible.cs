@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Utils;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void GroupPdoEntriesIntoArrayIfPossible(ref PdoStructViewModel actPdoStruct, ref MapableObject mapableObject)
+        private void GroupPdoEntriesIntoArrayIfPossible(ref PdoStructViewModel actPdoStruct, ref MappableObject mapableObject)
         {
             PdoStructViewModel ret = new PdoStructViewModel();
 

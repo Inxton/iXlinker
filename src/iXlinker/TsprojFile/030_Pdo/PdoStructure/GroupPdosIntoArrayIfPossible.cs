@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using Utils;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void GroupPdosIntoArrayIfPossible(ref BoxStructViewModel actBoxStruct, ref MapableObject mapableObject)
+        private void GroupPdosIntoArrayIfPossible(ref BoxStructViewModel actBoxStruct, ref MappableObject mapableObject)
         {
             BoxStructViewModel ret = new BoxStructViewModel();
             
@@ -19,7 +19,7 @@ namespace TsprojFile.Scan
             {
                 List<BoxStructMemberViewModel> membersUngroupped = actBoxStruct.StructMembers.ToList();
                 List<BoxStructMemberViewModel> membersGroupped = new List<BoxStructMemberViewModel>();
-                List<MapableItem> mapableItems = mapableObject.MapableItems.ToList(); ;
+                List<MappableItem> mapableItems = mapableObject.MapableItems.ToList(); ;
                 List<string> arrayTypes = new List<string>();
                 int itemsCount = mapableObject.MapableItems.Count;
                 int itemsModified = 0;
@@ -157,8 +157,8 @@ namespace TsprojFile.Scan
                 ret.Crc32 = CRC32.Calculate_CRC32(ret.Id);
                 ret.Prefix = actBoxStruct.Prefix;
                 ret.Name = ValidatePlcItem.Name(ret.Prefix + "_" + actBoxStruct.Crc32.ToString("X8"));
-                mapableObject.MapableItems = new ObservableCollection<MapableItem>();
-                foreach(MapableItem mapableItem in mapableItems)
+                mapableObject.MapableItems = new ObservableCollection<MappableItem>();
+                foreach(MappableItem mapableItem in mapableItems)
                 {
                     mapableObject.MapableItems.Add(mapableItem);
                 }

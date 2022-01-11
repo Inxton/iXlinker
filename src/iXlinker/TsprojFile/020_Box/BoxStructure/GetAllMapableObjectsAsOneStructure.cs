@@ -1,4 +1,4 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using System.Collections.ObjectModel;
 using Utils;
 using System.Linq;
@@ -9,18 +9,18 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private MapableObject GetAllMapableObjectsAsOneStructure(DeviceViewModel deviceViewModel, ObservableCollection<MapableObject> mapableObjects)
+        private MappableObject GetAllMapableObjectsAsOneStructure(DeviceViewModel deviceViewModel, ObservableCollection<MappableObject> mapableObjects)
         {
             {
-                MapableObject mapableObjectVM = new MapableObject();
+                MappableObject mapableObjectVM = new MappableObject();
 
                 if (mapableObjects.Count == 1)
                 {
-                    MapableObject mapableObject = mapableObjects.ElementAt(0);
+                    MappableObject mapableObject = mapableObjects.ElementAt(0);
 
-                    foreach (MapableItem mapableItem in mapableObject.MapableItems)
+                    foreach (MappableItem mapableItem in mapableObject.MapableItems)
                     {
-                        MapableItem item = new MapableItem();
+                        MappableItem item = new MappableItem();
                         item = mapableItem;
                         string varAprefix = item.VarAprefix;
                         varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator , StringComparison.Ordinal));
@@ -39,7 +39,7 @@ namespace TsprojFile.Scan
                 {
                     TopologyStructViewModel actTopologyStruct = new TopologyStructViewModel() { Prefix = ValidatePlcItem.Name(deviceViewModel.Name), Id = "", BoxOrderCode = deviceViewModel.Type.ToString()};
 
-                    foreach (MapableObject mapableObject in mapableObjects)
+                    foreach (MappableObject mapableObject in mapableObjects)
                     {
                         TopologyStructMemberViewModel member = new TopologyStructMemberViewModel();
 
@@ -53,9 +53,9 @@ namespace TsprojFile.Scan
                         actTopologyStruct.SizeInBites = actTopologyStruct.SizeInBites + member.SizeInBites;
                         actTopologyStruct.SizeInBytes = actTopologyStruct.SizeInBytes + member.SizeInBytes;
 
-                        foreach (MapableItem mapableItem in mapableObject.MapableItems)
+                        foreach (MappableItem mapableItem in mapableObject.MapableItems)
                         {
-                            MapableItem item = new MapableItem();
+                            MappableItem item = new MappableItem();
                             item = mapableItem;
                             string varAprefix = item.VarAprefix;
                             varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal));
@@ -96,15 +96,15 @@ namespace TsprojFile.Scan
                 return mapableObjectVM;
             }
         }
-        private MapableObject GetAllMapableObjectsAsOneStructure(BoxViewModel boxViewModel, ObservableCollection<MapableObject> mapableObjects)
+        private MappableObject GetAllMapableObjectsAsOneStructure(BoxViewModel boxViewModel, ObservableCollection<MappableObject> mapableObjects)
         {
-            MapableObject mapableObjectVM = new MapableObject();
+            MappableObject mapableObjectVM = new MappableObject();
 
             if (mapableObjects.Count == 1)
             {
-                MapableObject mapableObject = mapableObjects.ElementAt(0);
+                MappableObject mapableObject = mapableObjects.ElementAt(0);
 
-                foreach (MapableItem mapableItem in mapableObject.MapableItems)
+                foreach (MappableItem mapableItem in mapableObject.MapableItems)
                 {
 
                     //string test = "abcdefgh" + tmpLevelSeparator + "ABCDEFGH";
@@ -119,7 +119,7 @@ namespace TsprojFile.Scan
                     //    test2 = test.Substring(test.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal) + 1);
                     //}
 
-                    MapableItem item = new MapableItem();
+                    MappableItem item = new MappableItem();
                     item = mapableItem;
                     string varAprefix = item.VarAprefix;
                     varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal));
@@ -138,7 +138,7 @@ namespace TsprojFile.Scan
             {
                 TopologyStructViewModel actTopologyStruct = new TopologyStructViewModel() { Prefix = ValidatePlcItem.Name(boxViewModel.Name), Id = "", BoxOrderCode = boxViewModel.BoxOrderCode};
 
-                foreach (MapableObject mapableObject in mapableObjects)
+                foreach (MappableObject mapableObject in mapableObjects)
                 {
                     TopologyStructMemberViewModel member = new TopologyStructMemberViewModel();
                     if (ValidatePlcItem.Name(boxViewModel.Name).Equals(mapableObject.Name) && mapableObjects.IndexOf(mapableObject) == 0)
@@ -158,9 +158,9 @@ namespace TsprojFile.Scan
                         actTopologyStruct.SizeInBytes = actTopologyStruct.SizeInBytes + member.SizeInBytes;
                     }
 
-                    foreach (MapableItem mapableItem in mapableObject.MapableItems)
+                    foreach (MappableItem mapableItem in mapableObject.MapableItems)
                     {
-                        MapableItem item = new MapableItem();
+                        MappableItem item = new MappableItem();
                         item = mapableItem;
                         string varAprefix = item.VarAprefix;
                         varAprefix = varAprefix.Substring(0, varAprefix.LastIndexOf(tmpLevelSeparator, StringComparison.Ordinal));

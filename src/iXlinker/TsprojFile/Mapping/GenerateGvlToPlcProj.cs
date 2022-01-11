@@ -1,12 +1,12 @@
 ﻿using System;
 using System.IO;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void GenerateGvlToPlcProj(SolutionViewModel vs)
+        private void GenerateGvlToPlcProj(Solution vs)
         {
             string exportDir = vs.GvlExported.FolderPathInFileSystem;
             System.Console.WriteLine("Exporting GVL : {0} to the folder {1}", vs.GvlExported.Name, exportDir);

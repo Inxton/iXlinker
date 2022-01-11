@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 
-namespace ViewModels
+namespace iXlinkerDtos
 {
-    public class SolutionViewModel : BaseViewModel
+    public class Solution : NotifiableBase
     {
         private string devenvPath;
         public string DevenvPath
@@ -18,8 +18,8 @@ namespace ViewModels
             }
         }
 
-        private TsProjectViewModel tsProject;
-        public TsProjectViewModel TsProject
+        private TsProject tsProject;
+        public TsProject TsProject
         {
             get { return this.tsProject; }
             set
@@ -32,8 +32,8 @@ namespace ViewModels
             }
         }
 
-        private PlcProjectViewModel plcProject;
-        public PlcProjectViewModel PlcProject
+        private PlcProject plcProject;
+        public PlcProject PlcProject
         {
             get { return this.plcProject; }
             set
@@ -77,79 +77,79 @@ namespace ViewModels
             }
         }
 
-        private ProjectItemViewModel gvlExported;
-        public ProjectItemViewModel GvlExported
+        private ProjectItem gvlExported;
+        public ProjectItem GvlExported
         {
             get { return this.gvlExported; }
             set
             {
-                this.gvlExported = value ?? new ProjectItemViewModel();
+                this.gvlExported = value ?? new ProjectItem();
                 NotifyPropertyChanged(nameof(GvlExported));
             }
         }
 
-        private ProjectItemViewModel dutsIo;
-        public ProjectItemViewModel DutsIo
+        private ProjectItem dutsIo;
+        public ProjectItem DutsIo
         {
             get { return this.dutsIo; }
             set
             {
-                this.dutsIo = value ?? new ProjectItemViewModel();
+                this.dutsIo = value ?? new ProjectItem();
                 NotifyPropertyChanged(nameof(DutsIo));
             }
         }
 
-        private ProjectItemViewModel dutsIoPdoEntry;
-        public ProjectItemViewModel DutsIoPdoEntry
+        private ProjectItem dutsIoPdoEntry;
+        public ProjectItem DutsIoPdoEntry
         {
             get { return this.dutsIoPdoEntry; }
             set
             {
-                this.dutsIoPdoEntry = value ?? new ProjectItemViewModel();
+                this.dutsIoPdoEntry = value ?? new ProjectItem();
                 NotifyPropertyChanged(nameof(DutsIoPdoEntry));
             }
         }
 
-        private ProjectItemViewModel dutsIoPdo;
-        public ProjectItemViewModel DutsIoPdo
+        private ProjectItem dutsIoPdo;
+        public ProjectItem DutsIoPdo
         {
             get { return this.dutsIoPdo; }
             set
             {
-                this.dutsIoPdo = value ?? new ProjectItemViewModel();
+                this.dutsIoPdo = value ?? new ProjectItem();
                 NotifyPropertyChanged(nameof(DutsIoPdo));
             }
         }
 
-        private ProjectItemViewModel dutsIoBox;
-        public ProjectItemViewModel DutsIoBox
+        private ProjectItem dutsIoBox;
+        public ProjectItem DutsIoBox
         {
             get { return this.dutsIoBox; }
             set
             {
-                this.dutsIoBox = value ?? new ProjectItemViewModel();
+                this.dutsIoBox = value ?? new ProjectItem();
                 NotifyPropertyChanged(nameof(DutsIoBox));
             }
         }
 
-        private ProjectItemViewModel dutsIoDevice;
-        public ProjectItemViewModel DutsIoDevice
+        private ProjectItem dutsIoDevice;
+        public ProjectItem DutsIoDevice
         {
             get { return this.dutsIoDevice; }
             set
             {
-                this.dutsIoDevice = value ?? new ProjectItemViewModel();
+                this.dutsIoDevice = value ?? new ProjectItem();
                 NotifyPropertyChanged(nameof(DutsIoDevice));
             }
         }
 
-        private ProjectItemViewModel dutsIoTopology;
-        public ProjectItemViewModel DutsIoTopology
+        private ProjectItem dutsIoTopology;
+        public ProjectItem DutsIoTopology
         {
             get { return this.dutsIoTopology; }
             set
             {
-                this.dutsIoTopology = value ?? new ProjectItemViewModel();
+                this.dutsIoTopology = value ?? new ProjectItem();
                 NotifyPropertyChanged(nameof(DutsIoTopology));
             }
         }

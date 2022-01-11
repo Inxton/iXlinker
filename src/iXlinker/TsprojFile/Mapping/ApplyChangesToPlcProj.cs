@@ -1,13 +1,13 @@
 ﻿using System.IO;
 using TwincatXmlSchemas.TcPlcProj;
-using ViewModels;
+using iXlinkerDtos;
 using System.Xml.Serialization;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void ApplyChangesToPlcProj(SolutionViewModel vs , Project plcProj)
+        private void ApplyChangesToPlcProj(Solution vs , Project plcProj)
         {
             System.Console.WriteLine("Writing changes of the PLC project {0} into the file {1}!!!", vs.PlcProject.Name,vs.PlcProject.FileNameInFileSystem);
             Project plcProject = plcProj;

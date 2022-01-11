@@ -1,6 +1,6 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
-    public class ProfileViewModel : BaseViewModel 
+    public class Profile : NotifiableBase 
     {
         private int profileNo;
         public int ProfileNo

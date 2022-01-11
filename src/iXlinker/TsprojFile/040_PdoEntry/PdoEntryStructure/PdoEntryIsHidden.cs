@@ -1,4 +1,4 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using System.Collections.Generic;
 
 namespace TsprojFile.Scan

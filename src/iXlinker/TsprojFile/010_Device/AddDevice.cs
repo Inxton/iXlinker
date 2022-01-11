@@ -1,11 +1,11 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddDevice(SolutionViewModel vs,TcSmProjectProjectIODevice device)
+        private void AddDevice(Solution vs,TcSmProjectProjectIODevice device)
         {
             DeviceTypes device_type = (DeviceTypes)device.DevType;
 

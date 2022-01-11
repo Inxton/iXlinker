@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
 
-namespace ViewModels
+namespace iXlinkerDtos
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public class NotifiableBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

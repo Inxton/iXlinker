@@ -1,4 +1,4 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using TwincatXmlSchemas.TcPlcProj;
 using iXlinker.TsprojFile.Mapping;
 using System.Threading;
@@ -18,7 +18,7 @@ namespace TsprojFile.Scan
             //VS.CheckDotNetCore();
 
             //Get details like paths, platform etc.
-            SolutionViewModel vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath);
+            Solution vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath);
 
             //Search all devices and their boxes in the Twincat project.
             SearchDevices(vs);

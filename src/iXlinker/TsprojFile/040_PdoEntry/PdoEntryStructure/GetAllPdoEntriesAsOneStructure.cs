@@ -1,4 +1,4 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using System.Collections.ObjectModel;
 using Utils;
 using System.Linq;
@@ -9,7 +9,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private MapableObject GetAllPdoEntriesAsOneStructure(PdoViewModel pdoViewModel, ObservableCollection<PdoEntryViewModel> pdoEntries)
+        private MappableObject GetAllPdoEntriesAsOneStructure(PdoViewModel pdoViewModel, ObservableCollection<PdoEntryViewModel> pdoEntries)
         {
             string pdoViewModelName = pdoViewModel.Name;
             if (pdoViewModelName.Contains(ioSlotSeparator))
@@ -17,7 +17,7 @@ namespace TsprojFile.Scan
                 pdoViewModelName = pdoViewModelName.Substring(pdoViewModelName.LastIndexOf(ioSlotSeparator, StringComparison.Ordinal) + 1);
             }
             PdoStructViewModel actPdoStruct = new PdoStructViewModel() { Prefix = ValidatePlcItem.StructurePrefix(pdoViewModelName), Id = "", BoxOrderCode = pdoViewModel.BoxOrderCode };
-            MapableObject mapableObject = new MapableObject();
+            MappableObject mapableObject = new MappableObject();
             if (pdoEntries != null)
             {
                 foreach (PdoEntryViewModel pdoEntry in pdoEntries)
@@ -62,7 +62,7 @@ namespace TsprojFile.Scan
                     actPdoStruct.SizeInBytes = actPdoStruct.SizeInBytes + member.SizeInBytes;
 
                     string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
-                    MapableItem mapableItem = new MapableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB };
+                    MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB };
                     mapableObject.MapableItems.Add(mapableItem);
                 }
 

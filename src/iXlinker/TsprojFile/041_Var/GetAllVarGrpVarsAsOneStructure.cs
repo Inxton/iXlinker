@@ -1,4 +1,4 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using System.Collections.ObjectModel;
 using Utils;
 using System.Linq;
@@ -9,7 +9,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private MapableObject GetAllVarGrpVarsAsOneStructure(PdoViewModel pdoViewModel, ObservableCollection<PdoEntryViewModel> varGrpVars)
+        private MappableObject GetAllVarGrpVarsAsOneStructure(PdoViewModel pdoViewModel, ObservableCollection<PdoEntryViewModel> varGrpVars)
         {
             string pdoViewModelName = pdoViewModel.Name;
             if (pdoViewModelName.Contains(ioSlotSeparator))
@@ -18,7 +18,7 @@ namespace TsprojFile.Scan
             }
 
             PdoStructViewModel actVarGrpStruct = new PdoStructViewModel() { Prefix = ValidatePlcItem.StructurePrefix(pdoViewModel.Name), Id = "", BoxOrderCode = pdoViewModel.BoxOrderCode };
-            MapableObject mapableObject = new MapableObject();
+            MappableObject mapableObject = new MappableObject();
             foreach (PdoEntryViewModel _var in varGrpVars)
             {
                 PdoStructMemberViewModel member = new PdoStructMemberViewModel();
@@ -54,7 +54,7 @@ namespace TsprojFile.Scan
                 actVarGrpStruct.SizeInBytes = actVarGrpStruct.SizeInBytes + member.SizeInBytes;
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
-                MapableItem mapableItem = new MapableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = _var.VarA, VarB = _var.VarB };
+                MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = _var.VarA, VarB = _var.VarB };
                 mapableObject.MapableItems.Add(mapableItem);
             }
 

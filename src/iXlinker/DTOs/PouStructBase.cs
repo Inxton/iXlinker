@@ -1,6 +1,6 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
-    public class BaseStructViewModel : BaseViewModel
+    public class PouStructBase : NotifiableBase
     {
         private string name;
         public string Name

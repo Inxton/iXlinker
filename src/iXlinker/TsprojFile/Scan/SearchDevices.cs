@@ -1,14 +1,14 @@
 ﻿using System;
 using System.IO;
 using System.Xml.Serialization;
-using ViewModels;
+using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void SearchDevices(SolutionViewModel vs)
+        private void SearchDevices(Solution vs)
         {
 
             XmlSerializer serializer = new XmlSerializer(typeof(TcSmProject));

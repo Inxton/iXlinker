@@ -1,4 +1,4 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.ObjectModel;
 using Utils;
@@ -42,7 +42,7 @@ namespace TsprojFile.Scan
             }
 
             DeviceStructViewModel actDevStruct = new DeviceStructViewModel() { Prefix = "SyncUnits", Id = "" };
-            MapableObject mapableObject = new MapableObject();
+            MappableObject mapableObject = new MappableObject();
 
             foreach (PdoViewModel pdo in SyncUnits)
             {
@@ -67,7 +67,7 @@ namespace TsprojFile.Scan
                 foreach (PdoEntryViewModel pdoEntry in pdo.PdoEntriesStructured)
                 {
                     string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
-                    MapableItem mapableItem = new MapableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
+                    MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
                     mapableObject.MapableItems.Add(mapableItem);
                 }
             }

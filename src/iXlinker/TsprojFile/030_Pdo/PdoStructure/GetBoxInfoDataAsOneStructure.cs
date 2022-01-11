@@ -1,5 +1,5 @@
 ﻿using System;
-using ViewModels;
+using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.ObjectModel;
 using Utils;
@@ -67,7 +67,7 @@ namespace TsprojFile.Scan
                         int coeProfileNo = 0;
                         int profileNo = 0;
                         int addInfo = 0;
-                        ProfileViewModel profileViewModel = new ProfileViewModel() { CoeProfileNo = etherCATSlaveCoeProfile.ProfileNo ?? "", DisplayName = etherCATSlaveCoeProfile.DisplayName ?? "" };
+                        Profile profileViewModel = new Profile() { CoeProfileNo = etherCATSlaveCoeProfile.ProfileNo ?? "", DisplayName = etherCATSlaveCoeProfile.DisplayName ?? "" };
                         if (profileViewModel.CoeProfileNo != null && profileViewModel.CoeProfileNo != "")
                         {
                             try
@@ -144,7 +144,7 @@ namespace TsprojFile.Scan
 
 
             PdoStructViewModel actPdoStruct = new PdoStructViewModel() { Prefix = "InfoData", Id = "", BoxOrderCode = boxViewModel.BoxOrderCode };
-            MapableObject mapableObject = new MapableObject();
+            MappableObject mapableObject = new MappableObject();
             PdoViewModel InfoData = new PdoViewModel();
 
             foreach (PdoEntryViewModel pdoEntry in InfoDataEntriesStructured)
@@ -180,7 +180,7 @@ namespace TsprojFile.Scan
                 actPdoStruct.SizeInBytes = actPdoStruct.SizeInBytes + member.SizeInBytes;
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator,"");
-                MapableItem mapableItem = new MapableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
+                MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
                 mapableObject.MapableItems.Add(mapableItem);
             }
             foreach (PdoEntryViewModel pdoEntry in InfoDataEntriesUnstructured)

@@ -1,4 +1,4 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using System.Collections.ObjectModel;
 using Utils;
 using System.Linq;
@@ -61,7 +61,7 @@ namespace TsprojFile.Scan
             }
 
             PdoStructViewModel actPdoStruct = new PdoStructViewModel() { Prefix = "WcState", Id = "", BoxOrderCode = boxViewModel.BoxOrderCode };
-            MapableObject mapableObject = new MapableObject();
+            MappableObject mapableObject = new MappableObject();
 
             foreach (PdoEntryViewModel pdoEntry in WcStateEntriesStructured)
             {
@@ -96,7 +96,7 @@ namespace TsprojFile.Scan
                 actPdoStruct.SizeInBytes = actPdoStruct.SizeInBytes + member.SizeInBytes;
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
-                MapableItem mapableItem = new MapableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
+                MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
                 mapableObject.MapableItems.Add(mapableItem);
             }
 

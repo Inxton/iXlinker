@@ -1,5 +1,5 @@
 ﻿using System;
-using ViewModels;
+using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.ObjectModel;
 
@@ -93,7 +93,7 @@ namespace TsprojFile.Scan
                 if (pdoViewModel != null)
                 {
                     boxViewModel.Pdos.Add(pdoViewModel);
-                    boxViewModel.MapableObjects = new ObservableCollection<MapableObject>();
+                    boxViewModel.MapableObjects = new ObservableCollection<MappableObject>();
                     boxViewModel.MapableObjects.Add(pdoViewModel.MapableObject);
                     TotalNumberOfBoxes++;
                 }

@@ -3,7 +3,7 @@ using System.IO;
 using TsprojFile.Scan;
 using System.Collections.Generic;
 
-namespace ViewModels
+namespace iXlinkerDtos
 {
     public class MainViewModel : ScanTcProjFile
     {

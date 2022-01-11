@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace iXlinker.TsprojFile.Mapping
 {
     partial class VS
     {
-        public static void BuildXaeProjectUsingCli(SolutionViewModel vs)
+        public static void BuildXaeProjectUsingCli(Solution vs)
         {
             string startMessage = null;
             string endMessage = null;

@@ -22,7 +22,7 @@ namespace iXlinkerIntegrationTests
         {
             var actualDirectory = @$"{TestFolderPath}\actual\TwinCAT Project4";
 
-            if(Directory.Exists(actualDirectory))
+            if (Directory.Exists(actualDirectory))
             {
                 Directory.Delete(actualDirectory, true);
             }
@@ -37,7 +37,7 @@ namespace iXlinkerIntegrationTests
             var DoNotGenerateDisabled = true;
             var DevenvPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com";
 
-            var args = new string[] { TsProjFilePath, ActiveTargetPlatform, PlcProjFilePath, DoNotGenerateDisabled.ToString(), DevenvPath };
+            var args = new string[] { $"-t", $"{TsProjFilePath}", "-p", $"{ActiveTargetPlatform}", "-c",  $"{PlcProjFilePath}", "-g", $"{DoNotGenerateDisabled}", "-d", $"{DevenvPath}" };
 
             iXlinker.Program.Main(args);
 

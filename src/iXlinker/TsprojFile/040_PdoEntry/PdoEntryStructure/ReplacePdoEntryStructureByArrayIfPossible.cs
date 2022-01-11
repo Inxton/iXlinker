@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace TsprojFile.Scan
 {

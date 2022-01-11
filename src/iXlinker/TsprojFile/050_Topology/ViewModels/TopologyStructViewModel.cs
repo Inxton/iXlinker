@@ -1,8 +1,8 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
     using System.Collections.ObjectModel;
 
-    public class TopologyStructViewModel : BaseStructViewModel
+    public class TopologyStructViewModel : PouStructBase
     {
         private string extends;
         public string Extends

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace iXlinker.TsprojFile.Mapping
 {

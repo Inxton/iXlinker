@@ -1,9 +1,9 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
 
-    public class DeviceStructMemberViewModel : BaseViewModel
+    public class DeviceStructMemberViewModel : NotifiableBase
     {
         private List<string> attributes;
         public List<string> Attributes

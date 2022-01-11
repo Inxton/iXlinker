@@ -1,12 +1,12 @@
 ﻿using System;
-using ViewModels;
+using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddEthercatDevice(SolutionViewModel vs,TcSmProjectProjectIODevice device)
+        private void AddEthercatDevice(Solution vs,TcSmProjectProjectIODevice device)
         {
             DeviceViewModel deviceViewModel = FillEthercatDeviceData(device);
 

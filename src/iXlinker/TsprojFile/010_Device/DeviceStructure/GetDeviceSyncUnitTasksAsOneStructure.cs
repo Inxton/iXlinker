@@ -1,4 +1,4 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using System.Collections.ObjectModel;
 using Utils;
 using System.Linq;
@@ -13,7 +13,7 @@ namespace TsprojFile.Scan
         {
 
             DeviceStructViewModel actDevStruct = new DeviceStructViewModel() { Prefix = "SyncUnitTasks", Id = ""};
-            MapableObject mapableObject = new MapableObject();
+            MappableObject mapableObject = new MappableObject();
             PdoViewModel SyncUnitTask = new PdoViewModel(); ;
 
             foreach (PdoViewModel pdo in SyncUnitTaskEntries)
@@ -41,7 +41,7 @@ namespace TsprojFile.Scan
                 {
                     SyncUnitTask.PdoEntriesStructured.Add(pdoEntry);
                     string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
-                    MapableItem mapableItem = new MapableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB };
+                    MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB };
                     mapableObject.MapableItems.Add(mapableItem);
                 }
             }

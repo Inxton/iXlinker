@@ -1,4 +1,4 @@
-﻿using ViewModels;
+﻿using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.ObjectModel;
 
@@ -19,7 +19,7 @@ namespace TsprojFile.Scan
                 ObservableCollection<PdoEntryViewModel> varsStructured = GetAllVarGrpVarsStructured(varGrp, pdoViewModel, varsUnstructured);
                 pdoViewModel.PdoEntriesStructured = varsStructured;
 
-                MapableObject mapableObject = GetAllVarGrpVarsAsOneStructure(pdoViewModel, varsStructured);
+                MappableObject mapableObject = GetAllVarGrpVarsAsOneStructure(pdoViewModel, varsStructured);
                 pdoViewModel.MapableObject = mapableObject;
 
             }

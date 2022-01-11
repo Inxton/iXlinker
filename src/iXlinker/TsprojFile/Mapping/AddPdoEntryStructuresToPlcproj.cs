@@ -1,11 +1,11 @@
 ﻿using TwincatXmlSchemas.TcPlcProj;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddPdoEntryStructuresToPlcproj(SolutionViewModel vs , ref Project tcPlcProj)
+        private void AddPdoEntryStructuresToPlcproj(Solution vs , ref Project tcPlcProj)
         {
             ExportPdoEntryStructures(vs.DutsIoPdoEntry.FolderPathInFileSystem);
 

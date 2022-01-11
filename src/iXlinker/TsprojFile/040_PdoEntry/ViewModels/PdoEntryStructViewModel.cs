@@ -1,8 +1,8 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
     using System.Collections.ObjectModel;
 
-    public class PdoEntryStructViewModel : BaseStructViewModel
+    public class PdoEntryStructViewModel : PouStructBase
     {
         private string pdoEntryVarA;
         public string PdoEntryVarA

@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace ViewModels
+namespace iXlinkerDtos
 {
-    public class PdoStructViewModel : BaseStructViewModel
+    public class PdoStructViewModel : PouStructBase
     {
 
         private ObservableCollection<PdoStructMemberViewModel> structMembers;

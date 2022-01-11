@@ -1,19 +1,19 @@
 ﻿using System;
 using System.IO;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace iXlinker.TsprojFile.Mapping
 {
     partial class VS
     {
-        public static SolutionViewModel GetXaeProjectDetails(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath, bool doNotGenerateDisabled, string devenvPath)
+        public static Solution GetXaeProjectDetails(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath, bool doNotGenerateDisabled, string devenvPath)
         {
-            SolutionViewModel vs = new SolutionViewModel();
+            Solution vs = new Solution();
 
             //Tsproj details
             if (File.Exists(tsProjFilePath))
             {
-                vs.TsProject = new TsProjectViewModel();
+                vs.TsProject = new TsProject();
                 vs.TsProject.CompletePathInFileSystem = tsProjFilePath;
                 vs.TsProject.FolderPathInFileSystem = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\", StringComparison.Ordinal));
                 vs.TsProject.FileNameInFileSystem = tsProjFilePath.Substring(tsProjFilePath.LastIndexOf("\\", StringComparison.Ordinal) + 1);
@@ -49,7 +49,7 @@ namespace iXlinker.TsprojFile.Mapping
                 {
                     if(CheckIfXaeContainsPlcproj(tsProjFilePath, plcProjFilePath))
                     {
-                        vs.PlcProject = new PlcProjectViewModel();
+                        vs.PlcProject = new PlcProject();
                         vs.PlcProject.CompletePathInFileSystem = plcProjFilePath;
                         vs.PlcProject.FolderPathInFileSystem = plcProjFilePath.Substring(0, plcProjFilePath.LastIndexOf("\\", StringComparison.Ordinal));
                         vs.PlcProject.FileNameInFileSystem = plcProjFilePath.Substring(plcProjFilePath.LastIndexOf("\\", StringComparison.Ordinal) + 1);
@@ -57,7 +57,7 @@ namespace iXlinker.TsprojFile.Mapping
                         vs.PlcProject.Path = vs.PlcProject.FolderPathInFileSystem.Replace(vs.TsProject.FolderPathInFileSystem + "\\", "");
                         vs.PlcProject.CompleteName = vs.PlcProject.Path + "\\" + vs.PlcProject.FileNameInFileSystem;
 
-                        vs.GvlExported = new ProjectItemViewModel() { Name = "GVL_iXlinker" };
+                        vs.GvlExported = new ProjectItem() { Name = "GVL_iXlinker" };
                         vs.GvlExported.Path = "GVLs";
                         vs.GvlExported.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.GvlExported.Path;
                         vs.GvlExported.CompleteName = vs.PlcProject.CompleteName + "\\" + vs.GvlExported.Path + "\\" + vs.GvlExported.Name;
@@ -65,27 +65,27 @@ namespace iXlinker.TsprojFile.Mapping
                         vs.GvlExported.CompletePathInFileSystem = vs.GvlExported.FolderPathInFileSystem + "\\" + vs.GvlExported.FileNameInFileSystem;
                         TcModel.NameOfTheExportedGVL = vs.GvlExported.Name;
 
-                        vs.DutsIo = new ProjectItemViewModel() { Name = "DUTs_IO_folder" };
+                        vs.DutsIo = new ProjectItem() { Name = "DUTs_IO_folder" };
                         vs.DutsIo.Path = "DUTs\\IO";
                         vs.DutsIo.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIo.Path;
 
-                        vs.DutsIoPdoEntry = new ProjectItemViewModel() { Name = "DUTs_IO_PdoEntry_folder" };
+                        vs.DutsIoPdoEntry = new ProjectItem() { Name = "DUTs_IO_PdoEntry_folder" };
                         vs.DutsIoPdoEntry.Path = vs.DutsIo.Path + "\\PdoEntries";
                         vs.DutsIoPdoEntry.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoPdoEntry.Path;
 
-                        vs.DutsIoPdo = new ProjectItemViewModel() { Name = "DUTs_IO_Pdo_folder" };
+                        vs.DutsIoPdo = new ProjectItem() { Name = "DUTs_IO_Pdo_folder" };
                         vs.DutsIoPdo.Path = vs.DutsIo.Path + "\\PDOs";
                         vs.DutsIoPdo.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoPdo.Path;
 
-                        vs.DutsIoBox = new ProjectItemViewModel() { Name = "DUTs_IO_Box_folder" };
+                        vs.DutsIoBox = new ProjectItem() { Name = "DUTs_IO_Box_folder" };
                         vs.DutsIoBox.Path = vs.DutsIo.Path + "\\Boxes";
                         vs.DutsIoBox.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoBox.Path;
 
-                        vs.DutsIoDevice = new ProjectItemViewModel() { Name = "DUTs_IO_Device_folder" };
+                        vs.DutsIoDevice = new ProjectItem() { Name = "DUTs_IO_Device_folder" };
                         vs.DutsIoDevice.Path = vs.DutsIo.Path + "\\Devices";
                         vs.DutsIoDevice.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoDevice.Path;
 
-                        vs.DutsIoTopology = new ProjectItemViewModel() { Name = "DUTs_IO_Topology_folder" };
+                        vs.DutsIoTopology = new ProjectItem() { Name = "DUTs_IO_Topology_folder" };
                         vs.DutsIoTopology.Path = vs.DutsIo.Path + "\\Topology";
                         vs.DutsIoTopology.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoTopology.Path;
                     }

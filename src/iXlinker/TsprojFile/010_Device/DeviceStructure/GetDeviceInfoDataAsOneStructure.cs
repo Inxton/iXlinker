@@ -1,5 +1,5 @@
 ﻿using System;
-using ViewModels;
+using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.ObjectModel;
 using Utils;
@@ -88,7 +88,7 @@ namespace TsprojFile.Scan
             }
 
             PdoStructViewModel actPdoStruct = new PdoStructViewModel() { Prefix = "InfoData", Id = "", BoxOrderCode = deviceViewModel.Type.ToString()};
-            MapableObject mapableObject = new MapableObject();
+            MappableObject mapableObject = new MappableObject();
 
             foreach (PdoEntryViewModel pdoEntry in InfoDataEntries)
             {
@@ -121,7 +121,7 @@ namespace TsprojFile.Scan
                 actPdoStruct.SizeInBytes = actPdoStruct.SizeInBytes + member.SizeInBytes;
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
-                MapableItem mapableItem = new MapableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
+                MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
                 mapableObject.MapableItems.Add(mapableItem);
             }
             PdoViewModel InfoData = new PdoViewModel(); ;

@@ -1,11 +1,11 @@
 ﻿using TwincatXmlSchemas.TcPlcProj;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddGvlToPlcProj(SolutionViewModel vs, ref Project plcProj)
+        private void AddGvlToPlcProj(Solution vs, ref Project plcProj)
         {
             GenerateGvlToPlcProj(vs);
             System.Console.WriteLine("Adding GVL into the PLC project!!!");

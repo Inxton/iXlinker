@@ -9,65 +9,45 @@ namespace Utils
             switch (type)
             {
                 case "BIT":
-                    return 1;
-                    break;
+                    return 1;              
                 case "BOOL":
-                    return 8;
-                    break;
+                    return 8;                    
                 case "BYTE":
-                    return 8;
-                    break;
+                    return 8;                    
                 case "SINT":
-                    return 8;
-                    break;
+                    return 8;                    
                 case "USINT":
-                    return 8;
-                    break;
+                    return 8;                    
                 case "WORD":
-                    return 16;
-                    break;
+                    return 16;                    
                 case "INT":
-                    return 16;
-                    break;
+                    return 16;                    
                 case "UINT":
-                    return 16;
-                    break;
+                    return 16;                    
                 case "DWORD":
-                    return 32;
-                    break;
+                    return 32;                    
                 case "DINT":
-                    return 32;
-                    break;
+                    return 32;                    
                 case "UDINT":
-                    return 32;
-                    break;
+                    return 32;                    
                 case "REAL":
-                    return 32;
-                    break;
+                    return 32;                    
                 case "LWORD":
-                    return 64;
-                    break;
+                    return 64;                    
                 case "LINT":
-                    return 64;
-                    break;
+                    return 64;                    
                 case "ULINT":
-                    return 64;
-                    break;
+                    return 64;                    
                 case "LREAL":
-                    return 64;
-                    break;
+                    return 64;                    
                 case "AMSNETID":
-                    return 48;
-                    break;
+                    return 48;                    
                 case "AMSADDR":
-                    return 64;
-                    break;
+                    return 64;                    
                 case "OTCID":
-                    return 32;
-                    break;
+                    return 32;                    
                 default:
-                    return 0;
-                    break;
+                    return 0;                    
 
             }
         }

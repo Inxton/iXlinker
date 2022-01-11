@@ -1,6 +1,6 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
-    public class TaskViewModel : BaseViewModel
+    public class TaskViewModel : NotifiableBase
     {
 
         private string name;

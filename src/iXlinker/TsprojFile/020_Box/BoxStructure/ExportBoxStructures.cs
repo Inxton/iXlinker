@@ -1,7 +1,7 @@
 ﻿using PlcprojFile;
 using System;
 using System.IO;
-using ViewModels;
+using iXlinkerDtos;
 
 namespace TsprojFile.Scan
 {

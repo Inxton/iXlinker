@@ -1,9 +1,9 @@
-﻿namespace ViewModels
+﻿namespace iXlinkerDtos
 {
     using System;
     using System.Collections.ObjectModel;
 
-    public class VisualStudioInstalationViewModel : BaseStructViewModel
+    public class VisualStudioInstalationViewModel : PouStructBase
     {
 
         private Version version;

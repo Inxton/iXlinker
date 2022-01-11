@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace ViewModels
+namespace iXlinkerDtos
 {
-    public class SyncUnitViewModel : BaseViewModel
+    public class SyncUnitViewModel : NotifiableBase
     {
 
         private string name;

@@ -1,15 +1,15 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace ViewModels
+namespace iXlinkerDtos
 {
-    public class TsProjectViewModel : ProjectItemViewModel
+    public class TsProject : ProjectItem
     {
-        private ObservableCollection<PlcProjectViewModel> plcProjects;
-        public ObservableCollection<PlcProjectViewModel> PlcProjects
+        private ObservableCollection<PlcProject> plcProjects;
+        public ObservableCollection<PlcProject> PlcProjects
         {
             get
             {
-                return this.plcProjects ?? (this.plcProjects = new ObservableCollection<PlcProjectViewModel>());
+                return this.plcProjects ?? (this.plcProjects = new ObservableCollection<PlcProject>());
             }
             set
             {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Xml.Serialization;
-using ViewModels;
+using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.Generic;
 using PlcprojFile;
@@ -10,7 +10,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void GenerateMappingsToTsProj(SolutionViewModel vs)
+        private void GenerateMappingsToTsProj(Solution vs)
         {
             Console.WriteLine("Generating mappings into the project file {0}!!!", vs.TsProject.CompletePathInFileSystem);
 
@@ -29,7 +29,7 @@ namespace TsprojFile.Scan
 
             foreach (DeviceViewModel deviceViewModel in Devices)
             {
-                foreach (MapableItem mapableItem in deviceViewModel.MapableObjectGrouped.MapableItems)
+                foreach (MappableItem mapableItem in deviceViewModel.MapableObjectGrouped.MapableItems)
                 {
                     string ownerBname = mapableItem.OwnerBname.Replace(tmpLevelSeparator,ioLevelSeparator);
                     if (!ownerBname.Equals(prevOwnerBname))

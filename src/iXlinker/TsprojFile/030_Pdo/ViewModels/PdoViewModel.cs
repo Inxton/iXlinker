@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace ViewModels
+namespace iXlinkerDtos
 {
-    public class PdoViewModel : BaseViewModel
+    public class PdoViewModel : NotifiableBase
     {
         private string name;
         public string Name
@@ -213,12 +213,12 @@ namespace ViewModels
             }
         }
 
-        private MapableObject mapableObject;
-        public MapableObject MapableObject
+        private MappableObject mapableObject;
+        public MappableObject MapableObject
         {
             get
             {
-                return this.mapableObject ?? (this.mapableObject = new MapableObject());
+                return this.mapableObject ?? (this.mapableObject = new MappableObject());
             }
             set
             {
