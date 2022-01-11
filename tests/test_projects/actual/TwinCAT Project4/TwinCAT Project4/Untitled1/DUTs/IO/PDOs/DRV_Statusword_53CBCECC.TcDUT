@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DRV_Statusword_53CBCECC" Id="{b8eaa97f-bd78-4a1d-85cf-9be29526a0da}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ7211-0010-0026"}
+{attribute addProperty Id "StatuswordAT %I*UINT162"}
+{attribute addProperty CRC "1405865676"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DRV_Statusword_53CBCECC :
+STRUCT
+	{attribute addProperty Name "Statusword"}
+	Statusword AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

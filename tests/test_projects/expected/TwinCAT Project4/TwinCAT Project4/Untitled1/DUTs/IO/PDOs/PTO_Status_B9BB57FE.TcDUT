@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PTO_Status_B9BB57FE" Id="{a0cb011a-304e-44a3-a167-2e9efb21f216}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ2521-0224-0016"}
+{attribute addProperty Id "StatusAT %I*Status_30784993162"}
+{attribute addProperty CRC "3116062718"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE PTO_Status_B9BB57FE :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_30784993;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

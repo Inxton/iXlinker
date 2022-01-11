@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="STM_Status_CB86BB9A" Id="{15939d51-7cab-4d58-8cb5-881571ca801f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ7037-0000-0020"}
+{attribute addProperty Id "StatusAT %I*Status_4F9ADA1B162"}
+{attribute addProperty CRC "3414604698"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE STM_Status_CB86BB9A :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_4F9ADA1B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

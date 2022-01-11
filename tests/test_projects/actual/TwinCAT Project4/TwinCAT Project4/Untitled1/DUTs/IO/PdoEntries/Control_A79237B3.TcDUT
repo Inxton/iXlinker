@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_A79237B3" Id="{c6eae359-0218-4f19-ae60-a1de528139e5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ2522-0000-0022"}
+{attribute addProperty Id "Set_counterBIT10.1253ReservedBIT10.12516"}
+{attribute addProperty CRC "2811377587"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Control_A79237B3 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BOOL;
+	{attribute addProperty Name "Set_counter"}
+	Set_counter : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_4 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_5 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_6 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_7 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_8 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_9 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_10 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_11 : BOOL;
+	{attribute addProperty Name "Reserved"}
+	Reserved : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

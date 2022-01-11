@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_1C57BC2B" Id="{c18ded65-7cfc-4d02-ae34-feb3dc551c37}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ7342-0000-0019"}
+{attribute addProperty Id "Ready_to_enableBIT10.1251ReadyBIT10.1252WarningBIT10.1253ErrorBIT10.1254Moving_positiveBIT10.1255Moving_negativeBIT10.1256Torque_reducedBIT10.1257Digital_input_1BIT10.12512Digital_input_2BIT10.12513Sync_errorBIT10.12532TxPDO_ToggleBIT10.1259"}
+{attribute addProperty CRC "475511851"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_1C57BC2B :
+STRUCT
+	{attribute addProperty Name "Ready_to_enable"}
+	Ready_to_enable : BOOL;
+	{attribute addProperty Name "Ready"}
+	Ready : BOOL;
+	{attribute addProperty Name "Warning"}
+	Warning : BOOL;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "Moving_positive"}
+	Moving_positive : BOOL;
+	{attribute addProperty Name "Moving_negative"}
+	Moving_negative : BOOL;
+	{attribute addProperty Name "Torque_reduced"}
+	Torque_reduced : BOOL;
+	{attribute 'hide'}
+	reserve_1 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BOOL;
+	{attribute addProperty Name "Digital_input_1"}
+	Digital_input_1 : BOOL;
+	{attribute addProperty Name "Digital_input_2"}
+	Digital_input_2 : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute 'hide'}
+	reserve_3 : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

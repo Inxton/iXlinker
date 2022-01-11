@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EK1828_A854BE6D" Id="{6658f989-9205-4938-abb2-e2d1f3d50fe3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1828-0010-0016"}
+{attribute addProperty Id "ChannelAT %Q*ARRAY[0..7] OF Channel_7F374EB06480WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "1482585628"}
+{attribute addProperty SizeInBites "81"}
+{attribute addProperty SizeInBytes "10.125"}
+TYPE EK1828_A854BE6D :
+STRUCT
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..7] OF Channel_7F374EB0;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_28A86775;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

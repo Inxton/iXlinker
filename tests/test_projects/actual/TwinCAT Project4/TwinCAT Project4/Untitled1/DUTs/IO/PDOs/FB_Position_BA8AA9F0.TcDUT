@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FB_Position_BA8AA9F0" Id="{da0e19a8-4815-4b4b-9393-94087b61f813}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ7211-0010-0026"}
+{attribute addProperty Id "PositionAT %I*UDINT324"}
+{attribute addProperty CRC "3129649648"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE FB_Position_BA8AA9F0 :
+STRUCT
+	{attribute addProperty Name "Position"}
+	Position AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

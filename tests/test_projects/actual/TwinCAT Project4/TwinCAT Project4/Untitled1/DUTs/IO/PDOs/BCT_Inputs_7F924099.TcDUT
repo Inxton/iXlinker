@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="BCT_Inputs_7F924099" Id="{afa95bc2-8b08-47b7-8057-1ea199f4cd17}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ9576-0000-0018"}
+{attribute addProperty Id "Terminal_OvertemperatureAT %I*BOOL811I2T_errorAT %I*BOOL812I2T_warningAT %I*BOOL813OvervoltageAT %I*BOOL814UndervoltageAT %I*BOOL815Chopper_onAT %I*BOOL816Input_cycle_counterAT %I*BYTE8115DC_link_voltageAT %I*UDINT32417Resistor_currentAT %I*DINT32419Duty_cylceAT %I*USINT8120"}
+{attribute addProperty CRC "2140291225"}
+{attribute addProperty SizeInBites "128"}
+{attribute addProperty SizeInBytes "16"}
+TYPE BCT_Inputs_7F924099 :
+STRUCT
+	{attribute addProperty Name "Terminal_Overtemperature"}
+	Terminal_Overtemperature AT %I* : BOOL;
+	{attribute addProperty Name "I2T_error"}
+	I2T_error AT %I* : BOOL;
+	{attribute addProperty Name "I2T_warning"}
+	I2T_warning AT %I* : BOOL;
+	{attribute addProperty Name "Overvoltage"}
+	Overvoltage AT %I* : BOOL;
+	{attribute addProperty Name "Undervoltage"}
+	Undervoltage AT %I* : BOOL;
+	{attribute addProperty Name "Chopper_on"}
+	Chopper_on AT %I* : BOOL;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter AT %I* : BYTE;
+	{attribute addProperty Name "DC_link_voltage"}
+	DC_link_voltage AT %I* : UDINT;
+	{attribute addProperty Name "Resistor_current"}
+	Resistor_current AT %I* : DINT;
+	{attribute addProperty Name "Duty_cylce"}
+	Duty_cylce AT %I* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Module_2_FSOUT_9F3624CE" Id="{83dec740-775c-4d1a-984e-88e1cac43684}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1960-0000-0021"}
+{attribute addProperty Id "OutputsOutputs_5BA3BA9A19224"}
+{attribute addProperty CRC "2671125710"}
+{attribute addProperty SizeInBites "192"}
+{attribute addProperty SizeInBytes "24"}
+TYPE Module_2_FSOUT_9F3624CE :
+STRUCT
+	{attribute addProperty Name "Outputs"}
+	Outputs  : Outputs_5BA3BA9A;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

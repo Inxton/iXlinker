@@ -1,0 +1,940 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff808080808080b4b4b4b4b4b4b4b4b4808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff808080b4b4b4b4b4b4808080b4b4b4808080b4b4b4b4b4b4808080ff00ffff00ffff00ffff00ffff00ff808080808080b4b4b4b4b4b4808080dcdcdcdcdcdcdcdcdc808080b4b4b4b4b4b4808080808080ff00ffff00ff808080b4b4b4b4b4b4808080808080dcdcdcdcdcdcdcdcdcdcdcdcdcdcdc808080808080b4b4b4b4b4b4808080808080b4b4b4b4b4b4808080fafafaf0f0f0f0f0f0e6e6e6e6e6e6e1e1e1dcdcdcdcdcdcdcdcdc808080b4b4b4808080808080b4b4b4808080fffffffafafafafafaf0f0f0f0f0f0e6e6e6e6e6e6e1e1e1dcdcdcdcdcdcdcdcdc808080808080808080808080fffffffffffffffffffafafafafafaf0f0f0f0f0f0e6e6e6e6e6e6e1e1e1e1e1e1dcdcdcdcdcdc808080ff00ff808080808080fffffffffffffffffffafafafafafaf0f0f0f0f0f0e6e6e6e6e6e6dcdcdc808080808080ff00ffff00ffff00ffff00ff808080808080fffffffffffffffffffafafaf0f0f0f0f0f0e1e1e1808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff808080808080fffffffafafaf0f0f0808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff808080878787808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff APS4xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff APS4xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+			<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0001(APS4322-7000-0017)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x77c43c29" RevisionNo="#x00111b58" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="APS4322-7000 Drive" Desc="APS4322-7000" PortABoxInfo="#x02000003">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001196002400010003000000000000009600001124010000</SyncMan>
+					<SyncMan>001370002000010004000000000000007000001320010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0007000024f4000030750000000000000000ffff000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000024f400003075000000000000ffff00070000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="APS Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="StatusWord" Index="#x6000" Sub="#x11">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current D 0X0" Index="#x6001" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 0X1" Index="#x6001" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 0X2" Index="#x6001" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 0Y0" Index="#x6001" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 0Y1" Index="#x6001" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 0Y2" Index="#x6001" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1X0" Index="#x6001" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1X1" Index="#x6001" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1X2" Index="#x6001" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1Y0" Index="#x6001" Sub="#x0b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1Y1" Index="#x6001" Sub="#x0c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1Y2" Index="#x6001" Sub="#x0d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2X0" Index="#x6001" Sub="#x0e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2X1" Index="#x6001" Sub="#x0f">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2X2" Index="#x6001" Sub="#x10">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2Y0" Index="#x6001" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2Y1" Index="#x6001" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2Y2" Index="#x6001" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3X0" Index="#x6001" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3X1" Index="#x6001" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3X2" Index="#x6001" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3Y0" Index="#x6001" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3Y1" Index="#x6001" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3Y2" Index="#x6001" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0X0" Index="#x6001" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0X1" Index="#x6001" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0X2" Index="#x6001" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0Y0" Index="#x6001" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0Y1" Index="#x6001" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0Y2" Index="#x6001" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1X0" Index="#x6001" Sub="#x20">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1X1" Index="#x6001" Sub="#x21">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1X2" Index="#x6001" Sub="#x22">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1Y0" Index="#x6001" Sub="#x23">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1Y1" Index="#x6001" Sub="#x24">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1Y2" Index="#x6001" Sub="#x25">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2X0" Index="#x6001" Sub="#x26">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2X1" Index="#x6001" Sub="#x27">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2X2" Index="#x6001" Sub="#x28">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2Y0" Index="#x6001" Sub="#x29">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2Y1" Index="#x6001" Sub="#x2a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2Y2" Index="#x6001" Sub="#x2b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3X0" Index="#x6001" Sub="#x2c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3X1" Index="#x6001" Sub="#x2d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3X2" Index="#x6001" Sub="#x2e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3Y0" Index="#x6001" Sub="#x2f">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3Y1" Index="#x6001" Sub="#x30">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3Y2" Index="#x6001" Sub="#x31">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="APS Infodata" Index="#x1a01" Flags="#x0010">
+						<Entry Name="FpgaInfoData1" Index="#x6002" Sub="#x10">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="FpgaInfoData2" Index="#x6002" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="FpgaInfoData3" Index="#x6002" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="FpgaInfoData4" Index="#x6002" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="FpgaInfoData5" Index="#x6002" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="FpgaInfoData6" Index="#x6002" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="McuInfoData1" Index="#x6002" Sub="#x16">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="McuInfoData2" Index="#x6002" Sub="#x17">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="McuInfoData3" Index="#x6002" Sub="#x18">
+							<Type>DINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="APS Diagdata" Index="#x1a02" Flags="#x0010" SyncMan="3">
+						<Entry Name="DC Link Voltage" Index="#x6000" Sub="#x12">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Power supply current" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="APS Comm Inputs" Index="#x1a03" Flags="#x0010" SyncMan="3">
+						<Entry Name="CommStatusWord" Index="#x6003" Sub="#x11">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Data 1" Index="#x6003" Sub="#x12">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Data 2" Index="#x6003" Sub="#x13">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Data 3" Index="#x6003" Sub="#x14">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Data 4" Index="#x6003" Sub="#x15">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="APS Outputs" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
+						<Entry Name="ControlWord" Index="#x7000" Sub="#x11">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current D 0X0" Index="#x7001" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 0X1" Index="#x7001" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 0X2" Index="#x7001" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 0Y0" Index="#x7001" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 0Y1" Index="#x7001" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 0Y2" Index="#x7001" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1X0" Index="#x7001" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1X1" Index="#x7001" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1X2" Index="#x7001" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1Y0" Index="#x7001" Sub="#x0b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1Y1" Index="#x7001" Sub="#x0c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 1Y2" Index="#x7001" Sub="#x0d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2X0" Index="#x7001" Sub="#x0e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2X1" Index="#x7001" Sub="#x0f">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2X2" Index="#x7001" Sub="#x10">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2Y0" Index="#x7001" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2Y1" Index="#x7001" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 2Y2" Index="#x7001" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3X0" Index="#x7001" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3X1" Index="#x7001" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3X2" Index="#x7001" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3Y0" Index="#x7001" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3Y1" Index="#x7001" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current D 3Y2" Index="#x7001" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0X0" Index="#x7001" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0X1" Index="#x7001" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0X2" Index="#x7001" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0Y0" Index="#x7001" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0Y1" Index="#x7001" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 0Y2" Index="#x7001" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1X0" Index="#x7001" Sub="#x20">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1X1" Index="#x7001" Sub="#x21">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1X2" Index="#x7001" Sub="#x22">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1Y0" Index="#x7001" Sub="#x23">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1Y1" Index="#x7001" Sub="#x24">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 1Y2" Index="#x7001" Sub="#x25">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2X0" Index="#x7001" Sub="#x26">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2X1" Index="#x7001" Sub="#x27">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2X2" Index="#x7001" Sub="#x28">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2Y0" Index="#x7001" Sub="#x29">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2Y1" Index="#x7001" Sub="#x2a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 2Y2" Index="#x7001" Sub="#x2b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3X0" Index="#x7001" Sub="#x2c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3X1" Index="#x7001" Sub="#x2d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3X2" Index="#x7001" Sub="#x2e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3Y0" Index="#x7001" Sub="#x2f">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3Y1" Index="#x7001" Sub="#x30">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current Q 3Y2" Index="#x7001" Sub="#x31">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="PhiE 0X0" Index="#x7001" Sub="#x32">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 0X1" Index="#x7001" Sub="#x33">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 0X2" Index="#x7001" Sub="#x34">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 0Y0" Index="#x7001" Sub="#x35">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 0Y1" Index="#x7001" Sub="#x36">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 0Y2" Index="#x7001" Sub="#x37">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 1X0" Index="#x7001" Sub="#x38">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 1X1" Index="#x7001" Sub="#x39">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 1X2" Index="#x7001" Sub="#x3a">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 1Y0" Index="#x7001" Sub="#x3b">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 1Y1" Index="#x7001" Sub="#x3c">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 1Y2" Index="#x7001" Sub="#x3d">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 2X0" Index="#x7001" Sub="#x3e">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 2X1" Index="#x7001" Sub="#x3f">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 2X2" Index="#x7001" Sub="#x40">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 2Y0" Index="#x7001" Sub="#x41">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 2Y1" Index="#x7001" Sub="#x42">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 2Y2" Index="#x7001" Sub="#x43">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 3X0" Index="#x7001" Sub="#x44">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 3X1" Index="#x7001" Sub="#x45">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 3X2" Index="#x7001" Sub="#x46">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 3Y0" Index="#x7001" Sub="#x47">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 3Y1" Index="#x7001" Sub="#x48">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="PhiE 3Y2" Index="#x7001" Sub="#x49">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="APS Comm Outputs" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+						<Entry Name="CommControlWord" Index="#x7002" Sub="#x11">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Data 1" Index="#x7002" Sub="#x12">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47256457"/>
+				</EtherCAT>
+			</Box>
+		</Box>
+		<Box Id="5" BoxType="9099">
+			<Name>A_0002(APS4322-5000-0017)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d06" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x77c43c29" RevisionNo="#x00111388" InfoDataDcTimes="true" PortPhys="3" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="APS4322-5000 Feedback" Desc="APS4322-5000" PortABoxInfo="#x02000002">
+				<SyncMan>801034010000010004000000000000000100801000010000</SyncMan>
+				<Fmmu>0000000000000000801000010100000002000000000000000000000000000000</Fmmu>
+				<DcData>0007000000000000c83efeff48e801000100ffff000100000000000000000000</DcData>
+				<DcMode>444353594e433235307500000000000044432d53796e6368726f6e6f757320323530207573000000000000000000000000000000c83efeff48e80100ffff00070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+				<DcMode>444353594e433530307500000000000044432d53796e6368726f6e6f757320353030207573000000000000000000000000000000c83efeffd8b80500ffff00070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+				<DcMode>444353594e43316d000000000000000044432d53796e6368726f6e6f75732031206d730000000000000000000000000000000000c83efefff8590d00ffff00070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+				<Pdo Name="FB Inputs" Index="#x1a00" Flags="#x0011" SyncMan="0">
+					<Entry Name="Status" Index="#x6000" Sub="#x01">
+						<Type>LWORD</Type>
+					</Entry>
+					<Entry Name="A0 X-Field" Index="#x6001" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A0 Y-Field" Index="#x6001" Sub="#x02">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A0 Z-Field" Index="#x6001" Sub="#x03">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A2 X-Field" Index="#x6001" Sub="#x04">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A2 Y-Field" Index="#x6001" Sub="#x05">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A2 Z-Field" Index="#x6001" Sub="#x06">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A4 X-Field" Index="#x6001" Sub="#x07">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A4 Y-Field" Index="#x6001" Sub="#x08">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A4 Z-Field" Index="#x6001" Sub="#x09">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A6 X-Field" Index="#x6001" Sub="#x0a">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A6 Y-Field" Index="#x6001" Sub="#x0b">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A6 Z-Field" Index="#x6001" Sub="#x0c">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A8 X-Field" Index="#x6001" Sub="#x0d">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A8 Y-Field" Index="#x6001" Sub="#x0e">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="A8 Z-Field" Index="#x6001" Sub="#x0f">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B1 X-Field" Index="#x6002" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B1 Y-Field" Index="#x6002" Sub="#x02">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B1 Z-Field" Index="#x6002" Sub="#x03">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B3 X-Field" Index="#x6002" Sub="#x04">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B3 Y-Field" Index="#x6002" Sub="#x05">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B3 Z-Field" Index="#x6002" Sub="#x06">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B5 X-Field" Index="#x6002" Sub="#x07">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B5 Y-Field" Index="#x6002" Sub="#x08">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B5 Z-Field" Index="#x6002" Sub="#x09">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B7 X-Field" Index="#x6002" Sub="#x0a">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B7 Y-Field" Index="#x6002" Sub="#x0b">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B7 Z-Field" Index="#x6002" Sub="#x0c">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B9 X-Field" Index="#x6002" Sub="#x0d">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B9 Y-Field" Index="#x6002" Sub="#x0e">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="B9 Z-Field" Index="#x6002" Sub="#x0f">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C0 X-Field" Index="#x6003" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C0 Y-Field" Index="#x6003" Sub="#x02">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C0 Z-Field" Index="#x6003" Sub="#x03">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C2 X-Field" Index="#x6003" Sub="#x04">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C2 Y-Field" Index="#x6003" Sub="#x05">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C2 Z-Field" Index="#x6003" Sub="#x06">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C4 X-Field" Index="#x6003" Sub="#x07">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C4 Y-Field" Index="#x6003" Sub="#x08">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C4 Z-Field" Index="#x6003" Sub="#x09">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C6 X-Field" Index="#x6003" Sub="#x0a">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C6 Y-Field" Index="#x6003" Sub="#x0b">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C6 Z-Field" Index="#x6003" Sub="#x0c">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C8 X-Field" Index="#x6003" Sub="#x0d">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C8 Y-Field" Index="#x6003" Sub="#x0e">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="C8 Z-Field" Index="#x6003" Sub="#x0f">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D1 X-Field" Index="#x6004" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D1 Y-Field" Index="#x6004" Sub="#x02">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D1 Z-Field" Index="#x6004" Sub="#x03">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D3 X-Field" Index="#x6004" Sub="#x04">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D3 Y-Field" Index="#x6004" Sub="#x05">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D3 Z-Field" Index="#x6004" Sub="#x06">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D5 X-Field" Index="#x6004" Sub="#x07">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D5 Y-Field" Index="#x6004" Sub="#x08">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D5 Z-Field" Index="#x6004" Sub="#x09">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D7 X-Field" Index="#x6004" Sub="#x0a">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D7 Y-Field" Index="#x6004" Sub="#x0b">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D7 Z-Field" Index="#x6004" Sub="#x0c">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D9 X-Field" Index="#x6004" Sub="#x0d">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D9 Y-Field" Index="#x6004" Sub="#x0e">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="D9 Z-Field" Index="#x6004" Sub="#x0f">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E0 X-Field" Index="#x6005" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E0 Y-Field" Index="#x6005" Sub="#x02">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E0 Z-Field" Index="#x6005" Sub="#x03">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E2 X-Field" Index="#x6005" Sub="#x04">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E2 Y-Field" Index="#x6005" Sub="#x05">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E2 Z-Field" Index="#x6005" Sub="#x06">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E4 X-Field" Index="#x6005" Sub="#x07">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E4 Y-Field" Index="#x6005" Sub="#x08">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E4 Z-Field" Index="#x6005" Sub="#x09">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E6 X-Field" Index="#x6005" Sub="#x0a">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E6 Y-Field" Index="#x6005" Sub="#x0b">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E6 Z-Field" Index="#x6005" Sub="#x0c">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E8 X-Field" Index="#x6005" Sub="#x0d">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E8 Y-Field" Index="#x6005" Sub="#x0e">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="E8 Z-Field" Index="#x6005" Sub="#x0f">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F1 X-Field" Index="#x6006" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F1 Y-Field" Index="#x6006" Sub="#x02">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F1 Z-Field" Index="#x6006" Sub="#x03">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F3 X-Field" Index="#x6006" Sub="#x04">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F3 Y-Field" Index="#x6006" Sub="#x05">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F3 Z-Field" Index="#x6006" Sub="#x06">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F5 X-Field" Index="#x6006" Sub="#x07">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F5 Y-Field" Index="#x6006" Sub="#x08">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F5 Z-Field" Index="#x6006" Sub="#x09">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F7 X-Field" Index="#x6006" Sub="#x0a">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F7 Y-Field" Index="#x6006" Sub="#x0b">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F7 Z-Field" Index="#x6006" Sub="#x0c">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F9 X-Field" Index="#x6006" Sub="#x0d">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F9 Y-Field" Index="#x6006" Sub="#x0e">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="F9 Z-Field" Index="#x6006" Sub="#x0f">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G0 X-Field" Index="#x6007" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G0 Y-Field" Index="#x6007" Sub="#x02">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G0 Z-Field" Index="#x6007" Sub="#x03">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G2 X-Field" Index="#x6007" Sub="#x04">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G2 Y-Field" Index="#x6007" Sub="#x05">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G2 Z-Field" Index="#x6007" Sub="#x06">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G4 X-Field" Index="#x6007" Sub="#x07">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G4 Y-Field" Index="#x6007" Sub="#x08">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G4 Z-Field" Index="#x6007" Sub="#x09">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G6 X-Field" Index="#x6007" Sub="#x0a">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G6 Y-Field" Index="#x6007" Sub="#x0b">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G6 Z-Field" Index="#x6007" Sub="#x0c">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G8 X-Field" Index="#x6007" Sub="#x0d">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G8 Y-Field" Index="#x6007" Sub="#x0e">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="G8 Z-Field" Index="#x6007" Sub="#x0f">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H1 X-Field" Index="#x6008" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H1 Y-Field" Index="#x6008" Sub="#x02">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H1 Z-Field" Index="#x6008" Sub="#x03">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H3 X-Field" Index="#x6008" Sub="#x04">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H3 Y-Field" Index="#x6008" Sub="#x05">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H3 Z-Field" Index="#x6008" Sub="#x06">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H5 X-Field" Index="#x6008" Sub="#x07">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H5 Y-Field" Index="#x6008" Sub="#x08">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H5 Z-Field" Index="#x6008" Sub="#x09">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H7 X-Field" Index="#x6008" Sub="#x0a">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H7 Y-Field" Index="#x6008" Sub="#x0b">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H7 Z-Field" Index="#x6008" Sub="#x0c">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H9 X-Field" Index="#x6008" Sub="#x0d">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H9 Y-Field" Index="#x6008" Sub="#x0e">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="H9 Z-Field" Index="#x6008" Sub="#x0f">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I0 X-Field" Index="#x6009" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I0 Y-Field" Index="#x6009" Sub="#x02">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I0 Z-Field" Index="#x6009" Sub="#x03">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I2 X-Field" Index="#x6009" Sub="#x04">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I2 Y-Field" Index="#x6009" Sub="#x05">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I2 Z-Field" Index="#x6009" Sub="#x06">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I4 X-Field" Index="#x6009" Sub="#x07">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I4 Y-Field" Index="#x6009" Sub="#x08">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I4 Z-Field" Index="#x6009" Sub="#x09">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I6 X-Field" Index="#x6009" Sub="#x0a">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I6 Y-Field" Index="#x6009" Sub="#x0b">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I6 Z-Field" Index="#x6009" Sub="#x0c">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I8 X-Field" Index="#x6009" Sub="#x0d">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I8 Y-Field" Index="#x6009" Sub="#x0e">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="I8 Z-Field" Index="#x6009" Sub="#x0f">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J1 X-Field" Index="#x600a" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J1 Y-Field" Index="#x600a" Sub="#x02">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J1 Z-Field" Index="#x600a" Sub="#x03">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J3 X-Field" Index="#x600a" Sub="#x04">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J3 Y-Field" Index="#x600a" Sub="#x05">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J3 Z-Field" Index="#x600a" Sub="#x06">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J5 X-Field" Index="#x600a" Sub="#x07">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J5 Y-Field" Index="#x600a" Sub="#x08">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J5 Z-Field" Index="#x600a" Sub="#x09">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J7 X-Field" Index="#x600a" Sub="#x0a">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J7 Y-Field" Index="#x600a" Sub="#x0b">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J7 Z-Field" Index="#x600a" Sub="#x0c">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J9 X-Field" Index="#x600a" Sub="#x0d">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J9 Y-Field" Index="#x600a" Sub="#x0e">
+						<Type>INT</Type>
+					</Entry>
+					<Entry Name="J9 Z-Field" Index="#x600a" Sub="#x0f">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+			</EtherCAT>
+		</Box>
+	</Box>
+</TcSmItem>

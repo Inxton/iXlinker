@@ -1,0 +1,613 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CDevEtherCATDef" SubType="111">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
+			<BitSize>4</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>4</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000E}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..13] OF BIT</Name>
+			<BitSize>14</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>14</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
+			<BitSize>2</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000C}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..11] OF BIT</Name>
+			<BitSize>12</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>12</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff0000000000000000000000000000000000000000000909ff0909ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000ff00ffff00ff000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="172.20.30.238.2.1" RemoteName="EtherCAT Master AMIxxxx" InfoImageId="2">
+		<Name>EtherCAT_Master_AMIxxxx</Name>
+		<AddressInfo>
+			<Pnp>
+				<DeviceDesc>ECAT (TwinCAT-Intel PCI Ethernet Adapter (Gigabit))</DeviceDesc>
+				<DeviceName>\DEVICE\{95FEEA8F-0001-41DC-8F47-BE31DB549CFB}</DeviceName>
+				<DeviceData>0001052ce2aa</DeviceData>
+			</Pnp>
+		</AddressInfo>
+		<Image Id="1" AddrType="9" ImageType="3">
+			<Name>Image</Name>
+		</Image>
+		<Box Id="1" BoxType="9099">
+			<Name>EK1100_Beckhoff AMI8xxx</Name>
+			<ImageId>1000</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x00ffffff"/>
+			<Box Id="2" BoxType="9099">
+				<Name>Beckhoff AMI8xxxEK1122</Name>
+				<ImageId>1001</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+				<Box Id="3" BoxType="9099">
+					<Name>Beckhoff AMI8xxxsub EK1100</Name>
+					<ImageId>1000</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+				</Box>
+				<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
+					<Name>A_0001(AMI8000-0000-0016)</Name>
+					<ImageId>1002</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x0c80" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x368ecc09" RevisionNo="#x00100000" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="AMI8000-0000 Servo motor 48 V DC" Desc="AMI8000-0000" PortABoxInfo="#x02000003">
+						<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
+						<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
+						<SyncMan>001206002400010003000000000000000800001224010000</SyncMan>
+						<SyncMan>00140a002000010004000000000000000a00001420010000</SyncMan>
+						<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<BootStrapData>0010f400f410f400</BootStrapData>
+						<DcData>0007000024f4000000000000000000000000ffff000000000000000000000000</DcData>
+						<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000024f400000000000000000000ffff00070000000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000000000100000</MBoxUserCmdData>
+						<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+						<Pdo Name="FB Position" Index="#x1a00" Flags="#x0010" SyncMan="3">
+							<Entry Name="Position" Index="#x6000" Sub="#x11">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Statusword" Index="#x1a01" Flags="#x0010" SyncMan="3">
+							<Entry Name="Statusword" Index="#x6010" Sub="#x01">
+								<Type>UINT</Type>
+								<Comment><![CDATA[Bit 0 : Ready to switch on
+Bit 1 : Switched on
+Bit 2 : Operation enabled
+Bit 3 : Fault
+Bit 4 : reserved
+Bit 5 : reserved
+Bit 6 : Switch on disabled
+Bit 7 : Warning
+Bit 8 + 9 : reserved
+Bit 10 : TxPDOToggle
+Bit 11 : Internal limit active
+Bit 12 : Drive follows the command value
+Bit 13 : Input cycle counter
+Bit 14 - 15 : reserved]]></Comment>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Velocity actual value" Index="#x1a02" Flags="#x0010">
+							<Entry Name="Velocity actual value" Index="#x6010" Sub="#x07">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Torque actual value" Index="#x1a03" Flags="#x0010">
+							<Entry Name="Torque actual value" Index="#x6010" Sub="#x08">
+								<Type>INT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Info data 1" Index="#x1a04" Flags="#x0010">
+							<Entry Name="Info data 1" Index="#x6010" Sub="#x12">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Info data 2" Index="#x1a05" Flags="#x0010">
+							<Entry Name="Info data 2" Index="#x6010" Sub="#x13">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Following error actual value" Index="#x1a06" Flags="#x0010" SyncMan="3">
+							<Entry Name="Following error actual value" Index="#x6010" Sub="#x06">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe status" Index="#x1a07" Flags="#x0010">
+							<Entry Name="Touch probe status__TP1 Enable" Index="#x6001" Sub="#x01">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP1 Pos value stored" Index="#x6001" Sub="#x02">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP1 Neg value stored" Index="#x6001" Sub="#x03">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__">
+								<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP1 Input" Index="#x6001" Sub="#x08">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP2 Enable" Index="#x6001" Sub="#x09">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP2 Pos value stored" Index="#x6001" Sub="#x0a">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP2 Neg value stored" Index="#x6001" Sub="#x0b">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__">
+								<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP2 Input" Index="#x6001" Sub="#x10">
+								<Type>BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 1 pos position" Index="#x1a08" Flags="#x0010">
+							<Entry Name="TP1 Pos position" Index="#x6001" Sub="#x11">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 1 neg position" Index="#x1a09" Flags="#x0010">
+							<Entry Name="TP1 Neg position" Index="#x6001" Sub="#x12">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 2 pos position" Index="#x1a0a" Flags="#x0010">
+							<Entry Name="TP2 Pos position" Index="#x6001" Sub="#x13">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 2 neg position" Index="#x1a0b" Flags="#x0010">
+							<Entry Name="TP2 Neg position" Index="#x6001" Sub="#x14">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Info data 3" Index="#x1a0d" Flags="#x0010">
+							<Entry Name="Info data 3" Index="#x6010" Sub="#x14">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DI Inputs" Index="#x1a10" Flags="#x0010">
+							<Entry Name="Input 1" Index="#x6020" Sub="#x01">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 2" Index="#x6020" Sub="#x02">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 1 pos timestamp" Index="#x1a11" Flags="#x0010">
+							<Entry Name="TP1 Pos timestamp" Index="#x6001" Sub="#x15">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 1 neg timestamp" Index="#x1a12" Flags="#x0010">
+							<Entry Name="TP1 Neg timestamp" Index="#x6001" Sub="#x16">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 2 pos timestamp" Index="#x1a13" Flags="#x0010">
+							<Entry Name="TP2 Pos timestamp" Index="#x6001" Sub="#x17">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 2 neg timestamp" Index="#x1a14" Flags="#x0010">
+							<Entry Name="TP2 Neg timestamp" Index="#x6001" Sub="#x18">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Controlword" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+							<Entry Name="Controlword" Index="#x7010" Sub="#x01">
+								<Type>UINT</Type>
+								<Comment><![CDATA[Bit 0 : Switch on
+Bit 1 : Enable voltage
+Bit 2 : reserved
+Bit 3 : Enable operation
+Bit 4 - 6 : reserved
+Bit 7 : Fault reset
+Bit 8 - 15 : reserved]]></Comment>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Target velocity" Index="#x1601" InOut="1" Flags="#x0010">
+							<Entry Name="Target velocity" Index="#x7010" Sub="#x06">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Target torque" Index="#x1602" InOut="1" Flags="#x0010">
+							<Entry Name="Target torque" Index="#x7010" Sub="#x09">
+								<Type>INT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Commutation angle" Index="#x1603" InOut="1" Flags="#x0010">
+							<Entry Name="Commutation angle" Index="#x7010" Sub="#x0e">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Torque limitation" Index="#x1604" InOut="1" Flags="#x0010">
+							<Entry Name="Torque limitation" Index="#x7010" Sub="#x0b">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Torque offset" Index="#x1605" InOut="1" Flags="#x0010">
+							<Entry Name="Torque offset" Index="#x7010" Sub="#x0a">
+								<Type>INT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Target position" Index="#x1606" InOut="1" Flags="#x0010" SyncMan="2">
+							<Entry Name="Target position" Index="#x7010" Sub="#x05">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe control" Index="#x1607" InOut="1" Flags="#x0010">
+							<Entry Name="Touch probe function__TP1 Enable" Index="#x7001" Sub="#x01">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP1 Continous" Index="#x7001" Sub="#x02">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP1 Trigger mode" Index="#x7001" Sub="#x03">
+								<Type>BIT2</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP1 Enable pos edge" Index="#x7001" Sub="#x05">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP1 Enable neg edge" Index="#x7001" Sub="#x06">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__">
+								<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP2 Enable" Index="#x7001" Sub="#x09">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP2 Continous" Index="#x7001" Sub="#x0a">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP2 Trigger mode" Index="#x7001" Sub="#x0b">
+								<Type>BIT2</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP2 Enable pos edge" Index="#x7001" Sub="#x0d">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP2 Enable neg edge" Index="#x7001" Sub="#x0e">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__">
+								<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Velocity offset" Index="#x1609" InOut="1" Flags="#x0010">
+							<Entry Name="Velocity offset" Index="#x7010" Sub="#x0f">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Positive torque limit value" Index="#x160a" InOut="1" Flags="#x0010">
+							<Entry Name="Positive torque limit value" Index="#x7010" Sub="#x10">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Negative torque lmit value" Index="#x160b" InOut="1" Flags="#x0010">
+							<Entry Name="Negative torque limit value" Index="#x7010" Sub="#x11">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DO Outputs" Index="#x1610" InOut="1" Flags="#x0010">
+							<Entry Name="Output 1" Index="#x7030" Sub="#x01">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Output 2" Index="#x7030" Sub="#x02">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<CoeProfile ProfileNo="33624969" DisplayName="Servo interface"/>
+						<CoeProfile ProfileNo="48632713" DisplayName="Servo interface"/>
+						<CoeProfile ProfileNo="6558601"/>
+						<CoeProfile ProfileNo="13112201"/>
+					</EtherCAT>
+				</Box>
+				<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+					<Name>A_0002(AMI8000-0090-0016)</Name>
+					<ImageId>1002</ImageId>
+					<EtherCAT SlaveType="2" PdiType="#x0c80" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x368ecc09" RevisionNo="#x0010005a" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="AMI8000-0090 Servo motor 48 V DC" Desc="AMI8000-0090" PortABoxInfo="#x01000004">
+						<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
+						<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
+						<SyncMan>001206002400010003000000000000000800001224010000</SyncMan>
+						<SyncMan>00140a002000010004000000000000000a00001420010000</SyncMan>
+						<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<BootStrapData>0010f400f410f400</BootStrapData>
+						<DcData>0007000024f4000000000000000000000000ffff000000000000000000000000</DcData>
+						<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000024f400000000000000000000ffff00070000000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+						<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000005a00100000</MBoxUserCmdData>
+						<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+						<Pdo Name="FB Position" Index="#x1a00" Flags="#x0010" SyncMan="3">
+							<Entry Name="Position" Index="#x6000" Sub="#x11">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Statusword" Index="#x1a01" Flags="#x0010" SyncMan="3">
+							<Entry Name="Statusword" Index="#x6010" Sub="#x01">
+								<Type>UINT</Type>
+								<Comment><![CDATA[Bit 0 : Ready to switch on
+Bit 1 : Switched on
+Bit 2 : Operation enabled
+Bit 3 : Fault
+Bit 4 : reserved
+Bit 5 : reserved
+Bit 6 : Switch on disabled
+Bit 7 : Warning
+Bit 8 + 9 : reserved
+Bit 10 : TxPDOToggle
+Bit 11 : Internal limit active
+Bit 12 : Drive follows the command value
+Bit 13 : Input cycle counter
+Bit 14 - 15 : reserved]]></Comment>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Velocity actual value" Index="#x1a02" Flags="#x0010">
+							<Entry Name="Velocity actual value" Index="#x6010" Sub="#x07">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Torque actual value" Index="#x1a03" Flags="#x0010">
+							<Entry Name="Torque actual value" Index="#x6010" Sub="#x08">
+								<Type>INT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Info data 1" Index="#x1a04" Flags="#x0010">
+							<Entry Name="Info data 1" Index="#x6010" Sub="#x12">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Info data 2" Index="#x1a05" Flags="#x0010">
+							<Entry Name="Info data 2" Index="#x6010" Sub="#x13">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Following error actual value" Index="#x1a06" Flags="#x0010" SyncMan="3">
+							<Entry Name="Following error actual value" Index="#x6010" Sub="#x06">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe status" Index="#x1a07" Flags="#x0010">
+							<Entry Name="Touch probe status__TP1 Enable" Index="#x6001" Sub="#x01">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP1 Pos value stored" Index="#x6001" Sub="#x02">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP1 Neg value stored" Index="#x6001" Sub="#x03">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__">
+								<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP1 Input" Index="#x6001" Sub="#x08">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP2 Enable" Index="#x6001" Sub="#x09">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP2 Pos value stored" Index="#x6001" Sub="#x0a">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP2 Neg value stored" Index="#x6001" Sub="#x0b">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__">
+								<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe status__TP2 Input" Index="#x6001" Sub="#x10">
+								<Type>BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 1 pos position" Index="#x1a08" Flags="#x0010">
+							<Entry Name="TP1 Pos position" Index="#x6001" Sub="#x11">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 1 neg position" Index="#x1a09" Flags="#x0010">
+							<Entry Name="TP1 Neg position" Index="#x6001" Sub="#x12">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 2 pos position" Index="#x1a0a" Flags="#x0010">
+							<Entry Name="TP2 Pos position" Index="#x6001" Sub="#x13">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 2 neg position" Index="#x1a0b" Flags="#x0010">
+							<Entry Name="TP2 Neg position" Index="#x6001" Sub="#x14">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Info data 3" Index="#x1a0d" Flags="#x0010">
+							<Entry Name="Info data 3" Index="#x6010" Sub="#x14">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DI Inputs" Index="#x1a10" Flags="#x0010">
+							<Entry Name="Input 1" Index="#x6020" Sub="#x01">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 2" Index="#x6020" Sub="#x02">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 3" Index="#x6020" Sub="#x03">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Input 4" Index="#x6020" Sub="#x04">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 1 pos timestamp" Index="#x1a11" Flags="#x0010">
+							<Entry Name="TP1 Pos timestamp" Index="#x6001" Sub="#x15">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 1 neg timestamp" Index="#x1a12" Flags="#x0010">
+							<Entry Name="TP1 Neg timestamp" Index="#x6001" Sub="#x16">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 2 pos timestamp" Index="#x1a13" Flags="#x0010">
+							<Entry Name="TP2 Pos timestamp" Index="#x6001" Sub="#x17">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe 2 neg timestamp" Index="#x1a14" Flags="#x0010">
+							<Entry Name="TP2 Neg timestamp" Index="#x6001" Sub="#x18">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Controlword" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+							<Entry Name="Controlword" Index="#x7010" Sub="#x01">
+								<Type>UINT</Type>
+								<Comment><![CDATA[Bit 0 : Switch on
+Bit 1 : Enable voltage
+Bit 2 : reserved
+Bit 3 : Enable operation
+Bit 4 - 6 : reserved
+Bit 7 : Fault reset
+Bit 8 - 15 : reserved]]></Comment>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Target velocity" Index="#x1601" InOut="1" Flags="#x0010">
+							<Entry Name="Target velocity" Index="#x7010" Sub="#x06">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Target torque" Index="#x1602" InOut="1" Flags="#x0010">
+							<Entry Name="Target torque" Index="#x7010" Sub="#x09">
+								<Type>INT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Commutation angle" Index="#x1603" InOut="1" Flags="#x0010">
+							<Entry Name="Commutation angle" Index="#x7010" Sub="#x0e">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Torque limitation" Index="#x1604" InOut="1" Flags="#x0010">
+							<Entry Name="Torque limitation" Index="#x7010" Sub="#x0b">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Torque offset" Index="#x1605" InOut="1" Flags="#x0010">
+							<Entry Name="Torque offset" Index="#x7010" Sub="#x0a">
+								<Type>INT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Target position" Index="#x1606" InOut="1" Flags="#x0010" SyncMan="2">
+							<Entry Name="Target position" Index="#x7010" Sub="#x05">
+								<Type>UDINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Touch probe control" Index="#x1607" InOut="1" Flags="#x0010">
+							<Entry Name="Touch probe function__TP1 Enable" Index="#x7001" Sub="#x01">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP1 Continous" Index="#x7001" Sub="#x02">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP1 Trigger mode" Index="#x7001" Sub="#x03">
+								<Type>BIT2</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP1 Enable pos edge" Index="#x7001" Sub="#x05">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP1 Enable neg edge" Index="#x7001" Sub="#x06">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__">
+								<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP2 Enable" Index="#x7001" Sub="#x09">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP2 Continous" Index="#x7001" Sub="#x0a">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP2 Trigger mode" Index="#x7001" Sub="#x0b">
+								<Type>BIT2</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP2 Enable pos edge" Index="#x7001" Sub="#x0d">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__TP2 Enable neg edge" Index="#x7001" Sub="#x0e">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Touch probe function__">
+								<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Velocity offset" Index="#x1609" InOut="1" Flags="#x0010">
+							<Entry Name="Velocity offset" Index="#x7010" Sub="#x0f">
+								<Type>DINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Positive torque limit value" Index="#x160a" InOut="1" Flags="#x0010">
+							<Entry Name="Positive torque limit value" Index="#x7010" Sub="#x10">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DRV Negative torque lmit value" Index="#x160b" InOut="1" Flags="#x0010">
+							<Entry Name="Negative torque limit value" Index="#x7010" Sub="#x11">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="DO Outputs" Index="#x1610" InOut="1" Flags="#x0010">
+							<Entry Name="Output 1" Index="#x7030" Sub="#x01">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry Name="Output 2" Index="#x7030" Sub="#x02">
+								<Type>BIT</Type>
+							</Entry>
+							<Entry>
+								<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+							</Entry>
+						</Pdo>
+						<CoeProfile ProfileNo="33624969" DisplayName="Servo interface"/>
+						<CoeProfile ProfileNo="48632713" DisplayName="Servo interface"/>
+						<CoeProfile ProfileNo="6558601"/>
+						<CoeProfile ProfileNo="13112201"/>
+					</EtherCAT>
+				</Box>
+			</Box>
+		</Box>
+		<EtherCAT DcSyncMode="3"/>
+	</Device>
+</TcSmItem>

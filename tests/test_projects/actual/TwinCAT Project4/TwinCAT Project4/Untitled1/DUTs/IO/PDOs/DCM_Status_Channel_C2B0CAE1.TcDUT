@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DCM_Status_Channel_C2B0CAE1" Id="{0b873aeb-53f6-42c8-8c04-849b21530d44}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ7342-0000-0019"}
+{attribute addProperty Id "StatusAT %I*Status_1C57BC2B162"}
+{attribute addProperty CRC "3266366177"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DCM_Status_Channel_C2B0CAE1 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_1C57BC2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

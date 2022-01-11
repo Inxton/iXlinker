@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_055E5E7E" Id="{c62285c9-418e-4c31-b7c1-e54508d865ab}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ2521-0224-0016"}
+{attribute addProperty Id "Enable_PLSBIT10.1251OutputBIT10.1254"}
+{attribute addProperty CRC "90070654"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Control_055E5E7E :
+STRUCT
+	{attribute addProperty Name "Enable_PLS"}
+	Enable_PLS : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BOOL;
+	{attribute addProperty Name "Output"}
+	Output : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BOOL;
+	{attribute 'hide'}
+	reserve_3 : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

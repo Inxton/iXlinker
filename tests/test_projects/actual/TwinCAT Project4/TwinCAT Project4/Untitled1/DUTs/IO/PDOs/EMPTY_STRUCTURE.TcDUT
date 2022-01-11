@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EMPTY_STRUCTURE" Id="{c40872e6-c1ac-4c2a-88a4-d4aab1885555}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ1914-0000-0017"}
+{attribute addProperty Id "EMPTY_STRUCTURE"}
+{attribute addProperty CRC "0"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE EMPTY_STRUCTURE :
+STRUCT
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

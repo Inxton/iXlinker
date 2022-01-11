@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000008}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BYTE</Name>
+			<BitSize>8</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e000000010018000000000000000000c40e0000c40e00000000000000000000fffffffffcfffffeffffffffffffffffffffdcdcdcdcdcdcdcdcdc0000ff0000fffffffffffffffffffffffffffffffffffffffffeffffffffffffffffffffffffffdcdcdc00ff00dcdcdc0000ff0000fffffffffffffffffffffffffffffffffffffffffffffffffffffefffffcfffffcffdcdcdcdcdcdcdcdcdc0000ff0000fffffffffffffffffffffffffffffffffffdfffffffffff9fffffdfffffcfffffcffdcdcdc00ff00dcdcdc0000ff0000fffffffffffffffffffffffffffffffffffffffffffffff7fffff7fffffdfffffdffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff EJ9xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff EJ9xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+		</Box>
+		<Box Id="4" BoxType="9099">
+			<Name>A_0001(EJ9001-0000-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23292852" RevisionNo="#x00100000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EJ9001 placeholder module" Desc="EJ9001" PortABoxInfo="#x02000002"/>
+		</Box>
+		<Box Id="5" BoxType="9099">
+			<Name>A_0002(EJ9505-0000-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25212852" RevisionNo="#x00100000" RepeatSupport="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EJ9505 Power supply module 5V" Desc="EJ9505" PortABoxInfo="#x01000004">
+				<SyncMan>001001000000010004000000000000000000001000000000</SyncMan>
+				<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+				<Pdo Name="Status Uo" Index="#x1a00" Flags="#x0011" SyncMan="0">
+					<Entry Name="Power OK" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Overload" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+			</EtherCAT>
+		</Box>
+		<Box Id="6" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0003(EJ9576-0000-0018)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x25682852" RevisionNo="#x00120000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EJ9576 Brake chopper terminal" Desc="EJ9576" PortABoxInfo="#x01000005">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+				<SyncMan>80110b002000010004000000000000000b00801120010000</SyncMan>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="BCT Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+					<Entry Name="Terminal Overtemperature" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="I2T error" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="I2T warning" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Overvoltage" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Undervoltage" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Chopper on" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+					</Entry>
+					<Entry Name="Input cycle counter" Index="#x6000" Sub="#x0f">
+						<Type>BIT2</Type>
+					</Entry>
+					<Entry Name="DC link voltage" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+					<Entry Name="Resistor current" Index="#x6000" Sub="#x13">
+						<Type>DINT</Type>
+					</Entry>
+					<Entry Name="Duty cylce" Index="#x6000" Sub="#x14">
+						<Type>USINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="58987401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0004(EJ9576-0000-0019)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x25682852" RevisionNo="#x00130000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EJ9576 Brake chopper terminal" Desc="EJ9576" PortABoxInfo="#x01000006">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+				<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="BCT Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+					<Entry Name="Terminal Overtemperature" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="I2T error" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="I2T warning" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Overvoltage" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Undervoltage" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Chopper on" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+					</Entry>
+					<Entry Name="Input cycle counter" Index="#x6000" Sub="#x0f">
+						<Type>BIT2</Type>
+					</Entry>
+					<Entry Name="DC link voltage" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+					<Entry Name="Resistor current" Index="#x6000" Sub="#x13">
+						<Type>DINT</Type>
+					</Entry>
+					<Entry Name="Duty cylce" Index="#x6000" Sub="#x14">
+						<Type>USINT</Type>
+					</Entry>
+					<Entry Name="I2T load factor" Index="#x6000" Sub="#x15">
+						<Type>USINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="58987401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="8" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0005(EJ9576-0000-0020)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x25682852" RevisionNo="#x00140000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EJ9576 Brake chopper terminal" Desc="EJ9576" PortABoxInfo="#x01000007">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+				<SyncMan>80110b002000010004000000000000000b00801120010000</SyncMan>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000000000140000</MBoxUserCmdData>
+				<Pdo Name="BCT Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<Entry Name="Terminal Overtemperature" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="I2T error" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="I2T warning" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Overvoltage" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Undervoltage" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Chopper on" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+					</Entry>
+					<Entry Name="Input cycle counter" Index="#x6000" Sub="#x0f">
+						<Type>BIT2</Type>
+					</Entry>
+					<Entry Name="DC link voltage" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+					<Entry Name="Resistor Current" Index="#x6000" Sub="#x13">
+						<Type>DINT</Type>
+					</Entry>
+					<Entry Name="Duty Cycle" Index="#x6000" Sub="#x14">
+						<Type>USINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="BCT Load" Index="#x1a01" Flags="#x0010">
+					<Entry Name="I2T load factor" Index="#x6001" Sub="#x01">
+						<Type>USINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="58987401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="9" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0006(EJ9576-0000-0022)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x25682852" RevisionNo="#x00160000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EJ9576 Brake chopper terminal" Desc="EJ9576" PortABoxInfo="#x01000008">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+				<SyncMan>80110b002000010004000000000000000b00801120010000</SyncMan>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000000000160000</MBoxUserCmdData>
+				<Pdo Name="BCT Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<Entry Name="Terminal Overtemperature" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="I2T error" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="I2T warning" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Overvoltage" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Undervoltage" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Chopper on" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Overcurrent Protection" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Input cycle counter" Index="#x6000" Sub="#x0f">
+						<Type>BIT2</Type>
+					</Entry>
+					<Entry Name="DC link voltage" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+					<Entry Name="Resistor Current" Index="#x6000" Sub="#x13">
+						<Type>DINT</Type>
+					</Entry>
+					<Entry Name="Duty Cycle" Index="#x6000" Sub="#x14">
+						<Type>USINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="BCT Load" Index="#x1a01" Flags="#x0010">
+					<Entry Name="I2T load factor" Index="#x6001" Sub="#x01">
+						<Type>USINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="58987401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="10" BoxType="9099">
+			<Name>A_0007 (EJ9400-0000)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x24b82851" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EJ9400-0000 Power supply module 2,5A" Desc="EJ9400-0000" PortABoxInfo="#x01000009"/>
+		</Box>
+		<Box Id="11" BoxType="9099">
+			<Name>A_0008 (EJ9404-0000)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x24bc2851" InfoDataState="false" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EJ9404-0000 Power supply module 12A" Desc="EJ9404-0000" PortABoxInfo="#x01000009"/>
+		</Box>
+	</Box>
+</TcSmItem>

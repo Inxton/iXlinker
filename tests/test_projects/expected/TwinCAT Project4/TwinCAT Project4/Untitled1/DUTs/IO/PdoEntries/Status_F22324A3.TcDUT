@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_F22324A3" Id="{26588133-12a3-49a2-982c-56e3dc87a253}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ2521-0224-0016"}
+{attribute addProperty Id "Latch_extern_validBIT10.1252Set_counter_doneBIT10.1253Counter_underflowBIT10.1254Counter_overflowBIT10.1255Status_of_extern_latchBIT10.12513Sync_errorBIT10.12514TxPDO_ToggleBIT10.12516"}
+{attribute addProperty CRC "4062389411"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_F22324A3 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1 : BOOL;
+	{attribute addProperty Name "Latch_extern_valid"}
+	Latch_extern_valid : BOOL;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BOOL;
+	{attribute addProperty Name "Counter_underflow"}
+	Counter_underflow : BOOL;
+	{attribute addProperty Name "Counter_overflow"}
+	Counter_overflow : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BOOL;
+	{attribute 'hide'}
+	reserve_3_BIT_0 : BOOL;
+	{attribute 'hide'}
+	reserve_3_BIT_1 : BOOL;
+	{attribute 'hide'}
+	reserve_3_BIT_2 : BOOL;
+	{attribute 'hide'}
+	reserve_3_BIT_3 : BOOL;
+	{attribute addProperty Name "Status_of_extern_latch"}
+	Status_of_extern_latch : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute 'hide'}
+	reserve_4 : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

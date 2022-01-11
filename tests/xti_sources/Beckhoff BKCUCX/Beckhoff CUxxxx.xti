@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080808080c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080808080c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c080808080808000ff00c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080808080c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080808080c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c080808080808000ff00c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080808080c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080808080c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c080808080808000ff00c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080808080c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0bac2ba808080808080808080c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c080808080808000ff00c0c0c0808080ff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1003">424df60000000000000076000000280000001000000010000000010004000000000080000000120b0000120b00001000000010000000411f91007f7f7f0099999900a3a3cf00b0003400d0d0d000dbdbdb00ffffff00c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00dddddddddddddddddd1616161616161dd26262626262621dd25546666666623d4444446666333333d26646666666623dd20666666666623d0000006666333333d20666666666623dd20666666666623d0000006666333333d20666666666623dd23666666666623d3333336666333333d23666666666623dd2222222222222dd</ImageData>
+		<ImageData Id="1004">424de6000000000000007600000028000000100000000e000000010004000000000000000000120b0000120b00001000000010000000b00034ff411f91ffff00ffff999999ffa3a3cfffd0d0d0ffdbdbdbff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff23333333333333222355066666666342000000666644444423660666666663422316666666666342111111666644444423166666666663422316666666666342111111666644444423166666666663422346666666666342444444666644444423466666666663422333333333333322</ImageData>
+		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0241cedc0c0c000ff00c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080c0c0c000000000000000bfff000000ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0bac2ba80808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c000ff00c0c0c0c0c0c080808000bfffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1006">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0241cedc0c0c000ff00c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0808080808080c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c000ff00c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1007">424dd6020000000000003600000028000000100000000e000000010018000000000000000000c40e0000c40e0000000000000000000000d8ff00d8ff80808080808080808080808080808000d8ff00d8ff80808080808080808080808080808000d8ff00d8ff80808000d8ff00d8ff80808080808080808080808000d8ff00d8ff80808080808080808080808000d8ff00d8ff80808080808080808000d8ff00d8ff00000000000000000000d8ff00d8ff00000000000000000000d8ff00d8ff80808080808080808080808000000000d8ff00d8ff00000000000000d8ff00d8ff00000000000000d8ff00d8ff00000080808080808080808080808000000000000000d8ff00d8ff00000000d8ff00d8ff00000000d8ff00d8ff00000000000080808080808080808080808000000000000000000000d8ff00d8ff00d8ff00d8ff00d8ff00d8ff0000000000000000008080808080808080808080800000000000000000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000000000008080808080808080808080800000000000000000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000000000008080808080808080808080800000000000000000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff0000000000008080808080808080808080800000000000000000ff0000ff0000ff0000ff0000ff0000ff0000ff0000ff00000000000080808080808080808080808000000000000000000000000000000000d8ff00d8ff00000000000000000000000000000080808080808080808080808000000000000000000000000000000000d8ff00d8ff00000000000000000000000000000080808080808080808080808080808080808080808080808080808000d8ff00d8ff80808080808080808080808080808080808080808080808080808080808080808080808080808080808000d8ff00d8ff808080808080808080808080808080808080808080</ImageData>
+		<ImageData Id="1008">424de6000000000000007600000028000000100000000e000000010004000000000000000000120b0000120b00001000000010000000411f91ffff00ffff999999ffa3a3cfffd0d0d0ffdbdbdbff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff12222222222222111244355555555201333333555500000012553555555552011235555555555231333333555533333312355555555552311235555555555231333333555533333312355555555552311205555555555231000000555533333312055555555552311222222222222211</ImageData>
+		<ImageData Id="1009">424de6000000000000007600000028000000100000000e000000010004000000000000000000120b0000120b00001000000010000000411f91ffff00ffff999999ffa3a3cfffd0d0d0ffdbdbdbff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff000000ff12222222222222111244355555555231333333555533333312553555555552311235555555555201333333555500000012355555555552011235555555555201333333555500000012355555555552011235555555555201333333555500000012355555555552011222222222222211</ImageData>
+		<ImageData Id="1010">424df60000000000000076000000280000001000000010000000010004000000000080000000120b0000120b00001000000010000000411f91007f7f7f0099999900a3a3cf00d0d0d000dbdbdb00ffffff0080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00dddddddddddddddddd1515151515151dd25252525252521dd24435555555520d3333335555000000d25535555555520dd23555555555523d3333335555333333d23555555555523dd23555555555523d3333335555333333d23555555555523dd20555555555523d0000005555333333d20555555555523dd2525252525252dd</ImageData>
+		<ImageData Id="1011">424df60000000000000076000000280000001000000010000000010004000000000080000000120b0000120b00001000000010000000411f91007f7f7f0099999900a3a3cf00d0d0d000dbdbdb00ffffff0080808000c0c0c0000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00dddddddddddddddddd1111111111111dd22222222222221dd24435555555523d3333335555333333d25535555555523dd23555555555520d3333335555000000d23555555555520dd23555555555520d3333335555000000d23555555555520dd23555555555520d3333335555000000d23555555555520dd2525252525252dd</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff CUxxxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff CUxxxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+			<Box Id="4" BoxType="9099">
+				<Name>A_0001(CU1123-0000-0016)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0f00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04635432" RevisionNo="#x00100000" PortPhys="4353" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1123 EtherCAT junction (3-ports)" Desc="CU1123" PortABoxInfo="#x02000003"/>
+				<Box Id="5" BoxType="9099">
+					<Name>A_0002(CU1123-0010-0016)</Name>
+					<ImageId>1002</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0f00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04635432" RevisionNo="#x0010000a" PortPhys="4353" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1123-0010 EtherCAT junction (3-ports, Extended Distance)" Desc="CU1123-0010" PortABoxInfo="#x03000004"/>
+					<Box Id="6" BoxType="9099">
+						<Name>A_0003(CU1124-0000-0016)</Name>
+						<ImageId>1002</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0f00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04645432" RevisionNo="#x00100000" PortPhys="4369" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1124 EtherCAT junction (4-ports)" Desc="CU1124" PortABoxInfo="#x03000005"/>
+						<Box Id="7" BoxType="9099">
+							<Name>A_0004(CU1128-0000-0000)</Name>
+							<ImageId>1003</ImageId>
+							<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04685432" PortPhys="4881" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1128 6x EtherCAT junction" Desc="CU1128" PortABoxInfo="#x03000006"/>
+							<Box Id="10" BoxType="9099">
+								<Name>A_0005(CU1128-0000-0001)</Name>
+								<ImageId>1003</ImageId>
+								<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04685432" RevisionNo="#x00010000" PortPhys="4881" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1128 6x EtherCAT junction" Desc="CU1128" PortABoxInfo="#x03000007"/>
+								<Box Id="13" BoxType="9099">
+									<Name>A_0006(CU1128-0000-0002)</Name>
+									<ImageId>1004</ImageId>
+									<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04685432" RevisionNo="#x00020000" PortPhys="4881" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1128 6x EtherCAT junction" Desc="CU1128" PortABoxInfo="#x0300000a"/>
+									<Box Id="16" BoxType="9099">
+										<Name>A_0007(CU1521-0010-0000)</Name>
+										<ImageId>1005</ImageId>
+										<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x05f15432" RevisionNo="#x0000000a" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1521-0010 EtherCAT media converter (Singlemode)" Desc="CU1521-0010" PortABoxInfo="#x0300000d"/>
+									</Box>
+									<Box Id="17" BoxType="9099">
+										<Name>A_0008(CU1561-0000-0000)</Name>
+										<ImageId>1006</ImageId>
+										<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x06195432" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1561 EtherCAT media converter (POF)" Desc="CU1561" PortABoxInfo="#x01000010"/>
+									</Box>
+									<Box Id="18" BoxType="9099">
+										<Name>A_0009(CU2508-0000-0000)</Name>
+										<ImageId>1007</ImageId>
+										<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x09cc5432" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU2508 Ethernet Port" Desc="CU2508" PortABoxInfo="#x01000011"/>
+									</Box>
+									<Box Id="19" BoxType="9099" BoxFlags="#x00000020">
+										<Name>A_0010(CU2508-0000-0016)</Name>
+										<ImageId>1007</ImageId>
+										<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x09cc5432" RevisionNo="#x00100000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU2508 Configuration Port" Desc="CU2508" PortABoxInfo="#x01000012">
+											<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+											<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+											<BootStrapData>0010f400f410f400</BootStrapData>
+											<CoeProfile ProfileNo="67179401"/>
+										</EtherCAT>
+									</Box>
+									<Box Id="20" BoxType="9099" BoxFlags="#x00000020">
+										<Name>A_0011(CU2508-0000-0017)</Name>
+										<ImageId>1007</ImageId>
+										<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x09cc5432" RevisionNo="#x00110000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU2508 Configuration Port" Desc="CU2508" PortABoxInfo="#x01000013">
+											<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+											<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+											<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+											<SyncMan>801114002000010004000000000000001400801120010000</SyncMan>
+											<BootStrapData>0010f400f410f400</BootStrapData>
+											<Pdo Name="EPM Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6000" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6000" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6010" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6010" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6020" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6020" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6030" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6030" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6040" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6040" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6050" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6050" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6060" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6060" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6070" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6070" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 9" Index="#x1a08" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6080" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6080" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 10" Index="#x1a09" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6090" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6090" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<CoeProfile ProfileNo="67187248"/>
+										</EtherCAT>
+									</Box>
+									<Box Id="21" BoxType="9099" BoxFlags="#x00000020">
+										<Name>A_0012(CU2508-0000-0018)</Name>
+										<ImageId>1007</ImageId>
+										<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x09cc5432" RevisionNo="#x00120000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU2508 Configuration Port" Desc="CU2508" PortABoxInfo="#x01000014">
+											<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+											<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+											<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+											<SyncMan>801114002000010004000000000000001400801120010000</SyncMan>
+											<BootStrapData>0010f400f410f400</BootStrapData>
+											<Pdo Name="EPM Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6000" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6000" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6010" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6010" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6020" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6020" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6030" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6030" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6040" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6040" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6050" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6050" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6060" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6060" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6070" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6070" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 9" Index="#x1a08" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6080" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6080" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 10" Index="#x1a09" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6090" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6090" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<CoeProfile ProfileNo="67187248"/>
+										</EtherCAT>
+									</Box>
+									<Box Id="22" BoxType="9099" BoxFlags="#x00000020">
+										<Name>A_0013(CU2508-0000-0019)</Name>
+										<ImageId>1007</ImageId>
+										<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x09cc5432" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU2508 Configuration Port" Desc="CU2508" PortABoxInfo="#x01000015">
+											<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+											<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+											<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+											<SyncMan>801114002000010004000000000000001400801120010000</SyncMan>
+											<BootStrapData>0010f400f410f400</BootStrapData>
+											<Pdo Name="EPM Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6000" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6000" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6010" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6010" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6020" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6020" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6030" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6030" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6040" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6040" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6050" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6050" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6060" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6060" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6070" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6070" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 9" Index="#x1a08" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6080" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6080" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="EPM Inputs Channel 10" Index="#x1a09" Flags="#x0011" SyncMan="3">
+												<Entry Name="Dropped frames rx" Index="#x6090" Sub="#x11">
+													<Type>USINT</Type>
+												</Entry>
+												<Entry Name="Dropped frames tx" Index="#x6090" Sub="#x12">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<CoeProfile ProfileNo="67187248"/>
+										</EtherCAT>
+									</Box>
+									<Box Id="14" BoxType="9099">
+										<Name>A_0006(CU1128-0000-0002)_2 (CU1128-B)</Name>
+										<ImageId>1008</ImageId>
+										<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04685432" RevisionNo="#x00020001" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1128 6x EtherCAT junction - Dev A" Desc="CU1128-B" PortABoxInfo="#x0200000d"/>
+									</Box>
+									<Box Id="15" BoxType="9099">
+										<Name>A_0006(CU1128-0000-0002)_3 (CU1128-C)</Name>
+										<ImageId>1009</ImageId>
+										<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04685432" RevisionNo="#x00020002" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1128 6x EtherCAT junction - Dev B" Desc="CU1128-C" PortABoxInfo="#x0200000e"/>
+									</Box>
+								</Box>
+								<Box Id="11" BoxType="9099">
+									<Name>A_0005(CU1128-0000-0001)_2 (CU1128-B)</Name>
+									<ImageId>1010</ImageId>
+									<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04685432" RevisionNo="#x00010001" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1128 6x EtherCAT junction - Dev A" Desc="CU1128-B" PortABoxInfo="#x0200000a"/>
+								</Box>
+								<Box Id="12" BoxType="9099">
+									<Name>A_0005(CU1128-0000-0001)_3 (CU1128-C)</Name>
+									<ImageId>1011</ImageId>
+									<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04685432" RevisionNo="#x00010002" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1128 6x EtherCAT junction - Dev B" Desc="CU1128-C" PortABoxInfo="#x0200000b"/>
+								</Box>
+							</Box>
+							<Box Id="8" BoxType="9099">
+								<Name>A_0004(CU1128-0000-0000)_2 (CU1128-B)</Name>
+								<ImageId>1010</ImageId>
+								<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04685432" RevisionNo="#x00000001" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1128 6x EtherCAT junction - Dev A" Desc="CU1128-B" PortABoxInfo="#x02000007"/>
+							</Box>
+							<Box Id="9" BoxType="9099">
+								<Name>A_0004(CU1128-0000-0000)_3 (CU1128-C)</Name>
+								<ImageId>1011</ImageId>
+								<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04685432" RevisionNo="#x00000002" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CU1128 6x EtherCAT junction - Dev B" Desc="CU1128-C" PortABoxInfo="#x02000008"/>
+							</Box>
+						</Box>
+					</Box>
+				</Box>
+			</Box>
+		</Box>
+	</Box>
+</TcSmItem>

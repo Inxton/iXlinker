@@ -1,0 +1,2708 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
+			<BitSize>2</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000008}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BYTE</Name>
+			<BitSize>8</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000010}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BYTE</Name>
+			<BitSize>16</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000009}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..8] OF BIT</Name>
+			<BitSize>9</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>9</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000F}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..14] OF BIT</Name>
+			<BitSize>15</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>15</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0a4a0a0a4a0a0a4a0a0a4a0a0a4a0a0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0000000000000000000a4a0a00000efff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0000000000000000000a4a0a00000efff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0000000000000000000a4a0a00000efff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0000000000000000000a4a0a00000efff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0000000000000000000a4a0a00000efff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0a4a0a0a4a0a0a4a0a0a4a0a00000efff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0a4a0a0a4a0a0a4a0a0a4a0a00000efff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0000000000000000000a4a0a0000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0000000000000000000a4a0a000ff00ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0a4a0a0a4a0a0a4a0a0a4a0a0000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0000000000000000000a4a0a000ff00ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0000000000000000000a4a0a0000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff000000a4a0a0a4a0a0a4a0a0a4a0a0a4a0a0a4a0a0a4a0a0ff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff EKM1xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff EKM1xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+			<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0001(EKM1101-0000-0016)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0c05" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x4fe17cd9" RevisionNo="#x00100000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EKM1101 EtherCAT Coupler  (2A E-Bus, ID switch, Diagnostics, isolated)" Desc="EKM1101" PortABoxInfo="#x02000003">
+					<SyncMan>001064002600010001000000640064006400001026010000</SyncMan>
+					<SyncMan>641064002200010002000000640064006400641022010000</SyncMan>
+					<SyncMan>c81002002400010003000000000000000200c81024010000</SyncMan>
+					<SyncMan>d4102c002000010004000000000000002c00d41020010000</SyncMan>
+					<Fmmu>0000000000000000c81000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000d41000010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>2001000000000000000000000000000000000000000000000000000000000000</DcData>
+					<DcMode>44434c415443480000000000000000004443204c61746368204163746976650000000000000000000000000000000000000000000000000000000000000020010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="MMS Device Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="Status__Diag" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6000" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Input cycle Counter" Index="#x6000" Sub="#x03">
+							<Type>BIT2</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x07">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__ID" Index="#x6000" Sub="#x09">
+							<Type>USINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Status" Index="#x1a20" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Error" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Underrange" Index="#x6010" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6010" Sub="#x03">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Diag" Index="#x6010" Sub="#x04">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Sensor Ovr" Index="#x6010" Sub="#x05">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrun" Index="#x6010" Sub="#x06">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Number of samples" Index="#x6010" Sub="#x11">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration X-Axis Sampled" Index="#x1a21" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_X__ARRAY [0]" Index="#x6011" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [1]" Index="#x6011" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [2]" Index="#x6011" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [3]" Index="#x6011" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [4]" Index="#x6011" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [5]" Index="#x6011" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [6]" Index="#x6011" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [7]" Index="#x6011" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [8]" Index="#x6011" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [9]" Index="#x6011" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Y-Axis Sampled" Index="#x1a22" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_Y__ARRAY [0]" Index="#x6012" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [1]" Index="#x6012" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [2]" Index="#x6012" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [3]" Index="#x6012" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [4]" Index="#x6012" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [5]" Index="#x6012" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [6]" Index="#x6012" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [7]" Index="#x6012" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [8]" Index="#x6012" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [9]" Index="#x6012" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Z-Axis Sampled" Index="#x1a23" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_Z__ARRAY [0]" Index="#x6013" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [1]" Index="#x6013" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [2]" Index="#x6013" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [3]" Index="#x6013" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [4]" Index="#x6013" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [5]" Index="#x6013" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [6]" Index="#x6013" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [7]" Index="#x6013" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [8]" Index="#x6013" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [9]" Index="#x6013" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Timestamp Sampled" Index="#x1a24" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="TimeStamp__ARRAY [0]" Index="#x6014" Sub="#x01">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [1]" Index="#x6014" Sub="#x02">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [2]" Index="#x6014" Sub="#x03">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [3]" Index="#x6014" Sub="#x04">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [4]" Index="#x6014" Sub="#x05">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [5]" Index="#x6014" Sub="#x06">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [6]" Index="#x6014" Sub="#x07">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [7]" Index="#x6014" Sub="#x08">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [8]" Index="#x6014" Sub="#x09">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [9]" Index="#x6014" Sub="#x0a">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration X-Axis" Index="#x1a25" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6015" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Y-Axis" Index="#x1a26" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6016" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Z-Axis" Index="#x1a27" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6017" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Timestamp" Index="#x1a28" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Timestamp" Index="#x6018" Sub="#x01">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Center Inputs" Index="#x1a30" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6020" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Bottom Inputs" Index="#x1a31" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6030" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Top Inputs" Index="#x1a32" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6040" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6040" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6040" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6040" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6040" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6040" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6040" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Us In Inputs" Index="#x1a33" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6050" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6050" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6050" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6050" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6050" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6050" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6050" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Up In Inputs" Index="#x1a34" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6060" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6060" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6060" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6060" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6060" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6060" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6060" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Up Out Inputs" Index="#x1a35" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6070" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6070" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6070" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6070" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6070" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6070" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6070" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Ebus Inputs" Index="#x1a50" Flags="#x0010">
+						<Entry Name="Status__Error" Index="#x6080" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Power Good" Index="#x6080" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__Diag" Index="#x6080" Sub="#x04">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6080" Sub="#x05">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__LED Us OK" Index="#x6080" Sub="#x06">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__LED Up OK" Index="#x6080" Sub="#x07">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Device Outputs" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
+						<Entry Name="Control__Up Out OFF" Index="#x7000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="32117641"/>
+					<CoeProfile ProfileNo="32183177"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32314249"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0002(EKM1101-0000-0017)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0c05" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x4fe17cd9" RevisionNo="#x00110000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EKM1101 EtherCAT Coupler  (2A E-Bus, ID switch, Diagnostics, isolated)" Desc="EKM1101" PortABoxInfo="#x02000004">
+					<SyncMan>001064002600010001000000640064006400001026010000</SyncMan>
+					<SyncMan>641064002200010002000000640064006400641022010000</SyncMan>
+					<SyncMan>c81002002400010003000000000000000200c81024010000</SyncMan>
+					<SyncMan>d4102c002000010004000000000000002c00d41020010000</SyncMan>
+					<Fmmu>0000000000000000c81000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000d41000010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>2001000000000000000000000000000000000000000000000000000000000000</DcData>
+					<DcMode>44434c415443480000000000000000004443204c61746368204163746976650000000000000000000000000000000000000000000000000000000000000020010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="MMS Device Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="Status__Diag" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6000" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Input cycle Counter" Index="#x6000" Sub="#x03">
+							<Type>BIT2</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x07">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__ID" Index="#x6000" Sub="#x09">
+							<Type>USINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Status" Index="#x1a20" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Error" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Underrange" Index="#x6010" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6010" Sub="#x03">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Diag" Index="#x6010" Sub="#x04">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Sensor Ovr" Index="#x6010" Sub="#x05">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrun" Index="#x6010" Sub="#x06">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Number of samples" Index="#x6010" Sub="#x11">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration X-Axis Sampled" Index="#x1a21" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_X__ARRAY [0]" Index="#x6011" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [1]" Index="#x6011" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [2]" Index="#x6011" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [3]" Index="#x6011" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [4]" Index="#x6011" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [5]" Index="#x6011" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [6]" Index="#x6011" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [7]" Index="#x6011" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [8]" Index="#x6011" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [9]" Index="#x6011" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Y-Axis Sampled" Index="#x1a22" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_Y__ARRAY [0]" Index="#x6012" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [1]" Index="#x6012" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [2]" Index="#x6012" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [3]" Index="#x6012" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [4]" Index="#x6012" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [5]" Index="#x6012" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [6]" Index="#x6012" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [7]" Index="#x6012" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [8]" Index="#x6012" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [9]" Index="#x6012" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Z-Axis Sampled" Index="#x1a23" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_Z__ARRAY [0]" Index="#x6013" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [1]" Index="#x6013" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [2]" Index="#x6013" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [3]" Index="#x6013" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [4]" Index="#x6013" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [5]" Index="#x6013" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [6]" Index="#x6013" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [7]" Index="#x6013" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [8]" Index="#x6013" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [9]" Index="#x6013" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Timestamp Sampled" Index="#x1a24" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="TimeStamp__ARRAY [0]" Index="#x6014" Sub="#x01">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [1]" Index="#x6014" Sub="#x02">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [2]" Index="#x6014" Sub="#x03">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [3]" Index="#x6014" Sub="#x04">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [4]" Index="#x6014" Sub="#x05">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [5]" Index="#x6014" Sub="#x06">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [6]" Index="#x6014" Sub="#x07">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [7]" Index="#x6014" Sub="#x08">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [8]" Index="#x6014" Sub="#x09">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [9]" Index="#x6014" Sub="#x0a">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration X-Axis" Index="#x1a25" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6015" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Y-Axis" Index="#x1a26" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6016" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Z-Axis" Index="#x1a27" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6017" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Timestamp" Index="#x1a28" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Timestamp" Index="#x6018" Sub="#x01">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Center Inputs" Index="#x1a30" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6020" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Bottom Inputs" Index="#x1a31" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6030" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Top Inputs" Index="#x1a32" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6040" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6040" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6040" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6040" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6040" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6040" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6040" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Us In Inputs" Index="#x1a33" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6050" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6050" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6050" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6050" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6050" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6050" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6050" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Up In Inputs" Index="#x1a34" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6060" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6060" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6060" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6060" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6060" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6060" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6060" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Up Out Inputs" Index="#x1a35" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6070" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6070" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6070" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6070" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6070" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6070" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6070" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Ebus Inputs" Index="#x1a50" Flags="#x0010">
+						<Entry Name="Status__Error" Index="#x6080" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Power Good" Index="#x6080" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__Diag" Index="#x6080" Sub="#x04">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6080" Sub="#x05">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__LED Us OK" Index="#x6080" Sub="#x06">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__LED Up OK" Index="#x6080" Sub="#x07">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Device Outputs" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
+						<Entry Name="Control__Up Out OFF" Index="#x7000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="32117641"/>
+					<CoeProfile ProfileNo="32183177"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32314249"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="6" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0003(EKM1101-0000-0018)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0c05" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x4fe17cd9" RevisionNo="#x00120000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EKM1101 EtherCAT Coupler  (2A E-Bus, ID switch, Diagnostics, isolated)" Desc="EKM1101" PortABoxInfo="#x02000005">
+					<SyncMan>001064002600010001000000640064006400001026010000</SyncMan>
+					<SyncMan>641064002200010002000000640064006400641022010000</SyncMan>
+					<SyncMan>c81002002400010003000000000000000200c81024010000</SyncMan>
+					<SyncMan>d4102c002000010004000000000000002c00d41020010000</SyncMan>
+					<Fmmu>0000000000000000c81000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000d41000010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>2001000000000000000000000000000000000000000000000000000000000000</DcData>
+					<DcMode>44434c415443480000000000000000004443204c61746368204163746976650000000000000000000000000000000000000000000000000000000000000020010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="MMS Device Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="Status__Diag" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6000" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Input cycle Counter" Index="#x6000" Sub="#x03">
+							<Type>BIT2</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x07">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__ID" Index="#x6000" Sub="#x09">
+							<Type>USINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Status" Index="#x1a20" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Error" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Underrange" Index="#x6010" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6010" Sub="#x03">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Diag" Index="#x6010" Sub="#x04">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Sensor Ovr" Index="#x6010" Sub="#x05">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrun" Index="#x6010" Sub="#x06">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Number of samples" Index="#x6010" Sub="#x11">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration X-Axis Sampled" Index="#x1a21" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_X__ARRAY [0]" Index="#x6011" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [1]" Index="#x6011" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [2]" Index="#x6011" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [3]" Index="#x6011" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [4]" Index="#x6011" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [5]" Index="#x6011" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [6]" Index="#x6011" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [7]" Index="#x6011" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [8]" Index="#x6011" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [9]" Index="#x6011" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Y-Axis Sampled" Index="#x1a22" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_Y__ARRAY [0]" Index="#x6012" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [1]" Index="#x6012" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [2]" Index="#x6012" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [3]" Index="#x6012" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [4]" Index="#x6012" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [5]" Index="#x6012" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [6]" Index="#x6012" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [7]" Index="#x6012" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [8]" Index="#x6012" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [9]" Index="#x6012" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Z-Axis Sampled" Index="#x1a23" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_Z__ARRAY [0]" Index="#x6013" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [1]" Index="#x6013" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [2]" Index="#x6013" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [3]" Index="#x6013" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [4]" Index="#x6013" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [5]" Index="#x6013" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [6]" Index="#x6013" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [7]" Index="#x6013" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [8]" Index="#x6013" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [9]" Index="#x6013" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Timestamp Sampled" Index="#x1a24" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="TimeStamp__ARRAY [0]" Index="#x6014" Sub="#x01">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [1]" Index="#x6014" Sub="#x02">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [2]" Index="#x6014" Sub="#x03">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [3]" Index="#x6014" Sub="#x04">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [4]" Index="#x6014" Sub="#x05">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [5]" Index="#x6014" Sub="#x06">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [6]" Index="#x6014" Sub="#x07">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [7]" Index="#x6014" Sub="#x08">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [8]" Index="#x6014" Sub="#x09">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [9]" Index="#x6014" Sub="#x0a">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration X-Axis" Index="#x1a25" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6015" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Y-Axis" Index="#x1a26" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6016" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Z-Axis" Index="#x1a27" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6017" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Timestamp" Index="#x1a28" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Timestamp" Index="#x6018" Sub="#x01">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Center Inputs" Index="#x1a30" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6020" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Bottom Inputs" Index="#x1a31" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6030" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Top Inputs" Index="#x1a32" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6040" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6040" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6040" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6040" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6040" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6040" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6040" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Us In Inputs" Index="#x1a33" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6050" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6050" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6050" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6050" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6050" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6050" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6050" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Up In Inputs" Index="#x1a34" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6060" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6060" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6060" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6060" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6060" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6060" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6060" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Up Out Inputs" Index="#x1a35" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6070" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6070" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6070" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6070" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6070" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6070" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6070" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Ebus Inputs" Index="#x1a50" Flags="#x0010">
+						<Entry Name="Status__Error" Index="#x6080" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Power Good" Index="#x6080" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__Diag" Index="#x6080" Sub="#x04">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6080" Sub="#x05">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__LED Us OK" Index="#x6080" Sub="#x06">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__LED Up OK" Index="#x6080" Sub="#x07">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Device Outputs" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
+						<Entry Name="Control__Up Out OFF" Index="#x7000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="32117641"/>
+					<CoeProfile ProfileNo="32183177"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32314249"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0004(EKM1101-0000-0019)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0c05" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x4fe17cd9" RevisionNo="#x00130000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutStateChange1="8000" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EKM1101 EtherCAT Coupler  (2A E-Bus, ID switch, Diagnostics, isolated)" Desc="EKM1101" PortABoxInfo="#x02000006">
+					<SyncMan>001080002600010001000000640080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000640080008000801022010000</SyncMan>
+					<SyncMan>001102002400010003000000000000000200001124010000</SyncMan>
+					<SyncMan>80112c002000010004000000000000002c00801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>2001000000000000000000000000000000000000000000000000000000000000</DcData>
+					<DcMode>44434c415443480000000000000000004443204c61746368204163746976650000000000000000000000000000000000000000000000000000000000000020010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="MMS Device Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="Status__Diag" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6000" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Input cycle Counter" Index="#x6000" Sub="#x03">
+							<Type>BIT2</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x07">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__ID" Index="#x6000" Sub="#x09">
+							<Type>USINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Status" Index="#x1a20" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Error" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Underrange" Index="#x6010" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6010" Sub="#x03">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Diag" Index="#x6010" Sub="#x04">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Sensor Ovr" Index="#x6010" Sub="#x05">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrun" Index="#x6010" Sub="#x06">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Number of samples" Index="#x6010" Sub="#x11">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration X-Axis Sampled" Index="#x1a21" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_X__ARRAY [0]" Index="#x6011" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [1]" Index="#x6011" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [2]" Index="#x6011" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [3]" Index="#x6011" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [4]" Index="#x6011" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [5]" Index="#x6011" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [6]" Index="#x6011" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [7]" Index="#x6011" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [8]" Index="#x6011" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [9]" Index="#x6011" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Y-Axis Sampled" Index="#x1a22" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_Y__ARRAY [0]" Index="#x6012" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [1]" Index="#x6012" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [2]" Index="#x6012" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [3]" Index="#x6012" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [4]" Index="#x6012" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [5]" Index="#x6012" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [6]" Index="#x6012" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [7]" Index="#x6012" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [8]" Index="#x6012" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [9]" Index="#x6012" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Z-Axis Sampled" Index="#x1a23" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_Z__ARRAY [0]" Index="#x6013" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [1]" Index="#x6013" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [2]" Index="#x6013" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [3]" Index="#x6013" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [4]" Index="#x6013" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [5]" Index="#x6013" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [6]" Index="#x6013" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [7]" Index="#x6013" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [8]" Index="#x6013" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [9]" Index="#x6013" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Timestamp Sampled" Index="#x1a24" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="TimeStamp__ARRAY [0]" Index="#x6014" Sub="#x01">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [1]" Index="#x6014" Sub="#x02">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [2]" Index="#x6014" Sub="#x03">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [3]" Index="#x6014" Sub="#x04">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [4]" Index="#x6014" Sub="#x05">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [5]" Index="#x6014" Sub="#x06">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [6]" Index="#x6014" Sub="#x07">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [7]" Index="#x6014" Sub="#x08">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [8]" Index="#x6014" Sub="#x09">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [9]" Index="#x6014" Sub="#x0a">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration X-Axis" Index="#x1a25" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6015" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Y-Axis" Index="#x1a26" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6016" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Z-Axis" Index="#x1a27" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6017" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Timestamp" Index="#x1a28" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Timestamp" Index="#x6018" Sub="#x01">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Center Inputs" Index="#x1a30" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6020" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Bottom Inputs" Index="#x1a31" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6030" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Top Inputs" Index="#x1a32" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6040" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6040" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6040" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6040" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6040" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6040" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6040" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Us In Inputs" Index="#x1a33" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6050" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6050" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6050" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6050" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6050" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6050" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6050" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Up In Inputs" Index="#x1a34" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6060" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6060" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6060" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6060" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6060" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6060" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6060" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Up Out Inputs" Index="#x1a35" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6070" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6070" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6070" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6070" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6070" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6070" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6070" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Ebus Inputs" Index="#x1a50" Flags="#x0010">
+						<Entry Name="Status__Error" Index="#x6080" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Power Good" Index="#x6080" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__Diag" Index="#x6080" Sub="#x04">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6080" Sub="#x05">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__LED Us OK" Index="#x6080" Sub="#x06">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__LED Up OK" Index="#x6080" Sub="#x07">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Device Outputs" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
+						<Entry Name="Control__Up Out OFF" Index="#x7000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Control__">
+							<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="32117641"/>
+					<CoeProfile ProfileNo="32183177"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32314249"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="8" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0005(EKM1101-0000-0020)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0c05" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x4fe17cd9" RevisionNo="#x00140000" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutStateChange1="8000" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EKM1101 EtherCAT Coupler  (2A E-Bus, ID switch, Diagnostics, isolated)" Desc="EKM1101" PortABoxInfo="#x02000007">
+					<SyncMan>001080002600010001000000640080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000640080008000801022010000</SyncMan>
+					<SyncMan>001102002400010003000000000000000200001124010000</SyncMan>
+					<SyncMan>80112c002000010004000000000000002c00801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>2001000000000000000000000000000000000000000000000000000000000000</DcData>
+					<DcMode>44434c415443480000000000000000004443204c61746368204163746976650000000000000000000000000000000000000000000000000000000000000020010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="MMS Device Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="Status__Diag" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6000" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Input cycle Counter" Index="#x6000" Sub="#x03">
+							<Type>BIT2</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x07">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__ID" Index="#x6000" Sub="#x09">
+							<Type>USINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Status" Index="#x1a20" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Error" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Underrange" Index="#x6010" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6010" Sub="#x03">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Diag" Index="#x6010" Sub="#x04">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Sensor Ovr" Index="#x6010" Sub="#x05">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrun" Index="#x6010" Sub="#x06">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Number of samples" Index="#x6010" Sub="#x11">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration X-Axis Sampled" Index="#x1a21" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_X__ARRAY [0]" Index="#x6011" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [1]" Index="#x6011" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [2]" Index="#x6011" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [3]" Index="#x6011" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [4]" Index="#x6011" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [5]" Index="#x6011" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [6]" Index="#x6011" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [7]" Index="#x6011" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [8]" Index="#x6011" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_X__ARRAY [9]" Index="#x6011" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Y-Axis Sampled" Index="#x1a22" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_Y__ARRAY [0]" Index="#x6012" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [1]" Index="#x6012" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [2]" Index="#x6012" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [3]" Index="#x6012" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [4]" Index="#x6012" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [5]" Index="#x6012" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [6]" Index="#x6012" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [7]" Index="#x6012" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [8]" Index="#x6012" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Y__ARRAY [9]" Index="#x6012" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Z-Axis Sampled" Index="#x1a23" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="Samples_Z__ARRAY [0]" Index="#x6013" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [1]" Index="#x6013" Sub="#x02">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [2]" Index="#x6013" Sub="#x03">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [3]" Index="#x6013" Sub="#x04">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [4]" Index="#x6013" Sub="#x05">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [5]" Index="#x6013" Sub="#x06">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [6]" Index="#x6013" Sub="#x07">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [7]" Index="#x6013" Sub="#x08">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [8]" Index="#x6013" Sub="#x09">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Samples_Z__ARRAY [9]" Index="#x6013" Sub="#x0a">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Timestamp Sampled" Index="#x1a24" Flags="#x0010">
+						<ExcludePdo>#x1a25</ExcludePdo>
+						<ExcludePdo>#x1a26</ExcludePdo>
+						<ExcludePdo>#x1a27</ExcludePdo>
+						<ExcludePdo>#x1a28</ExcludePdo>
+						<Entry Name="TimeStamp__ARRAY [0]" Index="#x6014" Sub="#x01">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [1]" Index="#x6014" Sub="#x02">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [2]" Index="#x6014" Sub="#x03">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [3]" Index="#x6014" Sub="#x04">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [4]" Index="#x6014" Sub="#x05">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [5]" Index="#x6014" Sub="#x06">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [6]" Index="#x6014" Sub="#x07">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [7]" Index="#x6014" Sub="#x08">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [8]" Index="#x6014" Sub="#x09">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="TimeStamp__ARRAY [9]" Index="#x6014" Sub="#x0a">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration X-Axis" Index="#x1a25" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6015" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Y-Axis" Index="#x1a26" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6016" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Z-Axis" Index="#x1a27" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Value" Index="#x6017" Sub="#x01">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Acceleration Timestamp" Index="#x1a28" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a21</ExcludePdo>
+						<ExcludePdo>#x1a22</ExcludePdo>
+						<ExcludePdo>#x1a23</ExcludePdo>
+						<ExcludePdo>#x1a24</ExcludePdo>
+						<Entry Name="Timestamp" Index="#x6018" Sub="#x01">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Center Inputs" Index="#x1a30" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6020" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Bottom Inputs" Index="#x1a31" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6030" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Temperature Top Inputs" Index="#x1a32" Flags="#x0010">
+						<Entry Name="Status__Underrange" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6040" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6040" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6040" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6040" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6040" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6040" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6040" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Us In Inputs" Index="#x1a33" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6050" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6050" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6050" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6050" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6050" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6050" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6050" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Up In Inputs" Index="#x1a34" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6060" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6060" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6060" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6060" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6060" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6060" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6060" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Voltage Up Out Inputs" Index="#x1a35" Flags="#x0010" SyncMan="3">
+						<Entry Name="Status__Underrange" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Overrange" Index="#x6070" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Overrange event active]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 1" Index="#x6070" Sub="#x03">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+						</Entry>
+						<Entry Name="Status__Limit 2" Index="#x6070" Sub="#x05">
+							<Type>BIT2</Type>
+							<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+						</Entry>
+						<Entry Name="Status__Error" Index="#x6070" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6070" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6070" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000010}">ARRAY [0..1] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Value" Index="#x6070" Sub="#x11">
+							<Type>REAL</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Ebus Inputs" Index="#x1a50" Flags="#x0010">
+						<Entry Name="Status__Error" Index="#x6080" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__Power Good" Index="#x6080" Sub="#x02">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__Diag" Index="#x6080" Sub="#x04">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6080" Sub="#x05">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__LED Us OK" Index="#x6080" Sub="#x06">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__LED Up OK" Index="#x6080" Sub="#x07">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="MMS Device Outputs" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="2">
+						<Entry Name="Control__Up Out OFF" Index="#x7000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Control__">
+							<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="32117641"/>
+					<CoeProfile ProfileNo="32183177"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="19665801"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32248713"/>
+					<CoeProfile ProfileNo="32314249"/>
+				</EtherCAT>
+			</Box>
+		</Box>
+	</Box>
+</TcSmItem>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PTO_Control_Channel_0A6210C3" Id="{a54e94be-8fb7-4243-9907-ab62e92be27d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ2522-0000-0022"}
+{attribute addProperty Id "ControlAT %Q*Control_A1EB0E501621Frequency_valueAT %Q*UINT16217"}
+{attribute addProperty CRC "174198979"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE PTO_Control_Channel_0A6210C3 :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_A1EB0E50;
+	{attribute addProperty Name "Frequency_value"}
+	Frequency_value AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_192954DE" Id="{711888c3-eddf-46c9-8a71-7cce9ba47bcc}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "StateAT %I*UINT1620"}
+{attribute addProperty CRC "422139102"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE InfoData_192954DE :
+STRUCT
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

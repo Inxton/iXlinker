@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_2B4F1F8E" Id="{7789d3fd-3cc3-4278-a13e-0dbbb1386d66}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ2521-0224-0016"}
+{attribute addProperty Id "PLS_EnabledBIT10.1251Status_of_outputBIT10.1254Sync_errorBIT10.12514TxPDO_ToggleBIT10.12516"}
+{attribute addProperty CRC "726605710"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_2B4F1F8E :
+STRUCT
+	{attribute addProperty Name "PLS_Enabled"}
+	PLS_Enabled : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BOOL;
+	{attribute addProperty Name "Status_of_output"}
+	Status_of_output : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_4 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_5 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_6 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_7 : BOOL;
+	{attribute 'hide'}
+	reserve_2_BIT_8 : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute 'hide'}
+	reserve_3 : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

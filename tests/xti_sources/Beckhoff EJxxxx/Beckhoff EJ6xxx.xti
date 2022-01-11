@@ -1,0 +1,1179 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000E}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..13] OF BIT</Name>
+			<BitSize>14</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>14</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
+			<BitSize>4</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>4</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000008}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BYTE</Name>
+			<BitSize>8</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
+			<BitSize>2</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ff000000000000ff00ffff00ffff00ffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff000000ff00ffff00ff000000ff00ffff00ffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff000000ff00ffff00ffff00ffff00ffff00ffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff000000ff00ffff00ffff00ffff00ffff00ffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff000000ff00ffff00ff000000ff00ffff00ffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffffff00ff000000000000ff00ffff00ffff00ffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffffff00ffff00ffff00ffff00ffff00ffff00ffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff</ImageData>
+		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e000000010018000000000000000000c40e0000c40e00000000000000000000fffffffffcff000000000000ffffffffffffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffffffffff000000ffffffffffff000000ffffffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff000000fffffffffffffffefffffcffffffffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff000000fffffffff9fffffdfffffcffffffffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff000000fffffffff7fffff7fffffdffffffffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffffffffff000000ffffffffffff000000ffffffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffffffffffffffff000000000000ffffffffffffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdc00ff00dcdcdc0000ff0000ffffffffffffffffffffffffffffffff007fff007fff007fff007fff007fff007fffdcdcdcdcdcdcdcdcdc0000ff0000ffffffffffffffffffffffffffffffff</ImageData>
+		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e0000000100180000000000a002000000000000000000000000000000000000ffffffffffffffffffffffffffffff171a1f171a1f171a1f171a1f171a1f171a1fffffffffffffffffffffffffffffffffffffffffffffffffffffff171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1fffffffffffffffffffffffffffffffffffffffffff171a1f171a1f171a1f171a1f171a1f171a1fffffffffffff171a1f171a1fffffffffffffffffffffffffffffff171a1f171a1f171a1f171a1f171a1f171a1fffffffffffffffffffffffff171a1f171a1fffffffffffffffffff171a1f171a1f171a1f171a1f171a1f171a1fffffffffffffffffff171a1fffffffffffff171a1f171a1fffffffffffff171a1f171a1f171a1f171a1f171a1f171a1fffffff171a1f171a1f171a1f171a1fffffffffffff171a1fffffffffffff171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1fffffff171a1fffffffffffff171a1fffffff171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1fffffffffffff171a1f171a1fffffff171a1f171a1f171a1fffffffffffff171a1f171a1f171a1f171a1f171a1f171a1fffffffffffffffffff171a1fffffffffffffffffffffffffffffffffffff171a1f171a1f171a1f171a1f171a1f171a1fffffffffffffffffff171a1f171a1fffffffffffffffffffffffff171a1f171a1f171a1f171a1f171a1f171a1fffffffffffffffffffffffffffffff171a1f171a1fffffffffffff171a1f171a1f171a1f171a1f171a1f171a1fffffffffffffffffffffffffffffffffffffffffff171a1f171a1f171a1f171a1f171a1f171a1f171a1f171a1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff171a1f171a1f171a1f171a1fffffffffffffffffffffffffffffffffffff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff EJ6xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff EJ6xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+		</Box>
+		<Box Id="4" BoxType="9101" BoxFlags="#x00000020">
+			<Name>A_0001(EJ6002-0000-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="7" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x17722852" RevisionNo="#x00100000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EJ6002 Interface 2Ch. (RS232/RS485/RS422)" Desc="EJ6002" PortABoxInfo="#x02000002">
+				<SyncMan>001080002600010001000000400080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000400080008000801022010000</SyncMan>
+				<SyncMan>001130002400010003000000000000000000001124010000</SyncMan>
+				<SyncMan>201230002000010004000000000000000000201220010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000201200010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000000000100000</MBoxUserCmdData>
+				<Pdo Name="COM Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<Entry Name="Status__Transmit accepted" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Die Klemme quittiert die Entgegennahme von Daten mit Zustandsänderung dieses Bits]]></Comment>
+					</Entry>
+					<Entry Name="Status__Receive request" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Über eine Zustandsänderung dieses Bits teilt die Klemme der Steuerung mit, dass sich die in "Input length"  angezeigte Anzahl von Bytes in den DataIn-Bytes befinden]]></Comment>
+					</Entry>
+					<Entry Name="Status__Init accepted" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Die Initialisierung wurde von der Klemme durchgeführt]]></Comment>
+					</Entry>
+					<Entry Name="Status__Buffer full" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Das Empfangs-FIFO ist voll]]></Comment>
+					</Entry>
+					<Entry Name="Status__Parity error" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Es ist ein Parity-Error aufgetreten]]></Comment>
+					</Entry>
+					<Entry Name="Status__Framing error" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Es ist ein Framing-Error aufgetreten]]></Comment>
+					</Entry>
+					<Entry Name="Status__Overrun error" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Es ist ein Overrun-Error aufgetreten]]></Comment>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Input length" Index="#x6000" Sub="#x09">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Anzahl der Eingangs-Bytes, die für die Übertragung von der Klemme zur Steuerung bereit stehen]]></Comment>
+					</Entry>
+					<Entry Name="Data In 0" Index="#x6000" Sub="#x11">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 1" Index="#x6000" Sub="#x12">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 2" Index="#x6000" Sub="#x13">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 3" Index="#x6000" Sub="#x14">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 4" Index="#x6000" Sub="#x15">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 5" Index="#x6000" Sub="#x16">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 6" Index="#x6000" Sub="#x17">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 7" Index="#x6000" Sub="#x18">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 8" Index="#x6000" Sub="#x19">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 9" Index="#x6000" Sub="#x1a">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 10" Index="#x6000" Sub="#x1b">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 11" Index="#x6000" Sub="#x1c">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 12" Index="#x6000" Sub="#x1d">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 13" Index="#x6000" Sub="#x1e">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 14" Index="#x6000" Sub="#x1f">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 15" Index="#x6000" Sub="#x20">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 16" Index="#x6000" Sub="#x21">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 17" Index="#x6000" Sub="#x22">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 18" Index="#x6000" Sub="#x23">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 19" Index="#x6000" Sub="#x24">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 20" Index="#x6000" Sub="#x25">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 21" Index="#x6000" Sub="#x26">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+				</Pdo>
+				<Pdo Name="COM Ext. Inputs Channel 1" Index="#x1a01" Flags="#x0010">
+					<Entry Name="Ext. Status__Rx" Index="#x6001" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Ext. Status__CTS" Index="#x6001" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Ext. Status__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="COM Inputs Channel 2" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<Entry Name="Status__Transmit accepted" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Die Klemme quittiert die Entgegennahme von Daten mit Zustandsänderung dieses Bits]]></Comment>
+					</Entry>
+					<Entry Name="Status__Receive request" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Über eine Zustandsänderung dieses Bits teilt die Klemme der Steuerung mit, dass sich die in "Input length"  angezeigte Anzahl von Bytes in den DataIn-Bytes befinden]]></Comment>
+					</Entry>
+					<Entry Name="Status__Init accepted" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Die Initialisierung wurde von der Klemme durchgeführt]]></Comment>
+					</Entry>
+					<Entry Name="Status__Buffer full" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Das Empfangs-FIFO ist voll]]></Comment>
+					</Entry>
+					<Entry Name="Status__Parity error" Index="#x6010" Sub="#x05">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Es ist ein Parity-Error aufgetreten]]></Comment>
+					</Entry>
+					<Entry Name="Status__Framing error" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Es ist ein Framing-Error aufgetreten]]></Comment>
+					</Entry>
+					<Entry Name="Status__Overrun error" Index="#x6010" Sub="#x07">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Es ist ein Overrun-Error aufgetreten]]></Comment>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Input length" Index="#x6010" Sub="#x09">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Anzahl der Eingangs-Bytes, die für die Übertragung von der Klemme zur Steuerung bereit stehen]]></Comment>
+					</Entry>
+					<Entry Name="Data In 0" Index="#x6010" Sub="#x11">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 1" Index="#x6010" Sub="#x12">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 2" Index="#x6010" Sub="#x13">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 3" Index="#x6010" Sub="#x14">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 4" Index="#x6010" Sub="#x15">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 5" Index="#x6010" Sub="#x16">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 6" Index="#x6010" Sub="#x17">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 7" Index="#x6010" Sub="#x18">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 8" Index="#x6010" Sub="#x19">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 9" Index="#x6010" Sub="#x1a">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 10" Index="#x6010" Sub="#x1b">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 11" Index="#x6010" Sub="#x1c">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 12" Index="#x6010" Sub="#x1d">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 13" Index="#x6010" Sub="#x1e">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 14" Index="#x6010" Sub="#x1f">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 15" Index="#x6010" Sub="#x20">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 16" Index="#x6010" Sub="#x21">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 17" Index="#x6010" Sub="#x22">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 18" Index="#x6010" Sub="#x23">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 19" Index="#x6010" Sub="#x24">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 20" Index="#x6010" Sub="#x25">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data In 21" Index="#x6010" Sub="#x26">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Eingangsdaten]]></Comment>
+					</Entry>
+				</Pdo>
+				<Pdo Name="COM Ext. Inputs Channel 2" Index="#x1a03" Flags="#x0010">
+					<Entry Name="Ext. Status__Rx" Index="#x6011" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Ext. Status__CTS" Index="#x6011" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Ext. Status__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="COM Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Ctrl__Transmit request" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Über eine Zustandsänderung dieses Bits teilt die Steuerung der Klemme mit, dass sich die in "Output length" angezeigte Anzahl von Bytes in den DataOut-Bytes befinden.]]></Comment>
+					</Entry>
+					<Entry Name="Ctrl__Receive accepted" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Die Steuerung quittiert die Entgegennahme von Daten mit Zustandsänderung dieses Bits.]]></Comment>
+					</Entry>
+					<Entry Name="Ctrl__Init request" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Die Steuerung fordert die Klemme zur Initialisierung auf.]]></Comment>
+					</Entry>
+					<Entry Name="Ctrl__Send continuous" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Kontinuierliches Senden der Daten aus dem FIFO.]]></Comment>
+					</Entry>
+					<Entry Name="Ctrl__">
+						<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+					</Entry>
+					<Entry Name="Ctrl__Output length" Index="#x7000" Sub="#x09">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Anzahl der Ausgangs-Bytes, die für die Übertragung von der Steuerung zur Klemme bereit stehen.]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 0" Index="#x7000" Sub="#x11">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 1" Index="#x7000" Sub="#x12">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 2" Index="#x7000" Sub="#x13">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 3" Index="#x7000" Sub="#x14">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 4" Index="#x7000" Sub="#x15">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 5" Index="#x7000" Sub="#x16">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 6" Index="#x7000" Sub="#x17">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 7" Index="#x7000" Sub="#x18">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 8" Index="#x7000" Sub="#x19">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 9" Index="#x7000" Sub="#x1a">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 10" Index="#x7000" Sub="#x1b">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 11" Index="#x7000" Sub="#x1c">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 12" Index="#x7000" Sub="#x1d">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 13" Index="#x7000" Sub="#x1e">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 14" Index="#x7000" Sub="#x1f">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 15" Index="#x7000" Sub="#x20">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 16" Index="#x7000" Sub="#x21">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 17" Index="#x7000" Sub="#x22">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 18" Index="#x7000" Sub="#x23">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 19" Index="#x7000" Sub="#x24">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 20" Index="#x7000" Sub="#x25">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 21" Index="#x7000" Sub="#x26">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+				</Pdo>
+				<Pdo Name="COM Ext. Outputs Channel 1" Index="#x1601" InOut="1" Flags="#x0010">
+					<Entry Name="Ext. Ctrl__Tx" Index="#x7001" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Ext. Ctrl__RTS" Index="#x7001" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Ext. Ctrl__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="COM Outputs Channel 2" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Ctrl__Transmit request" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Über eine Zustandsänderung dieses Bits teilt die Steuerung der Klemme mit, dass sich die in "Output length" angezeigte Anzahl von Bytes in den DataOut-Bytes befinden.]]></Comment>
+					</Entry>
+					<Entry Name="Ctrl__Receive accepted" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Die Steuerung quittiert die Entgegennahme von Daten mit Zustandsänderung dieses Bits.]]></Comment>
+					</Entry>
+					<Entry Name="Ctrl__Init request" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Die Steuerung fordert die Klemme zur Initialisierung auf.]]></Comment>
+					</Entry>
+					<Entry Name="Ctrl__Send continuous" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Kontinuierliches Senden der Daten aus dem FIFO.]]></Comment>
+					</Entry>
+					<Entry Name="Ctrl__">
+						<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+					</Entry>
+					<Entry Name="Ctrl__Output length" Index="#x7010" Sub="#x09">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Anzahl der Ausgangs-Bytes, die für die Übertragung von der Steuerung zur Klemme bereit stehen.]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 0" Index="#x7010" Sub="#x11">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 1" Index="#x7010" Sub="#x12">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 2" Index="#x7010" Sub="#x13">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 3" Index="#x7010" Sub="#x14">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 4" Index="#x7010" Sub="#x15">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 5" Index="#x7010" Sub="#x16">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 6" Index="#x7010" Sub="#x17">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 7" Index="#x7010" Sub="#x18">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 8" Index="#x7010" Sub="#x19">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 9" Index="#x7010" Sub="#x1a">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 10" Index="#x7010" Sub="#x1b">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 11" Index="#x7010" Sub="#x1c">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 12" Index="#x7010" Sub="#x1d">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 13" Index="#x7010" Sub="#x1e">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 14" Index="#x7010" Sub="#x1f">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 15" Index="#x7010" Sub="#x20">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 16" Index="#x7010" Sub="#x21">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 17" Index="#x7010" Sub="#x22">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 18" Index="#x7010" Sub="#x23">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 19" Index="#x7010" Sub="#x24">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 20" Index="#x7010" Sub="#x25">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+					<Entry Name="Data Out 21" Index="#x7010" Sub="#x26">
+						<Type>USINT</Type>
+						<Comment><![CDATA[Ausgangsdaten]]></Comment>
+					</Entry>
+				</Pdo>
+				<Pdo Name="COM Ext. Outputs Channel 2" Index="#x1603" InOut="1" Flags="#x0010">
+					<Entry Name="Ext. Ctrl__Tx" Index="#x7011" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Ext. Ctrl__RTS" Index="#x7011" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Ext. Ctrl__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="39326601"/>
+				<CoeProfile ProfileNo="39326601"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0002(EJ6224-0000-0016)</Name>
+			<ImageId>1003</ImageId>
+			<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0206ed03" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" FoeType="1" VendorId="#x00000002" ProductCode="#x18502852" RevisionNo="#x00100000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="2000" GenerateOwnNetId="true" InitializeOwnNetId="true" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="6" Type="EJ6224 (IO Link Master)" Desc="EJ6224" PortABoxInfo="#x01000004">
+				<SyncMan>001000012600010001000000400000010001001026010000</SyncMan>
+				<SyncMan>001100012200010002000000400000010001001122010000</SyncMan>
+				<SyncMan>001200002400000003000000000000000000001224010000</SyncMan>
+				<SyncMan>001306002000010004000000000000000600001320010000</SyncMan>
+				<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>44434c415443480000000000000000004443204c61746368204163746976650000000000000000000000000000000000000000000000000000000000000030010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<MBoxUserCmdData>020003001c0000000000000003000000030009030000000000000000000000003000800114000000000000000000000000000000000000000000000000</MBoxUserCmdData>
+				<MBoxUserCmdData>020003001c0000000000000003000000040009030000000000000000000000003010800114000000000000000000000000000000000000000000000000</MBoxUserCmdData>
+				<MBoxUserCmdData>020003001c0000000000000003000000050009030000000000000000000000003020800114000000000000000000000000000000000000000000000000</MBoxUserCmdData>
+				<MBoxUserCmdData>020003001c0000000000000003000000060009030000000000000000000000003030800114000000000000000000000000000000000000000000000000</MBoxUserCmdData>
+				<Pdo Name="DeviceState Inputs Device" Index="#x1a81" Flags="#x0090" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+					</Entry>
+					<Entry Name="Device Diag" Index="#xf101" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Device State" Index="#xf101" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="DeviceState Inputs" Index="#x1a80" Flags="#x0090" SyncMan="3">
+					<Entry Name="State Ch1" Index="#xf100" Sub="#x01">
+						<Type>USINT</Type>
+						<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected
+0xB_ = error Preoperate]]></Comment>
+					</Entry>
+					<Entry Name="State Ch2" Index="#xf100" Sub="#x02">
+						<Type>USINT</Type>
+						<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected
+0xB_ = error Preoperate]]></Comment>
+					</Entry>
+					<Entry Name="State Ch3" Index="#xf100" Sub="#x03">
+						<Type>USINT</Type>
+						<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected
+0xB_ = error Preoperate]]></Comment>
+					</Entry>
+					<Entry Name="State Ch4" Index="#xf100" Sub="#x04">
+						<Type>USINT</Type>
+						<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected
+0xB_ = error Preoperate]]></Comment>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="407638921"/>
+				<CoeProfile ProfileNo="407638921"/>
+				<CoeProfile ProfileNo="407638921"/>
+				<CoeProfile ProfileNo="407638921"/>
+				<Slot Name="DeviceState Inputs Device" ImageId="1004">
+					<SlotData>0000000001000400000000000000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>257</ModuleIdent>
+					<Module Id="#x03090001" Type="DeviceState Inputs Device" Class="">
+						<Name>Module 1 (DeviceState Inputs Device)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>0200000001010000000000000000000000000000000000000000000000000000</ModuleData>
+						<PdoIndex>6785</PdoIndex>
+					</Module>
+				</Slot>
+				<Slot Name="DeviceState Inputs" ImageId="1004">
+					<SlotData>0000000001000400000000000000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>259</ModuleIdent>
+					<Module Id="#x03090002" Type="DeviceState Inputs" Class="">
+						<Name>Module 2 (DeviceState Inputs)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>0200000003010000000000000000000000000000000000000000000000000000</ModuleData>
+						<PdoIndex>6784</PdoIndex>
+					</Module>
+				</Slot>
+				<Slot Name="IO-Link Channel" ImageId="1004">
+					<SlotData>0000000001000400010000001000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>-2</ModuleIdent>
+					<ModuleIdent>-1</ModuleIdent>
+					<ModuleIdent>1050624</ModuleIdent>
+					<ModuleIdent>1050625</ModuleIdent>
+					<ModuleIdent>1050626</ModuleIdent>
+					<ModuleIdent>1050627</ModuleIdent>
+					<ModuleIdent>1575168</ModuleIdent>
+					<ModuleIdent>1575169</ModuleIdent>
+					<ModuleIdent>1575170</ModuleIdent>
+					<ModuleIdent>1575171</ModuleIdent>
+					<ModuleIdent>2099200</ModuleIdent>
+					<ModuleIdent>2099201</ModuleIdent>
+					<ModuleIdent>2099202</ModuleIdent>
+					<ModuleIdent>2099203</ModuleIdent>
+					<ModuleIdent>2623744</ModuleIdent>
+					<ModuleIdent>2623745</ModuleIdent>
+					<ModuleIdent>2623746</ModuleIdent>
+					<ModuleIdent>2623747</ModuleIdent>
+					<ModuleIdent>2308096</ModuleIdent>
+					<ModuleIdent>2308097</ModuleIdent>
+					<ModuleIdent>2308098</ModuleIdent>
+					<ModuleIdent>2308099</ModuleIdent>
+					<ModuleIdent>2308352</ModuleIdent>
+					<ModuleIdent>2308353</ModuleIdent>
+					<ModuleIdent>2308354</ModuleIdent>
+					<ModuleIdent>2308355</ModuleIdent>
+					<ModuleIdent>3240960</ModuleIdent>
+					<ModuleIdent>4420608</ModuleIdent>
+					<Module Id="#x03090003" Type="empty" Class="">
+						<Name>Module 3 (empty)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>02000000feffffff000000000000000000000000000000000000000000000000</ModuleData>
+					</Module>
+				</Slot>
+				<Slot Name="IO-Link Channel" ImageId="1004">
+					<SlotData>0000000001000400010000001000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>-2</ModuleIdent>
+					<ModuleIdent>-1</ModuleIdent>
+					<ModuleIdent>1050624</ModuleIdent>
+					<ModuleIdent>1050625</ModuleIdent>
+					<ModuleIdent>1050626</ModuleIdent>
+					<ModuleIdent>1050627</ModuleIdent>
+					<ModuleIdent>1575168</ModuleIdent>
+					<ModuleIdent>1575169</ModuleIdent>
+					<ModuleIdent>1575170</ModuleIdent>
+					<ModuleIdent>1575171</ModuleIdent>
+					<ModuleIdent>2099200</ModuleIdent>
+					<ModuleIdent>2099201</ModuleIdent>
+					<ModuleIdent>2099202</ModuleIdent>
+					<ModuleIdent>2099203</ModuleIdent>
+					<ModuleIdent>2623744</ModuleIdent>
+					<ModuleIdent>2623745</ModuleIdent>
+					<ModuleIdent>2623746</ModuleIdent>
+					<ModuleIdent>2623747</ModuleIdent>
+					<ModuleIdent>2308096</ModuleIdent>
+					<ModuleIdent>2308097</ModuleIdent>
+					<ModuleIdent>2308098</ModuleIdent>
+					<ModuleIdent>2308099</ModuleIdent>
+					<ModuleIdent>2308352</ModuleIdent>
+					<ModuleIdent>2308353</ModuleIdent>
+					<ModuleIdent>2308354</ModuleIdent>
+					<ModuleIdent>2308355</ModuleIdent>
+					<ModuleIdent>3240960</ModuleIdent>
+					<ModuleIdent>4420608</ModuleIdent>
+					<Module Id="#x03090004" Type="empty" Class="">
+						<Name>Module 4 (empty)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>02000000feffffff000000000000000000000000000000000000000000000000</ModuleData>
+					</Module>
+				</Slot>
+				<Slot Name="IO-Link Channel" ImageId="1004">
+					<SlotData>0000000001000400010000001000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>-2</ModuleIdent>
+					<ModuleIdent>-1</ModuleIdent>
+					<ModuleIdent>1050624</ModuleIdent>
+					<ModuleIdent>1050625</ModuleIdent>
+					<ModuleIdent>1050626</ModuleIdent>
+					<ModuleIdent>1050627</ModuleIdent>
+					<ModuleIdent>1575168</ModuleIdent>
+					<ModuleIdent>1575169</ModuleIdent>
+					<ModuleIdent>1575170</ModuleIdent>
+					<ModuleIdent>1575171</ModuleIdent>
+					<ModuleIdent>2099200</ModuleIdent>
+					<ModuleIdent>2099201</ModuleIdent>
+					<ModuleIdent>2099202</ModuleIdent>
+					<ModuleIdent>2099203</ModuleIdent>
+					<ModuleIdent>2623744</ModuleIdent>
+					<ModuleIdent>2623745</ModuleIdent>
+					<ModuleIdent>2623746</ModuleIdent>
+					<ModuleIdent>2623747</ModuleIdent>
+					<ModuleIdent>2308096</ModuleIdent>
+					<ModuleIdent>2308097</ModuleIdent>
+					<ModuleIdent>2308098</ModuleIdent>
+					<ModuleIdent>2308099</ModuleIdent>
+					<ModuleIdent>2308352</ModuleIdent>
+					<ModuleIdent>2308353</ModuleIdent>
+					<ModuleIdent>2308354</ModuleIdent>
+					<ModuleIdent>2308355</ModuleIdent>
+					<ModuleIdent>3240960</ModuleIdent>
+					<ModuleIdent>4420608</ModuleIdent>
+					<Module Id="#x03090005" Type="empty" Class="">
+						<Name>Module 5 (empty)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>02000000feffffff000000000000000000000000000000000000000000000000</ModuleData>
+					</Module>
+				</Slot>
+				<Slot Name="IO-Link Channel" ImageId="1004">
+					<SlotData>0000000001000400010000001000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>-2</ModuleIdent>
+					<ModuleIdent>-1</ModuleIdent>
+					<ModuleIdent>1050624</ModuleIdent>
+					<ModuleIdent>1050625</ModuleIdent>
+					<ModuleIdent>1050626</ModuleIdent>
+					<ModuleIdent>1050627</ModuleIdent>
+					<ModuleIdent>1575168</ModuleIdent>
+					<ModuleIdent>1575169</ModuleIdent>
+					<ModuleIdent>1575170</ModuleIdent>
+					<ModuleIdent>1575171</ModuleIdent>
+					<ModuleIdent>2099200</ModuleIdent>
+					<ModuleIdent>2099201</ModuleIdent>
+					<ModuleIdent>2099202</ModuleIdent>
+					<ModuleIdent>2099203</ModuleIdent>
+					<ModuleIdent>2623744</ModuleIdent>
+					<ModuleIdent>2623745</ModuleIdent>
+					<ModuleIdent>2623746</ModuleIdent>
+					<ModuleIdent>2623747</ModuleIdent>
+					<ModuleIdent>2308096</ModuleIdent>
+					<ModuleIdent>2308097</ModuleIdent>
+					<ModuleIdent>2308098</ModuleIdent>
+					<ModuleIdent>2308099</ModuleIdent>
+					<ModuleIdent>2308352</ModuleIdent>
+					<ModuleIdent>2308353</ModuleIdent>
+					<ModuleIdent>2308354</ModuleIdent>
+					<ModuleIdent>2308355</ModuleIdent>
+					<ModuleIdent>3240960</ModuleIdent>
+					<ModuleIdent>4420608</ModuleIdent>
+					<Module Id="#x03090006" Type="empty" Class="">
+						<Name>Module 6 (empty)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>02000000feffffff000000000000000000000000000000000000000000000000</ModuleData>
+					</Module>
+				</Slot>
+			</EtherCAT>
+		</Box>
+		<Box Id="6" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0003(EJ6224-0090-0016)</Name>
+			<ImageId>1003</ImageId>
+			<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0207ee03" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" FoeType="1" VendorId="#x00000002" ProductCode="#x18502852" RevisionNo="#x0010005a" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="2000" GenerateOwnNetId="true" InitializeOwnNetId="true" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="7" Type="EJ6224-0090 (IO Link Master, TwinSAFE SC)" Desc="EJ6224-0090" PortABoxInfo="#x01000005">
+				<SyncMan>001000012600010001000000400000010001001026010000</SyncMan>
+				<SyncMan>001100012200010002000000400000010001001122010000</SyncMan>
+				<SyncMan>001200002400000003000000000000000000001224010000</SyncMan>
+				<SyncMan>001306002000010004000000000000000600001320010000</SyncMan>
+				<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>44434c415443480000000000000000004443204c61746368204163746976650000000000000000000000000000000000000000000000000000000000000030010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<MBoxUserCmdData>020003001c0000000000000003000000090009030000000000000000000000003000800114000000000000000000000000000000000000000000000000</MBoxUserCmdData>
+				<MBoxUserCmdData>020003001c00000000000000030000000a0009030000000000000000000000003010800114000000000000000000000000000000000000000000000000</MBoxUserCmdData>
+				<MBoxUserCmdData>020003001c00000000000000030000000b0009030000000000000000000000003020800114000000000000000000000000000000000000000000000000</MBoxUserCmdData>
+				<MBoxUserCmdData>020003001c00000000000000030000000c0009030000000000000000000000003030800114000000000000000000000000000000000000000000000000</MBoxUserCmdData>
+				<Pdo Name="DeviceState Inputs Device" Index="#x1a81" Flags="#x0090" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+					</Entry>
+					<Entry Name="Device Diag" Index="#xf101" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Device State" Index="#xf101" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="DeviceState Inputs" Index="#x1a80" Flags="#x0090" SyncMan="3">
+					<Entry Name="State Ch1" Index="#xf100" Sub="#x01">
+						<Type>USINT</Type>
+						<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected
+0xB_ = error Preoperate]]></Comment>
+					</Entry>
+					<Entry Name="State Ch2" Index="#xf100" Sub="#x02">
+						<Type>USINT</Type>
+						<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected
+0xB_ = error Preoperate]]></Comment>
+					</Entry>
+					<Entry Name="State Ch3" Index="#xf100" Sub="#x03">
+						<Type>USINT</Type>
+						<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected
+0xB_ = error Preoperate]]></Comment>
+					</Entry>
+					<Entry Name="State Ch4" Index="#xf100" Sub="#x04">
+						<Type>USINT</Type>
+						<Comment><![CDATA[0x_0 = Port disabled
+0x_1 = Port in std dig in
+0x_2 = Port in std dig out
+0x_3 = Port in communikation OP
+0x_4 = Port in communikation COMSTOP
+0x1_ = Watchdog detected
+0x2_ = internal Error
+0x3_ = invalid Device ID
+0x4_ = invalid Vendor ID
+0x5_ = invalid IO-Link Version
+0x6_ = invalid Frame Capability
+0x7_ = invalid Cycle Time
+0x8_ = invalid PD in length
+0x9_ = invalid PD out length
+0xA_ = no Device detected
+0xB_ = error Preoperate]]></Comment>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="407638921"/>
+				<CoeProfile ProfileNo="407638921"/>
+				<CoeProfile ProfileNo="407638921"/>
+				<CoeProfile ProfileNo="407638921"/>
+				<Slot Name="DeviceState Inputs Device" ImageId="1004">
+					<SlotData>0000000001000400000000000000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>257</ModuleIdent>
+					<Module Id="#x03090007" Type="DeviceState Inputs Device" Class="">
+						<Name>Module 1 (DeviceState Inputs Device)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>0200000001010000000000000000000000000000000000000000000000000000</ModuleData>
+						<PdoIndex>6785</PdoIndex>
+					</Module>
+				</Slot>
+				<Slot Name="DeviceState Inputs" ImageId="1004">
+					<SlotData>0000000001000400000000000000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>259</ModuleIdent>
+					<Module Id="#x03090008" Type="DeviceState Inputs" Class="">
+						<Name>Module 2 (DeviceState Inputs)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>0200000003010000000000000000000000000000000000000000000000000000</ModuleData>
+						<PdoIndex>6784</PdoIndex>
+					</Module>
+				</Slot>
+				<Slot Name="IO-Link Channel" ImageId="1004">
+					<SlotData>0000000001000400010000001000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>-2</ModuleIdent>
+					<ModuleIdent>-1</ModuleIdent>
+					<ModuleIdent>1050624</ModuleIdent>
+					<ModuleIdent>1050625</ModuleIdent>
+					<ModuleIdent>1050626</ModuleIdent>
+					<ModuleIdent>1050627</ModuleIdent>
+					<ModuleIdent>1575168</ModuleIdent>
+					<ModuleIdent>1575169</ModuleIdent>
+					<ModuleIdent>1575170</ModuleIdent>
+					<ModuleIdent>1575171</ModuleIdent>
+					<ModuleIdent>2099200</ModuleIdent>
+					<ModuleIdent>2099201</ModuleIdent>
+					<ModuleIdent>2099202</ModuleIdent>
+					<ModuleIdent>2099203</ModuleIdent>
+					<ModuleIdent>2623744</ModuleIdent>
+					<ModuleIdent>2623745</ModuleIdent>
+					<ModuleIdent>2623746</ModuleIdent>
+					<ModuleIdent>2623747</ModuleIdent>
+					<ModuleIdent>2308096</ModuleIdent>
+					<ModuleIdent>2308097</ModuleIdent>
+					<ModuleIdent>2308098</ModuleIdent>
+					<ModuleIdent>2308099</ModuleIdent>
+					<ModuleIdent>2308352</ModuleIdent>
+					<ModuleIdent>2308353</ModuleIdent>
+					<ModuleIdent>2308354</ModuleIdent>
+					<ModuleIdent>2308355</ModuleIdent>
+					<ModuleIdent>3240960</ModuleIdent>
+					<ModuleIdent>4420608</ModuleIdent>
+					<Module Id="#x03090009" Type="empty" Class="">
+						<Name>Module 3 (empty)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>02000000feffffff000000000000000000000000000000000000000000000000</ModuleData>
+					</Module>
+				</Slot>
+				<Slot Name="IO-Link Channel" ImageId="1004">
+					<SlotData>0000000001000400010000001000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>-2</ModuleIdent>
+					<ModuleIdent>-1</ModuleIdent>
+					<ModuleIdent>1050624</ModuleIdent>
+					<ModuleIdent>1050625</ModuleIdent>
+					<ModuleIdent>1050626</ModuleIdent>
+					<ModuleIdent>1050627</ModuleIdent>
+					<ModuleIdent>1575168</ModuleIdent>
+					<ModuleIdent>1575169</ModuleIdent>
+					<ModuleIdent>1575170</ModuleIdent>
+					<ModuleIdent>1575171</ModuleIdent>
+					<ModuleIdent>2099200</ModuleIdent>
+					<ModuleIdent>2099201</ModuleIdent>
+					<ModuleIdent>2099202</ModuleIdent>
+					<ModuleIdent>2099203</ModuleIdent>
+					<ModuleIdent>2623744</ModuleIdent>
+					<ModuleIdent>2623745</ModuleIdent>
+					<ModuleIdent>2623746</ModuleIdent>
+					<ModuleIdent>2623747</ModuleIdent>
+					<ModuleIdent>2308096</ModuleIdent>
+					<ModuleIdent>2308097</ModuleIdent>
+					<ModuleIdent>2308098</ModuleIdent>
+					<ModuleIdent>2308099</ModuleIdent>
+					<ModuleIdent>2308352</ModuleIdent>
+					<ModuleIdent>2308353</ModuleIdent>
+					<ModuleIdent>2308354</ModuleIdent>
+					<ModuleIdent>2308355</ModuleIdent>
+					<ModuleIdent>3240960</ModuleIdent>
+					<ModuleIdent>4420608</ModuleIdent>
+					<Module Id="#x0309000a" Type="empty" Class="">
+						<Name>Module 4 (empty)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>02000000feffffff000000000000000000000000000000000000000000000000</ModuleData>
+					</Module>
+				</Slot>
+				<Slot Name="IO-Link Channel" ImageId="1004">
+					<SlotData>0000000001000400010000001000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>-2</ModuleIdent>
+					<ModuleIdent>-1</ModuleIdent>
+					<ModuleIdent>1050624</ModuleIdent>
+					<ModuleIdent>1050625</ModuleIdent>
+					<ModuleIdent>1050626</ModuleIdent>
+					<ModuleIdent>1050627</ModuleIdent>
+					<ModuleIdent>1575168</ModuleIdent>
+					<ModuleIdent>1575169</ModuleIdent>
+					<ModuleIdent>1575170</ModuleIdent>
+					<ModuleIdent>1575171</ModuleIdent>
+					<ModuleIdent>2099200</ModuleIdent>
+					<ModuleIdent>2099201</ModuleIdent>
+					<ModuleIdent>2099202</ModuleIdent>
+					<ModuleIdent>2099203</ModuleIdent>
+					<ModuleIdent>2623744</ModuleIdent>
+					<ModuleIdent>2623745</ModuleIdent>
+					<ModuleIdent>2623746</ModuleIdent>
+					<ModuleIdent>2623747</ModuleIdent>
+					<ModuleIdent>2308096</ModuleIdent>
+					<ModuleIdent>2308097</ModuleIdent>
+					<ModuleIdent>2308098</ModuleIdent>
+					<ModuleIdent>2308099</ModuleIdent>
+					<ModuleIdent>2308352</ModuleIdent>
+					<ModuleIdent>2308353</ModuleIdent>
+					<ModuleIdent>2308354</ModuleIdent>
+					<ModuleIdent>2308355</ModuleIdent>
+					<ModuleIdent>3240960</ModuleIdent>
+					<ModuleIdent>4420608</ModuleIdent>
+					<Module Id="#x0309000b" Type="empty" Class="">
+						<Name>Module 5 (empty)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>02000000feffffff000000000000000000000000000000000000000000000000</ModuleData>
+					</Module>
+				</Slot>
+				<Slot Name="IO-Link Channel" ImageId="1004">
+					<SlotData>0000000001000400010000001000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>-2</ModuleIdent>
+					<ModuleIdent>-1</ModuleIdent>
+					<ModuleIdent>1050624</ModuleIdent>
+					<ModuleIdent>1050625</ModuleIdent>
+					<ModuleIdent>1050626</ModuleIdent>
+					<ModuleIdent>1050627</ModuleIdent>
+					<ModuleIdent>1575168</ModuleIdent>
+					<ModuleIdent>1575169</ModuleIdent>
+					<ModuleIdent>1575170</ModuleIdent>
+					<ModuleIdent>1575171</ModuleIdent>
+					<ModuleIdent>2099200</ModuleIdent>
+					<ModuleIdent>2099201</ModuleIdent>
+					<ModuleIdent>2099202</ModuleIdent>
+					<ModuleIdent>2099203</ModuleIdent>
+					<ModuleIdent>2623744</ModuleIdent>
+					<ModuleIdent>2623745</ModuleIdent>
+					<ModuleIdent>2623746</ModuleIdent>
+					<ModuleIdent>2623747</ModuleIdent>
+					<ModuleIdent>2308096</ModuleIdent>
+					<ModuleIdent>2308097</ModuleIdent>
+					<ModuleIdent>2308098</ModuleIdent>
+					<ModuleIdent>2308099</ModuleIdent>
+					<ModuleIdent>2308352</ModuleIdent>
+					<ModuleIdent>2308353</ModuleIdent>
+					<ModuleIdent>2308354</ModuleIdent>
+					<ModuleIdent>2308355</ModuleIdent>
+					<ModuleIdent>3240960</ModuleIdent>
+					<ModuleIdent>4420608</ModuleIdent>
+					<Module Id="#x0309000c" Type="empty" Class="">
+						<Name>Module 6 (empty)</Name>
+						<ImageId>1004</ImageId>
+						<ModuleData>02000000feffffff000000000000000000000000000000000000000000000000</ModuleData>
+					</Module>
+				</Slot>
+				<Slot Name="TwinSAFE SC">
+					<SlotData>0000000001000400000000000000000000000000000000000000000000000000</SlotData>
+					<ModuleIdent>530512</ModuleIdent>
+				</Slot>
+			</EtherCAT>
+		</Box>
+	</Box>
+</TcSmItem>

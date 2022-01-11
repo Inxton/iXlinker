@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ4008_D5FA9EBB" Id="{387dc8a7-8233-41b9-b9af-c6c319b54f5d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ4008-0000-0020"}
+{attribute addProperty Id "AO_Outputs_ChannelAT %Q*ARRAY[0..7] OF AO_Outputs_Channel_F57FA4F9128160WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "220256351"}
+{attribute addProperty SizeInBites "209"}
+{attribute addProperty SizeInBytes "26.125"}
+TYPE EJ4008_D5FA9EBB :
+STRUCT
+	{attribute addProperty Name "AO_Outputs_Channel"}
+	AO_Outputs_Channel : ARRAY[0..7] OF AO_Outputs_Channel_F57FA4F9;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_28A86775;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
