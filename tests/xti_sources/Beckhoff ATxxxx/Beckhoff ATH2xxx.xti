@@ -1,0 +1,2710 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-000300000038}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..55] OF BYTE</Name>
+			<BitSize>448</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>56</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00030000003C}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..59] OF BYTE</Name>
+			<BitSize>480</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>60</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-000300000040}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..63] OF BYTE</Name>
+			<BitSize>512</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>64</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000130b0000130b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff8e8582b1a9a5ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc3bebbaea9a659565355524f5755525a58555e5b5862605d6764616d6a6772706d817f7cff00ffff00ffff00ffff00ff7e7875e1dddca1a09e7673707b7875817f7c817f7d85838084827f84817e827e7c52504d777472ff00ffff00ffff00ff4845428b89886a686b7c78769693909a979599959398969497969395918f73706e5e5b595e5b58acaaa7ff00ffff00ff45423f53504d94908dff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff7e7a7764625f989693ff00ffff00ff474441534f4ca5a19eff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff9793915f5c59989592ff00ffff00ff524e4b4d4a484f4d4aff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff565451625f5caaa8a5ff00ffff00ffff00ff464442504e4b55535054524f5653505755525755525655515554515a58555b5956726f6cff00ffff00ffff00ffff00ffff00ff5653504443404946434a48454c49474e4b484e4b49504e4b514e4b757370ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff ATH2xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff ATH2xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+			<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0001(ATH2000-0250-0022)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74709" RevisionNo="#x001600fa" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2000-0250 Hygienic Motor module 250 mm, 48V" Desc="ATH2000-0250" PortABoxInfo="#x02000003">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+				<Box Id="17" BoxType="9099">
+					<Name>A_0014(ATH2050-5501-0022)</Name>
+					<ImageId>1002</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0d06" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x31d74a29" RevisionNo="#x0016157d" InfoDataDcTimes="true" PortPhys="3" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2050-5501 Hygienic Sensor 90° clothoid, EtherCAT Out" Desc="ATH2050-5501" PortABoxInfo="#x01000004">
+						<SyncMan>001002004400010003000000000000000100001044010000</SyncMan>
+						<SyncMan>001138000000010004000000000000000100001100010000</SyncMan>
+						<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001100010100000002000000000000000000000000000000</Fmmu>
+						<DcData>0007000000000000c83efeff48e801000100ffff000100000000000000000000</DcData>
+						<DcMode>444353594e433235307500000000000044432d53796e6368726f6e6f757320323530207573000000000000000000000000000000c83efeff48e80100ffff00070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+						<Pdo Name="FB Inputs" Index="#x1a00" Flags="#x0010" SyncMan="1">
+							<Entry Name="BinaryData" Index="#x6000" Sub="#x01">
+								<Type GUID="{18071995-0000-0000-0000-000300000038}">ARRAY [0..55] OF BYTE</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Outputs" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
+							<Entry Name="Control" Index="#x7000" Sub="#x01">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+					</EtherCAT>
+				</Box>
+			</Box>
+			<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0002(ATH2000-0250-0023)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74709" RevisionNo="#x001700fa" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2000-0250 Hygienic Motor module 250 mm, 48V" Desc="ATH2000-0250" PortABoxInfo="#x02000004">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+				<Box Id="18" BoxType="9099">
+					<Name>A_0015(ATH2040-5250-0022)</Name>
+					<ImageId>1002</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0d06" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x31d74989" RevisionNo="#x00161482" InfoDataDcTimes="true" PortPhys="3" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2040-5250 Hygienic Sensor +45°" Desc="ATH2040-5250" PortABoxInfo="#x01000005">
+						<SyncMan>001002004400010003000000000000000100001044010000</SyncMan>
+						<SyncMan>00113c000000010004000000000000000100001100010000</SyncMan>
+						<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001100010100000002000000000000000000000000000000</Fmmu>
+						<DcData>0007000000000000c83efeff48e801000100ffff000100000000000000000000</DcData>
+						<DcMode>444353594e433235307500000000000044432d53796e6368726f6e6f757320323530207573000000000000000000000000000000c83efeff48e80100ffff00070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+						<Pdo Name="FB Inputs" Index="#x1a00" Flags="#x0010" SyncMan="1">
+							<Entry Name="BinaryData" Index="#x6000" Sub="#x01">
+								<Type GUID="{18071995-0000-0000-0000-00030000003C}">ARRAY [0..59] OF BYTE</Type>
+							</Entry>
+						</Pdo>
+						<Pdo Name="FB Outputs" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
+							<Entry Name="Control" Index="#x7000" Sub="#x01">
+								<Type>UINT</Type>
+							</Entry>
+						</Pdo>
+					</EtherCAT>
+				</Box>
+			</Box>
+			<Box Id="6" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0003(ATH2000-0250-0024)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74709" RevisionNo="#x001800fa" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2000-0250 Hygienic Motor module 250 mm, 48V" Desc="ATH2000-0250" PortABoxInfo="#x02000005">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0004(ATH2040-0250-0022)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74989" RevisionNo="#x001600fa" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2040-0250 Hygienic Motor module +45°, 250mm, 48V" Desc="ATH2040-0250" PortABoxInfo="#x02000006">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="8" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0005(ATH2040-0250-0023)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74989" RevisionNo="#x001700fa" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2040-0250 Hygienic Motor module +45°, 250mm, 48V" Desc="ATH2040-0250" PortABoxInfo="#x02000007">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="9" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0006(ATH2040-0250-0024)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74989" RevisionNo="#x001800fa" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2040-0250 Hygienic Motor module +45°, 250mm, 48V" Desc="ATH2040-0250" PortABoxInfo="#x02000008">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="10" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0007(ATH2050-0500-0022)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74a29" RevisionNo="#x001601f4" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2050-0500 Hygienic Motor module 90° clothoid, EtherCAT In" Desc="ATH2050-0500" PortABoxInfo="#x02000009">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="11" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0008(ATH2050-0500-0023)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74a29" RevisionNo="#x001701f4" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2050-0500 Hygienic Motor module 90° clothoid, EtherCAT In" Desc="ATH2050-0500" PortABoxInfo="#x0200000a">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="12" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0009(ATH2050-0500-0024)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74a29" RevisionNo="#x001801f4" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2050-0500 Hygienic Motor module 90° clothoid, EtherCAT In" Desc="ATH2050-0500" PortABoxInfo="#x0200000b">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="13" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0010(ATH2050-0501-0022)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74a29" RevisionNo="#x001601f5" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2050-0501 Hygienic Motor module 90° clothoid, EtherCAT Out" Desc="ATH2050-0501" PortABoxInfo="#x0200000c">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="14" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0011(ATH2050-0501-0023)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74a29" RevisionNo="#x001701f5" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2050-0501 Hygienic Motor module 90° clothoid, EtherCAT Out" Desc="ATH2050-0501" PortABoxInfo="#x0200000d">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="15" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0012(ATH2050-0501-0024)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CfgModeSafeOp="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x31d74a29" RevisionNo="#x001801f5" InfoDataAddr="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="305" SdoUploadWithMaxLength="true" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2050-0501 Hygienic Motor module 90° clothoid, EtherCAT Out" Desc="ATH2050-0501" PortABoxInfo="#x0200000e">
+					<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>001120002400010003000000000000002000001124010000</SyncMan>
+					<SyncMan>801120002000010004000000000000002000801120010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<DcData>0003000000000000581b00000000000001000000000000000000000000000000</DcData>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e00000000000000000000000000000000000000000000000000581b000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>004003000a00000000000000030010000000000000000000000000000000000020f3100502000000010000</MBoxUserCmdData>
+					<Pdo Name="CC Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1a01</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.15" Index="#x6000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Inputs 14 Ch" Index="#x1a01" Flags="#x0010">
+						<ExcludePdo>#x1a00</ExcludePdo>
+						<Entry Name="Status" Index="#x6000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.1" Index="#x6000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.2" Index="#x6000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.3" Index="#x6000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.4" Index="#x6000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.5" Index="#x6000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.6" Index="#x6000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.7" Index="#x6000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.8" Index="#x6000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.9" Index="#x6000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.10" Index="#x6000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.11" Index="#x6000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.12" Index="#x6000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.13" Index="#x6000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current actual value Ch.14" Index="#x6000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1601</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.15" Index="#x7000" Sub="#x1f">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="CC Outputs 14 Ch" Index="#x1601" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1600</ExcludePdo>
+						<Entry Name="Control" Index="#x7000" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.1" Index="#x7000" Sub="#x11">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.2" Index="#x7000" Sub="#x12">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.3" Index="#x7000" Sub="#x13">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.4" Index="#x7000" Sub="#x14">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.5" Index="#x7000" Sub="#x15">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.6" Index="#x7000" Sub="#x16">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.7" Index="#x7000" Sub="#x17">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.8" Index="#x7000" Sub="#x18">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.9" Index="#x7000" Sub="#x19">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.10" Index="#x7000" Sub="#x1a">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.11" Index="#x7000" Sub="#x1b">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.12" Index="#x7000" Sub="#x1c">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.13" Index="#x7000" Sub="#x1d">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Current setpoint value Ch.14" Index="#x7000" Sub="#x1e">
+							<Type>INT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="47190921"/>
+				</EtherCAT>
+			</Box>
+		</Box>
+		<Box Id="16" BoxType="9099">
+			<Name>A_0013(ATH2000-5250-0022)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d06" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x31d74709" RevisionNo="#x00161482" InfoDataDcTimes="true" PortPhys="3" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="ATH2000-5250 Hygienic Sensor line" Desc="ATH2000-5250" PortABoxInfo="#x02000002">
+				<SyncMan>001002004400010003000000000000000100001044010000</SyncMan>
+				<SyncMan>001140000000010004000000000000000100001100010000</SyncMan>
+				<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000001100010100000002000000000000000000000000000000</Fmmu>
+				<DcData>0007000000000000c83efeff48e801000100ffff000100000000000000000000</DcData>
+				<DcMode>444353594e433235307500000000000044432d53796e6368726f6e6f757320323530207573000000000000000000000000000000c83efeff48e80100ffff00070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+				<Pdo Name="FB Inputs" Index="#x1a00" Flags="#x0010" SyncMan="1">
+					<Entry Name="BinaryData" Index="#x6000" Sub="#x01">
+						<Type GUID="{18071995-0000-0000-0000-000300000040}">ARRAY [0..63] OF BYTE</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="FB Outputs" Index="#x1600" InOut="1" Flags="#x0011" SyncMan="0">
+					<Entry Name="Control" Index="#x7000" Sub="#x01">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+			</EtherCAT>
+		</Box>
+	</Box>
+</TcSmItem>

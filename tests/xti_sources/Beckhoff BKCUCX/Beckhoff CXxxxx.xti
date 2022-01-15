@@ -1,0 +1,957 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000008}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BYTE</Name>
+			<BitSize>8</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000006}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..5] OF BIT</Name>
+			<BitSize>6</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>6</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ff404040404040808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ff404040404040c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1003">424dd6020000000000003600000028000000100000000e00000001001800000000000000000074120000741200000000000000000000dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ff0000ffdcdcdc808080dcdcdc404040404040dcdcdc404040404040dcdcdcdcdcdcdcdcdc404040404040dcdcdc0000ff0000ffdcdcdc808080dcdcdc404040404040dcdcdc404040404040dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ff0000ffdcdcdc808080dcdcdc404040404040dcdcdc404040404040dcdcdcdcdcdcdcdcdc404040404040dcdcdc0000ff0000ffdcdcdc808080dcdcdc404040404040dcdcdc404040404040dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ff0000ffdcdcdc808080dcdcdc404040404040dcdcdc404040404040dcdcdcdcdcdcdcdcdc404040404040dcdcdc0000ff0000ffdcdcdc808080dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ff0000ffdcdcdc808080dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc404040404040dcdcdc0000ff0000ffdcdcdc808080dcdcdc404040404040808080404040404040dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ff0000ffdcdcdc808080dcdcdc404040404040808080404040404040dcdcdcdcdcdcdcdcdcdcdcdc21ff00dcdcdc0000ff0000ffdcdcdc808080dcdcdc808080808080808080808080808080dcdcdcdcdcdcdcdcdcdcdcdc21ff00dcdcdc0000ff0000ffdcdcdc808080dcdcdc404040404040808080404040404040dcdcdcdcdcdcdcdcdcdcdcdc21ff00dcdcdc0000ff0000ffdcdcdc808080dcdcdc404040404040808080404040404040dcdcdcdcdcdcdcdcdcdcdcdc21ff00dcdcdc0000ff0000ffdcdcdc808080dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ff0000ffdcdcdc808080</ImageData>
+		<ImageData Id="1004">424dd6020000000000003600000028000000100000000e00000001001800000000000000000074120000741200000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc404040dcdcdc404040dcdcdc0000ffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcffff00dcdcdcdcdcdc404040dcdcdc404040dcdcdc0000ffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcffff00dcdcdcdcdcdc404040dcdcdc404040dcdcdc0000ffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcffff00dcdcdcdcdcdc404040dcdcdc404040dcdcdc0000ffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcffff00dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcffff00dcdcdcdcdcdc474747404040404040dcdcdc0000ffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc424242404040404040dcdcdc0000ffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd9d9d94a4a4a444444404040dcdcdc0000ffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</ImageData>
+		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e00000001001800000000000000000074120000741200000000000000000000dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdc404040404040dcdcdc404040404040dcdcdcdcdcdcdcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdc404040404040dcdcdc404040404040dcdcdcdcdcdcdcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdc404040404040dcdcdc404040404040dcdcdcdcdcdcdcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdc404040404040dcdcdc404040404040dcdcdcdcdcdcdcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdc404040404040dcdcdc404040404040dcdcdcdcdcdcdcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdc404040404040808080404040404040dcdcdcdcdcdcdcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdc404040404040808080404040404040dcdcdc21ff00dcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdc808080808080808080808080808080dcdcdc21ff00dcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdc404040404040808080404040404040dcdcdc21ff00dcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdc404040404040808080404040404040dcdcdc21ff00dcdcdc0000ffdcdcdcffffffffffffffffffffffffffffffdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc0000ffdcdcdcffffffffffffffffffffffffffffff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff CXxxxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff CXxxxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+			<Box Id="4" BoxType="9099">
+				<Name>A_0001(CX1100-0004-0000)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c6032" RevisionNo="#x00000004" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX1100-0004 EtherCAT Power supply (2A E-Bus)" Desc="CX1100-0004" PortABoxInfo="#x02000003"/>
+			</Box>
+			<Box Id="6" BoxType="9099">
+				<Name>A_0003(CX1100-0004-0002)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c6032" RevisionNo="#x00020004" PortPhys="49" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX1100-0004 EtherCAT Power supply (2A E-Bus)" Desc="CX1100-0004" PortABoxInfo="#x02000004"/>
+			</Box>
+			<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0004 (CX5010 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0208ee03" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x13926034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX5010 EtherCAT slave" Desc="CX5010 EtherCAT slave" PortABoxInfo="#x01000002">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="8" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0005 (CX5010 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0209ef03" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x13926034" RevisionNo="#x00111b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX5010 EtherCAT slave" Desc="CX5010 EtherCAT slave" PortABoxInfo="#x01000007">
+					<SyncMan>001000042600010001000000400000040004001026010000</SyncMan>
+					<SyncMan>001400042200010002000000400000040004001422010000</SyncMan>
+					<SyncMan>002400006400000003000000000000000000002464000000</SyncMan>
+					<SyncMan>001802002000010004000000000000000000001820000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001800010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="9" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0006 (CX5020 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020af003" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x139c6034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX5020 EtherCAT slave" Desc="CX5020 EtherCAT slave" PortABoxInfo="#x01000008">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="10" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0007 (CX5020 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020bf103" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x139c6034" RevisionNo="#x00111b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX5020 EtherCAT slave" Desc="CX5020 EtherCAT slave" PortABoxInfo="#x01000009">
+					<SyncMan>001000042600010001000000400000040004001026010000</SyncMan>
+					<SyncMan>001400042200010002000000400000040004001422010000</SyncMan>
+					<SyncMan>002400006400000003000000000000000000002464000000</SyncMan>
+					<SyncMan>001802002000010004000000000000000000001820000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001800010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="11" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0008 (CX8010 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020cf203" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x1f4a6032" RevisionNo="#x00100000" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX8010 EtherCAT slave" Desc="CX8010 EtherCAT slave" PortABoxInfo="#x0100000a">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="12" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0009 (CX8010 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020df303" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x1f4a6032" RevisionNo="#x00110000" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX8010 EtherCAT slave" Desc="CX8010 EtherCAT slave" PortABoxInfo="#x0100000b">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="13" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0010 (CX8110 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020ef403" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x1fae6032" RevisionNo="#x00100000" InfoDataAddr="true" InfoDataNetId="true" TimeoutStateChange1="10000" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX8110 EtherCAT slave" Desc="CX8110 EtherCAT slave" PortABoxInfo="#x0100000c">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="14" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0011 (CX2020 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020ff503" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07e46034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2020 EtherCAT slave" Desc="CX2020 EtherCAT slave" PortABoxInfo="#x0100000d">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="15" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0012 (CX2020 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0210f603" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07e46034" RevisionNo="#x00111b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2020 EtherCAT slave" Desc="CX2020 EtherCAT slave" PortABoxInfo="#x0100000e">
+					<SyncMan>001000042600010001000000400000040004001026010000</SyncMan>
+					<SyncMan>001400042200010002000000400000040004001422010000</SyncMan>
+					<SyncMan>002400006400000003000000000000000000002464000000</SyncMan>
+					<SyncMan>001802002000010004000000000000000000001820000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001800010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="16" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0013 (CX2020 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0211f703" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07e46034" RevisionNo="#x00121b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2020 EtherCAT slave" Desc="CX2020 EtherCAT slave" PortABoxInfo="#x0100000f">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="17" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0014 (CX2030 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0212f803" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07ee6034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2030 EtherCAT slave" Desc="CX2030 EtherCAT slave" PortABoxInfo="#x01000010">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="18" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0015 (CX2030 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0213f903" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07ee6034" RevisionNo="#x00111b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2030 EtherCAT slave" Desc="CX2030 EtherCAT slave" PortABoxInfo="#x01000011">
+					<SyncMan>001000042600010001000000400000040004001026010000</SyncMan>
+					<SyncMan>001400042200010002000000400000040004001422010000</SyncMan>
+					<SyncMan>002400006400000003000000000000000000002464000000</SyncMan>
+					<SyncMan>001802002000010004000000000000000000001820000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001800010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="19" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0016 (CX2030 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0214fa03" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07ee6034" RevisionNo="#x00121b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2030 EtherCAT slave" Desc="CX2030 EtherCAT slave" PortABoxInfo="#x01000012">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="20" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0017 (CX2033 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0215fb03" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07f16034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2033 EtherCAT slave" Desc="CX2033 EtherCAT slave" PortABoxInfo="#x01000013">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="21" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0018 (CX2040 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0216fc03" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07f86034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2040 EtherCAT slave" Desc="CX2040 EtherCAT slave" PortABoxInfo="#x01000014">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="22" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0019 (CX2040 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0217fd03" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07f86034" RevisionNo="#x00111b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2040 EtherCAT slave" Desc="CX2040 EtherCAT slave" PortABoxInfo="#x01000015">
+					<SyncMan>001000042600010001000000400000040004001026010000</SyncMan>
+					<SyncMan>001200042200010002000000400000040004001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="23" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0020 (CX2040 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0218fe03" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07f86034" RevisionNo="#x00121b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2040 EtherCAT slave" Desc="CX2040 EtherCAT slave" PortABoxInfo="#x01000016">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="24" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0021 (CX2042 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0219ff03" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07fa6034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2042 EtherCAT slave" Desc="CX2042 EtherCAT slave" PortABoxInfo="#x01000017">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="25" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0022 (CX2043 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021a0004" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x07fb6034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2043 EtherCAT slave" Desc="CX2043 EtherCAT slave" PortABoxInfo="#x01000018">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="26" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0023 (CX2062 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021b0104" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x080e6034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2062 EtherCAT slave" Desc="CX2062 EtherCAT slave" PortABoxInfo="#x01000019">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="27" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0024 (CX2072 EtherCAT slave)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021c0204" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x08186034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX2072 EtherCAT slave" Desc="CX2072 EtherCAT slave" PortABoxInfo="#x0100001a">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="28" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0025 (CX9020 EtherCAT slave)</Name>
+				<ImageId>1005</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021d0304" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x233c6034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX9020 EtherCAT slave" Desc="CX9020 EtherCAT slave" PortABoxInfo="#x0100001b">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="29" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0026 (CX9020 EtherCAT slave)</Name>
+				<ImageId>1005</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021e0404" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x233c6034" RevisionNo="#x00111b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX9020 EtherCAT slave" Desc="CX9020 EtherCAT slave" PortABoxInfo="#x0100001c">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="30" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0027 (CX5120 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021f0504" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x14006034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX5120 EtherCAT slave" Desc="CX5120 EtherCAT slave" PortABoxInfo="#x0100001d">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="31" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0028 (CX5130 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee02200604" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x140a6034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX5130 EtherCAT slave" Desc="CX5130 EtherCAT slave" PortABoxInfo="#x0100001e">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="32" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0029 (CX5140 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee02210704" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x14146034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX5140 EtherCAT slave" Desc="CX5140 EtherCAT slave" PortABoxInfo="#x0100001f">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="33" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0030 (CX5230 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee02220804" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x146e6034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX5230 EtherCAT slave" Desc="CX5230 EtherCAT slave" PortABoxInfo="#x01000020">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="34" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0031 (CX5240 EtherCAT slave)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee02230904" PdiType="#x0c08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="55" EoeType="1" VendorId="#x00000002" ProductCode="#x14786034" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX5240 EtherCAT slave" Desc="CX5240 EtherCAT slave" PortABoxInfo="#x01000021">
+					<SyncMan>001000022600010001000000400000040002001026010000</SyncMan>
+					<SyncMan>001200022200010002000000400000040002001222010000</SyncMan>
+					<SyncMan>001a00006400000003000000000000000000001a64000000</SyncMan>
+					<SyncMan>001402002000010004000000000000000000001420000000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<SwitchPortData>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</SwitchPortData>
+					<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000020030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="IO Inputs" Index="#x1a00" Flags="#x0021" SyncMan="3"/>
+					<Pdo Name="Device Status Mapping" Index="#x1a80" Flags="#x0010" SyncMan="3">
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoState" Index="#xf100" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="TxPdoToggle" Index="#xf100" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="IO Outputs" Index="#x1600" InOut="1" Flags="#x0021" SyncMan="2"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="5" BoxType="9099">
+				<Name>A_0002(CX1100-0004-0001)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c6032" RevisionNo="#x00010004" PortPhys="49" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="CX1100-0004 EtherCAT Power supply (2A E-Bus)" Desc="CX1100-0004" PortABoxInfo="#x01000022"/>
+			</Box>
+		</Box>
+	</Box>
+</TcSmItem>

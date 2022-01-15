@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="MMS_Acceleration_Status_2FF1A472" Id="{195346f1-180c-4b9f-b126-9381c02db2b3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EKM1101-0000-0016"}
+{attribute addProperty Id "StatusAT %I*Status_66D490D51621Number_of_samplesAT %I*UINT16217"}
+{attribute addProperty CRC "804365426"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE MMS_Acceleration_Status_2FF1A472 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_66D490D5;
+	{attribute addProperty Name "Number_of_samples"}
+	Number_of_samples AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

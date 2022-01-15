@@ -1,0 +1,3060 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000006}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..5] OF BIT</Name>
+			<BitSize>6</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>6</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
+			<BitSize>4</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>4</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
+			<BitSize>2</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000A}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..9] OF BIT</Name>
+			<BitSize>10</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>10</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000C}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..11] OF BIT</Name>
+			<BitSize>12</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>12</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000005}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..4] OF BIT</Name>
+			<BitSize>5</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>5</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000F}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..14] OF BIT</Name>
+			<BitSize>15</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>15</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000E}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..13] OF BIT</Name>
+			<BitSize>14</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>14</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e000000010018000000000000000000120b0000120b00000000000000000000f6f6ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff020202ffffffffffff0000ff0000ff0000ff0000ff0000ffffffffffffff000000ffffffffffffffffffffffffffffff030303000000ffffff0000ff0000ff0000ff0000ff0000ffffffffffffff000000000000ffffff0101010101010101010000000000000000000000ff0000ff0000ff0000ff0000ff000000000000000000000000000000ffffffffffffffffff010101010101ffffff0000ff0000ff0000ff0000ff0000ffffffffffffff000000000000ffffffffffffffffffffffff000000ffffffffffff0000ff0000ff0000ff0000ff0000ffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000ffffffffffffffffffffffffffffffffffffffffff</ImageData>
+		<ImageData Id="1003">424d360300000000000036000000280000001000000010000000010018000000000000000000120b0000120b00000000000000000000ff00ffff00ffff00ff000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000808080808080000000000000808080808080000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000808080808080000000000000808080808080000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff00000000000000ff0000000000000000000000000000ff00000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff00000000000000ff0000000000000000000000000000ff00000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff00000000000000ff0000000000000000000000000000ff00000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff00000000000000ff0000000000000000000000000000ff00000000000000ff00ffff00ffff00ffff00ffff00ffff00ff000000000000000000000000000000000000000000000000000000000000ff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1004">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111fffffffffffffffffcfcfcfcfffff44ff4f4f4f4fffff44ffffffffffffffffffffffffffffffffffcfcfcfcfffff44ff4f4f4f4fffff44fffffffffffffffffdddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111</ImageData>
+		<ImageData Id="1005">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c30e0000c30e00000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000260000250000030000000080808000000080808000000080808000000080808000000000000000000000000000000012ed1204fb0400280000000000ff0000000000ff0000000000ff0000000000ff000000000000000000000000000000000af50a00ff00001a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000008080800000008080800000008080800000008080800000000000000000000000000000000bf40b28d828001d0000000000ff0000000000ff0000000000ff0000000000ff0000000000000000000000000000000032ce320ff10f002100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b3b9bfb3b9bfb3b9bfb3b9bfb3b9bfb3b9bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffb3b9bfb3b9bfb3b9bfb3b9bfb3b9bfb3b9bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffb3b9bfb3b9bfb3b9bfb3b9bfb3b9bfb3b9bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffb3b9bfb3b9bfb3b9bfb3b9bfb3b9bfb3b9bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffb3b9bfb3b9bfb3b9bfb3b9bfb3b9bfb3b9bfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</ImageData>
+		<ImageData Id="1006">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111fffffffffffffffff44ffcfffffffffff44ff0fffffffffffffffffffffffffffffffffffffffffff44ffffffffffffff44fffffffffffffffffffffffffffffdddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111</ImageData>
+		<ImageData Id="1007">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111ffffffffffffffffffffffffcffcffcfffffffff0ff0ff0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff EP9xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff EP9xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+			<Box Id="4" BoxType="9099">
+				<Name>A_0001(EP9128-0020-0016)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x00100014" PortPhys="4881" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-0020 8x EtherCAT junction" Desc="EP9128-0020" PortABoxInfo="#x02000003"/>
+				<Box Id="9" BoxType="9099">
+					<Name>A_0004(EP9128-0021-0016)</Name>
+					<ImageId>1002</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x00100015" PortPhys="4881" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-0021 8x EtherCAT junction" Desc="EP9128-0021" PortABoxInfo="#x03000004"/>
+					<Box Id="13" BoxType="9099">
+						<Name>A_0007(EP9128-0021-0017)</Name>
+						<ImageId>1002</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x00110015" PortPhys="4881" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-0021 8x EtherCAT junction" Desc="EP9128-0021" PortABoxInfo="#x03000009"/>
+						<Box Id="18" BoxType="9099">
+							<Name>A_0010(EP9128-0021-0018)</Name>
+							<ImageId>1002</ImageId>
+							<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x00120015" PortPhys="4881" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-0021 8x EtherCAT junction" Desc="EP9128-0021" PortABoxInfo="#x0300000d"/>
+							<Box Id="23" BoxType="9099">
+								<Name>A_0013(EP9128-0021-0019)</Name>
+								<ImageId>1003</ImageId>
+								<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x00130015" PortPhys="4881" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-0021 8x EtherCAT junction" Desc="EP9128-0021" PortABoxInfo="#x03000012"/>
+								<Box Id="28" BoxType="9099" BoxFlags="#x00000020">
+									<Name>A_0016(EP9214-0023-0019)</Name>
+									<ImageId>1004</ImageId>
+									<EtherCAT SlaveType="2" PdiType="#x0205" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" FoeType="1" VendorId="#x00000002" ProductCode="#x23fe4052" RevisionNo="#x00130017" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9214-0023 4Ch/4Ch Power Distribution for EtherCAT Box Modules" Desc="EP9214-0023" PortABoxInfo="#x03000017">
+										<SyncMan>001000012600010001000000400000010001001026010000</SyncMan>
+										<SyncMan>001100012200010002000000400000010001001122010000</SyncMan>
+										<SyncMan>00120a002400010003000000000000000a00001224010000</SyncMan>
+										<SyncMan>00190a002000010004000000000000000a00001920010000</SyncMan>
+										<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+										<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+										<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+										<BootStrapData>0010f400f410f400</BootStrapData>
+										<Pdo Name="DPO Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6000" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6000" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6000" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6000" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6000" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6000" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6010" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6010" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6010" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6010" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6010" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6010" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 3" Index="#x1a02" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6020" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6020" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6020" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6020" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6020" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6020" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 4" Index="#x1a03" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6030" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6030" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6030" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6030" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6030" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6030" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Device" Index="#x1a04" Flags="#x0001" SyncMan="3">
+											<Entry Name="Temperature Warning" Index="#xf607" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Temperature Error" Index="#xf607" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Warning" Index="#xf607" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Error" Index="#xf607" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Warning" Index="#xf607" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Error" Index="#xf607" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Global Error Bit" Index="#xf607" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Input" Index="#xf607" Sub="#x0c">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#xf607" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#xf607" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 3" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 4" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Device" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="2">
+											<Entry Name="Enable Control Via Fieldbus" Index="#xf707" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Global Reset" Index="#xf707" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+									</EtherCAT>
+								</Box>
+								<Box Id="29" BoxType="9099" BoxFlags="#x00000020">
+									<Name>A_0017(EP9214-0023-0020)</Name>
+									<ImageId>1004</ImageId>
+									<EtherCAT SlaveType="2" PdiType="#x0205" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" FoeType="1" VendorId="#x00000002" ProductCode="#x23fe4052" RevisionNo="#x00140017" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9214-0023 4Ch/4Ch Power Distribution for EtherCAT Box Modules" Desc="EP9214-0023" PortABoxInfo="#x0100001c">
+										<SyncMan>001000012600010001000000400000010001001026010000</SyncMan>
+										<SyncMan>001100012200010002000000400000010001001122010000</SyncMan>
+										<SyncMan>00120a002400010003000000000000000a00001224010000</SyncMan>
+										<SyncMan>00190a002000010004000000000000000a00001920010000</SyncMan>
+										<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+										<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+										<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+										<BootStrapData>0010f400f410f400</BootStrapData>
+										<Pdo Name="DPO Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6000" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6000" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6000" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6000" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6000" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6000" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6010" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6010" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6010" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6010" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6010" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6010" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 3" Index="#x1a02" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6020" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6020" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6020" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6020" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6020" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6020" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 4" Index="#x1a03" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6030" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6030" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6030" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6030" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6030" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6030" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Device" Index="#x1a04" Flags="#x0001" SyncMan="3">
+											<Entry Name="Temperature Warning" Index="#xf607" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Temperature Error" Index="#xf607" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Warning" Index="#xf607" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Error" Index="#xf607" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Warning" Index="#xf607" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Error" Index="#xf607" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Global Error Bit" Index="#xf607" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Input" Index="#xf607" Sub="#x0c">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#xf607" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#xf607" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 3" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 4" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Device" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="2">
+											<Entry Name="Enable Control Via Fieldbus" Index="#xf707" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Global Reset" Index="#xf707" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+									</EtherCAT>
+								</Box>
+								<Box Id="30" BoxType="9099" BoxFlags="#x00000020">
+									<Name>A_0018(EP9214-0023-0021)</Name>
+									<ImageId>1004</ImageId>
+									<EtherCAT SlaveType="2" PdiType="#x0205" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" FoeType="1" VendorId="#x00000002" ProductCode="#x23fe4052" RevisionNo="#x00150017" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9214-0023 4Ch/4Ch Power Distribution for EtherCAT Box Modules" Desc="EP9214-0023" PortABoxInfo="#x0100001d">
+										<SyncMan>001000012600010001000000400000010001001026010000</SyncMan>
+										<SyncMan>001100012200010002000000400000010001001122010000</SyncMan>
+										<SyncMan>00120a002400010003000000000000000a00001224010000</SyncMan>
+										<SyncMan>00190a002000010004000000000000000a00001920010000</SyncMan>
+										<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+										<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+										<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+										<BootStrapData>0010f400f410f400</BootStrapData>
+										<Pdo Name="DPO Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6000" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6000" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6000" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6000" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6000" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6000" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6010" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6010" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6010" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6010" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6010" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6010" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 3" Index="#x1a02" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6020" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6020" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6020" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6020" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6020" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6020" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 4" Index="#x1a03" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6030" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6030" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6030" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6030" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6030" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6030" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Device" Index="#x1a04" Flags="#x0001" SyncMan="3">
+											<Entry Name="Temperature Warning" Index="#xf607" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Temperature Error" Index="#xf607" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Warning" Index="#xf607" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Error" Index="#xf607" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Warning" Index="#xf607" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Error" Index="#xf607" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Global Error Bit" Index="#xf607" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Input" Index="#xf607" Sub="#x0c">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#xf607" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#xf607" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 3" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 4" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Device" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="2">
+											<Entry Name="Enable Control Via Fieldbus" Index="#xf707" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Global Reset" Index="#xf707" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+									</EtherCAT>
+								</Box>
+								<Box Id="31" BoxType="9099" BoxFlags="#x00000020">
+									<Name>A_0019(EP9214-0023-0022)</Name>
+									<ImageId>1005</ImageId>
+									<EtherCAT SlaveType="2" PdiType="#x0205" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" FoeType="1" VendorId="#x00000002" ProductCode="#x23fe4052" RevisionNo="#x00160017" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9214-0023 4Ch/4Ch Power Distribution for EtherCAT Box Modules" Desc="EP9214-0023" PortABoxInfo="#x0100001e">
+										<SyncMan>001000012600010001000000400000010001001026010000</SyncMan>
+										<SyncMan>001100012200010002000000400000010001001122010000</SyncMan>
+										<SyncMan>00120a002400010003000000000000000a00001224010000</SyncMan>
+										<SyncMan>00190a002000010004000000000000000a00001920010000</SyncMan>
+										<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+										<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+										<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+										<BootStrapData>0010f400f410f400</BootStrapData>
+										<Pdo Name="DPO Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6000" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6000" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6000" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6000" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6000" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6000" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6010" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6010" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6010" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6010" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6010" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6010" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 3" Index="#x1a02" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6020" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6020" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6020" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6020" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6020" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6020" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 4" Index="#x1a03" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6030" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6030" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6030" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+											</Entry>
+											<Entry Name="Sync error" Index="#x6030" Sub="#x0e">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6030" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6030" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Device" Index="#x1a04" Flags="#x0001" SyncMan="3">
+											<Entry Name="Temperature Warning" Index="#xf607" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Temperature Error" Index="#xf607" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Warning" Index="#xf607" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Error" Index="#xf607" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Warning" Index="#xf607" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Error" Index="#xf607" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Global Error Bit" Index="#xf607" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Input" Index="#xf607" Sub="#x0c">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#xf607" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#xf607" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 3" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 4" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Device" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="2">
+											<Entry Name="Enable Control Via Fieldbus" Index="#xf707" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Global Reset" Index="#xf707" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+									</EtherCAT>
+								</Box>
+								<Box Id="32" BoxType="9099" BoxFlags="#x00000020">
+									<Name>A_0020(EP9224-0023-0016)</Name>
+									<ImageId>1004</ImageId>
+									<EtherCAT SlaveType="2" PdiType="#x0605" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x24084052" RevisionNo="#x00100017" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9224-0023 4Ch/4Ch enhanced Power Distribution for EtherCAT Box Modules" Desc="EP9224-0023" PortABoxInfo="#x0100001f">
+										<SyncMan>001000012600010001000000500000010001001026010000</SyncMan>
+										<SyncMan>001100012200010002000000500000010001001122010000</SyncMan>
+										<SyncMan>00120a002400010003000000000000000a00001224010000</SyncMan>
+										<SyncMan>001924002000010004000000000000002400001920010000</SyncMan>
+										<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+										<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+										<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+										<BootStrapData>0010f400f410f400</BootStrapData>
+										<Pdo Name="DPO Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6000" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6000" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6000" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Sum Current" Index="#x6000" Sub="#x08">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Sum Current" Index="#x6000" Sub="#x09">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6000" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6000" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6000" Sub="#x11">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6000" Sub="#x12">
+												<Type>INT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 1" Index="#x1a01" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6000" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6000" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6000" Sub="#x17">
+												<Type>ULINT</Type>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6000" Sub="#x18">
+												<Type>ULINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 2" Index="#x1a02" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6010" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6010" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6010" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Sum Current" Index="#x6010" Sub="#x08">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Sum Current" Index="#x6010" Sub="#x09">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6010" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6010" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6010" Sub="#x11">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6010" Sub="#x12">
+												<Type>INT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 2" Index="#x1a03" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6010" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6010" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6010" Sub="#x17">
+												<Type>ULINT</Type>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6010" Sub="#x18">
+												<Type>ULINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 3" Index="#x1a04" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6020" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6020" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6020" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Sum Current" Index="#x6020" Sub="#x08">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Sum Current" Index="#x6020" Sub="#x09">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6020" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6020" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6020" Sub="#x11">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6020" Sub="#x12">
+												<Type>INT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 3" Index="#x1a05" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6020" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6020" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6020" Sub="#x17">
+												<Type>ULINT</Type>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6020" Sub="#x18">
+												<Type>ULINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 4" Index="#x1a06" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6030" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6030" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6030" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Sum Current" Index="#x6030" Sub="#x08">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Sum Current" Index="#x6030" Sub="#x09">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6030" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6030" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6030" Sub="#x11">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6030" Sub="#x12">
+												<Type>INT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 4" Index="#x1a07" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6030" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6030" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6030" Sub="#x17">
+												<Type>ULINT</Type>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6030" Sub="#x18">
+												<Type>ULINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Device" Index="#x1a08" Flags="#x0010" SyncMan="3">
+											<Entry Name="Temperature Warning" Index="#xf607" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Temperature Error" Index="#xf607" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Warning" Index="#xf607" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Error" Index="#xf607" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Warning" Index="#xf607" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Error" Index="#xf607" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Global Error Bit" Index="#xf607" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Sum Current Warning" Index="#xf607" Sub="#x08">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Sum Current Error" Index="#xf607" Sub="#x09">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Input" Index="#xf607" Sub="#x0c">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#xf607" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#xf607" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#xf607" Sub="#x11">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Current Up" Index="#xf607" Sub="#x12">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Voltage Us" Index="#xf607" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Voltage Up" Index="#xf607" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Temperature" Index="#xf607" Sub="#x15">
+												<Type>INT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Device" Index="#x1a09" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#xf607" Sub="#x16">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#xf607" Sub="#x17">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#xf607" Sub="#x18">
+												<Type>ULINT</Type>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#xf607" Sub="#x19">
+												<Type>ULINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="LOG Status" Index="#x1a10" Flags="#x0010">
+											<Entry Name="Status__Logger Running" Index="#x6040" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status__">
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+											<Entry Name="Elapsed Time" Index="#x6040" Sub="#x11">
+												<Type>UDINT</Type>
+											</Entry>
+											<Entry Name="Trigger Reason" Index="#x6040" Sub="#x12">
+												<Type>UINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 1" Index="#x1601" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7000" Sub="#x11">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 2" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 2" Index="#x1603" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7010" Sub="#x11">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 3" Index="#x1604" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 3" Index="#x1605" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7020" Sub="#x11">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 4" Index="#x1606" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 4" Index="#x1607" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7030" Sub="#x11">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Device" Index="#x1608" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Enable Control Via Fieldbus" Index="#xf707" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Global Reset" Index="#xf707" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Device" Index="#x1609" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#xf707" Sub="#x11">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="LOG Control" Index="#x1610" InOut="1" Flags="#x0010">
+											<Entry Name="Control__Start Logger" Index="#x7040" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Control__Stop Logger" Index="#x7040" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Control__">
+												<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="58987401"/>
+									</EtherCAT>
+								</Box>
+								<Box Id="33" BoxType="9099" BoxFlags="#x00000020">
+									<Name>A_0021(EP9224-0023-0017)</Name>
+									<ImageId>1004</ImageId>
+									<EtherCAT SlaveType="2" PdiType="#x0605" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x24084052" RevisionNo="#x00110017" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9224-0023 4Ch/4Ch enhanced Power Distribution for EtherCAT Box Modules" Desc="EP9224-0023" PortABoxInfo="#x01000020">
+										<SyncMan>001000012600010001000000500000010001001026010000</SyncMan>
+										<SyncMan>001100012200010002000000500000010001001122010000</SyncMan>
+										<SyncMan>00120a002400010003000000000000000a00001224010000</SyncMan>
+										<SyncMan>001924002000010004000000000000002400001920010000</SyncMan>
+										<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+										<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+										<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+										<BootStrapData>0010f400f410f400</BootStrapData>
+										<Pdo Name="DPO Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6000" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6000" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6000" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Sum Current" Index="#x6000" Sub="#x08">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Sum Current" Index="#x6000" Sub="#x09">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6000" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6000" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6000" Sub="#x11">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6000" Sub="#x12">
+												<Type>INT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 1" Index="#x1a01" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6000" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6000" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6000" Sub="#x17">
+												<Type>ULINT</Type>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6000" Sub="#x18">
+												<Type>ULINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 2" Index="#x1a02" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6010" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6010" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6010" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Sum Current" Index="#x6010" Sub="#x08">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Sum Current" Index="#x6010" Sub="#x09">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6010" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6010" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6010" Sub="#x11">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6010" Sub="#x12">
+												<Type>INT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 2" Index="#x1a03" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6010" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6010" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6010" Sub="#x17">
+												<Type>ULINT</Type>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6010" Sub="#x18">
+												<Type>ULINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 3" Index="#x1a04" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6020" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6020" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6020" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Sum Current" Index="#x6020" Sub="#x08">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Sum Current" Index="#x6020" Sub="#x09">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6020" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6020" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6020" Sub="#x11">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6020" Sub="#x12">
+												<Type>INT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 3" Index="#x1a05" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6020" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6020" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6020" Sub="#x17">
+												<Type>ULINT</Type>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6020" Sub="#x18">
+												<Type>ULINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 4" Index="#x1a06" Flags="#x0010" SyncMan="3">
+											<Entry Name="Error Us" Index="#x6030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Up" Index="#x6030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Us" Index="#x6030" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Up" Index="#x6030" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Us" Index="#x6030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status Up" Index="#x6030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Channel Error" Index="#x6030" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Error Sum Current" Index="#x6030" Sub="#x08">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Warning Sum Current" Index="#x6030" Sub="#x09">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#x6030" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#x6030" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6030" Sub="#x11">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6030" Sub="#x12">
+												<Type>INT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 4" Index="#x1a07" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6030" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6030" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6030" Sub="#x17">
+												<Type>ULINT</Type>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6030" Sub="#x18">
+												<Type>ULINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Device" Index="#x1a08" Flags="#x0010" SyncMan="3">
+											<Entry Name="Temperature Warning" Index="#xf607" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Temperature Error" Index="#xf607" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Warning" Index="#xf607" Sub="#x03">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Us Error" Index="#xf607" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Warning" Index="#xf607" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Up Error" Index="#xf607" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Global Error Bit" Index="#xf607" Sub="#x07">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Sum Current Warning" Index="#xf607" Sub="#x08">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Sum Current Error" Index="#xf607" Sub="#x09">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Input" Index="#xf607" Sub="#x0c">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO State" Index="#xf607" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="TxPDO Toggle" Index="#xf607" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#xf607" Sub="#x11">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Current Up" Index="#xf607" Sub="#x12">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Voltage Us" Index="#xf607" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Voltage Up" Index="#xf607" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Temperature" Index="#xf607" Sub="#x15">
+												<Type>INT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Device" Index="#x1a09" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#xf607" Sub="#x16">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#xf607" Sub="#x17">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#xf607" Sub="#x18">
+												<Type>ULINT</Type>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#xf607" Sub="#x19">
+												<Type>ULINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="LOG Status" Index="#x1a10" Flags="#x0010">
+											<Entry Name="Status__Logger Running" Index="#x6040" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status__">
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+											<Entry Name="Elapsed Time" Index="#x6040" Sub="#x11">
+												<Type>UDINT</Type>
+											</Entry>
+											<Entry Name="Trigger Reason" Index="#x6040" Sub="#x12">
+												<Type>UINT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 1" Index="#x1601" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7000" Sub="#x11">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 2" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 2" Index="#x1603" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7010" Sub="#x11">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 3" Index="#x1604" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 3" Index="#x1605" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7020" Sub="#x11">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 4" Index="#x1606" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 4" Index="#x1607" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7030" Sub="#x11">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Device" Index="#x1608" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Enable Control Via Fieldbus" Index="#xf707" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Global Reset" Index="#xf707" Sub="#x04">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Device" Index="#x1609" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#xf707" Sub="#x11">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="LOG Control" Index="#x1610" InOut="1" Flags="#x0010">
+											<Entry Name="Control__Start Logger" Index="#x7040" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Control__Stop Logger" Index="#x7040" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Control__">
+												<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="58987401"/>
+									</EtherCAT>
+								</Box>
+								<Box Id="37" BoxType="9099">
+									<Name>A_0024(EP9521-0020-0000)</Name>
+									<ImageId>1004</ImageId>
+									<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x25314052" RevisionNo="#x00000014" CheckRevisionNoType="3" PortPhys="273" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9521-0020 MediaConverter for EtherCAT Box Modules (FX-MultiMode)" Desc="EP9521-0020" PortABoxInfo="#x01000021"/>
+									<Box Id="38" BoxType="9099" BoxFlags="#x00000020">
+										<Name>A_0025(EP9576-1032-0016)</Name>
+										<ImageId>1004</ImageId>
+										<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x25684052" RevisionNo="#x00100408" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9576-1032 Brake chopper box" Desc="EP9576-1032" PortABoxInfo="#x01000025">
+											<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+											<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+											<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+											<SyncMan>80110b002000010004000000000000000b00801120010000</SyncMan>
+											<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+											<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+											<BootStrapData>0010f400f410f400</BootStrapData>
+											<MBoxUserCmdData>004003000c0000000000000003000000000000000000000000000000000000002081f001040000000804100000</MBoxUserCmdData>
+											<Pdo Name="BCT Inputs" Index="#x1a00" Flags="#x0010" SyncMan="3">
+												<Entry Name="Terminal Overtemperature" Index="#x6000" Sub="#x01">
+													<Type>BIT</Type>
+												</Entry>
+												<Entry Name="I2T error" Index="#x6000" Sub="#x02">
+													<Type>BIT</Type>
+												</Entry>
+												<Entry Name="I2T warning" Index="#x6000" Sub="#x03">
+													<Type>BIT</Type>
+												</Entry>
+												<Entry Name="Overvoltage" Index="#x6000" Sub="#x04">
+													<Type>BIT</Type>
+												</Entry>
+												<Entry Name="Undervoltage" Index="#x6000" Sub="#x05">
+													<Type>BIT</Type>
+												</Entry>
+												<Entry Name="Chopper on" Index="#x6000" Sub="#x06">
+													<Type>BIT</Type>
+												</Entry>
+												<Entry Name="Overcurrent Protection" Index="#x6000" Sub="#x07">
+													<Type>BIT</Type>
+												</Entry>
+												<Entry>
+													<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+												</Entry>
+												<Entry Name="Input cycle counter" Index="#x6000" Sub="#x0f">
+													<Type>BIT2</Type>
+												</Entry>
+												<Entry Name="DC link voltage" Index="#x6000" Sub="#x11">
+													<Type>UDINT</Type>
+												</Entry>
+												<Entry Name="Resistor Current" Index="#x6000" Sub="#x13">
+													<Type>DINT</Type>
+												</Entry>
+												<Entry Name="Duty Cycle" Index="#x6000" Sub="#x14">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<Pdo Name="BCT Load" Index="#x1a01" Flags="#x0010">
+												<Entry Name="I2T load factor" Index="#x6001" Sub="#x01">
+													<Type>USINT</Type>
+												</Entry>
+											</Pdo>
+											<CoeProfile ProfileNo="58987401"/>
+										</EtherCAT>
+									</Box>
+								</Box>
+								<Box Id="34" BoxType="9099" BoxFlags="#x00000020">
+									<Name>A_0022(EP9224-0037-0017)</Name>
+									<ImageId>1006</ImageId>
+									<EtherCAT SlaveType="2" PdiType="#x4405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x24084052" RevisionNo="#x00110025" InfoDataAddr="true" InfoDataDcTimes="true" RepeatSupport="true" TimeoutMailbox2="2000" PortPhys="12561" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9224-0037 4 port enhanced EtherCAT P gateway" Desc="EP9224-0037" PortABoxInfo="#x02000025">
+										<SyncMan>001000012600010001000000500000010001001026010000</SyncMan>
+										<SyncMan>001100012200010002000000500000010001001122010000</SyncMan>
+										<SyncMan>00120a002400010003000000000000000a00001224010000</SyncMan>
+										<SyncMan>001924002000010004000000000000002400001920010000</SyncMan>
+										<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+										<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+										<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+										<BootStrapData>0010f400f410f400</BootStrapData>
+										<SuName>A_0022(EP9224-0037-0017)</SuName>
+										<DcData>0001000000000000000000000000000000000000000000000000000000000000</DcData>
+										<DcMode>4672656552756e0000000000000000004672656552756e00000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+										<Pdo Name="DPO Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+											<Entry Name="Status__Error Us" Index="#x6000" Sub="#x01">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched off due to a preceeding error.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Error Up" Index="#x6000" Sub="#x02">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched off due to a preceeding error.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Us" Index="#x6000" Sub="#x03">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent detected. If this load condition remains, the output will shut off.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Up" Index="#x6000" Sub="#x04">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent detected. If this load condition remains, the output will shut off.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Status Us" Index="#x6000" Sub="#x05">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched on.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Status Up" Index="#x6000" Sub="#x06">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched on.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Channel Error" Index="#x6000" Sub="#x07">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Set if any other error bit on this socket is set.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Error Sum Current" Index="#x6000" Sub="#x08">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Outputs switched off because the sum current of Us and Up exceeded the preset value.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Sum Current" Index="#x6000" Sub="#x09">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent on sum current detected. Outputs will be switched off if the situation remains unchanged.]]></Comment>
+											</Entry>
+											<Entry Name="Status__">
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6000" Sub="#x11">
+												<Type>INT</Type>
+												<Comment><![CDATA[Current sourced by output in mA]]></Comment>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6000" Sub="#x12">
+												<Type>INT</Type>
+												<Comment><![CDATA[Current sourced by output in mA]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 1" Index="#x1a01" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6000" Sub="#x13">
+												<Type>INT</Type>
+												<Comment><![CDATA[Measured dimension set in CoE]]></Comment>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6000" Sub="#x14">
+												<Type>INT</Type>
+												<Comment><![CDATA[Measured dimension set in CoE]]></Comment>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6000" Sub="#x17">
+												<Type>ULINT</Type>
+												<Comment><![CDATA[Timestamp that indicates when the corresponding peak value occured.]]></Comment>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6000" Sub="#x18">
+												<Type>ULINT</Type>
+												<Comment><![CDATA[Timestamp that indicates when the corresponding peak value occured.]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 2" Index="#x1a02" Flags="#x0010" SyncMan="3">
+											<Entry Name="Status__Error Us" Index="#x6010" Sub="#x01">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched off due to a preceeding error.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Error Up" Index="#x6010" Sub="#x02">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched off due to a preceeding error.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Us" Index="#x6010" Sub="#x03">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent detected. If this load condition remains, the output will shut off.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Up" Index="#x6010" Sub="#x04">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent detected. If this load condition remains, the output will shut off.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Status Us" Index="#x6010" Sub="#x05">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched on.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Status Up" Index="#x6010" Sub="#x06">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched on.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Channel Error" Index="#x6010" Sub="#x07">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Set if any other error bit on this socket is set.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Error Sum Current" Index="#x6010" Sub="#x08">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Outputs switched off because the sum current of Us and Up exceeded the preset value.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Sum Current" Index="#x6010" Sub="#x09">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent on sum current detected. Outputs will be switched off if the situation remains unchanged.]]></Comment>
+											</Entry>
+											<Entry Name="Status__">
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6010" Sub="#x11">
+												<Type>INT</Type>
+												<Comment><![CDATA[Current sourced by output in mA]]></Comment>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6010" Sub="#x12">
+												<Type>INT</Type>
+												<Comment><![CDATA[Current sourced by output in mA]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 2" Index="#x1a03" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6010" Sub="#x13">
+												<Type>INT</Type>
+												<Comment><![CDATA[Measured dimension set in CoE]]></Comment>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6010" Sub="#x14">
+												<Type>INT</Type>
+												<Comment><![CDATA[Measured dimension set in CoE]]></Comment>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6010" Sub="#x17">
+												<Type>ULINT</Type>
+												<Comment><![CDATA[Timestamp that indicates when the corresponding peak value occured.]]></Comment>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6010" Sub="#x18">
+												<Type>ULINT</Type>
+												<Comment><![CDATA[Timestamp that indicates when the corresponding peak value occured.]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 3" Index="#x1a04" Flags="#x0010" SyncMan="3">
+											<Entry Name="Status__Error Us" Index="#x6020" Sub="#x01">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched off due to a preceeding error.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Error Up" Index="#x6020" Sub="#x02">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched off due to a preceeding error.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Us" Index="#x6020" Sub="#x03">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent detected. If this load condition remains, the output will shut off.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Up" Index="#x6020" Sub="#x04">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent detected. If this load condition remains, the output will shut off.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Status Us" Index="#x6020" Sub="#x05">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched on.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Status Up" Index="#x6020" Sub="#x06">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched on.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Channel Error" Index="#x6020" Sub="#x07">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Set if any other error bit on this socket is set.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Error Sum Current" Index="#x6020" Sub="#x08">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Outputs switched off because the sum current of Us and Up exceeded the preset value.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Sum Current" Index="#x6020" Sub="#x09">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent on sum current detected. Outputs will be switched off if the situation remains unchanged.]]></Comment>
+											</Entry>
+											<Entry Name="Status__">
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6020" Sub="#x11">
+												<Type>INT</Type>
+												<Comment><![CDATA[Current sourced by output in mA]]></Comment>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6020" Sub="#x12">
+												<Type>INT</Type>
+												<Comment><![CDATA[Current sourced by output in mA]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 3" Index="#x1a05" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6020" Sub="#x13">
+												<Type>INT</Type>
+												<Comment><![CDATA[Measured dimension set in CoE]]></Comment>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6020" Sub="#x14">
+												<Type>INT</Type>
+												<Comment><![CDATA[Measured dimension set in CoE]]></Comment>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6020" Sub="#x17">
+												<Type>ULINT</Type>
+												<Comment><![CDATA[Timestamp that indicates when the corresponding peak value occured.]]></Comment>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6020" Sub="#x18">
+												<Type>ULINT</Type>
+												<Comment><![CDATA[Timestamp that indicates when the corresponding peak value occured.]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Channel 4" Index="#x1a06" Flags="#x0010" SyncMan="3">
+											<Entry Name="Status__Error Us" Index="#x6030" Sub="#x01">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched off due to a preceeding error.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Error Up" Index="#x6030" Sub="#x02">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched off due to a preceeding error.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Us" Index="#x6030" Sub="#x03">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent detected. If this load condition remains, the output will shut off.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Up" Index="#x6030" Sub="#x04">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent detected. If this load condition remains, the output will shut off.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Status Us" Index="#x6030" Sub="#x05">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched on.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Status Up" Index="#x6030" Sub="#x06">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If set, the output is switched on.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Channel Error" Index="#x6030" Sub="#x07">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Set if any other error bit on this socket is set.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Error Sum Current" Index="#x6030" Sub="#x08">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Outputs switched off because the sum current of Us and Up exceeded the preset value.]]></Comment>
+											</Entry>
+											<Entry Name="Status__Warning Sum Current" Index="#x6030" Sub="#x09">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent on sum current detected. Outputs will be switched off if the situation remains unchanged.]]></Comment>
+											</Entry>
+											<Entry Name="Status__">
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#x6030" Sub="#x11">
+												<Type>INT</Type>
+												<Comment><![CDATA[Current sourced by output in mA]]></Comment>
+											</Entry>
+											<Entry Name="Current Up" Index="#x6030" Sub="#x12">
+												<Type>INT</Type>
+												<Comment><![CDATA[Current sourced by output in mA]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Channel 4" Index="#x1a07" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#x6030" Sub="#x13">
+												<Type>INT</Type>
+												<Comment><![CDATA[Measured dimension set in CoE]]></Comment>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#x6030" Sub="#x14">
+												<Type>INT</Type>
+												<Comment><![CDATA[Measured dimension set in CoE]]></Comment>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#x6030" Sub="#x17">
+												<Type>ULINT</Type>
+												<Comment><![CDATA[Timestamp that indicates when the corresponding peak value occured.]]></Comment>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#x6030" Sub="#x18">
+												<Type>ULINT</Type>
+												<Comment><![CDATA[Timestamp that indicates when the corresponding peak value occured.]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Inputs Device" Index="#x1a08" Flags="#x0010" SyncMan="3">
+											<Entry Name="Device Status__Warning Temperature" Index="#xf607" Sub="#x01">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Temperature close to switch off temperature. Not possible to switch on any channel if this bit is set.]]></Comment>
+											</Entry>
+											<Entry Name="Device Status__Error Temperature" Index="#xf607" Sub="#x02">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Outputs are switched off.]]></Comment>
+											</Entry>
+											<Entry Name="Device Status__Warning Us" Index="#xf607" Sub="#x03">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Us low. Channels remain powered.]]></Comment>
+											</Entry>
+											<Entry Name="Device Status__Error Us" Index="#xf607" Sub="#x04">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Us to low. Channels switched off.]]></Comment>
+											</Entry>
+											<Entry Name="Device Status__Warning Up" Index="#xf607" Sub="#x05">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Us low. Channels remain powered.]]></Comment>
+											</Entry>
+											<Entry Name="Device Status__Error Up" Index="#xf607" Sub="#x06">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Up to low. Channels switched off.]]></Comment>
+											</Entry>
+											<Entry Name="Device Status__Global Error Bit" Index="#xf607" Sub="#x07">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Set if any other error bit of the device is set.]]></Comment>
+											</Entry>
+											<Entry Name="Device Status__Warning Sum Current" Index="#xf607" Sub="#x08">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Peak overcurrent on device sum current detected.]]></Comment>
+											</Entry>
+											<Entry Name="Device Status__Error Sum Current" Index="#xf607" Sub="#x09">
+												<Type>BIT</Type>
+												<Comment><![CDATA[All outputs switched off due to device overcurrent.]]></Comment>
+											</Entry>
+											<Entry Name="Device Status__">
+												<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+											</Entry>
+											<Entry Name="Device Status__TxPDO State" Index="#xf607" Sub="#x0f">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Device Status__TxPDO Toggle" Index="#xf607" Sub="#x10">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Current Us" Index="#xf607" Sub="#x11">
+												<Type>INT</Type>
+												<Comment><![CDATA[Sum current on Us.]]></Comment>
+											</Entry>
+											<Entry Name="Current Up" Index="#xf607" Sub="#x12">
+												<Type>INT</Type>
+												<Comment><![CDATA[Sum current on Up]]></Comment>
+											</Entry>
+											<Entry Name="Voltage Us" Index="#xf607" Sub="#x13">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Voltage Up" Index="#xf607" Sub="#x14">
+												<Type>INT</Type>
+											</Entry>
+											<Entry Name="Temperature" Index="#xf607" Sub="#x15">
+												<Type>INT</Type>
+												<Comment><![CDATA[Internal temperature of the power stage.]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Inputs Device" Index="#x1a09" Flags="#x0010">
+											<Entry Name="Peak Value 1" Index="#xf607" Sub="#x16">
+												<Type>INT</Type>
+												<Comment><![CDATA[Measured dimension set in CoE]]></Comment>
+											</Entry>
+											<Entry Name="Peak Value 2" Index="#xf607" Sub="#x17">
+												<Type>INT</Type>
+												<Comment><![CDATA[Measured dimension set in CoE]]></Comment>
+											</Entry>
+											<Entry Name="Timestamp 1" Index="#xf607" Sub="#x18">
+												<Type>ULINT</Type>
+												<Comment><![CDATA[Timestamp that indicates when the corresponding peak value occured.]]></Comment>
+											</Entry>
+											<Entry Name="Timestamp 2" Index="#xf607" Sub="#x19">
+												<Type>ULINT</Type>
+												<Comment><![CDATA[Timestamp that indicates when the corresponding peak value occured.]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="LOG Status" Index="#x1a10" Flags="#x0010">
+											<Entry Name="Status__Logger Running" Index="#x6040" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+											<Entry Name="Elapsed Time" Index="#x6040" Sub="#x11">
+												<Type>UDINT</Type>
+												<Comment><![CDATA[Elapsed time since the logger was stopped]]></Comment>
+											</Entry>
+											<Entry Name="Trigger Reason" Index="#x6040" Sub="#x12">
+												<Type>UINT</Type>
+												<Comment><![CDATA[Reason for which the logger was stopped]]></Comment>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7000" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7000" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7000" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7000" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 1" Index="#x1601" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7000" Sub="#x11">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Reset peak values and timestamp values]]></Comment>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 2" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7010" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7010" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7010" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7010" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 2" Index="#x1603" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7010" Sub="#x11">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Reset peak values and timestamp values]]></Comment>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 3" Index="#x1604" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7020" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7020" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7020" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7020" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 3" Index="#x1605" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7020" Sub="#x11">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Reset peak values and timestamp values]]></Comment>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Channel 4" Index="#x1606" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Output Us" Index="#x7030" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Output Up" Index="#x7030" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Reset Us" Index="#x7030" Sub="#x05">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Reset Up" Index="#x7030" Sub="#x06">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Channel 4" Index="#x1607" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#x7030" Sub="#x11">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Reset peak values and timestamp values]]></Comment>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Outputs Device" Index="#x1608" InOut="1" Flags="#x0010" SyncMan="2">
+											<Entry Name="Enable Control Via Fieldbus" Index="#xf707" Sub="#x01">
+												<Type>BIT</Type>
+												<Comment><![CDATA[If not set, all outputs will remain in default state.]]></Comment>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+											</Entry>
+											<Entry Name="Global Reset" Index="#xf707" Sub="#x04">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Reset all erros]]></Comment>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="DPO Extended Diag Outputs Device" Index="#x1609" InOut="1" Flags="#x0010">
+											<Entry Name="Reset Extended Diag Data" Index="#xf707" Sub="#x11">
+												<Type>BIT</Type>
+												<Comment><![CDATA[Reset the device peak values and timestamps]]></Comment>
+											</Entry>
+											<Entry>
+												<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<Pdo Name="LOG Control" Index="#x1610" InOut="1" Flags="#x0010">
+											<Entry Name="Control__Start Logger" Index="#x7040" Sub="#x01">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Control__Stop Logger" Index="#x7040" Sub="#x02">
+												<Type>BIT</Type>
+											</Entry>
+											<Entry Name="Control__">
+												<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+											</Entry>
+										</Pdo>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="17699721"/>
+										<CoeProfile ProfileNo="58987401"/>
+										<EtherCATp>
+											<Device>
+												<Us PowerSupply="true" DevCurrent="0.1"/>
+												<Up PowerSupply="true"/>
+											</Device>
+											<Port/>
+											<Port>
+												<Us PowerSupply="true" Resistance="0.108"/>
+												<Up PowerSupply="true" Resistance="0.108"/>
+											</Port>
+											<Port/>
+											<Port/>
+											<PowerSupply>
+												<Us MaxCurrent="3"/>
+												<Up MaxCurrent="3"/>
+											</PowerSupply>
+										</EtherCATp>
+									</EtherCAT>
+									<Box Id="35" BoxType="9099">
+										<Name>A_0022(EP9224-0037-0017)_2 (EP9224-1037)</Name>
+										<ImageId>1007</ImageId>
+										<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x24084052" RevisionNo="#x0011040d" RepeatSupport="true" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9224-1037 Internal Junction" Desc="EP9224-1037" PortABoxInfo="#x03000022">
+											<EtherCATp>
+												<Device>
+													<Us PowerSupply="true" DevCurrent="0.1"/>
+													<Up PowerSupply="true"/>
+												</Device>
+												<Port/>
+												<Port>
+													<Us PowerSupply="true" Resistance="0.108"/>
+													<Up PowerSupply="true" Resistance="0.108"/>
+												</Port>
+												<Port>
+													<Us PowerSupply="true" Resistance="0.108"/>
+													<Up PowerSupply="true" Resistance="0.108"/>
+												</Port>
+												<Port>
+													<Us PowerSupply="true" Resistance="0.108"/>
+													<Up PowerSupply="true" Resistance="0.108"/>
+												</Port>
+												<PowerSupply>
+													<Us MaxCurrent="9"/>
+													<Up MaxCurrent="9"/>
+												</PowerSupply>
+											</EtherCATp>
+										</EtherCAT>
+									</Box>
+								</Box>
+								<Box Id="24" BoxType="9099">
+									<Name>A_0013(EP9128-0021-0019)_2 (EP9128-1021)</Name>
+									<ImageId>1003</ImageId>
+									<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001303fd" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1021 8x EtherCAT junction - Dev A" Desc="EP9128-1021" PortABoxInfo="#x02000017"/>
+								</Box>
+								<Box Id="25" BoxType="9099">
+									<Name>A_0013(EP9128-0021-0019)_3 (EP9128-2021)</Name>
+									<ImageId>1003</ImageId>
+									<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001307e5" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-2021 8x EtherCAT junction - Dev B" Desc="EP9128-2021" PortABoxInfo="#x02000018"/>
+								</Box>
+							</Box>
+							<Box Id="19" BoxType="9099">
+								<Name>A_0010(EP9128-0021-0018)_2 (EP9128-1021)</Name>
+								<ImageId>1002</ImageId>
+								<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001203fd" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1021 8x EtherCAT junction - Dev A" Desc="EP9128-1021" PortABoxInfo="#x02000012"/>
+							</Box>
+							<Box Id="20" BoxType="9099">
+								<Name>A_0010(EP9128-0021-0018)_3 (EP9128-2021)</Name>
+								<ImageId>1002</ImageId>
+								<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001207e5" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-2021 8x EtherCAT junction - Dev B" Desc="EP9128-2021" PortABoxInfo="#x02000013"/>
+							</Box>
+						</Box>
+						<Box Id="14" BoxType="9099">
+							<Name>A_0007(EP9128-0021-0017)_2 (EP9128-1021)</Name>
+							<ImageId>1002</ImageId>
+							<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001103fd" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1021 8x EtherCAT junction - Dev A" Desc="EP9128-1021" PortABoxInfo="#x0200000d"/>
+						</Box>
+						<Box Id="15" BoxType="9099">
+							<Name>A_0007(EP9128-0021-0017)_3 (EP9128-2021)</Name>
+							<ImageId>1002</ImageId>
+							<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001107e5" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-2021 8x EtherCAT junction - Dev B" Desc="EP9128-2021" PortABoxInfo="#x0200000e"/>
+						</Box>
+					</Box>
+					<Box Id="10" BoxType="9099">
+						<Name>A_0004(EP9128-0021-0016)_2 (EP9128-1021)</Name>
+						<ImageId>1002</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001003fd" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1021 8x EtherCAT junction - Dev A" Desc="EP9128-1021" PortABoxInfo="#x02000009"/>
+					</Box>
+				</Box>
+				<Box Id="5" BoxType="9099">
+					<Name>A_0001(EP9128-0020-0016)_2 (EP9128-1020)</Name>
+					<ImageId>1002</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001003fc" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1020 8x EtherCAT junction - Dev A" Desc="EP9128-1020" PortABoxInfo="#x02000004"/>
+				</Box>
+				<Box Id="6" BoxType="9099">
+					<Name>A_0001(EP9128-0020-0016)_3 (EP9128-2020)</Name>
+					<ImageId>1002</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001007e4" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-2020 8x EtherCAT junction - Dev B" Desc="EP9128-2020" PortABoxInfo="#x02000005"/>
+				</Box>
+			</Box>
+		</Box>
+		<Box Id="36" BoxType="9099">
+			<Name>A_0023(EP9224-1037-0017)</Name>
+			<ImageId>1007</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x24084052" RevisionNo="#x0011040d" RepeatSupport="true" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9224-1037 Internal Junction" Desc="EP9224-1037" PortABoxInfo="#x02000002">
+				<EtherCATp>
+					<Device>
+						<Us PowerSupply="true" DevCurrent="0.1"/>
+						<Up PowerSupply="true"/>
+					</Device>
+					<Port/>
+					<Port>
+						<Us PowerSupply="true" Resistance="0.108"/>
+						<Up PowerSupply="true" Resistance="0.108"/>
+					</Port>
+					<Port>
+						<Us PowerSupply="true" Resistance="0.108"/>
+						<Up PowerSupply="true" Resistance="0.108"/>
+					</Port>
+					<Port>
+						<Us PowerSupply="true" Resistance="0.108"/>
+						<Up PowerSupply="true" Resistance="0.108"/>
+					</Port>
+					<PowerSupply>
+						<Us MaxCurrent="9"/>
+						<Up MaxCurrent="9"/>
+					</PowerSupply>
+				</EtherCATp>
+			</EtherCAT>
+		</Box>
+		<Box Id="27" BoxType="9099">
+			<Name>A_0015(EP9128-2021-0019)</Name>
+			<ImageId>1003</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001307e5" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-2021 8x EtherCAT junction - Dev B" Desc="EP9128-2021" PortABoxInfo="#x02000002"/>
+		</Box>
+		<Box Id="26" BoxType="9099">
+			<Name>A_0014(EP9128-1021-0019)</Name>
+			<ImageId>1003</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001303fd" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1021 8x EtherCAT junction - Dev A" Desc="EP9128-1021" PortABoxInfo="#x02000002"/>
+		</Box>
+		<Box Id="22" BoxType="9099">
+			<Name>A_0012(EP9128-2021-0018)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001207e5" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-2021 8x EtherCAT junction - Dev B" Desc="EP9128-2021" PortABoxInfo="#x0200001a"/>
+		</Box>
+		<Box Id="21" BoxType="9099">
+			<Name>A_0011(EP9128-1021-0018)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001203fd" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1021 8x EtherCAT junction - Dev A" Desc="EP9128-1021" PortABoxInfo="#x02000002"/>
+		</Box>
+		<Box Id="17" BoxType="9099">
+			<Name>A_0009(EP9128-2021-0017)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001107e5" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-2021 8x EtherCAT junction - Dev B" Desc="EP9128-2021" PortABoxInfo="#x02000015"/>
+		</Box>
+		<Box Id="16" BoxType="9099">
+			<Name>A_0008(EP9128-1021-0017)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001103fd" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1021 8x EtherCAT junction - Dev A" Desc="EP9128-1021" PortABoxInfo="#x02000002"/>
+		</Box>
+		<Box Id="12" BoxType="9099">
+			<Name>A_0006(EP9128-2021-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001007e5" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-2021 8x EtherCAT junction - Dev B" Desc="EP9128-2021" PortABoxInfo="#x02000010"/>
+		</Box>
+		<Box Id="11" BoxType="9099">
+			<Name>A_0005(EP9128-1021-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001003fd" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1021 8x EtherCAT junction - Dev A" Desc="EP9128-1021" PortABoxInfo="#x02000002"/>
+		</Box>
+		<Box Id="8" BoxType="9099">
+			<Name>A_0003(EP9128-2020-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001007e4" PortPhys="4371" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-2020 8x EtherCAT junction - Dev B" Desc="EP9128-2020" PortABoxInfo="#x0200000b"/>
+		</Box>
+		<Box Id="7" BoxType="9099">
+			<Name>A_0002(EP9128-1020-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x23a84052" RevisionNo="#x001003fc" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EP9128-1020 8x EtherCAT junction - Dev A" Desc="EP9128-1020" PortABoxInfo="#x02000002"/>
+		</Box>
+	</Box>
+</TcSmItem>

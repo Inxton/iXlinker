@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EK1960_858568AC" Id="{821f1bd9-ed71-48aa-a03a-7d356b21a25c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1960-0000-0021"}
+{attribute addProperty Id "Module_1_FSoEModule_1_FSoE_DA01C73E240300Module_2_FSOUTModule_2_FSOUT_9F3624CE192240Module_3_FSLOGICModule_3_FSLOGIC_3E6251391620WcStateAT %I*WcState_DC9C971540.50InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2317899639"}
+{attribute addProperty SizeInBites "532"}
+{attribute addProperty SizeInBytes "66.5"}
+TYPE EK1960_858568AC :
+STRUCT
+	{attribute addProperty Name "Module_1_FSoE"}
+	Module_1_FSoE : Module_1_FSoE_DA01C73E;
+	{attribute addProperty Name "Module_2_FSOUT"}
+	Module_2_FSOUT : Module_2_FSOUT_9F3624CE;
+	{attribute addProperty Name "Module_3_FSLOGIC"}
+	Module_3_FSLOGIC : Module_3_FSLOGIC_3E625139;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_DC9C9715;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

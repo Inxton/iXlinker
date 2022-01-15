@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="RTD_Inputs_Channel_5763EEB9" Id="{05b90b3c-bae4-44ce-a5e4-67de3966b5f8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ3202-0000-0019"}
+{attribute addProperty Id "StatusAT %I*Status_C6F82E6F1621ValueAT %I*INT16217"}
+{attribute addProperty CRC "1466166969"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE RTD_Inputs_Channel_5763EEB9 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_C6F82E6F;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

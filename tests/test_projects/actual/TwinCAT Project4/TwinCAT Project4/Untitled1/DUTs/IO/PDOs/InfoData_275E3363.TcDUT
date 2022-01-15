@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_275E3363" Id="{05878bdc-646d-424a-865f-977bf5ec2f58}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ6224-0000-0016"}
+{attribute addProperty Id "AdsAddrAT %I*AMSADDR6480AoeNetIdAT %I*AMSNETID4860StateAT %I*UINT1620"}
+{attribute addProperty CRC "660484963"}
+{attribute addProperty SizeInBites "128"}
+{attribute addProperty SizeInBytes "16"}
+TYPE InfoData_275E3363 :
+STRUCT
+	{attribute addProperty Name "AdsAddr"}
+	AdsAddr AT %I* : AMSADDR;
+	{attribute addProperty Name "AoeNetId"}
+	AoeNetId AT %I* : AMSNETID;
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

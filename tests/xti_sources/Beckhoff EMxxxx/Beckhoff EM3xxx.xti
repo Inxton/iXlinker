@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ff00ff0000ff0000ff0000ff0000ff0000ff00c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff EM3xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff EM3xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+		</Box>
+		<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0001(EM3701-0000-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0e753452" RevisionNo="#x00100000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EM3701, 1Ch. differential pressure measuring terminal 100hPa (100mbar)" Desc="EM3701" PortABoxInfo="#x02000002">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+				<SyncMan>801104002000010004000000000000000400801120010000</SyncMan>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="AI Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Underrange event active]]></Comment>
+					</Entry>
+					<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Overrange event active]]></Comment>
+					</Entry>
+					<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
+						<Type>BIT2</Type>
+						<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+					</Entry>
+					<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
+						<Type>BIT2</Type>
+						<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+					</Entry>
+					<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x6000" Sub="#x11">
+						<Type>INT</Type>
+						<Comment><![CDATA[EM3701: Pressure [0.1 mbar]]]></Comment>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="19665801" DisplayName="Analog input"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0002(EM3702-0000-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0e763452" RevisionNo="#x00100000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EM3702  2Ch. relative pressure measuring terminal 7,500 hPa (7.5 bar)" Desc="EM3702" PortABoxInfo="#x01000004">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+				<SyncMan>801108002000010004000000000000000800801120010000</SyncMan>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="AI Input Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Underrange event active]]></Comment>
+					</Entry>
+					<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Overrange event active]]></Comment>
+					</Entry>
+					<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
+						<Type>BIT2</Type>
+						<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+					</Entry>
+					<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
+						<Type>BIT2</Type>
+						<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+					</Entry>
+					<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x6000" Sub="#x11">
+						<Type>INT</Type>
+						<Comment><![CDATA[EM3701: Pressure [0.1 mbar]
+EM3702: Pressure [1 mbar]]]></Comment>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AI Input Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Underrange event active]]></Comment>
+					</Entry>
+					<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Overrange event active]]></Comment>
+					</Entry>
+					<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
+						<Type>BIT2</Type>
+						<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+					</Entry>
+					<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
+						<Type>BIT2</Type>
+						<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+					</Entry>
+					<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x6010" Sub="#x11">
+						<Type>INT</Type>
+						<Comment><![CDATA[EM3702: Pressure [1 mbar]]]></Comment>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="19665801" DisplayName="Analog input"/>
+				<CoeProfile ProfileNo="19665801" DisplayName="Analog input"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="6" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0003(EM3712-0000-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x0e803452" RevisionNo="#x00100000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EM3712  2Ch relative pressure measuring terminal -1,000...+1,000 hPa (-1...+1 bar)" Desc="EM3712" PortABoxInfo="#x01000005">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+				<SyncMan>801108002000010004000000000000000800801120010000</SyncMan>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="AI Input Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Underrange event active]]></Comment>
+					</Entry>
+					<Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Overrange event active]]></Comment>
+					</Entry>
+					<Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
+						<Type>BIT2</Type>
+						<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+					</Entry>
+					<Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
+						<Type>BIT2</Type>
+						<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+					</Entry>
+					<Entry Name="Status__Error" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x6000" Sub="#x11">
+						<Type>INT</Type>
+						<Comment><![CDATA[EM3701: Pressure [0.1 mbar]
+EM3702: Pressure [1 mbar]]]></Comment>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AI Input Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Underrange event active]]></Comment>
+					</Entry>
+					<Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Overrange event active]]></Comment>
+					</Entry>
+					<Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
+						<Type>BIT2</Type>
+						<Comment><![CDATA[Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1]]></Comment>
+					</Entry>
+					<Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
+						<Type>BIT2</Type>
+						<Comment><![CDATA[Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2]]></Comment>
+					</Entry>
+					<Entry Name="Status__Error" Index="#x6010" Sub="#x07">
+						<Type>BIT</Type>
+						<Comment><![CDATA[Bit set when Over- or Underrange]]></Comment>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x6010" Sub="#x11">
+						<Type>INT</Type>
+						<Comment><![CDATA[EM3701: Pressure [0.1 mbar]
+EM3702: Pressure [1 mbar]]]></Comment>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="19665801" DisplayName="Analog input"/>
+				<CoeProfile ProfileNo="19665801" DisplayName="Analog input"/>
+			</EtherCAT>
+		</Box>
+	</Box>
+</TcSmItem>

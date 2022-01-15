@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000008}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BYTE</Name>
+			<BitSize>8</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff AX2xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff AX2xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+			<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0001(AX2000-B110-0000)</Name>
+				<ImageId>38</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0009" CycleMBoxPolling="true" CfgModeSafeOp="true" UnsupportedFrmw="true" CoeType="5" VendorId="#x00000002" ProductCode="#x07d06014" RevisionNo="#x00001b82" InfoDataAddr="true" InfoDataSoeDS401="true" Ax2000="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="AX2000-B110 EtherCAT Drive (CoE) (obsolete product)" Desc="AX2000-B110" PortABoxInfo="#x02000003">
+					<SyncMan>0018000226000100010000002800ce050002001826010000</SyncMan>
+					<SyncMan>001c000222000100020000002800ce050002001c22010000</SyncMan>
+					<SyncMan>001106002400010003000000000000000000001124010000</SyncMan>
+					<SyncMan>401108002200010004000000000000000000401122010000</SyncMan>
+					<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000401100010100000002000000000000000000000000000000</Fmmu>
+					<SuName>Drives</SuName>
+					<DcMode>44634f66660000000000000000000000444320756e757365640000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<DcMode>446353796e6300000000000000000000444320666f722073796e6368726f6e697a6174696f6e00000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<MBoxUserCmdData>02000300090000000700000003000000000000000000000000000000000000002060600001000000fe4f70206d6f646500</MBoxUserCmdData>
+					<MBoxUserCmdData>02000300090000000a000000030000000000000000000000000000000000000020c2600101000000044379636c652074696d6500</MBoxUserCmdData>
+					<MBoxUserCmdData>020003000900000009000000030000000000000000000000000000000000000020c2600201000000fd4379636c652065787000</MBoxUserCmdData>
+					<Pdo Name="Inputs" Index="#x1b01" Flags="#x0010">
+						<ExcludePdo>#x1b03</ExcludePdo>
+						<ExcludePdo>#x1b04</ExcludePdo>
+						<ExcludePdo>#x1b05</ExcludePdo>
+						<ExcludePdo>#x1b06</ExcludePdo>
+						<ExcludePdo>#x1b07</ExcludePdo>
+						<ExcludePdo>#x1b08</ExcludePdo>
+						<Entry Name="Position actual value" Index="#x6064">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Status word" Index="#x6041">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Inputs" Index="#x1b03" Flags="#x0010" SyncMan="3">
+						<ExcludePdo>#x1b01</ExcludePdo>
+						<ExcludePdo>#x1b04</ExcludePdo>
+						<ExcludePdo>#x1b05</ExcludePdo>
+						<ExcludePdo>#x1b06</ExcludePdo>
+						<ExcludePdo>#x1b07</ExcludePdo>
+						<ExcludePdo>#x1b08</ExcludePdo>
+						<Entry Name="Position actual value" Index="#x6064">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Torque actual value" Index="#x6077">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Status word" Index="#x6041">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Inputs" Index="#x1b04" Flags="#x0010">
+						<ExcludePdo>#x1b01</ExcludePdo>
+						<ExcludePdo>#x1b03</ExcludePdo>
+						<ExcludePdo>#x1b05</ExcludePdo>
+						<ExcludePdo>#x1b06</ExcludePdo>
+						<ExcludePdo>#x1b07</ExcludePdo>
+						<ExcludePdo>#x1b08</ExcludePdo>
+						<Entry Name="Position actual value" Index="#x6064">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Torque actual value" Index="#x6077">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Operation mode display" Index="#x6061">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Status word" Index="#x6041">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Inputs" Index="#x1b05" Flags="#x0010">
+						<ExcludePdo>#x1b01</ExcludePdo>
+						<ExcludePdo>#x1b03</ExcludePdo>
+						<ExcludePdo>#x1b04</ExcludePdo>
+						<ExcludePdo>#x1b06</ExcludePdo>
+						<ExcludePdo>#x1b07</ExcludePdo>
+						<ExcludePdo>#x1b08</ExcludePdo>
+						<Entry Name="Position actual value" Index="#x6064">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Torque actual value" Index="#x6077">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Following error" Index="#x60f4">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Status word" Index="#x6041">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Inputs" Index="#x1b06" Flags="#x0010">
+						<ExcludePdo>#x1b01</ExcludePdo>
+						<ExcludePdo>#x1b03</ExcludePdo>
+						<ExcludePdo>#x1b04</ExcludePdo>
+						<ExcludePdo>#x1b05</ExcludePdo>
+						<ExcludePdo>#x1b07</ExcludePdo>
+						<ExcludePdo>#x1b08</ExcludePdo>
+						<Entry Name="Position actual value" Index="#x6064">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Status word" Index="#x6041">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Latch status word" Index="#x2901">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Latch position" Index="#x2902">
+							<Type>DINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Inputs" Index="#x1b07" Flags="#x0010">
+						<ExcludePdo>#x1b01</ExcludePdo>
+						<ExcludePdo>#x1b03</ExcludePdo>
+						<ExcludePdo>#x1b04</ExcludePdo>
+						<ExcludePdo>#x1b05</ExcludePdo>
+						<ExcludePdo>#x1b06</ExcludePdo>
+						<ExcludePdo>#x1b08</ExcludePdo>
+						<Entry Name="Position actual value" Index="#x6064">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Position actual value 2" Index="#x35c9">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Torque actual value" Index="#x6077">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Following error" Index="#x60f4">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Status word" Index="#x6041">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Latch status word" Index="#x2901">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Latch position" Index="#x2902">
+							<Type>DINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Inputs" Index="#x1b08" Flags="#x0010">
+						<ExcludePdo>#x1b01</ExcludePdo>
+						<ExcludePdo>#x1b03</ExcludePdo>
+						<ExcludePdo>#x1b04</ExcludePdo>
+						<ExcludePdo>#x1b05</ExcludePdo>
+						<ExcludePdo>#x1b06</ExcludePdo>
+						<ExcludePdo>#x1b07</ExcludePdo>
+						<Entry Name="Position actual value" Index="#x6064">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Torque actual value" Index="#x6077">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Following error" Index="#x60f4">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Operation mode display" Index="#x6061">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Status word" Index="#x6041">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Latch status word" Index="#x2901">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Latch position" Index="#x2902">
+							<Type>DINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Outputs" Index="#x1701" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1702</ExcludePdo>
+						<ExcludePdo>#x1703</ExcludePdo>
+						<ExcludePdo>#x1704</ExcludePdo>
+						<ExcludePdo>#x1705</ExcludePdo>
+						<ExcludePdo>#x1706</ExcludePdo>
+						<ExcludePdo>#x1707</ExcludePdo>
+						<ExcludePdo>#x1708</ExcludePdo>
+						<Entry Name="Position demand value" Index="#x6062">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Control word" Index="#x6040">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Outputs" Index="#x1702" InOut="1" Flags="#x0010" SyncMan="2">
+						<ExcludePdo>#x1701</ExcludePdo>
+						<ExcludePdo>#x1703</ExcludePdo>
+						<ExcludePdo>#x1704</ExcludePdo>
+						<ExcludePdo>#x1705</ExcludePdo>
+						<ExcludePdo>#x1706</ExcludePdo>
+						<ExcludePdo>#x1707</ExcludePdo>
+						<ExcludePdo>#x1708</ExcludePdo>
+						<Entry Name="Velocity demand value" Index="#x606b">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Control word" Index="#x6040">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Outputs" Index="#x1703" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1701</ExcludePdo>
+						<ExcludePdo>#x1702</ExcludePdo>
+						<ExcludePdo>#x1704</ExcludePdo>
+						<ExcludePdo>#x1705</ExcludePdo>
+						<ExcludePdo>#x1706</ExcludePdo>
+						<ExcludePdo>#x1707</ExcludePdo>
+						<ExcludePdo>#x1708</ExcludePdo>
+						<Entry Name="Torque demand value" Index="#x6074">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Control word" Index="#x6040">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Outputs" Index="#x1704" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1701</ExcludePdo>
+						<ExcludePdo>#x1702</ExcludePdo>
+						<ExcludePdo>#x1703</ExcludePdo>
+						<ExcludePdo>#x1705</ExcludePdo>
+						<ExcludePdo>#x1706</ExcludePdo>
+						<ExcludePdo>#x1707</ExcludePdo>
+						<ExcludePdo>#x1708</ExcludePdo>
+						<Entry Name="Position demand value" Index="#x6062">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Velocity demand value" Index="#x606b">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Torque demand value" Index="#x6074">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Operation mode" Index="#x6060">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Control word" Index="#x6040">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Outputs" Index="#x1705" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1701</ExcludePdo>
+						<ExcludePdo>#x1702</ExcludePdo>
+						<ExcludePdo>#x1703</ExcludePdo>
+						<ExcludePdo>#x1704</ExcludePdo>
+						<ExcludePdo>#x1706</ExcludePdo>
+						<ExcludePdo>#x1707</ExcludePdo>
+						<ExcludePdo>#x1708</ExcludePdo>
+						<Entry Name="Position demand value" Index="#x6062">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Velocity demand value" Index="#x606b">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Additive torque value" Index="#x60f6" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Max torque" Index="#x6072">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Control word" Index="#x6040">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Outputs" Index="#x1706" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1701</ExcludePdo>
+						<ExcludePdo>#x1702</ExcludePdo>
+						<ExcludePdo>#x1703</ExcludePdo>
+						<ExcludePdo>#x1704</ExcludePdo>
+						<ExcludePdo>#x1705</ExcludePdo>
+						<ExcludePdo>#x1707</ExcludePdo>
+						<ExcludePdo>#x1708</ExcludePdo>
+						<Entry Name="Position demand value" Index="#x6062">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Velocity demand value" Index="#x606b">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Control word" Index="#x6040">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Latch control word" Index="#x2802">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Outputs" Index="#x1707" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1701</ExcludePdo>
+						<ExcludePdo>#x1702</ExcludePdo>
+						<ExcludePdo>#x1703</ExcludePdo>
+						<ExcludePdo>#x1704</ExcludePdo>
+						<ExcludePdo>#x1705</ExcludePdo>
+						<ExcludePdo>#x1706</ExcludePdo>
+						<ExcludePdo>#x1708</ExcludePdo>
+						<Entry Name="Position demand value" Index="#x6062">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Velocity demand value" Index="#x606b">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Torque demand value" Index="#x6074">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Max torque" Index="#x6072">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Control word" Index="#x6040">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Latch Control word" Index="#x2802">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Outputs" Index="#x1708" InOut="1" Flags="#x0010">
+						<ExcludePdo>#x1701</ExcludePdo>
+						<ExcludePdo>#x1702</ExcludePdo>
+						<ExcludePdo>#x1703</ExcludePdo>
+						<ExcludePdo>#x1704</ExcludePdo>
+						<ExcludePdo>#x1705</ExcludePdo>
+						<ExcludePdo>#x1706</ExcludePdo>
+						<ExcludePdo>#x1707</ExcludePdo>
+						<Entry Name="Position demand value" Index="#x6062">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Velocity demand value" Index="#x606b">
+							<Type>DINT</Type>
+						</Entry>
+						<Entry Name="Torque demand value" Index="#x6074">
+							<Type>INT</Type>
+						</Entry>
+						<Entry Name="Max torque" Index="#x6072">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Operation mode" Index="#x6060">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="Control word" Index="#x6040">
+							<Type>UINT</Type>
+						</Entry>
+						<Entry Name="Latch control word" Index="#x2802">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="402"/>
+				</EtherCAT>
+			</Box>
+		</Box>
+	</Box>
+</TcSmItem>

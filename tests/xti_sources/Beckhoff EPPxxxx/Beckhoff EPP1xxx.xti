@@ -1,0 +1,3048 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000008}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BYTE</Name>
+			<BitSize>8</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
+			<BitSize>2</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000A}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..9] OF BIT</Name>
+			<BitSize>10</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>10</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000C}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..11] OF BIT</Name>
+			<BitSize>12</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>12</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000005}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..4] OF BIT</Name>
+			<BitSize>5</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>5</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000006}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..5] OF BIT</Name>
+			<BitSize>6</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>6</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000B}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..10] OF BIT</Name>
+			<BitSize>11</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>11</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111ffffffffffff1111fcfcfffff00f1111f4f4fffff00f1111ffffffffffff1111ffffffffffff1111fcfcfffff00f1111f4f4fffff00f1111ffffffffffff111155551111111111115555111111111111555511111111111155551111111111115555111111111111</ImageData>
+		<ImageData Id="1003">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111fffffffffffffffffcfcfcfcfffff00ff4f4f4f4fffff00ffffffffffffffffffffffffffffffffffcfcfcfcfffff00ff4f4f4f4fffff00fffffffffffffffff55555511111111115555551111111111555555111111111155555511111111115555551111111111</ImageData>
+		<ImageData Id="1004">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111fffffffffffffffffcfcfcfcfffff44ff4f4f4f4fffff44ffffffffffffffffffffffffffffffffffcfcfcfcfffff44ff4f4f4f4fffff44fffffffffffffffffdddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111</ImageData>
+		<ImageData Id="1005">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111fffffffffffffffffcfcfcfcfffff00ff4f4f4f4fffff00ffffffffffffffffffffffffffffffffffcfcfcfcfffff00ff4f4f4f4fffff00fffffffffffffffffdddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111</ImageData>
+		<ImageData Id="1006">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111ffffffffffff1111f00ffffff00f1111f00ffffff00f1111ffffeffeffff1111ffffeefeffff1111f00feffef44f1111f00feffef44f1111ffffffffffff1111dddd111111111111dddd111111111111dddd111111111111dddd111111111111dddd111111111111</ImageData>
+		<ImageData Id="1007">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff0000000000111111111111111100ffffffffffffff00fffffffffff00ffffffffffffff00ffff00fff00fffffffff00fff00fffffffffffffffffff44f00fffffffffff44f00ffffffffffffffdddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111</ImageData>
+		<ImageData Id="1008">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff0000000000111111111111111100ffffffffffffff00fffffffffff00ffffffffffffff00ffff00fff00fffffffff00fff00fffffffffffffffffff00f00fffffffffff00f00ffffffffffffffdddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111</ImageData>
+		<ImageData Id="1009">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111fffffffffffffffffffffffffffff00ffffffffffffff00ffff00fff00fffffffff00fff00fffffffffffffffffff00ffffffffffffff00fffffffffffffffffdddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111dddddd1111111111</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff EPP1xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff EPP1xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+			<Box Id="4" BoxType="9099">
+				<Name>A_0001(EPP1004-0061-0016)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647604c9" RevisionNo="#x0010003d" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1004-0061 4 Ch. Dig. Input 24V, 3ms, M8" Desc="EPP1004-0061" PortABoxInfo="#x02000003">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.06">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.118"/>
+							<Up Resistance="0.148"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.118"/>
+							<Up Resistance="0.148"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="5" BoxType="9099">
+				<Name>A_0002(EPP1008-0001-0016)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0304" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x64760509" RevisionNo="#x00100001" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1008-0001 8 Ch. Dig. Input 24V, 3ms, M8" Desc="EPP1008-0001" PortABoxInfo="#x01000004">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.06">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="6" BoxType="9099">
+				<Name>A_0003(EPP1008-0001-0017)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x64760509" RevisionNo="#x00110001" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1008-0001 8 Ch. Dig. Input 24V, 3ms, M8" Desc="EPP1008-0001" PortABoxInfo="#x01000005">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.06">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="7" BoxType="9099">
+				<Name>A_0004(EPP1008-0002-0016)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0304" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x64760509" RevisionNo="#x00100002" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1008-0002 8 Ch. Dig. Input 24V, 3ms, M12" Desc="EPP1008-0002" PortABoxInfo="#x01000006">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.06">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="8" BoxType="9099">
+				<Name>A_0005(EPP1008-0002-0017)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x64760509" RevisionNo="#x00110002" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1008-0002 8 Ch. Dig. Input 24V, 3ms, M12" Desc="EPP1008-0002" PortABoxInfo="#x01000007">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.06">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="9" BoxType="9099">
+				<Name>A_0006(EPP1008-0022-0016)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x64760509" RevisionNo="#x00100016" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1008-0022 8 Ch. Dig. Input 24V, 3ms, M12" Desc="EPP1008-0022" PortABoxInfo="#x01000008">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.06">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="10" BoxType="9099">
+				<Name>A_0007(EPP1018-0001-0016)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0304" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647605a9" RevisionNo="#x00100001" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1018-0001 8 Ch. Dig. Input 24V, 10µs, M8" Desc="EPP1018-0001" PortABoxInfo="#x01000009">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.06">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="11" BoxType="9099">
+				<Name>A_0008(EPP1018-0001-0017)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647605a9" RevisionNo="#x00110001" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1018-0001 8 Ch. Dig. Input 24V, 10µs, M8" Desc="EPP1018-0001" PortABoxInfo="#x0100000a">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.06">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="12" BoxType="9099">
+				<Name>A_0009(EPP1018-0002-0016)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0304" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647605a9" RevisionNo="#x00100002" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1018-0002 8 Ch. Dig. Input 24V, 10µs, M12" Desc="EPP1018-0002" PortABoxInfo="#x0100000b">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.06">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="13" BoxType="9099">
+				<Name>A_0010(EPP1018-0002-0017)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647605a9" RevisionNo="#x00110002" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1018-0002 8 Ch. Dig. Input 24V, 10µs, M12" Desc="EPP1018-0002" PortABoxInfo="#x0100000c">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.06">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="14" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0011(EPP1111-0000-0016)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0205" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x64760b79" RevisionNo="#x00100000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1111-0000 ID-Switch" Desc="EPP1111" PortABoxInfo="#x0100000d">
+					<SyncMan>001180002600010001000000800080008000001126010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>101000000400000003000000000000000000101004000000</SyncMan>
+					<SyncMan>801102002000010004000000000000000200801120010000</SyncMan>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<Pdo Name="ID Inputs " Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="ID" Index="#xf600" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="5001"/>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.08"/>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="15" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0012(EPP1111-0000-0017)</Name>
+				<ImageId>1004</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0205" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x64760b79" RevisionNo="#x00110000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1111-0000 ID-Switch" Desc="EPP1111" PortABoxInfo="#x0100000e">
+					<SyncMan>001180002600010001000000800080008000001126010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>101000000400000003000000000000000000101004000000</SyncMan>
+					<SyncMan>801102002000010004000000000000000200801120010000</SyncMan>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<Pdo Name="ID Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="ID" Index="#xf600" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="5001"/>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.08"/>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="16" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0013(EPP1111-0000-0018)</Name>
+				<ImageId>1005</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x64760b79" RevisionNo="#x00120000" InfoDataAddr="true" RepeatSupport="true" TimeoutMailbox2="2000" PortPhys="17" IdentificationAdo="308" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1111-0000 ID-Switch" Desc="EPP1111" PortABoxInfo="#x0100000f">
+					<SyncMan>001180002600010001000000800080008000001126010000</SyncMan>
+					<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+					<SyncMan>101000000400000003000000000000000000101004000000</SyncMan>
+					<SyncMan>801102002000010004000000000000000200801120010000</SyncMan>
+					<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<Pdo Name="ID Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="ID" Index="#xf600" Sub="#x01">
+							<Type>UINT</Type>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="5001"/>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.08"/>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="17" BoxType="9099">
+				<Name>A_0014(EPP1258-0001-0016)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0f04" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647614a9" RevisionNo="#x00100001" InfoDataDcTimes="true" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1258-0001 8 Ch. Dig. Input 24V, 10µs, DC Latch, M8" Desc="EPP1258-0001" PortABoxInfo="#x01000010">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<SyncMan>ae0922000000000004000000000000002200ae0900040000</SyncMan>
+					<SyncMan>100900000000000004000000000000000000100900040000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000060000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000ae0900010100000002000000060000000100010000000000</Fmmu>
+					<Fmmu>0000000000000000000000010000000002000000060000000200020000000000</Fmmu>
+					<SuName></SuName>
+					<SuName></SuName>
+					<SuName></SuName>
+					<SuTask>#x00000000</SuTask>
+					<SuTask>#x00000000</SuTask>
+					<SuTask>#x00000000</SuTask>
+					<DcData>0001000000000000000000000000000000000000000000000000000000000000</DcData>
+					<DcMode>44634c617463680000000000000000004443204c617463682053657474696e6773000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a10" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="Status1" Index="#x1d09" Sub="#xaf">
+							<Type>USINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a11" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>UDINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a12" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg0" Index="#x1d09" Sub="#xb8">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a13" Flags="#x0030" SyncMan="1" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="Status1" Index="#x1d09" Sub="#xaf">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg0" Index="#x1d09" Sub="#xb8">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchPos1" Index="#x1d09" Sub="#xc0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg1" Index="#x1d09" Sub="#xc8">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="SysTime" Index="#x1a14" Flags="#x0030" SyncUnit="2">
+						<ExcludePdo>#x1a15</ExcludePdo>
+						<Entry Name="SysTime" Index="#x1d09" Sub="#x10">
+							<Type>UDINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="SysTime" Index="#x1a15" Flags="#x0030" SyncUnit="2">
+						<ExcludePdo>#x1a14</ExcludePdo>
+						<Entry Name="SysTime" Index="#x1d09" Sub="#x10">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.08">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="18" BoxType="9099">
+				<Name>A_0015(EPP1258-0001-0017)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d04" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647614a9" RevisionNo="#x00110001" InfoDataDcTimes="true" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1258-0001 8 Ch. Dig. Input 24V, 10µs, DC Latch, M8" Desc="EPP1258-0001" PortABoxInfo="#x01000011">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<SyncMan>ae0922000000000004000000000000002200ae0900040000</SyncMan>
+					<SyncMan>100900000000000004000000000000000000100900040000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000060000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000ae0900010100000002000000060000000100010000000000</Fmmu>
+					<Fmmu>0000000000000000000000010000000002000000060000000200020000000000</Fmmu>
+					<SuName></SuName>
+					<SuName></SuName>
+					<SuName></SuName>
+					<SuTask>#x00000000</SuTask>
+					<SuTask>#x00000000</SuTask>
+					<SuTask>#x00000000</SuTask>
+					<DcData>0001000000000000000000000000000000000000000000000000000000000000</DcData>
+					<DcMode>44634c617463680000000000000000004443204c617463682053657474696e6773000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a10" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="Status1" Index="#x1d09" Sub="#xaf">
+							<Type>USINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a11" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>UDINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a12" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg0" Index="#x1d09" Sub="#xb8">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a13" Flags="#x0030" SyncMan="1" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="Status1" Index="#x1d09" Sub="#xaf">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg0" Index="#x1d09" Sub="#xb8">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchPos1" Index="#x1d09" Sub="#xc0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg1" Index="#x1d09" Sub="#xc8">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="SysTime" Index="#x1a14" Flags="#x0030" SyncUnit="2">
+						<ExcludePdo>#x1a15</ExcludePdo>
+						<Entry Name="SysTime" Index="#x1d09" Sub="#x10">
+							<Type>UDINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="SysTime" Index="#x1a15" Flags="#x0030" SyncUnit="2">
+						<ExcludePdo>#x1a14</ExcludePdo>
+						<Entry Name="SysTime" Index="#x1d09" Sub="#x10">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.08">
+								<Load Name="Sensor Supply"/>
+							</Us>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="19" BoxType="9099">
+				<Name>A_0016(EPP1258-0002-0016)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0f04" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647614a9" RevisionNo="#x00100002" InfoDataDcTimes="true" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1258-0002 8 Ch. Dig. Input 24V, 10µs, DC Latch, M12" Desc="EPP1258-0002" PortABoxInfo="#x01000012">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<SyncMan>ae0922000000000004000000000000002200ae0900040000</SyncMan>
+					<SyncMan>100900000000000004000000000000000000100900040000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000060000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000ae0900010100000002000000060000000100010000000000</Fmmu>
+					<Fmmu>0000000000000000000000010000000002000000060000000200020000000000</Fmmu>
+					<SuName></SuName>
+					<SuName></SuName>
+					<SuName></SuName>
+					<SuTask>#x00000000</SuTask>
+					<SuTask>#x00000000</SuTask>
+					<SuTask>#x00000000</SuTask>
+					<DcData>0001000000000000000000000000000000000000000000000000000000000000</DcData>
+					<DcMode>44634c617463680000000000000000004443204c617463682053657474696e6773000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a10" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="Status1" Index="#x1d09" Sub="#xaf">
+							<Type>USINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a11" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>UDINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a12" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg0" Index="#x1d09" Sub="#xb8">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a13" Flags="#x0030" SyncMan="1" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="Status1" Index="#x1d09" Sub="#xaf">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg0" Index="#x1d09" Sub="#xb8">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchPos1" Index="#x1d09" Sub="#xc0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg1" Index="#x1d09" Sub="#xc8">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="SysTime" Index="#x1a14" Flags="#x0030" SyncUnit="2">
+						<ExcludePdo>#x1a15</ExcludePdo>
+						<Entry Name="SysTime" Index="#x1d09" Sub="#x10">
+							<Type>UDINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="SysTime" Index="#x1a15" Flags="#x0030" SyncUnit="2">
+						<ExcludePdo>#x1a14</ExcludePdo>
+						<Entry Name="SysTime" Index="#x1d09" Sub="#x10">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.08"/>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="20" BoxType="9099">
+				<Name>A_0017(EPP1258-0002-0017)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d04" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647614a9" RevisionNo="#x00110002" InfoDataDcTimes="true" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1258-0002 8 Ch. Dig. Input 24V, 10µs, DC Latch, M12" Desc="EPP1258-0002" PortABoxInfo="#x01000013">
+					<SyncMan>001001000000010004000000010001000100001000010000</SyncMan>
+					<SyncMan>ae0922000000000004000000000000002200ae0900040000</SyncMan>
+					<SyncMan>100900000000000004000000000000000000100900040000</SyncMan>
+					<Fmmu>0000000000000000001000010100000002000000060000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000ae0900010100000002000000060000000100010000000000</Fmmu>
+					<Fmmu>0000000000000000000000010000000002000000060000000200020000000000</Fmmu>
+					<SuName></SuName>
+					<SuName></SuName>
+					<SuName></SuName>
+					<SuTask>#x00000000</SuTask>
+					<SuTask>#x00000000</SuTask>
+					<SuTask>#x00000000</SuTask>
+					<DcData>0001000000000000000000000000000000000000000000000000000000000000</DcData>
+					<DcMode>44634c617463680000000000000000004443204c617463682053657474696e6773000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000</DcMode>
+					<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6020" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6030" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6040" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6050" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6060" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+						<Entry Name="Input" Index="#x6070" Sub="#x01">
+							<Type>BIT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a10" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="Status1" Index="#x1d09" Sub="#xaf">
+							<Type>USINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a11" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>UDINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a12" Flags="#x0030" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a13</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry>
+							<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg0" Index="#x1d09" Sub="#xb8">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="Latch" Index="#x1a13" Flags="#x0030" SyncMan="1" SyncUnit="1">
+						<ExcludePdo>#x1a10</ExcludePdo>
+						<ExcludePdo>#x1a11</ExcludePdo>
+						<ExcludePdo>#x1a12</ExcludePdo>
+						<Entry Name="Status0" Index="#x1d09" Sub="#xae">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="Status1" Index="#x1d09" Sub="#xaf">
+							<Type>USINT</Type>
+						</Entry>
+						<Entry Name="LatchPos0" Index="#x1d09" Sub="#xb0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg0" Index="#x1d09" Sub="#xb8">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchPos1" Index="#x1d09" Sub="#xc0">
+							<Type>ULINT</Type>
+						</Entry>
+						<Entry Name="LatchNeg1" Index="#x1d09" Sub="#xc8">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="SysTime" Index="#x1a14" Flags="#x0030" SyncUnit="2">
+						<ExcludePdo>#x1a15</ExcludePdo>
+						<Entry Name="SysTime" Index="#x1d09" Sub="#x10">
+							<Type>UDINT</Type>
+						</Entry>
+					</Pdo>
+					<Pdo Name="SysTime" Index="#x1a15" Flags="#x0030" SyncUnit="2">
+						<ExcludePdo>#x1a14</ExcludePdo>
+						<Entry Name="SysTime" Index="#x1d09" Sub="#x10">
+							<Type>ULINT</Type>
+						</Entry>
+					</Pdo>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.08"/>
+							<Up/>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="21" BoxType="9099">
+				<Name>A_0018(EPP1321-0060-0016)</Name>
+				<ImageId>1006</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x64761899" RevisionNo="#x0010003c" RepeatSupport="true" PortPhys="4369" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1321-0060 1 port EtherCAT P gateway" Desc="EPP1321-0060" PortABoxInfo="#x01000014">
+					<EtherCATp>
+						<Device>
+							<Us PowerSupply="true" DevCurrent="0.1"/>
+							<Up PowerSupply="true"/>
+						</Device>
+						<Port/>
+						<Port>
+							<Us PowerSupply="true" Resistance="0.108"/>
+							<Up PowerSupply="true" Resistance="0.108"/>
+						</Port>
+						<PowerSupply>
+							<Us MaxCurrent="3"/>
+							<Up MaxCurrent="3"/>
+						</PowerSupply>
+					</EtherCATp>
+				</EtherCAT>
+				<Box Id="22" BoxType="9099">
+					<Name>A_0019(EPP1322-0001-0016)</Name>
+					<ImageId>1007</ImageId>
+					<EtherCAT SlaveType="1" PdiType="#x0300" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647618a9" RevisionNo="#x00100001" RepeatSupport="true" PortPhys="4369" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1322-0001 3 port EtherCAT P gateway" Desc="EPP1322-0001" PortABoxInfo="#x03000015">
+						<EtherCATp>
+							<Device>
+								<Us PowerSupply="true" DevCurrent="0.1"/>
+								<Up PowerSupply="true"/>
+							</Device>
+							<Port/>
+							<Port>
+								<Us PowerSupply="true" Resistance="0.108"/>
+								<Up PowerSupply="true" Resistance="0.108"/>
+							</Port>
+							<Port>
+								<Us PowerSupply="true" Resistance="0.108"/>
+								<Up PowerSupply="true" Resistance="0.108"/>
+							</Port>
+							<Port>
+								<Us PowerSupply="true" Resistance="0.108"/>
+								<Up PowerSupply="true" Resistance="0.108"/>
+							</Port>
+							<PowerSupply>
+								<Us MaxCurrent="3"/>
+								<Up MaxCurrent="3"/>
+							</PowerSupply>
+						</EtherCATp>
+					</EtherCAT>
+					<Box Id="23" BoxType="9099">
+						<Name>A_0020(EPP1322-0001-0017)</Name>
+						<ImageId>1007</ImageId>
+						<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647618a9" RevisionNo="#x00110001" RepeatSupport="true" PortPhys="4369" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1322-0001 3 port EtherCAT P gateway" Desc="EPP1322-0001" PortABoxInfo="#x03000016">
+							<EtherCATp>
+								<Device>
+									<Us PowerSupply="true" DevCurrent="0.1"/>
+									<Up PowerSupply="true"/>
+								</Device>
+								<Port/>
+								<Port>
+									<Us PowerSupply="true" Resistance="0.108"/>
+									<Up PowerSupply="true" Resistance="0.108"/>
+								</Port>
+								<Port>
+									<Us PowerSupply="true" Resistance="0.108"/>
+									<Up PowerSupply="true" Resistance="0.108"/>
+								</Port>
+								<Port>
+									<Us PowerSupply="true" Resistance="0.108"/>
+									<Up PowerSupply="true" Resistance="0.108"/>
+								</Port>
+								<PowerSupply>
+									<Us MaxCurrent="3"/>
+									<Up MaxCurrent="3"/>
+								</PowerSupply>
+							</EtherCATp>
+						</EtherCAT>
+						<Box Id="24" BoxType="9099">
+							<Name>A_0021(EPP1332-0001-0016)</Name>
+							<ImageId>1008</ImageId>
+							<EtherCAT SlaveType="1" PdiType="#x0300" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x64761949" RevisionNo="#x00100001" RepeatSupport="true" PortPhys="4369" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1332-0001 3 port EtherCAT P junction, power refreshing" Desc="EPP1332-0001" PortABoxInfo="#x03000017">
+								<EtherCATp>
+									<Device>
+										<Us PowerSupply="true" DevCurrent="0.1"/>
+										<Up PowerSupply="true"/>
+									</Device>
+									<Port/>
+									<Port>
+										<Us PowerSupply="true" Resistance="0.108"/>
+										<Up PowerSupply="true" Resistance="0.108"/>
+									</Port>
+									<Port>
+										<Us PowerSupply="true" Resistance="0.108"/>
+										<Up PowerSupply="true" Resistance="0.108"/>
+									</Port>
+									<Port>
+										<Us PowerSupply="true" Resistance="0.108"/>
+										<Up PowerSupply="true" Resistance="0.108"/>
+									</Port>
+									<PowerSupply>
+										<Us MaxCurrent="3"/>
+										<Up MaxCurrent="3"/>
+									</PowerSupply>
+								</EtherCATp>
+							</EtherCAT>
+							<Box Id="25" BoxType="9099">
+								<Name>A_0022(EPP1332-0001-0017)</Name>
+								<ImageId>1008</ImageId>
+								<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x64761949" RevisionNo="#x00110001" RepeatSupport="true" PortPhys="4369" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1332-0001 3 port EtherCAT P junction, power refreshing" Desc="EPP1332-0001" PortABoxInfo="#x03000018">
+									<EtherCATp>
+										<Device>
+											<Us PowerSupply="true" DevCurrent="0.1"/>
+											<Up PowerSupply="true"/>
+										</Device>
+										<Port/>
+										<Port>
+											<Us PowerSupply="true" Resistance="0.108"/>
+											<Up PowerSupply="true" Resistance="0.108"/>
+										</Port>
+										<Port>
+											<Us PowerSupply="true" Resistance="0.108"/>
+											<Up PowerSupply="true" Resistance="0.108"/>
+										</Port>
+										<Port>
+											<Us PowerSupply="true" Resistance="0.108"/>
+											<Up PowerSupply="true" Resistance="0.108"/>
+										</Port>
+										<PowerSupply>
+											<Us MaxCurrent="3"/>
+											<Up MaxCurrent="3"/>
+										</PowerSupply>
+									</EtherCATp>
+								</EtherCAT>
+								<Box Id="26" BoxType="9099">
+									<Name>A_0023(EPP1342-0001-0016)</Name>
+									<ImageId>1009</ImageId>
+									<EtherCAT SlaveType="1" PdiType="#x0300" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647619e9" RevisionNo="#x00100001" RepeatSupport="true" PortPhys="4369" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1342-0001 3 port EtherCAT P junction" Desc="EPP1342-0001" PortABoxInfo="#x03000019">
+										<EtherCATp>
+											<Device>
+												<Us DevCurrent="0.1"/>
+												<Up/>
+											</Device>
+											<Port>
+												<Us Resistance="0.108"/>
+												<Up Resistance="0.108"/>
+											</Port>
+											<Port>
+												<Us Resistance="0.108"/>
+												<Up Resistance="0.108"/>
+											</Port>
+											<Port>
+												<Us Resistance="0.108"/>
+												<Up Resistance="0.108"/>
+											</Port>
+											<Port>
+												<Us Resistance="0.108"/>
+												<Up Resistance="0.108"/>
+											</Port>
+										</EtherCATp>
+									</EtherCAT>
+									<Box Id="27" BoxType="9099">
+										<Name>A_0024(EPP1342-0001-0017)</Name>
+										<ImageId>1009</ImageId>
+										<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647619e9" RevisionNo="#x00110001" RepeatSupport="true" PortPhys="4369" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1342-0001 3 port EtherCAT P junction" Desc="EPP1342-0001" PortABoxInfo="#x0300001a">
+											<EtherCATp>
+												<Device>
+													<Us DevCurrent="0.1"/>
+													<Up/>
+												</Device>
+												<Port>
+													<Us Resistance="0.108"/>
+													<Up Resistance="0.108"/>
+												</Port>
+												<Port>
+													<Us Resistance="0.108"/>
+													<Up Resistance="0.108"/>
+												</Port>
+												<Port>
+													<Us Resistance="0.108"/>
+													<Up Resistance="0.108"/>
+												</Port>
+												<Port>
+													<Us Resistance="0.108"/>
+													<Up Resistance="0.108"/>
+												</Port>
+											</EtherCATp>
+										</EtherCAT>
+										<Box Id="28" BoxType="9099" BoxFlags="#x00000020">
+											<Name>A_0025(EPP1518-0002-0016)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x647624e9" RevisionNo="#x00100002" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1518-0002 8 Ch.digital multi-function input" Desc="EPP1518-0002" PortABoxInfo="#x0300001b">
+												<SyncMan>001000012600010001000000300000010001001026010000</SyncMan>
+												<SyncMan>001100012200010002000000300000010001001122010000</SyncMan>
+												<SyncMan>00120c002400010003000000000000000c00001224010000</SyncMan>
+												<SyncMan>001910002000010004000000000000001000001920010000</SyncMan>
+												<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+												<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+												<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+												<BootStrapData>0010f400f410f400</BootStrapData>
+												<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<Pdo Name="CNT Input Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Status of input UD" Index="#x6000" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Sync error" Index="#x6000" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+														<Type>UDINT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="CNT Input Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Status of input UD" Index="#x6010" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Sync error" Index="#x6010" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+														<Type>UDINT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="DIG Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+													<Entry Name="Input 0" Index="#x6020" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 1" Index="#x6020" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6020" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6020" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6020" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6020" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6020" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6020" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="DIG Inputs Device" Index="#x1a03" Flags="#x0010" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Error channel 1" Index="#xf600" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Error channel 2" Index="#xf600" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Sync error" Index="#xf600" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO State" Index="#xf600" Sub="#x0f">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#xf600" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="CNT Output Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+													<Entry Name="Control__">
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+													<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Control__">
+														<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+													</Entry>
+													<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+														<Type>UDINT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="CNT Output Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+													<Entry Name="Control__">
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+													<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Control__">
+														<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+													</Entry>
+													<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+														<Type>UDINT</Type>
+													</Entry>
+												</Pdo>
+												<CoeProfile ProfileNo="9835401"/>
+												<CoeProfile ProfileNo="9835401"/>
+												<CoeProfile ProfileNo="18355081"/>
+											</EtherCAT>
+										</Box>
+										<Box Id="29" BoxType="9099" BoxFlags="#x00000020">
+											<Name>A_0026(EPP1518-0002-0017)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x647624e9" RevisionNo="#x00110002" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1518-0002 8 Ch.digital multi-function input" Desc="EPP1518-0002" PortABoxInfo="#x0100001c">
+												<SyncMan>001000012600010001000000300000010001001026010000</SyncMan>
+												<SyncMan>001100012200010002000000300000010001001122010000</SyncMan>
+												<SyncMan>00120c002400010003000000000000000c00001224010000</SyncMan>
+												<SyncMan>001910002000010004000000000000001000001920010000</SyncMan>
+												<Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+												<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+												<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+												<BootStrapData>0010f400f410f400</BootStrapData>
+												<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<Pdo Name="CNT Input Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Status of input UD" Index="#x6000" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Sync error" Index="#x6000" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+														<Type>UDINT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="CNT Input Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Status of input UD" Index="#x6010" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Sync error" Index="#x6010" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+														<Type>UDINT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="DIG Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+													<Entry Name="Input 0" Index="#x6020" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 1" Index="#x6020" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6020" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6020" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6020" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6020" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6020" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6020" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="DIG Inputs Device" Index="#x1a03" Flags="#x0010" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Error channel 1" Index="#xf600" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__Error channel 2" Index="#xf600" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-00200000000A}">ARRAY [0..9] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Sync error" Index="#xf600" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO State" Index="#xf600" Sub="#x0f">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#xf600" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="CNT Output Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+													<Entry Name="Control__">
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+													<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Control__">
+														<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+													</Entry>
+													<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+														<Type>UDINT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="CNT Output Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+													<Entry Name="Control__">
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+													<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Control__">
+														<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+													</Entry>
+													<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+														<Type>UDINT</Type>
+													</Entry>
+												</Pdo>
+												<CoeProfile ProfileNo="9835401"/>
+												<CoeProfile ProfileNo="9835401"/>
+												<CoeProfile ProfileNo="18355081"/>
+												<EtherCATp>
+													<Device>
+														<Us DevCurrent="0.08">
+															<Load Name="Sensor Supply"/>
+														</Us>
+														<Up/>
+													</Device>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+												</EtherCATp>
+											</EtherCAT>
+										</Box>
+										<Box Id="30" BoxType="9099">
+											<Name>A_0027(EPP1809-0021-0016)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x64763719" RevisionNo="#x00100015" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1809-0021 16 Ch. Dig. Input 24V, 3ms, M8" Desc="EPP1809-0021" PortABoxInfo="#x0100001d">
+												<SyncMan>001002000000010004000000020002000200001000010000</SyncMan>
+												<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+												<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6000" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6010" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6020" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6030" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6040" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6050" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6060" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6070" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 9" Index="#x1a08" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6080" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 10" Index="#x1a09" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6090" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 11" Index="#x1a0a" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60a0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 12" Index="#x1a0b" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60b0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 13" Index="#x1a0c" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60c0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 14" Index="#x1a0d" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60d0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 15" Index="#x1a0e" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60e0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 16" Index="#x1a0f" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60f0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<EtherCATp>
+													<Device>
+														<Us DevCurrent="0.06">
+															<Load Name="Sensor Supply"/>
+														</Us>
+														<Up/>
+													</Device>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+												</EtherCATp>
+											</EtherCAT>
+										</Box>
+										<Box Id="31" BoxType="9099">
+											<Name>A_0028(EPP1809-0022-0016)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x64763719" RevisionNo="#x00100016" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1809-0022 16 Ch. Dig. Input 24V, 3ms, M8" Desc="EPP1809-0022" PortABoxInfo="#x0100001e">
+												<SyncMan>001002000000010004000000020002000200001000010000</SyncMan>
+												<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+												<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6000" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6010" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6020" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6030" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6040" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6050" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6060" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6070" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 9" Index="#x1a08" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6080" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 10" Index="#x1a09" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6090" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 11" Index="#x1a0a" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60a0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 12" Index="#x1a0b" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60b0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 13" Index="#x1a0c" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60c0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 14" Index="#x1a0d" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60d0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 15" Index="#x1a0e" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60e0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 16" Index="#x1a0f" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60f0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<EtherCATp>
+													<Device>
+														<Us DevCurrent="0.06">
+															<Load Name="Sensor Supply"/>
+														</Us>
+														<Up/>
+													</Device>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+												</EtherCATp>
+											</EtherCAT>
+										</Box>
+										<Box Id="32" BoxType="9099">
+											<Name>A_0029(EPP1819-0021-0016)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647637b9" RevisionNo="#x00100015" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1819-0021 16 Ch. Dig. Input 24V, 10µs, M8" Desc="EPP1819-0021" PortABoxInfo="#x0100001f">
+												<SyncMan>001002000000010004000000020002000200001000010000</SyncMan>
+												<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+												<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6000" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6010" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6020" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6030" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6040" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6050" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6060" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6070" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 9" Index="#x1a08" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6080" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 10" Index="#x1a09" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6090" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 11" Index="#x1a0a" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60a0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 12" Index="#x1a0b" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60b0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 13" Index="#x1a0c" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60c0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 14" Index="#x1a0d" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60d0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 15" Index="#x1a0e" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60e0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 16" Index="#x1a0f" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60f0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<EtherCATp>
+													<Device>
+														<Us DevCurrent="0.06">
+															<Load Name="Sensor Supply"/>
+														</Us>
+														<Up/>
+													</Device>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+												</EtherCATp>
+											</EtherCAT>
+										</Box>
+										<Box Id="33" BoxType="9099">
+											<Name>A_0030(EPP1819-0022-0016)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="1" PdiType="#x0104" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x647637b9" RevisionNo="#x00100016" RepeatSupport="true" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1819-0022 16 Ch. Dig. Input 24V, 10µs, M8" Desc="EPP1819-0022" PortABoxInfo="#x01000020">
+												<SyncMan>001002000000010004000000020002000200001000010000</SyncMan>
+												<Fmmu>0000000000000000001000010100000002000000000000000000000000000000</Fmmu>
+												<Pdo Name="Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6000" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6010" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 3" Index="#x1a02" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6020" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 4" Index="#x1a03" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6030" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 5" Index="#x1a04" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6040" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 6" Index="#x1a05" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6050" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 7" Index="#x1a06" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6060" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 8" Index="#x1a07" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6070" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 9" Index="#x1a08" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6080" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 10" Index="#x1a09" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x6090" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 11" Index="#x1a0a" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60a0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 12" Index="#x1a0b" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60b0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 13" Index="#x1a0c" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60c0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 14" Index="#x1a0d" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60d0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 15" Index="#x1a0e" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60e0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="Channel 16" Index="#x1a0f" Flags="#x0011" SyncMan="0">
+													<Entry Name="Input" Index="#x60f0" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<EtherCATp>
+													<Device>
+														<Us DevCurrent="0.06">
+															<Load Name="Sensor Supply"/>
+														</Us>
+														<Up/>
+													</Device>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+												</EtherCATp>
+											</EtherCAT>
+										</Box>
+										<Box Id="34" BoxType="9099" BoxFlags="#x00000020">
+											<Name>A_0031(EPP1816-0003-0016)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="35" FoeType="1" VendorId="#x00000002" ProductCode="#x64763789" RevisionNo="#x00100003" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1816-0003 16 Ch. Dig. Input 24V, 10µs, 10-Pole Plug Connector" Desc="EPP1816-0003" PortABoxInfo="#x01000021">
+												<SyncMan>001080002600010001000000800000018000001026010000</SyncMan>
+												<SyncMan>001180002200010002000000800000018000001122010000</SyncMan>
+												<SyncMan>001200000400000003000000000000000000001204000000</SyncMan>
+												<SyncMan>001904002000010004000000000000000400001920010000</SyncMan>
+												<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+												<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+												<BootStrapData>0010f400f410f400</BootStrapData>
+												<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<Pdo Name="DIG Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+													<Entry Name="Input 1" Index="#x6000" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6000" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6000" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6000" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6000" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6000" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6000" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 8" Index="#x6000" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+													</Entry>
+													<Entry Name="Sync error" Index="#x6000" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+													</Entry>
+													<Entry Name="TxPDO Toggle" Index="#x6000" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="DIG Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+													<Entry Name="Input 1" Index="#x6010" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6010" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6010" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6010" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6010" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6010" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6010" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 8" Index="#x6010" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+													</Entry>
+													<Entry Name="Sync error" Index="#x6010" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+													</Entry>
+													<Entry Name="TxPDO Toggle" Index="#x6010" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<CoeProfile ProfileNo="18355081"/>
+												<CoeProfile ProfileNo="18355081"/>
+												<EtherCATp>
+													<Device>
+														<Us DevCurrent="0.08">
+															<Load Name="Sensor Supply"/>
+														</Us>
+														<Up/>
+													</Device>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+												</EtherCATp>
+											</EtherCAT>
+										</Box>
+										<Box Id="35" BoxType="9099" BoxFlags="#x00000020">
+											<Name>A_0032(EPP1816-0008-0016)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="2" PdiType="#x0e05" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x64763789" RevisionNo="#x00100008" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1816-0008 16 Ch. Dig. Input 24V, 10µs, D-SUB25" Desc="EPP1816-0008" PortABoxInfo="#x01000022">
+												<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+												<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+												<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+												<SyncMan>801104002000010004000000000000000400801120010000</SyncMan>
+												<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+												<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+												<BootStrapData>0010f400f410f400</BootStrapData>
+												<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<Pdo Name="DIG Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+													<Entry Name="Input 1" Index="#x6000" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6000" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6000" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6000" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6000" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6000" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6000" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 8" Index="#x6000" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+													</Entry>
+													<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="DIG Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+													<Entry Name="Input 1" Index="#x6010" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6010" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6010" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6010" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6010" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6010" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6010" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 8" Index="#x6010" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+													</Entry>
+													<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+												</Pdo>
+												<CoeProfile ProfileNo="18355081"/>
+												<CoeProfile ProfileNo="18355081"/>
+												<EtherCATp>
+													<Device>
+														<Us DevCurrent="0.08">
+															<Load Name="Sensor Supply"/>
+														</Us>
+														<Up/>
+													</Device>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+												</EtherCATp>
+											</EtherCAT>
+										</Box>
+										<Box Id="36" BoxType="9099" BoxFlags="#x00000020">
+											<Name>A_0033(EPP1816-0008-0017)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="2" PdiType="#x0c05" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x64763789" RevisionNo="#x00110008" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1816-0008 16 Ch. Dig. Input 24V, 10µs, D-SUB25" Desc="EPP1816-0008" PortABoxInfo="#x01000023">
+												<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+												<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+												<SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+												<SyncMan>801104002000010004000000000000000400801120010000</SyncMan>
+												<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+												<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+												<BootStrapData>0010f400f410f400</BootStrapData>
+												<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<Pdo Name="DIG Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+													<Entry Name="Input 1" Index="#x6000" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6000" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6000" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6000" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6000" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6000" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6000" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 8" Index="#x6000" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+													</Entry>
+													<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="DIG Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+													<Entry Name="Input 1" Index="#x6010" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6010" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6010" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6010" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6010" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6010" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6010" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 8" Index="#x6010" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+													</Entry>
+													<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+													</Entry>
+												</Pdo>
+												<CoeProfile ProfileNo="18355081"/>
+												<CoeProfile ProfileNo="18355081"/>
+												<EtherCATp>
+													<Device>
+														<Us DevCurrent="0.08">
+															<Load Name="Sensor Supply"/>
+														</Us>
+														<Up/>
+													</Device>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+												</EtherCATp>
+											</EtherCAT>
+										</Box>
+										<Box Id="37" BoxType="9099" BoxFlags="#x00000020">
+											<Name>A_0034(EPP1816-0008-0018)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="35" FoeType="1" VendorId="#x00000002" ProductCode="#x64763789" RevisionNo="#x00120008" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1816-0008 16 Ch. Dig. Input 24V, 10µs, D-SUB25" Desc="EPP1816-0008" PortABoxInfo="#x01000024">
+												<SyncMan>001080002600010001000000800000018000001026010000</SyncMan>
+												<SyncMan>001180002200010002000000800000018000001122010000</SyncMan>
+												<SyncMan>001200000400000003000000000000000000001204000000</SyncMan>
+												<SyncMan>001904002000010004000000000000000400001920010000</SyncMan>
+												<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+												<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+												<BootStrapData>0010f400f410f400</BootStrapData>
+												<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<DcMode>4443000000000000000000000000000044432d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000030100000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<Pdo Name="DIG Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+													<Entry Name="Input 1" Index="#x6000" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6000" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6000" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6000" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6000" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6000" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6000" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 8" Index="#x6000" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+													</Entry>
+													<Entry Name="Sync error" Index="#x6000" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+													</Entry>
+													<Entry Name="TxPDO Toggle" Index="#x6000" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="DIG Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+													<Entry Name="Input 1" Index="#x6010" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6010" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6010" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6010" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6010" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6010" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6010" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 8" Index="#x6010" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+													</Entry>
+													<Entry Name="Sync error" Index="#x6010" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+													</Entry>
+													<Entry Name="TxPDO Toggle" Index="#x6010" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<CoeProfile ProfileNo="18355081"/>
+												<CoeProfile ProfileNo="18355081"/>
+												<EtherCATp>
+													<Device>
+														<Us DevCurrent="0.08">
+															<Load Name="Sensor Supply"/>
+														</Us>
+														<Up/>
+													</Device>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+												</EtherCATp>
+											</EtherCAT>
+										</Box>
+										<Box Id="38" BoxType="9099" BoxFlags="#x00000020">
+											<Name>A_0035(EPP1816-3008-0016)</Name>
+											<ImageId>1003</ImageId>
+											<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="35" FoeType="1" VendorId="#x00000002" ProductCode="#x64763789" RevisionNo="#x00100bc0" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP1816-3008 16Ch. Dig. Input  24V 10µs Acceleration Sensor, DSUB-25" Desc="EPP1816-3008" PortABoxInfo="#x01000025">
+												<SyncMan>001000012600010001000000300000010001001026010000</SyncMan>
+												<SyncMan>001100012200010002000000300000010001001122010000</SyncMan>
+												<SyncMan>001200000400000003000000000000000000001204000000</SyncMan>
+												<SyncMan>00191e002000010004000000000000001e00001920010000</SyncMan>
+												<Fmmu>0000000000000000001900010100000002000000000000000000000000000000</Fmmu>
+												<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+												<BootStrapData>0010f400f410f400</BootStrapData>
+												<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000b01e0400000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+												<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e70757420626173656429000000000000000000000000000000b01e0400000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+												<Pdo Name="DIG Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+													<Entry Name="Input 1" Index="#x6000" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6000" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6000" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6000" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6000" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6000" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6000" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 8" Index="#x6000" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="DIG Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+													<Entry Name="Input 1" Index="#x6010" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 2" Index="#x6010" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 3" Index="#x6010" Sub="#x03">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 4" Index="#x6010" Sub="#x04">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 5" Index="#x6010" Sub="#x05">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 6" Index="#x6010" Sub="#x06">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 7" Index="#x6010" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Input 8" Index="#x6010" Sub="#x08">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="AI Inputs Channel 1" Index="#x1a02" Flags="#x0011" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Error" Index="#x6020" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Value" Index="#x6020" Sub="#x11">
+														<Type>INT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="AI Inputs Channel 2" Index="#x1a03" Flags="#x0011" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Error" Index="#x6030" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Value" Index="#x6030" Sub="#x11">
+														<Type>INT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="AI Inputs Channel 3" Index="#x1a04" Flags="#x0011" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Error" Index="#x6040" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#x6040" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Value" Index="#x6040" Sub="#x11">
+														<Type>INT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="AI Inputs Channel 4" Index="#x1a05" Flags="#x0011" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Error" Index="#x6050" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#x6050" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Value" Index="#x6050" Sub="#x11">
+														<Type>INT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="AI Inputs Channel 5" Index="#x1a06" Flags="#x0011" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Error" Index="#x6060" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#x6060" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Value" Index="#x6060" Sub="#x11">
+														<Type>INT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="AI Inputs Channel 6" Index="#x1a07" Flags="#x0011" SyncMan="3">
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+													</Entry>
+													<Entry Name="Status__Error" Index="#x6070" Sub="#x07">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Status__">
+														<Type GUID="{18071995-0000-0000-0000-002000000008}">ARRAY [0..0] OF BYTE</Type>
+													</Entry>
+													<Entry Name="Status__TxPDO Toggle" Index="#x6070" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Value" Index="#x6070" Sub="#x11">
+														<Type>INT</Type>
+													</Entry>
+												</Pdo>
+												<Pdo Name="DIG Inputs Device" Index="#x1a08" Flags="#x0011" SyncMan="3">
+													<Entry Name="Us Undervoltage" Index="#xf600" Sub="#x01">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry Name="Up Undervoltage" Index="#xf600" Sub="#x02">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-00200000000B}">ARRAY [0..10] OF BIT</Type>
+													</Entry>
+													<Entry Name="Sync error" Index="#xf600" Sub="#x0e">
+														<Type>BIT</Type>
+													</Entry>
+													<Entry>
+														<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+													</Entry>
+													<Entry Name="TxPDO Toggle" Index="#xf600" Sub="#x10">
+														<Type>BIT</Type>
+													</Entry>
+												</Pdo>
+												<CoeProfile ProfileNo="18355081"/>
+												<CoeProfile ProfileNo="18355081"/>
+												<CoeProfile ProfileNo="19665801"/>
+												<CoeProfile ProfileNo="19665801"/>
+												<CoeProfile ProfileNo="19665801"/>
+												<CoeProfile ProfileNo="19665801"/>
+												<CoeProfile ProfileNo="19665801"/>
+												<CoeProfile ProfileNo="19665801"/>
+												<CoeProfile ProfileNo="23597961"/>
+												<EtherCATp>
+													<Device>
+														<Us DevCurrent="0.08">
+															<Load Name="Sensor Supply"/>
+														</Us>
+														<Up/>
+													</Device>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+													<Port>
+														<Us Resistance="0.108"/>
+														<Up Resistance="0.108"/>
+													</Port>
+												</EtherCATp>
+											</EtherCAT>
+										</Box>
+									</Box>
+								</Box>
+							</Box>
+						</Box>
+					</Box>
+				</Box>
+			</Box>
+		</Box>
+	</Box>
+</TcSmItem>

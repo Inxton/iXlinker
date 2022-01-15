@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_B1AE0A94" Id="{2142e6f4-16a4-453c-b3ae-18df627fdfb8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1960-0000-0019"}
+{attribute addProperty Id "FSoE_CommandUSINT811FSOUT_Module_1_Channel_1_OutputBIT10.1251FSOUT_Module_1_Channel_2_OutputBIT10.1252FSOUT_Module_1_Channel_3_OutputBIT10.1253FSOUT_Module_1_Channel_4_OutputBIT10.1254FSOUT_Module_1_ErrAckBIT10.1251FSOUT_Module_2_Channel_1_OutputBIT10.1251FSOUT_Module_2_Channel_2_OutputBIT10.1252FSOUT_Module_2_Channel_3_OutputBIT10.1253FSOUT_Module_2_Channel_4_OutputBIT10.1254FSOUT_Module_2_ErrAckBIT10.1251FSOUT_Module_3_Channel_1_OutputBIT10.1251FSOUT_Module_3_Channel_2_OutputBIT10.1252FSOUT_Module_3_Channel_3_OutputBIT10.1253FSOUT_Module_3_Channel_4_OutputBIT10.1254FSOUT_Module_3_ErrAckBIT10.1251FSOUT_Module_4_Channel_1_OutputBIT10.1251FSoE_CRC_000UINT1623FSOUT_Module_4_Channel_2_OutputBIT10.1252FSOUT_Module_4_Channel_3_OutputBIT10.1253FSOUT_Module_4_Channel_4_OutputBIT10.1254FSOUT_Module_4_ErrAckBIT10.1251FSOUT_Module_5_Channel_1_OutputBIT10.1251FSOUT_Module_5_Channel_2_OutputBIT10.1252FSOUT_Module_5_Channel_3_OutputBIT10.1253FSOUT_Module_5_Channel_4_OutputBIT10.1254FSOUT_Module_5_ErrAckBIT10.1251FSOUT_Module_6_Channel_1_OutputBIT10.1251FSOUT_Module_6_Channel_2_OutputBIT10.1252FSOUT_Module_6_Channel_3_OutputBIT10.1253FSOUT_Module_6_Channel_4_OutputBIT10.1254FSOUT_Module_6_ErrAckBIT10.1251FSoE_CRC_001UINT1624FSIN_Module_1_ErrAckBIT10.1251FSIN_Module_2_ErrAckBIT10.1251FSIN_Module_3_ErrAckBIT10.1251FSIN_Module_4_ErrAckBIT10.1251FSIN_Module_5_ErrAckBIT10.1251FSIN_Module_6_ErrAckBIT10.1251FSIN_Module_7_ErrAckBIT10.1251FSIN_Module_8_ErrAckBIT10.1251FSIN_Module_9_ErrAck_1BIT10.1251FSIN_Module_9_ErrAck_2BIT10.1252FSIN_Module_10_ErrAck_1BIT10.1251FSIN_Module_10_ErrAck_2BIT10.1252FSoE_CRC_002UINT1625FSoE_Connection_IDUINT1622"}
+{attribute addProperty CRC "2980973204"}
+{attribute addProperty SizeInBites "120"}
+{attribute addProperty SizeInBytes "15"}
+TYPE FSOE_B1AE0A94 :
+STRUCT
+	{attribute addProperty Name "FSoE_Command"}
+	FSoE_Command : USINT;
+	{attribute addProperty Name "FSOUT_Module_1_Channel_1_Output"}
+	FSOUT_Module_1_Channel_1_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_1_Channel_2_Output"}
+	FSOUT_Module_1_Channel_2_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_1_Channel_3_Output"}
+	FSOUT_Module_1_Channel_3_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_1_Channel_4_Output"}
+	FSOUT_Module_1_Channel_4_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_1_ErrAck"}
+	FSOUT_Module_1_ErrAck : BOOL;
+	{attribute addProperty Name "FSOUT_Module_2_Channel_1_Output"}
+	FSOUT_Module_2_Channel_1_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_2_Channel_2_Output"}
+	FSOUT_Module_2_Channel_2_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_2_Channel_3_Output"}
+	FSOUT_Module_2_Channel_3_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_2_Channel_4_Output"}
+	FSOUT_Module_2_Channel_4_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_2_ErrAck"}
+	FSOUT_Module_2_ErrAck : BOOL;
+	{attribute addProperty Name "FSOUT_Module_3_Channel_1_Output"}
+	FSOUT_Module_3_Channel_1_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_3_Channel_2_Output"}
+	FSOUT_Module_3_Channel_2_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_3_Channel_3_Output"}
+	FSOUT_Module_3_Channel_3_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_3_Channel_4_Output"}
+	FSOUT_Module_3_Channel_4_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_3_ErrAck"}
+	FSOUT_Module_3_ErrAck : BOOL;
+	{attribute addProperty Name "FSOUT_Module_4_Channel_1_Output"}
+	FSOUT_Module_4_Channel_1_Output : BOOL;
+	{attribute addProperty Name "FSoE_CRC_000"}
+	FSoE_CRC_000 : UINT;
+	{attribute addProperty Name "FSOUT_Module_4_Channel_2_Output"}
+	FSOUT_Module_4_Channel_2_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_4_Channel_3_Output"}
+	FSOUT_Module_4_Channel_3_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_4_Channel_4_Output"}
+	FSOUT_Module_4_Channel_4_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_4_ErrAck"}
+	FSOUT_Module_4_ErrAck : BOOL;
+	{attribute addProperty Name "FSOUT_Module_5_Channel_1_Output"}
+	FSOUT_Module_5_Channel_1_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_5_Channel_2_Output"}
+	FSOUT_Module_5_Channel_2_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_5_Channel_3_Output"}
+	FSOUT_Module_5_Channel_3_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_5_Channel_4_Output"}
+	FSOUT_Module_5_Channel_4_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_5_ErrAck"}
+	FSOUT_Module_5_ErrAck : BOOL;
+	{attribute addProperty Name "FSOUT_Module_6_Channel_1_Output"}
+	FSOUT_Module_6_Channel_1_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_6_Channel_2_Output"}
+	FSOUT_Module_6_Channel_2_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_6_Channel_3_Output"}
+	FSOUT_Module_6_Channel_3_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_6_Channel_4_Output"}
+	FSOUT_Module_6_Channel_4_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_6_ErrAck"}
+	FSOUT_Module_6_ErrAck : BOOL;
+	{attribute 'hide'}
+	reserve_1 : BOOL;
+	{attribute 'hide'}
+	reserve_2 : BOOL;
+	{attribute addProperty Name "FSoE_CRC_001"}
+	FSoE_CRC_001 : UINT;
+	{attribute 'hide'}
+	reserve_3 : BOOL;
+	{attribute 'hide'}
+	reserve_4 : BOOL;
+	{attribute 'hide'}
+	reserve_5 : BOOL;
+	{attribute addProperty Name "FSIN_Module_1_ErrAck"}
+	FSIN_Module_1_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_ErrAck"}
+	FSIN_Module_2_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_3_ErrAck"}
+	FSIN_Module_3_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_4_ErrAck"}
+	FSIN_Module_4_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_5_ErrAck"}
+	FSIN_Module_5_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_6_ErrAck"}
+	FSIN_Module_6_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_7_ErrAck"}
+	FSIN_Module_7_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_8_ErrAck"}
+	FSIN_Module_8_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_9_ErrAck_1"}
+	FSIN_Module_9_ErrAck_1 : BOOL;
+	{attribute addProperty Name "FSIN_Module_9_ErrAck_2"}
+	FSIN_Module_9_ErrAck_2 : BOOL;
+	{attribute addProperty Name "FSIN_Module_10_ErrAck_1"}
+	FSIN_Module_10_ErrAck_1 : BOOL;
+	{attribute addProperty Name "FSIN_Module_10_ErrAck_2"}
+	FSIN_Module_10_ErrAck_2 : BOOL;
+	{attribute 'hide'}
+	reserve_6 : BOOL;
+	{attribute addProperty Name "FSoE_CRC_002"}
+	FSoE_CRC_002 : UINT;
+	{attribute addProperty Name "FSoE_Connection_ID"}
+	FSoE_Connection_ID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

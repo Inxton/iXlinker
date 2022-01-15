@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_3D859DDA" Id="{1b34cda5-2f5f-43e0-9d6f-c118cc258d5a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ5002-0000-0016"}
+{attribute addProperty Id "Data_errorBIT10.1251Frame_errorBIT10.1252Power_failureBIT10.1253Sync_errorBIT10.12532TxPDO_StateBIT10.1257TxPDO_ToggleBIT10.1259"}
+{attribute addProperty CRC "1032166874"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_3D859DDA :
+STRUCT
+	{attribute addProperty Name "Data_error"}
+	Data_error : BOOL;
+	{attribute addProperty Name "Frame_error"}
+	Frame_error : BOOL;
+	{attribute addProperty Name "Power_failure"}
+	Power_failure : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_4 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_5 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_6 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_7 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_8 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BIT_9 : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

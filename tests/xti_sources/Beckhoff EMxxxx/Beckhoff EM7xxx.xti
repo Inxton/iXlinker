@@ -1,0 +1,2312 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000005}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..4] OF BIT</Name>
+			<BitSize>5</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>5</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000003}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..2] OF BIT</Name>
+			<BitSize>3</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>3</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000E}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..13] OF BIT</Name>
+			<BitSize>14</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>14</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000C}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..11] OF BIT</Name>
+			<BitSize>12</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>12</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000F}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..14] OF BIT</Name>
+			<BitSize>15</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>15</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
+			<BitSize>2</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0c0c0c0000000c0c0c00077f00077f00077f0c0c0c0000000c0c0c0c0c0c0000000c0c0c0808080c0c0c0000000c0c0c0c0c0c0000000c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0000000c0c0c0c0c0c0000000c0c0c0808080c0c0c0000000c0c0c0c0c0c0000000c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0000000c0c0c0c0c0c0000000c0c0c0808080c0c0c0000000c0c0c0c0c0c0000000c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0000000c0c0c0c0c0c0000000c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0c0c0c0000000c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0000000c0c0c0c0c0c0000000c0c0c0808080c0c0c0000000c0c0c0c0c0c0000000c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0000000c0c0c0c0c0c0000000c0c0c0808080c0c0c0000000c0c0c0c0c0c0000000c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0000000c0c0c0c0c0c0000000c0c0c0808080c0c0c0000000c0c0c0c0c0c0000000c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0000000c0c0c0c0c0c0000000c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff EM7xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff EM7xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+		</Box>
+		<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0001(EM7004-0000-9995)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" CycleMBoxPolling="true" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x1b5c3452" RevisionNo="#x270b0000" InfoDataAddr="true" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EM7004 4-Axis Interface Unit" Desc="EM7004" PortABoxInfo="#x02000002">
+				<SyncMan>00123c002600010001000000000000003c00001226010000</SyncMan>
+				<SyncMan>80123c002200010002000000000000003c00801222010000</SyncMan>
+				<SyncMan>00101a002600010003000000000000000000001026010000</SyncMan>
+				<SyncMan>00111a002200010004000000000000000000001122010000</SyncMan>
+				<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000001100010100000002000000000000000000000000000000</Fmmu>
+				<BootStrapData>0012f400f412f400</BootStrapData>
+				<Pdo Name="Digital" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<Entry Name="Input 0" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 1" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 2" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 3" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 4" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 5" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 6" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 7" Index="#x6000" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 8" Index="#x6000" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 9" Index="#x6000" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 10" Index="#x6000" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 11" Index="#x6000" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 12" Index="#x6000" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 13" Index="#x6000" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 14" Index="#x6000" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 15" Index="#x6000" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Encoder, Channel 1" Index="#x1a01" Flags="#x0010" SyncMan="3">
+					<Entry Name="Status" Index="#x6050" Sub="#x01">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x6050" Sub="#x02">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch" Index="#x6050" Sub="#x03">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Encoder, Channel 2" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<Entry Name="Status" Index="#x6060" Sub="#x01">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x6060" Sub="#x02">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch" Index="#x6060" Sub="#x03">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Encoder, Channel 3" Index="#x1a03" Flags="#x0010" SyncMan="3">
+					<Entry Name="Status" Index="#x6070" Sub="#x01">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x6070" Sub="#x02">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch" Index="#x6070" Sub="#x03">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Encoder, Channel 4" Index="#x1a04" Flags="#x0010" SyncMan="3">
+					<Entry Name="Status" Index="#x6080" Sub="#x01">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x6080" Sub="#x02">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch" Index="#x6080" Sub="#x03">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Digital" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Output 0" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 1" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 2" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 3" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 4" Index="#x7000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 5" Index="#x7000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 6" Index="#x7000" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 7" Index="#x7000" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 8" Index="#x7000" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 9" Index="#x7000" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 10" Index="#x7000" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 11" Index="#x7000" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 12" Index="#x7000" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 13" Index="#x7000" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 14" Index="#x7000" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 15" Index="#x7000" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Analog, Channel 1" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Output" Index="#x7010" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Analog, Channel 2" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Output" Index="#x7020" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Analog, Channel 3" Index="#x1603" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Output" Index="#x7030" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Analog, Channel 4" Index="#x1604" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Output" Index="#x7040" Sub="#x01">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Encoder, Channel 1" Index="#x1605" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Ctrl" Index="#x7050" Sub="#x01">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x7050" Sub="#x02">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Encoder, Channel 2" Index="#x1606" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Ctrl" Index="#x7060" Sub="#x01">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x7060" Sub="#x02">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Encoder, Channel 3" Index="#x1607" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Ctrl" Index="#x7070" Sub="#x01">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x7070" Sub="#x02">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="Encoder, Channel 4" Index="#x1608" InOut="1" Flags="#x0010" SyncMan="2">
+					<Entry Name="Ctrl" Index="#x7080" Sub="#x01">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Value" Index="#x7080" Sub="#x02">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="45880201"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0002(EM7004-0000-9996)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" CycleMBoxPolling="true" CoeType="35" FoeType="1" VendorId="#x00000002" ProductCode="#x1b5c3452" RevisionNo="#x270c0000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EM7004 4-Axis Interface Unit" Desc="EM7004" PortABoxInfo="#x01000004">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00111c006400010003000000000000001c00001164010000</SyncMan>
+				<SyncMan>80111c002000010004000000000000001c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="DI Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+					<Entry Name="Input 0" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 1" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 2" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 3" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 4" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 5" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 6" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 7" Index="#x6000" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 8" Index="#x6000" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 9" Index="#x6000" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 10" Index="#x6000" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 11" Index="#x6000" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 12" Index="#x6000" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 13" Index="#x6000" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 14" Index="#x6000" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 15" Index="#x6000" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 1" Index="#x1a06" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6060" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6060" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6060" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6060" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6060" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6060" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000003}">ARRAY [0..2] OF BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6060" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6060" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 2" Index="#x1a07" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6070" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6070" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6070" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6070" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6070" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6070" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000003}">ARRAY [0..2] OF BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6070" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6070" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 3" Index="#x1a08" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6080" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6080" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6080" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6080" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6080" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6080" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000003}">ARRAY [0..2] OF BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6080" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6080" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 4" Index="#x1a09" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6090" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6090" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6090" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6090" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6090" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6090" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000003}">ARRAY [0..2] OF BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6090" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6090" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="PLS Inputs" Index="#x1a0a" Flags="#x0011" SyncMan="3">
+					<Entry Name="PLS Enabled" Index="#x60a0" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Unequal SI:0" Index="#x60a0" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="DO Outputs" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Output 0" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 1" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 2" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 3" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 4" Index="#x7010" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 5" Index="#x7010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 6" Index="#x7010" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 7" Index="#x7010" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 8" Index="#x7010" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 9" Index="#x7010" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 10" Index="#x7010" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 11" Index="#x7010" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 12" Index="#x7010" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 13" Index="#x7010" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 14" Index="#x7010" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 15" Index="#x7010" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 1" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7020" Sub="#x0b" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 2" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7030" Sub="#x0b" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 3" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7040" Sub="#x0b" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 4" Index="#x1605" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7050" Sub="#x0b" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 1" Index="#x1606" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7060" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7060" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7060" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7060" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 2" Index="#x1607" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7070" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7070" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7070" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7070" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 3" Index="#x1608" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7080" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7080" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7080" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7080" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 4" Index="#x1609" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7090" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7090" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7090" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7090" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="PLS Outputs" Index="#x160a" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Enable PLS" Index="#x70a0" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="6558601"/>
+				<CoeProfile ProfileNo="13112201"/>
+				<CoeProfile ProfileNo="26219401"/>
+				<CoeProfile ProfileNo="26219401"/>
+				<CoeProfile ProfileNo="26219401"/>
+				<CoeProfile ProfileNo="26219401"/>
+				<CoeProfile ProfileNo="33428361"/>
+				<CoeProfile ProfileNo="33428361"/>
+				<CoeProfile ProfileNo="33428361"/>
+				<CoeProfile ProfileNo="33428361"/>
+				<CoeProfile ProfileNo="33493897"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="6" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0003(EM7004-0000-9997)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" CycleMBoxPolling="true" CoeType="35" FoeType="1" VendorId="#x00000002" ProductCode="#x1b5c3452" RevisionNo="#x270d0000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EM7004 4-Axis Interface Unit" Desc="EM7004" PortABoxInfo="#x01000005">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00111c006400010003000000000000001c00001164010000</SyncMan>
+				<SyncMan>80111c002000010004000000000000001c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="DI Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+					<Entry Name="Input 0" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 1" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 2" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 3" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 4" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 5" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 6" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 7" Index="#x6000" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 8" Index="#x6000" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 9" Index="#x6000" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 10" Index="#x6000" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 11" Index="#x6000" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 12" Index="#x6000" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 13" Index="#x6000" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 14" Index="#x6000" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 15" Index="#x6000" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 1" Index="#x1a06" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6060" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6060" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6060" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6060" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6060" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6060" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000003}">ARRAY [0..2] OF BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6060" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6060" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 2" Index="#x1a07" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6070" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6070" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6070" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6070" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6070" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6070" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000003}">ARRAY [0..2] OF BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6070" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6070" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 3" Index="#x1a08" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6080" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6080" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6080" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6080" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6080" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6080" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000003}">ARRAY [0..2] OF BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6080" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6080" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 4" Index="#x1a09" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6090" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6090" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6090" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6090" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6090" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6090" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000003}">ARRAY [0..2] OF BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6090" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6090" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="PLS Inputs" Index="#x1a0a" Flags="#x0011" SyncMan="3">
+					<Entry Name="PLS Enabled" Index="#x60a0" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Unequal SI:0" Index="#x60a0" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="DO Outputs" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Output 0" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 1" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 2" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 3" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 4" Index="#x7010" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 5" Index="#x7010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 6" Index="#x7010" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 7" Index="#x7010" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 8" Index="#x7010" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 9" Index="#x7010" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 10" Index="#x7010" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 11" Index="#x7010" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 12" Index="#x7010" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 13" Index="#x7010" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 14" Index="#x7010" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 15" Index="#x7010" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 1" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7020" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 2" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7030" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 3" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7040" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 4" Index="#x1605" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7050" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 1" Index="#x1606" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7060" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7060" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7060" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7060" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 2" Index="#x1607" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7070" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7070" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7070" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7070" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 3" Index="#x1608" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7080" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7080" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7080" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7080" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 4" Index="#x1609" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7090" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7090" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7090" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7090" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="PLS Outputs" Index="#x160a" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Enable PLS" Index="#x70a0" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="6558601" DisplayName="X0/X1 DigIn"/>
+				<CoeProfile ProfileNo="13112201" DisplayName="X2/X3 DigOut"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X4: Axis 1"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X5: Axis 2"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X6: Axis 3"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X7: Axis 4"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X4: Axis 1"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X5: Axis 2"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X6: Axis 3"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X7: Axis 4"/>
+				<CoeProfile ProfileNo="33559433"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0004(EM7004-0000-0016)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x1b5c3452" RevisionNo="#x00100000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EM7004 4-Axis Interface Unit" Desc="EM7004" PortABoxInfo="#x01000006">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00111c002400010003000000000000001c00001124010000</SyncMan>
+				<SyncMan>80111c002000010004000000000000001c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="DI Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+					<Entry Name="Input 0" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 1" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 2" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 3" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 4" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 5" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 6" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 7" Index="#x6000" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 8" Index="#x6000" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 9" Index="#x6000" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 10" Index="#x6000" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 11" Index="#x6000" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 12" Index="#x6000" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 13" Index="#x6000" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 14" Index="#x6000" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input 15" Index="#x6000" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 1" Index="#x1a06" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6060" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6060" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6060" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6060" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6060" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6060" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1806" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6060" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6060" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 2" Index="#x1a07" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6070" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6070" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6070" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6070" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6070" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6070" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1807" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6070" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6070" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 3" Index="#x1a08" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6080" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6080" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6080" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6080" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6080" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6080" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1808" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6080" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6080" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 4" Index="#x1a09" Flags="#x0011" SyncMan="3">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Latch extern valid" Index="#x6090" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6090" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input A" Index="#x6090" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input B" Index="#x6090" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input gate" Index="#x6090" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of extern latch" Index="#x6090" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1809" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6090" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6090" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="PLS Inputs" Index="#x1a0a" Flags="#x0011" SyncMan="3">
+					<Entry Name="PLS Enabled" Index="#x60a0" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Unequal SI:0" Index="#x60a0" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="DO Outputs" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Output 0" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 1" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 2" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 3" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 4" Index="#x7010" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 5" Index="#x7010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 6" Index="#x7010" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 7" Index="#x7010" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 8" Index="#x7010" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 9" Index="#x7010" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 10" Index="#x7010" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 11" Index="#x7010" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 12" Index="#x7010" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 13" Index="#x7010" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 14" Index="#x7010" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output 15" Index="#x7010" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 1" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7020" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 2" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7030" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 3" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7040" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 4" Index="#x1605" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7050" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 1" Index="#x1606" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7060" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7060" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7060" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7060" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 2" Index="#x1607" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7070" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7070" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7070" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7070" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 3" Index="#x1608" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7080" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7080" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7080" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7080" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 4" Index="#x1609" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on positive edge" Index="#x7090" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7090" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Enable latch extern on negative edge" Index="#x7090" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7090" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="PLS Outputs" Index="#x160a" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Enable PLS" Index="#x70a0" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="6558601" DisplayName="X0/X1 DigIn"/>
+				<CoeProfile ProfileNo="13112201" DisplayName="X2/X3 DigOut"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X4: Axis 1"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X5: Axis 2"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X6: Axis 3"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X7: Axis 4"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X4: Axis 1"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X5: Axis 2"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X6: Axis 3"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X7: Axis 4"/>
+				<CoeProfile ProfileNo="33559433"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="8" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0005(EM7004-0000-0017)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x1b5c3452" RevisionNo="#x00110000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EM7004 4-Axis Interface Unit" Desc="EM7004" PortABoxInfo="#x01000007">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00111c002400010003000000000000001c00001124010000</SyncMan>
+				<SyncMan>80111c002000010004000000000000001c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="DI Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+					<Entry Name="Input__Input 0" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 1" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 2" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 3" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 4" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 5" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 6" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 7" Index="#x6000" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 8" Index="#x6000" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 9" Index="#x6000" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 10" Index="#x6000" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 11" Index="#x6000" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 12" Index="#x6000" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 13" Index="#x6000" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 14" Index="#x6000" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 15" Index="#x6000" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 1" Index="#x1a06" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Latch extern valid" Index="#x6060" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6060" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input A" Index="#x6060" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input B" Index="#x6060" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input gate" Index="#x6060" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of extern latch" Index="#x6060" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1806" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6060" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6060" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 2" Index="#x1a07" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Latch extern valid" Index="#x6070" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6070" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input A" Index="#x6070" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input B" Index="#x6070" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input gate" Index="#x6070" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of extern latch" Index="#x6070" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1807" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6070" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6070" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 3" Index="#x1a08" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Latch extern valid" Index="#x6080" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6080" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input A" Index="#x6080" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input B" Index="#x6080" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input gate" Index="#x6080" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of extern latch" Index="#x6080" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1808" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6080" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6080" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 4" Index="#x1a09" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Latch extern valid" Index="#x6090" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6090" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input A" Index="#x6090" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input B" Index="#x6090" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input gate" Index="#x6090" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of extern latch" Index="#x6090" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1809" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6090" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6090" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="PLS Inputs" Index="#x1a0a" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__PLS Enabled" Index="#x60a0" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Unequal SI:0" Index="#x60a0" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="DO Outputs" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Output__Output 0" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 1" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 2" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 3" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 4" Index="#x7010" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 5" Index="#x7010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 6" Index="#x7010" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 7" Index="#x7010" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 8" Index="#x7010" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 9" Index="#x7010" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 10" Index="#x7010" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 11" Index="#x7010" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 12" Index="#x7010" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 13" Index="#x7010" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 14" Index="#x7010" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 15" Index="#x7010" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 1" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7020" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 2" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7030" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 3" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7040" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 4" Index="#x1605" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7050" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 1" Index="#x1606" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on positive edge" Index="#x7060" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7060" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on negative edge" Index="#x7060" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7060" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 2" Index="#x1607" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on positive edge" Index="#x7070" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7070" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on negative edge" Index="#x7070" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7070" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 3" Index="#x1608" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on positive edge" Index="#x7080" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7080" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on negative edge" Index="#x7080" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7080" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 4" Index="#x1609" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on positive edge" Index="#x7090" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7090" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on negative edge" Index="#x7090" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7090" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="PLS Outputs" Index="#x160a" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Control__Enable PLS" Index="#x70a0" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="6558601" DisplayName="X0/X1 DigIn"/>
+				<CoeProfile ProfileNo="13112201" DisplayName="X2/X3 DigOut"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X4: Axis 1"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X5: Axis 2"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X6: Axis 3"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X7: Axis 4"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X4: Axis 1"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X5: Axis 2"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X6: Axis 3"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X7: Axis 4"/>
+				<CoeProfile ProfileNo="33559433"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="9" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0006(EM7004-0000-0018)</Name>
+			<ImageId>1002</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="3" FoeType="1" VendorId="#x00000002" ProductCode="#x1b5c3452" RevisionNo="#x00120000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EM7004 4-Axis Interface Unit" Desc="EM7004" PortABoxInfo="#x01000008">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00111c002400010003000000000000001c00001124010000</SyncMan>
+				<SyncMan>80111c002000010004000000000000001c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="DI Inputs" Index="#x1a00" Flags="#x0011" SyncMan="3">
+					<Entry Name="Input__Input 0" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 1" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 2" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 3" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 4" Index="#x6000" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 5" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 6" Index="#x6000" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 7" Index="#x6000" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 8" Index="#x6000" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 9" Index="#x6000" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 10" Index="#x6000" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 11" Index="#x6000" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 12" Index="#x6000" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 13" Index="#x6000" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 14" Index="#x6000" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Input__Input 15" Index="#x6000" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 1" Index="#x1a06" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Latch extern valid" Index="#x6060" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6060" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input A" Index="#x6060" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input B" Index="#x6060" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input gate" Index="#x6060" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of extern latch" Index="#x6060" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1806" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6060" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6060" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 2" Index="#x1a07" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Latch extern valid" Index="#x6070" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6070" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input A" Index="#x6070" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input B" Index="#x6070" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input gate" Index="#x6070" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of extern latch" Index="#x6070" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1807" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6070" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6070" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 3" Index="#x1a08" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Latch extern valid" Index="#x6080" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6080" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input A" Index="#x6080" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input B" Index="#x6080" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input gate" Index="#x6080" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of extern latch" Index="#x6080" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1808" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6080" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6080" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Inputs Channel 4" Index="#x1a09" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Latch extern valid" Index="#x6090" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6090" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input A" Index="#x6090" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input B" Index="#x6090" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input gate" Index="#x6090" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of extern latch" Index="#x6090" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1809" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6090" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+					<Entry Name="Latch value" Index="#x6090" Sub="#x12">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="PLS Inputs" Index="#x1a0a" Flags="#x0011" SyncMan="3">
+					<Entry Name="Status__PLS Enabled" Index="#x60a0" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Unequal SI:0" Index="#x60a0" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="DO Outputs" Index="#x1601" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Output__Output 0" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 1" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 2" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 3" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 4" Index="#x7010" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 5" Index="#x7010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 6" Index="#x7010" Sub="#x07">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 7" Index="#x7010" Sub="#x08">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 8" Index="#x7010" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 9" Index="#x7010" Sub="#x0a">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 10" Index="#x7010" Sub="#x0b">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 11" Index="#x7010" Sub="#x0c">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 12" Index="#x7010" Sub="#x0d">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 13" Index="#x7010" Sub="#x0e">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 14" Index="#x7010" Sub="#x0f">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Output__Output 15" Index="#x7010" Sub="#x10">
+						<Type>BIT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 1" Index="#x1602" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7020" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 2" Index="#x1603" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7030" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 3" Index="#x1604" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7040" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="AO Outputs Channel 4" Index="#x1605" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Analog output" Index="#x7050" Sub="#x11" Flags="#x00010000">
+						<Type>INT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 1" Index="#x1606" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on positive edge" Index="#x7060" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7060" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on negative edge" Index="#x7060" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7060" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 2" Index="#x1607" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on positive edge" Index="#x7070" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7070" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on negative edge" Index="#x7070" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7070" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 3" Index="#x1608" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on positive edge" Index="#x7080" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7080" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on negative edge" Index="#x7080" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7080" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="ENC Outputs Channel 4" Index="#x1609" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on positive edge" Index="#x7090" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7090" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Enable latch extern on negative edge" Index="#x7090" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7090" Sub="#x11">
+						<Type>UINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="PLS Outputs" Index="#x160a" InOut="1" Flags="#x0011" SyncMan="2">
+					<Entry Name="Control__Enable PLS" Index="#x70a0" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000F}">ARRAY [0..14] OF BIT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="6558601" DisplayName="X0/X1 DigIn"/>
+				<CoeProfile ProfileNo="13112201" DisplayName="X2/X3 DigOut"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X4: Axis 1"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X5: Axis 2"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X6: Axis 3"/>
+				<CoeProfile ProfileNo="26219401" DisplayName="X7: Axis 4"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X4: Axis 1"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X5: Axis 2"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X6: Axis 3"/>
+				<CoeProfile ProfileNo="33493897" DisplayName="X7: Axis 4"/>
+				<CoeProfile ProfileNo="33559433"/>
+			</EtherCAT>
+		</Box>
+	</Box>
+</TcSmItem>

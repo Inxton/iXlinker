@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="TC_Channel_17AE08DB" Id="{d0f13a1c-f0a5-4e97-82b6-5b98f33829a4}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ3318-0000-0017"}
+{attribute addProperty Id "StatusAT %I*Status_C3A5DD7C1621ValueAT %I*INT16217"}
+{attribute addProperty CRC "397281499"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE TC_Channel_17AE08DB :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_C3A5DD7C;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

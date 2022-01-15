@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="MMS_Acceleration_Z_Axis_2EF51F00" Id="{86366f00-d992-43bf-b802-ce4324e95116}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EKM1101-0000-0016"}
+{attribute addProperty Id "ValueAT %I*INT162"}
+{attribute addProperty CRC "787816192"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE MMS_Acceleration_Z_Axis_2EF51F00 :
+STRUCT
+	{attribute addProperty Name "Value"}
+	Value AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

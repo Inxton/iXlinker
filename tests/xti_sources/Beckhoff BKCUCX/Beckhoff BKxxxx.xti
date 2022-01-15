@@ -1,0 +1,1541 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff0000c00000c00000c00000c00000c00000c00000c0ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c6000000c6c6c60000c0c6c6c6000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c600ffffc6c6c60000c0c6c6c600ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c6c6c6c6c6c6c60000c0c6c6c6c6c6c6808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c6000000c6c6c60000c0c6c6c6000000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c6ff0000c6c6c60000c0c6c6c6ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc6c6c6c6c6c6c6c6c60000c0c6c6c6c6c6c6808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6000000c6c6c60000c0c6c6c6000000808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c60000ffc6c6c60000c0c6c6c60000ff808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6c6c6c6c6c6c60000c0c6c6c6c6c6c6808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6000000c6c6c60000c0c6c6c6000000808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6c6c6c6c6c6c60000c0c6c6c6c6c6c6808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6008400c6c6c60000c0c6c6c6008400808080ff00ffff00ffff00ff007bff007bff007bff007bff007bff007bffc6c6c6c6c6c6c6c6c60000c0c6c6c6c6c6c6808080ff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1003">424de6000000000000007600000028000000100000000e000000010004000000000070000000c40e0000c40e0000100000001000000000000000ff0000000084000084848400c6c6c6000000ff00ff00ff0000ffff00ffffff00ffffff00ffffff00ffffff00ffffff00ffffff00ffffff00ffffff0066333333333336666644444340403666664004434747366666405443444436666640044340403666664004434141366666400453444436666640042340403666664444444545366600044544444436660644454440403666004555554444366606444544424236660004454444443666</ImageData>
+		<ImageData Id="1004">424de6000000000000007600000028000000100000000e000000010004000000000070000000120b0000120b0000100000001000000000000000000080000080000000808000800000008000800080800000c0c0c000808080000000ff0000ff000000ffff00ff000000ff00ff00ffff0000ffffff00ddddddddddd9dd9dddddddddddd9d999ddddddddddd9dd9ddddddddddd999d9dddddddddddd9dd9d000000000000000007070707000000000a0a0a0a000000000000000000000770000000000000077007070707000000000a0a0a0a000000000000000000000000dddddddddddddddd</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff BKxxxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff BKxxxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+				<Box Id="17" BoxType="9081" AmsPort="28941">
+					<Name>A_0014(BK1250-0000-0000)</Name>
+					<ImageId>1002</ImageId>
+					<Vars VarGrpType="1">
+						<Name>Inputs</Name>
+						<Var>
+							<Name>CouplerState</Name>
+							<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+							<Type>UINT</Type>
+							<BitOffs>320</BitOffs>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2">
+						<Name>Outputs</Name>
+						<Var>
+							<Name>CouplerCtrl</Name>
+							<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+							<Type>UINT</Type>
+							<BitOffs>320</BitOffs>
+						</Var>
+					</Vars>
+					<BusCoupler ComplexTermSupport="true" NewHardware="true">
+						<Flags SupportVirtualTerms="true"/>
+						<Term Id="14" TermType="#x2332" Fieldbus="7">
+							<Name>End Term (KL9010)</Name>
+							<ImageId>32</ImageId>
+						</Term>
+					</BusCoupler>
+					<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0212ec03" PdiType="#x0008" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04e22c22" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="3" PortABoxInfo="#x01000003">
+						<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+						<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+						<SyncMan>001002006400010003000000000000000000001064010000</SyncMan>
+						<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+						<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<BootStrapData>0010140200181402</BootStrapData>
+					</EtherCAT>
+				</Box>
+			</Box>
+			<Box Id="4" BoxType="9081" AmsPort="28928">
+				<Name>A_0001(BK1120-0000-0000)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>336</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>336</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="1" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="2" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04602c22" InfoDataAddr="true" TimeoutMailbox2="6000" PortPhys="17" PortABoxInfo="#x01000002">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="5" BoxType="9081" AmsPort="28929">
+				<Name>A_0002(BK1120-0000-0001)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>352</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>352</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="2" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0206ee03" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04602c22" RevisionNo="#x00010000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x01000004">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="6" BoxType="9081" AmsPort="28930">
+				<Name>A_0003(BK1120-0000-0016)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>368</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>368</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="3" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0207ef03" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04602c22" RevisionNo="#x00100000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x01000005">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="7" BoxType="9081" AmsPort="28931">
+				<Name>A_0004(BK1120-0000-0017)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>384</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>384</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="4" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0208f003" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04602c22" RevisionNo="#x00110000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x01000006">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="8" BoxType="9081" AmsPort="28932">
+				<Name>A_0005(BK1120-0000-0018)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>400</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>400</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="5" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0209f103" PdiType="#x0208" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04602c22" RevisionNo="#x00120000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x01000007">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="9" BoxType="9081" AmsPort="28933">
+				<Name>A_0006(BK1120-0000-0019)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>416</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>416</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="6" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020af203" PdiType="#x0208" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04602c22" RevisionNo="#x00130000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x01000008">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="10" BoxType="9081" AmsPort="28934">
+				<Name>A_0007(BK1120-0000-0020)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>432</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>432</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="7" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020bf303" PdiType="#x0208" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04602c22" RevisionNo="#x00140000" InfoDataAddr="true" InfoDataNetId="true" TimeoutStateChange1="5000" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x01000009">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="11" BoxType="9081" AmsPort="28935">
+				<Name>A_0008(BK1120-0000-0021)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>448</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>448</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="8" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020cf403" PdiType="#x0208" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04602c22" RevisionNo="#x00150000" InfoDataAddr="true" InfoDataNetId="true" TimeoutStateChange1="5000" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x0100000a">
+					<SyncMan>001e00012600010001000000400000010001001e26010000</SyncMan>
+					<SyncMan>001f00012200010002000000400000010001001f22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001702000000010004000000000000000000001700010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001700010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="12" BoxType="9081" AmsPort="28936">
+				<Name>A_0009(CPXXXX-BK1150-0016)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>464</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>464</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="9" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020df503" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x1ede4032" RevisionNo="#x001004c3" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x0100000b">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="13" BoxType="9081" AmsPort="28937">
+				<Name>A_0010(BK1150-0000-0016)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>480</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>480</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="10" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020ef603" PdiType="#x0e08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x047e2c22" RevisionNo="#x00100000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" PortABoxInfo="#x0100000c">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602002000010004000000000000000000001620010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+					<CoeProfile ProfileNo="5001"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="14" BoxType="9081" AmsPort="28938">
+				<Name>A_0011(BK1150-0000-0017)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>496</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>496</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="11" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee020ff703" PdiType="#x0e08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x047e2c22" RevisionNo="#x00110000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" PortABoxInfo="#x0100000d">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602002000010004000000000000000000001620010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+					<CoeProfile ProfileNo="5001"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="15" BoxType="9081" AmsPort="28939">
+				<Name>A_0012(BK1150-0000-0018)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>512</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>512</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="12" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0210f803" PdiType="#x0e08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x047e2c22" RevisionNo="#x00120000" InfoDataAddr="true" InfoDataNetId="true" TimeoutStateChange1="5000" TimeoutMailbox2="6000" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" PortABoxInfo="#x0100000e">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001602002000010004000000000000000000001620010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+					<CoeProfile ProfileNo="5001"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="16" BoxType="9081" AmsPort="28940">
+				<Name>A_0013(BK1150-0000-0019)</Name>
+				<ImageId>1003</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>528</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>528</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true"/>
+					<Term Id="13" TermType="#x2332" Fieldbus="7">
+						<Name>End Term (KL9010)</Name>
+						<ImageId>32</ImageId>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0211f903" PdiType="#x0e08" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x047e2c22" RevisionNo="#x00130000" InfoDataAddr="true" InfoDataNetId="true" TimeoutStateChange1="5000" TimeoutMailbox2="6000" GenerateOwnNetId="true" InitializeOwnNetId="true" PortPhys="17" PortABoxInfo="#x0100000f">
+					<SyncMan>001e00012600010001000000400000010001001e26010000</SyncMan>
+					<SyncMan>001f00012200010002000000400000010001001f22010000</SyncMan>
+					<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001702000000010004000000000000000000001700010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001700010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+					<CoeProfile ProfileNo="5001"/>
+				</EtherCAT>
+			</Box>
+			<Box Id="19" BoxType="9099">
+				<Name>Term 19 (EK1100)</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x01000010"/>
+				<Box Id="20" BoxType="9081" AmsPort="28943">
+					<Name>A_0016(BK1250-0000-0017)</Name>
+					<ImageId>1002</ImageId>
+					<Vars VarGrpType="1">
+						<Name>Inputs</Name>
+						<Var>
+							<Name>CouplerState</Name>
+							<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+							<Type>UINT</Type>
+							<BitOffs>544</BitOffs>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2">
+						<Name>Outputs</Name>
+						<Var>
+							<Name>CouplerCtrl</Name>
+							<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+							<Type>UINT</Type>
+							<BitOffs>544</BitOffs>
+						</Var>
+					</Vars>
+					<BusCoupler ComplexTermSupport="true" NewHardware="true">
+						<Flags SupportVirtualTerms="true"/>
+						<Term Id="16" TermType="#x2332" Fieldbus="7">
+							<Name>End Term (KL9010)</Name>
+							<ImageId>32</ImageId>
+						</Term>
+					</BusCoupler>
+					<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0215fb03" PdiType="#x0008" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04e22c22" RevisionNo="#x00110000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="3" PortABoxInfo="#x01000013">
+						<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+						<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+						<SyncMan>001002006400010003000000000000000000001064010000</SyncMan>
+						<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+						<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<BootStrapData>0010140200181402</BootStrapData>
+					</EtherCAT>
+				</Box>
+			</Box>
+			<Box Id="23" BoxType="9099">
+				<Name>Term 23 (EK1100)</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x02000013"/>
+				<Box Id="24" BoxType="9081" AmsPort="28945">
+					<Name>A_0018(BK1250-0000-0019)</Name>
+					<ImageId>1002</ImageId>
+					<Vars VarGrpType="1">
+						<Name>Inputs</Name>
+						<Var>
+							<Name>CouplerState</Name>
+							<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+							<Type>UINT</Type>
+							<BitOffs>560</BitOffs>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2">
+						<Name>Outputs</Name>
+						<Var>
+							<Name>CouplerCtrl</Name>
+							<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+							<Type>UINT</Type>
+							<BitOffs>560</BitOffs>
+						</Var>
+					</Vars>
+					<BusCoupler ComplexTermSupport="true" NewHardware="true">
+						<Flags SupportVirtualTerms="true"/>
+						<Term Id="18" TermType="#x2332" Fieldbus="7">
+							<Name>End Term (KL9010)</Name>
+							<ImageId>32</ImageId>
+						</Term>
+					</BusCoupler>
+					<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0219fd03" PdiType="#x0008" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04e22c22" RevisionNo="#x00130000" InfoDataAddr="true" InfoDataNetId="true" TimeoutStateChange1="5000" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="3" PortABoxInfo="#x01000017">
+						<SyncMan>001e00012600010001000000400000010001001e26010000</SyncMan>
+						<SyncMan>001f00012200010002000000400000010001001f22010000</SyncMan>
+						<SyncMan>001002002400010003000000000000000000001024010000</SyncMan>
+						<SyncMan>001702000000010004000000000000000000001700010000</SyncMan>
+						<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001700010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<BootStrapData>0010140200181402</BootStrapData>
+					</EtherCAT>
+				</Box>
+			</Box>
+			<Box Id="21" BoxType="9099">
+				<Name>Term 21 (EK1100)</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x02000017"/>
+				<Box Id="22" BoxType="9081" AmsPort="28944">
+					<Name>A_0017(BK1250-0000-0018)</Name>
+					<ImageId>1002</ImageId>
+					<Vars VarGrpType="1">
+						<Name>Inputs</Name>
+						<Var>
+							<Name>CouplerState</Name>
+							<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+							<Type>UINT</Type>
+							<BitOffs>576</BitOffs>
+						</Var>
+					</Vars>
+					<Vars VarGrpType="2">
+						<Name>Outputs</Name>
+						<Var>
+							<Name>CouplerCtrl</Name>
+							<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+							<Type>UINT</Type>
+							<BitOffs>576</BitOffs>
+						</Var>
+					</Vars>
+					<BusCoupler ComplexTermSupport="true" NewHardware="true">
+						<Flags SupportVirtualTerms="true"/>
+						<Term Id="17" TermType="#x2332" Fieldbus="7">
+							<Name>End Term (KL9010)</Name>
+							<ImageId>32</ImageId>
+						</Term>
+					</BusCoupler>
+					<EtherCAT SlaveType="3" AdsServerAddress="ac141eee0217ff03" PdiType="#x0008" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04e22c22" RevisionNo="#x00120000" InfoDataAddr="true" InfoDataNetId="true" TimeoutStateChange1="5000" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="3" PortABoxInfo="#x01000015">
+						<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+						<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+						<SyncMan>001002006400010003000000000000000000001064010000</SyncMan>
+						<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+						<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+						<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+						<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+						<BootStrapData>0010140200181402</BootStrapData>
+					</EtherCAT>
+				</Box>
+			</Box>
+			<Box Id="25" BoxType="9086" AmsPort="28946">
+				<Name>A_0019(IL2300-B110-0016)</Name>
+				<ImageId>1004</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>592</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>592</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true" SupportFbbTerms="true" HasNoEndTerm="true"/>
+					<Term Id="19" TermType="#x640008fc" Fieldbus="7">
+						<Name>Term 19</Name>
+						<ImageId>68</ImageId>
+						<Vars VarGrpType="3">
+							<Name>Channel 1</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>608</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>608</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 2</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>609</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>609</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 3</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>610</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>610</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 4</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>611</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>611</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021a0004" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x08fc3094" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x02000015">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001004002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001604000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="26" BoxType="9086" AmsPort="28947">
+				<Name>A_0020(IL2300-B110-0017)</Name>
+				<ImageId>1004</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>624</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>624</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true" SupportFbbTerms="true" HasNoEndTerm="true"/>
+					<Term Id="20" TermType="#x640008fc" Fieldbus="7">
+						<Name>Term 20</Name>
+						<ImageId>68</ImageId>
+						<Vars VarGrpType="3">
+							<Name>Channel 1</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>640</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>640</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 2</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>641</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>641</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 3</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>642</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>642</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 4</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>643</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>643</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021b0104" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x08fc3094" RevisionNo="#x00111b82" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x01000019">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001004002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001604000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="27" BoxType="9086" AmsPort="28948">
+				<Name>A_0021(IL2301-B110-0016)</Name>
+				<ImageId>1004</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>656</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>656</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true" SupportFbbTerms="true" HasNoEndTerm="true"/>
+					<Term Id="21" TermType="#x640008fd" Fieldbus="7">
+						<Name>Term 21</Name>
+						<ImageId>68</ImageId>
+						<Vars VarGrpType="3">
+							<Name>Channel 1</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>672</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>672</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 2</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>673</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>673</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 3</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>674</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>674</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 4</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>675</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>675</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021c0204" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x08fd3094" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x0100001a">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001004002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001604000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="28" BoxType="9086" AmsPort="28949">
+				<Name>A_0022(IL2301-B110-0017)</Name>
+				<ImageId>1004</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>688</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>688</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true" SupportFbbTerms="true" HasNoEndTerm="true"/>
+					<Term Id="22" TermType="#x640008fd" Fieldbus="7">
+						<Name>Term 22</Name>
+						<ImageId>68</ImageId>
+						<Vars VarGrpType="3">
+							<Name>Channel 1</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>704</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>704</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 2</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>705</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>705</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 3</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>706</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>706</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 4</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>707</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>707</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021d0304" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x08fd3094" RevisionNo="#x00111b82" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x0100001b">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001004002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001604000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="29" BoxType="9086" AmsPort="28950">
+				<Name>A_0023(IL2302-B110-0016)</Name>
+				<ImageId>1004</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>720</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>720</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true" SupportFbbTerms="true" HasNoEndTerm="true"/>
+					<Term Id="23" TermType="#x640008fe" Fieldbus="7">
+						<Name>Term 23</Name>
+						<ImageId>68</ImageId>
+						<Vars VarGrpType="3">
+							<Name>Channel 1</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>736</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>736</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 2</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>737</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>737</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 3</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>738</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>738</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 4</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>739</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>739</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021e0404" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x08fe3094" RevisionNo="#x00101b82" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x0100001c">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001004002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001604000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+			<Box Id="30" BoxType="9086" AmsPort="28951">
+				<Name>A_0024(IL2302-B110-0017)</Name>
+				<ImageId>1004</ImageId>
+				<Vars VarGrpType="1">
+					<Name>Inputs</Name>
+					<Var>
+						<Name>CouplerState</Name>
+						<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>752</BitOffs>
+					</Var>
+				</Vars>
+				<Vars VarGrpType="2">
+					<Name>Outputs</Name>
+					<Var>
+						<Name>CouplerCtrl</Name>
+						<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+						<Type>UINT</Type>
+						<BitOffs>752</BitOffs>
+					</Var>
+				</Vars>
+				<BusCoupler ComplexTermSupport="true" NewHardware="true">
+					<Flags SupportVirtualTerms="true" SupportFbbTerms="true" HasNoEndTerm="true"/>
+					<Term Id="24" TermType="#x640008fe" Fieldbus="7">
+						<Name>Term 24</Name>
+						<ImageId>68</ImageId>
+						<Vars VarGrpType="3">
+							<Name>Channel 1</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>768</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>768</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 2</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>769</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>769</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 3</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>770</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>770</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+						<Vars VarGrpType="3">
+							<Name>Channel 4</Name>
+							<Var>
+								<Name>Input</Name>
+								<Type>BIT</Type>
+								<BitOffs>771</BitOffs>
+								<InOut>0</InOut>
+							</Var>
+							<Var>
+								<Name>Output</Name>
+								<Type>BIT</Type>
+								<BitOffs>771</BitOffs>
+								<InOut>1</InOut>
+							</Var>
+						</Vars>
+					</Term>
+				</BusCoupler>
+				<EtherCAT SlaveType="3" AdsServerAddress="ac141eee021f0504" PdiType="#x0008" MboxDataLinkLayer="true" CycleMBoxPolling="true" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x08fe3094" RevisionNo="#x00111b82" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="17" PortABoxInfo="#x0100001d">
+					<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+					<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+					<SyncMan>001004002400010003000000000000000000001024010000</SyncMan>
+					<SyncMan>001604000000010004000000000000000000001600010000</SyncMan>
+					<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010140200181402</BootStrapData>
+				</EtherCAT>
+			</Box>
+		</Box>
+		<Box Id="18" BoxType="9081" AmsPort="28942">
+			<Name>A_0015(BK1250-0000-0016)</Name>
+			<ImageId>1002</ImageId>
+			<Vars VarGrpType="1">
+				<Name>Inputs</Name>
+				<Var>
+					<Name>CouplerState</Name>
+					<Comment><![CDATA[0x0000 = No error
+0x0001 = K-Bus error
+0x0002 = Configuration error
+0x0010 = Outputs disabled
+0x0020 = K-Bus overrun
+0x0040 = Communication error (Inputs)
+0x0080 = Communication error (Outputs)
+]]></Comment>
+					<Type>UINT</Type>
+					<BitOffs>784</BitOffs>
+				</Var>
+			</Vars>
+			<Vars VarGrpType="2">
+				<Name>Outputs</Name>
+				<Var>
+					<Name>CouplerCtrl</Name>
+					<Comment><![CDATA[0x0010 = Disable outputs
+0x0020 = Show K-Bus overrun
+]]></Comment>
+					<Type>UINT</Type>
+					<BitOffs>784</BitOffs>
+				</Var>
+			</Vars>
+			<BusCoupler ComplexTermSupport="true" NewHardware="true">
+				<Flags SupportVirtualTerms="true"/>
+				<Term Id="15" TermType="#x2332" Fieldbus="7">
+					<Name>End Term (KL9010)</Name>
+					<ImageId>32</ImageId>
+				</Term>
+			</BusCoupler>
+			<EtherCAT SlaveType="3" AdsServerAddress="ac141eee02130604" PdiType="#x0008" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="51" FoeType="1" VendorId="#x00000002" ProductCode="#x04e22c22" RevisionNo="#x00100000" InfoDataAddr="true" InfoDataNetId="true" TimeoutMailbox2="6000" GenerateOwnNetId="true" PortPhys="3" PortABoxInfo="#x02000002">
+				<SyncMan>001c88002600010001000000400000028800001c26010000</SyncMan>
+				<SyncMan>001e88002200010002000000400000028800001e22010000</SyncMan>
+				<SyncMan>001002006400010003000000000000000000001064010000</SyncMan>
+				<SyncMan>001602000000010004000000000000000000001600010000</SyncMan>
+				<Fmmu>0000000000000000001000020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000001600010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010140200181402</BootStrapData>
+			</EtherCAT>
+		</Box>
+	</Box>
+</TcSmItem>

@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000006}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..5] OF BIT</Name>
+			<BitSize>6</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>6</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+		<ImageData Id="1002">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111ffffffffffff1111fffffffff44f1111fffffffff44f1111ffffffffffff1111ffffffffffff1111fffffffff00f1111fffffffff00f1111ffffffffffff1111dddd111111111111dddd111111111111dddd111111111111dddd111111111111dddd111111111111</ImageData>
+		<ImageData Id="1003">424de6000000000000007600000028000000100000000e000000010004000000000070000000c30e0000c30e000010000000100000000000ff00ff00ff00ff000000ffff000000ff000000ffff0000008000800080008000000080800000008000000080800080808000c0c0c000ffffff00000000001111111111111111ffffffffffff1111fffffffff00f1111fffffffff00f1111ffffffffffff1111ffffffffffff1111fffffffff00f1111fffffffff00f1111ffffffffffff1111dddd111111111111dddd111111111111dddd111111111111dddd111111111111dddd111111111111</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff EPP9xxxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff EPP9xxxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+			<Box Id="4" BoxType="9099">
+				<Name>A_0001(EPP9001-0060-0016)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0300" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x6477f899" RevisionNo="#x0010003c" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP9001-0060 4 K. Dig. EtherCAT P / EtherCAT ECP/EC Connector with voltage forwarding" Desc="EPP9001-0060" PortABoxInfo="#x02000003">
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.035">
+								<Load Name="Demodulated Supply"/>
+							</Us>
+							<Up>
+								<Load Name="Demodulated Supply"/>
+							</Up>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port/>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="5" BoxType="9099">
+				<Name>A_0002(EPP9001-0060-0017)</Name>
+				<ImageId>1002</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0100" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x6477f899" RevisionNo="#x0011003c" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP9001-0060 4 K. Dig. EtherCAT P / EtherCAT ECP/EC Connector with voltage forwarding" Desc="EPP9001-0060" PortABoxInfo="#x01000004">
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.035">
+								<Load Name="Demodulated Supply"/>
+							</Us>
+							<Up>
+								<Load Name="Demodulated Supply"/>
+							</Up>
+						</Device>
+						<Port>
+							<Us Resistance="0.108"/>
+							<Up Resistance="0.108"/>
+						</Port>
+						<Port/>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="6" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0003(EPP9022-0060-0017)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0c80" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="35" FoeType="1" VendorId="#x00000002" ProductCode="#x6477f9e9" RevisionNo="#x0011003c" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EPP9022-0060 ECat P Diagnostic Box" Desc="EPP9022-0060" PortABoxInfo="#x01000005">
+					<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
+					<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
+					<SyncMan>001200000400000003000000000000000000001204000000</SyncMan>
+					<SyncMan>001314002000010004000000000000001400001320010000</SyncMan>
+					<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<Pdo Name="EPM Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="Status__Voltage min error" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is lower than voltage min error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage max error" Index="#x6000" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is higher than voltage max error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Current max error" Index="#x6000" Sub="#x03">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Current is higher than current max error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage min warning" Index="#x6000" Sub="#x04">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is lower than voltage min warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage max warning" Index="#x6000" Sub="#x05">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is higher than voltage max warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Current max warning" Index="#x6000" Sub="#x06">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Current is higher than current max warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Channel error" Index="#x6000" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage or current error bit is set]]></Comment>
+						</Entry>
+						<Entry Name="Status__Channel warning" Index="#x6000" Sub="#x08">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage or current warning bit is set]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Voltage" Index="#x6000" Sub="#x11">
+							<Type>DINT</Type>
+							<Comment><![CDATA[Voltage value]]></Comment>
+						</Entry>
+						<Entry Name="Current" Index="#x6000" Sub="#x12">
+							<Type>DINT</Type>
+							<Comment><![CDATA[Current value]]></Comment>
+						</Entry>
+					</Pdo>
+					<Pdo Name="EPM Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+						<Entry Name="Status__Voltage min error" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is lower than voltage min error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage max error" Index="#x6010" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is higher than voltage max error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Current max error" Index="#x6010" Sub="#x03">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Current is higher than current max error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage min warning" Index="#x6010" Sub="#x04">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is lower than voltage min warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage max warning" Index="#x6010" Sub="#x05">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is higher than voltage max warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Current max warning" Index="#x6010" Sub="#x06">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Current is higher than current max warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Channel error" Index="#x6010" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage or current error bit is set]]></Comment>
+						</Entry>
+						<Entry Name="Status__Channel warning" Index="#x6010" Sub="#x08">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage or current warning bit is set]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Voltage" Index="#x6010" Sub="#x11">
+							<Type>DINT</Type>
+							<Comment><![CDATA[Voltage value]]></Comment>
+						</Entry>
+						<Entry Name="Current" Index="#x6010" Sub="#x12">
+							<Type>DINT</Type>
+							<Comment><![CDATA[Current value]]></Comment>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="24908681" DisplayName="EtherCAT P Power Di"/>
+					<CoeProfile ProfileNo="24908681" DisplayName="EtherCAT P Power Di"/>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.09">
+								<Load Name="Demodulated Supply"/>
+							</Us>
+							<Up>
+								<Load Name="Demodulated Supply"/>
+							</Up>
+						</Device>
+						<Port>
+							<Us Resistance="0.134"/>
+							<Up Resistance="0.148"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.134"/>
+							<Up Resistance="0.148"/>
+						</Port>
+					</EtherCATp>
+				</EtherCAT>
+			</Box>
+			<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
+				<Name>A_0004(EPP9022-9060-0017)</Name>
+				<ImageId>1003</ImageId>
+				<EtherCAT SlaveType="2" PdiType="#x0c80" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="47" FoeType="1" VendorId="#x00000002" ProductCode="#x6477f9e9" RevisionNo="#x00112364" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="1" Type="EPP9022-9060 ECat P Diagnostic Box, TwinSAFE SC" Desc="EPP9022-9060" PortABoxInfo="#x01000006">
+					<SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
+					<SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
+					<SyncMan>001200002400000003000000000000000000001224010000</SyncMan>
+					<SyncMan>001314002000010004000000000000001400001320010000</SyncMan>
+					<Fmmu>0000000000000000000000020000000001000000000000000000000000000000</Fmmu>
+					<Fmmu>0000000000000000001300010100000002000000000000000000000000000000</Fmmu>
+					<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+					<BootStrapData>0010f400f410f400</BootStrapData>
+					<Pdo Name="EPM Inputs Channel 1" Index="#x1a00" Flags="#x0011" SyncMan="3">
+						<Entry Name="Status__Voltage min error" Index="#x6000" Sub="#x01">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is lower than voltage min error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage max error" Index="#x6000" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is higher than voltage max error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Current max error" Index="#x6000" Sub="#x03">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Current is higher than current max error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage min warning" Index="#x6000" Sub="#x04">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is lower than voltage min warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage max warning" Index="#x6000" Sub="#x05">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is higher than voltage max warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Current max warning" Index="#x6000" Sub="#x06">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Current is higher than current max warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Channel error" Index="#x6000" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage or current error bit is set]]></Comment>
+						</Entry>
+						<Entry Name="Status__Channel warning" Index="#x6000" Sub="#x08">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage or current warning bit is set]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Voltage" Index="#x6000" Sub="#x11">
+							<Type>DINT</Type>
+							<Comment><![CDATA[Voltage value]]></Comment>
+						</Entry>
+						<Entry Name="Current" Index="#x6000" Sub="#x12">
+							<Type>DINT</Type>
+							<Comment><![CDATA[Current value]]></Comment>
+						</Entry>
+					</Pdo>
+					<Pdo Name="EPM Inputs Channel 2" Index="#x1a01" Flags="#x0011" SyncMan="3">
+						<Entry Name="Status__Voltage min error" Index="#x6010" Sub="#x01">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is lower than voltage min error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage max error" Index="#x6010" Sub="#x02">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is higher than voltage max error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Current max error" Index="#x6010" Sub="#x03">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Current is higher than current max error limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage min warning" Index="#x6010" Sub="#x04">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is lower than voltage min warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Voltage max warning" Index="#x6010" Sub="#x05">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage is higher than voltage max warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Current max warning" Index="#x6010" Sub="#x06">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Current is higher than current max warning limit]]></Comment>
+						</Entry>
+						<Entry Name="Status__Channel error" Index="#x6010" Sub="#x07">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage or current error bit is set]]></Comment>
+						</Entry>
+						<Entry Name="Status__Channel warning" Index="#x6010" Sub="#x08">
+							<Type>BIT</Type>
+							<Comment><![CDATA[Voltage or current warning bit is set]]></Comment>
+						</Entry>
+						<Entry Name="Status__">
+							<Type GUID="{18071995-0000-0000-0000-002000000006}">ARRAY [0..5] OF BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
+							<Type>BIT</Type>
+						</Entry>
+						<Entry Name="Voltage" Index="#x6010" Sub="#x11">
+							<Type>DINT</Type>
+							<Comment><![CDATA[Voltage value]]></Comment>
+						</Entry>
+						<Entry Name="Current" Index="#x6010" Sub="#x12">
+							<Type>DINT</Type>
+							<Comment><![CDATA[Current value]]></Comment>
+						</Entry>
+					</Pdo>
+					<CoeProfile ProfileNo="24908681" DisplayName="EtherCAT P Power Di"/>
+					<CoeProfile ProfileNo="24908681" DisplayName="EtherCAT P Power Di"/>
+					<EtherCATp>
+						<Device>
+							<Us DevCurrent="0.09">
+								<Load Name="Demodulated Supply"/>
+							</Us>
+							<Up>
+								<Load Name="Demodulated Supply"/>
+							</Up>
+						</Device>
+						<Port>
+							<Us Resistance="0.134"/>
+							<Up Resistance="0.148"/>
+						</Port>
+						<Port>
+							<Us Resistance="0.134"/>
+							<Up Resistance="0.148"/>
+						</Port>
+					</EtherCATp>
+					<Slot Name="TSC Connection">
+						<SlotData>0000000001000400000000000000000000000000000000000000000000000000</SlotData>
+						<ModuleIdent>9022</ModuleIdent>
+					</Slot>
+				</EtherCAT>
+			</Box>
+		</Box>
+	</Box>
+</TcSmItem>

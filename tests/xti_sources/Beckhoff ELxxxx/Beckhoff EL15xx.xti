@@ -1,0 +1,2703 @@
+<?xml version="1.0"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmProject" TcSmVersion="1.0" TcVersion="3.1.4024.20" ClassName="CFlbTermDef" SubType="9099">
+	<DataTypes>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+			<BitSize>1</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>1</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000009}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..8] OF BIT</Name>
+			<BitSize>9</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>9</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-00200000000C}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..11] OF BIT</Name>
+			<BitSize>12</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>12</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000007}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..6] OF BIT</Name>
+			<BitSize>7</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>7</Elements>
+			</ArrayInfo>
+		</DataType>
+		<DataType>
+			<Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
+			<BitSize>2</BitSize>
+			<BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+			<ArrayInfo>
+				<LBound>0</LBound>
+				<Elements>2</Elements>
+			</ArrayInfo>
+		</DataType>
+	</DataTypes>
+	<ImageDatas>
+		<ImageData Id="1000">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000c40e0000c40e00000000000000000000ff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c000ffffc0c0c000ffff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0ff0000c0c0c0ff0000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c00000ffc0c0c00000ff808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c000bfff00bfffc0c0c0808080c0c0c0000000c0c0c0000000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0008000c0c0c0008000808080ff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0808080c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ff</ImageData>
+		<ImageData Id="1001">424dd6020000000000003600000028000000100000000e0000000100180000000000a0020000120b0000120b00000000000000000000ff00ffff00ffff00ffff00ffff00ffff00ff808080808080808080808080808080808080808080808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ffff00ffff00ffff00ffff00ffff00ffff00ffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c080808080808080808000bfff00bfff00bfff00bfff00bfff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0808080808080808080c0c0c0c0c0c080808000bfffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0bbc2bbc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0bac2ba0bfc0bc0c0c0c0c0c0c0c0c0808080ff00ffff00ff007fff007fff007fff007fff007fff007fffc0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0808080ff00ffff00ff</ImageData>
+	</ImageDatas>
+	<Box Id="1" BoxType="9099">
+		<Name>__FILENAME__</Name>
+		<ImageId>1000</ImageId>
+		<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100"/>
+		<Box Id="2" BoxType="9099">
+			<Name>Beckhoff EL15xxEK1122</Name>
+			<ImageId>1001</ImageId>
+			<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001"/>
+			<Box Id="3" BoxType="9099">
+				<Name>Beckhoff EL15xxsub EK1100</Name>
+				<ImageId>1000</ImageId>
+				<EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002"/>
+			</Box>
+		</Box>
+		<Box Id="4" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0001(EL1502-0000-0000)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05de3052" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1502 2Ch. +/- Counter 24V, 100kHz" Desc="EL1502" PortABoxInfo="#x02000002">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001106002400010003000000000000000600001124010000</SyncMan>
+				<SyncMan>801106002000010004000000000000000600801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0002(EL1502-0000-0001)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05de3052" RevisionNo="#x00010000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1502 2Ch. +/- Counter 24V, 100kHz" Desc="EL1502" PortABoxInfo="#x01000004">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001106002400010003000000000000000600001124010000</SyncMan>
+				<SyncMan>801106002000010004000000000000000600801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="6" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0003(EL1502-0000-0016)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05de3052" RevisionNo="#x00100000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1502 2Ch. +/- Counter 24V, 100kHz" Desc="EL1502" PortABoxInfo="#x01000005">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001106002400010003000000000000000600001124010000</SyncMan>
+				<SyncMan>801106002000010004000000000000000600801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<DcMode>53796e6368726f6e0000000000000000534d2d53796e6368726f6e000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="7" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0004(EL1502-0000-0017)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05de3052" RevisionNo="#x00110000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1502 2Ch. +/- Counter 24V, 100kHz" Desc="EL1502" PortABoxInfo="#x01000006">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001106002400010003000000000000000600001124010000</SyncMan>
+				<SyncMan>801106002000010004000000000000000600801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Output functions enabled" Index="#x6020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of output" Index="#x6020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Sync Error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Enable output functions" Index="#x7020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set output" Index="#x7020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="8" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0005(EL1502-0000-0018)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05de3052" RevisionNo="#x00120000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1502 2Ch. +/- Counter 24V, 100kHz" Desc="EL1502" PortABoxInfo="#x01000007">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001106002400010003000000000000000600001124010000</SyncMan>
+				<SyncMan>801106002000010004000000000000000600801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="9" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0006(EL1502-0000-0019)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05de3052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1502 2Ch. +/- Counter 24V, 100kHz" Desc="EL1502" PortABoxInfo="#x01000008">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001106002400010003000000000000000600001124010000</SyncMan>
+				<SyncMan>801106002000010004000000000000000600801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="10" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0007(EL1502-0000-0020)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05de3052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1502 2Ch. +/- Counter 24V, 100kHz" Desc="EL1502" PortABoxInfo="#x01000009">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001106002400010003000000000000000600001124010000</SyncMan>
+				<SyncMan>801106002000010004000000000000000600801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="11" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0008(EL1502-0000-0021)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05de3052" RevisionNo="#x00150000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1502 2Ch. +/- Counter 24V, 100kHz" Desc="EL1502" PortABoxInfo="#x0100000a">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001106002400010003000000000000000600001124010000</SyncMan>
+				<SyncMan>801106002000010004000000000000000600801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e70757420626173656429000000000000000000000000000000a0860100000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="12" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0009(EL1502-0000-0022)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05de3052" RevisionNo="#x00160000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1502 2Ch. +/- Counter 24V, 100kHz" Desc="EL1502" PortABoxInfo="#x0100000b">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>001106002400010003000000000000000600001124010000</SyncMan>
+				<SyncMan>801106002000010004000000000000000600801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<DcMode>53796e6368726f6e00000000000000004672656552756e2f534d2d53796e6368726f6e00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>4443000000000000000000000000000044432d53796e6368726f6e0000000000000000000000000000000000000000000000000000000000a0860100000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+				<DcMode>4443494e00000000000000000000000044432d53796e6368726f6e2028696e70757420626173656429000000000000000000000000000000a0860100000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Status__Output functions enabled" Index="#x6020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of output" Index="#x6020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000007}">ARRAY [0..6] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Sync error" Index="#x1c32" Sub="#x20">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7000" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7000" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7010" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7010" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Control__Enable output functions" Index="#x7020" Sub="#x01">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set output" Index="#x7020" Sub="#x02">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="13" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0010(EL1512-0000-0016)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05e83052" RevisionNo="#x00100000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1512 2Ch. +/- Counter 24V, 1kHz" Desc="EL1512" PortABoxInfo="#x0100000c">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00110c002400010003000000000000000c00001124010000</SyncMan>
+				<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry>
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="14" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0011(EL1512-0000-0017)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05e83052" RevisionNo="#x00110000" InfoDataAddr="true" TimeoutMailbox2="2000" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1512 2Ch. +/- Counter 24V, 1kHz" Desc="EL1512" PortABoxInfo="#x0100000d">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00110c002400010003000000000000000c00001124010000</SyncMan>
+				<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="15" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0012(EL1512-0000-0018)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05e83052" RevisionNo="#x00120000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1512 2Ch. +/- Counter 24V, 1kHz" Desc="EL1512" PortABoxInfo="#x0100000e">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00110c002400010003000000000000000c00001124010000</SyncMan>
+				<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="16" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0013(EL1512-0000-0019)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05e83052" RevisionNo="#x00130000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1512 2Ch. +/- Counter 24V, 1kHz" Desc="EL1512" PortABoxInfo="#x0100000f">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00110c002400010003000000000000000c00001124010000</SyncMan>
+				<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="17" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0014(EL1512-0000-0020)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05e83052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1512 2Ch. +/- Counter 24V, 1kHz" Desc="EL1512" PortABoxInfo="#x01000010">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00110c002400010003000000000000000c00001124010000</SyncMan>
+				<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+		<Box Id="18" BoxType="9099" BoxFlags="#x00000020">
+			<Name>A_0015(EL1512-0000-0021)</Name>
+			<ImageId>7</ImageId>
+			<EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x05e83052" RevisionNo="#x00150000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL1512 2Ch. +/- Counter 24V, 1kHz" Desc="EL1512" PortABoxInfo="#x01000011">
+				<SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+				<SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+				<SyncMan>00110c002400010003000000000000000c00001124010000</SyncMan>
+				<SyncMan>80110c002000010004000000000000000c00801120010000</SyncMan>
+				<Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+				<Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+				<Fmmu>00000000000000000d0800010100000003000000000000000000000000000000</Fmmu>
+				<BootStrapData>0010f400f410f400</BootStrapData>
+				<Pdo Name="CNT Inputs Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6000" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1800" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs Channel 2" Index="#x1a01" Flags="#x0010" SyncMan="3">
+					<ExcludePdo>#x1a02</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6010" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1801" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Inputs" Index="#x1a02" Flags="#x0010">
+					<ExcludePdo>#x1a00</ExcludePdo>
+					<ExcludePdo>#x1a01</ExcludePdo>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__Set counter done" Index="#x6020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Counter inhibited" Index="#x6020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input UD" Index="#x6020" Sub="#x05">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__Status of input clock" Index="#x6020" Sub="#x06">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Status__">
+						<Type GUID="{18071995-0000-0000-0000-002000000009}">ARRAY [0..8] OF BIT</Type>
+					</Entry>
+					<Entry Name="Status__TxPDO Toggle" Index="#x1802" Sub="#x09">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Counter value" Index="#x6020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 1" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7000" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7000" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7000" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs Channel 2" Index="#x1601" InOut="1" Flags="#x0010" SyncMan="2">
+					<ExcludePdo>#x1602</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7010" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7010" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7010" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<Pdo Name="CNT Outputs" Index="#x1602" InOut="1" Flags="#x0010">
+					<ExcludePdo>#x1600</ExcludePdo>
+					<ExcludePdo>#x1601</ExcludePdo>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+					</Entry>
+					<Entry Name="Control__Set counter" Index="#x7020" Sub="#x03">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__Inhibit counter" Index="#x7020" Sub="#x04">
+						<Type>BIT</Type>
+					</Entry>
+					<Entry Name="Control__">
+						<Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+					</Entry>
+					<Entry Name="Set counter value" Index="#x7020" Sub="#x11">
+						<Type>UDINT</Type>
+					</Entry>
+				</Pdo>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+				<CoeProfile ProfileNo="9835401"/>
+			</EtherCAT>
+		</Box>
+	</Box>
+</TcSmItem>
