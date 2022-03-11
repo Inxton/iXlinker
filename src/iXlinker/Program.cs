@@ -13,16 +13,6 @@ namespace iXlinker
                    .WithParsed(o =>
                    {
                        var linker = new ScanTcProjFile();
-
-                       o.TsProjectFile = o.TsProjectFile.Replace("\\\\", "\\");
-                       o.ActiveTargetPlatform = o.ActiveTargetPlatform.Replace("\\\\", "\\");
-                       o.PlcProjectFile = o.PlcProjectFile.Replace("\\\\", "\\");
-                       o.GenerateMappings = o.GenerateMappings.ToLower();
-                       if (o.GenerateMappings.Contains("true"))
-                       {
-                           o.GenerateMappings = "yes";
-                       }
-                       o.DevenvPath = o.DevenvPath.Replace("\\\\", "\\");
                        linker.RuniXlinker(o.TsProjectFile, o.ActiveTargetPlatform, o.PlcProjectFile, o.GenerateMappings == "yes" ? true : false, o.DevenvPath);                       
                    })
                    .WithNotParsed(o => 
