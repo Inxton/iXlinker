@@ -60,6 +60,23 @@ namespace iXlinkerDtos
             }
         }
 
+        private ushort maxEthercatFrameIndex;
+        public ushort MaxEthercatFrameIndex
+        {
+            get
+            {
+                return this.maxEthercatFrameIndex;
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.maxEthercatFrameIndex = value;
+                    NotifyPropertyChanged(nameof(MaxEthercatFrameIndex));
+                }
+            }
+        }
+
         private bool doNotGenerateDisabled;
         public bool DoNotGenerateDisabled
         {

@@ -10,7 +10,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        public void RuniXlinker(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath,bool doNotGenerateDisabled, string devenvPath)
+        public void RuniXlinker(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath,bool doNotGenerateDisabled, string devenvPath, ushort maxEthercatFrameIndex)
         {
             Stopwatch sw = new Stopwatch();
             sw.Start();
@@ -18,7 +18,7 @@ namespace TsprojFile.Scan
             //VS.CheckDotNetCore();
 
             //Get details like paths, platform etc.
-            Solution vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath);
+            Solution vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath, maxEthercatFrameIndex);
 
             //Search all devices and their boxes in the Twincat project.
             SearchDevices(vs);

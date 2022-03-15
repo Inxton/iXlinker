@@ -6,7 +6,7 @@ namespace iXlinker.TsprojFile.Mapping
 {
     partial class VS
     {
-        public static Solution GetXaeProjectDetails(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath, bool doNotGenerateDisabled, string devenvPath)
+        public static Solution GetXaeProjectDetails(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath, bool doNotGenerateDisabled, string devenvPath, ushort maxEthercatFrameIndex)
         {
             Solution vs = new Solution();
 
@@ -125,6 +125,8 @@ namespace iXlinker.TsprojFile.Mapping
                     Console.ReadKey();
                     Environment.Exit(0);
                 }
+                //MaxEthercatFrameIndex 
+                vs.MaxEthercatFrameIndex = maxEthercatFrameIndex;
             }
             else
             {

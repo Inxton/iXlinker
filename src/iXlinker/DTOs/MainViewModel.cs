@@ -16,18 +16,21 @@ namespace iXlinkerDtos
             string plcProjFilePath = null;
             bool doNotGenerateDisabled = true;
             string devenvPath = null;
+            ushort defaultMaxFrameIndex = 0;
 
             string defaultTsProjFilePath = null;
             string defaultActiveTargetPlatform = null;
             string defaultPlcProjFilePath = null;
             bool defaultDoNotGenerateDisabled;
             string defaultDevenvPath = null;
+            ushort maxFrameIndex = 0;
 
             defaultTsProjFilePath = @"C:\x_tmp\TwinCAT Project4\TwinCAT Project4\TwinCAT Project4.tsproj";
             defaultActiveTargetPlatform = "Release|TwinCAT RT (x64)";
             defaultPlcProjFilePath = @"C:\x_tmp\TwinCAT Project4\TwinCAT Project4\Untitled1\Untitled1.plcproj";
             defaultDoNotGenerateDisabled = true;
             defaultDevenvPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com";
+            defaultMaxFrameIndex = 0;
 
             if (i == 0)
             {
@@ -39,6 +42,7 @@ namespace iXlinkerDtos
                 list.Add(defaultPlcProjFilePath);
                 list.Add(defaultDoNotGenerateDisabled.ToString());
                 list.Add(defaultDevenvPath);
+                list.Add(defaultMaxFrameIndex.ToString());
                 String[] str = list.ToArray();
                 args = str;
             }
@@ -53,6 +57,7 @@ namespace iXlinkerDtos
                     plcProjFilePath = "";
                     doNotGenerateDisabled = true;
                     devenvPath = "";
+                    maxFrameIndex = 0;
                 }
                 else if (i == 2)
                 {
@@ -61,6 +66,7 @@ namespace iXlinkerDtos
                     plcProjFilePath = "";
                     doNotGenerateDisabled = true;
                     devenvPath = "";
+                    maxFrameIndex = 0;
                 }
                 else if (i == 3)
                 {
@@ -69,6 +75,7 @@ namespace iXlinkerDtos
                     plcProjFilePath = args[2];
                     doNotGenerateDisabled = true;
                     devenvPath = "";
+                    maxFrameIndex = 0;
                 }
                 else if (i == 4)
                 {
@@ -77,6 +84,7 @@ namespace iXlinkerDtos
                     plcProjFilePath = args[2];
                     doNotGenerateDisabled = !args[3].ToLower().Contains("false");
                     devenvPath = "";
+                    maxFrameIndex = 0;
                 }
                 else if (i == 5)
                 {
@@ -85,14 +93,24 @@ namespace iXlinkerDtos
                     plcProjFilePath = args[2];
                     doNotGenerateDisabled = !args[3].ToLower().Contains("false");
                     devenvPath = args[4];
+                    maxFrameIndex = 0;
                 }
-                if (i>=1 && i<=5)
+                else if (i == 6)
+                {
+                    tsProjFilePath = args[0];
+                    activeTargetPlatform = args[1];
+                    plcProjFilePath = args[2];
+                    doNotGenerateDisabled = !args[3].ToLower().Contains("false");
+                    devenvPath = args[4];
+                    ushort.TryParse(args[5],out maxFrameIndex);
+                }
+                if (i>=1 && i<=6)
                 {
                     if (File.Exists(tsProjFilePath))
                     {
                         Console.WriteLine("Opening file :" + tsProjFilePath);
 
-                        RuniXlinker(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath);
+                        RuniXlinker(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath, maxFrameIndex);
 
                         Console.WriteLine("Done");
                         System.Threading.Thread.Sleep(1000);

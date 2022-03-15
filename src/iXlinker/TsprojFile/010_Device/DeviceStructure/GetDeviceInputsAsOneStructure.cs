@@ -22,7 +22,7 @@ namespace TsprojFile.Scan
             pdo.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdo.Type_Value);
             InputEntries.Add(pdo);
 
-            for (int i = 0; i < frames; i++)
+            for (int i = 0; i <= frames; i++)
             {
                 pdo = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "Frm" + i.ToString() + "State" , VarB = "Inputs" + tmpLevelSeparator + "Frm" + i.ToString() + "State", VarA = "Inputs" + tmpLevelSeparator + "Frm" + i.ToString() + "State", Type_Value = "UINT", InOut = "0" };
                 pdo.SizeInBites = PlcBaseTypes.GetSizeInBites(pdo.Type_Value);

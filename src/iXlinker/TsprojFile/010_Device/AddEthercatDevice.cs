@@ -51,8 +51,8 @@ namespace TsprojFile.Scan
             }
             PdoViewModel InfoData = GetDeviceInfoDataAsOneStructure(device, deviceViewModel);
             PdoViewModel SyncUnits = GetDeviceSyncUnitsAsOneStructure(device, deviceViewModel);
-            PdoViewModel Inputs = GetDeviceInputsAsOneStructure(device, deviceViewModel, DeviceInputFrames);
-            PdoViewModel Outputs = GetDeviceOutputsAsOneStructure(device, deviceViewModel, DeviceOutputFrames);
+            PdoViewModel Inputs = GetDeviceInputsAsOneStructure(device, deviceViewModel, vs.MaxEthercatFrameIndex);
+            PdoViewModel Outputs = GetDeviceOutputsAsOneStructure(device, deviceViewModel, vs.MaxEthercatFrameIndex);
 
             deviceViewModel.MapableObjects.Add(SyncUnits.MapableObject);
             deviceViewModel.MapableObjects.Add(Inputs.MapableObject);
