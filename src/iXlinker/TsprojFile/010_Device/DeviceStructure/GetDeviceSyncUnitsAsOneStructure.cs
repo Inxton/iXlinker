@@ -18,11 +18,13 @@ namespace TsprojFile.Scan
             {
                 ObservableCollection<PdoViewModel> SyncUnitTaskEntries = new ObservableCollection<PdoViewModel>();
 
+                string suNameA = ValidatePlcItem.Name(su.Name.Replace("<", "").Replace(">", ""));
+                string suNameB = su.Name.Replace("<", "&lt;").Replace(">", "&gt;");
+
                 foreach (string task in su.PlcTasks)
                 {
-                    string plcTask = "SyncUnits" + tmpLevelSeparator + su.Name + tmpLevelSeparator + task;
-                    string plcTaskA = plcTask.Replace("<", "").Replace(">", "");
-                    string plcTaskB = plcTask.Replace("<", "&lt;").Replace(">", "&gt;");
+                    string plcTaskA = "SyncUnits" + tmpLevelSeparator + suNameA + tmpLevelSeparator + task;
+                    string plcTaskB = "SyncUnits" + tmpLevelSeparator + suNameB + tmpLevelSeparator + task;
 
                     PdoViewModel WcState = GetDeviceSyncUnitWcStateAsOneStructure(device, deviceViewModel, plcTaskA, plcTaskB);
 

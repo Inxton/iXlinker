@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using iXlinkerDtos;
@@ -7,10 +8,10 @@ namespace PlcprojFile
 {
     public static class ValidatePlcItem
     {
-        private static char[] SpecialCharsName =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
-        private static char[] SpecialCharsLink =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{',           '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
-        private static char[] SpecialCharsType =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
-        private static char[] SpecialCharsArrayType =   { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{',           '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '>', '/', '?', '§' };
+        private static char[]   SpecialCharsName =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
+        private static char[]   SpecialCharsLink =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{',           '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
+        private static char[]   SpecialCharsType =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
+        private static char[]   SpecialCharsArrayType =   { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{',           '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '>', '/', '?', '§' };
 
         private static char ReplaceChar = '_';
 
@@ -110,6 +111,39 @@ namespace PlcprojFile
             return ret;
         }
 
+        private static string AddUnderscorePrefixIfContainsDotNetKeyword(string inStr)
+        {
+            string [] keywords = new string[]
+                {
+                    "abstract","add","alias","and","args ","as","ascending","async","await","base",
+                    "bool","break","by","byte","case","catch","char","checked","class","const",
+                    "continue","decimal","default","delegate","descending","do","double","dynamic","else","enum",
+                    "equals","event","explicit","extern","false","finally","fixed","float","for","foreach",
+                    "from","get","global","goto","group","if","implicit","in","init","int",
+                    "interface","internal","into","is","join","let","lock","long","managed","nameof",
+                    "namespace","new","nint","not","notnull","nuint","null","object","on","operator",
+                    "or","orderby","out","override","params","partial","private","protected","public","readonly",
+                    "record","ref","remove","return","sbyte","sealed","select","set","short","sizeof",
+                    "stackalloc","static","string","struct","switch","this","throw","true","try","typeof",
+                    "uint","ulong","unchecked","unmanaged","unsafe","ushort","using","value","var","virtual",
+                    "void","volatile","when","where","while","with","yield"
+                };
+
+            string ret = inStr;
+            if (!string.IsNullOrEmpty(ret))
+            {
+                foreach (string keyword in keywords)
+                {
+                    if (ret.Equals(keyword))
+                    {
+                        ret = ReplaceChar + ret;
+                        break;
+                    }
+                }
+            }
+            return ret;
+        }
+
         public static string Name(string name)
         {
             string ret = name;
@@ -122,6 +156,7 @@ namespace PlcprojFile
                 ret = RemoveDiacritics(ret);
                 ret = ReplaceDoubleUnderscores(ret);
                 ret = AddUnderscorePrefixIfStartsWithNumber(ret);
+                ret = AddUnderscorePrefixIfContainsDotNetKeyword(ret);
                 ret = ret.Replace("_" + TcModel.plcStructSeparator, TcModel.plcStructSeparator);
             }
             return ret;
@@ -139,6 +174,7 @@ namespace PlcprojFile
                 ret = RemoveDiacritics(ret);
                 ret = ReplaceDoubleUnderscores(ret);
                 ret = AddUnderscorePrefixIfStartsWithNumber(ret);
+                ret = AddUnderscorePrefixIfContainsDotNetKeyword(ret);
                 ret = ret.Replace("_" + TcModel.plcStructSeparator, TcModel.plcStructSeparator);
             }
             return ret;
