@@ -1,4 +1,5 @@
-﻿namespace TwincatXmlSchemas.TcPlcProj {
+﻿namespace TwincatXmlSchemas.TcPlcProj
+{
 
     // NOTE: Generated code may require at least .NET Framework 4.5 or .NET Core/Standard 2.0.
     /// <remarks/>
@@ -477,6 +478,8 @@
     public partial class ProjectItemGroup
     {
 
+        private ProjectItemGroupPlaceholderResolution[] placeholderResolutionField;
+
         private ProjectItemGroupNone noneField;
 
         private ProjectItemGroupPlaceholderReference[] placeholderReferenceField;
@@ -484,6 +487,20 @@
         private ProjectItemGroupFolder[] folderField;
 
         private ProjectItemGroupCompile[] compileField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("PlaceholderResolution")]
+        public ProjectItemGroupPlaceholderResolution[] PlaceholderResolution
+        {
+            get
+            {
+                return this.placeholderResolutionField;
+            }
+            set
+            {
+                this.placeholderResolutionField = value;
+            }
+        }
 
         /// <remarks/>
         public ProjectItemGroupNone None
@@ -537,6 +554,45 @@
             set
             {
                 this.compileField = value;
+            }
+        }
+    }
+
+    /// <remarks/>
+    [System.SerializableAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://schemas.microsoft.com/developer/msbuild/2003")]
+    public partial class ProjectItemGroupPlaceholderResolution
+    {
+
+        private string resolutionField;
+
+        private string includeField;
+
+        /// <remarks/>
+        public string Resolution
+        {
+            get
+            {
+                return this.resolutionField;
+            }
+            set
+            {
+                this.resolutionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Include
+        {
+            get
+            {
+                return this.includeField;
+            }
+            set
+            {
+                this.includeField = value;
             }
         }
     }
@@ -1275,4 +1331,6 @@
             }
         }
     }
+
+
 }
