@@ -28,6 +28,9 @@ namespace TsprojFile.Scan
                 Console.ReadLine();
             }
 
+            GetPlcLibraries(vs);
+
+            GetPlcStructuresInPlcLibraries(vs);
 
             Console.WriteLine(@"Reading IO devices in the XAE project: ""{0}""!!!", vs.TsProject.Name);
             TcSmProjectProjectPlcProject plcProj = new TcSmProjectProjectPlcProject();

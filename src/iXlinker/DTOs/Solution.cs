@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace iXlinkerDtos
 {
@@ -170,5 +171,57 @@ namespace iXlinkerDtos
                 NotifyPropertyChanged(nameof(DutsIoTopology));
             }
         }
+
+        private ObservableCollection<PlcLibRepository> plcLibRepositories;
+        public ObservableCollection<PlcLibRepository> PlcLibRepositories
+        {
+            get
+            {
+                return this.plcLibRepositories ?? (this.plcLibRepositories = new ObservableCollection<PlcLibRepository>());
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.plcLibRepositories = value;
+                    NotifyPropertyChanged(nameof(PlcLibRepositories));
+                }
+            }
+        }
+
+        //private ObservableCollection<PlcLibrary> plcLibraries;
+        //public ObservableCollection<PlcLibrary> PlcLibraries
+        //{
+        //    get
+        //    {
+        //        return this.plcLibraries ?? (this.plcLibraries = new ObservableCollection<PlcLibrary>());
+        //    }
+        //    set
+        //    {
+        //        if (value != null)
+        //        {
+        //            this.plcLibraries = value;
+        //            NotifyPropertyChanged(nameof(PlcLibraries));
+        //        }
+        //    }
+        //}
+
+        //private ObservableCollection<PlcStruct> plcStructuresInPlcLibraries;
+        //public ObservableCollection<PlcStruct> PlcStructuresInPlcLibraries
+        //{
+        //    get
+        //    {
+        //        return this.plcStructuresInPlcLibraries ?? (this.plcStructuresInPlcLibraries = new ObservableCollection<PlcStruct>());
+        //    }
+        //    set
+        //    {
+        //        if (value != null)
+        //        {
+        //            this.plcStructuresInPlcLibraries = value;
+        //            NotifyPropertyChanged(nameof(PlcStructuresInPlcLibraries));
+        //        }
+        //    }
+        //}
+
     }
 }

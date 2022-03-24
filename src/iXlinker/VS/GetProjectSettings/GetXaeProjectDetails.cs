@@ -127,6 +127,10 @@ namespace iXlinker.TsprojFile.Mapping
                 }
                 //MaxEthercatFrameIndex 
                 vs.MaxEthercatFrameIndex = maxEthercatFrameIndex;
+
+                //Get list of all PLC library repositories
+                vs.PlcLibRepositories = GetPlcLibraryRepositories();
+
             }
             else
             {

@@ -13,7 +13,14 @@ namespace TsprojFile.Scan
                 // Clear lists
                 Devices.Clear();
                 Tasks.Clear();
-                
+                PdoEntryStructures.Clear();
+                PdoStructures.Clear();
+                BoxStructures.Clear();
+                DeviceStructures.Clear();
+                TopologyStructures.Clear();
+                PlcLibraries.Clear();
+                PlcStructuresInPlcLibraries.Clear();
+
                 // Reset counters
                 TotalNumberOfDevices = 0;
                 TotalNumberOfBoxes = 0;

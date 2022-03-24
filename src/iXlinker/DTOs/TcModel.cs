@@ -6,8 +6,6 @@ namespace iXlinkerDtos
 {
     public class TcModel : NotifiableBase
     {
-        //public const string tmpLevelSeparator = "\x1";
-
         public const string tmpLevelSeparator = "\u0001";
         public const string ioLevelSeparator = "^";
         public const string plcStructSeparator = ".";
@@ -18,79 +16,6 @@ namespace iXlinkerDtos
 
         private TcSmProject tc;
         public TcSmProject Tc { get => tc; set => tc = value; }
-
-        //private string tsProjFilePath;
-        //public string TsProjFilePath
-        //{
-        //    get { return this.tsProjFilePath; }
-        //    set
-        //    {
-        //        if (!string.IsNullOrEmpty(value))
-        //        {
-        //            this.tsProjFilePath = value;
-        //            NotifyPropertyChanged(nameof(TsProjFilePath));
-        //        }
-        //    }
-        //}
-
-        //private string activeTargetPlatform;
-        //public string ActiveTargetPlatform
-        //{
-        //    get { return this.activeTargetPlatform; }
-        //    set
-        //    {
-        //        if (!string.IsNullOrEmpty(value))
-        //        {
-        //            this.activeTargetPlatform = value;
-        //            NotifyPropertyChanged(nameof(ActiveTargetPlatform));
-        //        }
-        //    }
-        //}
-
-        //private string plcProjFilePath;
-        //public string PlcProjFilePath
-        //{
-        //    get { return this.plcProjFilePath; }
-        //    set
-        //    {
-        //        if (!string.IsNullOrEmpty(value))
-        //        {
-        //            this.plcProjFilePath = value;
-        //            NotifyPropertyChanged(nameof(PlcProjFilePath));
-        //        }
-        //    }
-        //}
-
-        //private bool doNotGenerateDisabled;
-        //public bool DoNotGenerateDisabled
-        //{
-        //    get
-        //    {
-        //        return this.doNotGenerateDisabled;
-        //    }
-        //    set
-        //    {
-        //        if (value != null)
-        //        {
-        //            this.doNotGenerateDisabled = value;
-        //            NotifyPropertyChanged(nameof(DoNotGenerateDisabled));
-        //        }
-        //    }
-        //}
-
-        //private string devenvPath;
-        //public string DevenvPath
-        //{
-        //    get { return this.devenvPath; }
-        //    set
-        //    {
-        //        if (!string.IsNullOrEmpty(value))
-        //        {
-        //            this.devenvPath = value;
-        //            NotifyPropertyChanged(nameof(DevenvPath));
-        //        }
-        //    }
-        //}
 
         private string ownerAPlcName;
         public string OwnerAPlcName
@@ -344,6 +269,40 @@ namespace iXlinkerDtos
                 {
                     this.topologyStructures = value;
                     NotifyPropertyChanged(nameof(TopologyStructures));
+                }
+            }
+        }
+
+        private ObservableCollection<PlcLibrary> plcLibraries;
+        public ObservableCollection<PlcLibrary> PlcLibraries
+        {
+            get
+            {
+                return this.plcLibraries ?? (this.plcLibraries = new ObservableCollection<PlcLibrary>());
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.plcLibraries = value;
+                    NotifyPropertyChanged(nameof(PlcLibraries));
+                }
+            }
+        }
+
+        private ObservableCollection<PlcStruct> plcStructuresInPlcLibraries;
+        public ObservableCollection<PlcStruct> PlcStructuresInPlcLibraries
+        {
+            get
+            {
+                return this.plcStructuresInPlcLibraries ?? (this.plcStructuresInPlcLibraries = new ObservableCollection<PlcStruct>());
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.plcStructuresInPlcLibraries = value;
+                    NotifyPropertyChanged(nameof(PlcStructuresInPlcLibraries));
                 }
             }
         }
