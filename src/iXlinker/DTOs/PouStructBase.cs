@@ -2,6 +2,20 @@
 {
     public class PouStructBase : NotifiableBase
     {
+        private string @namespace;
+        public string Namespace
+        {
+            get { return this.@namespace; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.@namespace = value;
+                    NotifyPropertyChanged(nameof(Namespace));
+                }
+            }
+        }
+
         private string name;
         public string Name
         {

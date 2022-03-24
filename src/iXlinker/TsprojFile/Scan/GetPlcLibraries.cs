@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcPlcProj;
-using TwincatXmlSchemas.TcSmProject;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -33,9 +32,11 @@ namespace TsprojFile.Scan
                                 Title = defaultResolution[0],
                                 Version = defaultResolution[1],
                                 CompanyName = defaultResolution[2].Replace(")", ""),
-                                NameSpace = projectItemGroupPlaceholderReference.Namespace,
+                                Namespace = projectItemGroupPlaceholderReference.Namespace,
                                 PlaceHolder = projectItemGroupPlaceholderReference.Include
                             };
+                            Version _highestVersion = null;
+                            string _pathOfTheHighestVersion = null;
 
                             if (plcLibrary.Version.Contains("*"))
                             {
@@ -45,16 +46,25 @@ namespace TsprojFile.Scan
                                     if (Directory.Exists(_path))
                                     {
                                         string[] directories = Directory.GetDirectories(_path);
-                                        if (directories.Length > 1)
+                                        foreach (string directory in directories)
                                         {
-                                            directories = directories.OrderByDescending(d => d).ToArray();
+                                            Version version = Conversion.StringToVersion(directory.Substring(directory.LastIndexOf("\\") + 1));
+                                            if (_highestVersion == null)
+                                            {
+                                                _highestVersion = version;
+                                                _pathOfTheHighestVersion = directory;
+                                            }
+                                            if (version >= _highestVersion)
+                                            {
+                                                _highestVersion = version;
+                                                _pathOfTheHighestVersion = directory;
+                                            }
                                         }
-                                        plcLibrary.EffectiveVersion = directories[0].Substring(directories[0].LastIndexOf("\\") + 1);
-                                        plcLibrary.Path = directories[0];
-                                        PlcLibraries.Add(plcLibrary);
-                                        break;
                                     }
                                 }
+                                plcLibrary.EffectiveVersion = _highestVersion.ToString();
+                                plcLibrary.Path = _pathOfTheHighestVersion;
+                                PlcLibraries.Add(plcLibrary);
                             }
                             else
                             {
@@ -70,8 +80,6 @@ namespace TsprojFile.Scan
                                     }
                                 }
                             }
-
-
                         }
                     }
                 }

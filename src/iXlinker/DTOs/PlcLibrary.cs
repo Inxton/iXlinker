@@ -72,16 +72,16 @@
             }
         }
 
-        private string nameSpace;
-        public string NameSpace
+        private string @namespace;
+        public string Namespace
         {
-            get { return this.nameSpace; }
+            get { return this.@namespace; }
             set
             {
                 if (!string.IsNullOrEmpty(value))
                 {
-                    this.nameSpace = value;
-                    NotifyPropertyChanged(nameof(NameSpace));
+                    this.@namespace = value;
+                    NotifyPropertyChanged(nameof(Namespace));
                 }
             }
         }

@@ -129,7 +129,7 @@ namespace TsprojFile.Scan
                 WcState.SizeInBytes = actPdoStruct.SizeInBytes;
 
                 mapableObject.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
-                mapableObject.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);
+                mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actPdoStruct.Namespace, ValidatePlcItem.Type(actPdoStruct.Name));
                 mapableObject.SizeInBites = actPdoStruct.SizeInBites;
                 mapableObject.SizeInBytes = actPdoStruct.SizeInBytes;
 

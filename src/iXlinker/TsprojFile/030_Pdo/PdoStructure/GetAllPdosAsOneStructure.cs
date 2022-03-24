@@ -85,7 +85,7 @@ namespace TsprojFile.Scan
                 pdoViewModel.SizeInBytes = actBoxStruct.SizeInBytes;
 
                 mapableObject.Name = ValidatePlcItem.Name(boxViewModel.Name);
-                mapableObject.Type_Value = ValidatePlcItem.Type(actBoxStruct.Name);
+                mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actBoxStruct.Namespace, ValidatePlcItem.Type(actBoxStruct.Name));
                 mapableObject.SizeInBites = actBoxStruct.SizeInBites;
                 mapableObject.SizeInBytes = actBoxStruct.SizeInBytes;
 

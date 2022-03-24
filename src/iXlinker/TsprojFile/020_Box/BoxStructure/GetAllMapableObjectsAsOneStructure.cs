@@ -83,7 +83,7 @@ namespace TsprojFile.Scan
                         }
 
                         mapableObjectVM.Name = ValidatePlcItem.Name(deviceViewModel.Name);
-                        mapableObjectVM.Type_Value = ValidatePlcItem.Type(actTopologyStruct.Name);
+                        mapableObjectVM.Type_Value = ValidatePlcItem.NameIncludingNamespace(actTopologyStruct.Namespace, ValidatePlcItem.Type(actTopologyStruct.Name));
                         mapableObjectVM.SizeInBites = actTopologyStruct.SizeInBites;
                         mapableObjectVM.SizeInBytes = actTopologyStruct.SizeInBytes;
 
@@ -188,7 +188,7 @@ namespace TsprojFile.Scan
                     }
 
                     mapableObjectVM.Name = ValidatePlcItem.Name(boxViewModel.Name);
-                    mapableObjectVM.Type_Value = ValidatePlcItem.Type(actTopologyStruct.Name);
+                    mapableObjectVM.Type_Value = ValidatePlcItem.NameIncludingNamespace(actTopologyStruct.Namespace, ValidatePlcItem.Type(actTopologyStruct.Name));
                     mapableObjectVM.SizeInBites = actTopologyStruct.SizeInBites;
                     mapableObjectVM.SizeInBytes = actTopologyStruct.SizeInBytes;
                 }

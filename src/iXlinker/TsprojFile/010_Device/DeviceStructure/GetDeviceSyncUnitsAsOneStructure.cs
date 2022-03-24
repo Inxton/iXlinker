@@ -97,7 +97,7 @@ namespace TsprojFile.Scan
                 SyncUnit.SizeInBytes = actDevStruct.SizeInBytes;
 
                 mapableObject.Name = ValidatePlcItem.Name(actDevStruct.Prefix);
-                mapableObject.Type_Value = actDevStruct.Name;
+                mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actDevStruct.Namespace, actDevStruct.Name);
                 mapableObject.SizeInBites = actDevStruct.SizeInBites;
                 mapableObject.SizeInBytes = actDevStruct.SizeInBytes;
 

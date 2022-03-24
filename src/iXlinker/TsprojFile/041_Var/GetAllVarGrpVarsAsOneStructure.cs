@@ -72,7 +72,7 @@ namespace TsprojFile.Scan
             //create varGrp of the structured type
             PdoStructMemberViewModel firstStructMember = actVarGrpStruct.StructMembers.FirstOrDefault();
             mapableObject.Name = ValidatePlcItem.Name(actVarGrpStruct.Prefix);
-            mapableObject.Type_Value = ValidatePlcItem.Type(actVarGrpStruct.Name);
+            mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actVarGrpStruct.Namespace, ValidatePlcItem.Type(actVarGrpStruct.Name));
             mapableObject.SizeInBites = actVarGrpStruct.SizeInBites;
             mapableObject.SizeInBytes = actVarGrpStruct.SizeInBytes;
 

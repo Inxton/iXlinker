@@ -26,7 +26,7 @@ namespace TsprojFile.Scan
 
                             foreach (string plcStructName in query)
                             {
-                                PlcStruct plcStruct = new PlcStruct() { NameSpace = plcLibrary.NameSpace, Name = plcStructName.ToString() };
+                                PlcStruct plcStruct = new PlcStruct() { Namespace = plcLibrary.Namespace, Name = plcStructName.ToString() };
                                 PlcStructuresInPlcLibraries.Add(plcStruct);
                             }
                         }

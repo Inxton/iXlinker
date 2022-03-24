@@ -10,7 +10,8 @@ namespace PlcprojFile
     {
         private static char[]   SpecialCharsName =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
         private static char[]   SpecialCharsLink =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{',           '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
-        private static char[]   SpecialCharsType =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
+        //private static char[]   SpecialCharsType =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
+        private static char[] SpecialCharsType = { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '>', '/', '?', '§', ' ' };
         private static char[]   SpecialCharsArrayType =   { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{',           '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '>', '/', '?', '§' };
 
         private static char ReplaceChar = '_';
@@ -194,7 +195,6 @@ namespace PlcprojFile
             }
             return ret;
         }
-
         public static string Type(string type)
         {
             string ret = type;
@@ -272,6 +272,17 @@ namespace PlcprojFile
             }
             return ret;
         }
+        public static string NameIncludingNamespace(string @namespace, string name)
+        {
+            if(String.IsNullOrEmpty(@namespace))
+            {
+                return name;
+            }
+            else
+            {
+                return @namespace + "." + name;
+            }
+        }
 
-     }
+    }
 }

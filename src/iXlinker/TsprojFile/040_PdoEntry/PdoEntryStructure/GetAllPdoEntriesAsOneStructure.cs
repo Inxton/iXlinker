@@ -89,7 +89,7 @@ namespace TsprojFile.Scan
             //create pdo of the structured type
             PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
             mapableObject.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
-            mapableObject.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);
+            mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actPdoStruct.Namespace, ValidatePlcItem.Type(actPdoStruct.Name));
             mapableObject.SizeInBites = actPdoStruct.SizeInBites;
             mapableObject.SizeInBytes = actPdoStruct.SizeInBytes;
 
