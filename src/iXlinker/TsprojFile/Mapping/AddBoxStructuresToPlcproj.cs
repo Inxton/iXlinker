@@ -1,5 +1,6 @@
 ﻿using TwincatXmlSchemas.TcPlcProj;
 using iXlinkerDtos;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -9,7 +10,7 @@ namespace TsprojFile.Scan
         {
             ExportBoxStructures(vs.DutsIoBox.FolderPathInFileSystem);
 
-            System.Console.WriteLine("Adding Box structures into the PLC project!!!");
+            EventLogger.Instance.Logger.Information("Adding Box structures into the PLC project!!!");
 
             foreach (ProjectItemGroup item in tcPlcProj.ItemGroup)
             {
@@ -39,7 +40,7 @@ namespace TsprojFile.Scan
                     item.Compile = newItemCompile;
                 }
             }
-            System.Console.WriteLine("Box structures added into the PLC project!!!");
+            EventLogger.Instance.Logger.Information("Box structures added into the PLC project!!!");
          }
     }
 }

@@ -3,6 +3,7 @@ using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.Generic;
 using System.IO;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -27,7 +28,7 @@ namespace TsprojFile.Scan
                         }
                         if (string.IsNullOrEmpty(pdoEntry.Type.GUID))
                         {
-                            Console.WriteLine("Not unique pdo entry name {0} found in the pdo name {1}, in the box type {2}!!!", pdoEntry.Name, pdo.Name, pdoViewModel.BoxOrderCode);
+                            EventLogger.Instance.Logger.Information("Not unique pdo entry name {0} found in the pdo name {1}, in the box type {2}!!!", pdoEntry.Name, pdo.Name, pdoViewModel.BoxOrderCode);
                             if (exportDuplicities)
                             {
                                 using (StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\PdoEntryNamesDuplicities.txt", true))
@@ -38,7 +39,7 @@ namespace TsprojFile.Scan
                         }
                         pdoEntry.Name = pdoEntry.Name + "_" + sameNameIndex.ToString();
                         sameNameIndex++;
-                        Console.WriteLine("\t Renamed to {0}!!!", pdoEntry.Name);
+                        EventLogger.Instance.Logger.Information("\t Renamed to {0}!!!", pdoEntry.Name);
                         pdoEntryNames.Add(pdoEntry.Name);
                     }
                     else

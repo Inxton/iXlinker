@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using iXlinker.Utils;
 using iXlinkerDtos;
 
 namespace TsprojFile.Scan
@@ -9,7 +10,7 @@ namespace TsprojFile.Scan
         private void GenerateGvlToPlcProj(Solution vs)
         {
             string exportDir = vs.GvlExported.FolderPathInFileSystem;
-            System.Console.WriteLine("Exporting GVL : {0} to the folder {1}", vs.GvlExported.Name, exportDir);
+            EventLogger.Instance.Logger.Information("Exporting GVL : {0} to the folder {1}", vs.GvlExported.Name, exportDir);
             if (Directory.Exists(exportDir))
             {
                 string exportFile = (exportDir + "\\" + vs.GvlExported.Name).Replace("\\\\","\\");
@@ -45,14 +46,14 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 swGvl.Dispose();
             }
             finally
             {
                 swGvl.Close();
             }
-            System.Console.WriteLine("GVL {0} exported to the folder {1}", vs.GvlExported.Name, vs.GvlExported.FolderPathInFileSystem);
+            EventLogger.Instance.Logger.Information("GVL {0} exported to the folder {1}", vs.GvlExported.Name, vs.GvlExported.FolderPathInFileSystem);
         }
     }
 }

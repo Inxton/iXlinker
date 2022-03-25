@@ -1,4 +1,5 @@
 ﻿using System;
+using iXlinker.Utils;
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 
@@ -46,7 +47,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
             }
             PdoViewModel InfoData = GetDeviceInfoDataAsOneStructure(device, deviceViewModel);

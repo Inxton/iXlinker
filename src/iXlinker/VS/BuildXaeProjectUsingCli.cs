@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading;
+using iXlinker.Utils;
 using iXlinkerDtos;
 
 namespace iXlinker.TsprojFile.Mapping
@@ -23,14 +24,14 @@ namespace iXlinker.TsprojFile.Mapping
             startInfo.Arguments = @"""" + vs.TsProject.CompletePathInFileSystem + @""" /build """ + vs.ActiveTargetPlatform + @""" /Out """ + vs.TsProject.FolderPathInFileSystem + @"\\build.txt""";
 
             process.StartInfo = startInfo;
-            Console.WriteLine(@"Starting process Filename: ""{0}"", Arguments: ""{1}""", startInfo.FileName, startInfo.Arguments);
-            Console.Write(startMessage);
+            EventLogger.Instance.Logger.Information(@"Starting process Filename: ""{0}"", Arguments: ""{1}""", startInfo.FileName, startInfo.Arguments);
+            EventLogger.Instance.Logger.Information(startMessage);
             sw.Start();
             process.Start();
             process.WaitForExit();
             sw.Stop();
-            Console.Write(endMessage);
-            Console.WriteLine(" in {0} ms!!!", sw.ElapsedMilliseconds);
+            EventLogger.Instance.Logger.Information(endMessage);
+            EventLogger.Instance.Logger.Information(" in {0} ms!!!", sw.ElapsedMilliseconds);
            }
     }
 }

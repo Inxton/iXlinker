@@ -1,4 +1,5 @@
 ﻿using System;
+using iXlinker.Utils;
 using iXlinkerDtos;
 
 namespace TsprojFile.Scan
@@ -13,7 +14,14 @@ namespace TsprojFile.Scan
                 // Clear lists
                 Devices.Clear();
                 Tasks.Clear();
-                
+                PdoEntryStructures.Clear();
+                PdoStructures.Clear();
+                BoxStructures.Clear();
+                DeviceStructures.Clear();
+                TopologyStructures.Clear();
+                PlcLibraries.Clear();
+                PlcStructuresInPlcLibraries.Clear();
+
                 // Reset counters
                 TotalNumberOfDevices = 0;
                 TotalNumberOfBoxes = 0;
@@ -23,8 +31,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                Console.ReadLine();
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
         }
     }

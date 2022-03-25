@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using iXlinker.Utils;
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcPlcProj;
 
@@ -9,7 +10,7 @@ namespace TsprojFile.Scan
     {
         private void ClearGvlGenerated(Solution vs , ref Project tcPlcProj)
         {
-            Console.WriteLine("Cleaning existing GVL!");
+            EventLogger.Instance.Logger.Information("Cleaning existing GVL!");
 
             foreach (ProjectItemGroup item in tcPlcProj.ItemGroup)
             {
@@ -88,7 +89,7 @@ namespace TsprojFile.Scan
             {
                 Directory.CreateDirectory(vs.GvlExported.Path);
             }
-            Console.WriteLine("Existing GVL cleared!");
+            EventLogger.Instance.Logger.Information("Existing GVL cleared!");
         }
     }
 }

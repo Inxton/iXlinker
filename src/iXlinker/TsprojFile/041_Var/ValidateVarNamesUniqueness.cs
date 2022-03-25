@@ -3,6 +3,7 @@ using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.Generic;
 using System.IO;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -26,7 +27,7 @@ namespace TsprojFile.Scan
                             sameNameIndex = 1;
                             varNamesDuplicities.Add(varItem.Name);
                         }
-                        Console.WriteLine("Not unique variable name {0} found in the variable group name {1}, in the box type {2}!!!", varItem.Name, varGrp.Name, pdoViewModel.BoxOrderCode);
+                        EventLogger.Instance.Logger.Information("Not unique variable name {0} found in the variable group name {1}, in the box type {2}!!!", varItem.Name, varGrp.Name, pdoViewModel.BoxOrderCode);
                         if (exportDuplicities)
                         {
                             using (StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\VarNamesDuplicities.txt", true))
@@ -36,7 +37,7 @@ namespace TsprojFile.Scan
                         }
                         varItem.Name = varItem.Name + "_" + sameNameIndex.ToString();
                         sameNameIndex++;
-                        Console.WriteLine("\t Renamed to {0}!!!", varItem.Name);
+                        EventLogger.Instance.Logger.Information("\t Renamed to {0}!!!", varItem.Name);
                         varNames.Add(varItem.Name);
                     }
                     else

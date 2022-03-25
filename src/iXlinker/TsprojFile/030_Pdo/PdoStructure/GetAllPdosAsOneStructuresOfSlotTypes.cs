@@ -63,6 +63,7 @@ namespace TsprojFile.Scan
                     member.Name = pdoName;
                     member.BoxOrderCode = pdo.BoxOrderCode;
                     member.Type_Value = typeValue;
+                    member.TypeNamespace = pdo.TypeNamespace;
                     //member.InOutPlcProj = pdo.InOutPlcProj;
                     //member.InOutMappings = pdo.InOutMappings;
                     member.OwnerBname = pdo.OwnerBname;
@@ -112,11 +113,13 @@ namespace TsprojFile.Scan
                     if (CheckIfPdoStructureDoesNotExist(actSlotStruct))
                     {
                         //if not add to the structure list
+                        //actSlotStruct.TypeNamespace = "*";
                         PdoStructures.Add(actSlotStruct);
                     }
                     PdoStructMemberViewModel firstStructMember = actSlotStruct.StructMembers.FirstOrDefault();
                     pdoViewModels[i].Name = ValidatePlcItem.Name(actSlotStruct.Prefix);
                     pdoViewModels[i].Type_Value = actSlotStruct.Name;
+                    pdoViewModels[i].TypeNamespace = actSlotStruct.TypeNamespace;
                     pdoViewModels[i].OwnerBname = firstStructMember.OwnerBname;
                     pdoViewModels[i].InOutPlcProj = firstStructMember.InOutPlcProj;
                     pdoViewModels[i].InOutMappings = firstStructMember.InOutMappings;
@@ -125,7 +128,10 @@ namespace TsprojFile.Scan
                     pdoViewModels[i].SizeInBytes = actSlotStruct.SizeInBytes;
 
                     mapableObjects[i].Name = ValidatePlcItem.Name(boxViewModel.Name);
-                    mapableObjects[i].Type_Value = ValidatePlcItem.Type(actSlotStruct.Name);
+                    //mapableObjects[i].Type_Value = ValidatePlcItem.NameIncludingNamespace(actSlotStruct.TypeNamespace, ValidatePlcItem.Type(actSlotStruct.Name));
+                    mapableObjects[i].Type_Value =ValidatePlcItem.Type(actSlotStruct.Name);
+                    mapableObjects[i].TypeNamespace =actSlotStruct.TypeNamespace;
+
                     mapableObjects[i].SizeInBites = actSlotStruct.SizeInBites;
                     mapableObjects[i].SizeInBytes = actSlotStruct.SizeInBytes;
 

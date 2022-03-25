@@ -1,5 +1,6 @@
 ﻿using TwincatXmlSchemas.TcPlcProj;
 using iXlinkerDtos;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -8,7 +9,7 @@ namespace TsprojFile.Scan
         private void AddGvlToPlcProj(Solution vs, ref Project plcProj)
         {
             GenerateGvlToPlcProj(vs);
-            System.Console.WriteLine("Adding GVL into the PLC project!!!");
+            EventLogger.Instance.Logger.Information("Adding GVL into the PLC project!!!");
 
             foreach (ProjectItemGroup item in plcProj.ItemGroup)
             {
@@ -32,7 +33,7 @@ namespace TsprojFile.Scan
                     item.Compile = newItemCompile;
                 }
             }
-            System.Console.WriteLine("GVL added into the PLC project!");
+            EventLogger.Instance.Logger.Information("GVL added into the PLC project!");
          }
     }
 }

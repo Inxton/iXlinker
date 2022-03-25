@@ -5,6 +5,7 @@ using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.Generic;
 using PlcprojFile;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -12,7 +13,7 @@ namespace TsprojFile.Scan
     {
         private void GenerateMappingsToTsProj(Solution vs)
         {
-            Console.WriteLine("Generating mappings into the project file {0}!!!", vs.TsProject.CompletePathInFileSystem);
+            EventLogger.Instance.Logger.Information("Generating mappings into the project file {0}!!!", vs.TsProject.CompletePathInFileSystem);
 
             TcSmProject tsProj = new TcSmProject();
             XmlSerializer deserializer = new XmlSerializer(typeof(TcSmProject));
@@ -61,7 +62,7 @@ namespace TsprojFile.Scan
             serializer.Serialize(writer, tsProj);
             writer.Close();
 
-            Console.WriteLine("Mappings generated into the project file {0}!!!", vs.TsProject.CompletePathInFileSystem);
+            EventLogger.Instance.Logger.Information("Mappings generated into the project file {0}!!!", vs.TsProject.CompletePathInFileSystem);
         }
 
         private void AddOwnerBToOwnerBlist(ref MappingsTypeOwnerAOwnerB OwnerB, ref List<MappingsTypeOwnerAOwnerB> ownerBlist, ref List<MappingsTypeOwnerAOwnerBLink> linkList, string prevOwnerBname)

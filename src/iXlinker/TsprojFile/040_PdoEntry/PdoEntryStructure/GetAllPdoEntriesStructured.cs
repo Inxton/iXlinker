@@ -109,6 +109,7 @@ namespace TsprojFile.Scan
                                     member.Name = pdoEntryName + "_" + baseType + "_" + i.ToString();
                                     member.BoxOrderCode = pdoEntryUnstructured.BoxOrderCode;
                                     member.Type_Value = baseType;
+                                    member.TypeNamespace = pdoEntryUnstructured.TypeNamespace;
                                     if (pdoEntryUnstructured.InOut == "1")
                                     {
                                         member.InOutPlcProj = "AT %Q*";
@@ -142,6 +143,7 @@ namespace TsprojFile.Scan
                                 member.Name = ValidatePlcItem.Name(pdoEntryName);
                                 member.BoxOrderCode = pdoEntryUnstructured.BoxOrderCode;
                                 member.Type_Value = baseType;
+                                member.TypeNamespace = pdoEntryUnstructured.TypeNamespace;
                                 if (pdoEntryUnstructured.InOut == "1")
                                 {
                                     member.InOutPlcProj = "AT %Q*";
@@ -179,6 +181,7 @@ namespace TsprojFile.Scan
                             member.Name = pdoEntryName;
                             member.BoxOrderCode = pdoEntryUnstructured.BoxOrderCode;
                             member.Type_Value = pdoEntryUnstructured.Type_Value;
+                            member.TypeNamespace= pdoEntryUnstructured.TypeNamespace;
                             if (pdoEntryUnstructured.InOut == "1")
                             {
                                 member.InOutPlcProj = "AT %Q*";
@@ -245,11 +248,12 @@ namespace TsprojFile.Scan
                                 if (CheckIfPdoEntryStructureDoesNotExist(actPdoEntryStruct))
                                 {
                                     //if not add to the structure list
+                                    //actPdoEntryStruct.TypeNamespace = "*";
                                     PdoEntryStructures.Add(actPdoEntryStruct);
                                 }
                                 //create pdo entry of the structured type
                                 PdoEntryStructMemberViewModel firstStructMember = actPdoEntryStruct.StructMembers.FirstOrDefault();
-                                PdoEntryViewModel pdoEntryStructured = new PdoEntryViewModel() { Name = ValidatePlcItem.Name(actPdoEntryStruct.Prefix), Type_Value = actPdoEntryStruct.Name, OwnerBname = pdoEntryUnstructured.OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, SizeInBites = actPdoEntryStruct.SizeInBites, SizeInBytes = actPdoEntryStruct.SizeInBytes };
+                                PdoEntryViewModel pdoEntryStructured = new PdoEntryViewModel() { Name = ValidatePlcItem.Name(actPdoEntryStruct.Prefix),  TypeNamespace = actPdoEntryStruct.TypeNamespace, Type_Value = ValidatePlcItem.Type(actPdoEntryStruct.Name), OwnerBname = pdoEntryUnstructured.OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, SizeInBites = actPdoEntryStruct.SizeInBites, SizeInBytes = actPdoEntryStruct.SizeInBytes };
                                 //add to the return value list
                                 pdoEntryStructured.SizeInBites = actPdoEntryStruct.SizeInBites;
                                 pdoEntryStructured.SizeInBytes = actPdoEntryStruct.SizeInBytes;
@@ -272,6 +276,7 @@ namespace TsprojFile.Scan
                         {
                             pdoEntryUnstructured.Name = ValidatePlcItem.Name(pdoEntryUnstructured.Name);
                             pdoEntryUnstructured.Type_Value = ValidatePlcItem.Type(pdoEntryUnstructured.Type_Value);
+                            pdoEntryUnstructured.TypeNamespace = ValidatePlcItem.Type(pdoEntryUnstructured.TypeNamespace);
                             //if (pdoEntryUnstructured.Index != null || (pdoEntryUnstructured.Name.Contains("reserve_") && pdoEntryUnstructured.Type_GUID != null))
                             if (pdoEntryUnstructured.Index != null )
                             {

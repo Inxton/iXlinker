@@ -16,6 +16,15 @@ namespace TsprojFile.Scan
                 }
 
             }
+            foreach (PlcStruct plcStruct in PlcStructuresInPlcLibraries)
+            {
+                if (actPdoEntryStruct.Name.Equals(plcStruct.Name))
+                {
+                    actPdoEntryStruct.TypeNamespace = plcStruct.Namespace;
+                    ret = false;
+                    break;
+                }
+            }
             return ret;
         }
     }

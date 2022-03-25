@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iXlinker.Utils;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -59,13 +60,11 @@ namespace iXlinker.TsprojFile.Mapping
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
             if (!dotNetCoreOK)
             {
-                Console.WriteLine(@"Unable to find .NetCore runtime installed. Versions supported: <{0},{1})!!!", minDotNetCoreSupportedVersionIncluded.ToString(), maxDotNetCoreSupportedVersionExcluded.ToString());
-                Console.WriteLine("Press any key to close the application!!!");
-                Console.ReadKey();
+                EventLogger.Instance.Logger.Information(@"Unable to find .NetCore runtime installed. Versions supported: <{0},{1})!!!", minDotNetCoreSupportedVersionIncluded.ToString(), maxDotNetCoreSupportedVersionExcluded.ToString());
                 Environment.Exit(0);
             }
 

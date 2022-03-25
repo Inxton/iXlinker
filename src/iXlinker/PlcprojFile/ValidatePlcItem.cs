@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
+using iXlinker.Utils;
 using iXlinkerDtos;
 
 namespace PlcprojFile
@@ -10,7 +11,8 @@ namespace PlcprojFile
     {
         private static char[]   SpecialCharsName =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
         private static char[]   SpecialCharsLink =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{',           '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
-        private static char[]   SpecialCharsType =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
+        //private static char[]   SpecialCharsType =        { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '.', '>', '/', '?', '§', ' ' };
+        private static char[] SpecialCharsType = { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{', '[', ']', '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '>', '/', '?', '§', ' ' };
         private static char[]   SpecialCharsArrayType =   { '`', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '=', '+', '{',           '}', '\\', '|', ';', ':', '\'', '"', ',', '<', '>', '/', '?', '§' };
 
         private static char ReplaceChar = '_';
@@ -194,7 +196,6 @@ namespace PlcprojFile
             }
             return ret;
         }
-
         public static string Type(string type)
         {
             string ret = type;
@@ -229,9 +230,9 @@ namespace PlcprojFile
                         else if (dim > 8 && dim <= 16) ret = "WORD";
                         else if (dim > 16 && dim <= 32) ret = "DWORD";
                     }
-                    catch (Exception ex)
+                        catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                 }
@@ -247,7 +248,7 @@ namespace PlcprojFile
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                 }
@@ -264,7 +265,7 @@ namespace PlcprojFile
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
                 }
 
@@ -272,6 +273,18 @@ namespace PlcprojFile
             }
             return ret;
         }
+        public static string NameIncludingNamespace(string @namespace, string name)
+        {
+            //if(String.IsNullOrEmpty(@namespace) || @namespace.Equals("*"))
+            if (String.IsNullOrEmpty(@namespace))
+            {
+                return name;
+            }
+            else
+            {
+                return @namespace + "." + name;
+            }
+        }
 
-     }
+    }
 }

@@ -26,6 +26,7 @@ namespace TsprojFile.Scan
                 member.Name = pdoName;
                 member.BoxOrderCode = varGrp.BoxOrderCode;
                 member.Type_Value = varGrp.Type_Value;
+                member.TypeNamespace = varGrp.TypeNamespace;
                 member.InOutPlcProj = varGrp.InOutPlcProj;
                 member.InOutMappings = varGrp.InOutMappings;
                 member.OwnerBname = varGrp.OwnerBname;
@@ -65,11 +66,13 @@ namespace TsprojFile.Scan
                 if (CheckIfBoxStructureDoesNotExist(actBoxStruct))
                 {
                     //if not add to the structure list
+                    //actBoxStruct.TypeNamespace = "*";
                     BoxStructures.Add(actBoxStruct);
                 }
                 BoxStructMemberViewModel firstStructMember = actBoxStruct.StructMembers.FirstOrDefault();
                 pdoViewModel.Name = ValidatePlcItem.Name(actBoxStruct.Prefix);
                 pdoViewModel.Type_Value = actBoxStruct.Name;
+                pdoViewModel.TypeNamespace = actBoxStruct.TypeNamespace;
                 pdoViewModel.OwnerBname = firstStructMember.OwnerBname;
                 pdoViewModel.InOutPlcProj = firstStructMember.InOutPlcProj;
                 pdoViewModel.InOutMappings = firstStructMember.InOutMappings;
@@ -78,7 +81,9 @@ namespace TsprojFile.Scan
                 pdoViewModel.SizeInBytes = actBoxStruct.SizeInBytes;
 
                 mapableObject.Name = ValidatePlcItem.Name(boxViewModel.Name);
+                //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actBoxStruct.TypeNamespace, ValidatePlcItem.Type(actBoxStruct.Name));
                 mapableObject.Type_Value = ValidatePlcItem.Type(actBoxStruct.Name);
+                mapableObject.TypeNamespace = actBoxStruct.TypeNamespace;
                 mapableObject.SizeInBites = actBoxStruct.SizeInBites;
                 mapableObject.SizeInBytes = actBoxStruct.SizeInBytes;
 

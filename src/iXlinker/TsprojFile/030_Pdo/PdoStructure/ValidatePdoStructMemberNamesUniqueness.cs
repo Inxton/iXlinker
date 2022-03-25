@@ -2,6 +2,7 @@
 using iXlinkerDtos;
 using System.Collections.Generic;
 using System.IO;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -24,7 +25,7 @@ namespace TsprojFile.Scan
                             sameNameIndex = 1;
                             structEntryNamesDuplicities.Add(structMember.Name);
                         }
-                        Console.WriteLine("Not unique pdo struct member name {0} found in the structure name {1}, in the box type {2}!!!", structMember.Name, actStruct.Name, actStruct.BoxOrderCode);
+                        EventLogger.Instance.Logger.Information("Not unique pdo struct member name {0} found in the structure name {1}, in the box type {2}!!!", structMember.Name, actStruct.Name, actStruct.BoxOrderCode);
                         if (exportDuplicities)
                         {
                             using (StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\PdoStructMemberNamesDuplicities.txt", true))
@@ -34,7 +35,7 @@ namespace TsprojFile.Scan
                         }
                         structMember.Name = structMember.Name + "_" + sameNameIndex.ToString();
                         sameNameIndex++;
-                        Console.WriteLine("\t Renamed to {0}!!!", structMember.Name);
+                        EventLogger.Instance.Logger.Information("\t Renamed to {0}!!!", structMember.Name);
                         structEntryNames.Add(structMember.Name);
                     }
                     else
