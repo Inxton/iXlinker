@@ -2,6 +2,7 @@
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using PlcprojFile;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -23,7 +24,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string varType_GUID = "";
@@ -36,7 +37,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string varType_Value = "";
@@ -49,7 +50,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string varOwnerBname = "";
@@ -63,7 +64,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string varEntryVarB = "";
@@ -80,7 +81,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
             string boxOrderCode = "";
             try
@@ -93,7 +94,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string varInout = "";
@@ -113,7 +114,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
             string pdoEntryVarA = ValidatePlcItem.Name(varEntryVarB).Replace('.', '_');
 
@@ -121,6 +122,7 @@ namespace TsprojFile.Scan
             pdoEntryViewModel.InOut = varInout;
             pdoEntryViewModel.Type_GUID = varType_GUID;
             pdoEntryViewModel.Type_Value = varType_Value;
+            //pdoEntryViewModel.TypeNamespace = "*";
             pdoEntryViewModel.OwnerBname = varOwnerBname;
             pdoEntryViewModel.VarB = varEntryVarB;
             pdoEntryViewModel.VarA = pdoEntryVarA;

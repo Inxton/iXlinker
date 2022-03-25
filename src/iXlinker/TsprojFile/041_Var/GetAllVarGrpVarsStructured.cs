@@ -105,6 +105,7 @@ namespace TsprojFile.Scan
                                 member.Attributes = pdoEntryAttributes;
                                 member.Name = pdoEntryName + "_" + baseType + "_" + i.ToString();
                                 member.Type_Value = baseType;
+                                member.TypeNamespace = varUnstructured.TypeNamespace;
                                 member.SizeInBites = PlcBaseTypes.GetSizeInBites(baseType);
                                 member.SizeInBytes = PlcBaseTypes.GetSizeInBytes(baseType);
                                 member.SubIndexNumber = varUnstructured.SubIndexNumber;
@@ -165,7 +166,7 @@ namespace TsprojFile.Scan
                         //if not add to the structure list
                         PdoEntryStructures.Add(actVarStruct);
                         //create pdo entry of the structured type
-                        PdoEntryViewModel pdoEntryStructured = new PdoEntryViewModel() { Name = ValidatePlcItem.Name(actVarStruct.Prefix), Type_Value = actVarStruct.Name, OwnerBname = varUnstructured.OwnerBname, InOut = varUnstructured.InOut, VarB = actVarStruct.PdoEntryVarB, VarA = actVarStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode };
+                        PdoEntryViewModel pdoEntryStructured = new PdoEntryViewModel() { Name = ValidatePlcItem.Name(actVarStruct.Prefix), Type_Value = actVarStruct.Name, TypeNamespace = actVarStruct.TypeNamespace, OwnerBname = varUnstructured.OwnerBname, InOut = varUnstructured.InOut, VarB = actVarStruct.PdoEntryVarB, VarA = actVarStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode };
                         //add to the return value list
                         varsStructured.Add(pdoEntryStructured);
                         //delete actPdoEntryStruct

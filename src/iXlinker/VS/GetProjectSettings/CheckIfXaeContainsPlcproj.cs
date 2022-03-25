@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iXlinker.Utils;
+using System;
 using System.IO;
 using System.Xml.Serialization;
 using TwincatXmlSchemas.TcSmProject;
@@ -37,15 +38,12 @@ namespace iXlinker.TsprojFile.Mapping
             catch (Exception ex)
             {
                 reader.Close();
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                Console.ReadLine();
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             if (!ret)
             {
-                Console.WriteLine(@"PLC project: ""{0}"" is not included in the XAE project:  ""{1}""!!!", plcProjFilePath, tsProjFilePath);
-                Console.WriteLine("Press any key to close the application!!!");
-                Console.ReadKey();
+                EventLogger.Instance.Logger.Information(@"PLC project: ""{0}"" is not included in the XAE project:  ""{1}""!!!", plcProjFilePath, tsProjFilePath);
                 Environment.Exit(0);
             }
             return ret;

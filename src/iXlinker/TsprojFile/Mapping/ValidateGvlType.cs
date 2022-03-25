@@ -1,4 +1,5 @@
 ﻿using System;
+using iXlinker.Utils;
 using iXlinkerDtos;
 
 namespace TsprojFile.Scan
@@ -21,7 +22,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
             }
@@ -37,7 +38,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
             }
@@ -54,7 +55,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
             }

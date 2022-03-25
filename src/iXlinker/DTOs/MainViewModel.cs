@@ -2,6 +2,7 @@
 using System.IO;
 using TsprojFile.Scan;
 using System.Collections.Generic;
+using iXlinker.Utils;
 
 namespace iXlinkerDtos
 {
@@ -34,7 +35,7 @@ namespace iXlinkerDtos
 
             if (i == 0)
             {
-                Console.WriteLine("No argument passed, default projectpath is going to be used.");
+                EventLogger.Instance.Logger.Information("No argument passed, default projectpath is going to be used.");
 
                 List<string> list = new List<string>();
                 list.Add(defaultTsProjFilePath);
@@ -108,18 +109,15 @@ namespace iXlinkerDtos
                 {
                     if (File.Exists(tsProjFilePath))
                     {
-                        Console.WriteLine("Opening file :" + tsProjFilePath);
+                        EventLogger.Instance.Logger.Information("Opening file :" + tsProjFilePath);
 
                         RuniXlinker(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath, maxFrameIndex);
 
-                        Console.WriteLine("Done");
-                        System.Threading.Thread.Sleep(1000);
+                        EventLogger.Instance.Logger.Information("Done");
                     }
                     else
                     {
-                        Console.WriteLine(@"File ""{0}"" not found. Check the path and file name of the Twincat project!!!", tsProjFilePath);
-                        Console.WriteLine("Press any key to close the application!!!");
-                        Console.ReadKey();
+                        EventLogger.Instance.Logger.Information(@"File ""{0}"" not found. Check the path and file name of the Twincat project!!!", tsProjFilePath);
                         Environment.Exit(0);
                     }
                 }
@@ -127,8 +125,7 @@ namespace iXlinkerDtos
 
             else
             {
-                Console.WriteLine("Invalid arguments");
-                Console.ReadLine();
+                EventLogger.Instance.Logger.Information("Invalid arguments");
             }
         }
     }

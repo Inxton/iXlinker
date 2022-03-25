@@ -3,6 +3,7 @@ using System.IO;
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcPlcProj;
 using System.Collections.Generic;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -10,7 +11,7 @@ namespace TsprojFile.Scan
     {
         private void ClearDutsIoFolder(Solution vs , ref Project plcProj)
         {
-            Console.WriteLine("Cleaning existing DUTs!");
+            EventLogger.Instance.Logger.Information("Cleaning existing DUTs!");
             List<ProjectItem> FoldersToClear= new List<ProjectItem>();
 
             FoldersToClear.Add(vs.DutsIo);
@@ -139,7 +140,7 @@ namespace TsprojFile.Scan
                     Directory.CreateDirectory(folderToClear.FolderPathInFileSystem);
                 }
             }
-            Console.WriteLine("Existing DUTs cleared!");
+            EventLogger.Instance.Logger.Information("Existing DUTs cleared!");
         }
     }
 }

@@ -31,6 +31,7 @@ namespace TsprojFile.Scan
                 member.Name = pdoName;
                 member.BoxOrderCode = pdo.BoxOrderCode;
                 member.Type_Value = pdo.Type_Value;
+                member.TypeNamespace = pdo.TypeNamespace;
                 member.InOutPlcProj = pdo.InOutPlcProj;
                 member.InOutMappings = pdo.InOutMappings;
                 member.OwnerBname = pdo.OwnerBname;
@@ -72,11 +73,13 @@ namespace TsprojFile.Scan
                 if (CheckIfBoxStructureDoesNotExist(actBoxStruct))
                 {
                     //if not add to the structure list
+                    //actBoxStruct.TypeNamespace = "*";
                     BoxStructures.Add(actBoxStruct);
                 }
                 BoxStructMemberViewModel firstStructMember = actBoxStruct.StructMembers.FirstOrDefault();
                 pdoViewModel.Name = ValidatePlcItem.Name(actBoxStruct.Prefix);
                 pdoViewModel.Type_Value = actBoxStruct.Name;
+                pdoViewModel.TypeNamespace = actBoxStruct.TypeNamespace;
                 pdoViewModel.OwnerBname = firstStructMember.OwnerBname;
                 pdoViewModel.InOutPlcProj = firstStructMember.InOutPlcProj;
                 pdoViewModel.InOutMappings = firstStructMember.InOutMappings;
@@ -85,7 +88,9 @@ namespace TsprojFile.Scan
                 pdoViewModel.SizeInBytes = actBoxStruct.SizeInBytes;
 
                 mapableObject.Name = ValidatePlcItem.Name(boxViewModel.Name);
-                mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actBoxStruct.Namespace, ValidatePlcItem.Type(actBoxStruct.Name));
+                //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actBoxStruct.TypeNamespace, ValidatePlcItem.Type(actBoxStruct.Name));
+                mapableObject.Type_Value = ValidatePlcItem.Type(actBoxStruct.Name);
+                mapableObject.TypeNamespace = actBoxStruct.TypeNamespace;
                 mapableObject.SizeInBites = actBoxStruct.SizeInBites;
                 mapableObject.SizeInBytes = actBoxStruct.SizeInBytes;
 

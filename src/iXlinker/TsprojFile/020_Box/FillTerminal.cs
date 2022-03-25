@@ -2,6 +2,7 @@
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.ObjectModel;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -30,7 +31,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
                 int box_id = 0;
@@ -43,7 +44,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
                 string box_term_type = "";
@@ -66,7 +67,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
                 boxViewModel.BoxType = BoxTypes.EtherCAT;

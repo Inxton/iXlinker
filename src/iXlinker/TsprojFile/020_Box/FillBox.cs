@@ -2,6 +2,7 @@
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.ObjectModel;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -39,7 +40,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
                 int box_id = 0;
@@ -52,7 +53,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
                 string box_product_code = "";
@@ -65,7 +66,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
                 string box_revision_number = "";
@@ -84,7 +85,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
                 string box_sub_code = "";
@@ -98,7 +99,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
                 string box_order_code = "";
@@ -122,7 +123,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
                 int portPhys = boxItem.PortPhys;
     
@@ -177,7 +178,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
                 bool containsSubBoxes = false;
@@ -203,7 +204,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
                 if (box.Box != null)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iXlinker.Utils;
+using System;
 using System.IO;
 using System.Xml.Serialization;
 using TwincatXmlSchemas.TcSmProject;
@@ -20,19 +21,15 @@ namespace iXlinker.TsprojFile.Mapping
                 reader.Close();
                 if (tc != null && tc.Project != null && tc.Project.Plc == null)
                 {
-                    Console.WriteLine(@"No PLC project found in the XAE project:  ""{0}""!!!", tsProjFilePath);
-                    Console.WriteLine("Press any key to close the application!!!");
-                    Console.ReadKey();
+                    EventLogger.Instance.Logger.Information(@"No PLC project found in the XAE project:  ""{0}""!!!", tsProjFilePath);
                     Environment.Exit(0);
                 }
                 if (tc != null && tc.Project != null && tc.Project.Plc != null && tc.Project.Plc.Project != null)
                 {
                     if (tc.Project.Plc.Project.Length > 1)
                     {
-                        Console.WriteLine(@"Multiple PLC projects found in the XAE project:  ""{0}""!!!", tsProjFilePath);
-                        Console.WriteLine(@"Restart the application with the exact PLC project path and file name specified!!!");
-                        Console.WriteLine("Press any key to close the application!!!");
-                        Console.ReadKey();
+                        EventLogger.Instance.Logger.Information(@"Multiple PLC projects found in the XAE project:  ""{0}""!!!", tsProjFilePath);
+                        EventLogger.Instance.Logger.Information(@"Restart the application with the exact PLC project path and file name specified!!!");
                         Environment.Exit(0);
                     }
 
@@ -40,15 +37,14 @@ namespace iXlinker.TsprojFile.Mapping
                     {
                         string tsProjFolder = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\", StringComparison.Ordinal));
                         plcProjFilePath = tsProjFolder + "\\" + tc.Project.Plc.Project[0].PrjFilePath;
-                        Console.WriteLine(@"PLC project: ""{0}"" found in the XAE project: ""{1}"" will be used!!!", tsProjFilePath, plcProjFilePath);
+                        EventLogger.Instance.Logger.Information(@"PLC project: ""{0}"" found in the XAE project: ""{1}"" will be used!!!", tsProjFilePath, plcProjFilePath);
                     }
                 }
             }
             catch (Exception ex)
             {
                 reader.Close();
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                Console.ReadLine();
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             return plcProjFilePath;

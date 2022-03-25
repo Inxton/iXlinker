@@ -1,4 +1,5 @@
 ﻿using System;
+using iXlinker.Utils;
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 
@@ -21,7 +22,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string pdo_index = "";
@@ -37,7 +38,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string pdo_inout = "";
@@ -50,7 +51,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string pdo_syncman = "";
@@ -63,7 +64,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string pdo_syncunit = "";
@@ -76,7 +77,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             uint pdo_entry_count = 0;
@@ -89,7 +90,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             int box_id = 0;
@@ -102,7 +103,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string box_name = "";
@@ -116,7 +117,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string boxOwnerBname = "";
@@ -130,7 +131,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string boxOrderCode = "";
@@ -144,7 +145,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             pdoViewModel.Name = pdo_name;

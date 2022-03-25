@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using iXlinker.Utils;
 using iXlinkerDtos;
 
 namespace iXlinker.TsprojFile.Mapping
@@ -22,7 +23,7 @@ namespace iXlinker.TsprojFile.Mapping
                 string defaultTargetPlatform = "Release|TwinCAT RT (x64)";
                 if (string.IsNullOrEmpty(activeTargetPlatform))
                 {
-                    Console.WriteLine(@"No Active Target Platform is defined! The default one: ""{0}"" is going to be used!!!", defaultTargetPlatform);
+                    EventLogger.Instance.Logger.Information(@"No Active Target Platform is defined! The default one: ""{0}"" is going to be used!!!", defaultTargetPlatform);
                     vs.ActiveTargetPlatform = defaultTargetPlatform;
                 }
                 else
@@ -33,7 +34,7 @@ namespace iXlinker.TsprojFile.Mapping
                     }
                     else
                     {
-                        Console.WriteLine(@"Invalid Active Target Platform: ""{0}"" is defined! The default one: ""{1}"" is going to be used!!!", activeTargetPlatform, defaultTargetPlatform);
+                        EventLogger.Instance.Logger.Information(@"Invalid Active Target Platform: ""{0}"" is defined! The default one: ""{1}"" is going to be used!!!", activeTargetPlatform, defaultTargetPlatform);
                         vs.ActiveTargetPlatform = defaultTargetPlatform;
                     }
                 }
@@ -41,7 +42,7 @@ namespace iXlinker.TsprojFile.Mapping
                 //Plcproj details
                 if (string.IsNullOrEmpty(plcProjFilePath))
                 {
-                    Console.WriteLine(@"No PLC project name is defined! If the XAE contains only one PLC project, this one is used.!!!");
+                    EventLogger.Instance.Logger.Information(@"No PLC project name is defined! If the XAE contains only one PLC project, this one is used.!!!");
                     plcProjFilePath = GetPlcprojFromXae(tsProjFilePath);
                 }
 
@@ -92,9 +93,7 @@ namespace iXlinker.TsprojFile.Mapping
                 }
                 else
                 {
-                    Console.WriteLine(@"File ""{0}"" not found. Check the path and file name of the PLC project!!!", plcProjFilePath);
-                    Console.WriteLine("Press any key to close the application!!!");
-                    Console.ReadKey();
+                    EventLogger.Instance.Logger.Information(@"File ""{0}"" not found. Check the path and file name of the PLC project!!!", plcProjFilePath);
                     Environment.Exit(0);
                 }
 
@@ -107,9 +106,7 @@ namespace iXlinker.TsprojFile.Mapping
                     string _devenvPath = GetDevenvPath();
                     if (string.IsNullOrEmpty(_devenvPath))
                     {
-                        Console.WriteLine(@"Unable to discover Visual Studio installed. Versions supported: <{0},{1})!!!", minVsSupportedVersionIncluded.ToString(), maxVsSupportedVersionExcluded.ToString());
-                        Console.WriteLine("Press any key to close the application!!!");
-                        Console.ReadKey();
+                        EventLogger.Instance.Logger.Information(@"Unable to discover Visual Studio installed. Versions supported: <{0},{1})!!!", minVsSupportedVersionIncluded.ToString(), maxVsSupportedVersionExcluded.ToString());
                         Environment.Exit(0);
                     }
                     vs.DevenvPath = _devenvPath;
@@ -120,9 +117,7 @@ namespace iXlinker.TsprojFile.Mapping
                 }
                 else
                 {
-                    Console.WriteLine(@"Unable to find file: ""{0}""!!!", devenvPath);
-                    Console.WriteLine("Press any key to close the application!!!");
-                    Console.ReadKey();
+                    EventLogger.Instance.Logger.Information(@"Unable to find file: ""{0}""!!!", devenvPath);
                     Environment.Exit(0);
                 }
                 //MaxEthercatFrameIndex 
@@ -134,9 +129,7 @@ namespace iXlinker.TsprojFile.Mapping
             }
             else
             {
-                Console.WriteLine(@"File ""{0}"" not found. Check the path and file name of the XAE project!!!", tsProjFilePath);
-                Console.WriteLine("Press any key to close the application!!!");
-                Console.ReadKey();
+                EventLogger.Instance.Logger.Information(@"File ""{0}"" not found. Check the path and file name of the XAE project!!!", tsProjFilePath);
                 Environment.Exit(0);
             }
             return vs;

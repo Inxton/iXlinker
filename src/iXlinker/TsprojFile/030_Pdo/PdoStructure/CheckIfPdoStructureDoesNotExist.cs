@@ -20,7 +20,7 @@ namespace TsprojFile.Scan
             {
                 if (actPdoStruct.Name.Equals(plcStruct.Name))
                 {
-                    actPdoStruct.Namespace = plcStruct.Namespace;
+                    actPdoStruct.TypeNamespace = plcStruct.Namespace;
                     ret = false;
                     break;
                 }

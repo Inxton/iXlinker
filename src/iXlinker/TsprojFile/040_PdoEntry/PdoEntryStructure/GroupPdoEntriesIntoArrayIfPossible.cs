@@ -63,6 +63,7 @@ namespace TsprojFile.Scan
                         arrayMember.Name = ValidatePlcItem.Name(firstMemberPrefix);
                         arrayMember.BoxOrderCode = membersUngroupped[i].BoxOrderCode;
                         arrayMember.Type_Value = arrayType;
+                        arrayMember.TypeNamespace = membersUngroupped[i].TypeNamespace;
                         arrayMember.InOutPlcProj = membersUngroupped[i].InOutPlcProj;
                         arrayMember.InOutMappings = membersUngroupped[i].InOutMappings;
                         arrayMember.OwnerBname = membersUngroupped[i].OwnerBname;

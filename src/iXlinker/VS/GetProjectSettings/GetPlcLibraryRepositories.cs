@@ -1,4 +1,5 @@
-﻿using iXlinkerDtos;
+﻿using iXlinker.Utils;
+using iXlinkerDtos;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -51,8 +52,7 @@ namespace iXlinker.TsprojFile.Mapping
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                    Console.ReadLine();
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
 
             }

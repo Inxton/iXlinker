@@ -70,6 +70,7 @@ namespace TsprojFile.Scan
                 {
                     actPdoEntryStruct.StructMembers = null;
                     firstMember.Type_Value = "ARRAY [" + firstIndex.ToString() + ".." + lastIndex.ToString() + "] OF " + firstMember.Type_Value;
+                    firstMember.TypeNamespace = firstMember.TypeNamespace;
                 }
             }
 

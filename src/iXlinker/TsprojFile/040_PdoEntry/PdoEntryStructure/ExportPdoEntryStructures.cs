@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 using iXlinkerDtos;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -15,7 +16,7 @@ namespace TsprojFile.Scan
 
         private void ExportPdoEntryStructuresToDirectory(string exportDir)
         {
-            System.Console.WriteLine("Exporting Pdo entry structures to the folder {0}", exportDir);
+            EventLogger.Instance.Logger.Information("Exporting Pdo entry structures to the folder {0}", exportDir);
             if (Directory.Exists(exportDir))
             {
                 string[] files = Directory.GetFiles(exportDir);
@@ -48,7 +49,7 @@ namespace TsprojFile.Scan
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                     string id = "";
@@ -58,7 +59,7 @@ namespace TsprojFile.Scan
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                     uint crc = 0;
@@ -68,7 +69,7 @@ namespace TsprojFile.Scan
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
                     uint sizeInBites = 0;
                     try
@@ -77,7 +78,7 @@ namespace TsprojFile.Scan
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                     double sizeInBytes = 0;
@@ -87,7 +88,7 @@ namespace TsprojFile.Scan
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                     sw.WriteLine("<TcPlcObject>");
@@ -110,8 +111,10 @@ namespace TsprojFile.Scan
                         {
                             sw.WriteLine("\t" + attribute);
                         }
-                        string varName = ValidatePlcItem.Name(pdoEntryStructMemberViewModel.Name);
-                        string varType = ValidatePlcItem.Type(pdoEntryStructMemberViewModel.Type_Value);
+                        //string varName = ValidatePlcItem.Name(pdoEntryStructMemberViewModel.Name);
+                        //string varType = ValidatePlcItem.Type(pdoEntryStructMemberViewModel.Type_Value);
+                        string varName = pdoEntryStructMemberViewModel.Name;
+                        string varType = ValidatePlcItem.NameIncludingNamespace(pdoEntryStructMemberViewModel.TypeNamespace, pdoEntryStructMemberViewModel.Type_Value);
                         sw.WriteLine("\t" + varName + " : " + varType + ";");
                     }
 
@@ -124,7 +127,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     sw.Dispose();
                 }
                 finally
@@ -132,7 +135,7 @@ namespace TsprojFile.Scan
                     sw.Close();
                 }
             }
-            Console.WriteLine("PDO entry structures exported!!!");
+            EventLogger.Instance.Logger.Information("PDO entry structures exported!!!");
         }
     }
 }

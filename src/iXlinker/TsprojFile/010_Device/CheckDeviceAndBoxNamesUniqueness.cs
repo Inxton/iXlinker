@@ -2,6 +2,7 @@
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.Generic;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -24,7 +25,7 @@ namespace TsprojFile.Scan
 
                         if (devNames.Contains(d.Name))
                         {
-                            Console.WriteLine("Not unique device name {0} found!!!", d.Name);
+                            EventLogger.Instance.Logger.Information("Not unique device name {0} found!!!", d.Name);
                             ret = false;
                         }
                         else
@@ -54,7 +55,7 @@ namespace TsprojFile.Scan
 
                 if (boxNames.Contains(box.Name))
                 {
-                    Console.WriteLine("Not unique box name {0} found!!!", box.Name);
+                    EventLogger.Instance.Logger.Information("Not unique box name {0} found!!!", box.Name);
                     ret = false;
                 }
                 else
@@ -84,7 +85,7 @@ namespace TsprojFile.Scan
 
                 if (boxNames.Contains(box.Name))
                 {
-                    Console.WriteLine("Not unique box name {0} found!!!", box.Name);
+                    EventLogger.Instance.Logger.Information("Not unique box name {0} found!!!", box.Name);
                     ret = false;
                 }
                 else
@@ -97,7 +98,7 @@ namespace TsprojFile.Scan
                     {
                         if (!CheckBoxDefNameUniqueness(subbox, ref boxNames))
                         {
-                            Console.WriteLine("Not unique box name {0} found!!!", box.Name);
+                            EventLogger.Instance.Logger.Information("Not unique box name {0} found!!!", box.Name);
                             ret = false;
                         }
                     }

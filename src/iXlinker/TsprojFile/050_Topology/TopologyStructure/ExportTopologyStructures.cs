@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 using iXlinkerDtos;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -15,7 +16,7 @@ namespace TsprojFile.Scan
 
         private void ExportTopologyStructuresToDirectory(string exportDir)
         {
-            System.Console.WriteLine(@"Exporting Topology structures to the folder ""{0}""", exportDir);
+            EventLogger.Instance.Logger.Information(@"Exporting Topology structures to the folder ""{0}""", exportDir);
             if (Directory.Exists(exportDir))
             {
                 string[] files = Directory.GetFiles(exportDir);
@@ -48,7 +49,7 @@ namespace TsprojFile.Scan
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                     string id = "";
@@ -58,7 +59,7 @@ namespace TsprojFile.Scan
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                     string extends = "";
@@ -77,7 +78,7 @@ namespace TsprojFile.Scan
                     catch (Exception ex)
                     {
                         extends = " :";
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                     uint crc = 0;
@@ -87,7 +88,7 @@ namespace TsprojFile.Scan
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                     uint sizeInBites = 0;
@@ -97,7 +98,7 @@ namespace TsprojFile.Scan
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                     double sizeInBytes = 0;
@@ -107,7 +108,7 @@ namespace TsprojFile.Scan
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
                     sw.WriteLine("<TcPlcObject>");
@@ -126,8 +127,10 @@ namespace TsprojFile.Scan
                         {
                             sw.WriteLine("\t" + attribute);
                         }
-                        string varName = ValidatePlcItem.Name(topologyStructMemberViewModel.Name);
-                        string varType = ValidatePlcItem.Type(topologyStructMemberViewModel.Type_Value);
+                        //string varName = ValidatePlcItem.Name(topologyStructMemberViewModel.Name);
+                        //string varType = ValidatePlcItem.Type(topologyStructMemberViewModel.Type_Value);
+                        string varName = topologyStructMemberViewModel.Name;
+                        string varType = ValidatePlcItem.NameIncludingNamespace(topologyStructMemberViewModel.TypeNamespace, topologyStructMemberViewModel.Type_Value);
                         sw.WriteLine("\t" + varName + " : " + varType + ";");
                     }
                     sw.WriteLine("END_STRUCT");
@@ -139,7 +142,7 @@ namespace TsprojFile.Scan
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     sw.Dispose();
                 }
                 finally
@@ -147,7 +150,7 @@ namespace TsprojFile.Scan
                     sw.Close();
                 }
             }
-            Console.WriteLine(@"Topology structures exported to the folder ""{0}"" !!!", exportDir);
+            EventLogger.Instance.Logger.Information(@"Topology structures exported to the folder ""{0}"" !!!", exportDir);
         }
     }
 }

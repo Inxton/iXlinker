@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Xml.Serialization;
+using iXlinker.Utils;
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 
@@ -24,15 +25,14 @@ namespace TsprojFile.Scan
             catch (Exception ex)
             {
                 reader.Close();
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                Console.ReadLine();
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             GetPlcLibraries(vs);
 
             GetPlcStructuresInPlcLibraries(vs);
 
-            Console.WriteLine(@"Reading IO devices in the XAE project: ""{0}""!!!", vs.TsProject.Name);
+            EventLogger.Instance.Logger.Information(@"Reading IO devices in the XAE project: ""{0}""!!!", vs.TsProject.Name);
             TcSmProjectProjectPlcProject plcProj = new TcSmProjectProjectPlcProject();
             for (int i = 0; i < Tc.Project.Plc.Project.Length; i++)
             {
@@ -55,7 +55,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 Context = "invalid_context";
             }
 
@@ -77,37 +77,31 @@ namespace TsprojFile.Scan
 
                         if (TotalNumberOfDevices == 0 && TotalNumberOfBoxes == 0)
                         {
-                            Console.WriteLine("There are no unmapped devices");
-                            Console.ReadLine();
+                            EventLogger.Instance.Logger.Information("There are no unmapped devices");
                         }
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine("No devices found.");
-                        Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                        Console.ReadLine();
+                        EventLogger.Instance.Logger.Error("No devices found.");
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
                 }
                 else
                 {
-                    Console.WriteLine("No IO devices found! No outputs generated!!!");
-                    Console.WriteLine("Press any key to close the application!!!");
-                    Console.ReadKey();
+                    EventLogger.Instance.Logger.Information("No IO devices found! No outputs generated!!!");
                     Environment.Exit(0);
                 }
             }
             else
             {
-                Console.WriteLine("Tsproj file contains not unique device name or box name! No outputs generated!!!");
-                Console.WriteLine("Press any key to close the application!!!");
-                Console.ReadKey();
+                EventLogger.Instance.Logger.Information("Tsproj file contains not unique device name or box name! No outputs generated!!!");
                 Environment.Exit(0);
             }
-            Console.WriteLine(@"PdoEntryStructures :{0}", PdoEntryStructures.Count);
-            Console.WriteLine(@"PdoStructures :{0}", PdoStructures.Count);
-            Console.WriteLine(@"BoxStructures :{0}", BoxStructures.Count);
-            Console.WriteLine(@"DeviceStructures :{0}", DeviceStructures.Count);
-            Console.WriteLine(@"TopologyStructures :{0}", TopologyStructures.Count);
+            EventLogger.Instance.Logger.Information(@"PdoEntryStructures :{0}", PdoEntryStructures.Count);
+            EventLogger.Instance.Logger.Information(@"PdoStructures :{0}", PdoStructures.Count);
+            EventLogger.Instance.Logger.Information(@"BoxStructures :{0}", BoxStructures.Count);
+            EventLogger.Instance.Logger.Information(@"DeviceStructures :{0}", DeviceStructures.Count);
+            EventLogger.Instance.Logger.Information(@"TopologyStructures :{0}", TopologyStructures.Count);
         }
     }
 }

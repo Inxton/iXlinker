@@ -47,6 +47,20 @@
             }
         }
 
+        private string typeNamespace;
+        public string TypeNamespace
+        {
+            get { return this.typeNamespace; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.typeNamespace = value;
+                    NotifyPropertyChanged(nameof(TypeNamespace));
+                }
+            }
+        }
+
         private uint sizeInBites;
         public uint SizeInBites
         {

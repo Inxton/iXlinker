@@ -2,16 +2,16 @@
 {
     public class PouStructBase : NotifiableBase
     {
-        private string @namespace;
-        public string Namespace
+        private string typeNamespace;
+        public string TypeNamespace
         {
-            get { return this.@namespace; }
+            get { return this.typeNamespace; }
             set
             {
                 if (!string.IsNullOrEmpty(value))
                 {
-                    this.@namespace = value;
-                    NotifyPropertyChanged(nameof(Namespace));
+                    this.typeNamespace = value;
+                    NotifyPropertyChanged(nameof(TypeNamespace));
                 }
             }
         }

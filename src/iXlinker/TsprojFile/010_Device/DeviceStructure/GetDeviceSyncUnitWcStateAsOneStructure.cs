@@ -35,6 +35,7 @@ namespace TsprojFile.Scan
                 member.Name = pdoEntryName;
                 member.BoxOrderCode = pdoEntry.BoxOrderCode;
                 member.Type_Value = pdoEntry.Type_Value;
+                member.TypeNamespace = pdoEntry.TypeNamespace;
                 if (pdoEntry.InOut == "1")
                 {
                     member.InOutPlcProj = "AT %Q*";
@@ -72,11 +73,13 @@ namespace TsprojFile.Scan
                 if (CheckIfPdoStructureDoesNotExist(actPdoStruct))
                 {
                     //if not add to the structure list
+                    //actPdoStruct.TypeNamespace = "*";
                     PdoStructures.Add(actPdoStruct);
                 }
                 PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
                 WcState.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
-                WcState.Type_Value = actPdoStruct.Name;
+                WcState.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);
+                WcState.TypeNamespace = actPdoStruct.TypeNamespace;
                 WcState.OwnerBname = firstStructMember.OwnerBname;
                 WcState.InOutPlcProj = firstStructMember.InOutPlcProj;
                 WcState.InOutMappings = firstStructMember.InOutMappings;
@@ -85,7 +88,9 @@ namespace TsprojFile.Scan
                 WcState.SizeInBytes = actPdoStruct.SizeInBytes;
 
                 mapableObject.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
-                mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actPdoStruct.Namespace, actPdoStruct.Name);
+                //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actPdoStruct.TypeNamespace, ValidatePlcItem.Type(actPdoStruct.Name));
+                mapableObject.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);
+                mapableObject.TypeNamespace = actPdoStruct.TypeNamespace;
                 mapableObject.SizeInBites = actPdoStruct.SizeInBites;
                 mapableObject.SizeInBytes = actPdoStruct.SizeInBytes;
 

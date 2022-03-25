@@ -5,6 +5,7 @@ using System.Threading;
 //using iXlinker.Utils;
 using System.Diagnostics;
 using System;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -40,8 +41,7 @@ namespace TsprojFile.Scan
             GenerateMappingsToTsProj(vs);
 
             sw.Stop();
-            Console.WriteLine("Complete process {0} ms!!!", sw.ElapsedMilliseconds);
-            //Console.ReadLine();
+            EventLogger.Instance.Logger.Information("Complete process {0} ms!!!", sw.ElapsedMilliseconds);
         }
     }
 }

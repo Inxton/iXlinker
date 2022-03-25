@@ -28,6 +28,7 @@ namespace TsprojFile.Scan
                 member.Name = pdoName;
                 member.BoxOrderCode = pdo.BoxOrderCode;
                 member.Type_Value = pdo.Type_Value;
+                member.TypeNamespace = pdo.TypeNamespace;
                 member.InOutPlcProj = pdo.InOutPlcProj;
                 member.InOutMappings = pdo.InOutMappings;
                 member.OwnerBname = pdo.OwnerBname;
@@ -59,11 +60,13 @@ namespace TsprojFile.Scan
                 if (CheckIfDeviceStructureDoesNotExist(actDevStruct))
                 {
                     //if not add to the structure list
+                    //actDevStruct.TypeNamespace = "*";
                     DeviceStructures.Add(actDevStruct);
                 }
                 DeviceStructMemberViewModel firstStructMember = actDevStruct.StructMembers.FirstOrDefault();
                 SyncUnitTask.Name = ValidatePlcItem.Name(task);
-                SyncUnitTask.Type_Value = actDevStruct.Name;
+                SyncUnitTask.Type_Value = ValidatePlcItem.Type(actDevStruct.Name);
+                SyncUnitTask.TypeNamespace = actDevStruct.TypeNamespace;
                 SyncUnitTask.OwnerBname = firstStructMember.OwnerBname;
                 SyncUnitTask.InOutPlcProj = firstStructMember.InOutPlcProj;
                 SyncUnitTask.InOutMappings = firstStructMember.InOutMappings;
@@ -72,7 +75,9 @@ namespace TsprojFile.Scan
                 SyncUnitTask.SizeInBytes = actDevStruct.SizeInBytes;
 
                 mapableObject.Name = ValidatePlcItem.Name(task);
-                mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actDevStruct.Namespace, actDevStruct.Name);
+                //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actDevStruct.TypeNamespace, actDevStruct.Name);
+                mapableObject.Type_Value = ValidatePlcItem.Type(actDevStruct.Name);
+                mapableObject.TypeNamespace = actDevStruct.TypeNamespace;
                 mapableObject.SizeInBites = actDevStruct.SizeInBites;
                 mapableObject.SizeInBytes = actDevStruct.SizeInBytes;
 

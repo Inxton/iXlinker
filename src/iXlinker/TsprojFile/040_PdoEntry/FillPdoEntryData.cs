@@ -3,6 +3,7 @@ using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using Utils;
 using PlcprojFile;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -24,7 +25,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string pdoEntryIndex = "";
@@ -39,7 +40,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
 
@@ -55,7 +56,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string pdoEntryType_GUID = "";
@@ -68,7 +69,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string pdoEntryType_Value = "";
@@ -81,7 +82,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string pdoOwnerBname = "";
@@ -95,7 +96,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string pdoEntryVarA = "";
@@ -112,7 +113,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string pdoEntryVarB = "";
@@ -129,7 +130,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             string boxOrderCode = "";
@@ -143,7 +144,7 @@ namespace TsprojFile.Scan
             }
             catch (Exception ex)
             {
-                Console.WriteLine(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
             pdoEntryViewModel.Name = pdoEntryName;
@@ -154,6 +155,7 @@ namespace TsprojFile.Scan
             pdoEntryViewModel.InOut = pdoViewModel.InOut;
             pdoEntryViewModel.Type_GUID = pdoEntryType_GUID;
             pdoEntryViewModel.Type_Value = pdoEntryType_Value;
+            //pdoEntryViewModel.TypeNamespace = "*";
             pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
             pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
             pdoEntryViewModel.OwnerBname = pdoOwnerBname;

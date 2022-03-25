@@ -1,5 +1,6 @@
 ﻿using TwincatXmlSchemas.TcPlcProj;
 using iXlinkerDtos;
+using iXlinker.Utils;
 
 namespace TsprojFile.Scan
 {
@@ -9,7 +10,7 @@ namespace TsprojFile.Scan
         {
             ExportPdoEntryStructures(vs.DutsIoPdoEntry.FolderPathInFileSystem);
 
-            System.Console.WriteLine("Adding PDO entry structures into the PLC project!!!");
+            EventLogger.Instance.Logger.Information("Adding PDO entry structures into the PLC project!!!");
 
             foreach (ProjectItemGroup item in tcPlcProj.ItemGroup)
             {
@@ -39,7 +40,7 @@ namespace TsprojFile.Scan
                     item.Compile = newItemCompile;
                 }
             }
-            System.Console.WriteLine("PDO entry structures added into the PLC project!!!");
+            EventLogger.Instance.Logger.Information("PDO entry structures added into the PLC project!!!");
          }
     }
 }

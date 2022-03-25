@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using iXlinkerDtos;
+using iXlinker.Utils;
 
 namespace iXlinker.TsprojFile.Mapping
 {
@@ -60,11 +61,11 @@ namespace iXlinker.TsprojFile.Mapping
             }
             catch (COMException ex) when (ex.HResult == unchecked((int)0x80040154))
             {
-                Console.WriteLine("The query API is not registered. Assuming no instances are installed.");
+                EventLogger.Instance.Logger.Error("The query API is not registered. Assuming no instances are installed.");
             }
             catch (Exception ex)
             {
-                Console.Error.WriteLine($"Error 0x{ex.HResult:x8}: {ex.Message}");
+                EventLogger.Instance.Logger.Error($"Error 0x{ex.HResult:x8}: {ex.Message}");
             }
 
             return ret;
