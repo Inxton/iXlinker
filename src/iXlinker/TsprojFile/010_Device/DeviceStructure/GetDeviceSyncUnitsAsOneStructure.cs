@@ -85,7 +85,6 @@ namespace TsprojFile.Scan
                 if (CheckIfDeviceStructureDoesNotExist(actDevStruct))
                 {
                     //if not add to the structure list
-                    //actDevStruct.TypeNamespace = "*";
                     DeviceStructures.Add(actDevStruct);
                 }
                 DeviceStructMemberViewModel firstStructMember = actDevStruct.StructMembers.FirstOrDefault();
@@ -100,7 +99,6 @@ namespace TsprojFile.Scan
                 SyncUnit.SizeInBytes = actDevStruct.SizeInBytes;
 
                 mapableObject.Name = ValidatePlcItem.Name(actDevStruct.Prefix);
-                //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actDevStruct.TypeNamespace, actDevStruct.Name);
                 mapableObject.Type_Value = ValidatePlcItem.Type(actDevStruct.Name);
                 mapableObject.TypeNamespace = actDevStruct.TypeNamespace;
                 mapableObject.SizeInBites = actDevStruct.SizeInBites;

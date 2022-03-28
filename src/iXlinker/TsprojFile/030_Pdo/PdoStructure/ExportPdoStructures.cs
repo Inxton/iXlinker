@@ -108,8 +108,6 @@ namespace TsprojFile.Scan
                         {
                             sw.WriteLine("\t" + attribute);
                         }
-                        //string varName = ValidatePlcItem.Name(pdoStructMemberViewModel.Name);
-                        //string varType= ValidatePlcItem.Type(pdoStructMemberViewModel.Type_Value);
                         string varName = pdoStructMemberViewModel.Name;
                         string varType = ValidatePlcItem.NameIncludingNamespace(pdoStructMemberViewModel.TypeNamespace, pdoStructMemberViewModel.Type_Value);
                         sw.WriteLine("\t" + varName + " " +  pdoStructMemberViewModel.InOutPlcProj + " : " + varType + ";");

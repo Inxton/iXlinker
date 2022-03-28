@@ -77,7 +77,6 @@ namespace TsprojFile.Scan
                 if (CheckIfPdoStructureDoesNotExist(actPdoStruct))
                 {
                     //if not add to the structure list
-                    //actPdoStruct.TypeNamespace = "*";
                     PdoStructures.Add(actPdoStruct);
                 }
                 PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
@@ -92,7 +91,6 @@ namespace TsprojFile.Scan
                 InfoData.SizeInBytes = actPdoStruct.SizeInBytes;
 
                 mapableObject.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
-                //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actPdoStruct.TypeNamespace, ValidatePlcItem.Type(actPdoStruct.Name));
                 mapableObject.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);
                 mapableObject.TypeNamespace = actPdoStruct.TypeNamespace;
                 mapableObject.SizeInBites = actPdoStruct.SizeInBites;

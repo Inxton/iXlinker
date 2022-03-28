@@ -248,7 +248,6 @@ namespace TsprojFile.Scan
                                 if (CheckIfPdoEntryStructureDoesNotExist(actPdoEntryStruct))
                                 {
                                     //if not add to the structure list
-                                    //actPdoEntryStruct.TypeNamespace = "*";
                                     PdoEntryStructures.Add(actPdoEntryStruct);
                                 }
                                 //create pdo entry of the structured type
@@ -267,17 +266,11 @@ namespace TsprojFile.Scan
 
                     else
                     {
-                        //if (string.IsNullOrEmpty(pdoEntryUnstructured.Name) && pdoEntryUnstructured.Type_GUID != null)
-                        //{
-                        //    pdoEntryUnstructured.Name = "reserve_" + reserveIndex.ToString();
-                        //    reserveIndex++;
-                        //}
                         if (pdoEntryUnstructured.Name != null)
                         {
                             pdoEntryUnstructured.Name = ValidatePlcItem.Name(pdoEntryUnstructured.Name);
                             pdoEntryUnstructured.Type_Value = ValidatePlcItem.Type(pdoEntryUnstructured.Type_Value);
                             pdoEntryUnstructured.TypeNamespace = ValidatePlcItem.Type(pdoEntryUnstructured.TypeNamespace);
-                            //if (pdoEntryUnstructured.Index != null || (pdoEntryUnstructured.Name.Contains("reserve_") && pdoEntryUnstructured.Type_GUID != null))
                             if (pdoEntryUnstructured.Index != null )
                             {
                                 pdoEntryUnstructured.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryUnstructured.Type_Value);

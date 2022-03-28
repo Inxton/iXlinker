@@ -127,8 +127,6 @@ namespace TsprojFile.Scan
                         {
                             sw.WriteLine("\t" + attribute);
                         }
-                        //string varName = ValidatePlcItem.Name(topologyStructMemberViewModel.Name);
-                        //string varType = ValidatePlcItem.Type(topologyStructMemberViewModel.Type_Value);
                         string varName = topologyStructMemberViewModel.Name;
                         string varType = ValidatePlcItem.NameIncludingNamespace(topologyStructMemberViewModel.TypeNamespace, topologyStructMemberViewModel.Type_Value);
                         sw.WriteLine("\t" + varName + " : " + varType + ";");

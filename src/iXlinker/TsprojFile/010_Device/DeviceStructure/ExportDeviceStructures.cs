@@ -108,8 +108,6 @@ namespace TsprojFile.Scan
                         {
                             sw.WriteLine("\t" + attribute);
                         }
-                        //string varName = ValidatePlcItem.Name(deviceStructMemberViewModel.Name);
-                        //string varType = ValidatePlcItem.Type(deviceStructMemberViewModel.Type_Value);
                         string varName = deviceStructMemberViewModel.Name;
                         string varType = ValidatePlcItem.NameIncludingNamespace(deviceStructMemberViewModel.TypeNamespace, deviceStructMemberViewModel.Type_Value);
                         sw.WriteLine("\t" + varName + " : " + varType + ";");

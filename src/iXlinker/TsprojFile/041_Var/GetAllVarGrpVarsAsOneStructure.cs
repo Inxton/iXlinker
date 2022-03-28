@@ -68,13 +68,11 @@ namespace TsprojFile.Scan
             if (CheckIfPdoStructureDoesNotExist(actVarGrpStruct))
             {
                 //if not add to the structure list
-                //actVarGrpStruct.TypeNamespace = "*";
                 PdoStructures.Add(actVarGrpStruct);
             }
             //create varGrp of the structured type
             PdoStructMemberViewModel firstStructMember = actVarGrpStruct.StructMembers.FirstOrDefault();
             mapableObject.Name = ValidatePlcItem.Name(actVarGrpStruct.Prefix);
-            //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actVarGrpStruct.TypeNamespace, ValidatePlcItem.Type(actVarGrpStruct.Name));
             mapableObject.Type_Value = ValidatePlcItem.Type(actVarGrpStruct.Name);
             mapableObject.TypeNamespace = actVarGrpStruct.TypeNamespace;
             mapableObject.SizeInBites = actVarGrpStruct.SizeInBites;
