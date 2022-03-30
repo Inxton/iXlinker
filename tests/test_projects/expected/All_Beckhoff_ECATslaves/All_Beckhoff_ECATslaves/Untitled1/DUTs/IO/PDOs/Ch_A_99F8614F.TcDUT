@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch_A_99F8614F" Id="{d02856d0-b479-461b-85ee-aafd097a18ed}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX8108-0000-0041-0041"}
+{attribute addProperty Id "Ch_A_AxisMain_InputsCh_A_AxisMain_Inputs_5A9708EF11214Ch_A_AxisMain_OutputsCh_A_AxisMain_Outputs_1B3A309C162Ch_A_Interpolator_OutputsCh_A_Interpolator_Outputs_70719997648Ch_A_PositionControl_InputsCh_A_PositionControl_Inputs_57B958FE324Ch_A_TorqueControl_OutputsCh_A_TorqueControl_Outputs_FA81679A162"}
+{attribute addProperty CRC "2583191887"}
+{attribute addProperty SizeInBites "240"}
+{attribute addProperty SizeInBytes "30"}
+TYPE Ch_A_99F8614F :
+STRUCT
+	{attribute addProperty Name "Ch_A_AxisMain_Inputs"}
+	Ch_A_AxisMain_Inputs  : Ch_A_AxisMain_Inputs_5A9708EF;
+	{attribute addProperty Name "Ch_A_AxisMain_Outputs"}
+	Ch_A_AxisMain_Outputs  : Ch_A_AxisMain_Outputs_1B3A309C;
+	{attribute addProperty Name "Ch_A_Interpolator_Outputs"}
+	Ch_A_Interpolator_Outputs  : Ch_A_Interpolator_Outputs_70719997;
+	{attribute addProperty Name "Ch_A_PositionControl_Inputs"}
+	Ch_A_PositionControl_Inputs  : Ch_A_PositionControl_Inputs_57B958FE;
+	{attribute addProperty Name "Ch_A_TorqueControl_Outputs"}
+	Ch_A_TorqueControl_Outputs  : Ch_A_TorqueControl_Outputs_FA81679A;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

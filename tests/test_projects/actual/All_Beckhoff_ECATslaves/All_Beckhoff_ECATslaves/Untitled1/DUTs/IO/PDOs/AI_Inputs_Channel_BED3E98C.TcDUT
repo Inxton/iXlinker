@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AI_Inputs_Channel_BED3E98C" Id="{f8a91b67-5a55-4a35-91e2-2315197d5291}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3602-0002-0016"}
+{attribute addProperty Id "StatusAT %I*Status_C6F82E6F1621ValueAT %I*DINT32417"}
+{attribute addProperty CRC "3201558924"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE AI_Inputs_Channel_BED3E98C :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_C6F82E6F;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

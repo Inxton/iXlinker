@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CC_Outputs_AA78E99F" Id="{ff0007d1-8ee8-4765-b5a7-1edcf9a82abe}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AT2020-0250-0019"}
+{attribute addProperty Id "ControlAT %Q*UINT1621Current_setpoint_value_ChAT %Q*ARRAY[0 ..14] OF INT240300"}
+{attribute addProperty CRC "2624970934"}
+{attribute addProperty SizeInBites "256"}
+{attribute addProperty SizeInBytes "32"}
+TYPE CC_Outputs_AA78E99F :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : UINT;
+	{attribute addProperty Name "Current_setpoint_value_Ch"}
+	Current_setpoint_value_Ch AT %Q* : ARRAY[0 ..14] OF INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PTO_Status_C602A91E" Id="{f607960e-74ad-4999-91a4-f13a7454f747}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2521-0124-0016"}
+{attribute addProperty Id "Sel_Ack_End_counterAT %I*BOOL811Ramp_activeAT %I*BOOL812ErrorAT %I*BOOL817Sync_ErrorAT %I*BOOL8132TxPDO_ToggleAT %I*BOOL819"}
+{attribute addProperty CRC "3322063134"}
+{attribute addProperty SizeInBites "40"}
+{attribute addProperty SizeInBytes "5"}
+TYPE PTO_Status_C602A91E :
+STRUCT
+	{attribute addProperty Name "Sel_Ack_End_counter"}
+	Sel_Ack_End_counter AT %I* : BOOL;
+	{attribute addProperty Name "Ramp_active"}
+	Ramp_active AT %I* : BOOL;
+	{attribute addProperty Name "Error"}
+	Error AT %I* : BOOL;
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

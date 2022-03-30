@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="APS_Diagdata_9B5B9C04" Id="{114f1ea3-2abb-4e62-9211-7b24461ff097}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "APS4322-7000-0017"}
+{attribute addProperty Id "DC_Link_VoltageAT %I*UINT16218Power_supply_currentAT %I*INT16219"}
+{attribute addProperty CRC "2606472196"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE APS_Diagdata_9B5B9C04 :
+STRUCT
+	{attribute addProperty Name "DC_Link_Voltage"}
+	DC_Link_Voltage AT %I* : UINT;
+	{attribute addProperty Name "Power_supply_current"}
+	Power_supply_current AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

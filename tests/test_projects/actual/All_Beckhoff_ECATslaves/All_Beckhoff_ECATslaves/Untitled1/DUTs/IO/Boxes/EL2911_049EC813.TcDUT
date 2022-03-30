@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2911_049EC813" Id="{3b1c3532-5062-4023-a935-6f7975d85e2d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2911-0000-0016"}
+{attribute addProperty Id "Module_1_FSOEModule_1_FSOE_61C28AF796120Module_2_FSOUTModule_2_FSOUT_49C01F35810Module_3_DEVICEIOModule_3_DEVICEIO_FB2B67D71620Module_4_FSLOGICModule_4_FSLOGIC_3E6251391620WcStateAT %I*WcState_DC9C971540.50InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "516397244"}
+{attribute addProperty SizeInBites "220"}
+{attribute addProperty SizeInBytes "27.5"}
+TYPE EL2911_049EC813 :
+STRUCT
+	{attribute addProperty Name "Module_1_FSOE"}
+	Module_1_FSOE : Module_1_FSOE_61C28AF7;
+	{attribute addProperty Name "Module_2_FSOUT"}
+	Module_2_FSOUT : Module_2_FSOUT_49C01F35;
+	{attribute addProperty Name "Module_3_DEVICEIO"}
+	Module_3_DEVICEIO : Module_3_DEVICEIO_FB2B67D7;
+	{attribute addProperty Name "Module_4_FSLOGIC"}
+	Module_4_FSLOGIC : Module_4_FSLOGIC_3E625139;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_DC9C9715;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

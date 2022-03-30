@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Status_481CA30A" Id="{e8772aa9-984d-497a-a6a5-1d4202ad3279}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5101-0011-0016"}
+{attribute addProperty Id "StatusAT %I*Status_23434B14162"}
+{attribute addProperty CRC "1209836298"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE ENC_Status_481CA30A :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_23434B14;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

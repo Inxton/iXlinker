@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Total_Active_7556780A" Id="{71340bd0-5df9-4bcf-9c56-e89c32488890}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3443-0000-0016"}
+{attribute addProperty Id "Active_PowerAT %I*REAL32417Active_EnergyAT %I*LINT64818Active_Positive_EnergyAT %I*ULINT64819Active_Negative_EnergyAT %I*ULINT64820"}
+{attribute addProperty CRC "1968601098"}
+{attribute addProperty SizeInBites "224"}
+{attribute addProperty SizeInBytes "28"}
+TYPE Total_Active_7556780A :
+STRUCT
+	{attribute addProperty Name "Active_Power"}
+	Active_Power AT %I* : REAL;
+	{attribute addProperty Name "Active_Energy"}
+	Active_Energy AT %I* : LINT;
+	{attribute addProperty Name "Active_Positive_Energy"}
+	Active_Positive_Energy AT %I* : ULINT;
+	{attribute addProperty Name "Active_Negative_Energy"}
+	Active_Negative_Energy AT %I* : ULINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

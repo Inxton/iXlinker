@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DOX_Control_Channel_08FE4910" Id="{7071f4af-7ff2-48ff-a8d8-30e936ef93db}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2212-0000-0020"}
+{attribute addProperty Id "ControlAT %Q*Control_689B20B6162"}
+{attribute addProperty CRC "150882576"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DOX_Control_Channel_08FE4910 :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_689B20B6;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

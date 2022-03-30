@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Group_4_Outputs_4942A11D" Id="{e05ab2ab-9755-42ce-a477-e6b20caa1e25}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELM2644-0000-0016"}
+{attribute addProperty Id "Outputs_Channel_4AT %Q*Outputs_Channel_E6FE5E20162"}
+{attribute addProperty CRC "1229103389"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DO_Group_4_Outputs_4942A11D :
+STRUCT
+	{attribute addProperty Name "Outputs_Channel_4"}
+	Outputs_Channel_4 AT %Q* : Outputs_Channel_E6FE5E20;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

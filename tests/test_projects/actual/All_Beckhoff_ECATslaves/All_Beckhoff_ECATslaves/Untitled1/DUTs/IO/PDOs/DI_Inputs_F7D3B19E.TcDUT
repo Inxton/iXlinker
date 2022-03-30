@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DI_Inputs_F7D3B19E" Id="{0ad85b58-08df-44f1-b335-1e95d4a83c68}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EM7004-0000-0017"}
+{attribute addProperty Id "InputAT %I*Input_D06BCD81162"}
+{attribute addProperty CRC "4157845918"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DI_Inputs_F7D3B19E :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : Input_D06BCD81;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Diagnostic_4CD4E3A2" Id="{136b2aa9-7c9a-4f11-be4a-6f1f1c3b9d90}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2878-0005-0016"}
+{attribute addProperty Id "DiagAT %I*BOOL81"}
+{attribute addProperty CRC "1289020322"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE Diagnostic_4CD4E3A2 :
+STRUCT
+	{attribute addProperty Name "Diag"}
+	Diag AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

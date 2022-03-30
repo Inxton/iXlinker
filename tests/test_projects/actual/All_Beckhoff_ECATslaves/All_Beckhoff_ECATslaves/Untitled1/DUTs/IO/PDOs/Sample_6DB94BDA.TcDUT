@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Sample_6DB94BDA" Id="{fc8bb0e8-520b-4bd6-b2a4-3cedb5fc3e34}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL4732-0001-0000"}
+{attribute addProperty Id "Value1AT %Q*INT1621Value2AT %Q*INT1621"}
+{attribute addProperty CRC "1840860122"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE Sample_6DB94BDA :
+STRUCT
+	{attribute addProperty Name "Value1"}
+	Value1 AT %Q* : INT;
+	{attribute addProperty Name "Value2"}
+	Value2 AT %Q* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

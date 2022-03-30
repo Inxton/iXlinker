@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Control_E047A95D" Id="{7b2a04bf-1296-479e-9719-9679f3d785f7}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5151-0021-0018"}
+{attribute addProperty Id "ControlAT %Q*Control_2605F3141621Set_counter_valueAT %Q*UDINT32417Switch_on_threshold_valueAT %Q*UDINT32418Switch_off_threshold_valueAT %Q*UDINT32419"}
+{attribute addProperty CRC "3762792797"}
+{attribute addProperty SizeInBites "112"}
+{attribute addProperty SizeInBytes "14"}
+TYPE ENC_Control_E047A95D :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_2605F314;
+	{attribute addProperty Name "Set_counter_value"}
+	Set_counter_value AT %Q* : UDINT;
+	{attribute addProperty Name "Switch_on_threshold_value"}
+	Switch_on_threshold_value AT %Q* : UDINT;
+	{attribute addProperty Name "Switch_off_threshold_value"}
+	Switch_off_threshold_value AT %Q* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

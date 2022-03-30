@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_D09D0F61" Id="{9969b927-f79d-4684-b03b-2a136c78ad30}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5001-0000-1016"}
+{attribute addProperty Id "StatusAT %I*USINT811ValueAT %I*UDINT3242"}
+{attribute addProperty CRC "3499954017"}
+{attribute addProperty SizeInBites "40"}
+{attribute addProperty SizeInBytes "5"}
+TYPE Channel_D09D0F61 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : USINT;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9576_EEF16252" Id="{65cdaeb2-1f5d-46f1-9e96-e27dc4fa66af}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL9576-0000-0022"}
+{attribute addProperty Id "BCT_InputsAT %I*BCT_Inputs_4FFA390D136170WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3662139758"}
+{attribute addProperty SizeInBites "218"}
+{attribute addProperty SizeInBytes "27.25"}
+TYPE EL9576_EEF16252 :
+STRUCT
+	{attribute addProperty Name "BCT_Inputs"}
+	BCT_Inputs : BCT_Inputs_4FFA390D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

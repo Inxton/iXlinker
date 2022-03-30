@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_3F3BB279" Id="{331fd13a-4b19-4fe8-9f15-8026a2de90c3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ7342-0000-0019"}
+{attribute addProperty Id "AdsAddrAT %I*AMSADDR6480Chn0AT %I*USINT810Chn1AT %I*USINT810Chn2AT %I*USINT810Chn3AT %I*USINT810StateAT %I*UINT1620"}
+{attribute addProperty CRC "1060876921"}
+{attribute addProperty SizeInBites "112"}
+{attribute addProperty SizeInBytes "14"}
+TYPE InfoData_3F3BB279 :
+STRUCT
+	{attribute addProperty Name "AdsAddr"}
+	AdsAddr AT %I* : AMSADDR;
+	{attribute addProperty Name "Chn0"}
+	Chn0 AT %I* : USINT;
+	{attribute addProperty Name "Chn1"}
+	Chn1 AT %I* : USINT;
+	{attribute addProperty Name "Chn2"}
+	Chn2 AT %I* : USINT;
+	{attribute addProperty Name "Chn3"}
+	Chn3 AT %I* : USINT;
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

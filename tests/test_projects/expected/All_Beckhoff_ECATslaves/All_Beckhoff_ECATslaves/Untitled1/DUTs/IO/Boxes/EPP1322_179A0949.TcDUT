@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP1322_179A0949" Id="{ab638cef-5bff-4f96-86e6-7f8734df19cb}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP1322-0001-0016"}
+{attribute addProperty Id "InfoDataInfoData_192954DE162"}
+{attribute addProperty CRC "395970889"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE EPP1322_179A0949 :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

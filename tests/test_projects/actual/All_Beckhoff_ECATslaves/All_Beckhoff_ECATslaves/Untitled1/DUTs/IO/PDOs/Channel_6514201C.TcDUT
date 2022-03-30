@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_6514201C" Id="{0318eb1a-c1c2-40bd-ab4c-c149c38733a5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL9900-0054"}
+{attribute addProperty Id "Key_1AT %I*BOOL000Key_2AT %I*BOOL000Key_3AT %I*BOOL000Key_4AT %I*BOOL000LED_1AT %Q*BOOL000LED_2AT %Q*BOOL000LED_3AT %Q*BOOL000LED_4AT %Q*BOOL000"}
+{attribute addProperty CRC "1695817756"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE Channel_6514201C :
+STRUCT
+	{attribute addProperty Name "Key_1"}
+	Key_1 AT %I* : BOOL;
+	{attribute addProperty Name "Key_2"}
+	Key_2 AT %I* : BOOL;
+	{attribute addProperty Name "Key_3"}
+	Key_3 AT %I* : BOOL;
+	{attribute addProperty Name "Key_4"}
+	Key_4 AT %I* : BOOL;
+	{attribute addProperty Name "LED_1"}
+	LED_1 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_2"}
+	LED_2 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_3"}
+	LED_3 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_4"}
+	LED_4 AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

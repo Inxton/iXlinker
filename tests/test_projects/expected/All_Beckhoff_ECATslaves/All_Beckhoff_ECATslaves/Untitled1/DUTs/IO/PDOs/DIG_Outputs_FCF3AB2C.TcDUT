@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIG_Outputs_FCF3AB2C" Id="{f5d188a6-a6ba-4fea-b0a9-1695540d388c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2819-0000-0016"}
+{attribute addProperty Id "ChannelAT %Q*ARRAY[0 ..15] OF Channel_D3FEAEF91620"}
+{attribute addProperty CRC "3516801023"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DIG_Outputs_FCF3AB2C :
+STRUCT
+	{attribute addProperty Name "Channel"}
+	Channel AT %Q* : ARRAY[0 ..15] OF Channel_D3FEAEF9;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELX5151_C54C90A5" Id="{7082f942-4139-4d9e-8f83-16757ae7023c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELX5151-0000-0016"}
+{attribute addProperty Id "ENC_Status_compactAT %I*ENC_Status_compact_AB1004C03240ENC_Control_compactAT %Q*ENC_Control_compact_B20E0FB13240WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3471252659"}
+{attribute addProperty SizeInBites "146"}
+{attribute addProperty SizeInBytes "18.25"}
+TYPE ELX5151_C54C90A5 :
+STRUCT
+	{attribute addProperty Name "ENC_Status_compact"}
+	ENC_Status_compact : ENC_Status_compact_AB1004C0;
+	{attribute addProperty Name "ENC_Control_compact"}
+	ENC_Control_compact : ENC_Control_compact_B20E0FB1;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

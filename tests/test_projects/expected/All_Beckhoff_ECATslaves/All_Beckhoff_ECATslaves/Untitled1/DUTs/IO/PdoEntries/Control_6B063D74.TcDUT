@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_6B063D74" Id="{98e53fcc-cda7-40e3-8dcc-e61041463978}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL9221-4030-0018"}
+{attribute addProperty Id "ResetBIT10.1251SwitchBIT10.1252"}
+{attribute addProperty CRC "1795571060"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Control_6B063D74 :
+STRUCT
+	{attribute addProperty Name "Reset"}
+	Reset : BIT;
+	{attribute addProperty Name "Switch"}
+	Switch : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_6 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_7 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_8 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_9 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_10 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_11 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_12 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_13 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

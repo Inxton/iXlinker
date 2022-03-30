@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DI_Inputs_ECDEFC7F" Id="{16c1b701-4e79-499c-9667-611228f3743d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP4314-1002-0016"}
+{attribute addProperty Id "InputAT %I*ARRAY[0 ..1] OF BOOL1620TxPDO_StateAT %I*BOOL8115TxPDO_ToggleAT %I*BOOL8116"}
+{attribute addProperty CRC "2581586498"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE DI_Inputs_ECDEFC7F :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : ARRAY[0 ..1] OF BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

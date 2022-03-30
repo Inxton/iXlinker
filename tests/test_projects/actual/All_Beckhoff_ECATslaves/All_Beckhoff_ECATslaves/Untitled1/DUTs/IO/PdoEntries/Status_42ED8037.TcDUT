@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_42ED8037" Id="{0df311e7-bd57-4a74-b6ea-66607e79bf27}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3356-0000-0017"}
+{attribute addProperty Id "OverrangeBIT10.1252Data_invalidBIT10.1254ErrorBIT10.1257Calibration_in_progressBIT10.1258Steady_stateBIT10.1259Sync_errorBIT10.12532TxPDO_ToggleBIT10.1259"}
+{attribute addProperty CRC "1122861111"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_42ED8037 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1 : BIT;
+	{attribute addProperty Name "Overrange"}
+	Overrange : BIT;
+	{attribute 'hide'}
+	reserve_2 : BIT;
+	{attribute addProperty Name "Data_invalid"}
+	Data_invalid : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_1 : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute addProperty Name "Calibration_in_progress"}
+	Calibration_in_progress : BIT;
+	{attribute addProperty Name "Steady_state"}
+	Steady_state : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_3 : BIT;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BIT;
+	{attribute 'hide'}
+	reserve_5 : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

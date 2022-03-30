@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="APS4322_1E964C4E" Id="{58e77d8d-4f3f-4be3-8055-e22ef28dae83}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "APS4322-7000-0017"}
+{attribute addProperty Id "APS_InputsAT %I*APS_Inputs_32B3017D784980APS_DiagdataAT %I*APS_Diagdata_9B5B9C043240APS_Comm_InputsAT %I*APS_Comm_Inputs_FF1CE56E80100APS_OutputsAT %Q*APS_Outputs_0CD1622111681460APS_Comm_OutputsAT %Q*APS_Comm_Outputs_D1BECFC43240WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "1396157949"}
+{attribute addProperty SizeInBites "2242"}
+{attribute addProperty SizeInBytes "280.25"}
+TYPE APS4322_1E964C4E :
+STRUCT
+	{attribute addProperty Name "APS_Inputs"}
+	APS_Inputs : APS_Inputs_32B3017D;
+	{attribute addProperty Name "APS_Diagdata"}
+	APS_Diagdata : APS_Diagdata_9B5B9C04;
+	{attribute addProperty Name "APS_Comm_Inputs"}
+	APS_Comm_Inputs : APS_Comm_Inputs_FF1CE56E;
+	{attribute addProperty Name "APS_Outputs"}
+	APS_Outputs : APS_Outputs_0CD16221;
+	{attribute addProperty Name "APS_Comm_Outputs"}
+	APS_Comm_Outputs : APS_Comm_Outputs_D1BECFC4;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

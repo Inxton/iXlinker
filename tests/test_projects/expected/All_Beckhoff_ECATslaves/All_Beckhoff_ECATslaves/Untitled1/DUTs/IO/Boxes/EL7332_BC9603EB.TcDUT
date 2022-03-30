@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL7332_BC9603EB" Id="{fc8f6773-21e4-4398-9cbb-389ae97d3619}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL7332-0000-0016"}
+{attribute addProperty Id "DCM_Status_ChannelAT %I*ARRAY[0..1] OF DCM_Status_Channel_C2B0CAE13240DCM_Control_Channel_1AT %Q*DCM_Control_Channel_6F24B2C41620DCM_Velocity_Channel_1AT %Q*DCM_Velocity_Channel_1D89B5C21620DCM_Control_Channel_2AT %Q*DCM_Control_Channel_6F24B2C41620DCM_Velocity_Channel_2AT %Q*DCM_Velocity_Channel_1D89B5C21620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_1C46E3E796120"}
+{attribute addProperty CRC "1298637643"}
+{attribute addProperty SizeInBites "194"}
+{attribute addProperty SizeInBytes "24.25"}
+TYPE EL7332_BC9603EB :
+STRUCT
+	{attribute addProperty Name "DCM_Status_Channel"}
+	DCM_Status_Channel : ARRAY[0..1] OF DCM_Status_Channel_C2B0CAE1;
+	{attribute addProperty Name "DCM_Control_Channel_1"}
+	DCM_Control_Channel_1 : DCM_Control_Channel_6F24B2C4;
+	{attribute addProperty Name "DCM_Velocity_Channel_1"}
+	DCM_Velocity_Channel_1 : DCM_Velocity_Channel_1D89B5C2;
+	{attribute addProperty Name "DCM_Control_Channel_2"}
+	DCM_Control_Channel_2 : DCM_Control_Channel_6F24B2C4;
+	{attribute addProperty Name "DCM_Velocity_Channel_2"}
+	DCM_Velocity_Channel_2 : DCM_Velocity_Channel_1D89B5C2;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_1C46E3E7;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

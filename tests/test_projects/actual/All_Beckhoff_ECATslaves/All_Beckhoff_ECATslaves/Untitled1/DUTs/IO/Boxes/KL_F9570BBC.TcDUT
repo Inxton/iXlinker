@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL_F9570BBC" Id="{e548c22f-d6f7-468b-9600-9dcb5fa5e50d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL8610-0002"}
+{attribute addProperty Id "KL8601_1KL_B0A8062F00KL8601_2KL_B0A8062F00KL8601_3KL_B0A8062F00"}
+{attribute addProperty CRC "4183231420"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL_F9570BBC :
+STRUCT
+	{attribute addProperty Name "KL8601_1"}
+	KL8601_1 : KL_B0A8062F;
+	{attribute addProperty Name "KL8601_2"}
+	KL8601_2 : KL_B0A8062F;
+	{attribute addProperty Name "KL8601_3"}
+	KL8601_3 : KL_B0A8062F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

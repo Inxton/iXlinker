@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PLS_Inputs_5BCA199F" Id="{6e15c466-01b5-44ab-92fb-aabe653b63c3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EM7004-0000-0017"}
+{attribute addProperty Id "StatusAT %I*Status_CBD542B4162"}
+{attribute addProperty CRC "1539971487"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE PLS_Inputs_5BCA199F :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_CBD542B4;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

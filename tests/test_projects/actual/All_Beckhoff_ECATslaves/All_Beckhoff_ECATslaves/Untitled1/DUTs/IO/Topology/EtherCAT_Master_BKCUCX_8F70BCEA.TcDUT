@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_BKCUCX_8F70BCEA" Id="{e53b3d52-75df-4cf5-a2e9-822edd96b604}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_BKxxxxBeckhoff_BKxxxx_655B233100Beckhoff_CUxxxxBeckhoff_CUxxxx_D57B3A25966120.75Beckhoff_CXxxxxBeckhoff_CXxxxx_5AB893DE4152519TcTerminals210_EK1100_1TcTerminals210_EK1100_1_99191ECD00TcTerminals210_EK1100_2TcTerminals210_EK1100_2_BDAFA3B600SyncUnitsSyncUnits_CAB22D3B19524.375InputsInputs_C75D3FEC1280160OutputsOutputs_47D1E803848106InfoDataInfoData_E9F65A829612"}
+{attribute addProperty CRC "2406530282"}
+{attribute addProperty SizeInBites "7537"}
+{attribute addProperty SizeInBytes "942.125"}
+TYPE EtherCAT_Master_BKCUCX_8F70BCEA :
+STRUCT
+	{attribute addProperty Name "Beckhoff_BKxxxx"}
+	Beckhoff_BKxxxx : Beckhoff_BKxxxx_655B2331;
+	{attribute addProperty Name "Beckhoff_CUxxxx"}
+	Beckhoff_CUxxxx : Beckhoff_CUxxxx_D57B3A25;
+	{attribute addProperty Name "Beckhoff_CXxxxx"}
+	Beckhoff_CXxxxx : Beckhoff_CXxxxx_5AB893DE;
+	{attribute addProperty Name "TcTerminals210_EK1100_1"}
+	TcTerminals210_EK1100_1 : TcTerminals210_EK1100_1_99191ECD;
+	{attribute addProperty Name "TcTerminals210_EK1100_2"}
+	TcTerminals210_EK1100_2 : TcTerminals210_EK1100_2_BDAFA3B6;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_CAB22D3B;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_C75D3FEC;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_47D1E803;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_E9F65A82;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

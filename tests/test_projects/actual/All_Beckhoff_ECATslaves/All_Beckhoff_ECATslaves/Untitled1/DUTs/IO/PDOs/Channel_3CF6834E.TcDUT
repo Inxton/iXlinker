@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_3CF6834E" Id="{798272e5-7e8c-4a21-a6f7-a1a3bfd3ce05}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL2642-0050"}
+{attribute addProperty Id "State_RelayAT %I*BOOL000OutputAT %Q*BOOL000"}
+{attribute addProperty CRC "1022788430"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE Channel_3CF6834E :
+STRUCT
+	{attribute addProperty Name "State_Relay"}
+	State_Relay AT %I* : BOOL;
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

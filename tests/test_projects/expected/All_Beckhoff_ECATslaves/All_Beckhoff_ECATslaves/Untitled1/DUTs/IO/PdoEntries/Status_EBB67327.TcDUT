@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_EBB67327" Id="{05171432-2169-400a-b5f6-e24d959590b0}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL9221-4030-0018"}
+{attribute addProperty Id "EnabledBIT10.1251TrippedBIT10.1252Hardware_ProtectionBIT10.1255Current_Level_WarningBIT10.1258Cool_Down_LockBIT10.1259DiagBIT10.12513TxPDO_StateBIT10.12514Input_cycle_counter_BIT_0BIT10.12515Input_cycle_counter_BIT_1BIT10.12515ErrorBIT10.12519State_ResetBIT10.12520State_SwitchBIT10.12521"}
+{attribute addProperty CRC "3954602791"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE Status_EBB67327 :
+STRUCT
+	{attribute addProperty Name "Enabled"}
+	Enabled : BIT;
+	{attribute addProperty Name "Tripped"}
+	Tripped : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute addProperty Name "Hardware_Protection"}
+	Hardware_Protection : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute addProperty Name "Current_Level_Warning"}
+	Current_Level_Warning : BIT;
+	{attribute addProperty Name "Cool_Down_Lock"}
+	Cool_Down_Lock : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_2 : BIT;
+	{attribute addProperty Name "Diag"}
+	Diag : BIT;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BIT;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter_BIT_0 : BIT;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_1 : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute addProperty Name "State_Reset"}
+	State_Reset : BIT;
+	{attribute addProperty Name "State_Switch"}
+	State_Switch : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_6 : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_7 : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_8 : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_9 : BIT;
+	{attribute 'hide'}
+	reserve_5_BIT_10 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

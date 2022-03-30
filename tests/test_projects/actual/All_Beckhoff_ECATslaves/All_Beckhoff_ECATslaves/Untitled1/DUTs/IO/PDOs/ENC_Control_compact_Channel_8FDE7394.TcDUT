@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Control_compact_Channel_8FDE7394" Id="{20eacd32-4285-44d4-9a5a-c6e23e99df84}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5152-0000-0016"}
+{attribute addProperty Id "Set_counterAT %Q*BOOL813Set_counter_valueAT %Q*UINT16217"}
+{attribute addProperty CRC "2413720468"}
+{attribute addProperty SizeInBites "24"}
+{attribute addProperty SizeInBytes "3"}
+TYPE ENC_Control_compact_Channel_8FDE7394 :
+STRUCT
+	{attribute addProperty Name "Set_counter"}
+	Set_counter AT %Q* : BOOL;
+	{attribute addProperty Name "Set_counter_value"}
+	Set_counter_value AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

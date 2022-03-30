@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch_2_6B354951" Id="{9ca8195b-dfa2-4a24-9b3a-f05be7bd6ed9}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3182-0000-0016"}
+{attribute addProperty Id "Ch_2_Al_InputsCh_2_Al_Inputs_D230195D324"}
+{attribute addProperty CRC "1798654289"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE Ch_2_6B354951 :
+STRUCT
+	{attribute addProperty Name "Ch_2_Al_Inputs"}
+	Ch_2_Al_Inputs  : Ch_2_Al_Inputs_D230195D;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

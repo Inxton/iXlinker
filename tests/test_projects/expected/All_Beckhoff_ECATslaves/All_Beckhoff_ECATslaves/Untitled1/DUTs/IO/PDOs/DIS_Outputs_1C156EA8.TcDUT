@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIS_Outputs_1C156EA8" Id="{d88da4ff-fe2e-4945-8284-0082c94726d1}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6090-0000-0016"}
+{attribute addProperty Id "Value_rowAT %Q*ARRAY[0 ..1] OF INT3240"}
+{attribute addProperty CRC "2574158423"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE DIS_Outputs_1C156EA8 :
+STRUCT
+	{attribute addProperty Name "Value_row"}
+	Value_row AT %Q* : ARRAY[0 ..1] OF INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

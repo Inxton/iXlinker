@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AX5021_292ACD47" Id="{c5d1bdf5-be43-42f3-839a-483b80d94c85}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX5021-0000-0002-0002"}
+{attribute addProperty Id "AT_xAT %I*AT_x_F64797681620MDTAT %Q*MDT_81E4A3441620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_AEB17F4D152190"}
+{attribute addProperty CRC "2967045990"}
+{attribute addProperty SizeInBites "186"}
+{attribute addProperty SizeInBytes "23.25"}
+TYPE AX5021_292ACD47 :
+STRUCT
+	{attribute addProperty Name "AT_x"}
+	AT_x : AT_x_F6479768;
+	{attribute addProperty Name "MDT"}
+	MDT : MDT_81E4A344;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_AEB17F4D;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

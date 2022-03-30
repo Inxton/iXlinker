@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9160_AE5731BA" Id="{0c2f675b-5141-4d51-883c-6fabb80bab1d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL9160-0000-0016"}
+{attribute addProperty Id "PowerOKAT %I*PowerOK_E4AEF59E810WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "913442673"}
+{attribute addProperty SizeInBites "26"}
+{attribute addProperty SizeInBytes "3.25"}
+TYPE EL9160_AE5731BA :
+STRUCT
+	{attribute addProperty Name "PowerOK"}
+	PowerOK : PowerOK_E4AEF59E;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_EKxxxx_AFFC15C4" Id="{bdc4ab18-976e-4962-b31e-b6123ca97b5b}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_EK11xxBeckhoff_EK11xx_C12453FF49061.25Beckhoff_EK12xxBeckhoff_EK12xx_26FD3E4A162Beckhoff_EK13xxBeckhoff_EK13xx_F78FC0F811814.75Beckhoff_EK15xxBeckhoff_EK15xx_2CCE234B61476.75Beckhoff_EK18xxBeckhoff_EK18xx_2BB313921271158.875Beckhoff_EKM1xxxBeckhoff_EKM1xxx_4291A3D42901362.625Beckhoff_EKx9xxBeckhoff_EKx9xx_143049714464558Beckhoff_EKxxxx_0080Beckhoff_EKxxxx_0080_F8E2E0BC648SyncUnitsSyncUnits_CAB22D3B19524.375InputsInputs_C75D3FEC1280160OutputsOutputs_47D1E803848106InfoDataInfoData_E9F65A829612"}
+{attribute addProperty CRC "2952533444"}
+{attribute addProperty SizeInBites "12357"}
+{attribute addProperty SizeInBytes "1544.625"}
+TYPE EtherCAT_Master_EKxxxx_AFFC15C4 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EK11xx"}
+	Beckhoff_EK11xx : Beckhoff_EK11xx_C12453FF;
+	{attribute addProperty Name "Beckhoff_EK12xx"}
+	Beckhoff_EK12xx : Beckhoff_EK12xx_26FD3E4A;
+	{attribute addProperty Name "Beckhoff_EK13xx"}
+	Beckhoff_EK13xx : Beckhoff_EK13xx_F78FC0F8;
+	{attribute addProperty Name "Beckhoff_EK15xx"}
+	Beckhoff_EK15xx : Beckhoff_EK15xx_2CCE234B;
+	{attribute addProperty Name "Beckhoff_EK18xx"}
+	Beckhoff_EK18xx : Beckhoff_EK18xx_2BB31392;
+	{attribute addProperty Name "Beckhoff_EKM1xxx"}
+	Beckhoff_EKM1xxx : Beckhoff_EKM1xxx_4291A3D4;
+	{attribute addProperty Name "Beckhoff_EKx9xx"}
+	Beckhoff_EKx9xx : Beckhoff_EKx9xx_14304971;
+	{attribute addProperty Name "Beckhoff_EKxxxx_0080"}
+	Beckhoff_EKxxxx_0080 : Beckhoff_EKxxxx_0080_F8E2E0BC;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_CAB22D3B;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_C75D3FEC;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_47D1E803;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_E9F65A82;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

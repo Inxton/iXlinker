@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_Uin_51406150" Id="{26f41588-47ff-4da5-8285-8077085edd5e}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELX9560-0000-0018"}
+{attribute addProperty Id "Uin_OKAT %I*BOOL81"}
+{attribute addProperty CRC "1363173712"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE Status_Uin_51406150 :
+STRUCT
+	{attribute addProperty Name "Uin_OK"}
+	Uin_OK AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

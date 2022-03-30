@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Outputs_C13D2F24" Id="{62dba784-7d92-4826-89cf-4fce42b6d484}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2521-1001-0000"}
+{attribute addProperty Id "CtrlAT %Q*USINT811Data_OutAT %Q*UINT1622"}
+{attribute addProperty CRC "3242012452"}
+{attribute addProperty SizeInBites "24"}
+{attribute addProperty SizeInBytes "3"}
+TYPE Outputs_C13D2F24 :
+STRUCT
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out"}
+	Data_Out AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

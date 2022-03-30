@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CU1561_179A0949" Id="{7eb66102-522c-4b13-9959-6b5e36ec321b}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "CU1561--0000"}
+{attribute addProperty Id "InfoDataInfoData_192954DE162"}
+{attribute addProperty CRC "395970889"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE CU1561_179A0949 :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="TACHO_Single_Shaft_Mode_Input_Channel_15D41B73" Id="{929aa69d-02d5-4f00-b0cc-cb3851eeb04d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP8309-0022-0021"}
+{attribute addProperty Id "StatusAT %I*Status_8FE9D3301620Rotational_SpeedAT %I*INT16217Rotation_DirectionAT %I*UINT16218"}
+{attribute addProperty CRC "366222195"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE TACHO_Single_Shaft_Mode_Input_Channel_15D41B73 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_8FE9D330;
+	{attribute addProperty Name "Rotational_Speed"}
+	Rotational_Speed AT %I* : INT;
+	{attribute addProperty Name "Rotation_Direction"}
+	Rotation_Direction AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

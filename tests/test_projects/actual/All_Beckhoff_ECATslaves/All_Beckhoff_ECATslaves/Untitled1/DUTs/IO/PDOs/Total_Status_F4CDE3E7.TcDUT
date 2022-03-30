@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Total_Status_F4CDE3E7" Id="{e7281590-ec00-4ce6-92fa-f6497fca8e27}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3423-0000-0016"}
+{attribute addProperty Id "System_StateAT %I*BOOL811Grid_DirectionAT %I*BOOL812Frequency_Guard_WarningAT %I*BOOL813Frequency_Guard_ErrorAT %I*BOOL814Neutral_Current_Guard_WarningAT %I*BOOL815Neutral_Current_Guard_ErrorAT %I*BOOL816Active_Power_Guard_WarningAT %I*BOOL817Active_Power_Guard_ErrorAT %I*BOOL818Apparent_Power_Guard_WarningAT %I*BOOL819Apparent_Power_Guard_ErrorAT %I*BOOL8110Power_Quality_Guard_WarningAT %I*BOOL8111Power_Quality_Guard_ErrorAT %I*BOOL8112TxPDO_StateAT %I*BOOL8115TxPDO_ToggleAT %I*BOOL8116Power_Quality_FactorAT %I*REAL32417"}
+{attribute addProperty CRC "4107133927"}
+{attribute addProperty SizeInBites "144"}
+{attribute addProperty SizeInBytes "18"}
+TYPE Total_Status_F4CDE3E7 :
+STRUCT
+	{attribute addProperty Name "System_State"}
+	System_State AT %I* : BOOL;
+	{attribute addProperty Name "Grid_Direction"}
+	Grid_Direction AT %I* : BOOL;
+	{attribute addProperty Name "Frequency_Guard_Warning"}
+	Frequency_Guard_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Frequency_Guard_Error"}
+	Frequency_Guard_Error AT %I* : BOOL;
+	{attribute addProperty Name "Neutral_Current_Guard_Warning"}
+	Neutral_Current_Guard_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Neutral_Current_Guard_Error"}
+	Neutral_Current_Guard_Error AT %I* : BOOL;
+	{attribute addProperty Name "Active_Power_Guard_Warning"}
+	Active_Power_Guard_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Active_Power_Guard_Error"}
+	Active_Power_Guard_Error AT %I* : BOOL;
+	{attribute addProperty Name "Apparent_Power_Guard_Warning"}
+	Apparent_Power_Guard_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Apparent_Power_Guard_Error"}
+	Apparent_Power_Guard_Error AT %I* : BOOL;
+	{attribute addProperty Name "Power_Quality_Guard_Warning"}
+	Power_Quality_Guard_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Power_Quality_Guard_Error"}
+	Power_Quality_Guard_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Power_Quality_Factor"}
+	Power_Quality_Factor AT %I* : REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="COM_TxPDO_Map_Inputs_Channel_18212A5E" Id="{bbfbb01a-dfac-49ad-9b13-292f714d8da8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP6002-0002-0018"}
+{attribute addProperty Id "StatusAT %I*UINT1621Data_InAT %I*ARRAY[0 ..21] OF USINT176220"}
+{attribute addProperty CRC "2032034109"}
+{attribute addProperty SizeInBites "192"}
+{attribute addProperty SizeInBytes "24"}
+TYPE COM_TxPDO_Map_Inputs_Channel_18212A5E :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : UINT;
+	{attribute addProperty Name "Data_In"}
+	Data_In AT %I* : ARRAY[0 ..21] OF USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

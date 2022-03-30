@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SAI_Range_E3AE57CD" Id="{a31005a2-3494-4909-90de-2297b8cf5943}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3681-0000-0017"}
+{attribute addProperty Id "CtrlAT %Q*Ctrl_D7097D21162"}
+{attribute addProperty CRC "3819853773"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE SAI_Range_E3AE57CD :
+STRUCT
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : Ctrl_D7097D21;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

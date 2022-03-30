@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_B8364C25" Id="{525a0103-9872-42fa-bd5a-455728360eee}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL2300-0100"}
+{attribute addProperty Id "InputAT %I*BOOL000OutputAT %Q*BOOL000"}
+{attribute addProperty CRC "3090566181"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE Channel_B8364C25 :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : BOOL;
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

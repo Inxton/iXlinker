@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Inputs_6FCA64CB" Id="{cfcce096-c312-4ea7-ac8c-2bf57a509b5a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5151-0080-0016"}
+{attribute addProperty Id "Latch_C_validAT %I*BOOL811Latch_extern_validAT %I*BOOL812Set_counter_doneAT %I*BOOL813Extrapolation_stallAT %I*BOOL818Status_of_input_AAT %I*BOOL819Status_of_input_BAT %I*BOOL8110Status_of_input_CAT %I*BOOL8111Status_of_extern_latchAT %I*BOOL8113Sync_ErrorAT %I*BOOL8132TxPDO_ToggleAT %I*BOOL819Counter_valueAT %I*UINT16217Latch_valueAT %I*UINT16218"}
+{attribute addProperty CRC "1875535051"}
+{attribute addProperty SizeInBites "112"}
+{attribute addProperty SizeInBytes "14"}
+TYPE ENC_Inputs_6FCA64CB :
+STRUCT
+	{attribute addProperty Name "Latch_C_valid"}
+	Latch_C_valid AT %I* : BOOL;
+	{attribute addProperty Name "Latch_extern_valid"}
+	Latch_extern_valid AT %I* : BOOL;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done AT %I* : BOOL;
+	{attribute addProperty Name "Extrapolation_stall"}
+	Extrapolation_stall AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_A"}
+	Status_of_input_A AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_B"}
+	Status_of_input_B AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_C"}
+	Status_of_input_C AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_extern_latch"}
+	Status_of_extern_latch AT %I* : BOOL;
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UINT;
+	{attribute addProperty Name "Latch_value"}
+	Latch_value AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

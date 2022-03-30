@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2502_6A665145" Id="{7530b1ec-5a67-4c96-bf9f-5b613ef98539}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2502-0010-0020"}
+{attribute addProperty Id "PWM_Inputs_Channel_1AT %I*PWM_Inputs_Channel_F0CD9CDB1620PWM_SysTime_Channel_1AT %I*PWM_SysTime_Channel_D079C8006480PWM_Per_DC_Outputs_Channel_1AT %Q*PWM_Per_DC_Outputs_Channel_93D6009A112140WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2552064908"}
+{attribute addProperty SizeInBites "274"}
+{attribute addProperty SizeInBytes "34.25"}
+TYPE EL2502_6A665145 :
+STRUCT
+	{attribute addProperty Name "PWM_Inputs_Channel_1"}
+	PWM_Inputs_Channel_1 : PWM_Inputs_Channel_F0CD9CDB;
+	{attribute addProperty Name "PWM_SysTime_Channel_1"}
+	PWM_SysTime_Channel_1 : PWM_SysTime_Channel_D079C800;
+	{attribute addProperty Name "PWM_Per_DC_Outputs_Channel_1"}
+	PWM_Per_DC_Outputs_Channel_1 : PWM_Per_DC_Outputs_Channel_93D6009A;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

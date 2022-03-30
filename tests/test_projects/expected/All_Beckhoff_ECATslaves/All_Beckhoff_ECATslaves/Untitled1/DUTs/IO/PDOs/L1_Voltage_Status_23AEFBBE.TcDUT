@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L1_Voltage_Status_23AEFBBE" Id="{cf0d1ba4-b7bc-43ba-974d-cefb6f2d454e}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3773-0000-0016"}
+{attribute addProperty Id "U1_STATUSAT %I*U1_STATUS_F9B4A013162"}
+{attribute addProperty CRC "598670270"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE L1_Voltage_Status_23AEFBBE :
+STRUCT
+	{attribute addProperty Name "U1_STATUS"}
+	U1_STATUS AT %I* : U1_STATUS_F9B4A013;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

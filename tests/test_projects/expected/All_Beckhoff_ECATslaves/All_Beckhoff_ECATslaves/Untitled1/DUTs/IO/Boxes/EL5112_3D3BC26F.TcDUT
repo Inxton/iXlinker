@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5112_3D3BC26F" Id="{3595a79a-c444-4d53-badc-1dee71a52f0f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5112-0000-0016"}
+{attribute addProperty Id "ENC_Status_Channel_1AT %I*ENC_Status_Channel_D7AAABA7128160ENC_Control_Channel_1AT %Q*ENC_Control_Channel_C4E6260B4860WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1632537245"}
+{attribute addProperty SizeInBites "258"}
+{attribute addProperty SizeInBytes "32.25"}
+TYPE EL5112_3D3BC26F :
+STRUCT
+	{attribute addProperty Name "ENC_Status_Channel_1"}
+	ENC_Status_Channel_1 : ENC_Status_Channel_D7AAABA7;
+	{attribute addProperty Name "ENC_Control_Channel_1"}
+	ENC_Control_Channel_1 : ENC_Control_Channel_C4E6260B;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

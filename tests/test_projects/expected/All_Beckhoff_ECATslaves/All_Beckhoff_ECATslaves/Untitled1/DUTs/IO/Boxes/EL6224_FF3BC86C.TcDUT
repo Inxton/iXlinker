@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6224_FF3BC86C" Id="{9ddc1425-79a9-4239-bac1-e643529bc0b3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6224-0000-0017"}
+{attribute addProperty Id "DeviceState_Inputs_DeviceAT %I*DeviceState_Inputs_Device_345DC0EE1620DeviceState_InputsAT %I*DeviceState_Inputs_BDC6BEC33240IO_Inputs_ChannelARRAY[0..0] OF EMPTY_STRUCTURE000IO_Outputs_ChannelARRAY[0..0] OF EMPTY_STRUCTURE000WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_275E3363128160"}
+{attribute addProperty CRC "692922114"}
+{attribute addProperty SizeInBites "178"}
+{attribute addProperty SizeInBytes "22.25"}
+TYPE EL6224_FF3BC86C :
+STRUCT
+	{attribute addProperty Name "DeviceState_Inputs_Device"}
+	DeviceState_Inputs_Device : DeviceState_Inputs_Device_345DC0EE;
+	{attribute addProperty Name "DeviceState_Inputs"}
+	DeviceState_Inputs : DeviceState_Inputs_BDC6BEC3;
+	{attribute addProperty Name "IO_Inputs_Channel"}
+	IO_Inputs_Channel : ARRAY[0..0] OF EMPTY_STRUCTURE;
+	{attribute addProperty Name "IO_Outputs_Channel"}
+	IO_Outputs_Channel : ARRAY[0..0] OF EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_275E3363;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

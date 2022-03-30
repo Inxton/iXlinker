@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="I5_Current_9D39445A" Id="{aef77828-1e27-432d-a4de-1da75756ef35}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3446-0000-0016"}
+{attribute addProperty Id "OvercurrentAT %I*BOOL813Inaccurate_CurrentAT %I*BOOL815Current_Guard_WarningAT %I*BOOL818Current_Guard_ErrorAT %I*BOOL819TxPDO_ToggleAT %I*BOOL8116CurrentAT %I*REAL32417"}
+{attribute addProperty CRC "2637775962"}
+{attribute addProperty SizeInBites "72"}
+{attribute addProperty SizeInBytes "9"}
+TYPE I5_Current_9D39445A :
+STRUCT
+	{attribute addProperty Name "Overcurrent"}
+	Overcurrent AT %I* : BOOL;
+	{attribute addProperty Name "Inaccurate_Current"}
+	Inaccurate_Current AT %I* : BOOL;
+	{attribute addProperty Name "Current_Guard_Warning"}
+	Current_Guard_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Current_Guard_Error"}
+	Current_Guard_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Current"}
+	Current AT %I* : REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

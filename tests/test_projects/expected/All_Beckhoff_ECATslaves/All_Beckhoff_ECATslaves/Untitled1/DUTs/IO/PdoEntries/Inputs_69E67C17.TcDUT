@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Inputs_69E67C17" Id="{be97da29-814b-4d30-9b33-5c94f411994a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1258-0010-0017"}
+{attribute addProperty Id "Input_event_state_1BIT10.12533"}
+{attribute addProperty CRC "1776712727"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE Inputs_69E67C17 :
+STRUCT
+	{attribute addProperty Name "Input_event_state_1"}
+	Input_event_state_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_6 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_7 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_8 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_9 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_10 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_11 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_12 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_13 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_14 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_15 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_16 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_17 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_18 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_19 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_20 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_21 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_22 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_23 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_24 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_25 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_26 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_27 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_28 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_29 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_30 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

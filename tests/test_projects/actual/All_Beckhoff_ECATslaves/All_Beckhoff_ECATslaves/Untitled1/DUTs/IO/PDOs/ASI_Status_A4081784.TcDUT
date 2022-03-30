@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ASI_Status_A4081784" Id="{dd043815-ffcc-4534-a6d4-5789e2e297e5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6201-0000-0017"}
+{attribute addProperty Id "Configuration_okayAT %I*BOOL811Power_FailAT %I*BOOL812Auto_addresing_mode_enabledAT %I*BOOL813Auto_addressing_mode_availableAT %I*BOOL814Protected_mode_activeAT %I*BOOL815Slave_with_address_0_foundAT %I*BOOL816Offline_ReadyAT %I*BOOL817Normal_OperationAT %I*BOOL818ASI_phaseAT %I*BYTE819Sync_errorAT %I*BOOL8114TxPDO_ToggleAT %I*BOOL8116"}
+{attribute addProperty CRC "2751993732"}
+{attribute addProperty SizeInBites "88"}
+{attribute addProperty SizeInBytes "11"}
+TYPE ASI_Status_A4081784 :
+STRUCT
+	{attribute addProperty Name "Configuration_okay"}
+	Configuration_okay AT %I* : BOOL;
+	{attribute addProperty Name "Power_Fail"}
+	Power_Fail AT %I* : BOOL;
+	{attribute addProperty Name "Auto_addresing_mode_enabled"}
+	Auto_addresing_mode_enabled AT %I* : BOOL;
+	{attribute addProperty Name "Auto_addressing_mode_available"}
+	Auto_addressing_mode_available AT %I* : BOOL;
+	{attribute addProperty Name "Protected_mode_active"}
+	Protected_mode_active AT %I* : BOOL;
+	{attribute addProperty Name "Slave_with_address_0_found"}
+	Slave_with_address_0_found AT %I* : BOOL;
+	{attribute addProperty Name "Offline_Ready"}
+	Offline_Ready AT %I* : BOOL;
+	{attribute addProperty Name "Normal_Operation"}
+	Normal_Operation AT %I* : BOOL;
+	{attribute addProperty Name "ASI_phase"}
+	ASI_phase AT %I* : BYTE;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

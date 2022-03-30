@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL1262_FE5A7D82" Id="{cec9cf98-ba3b-4627-a807-2e445d8f0eef}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1262-0000-0002"}
+{attribute addProperty Id "Ch1_CycleCountAT %I*Ch1_CycleCount_2F207C3C1620Ch1_InputAT %I*ARRAY[0..9] OF Ch1_Input_FD9B961D80100GapAT %I*EMPTY_STRUCTURE000Ch2_CycleCountAT %I*Ch2_CycleCount_7D759C541620Ch2_InputAT %I*ARRAY[0..9] OF Ch2_Input_E3B70EF680100Gap_1AT %I*EMPTY_STRUCTURE000NextSync1TimeAT %I*NextSync1Time_EAC4272D3240WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "3363683180"}
+{attribute addProperty SizeInBites "306"}
+{attribute addProperty SizeInBytes "38.25"}
+TYPE EL1262_FE5A7D82 :
+STRUCT
+	{attribute addProperty Name "Ch1_CycleCount"}
+	Ch1_CycleCount : Ch1_CycleCount_2F207C3C;
+	{attribute addProperty Name "Ch1_Input"}
+	Ch1_Input : ARRAY[0..9] OF Ch1_Input_FD9B961D;
+	{attribute addProperty Name "Gap"}
+	Gap : EMPTY_STRUCTURE;
+	{attribute addProperty Name "Ch2_CycleCount"}
+	Ch2_CycleCount : Ch2_CycleCount_7D759C54;
+	{attribute addProperty Name "Ch2_Input"}
+	Ch2_Input : ARRAY[0..9] OF Ch2_Input_E3B70EF6;
+	{attribute addProperty Name "Gap_1"}
+	Gap_1 : EMPTY_STRUCTURE;
+	{attribute addProperty Name "NextSync1Time"}
+	NextSync1Time : NextSync1Time_EAC4272D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

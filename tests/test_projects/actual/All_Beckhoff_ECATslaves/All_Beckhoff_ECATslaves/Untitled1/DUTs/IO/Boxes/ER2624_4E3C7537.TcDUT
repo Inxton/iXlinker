@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ER2624_4E3C7537" Id="{7d8b22a1-36b8-4013-b405-1d8ed655cc26}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ER2624-0002-0018"}
+{attribute addProperty Id "ChannelAT %Q*ARRAY[0..3] OF Channel_7F374EB03240WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "2753798610"}
+{attribute addProperty SizeInBites "49"}
+{attribute addProperty SizeInBytes "6.125"}
+TYPE ER2624_4E3C7537 :
+STRUCT
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..3] OF Channel_7F374EB0;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_28A86775;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

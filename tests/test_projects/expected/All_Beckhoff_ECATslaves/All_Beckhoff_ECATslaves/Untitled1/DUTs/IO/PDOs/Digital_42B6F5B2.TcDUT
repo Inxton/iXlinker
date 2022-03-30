@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Digital_42B6F5B2" Id="{c1862c0e-9c45-43a2-b3b3-66e49a94d60f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EM7004-0000-9995"}
+{attribute addProperty Id "InputAT %I*ARRAY[0 ..15] OF BOOL128160"}
+{attribute addProperty CRC "1547216551"}
+{attribute addProperty SizeInBites "128"}
+{attribute addProperty SizeInBytes "16"}
+TYPE Digital_42B6F5B2 :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : ARRAY[0 ..15] OF BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

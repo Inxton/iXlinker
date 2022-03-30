@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_AMI8xxxEK1122_B38FD36B" Id="{f66d0bd1-d8a0-40ec-a3f0-33df6eb1ca81}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "Beckhoff_AMI8xxxsub_EK1100EK1100_179A0949162A_0001_AMI8000_0000_0016AMI8000_17A3F7C129837.25A_0002_AMI8000_0090_0016AMI8000_17A3F7C129837.25"}
+{attribute addProperty CRC "3012547435"}
+{attribute addProperty SizeInBites "612"}
+{attribute addProperty SizeInBytes "76.5"}
+TYPE Beckhoff_AMI8xxxEK1122_B38FD36B EXTENDS EK1122_179A0949 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_AMI8xxxsub_EK1100"}
+	Beckhoff_AMI8xxxsub_EK1100 : EK1100_179A0949;
+	{attribute addProperty Name "A_0001_AMI8000_0000_0016"}
+	A_0001_AMI8000_0000_0016 : AMI8000_17A3F7C1;
+	{attribute addProperty Name "A_0002_AMI8000_0090_0016"}
+	A_0002_AMI8000_0090_0016 : AMI8000_17A3F7C1;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

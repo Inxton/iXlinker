@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2602_452236B5" Id="{fea92964-5e31-441e-aba5-253094173f87}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2602-0010-0016"}
+{attribute addProperty Id "InputsAT %I*Inputs_BDF19946810ChannelAT %Q*ARRAY[0..1] OF Channel_7F374EB01620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "2838703381"}
+{attribute addProperty SizeInBites "42"}
+{attribute addProperty SizeInBytes "5.25"}
+TYPE EL2602_452236B5 :
+STRUCT
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_BDF19946;
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..1] OF Channel_7F374EB0;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

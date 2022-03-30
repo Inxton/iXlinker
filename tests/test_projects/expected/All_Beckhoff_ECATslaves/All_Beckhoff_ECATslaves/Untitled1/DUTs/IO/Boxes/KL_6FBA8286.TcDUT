@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL_6FBA8286" Id="{9efa5379-c940-418c-bca6-a0779aac16f5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL9505-0010"}
+{attribute addProperty Id "Diag_1Diag_619B670300"}
+{attribute addProperty CRC "1874494086"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL_6FBA8286 :
+STRUCT
+	{attribute addProperty Name "Diag_1"}
+	Diag_1 : Diag_619B6703;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

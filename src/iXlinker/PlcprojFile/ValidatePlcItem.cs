@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Text;
 using iXlinker.Utils;
 using iXlinkerDtos;
@@ -198,83 +199,93 @@ namespace PlcprojFile
         public static string Type(string type)
         {
             string ret = type;
-            if (ret != null)
-            {
-                if (ret.ToUpper().Contains("ARRAY"))
-                {
-                    ret = ReplaceSpecialChars(ret, SpecialCharsArrayType);
-                    if (ret.Contains("BIT"))
-                    {
-                        ret = ret.Replace("BIT","BOOL");
-                    }
-                }
-                else
-                {
-                    ret = ReplaceSpecialChars(ret, SpecialCharsType);
-                }
-                ret = ret.Replace("_" + TcModel.tmpLevelSeparator, TcModel.tmpLevelSeparator);
-                ret = ReplaceKeywords(ret);
-                ret = RemoveDiacritics(ret);
-                ret = ReplaceDoubleUnderscores(ret);
-                ret = AddUnderscorePrefixIfStartsWithNumber(ret);
-                ret = ret.Replace("_" + TcModel.plcStructSeparator, TcModel.plcStructSeparator);
 
-                if (ret == "BIT") ret = "BOOL";
-                if (ret != "BIT" && ret.Contains("BIT") && !ret.Contains("ARRAY") && !ret.Contains("BITARR"))
-                {
-                    try
-                    {
-                        int dim = Int32.Parse(ret.Replace("BIT", ""));
-                        if (dim > 1 && dim <= 8) ret = "BYTE";
-                        else if (dim > 8 && dim <= 16) ret = "WORD";
-                        else if (dim > 16 && dim <= 32) ret = "DWORD";
-                    }
-                        catch (Exception ex)
-                    {
-                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                    }
+            //if (ret != null)
+            //{
+            //    if (ret.ToUpper().Contains("ARRAY"))
+            //    {
+            //        //for example "ARRAY [0..5] OF BIT" in: "EL6688-0000-0019".External_Sync.Gap
+            //        //for example "ARRAY [0..4] OF BIT" in: "EL6688-0000-0019".External_Sync.Gap_1
+            //        ret = ReplaceSpecialChars(ret, SpecialCharsArrayType);
+            //        if (ret.Contains("BIT"))
+            //        {
+            //            ret = ret.Replace("BIT", "BOOL");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        ret = ReplaceSpecialChars(ret, SpecialCharsType);
+            //    }
 
-                }
+            //    type = type.Replace("_" + TcModel.tmpLevelSeparator, TcModel.tmpLevelSeparator);
+            //    type = ReplaceKeywords(type);
+            //    type = RemoveDiacritics(type);
+            //    type = ReplaceDoubleUnderscores(type);
+            //    type = AddUnderscorePrefixIfStartsWithNumber(type);
+            //    type = type.Replace("_" + TcModel.plcStructSeparator, TcModel.plcStructSeparator);
 
-                if (ret.Contains("BITARR"))
-                {
-                    try
-                    {
-                        int dim = Int32.Parse(ret.Replace("BITARR", ""));
-                        if (dim > 1 && dim <= 8) ret = "BYTE";
-                        else if (dim > 8 && dim <= 16) ret = "WORD";
-                        else if (dim > 16 && dim <= 32) ret = "DWORD";
-                    }
-                    catch (Exception ex)
-                    {
-                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                    }
 
-                }
 
-                if (ret != "UINT" && ret.Contains("UINT") && !ret.Contains("ARRAY"))
-                {
-                    try
-                    {
-                        int dim = Int32.Parse(ret.Replace("UINT", ""));
-                        if (dim > 1 && dim <= 8) ret = "BYTE";
-                        else if (dim > 8 && dim <= 16) ret = "INT";
-                        else if (dim > 16 && dim <= 32) ret = "DINT";
+            //    if (ret != "BIT" && ret.Contains("BIT") && !ret.Contains("ARRAY") && !ret.Contains("BITARR"))
+            //    {
+            //        //for example BIT2 in: "EL3001".AI Standard.Status.Limit 1
+            //        //for example BIT3 in: "EL6201-0000-0017".ASI Status.ASI phase
+            //        try
+            //        {
+            //            int dim = Int32.Parse(ret.Replace("BIT", ""));
+            //            if (dim > 1 && dim <= 8) ret = "BYTE";
+            //            else if (dim > 8 && dim <= 16) ret = "WORD";
+            //            else if (dim > 16 && dim <= 32) ret = "DWORD";
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+            //        }
 
-                    }
-                    catch (Exception ex)
-                    {
-                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                    }
-                }
+            //    }
 
-                if (ret == "MASTER_MESSAGE" || ret == "SLAVE_MESSAGE") ret = "ARRAY[0..5] OF BYTE";
-            }
+            //    if (ret.Contains("BITARR"))
+            //    {
+            //        try
+            //        {
+            //            int dim = Int32.Parse(ret.Replace("BITARR", ""));
+            //            if (dim > 1 && dim <= 8) ret = "BYTE";
+            //            else if (dim > 8 && dim <= 16) ret = "WORD";
+            //            else if (dim > 16 && dim <= 32) ret = "DWORD";
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+            //        }
+
+            //    }
+
+            //    if (ret != "UINT" && ret.Contains("UINT") && !ret.Contains("ARRAY"))
+            //    {
+            //        //for example UINT16 in: "EL6080-0000-0016".Status.Status
+            //        //for example UINT24 in: "EL6690-0002-0000".Status.CycleTimer
+            //        try
+            //        {
+            //            int dim = Int32.Parse(ret.Replace("UINT", ""));
+            //            if (dim > 1 && dim <= 8) ret = "BYTE";
+            //            else if (dim > 8 && dim <= 16) ret = "INT";
+            //            else if (dim > 16 && dim <= 32) ret = "DINT";
+
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+            //        }
+            //    }
+
+            //    if (ret == "MASTER_MESSAGE" || ret == "SLAVE_MESSAGE") ret = "ARRAY[0..5] OF BYTE";
+            //}
+
             return ret;
         }
-        public static string NameIncludingNamespace(string @namespace, string name)
+
+         public static string NameIncludingNamespace(string @namespace, string name)
         {
-            //if(String.IsNullOrEmpty(@namespace) || @namespace.Equals("*"))
             if (String.IsNullOrEmpty(@namespace))
             {
                 return name;

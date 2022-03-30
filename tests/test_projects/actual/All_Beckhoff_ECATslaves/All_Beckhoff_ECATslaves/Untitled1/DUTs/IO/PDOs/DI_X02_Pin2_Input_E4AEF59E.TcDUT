@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DI_X02_Pin2_Input_E4AEF59E" Id="{b8d88271-455f-4781-81ed-13fd9d0e9a15}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP2328-1061-0016"}
+{attribute addProperty Id "InputAT %I*BOOL81"}
+{attribute addProperty CRC "3836671390"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE DI_X02_Pin2_Input_E4AEF59E :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

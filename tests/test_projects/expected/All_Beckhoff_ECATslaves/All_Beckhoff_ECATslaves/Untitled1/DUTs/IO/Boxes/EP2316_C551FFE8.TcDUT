@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP2316_C551FFE8" Id="{d12cd7bc-e4a7-482e-8c00-7cb5e4f95870}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP2316-0008-0017"}
+{attribute addProperty Id "DO_Diag_InputsAT %I*DO_Diag_Inputs_9F71B9E27290DO_Diag_Inputs_1AT %I*DO_Diag_Inputs_8D5DE8777290DO_Inputs_DeviceAT %I*DO_Inputs_Device_BB3041553240DO_OutputsAT %Q*DO_Outputs_33B763766480DO_Outputs_DeviceAT %Q*DO_Outputs_Device_735003021620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "529313323"}
+{attribute addProperty SizeInBites "338"}
+{attribute addProperty SizeInBytes "42.25"}
+TYPE EP2316_C551FFE8 :
+STRUCT
+	{attribute addProperty Name "DO_Diag_Inputs"}
+	DO_Diag_Inputs : DO_Diag_Inputs_9F71B9E2;
+	{attribute addProperty Name "DO_Diag_Inputs_1"}
+	DO_Diag_Inputs_1 : DO_Diag_Inputs_8D5DE877;
+	{attribute addProperty Name "DO_Inputs_Device"}
+	DO_Inputs_Device : DO_Inputs_Device_BB304155;
+	{attribute addProperty Name "DO_Outputs"}
+	DO_Outputs : DO_Outputs_33B76376;
+	{attribute addProperty Name "DO_Outputs_Device"}
+	DO_Outputs_Device : DO_Outputs_Device_73500302;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

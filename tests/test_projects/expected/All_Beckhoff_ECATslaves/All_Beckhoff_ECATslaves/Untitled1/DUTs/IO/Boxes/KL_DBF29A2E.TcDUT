@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL_DBF29A2E" Id="{877f856b-ec94-4057-9408-f7d9c86159af}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL1501-0001"}
+{attribute addProperty Id "Channel_1Channel_93409BD200"}
+{attribute addProperty CRC "3690109486"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL_DBF29A2E :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_93409BD2;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

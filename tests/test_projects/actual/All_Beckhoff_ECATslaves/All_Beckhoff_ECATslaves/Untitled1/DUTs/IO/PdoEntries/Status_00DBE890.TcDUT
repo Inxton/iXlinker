@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_00DBE890" Id="{a1311746-0bfc-4c40-a1b9-f65208bcc830}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP3752-0000-0017"}
+{attribute addProperty Id "ErrorBIT10.1257TxPDO_StateBIT10.12515TxPDO_ToggleBIT10.12516"}
+{attribute addProperty CRC "14411920"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_00DBE890 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_5 : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_6 : BIT;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

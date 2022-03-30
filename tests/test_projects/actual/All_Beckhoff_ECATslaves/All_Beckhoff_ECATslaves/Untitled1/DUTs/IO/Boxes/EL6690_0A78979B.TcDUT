@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6690_0A78979B" Id="{11e76dc0-f37b-45a0-9370-0b0f20eb825a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6690-0001-0000"}
+{attribute addProperty Id "StatusAT %I*Status_93A34D63810InputsEMPTY_STRUCTURE000OutputsEMPTY_STRUCTURE000WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1128596067"}
+{attribute addProperty SizeInBites "90"}
+{attribute addProperty SizeInBytes "11.25"}
+TYPE EL6690_0A78979B :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status : Status_93A34D63;
+	{attribute addProperty Name "Inputs"}
+	Inputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "Outputs"}
+	Outputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

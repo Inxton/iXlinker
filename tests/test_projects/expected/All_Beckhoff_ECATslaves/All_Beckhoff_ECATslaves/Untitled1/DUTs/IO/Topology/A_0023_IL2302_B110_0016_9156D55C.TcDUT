@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0023_IL2302_B110_0016_9156D55C" Id="{c6161d7b-f337-43b6-bd68-964c2be3b564}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IL2302-B110-0016"}
+{attribute addProperty Id "Term_23KL_5BCCED4C00Term_394_Ix1000KL_9BB4615400"}
+{attribute addProperty CRC "2438387036"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE A_0023_IL2302_B110_0016_9156D55C EXTENDS IL2302_4487A81F :
+STRUCT
+	{attribute addProperty Name "Term_23"}
+	Term_23 : KL_5BCCED4C;
+	{attribute addProperty Name "Term_394_Ix1000"}
+	Term_394_Ix1000 : KL_9BB46154;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DEVICE_Inputs_3148493E" Id="{d033e575-c7d9-4c47-a822-bcc1f3a879c2}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6900-0000-0016"}
+{attribute addProperty Id "Safety_Project_StateAT %I*BYTE811Login_ActiveAT %I*BOOL818Input_Size_MismatchAT %I*BOOL819Output_Size_MismatchAT %I*BOOL8110TxPDO_StateAT %I*BOOL8115TxPDO_ToggleAT %I*BOOL8116"}
+{attribute addProperty CRC "826820926"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE DEVICE_Inputs_3148493E :
+STRUCT
+	{attribute addProperty Name "Safety_Project_State"}
+	Safety_Project_State AT %I* : BYTE;
+	{attribute addProperty Name "Login_Active"}
+	Login_Active AT %I* : BOOL;
+	{attribute addProperty Name "Input_Size_Mismatch"}
+	Input_Size_Mismatch AT %I* : BOOL;
+	{attribute addProperty Name "Output_Size_Mismatch"}
+	Output_Size_Mismatch AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

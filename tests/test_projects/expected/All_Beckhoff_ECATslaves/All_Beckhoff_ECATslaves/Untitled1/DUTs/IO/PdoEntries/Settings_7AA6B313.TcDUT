@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Settings_7AA6B313" Id="{a714a509-8845-4458-8d26-e98c36485e52}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3681-0000-0018"}
+{attribute addProperty Id "Mode_BIT_0BIT10.1255Mode_BIT_1BIT10.1255Mode_BIT_2BIT10.1255Mode_BIT_3BIT10.1255RangeSINT819"}
+{attribute addProperty CRC "2057745171"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Settings_7AA6B313 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1 : BIT;
+	{attribute 'hide'}
+	reserve_2 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_1 : BIT;
+	{attribute addProperty Name "Mode"}
+	Mode_BIT_0 : BIT;
+	{attribute addProperty Name "Mode"}
+	Mode_BIT_1 : BIT;
+	{attribute addProperty Name "Mode"}
+	Mode_BIT_2 : BIT;
+	{attribute addProperty Name "Mode"}
+	Mode_BIT_3 : BIT;
+	{attribute addProperty Name "Range"}
+	Range : SINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

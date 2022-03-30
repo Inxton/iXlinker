@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_01CFC91D" Id="{45f2b15d-1910-4440-b74e-8e8506be3428}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP7402-0057-0017"}
+{attribute addProperty Id "EnableBIT10.1251ResetBIT10.1252Invert_directionBIT10.1254Brake_outputBIT10.12512"}
+{attribute addProperty CRC "30394653"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Control_01CFC91D :
+STRUCT
+	{attribute addProperty Name "Enable"}
+	Enable : BIT;
+	{attribute addProperty Name "Reset"}
+	Reset : BIT;
+	{attribute 'hide'}
+	reserve_1 : BIT;
+	{attribute addProperty Name "Invert_direction"}
+	Invert_direction : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_6 : BIT;
+	{attribute addProperty Name "Brake_output"}
+	Brake_output : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_3 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

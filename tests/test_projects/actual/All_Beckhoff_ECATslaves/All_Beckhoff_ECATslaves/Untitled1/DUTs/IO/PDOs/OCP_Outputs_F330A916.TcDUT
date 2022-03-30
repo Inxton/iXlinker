@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="OCP_Outputs_F330A916" Id="{f4442a4e-4a50-446f-9532-35244745756b}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL9221-4030-0018"}
+{attribute addProperty Id "ControlAT %Q*Control_6B063D74162"}
+{attribute addProperty CRC "4080052502"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE OCP_Outputs_F330A916 :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_6B063D74;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

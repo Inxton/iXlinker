@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Inputs_Device_7B636AA1" Id="{c2c6656c-e8bf-4ab2-8b9c-48c0bb2592dc}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2642-0000-0016"}
+{attribute addProperty Id "Device_statusAT %I*Device_status_A35574DA162"}
+{attribute addProperty CRC "2070112929"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DO_Inputs_Device_7B636AA1 :
+STRUCT
+	{attribute addProperty Name "Device_status"}
+	Device_status AT %I* : Device_status_A35574DA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

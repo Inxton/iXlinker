@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIG_Inputs_Device_2C95E259" Id="{d3bf6bbf-777e-4ac6-b0bb-d87fe5832415}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP2817-0008-0016"}
+{attribute addProperty Id "Safe_state_activeAT %I*BOOL811Error_channelAT %I*ARRAY[0 ..2] OF BOOL2430Us_UndervoltageAT %I*BOOL815Up_UndervoltageAT %I*BOOL816Sync_errorAT %I*BOOL8114TxPDO_ToggleAT %I*BOOL8116"}
+{attribute addProperty CRC "1641931404"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE DIG_Inputs_Device_2C95E259 :
+STRUCT
+	{attribute addProperty Name "Safe_state_active"}
+	Safe_state_active AT %I* : BOOL;
+	{attribute addProperty Name "Error_channel"}
+	Error_channel AT %I* : ARRAY[0 ..2] OF BOOL;
+	{attribute addProperty Name "Us_Undervoltage"}
+	Us_Undervoltage AT %I* : BOOL;
+	{attribute addProperty Name "Up_Undervoltage"}
+	Up_Undervoltage AT %I* : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

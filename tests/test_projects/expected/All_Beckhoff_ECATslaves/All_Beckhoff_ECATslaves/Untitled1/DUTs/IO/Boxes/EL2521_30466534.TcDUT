@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2521_30466534" Id="{f786d2a5-58ff-43c3-afcc-6901ff7d572a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2521-1001-0000"}
+{attribute addProperty Id "InputsAT %I*Inputs_44EC503A2430OutputsAT %Q*Outputs_C13D2F242430WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "875563102"}
+{attribute addProperty SizeInBites "130"}
+{attribute addProperty SizeInBytes "16.25"}
+TYPE EL2521_30466534 :
+STRUCT
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_44EC503A;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_C13D2F24;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_5E29E32D" Id="{2c5c7a92-e15e-4775-a46c-a1da930895e1}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6861-0000-0016"}
+{attribute addProperty Id "Transmit_acceptedBIT10.1251Receive_requestBIT10.1252Init_acceptedBIT10.1253Buffer_fullBIT10.1254Parity_errorBIT10.1255Framing_errorBIT10.1256Overrun_errorBIT10.1257Tx_buffer_emptyBIT10.1258Input_lengthUSINT819"}
+{attribute addProperty CRC "1579803437"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_5E29E32D :
+STRUCT
+	{attribute addProperty Name "Transmit_accepted"}
+	Transmit_accepted : BIT;
+	{attribute addProperty Name "Receive_request"}
+	Receive_request : BIT;
+	{attribute addProperty Name "Init_accepted"}
+	Init_accepted : BIT;
+	{attribute addProperty Name "Buffer_full"}
+	Buffer_full : BIT;
+	{attribute addProperty Name "Parity_error"}
+	Parity_error : BIT;
+	{attribute addProperty Name "Framing_error"}
+	Framing_error : BIT;
+	{attribute addProperty Name "Overrun_error"}
+	Overrun_error : BIT;
+	{attribute addProperty Name "Tx_buffer_empty"}
+	Tx_buffer_empty : BIT;
+	{attribute addProperty Name "Input_length"}
+	Input_length : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

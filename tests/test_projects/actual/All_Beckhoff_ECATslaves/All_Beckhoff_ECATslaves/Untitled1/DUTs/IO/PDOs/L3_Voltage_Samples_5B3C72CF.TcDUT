@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L3_Voltage_Samples_5B3C72CF" Id="{b9e348ed-acb0-4b9e-b579-0b5ea02d9642}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3773-0000-0019"}
+{attribute addProperty Id "U3_SamplesAT %I*ARRAY [0..9] OF INT16020"}
+{attribute addProperty CRC "1530688207"}
+{attribute addProperty SizeInBites "160"}
+{attribute addProperty SizeInBytes "20"}
+TYPE L3_Voltage_Samples_5B3C72CF :
+STRUCT
+	{attribute addProperty Name "U3_Samples"}
+	U3_Samples AT %I* : ARRAY [0..9] OF INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

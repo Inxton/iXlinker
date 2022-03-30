@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch2_Sample_29ECE468" Id="{ef843f95-ef72-4313-80c2-5fabc03cc5ab}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3632-0000-0016"}
+{attribute addProperty Id "Ch2_ValueAT %I*INT162"}
+{attribute addProperty CRC "703390824"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Ch2_Sample_29ECE468 :
+STRUCT
+	{attribute addProperty Name "Ch2_Value"}
+	Ch2_Value AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

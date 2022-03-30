@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DMX_Status_A8F3522A" Id="{ef8ad9cc-a1bb-4823-ac56-fafc8411cdbb}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6851-0010-0019"}
+{attribute addProperty Id "Receive_toggleAT %I*BOOL812Framing_errorAT %I*BOOL816Overrun_errorAT %I*BOOL817TxPDO_StateAT %I*BOOL8115TxPDO_ToggleAT %I*BOOL8116Channel_lengthAT %I*UINT16217Start_codeAT %I*USINT8118"}
+{attribute addProperty CRC "2834518570"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE DMX_Status_A8F3522A :
+STRUCT
+	{attribute addProperty Name "Receive_toggle"}
+	Receive_toggle AT %I* : BOOL;
+	{attribute addProperty Name "Framing_error"}
+	Framing_error AT %I* : BOOL;
+	{attribute addProperty Name "Overrun_error"}
+	Overrun_error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Channel_length"}
+	Channel_length AT %I* : UINT;
+	{attribute addProperty Name "Start_code"}
+	Start_code AT %I* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

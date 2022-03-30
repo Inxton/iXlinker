@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Module_4_FSLOGIC_3E625139" Id="{60b9fabb-cab2-4e20-be81-87dc1c5e7c98}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ1957-0000-0017"}
+{attribute addProperty Id "FSLOGIC_InputsFSLOGIC_Inputs_8BA5C933162FSLOGIC_OutputsEMPTY_STRUCTURE00"}
+{attribute addProperty CRC "1046630713"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Module_4_FSLOGIC_3E625139 :
+STRUCT
+	{attribute addProperty Name "FSLOGIC_Inputs"}
+	FSLOGIC_Inputs  : FSLOGIC_Inputs_8BA5C933;
+	{attribute addProperty Name "FSLOGIC_Outputs"}
+	FSLOGIC_Outputs  : EMPTY_STRUCTURE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL_4EE76BF9" Id="{998162a9-2c7b-4e32-b99f-8f0e443e2866}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL8610-0001"}
+{attribute addProperty Id "KL8601_1KL_B0A8062F00KL8601_2KL_B0A8062F00"}
+{attribute addProperty CRC "1323789305"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL_4EE76BF9 :
+STRUCT
+	{attribute addProperty Name "KL8601_1"}
+	KL8601_1 : KL_B0A8062F;
+	{attribute addProperty Name "KL8601_2"}
+	KL8601_2 : KL_B0A8062F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

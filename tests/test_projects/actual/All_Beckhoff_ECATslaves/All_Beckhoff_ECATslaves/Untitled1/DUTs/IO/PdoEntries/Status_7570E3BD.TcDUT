@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_7570E3BD" Id="{158580d8-0c56-415f-9410-d210ea9d1f79}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ7334-0008-0016"}
+{attribute addProperty Id "Ready_to_enableBIT10.1251ReadyBIT10.1252WarningBIT10.1253ErrorBIT10.1254Moving_positiveBIT10.1255Moving_negativeBIT10.1256Limit_xBIT10.1258TxPDO_ToggleBIT10.12516"}
+{attribute addProperty CRC "1970332605"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_7570E3BD :
+STRUCT
+	{attribute addProperty Name "Ready_to_enable"}
+	Ready_to_enable : BIT;
+	{attribute addProperty Name "Ready"}
+	Ready : BIT;
+	{attribute addProperty Name "Warning"}
+	Warning : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute addProperty Name "Moving_positive"}
+	Moving_positive : BIT;
+	{attribute addProperty Name "Moving_negative"}
+	Moving_negative : BIT;
+	{attribute 'hide'}
+	reserve_1 : BIT;
+	{attribute addProperty Name "Limit_x"}
+	Limit_x : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_6 : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

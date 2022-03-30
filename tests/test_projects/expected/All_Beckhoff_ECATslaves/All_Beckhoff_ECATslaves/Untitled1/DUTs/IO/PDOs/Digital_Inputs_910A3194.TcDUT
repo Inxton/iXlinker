@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Digital_Inputs_910A3194" Id="{121926cd-f448-436f-9f64-15a2e56ca909}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP6228-3132-0016"}
+{attribute addProperty Id "Pin2_Ch1AT %I*BOOL811Pin2_Ch2AT %I*BOOL812Pin2_Ch5AT %I*BOOL815Pin2_Ch6AT %I*BOOL816"}
+{attribute addProperty CRC "2433364372"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE Digital_Inputs_910A3194 :
+STRUCT
+	{attribute addProperty Name "Pin2_Ch1"}
+	Pin2_Ch1 AT %I* : BOOL;
+	{attribute addProperty Name "Pin2_Ch2"}
+	Pin2_Ch2 AT %I* : BOOL;
+	{attribute addProperty Name "Pin2_Ch5"}
+	Pin2_Ch5 AT %I* : BOOL;
+	{attribute addProperty Name "Pin2_Ch6"}
+	Pin2_Ch6 AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2262_E0ACD1AC" Id="{bb627836-177c-42a1-950e-d0e9ff7e531b}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2262-0000-0004"}
+{attribute addProperty Id "StartTimeNextOutputAT %I*StartTimeNextOutput_C2D377213240CycCount0AT %Q*CycCount0_307034DC1620Sample0AT %Q*ARRAY[0..9] OF Sample_ABF5BEA980100GapAT %Q*EMPTY_STRUCTURE000CycCount1AT %Q*CycCount1_7787FA1D1620Sample1AT %Q*ARRAY[0..9] OF Sample_4351E8AC80100Gap_1AT %Q*EMPTY_STRUCTURE000WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "539028393"}
+{attribute addProperty SizeInBites "306"}
+{attribute addProperty SizeInBytes "38.25"}
+TYPE EL2262_E0ACD1AC :
+STRUCT
+	{attribute addProperty Name "StartTimeNextOutput"}
+	StartTimeNextOutput : StartTimeNextOutput_C2D37721;
+	{attribute addProperty Name "CycCount0"}
+	CycCount0 : CycCount0_307034DC;
+	{attribute addProperty Name "Sample0"}
+	Sample0 : ARRAY[0..9] OF Sample_ABF5BEA9;
+	{attribute addProperty Name "Gap"}
+	Gap : EMPTY_STRUCTURE;
+	{attribute addProperty Name "CycCount1"}
+	CycCount1 : CycCount1_7787FA1D;
+	{attribute addProperty Name "Sample1"}
+	Sample1 : ARRAY[0..9] OF Sample_4351E8AC;
+	{attribute addProperty Name "Gap_1"}
+	Gap_1 : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

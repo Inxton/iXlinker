@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL4732_AF3811B1" Id="{386d166a-5d75-4126-a321-04817be65516}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL4732-0000-0002"}
+{attribute addProperty Id "Ch1_CycleCountAT %Q*Ch1_CycleCount_B92764D41620Ch1_SampleAT %Q*ARRAY[0..9] OF Ch1_Sample_4E940676160200Ch2_CycleCountAT %Q*Ch2_CycleCount_EB7284BC1620Ch2_SampleAT %Q*ARRAY[0..9] OF Ch2_Sample_50B89E9D160200WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "2755991451"}
+{attribute addProperty SizeInBites "433"}
+{attribute addProperty SizeInBytes "54.125"}
+TYPE EL4732_AF3811B1 :
+STRUCT
+	{attribute addProperty Name "Ch1_CycleCount"}
+	Ch1_CycleCount : Ch1_CycleCount_B92764D4;
+	{attribute addProperty Name "Ch1_Sample"}
+	Ch1_Sample : ARRAY[0..9] OF Ch1_Sample_4E940676;
+	{attribute addProperty Name "Ch2_CycleCount"}
+	Ch2_CycleCount : Ch2_CycleCount_EB7284BC;
+	{attribute addProperty Name "Ch2_Sample"}
+	Ch2_Sample : ARRAY[0..9] OF Ch2_Sample_50B89E9D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_28A86775;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

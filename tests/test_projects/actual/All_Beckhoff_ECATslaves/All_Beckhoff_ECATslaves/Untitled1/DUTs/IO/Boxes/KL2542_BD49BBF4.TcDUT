@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL2542_BD49BBF4" Id="{71863497-4dd7-4ac3-9d90-79dfe32d813a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL2542"}
+{attribute addProperty Id "Channel_1Channel_B0A8062F00Channel_2Channel_B0A8062F00"}
+{attribute addProperty CRC "3175726068"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL2542_BD49BBF4 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_B0A8062F;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_B0A8062F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

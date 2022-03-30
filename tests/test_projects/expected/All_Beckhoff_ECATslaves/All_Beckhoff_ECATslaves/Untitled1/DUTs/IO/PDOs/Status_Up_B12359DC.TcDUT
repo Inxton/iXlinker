@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_Up_B12359DC" Id="{ba03ecf5-1d21-483c-a8f7-545633ab1af2}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL9540-0010-0016"}
+{attribute addProperty Id "UndervoltageAT %I*BOOL811OvervoltageAT %I*BOOL812"}
+{attribute addProperty CRC "2971883996"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_Up_B12359DC :
+STRUCT
+	{attribute addProperty Name "Undervoltage"}
+	Undervoltage AT %I* : BOOL;
+	{attribute addProperty Name "Overvoltage"}
+	Overvoltage AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_20E8A761" Id="{8a0dce1d-536f-43e0-9b57-254ae96834d2}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1502-0000-0018"}
+{attribute addProperty Id "Output_functions_enabledBIT10.1251Status_of_outputBIT10.1252Set_counter_doneBIT10.1253Counter_inhibitedBIT10.1254Status_of_input_UDBIT10.1255Status_of_input_clockBIT10.1256Sync_errorBIT10.12532TxPDO_ToggleBIT10.1259"}
+{attribute addProperty CRC "552118113"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_20E8A761 :
+STRUCT
+	{attribute addProperty Name "Output_functions_enabled"}
+	Output_functions_enabled : BIT;
+	{attribute addProperty Name "Status_of_output"}
+	Status_of_output : BIT;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BIT;
+	{attribute addProperty Name "Counter_inhibited"}
+	Counter_inhibited : BIT;
+	{attribute addProperty Name "Status_of_input_UD"}
+	Status_of_input_UD : BIT;
+	{attribute addProperty Name "Status_of_input_clock"}
+	Status_of_input_clock : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_6 : BIT;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BIT;
+	{attribute 'hide'}
+	reserve_2 : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

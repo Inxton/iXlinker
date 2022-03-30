@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_D7D8B361" Id="{58c386ba-bac0-4b4d-91e1-ba2d55583854}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2535-0103-0023"}
+{attribute addProperty Id "Ready_to_enableBIT10.1255WarningBIT10.1256ErrorBIT10.1257TxPDO_ToggleBIT10.12516"}
+{attribute addProperty CRC "3621303137"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_D7D8B361 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute addProperty Name "Ready_to_enable"}
+	Ready_to_enable : BIT;
+	{attribute addProperty Name "Warning"}
+	Warning : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute 'hide'}
+	reserve_3 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_6 : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

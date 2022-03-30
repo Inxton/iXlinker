@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP2038_9444C9D3" Id="{b021c87c-4b93-472b-96eb-d3208da3fd4b}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP2038-0001-0016"}
+{attribute addProperty Id "Diag_ChannelAT %I*ARRAY[0..7] OF Diag_Channel_E4AEF59E6480ChannelAT %Q*ARRAY[0..7] OF Channel_7F374EB06480WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "1245809967"}
+{attribute addProperty SizeInBites "146"}
+{attribute addProperty SizeInBytes "18.25"}
+TYPE EPP2038_9444C9D3 :
+STRUCT
+	{attribute addProperty Name "Diag_Channel"}
+	Diag_Channel : ARRAY[0..7] OF Diag_Channel_E4AEF59E;
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..7] OF Channel_7F374EB0;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

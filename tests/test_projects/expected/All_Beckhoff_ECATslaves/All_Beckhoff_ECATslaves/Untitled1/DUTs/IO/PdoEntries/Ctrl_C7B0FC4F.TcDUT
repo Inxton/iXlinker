@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ctrl_C7B0FC4F" Id="{7886e993-66fe-498d-aee2-2c24f299d348}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3356-0000-0017"}
+{attribute addProperty Id "Start_calibrationBIT10.1251Disable_calibrationBIT10.1252Input_freezeBIT10.1253TaraBIT10.1255"}
+{attribute addProperty CRC "3350264911"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Ctrl_C7B0FC4F :
+STRUCT
+	{attribute addProperty Name "Start_calibration"}
+	Start_calibration : BIT;
+	{attribute addProperty Name "Disable_calibration"}
+	Disable_calibration : BIT;
+	{attribute addProperty Name "Input_freeze"}
+	Input_freeze : BIT;
+	{attribute 'hide'}
+	reserve_1 : BIT;
+	{attribute addProperty Name "Tara"}
+	Tara : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_6 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_7 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_8 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_9 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_10 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

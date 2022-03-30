@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP4374_74CDCD24" Id="{efd2c188-c3e4-45ee-978e-09e48130b241}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP4374-0002-0016"}
+{attribute addProperty Id "AI_TxPDO_Map_Standard_ChannelAT %I*ARRAY[0..2] OF AI_TxPDO_Map_Standard_Channel_087F71C76480AO_RxPDO_Map_ChannelAT %Q*ARRAY[0..1] OF AO_RxPDO_Map_Channel_F57FA4F93240WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3966276374"}
+{attribute addProperty SizeInBites "178"}
+{attribute addProperty SizeInBytes "22.25"}
+TYPE EP4374_74CDCD24 :
+STRUCT
+	{attribute addProperty Name "AI_TxPDO_Map_Standard_Channel"}
+	AI_TxPDO_Map_Standard_Channel : ARRAY[0..2] OF AI_TxPDO_Map_Standard_Channel_087F71C7;
+	{attribute addProperty Name "AO_RxPDO_Map_Channel"}
+	AO_RxPDO_Map_Channel : ARRAY[0..1] OF AO_RxPDO_Map_Channel_F57FA4F9;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

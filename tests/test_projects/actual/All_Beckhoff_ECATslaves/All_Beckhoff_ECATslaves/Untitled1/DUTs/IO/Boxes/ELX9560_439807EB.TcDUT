@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELX9560_439807EB" Id="{cf7f1dd2-27f1-47c9-befe-eaac9c5f91ae}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELX9560-0000-0016"}
+{attribute addProperty Id "Status_UinAT %I*Status_Uin_324A4102810Status_UexAT %I*Status_Uex_324A4102810WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "865448098"}
+{attribute addProperty SizeInBites "34"}
+{attribute addProperty SizeInBytes "4.25"}
+TYPE ELX9560_439807EB :
+STRUCT
+	{attribute addProperty Name "Status_Uin"}
+	Status_Uin : Status_Uin_324A4102;
+	{attribute addProperty Name "Status_Uex"}
+	Status_Uex : Status_Uex_324A4102;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

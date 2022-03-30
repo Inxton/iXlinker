@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="TcTerminals210_EK1100_2_BDAFA3B6" Id="{22be66b8-a83c-4939-b5cb-ab94f33b5d78}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "TcTerminals210_2BK1250TcTerminals210_2BK1250_0898888900"}
+{attribute addProperty CRC "3182404534"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE TcTerminals210_EK1100_2_BDAFA3B6 EXTENDS EK1100_179A0949 :
+STRUCT
+	{attribute addProperty Name "TcTerminals210_2BK1250"}
+	TcTerminals210_2BK1250 : TcTerminals210_2BK1250_08988889;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

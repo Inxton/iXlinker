@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_66AE5E45" Id="{4593fd36-a49c-4c35-9bae-bfe003a59160}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2521-0124-0018"}
+{attribute addProperty Id "Sel_Ack_End_counterBIT10.1251Ramp_activeBIT10.1252ErrorBIT10.1257Sync_errorBIT10.12532TxPDO_ToggleBIT10.1259"}
+{attribute addProperty CRC "1722703429"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_66AE5E45 :
+STRUCT
+	{attribute addProperty Name "Sel_Ack_End_counter"}
+	Sel_Ack_End_counter : BIT;
+	{attribute addProperty Name "Ramp_active"}
+	Ramp_active : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_5 : BIT;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BIT;
+	{attribute 'hide'}
+	reserve_3 : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AT_029F0115" Id="{071ed577-53ff-4743-9575-007f495e3d85}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX5201-0000-0011-0011"}
+{attribute addProperty Id "Drive_status_wordAT %I*UINT1620Position_feedback_1_valueAT %I*DINT3240"}
+{attribute addProperty CRC "43974933"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE AT_029F0115 :
+STRUCT
+	{attribute addProperty Name "Drive_status_word"}
+	Drive_status_word AT %I* : UINT;
+	{attribute addProperty Name "Position_feedback_1_value"}
+	Position_feedback_1_value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="RTD_Inputs_BC62E3BB" Id="{e71b1d14-542b-419e-b881-59fbf09a2644}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3201-0000-0016"}
+{attribute addProperty Id "UnderrangeAT %I*BOOL811OverrangeAT %I*BOOL812Limit_xAT %I*ARRAY[0 ..1] OF BYTE1620ErrorAT %I*BOOL817TxPDO_StateAT %I*BOOL817TxPDO_ToggleAT %I*BOOL819ValueAT %I*INT16217"}
+{attribute addProperty CRC "153406575"}
+{attribute addProperty SizeInBites "72"}
+{attribute addProperty SizeInBytes "9"}
+TYPE RTD_Inputs_BC62E3BB :
+STRUCT
+	{attribute addProperty Name "Underrange"}
+	Underrange AT %I* : BOOL;
+	{attribute addProperty Name "Overrange"}
+	Overrange AT %I* : BOOL;
+	{attribute addProperty Name "Limit"}
+	Limit_x AT %I* : ARRAY[0 ..1] OF BYTE;
+	{attribute addProperty Name "Error"}
+	Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

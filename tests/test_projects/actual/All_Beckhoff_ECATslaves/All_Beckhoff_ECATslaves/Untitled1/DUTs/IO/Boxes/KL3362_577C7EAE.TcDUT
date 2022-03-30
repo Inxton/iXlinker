@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL3362_577C7EAE" Id="{273cbb5b-c2f6-455d-9afd-9c3cc4d4d554}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL3362"}
+{attribute addProperty Id "Channel_1Channel_C961C78600Channel_2Channel_C961C78600"}
+{attribute addProperty CRC "1467776686"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL3362_577C7EAE :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_C961C786;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_C961C786;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

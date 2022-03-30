@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP9022_9F4D52F1" Id="{f578bcac-4a2c-439a-9823-80bb4713dfbd}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP9022-0060-0017"}
+{attribute addProperty Id "EPM_Inputs_ChannelAT %I*ARRAY[0..3] OF EPM_Inputs_Channel_19E518F4160200WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2919404861"}
+{attribute addProperty SizeInBites "242"}
+{attribute addProperty SizeInBytes "30.25"}
+TYPE EPP9022_9F4D52F1 :
+STRUCT
+	{attribute addProperty Name "EPM_Inputs_Channel"}
+	EPM_Inputs_Channel : ARRAY[0..3] OF EPM_Inputs_Channel_19E518F4;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

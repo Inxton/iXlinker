@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ctrl_BE606B1B" Id="{92a87bd0-10ef-47fc-a8f8-1287e22e4df3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6001-0000-0016"}
+{attribute addProperty Id "Transmit_requestBIT10.1251Receive_acceptedBIT10.1252Init_requestBIT10.1253Send_continuesBIT10.1254Output_lengthUSINT819"}
+{attribute addProperty CRC "3193989915"}
+{attribute addProperty SizeInBites "44"}
+{attribute addProperty SizeInBytes "5.5"}
+{warning 'Size of this structure is not a multiple of 8 bits!!!'}
+TYPE Ctrl_BE606B1B :
+STRUCT
+	{attribute addProperty Name "Transmit_request"}
+	Transmit_request : BIT;
+	{attribute addProperty Name "Receive_accepted"}
+	Receive_accepted : BIT;
+	{attribute addProperty Name "Init_request"}
+	Init_request : BIT;
+	{attribute addProperty Name "Send_continues"}
+	Send_continues : BIT;
+	{attribute 'hide'}
+	reserve_1_BOOL_0 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_1 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_2 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_3 : BOOL;
+	{attribute addProperty Name "Output_length"}
+	Output_length : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

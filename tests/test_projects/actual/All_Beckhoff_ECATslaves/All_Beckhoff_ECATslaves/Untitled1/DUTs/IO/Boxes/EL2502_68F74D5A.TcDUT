@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2502_68F74D5A" Id="{94adcc05-ca3b-4e19-aea3-682ae0fb88b0}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2502-0000-0016"}
+{attribute addProperty Id "PWM_Outputs_ChannelAT %Q*ARRAY[0..1] OF PWM_Outputs_Channel_A83D42AA3240WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1493002450"}
+{attribute addProperty SizeInBites "113"}
+{attribute addProperty SizeInBytes "14.125"}
+TYPE EL2502_68F74D5A :
+STRUCT
+	{attribute addProperty Name "PWM_Outputs_Channel"}
+	PWM_Outputs_Channel : ARRAY[0..1] OF PWM_Outputs_Channel_A83D42AA;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_28A86775;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

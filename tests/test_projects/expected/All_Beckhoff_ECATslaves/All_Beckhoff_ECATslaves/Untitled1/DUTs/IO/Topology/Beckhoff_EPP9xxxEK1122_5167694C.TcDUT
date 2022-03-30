@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EPP9xxxEK1122_5167694C" Id="{83c3552c-fa84-4fc1-9230-748975ae0d67}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "Beckhoff_EPP9xxxsub_EK1100EK1100_179A0949162A_0001_EPP9001_0060_0016EPP9001_179A0949162A_0002_EPP9001_0060_0017EPP9001_179A0949162A_0003_EPP9022_0060_0017EPP9022_9F4D52F124230.25A_0004_EPP9022_9060_0017EPP9022_9F4D52F124230.25"}
+{attribute addProperty CRC "1365731660"}
+{attribute addProperty SizeInBites "532"}
+{attribute addProperty SizeInBytes "66.5"}
+TYPE Beckhoff_EPP9xxxEK1122_5167694C EXTENDS EK1122_179A0949 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EPP9xxxsub_EK1100"}
+	Beckhoff_EPP9xxxsub_EK1100 : EK1100_179A0949;
+	{attribute addProperty Name "A_0001_EPP9001_0060_0016"}
+	A_0001_EPP9001_0060_0016 : EPP9001_179A0949;
+	{attribute addProperty Name "A_0002_EPP9001_0060_0017"}
+	A_0002_EPP9001_0060_0017 : EPP9001_179A0949;
+	{attribute addProperty Name "A_0003_EPP9022_0060_0017"}
+	A_0003_EPP9022_0060_0017 : EPP9022_9F4D52F1;
+	{attribute addProperty Name "A_0004_EPP9022_9060_0017"}
+	A_0004_EPP9022_9060_0017 : EPP9022_9F4D52F1;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

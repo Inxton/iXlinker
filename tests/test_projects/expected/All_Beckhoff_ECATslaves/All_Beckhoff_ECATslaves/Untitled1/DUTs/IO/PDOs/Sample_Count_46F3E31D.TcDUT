@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Sample_Count_46F3E31D" Id="{eba03b6c-d84a-472b-af2b-62d28030c0c6}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3632-0000-0022"}
+{attribute addProperty Id "Sample_CountAT %I*UINT162"}
+{attribute addProperty CRC "1190388509"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Sample_Count_46F3E31D :
+STRUCT
+	{attribute addProperty Name "Sample_Count"}
+	Sample_Count AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

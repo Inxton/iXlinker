@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CycCount0_307034DC" Id="{e81f13e7-6350-42ff-9304-d0d844a85c1b}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2262-0000-0002"}
+{attribute addProperty Id "Cycle_Counter0AT %Q*UINT162"}
+{attribute addProperty CRC "812659932"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE CycCount0_307034DC :
+STRUCT
+	{attribute addProperty Name "Cycle_Counter0"}
+	Cycle_Counter0 AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

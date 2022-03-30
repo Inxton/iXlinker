@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_C268CEA0" Id="{745cde00-e48a-4eef-83bc-4151c98a3604}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AMP8000-0030-0103-0103"}
+{attribute addProperty Id "Std_OutputBIT10.1251Std_OutputBIT10.1252Std_OutputBIT10.1253Std_OutputBIT10.1254Std_OutputBIT10.1255Std_OutputBIT10.1256Std_OutputBIT10.1257Std_OutputBIT10.1258"}
+{attribute addProperty CRC "3261648544"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE FSOE_C268CEA0 :
+STRUCT
+	{attribute addProperty Name "Std_Output"}
+	Std_Output : BIT;
+	{attribute addProperty Name "Std_Output"}
+	Std_Output_1 : BIT;
+	{attribute addProperty Name "Std_Output"}
+	Std_Output_2 : BIT;
+	{attribute addProperty Name "Std_Output"}
+	Std_Output_3 : BIT;
+	{attribute addProperty Name "Std_Output"}
+	Std_Output_4 : BIT;
+	{attribute addProperty Name "Std_Output"}
+	Std_Output_5 : BIT;
+	{attribute addProperty Name "Std_Output"}
+	Std_Output_6 : BIT;
+	{attribute addProperty Name "Std_Output"}
+	Std_Output_7 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_4A122216" Id="{45eab2c3-6c0e-43c4-b325-9b73a1716728}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2212-0000-0018"}
+{attribute addProperty Id "OutputBIT10.1252TristateBIT10.1253ResetBIT10.1258"}
+{attribute addProperty CRC "1242702358"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Control_4A122216 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1 : BIT;
+	{attribute addProperty Name "Output"}
+	Output : BIT;
+	{attribute addProperty Name "Tristate"}
+	Tristate : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BIT;
+	{attribute addProperty Name "Reset"}
+	Reset : BIT;
+	{attribute 'hide'}
+	reserve_3 : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

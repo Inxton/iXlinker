@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SyncUnits_0037765A" Id="{e507a934-4446-451b-b9c1-9ab0fc1769b4}">
+    <Declaration><![CDATA[{attribute addProperty BoxType ""}
+{attribute addProperty Id "_defaultSyncUnitTasks_486549DC19524.3750A_0022_EP9224_0037_0017SyncUnitTasks_486549DC19524.3750"}
+{attribute addProperty CRC "3634778"}
+{attribute addProperty SizeInBites "390"}
+{attribute addProperty SizeInBytes "48.75"}
+TYPE SyncUnits_0037765A :
+STRUCT
+	{attribute addProperty Name "_default"}
+	_default : SyncUnitTasks_486549DC;
+	{attribute addProperty Name "A_0022_EP9224_0037_0017"}
+	A_0022_EP9224_0037_0017 : SyncUnitTasks_486549DC;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

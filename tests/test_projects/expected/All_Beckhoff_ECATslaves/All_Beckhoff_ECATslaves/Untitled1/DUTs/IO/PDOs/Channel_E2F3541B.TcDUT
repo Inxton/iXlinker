@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_E2F3541B" Id="{fc473eb4-1f81-4924-9572-8674e1ee360a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL6211-0024"}
+{attribute addProperty Id "StatusAT %I*UINT000Parameter_InAT %I*UDINT000ASI_In_StatusAT %I*BYTE000ASI_In_Slave_1AT %I*BYTE000ASI_In_Slave_2AT %I*BYTE000ASI_In_Slave_3AT %I*BYTE000ASI_In_Slave_4AT %I*BYTE000ASI_In_Slave_5AT %I*BYTE000ASI_In_Slave_6AT %I*BYTE000ASI_In_Slave_7AT %I*BYTE000ASI_In_Slave_8AT %I*BYTE000ASI_In_Slave_9AT %I*BYTE000ASI_In_Slave_10AT %I*BYTE000ASI_In_Slave_11AT %I*BYTE000ASI_In_Slave_12AT %I*BYTE000ASI_In_Slave_13AT %I*BYTE000ASI_In_Slave_14AT %I*BYTE000ASI_In_Slave_15AT %I*BYTE000ASI_In_Slave_16AT %I*BYTE000ASI_In_Slave_17AT %I*BYTE000ASI_In_Slave_18AT %I*BYTE000ASI_In_Slave_19AT %I*BYTE000ASI_In_Slave_20AT %I*BYTE000ASI_In_Slave_21AT %I*BYTE000ASI_In_Slave_22AT %I*BYTE000ASI_In_Slave_23AT %I*BYTE000ASI_In_Slave_24AT %I*BYTE000ASI_In_Slave_25AT %I*BYTE000ASI_In_Slave_26AT %I*BYTE000ASI_In_Slave_27AT %I*BYTE000ASI_In_Slave_28AT %I*BYTE000ASI_In_Slave_29AT %I*BYTE000ASI_In_Slave_30AT %I*BYTE000ASI_In_Slave_31AT %I*BYTE000ASI_In_Slave_32AT %I*BYTE000ASI_In_Slave_33AT %I*BYTE000ASI_In_Slave_34AT %I*BYTE000ASI_In_Slave_35AT %I*BYTE000ASI_In_Slave_36AT %I*BYTE000ASI_In_Slave_37AT %I*BYTE000ASI_In_Slave_38AT %I*BYTE000ASI_In_Slave_39AT %I*BYTE000ASI_In_Slave_40AT %I*BYTE000ASI_In_Slave_41AT %I*BYTE000ASI_In_Slave_42AT %I*BYTE000ASI_In_Slave_43AT %I*BYTE000ASI_In_Slave_44AT %I*BYTE000ASI_In_Slave_45AT %I*BYTE000ASI_In_Slave_46AT %I*BYTE000ASI_In_Slave_47AT %I*BYTE000ASI_In_Slave_48AT %I*BYTE000ASI_In_Slave_49AT %I*BYTE000ASI_In_Slave_50AT %I*BYTE000ASI_In_Slave_51AT %I*BYTE000ASI_In_Slave_52AT %I*BYTE000ASI_In_Slave_53AT %I*BYTE000ASI_In_Slave_54AT %I*BYTE000ASI_In_Slave_55AT %I*BYTE000ASI_In_Slave_56AT %I*BYTE000ASI_In_Slave_57AT %I*BYTE000ASI_In_Slave_58AT %I*BYTE000ASI_In_Slave_59AT %I*BYTE000ASI_In_Slave_60AT %I*BYTE000ASI_In_Slave_61AT %I*BYTE000ASI_In_Slave_62AT %I*BYTE000ASI_In_Slave_63AT %I*BYTE000ControlAT %Q*UINT000Parameter_OutAT %Q*UDINT000ASI_Out_ControlAT %Q*BYTE000ASI_Out_Slave_1AT %Q*BYTE000ASI_Out_Slave_2AT %Q*BYTE000ASI_Out_Slave_3AT %Q*BYTE000ASI_Out_Slave_4AT %Q*BYTE000ASI_Out_Slave_5AT %Q*BYTE000ASI_Out_Slave_6AT %Q*BYTE000ASI_Out_Slave_7AT %Q*BYTE000ASI_Out_Slave_8AT %Q*BYTE000ASI_Out_Slave_9AT %Q*BYTE000ASI_Out_Slave_10AT %Q*BYTE000ASI_Out_Slave_11AT %Q*BYTE000ASI_Out_Slave_12AT %Q*BYTE000ASI_Out_Slave_13AT %Q*BYTE000ASI_Out_Slave_14AT %Q*BYTE000ASI_Out_Slave_15AT %Q*BYTE000ASI_Out_Slave_16AT %Q*BYTE000ASI_Out_Slave_17AT %Q*BYTE000ASI_Out_Slave_18AT %Q*BYTE000ASI_Out_Slave_19AT %Q*BYTE000ASI_Out_Slave_20AT %Q*BYTE000ASI_Out_Slave_21AT %Q*BYTE000ASI_Out_Slave_22AT %Q*BYTE000ASI_Out_Slave_23AT %Q*BYTE000ASI_Out_Slave_24AT %Q*BYTE000ASI_Out_Slave_25AT %Q*BYTE000ASI_Out_Slave_26AT %Q*BYTE000ASI_Out_Slave_27AT %Q*BYTE000ASI_Out_Slave_28AT %Q*BYTE000ASI_Out_Slave_29AT %Q*BYTE000ASI_Out_Slave_30AT %Q*BYTE000ASI_Out_Slave_31AT %Q*BYTE000ASI_Out_Slave_32AT %Q*BYTE000ASI_Out_Slave_33AT %Q*BYTE000ASI_Out_Slave_34AT %Q*BYTE000ASI_Out_Slave_35AT %Q*BYTE000ASI_Out_Slave_36AT %Q*BYTE000ASI_Out_Slave_37AT %Q*BYTE000ASI_Out_Slave_38AT %Q*BYTE000ASI_Out_Slave_39AT %Q*BYTE000ASI_Out_Slave_40AT %Q*BYTE000ASI_Out_Slave_41AT %Q*BYTE000ASI_Out_Slave_42AT %Q*BYTE000ASI_Out_Slave_43AT %Q*BYTE000ASI_Out_Slave_44AT %Q*BYTE000ASI_Out_Slave_45AT %Q*BYTE000ASI_Out_Slave_46AT %Q*BYTE000ASI_Out_Slave_47AT %Q*BYTE000ASI_Out_Slave_48AT %Q*BYTE000ASI_Out_Slave_49AT %Q*BYTE000ASI_Out_Slave_50AT %Q*BYTE000ASI_Out_Slave_51AT %Q*BYTE000ASI_Out_Slave_52AT %Q*BYTE000ASI_Out_Slave_53AT %Q*BYTE000ASI_Out_Slave_54AT %Q*BYTE000ASI_Out_Slave_55AT %Q*BYTE000ASI_Out_Slave_56AT %Q*BYTE000ASI_Out_Slave_57AT %Q*BYTE000ASI_Out_Slave_58AT %Q*BYTE000ASI_Out_Slave_59AT %Q*BYTE000ASI_Out_Slave_60AT %Q*BYTE000ASI_Out_Slave_61AT %Q*BYTE000ASI_Out_Slave_62AT %Q*BYTE000ASI_Out_Slave_63AT %Q*BYTE000"}
+{attribute addProperty CRC "3807597595"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE Channel_E2F3541B :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : UINT;
+	{attribute addProperty Name "Parameter_In"}
+	Parameter_In AT %I* : UDINT;
+	{attribute addProperty Name "ASI_In_Status"}
+	ASI_In_Status AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_1"}
+	ASI_In_Slave_1 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_2"}
+	ASI_In_Slave_2 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_3"}
+	ASI_In_Slave_3 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_4"}
+	ASI_In_Slave_4 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_5"}
+	ASI_In_Slave_5 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_6"}
+	ASI_In_Slave_6 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_7"}
+	ASI_In_Slave_7 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_8"}
+	ASI_In_Slave_8 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_9"}
+	ASI_In_Slave_9 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_10"}
+	ASI_In_Slave_10 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_11"}
+	ASI_In_Slave_11 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_12"}
+	ASI_In_Slave_12 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_13"}
+	ASI_In_Slave_13 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_14"}
+	ASI_In_Slave_14 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_15"}
+	ASI_In_Slave_15 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_16"}
+	ASI_In_Slave_16 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_17"}
+	ASI_In_Slave_17 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_18"}
+	ASI_In_Slave_18 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_19"}
+	ASI_In_Slave_19 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_20"}
+	ASI_In_Slave_20 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_21"}
+	ASI_In_Slave_21 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_22"}
+	ASI_In_Slave_22 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_23"}
+	ASI_In_Slave_23 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_24"}
+	ASI_In_Slave_24 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_25"}
+	ASI_In_Slave_25 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_26"}
+	ASI_In_Slave_26 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_27"}
+	ASI_In_Slave_27 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_28"}
+	ASI_In_Slave_28 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_29"}
+	ASI_In_Slave_29 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_30"}
+	ASI_In_Slave_30 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_31"}
+	ASI_In_Slave_31 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_32"}
+	ASI_In_Slave_32 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_33"}
+	ASI_In_Slave_33 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_34"}
+	ASI_In_Slave_34 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_35"}
+	ASI_In_Slave_35 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_36"}
+	ASI_In_Slave_36 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_37"}
+	ASI_In_Slave_37 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_38"}
+	ASI_In_Slave_38 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_39"}
+	ASI_In_Slave_39 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_40"}
+	ASI_In_Slave_40 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_41"}
+	ASI_In_Slave_41 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_42"}
+	ASI_In_Slave_42 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_43"}
+	ASI_In_Slave_43 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_44"}
+	ASI_In_Slave_44 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_45"}
+	ASI_In_Slave_45 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_46"}
+	ASI_In_Slave_46 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_47"}
+	ASI_In_Slave_47 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_48"}
+	ASI_In_Slave_48 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_49"}
+	ASI_In_Slave_49 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_50"}
+	ASI_In_Slave_50 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_51"}
+	ASI_In_Slave_51 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_52"}
+	ASI_In_Slave_52 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_53"}
+	ASI_In_Slave_53 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_54"}
+	ASI_In_Slave_54 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_55"}
+	ASI_In_Slave_55 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_56"}
+	ASI_In_Slave_56 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_57"}
+	ASI_In_Slave_57 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_58"}
+	ASI_In_Slave_58 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_59"}
+	ASI_In_Slave_59 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_60"}
+	ASI_In_Slave_60 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_61"}
+	ASI_In_Slave_61 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_62"}
+	ASI_In_Slave_62 AT %I* : BYTE;
+	{attribute addProperty Name "ASI_In_Slave_63"}
+	ASI_In_Slave_63 AT %I* : BYTE;
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : UINT;
+	{attribute addProperty Name "Parameter_Out"}
+	Parameter_Out AT %Q* : UDINT;
+	{attribute addProperty Name "ASI_Out_Control"}
+	ASI_Out_Control AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_1"}
+	ASI_Out_Slave_1 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_2"}
+	ASI_Out_Slave_2 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_3"}
+	ASI_Out_Slave_3 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_4"}
+	ASI_Out_Slave_4 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_5"}
+	ASI_Out_Slave_5 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_6"}
+	ASI_Out_Slave_6 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_7"}
+	ASI_Out_Slave_7 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_8"}
+	ASI_Out_Slave_8 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_9"}
+	ASI_Out_Slave_9 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_10"}
+	ASI_Out_Slave_10 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_11"}
+	ASI_Out_Slave_11 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_12"}
+	ASI_Out_Slave_12 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_13"}
+	ASI_Out_Slave_13 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_14"}
+	ASI_Out_Slave_14 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_15"}
+	ASI_Out_Slave_15 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_16"}
+	ASI_Out_Slave_16 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_17"}
+	ASI_Out_Slave_17 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_18"}
+	ASI_Out_Slave_18 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_19"}
+	ASI_Out_Slave_19 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_20"}
+	ASI_Out_Slave_20 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_21"}
+	ASI_Out_Slave_21 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_22"}
+	ASI_Out_Slave_22 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_23"}
+	ASI_Out_Slave_23 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_24"}
+	ASI_Out_Slave_24 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_25"}
+	ASI_Out_Slave_25 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_26"}
+	ASI_Out_Slave_26 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_27"}
+	ASI_Out_Slave_27 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_28"}
+	ASI_Out_Slave_28 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_29"}
+	ASI_Out_Slave_29 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_30"}
+	ASI_Out_Slave_30 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_31"}
+	ASI_Out_Slave_31 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_32"}
+	ASI_Out_Slave_32 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_33"}
+	ASI_Out_Slave_33 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_34"}
+	ASI_Out_Slave_34 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_35"}
+	ASI_Out_Slave_35 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_36"}
+	ASI_Out_Slave_36 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_37"}
+	ASI_Out_Slave_37 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_38"}
+	ASI_Out_Slave_38 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_39"}
+	ASI_Out_Slave_39 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_40"}
+	ASI_Out_Slave_40 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_41"}
+	ASI_Out_Slave_41 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_42"}
+	ASI_Out_Slave_42 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_43"}
+	ASI_Out_Slave_43 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_44"}
+	ASI_Out_Slave_44 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_45"}
+	ASI_Out_Slave_45 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_46"}
+	ASI_Out_Slave_46 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_47"}
+	ASI_Out_Slave_47 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_48"}
+	ASI_Out_Slave_48 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_49"}
+	ASI_Out_Slave_49 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_50"}
+	ASI_Out_Slave_50 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_51"}
+	ASI_Out_Slave_51 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_52"}
+	ASI_Out_Slave_52 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_53"}
+	ASI_Out_Slave_53 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_54"}
+	ASI_Out_Slave_54 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_55"}
+	ASI_Out_Slave_55 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_56"}
+	ASI_Out_Slave_56 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_57"}
+	ASI_Out_Slave_57 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_58"}
+	ASI_Out_Slave_58 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_59"}
+	ASI_Out_Slave_59 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_60"}
+	ASI_Out_Slave_60 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_61"}
+	ASI_Out_Slave_61 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_62"}
+	ASI_Out_Slave_62 AT %Q* : BYTE;
+	{attribute addProperty Name "ASI_Out_Slave_63"}
+	ASI_Out_Slave_63 AT %Q* : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Digital_Inputs_2D995F68" Id="{ce2663ea-e96d-49ad-8d00-242f93ee8b1a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP6224-0042-0016"}
+{attribute addProperty Id "DI_X01_Pin2AT %I*BOOL819DI_X01_Pin4AT %I*BOOL8110DI_X02_Pin2AT %I*BOOL8111DI_X02_Pin4AT %I*BOOL8112DI_X05_Pin2AT %I*BOOL8113DI_X05_Pin4AT %I*BOOL8114DI_X06_Pin2AT %I*BOOL8115DI_X06_Pin4AT %I*BOOL8116"}
+{attribute addProperty CRC "765026152"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE Digital_Inputs_2D995F68 :
+STRUCT
+	{attribute addProperty Name "DI_X01_Pin2"}
+	DI_X01_Pin2 AT %I* : BOOL;
+	{attribute addProperty Name "DI_X01_Pin4"}
+	DI_X01_Pin4 AT %I* : BOOL;
+	{attribute addProperty Name "DI_X02_Pin2"}
+	DI_X02_Pin2 AT %I* : BOOL;
+	{attribute addProperty Name "DI_X02_Pin4"}
+	DI_X02_Pin4 AT %I* : BOOL;
+	{attribute addProperty Name "DI_X05_Pin2"}
+	DI_X05_Pin2 AT %I* : BOOL;
+	{attribute addProperty Name "DI_X05_Pin4"}
+	DI_X05_Pin4 AT %I* : BOOL;
+	{attribute addProperty Name "DI_X06_Pin2"}
+	DI_X06_Pin2 AT %I* : BOOL;
+	{attribute addProperty Name "DI_X06_Pin4"}
+	DI_X06_Pin4 AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

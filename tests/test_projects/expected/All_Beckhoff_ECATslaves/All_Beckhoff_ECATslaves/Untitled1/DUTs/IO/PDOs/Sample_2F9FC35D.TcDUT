@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Sample_2F9FC35D" Id="{79784825-1ff8-4f11-a1a5-1219c43cdabf}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2262--0000"}
+{attribute addProperty Id "OutputAT %Q*BYTE81"}
+{attribute addProperty CRC "798999389"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE Sample_2F9FC35D :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

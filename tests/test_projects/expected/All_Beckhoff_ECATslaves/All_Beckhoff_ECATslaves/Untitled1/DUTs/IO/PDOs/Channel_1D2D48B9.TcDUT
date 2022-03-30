@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_1D2D48B9" Id="{3bb85bb3-754a-4036-998c-bff6e87a083e}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL6781"}
+{attribute addProperty Id "StateAT %I*UINT000Data_In_0AT %I*USINT000Data_In_1AT %I*USINT000Data_In_2AT %I*USINT000Data_In_3AT %I*USINT000Data_In_4AT %I*USINT000Data_In_5AT %I*USINT000Data_In_6AT %I*USINT000Data_In_7AT %I*USINT000Data_In_8AT %I*USINT000Data_In_9AT %I*USINT000Data_In_10AT %I*USINT000Data_In_11AT %I*USINT000Data_In_12AT %I*USINT000Data_In_13AT %I*USINT000Data_In_14AT %I*USINT000Data_In_15AT %I*USINT000Data_In_16AT %I*USINT000Data_In_17AT %I*USINT000Data_In_18AT %I*USINT000Data_In_19AT %I*USINT000Data_In_20AT %I*USINT000Data_In_21AT %I*USINT000CtrlAT %Q*UINT000Data_Out_0AT %Q*USINT000Data_Out_1AT %Q*USINT000Data_Out_2AT %Q*USINT000Data_Out_3AT %Q*USINT000Data_Out_4AT %Q*USINT000Data_Out_5AT %Q*USINT000Data_Out_6AT %Q*USINT000Data_Out_7AT %Q*USINT000Data_Out_8AT %Q*USINT000Data_Out_9AT %Q*USINT000Data_Out_10AT %Q*USINT000Data_Out_11AT %Q*USINT000Data_Out_12AT %Q*USINT000Data_Out_13AT %Q*USINT000Data_Out_14AT %Q*USINT000Data_Out_15AT %Q*USINT000Data_Out_16AT %Q*USINT000Data_Out_17AT %Q*USINT000Data_Out_18AT %Q*USINT000Data_Out_19AT %Q*USINT000Data_Out_20AT %Q*USINT000Data_Out_21AT %Q*USINT000"}
+{attribute addProperty CRC "489507001"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE Channel_1D2D48B9 :
+STRUCT
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+	{attribute addProperty Name "Data_In_0"}
+	Data_In_0 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_1"}
+	Data_In_1 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_2"}
+	Data_In_2 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_3"}
+	Data_In_3 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_4"}
+	Data_In_4 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_5"}
+	Data_In_5 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_6"}
+	Data_In_6 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_7"}
+	Data_In_7 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_8"}
+	Data_In_8 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_9"}
+	Data_In_9 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_10"}
+	Data_In_10 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_11"}
+	Data_In_11 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_12"}
+	Data_In_12 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_13"}
+	Data_In_13 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_14"}
+	Data_In_14 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_15"}
+	Data_In_15 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_16"}
+	Data_In_16 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_17"}
+	Data_In_17 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_18"}
+	Data_In_18 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_19"}
+	Data_In_19 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_20"}
+	Data_In_20 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_21"}
+	Data_In_21 AT %I* : USINT;
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : UINT;
+	{attribute addProperty Name "Data_Out_0"}
+	Data_Out_0 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_1"}
+	Data_Out_1 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_2"}
+	Data_Out_2 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_3"}
+	Data_Out_3 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_4"}
+	Data_Out_4 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_5"}
+	Data_Out_5 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_6"}
+	Data_Out_6 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_7"}
+	Data_Out_7 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_8"}
+	Data_Out_8 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_9"}
+	Data_Out_9 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_10"}
+	Data_Out_10 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_11"}
+	Data_Out_11 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_12"}
+	Data_Out_12 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_13"}
+	Data_Out_13 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_14"}
+	Data_Out_14 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_15"}
+	Data_Out_15 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_16"}
+	Data_Out_16 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_17"}
+	Data_Out_17 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_18"}
+	Data_Out_18 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_19"}
+	Data_Out_19 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_20"}
+	Data_Out_20 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_21"}
+	Data_Out_21 AT %Q* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSLOGIC_Inputs_8BA5C933" Id="{0c54ed5a-9cca-4184-9b23-36656f397de8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ1914-0000-0017"}
+{attribute addProperty Id "Safe_Logic_StateAT %I*USINT811Cycle_CounterAT %I*USINT812"}
+{attribute addProperty CRC "2342897971"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE FSLOGIC_Inputs_8BA5C933 :
+STRUCT
+	{attribute addProperty Name "Safe_Logic_State"}
+	Safe_Logic_State AT %I* : USINT;
+	{attribute addProperty Name "Cycle_Counter"}
+	Cycle_Counter AT %I* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

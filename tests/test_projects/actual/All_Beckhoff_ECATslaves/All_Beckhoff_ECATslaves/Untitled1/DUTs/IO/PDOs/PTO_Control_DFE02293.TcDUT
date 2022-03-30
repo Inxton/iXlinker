@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PTO_Control_DFE02293" Id="{91190c44-fa9a-49d8-9fc9-3e62da7a298c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2521-0000-1016"}
+{attribute addProperty Id "Frequency_selectAT %Q*BOOL811Disable_rampAT %Q*BOOL812Go_counterAT %Q*BOOL813Frequency_valueAT %Q*UINT16217"}
+{attribute addProperty CRC "3756008083"}
+{attribute addProperty SizeInBites "40"}
+{attribute addProperty SizeInBytes "5"}
+TYPE PTO_Control_DFE02293 :
+STRUCT
+	{attribute addProperty Name "Frequency_select"}
+	Frequency_select AT %Q* : BOOL;
+	{attribute addProperty Name "Disable_ramp"}
+	Disable_ramp AT %Q* : BOOL;
+	{attribute addProperty Name "Go_counter"}
+	Go_counter AT %Q* : BOOL;
+	{attribute addProperty Name "Frequency_value"}
+	Frequency_value AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

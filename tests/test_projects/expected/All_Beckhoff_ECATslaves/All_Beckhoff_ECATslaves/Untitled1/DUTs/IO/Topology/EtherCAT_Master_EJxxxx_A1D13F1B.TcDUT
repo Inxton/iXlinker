@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_EJxxxx_A1D13F1B" Id="{e696bc5e-3775-4fd2-925c-af0e562eb914}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_EJ1xxxBeckhoff_EJ1xxx_BA4DEDCC877109.625Beckhoff_EJ2xxxBeckhoff_EJ2xxx_42F4B05B1708213.5Beckhoff_EJ3xxxBeckhoff_EJ3xxx_E0C24C985816727Beckhoff_EJ4xxxBeckhoff_EJ4xxx_B433EAC71353169.125Beckhoff_EJ5xxxBeckhoff_EJ5xxx_DF22D5A372891Beckhoff_EJ6xxxBeckhoff_EJ6xxx_A0E5C2C01222152.75Beckhoff_EJ7xxxBeckhoff_EJ7xxx_9F75012E82481031Beckhoff_EJ9xxxBeckhoff_EJ9xxx_660B2C8D922115.25Beckhoff_EJx9xxBeckhoff_EJx9xx_A91285092644330.5SyncUnitsSyncUnits_CAB22D3B19524.375InputsInputs_C75D3FEC1280160OutputsOutputs_47D1E803848106InfoDataInfoData_E9F65A829612"}
+{attribute addProperty CRC "2714844955"}
+{attribute addProperty SizeInBites "25937"}
+{attribute addProperty SizeInBytes "3242.125"}
+TYPE EtherCAT_Master_EJxxxx_A1D13F1B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EJ1xxx"}
+	Beckhoff_EJ1xxx : Beckhoff_EJ1xxx_BA4DEDCC;
+	{attribute addProperty Name "Beckhoff_EJ2xxx"}
+	Beckhoff_EJ2xxx : Beckhoff_EJ2xxx_42F4B05B;
+	{attribute addProperty Name "Beckhoff_EJ3xxx"}
+	Beckhoff_EJ3xxx : Beckhoff_EJ3xxx_E0C24C98;
+	{attribute addProperty Name "Beckhoff_EJ4xxx"}
+	Beckhoff_EJ4xxx : Beckhoff_EJ4xxx_B433EAC7;
+	{attribute addProperty Name "Beckhoff_EJ5xxx"}
+	Beckhoff_EJ5xxx : Beckhoff_EJ5xxx_DF22D5A3;
+	{attribute addProperty Name "Beckhoff_EJ6xxx"}
+	Beckhoff_EJ6xxx : Beckhoff_EJ6xxx_A0E5C2C0;
+	{attribute addProperty Name "Beckhoff_EJ7xxx"}
+	Beckhoff_EJ7xxx : Beckhoff_EJ7xxx_9F75012E;
+	{attribute addProperty Name "Beckhoff_EJ9xxx"}
+	Beckhoff_EJ9xxx : Beckhoff_EJ9xxx_660B2C8D;
+	{attribute addProperty Name "Beckhoff_EJx9xx"}
+	Beckhoff_EJx9xx : Beckhoff_EJx9xx_A9128509;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_CAB22D3B;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_C75D3FEC;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_47D1E803;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_E9F65A82;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

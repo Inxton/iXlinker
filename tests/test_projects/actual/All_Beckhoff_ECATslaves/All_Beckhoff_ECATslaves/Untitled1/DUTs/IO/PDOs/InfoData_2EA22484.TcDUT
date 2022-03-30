@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_2EA22484" Id="{775f2a71-c9aa-442d-8852-1c2aaa042b78}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP2339-0021-0016"}
+{attribute addProperty Id "AoeNetIdAT %I*AMSNETID4860StateAT %I*UINT1620"}
+{attribute addProperty CRC "782378116"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE InfoData_2EA22484 :
+STRUCT
+	{attribute addProperty Name "AoeNetId"}
+	AoeNetId AT %I* : AMSNETID;
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

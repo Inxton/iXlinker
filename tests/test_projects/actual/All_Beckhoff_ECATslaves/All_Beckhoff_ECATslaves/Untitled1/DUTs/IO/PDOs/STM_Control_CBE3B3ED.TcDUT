@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="STM_Control_CBE3B3ED" Id="{40f43533-b678-4d02-8849-d5a5c5591364}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP7041-0002-0016"}
+{attribute addProperty Id "ControlAT %Q*Control_D763B95710012.5"}
+{attribute addProperty CRC "3420697581"}
+{attribute addProperty SizeInBites "100"}
+{attribute addProperty SizeInBytes "12.5"}
+TYPE STM_Control_CBE3B3ED :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_D763B957;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

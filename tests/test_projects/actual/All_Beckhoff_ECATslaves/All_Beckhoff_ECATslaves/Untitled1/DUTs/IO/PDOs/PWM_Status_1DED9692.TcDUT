@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PWM_Status_1DED9692" Id="{d51c9828-801e-4b3c-a99e-9e8af5d06c85}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP8309-0022-0021"}
+{attribute addProperty Id "StatusAT %I*Status_D7D8B361162"}
+{attribute addProperty CRC "502109842"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE PWM_Status_1DED9692 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_D7D8B361;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

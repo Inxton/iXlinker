@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DPO_Inputs_Channel_AD3CD21C" Id="{35651bad-31cb-40fc-88f5-51859c7b6921}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP9224-0037-0017"}
+{attribute addProperty Id "StatusAT %I*Status_A250D39B1621Current_UsAT %I*INT16217Current_UpAT %I*INT16218"}
+{attribute addProperty CRC "2906444316"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE DPO_Inputs_Channel_AD3CD21C :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_A250D39B;
+	{attribute addProperty Name "Current_Us"}
+	Current_Us AT %I* : INT;
+	{attribute addProperty Name "Current_Up"}
+	Current_Up AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

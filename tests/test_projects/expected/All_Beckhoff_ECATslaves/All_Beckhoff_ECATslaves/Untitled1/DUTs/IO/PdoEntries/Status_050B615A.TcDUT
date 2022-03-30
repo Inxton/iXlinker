@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_050B615A" Id="{680ee816-65f9-42a4-bbbe-2b13fc249e78}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELM9410-0000-0016"}
+{attribute addProperty Id "DiagBIT10.1251ErrorBIT10.1252Input_cycle_Counter_BIT_0BIT10.1253Input_cycle_Counter_BIT_1BIT10.1253TxPDO_StateBIT10.1257"}
+{attribute addProperty CRC "84631898"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE Status_050B615A :
+STRUCT
+	{attribute addProperty Name "Diag"}
+	Diag : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute addProperty Name "Input_cycle_Counter"}
+	Input_cycle_Counter_BIT_0 : BIT;
+	{attribute addProperty Name "Input_cycle_Counter"}
+	Input_cycle_Counter_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BIT;
+	{attribute 'hide'}
+	reserve_2 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="STATUS_FDB39B82" Id="{1a5ac637-d142-4d56-aa47-6d42d31efe28}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3413-0000-0019"}
+{attribute addProperty Id "OvercurrentBIT10.1253TxPDO_StateBIT10.12515TxPDO_ToggleBIT10.12516"}
+{attribute addProperty CRC "4256406402"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE STATUS_FDB39B82 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute addProperty Name "Overcurrent"}
+	Overcurrent : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_6 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_7 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_8 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_9 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_10 : BIT;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

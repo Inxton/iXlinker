@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2262_6FCF2F7B" Id="{bbed5c4f-484e-45a6-a6ea-ce58ee1dbb2f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2262-0000-0001"}
+{attribute addProperty Id "CycCount0AT %Q*CycCount0_485675001620Sample0_0AT %Q*Sample_ABF5BEA9810GapAT %Q*EMPTY_STRUCTURE000CycCount1AT %Q*CycCount1_485675001620Sample1_0AT %Q*Sample_4351E8AC810Gap_1AT %Q*EMPTY_STRUCTURE000WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "4189547275"}
+{attribute addProperty SizeInBites "129"}
+{attribute addProperty SizeInBytes "16.125"}
+TYPE EL2262_6FCF2F7B :
+STRUCT
+	{attribute addProperty Name "CycCount0"}
+	CycCount0 : CycCount0_48567500;
+	{attribute addProperty Name "Sample0_0"}
+	Sample0_0 : Sample_ABF5BEA9;
+	{attribute addProperty Name "Gap"}
+	Gap : EMPTY_STRUCTURE;
+	{attribute addProperty Name "CycCount1"}
+	CycCount1 : CycCount1_48567500;
+	{attribute addProperty Name "Sample1_0"}
+	Sample1_0 : Sample_4351E8AC;
+	{attribute addProperty Name "Gap_1"}
+	Gap_1 : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_28A86775;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

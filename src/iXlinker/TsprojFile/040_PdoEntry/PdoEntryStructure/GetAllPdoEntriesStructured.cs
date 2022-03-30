@@ -250,6 +250,10 @@ namespace TsprojFile.Scan
                                     //if not add to the structure list
                                     PdoEntryStructures.Add(actPdoEntryStruct);
                                 }
+                                //only for testing purpose
+                                string s1 = actPdoEntryStruct.Name;
+
+
                                 //create pdo entry of the structured type
                                 PdoEntryStructMemberViewModel firstStructMember = actPdoEntryStruct.StructMembers.FirstOrDefault();
                                 PdoEntryViewModel pdoEntryStructured = new PdoEntryViewModel() { Name = ValidatePlcItem.Name(actPdoEntryStruct.Prefix),  TypeNamespace = actPdoEntryStruct.TypeNamespace, Type_Value = ValidatePlcItem.Type(actPdoEntryStruct.Name), OwnerBname = pdoEntryUnstructured.OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, SizeInBites = actPdoEntryStruct.SizeInBites, SizeInBytes = actPdoEntryStruct.SizeInBytes };
@@ -257,9 +261,20 @@ namespace TsprojFile.Scan
                                 pdoEntryStructured.SizeInBites = actPdoEntryStruct.SizeInBites;
                                 pdoEntryStructured.SizeInBytes = actPdoEntryStruct.SizeInBytes;
                                 pdoEntriesStructured.Add(pdoEntryStructured);
+
+
+                                //only for testing purpose
+                                if (!string.IsNullOrEmpty(s1) && !string.IsNullOrEmpty(actPdoEntryStruct.Name) && !s1.Equals(actPdoEntryStruct.Name))
+                                {
+
+                                }
+
+
                                 //delete actPdoEntryStruct
                                 actPdoEntryStruct = null;
                                 structOpen = false;
+
+
                             }
                         }
                     }
@@ -269,8 +284,19 @@ namespace TsprojFile.Scan
                         if (pdoEntryUnstructured.Name != null)
                         {
                             pdoEntryUnstructured.Name = ValidatePlcItem.Name(pdoEntryUnstructured.Name);
+
+                            //only for testing purpose
+                            string s1 = !string.IsNullOrEmpty(pdoEntryUnstructured.Type_Value) ? pdoEntryUnstructured.Type_Value : null;
+
                             pdoEntryUnstructured.Type_Value = ValidatePlcItem.Type(pdoEntryUnstructured.Type_Value);
-                            pdoEntryUnstructured.TypeNamespace = ValidatePlcItem.Type(pdoEntryUnstructured.TypeNamespace);
+
+                            //only for testing purpose
+                            if (!string.IsNullOrEmpty(s1) && !string.IsNullOrEmpty(pdoEntryUnstructured.Type_Value) && !s1.Equals(pdoEntryUnstructured.Type_Value))
+                            {
+
+                            }
+
+                            pdoEntryUnstructured.TypeNamespace = pdoEntryUnstructured.TypeNamespace;
                             if (pdoEntryUnstructured.Index != null )
                             {
                                 pdoEntryUnstructured.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryUnstructured.Type_Value);

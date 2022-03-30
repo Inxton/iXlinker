@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP7041_C8176A00" Id="{e4e555b0-a535-48bd-afdb-1a022abec719}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP7041-0002-0016"}
+{attribute addProperty Id "ENC_Status_compactAT %I*ENC_Status_compact_234ED845769.50STM_StatusAT %I*STM_Status_425E1254516.3750ENC_Control_compactAT %Q*ENC_Control_compact_9A173A4D607.50STM_ControlAT %Q*STM_Control_CBE3B3ED10012.50STM_VelocityAT %Q*STM_Velocity_1D89B5C21620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_6C7DEEF988110"}
+{attribute addProperty CRC "870015531"}
+{attribute addProperty SizeInBites "393"}
+{attribute addProperty SizeInBytes "49.125"}
+TYPE EP7041_C8176A00 :
+STRUCT
+	{attribute addProperty Name "ENC_Status_compact"}
+	ENC_Status_compact : ENC_Status_compact_234ED845;
+	{attribute addProperty Name "STM_Status"}
+	STM_Status : STM_Status_425E1254;
+	{attribute addProperty Name "ENC_Control_compact"}
+	ENC_Control_compact : ENC_Control_compact_9A173A4D;
+	{attribute addProperty Name "STM_Control"}
+	STM_Control : STM_Control_CBE3B3ED;
+	{attribute addProperty Name "STM_Velocity"}
+	STM_Velocity : STM_Velocity_1D89B5C2;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6C7DEEF9;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

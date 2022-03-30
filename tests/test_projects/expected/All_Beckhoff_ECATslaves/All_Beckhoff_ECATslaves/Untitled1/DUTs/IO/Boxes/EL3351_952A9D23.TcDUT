@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3351_952A9D23" Id="{54bc28c3-da79-4553-b410-e222864f3bb8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3351-0000-0016"}
+{attribute addProperty Id "AIBridge_InputsAT %I*AIBridge_Inputs_EC606E737290AISupply_InputsAT %I*AISupply_Inputs_EC606E737290WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2907008076"}
+{attribute addProperty SizeInBites "226"}
+{attribute addProperty SizeInBytes "28.25"}
+TYPE EL3351_952A9D23 :
+STRUCT
+	{attribute addProperty Name "AIBridge_Inputs"}
+	AIBridge_Inputs : AIBridge_Inputs_EC606E73;
+	{attribute addProperty Name "AISupply_Inputs"}
+	AISupply_Inputs : AISupply_Inputs_EC606E73;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

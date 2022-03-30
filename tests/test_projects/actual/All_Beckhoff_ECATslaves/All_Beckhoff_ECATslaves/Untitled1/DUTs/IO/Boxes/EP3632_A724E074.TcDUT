@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP3632_A724E074" Id="{406ea78d-bed6-4218-a711-feabad2b8388}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP3632-0001-0016"}
+{attribute addProperty Id "Ch1_StatusAT %I*Ch1_Status_DE4E497B1620Ch1_SampleAT %I*ARRAY[0..9] OF Ch1_Sample_37C07C83160200Ch2_StatusAT %I*Ch2_Status_DE4E497B1620Ch2_SampleAT %I*ARRAY[0..9] OF Ch2_Sample_29ECE468160200NextSync1TimeAT %I*NextSync1Time_4F9D66926480Sample_CountAT %I*Sample_Count_46F3E31D1620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "2348709793"}
+{attribute addProperty SizeInBites "578"}
+{attribute addProperty SizeInBytes "72.25"}
+TYPE EP3632_A724E074 :
+STRUCT
+	{attribute addProperty Name "Ch1_Status"}
+	Ch1_Status : Ch1_Status_DE4E497B;
+	{attribute addProperty Name "Ch1_Sample"}
+	Ch1_Sample : ARRAY[0..9] OF Ch1_Sample_37C07C83;
+	{attribute addProperty Name "Ch2_Status"}
+	Ch2_Status : Ch2_Status_DE4E497B;
+	{attribute addProperty Name "Ch2_Sample"}
+	Ch2_Sample : ARRAY[0..9] OF Ch2_Sample_29ECE468;
+	{attribute addProperty Name "NextSync1Time"}
+	NextSync1Time : NextSync1Time_4F9D6692;
+	{attribute addProperty Name "Sample_Count"}
+	Sample_Count : Sample_Count_46F3E31D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

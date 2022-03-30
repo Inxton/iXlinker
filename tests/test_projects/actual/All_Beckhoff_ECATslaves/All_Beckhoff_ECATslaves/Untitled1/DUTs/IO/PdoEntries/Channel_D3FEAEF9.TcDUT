@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_D3FEAEF9" Id="{44e34f8d-103b-456f-a3a6-34044158af2e}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2014-0000-0016"}
+{attribute addProperty Id "OutputBIT10.1251"}
+{attribute addProperty CRC "3556683513"}
+{attribute addProperty SizeInBites "1"}
+{attribute addProperty SizeInBytes "0.125"}
+{warning 'Size of this structure is not a multiple of 8 bits!!!'}
+TYPE Channel_D3FEAEF9 :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL1908_5E185878" Id="{784389c1-70a1-4432-94bf-f49fcde96b5d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL1908"}
+{attribute addProperty Id "Channel_1Channel_D8611DE600"}
+{attribute addProperty CRC "1578653816"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL1908_5E185878 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_D8611DE6;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

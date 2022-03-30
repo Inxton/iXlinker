@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_C14B150F" Id="{411cb814-3bb1-45d9-bd44-e4af5eed9af6}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2911-0000-0016"}
+{attribute addProperty Id "FSoE_CommandUSINT811FSOUT_Module_OutputBIT10.1251FSOUT_Module_ErrAckBIT10.1251FSIN_Module_ErrAckBIT10.1251FSoE_CRC_000UINT1623FSoE_Connection_IDUINT1622"}
+{attribute addProperty CRC "3242923279"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE FSOE_C14B150F :
+STRUCT
+	{attribute addProperty Name "FSoE_Command"}
+	FSoE_Command : USINT;
+	{attribute addProperty Name "FSOUT_Module_Output"}
+	FSOUT_Module_Output : BIT;
+	{attribute addProperty Name "FSOUT_Module_ErrAck"}
+	FSOUT_Module_ErrAck : BIT;
+	{attribute addProperty Name "FSIN_Module_ErrAck"}
+	FSIN_Module_ErrAck : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_4 : BIT;
+	{attribute addProperty Name "FSoE_CRC_000"}
+	FSoE_CRC_000 : UINT;
+	{attribute addProperty Name "FSoE_Connection_ID"}
+	FSoE_Connection_ID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

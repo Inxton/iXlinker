@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3152_04826EAB" Id="{c9f638dc-29bb-42c1-b153-607f15267f98}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3152-0000-0016"}
+{attribute addProperty Id "AI_Standard_ChannelAT %I*ARRAY[0..2] OF AI_Standard_Channel_8749C23514818.50WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1665065456"}
+{attribute addProperty SizeInBites "230"}
+{attribute addProperty SizeInBytes "28.75"}
+TYPE EL3152_04826EAB :
+STRUCT
+	{attribute addProperty Name "AI_Standard_Channel"}
+	AI_Standard_Channel : ARRAY[0..2] OF AI_Standard_Channel_8749C235;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

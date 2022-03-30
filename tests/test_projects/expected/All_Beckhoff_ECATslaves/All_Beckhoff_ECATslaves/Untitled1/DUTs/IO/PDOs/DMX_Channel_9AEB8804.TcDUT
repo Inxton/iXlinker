@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DMX_Channel_9AEB8804" Id="{67e2f182-2765-4398-8b10-a368e192d86d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6851-0000-0017"}
+{attribute addProperty Id "ChannelAT %Q*ARRAY[0 ..63] OF USINT512640"}
+{attribute addProperty CRC "1632717686"}
+{attribute addProperty SizeInBites "512"}
+{attribute addProperty SizeInBytes "64"}
+TYPE DMX_Channel_9AEB8804 :
+STRUCT
+	{attribute addProperty Name "Channel"}
+	Channel AT %Q* : ARRAY[0 ..63] OF USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SAI_Inputs_6167285A" Id="{c87cd3ff-821e-4c02-af08-c135bc7bd1eb}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3681-0000-0018"}
+{attribute addProperty Id "StatusAT %I*Status_FB4DE8191621ValueAT %I*DINT32417"}
+{attribute addProperty CRC "1634150490"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE SAI_Inputs_6167285A :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_FB4DE819;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

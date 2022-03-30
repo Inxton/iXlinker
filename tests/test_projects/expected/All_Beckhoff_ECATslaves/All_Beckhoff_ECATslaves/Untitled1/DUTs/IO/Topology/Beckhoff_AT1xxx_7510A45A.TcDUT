@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_AT1xxx_7510A45A" Id="{191b1af8-622e-4f5f-97fe-9f2ca19d52e6}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_AT2xxxEK1122Beckhoff_AT2xxxEK1122_56C52038454865685.75A_0059_AT2000_5250_0018AT2000_C5E5984862678.25"}
+{attribute addProperty CRC "1964024922"}
+{attribute addProperty SizeInBites "46112"}
+{attribute addProperty SizeInBytes "5764"}
+TYPE Beckhoff_AT1xxx_7510A45A EXTENDS EK1100_179A0949 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_AT2xxxEK1122"}
+	Beckhoff_AT2xxxEK1122 : Beckhoff_AT2xxxEK1122_56C52038;
+	{attribute addProperty Name "A_0059_AT2000_5250_0018"}
+	A_0059_AT2000_5250_0018 : AT2000_C5E59848;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

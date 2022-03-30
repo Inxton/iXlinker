@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PSM_Statusword_B057017B" Id="{c6393173-8a81-4ca8-91d9-192fb9dafaad}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX8810-0000-0017"}
+{attribute addProperty Id "StatuswordAT %I*Statusword_3E16C5AB162"}
+{attribute addProperty CRC "2958492027"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE PSM_Statusword_B057017B :
+STRUCT
+	{attribute addProperty Name "Statusword"}
+	Statusword AT %I* : Statusword_3E16C5AB;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

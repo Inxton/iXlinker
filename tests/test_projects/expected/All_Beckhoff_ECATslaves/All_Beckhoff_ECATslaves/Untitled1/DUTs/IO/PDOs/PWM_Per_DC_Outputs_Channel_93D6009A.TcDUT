@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PWM_Per_DC_Outputs_Channel_93D6009A" Id="{2838ee1f-3603-4ccf-8b27-2d4de5417777}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2502-0010-0020"}
+{attribute addProperty Id "CtrlAT %Q*Ctrl_A1156A6F1621PWM_outputAT %Q*UINT16217PWM_periodAT %Q*UINT16218DC_start_timeAT %Q*ULINT64819"}
+{attribute addProperty CRC "2480275610"}
+{attribute addProperty SizeInBites "112"}
+{attribute addProperty SizeInBytes "14"}
+TYPE PWM_Per_DC_Outputs_Channel_93D6009A :
+STRUCT
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : Ctrl_A1156A6F;
+	{attribute addProperty Name "PWM_output"}
+	PWM_output AT %Q* : UINT;
+	{attribute addProperty Name "PWM_period"}
+	PWM_period AT %Q* : UINT;
+	{attribute addProperty Name "DC_start_time"}
+	DC_start_time AT %Q* : ULINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

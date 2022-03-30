@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_FB4DE819" Id="{f9e2b32a-cec0-4d5c-bf78-64f8088e90e1}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3681-0000-0018"}
+{attribute addProperty Id "UnderrangeBIT10.1251OverrangeBIT10.1252Extended_rangeBIT10.1253Data_invalidBIT10.1254Range_invalidBIT10.1255Autorange_disabledBIT10.1256ErrorBIT10.1257Calibration_in_progressBIT10.1258TxPDO_StateBIT10.1257TxPDO_ToggleBIT10.1259"}
+{attribute addProperty CRC "4216186905"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_FB4DE819 :
+STRUCT
+	{attribute addProperty Name "Underrange"}
+	Underrange : BIT;
+	{attribute addProperty Name "Overrange"}
+	Overrange : BIT;
+	{attribute addProperty Name "Extended_range"}
+	Extended_range : BIT;
+	{attribute addProperty Name "Data_invalid"}
+	Data_invalid : BIT;
+	{attribute addProperty Name "Range_invalid"}
+	Range_invalid : BIT;
+	{attribute addProperty Name "Autorange_disabled"}
+	Autorange_disabled : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute addProperty Name "Calibration_in_progress"}
+	Calibration_in_progress : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_5 : BIT;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

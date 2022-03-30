@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_ER4xxx_C7805EB0" Id="{4430fa10-9ab9-4297-99a5-ed3c2e2d04ed}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_ER4xxxEK1122Beckhoff_ER4xxxEK1122_D1435FD166282.75"}
+{attribute addProperty CRC "3347078832"}
+{attribute addProperty SizeInBites "662"}
+{attribute addProperty SizeInBytes "82.75"}
+TYPE Beckhoff_ER4xxx_C7805EB0 EXTENDS EK1100_179A0949 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_ER4xxxEK1122"}
+	Beckhoff_ER4xxxEK1122 : Beckhoff_ER4xxxEK1122_D1435FD1;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

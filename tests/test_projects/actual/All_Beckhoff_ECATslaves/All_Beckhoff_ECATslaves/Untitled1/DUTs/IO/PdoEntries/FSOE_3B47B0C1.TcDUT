@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_3B47B0C1" Id="{a49cb45e-e34e-4b44-8d53-e6ec2981b324}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1960-2600-0021"}
+{attribute addProperty Id "FSoE_CommandUSINT811FSOUT_Module_1_Module_FaultBIT10.1251FSOUT_Module_2_Module_FaultBIT10.1251FSOUT_Module_3_Module_FaultBIT10.1251FSOUT_Module_4_Module_FaultBIT10.1251FSOUT_Module_5_Module_FaultBIT10.1251FSOUT_Module_6_Module_FaultBIT10.1251FSOUT_Relais_Module_Module_FaultBIT10.1251FSIN_Module_1_Channel_1_Input_X6_1BIT10.1251FSIN_Module_1_Channel_2_Input_X6_2BIT10.1252FSIN_Module_1_Module_FaultBIT10.1251FSIN_Module_2_Channel_1_Input_X6_3BIT10.1251FSIN_Module_2_Channel_2_Input_X6_4BIT10.1252FSIN_Module_2_Module_FaultBIT10.1251FSIN_Module_3_Channel_1_Input_X6_5BIT10.1251FSIN_Module_3_Channel_2_Input_X6_6BIT10.1252FSIN_Module_3_Module_FaultBIT10.1251FSoE_CRC_000UINT1623FSIN_Module_4_Channel_1_Input_X6_7BIT10.1251FSIN_Module_4_Channel_2_Input_X6_8BIT10.1252FSIN_Module_4_Module_FaultBIT10.1251FSIN_Module_5_Channel_1_Input_X6_9BIT10.1251FSIN_Module_5_Channel_2_Input_X6_10BIT10.1252FSIN_Module_5_Module_FaultBIT10.1251FSIN_Module_6_Channel_1_Input_X8_1BIT10.1251FSIN_Module_6_Channel_2_Input_X8_2BIT10.1252FSIN_Module_6_Module_FaultBIT10.1251FSIN_Module_7_Channel_1_Input_X8_3BIT10.1251FSIN_Module_7_Channel_2_Input_X8_4BIT10.1252FSIN_Module_7_Module_FaultBIT10.1251FSIN_Module_8_Channel_1_Input_X8_5BIT10.1251FSIN_Module_8_Channel_2_Input_X8_6BIT10.1252FSIN_Module_8_Module_FaultBIT10.1251FSIN_Module_9_Channel_1_Input_X8_7BIT10.1251FSoE_CRC_001UINT1624FSIN_Module_9_Channel_2_Input_X8_8BIT10.1252FSIN_Module_9_Module_Fault_1BIT10.1251FSIN_Module_9_Module_Fault_2BIT10.1252FSIN_Module_10_Channel_1_Input_X8_9BIT10.1251FSIN_Module_10_Channel_2_Input_X8_10BIT10.1252FSIN_Module_10_Module_Fault_1BIT10.1251FSIN_Module_10_Module_Fault_2BIT10.1252FSoE_CRC_002UINT1625FSoE_Connection_IDUINT1622"}
+{attribute addProperty CRC "994554049"}
+{attribute addProperty SizeInBites "120"}
+{attribute addProperty SizeInBytes "15"}
+TYPE FSOE_3B47B0C1 :
+STRUCT
+	{attribute addProperty Name "FSoE_Command"}
+	FSoE_Command : USINT;
+	{attribute addProperty Name "FSOUT_Module_1_Module_Fault"}
+	FSOUT_Module_1_Module_Fault : BIT;
+	{attribute addProperty Name "FSOUT_Module_2_Module_Fault"}
+	FSOUT_Module_2_Module_Fault : BIT;
+	{attribute addProperty Name "FSOUT_Module_3_Module_Fault"}
+	FSOUT_Module_3_Module_Fault : BIT;
+	{attribute addProperty Name "FSOUT_Module_4_Module_Fault"}
+	FSOUT_Module_4_Module_Fault : BIT;
+	{attribute addProperty Name "FSOUT_Module_5_Module_Fault"}
+	FSOUT_Module_5_Module_Fault : BIT;
+	{attribute addProperty Name "FSOUT_Module_6_Module_Fault"}
+	FSOUT_Module_6_Module_Fault : BIT;
+	{attribute addProperty Name "FSOUT_Relais_Module_Module_Fault"}
+	FSOUT_Relais_Module_Module_Fault : BIT;
+	{attribute addProperty Name "FSIN_Module_1_Channel_1_Input_X6_1"}
+	FSIN_Module_1_Channel_1_Input_X6_1 : BIT;
+	{attribute addProperty Name "FSIN_Module_1_Channel_2_Input_X6_2"}
+	FSIN_Module_1_Channel_2_Input_X6_2 : BIT;
+	{attribute addProperty Name "FSIN_Module_1_Module_Fault"}
+	FSIN_Module_1_Module_Fault : BIT;
+	{attribute addProperty Name "FSIN_Module_2_Channel_1_Input_X6_3"}
+	FSIN_Module_2_Channel_1_Input_X6_3 : BIT;
+	{attribute addProperty Name "FSIN_Module_2_Channel_2_Input_X6_4"}
+	FSIN_Module_2_Channel_2_Input_X6_4 : BIT;
+	{attribute addProperty Name "FSIN_Module_2_Module_Fault"}
+	FSIN_Module_2_Module_Fault : BIT;
+	{attribute addProperty Name "FSIN_Module_3_Channel_1_Input_X6_5"}
+	FSIN_Module_3_Channel_1_Input_X6_5 : BIT;
+	{attribute addProperty Name "FSIN_Module_3_Channel_2_Input_X6_6"}
+	FSIN_Module_3_Channel_2_Input_X6_6 : BIT;
+	{attribute addProperty Name "FSIN_Module_3_Module_Fault"}
+	FSIN_Module_3_Module_Fault : BIT;
+	{attribute addProperty Name "FSoE_CRC_000"}
+	FSoE_CRC_000 : UINT;
+	{attribute addProperty Name "FSIN_Module_4_Channel_1_Input_X6_7"}
+	FSIN_Module_4_Channel_1_Input_X6_7 : BIT;
+	{attribute addProperty Name "FSIN_Module_4_Channel_2_Input_X6_8"}
+	FSIN_Module_4_Channel_2_Input_X6_8 : BIT;
+	{attribute addProperty Name "FSIN_Module_4_Module_Fault"}
+	FSIN_Module_4_Module_Fault : BIT;
+	{attribute addProperty Name "FSIN_Module_5_Channel_1_Input_X6_9"}
+	FSIN_Module_5_Channel_1_Input_X6_9 : BIT;
+	{attribute addProperty Name "FSIN_Module_5_Channel_2_Input_X6_10"}
+	FSIN_Module_5_Channel_2_Input_X6_10 : BIT;
+	{attribute addProperty Name "FSIN_Module_5_Module_Fault"}
+	FSIN_Module_5_Module_Fault : BIT;
+	{attribute addProperty Name "FSIN_Module_6_Channel_1_Input_X8_1"}
+	FSIN_Module_6_Channel_1_Input_X8_1 : BIT;
+	{attribute addProperty Name "FSIN_Module_6_Channel_2_Input_X8_2"}
+	FSIN_Module_6_Channel_2_Input_X8_2 : BIT;
+	{attribute addProperty Name "FSIN_Module_6_Module_Fault"}
+	FSIN_Module_6_Module_Fault : BIT;
+	{attribute addProperty Name "FSIN_Module_7_Channel_1_Input_X8_3"}
+	FSIN_Module_7_Channel_1_Input_X8_3 : BIT;
+	{attribute addProperty Name "FSIN_Module_7_Channel_2_Input_X8_4"}
+	FSIN_Module_7_Channel_2_Input_X8_4 : BIT;
+	{attribute addProperty Name "FSIN_Module_7_Module_Fault"}
+	FSIN_Module_7_Module_Fault : BIT;
+	{attribute addProperty Name "FSIN_Module_8_Channel_1_Input_X8_5"}
+	FSIN_Module_8_Channel_1_Input_X8_5 : BIT;
+	{attribute addProperty Name "FSIN_Module_8_Channel_2_Input_X8_6"}
+	FSIN_Module_8_Channel_2_Input_X8_6 : BIT;
+	{attribute addProperty Name "FSIN_Module_8_Module_Fault"}
+	FSIN_Module_8_Module_Fault : BIT;
+	{attribute addProperty Name "FSIN_Module_9_Channel_1_Input_X8_7"}
+	FSIN_Module_9_Channel_1_Input_X8_7 : BIT;
+	{attribute addProperty Name "FSoE_CRC_001"}
+	FSoE_CRC_001 : UINT;
+	{attribute addProperty Name "FSIN_Module_9_Channel_2_Input_X8_8"}
+	FSIN_Module_9_Channel_2_Input_X8_8 : BIT;
+	{attribute addProperty Name "FSIN_Module_9_Module_Fault_1"}
+	FSIN_Module_9_Module_Fault_1 : BIT;
+	{attribute addProperty Name "FSIN_Module_9_Module_Fault_2"}
+	FSIN_Module_9_Module_Fault_2 : BIT;
+	{attribute addProperty Name "FSIN_Module_10_Channel_1_Input_X8_9"}
+	FSIN_Module_10_Channel_1_Input_X8_9 : BIT;
+	{attribute addProperty Name "FSIN_Module_10_Channel_2_Input_X8_10"}
+	FSIN_Module_10_Channel_2_Input_X8_10 : BIT;
+	{attribute addProperty Name "FSIN_Module_10_Module_Fault_1"}
+	FSIN_Module_10_Module_Fault_1 : BIT;
+	{attribute addProperty Name "FSIN_Module_10_Module_Fault_2"}
+	FSIN_Module_10_Module_Fault_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_6 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_7 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_8 : BIT;
+	{attribute addProperty Name "FSoE_CRC_002"}
+	FSoE_CRC_002 : UINT;
+	{attribute addProperty Name "FSoE_Connection_ID"}
+	FSoE_Connection_ID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

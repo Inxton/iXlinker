@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_712CBB49" Id="{7554148e-2278-4ff1-81f5-1c42d40eb730}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AMP8000-0030-0103-0103"}
+{attribute addProperty Id "FSoE_Slave_CmdUSINT811Axis_A_STOBIT10.1251Safe_Input_1BIT10.1252Safe_Input_2BIT10.1253Safe_Input_3BIT10.1254Safe_Input_4BIT10.1255Safe_Input_5BIT10.1256Safe_Input_6BIT10.1257Safe_Input_7BIT10.1258Axis_B_STOBIT10.1259Safe_Input_9BIT10.12510Safe_Input_10BIT10.12511Safe_Input_11BIT10.12512Safe_Input_12BIT10.12513Safe_Input_13BIT10.12514Safe_Input_14BIT10.12515Safe_Input_15BIT10.12516FSoE_Slave_CRC_0UINT1623FSoE_Slave_ConnIDUINT1622"}
+{attribute addProperty CRC "1898756937"}
+{attribute addProperty SizeInBites "56"}
+{attribute addProperty SizeInBytes "7"}
+TYPE FSOE_712CBB49 :
+STRUCT
+	{attribute addProperty Name "FSoE_Slave_Cmd"}
+	FSoE_Slave_Cmd : USINT;
+	{attribute addProperty Name "Axis_A_STO"}
+	Axis_A_STO : BIT;
+	{attribute addProperty Name "Safe_Input_1"}
+	Safe_Input_1 : BIT;
+	{attribute addProperty Name "Safe_Input_2"}
+	Safe_Input_2 : BIT;
+	{attribute addProperty Name "Safe_Input_3"}
+	Safe_Input_3 : BIT;
+	{attribute addProperty Name "Safe_Input_4"}
+	Safe_Input_4 : BIT;
+	{attribute addProperty Name "Safe_Input_5"}
+	Safe_Input_5 : BIT;
+	{attribute addProperty Name "Safe_Input_6"}
+	Safe_Input_6 : BIT;
+	{attribute addProperty Name "Safe_Input_7"}
+	Safe_Input_7 : BIT;
+	{attribute addProperty Name "Axis_B_STO"}
+	Axis_B_STO : BIT;
+	{attribute addProperty Name "Safe_Input_9"}
+	Safe_Input_9 : BIT;
+	{attribute addProperty Name "Safe_Input_10"}
+	Safe_Input_10 : BIT;
+	{attribute addProperty Name "Safe_Input_11"}
+	Safe_Input_11 : BIT;
+	{attribute addProperty Name "Safe_Input_12"}
+	Safe_Input_12 : BIT;
+	{attribute addProperty Name "Safe_Input_13"}
+	Safe_Input_13 : BIT;
+	{attribute addProperty Name "Safe_Input_14"}
+	Safe_Input_14 : BIT;
+	{attribute addProperty Name "Safe_Input_15"}
+	Safe_Input_15 : BIT;
+	{attribute addProperty Name "FSoE_Slave_CRC_0"}
+	FSoE_Slave_CRC_0 : UINT;
+	{attribute addProperty Name "FSoE_Slave_ConnID"}
+	FSoE_Slave_ConnID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Next_Sync1_Time_F650E6AF" Id="{7d5f8d0f-1cfa-4daf-b684-a55316bee779}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3632-0000-0016"}
+{attribute addProperty Id "Start_Time_Next_LatchAT %I*ULINT648"}
+{attribute addProperty CRC "4132497071"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE Next_Sync1_Time_F650E6AF :
+STRUCT
+	{attribute addProperty Name "Start_Time_Next_Latch"}
+	Start_Time_Next_Latch AT %I* : ULINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SSI_Inputs_C03DB35B" Id="{99491386-1d3d-4e8d-bc73-2b20243c5260}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5001-0090-0016"}
+{attribute addProperty Id "StatusAT %I*Status_EF86FDC21621Counter_valueAT %I*UDINT32417"}
+{attribute addProperty CRC "3225269083"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE SSI_Inputs_C03DB35B :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_EF86FDC2;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

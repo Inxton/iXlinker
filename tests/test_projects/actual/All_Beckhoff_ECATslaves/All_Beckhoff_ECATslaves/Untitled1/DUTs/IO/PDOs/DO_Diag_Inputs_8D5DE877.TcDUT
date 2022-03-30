@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Diag_Inputs_8D5DE877" Id="{103480d7-e181-4642-b0d7-25ca03ccd016}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP2316-0008-0017"}
+{attribute addProperty Id "Diag_InputAT %I*ARRAY[0 ..7] OF BOOL6480Sync_ErrorAT %I*BOOL8132"}
+{attribute addProperty CRC "1023414225"}
+{attribute addProperty SizeInBites "72"}
+{attribute addProperty SizeInBytes "9"}
+TYPE DO_Diag_Inputs_8D5DE877 :
+STRUCT
+	{attribute addProperty Name "Diag_Input"}
+	Diag_Input AT %I* : ARRAY[0 ..7] OF BOOL;
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

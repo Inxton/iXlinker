@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP6601_194A340D" Id="{2ee5e5b7-b8e7-47d1-9f8c-8c0e6abb08d5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP6601-0002-0018"}
+{attribute addProperty Id "InfoDataInfoData_BC63D37F8010"}
+{attribute addProperty CRC "424293389"}
+{attribute addProperty SizeInBites "80"}
+{attribute addProperty SizeInBytes "10"}
+TYPE EP6601_194A340D :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

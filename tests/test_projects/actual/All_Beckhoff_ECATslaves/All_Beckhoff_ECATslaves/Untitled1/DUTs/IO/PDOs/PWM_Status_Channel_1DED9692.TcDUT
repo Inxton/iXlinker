@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PWM_Status_Channel_1DED9692" Id="{c1c12ee1-b5ea-41e9-913d-59b55bbc5d0f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2535-0103-0023"}
+{attribute addProperty Id "StatusAT %I*Status_D7D8B361162"}
+{attribute addProperty CRC "502109842"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE PWM_Status_Channel_1DED9692 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_D7D8B361;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

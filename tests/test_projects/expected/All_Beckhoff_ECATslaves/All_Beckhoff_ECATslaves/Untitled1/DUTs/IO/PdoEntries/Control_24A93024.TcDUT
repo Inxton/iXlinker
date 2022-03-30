@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_24A93024" Id="{2fe113f5-0c6f-4b20-a1f5-fceca8d09f0e}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EKM1101-0000-0016"}
+{attribute addProperty Id "Up_Out_OFFBIT10.1251"}
+{attribute addProperty CRC "615067684"}
+{attribute addProperty SizeInBites "121"}
+{attribute addProperty SizeInBytes "15.125"}
+{warning 'Size of this structure is not a multiple of 8 bits!!!'}
+TYPE Control_24A93024 :
+STRUCT
+	{attribute addProperty Name "Up_Out_OFF"}
+	Up_Out_OFF : BIT;
+	{attribute 'hide'}
+	reserve_1_BOOL_0 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_1 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_2 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_3 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_4 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_5 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_6 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_7 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_8 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_9 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_10 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_11 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_12 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_13 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_14 : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DEV_Outputs_Device_2D2EEEA1" Id="{c41b6cfe-7fcb-4cf4-985a-f1c863648f7c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP3744-0041-0016"}
+{attribute addProperty Id "Set_safe_stateAT %Q*BOOL81"}
+{attribute addProperty CRC "758050465"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE DEV_Outputs_Device_2D2EEEA1 :
+STRUCT
+	{attribute addProperty Name "Set_safe_state"}
+	Set_safe_state AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

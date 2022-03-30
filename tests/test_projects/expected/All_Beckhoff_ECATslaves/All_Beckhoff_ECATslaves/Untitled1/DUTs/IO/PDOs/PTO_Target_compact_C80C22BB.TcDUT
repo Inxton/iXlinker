@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PTO_Target_compact_C80C22BB" Id="{49c8e9c4-9c73-44c2-b4a0-e5f9415b88f4}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ2521-0224-0016"}
+{attribute addProperty Id "Target_counter_valueAT %Q*UINT162"}
+{attribute addProperty CRC "3356238523"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE PTO_Target_compact_C80C22BB :
+STRUCT
+	{attribute addProperty Name "Target_counter_value"}
+	Target_counter_value AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

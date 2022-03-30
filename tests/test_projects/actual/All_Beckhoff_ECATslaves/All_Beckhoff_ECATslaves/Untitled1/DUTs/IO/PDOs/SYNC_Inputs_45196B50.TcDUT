@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SYNC_Inputs_45196B50" Id="{3210eda5-80c9-48ec-8e58-db27050ce85c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6695-0002-0001"}
+{attribute addProperty Id "TxPDO_toggleAT %I*BOOL819TxPDO_stateAT %I*BOOL817External_device_not_connectedAT %I*BOOL8116"}
+{attribute addProperty CRC "1159293776"}
+{attribute addProperty SizeInBites "24"}
+{attribute addProperty SizeInBytes "3"}
+TYPE SYNC_Inputs_45196B50 :
+STRUCT
+	{attribute addProperty Name "TxPDO_toggle"}
+	TxPDO_toggle AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_state"}
+	TxPDO_state AT %I* : BOOL;
+	{attribute addProperty Name "External_device_not_connected"}
+	External_device_not_connected AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ctrl_A1156A6F" Id="{6fb42681-7f7b-46b0-956a-738b04853ad3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2502-0010-0020"}
+{attribute addProperty Id "Activate_permanentBIT10.1251Activate_DC_start_timeBIT10.1252DC_ImmediatelyBIT10.1253ErrAckBIT10.1254DCSyncOutCh2BIT10.1255"}
+{attribute addProperty CRC "2702535279"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Ctrl_A1156A6F :
+STRUCT
+	{attribute addProperty Name "Activate_permanent"}
+	Activate_permanent : BIT;
+	{attribute addProperty Name "Activate_DC_start_time"}
+	Activate_DC_start_time : BIT;
+	{attribute addProperty Name "DC_Immediately"}
+	DC_Immediately : BIT;
+	{attribute addProperty Name "ErrAck"}
+	ErrAck : BIT;
+	{attribute addProperty Name "DCSyncOutCh2"}
+	DCSyncOutCh2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2 : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

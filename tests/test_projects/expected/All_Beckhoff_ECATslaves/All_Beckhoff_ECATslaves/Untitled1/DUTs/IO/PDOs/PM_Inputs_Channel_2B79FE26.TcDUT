@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PM_Inputs_Channel_2B79FE26" Id="{dbe868c4-9056-442c-ae46-00e382a65dbf}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3403-0000-0018"}
+{attribute addProperty Id "Sync_ErrorAT %I*BOOL8114TxPDO_ToggleAT %I*BOOL819CurrentAT %I*DINT32417VoltageAT %I*DINT32418Active_powerAT %I*DINT32419IndexAT %I*USINT8120Variant_valueAT %I*DINT32429"}
+{attribute addProperty CRC "729415206"}
+{attribute addProperty SizeInBites "152"}
+{attribute addProperty SizeInBytes "19"}
+TYPE PM_Inputs_Channel_2B79FE26 :
+STRUCT
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Current"}
+	Current AT %I* : DINT;
+	{attribute addProperty Name "Voltage"}
+	Voltage AT %I* : DINT;
+	{attribute addProperty Name "Active_power"}
+	Active_power AT %I* : DINT;
+	{attribute addProperty Name "Index"}
+	Index AT %I* : USINT;
+	{attribute addProperty Name "Variant_value"}
+	Variant_value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

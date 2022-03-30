@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CNT_Inputs_5EC64B24" Id="{9fdc9185-029f-4283-9d20-cab3c6dcfc3c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1502-0000-0001"}
+{attribute addProperty Id "Output_functions_enabledAT %I*BOOL811Status_of_outputAT %I*BOOL812Set_counter_doneAT %I*BOOL813Counter_inhibitedAT %I*BOOL814Status_of_input_UDAT %I*BOOL815Status_of_input_clockAT %I*BOOL816Sync_ErrorAT %I*BOOL8132TxPDO_ToggleAT %I*BOOL819Counter_valueAT %I*UDINT32417"}
+{attribute addProperty CRC "1590053668"}
+{attribute addProperty SizeInBites "96"}
+{attribute addProperty SizeInBytes "12"}
+TYPE CNT_Inputs_5EC64B24 :
+STRUCT
+	{attribute addProperty Name "Output_functions_enabled"}
+	Output_functions_enabled AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_output"}
+	Status_of_output AT %I* : BOOL;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done AT %I* : BOOL;
+	{attribute addProperty Name "Counter_inhibited"}
+	Counter_inhibited AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_UD"}
+	Status_of_input_UD AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_clock"}
+	Status_of_input_clock AT %I* : BOOL;
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch_B_7239D878" Id="{3191edd6-1fd1-4378-85fe-ff5cd55d5de3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX8206-0000-0102-0102"}
+{attribute addProperty Id "Ch_B_AxisMain_InputsCh_B_AxisMain_Inputs_B57E8FB3648Ch_B_AxisMain_OutputsCh_B_AxisMain_Outputs_3FCFC8F5162Ch_B_Interpolator_OutputsCh_B_Interpolator_Outputs_EA1B41E0648Ch_B_PositionControl_InputsCh_B_PositionControl_Inputs_61BD0E57324"}
+{attribute addProperty CRC "1916393592"}
+{attribute addProperty SizeInBites "176"}
+{attribute addProperty SizeInBytes "22"}
+TYPE Ch_B_7239D878 :
+STRUCT
+	{attribute addProperty Name "Ch_B_AxisMain_Inputs"}
+	Ch_B_AxisMain_Inputs  : Ch_B_AxisMain_Inputs_B57E8FB3;
+	{attribute addProperty Name "Ch_B_AxisMain_Outputs"}
+	Ch_B_AxisMain_Outputs  : Ch_B_AxisMain_Outputs_3FCFC8F5;
+	{attribute addProperty Name "Ch_B_Interpolator_Outputs"}
+	Ch_B_Interpolator_Outputs  : Ch_B_Interpolator_Outputs_EA1B41E0;
+	{attribute addProperty Name "Ch_B_PositionControl_Inputs"}
+	Ch_B_PositionControl_Inputs  : Ch_B_PositionControl_Inputs_61BD0E57;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

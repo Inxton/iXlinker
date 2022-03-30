@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PLS_Outputs_D8F7BCB0" Id="{82e4da04-71ce-42f1-9c8b-86d979031bb8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EM7004-0000-0017"}
+{attribute addProperty Id "ControlAT %Q*Control_84750349162"}
+{attribute addProperty CRC "3640114352"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE PLS_Outputs_D8F7BCB0 :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_84750349;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

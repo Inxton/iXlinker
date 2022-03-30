@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0011_BK1150_0000_0017_163F2E6B" Id="{870058a3-0d63-4217-b8b1-02defafc7871}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "BK1150-0000-0017"}
+{attribute addProperty Id "Term_384_KL1002KL1002_D229A9CA00"}
+{attribute addProperty CRC "373239403"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE A_0011_BK1150_0000_0017_163F2E6B EXTENDS BK1150_4487A81F :
+STRUCT
+	{attribute addProperty Name "Term_384_KL1002"}
+	Term_384_KL1002 : KL1002_D229A9CA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

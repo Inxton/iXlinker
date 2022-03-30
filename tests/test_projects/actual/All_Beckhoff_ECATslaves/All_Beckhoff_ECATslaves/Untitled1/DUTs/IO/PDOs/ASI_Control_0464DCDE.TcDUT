@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ASI_Control_0464DCDE" Id="{57626846-441e-444b-b0aa-26b2644b45d8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6201-0000-0018"}
+{attribute addProperty Id "Auto_Programming_EnableAT %Q*BOOL811Go_Offline_ModeAT %Q*BOOL812Data_Exchange_ActiveAT %Q*BOOL813Go_Protected_ModeAT %Q*BOOL814Go_Configuration_ModeAT %Q*BOOL815Toggle_Power24_ModeAT %Q*BOOL816Toggle_M4_Profile_SupportAT %Q*BOOL817"}
+{attribute addProperty CRC "73719006"}
+{attribute addProperty SizeInBites "56"}
+{attribute addProperty SizeInBytes "7"}
+TYPE ASI_Control_0464DCDE :
+STRUCT
+	{attribute addProperty Name "Auto_Programming_Enable"}
+	Auto_Programming_Enable AT %Q* : BOOL;
+	{attribute addProperty Name "Go_Offline_Mode"}
+	Go_Offline_Mode AT %Q* : BOOL;
+	{attribute addProperty Name "Data_Exchange_Active"}
+	Data_Exchange_Active AT %Q* : BOOL;
+	{attribute addProperty Name "Go_Protected_Mode"}
+	Go_Protected_Mode AT %Q* : BOOL;
+	{attribute addProperty Name "Go_Configuration_Mode"}
+	Go_Configuration_Mode AT %Q* : BOOL;
+	{attribute addProperty Name "Toggle_Power24_Mode"}
+	Toggle_Power24_Mode AT %Q* : BOOL;
+	{attribute addProperty Name "Toggle_M4_Profile_Support"}
+	Toggle_M4_Profile_Support AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

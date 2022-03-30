@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2262_D2325A47" Id="{2671ca53-adee-4d08-9323-3400a19b6c57}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2262--0000"}
+{attribute addProperty Id "Cycle_CounterAT %Q*Cycle_Counter_485675001620Sample_0AT %Q*Sample_2F9FC35D810WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "1720784009"}
+{attribute addProperty SizeInBites "105"}
+{attribute addProperty SizeInBytes "13.125"}
+TYPE EL2262_D2325A47 :
+STRUCT
+	{attribute addProperty Name "Cycle_Counter"}
+	Cycle_Counter : Cycle_Counter_48567500;
+	{attribute addProperty Name "Sample_0"}
+	Sample_0 : Sample_2F9FC35D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_28A86775;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

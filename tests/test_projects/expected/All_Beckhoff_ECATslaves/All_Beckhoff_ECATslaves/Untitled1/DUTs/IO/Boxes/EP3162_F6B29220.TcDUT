@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP3162_F6B29220" Id="{85ba8577-25f6-4a93-b708-f0eb1bb04acd}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP3162-1002-0017"}
+{attribute addProperty Id "AI_Standard_ChannelAT %I*ARRAY[0..2] OF AI_Standard_Channel_087F71C76480DO_OutputsAT %Q*DO_Outputs_E89552221620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "877970050"}
+{attribute addProperty SizeInBites "162"}
+{attribute addProperty SizeInBytes "20.25"}
+TYPE EP3162_F6B29220 :
+STRUCT
+	{attribute addProperty Name "AI_Standard_Channel"}
+	AI_Standard_Channel : ARRAY[0..2] OF AI_Standard_Channel_087F71C7;
+	{attribute addProperty Name "DO_Outputs"}
+	DO_Outputs : DO_Outputs_E8955222;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

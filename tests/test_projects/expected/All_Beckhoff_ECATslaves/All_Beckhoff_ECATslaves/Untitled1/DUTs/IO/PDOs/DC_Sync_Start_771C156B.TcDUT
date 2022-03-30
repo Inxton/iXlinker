@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DC_Sync_Start_771C156B" Id="{95046967-c5b8-496c-b904-46272deb6f4f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2252--0000"}
+{attribute addProperty Id "StartTimeAT %Q*UDINT324"}
+{attribute addProperty CRC "1998329195"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE DC_Sync_Start_771C156B :
+STRUCT
+	{attribute addProperty Name "StartTime"}
+	StartTime AT %Q* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

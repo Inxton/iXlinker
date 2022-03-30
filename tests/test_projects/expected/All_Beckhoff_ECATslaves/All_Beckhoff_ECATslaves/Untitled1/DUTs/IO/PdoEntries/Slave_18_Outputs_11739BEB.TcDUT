@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Slave_18_Outputs_11739BEB" Id="{c1fd3611-abeb-4d86-922b-1c8eb33a6379}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6201-0000-0017"}
+{attribute addProperty Id "Slave_18A_DO0BIT10.125137Slave_18A_DO1BIT10.125138Slave_18A_DO2BIT10.125139Slave_18A_DO3BIT10.125140Slave_18B_DO0BIT10.125141Slave_18B_DO1BIT10.125142Slave_18B_DO2BIT10.125143Slave_18B_DO3BIT10.125144"}
+{attribute addProperty CRC "292789227"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE Slave_18_Outputs_11739BEB :
+STRUCT
+	{attribute addProperty Name "Slave_18A_DO0"}
+	Slave_18A_DO0 : BIT;
+	{attribute addProperty Name "Slave_18A_DO1"}
+	Slave_18A_DO1 : BIT;
+	{attribute addProperty Name "Slave_18A_DO2"}
+	Slave_18A_DO2 : BIT;
+	{attribute addProperty Name "Slave_18A_DO3"}
+	Slave_18A_DO3 : BIT;
+	{attribute addProperty Name "Slave_18B_DO0"}
+	Slave_18B_DO0 : BIT;
+	{attribute addProperty Name "Slave_18B_DO1"}
+	Slave_18B_DO1 : BIT;
+	{attribute addProperty Name "Slave_18B_DO2"}
+	Slave_18B_DO2 : BIT;
+	{attribute addProperty Name "Slave_18B_DO3"}
+	Slave_18B_DO3 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

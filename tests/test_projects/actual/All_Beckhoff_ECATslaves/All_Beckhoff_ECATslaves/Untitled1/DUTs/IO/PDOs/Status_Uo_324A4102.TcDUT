@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_Uo_324A4102" Id="{ac0b531a-2240-4c24-84c2-fd13062322cb}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL9560-0000-0016"}
+{attribute addProperty Id "Power_OKAT %I*BOOL81"}
+{attribute addProperty CRC "843727106"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE Status_Uo_324A4102 :
+STRUCT
+	{attribute addProperty Name "Power_OK"}
+	Power_OK AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

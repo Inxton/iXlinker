@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="I2_Status_E2EFACF1" Id="{2929cfb2-1342-4cd6-8e1f-7ab36b401462}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3773-0000-0018"}
+{attribute addProperty Id "UnderrangeBIT10.1251OverrangeBIT10.1252Limit_x_BIT_0BIT10.1253Limit_x_BIT_1BIT10.1253ErrorBIT10.1257Sync_errorBIT10.12514TxPDO_StateBIT10.12515TxPDO_ToggleBIT10.12516"}
+{attribute addProperty CRC "3807358193"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE I2_Status_E2EFACF1 :
+STRUCT
+	{attribute addProperty Name "Underrange"}
+	Underrange : BIT;
+	{attribute addProperty Name "Overrange"}
+	Overrange : BIT;
+	{attribute addProperty Name "Limit_x"}
+	Limit_x_BIT_0 : BIT;
+	{attribute addProperty Name "Limit_x"}
+	Limit_x_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute 'hide'}
+	reserve_2 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_4 : BIT;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BIT;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

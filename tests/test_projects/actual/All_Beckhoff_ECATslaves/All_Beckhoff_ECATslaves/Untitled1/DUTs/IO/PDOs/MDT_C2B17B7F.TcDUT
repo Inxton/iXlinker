@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="MDT_C2B17B7F" Id="{be513115-dc32-45cc-af0b-45c8559d01ab}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX5191-0000-0212-0212"}
+{attribute addProperty Id "Master_control_wordAT %Q*UINT1620Position_command_valueAT %Q*DINT3240"}
+{attribute addProperty CRC "3266411391"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE MDT_C2B17B7F :
+STRUCT
+	{attribute addProperty Name "Master_control_word"}
+	Master_control_word AT %Q* : UINT;
+	{attribute addProperty Name "Position_command_value"}
+	Position_command_value AT %Q* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

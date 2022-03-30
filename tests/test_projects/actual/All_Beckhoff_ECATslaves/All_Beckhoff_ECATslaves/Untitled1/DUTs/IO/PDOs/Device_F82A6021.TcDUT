@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Device_F82A6021" Id="{ea1d551c-f9b3-45b6-9e58-a61729adc591}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AMP8000-0000-0103-0103"}
+{attribute addProperty Id "DeviceMain_OutputsDeviceMain_Outputs_F0ECB646162"}
+{attribute addProperty CRC "4163526689"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Device_F82A6021 :
+STRUCT
+	{attribute addProperty Name "DeviceMain_Outputs"}
+	DeviceMain_Outputs  : DeviceMain_Outputs_F0ECB646;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

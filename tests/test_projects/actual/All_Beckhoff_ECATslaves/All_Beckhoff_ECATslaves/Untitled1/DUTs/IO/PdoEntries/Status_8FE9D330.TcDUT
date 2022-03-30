@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_8FE9D330" Id="{76170158-6106-4fc4-85ca-14e79bdca8d0}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP8309-0022-0021"}
+{attribute addProperty Id "Error_Input_ABIT10.1252Input_Status_ABIT10.1253Error_Input_BBIT10.1254Input_Status_BBIT10.1255Speed_Below_ThresholdBIT10.12512TxPDO_ToggleBIT10.12516"}
+{attribute addProperty CRC "2414465840"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_8FE9D330 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1 : BIT;
+	{attribute addProperty Name "Error_Input_A"}
+	Error_Input_A : BIT;
+	{attribute addProperty Name "Input_Status_A"}
+	Input_Status_A : BIT;
+	{attribute addProperty Name "Error_Input_B"}
+	Error_Input_B : BIT;
+	{attribute addProperty Name "Input_Status_B"}
+	Input_Status_B : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_2 : BIT;
+	{attribute addProperty Name "Speed_Below_Threshold"}
+	Speed_Below_Threshold : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_2 : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

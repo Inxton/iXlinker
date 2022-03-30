@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_6A40DED4" Id="{ad214e62-a3be-42b8-bb75-0ed960f94a69}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELM3002-0000-0016"}
+{attribute addProperty Id "No_of_SamplesUSINT811ErrorBIT10.1259UnderrangeBIT10.12510OverrangeBIT10.12511DiagBIT10.12513TxPDO_StateBIT10.12514Input_cycle_counter_BIT_0BIT10.12515Input_cycle_counter_BIT_1BIT10.12515"}
+{attribute addProperty CRC "1782636244"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE Status_6A40DED4 :
+STRUCT
+	{attribute addProperty Name "No_of_Samples"}
+	No_of_Samples : USINT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute addProperty Name "Underrange"}
+	Underrange : BIT;
+	{attribute addProperty Name "Overrange"}
+	Overrange : BIT;
+	{attribute 'hide'}
+	reserve_1 : BIT;
+	{attribute addProperty Name "Diag"}
+	Diag : BIT;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BIT;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter_BIT_0 : BIT;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BYTE_0 : BYTE;
+	{attribute 'hide'}
+	reserve_2_BYTE_1 : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

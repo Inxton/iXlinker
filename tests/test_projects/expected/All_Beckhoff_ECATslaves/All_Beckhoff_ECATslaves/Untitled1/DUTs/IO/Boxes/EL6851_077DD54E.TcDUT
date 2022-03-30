@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6851_077DD54E" Id="{7746cf02-695b-4b9e-8a4b-e648553897ec}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6851-0000-0020"}
+{attribute addProperty Id "DMX_StatusAT %I*DMX_Status_83D886C67290DMX_ControlAT %Q*DMX_Control_6BCAD5F24860DMX_Channel_1_64AT %Q*DMX_Channel_59324749512640DMX_Channel_65_128AT %Q*DMX_Channel_B41230E2512640DMX_Channel_129_192AT %Q*DMX_Channel_5A04F796512640DMX_Channel_193_256AT %Q*DMX_Channel_DF09603E512640DMX_Channel_257_320AT %Q*DMX_Channel_2EED17FB512640DMX_Channel_321_384AT %Q*DMX_Channel_A5589641512640DMX_Channel_385_448AT %Q*DMX_Channel_9AEB8804512640DMX_Channel_449_512AT %Q*DMX_Channel_3DDC97FE512640WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3930278235"}
+{attribute addProperty SizeInBites "4298"}
+{attribute addProperty SizeInBytes "537.25"}
+TYPE EL6851_077DD54E :
+STRUCT
+	{attribute addProperty Name "DMX_Status"}
+	DMX_Status : DMX_Status_83D886C6;
+	{attribute addProperty Name "DMX_Control"}
+	DMX_Control : DMX_Control_6BCAD5F2;
+	{attribute addProperty Name "DMX_Channel_1_64"}
+	DMX_Channel_1_64 : DMX_Channel_59324749;
+	{attribute addProperty Name "DMX_Channel_65_128"}
+	DMX_Channel_65_128 : DMX_Channel_B41230E2;
+	{attribute addProperty Name "DMX_Channel_129_192"}
+	DMX_Channel_129_192 : DMX_Channel_5A04F796;
+	{attribute addProperty Name "DMX_Channel_193_256"}
+	DMX_Channel_193_256 : DMX_Channel_DF09603E;
+	{attribute addProperty Name "DMX_Channel_257_320"}
+	DMX_Channel_257_320 : DMX_Channel_2EED17FB;
+	{attribute addProperty Name "DMX_Channel_321_384"}
+	DMX_Channel_321_384 : DMX_Channel_A5589641;
+	{attribute addProperty Name "DMX_Channel_385_448"}
+	DMX_Channel_385_448 : DMX_Channel_9AEB8804;
+	{attribute addProperty Name "DMX_Channel_449_512"}
+	DMX_Channel_449_512 : DMX_Channel_3DDC97FE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

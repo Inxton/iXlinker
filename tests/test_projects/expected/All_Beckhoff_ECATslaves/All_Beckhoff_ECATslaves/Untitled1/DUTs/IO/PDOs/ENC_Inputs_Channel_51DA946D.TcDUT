@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Inputs_Channel_51DA946D" Id="{500c59ee-29fb-450d-81bb-591810689757}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EM7004-0000-0017"}
+{attribute addProperty Id "StatusAT %I*Status_5BDD25631620Counter_valueAT %I*UINT16217Latch_valueAT %I*UINT16218"}
+{attribute addProperty CRC "1373279341"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE ENC_Inputs_Channel_51DA946D :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_5BDD2563;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UINT;
+	{attribute addProperty Name "Latch_value"}
+	Latch_value AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

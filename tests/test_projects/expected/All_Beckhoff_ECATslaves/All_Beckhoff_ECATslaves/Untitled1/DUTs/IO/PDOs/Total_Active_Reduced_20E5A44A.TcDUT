@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Total_Active_Reduced_20E5A44A" Id="{fb184541-95d2-46c4-922a-77474bfc440c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3423-0000-0020"}
+{attribute addProperty Id "Active_EnergyAT %I*LINT648"}
+{attribute addProperty CRC "551920714"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE Total_Active_Reduced_20E5A44A :
+STRUCT
+	{attribute addProperty Name "Active_Energy"}
+	Active_Energy AT %I* : LINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

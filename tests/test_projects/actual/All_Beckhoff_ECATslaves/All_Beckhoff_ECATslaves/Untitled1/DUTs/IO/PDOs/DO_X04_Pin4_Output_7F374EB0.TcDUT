@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_X04_Pin4_Output_7F374EB0" Id="{78287e9e-b3b5-426e-9398-08216f0db4f5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP2328-1061-0016"}
+{attribute addProperty Id "OutputAT %Q*BOOL81"}
+{attribute addProperty CRC "2134331056"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE DO_X04_Pin4_Output_7F374EB0 :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

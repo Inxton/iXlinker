@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_BA57B6F4" Id="{b2d34791-27a3-4d5b-9d25-f934dc5cc8d2}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5102-0000-0016"}
+{attribute addProperty Id "Enable_latch_CBIT10.1251Enable_latch_extern_on_positive_edgeBIT10.1252Set_counterBIT10.1253Enable_latch_extern_on_negative_edgeBIT10.1254Set_counter_on_latch_CBIT10.1258Set_software_gateBIT10.1259Set_counter_on_latch_extern_on_positive_edgeBIT10.12510Set_counter_on_latch_extern_on_negative_edgeBIT10.12511Enable_latch_extern_2_on_positive_edgeBIT10.12512Enable_latch_extern_2_on_negative_edgeBIT10.12513"}
+{attribute addProperty CRC "3126310644"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Control_BA57B6F4 :
+STRUCT
+	{attribute addProperty Name "Enable_latch_C"}
+	Enable_latch_C : BIT;
+	{attribute addProperty Name "Enable_latch_extern_on_positive_edge"}
+	Enable_latch_extern_on_positive_edge : BIT;
+	{attribute addProperty Name "Set_counter"}
+	Set_counter : BIT;
+	{attribute addProperty Name "Enable_latch_extern_on_negative_edge"}
+	Enable_latch_extern_on_negative_edge : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute addProperty Name "Set_counter_on_latch_C"}
+	Set_counter_on_latch_C : BIT;
+	{attribute addProperty Name "Set_software_gate"}
+	Set_software_gate : BIT;
+	{attribute addProperty Name "Set_counter_on_latch_extern_on_positive_edge"}
+	Set_counter_on_latch_extern_on_positive_edge : BIT;
+	{attribute addProperty Name "Set_counter_on_latch_extern_on_negative_edge"}
+	Set_counter_on_latch_extern_on_negative_edge : BIT;
+	{attribute addProperty Name "Enable_latch_extern_2_on_positive_edge"}
+	Enable_latch_extern_2_on_positive_edge : BIT;
+	{attribute addProperty Name "Enable_latch_extern_2_on_negative_edge"}
+	Enable_latch_extern_2_on_negative_edge : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

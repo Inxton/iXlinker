@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP2809_15BF513E" Id="{fe28eb1e-7897-479b-865b-890ba2c8490a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP2809-0042-0017"}
+{attribute addProperty Id "DO_X01_PinAT %Q*ARRAY[0..1] OF DO_X01_Pin_7F374EB0429496728842949672950DO_X02_PinAT %Q*ARRAY[0..1] OF DO_X02_Pin_7F374EB0429496728842949672950DO_X03_PinAT %Q*ARRAY[0..1] OF DO_X03_Pin_7F374EB0429496728842949672950DO_X04_PinAT %Q*ARRAY[0..1] OF DO_X04_Pin_7F374EB0429496728842949672950DO_X05_PinAT %Q*ARRAY[0..1] OF DO_X05_Pin_7F374EB0429496728842949672950DO_X06_PinAT %Q*ARRAY[0..1] OF DO_X06_Pin_7F374EB0429496728842949672950DO_X07_PinAT %Q*ARRAY[0..1] OF DO_X07_Pin_7F374EB0429496728842949672950DO_X08_PinAT %Q*ARRAY[0..1] OF DO_X08_Pin_7F374EB0429496728842949672950WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "2320743236"}
+{attribute addProperty SizeInBites "4294967249"}
+{attribute addProperty SizeInBytes "34359738362.125"}
+TYPE EP2809_15BF513E :
+STRUCT
+	{attribute addProperty Name "DO_X01_Pin"}
+	DO_X01_Pin : ARRAY[0..1] OF DO_X01_Pin_7F374EB0;
+	{attribute addProperty Name "DO_X02_Pin"}
+	DO_X02_Pin : ARRAY[0..1] OF DO_X02_Pin_7F374EB0;
+	{attribute addProperty Name "DO_X03_Pin"}
+	DO_X03_Pin : ARRAY[0..1] OF DO_X03_Pin_7F374EB0;
+	{attribute addProperty Name "DO_X04_Pin"}
+	DO_X04_Pin : ARRAY[0..1] OF DO_X04_Pin_7F374EB0;
+	{attribute addProperty Name "DO_X05_Pin"}
+	DO_X05_Pin : ARRAY[0..1] OF DO_X05_Pin_7F374EB0;
+	{attribute addProperty Name "DO_X06_Pin"}
+	DO_X06_Pin : ARRAY[0..1] OF DO_X06_Pin_7F374EB0;
+	{attribute addProperty Name "DO_X07_Pin"}
+	DO_X07_Pin : ARRAY[0..1] OF DO_X07_Pin_7F374EB0;
+	{attribute addProperty Name "DO_X08_Pin"}
+	DO_X08_Pin : ARRAY[0..1] OF DO_X08_Pin_7F374EB0;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_28A86775;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

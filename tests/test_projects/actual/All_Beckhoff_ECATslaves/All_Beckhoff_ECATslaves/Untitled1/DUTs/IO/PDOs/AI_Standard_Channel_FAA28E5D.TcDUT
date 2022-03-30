@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AI_Standard_Channel_FAA28E5D" Id="{46eaea12-6d1e-4840-9ea8-1ee4ba98cff1}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELX3252-0000-0016"}
+{attribute addProperty Id "StatusAT %I*Status_730B08E81620ValueAT %I*INT16217"}
+{attribute addProperty CRC "4204957277"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE AI_Standard_Channel_FAA28E5D :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_730B08E8;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

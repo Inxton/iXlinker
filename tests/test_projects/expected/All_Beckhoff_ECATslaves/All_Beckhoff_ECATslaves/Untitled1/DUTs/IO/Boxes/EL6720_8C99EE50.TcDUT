@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6720_8C99EE50" Id="{8756f80b-2d4b-452a-93a0-18d225929b45}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6720-0000-0016"}
+{attribute addProperty Id "InfoDataInfoData_275E336312816"}
+{attribute addProperty CRC "2358898256"}
+{attribute addProperty SizeInBites "128"}
+{attribute addProperty SizeInBytes "16"}
+TYPE EL6720_8C99EE50 :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_275E3363;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

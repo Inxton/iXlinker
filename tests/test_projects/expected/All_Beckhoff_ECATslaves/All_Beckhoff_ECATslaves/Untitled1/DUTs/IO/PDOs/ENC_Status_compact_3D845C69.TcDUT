@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Status_compact_3D845C69" Id="{89f953bf-c423-4f83-b1b3-ee6e707d3d50}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2521-0124-0016"}
+{attribute addProperty Id "Latch_extern_validAT %I*BOOL812Set_counter_doneAT %I*BOOL813Counter_underflowAT %I*BOOL814Counter_overflowAT %I*BOOL815Status_of_extern_latchAT %I*BOOL8113Sync_ErrorAT %I*BOOL8132TxPDO_ToggleAT %I*BOOL819Counter_valueAT %I*UINT16217Latch_valueAT %I*UINT16218"}
+{attribute addProperty CRC "1032084585"}
+{attribute addProperty SizeInBites "88"}
+{attribute addProperty SizeInBytes "11"}
+TYPE ENC_Status_compact_3D845C69 :
+STRUCT
+	{attribute addProperty Name "Latch_extern_valid"}
+	Latch_extern_valid AT %I* : BOOL;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done AT %I* : BOOL;
+	{attribute addProperty Name "Counter_underflow"}
+	Counter_underflow AT %I* : BOOL;
+	{attribute addProperty Name "Counter_overflow"}
+	Counter_overflow AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_extern_latch"}
+	Status_of_extern_latch AT %I* : BOOL;
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UINT;
+	{attribute addProperty Name "Latch_value"}
+	Latch_value AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

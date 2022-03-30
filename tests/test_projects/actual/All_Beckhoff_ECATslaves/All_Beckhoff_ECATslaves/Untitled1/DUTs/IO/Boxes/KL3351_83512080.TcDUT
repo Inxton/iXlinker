@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL3351_83512080" Id="{ea1c049a-7036-441a-9b99-332c8b63cabb}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL3351"}
+{attribute addProperty Id "Channel_1Channel_274E4E9000"}
+{attribute addProperty CRC "2203132032"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL3351_83512080 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_274E4E90;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIG_Inputs_Device_5061D939" Id="{a687b9c1-92c3-4150-8ea0-20a8d660f5ab}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP1816-3008-0016"}
+{attribute addProperty Id "Us_UndervoltageAT %I*BOOL811Up_UndervoltageAT %I*BOOL812Sync_errorAT %I*BOOL8114TxPDO_ToggleAT %I*BOOL8116"}
+{attribute addProperty CRC "1348589881"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE DIG_Inputs_Device_5061D939 :
+STRUCT
+	{attribute addProperty Name "Us_Undervoltage"}
+	Us_Undervoltage AT %I* : BOOL;
+	{attribute addProperty Name "Up_Undervoltage"}
+	Up_Undervoltage AT %I* : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

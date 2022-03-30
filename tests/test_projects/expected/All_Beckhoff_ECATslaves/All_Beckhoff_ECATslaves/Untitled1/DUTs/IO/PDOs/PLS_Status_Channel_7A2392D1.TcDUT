@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PLS_Status_Channel_7A2392D1" Id="{ac6918c6-1283-4f1f-af76-505ca4ff0a17}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ2521-0224-0016"}
+{attribute addProperty Id "StatusAT %I*Status_2B4F1F8E162"}
+{attribute addProperty CRC "2049151697"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE PLS_Status_Channel_7A2392D1 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_2B4F1F8E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

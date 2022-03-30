@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ7211_83D4128E" Id="{ca274f65-04bc-4dcf-a439-3b886a0d505f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ7211-0010-0026"}
+{attribute addProperty Id "FB_PositionAT %I*FB_Position_BA8AA9F03240DRV_StatuswordAT %I*DRV_Statusword_53CBCECC1620DRV_ControlwordAT %Q*DRV_Controlword_417617681620DRV_Target_velocityAT %Q*DRV_Target_velocity_53A88AB03240WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_AEB17F4D152190"}
+{attribute addProperty CRC "777447930"}
+{attribute addProperty SizeInBites "250"}
+{attribute addProperty SizeInBytes "31.25"}
+TYPE EJ7211_83D4128E :
+STRUCT
+	{attribute addProperty Name "FB_Position"}
+	FB_Position : FB_Position_BA8AA9F0;
+	{attribute addProperty Name "DRV_Statusword"}
+	DRV_Statusword : DRV_Statusword_53CBCECC;
+	{attribute addProperty Name "DRV_Controlword"}
+	DRV_Controlword : DRV_Controlword_41761768;
+	{attribute addProperty Name "DRV_Target_velocity"}
+	DRV_Target_velocity : DRV_Target_velocity_53A88AB0;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_AEB17F4D;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

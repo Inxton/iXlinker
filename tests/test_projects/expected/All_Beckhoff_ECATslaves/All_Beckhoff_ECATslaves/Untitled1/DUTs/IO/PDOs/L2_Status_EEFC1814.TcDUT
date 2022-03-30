@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L2_Status_EEFC1814" Id="{d66464ef-3cea-4eab-824c-760f66ee26eb}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3443-0000-0016"}
+{attribute addProperty Id "Voltage_Sign_BitAT %I*BOOL811OvervoltageAT %I*BOOL812OvercurrentAT %I*BOOL813Inaccurate_VoltageAT %I*BOOL814Inaccurate_CurrentAT %I*BOOL815Voltage_Guard_WarningAT %I*BOOL816Voltage_Guard_ErrorAT %I*BOOL817Current_Guard_WarningAT %I*BOOL818Current_Guard_ErrorAT %I*BOOL819TxPDO_ToggleAT %I*BOOL8116"}
+{attribute addProperty CRC "4009498644"}
+{attribute addProperty SizeInBites "80"}
+{attribute addProperty SizeInBytes "10"}
+TYPE L2_Status_EEFC1814 :
+STRUCT
+	{attribute addProperty Name "Voltage_Sign_Bit"}
+	Voltage_Sign_Bit AT %I* : BOOL;
+	{attribute addProperty Name "Overvoltage"}
+	Overvoltage AT %I* : BOOL;
+	{attribute addProperty Name "Overcurrent"}
+	Overcurrent AT %I* : BOOL;
+	{attribute addProperty Name "Inaccurate_Voltage"}
+	Inaccurate_Voltage AT %I* : BOOL;
+	{attribute addProperty Name "Inaccurate_Current"}
+	Inaccurate_Current AT %I* : BOOL;
+	{attribute addProperty Name "Voltage_Guard_Warning"}
+	Voltage_Guard_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Voltage_Guard_Error"}
+	Voltage_Guard_Error AT %I* : BOOL;
+	{attribute addProperty Name "Current_Guard_Warning"}
+	Current_Guard_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Current_Guard_Error"}
+	Current_Guard_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

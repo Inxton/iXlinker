@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0024_EP1122_0001_0016_1C40CD3A" Id="{c62e0dd8-d3f1-4dfe-a31f-d45a9267b94d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP1122-0001-0016"}
+{attribute addProperty Id "A_0025_EP1122_0001_0017A_0025_EP1122_0001_0017_02B377911014268719478003.75"}
+{attribute addProperty CRC "474008890"}
+{attribute addProperty SizeInBites "10142"}
+{attribute addProperty SizeInBytes "68719478003.75"}
+TYPE A_0024_EP1122_0001_0016_1C40CD3A EXTENDS EP1122_179A0949 :
+STRUCT
+	{attribute addProperty Name "A_0025_EP1122_0001_0017"}
+	A_0025_EP1122_0001_0017 : A_0025_EP1122_0001_0017_02B37791;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

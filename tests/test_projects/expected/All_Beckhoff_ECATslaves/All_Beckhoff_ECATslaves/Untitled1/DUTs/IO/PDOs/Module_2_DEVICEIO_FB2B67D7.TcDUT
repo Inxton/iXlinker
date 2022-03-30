@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Module_2_DEVICEIO_FB2B67D7" Id="{c73605a1-16c9-4af2-b2c3-e6a926fbf8fa}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ1914-0000-0017"}
+{attribute addProperty Id "FIELDVOLTAGE_Field_Voltage_StatusFIELDVOLTAGE_Field_Voltage_Status_CAC01FE2162"}
+{attribute addProperty CRC "4213925847"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Module_2_DEVICEIO_FB2B67D7 :
+STRUCT
+	{attribute addProperty Name "FIELDVOLTAGE_Field_Voltage_Status"}
+	FIELDVOLTAGE_Field_Voltage_Status  : FIELDVOLTAGE_Field_Voltage_Status_CAC01FE2;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

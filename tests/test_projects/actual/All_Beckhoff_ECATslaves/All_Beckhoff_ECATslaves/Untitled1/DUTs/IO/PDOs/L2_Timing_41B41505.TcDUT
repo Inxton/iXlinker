@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L2_Timing_41B41505" Id="{e2a72dbb-cdd7-4253-b24f-76c0ba8d8c8c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3443-0000-0016"}
+{attribute addProperty Id "Voltage_Last_Zero_CrossingAT %I*ULINT648"}
+{attribute addProperty CRC "1102320901"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE L2_Timing_41B41505 :
+STRUCT
+	{attribute addProperty Name "Voltage_Last_Zero_Crossing"}
+	Voltage_Last_Zero_Crossing AT %I* : ULINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

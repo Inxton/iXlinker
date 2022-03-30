@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_ER5xxxEK1122_8A557ABF" Id="{0931e4a6-96c1-4c5f-afe2-e7c3ecda1176}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "Beckhoff_ER5xxxsub_EK1100EK1100_179A0949162A_0001_ER5101_0002_0019ER5101_CA84C7C416220.25A_0002_ER5101_1002_0017ER5101_CA84C7C416220.25A_0003_ER5151_0002_0018ER5151_19FB32BA16220.25"}
+{attribute addProperty CRC "2320857791"}
+{attribute addProperty SizeInBites "502"}
+{attribute addProperty SizeInBytes "62.75"}
+TYPE Beckhoff_ER5xxxEK1122_8A557ABF EXTENDS EK1122_179A0949 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_ER5xxxsub_EK1100"}
+	Beckhoff_ER5xxxsub_EK1100 : EK1100_179A0949;
+	{attribute addProperty Name "A_0001_ER5101_0002_0019"}
+	A_0001_ER5101_0002_0019 : ER5101_CA84C7C4;
+	{attribute addProperty Name "A_0002_ER5101_1002_0017"}
+	A_0002_ER5101_1002_0017 : ER5101_CA84C7C4;
+	{attribute addProperty Name "A_0003_ER5151_0002_0018"}
+	A_0003_ER5151_0002_0018 : ER5151_19FB32BA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

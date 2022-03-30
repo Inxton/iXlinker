@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CNT_Outputs_Channel_C7399CE1" Id="{1e5c59f4-f56d-43be-83c9-af49f2aa66f2}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1512-0000-0017"}
+{attribute addProperty Id "ControlAT %Q*Control_051AC2241620Set_counter_valueAT %Q*UDINT32417"}
+{attribute addProperty CRC "3342441697"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE CNT_Outputs_Channel_C7399CE1 :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_051AC224;
+	{attribute addProperty Name "Set_counter_value"}
+	Set_counter_value AT %Q* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

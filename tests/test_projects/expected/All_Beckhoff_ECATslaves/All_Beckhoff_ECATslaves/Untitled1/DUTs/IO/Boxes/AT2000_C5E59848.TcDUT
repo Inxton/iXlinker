@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AT2000_C5E59848" Id="{a7275594-e4be-4083-8e2e-a990bcaedbb3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AT2000-5233-0019"}
+{attribute addProperty Id "FB_InputsAT %I*FB_Inputs_A6E87AE0528660FB_OutputsAT %Q*FB_Outputs_734938A41620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "2967070852"}
+{attribute addProperty SizeInBites "626"}
+{attribute addProperty SizeInBytes "78.25"}
+TYPE AT2000_C5E59848 :
+STRUCT
+	{attribute addProperty Name "FB_Inputs"}
+	FB_Inputs : FB_Inputs_A6E87AE0;
+	{attribute addProperty Name "FB_Outputs"}
+	FB_Outputs : FB_Outputs_734938A4;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

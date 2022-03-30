@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DPO_Outputs_Device_6EB86458" Id="{8ad99f75-d60a-4fcf-a0d3-d4105483d0ab}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP9214-0023-0019"}
+{attribute addProperty Id "Enable_Control_Via_FieldbusAT %Q*BOOL811Global_ResetAT %Q*BOOL814"}
+{attribute addProperty CRC "1857578072"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DPO_Outputs_Device_6EB86458 :
+STRUCT
+	{attribute addProperty Name "Enable_Control_Via_Fieldbus"}
+	Enable_Control_Via_Fieldbus AT %Q* : BOOL;
+	{attribute addProperty Name "Global_Reset"}
+	Global_Reset AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

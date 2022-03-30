@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DRV_Controlword_41761768" Id="{597fdcf2-d444-4994-9a7c-94490bbc43e9}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AMI8000-0000-0016"}
+{attribute addProperty Id "ControlwordAT %Q*UINT162"}
+{attribute addProperty CRC "1098258280"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DRV_Controlword_41761768 :
+STRUCT
+	{attribute addProperty Name "Controlword"}
+	Controlword AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

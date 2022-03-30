@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PAI_Status_CF7232B0" Id="{9be5aa50-3c72-4464-82b5-d08dcf68b4a0}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3751-0000-0020"}
+{attribute addProperty Id "StatusAT %I*Status_6A40DED4324"}
+{attribute addProperty CRC "3480367792"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE PAI_Status_CF7232B0 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_6A40DED4;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

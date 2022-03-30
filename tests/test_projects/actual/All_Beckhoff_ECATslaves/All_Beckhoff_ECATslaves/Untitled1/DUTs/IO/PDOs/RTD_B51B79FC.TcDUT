@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="RTD_B51B79FC" Id="{3231c43c-ce02-481e-a681-9277ec6c048c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3201-0030-0022"}
+{attribute addProperty Id "StatusAT %I*Status_C6F82E6F658.1251ValueAT %I*INT16217"}
+{attribute addProperty CRC "3038476796"}
+{attribute addProperty SizeInBites "81"}
+{attribute addProperty SizeInBytes "10.125"}
+TYPE RTD_B51B79FC :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_C6F82E6F;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

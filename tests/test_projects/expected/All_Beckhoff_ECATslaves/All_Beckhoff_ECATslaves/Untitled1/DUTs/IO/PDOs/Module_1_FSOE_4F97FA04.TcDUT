@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Module_1_FSOE_4F97FA04" Id="{20364333-44b3-414f-8f21-630b4900c63e}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2912-0000-0016"}
+{attribute addProperty Id "FSoE_InputsFSoE_Inputs_3EC5F4AF486FSoE_OutputsFSoE_Outputs_69A9CBBA486"}
+{attribute addProperty CRC "1335360004"}
+{attribute addProperty SizeInBites "96"}
+{attribute addProperty SizeInBytes "12"}
+TYPE Module_1_FSOE_4F97FA04 :
+STRUCT
+	{attribute addProperty Name "FSoE_Inputs"}
+	FSoE_Inputs  : FSoE_Inputs_3EC5F4AF;
+	{attribute addProperty Name "FSoE_Outputs"}
+	FSoE_Outputs  : FSoE_Outputs_69A9CBBA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

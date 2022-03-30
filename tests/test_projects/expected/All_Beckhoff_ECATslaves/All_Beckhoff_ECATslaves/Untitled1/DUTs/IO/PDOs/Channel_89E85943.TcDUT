@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_89E85943" Id="{ebe0f225-74d7-470a-9ac5-0bfbcf6856ea}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL9191"}
+{attribute addProperty Id "Contact_DI1AT %I*BOOL000Contact_DI2AT %I*BOOL000Contact_DI3AT %I*BOOL000LED_DO1AT %Q*BOOL000Relay_2kWAT %Q*BOOL000Relay_FAN1AT %Q*BOOL000Relay_FAN2AT %Q*BOOL000Relay_FAN3AT %Q*BOOL000TRIAC_Y1AT %Q*BOOL000TRIAC_Y2AT %Q*BOOL000"}
+{attribute addProperty CRC "2313705795"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE Channel_89E85943 :
+STRUCT
+	{attribute addProperty Name "Contact_DI1"}
+	Contact_DI1 AT %I* : BOOL;
+	{attribute addProperty Name "Contact_DI2"}
+	Contact_DI2 AT %I* : BOOL;
+	{attribute addProperty Name "Contact_DI3"}
+	Contact_DI3 AT %I* : BOOL;
+	{attribute addProperty Name "LED_DO1"}
+	LED_DO1 AT %Q* : BOOL;
+	{attribute addProperty Name "Relay_2kW"}
+	Relay_2kW AT %Q* : BOOL;
+	{attribute addProperty Name "Relay_FAN1"}
+	Relay_FAN1 AT %Q* : BOOL;
+	{attribute addProperty Name "Relay_FAN2"}
+	Relay_FAN2 AT %Q* : BOOL;
+	{attribute addProperty Name "Relay_FAN3"}
+	Relay_FAN3 AT %Q* : BOOL;
+	{attribute addProperty Name "TRIAC_Y1"}
+	TRIAC_Y1 AT %Q* : BOOL;
+	{attribute addProperty Name "TRIAC_Y2"}
+	TRIAC_Y2 AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

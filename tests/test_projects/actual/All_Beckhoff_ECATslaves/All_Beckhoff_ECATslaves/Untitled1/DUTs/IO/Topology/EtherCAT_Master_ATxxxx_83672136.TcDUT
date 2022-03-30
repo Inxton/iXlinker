@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_ATxxxx_83672136" Id="{a4ef2944-fa36-4964-9914-1f5fcea5f3f5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_AT1xxxBeckhoff_AT1xxx_7510A45A461125764Beckhoff_ATH2xxxBeckhoff_ATH2xxx_159CB27D6890861.25SyncUnitsSyncUnits_CAB22D3B19524.375InputsInputs_C75D3FEC1280160OutputsOutputs_47D1E803848106InfoDataInfoData_E9F65A829612"}
+{attribute addProperty CRC "2204574006"}
+{attribute addProperty SizeInBites "55421"}
+{attribute addProperty SizeInBytes "6927.625"}
+TYPE EtherCAT_Master_ATxxxx_83672136 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_AT1xxx"}
+	Beckhoff_AT1xxx : Beckhoff_AT1xxx_7510A45A;
+	{attribute addProperty Name "Beckhoff_ATH2xxx"}
+	Beckhoff_ATH2xxx : Beckhoff_ATH2xxx_159CB27D;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_CAB22D3B;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_C75D3FEC;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_47D1E803;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_E9F65A82;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

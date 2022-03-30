@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_E9F65A82" Id="{3fcfbaa1-8b2e-4569-80dd-f84ce61351bd}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "ChangeCountAT %I*UINT1620DevIdAT %I*UINT1620AmsNetIdAT %I*AMSNETID4860CfgSlaveCountAT %I*UINT1620"}
+{attribute addProperty CRC "3925236354"}
+{attribute addProperty SizeInBites "96"}
+{attribute addProperty SizeInBytes "12"}
+TYPE InfoData_E9F65A82 :
+STRUCT
+	{attribute addProperty Name "ChangeCount"}
+	ChangeCount AT %I* : UINT;
+	{attribute addProperty Name "DevId"}
+	DevId AT %I* : UINT;
+	{attribute addProperty Name "AmsNetId"}
+	AmsNetId AT %I* : AMSNETID;
+	{attribute addProperty Name "CfgSlaveCount"}
+	CfgSlaveCount AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

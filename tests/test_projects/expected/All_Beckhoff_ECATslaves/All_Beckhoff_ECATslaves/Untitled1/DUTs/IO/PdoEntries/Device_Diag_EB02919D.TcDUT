@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Device_Diag_EB02919D" Id="{85b1d384-8b63-401f-adc9-a9c4fea093fd}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP7402-0057-0017"}
+{attribute addProperty Id "Device_undervoltageBIT10.1251Device_overvoltageBIT10.1252Overtemperature_warningBIT10.1254Overtemperature_errorBIT10.1255General_hardware_errorBIT10.1256Channel_1_openloadBIT10.1259Channel_1_short_circuitBIT10.12510Channel_1_motor_overload_I2T_warningBIT10.12511Channel_1_motor_overload_I2T_errorBIT10.12512Channel_1_amplifier_overload_I2T_warningBIT10.12513Channel_1_amplifier_overload_I2T_errorBIT10.12514Channel_1_in_limit_xBIT10.12515Channel_1_commutation_errorBIT10.12516Channel_2_openloadBIT10.12521Channel_2_short_circuitBIT10.12522Channel_2_motor_overload_I2T_warningBIT10.12523Channel_2_motor_overload_I2T_errorBIT10.12524Channel_2_amplifier_overload_I2T_warningBIT10.12525Channel_2_amplifier_overload_I2T_errorBIT10.12526Channel_2_in_limit_xBIT10.12527Channel_2_commutation_errorBIT10.12528"}
+{attribute addProperty CRC "3942814109"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE Device_Diag_EB02919D :
+STRUCT
+	{attribute addProperty Name "Device_undervoltage"}
+	Device_undervoltage : BIT;
+	{attribute addProperty Name "Device_overvoltage"}
+	Device_overvoltage : BIT;
+	{attribute 'hide'}
+	reserve_1 : BIT;
+	{attribute addProperty Name "Overtemperature_warning"}
+	Overtemperature_warning : BIT;
+	{attribute addProperty Name "Overtemperature_error"}
+	Overtemperature_error : BIT;
+	{attribute addProperty Name "General_hardware_error"}
+	General_hardware_error : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute addProperty Name "Channel_1_openload"}
+	Channel_1_openload : BIT;
+	{attribute addProperty Name "Channel_1_short_circuit"}
+	Channel_1_short_circuit : BIT;
+	{attribute addProperty Name "Channel_1_motor_overload_I2T_warning"}
+	Channel_1_motor_overload_I2T_warning : BIT;
+	{attribute addProperty Name "Channel_1_motor_overload_I2T_error"}
+	Channel_1_motor_overload_I2T_error : BIT;
+	{attribute addProperty Name "Channel_1_amplifier_overload_I2T_warning"}
+	Channel_1_amplifier_overload_I2T_warning : BIT;
+	{attribute addProperty Name "Channel_1_amplifier_overload_I2T_error"}
+	Channel_1_amplifier_overload_I2T_error : BIT;
+	{attribute addProperty Name "Channel_1_in_limit_x"}
+	Channel_1_in_limit_x : BIT;
+	{attribute addProperty Name "Channel_1_commutation_error"}
+	Channel_1_commutation_error : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_3 : BIT;
+	{attribute addProperty Name "Channel_2_openload"}
+	Channel_2_openload : BIT;
+	{attribute addProperty Name "Channel_2_short_circuit"}
+	Channel_2_short_circuit : BIT;
+	{attribute addProperty Name "Channel_2_motor_overload_I2T_warning"}
+	Channel_2_motor_overload_I2T_warning : BIT;
+	{attribute addProperty Name "Channel_2_motor_overload_I2T_error"}
+	Channel_2_motor_overload_I2T_error : BIT;
+	{attribute addProperty Name "Channel_2_amplifier_overload_I2T_warning"}
+	Channel_2_amplifier_overload_I2T_warning : BIT;
+	{attribute addProperty Name "Channel_2_amplifier_overload_I2T_error"}
+	Channel_2_amplifier_overload_I2T_error : BIT;
+	{attribute addProperty Name "Channel_2_in_limit_x"}
+	Channel_2_in_limit_x : BIT;
+	{attribute addProperty Name "Channel_2_commutation_error"}
+	Channel_2_commutation_error : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_4_BIT_3 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

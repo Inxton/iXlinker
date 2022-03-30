@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PowerOK_5B5BD03A" Id="{5ea797f3-5a13-4909-88e6-d823d7185337}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL9210-0000-0016"}
+{attribute addProperty Id "PowerOKAT %I*BOOL81"}
+{attribute addProperty CRC "1532743738"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE PowerOK_5B5BD03A :
+STRUCT
+	{attribute addProperty Name "PowerOK"}
+	PowerOK AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

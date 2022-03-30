@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="APS_Comm_Inputs_FF1CE56E" Id="{0a9ebda0-d229-4c27-92cb-35fa4018c9d3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "APS4322-7000-0017"}
+{attribute addProperty Id "CommStatusWordAT %I*UINT16217DataAT %I*ARRAY[0 ..3] OF UINT6480"}
+{attribute addProperty CRC "3217752388"}
+{attribute addProperty SizeInBites "80"}
+{attribute addProperty SizeInBytes "10"}
+TYPE APS_Comm_Inputs_FF1CE56E :
+STRUCT
+	{attribute addProperty Name "CommStatusWord"}
+	CommStatusWord AT %I* : UINT;
+	{attribute addProperty Name "Data"}
+	Data AT %I* : ARRAY[0 ..3] OF UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

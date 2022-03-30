@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_84750349" Id="{755afb59-beb6-48cb-b36f-481db586155a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EM7004-0000-0017"}
+{attribute addProperty Id "Enable_PLSBIT10.1251"}
+{attribute addProperty CRC "2222261065"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Control_84750349 :
+STRUCT
+	{attribute addProperty Name "Enable_PLS"}
+	Enable_PLS : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_6 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_7 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_8 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_9 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_10 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_11 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_12 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_13 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_14 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ9505_13AAEB7E" Id="{4614c27d-b1c7-4322-9493-58402d71bb29}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ9505-0000-0016"}
+{attribute addProperty Id "Status_UoAT %I*Status_Uo_D24303661620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "1126846400"}
+{attribute addProperty SizeInBites "34"}
+{attribute addProperty SizeInBytes "4.25"}
+TYPE EJ9505_13AAEB7E :
+STRUCT
+	{attribute addProperty Name "Status_Uo"}
+	Status_Uo : Status_Uo_D2430366;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

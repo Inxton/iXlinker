@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Outputs_43F80E28" Id="{67a63bdd-0428-451f-8dae-5bf805b36756}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP7402-0057-0017"}
+{attribute addProperty Id "OutputAT %Q*ARRAY[0 ..3] OF BOOL3240Control_outputAT %Q*ARRAY[0 ..3] OF BOOL3240"}
+{attribute addProperty CRC "636064057"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE DO_Outputs_43F80E28 :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : ARRAY[0 ..3] OF BOOL;
+	{attribute addProperty Name "Control_output"}
+	Control_output AT %Q* : ARRAY[0 ..3] OF BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_F701F537" Id="{36658516-5640-49a9-bd5a-03cd77f41b3e}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6090-0000-0016"}
+{attribute addProperty Id "UpBIT10.1253DownBIT10.1254LeftBIT10.1255RightBIT10.1256EnterBIT10.1257TxPDO_ToggleBIT10.12516"}
+{attribute addProperty CRC "4144100663"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_F701F537 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute addProperty Name "Up"}
+	Up : BIT;
+	{attribute addProperty Name "Down"}
+	Down : BIT;
+	{attribute addProperty Name "Left"}
+	Left : BIT;
+	{attribute addProperty Name "Right"}
+	Right : BIT;
+	{attribute addProperty Name "Enter"}
+	Enter : BIT;
+	{attribute 'hide'}
+	reserve_2 : BYTE;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

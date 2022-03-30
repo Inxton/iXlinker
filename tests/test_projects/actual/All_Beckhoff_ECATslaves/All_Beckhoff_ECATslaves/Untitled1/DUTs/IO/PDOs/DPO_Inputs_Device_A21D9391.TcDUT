@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DPO_Inputs_Device_A21D9391" Id="{f6dc16b6-3199-426c-8c1a-69b23f886be7}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP9214-0023-0019"}
+{attribute addProperty Id "Temperature_WarningAT %I*BOOL811Temperature_ErrorAT %I*BOOL812Us_WarningAT %I*BOOL813Us_ErrorAT %I*BOOL814Up_WarningAT %I*BOOL815Up_ErrorAT %I*BOOL816Global_Error_BitAT %I*BOOL817Reset_InputAT %I*BOOL8112TxPDO_StateAT %I*BOOL8115TxPDO_ToggleAT %I*BOOL8116"}
+{attribute addProperty CRC "2719847313"}
+{attribute addProperty SizeInBites "80"}
+{attribute addProperty SizeInBytes "10"}
+TYPE DPO_Inputs_Device_A21D9391 :
+STRUCT
+	{attribute addProperty Name "Temperature_Warning"}
+	Temperature_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Temperature_Error"}
+	Temperature_Error AT %I* : BOOL;
+	{attribute addProperty Name "Us_Warning"}
+	Us_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Us_Error"}
+	Us_Error AT %I* : BOOL;
+	{attribute addProperty Name "Up_Warning"}
+	Up_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Up_Error"}
+	Up_Error AT %I* : BOOL;
+	{attribute addProperty Name "Global_Error_Bit"}
+	Global_Error_Bit AT %I* : BOOL;
+	{attribute addProperty Name "Reset_Input"}
+	Reset_Input AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

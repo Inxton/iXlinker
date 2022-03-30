@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_38C6D80F" Id="{cf330547-b80d-471f-b3cc-9789e9e744df}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2014-0000-0016"}
+{attribute addProperty Id "OvertemperatureBIT10.1251Open_LoadBIT10.1252OvercurrentBIT10.1253Short_Circuit_to_24VBIT10.1254"}
+{attribute addProperty CRC "952555535"}
+{attribute addProperty SizeInBites "4"}
+{attribute addProperty SizeInBytes "0.5"}
+{warning 'Size of this structure is not a multiple of 8 bits!!!'}
+TYPE Channel_38C6D80F :
+STRUCT
+	{attribute addProperty Name "Overtemperature"}
+	Overtemperature : BIT;
+	{attribute addProperty Name "Open_Load"}
+	Open_Load : BIT;
+	{attribute addProperty Name "Overcurrent"}
+	Overcurrent : BIT;
+	{attribute addProperty Name "Short_Circuit_to_24V"}
+	Short_Circuit_to_24V : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

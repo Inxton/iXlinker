@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AT_x_F6479768" Id="{f14f6c02-ad39-41e7-8cb3-59cb5f8f1205}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX5021-0000-0002-0002"}
+{attribute addProperty Id "Drive_status_wordAT %I*UINT162"}
+{attribute addProperty CRC "4131886952"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE AT_x_F6479768 :
+STRUCT
+	{attribute addProperty Name "Drive_status_word"}
+	Drive_status_word AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

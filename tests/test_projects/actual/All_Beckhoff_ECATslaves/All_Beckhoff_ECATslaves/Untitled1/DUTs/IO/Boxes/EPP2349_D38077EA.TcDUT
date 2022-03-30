@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP2349_D38077EA" Id="{9a66a40b-eee6-4f13-83cc-39abe0c5a446}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP2349-0021-0016"}
+{attribute addProperty Id "ChannelAT %I*ARRAY[0..15] OF Channel_E4AEF59E128160Channel_9_1AT %Q*Channel_7F374EB0810Channel_10_1AT %Q*Channel_7F374EB0810Channel_11_1AT %Q*Channel_7F374EB0810Channel_12_1AT %Q*Channel_7F374EB0810Channel_13_1AT %Q*Channel_7F374EB0810Channel_14_1AT %Q*Channel_7F374EB0810Channel_15_1AT %Q*Channel_7F374EB0810Channel_16_1AT %Q*Channel_7F374EB0810Channel_1AT %Q*ARRAY[0..7] OF Channel_7F374EB06480WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "990823510"}
+{attribute addProperty SizeInBites "274"}
+{attribute addProperty SizeInBytes "34.25"}
+TYPE EPP2349_D38077EA :
+STRUCT
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..15] OF Channel_E4AEF59E;
+	{attribute addProperty Name "Channel_9_1"}
+	Channel_9_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_10_1"}
+	Channel_10_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_11_1"}
+	Channel_11_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_12_1"}
+	Channel_12_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_13_1"}
+	Channel_13_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_14_1"}
+	Channel_14_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_15_1"}
+	Channel_15_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_16_1"}
+	Channel_16_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : ARRAY[0..7] OF Channel_7F374EB0;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

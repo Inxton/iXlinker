@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_E1839066" Id="{c6977d96-1df8-4d35-baf7-fae3ba355feb}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1052-0000-0016"}
+{attribute addProperty Id "InputAT %I*BOOL811ErrorAT %I*BOOL812"}
+{attribute addProperty CRC "3783495782"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Channel_E1839066 :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : BOOL;
+	{attribute addProperty Name "Error"}
+	Error AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ctrl_9754573E" Id="{ac15ccf1-4622-4d47-b4a3-ccb572760c3f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3356-0030-0025"}
+{attribute addProperty Id "Start_calibrationBIT10.1251Disable_calibrationBIT10.1252Input_freezeBIT10.1253Sample_modeBIT10.1254TaraBIT10.1255"}
+{attribute addProperty CRC "2538886974"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Ctrl_9754573E :
+STRUCT
+	{attribute addProperty Name "Start_calibration"}
+	Start_calibration : BIT;
+	{attribute addProperty Name "Disable_calibration"}
+	Disable_calibration : BIT;
+	{attribute addProperty Name "Input_freeze"}
+	Input_freeze : BIT;
+	{attribute addProperty Name "Sample_mode"}
+	Sample_mode : BIT;
+	{attribute addProperty Name "Tara"}
+	Tara : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2 : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

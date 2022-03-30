@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Diag_619B6703" Id="{31fe9f87-ce68-4808-a30b-ead3aec2d1f3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL9505-0010"}
+{attribute addProperty Id "Supply_Voltage_OKAT %I*BOOL000Over_currentAT %I*BOOL000"}
+{attribute addProperty CRC "1637574403"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE Diag_619B6703 :
+STRUCT
+	{attribute addProperty Name "Supply_Voltage_OK"}
+	Supply_Voltage_OK AT %I* : BOOL;
+	{attribute addProperty Name "Over_current"}
+	Over_current AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

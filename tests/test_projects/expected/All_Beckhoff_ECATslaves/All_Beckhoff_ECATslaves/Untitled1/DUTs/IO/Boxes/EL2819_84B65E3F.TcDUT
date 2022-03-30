@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2819_84B65E3F" Id="{7010aa4b-4211-4437-a629-a03433a054e8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2819-0000-0016"}
+{attribute addProperty Id "DIG_Diag_InputsAT %I*DIG_Diag_Inputs_2815A2556480DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_07359F0E3240DIG_OutputsAT %Q*DIG_Outputs_FCF3AB2C1620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2407097681"}
+{attribute addProperty SizeInBites "194"}
+{attribute addProperty SizeInBytes "24.25"}
+TYPE EL2819_84B65E3F :
+STRUCT
+	{attribute addProperty Name "DIG_Diag_Inputs"}
+	DIG_Diag_Inputs : DIG_Diag_Inputs_2815A255;
+	{attribute addProperty Name "DIG_Inputs_Device"}
+	DIG_Inputs_Device : DIG_Inputs_Device_07359F0E;
+	{attribute addProperty Name "DIG_Outputs"}
+	DIG_Outputs : DIG_Outputs_FCF3AB2C;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

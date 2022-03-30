@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="IND_Outputs_Channel_CDB9543D" Id="{3c8f11be-7a9c-4c32-a475-efccaaac8c3a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5072-0000-0016"}
+{attribute addProperty Id "Set_positionAT %Q*BOOL811Set_position_on_digital_inputAT %Q*BOOL812Enable_latch_on_digital_inputAT %Q*BOOL813Set_position_valueAT %Q*DINT32417"}
+{attribute addProperty CRC "3451475005"}
+{attribute addProperty SizeInBites "56"}
+{attribute addProperty SizeInBytes "7"}
+TYPE IND_Outputs_Channel_CDB9543D :
+STRUCT
+	{attribute addProperty Name "Set_position"}
+	Set_position AT %Q* : BOOL;
+	{attribute addProperty Name "Set_position_on_digital_input"}
+	Set_position_on_digital_input AT %Q* : BOOL;
+	{attribute addProperty Name "Enable_latch_on_digital_input"}
+	Enable_latch_on_digital_input AT %Q* : BOOL;
+	{attribute addProperty Name "Set_position_value"}
+	Set_position_value AT %Q* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

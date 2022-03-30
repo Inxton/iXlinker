@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL_60CDABA0" Id="{3e249c5d-3bac-4fbd-97fb-b678978a8fa8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL9900-0063"}
+{attribute addProperty Id "Channel_1Channel_E28253B100"}
+{attribute addProperty CRC "1624091552"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL_60CDABA0 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_E28253B1;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

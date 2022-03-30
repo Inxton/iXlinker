@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL8528_B5B8BA90" Id="{d11be14d-c682-4d62-935f-b24a079afef9}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL8528"}
+{attribute addProperty Id "Channel_1Channel_9A18274A00"}
+{attribute addProperty CRC "3048782480"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL8528_B5B8BA90 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_9A18274A;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

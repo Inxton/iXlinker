@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_F030DC9B" Id="{1d23f680-a60b-4283-bfaf-0d09688a5b24}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AMP8000-0000-0103-0103"}
+{attribute addProperty Id "AdsAddrAT %I*AMSADDR6480DcOutputShiftAT %I*DINT3240DcInputShiftAT %I*DINT3240AoeNetIdAT %I*AMSNETID4860Chn0AT %I*USINT810StateAT %I*UINT1620"}
+{attribute addProperty CRC "4029734043"}
+{attribute addProperty SizeInBites "200"}
+{attribute addProperty SizeInBytes "25"}
+TYPE InfoData_F030DC9B :
+STRUCT
+	{attribute addProperty Name "AdsAddr"}
+	AdsAddr AT %I* : AMSADDR;
+	{attribute addProperty Name "DcOutputShift"}
+	DcOutputShift AT %I* : DINT;
+	{attribute addProperty Name "DcInputShift"}
+	DcInputShift AT %I* : DINT;
+	{attribute addProperty Name "AoeNetId"}
+	AoeNetId AT %I* : AMSNETID;
+	{attribute addProperty Name "Chn0"}
+	Chn0 AT %I* : USINT;
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL1804_380B72AD" Id="{88ef7db2-57c9-4a79-b104-c16583fb4281}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL1804"}
+{attribute addProperty Id "Channel_1Channel_70B606D100Channel_2Channel_70B606D100Channel_3Channel_70B606D100Channel_4Channel_70B606D100"}
+{attribute addProperty CRC "940274349"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL1804_380B72AD :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_70B606D1;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_70B606D1;
+	{attribute addProperty Name "Channel_3"}
+	Channel_3 : Channel_70B606D1;
+	{attribute addProperty Name "Channel_4"}
+	Channel_4 : Channel_70B606D1;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

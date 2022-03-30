@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AO_X01_Pin5_Standard_F57FA4F9" Id="{3798c7de-7d15-4228-9e54-073f2e592659}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP4378-1022-0017"}
+{attribute addProperty Id "Analog_outputAT %Q*INT162"}
+{attribute addProperty CRC "4118783225"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE AO_X01_Pin5_Standard_F57FA4F9 :
+STRUCT
+	{attribute addProperty Name "Analog_output"}
+	Analog_output AT %Q* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

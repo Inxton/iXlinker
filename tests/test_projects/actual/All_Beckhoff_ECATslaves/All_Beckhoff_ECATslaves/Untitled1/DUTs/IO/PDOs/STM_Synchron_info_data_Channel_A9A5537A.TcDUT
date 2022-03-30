@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="STM_Synchron_info_data_Channel_A9A5537A" Id="{3acf6f5f-790a-44cc-97d3-3259de68c5a0}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP7402-0057-0017"}
+{attribute addProperty Id "Info_dataAT %I*ARRAY[0 ..2] OF UINT4860"}
+{attribute addProperty CRC "475645009"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE STM_Synchron_info_data_Channel_A9A5537A :
+STRUCT
+	{attribute addProperty Name "Info_data"}
+	Info_data AT %I* : ARRAY[0 ..2] OF UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

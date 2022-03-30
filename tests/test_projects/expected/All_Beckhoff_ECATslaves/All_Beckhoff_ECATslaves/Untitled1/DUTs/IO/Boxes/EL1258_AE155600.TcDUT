@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL1258_AE155600" Id="{fdec8439-68d3-4a5d-a4a6-99230144e629}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1258-0000-0016"}
+{attribute addProperty Id "MTI_Inputs_10x_ChannelAT %I*ARRAY[0..84] OF MTI_Inputs_10x_Channel_D2104A6045285660MTI_Outputs_ChannelAT %Q*ARRAY[0..7] OF MTI_Outputs_Channel_DD76C79810961370WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "464279476"}
+{attribute addProperty SizeInBites "5770"}
+{attribute addProperty SizeInBytes "721.25"}
+TYPE EL1258_AE155600 :
+STRUCT
+	{attribute addProperty Name "MTI_Inputs_10x_Channel"}
+	MTI_Inputs_10x_Channel : ARRAY[0..84] OF MTI_Inputs_10x_Channel_D2104A60;
+	{attribute addProperty Name "MTI_Outputs_Channel"}
+	MTI_Outputs_Channel : ARRAY[0..7] OF MTI_Outputs_Channel_DD76C798;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

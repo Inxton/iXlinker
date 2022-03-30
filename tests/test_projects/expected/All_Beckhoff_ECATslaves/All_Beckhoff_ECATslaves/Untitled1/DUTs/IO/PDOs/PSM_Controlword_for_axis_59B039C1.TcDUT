@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PSM_Controlword_for_axis_59B039C1" Id="{ec79f1e2-e15f-4d79-9f77-681d7fae0da7}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX8620-0000-0029"}
+{attribute addProperty Id "Controlword_for_axisAT %I*Controlword_for_axis_FF97049B162"}
+{attribute addProperty CRC "1504721345"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE PSM_Controlword_for_axis_59B039C1 :
+STRUCT
+	{attribute addProperty Name "Controlword_for_axis"}
+	Controlword_for_axis AT %I* : Controlword_for_axis_FF97049B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

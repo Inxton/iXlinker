@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL1859_2645D610" Id="{e17ef306-4b4d-4fb2-b7c3-a69cd690b003}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL1859"}
+{attribute addProperty Id "Channel_1Channel_B8364C2500Channel_2Channel_B8364C2500Channel_3Channel_B8364C2500Channel_4Channel_B8364C2500Channel_5Channel_B8364C2500Channel_6Channel_B8364C2500Channel_7Channel_B8364C2500Channel_8Channel_B8364C2500"}
+{attribute addProperty CRC "642110992"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL1859_2645D610 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_B8364C25;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_B8364C25;
+	{attribute addProperty Name "Channel_3"}
+	Channel_3 : Channel_B8364C25;
+	{attribute addProperty Name "Channel_4"}
+	Channel_4 : Channel_B8364C25;
+	{attribute addProperty Name "Channel_5"}
+	Channel_5 : Channel_B8364C25;
+	{attribute addProperty Name "Channel_6"}
+	Channel_6 : Channel_B8364C25;
+	{attribute addProperty Name "Channel_7"}
+	Channel_7 : Channel_B8364C25;
+	{attribute addProperty Name "Channel_8"}
+	Channel_8 : Channel_B8364C25;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

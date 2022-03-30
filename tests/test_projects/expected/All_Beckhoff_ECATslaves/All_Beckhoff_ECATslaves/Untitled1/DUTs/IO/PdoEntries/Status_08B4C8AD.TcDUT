@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_08B4C8AD" Id="{efd26e4f-9ad0-44d8-835c-d4e8056d94d3}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5151-0000-0020"}
+{attribute addProperty Id "Latch_C_validBIT10.1251Latch_extern_validBIT10.1252Set_counter_doneBIT10.1253Extrapolation_stallBIT10.1258Status_of_input_ABIT10.1259Status_of_input_BBIT10.12510Status_of_input_CBIT10.12511Status_of_extern_latchBIT10.12513Sync_errorBIT10.12532TxPDO_ToggleBIT10.1259"}
+{attribute addProperty CRC "146065581"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_08B4C8AD :
+STRUCT
+	{attribute addProperty Name "Latch_C_valid"}
+	Latch_C_valid : BIT;
+	{attribute addProperty Name "Latch_extern_valid"}
+	Latch_extern_valid : BIT;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BIT;
+	{attribute addProperty Name "Extrapolation_stall"}
+	Extrapolation_stall : BIT;
+	{attribute addProperty Name "Status_of_input_A"}
+	Status_of_input_A : BIT;
+	{attribute addProperty Name "Status_of_input_B"}
+	Status_of_input_B : BIT;
+	{attribute addProperty Name "Status_of_input_C"}
+	Status_of_input_C : BIT;
+	{attribute 'hide'}
+	reserve_2 : BIT;
+	{attribute addProperty Name "Status_of_extern_latch"}
+	Status_of_extern_latch : BIT;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BIT;
+	{attribute 'hide'}
+	reserve_3 : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

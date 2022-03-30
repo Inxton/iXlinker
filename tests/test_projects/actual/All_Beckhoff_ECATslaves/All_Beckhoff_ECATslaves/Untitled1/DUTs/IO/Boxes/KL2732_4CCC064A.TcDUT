@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL2732_4CCC064A" Id="{20339239-53d6-4408-be87-17cda681ab9e}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL2732"}
+{attribute addProperty Id "Channel_1Channel_E75BD82E00Channel_2Channel_E75BD82E00"}
+{attribute addProperty CRC "1288439370"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE KL2732_4CCC064A :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_E75BD82E;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_E75BD82E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

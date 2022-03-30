@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP2001_1F1194F3" Id="{e2131c89-d08e-48ad-99b0-6fccc9e5d789}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP2001-1000-0016"}
+{attribute addProperty Id "Group_0AT %Q*Group_5423B5073240Group_1AT %Q*Group_9433FC8D3240WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "3072731600"}
+{attribute addProperty SizeInBites "81"}
+{attribute addProperty SizeInBytes "10.125"}
+TYPE EP2001_1F1194F3 :
+STRUCT
+	{attribute addProperty Name "Group_0"}
+	Group_0 : Group_5423B507;
+	{attribute addProperty Name "Group_1"}
+	Group_1 : Group_9433FC8D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_28A86775;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

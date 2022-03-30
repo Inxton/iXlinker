@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DEVICE_Outputs_734938A4" Id="{44bb097b-9aed-4764-9475-5126ed0d3067}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6900-0000-0016"}
+{attribute addProperty Id "ControlAT %Q*UINT162"}
+{attribute addProperty CRC "1934178468"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DEVICE_Outputs_734938A4 :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

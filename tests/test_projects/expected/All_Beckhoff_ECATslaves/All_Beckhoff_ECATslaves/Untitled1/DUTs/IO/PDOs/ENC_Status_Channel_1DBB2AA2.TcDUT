@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Status_Channel_1DBB2AA2" Id="{66d41238-688f-4edc-ab76-debd5ed9574a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5122-0000-0016"}
+{attribute addProperty Id "StatusAT %I*Status_37F29CC13240Counter_valueAT %I*UDINT32417Latch_valueAT %I*UDINT32418"}
+{attribute addProperty CRC "498805410"}
+{attribute addProperty SizeInBites "96"}
+{attribute addProperty SizeInBytes "12"}
+TYPE ENC_Status_Channel_1DBB2AA2 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_37F29CC1;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UDINT;
+	{attribute addProperty Name "Latch_value"}
+	Latch_value AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

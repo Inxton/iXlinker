@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_5FAA6867" Id="{b2f02734-83a5-480f-9165-a83657cb91c1}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL3356"}
+{attribute addProperty Id "StatusAT %I*USINT000RegInAT %I*UINT000AnStatusAT %I*USINT000WeightAT %I*UINT000CtrlAT %Q*USINT000RegOutAT %Q*UINT000AnCtrlAT %Q*USINT000"}
+{attribute addProperty CRC "1605003367"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE Channel_5FAA6867 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : USINT;
+	{attribute addProperty Name "RegIn"}
+	RegIn AT %I* : UINT;
+	{attribute addProperty Name "AnStatus"}
+	AnStatus AT %I* : USINT;
+	{attribute addProperty Name "Weight"}
+	Weight AT %I* : UINT;
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : USINT;
+	{attribute addProperty Name "RegOut"}
+	RegOut AT %Q* : UINT;
+	{attribute addProperty Name "AnCtrl"}
+	AnCtrl AT %Q* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

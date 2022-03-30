@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L3_Current_Status_6EB7CEBB" Id="{a699801b-7b15-4d08-a1e3-dee48e813224}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3773-0000-0016"}
+{attribute addProperty Id "I3_STATUSAT %I*I3_STATUS_F9B4A013162"}
+{attribute addProperty CRC "1857539771"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE L3_Current_Status_6EB7CEBB :
+STRUCT
+	{attribute addProperty Name "I3_STATUS"}
+	I3_STATUS AT %I* : I3_STATUS_F9B4A013;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

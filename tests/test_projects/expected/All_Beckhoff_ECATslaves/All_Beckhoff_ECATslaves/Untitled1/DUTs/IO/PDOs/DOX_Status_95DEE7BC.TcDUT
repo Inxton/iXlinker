@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DOX_Status_95DEE7BC" Id="{8b4da263-1783-43e9-9dfe-562374013c4b}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2595-0000-0019"}
+{attribute addProperty Id "StatusAT %I*Status_214777E6162"}
+{attribute addProperty CRC "2514413500"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE DOX_Status_95DEE7BC :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_214777E6;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

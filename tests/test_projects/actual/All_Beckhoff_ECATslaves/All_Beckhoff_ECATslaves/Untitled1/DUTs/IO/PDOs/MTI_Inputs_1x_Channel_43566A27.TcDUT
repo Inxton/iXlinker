@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="MTI_Inputs_1x_Channel_43566A27" Id="{8509e0d1-1172-4138-aa1b-04f4a2fcd5b5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1258-0010-0017"}
+{attribute addProperty Id "StatusAT %I*Status_8577222D3241InputsAT %I*Inputs_69E67C1732433Input_event_time_1AT %I*UDINT32465"}
+{attribute addProperty CRC "1129736743"}
+{attribute addProperty SizeInBites "96"}
+{attribute addProperty SizeInBytes "12"}
+TYPE MTI_Inputs_1x_Channel_43566A27 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_8577222D;
+	{attribute addProperty Name "Inputs"}
+	Inputs AT %I* : Inputs_69E67C17;
+	{attribute addProperty Name "Input_event_time_1"}
+	Input_event_time_1 AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

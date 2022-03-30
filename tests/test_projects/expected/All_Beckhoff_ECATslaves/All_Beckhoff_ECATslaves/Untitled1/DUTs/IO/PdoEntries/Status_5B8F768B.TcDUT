@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_5B8F768B" Id="{48bed7fe-8d33-438d-bbef-866648b62f09}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL9227-4433-0018"}
+{attribute addProperty Id "EnabledBIT10.1251TrippedBIT10.1252Short_CircuitBIT10.1253OverloadBIT10.1254Hardware_ProtectionBIT10.1255OvervoltageBIT10.1256UndervoltageBIT10.1257Current_Level_WarningBIT10.1258Cool_Down_LockBIT10.1259Disabled_By_SwitchBIT10.12510Disabled_By_DIBIT10.12511Disabled_By_OutputBIT10.12512DiagBIT10.12513TxPDO_StateBIT10.12514Input_cycle_counter_BIT_0BIT10.12515Input_cycle_counter_BIT_1BIT10.12515State_Device_SwitchBIT10.12517State_Digital_InputBIT10.12518ErrorBIT10.12519State_ResetBIT10.12520State_SwitchBIT10.12521"}
+{attribute addProperty CRC "1536128651"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE Status_5B8F768B :
+STRUCT
+	{attribute addProperty Name "Enabled"}
+	Enabled : BIT;
+	{attribute addProperty Name "Tripped"}
+	Tripped : BIT;
+	{attribute addProperty Name "Short_Circuit"}
+	Short_Circuit : BIT;
+	{attribute addProperty Name "Overload"}
+	Overload : BIT;
+	{attribute addProperty Name "Hardware_Protection"}
+	Hardware_Protection : BIT;
+	{attribute addProperty Name "Overvoltage"}
+	Overvoltage : BIT;
+	{attribute addProperty Name "Undervoltage"}
+	Undervoltage : BIT;
+	{attribute addProperty Name "Current_Level_Warning"}
+	Current_Level_Warning : BIT;
+	{attribute addProperty Name "Cool_Down_Lock"}
+	Cool_Down_Lock : BIT;
+	{attribute addProperty Name "Disabled_By_Switch"}
+	Disabled_By_Switch : BIT;
+	{attribute addProperty Name "Disabled_By_DI"}
+	Disabled_By_DI : BIT;
+	{attribute addProperty Name "Disabled_By_Output"}
+	Disabled_By_Output : BIT;
+	{attribute addProperty Name "Diag"}
+	Diag : BIT;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BIT;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter_BIT_0 : BIT;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter_BIT_1 : BIT;
+	{attribute addProperty Name "State_Device_Switch"}
+	State_Device_Switch : BIT;
+	{attribute addProperty Name "State_Digital_Input"}
+	State_Digital_Input : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute addProperty Name "State_Reset"}
+	State_Reset : BIT;
+	{attribute addProperty Name "State_Switch"}
+	State_Switch : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_6 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_7 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_8 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_9 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_10 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

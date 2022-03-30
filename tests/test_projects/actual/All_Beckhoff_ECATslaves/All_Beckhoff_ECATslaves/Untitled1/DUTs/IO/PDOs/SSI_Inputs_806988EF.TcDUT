@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SSI_Inputs_806988EF" Id="{278ed712-119a-41c2-a9a2-9b6517e48a81}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5001-0011-0019"}
+{attribute addProperty Id "StatusAT %I*Status_EA2B79591621Counter_valueAT %I*UDINT32417"}
+{attribute addProperty CRC "2154399983"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE SSI_Inputs_806988EF :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_EA2B7959;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

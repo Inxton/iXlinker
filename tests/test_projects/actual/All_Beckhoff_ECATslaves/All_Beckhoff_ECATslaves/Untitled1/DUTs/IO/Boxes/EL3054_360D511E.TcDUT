@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3054_360D511E" Id="{585df61f-039f-41df-b587-baa1207591f5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3054-0000-0017"}
+{attribute addProperty Id "AI_Standard_ChannelAT %I*ARRAY[0..6] OF AI_Standard_Channel_B51B79FC32440.50WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1934572936"}
+{attribute addProperty SizeInBites "406"}
+{attribute addProperty SizeInBytes "50.75"}
+TYPE EL3054_360D511E :
+STRUCT
+	{attribute addProperty Name "AI_Standard_Channel"}
+	AI_Standard_Channel : ARRAY[0..6] OF AI_Standard_Channel_B51B79FC;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

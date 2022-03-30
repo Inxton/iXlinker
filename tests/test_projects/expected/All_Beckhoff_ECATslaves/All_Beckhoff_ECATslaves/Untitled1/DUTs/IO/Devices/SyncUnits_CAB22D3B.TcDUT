@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SyncUnits_CAB22D3B" Id="{5648500b-33db-46de-b3f0-7a6061614e77}">
+    <Declaration><![CDATA[{attribute addProperty BoxType ""}
+{attribute addProperty Id "_defaultSyncUnitTasks_486549DC19524.3750"}
+{attribute addProperty CRC "3400674619"}
+{attribute addProperty SizeInBites "195"}
+{attribute addProperty SizeInBytes "24.375"}
+TYPE SyncUnits_CAB22D3B :
+STRUCT
+	{attribute addProperty Name "_default"}
+	_default : SyncUnitTasks_486549DC;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

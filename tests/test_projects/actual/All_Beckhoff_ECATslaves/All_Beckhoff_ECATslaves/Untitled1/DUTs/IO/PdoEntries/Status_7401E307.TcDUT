@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_7401E307" Id="{ef452806-8729-411a-8f2b-4f40f01a9585}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP3204-0002-0016"}
+{attribute addProperty Id "UnderrangeBIT10.1251OverrangeBIT10.1252Limit_1_BIT_0BIT10.1253Limit_1_BIT_1BIT10.1253Limit_2_BIT_0BIT10.1255Limit_2_BIT_1BIT10.1255ErrorBIT10.1257Sync_errorBIT10.12514TxPDO_StateBIT10.1257TxPDO_ToggleBIT10.1259"}
+{attribute addProperty CRC "1946280711"}
+{attribute addProperty SizeInBites "58"}
+{attribute addProperty SizeInBytes "7.25"}
+{warning 'Size of this structure is not a multiple of 8 bits!!!'}
+TYPE Status_7401E307 :
+STRUCT
+	{attribute addProperty Name "Underrange"}
+	Underrange : BIT;
+	{attribute addProperty Name "Overrange"}
+	Overrange : BIT;
+	{attribute addProperty Name "Limit_1"}
+	Limit_1_BIT_0 : BIT;
+	{attribute addProperty Name "Limit_1"}
+	Limit_1_BIT_1 : BIT;
+	{attribute addProperty Name "Limit_2"}
+	Limit_2_BIT_0 : BIT;
+	{attribute addProperty Name "Limit_2"}
+	Limit_2_BIT_1 : BIT;
+	{attribute addProperty Name "Error"}
+	Error : BIT;
+	{attribute 'hide'}
+	reserve_1_BOOL_0 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_1 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_2 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_3 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_4 : BOOL;
+	{attribute 'hide'}
+	reserve_1_BOOL_5 : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BIT;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

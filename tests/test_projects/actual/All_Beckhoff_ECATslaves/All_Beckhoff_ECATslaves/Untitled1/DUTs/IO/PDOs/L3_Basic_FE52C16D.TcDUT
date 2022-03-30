@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L3_Basic_FE52C16D" Id="{ec1d5ef2-897e-41ba-8470-b9710e110065}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3483-0060-0018"}
+{attribute addProperty Id "VoltageAT %I*REAL324"}
+{attribute addProperty CRC "4266836333"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE L3_Basic_FE52C16D :
+STRUCT
+	{attribute addProperty Name "Voltage"}
+	Voltage AT %I* : REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

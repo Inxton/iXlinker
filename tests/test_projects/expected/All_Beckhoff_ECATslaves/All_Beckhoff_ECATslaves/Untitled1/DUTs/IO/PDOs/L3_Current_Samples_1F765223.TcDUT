@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L3_Current_Samples_1F765223" Id="{1060fa97-c86c-4f20-a689-37c14577292a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3783-0000-0018"}
+{attribute addProperty Id "I3_SamplesAT %I*ARRAY [0..19] OF INT32040"}
+{attribute addProperty CRC "527847971"}
+{attribute addProperty SizeInBites "320"}
+{attribute addProperty SizeInBytes "40"}
+TYPE L3_Current_Samples_1F765223 :
+STRUCT
+	{attribute addProperty Name "I3_Samples"}
+	I3_Samples AT %I* : ARRAY [0..19] OF INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

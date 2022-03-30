@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_2605F314" Id="{887ae059-8b63-490a-9390-326cb1dcfc47}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5151-0021-0018"}
+{attribute addProperty Id "Enable_latch_CBIT10.1251Enable_latch_extern_on_positive_edgeBIT10.1252Set_counterBIT10.1253Enable_latch_extern_on_negative_edgeBIT10.1254Set_outputBIT10.1255Enable_output_functionsBIT10.1256Enable_measurementBIT10.1257Set_counter_on_latch_CBIT10.1258"}
+{attribute addProperty CRC "637924116"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Control_2605F314 :
+STRUCT
+	{attribute addProperty Name "Enable_latch_C"}
+	Enable_latch_C : BIT;
+	{attribute addProperty Name "Enable_latch_extern_on_positive_edge"}
+	Enable_latch_extern_on_positive_edge : BIT;
+	{attribute addProperty Name "Set_counter"}
+	Set_counter : BIT;
+	{attribute addProperty Name "Enable_latch_extern_on_negative_edge"}
+	Enable_latch_extern_on_negative_edge : BIT;
+	{attribute addProperty Name "Set_output"}
+	Set_output : BIT;
+	{attribute addProperty Name "Enable_output_functions"}
+	Enable_output_functions : BIT;
+	{attribute addProperty Name "Enable_measurement"}
+	Enable_measurement : BIT;
+	{attribute addProperty Name "Set_counter_on_latch_C"}
+	Set_counter_on_latch_C : BIT;
+	{attribute 'hide'}
+	reserve_1 : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

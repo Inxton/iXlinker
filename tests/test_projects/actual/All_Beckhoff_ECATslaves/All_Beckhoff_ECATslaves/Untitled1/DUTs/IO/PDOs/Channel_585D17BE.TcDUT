@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_585D17BE" Id="{123aacdc-7ad3-4b98-893c-29d203969565}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL1512"}
+{attribute addProperty Id "StateAT %I*USINT000Data_InAT %I*UINT000CtrlAT %Q*USINT000Data_OutAT %Q*UINT000"}
+{attribute addProperty CRC "1482495934"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE Channel_585D17BE :
+STRUCT
+	{attribute addProperty Name "State"}
+	State AT %I* : USINT;
+	{attribute addProperty Name "Data_In"}
+	Data_In AT %I* : UINT;
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out"}
+	Data_Out AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

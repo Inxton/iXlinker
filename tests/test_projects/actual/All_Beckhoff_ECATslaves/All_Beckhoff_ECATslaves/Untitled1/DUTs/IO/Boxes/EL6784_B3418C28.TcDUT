@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6784_B3418C28" Id="{fa8997a2-1aaf-4be1-98bc-b4ba7d9a0053}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6784-0000-0016"}
+{attribute addProperty Id "StatusAT %I*Status_8B1CA2AE1620InputsEMPTY_STRUCTURE000ControlAT %Q*Control_734938A41620OutputsEMPTY_STRUCTURE000WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3110452621"}
+{attribute addProperty SizeInBites "114"}
+{attribute addProperty SizeInBytes "14.25"}
+TYPE EL6784_B3418C28 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status : Status_8B1CA2AE;
+	{attribute addProperty Name "Inputs"}
+	Inputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "Control"}
+	Control : Control_734938A4;
+	{attribute addProperty Name "Outputs"}
+	Outputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

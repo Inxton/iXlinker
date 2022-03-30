@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PM_Inputs_Auxiliary_900B1E65" Id="{6253a8fa-d841-4560-a084-f5b75820722c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3413-0000-0019"}
+{attribute addProperty Id "STATUSAT %I*STATUS_FDB39B821620IndexAT %I*USINT8117ChannelAT %I*USINT8118ValueAT %I*DINT32419"}
+{attribute addProperty CRC "2416647781"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE PM_Inputs_Auxiliary_900B1E65 :
+STRUCT
+	{attribute addProperty Name "STATUS"}
+	STATUS AT %I* : STATUS_FDB39B82;
+	{attribute addProperty Name "Index"}
+	Index AT %I* : USINT;
+	{attribute addProperty Name "Channel"}
+	Channel AT %I* : USINT;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

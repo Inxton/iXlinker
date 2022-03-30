@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_ELMxxxx_F3377F79" Id="{25fc845f-6a39-4907-a130-b649f7945a35}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_ELM3xxxBeckhoff_ELM3xxx_6EC4C1332894361.75Beckhoff_ELM31xxBeckhoff_ELM31xx_1B5DD7757984998Beckhoff_ELM35xxBeckhoff_ELM35xx_45F1AC793232404Beckhoff_ELM36xxBeckhoff_ELM36xx_F5043D7C4036504.5Beckhoff_ELM37xxBeckhoff_ELM37xx_37DB7D9A3826478.25Beckhoff_ELM3xxx_0030Beckhoff_ELM3xxx_0030_86EC07202428303.5Beckhoff_ELM9xxxBeckhoff_ELM9xxx_2CCFEFDC2756344.5SyncUnitsSyncUnits_CAB22D3B19524.375InputsInputs_C75D3FEC1280160OutputsOutputs_47D1E803848106InfoDataInfoData_E9F65A829612"}
+{attribute addProperty CRC "4080500601"}
+{attribute addProperty SizeInBites "29575"}
+{attribute addProperty SizeInBytes "3696.875"}
+TYPE EtherCAT_Master_ELMxxxx_F3377F79 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_ELM3xxx"}
+	Beckhoff_ELM3xxx : Beckhoff_ELM3xxx_6EC4C133;
+	{attribute addProperty Name "Beckhoff_ELM31xx"}
+	Beckhoff_ELM31xx : Beckhoff_ELM31xx_1B5DD775;
+	{attribute addProperty Name "Beckhoff_ELM35xx"}
+	Beckhoff_ELM35xx : Beckhoff_ELM35xx_45F1AC79;
+	{attribute addProperty Name "Beckhoff_ELM36xx"}
+	Beckhoff_ELM36xx : Beckhoff_ELM36xx_F5043D7C;
+	{attribute addProperty Name "Beckhoff_ELM37xx"}
+	Beckhoff_ELM37xx : Beckhoff_ELM37xx_37DB7D9A;
+	{attribute addProperty Name "Beckhoff_ELM3xxx_0030"}
+	Beckhoff_ELM3xxx_0030 : Beckhoff_ELM3xxx_0030_86EC0720;
+	{attribute addProperty Name "Beckhoff_ELM9xxx"}
+	Beckhoff_ELM9xxx : Beckhoff_ELM9xxx_2CCFEFDC;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_CAB22D3B;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_C75D3FEC;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_47D1E803;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_E9F65A82;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6001_CDA29A4B" Id="{a8b0dbad-31b3-48e4-b208-92d78bd6e44c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6001-0000-0016"}
+{attribute addProperty Id "COM_InputsAT %I*COM_Inputs_DABE08D319924.8750COM_OutputsAT %Q*COM_Outputs_7618C60322027.50WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3041876089"}
+{attribute addProperty SizeInBites "501"}
+{attribute addProperty SizeInBytes "62.625"}
+TYPE EL6001_CDA29A4B :
+STRUCT
+	{attribute addProperty Name "COM_Inputs"}
+	COM_Inputs : COM_Inputs_DABE08D3;
+	{attribute addProperty Name "COM_Outputs"}
+	COM_Outputs : COM_Outputs_7618C603;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

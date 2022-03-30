@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="RMB_Control_F68E0F33" Id="{75092467-10d5-4517-ad94-c10d08dbbb5b}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3356-0000-0017"}
+{attribute addProperty Id "CtrlAT %Q*Ctrl_C7B0FC4F162"}
+{attribute addProperty CRC "4136505139"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE RMB_Control_F68E0F33 :
+STRUCT
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : Ctrl_C7B0FC4F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

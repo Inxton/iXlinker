@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP3204_C91659E2" Id="{2ca8c11a-ffae-46f0-9b88-ddbfd28f38bb}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP3204-0002-0021"}
+{attribute addProperty Id "RTD_RTDInputs_ChannelAT %I*ARRAY[0..6] OF RTD_RTDInputs_Channel_F16A160D128160WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "216835468"}
+{attribute addProperty SizeInBites "210"}
+{attribute addProperty SizeInBytes "26.25"}
+TYPE EP3204_C91659E2 :
+STRUCT
+	{attribute addProperty Name "RTD_RTDInputs_Channel"}
+	RTD_RTDInputs_Channel : ARRAY[0..6] OF RTD_RTDInputs_Channel_F16A160D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_98A4DF75;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

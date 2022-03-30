@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_4EB9B0BC" Id="{9f28166d-c40e-4f3b-96b5-59124eb13073}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2521-0000-1019"}
+{attribute addProperty Id "Set_counter_doneBIT10.1253Counter_underflowBIT10.1254Counter_overflowBIT10.1255Sync_errorBIT10.12532TxPDO_ToggleBIT10.1259"}
+{attribute addProperty CRC "1320792252"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Status_4EB9B0BC :
+STRUCT
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BIT;
+	{attribute addProperty Name "Counter_underflow"}
+	Counter_underflow : BIT;
+	{attribute addProperty Name "Counter_overflow"}
+	Counter_overflow : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_3_BIT_4 : BIT;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BIT;
+	{attribute 'hide'}
+	reserve_4 : BIT;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

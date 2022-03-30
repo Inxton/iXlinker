@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_87981828" Id="{6d092fcd-8413-4252-b847-258c1363aaac}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5101-0011-0016"}
+{attribute addProperty Id "Set_counterBIT10.1253"}
+{attribute addProperty CRC "2274891816"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Control_87981828 :
+STRUCT
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute addProperty Name "Set_counter"}
+	Set_counter : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_2 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_3 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_4 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_5 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_6 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_7 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_8 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_9 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_10 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_11 : BIT;
+	{attribute 'hide'}
+	reserve_2_BIT_12 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

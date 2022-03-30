@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch_B_AxisMain_Outputs_3FCFC8F5" Id="{97cb98d2-0893-4a66-8ae2-77f75f691718}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX8206-0000-0041-0041"}
+{attribute addProperty Id "Ch_B_ControlwordAT %Q*UINT162"}
+{attribute addProperty CRC "1070582005"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Ch_B_AxisMain_Outputs_3FCFC8F5 :
+STRUCT
+	{attribute addProperty Name "Ch_B_Controlword"}
+	Ch_B_Controlword AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Slave_25_Inputs_8045513C" Id="{1b2b0c14-093c-4c07-8354-c85db3fc0e80}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6201-0000-0017"}
+{attribute addProperty Id "Slave_25A_DI0BIT10.125193Slave_25A_DI1BIT10.125194Slave_25A_DI2BIT10.125195Slave_25A_DI3BIT10.125196Slave_25B_DI0BIT10.125197Slave_25B_DI1BIT10.125198Slave_25B_DI2BIT10.125199Slave_25B_DI3BIT10.125200"}
+{attribute addProperty CRC "2152026428"}
+{attribute addProperty SizeInBites "8"}
+{attribute addProperty SizeInBytes "1"}
+TYPE Slave_25_Inputs_8045513C :
+STRUCT
+	{attribute addProperty Name "Slave_25A_DI0"}
+	Slave_25A_DI0 : BIT;
+	{attribute addProperty Name "Slave_25A_DI1"}
+	Slave_25A_DI1 : BIT;
+	{attribute addProperty Name "Slave_25A_DI2"}
+	Slave_25A_DI2 : BIT;
+	{attribute addProperty Name "Slave_25A_DI3"}
+	Slave_25A_DI3 : BIT;
+	{attribute addProperty Name "Slave_25B_DI0"}
+	Slave_25B_DI0 : BIT;
+	{attribute addProperty Name "Slave_25B_DI1"}
+	Slave_25B_DI1 : BIT;
+	{attribute addProperty Name "Slave_25B_DI2"}
+	Slave_25B_DI2 : BIT;
+	{attribute addProperty Name "Slave_25B_DI3"}
+	Slave_25B_DI3 : BIT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

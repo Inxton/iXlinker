@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ctrl_D7097D21" Id="{20a934bc-0328-467f-aea9-3652a4ce6217}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3681-0000-0017"}
+{attribute addProperty Id "Enable_autorangeBIT10.1251Mode_BIT_0BIT10.1255Mode_BIT_1BIT10.1255Mode_BIT_2BIT10.1255Mode_BIT_3BIT10.1255RangeSINT819"}
+{attribute addProperty CRC "3607723297"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Ctrl_D7097D21 :
+STRUCT
+	{attribute addProperty Name "Enable_autorange"}
+	Enable_autorange : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_0 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_1 : BIT;
+	{attribute 'hide'}
+	reserve_1_BIT_2 : BIT;
+	{attribute addProperty Name "Mode"}
+	Mode_BIT_0 : BIT;
+	{attribute addProperty Name "Mode"}
+	Mode_BIT_1 : BIT;
+	{attribute addProperty Name "Mode"}
+	Mode_BIT_2 : BIT;
+	{attribute addProperty Name "Mode"}
+	Mode_BIT_3 : BIT;
+	{attribute addProperty Name "Range"}
+	Range : SINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

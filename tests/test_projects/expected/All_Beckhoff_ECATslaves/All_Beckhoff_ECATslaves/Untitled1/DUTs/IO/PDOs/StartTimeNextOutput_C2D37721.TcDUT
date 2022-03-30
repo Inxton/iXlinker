@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="StartTimeNextOutput_C2D37721" Id="{830256a0-13ba-49b9-be8a-8189a1559aa9}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2262-0000-0004"}
+{attribute addProperty Id "StartTimeNextOutputAT %I*UDINT324"}
+{attribute addProperty CRC "3268638497"}
+{attribute addProperty SizeInBites "32"}
+{attribute addProperty SizeInBytes "4"}
+TYPE StartTimeNextOutput_C2D37721 :
+STRUCT
+	{attribute addProperty Name "StartTimeNextOutput"}
+	StartTimeNextOutput AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

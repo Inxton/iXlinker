@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Inputs_44EC503A" Id="{2defcf38-476c-4c29-8326-8c841100cebb}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2521-1001-0000"}
+{attribute addProperty Id "StatusAT %I*USINT811Data_InAT %I*UINT1622"}
+{attribute addProperty CRC "1156337722"}
+{attribute addProperty SizeInBites "24"}
+{attribute addProperty SizeInBytes "3"}
+TYPE Inputs_44EC503A :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : USINT;
+	{attribute addProperty Name "Data_In"}
+	Data_In AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

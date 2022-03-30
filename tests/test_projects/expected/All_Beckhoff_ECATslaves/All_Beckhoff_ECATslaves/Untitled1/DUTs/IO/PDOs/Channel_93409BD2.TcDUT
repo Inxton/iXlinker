@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_93409BD2" Id="{ee0b2d63-9615-456e-9601-1ed468ce8f1d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "KL1501-0001"}
+{attribute addProperty Id "StatusAT %I*USINT000CounterAT %I*UINT000Latch_PeriodLAT %I*UINT000PeriodHAT %I*USINT000CtrlAT %Q*USINT000RegDataAT %Q*UINT000"}
+{attribute addProperty CRC "2470484946"}
+{attribute addProperty SizeInBites "0"}
+{attribute addProperty SizeInBytes "0"}
+TYPE Channel_93409BD2 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : USINT;
+	{attribute addProperty Name "Counter"}
+	Counter AT %I* : UINT;
+	{attribute addProperty Name "Latch_PeriodL"}
+	Latch_PeriodL AT %I* : UINT;
+	{attribute addProperty Name "PeriodH"}
+	PeriodH AT %I* : USINT;
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : USINT;
+	{attribute addProperty Name "RegData"}
+	RegData AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

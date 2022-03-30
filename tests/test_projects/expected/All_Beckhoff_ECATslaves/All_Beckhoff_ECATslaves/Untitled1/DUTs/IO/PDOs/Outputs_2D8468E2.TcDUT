@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Outputs_2D8468E2" Id="{b71b978a-8230-48fa-9c8f-0353c032f807}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2912-0000-0016"}
+{attribute addProperty Id "Module_1_Standard_OutputAT %Q*BOOL811Module_2_Standard_OutputAT %Q*BOOL811"}
+{attribute addProperty CRC "763652322"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Outputs_2D8468E2 :
+STRUCT
+	{attribute addProperty Name "Module_1_Standard_Output"}
+	Module_1_Standard_Output AT %Q* : BOOL;
+	{attribute addProperty Name "Module_2_Standard_Output"}
+	Module_2_Standard_Output AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

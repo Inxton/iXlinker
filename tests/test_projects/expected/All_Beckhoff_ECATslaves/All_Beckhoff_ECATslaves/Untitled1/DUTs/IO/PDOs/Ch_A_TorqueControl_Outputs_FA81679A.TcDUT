@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch_A_TorqueControl_Outputs_FA81679A" Id="{31a748d8-aae7-4654-ac72-654d816f7ad8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX8108-0000-0041-0041"}
+{attribute addProperty Id "Ch_A_Target_torque_forceAT %Q*INT162"}
+{attribute addProperty CRC "4202784666"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE Ch_A_TorqueControl_Outputs_FA81679A :
+STRUCT
+	{attribute addProperty Name "Ch_A_Target_torque_force"}
+	Ch_A_Target_torque_force AT %Q* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

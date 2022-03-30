@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="OCP_Inputs_Channel_8753EDC6" Id="{9ef2c38f-c5db-418a-aea6-c13c060b9ff9}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL9227-4433-0018"}
+{attribute addProperty Id "StatusAT %I*Status_5B8F768B3241LoadAT %I*UINT16233CurrentAT %I*UINT16234Voltage_InAT %I*UINT16235Voltage_OutAT %I*UINT16236"}
+{attribute addProperty CRC "2270424518"}
+{attribute addProperty SizeInBites "96"}
+{attribute addProperty SizeInBytes "12"}
+TYPE OCP_Inputs_Channel_8753EDC6 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_5B8F768B;
+	{attribute addProperty Name "Load"}
+	Load AT %I* : UINT;
+	{attribute addProperty Name "Current"}
+	Current AT %I* : UINT;
+	{attribute addProperty Name "Voltage_In"}
+	Voltage_In AT %I* : UINT;
+	{attribute addProperty Name "Voltage_Out"}
+	Voltage_Out AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

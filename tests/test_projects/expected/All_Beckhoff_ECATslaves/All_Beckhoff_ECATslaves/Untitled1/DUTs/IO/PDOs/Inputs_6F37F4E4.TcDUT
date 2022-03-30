@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Inputs_6F37F4E4" Id="{7032ab1b-777e-4eba-ba8b-385019064b11}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5101-0000-0001"}
+{attribute addProperty Id "StatusAT %I*USINT811ValueAT %I*UINT1622LatchAT %I*UINT1623"}
+{attribute addProperty CRC "1865938148"}
+{attribute addProperty SizeInBites "40"}
+{attribute addProperty SizeInBytes "5"}
+TYPE Inputs_6F37F4E4 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : USINT;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : UINT;
+	{attribute addProperty Name "Latch"}
+	Latch AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

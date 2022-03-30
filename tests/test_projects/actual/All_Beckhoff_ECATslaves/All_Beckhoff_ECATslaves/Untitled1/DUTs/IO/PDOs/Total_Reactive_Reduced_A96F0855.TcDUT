@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Total_Reactive_Reduced_A96F0855" Id="{ad8a9de0-0943-49bd-af23-37c743885eec}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3423-0000-0020"}
+{attribute addProperty Id "Reactive_EnergyAT %I*LINT648"}
+{attribute addProperty CRC "2842626133"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE Total_Reactive_Reduced_A96F0855 :
+STRUCT
+	{attribute addProperty Name "Reactive_Energy"}
+	Reactive_Energy AT %I* : LINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

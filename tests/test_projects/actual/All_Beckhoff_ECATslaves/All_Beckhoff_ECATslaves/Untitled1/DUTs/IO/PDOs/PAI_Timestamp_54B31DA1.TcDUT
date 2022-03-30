@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PAI_Timestamp_54B31DA1" Id="{7e896aec-348d-49ae-bff8-4aa1cb07f3d0}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3751-0000-0020"}
+{attribute addProperty Id "StartTimeNextLatchAT %I*StartTimeNextLatch_356BEDAC648"}
+{attribute addProperty CRC "1421024673"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE PAI_Timestamp_54B31DA1 :
+STRUCT
+	{attribute addProperty Name "StartTimeNextLatch"}
+	StartTimeNextLatch AT %I* : StartTimeNextLatch_356BEDAC;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

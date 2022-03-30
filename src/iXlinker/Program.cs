@@ -47,7 +47,7 @@ namespace iXlinker
         [Option('d', "devenv", Default = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com", HelpText = "Path to devenv.com")]
         public string DevenvPath { get { return this.devenvPath; } set { if (!string.IsNullOrEmpty(value)) { this.devenvPath = ReplaceDoubleBackslash(value); } } }
 
-        [Option('n', "platform", Default = "0", HelpText = "Highest index of the ethercat frame")]
+        [Option('n', "maxframes", Default = "0", HelpText = "Highest index of the ethercat frame")]
         public ushort MaxEthercatFrameIndex { get; set; }
 
         [Option('v', "verbosity", Default = "Information", HelpText = "Verbosity")]
