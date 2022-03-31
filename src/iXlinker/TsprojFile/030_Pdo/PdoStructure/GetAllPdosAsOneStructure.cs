@@ -67,7 +67,7 @@ namespace TsprojFile.Scan
                 actBoxStruct.Crc32 = CRC32.Calculate_CRC32(actBoxStruct.Id);
                 actBoxStruct.Name = ValidatePlcItem.Name(actBoxStruct.Prefix + "_" + actBoxStruct.Crc32.ToString("X8"));
 
-                GroupPdosIntoArrayIfPossible(ref actBoxStruct, ref mapableObject);
+                //GroupPdosIntoArrayIfPossible(ref actBoxStruct, ref mapableObject);
 
                 //Check if such an structure exists
                 if (CheckIfBoxStructureDoesNotExist(actBoxStruct))
