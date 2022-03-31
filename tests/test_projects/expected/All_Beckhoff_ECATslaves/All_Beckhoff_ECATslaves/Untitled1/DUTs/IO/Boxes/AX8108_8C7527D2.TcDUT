@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AX8108_8C7527D2" Id="{b72fe693-567c-41ef-b1bb-bb4e974dc9e2}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX8108-0100-0102-0102"}
+{attribute addProperty Id "DeviceDevice_F82A60211620Device_SafetyDevice_Safety_AF71BE9D160200Ch_ACh_A_B17182A2176220WcStateAT %I*WcState_C1B70B0F3240InfoDataAT %I*InfoData_F030DC9B200250"}
+{attribute addProperty CRC "279005399"}
+{attribute addProperty SizeInBites "584"}
+{attribute addProperty SizeInBytes "73"}
+TYPE AX8108_8C7527D2 :
+STRUCT
+	{attribute addProperty Name "Device"}
+	Device : Device_F82A6021;
+	{attribute addProperty Name "Device_Safety"}
+	Device_Safety : Device_Safety_AF71BE9D;
+	{attribute addProperty Name "Ch_A"}
+	Ch_A : Ch_A_B17182A2;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_C1B70B0F;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_F030DC9B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

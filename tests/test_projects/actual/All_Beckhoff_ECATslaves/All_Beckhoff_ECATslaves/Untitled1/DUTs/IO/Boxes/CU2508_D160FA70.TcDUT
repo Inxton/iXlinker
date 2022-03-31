@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CU2508_D160FA70" Id="{a929e34e-6b1f-44cc-b9d1-99515ce71fde}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "CU2508-0000-0017"}
+{attribute addProperty Id "EPM_Inputs_ChannelAT %I*ARRAY[0..9] OF EPM_Inputs_Channel_7B63A807160200WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1143069057"}
+{attribute addProperty SizeInBites "256"}
+{attribute addProperty SizeInBytes "32"}
+TYPE CU2508_D160FA70 :
+STRUCT
+	{attribute addProperty Name "EPM_Inputs_Channel"}
+	EPM_Inputs_Channel : ARRAY[0..9] OF EPM_Inputs_Channel_7B63A807;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_A455ADD9" Id="{7e8c1dcb-6560-4a93-b69e-c096ee6ed65a}">
+  <DUT Name="Channel_A455ADD9" Id="{647f0d4a-5f8e-40d8-b548-1e8159890e0a}">
     <Declaration><![CDATA[{attribute addProperty BoxType "KL6211"}
 {attribute addProperty Id "StatusAT %I*UINT000Parameter_InAT %I*UDINT000ASI_In_Slave_1_StatusAT %I*USINT000ASI_In_Slave_3_Slave_2AT %I*USINT000ASI_In_Slave_5_Slave_4AT %I*USINT000ASI_In_Slave_7_Slave_6AT %I*USINT000ASI_In_Slave_9_Slave_8AT %I*USINT000ASI_In_Slave_11_Slave_10AT %I*USINT000ControlAT %Q*UINT000Parameter_OutAT %Q*UDINT000ASI_Out_Slave_1_ControlAT %Q*USINT000ASI_Out_Slave_3_Slave_2AT %Q*USINT000ASI_Out_Slave_5_Slave_4AT %Q*USINT000ASI_Out_Slave_7_Slave_6AT %Q*USINT000ASI_Out_Slave_9_Slave_8AT %Q*USINT000ASI_Out_Slave_11_Slave_10AT %Q*USINT000"}
 {attribute addProperty CRC "2757078489"}

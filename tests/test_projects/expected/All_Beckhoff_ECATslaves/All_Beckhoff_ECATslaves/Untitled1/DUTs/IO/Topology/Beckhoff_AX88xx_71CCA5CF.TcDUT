@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_AX88xx_71CCA5CF" Id="{f50a6fb3-a377-4a1b-89cb-eb944ecefb15}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_AX88xxEK1122Beckhoff_AX88xxEK1122_27E1F918162A_0001_AX8810_0000_0017AX8810_746D1FEA17622A_0002_AX8810_0000_0024AX8810_3BC5C93217622A_0003_AX8810_0000_0100AX8810_3BC5C93217622"}
+{attribute addProperty CRC "1909237199"}
+{attribute addProperty SizeInBites "544"}
+{attribute addProperty SizeInBytes "68"}
+TYPE Beckhoff_AX88xx_71CCA5CF EXTENDS EK1100_179A0949 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_AX88xxEK1122"}
+	Beckhoff_AX88xxEK1122 : Beckhoff_AX88xxEK1122_27E1F918;
+	{attribute addProperty Name "A_0001_AX8810_0000_0017"}
+	A_0001_AX8810_0000_0017 : AX8810_746D1FEA;
+	{attribute addProperty Name "A_0002_AX8810_0000_0024"}
+	A_0002_AX8810_0000_0024 : AX8810_3BC5C932;
+	{attribute addProperty Name "A_0003_AX8810_0000_0100"}
+	A_0003_AX8810_0000_0100 : AX8810_3BC5C932;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

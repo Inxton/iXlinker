@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6861_E3BFC318" Id="{f5304f0f-33a1-4160-9a83-3eb33c053b18}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6861-0000-0016"}
+{attribute addProperty Id "COM_TxPDO_Map_InputsAT %I*COM_TxPDO_Map_Inputs_73F0C8F110401300COM_RxPDO_MapAT %Q*COM_RxPDO_Map_3D77FD3410401300WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2701491139"}
+{attribute addProperty SizeInBites "2176"}
+{attribute addProperty SizeInBytes "272"}
+TYPE EL6861_E3BFC318 :
+STRUCT
+	{attribute addProperty Name "COM_TxPDO_Map_Inputs"}
+	COM_TxPDO_Map_Inputs : COM_TxPDO_Map_Inputs_73F0C8F1;
+	{attribute addProperty Name "COM_RxPDO_Map"}
+	COM_RxPDO_Map : COM_RxPDO_Map_3D77FD34;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

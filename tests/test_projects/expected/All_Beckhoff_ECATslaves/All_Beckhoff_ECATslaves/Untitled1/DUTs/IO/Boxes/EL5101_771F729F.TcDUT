@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5101_771F729F" Id="{e4b90df2-4a6a-4c78-914f-12d5f78c937f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5101-0000-1019"}
+{attribute addProperty Id "ENC_Status_compactAT %I*ENC_Status_compact_A61A67D1160200ENC_Control_compactAT %Q*ENC_Control_compact_ADEB38374860WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "4211956162"}
+{attribute addProperty SizeInBites "304"}
+{attribute addProperty SizeInBytes "38"}
+TYPE EL5101_771F729F :
+STRUCT
+	{attribute addProperty Name "ENC_Status_compact"}
+	ENC_Status_compact : ENC_Status_compact_A61A67D1;
+	{attribute addProperty Name "ENC_Control_compact"}
+	ENC_Control_compact : ENC_Control_compact_ADEB3837;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

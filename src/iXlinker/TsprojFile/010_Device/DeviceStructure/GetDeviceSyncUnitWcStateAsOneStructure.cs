@@ -14,7 +14,7 @@ namespace TsprojFile.Scan
 
             ObservableCollection<PdoEntryViewModel> WcStateEntries = new ObservableCollection<PdoEntryViewModel>();
 
-            PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "WcState", VarB = plcTaskB + tmpLevelSeparator + "WcState" + tmpLevelSeparator + "WcState", VarA = plcTaskA + tmpLevelSeparator + "WcState" + tmpLevelSeparator + "WcState", Type_Value = "BIT", InOut = "0"};
+            PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "WcState", VarB = plcTaskB + tmpLevelSeparator + "WcState" + tmpLevelSeparator + "WcState", VarA = plcTaskA + tmpLevelSeparator + "WcState" + tmpLevelSeparator + "WcState", Type_Value = "BOOL", InOut = "0"};
             pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
             pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
 

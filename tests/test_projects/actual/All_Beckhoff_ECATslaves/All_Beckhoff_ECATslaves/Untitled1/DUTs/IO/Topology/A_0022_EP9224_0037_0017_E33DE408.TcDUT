@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="A_0022_EP9224_0037_0017_E33DE408" Id="{3949c0fe-9706-4e06-9ab6-ace4383d867c}">
+  <DUT Name="A_0022_EP9224_0037_0017_E33DE408" Id="{736b8de1-d57e-45ac-9b36-90388aefa0be}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EP9224-0037-0017"}
 {attribute addProperty Id "A_0022_EP9224_0037_0017_2_EP9224_1037EP9224_179A0949162"}
 {attribute addProperty CRC "3812484104"}
 {attribute addProperty SizeInBites "16"}
 {attribute addProperty SizeInBytes "2"}
-TYPE A_0022_EP9224_0037_0017_E33DE408 EXTENDS EP9224_2CE99204 :
+TYPE A_0022_EP9224_0037_0017_E33DE408 EXTENDS EP9224_D011B61C :
 STRUCT
 	{attribute addProperty Name "A_0022_EP9224_0037_0017_2_EP9224_1037"}
 	A_0022_EP9224_0037_0017_2_EP9224_1037 : EP9224_179A0949;

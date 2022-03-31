@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_ELXxxxx_8A48680B" Id="{94c37b33-67c2-4c61-a5a9-54e13cbb4553}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_ELXxxxxBeckhoff_ELXxxxx_30CFF5F64984623SyncUnitsSyncUnits_3FA29F3C21627InputsInputs_C75D3FEC1280160OutputsOutputs_47D1E803848106InfoDataInfoData_45F98C5022428"}
+{attribute addProperty CRC "2320001035"}
+{attribute addProperty SizeInBites "7552"}
+{attribute addProperty SizeInBytes "944"}
+TYPE EtherCAT_Master_ELXxxxx_8A48680B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_ELXxxxx"}
+	Beckhoff_ELXxxxx : Beckhoff_ELXxxxx_30CFF5F6;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_3FA29F3C;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_C75D3FEC;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_47D1E803;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_45F98C50;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

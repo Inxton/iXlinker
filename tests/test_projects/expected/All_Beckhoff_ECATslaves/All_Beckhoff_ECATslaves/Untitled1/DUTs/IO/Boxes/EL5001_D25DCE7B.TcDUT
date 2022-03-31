@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5001_D25DCE7B" Id="{336145fe-a002-4549-85cb-161e31bf0485}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5001-0011-0016"}
+{attribute addProperty Id "SSI_InputsAT %I*SSI_Inputs_9EA745F680100WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "2408079391"}
+{attribute addProperty SizeInBites "240"}
+{attribute addProperty SizeInBytes "30"}
+TYPE EL5001_D25DCE7B :
+STRUCT
+	{attribute addProperty Name "SSI_Inputs"}
+	SSI_Inputs : SSI_Inputs_9EA745F6;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

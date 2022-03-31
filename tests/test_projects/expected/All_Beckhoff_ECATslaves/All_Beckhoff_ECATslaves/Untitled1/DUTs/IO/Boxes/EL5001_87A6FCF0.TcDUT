@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5001_87A6FCF0" Id="{3b39a14f-abe4-4d78-a63c-68467a3b7f79}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5001-0000-1016"}
+{attribute addProperty Id "Channel_1AT %I*Channel_D09D0F614050WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1126339949"}
+{attribute addProperty SizeInBites "136"}
+{attribute addProperty SizeInBytes "17"}
+TYPE EL5001_87A6FCF0 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_D09D0F61;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

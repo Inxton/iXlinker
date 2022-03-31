@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="L3_Status_EEFC1814" Id="{91c16ec7-4c11-427f-9685-a5a2cb19bfdf}">
+  <DUT Name="L3_Status_EEFC1814" Id="{b9435958-1e4c-4b24-bd0f-bc60923032ea}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL3443-0000-0016"}
 {attribute addProperty Id "Voltage_Sign_BitAT %I*BOOL811OvervoltageAT %I*BOOL812OvercurrentAT %I*BOOL813Inaccurate_VoltageAT %I*BOOL814Inaccurate_CurrentAT %I*BOOL815Voltage_Guard_WarningAT %I*BOOL816Voltage_Guard_ErrorAT %I*BOOL817Current_Guard_WarningAT %I*BOOL818Current_Guard_ErrorAT %I*BOOL819TxPDO_ToggleAT %I*BOOL8116"}
 {attribute addProperty CRC "4009498644"}

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP6224_997CEEB2" Id="{0b8c0a94-5181-48e3-a4d4-97bf9ae22a47}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP6224-0042-0016"}
+{attribute addProperty Id "Module_1_DeviceState_Inputs_DeviceModule_1_DeviceState_Inputs_Device_50DD3C951620Module_2_DeviceState_InputsModule_2_DeviceState_Inputs_D860B2E33240Module_7_Digital_InputsModule_7_Digital_Inputs_7335967E6480WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_275E3363128160"}
+{attribute addProperty CRC "3157265355"}
+{attribute addProperty SizeInBites "256"}
+{attribute addProperty SizeInBytes "32"}
+TYPE EP6224_997CEEB2 :
+STRUCT
+	{attribute addProperty Name "Module_1_DeviceState_Inputs_Device"}
+	Module_1_DeviceState_Inputs_Device : Module_1_DeviceState_Inputs_Device_50DD3C95;
+	{attribute addProperty Name "Module_2_DeviceState_Inputs"}
+	Module_2_DeviceState_Inputs : Module_2_DeviceState_Inputs_D860B2E3;
+	{attribute addProperty Name "Module_7_Digital_Inputs"}
+	Module_7_Digital_Inputs : Module_7_Digital_Inputs_7335967E;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_275E3363;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

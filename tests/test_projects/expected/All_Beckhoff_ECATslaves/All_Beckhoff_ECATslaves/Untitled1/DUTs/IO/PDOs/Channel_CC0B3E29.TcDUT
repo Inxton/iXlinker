@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_CC0B3E29" Id="{5ab6dd8f-f3db-4266-9f8f-b243c4baf90c}">
+  <DUT Name="Channel_CC0B3E29" Id="{1ea3a0ce-d2ca-48e8-b1de-f6230607f474}">
     <Declaration><![CDATA[{attribute addProperty BoxType "KL6904"}
 {attribute addProperty Id "StatusAT %I*BYTE000Register_InAT %I*UINT000Standard_QX_1AT %I*BYTE000Standard_QX_2AT %I*BYTE000Standard_QX_3AT %I*BYTE000Safety_QB_1AT %I*ARRAY[0..5] OF BYTE000Safety_QB_2AT %I*ARRAY[0..5] OF BYTE000Safety_QB_3AT %I*ARRAY[0..5] OF BYTE000Safety_QB_4AT %I*ARRAY[0..5] OF BYTE000Safety_QB_5AT %I*ARRAY[0..5] OF BYTE000Safety_QB_6AT %I*ARRAY[0..5] OF BYTE000Safety_QB_7AT %I*ARRAY[0..5] OF BYTE000ControlAT %Q*BYTE000Register_OutAT %Q*UINT000Standard_IX_1AT %Q*BYTE000Standard_IX_2AT %Q*BYTE000Standard_IX_3AT %Q*BYTE000Safety_IB_1AT %Q*ARRAY[0..5] OF BYTE000Safety_IB_2AT %Q*ARRAY[0..5] OF BYTE000Safety_IB_3AT %Q*ARRAY[0..5] OF BYTE000Safety_IB_4AT %Q*ARRAY[0..5] OF BYTE000Safety_IB_5AT %Q*ARRAY[0..5] OF BYTE000Safety_IB_6AT %Q*ARRAY[0..5] OF BYTE000Safety_IB_7AT %Q*ARRAY[0..5] OF BYTE000"}
 {attribute addProperty CRC "3423288873"}

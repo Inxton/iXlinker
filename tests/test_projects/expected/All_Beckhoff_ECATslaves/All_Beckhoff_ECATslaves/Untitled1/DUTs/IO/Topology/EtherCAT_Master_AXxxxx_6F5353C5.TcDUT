@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_AXxxxx_6F5353C5" Id="{6ae340ee-a0dc-4d56-bd8d-249b780400d4}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_AX2xxxBeckhoff_AX2xxx_265DCADA23229Beckhoff_AX5xxxBeckhoff_AX5xxx_D01F323D614007675Beckhoff_AX8yxxBeckhoff_AX8yxx_EA3553D2352324404Beckhoff_AX86xxBeckhoff_AX86xx_8A1EFCA16352794Beckhoff_AX88xxBeckhoff_AX88xx_71CCA5CF54468SyncUnitsSyncUnits_B2531AE743254InputsInputs_C75D3FEC1280160OutputsOutputs_47D1E803848106InfoDataInfoData_45F98C5022428"}
+{attribute addProperty CRC "1867731909"}
+{attribute addProperty SizeInBites "106544"}
+{attribute addProperty SizeInBytes "13318"}
+TYPE EtherCAT_Master_AXxxxx_6F5353C5 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_AX2xxx"}
+	Beckhoff_AX2xxx : Beckhoff_AX2xxx_265DCADA;
+	{attribute addProperty Name "Beckhoff_AX5xxx"}
+	Beckhoff_AX5xxx : Beckhoff_AX5xxx_D01F323D;
+	{attribute addProperty Name "Beckhoff_AX8yxx"}
+	Beckhoff_AX8yxx : Beckhoff_AX8yxx_EA3553D2;
+	{attribute addProperty Name "Beckhoff_AX86xx"}
+	Beckhoff_AX86xx : Beckhoff_AX86xx_8A1EFCA1;
+	{attribute addProperty Name "Beckhoff_AX88xx"}
+	Beckhoff_AX88xx : Beckhoff_AX88xx_71CCA5CF;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_B2531AE7;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_C75D3FEC;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_47D1E803;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_45F98C50;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

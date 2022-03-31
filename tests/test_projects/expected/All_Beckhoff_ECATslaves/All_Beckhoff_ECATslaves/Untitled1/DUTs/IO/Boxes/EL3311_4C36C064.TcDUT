@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3311_4C36C064" Id="{4352f9d9-469d-4915-a5b3-4ccece82b7f5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3311-0000-0016"}
+{attribute addProperty Id "TC_InputsAT %I*TC_Inputs_E5019A8F7290WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2627590778"}
+{attribute addProperty SizeInBites "168"}
+{attribute addProperty SizeInBytes "21"}
+TYPE EL3311_4C36C064 :
+STRUCT
+	{attribute addProperty Name "TC_Inputs"}
+	TC_Inputs : TC_Inputs_E5019A8F;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

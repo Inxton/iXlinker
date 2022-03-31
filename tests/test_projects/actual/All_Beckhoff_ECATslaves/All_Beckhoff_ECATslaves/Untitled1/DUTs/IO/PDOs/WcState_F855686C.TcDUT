@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="WcState_F855686C" Id="{dd4efbae-c175-4c07-b572-6f3dde6375b2}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AMI8000-0000-0016"}
+{attribute addProperty Id "WcStateAT %I*BOOL810InputToggleAT %I*BOOL810"}
+{attribute addProperty CRC "4166346860"}
+{attribute addProperty SizeInBites "16"}
+{attribute addProperty SizeInBytes "2"}
+TYPE WcState_F855686C :
+STRUCT
+	{attribute addProperty Name "WcState"}
+	WcState AT %I* : BOOL;
+	{attribute addProperty Name "InputToggle"}
+	InputToggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

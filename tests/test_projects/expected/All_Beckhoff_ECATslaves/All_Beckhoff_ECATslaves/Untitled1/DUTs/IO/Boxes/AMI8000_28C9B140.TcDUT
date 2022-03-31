@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AMI8000_28C9B140" Id="{0a0ae80a-0b89-4fd1-8b08-8310600e6a40}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AMI8000-0000-0016"}
+{attribute addProperty Id "FB_PositionAT %I*FB_Position_BA8AA9F03240DRV_StatuswordAT %I*DRV_Statusword_53CBCECC1620DRV_Following_error_actual_valueAT %I*DRV_Following_error_actual_value_F54335363240DRV_ControlwordAT %Q*DRV_Controlword_417617681620DRV_Target_positionAT %Q*DRV_Target_position_41334FAA3240WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BF6E01EA168210"}
+{attribute addProperty CRC "1195075169"}
+{attribute addProperty SizeInBites "312"}
+{attribute addProperty SizeInBytes "39"}
+TYPE AMI8000_28C9B140 :
+STRUCT
+	{attribute addProperty Name "FB_Position"}
+	FB_Position : FB_Position_BA8AA9F0;
+	{attribute addProperty Name "DRV_Statusword"}
+	DRV_Statusword : DRV_Statusword_53CBCECC;
+	{attribute addProperty Name "DRV_Following_error_actual_value"}
+	DRV_Following_error_actual_value : DRV_Following_error_actual_value_F5433536;
+	{attribute addProperty Name "DRV_Controlword"}
+	DRV_Controlword : DRV_Controlword_41761768;
+	{attribute addProperty Name "DRV_Target_position"}
+	DRV_Target_position : DRV_Target_position_41334FAA;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BF6E01EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

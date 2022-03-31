@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2712_B180A8D3" Id="{0998927e-f7d2-4e8d-ab24-c2abd812fa92}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2712-0000-0016"}
+{attribute addProperty Id "ChannelAT %Q*ARRAY[0..1] OF Channel_7F374EB01620WcStateAT %I*WcState_64F6A8C6810InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "2632858511"}
+{attribute addProperty SizeInBites "40"}
+{attribute addProperty SizeInBytes "5"}
+TYPE EL2712_B180A8D3 :
+STRUCT
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..1] OF Channel_7F374EB0;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_64F6A8C6;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

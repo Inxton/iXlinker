@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5032_934FB0FD" Id="{492bfdab-5cf9-405d-85b8-66098a8a1a80}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5032-0000-0021"}
+{attribute addProperty Id "FB_Inputs_ChannelAT %I*ARRAY[0..1] OF FB_Inputs_Channel_FFB44ACB160200WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1615919276"}
+{attribute addProperty SizeInBites "256"}
+{attribute addProperty SizeInBytes "32"}
+TYPE EL5032_934FB0FD :
+STRUCT
+	{attribute addProperty Name "FB_Inputs_Channel"}
+	FB_Inputs_Channel : ARRAY[0..1] OF FB_Inputs_Channel_FFB44ACB;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ATH2040_D9917BEB" Id="{52ec2bdb-c950-41f0-9863-738454e2d89f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ATH2040-5250-0022"}
+{attribute addProperty Id "FB_InputsAT %I*FB_Inputs_16F33527000FB_OutputsAT %Q*FB_Outputs_734938A41620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "3008226327"}
+{attribute addProperty SizeInBites "112"}
+{attribute addProperty SizeInBytes "14"}
+TYPE ATH2040_D9917BEB :
+STRUCT
+	{attribute addProperty Name "FB_Inputs"}
+	FB_Inputs : FB_Inputs_16F33527;
+	{attribute addProperty Name "FB_Outputs"}
+	FB_Outputs : FB_Outputs_734938A4;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

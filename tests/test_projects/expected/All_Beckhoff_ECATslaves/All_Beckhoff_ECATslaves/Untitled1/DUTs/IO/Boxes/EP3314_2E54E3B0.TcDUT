@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP3314_2E54E3B0" Id="{dc010e59-b34c-4213-aba6-b423aa1e89cf}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP3314-0002-0019"}
+{attribute addProperty Id "TC_Inputs_ChannelAT %I*ARRAY[0..3] OF TC_Inputs_Channel_F16A160D128160WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2738248042"}
+{attribute addProperty SizeInBites "224"}
+{attribute addProperty SizeInBytes "28"}
+TYPE EP3314_2E54E3B0 :
+STRUCT
+	{attribute addProperty Name "TC_Inputs_Channel"}
+	TC_Inputs_Channel : ARRAY[0..3] OF TC_Inputs_Channel_F16A160D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

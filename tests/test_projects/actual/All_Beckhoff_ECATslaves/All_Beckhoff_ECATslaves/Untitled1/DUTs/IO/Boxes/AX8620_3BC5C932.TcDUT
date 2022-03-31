@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AX8620_3BC5C932" Id="{7d6dae01-734e-455a-a612-ceea7a34911b}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AX8620-0000-0029"}
+{attribute addProperty Id "PSM_Controlword_for_axisAT %I*PSM_Controlword_for_axis_59B039C11620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "887439907"}
+{attribute addProperty SizeInBites "176"}
+{attribute addProperty SizeInBytes "22"}
+TYPE AX8620_3BC5C932 :
+STRUCT
+	{attribute addProperty Name "PSM_Controlword_for_axis"}
+	PSM_Controlword_for_axis : PSM_Controlword_for_axis_59B039C1;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

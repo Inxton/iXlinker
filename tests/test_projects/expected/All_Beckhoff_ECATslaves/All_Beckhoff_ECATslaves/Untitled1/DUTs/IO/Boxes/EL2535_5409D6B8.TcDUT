@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2535_5409D6B8" Id="{dceef4de-bdc6-460d-b31e-22ef2bb0d03b}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2535-0000-0016"}
+{attribute addProperty Id "PWM_Status_ChannelAT %I*ARRAY[0..1] OF PWM_Status_Channel_BFDF08183240PWM_Control_ChannelAT %Q*ARRAY[0..1] OF PWM_Control_Channel_253BEA616480WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2152840684"}
+{attribute addProperty SizeInBites "192"}
+{attribute addProperty SizeInBytes "24"}
+TYPE EL2535_5409D6B8 :
+STRUCT
+	{attribute addProperty Name "PWM_Status_Channel"}
+	PWM_Status_Channel : ARRAY[0..1] OF PWM_Status_Channel_BFDF0818;
+	{attribute addProperty Name "PWM_Control_Channel"}
+	PWM_Control_Channel : ARRAY[0..1] OF PWM_Control_Channel_253BEA61;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

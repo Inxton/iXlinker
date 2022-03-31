@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2252_8A6C7BB3" Id="{6b11343f-8e87-454b-88f4-954e640406b1}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2252-0000-0017"}
+{attribute addProperty Id "DC_Sync_ActivateAT %Q*DC_Sync_Activate_03B9C976810DC_Sync_StartAT %Q*DC_Sync_Start_D24554D46480ChannelAT %Q*ARRAY[0..1] OF Channel_D43BF62A3240ReservedEMPTY_STRUCTURE000WcStateAT %I*WcState_64F6A8C6810InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "3797962035"}
+{attribute addProperty SizeInBites "192"}
+{attribute addProperty SizeInBytes "24"}
+TYPE EL2252_8A6C7BB3 :
+STRUCT
+	{attribute addProperty Name "DC_Sync_Activate"}
+	DC_Sync_Activate : DC_Sync_Activate_03B9C976;
+	{attribute addProperty Name "DC_Sync_Start"}
+	DC_Sync_Start : DC_Sync_Start_D24554D4;
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..1] OF Channel_D43BF62A;
+	{attribute addProperty Name "Reserved"}
+	Reserved : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_64F6A8C6;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

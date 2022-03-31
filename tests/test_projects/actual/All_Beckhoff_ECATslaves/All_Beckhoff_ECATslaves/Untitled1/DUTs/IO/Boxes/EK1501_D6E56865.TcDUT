@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EK1501_D6E56865" Id="{86264801-e403-4ad4-ae19-f7f34a866080}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EK1501-0000-0016"}
+{attribute addProperty Id "IDAT %I*ID_90FEAF081620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "3781127578"}
+{attribute addProperty SizeInBites "48"}
+{attribute addProperty SizeInBytes "6"}
+TYPE EK1501_D6E56865 :
+STRUCT
+	{attribute addProperty Name "ID"}
+	ID : ID_90FEAF08;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

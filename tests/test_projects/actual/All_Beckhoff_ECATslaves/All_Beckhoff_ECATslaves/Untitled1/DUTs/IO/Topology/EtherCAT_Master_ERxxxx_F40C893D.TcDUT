@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_ERxxxx_F40C893D" Id="{ce2d72df-0733-4639-a6cd-7d5c594e1e60}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_ER1xxxBeckhoff_ER1xxx_005CFE4B3856482Beckhoff_ER2xxxBeckhoff_ER2xxx_6B038A807280910Beckhoff_ER3xxxBeckhoff_ER3xxx_FA23F5103040380Beckhoff_ER4xxxBeckhoff_ER4xxx_BF34209A70488Beckhoff_ER5xxxBeckhoff_ER5xxx_424CEF2F54468Beckhoff_ER6xxxBeckhoff_ER6xxx_98E442BE3568446Beckhoff_ER7xxxBeckhoff_ER7xxx_A59695AE3088386Beckhoff_ER8xxxBeckhoff_ER8xxx_7039FFDD42453SyncUnitsSyncUnits_3FA29F3C21627InputsInputs_C75D3FEC1280160OutputsOutputs_47D1E803848106InfoDataInfoData_45F98C5022428"}
+{attribute addProperty CRC "4094462269"}
+{attribute addProperty SizeInBites "25072"}
+{attribute addProperty SizeInBytes "3134"}
+TYPE EtherCAT_Master_ERxxxx_F40C893D :
+STRUCT
+	{attribute addProperty Name "Beckhoff_ER1xxx"}
+	Beckhoff_ER1xxx : Beckhoff_ER1xxx_005CFE4B;
+	{attribute addProperty Name "Beckhoff_ER2xxx"}
+	Beckhoff_ER2xxx : Beckhoff_ER2xxx_6B038A80;
+	{attribute addProperty Name "Beckhoff_ER3xxx"}
+	Beckhoff_ER3xxx : Beckhoff_ER3xxx_FA23F510;
+	{attribute addProperty Name "Beckhoff_ER4xxx"}
+	Beckhoff_ER4xxx : Beckhoff_ER4xxx_BF34209A;
+	{attribute addProperty Name "Beckhoff_ER5xxx"}
+	Beckhoff_ER5xxx : Beckhoff_ER5xxx_424CEF2F;
+	{attribute addProperty Name "Beckhoff_ER6xxx"}
+	Beckhoff_ER6xxx : Beckhoff_ER6xxx_98E442BE;
+	{attribute addProperty Name "Beckhoff_ER7xxx"}
+	Beckhoff_ER7xxx : Beckhoff_ER7xxx_A59695AE;
+	{attribute addProperty Name "Beckhoff_ER8xxx"}
+	Beckhoff_ER8xxx : Beckhoff_ER8xxx_7039FFDD;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_3FA29F3C;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_C75D3FEC;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_47D1E803;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_45F98C50;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

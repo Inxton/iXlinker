@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6688_357CAB16" Id="{a09b3adc-2843-4897-ac94-17f5e5054d96}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6688-0000-0016"}
+{attribute addProperty Id "SYNC_InputsAT %I*SYNC_Inputs_3B40F56D3240WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "3149196734"}
+{attribute addProperty SizeInBites "192"}
+{attribute addProperty SizeInBytes "24"}
+TYPE EL6688_357CAB16 :
+STRUCT
+	{attribute addProperty Name "SYNC_Inputs"}
+	SYNC_Inputs : SYNC_Inputs_3B40F56D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EM7004_03A980A5" Id="{36f6ad52-f990-40f3-b622-f01e653624be}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EM7004-0000-9995"}
+{attribute addProperty Id "DigitalAT %I*Digital_42B6F5B2128160Encoder_ChannelAT %I*ARRAY[0..3] OF Encoder_Channel_10539987192240Digital_1AT %Q*Digital_BF554446128160Analog_ChannelAT %Q*ARRAY[0..3] OF Analog_Channel_969D8B6C6480Encoder_Channel_1_1AT %Q*Encoder_Channel_069A36CD3240Encoder_Channel_2_1AT %Q*Encoder_Channel_069A36CD3240Encoder_Channel_3_1AT %Q*Encoder_Channel_069A36CD3240Encoder_Channel_4_1AT %Q*Encoder_Channel_069A36CD3240WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1632389936"}
+{attribute addProperty SizeInBites "736"}
+{attribute addProperty SizeInBytes "92"}
+TYPE EM7004_03A980A5 :
+STRUCT
+	{attribute addProperty Name "Digital"}
+	Digital : Digital_42B6F5B2;
+	{attribute addProperty Name "Encoder_Channel"}
+	Encoder_Channel : ARRAY[0..3] OF Encoder_Channel_10539987;
+	{attribute addProperty Name "Digital_1"}
+	Digital_1 : Digital_BF554446;
+	{attribute addProperty Name "Analog_Channel"}
+	Analog_Channel : ARRAY[0..3] OF Analog_Channel_969D8B6C;
+	{attribute addProperty Name "Encoder_Channel_1_1"}
+	Encoder_Channel_1_1 : Encoder_Channel_069A36CD;
+	{attribute addProperty Name "Encoder_Channel_2_1"}
+	Encoder_Channel_2_1 : Encoder_Channel_069A36CD;
+	{attribute addProperty Name "Encoder_Channel_3_1"}
+	Encoder_Channel_3_1 : Encoder_Channel_069A36CD;
+	{attribute addProperty Name "Encoder_Channel_4_1"}
+	Encoder_Channel_4_1 : Encoder_Channel_069A36CD;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

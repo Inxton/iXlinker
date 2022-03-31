@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3255_3E81353E" Id="{492805cc-f4ac-480a-83f8-a2c83e2da11e}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3255-0000-0016"}
+{attribute addProperty Id "RTD_Standard_ChannelAT %I*ARRAY[0..4] OF RTD_Standard_Channel_904746A2160200WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "437351421"}
+{attribute addProperty SizeInBites "256"}
+{attribute addProperty SizeInBytes "32"}
+TYPE EL3255_3E81353E :
+STRUCT
+	{attribute addProperty Name "RTD_Standard_Channel"}
+	RTD_Standard_Channel : ARRAY[0..4] OF RTD_Standard_Channel_904746A2;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

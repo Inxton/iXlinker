@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DMX_Status_A8F3522A" Id="{766a4b71-3c53-4bd0-892b-17869ede5e05}">
+  <DUT Name="DMX_Status_A8F3522A" Id="{263a140b-e6f2-44a8-a5bf-4ef70690efb8}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL6851-0010-0019"}
 {attribute addProperty Id "Receive_toggleAT %I*BOOL812Framing_errorAT %I*BOOL816Overrun_errorAT %I*BOOL817TxPDO_StateAT %I*BOOL8115TxPDO_ToggleAT %I*BOOL8116Channel_lengthAT %I*UINT16217Start_codeAT %I*USINT8118"}
 {attribute addProperty CRC "2834518570"}

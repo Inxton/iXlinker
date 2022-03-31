@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AT2050_9506A482" Id="{cf83fbd1-d086-4007-a6a2-6abbb8f7d0ab}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AT2050-0500-0016"}
+{attribute addProperty Id "CC_InputsAT %I*CC_Inputs_9818D8D8256320CC_OutputsAT %Q*CC_Outputs_AA78E99F256320WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "2581212370"}
+{attribute addProperty SizeInBites "672"}
+{attribute addProperty SizeInBytes "84"}
+TYPE AT2050_9506A482 :
+STRUCT
+	{attribute addProperty Name "CC_Inputs"}
+	CC_Inputs : CC_Inputs_9818D8D8;
+	{attribute addProperty Name "CC_Outputs"}
+	CC_Outputs : CC_Outputs_AA78E99F;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

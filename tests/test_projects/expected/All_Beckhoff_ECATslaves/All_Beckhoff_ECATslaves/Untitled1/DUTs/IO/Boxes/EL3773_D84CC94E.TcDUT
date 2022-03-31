@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3773_D84CC94E" Id="{01fc3c8d-2fa8-4d07-9487-ab9086d415d9}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3773-0000-0016"}
+{attribute addProperty Id "L1_Voltage_StatusAT %I*L1_Voltage_Status_23AEFBBE1620L1_Voltage_SamplesAT %I*L1_Voltage_Samples_B30A98CA160200L1_Current_SamplesAT %I*L1_Current_Samples_B05AC8301620L1_Current_Samples_1AT %I*L1_Current_Samples_97214E89160200L2_Voltage_StatusAT %I*L2_Voltage_Status_1055F0AB1620L2_Voltage_SamplesAT %I*L2_Voltage_Samples_C2AAD93F160200L2_Current_StatusAT %I*L2_Current_Status_83A1C3251620L2_Current_SamplesAT %I*L2_Current_Samples_E6810F7C160200L3_Voltage_StatusAT %I*L3_Voltage_Status_FD43FD351620L3_Voltage_SamplesAT %I*L3_Voltage_Samples_EDCAE66C160200L3_Current_StatusAT %I*L3_Current_Status_6EB7CEBB1620L3_Current_SamplesAT %I*L3_Current_Samples_C9E1302F160200AI_Timestamp_NextSync1TimeAT %I*AI_Timestamp_NextSync1Time_4F9D66926480AI_CycleCountAT %I*AI_CycleCount_8CDEA3941620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "2602308682"}
+{attribute addProperty SizeInBites "1296"}
+{attribute addProperty SizeInBytes "162"}
+TYPE EL3773_D84CC94E :
+STRUCT
+	{attribute addProperty Name "L1_Voltage_Status"}
+	L1_Voltage_Status : L1_Voltage_Status_23AEFBBE;
+	{attribute addProperty Name "L1_Voltage_Samples"}
+	L1_Voltage_Samples : L1_Voltage_Samples_B30A98CA;
+	{attribute addProperty Name "L1_Current_Samples"}
+	L1_Current_Samples : L1_Current_Samples_B05AC830;
+	{attribute addProperty Name "L1_Current_Samples_1"}
+	L1_Current_Samples_1 : L1_Current_Samples_97214E89;
+	{attribute addProperty Name "L2_Voltage_Status"}
+	L2_Voltage_Status : L2_Voltage_Status_1055F0AB;
+	{attribute addProperty Name "L2_Voltage_Samples"}
+	L2_Voltage_Samples : L2_Voltage_Samples_C2AAD93F;
+	{attribute addProperty Name "L2_Current_Status"}
+	L2_Current_Status : L2_Current_Status_83A1C325;
+	{attribute addProperty Name "L2_Current_Samples"}
+	L2_Current_Samples : L2_Current_Samples_E6810F7C;
+	{attribute addProperty Name "L3_Voltage_Status"}
+	L3_Voltage_Status : L3_Voltage_Status_FD43FD35;
+	{attribute addProperty Name "L3_Voltage_Samples"}
+	L3_Voltage_Samples : L3_Voltage_Samples_EDCAE66C;
+	{attribute addProperty Name "L3_Current_Status"}
+	L3_Current_Status : L3_Current_Status_6EB7CEBB;
+	{attribute addProperty Name "L3_Current_Samples"}
+	L3_Current_Samples : L3_Current_Samples_C9E1302F;
+	{attribute addProperty Name "AI_Timestamp_NextSync1Time"}
+	AI_Timestamp_NextSync1Time : AI_Timestamp_NextSync1Time_4F9D6692;
+	{attribute addProperty Name "AI_CycleCount"}
+	AI_CycleCount : AI_CycleCount_8CDEA394;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

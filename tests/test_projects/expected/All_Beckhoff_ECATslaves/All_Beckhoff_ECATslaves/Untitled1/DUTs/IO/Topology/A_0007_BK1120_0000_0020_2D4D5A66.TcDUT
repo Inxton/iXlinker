@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="A_0007_BK1120_0000_0020_2D4D5A66" Id="{a4e0281b-4730-4d81-b34b-94d64b502710}">
+  <DUT Name="A_0007_BK1120_0000_0020_2D4D5A66" Id="{9b7207a6-8022-4e6d-ac58-813589f30780}">
     <Declaration><![CDATA[{attribute addProperty BoxType "BK1120-0000-0020"}
 {attribute addProperty Id "Term_380_KL1002KL1002_D229A9CA00"}
 {attribute addProperty CRC "760044134"}
 {attribute addProperty SizeInBites "0"}
 {attribute addProperty SizeInBytes "0"}
-TYPE A_0007_BK1120_0000_0020_2D4D5A66 EXTENDS BK1120_4487A81F :
+TYPE A_0007_BK1120_0000_0020_2D4D5A66 EXTENDS BK1120_A5F67C82 :
 STRUCT
 	{attribute addProperty Name "Term_380_KL1002"}
 	Term_380_KL1002 : KL1002_D229A9CA;

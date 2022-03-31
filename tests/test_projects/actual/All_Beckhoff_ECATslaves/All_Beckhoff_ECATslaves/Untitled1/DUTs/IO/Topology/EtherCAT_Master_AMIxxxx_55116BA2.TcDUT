@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_AMIxxxx_55116BA2" Id="{48a2e766-1dd8-4523-9a4d-bc92077813d1}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "EK1100_Beckhoff_AMI8xxxEK1100_Beckhoff_AMI8xxx_8758465464080SyncUnitsSyncUnits_3FA29F3C21627InputsInputs_C75D3FEC1280160OutputsOutputs_47D1E803848106InfoDataInfoData_45F98C5022428"}
+{attribute addProperty CRC "1427205026"}
+{attribute addProperty SizeInBites "3208"}
+{attribute addProperty SizeInBytes "401"}
+TYPE EtherCAT_Master_AMIxxxx_55116BA2 :
+STRUCT
+	{attribute addProperty Name "EK1100_Beckhoff_AMI8xxx"}
+	EK1100_Beckhoff_AMI8xxx : EK1100_Beckhoff_AMI8xxx_87584654;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_3FA29F3C;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_C75D3FEC;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_47D1E803;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_45F98C50;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

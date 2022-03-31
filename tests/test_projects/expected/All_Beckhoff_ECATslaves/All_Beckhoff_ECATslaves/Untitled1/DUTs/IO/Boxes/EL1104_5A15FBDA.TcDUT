@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL1104_5A15FBDA" Id="{91cf3711-987d-4627-be2d-c8eb4b7c0726}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1104-0000-0016"}
+{attribute addProperty Id "ChannelAT %I*ARRAY[0..3] OF Channel_E4AEF59E3240WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "2345458285"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE EL1104_5A15FBDA :
+STRUCT
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..3] OF Channel_E4AEF59E;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

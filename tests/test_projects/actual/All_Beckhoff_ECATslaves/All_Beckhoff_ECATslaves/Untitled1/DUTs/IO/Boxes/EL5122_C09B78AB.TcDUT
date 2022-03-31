@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5122_C09B78AB" Id="{4d908fff-9842-4784-b473-7de71465d65d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5122-0000-0016"}
+{attribute addProperty Id "ENC_Status_ChannelAT %I*ARRAY[0..1] OF ENC_Status_Channel_1DBB2AA2192240ENC_Control_ChannelAT %Q*ARRAY[0..1] OF ENC_Control_Channel_50CA5D6096120WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "981544048"}
+{attribute addProperty SizeInBites "384"}
+{attribute addProperty SizeInBytes "48"}
+TYPE EL5122_C09B78AB :
+STRUCT
+	{attribute addProperty Name "ENC_Status_Channel"}
+	ENC_Status_Channel : ARRAY[0..1] OF ENC_Status_Channel_1DBB2AA2;
+	{attribute addProperty Name "ENC_Control_Channel"}
+	ENC_Control_Channel : ARRAY[0..1] OF ENC_Control_Channel_50CA5D60;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

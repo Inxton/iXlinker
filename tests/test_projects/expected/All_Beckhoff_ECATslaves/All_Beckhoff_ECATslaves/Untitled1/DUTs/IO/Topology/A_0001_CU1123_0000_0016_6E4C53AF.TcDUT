@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0001_CU1123_0000_0016_6E4C53AF" Id="{c1f2f454-5a46-44f0-ac2c-b79ca1b17d2f}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "CU1123-0000-0016"}
+{attribute addProperty Id "A_0002_CU1123_0010_0016A_0002_CU1123_0010_0016_1433E11E992124"}
+{attribute addProperty CRC "1850495919"}
+{attribute addProperty SizeInBites "992"}
+{attribute addProperty SizeInBytes "124"}
+TYPE A_0001_CU1123_0000_0016_6E4C53AF EXTENDS CU1123_179A0949 :
+STRUCT
+	{attribute addProperty Name "A_0002_CU1123_0010_0016"}
+	A_0002_CU1123_0010_0016 : A_0002_CU1123_0010_0016_1433E11E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

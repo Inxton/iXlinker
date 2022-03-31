@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELM2744_8836D284" Id="{41804647-8b96-42b6-80f4-3afc7d08bce1}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELM2744-0000-0016"}
+{attribute addProperty Id "DO_Inputs_DeviceAT %I*DO_Inputs_Device_7B636AA11620DO_Group_1_OutputsAT %Q*DO_Group_1_Outputs_B15D14A01620DO_Group_2_OutputsAT %Q*DO_Group_2_Outputs_1AE88CA61620DO_Group_3_OutputsAT %Q*DO_Group_3_Outputs_803B0FC91620DO_Group_4_OutputsAT %Q*DO_Group_4_Outputs_4942A11D1620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "1927890238"}
+{attribute addProperty SizeInBites "240"}
+{attribute addProperty SizeInBytes "30"}
+TYPE ELM2744_8836D284 :
+STRUCT
+	{attribute addProperty Name "DO_Inputs_Device"}
+	DO_Inputs_Device : DO_Inputs_Device_7B636AA1;
+	{attribute addProperty Name "DO_Group_1_Outputs"}
+	DO_Group_1_Outputs : DO_Group_1_Outputs_B15D14A0;
+	{attribute addProperty Name "DO_Group_2_Outputs"}
+	DO_Group_2_Outputs : DO_Group_2_Outputs_1AE88CA6;
+	{attribute addProperty Name "DO_Group_3_Outputs"}
+	DO_Group_3_Outputs : DO_Group_3_Outputs_803B0FC9;
+	{attribute addProperty Name "DO_Group_4_Outputs"}
+	DO_Group_4_Outputs : DO_Group_4_Outputs_4942A11D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

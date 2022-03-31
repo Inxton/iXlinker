@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3356_D3F44C81" Id="{df59de38-0f88-4d79-9ee1-dc51eb1e81ec}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3356-0000-0017"}
+{attribute addProperty Id "RMB_StatusAT %I*RMB_Status_25CC6AB61620RMB_Value_INT32AT %I*RMB_Value_INT_1F5759573240RMB_ControlAT %Q*RMB_Control_F68E0F331620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3649943280"}
+{attribute addProperty SizeInBites "160"}
+{attribute addProperty SizeInBytes "20"}
+TYPE EL3356_D3F44C81 :
+STRUCT
+	{attribute addProperty Name "RMB_Status"}
+	RMB_Status : RMB_Status_25CC6AB6;
+	{attribute addProperty Name "RMB_Value_INT32"}
+	RMB_Value_INT32 : RMB_Value_INT_1F575957;
+	{attribute addProperty Name "RMB_Control"}
+	RMB_Control : RMB_Control_F68E0F33;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

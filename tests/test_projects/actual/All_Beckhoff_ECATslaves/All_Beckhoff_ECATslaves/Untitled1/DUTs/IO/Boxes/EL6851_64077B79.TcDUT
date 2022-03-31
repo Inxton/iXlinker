@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6851_64077B79" Id="{0427539a-0f16-4760-879e-41ab6ce0d160}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6851-0010-0019"}
+{attribute addProperty Id "DMX_StatusAT %I*DMX_Status_A8F3522A6480DMX_Channel_1_64AT %I*DMX_Channel_D03720FB512640WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3428441952"}
+{attribute addProperty SizeInBites "672"}
+{attribute addProperty SizeInBytes "84"}
+TYPE EL6851_64077B79 :
+STRUCT
+	{attribute addProperty Name "DMX_Status"}
+	DMX_Status : DMX_Status_A8F3522A;
+	{attribute addProperty Name "DMX_Channel_1_64"}
+	DMX_Channel_1_64 : DMX_Channel_D03720FB;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

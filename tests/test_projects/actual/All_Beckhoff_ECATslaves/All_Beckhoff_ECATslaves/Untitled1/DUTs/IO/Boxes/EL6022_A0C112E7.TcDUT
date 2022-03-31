@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6022_A0C112E7" Id="{a97faf64-f0e8-44fa-91ff-72b8260c5f34}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6022-0000-0019"}
+{attribute addProperty Id "COM_Inputs_ChannelAT %I*ARRAY[0..1] OF COM_Inputs_Channel_85D1D733384480COM_Outputs_ChannelAT %Q*ARRAY[0..1] OF COM_Outputs_Channel_85BCA431384480WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "60965666"}
+{attribute addProperty SizeInBites "864"}
+{attribute addProperty SizeInBytes "108"}
+TYPE EL6022_A0C112E7 :
+STRUCT
+	{attribute addProperty Name "COM_Inputs_Channel"}
+	COM_Inputs_Channel : ARRAY[0..1] OF COM_Inputs_Channel_85D1D733;
+	{attribute addProperty Name "COM_Outputs_Channel"}
+	COM_Outputs_Channel : ARRAY[0..1] OF COM_Outputs_Channel_85BCA431;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

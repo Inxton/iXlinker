@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5101_E9B90D95" Id="{993e35f7-f474-4bac-bdf3-2055f68ec5d9}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5101-0011-0016"}
+{attribute addProperty Id "ENC_StatusAT %I*ENC_Status_481CA30A1620ENC_NextSync1TimeAT %I*ENC_NextSync1Time_4F9D66926480ENC_TxPdo_1_Samples_Counter_valueAT %I*ENC_TxPdo_1_Samples_Counter_value_730838783240ENC_ControlAT %Q*ENC_Control_015EAC9E4860WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "2467603725"}
+{attribute addProperty SizeInBites "320"}
+{attribute addProperty SizeInBytes "40"}
+TYPE EL5101_E9B90D95 :
+STRUCT
+	{attribute addProperty Name "ENC_Status"}
+	ENC_Status : ENC_Status_481CA30A;
+	{attribute addProperty Name "ENC_NextSync1Time"}
+	ENC_NextSync1Time : ENC_NextSync1Time_4F9D6692;
+	{attribute addProperty Name "ENC_TxPdo_1_Samples_Counter_value"}
+	ENC_TxPdo_1_Samples_Counter_value : ENC_TxPdo_1_Samples_Counter_value_73083878;
+	{attribute addProperty Name "ENC_Control"}
+	ENC_Control : ENC_Control_015EAC9E;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

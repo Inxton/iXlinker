@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP1816_8EE49DA8" Id="{62321bdd-f4c2-4db9-854c-15fcdb78f18e}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP1816-0008-0018"}
+{attribute addProperty Id "DIG_Inputs_ChannelAT %I*ARRAY[0..1] OF DIG_Inputs_Channel_9F71B9E2144180WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1368726510"}
+{attribute addProperty SizeInBites "240"}
+{attribute addProperty SizeInBytes "30"}
+TYPE EP1816_8EE49DA8 :
+STRUCT
+	{attribute addProperty Name "DIG_Inputs_Channel"}
+	DIG_Inputs_Channel : ARRAY[0..1] OF DIG_Inputs_Channel_9F71B9E2;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

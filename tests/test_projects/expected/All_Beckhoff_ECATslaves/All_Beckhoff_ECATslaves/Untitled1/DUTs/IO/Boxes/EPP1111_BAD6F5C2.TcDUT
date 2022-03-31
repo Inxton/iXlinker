@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP1111_BAD6F5C2" Id="{f479307e-50c0-4c7a-8b54-f4fb8d1824e7}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP1111-0000-0016"}
+{attribute addProperty Id "ID_InputsAT %I*ID_Inputs_90FEAF081620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2156088817"}
+{attribute addProperty SizeInBites "112"}
+{attribute addProperty SizeInBytes "14"}
+TYPE EPP1111_BAD6F5C2 :
+STRUCT
+	{attribute addProperty Name "ID_Inputs"}
+	ID_Inputs : ID_Inputs_90FEAF08;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

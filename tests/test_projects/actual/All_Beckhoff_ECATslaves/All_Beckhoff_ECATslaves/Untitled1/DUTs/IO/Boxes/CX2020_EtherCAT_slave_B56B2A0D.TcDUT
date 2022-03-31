@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CX2020_EtherCAT_slave_B56B2A0D" Id="{13d3decd-bba1-441e-86ef-721c49d2da86}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "CX2020 EtherCAT slave-1b82-0016"}
+{attribute addProperty Id "IO_InputsEMPTY_STRUCTURE000Device_Status_MappingAT %I*Device_Status_Mapping_AC515E2C1620IO_OutputsEMPTY_STRUCTURE000WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_275E3363128160"}
+{attribute addProperty CRC "3638230651"}
+{attribute addProperty SizeInBites "160"}
+{attribute addProperty SizeInBytes "20"}
+TYPE CX2020_EtherCAT_slave_B56B2A0D :
+STRUCT
+	{attribute addProperty Name "IO_Inputs"}
+	IO_Inputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "Device_Status_Mapping"}
+	Device_Status_Mapping : Device_Status_Mapping_AC515E2C;
+	{attribute addProperty Name "IO_Outputs"}
+	IO_Outputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_275E3363;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

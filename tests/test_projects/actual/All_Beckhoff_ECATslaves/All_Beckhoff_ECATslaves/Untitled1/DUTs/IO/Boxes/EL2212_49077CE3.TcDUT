@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2212_49077CE3" Id="{58c713e1-c6f0-4aac-9335-de1f95076828}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2212-0000-0020"}
+{attribute addProperty Id "DOX_Status_ChannelAT %I*ARRAY[0..1] OF DOX_Status_Channel_C7709C9E3240DOX_Control_ChannelAT %Q*ARRAY[0..1] OF DOX_Control_Channel_08FE49103240WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1822737004"}
+{attribute addProperty SizeInBites "160"}
+{attribute addProperty SizeInBytes "20"}
+TYPE EL2212_49077CE3 :
+STRUCT
+	{attribute addProperty Name "DOX_Status_Channel"}
+	DOX_Status_Channel : ARRAY[0..1] OF DOX_Status_Channel_C7709C9E;
+	{attribute addProperty Name "DOX_Control_Channel"}
+	DOX_Control_Channel : ARRAY[0..1] OF DOX_Control_Channel_08FE4910;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP2339_EFDBABD5" Id="{b34d65f8-67da-4ae6-81c1-cc5ad2bd19e5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP2339-0022-0016"}
+{attribute addProperty Id "ChannelAT %I*ARRAY[0..15] OF Channel_E4AEF59E128160Channel_1_1AT %Q*Channel_7F374EB0810Channel_2_1AT %Q*Channel_7F374EB0810Channel_3_1AT %Q*Channel_7F374EB0810Channel_4_1AT %Q*Channel_7F374EB0810Channel_5_1AT %Q*Channel_7F374EB0810Channel_6_1AT %Q*Channel_7F374EB0810Channel_7_1AT %Q*Channel_7F374EB0810Channel_8_1AT %Q*Channel_7F374EB0810Channel_9_1AT %Q*Channel_7F374EB0810Channel_10_1AT %Q*Channel_7F374EB0810Channel_11_1AT %Q*Channel_7F374EB0810Channel_12_1AT %Q*Channel_7F374EB0810Channel_13_1AT %Q*Channel_7F374EB0810Channel_14_1AT %Q*Channel_7F374EB0810Channel_15_1AT %Q*Channel_7F374EB0810Channel_16_1AT %Q*Channel_7F374EB0810WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "1573763787"}
+{attribute addProperty SizeInBites "288"}
+{attribute addProperty SizeInBytes "36"}
+TYPE EP2339_EFDBABD5 :
+STRUCT
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..15] OF Channel_E4AEF59E;
+	{attribute addProperty Name "Channel_1_1"}
+	Channel_1_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_2_1"}
+	Channel_2_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_3_1"}
+	Channel_3_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_4_1"}
+	Channel_4_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_5_1"}
+	Channel_5_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_6_1"}
+	Channel_6_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_7_1"}
+	Channel_7_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_8_1"}
+	Channel_8_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_9_1"}
+	Channel_9_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_10_1"}
+	Channel_10_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_11_1"}
+	Channel_11_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_12_1"}
+	Channel_12_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_13_1"}
+	Channel_13_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_14_1"}
+	Channel_14_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_15_1"}
+	Channel_15_1 : Channel_7F374EB0;
+	{attribute addProperty Name "Channel_16_1"}
+	Channel_16_1 : Channel_7F374EB0;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

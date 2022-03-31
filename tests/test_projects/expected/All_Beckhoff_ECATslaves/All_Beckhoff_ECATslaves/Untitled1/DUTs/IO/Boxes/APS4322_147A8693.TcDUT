@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="APS4322_147A8693" Id="{19af0e31-bd51-42ae-a937-61c500099547}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "APS4322-5000-0017"}
+{attribute addProperty Id "FB_InputsAT %I*FB_Inputs_245CD1AC24643080WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "3520049983"}
+{attribute addProperty SizeInBites "2560"}
+{attribute addProperty SizeInBytes "320"}
+TYPE APS4322_147A8693 :
+STRUCT
+	{attribute addProperty Name "FB_Inputs"}
+	FB_Inputs : FB_Inputs_245CD1AC;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

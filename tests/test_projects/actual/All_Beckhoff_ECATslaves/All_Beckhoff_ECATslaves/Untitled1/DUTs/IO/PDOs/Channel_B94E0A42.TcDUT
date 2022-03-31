@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_B94E0A42" Id="{4d4466c8-c947-4c3c-ad94-15f3a59e9ec9}">
+  <DUT Name="Channel_B94E0A42" Id="{87061ce2-1e67-455d-8004-bfec81937b94}">
     <Declaration><![CDATA[{attribute addProperty BoxType "KL6211-0020"}
 {attribute addProperty Id "StatusAT %I*UINT000Parameter_InAT %I*UDINT000ASI_In_StatusAT %I*BYTE000ASI_In_Slave_1AT %I*BYTE000ASI_In_Slave_2AT %I*BYTE000ASI_In_Slave_3AT %I*BYTE000ASI_In_Slave_4AT %I*BYTE000ASI_In_Slave_5AT %I*BYTE000ASI_In_Slave_6AT %I*BYTE000ASI_In_Slave_7AT %I*BYTE000ASI_In_Slave_8AT %I*BYTE000ASI_In_Slave_9AT %I*BYTE000ASI_In_Slave_10AT %I*BYTE000ASI_In_Slave_11AT %I*BYTE000ControlAT %Q*UINT000Parameter_OutAT %Q*UDINT000ASI_Out_ControlAT %Q*BYTE000ASI_Out_Slave_1AT %Q*BYTE000ASI_Out_Slave_2AT %Q*BYTE000ASI_Out_Slave_3AT %Q*BYTE000ASI_Out_Slave_4AT %Q*BYTE000ASI_Out_Slave_5AT %Q*BYTE000ASI_Out_Slave_6AT %Q*BYTE000ASI_Out_Slave_7AT %Q*BYTE000ASI_Out_Slave_8AT %Q*BYTE000ASI_Out_Slave_9AT %Q*BYTE000ASI_Out_Slave_10AT %Q*BYTE000ASI_Out_Slave_11AT %Q*BYTE000"}
 {attribute addProperty CRC "3108899394"}

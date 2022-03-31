@@ -16,27 +16,34 @@ namespace TsprojFile.Scan
         {
             ObservableCollection<PdoEntryViewModel> InfoDataEntries = new ObservableCollection<PdoEntryViewModel>();
 
+            //bool infoDataSupport = true;
+            //bool infoDataId = true;
+            //bool infoDataNetId = true;
+            //bool infoDataChangeCnt = true;
+            //bool infoDataCfgSlaveCnt = true;
+            //bool infoDataDcTimeOffsets = false;
+            //try
+            //{
+            //    TcSmDevDefEtherCAT tcSmDevDefEtherCAT = (TcSmDevDefEtherCAT)device.Items[0];
+
+            //    if (tcSmDevDefEtherCAT.InfoDataSupportSpecified && !tcSmDevDefEtherCAT.InfoDataSupport) infoDataSupport = false;
+            //    if (tcSmDevDefEtherCAT.InfoDataIdSpecified && !tcSmDevDefEtherCAT.InfoDataId) infoDataId = false;
+            //    if (tcSmDevDefEtherCAT.InfoDataNetIdSpecified && !tcSmDevDefEtherCAT.InfoDataNetId) infoDataNetId = false;
+            //    if (tcSmDevDefEtherCAT.InfoDataChangeCntSpecified && !tcSmDevDefEtherCAT.InfoDataChangeCnt) infoDataChangeCnt = false;
+            //    if (tcSmDevDefEtherCAT.InfoDataCfgSlaveCntSpecified && !tcSmDevDefEtherCAT.InfoDataCfgSlaveCnt) infoDataCfgSlaveCnt = false;
+            //    if (tcSmDevDefEtherCAT.InfoDataDcTimeOffsetsSpecified && tcSmDevDefEtherCAT.InfoDataDcTimeOffsets) infoDataDcTimeOffsets = true;
+            //}
+            //catch (Exception ex)
+            //{
+            //    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+            //}
+            //Try to avoid the same structure for the device info data, even in the case when for example DcTimeOffsets are not used
             bool infoDataSupport = true;
             bool infoDataId = true;
             bool infoDataNetId = true;
             bool infoDataChangeCnt = true;
             bool infoDataCfgSlaveCnt = true;
-            bool infoDataDcTimeOffsets = false;
-            try
-            {
-                TcSmDevDefEtherCAT tcSmDevDefEtherCAT = (TcSmDevDefEtherCAT)device.Items[0];
-
-                if (tcSmDevDefEtherCAT.InfoDataSupportSpecified && !tcSmDevDefEtherCAT.InfoDataSupport) infoDataSupport = false;
-                if (tcSmDevDefEtherCAT.InfoDataIdSpecified && !tcSmDevDefEtherCAT.InfoDataId) infoDataId = false;
-                if (tcSmDevDefEtherCAT.InfoDataNetIdSpecified && !tcSmDevDefEtherCAT.InfoDataNetId) infoDataNetId = false;
-                if (tcSmDevDefEtherCAT.InfoDataChangeCntSpecified && !tcSmDevDefEtherCAT.InfoDataChangeCnt) infoDataChangeCnt = false;
-                if (tcSmDevDefEtherCAT.InfoDataCfgSlaveCntSpecified && !tcSmDevDefEtherCAT.InfoDataCfgSlaveCnt) infoDataCfgSlaveCnt = false;
-                if (tcSmDevDefEtherCAT.InfoDataDcTimeOffsetsSpecified && tcSmDevDefEtherCAT.InfoDataDcTimeOffsets) infoDataDcTimeOffsets = true;
-            }
-            catch (Exception ex)
-            {
-                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-            }
+            bool infoDataDcTimeOffsets = true;
 
             deviceViewModel.InfoDataSupport = infoDataSupport;
             deviceViewModel.InfoDataId = infoDataId;

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP2316_15044929" Id="{b3ecf934-0b51-4251-b0b9-56eb4acdaa16}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EPP2316-0003-0018"}
+{attribute addProperty Id "DIG_InputsAT %I*DIG_Inputs_62B57CC87290DIG_Diag_InputsAT %I*DIG_Diag_Inputs_AC4A9AF06480DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_D558E22E4050DIG_OutputsAT %Q*DIG_Outputs_33B763766480DIG_Outputs_DeviceAT %Q*DIG_Outputs_Device_735003021620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2277694083"}
+{attribute addProperty SizeInBites "352"}
+{attribute addProperty SizeInBytes "44"}
+TYPE EPP2316_15044929 :
+STRUCT
+	{attribute addProperty Name "DIG_Inputs"}
+	DIG_Inputs : DIG_Inputs_62B57CC8;
+	{attribute addProperty Name "DIG_Diag_Inputs"}
+	DIG_Diag_Inputs : DIG_Diag_Inputs_AC4A9AF0;
+	{attribute addProperty Name "DIG_Inputs_Device"}
+	DIG_Inputs_Device : DIG_Inputs_Device_D558E22E;
+	{attribute addProperty Name "DIG_Outputs"}
+	DIG_Outputs : DIG_Outputs_33B76376;
+	{attribute addProperty Name "DIG_Outputs_Device"}
+	DIG_Outputs_Device : DIG_Outputs_Device_73500302;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

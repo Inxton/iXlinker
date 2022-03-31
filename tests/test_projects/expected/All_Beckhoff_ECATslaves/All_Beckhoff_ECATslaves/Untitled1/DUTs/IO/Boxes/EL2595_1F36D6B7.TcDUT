@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2595_1F36D6B7" Id="{0bfd4606-5141-4833-96df-e542522c1894}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2595-0000-0019"}
+{attribute addProperty Id "DOX_StatusAT %I*DOX_Status_95DEE7BC1620DOX_ControlAT %Q*DOX_Control_4111B8D51620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1941051267"}
+{attribute addProperty SizeInBites "128"}
+{attribute addProperty SizeInBytes "16"}
+TYPE EL2595_1F36D6B7 :
+STRUCT
+	{attribute addProperty Name "DOX_Status"}
+	DOX_Status : DOX_Status_95DEE7BC;
+	{attribute addProperty Name "DOX_Control"}
+	DOX_Control : DOX_Control_4111B8D5;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

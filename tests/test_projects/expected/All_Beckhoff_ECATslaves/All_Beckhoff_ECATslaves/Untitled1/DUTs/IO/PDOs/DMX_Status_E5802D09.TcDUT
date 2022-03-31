@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DMX_Status_E5802D09" Id="{ced40d71-741b-4c53-a2c6-9baddbed0c4d}">
+  <DUT Name="DMX_Status_E5802D09" Id="{635bcd9c-25a1-4fef-bb9f-c204c037a73a}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL6851-0000-0017"}
 {attribute addProperty Id "Transmit_acceptedAT %I*BOOL811Receive_toggleAT %I*BOOL812Cyclic_TxD_disabledAT %I*BOOL813Default_data_sentAT %I*BOOL814Frame_sent_toggleAT %I*BOOL8114TxPDO_ToggleAT %I*BOOL819Channel_lengthAT %I*UINT16217Start_codeAT %I*USINT8118"}
 {attribute addProperty CRC "3850382601"}

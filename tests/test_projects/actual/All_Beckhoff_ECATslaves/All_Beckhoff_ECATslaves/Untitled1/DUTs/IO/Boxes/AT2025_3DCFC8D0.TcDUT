@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AT2025_3DCFC8D0" Id="{045b9b12-d2ba-4734-87f2-93c97aece3ef}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AT2025-5250-0019"}
+{attribute addProperty Id "FB_InputsAT %I*FB_Inputs_A6E87AE0528660FB_OutputsAT %Q*FB_Outputs_734938A41620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "609416669"}
+{attribute addProperty SizeInBites "640"}
+{attribute addProperty SizeInBytes "80"}
+TYPE AT2025_3DCFC8D0 :
+STRUCT
+	{attribute addProperty Name "FB_Inputs"}
+	FB_Inputs : FB_Inputs_A6E87AE0;
+	{attribute addProperty Name "FB_Outputs"}
+	FB_Outputs : FB_Outputs_734938A4;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

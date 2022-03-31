@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP1518_7C3C20DE" Id="{86449137-c986-4a3d-aaab-8ac6b50541b8}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP1518-0002-0016"}
+{attribute addProperty Id "CNT_Input_ChannelAT %I*ARRAY[0..1] OF CNT_Input_Channel_49E13FBC96120DIG_InputsAT %I*DIG_Inputs_E017EA696480DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_29801FAC1620CNT_Output_ChannelAT %Q*ARRAY[0..1] OF CNT_Output_Channel_C7399CE196120WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2421249321"}
+{attribute addProperty SizeInBites "368"}
+{attribute addProperty SizeInBytes "46"}
+TYPE EP1518_7C3C20DE :
+STRUCT
+	{attribute addProperty Name "CNT_Input_Channel"}
+	CNT_Input_Channel : ARRAY[0..1] OF CNT_Input_Channel_49E13FBC;
+	{attribute addProperty Name "DIG_Inputs"}
+	DIG_Inputs : DIG_Inputs_E017EA69;
+	{attribute addProperty Name "DIG_Inputs_Device"}
+	DIG_Inputs_Device : DIG_Inputs_Device_29801FAC;
+	{attribute addProperty Name "CNT_Output_Channel"}
+	CNT_Output_Channel : ARRAY[0..1] OF CNT_Output_Channel_C7399CE1;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

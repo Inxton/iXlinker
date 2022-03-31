@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6900_F4E3551D" Id="{29a523d3-7e44-4ca2-a796-d3b54864c080}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6900-0000-0016"}
+{attribute addProperty Id "DEVICE_InputsAT %I*DEVICE_Inputs_3148493E4860DEVICE_OutputsAT %Q*DEVICE_Outputs_734938A41620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "835561262"}
+{attribute addProperty SizeInBites "160"}
+{attribute addProperty SizeInBytes "20"}
+TYPE EL6900_F4E3551D :
+STRUCT
+	{attribute addProperty Name "DEVICE_Inputs"}
+	DEVICE_Inputs : DEVICE_Inputs_3148493E;
+	{attribute addProperty Name "DEVICE_Outputs"}
+	DEVICE_Outputs : DEVICE_Outputs_734938A4;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

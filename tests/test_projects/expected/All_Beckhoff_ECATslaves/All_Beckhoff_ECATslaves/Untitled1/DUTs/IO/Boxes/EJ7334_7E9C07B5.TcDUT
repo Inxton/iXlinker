@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ7334_7E9C07B5" Id="{ff39f56d-d141-4005-a0ad-b10152544365}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ7334-0008-0016"}
+{attribute addProperty Id "DCM_Status_ChannelAT %I*ARRAY[0..3] OF DCM_Status_Channel_DBE0EA1F6480DCM_Outputs_ChannelAT %Q*ARRAY[0..3] OF DCM_Outputs_Channel_1F77C8C2128160WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3450192686"}
+{attribute addProperty SizeInBites "288"}
+{attribute addProperty SizeInBytes "36"}
+TYPE EJ7334_7E9C07B5 :
+STRUCT
+	{attribute addProperty Name "DCM_Status_Channel"}
+	DCM_Status_Channel : ARRAY[0..3] OF DCM_Status_Channel_DBE0EA1F;
+	{attribute addProperty Name "DCM_Outputs_Channel"}
+	DCM_Outputs_Channel : ARRAY[0..3] OF DCM_Outputs_Channel_1F77C8C2;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

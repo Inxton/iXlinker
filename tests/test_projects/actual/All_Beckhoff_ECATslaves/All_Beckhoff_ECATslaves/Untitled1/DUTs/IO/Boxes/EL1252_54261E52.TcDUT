@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL1252_54261E52" Id="{7f90a389-b2c3-4271-b7d0-92796e31c06d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1252-0000-0018"}
+{attribute addProperty Id "ChannelAT %I*ARRAY[0..1] OF Channel_E4AEF59E1620ReservedEMPTY_STRUCTURE000LatchAT %I*Latch_114DB251272340WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_7231B2DD80100"}
+{attribute addProperty CRC "796551653"}
+{attribute addProperty SizeInBites "384"}
+{attribute addProperty SizeInBytes "48"}
+TYPE EL1252_54261E52 :
+STRUCT
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..1] OF Channel_E4AEF59E;
+	{attribute addProperty Name "Reserved"}
+	Reserved : EMPTY_STRUCTURE;
+	{attribute addProperty Name "Latch"}
+	Latch : Latch_114DB251;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_7231B2DD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL1259_CA442E63" Id="{8d8592ff-ad0b-489b-9b37-15fa479c6c1a}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1259-0000-0017"}
+{attribute addProperty Id "MTO_Inputs_ChannelAT %I*ARRAY[0..7] OF MTO_Inputs_Channel_5AD475AF8721090MTI_Inputs_10x_ChannelAT %I*ARRAY[0..7] OF MTI_Inputs_10x_Channel_D2104A6045285660MTO_Outputs_10x_ChannelAT %Q*ARRAY[0..7] OF MTO_Outputs_10x_Channel_24D255B145285660MTI_Outputs_ChannelAT %Q*ARRAY[0..7] OF MTI_Outputs_Channel_DD76C79810961370WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "649046175"}
+{attribute addProperty SizeInBites "11184"}
+{attribute addProperty SizeInBytes "1398"}
+TYPE EL1259_CA442E63 :
+STRUCT
+	{attribute addProperty Name "MTO_Inputs_Channel"}
+	MTO_Inputs_Channel : ARRAY[0..7] OF MTO_Inputs_Channel_5AD475AF;
+	{attribute addProperty Name "MTI_Inputs_10x_Channel"}
+	MTI_Inputs_10x_Channel : ARRAY[0..7] OF MTI_Inputs_10x_Channel_D2104A60;
+	{attribute addProperty Name "MTO_Outputs_10x_Channel"}
+	MTO_Outputs_10x_Channel : ARRAY[0..7] OF MTO_Outputs_10x_Channel_24D255B1;
+	{attribute addProperty Name "MTI_Outputs_Channel"}
+	MTI_Outputs_Channel : ARRAY[0..7] OF MTI_Outputs_Channel_DD76C798;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

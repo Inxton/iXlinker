@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ1918_6B01E910" Id="{d25e2532-92f3-463e-9fab-c953f97da13c}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EJ1918-0000-0017"}
+{attribute addProperty Id "Module_1_FSOEModule_1_FSOE_99CFC0AE104130Module_2_DEVICEIOModule_2_DEVICEIO_FB2B67D71620Module_3_FSLOGICModule_3_FSLOGIC_3E6251391620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1077495512"}
+{attribute addProperty SizeInBites "232"}
+{attribute addProperty SizeInBytes "29"}
+TYPE EJ1918_6B01E910 :
+STRUCT
+	{attribute addProperty Name "Module_1_FSOE"}
+	Module_1_FSOE : Module_1_FSOE_99CFC0AE;
+	{attribute addProperty Name "Module_2_DEVICEIO"}
+	Module_2_DEVICEIO : Module_2_DEVICEIO_FB2B67D7;
+	{attribute addProperty Name "Module_3_FSLOGIC"}
+	Module_3_FSLOGIC : Module_3_FSLOGIC_3E625139;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

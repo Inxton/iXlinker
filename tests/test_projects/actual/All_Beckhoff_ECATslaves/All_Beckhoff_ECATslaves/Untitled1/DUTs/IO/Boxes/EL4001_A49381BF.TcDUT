@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL4001_A49381BF" Id="{07052182-0154-49b9-8b4b-3e49d20a0063}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL4001-0000-0016"}
+{attribute addProperty Id "AO_OutputsAT %Q*AO_Outputs_F57FA4F91620WcStateAT %I*WcState_64F6A8C6810InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1748927295"}
+{attribute addProperty SizeInBites "104"}
+{attribute addProperty SizeInBytes "13"}
+TYPE EL4001_A49381BF :
+STRUCT
+	{attribute addProperty Name "AO_Outputs"}
+	AO_Outputs : AO_Outputs_F57FA4F9;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_64F6A8C6;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

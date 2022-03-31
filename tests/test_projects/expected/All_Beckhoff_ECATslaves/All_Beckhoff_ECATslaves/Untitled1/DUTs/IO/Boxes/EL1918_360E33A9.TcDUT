@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL1918_360E33A9" Id="{9ebf06f6-b91f-4bac-9aad-026d792956a5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1918-0000-0016"}
+{attribute addProperty Id "Module_1_FSOEModule_1_FSOE_E3D6E7D2104130Module_2_FSLOGICModule_2_FSLOGIC_3E6251391620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "63657760"}
+{attribute addProperty SizeInBites "216"}
+{attribute addProperty SizeInBytes "27"}
+TYPE EL1918_360E33A9 :
+STRUCT
+	{attribute addProperty Name "Module_1_FSOE"}
+	Module_1_FSOE : Module_1_FSOE_E3D6E7D2;
+	{attribute addProperty Name "Module_2_FSLOGIC"}
+	Module_2_FSLOGIC : Module_2_FSLOGIC_3E625139;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

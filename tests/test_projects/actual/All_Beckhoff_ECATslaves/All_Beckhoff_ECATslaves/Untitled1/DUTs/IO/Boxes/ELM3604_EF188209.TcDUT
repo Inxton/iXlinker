@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELM3604_EF188209" Id="{013bf65e-5f80-4fba-8553-2b64a525aa76}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELM3604-0000-0017"}
+{attribute addProperty Id "PAI_Status_Channel_1AT %I*PAI_Status_Channel_CF7232B03240PAI_Samples_1_Channel_1AT %I*PAI_Samples_1_Channel_4FE6FA0C3240PAI_Timestamp_Channel_1AT %I*PAI_Timestamp_Channel_54B31DA16480PAI_Status_Channel_2AT %I*PAI_Status_Channel_CF7232B03240PAI_Samples_1_Channel_2AT %I*PAI_Samples_1_Channel_4FE6FA0C3240PAI_Status_Channel_3AT %I*PAI_Status_Channel_CF7232B03240PAI_Samples_1_Channel_3AT %I*PAI_Samples_1_Channel_4FE6FA0C3240PAI_Status_Channel_4AT %I*PAI_Status_Channel_CF7232B03240PAI_Samples_1_Channel_4AT %I*PAI_Samples_1_Channel_4FE6FA0C3240WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "1963837775"}
+{attribute addProperty SizeInBites "480"}
+{attribute addProperty SizeInBytes "60"}
+TYPE ELM3604_EF188209 :
+STRUCT
+	{attribute addProperty Name "PAI_Status_Channel_1"}
+	PAI_Status_Channel_1 : PAI_Status_Channel_CF7232B0;
+	{attribute addProperty Name "PAI_Samples_1_Channel_1"}
+	PAI_Samples_1_Channel_1 : PAI_Samples_1_Channel_4FE6FA0C;
+	{attribute addProperty Name "PAI_Timestamp_Channel_1"}
+	PAI_Timestamp_Channel_1 : PAI_Timestamp_Channel_54B31DA1;
+	{attribute addProperty Name "PAI_Status_Channel_2"}
+	PAI_Status_Channel_2 : PAI_Status_Channel_CF7232B0;
+	{attribute addProperty Name "PAI_Samples_1_Channel_2"}
+	PAI_Samples_1_Channel_2 : PAI_Samples_1_Channel_4FE6FA0C;
+	{attribute addProperty Name "PAI_Status_Channel_3"}
+	PAI_Status_Channel_3 : PAI_Status_Channel_CF7232B0;
+	{attribute addProperty Name "PAI_Samples_1_Channel_3"}
+	PAI_Samples_1_Channel_3 : PAI_Samples_1_Channel_4FE6FA0C;
+	{attribute addProperty Name "PAI_Status_Channel_4"}
+	PAI_Status_Channel_4 : PAI_Status_Channel_CF7232B0;
+	{attribute addProperty Name "PAI_Samples_1_Channel_4"}
+	PAI_Samples_1_Channel_4 : PAI_Samples_1_Channel_4FE6FA0C;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_0BDED7BF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

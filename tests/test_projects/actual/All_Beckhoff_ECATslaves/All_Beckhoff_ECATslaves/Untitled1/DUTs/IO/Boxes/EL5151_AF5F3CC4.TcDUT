@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5151_AF5F3CC4" Id="{180d737b-f448-4d3f-997a-eb78b3e02b28}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL5151-0000-0017"}
+{attribute addProperty Id "ENC_InputsAT %I*ENC_Inputs_B13A87D6144180ENC_Inputs_1AT %I*ENC_Inputs_AC51B8A03240ENC_OutputsAT %Q*ENC_Outputs_90374C536480WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2559572572"}
+{attribute addProperty SizeInBites "336"}
+{attribute addProperty SizeInBytes "42"}
+TYPE EL5151_AF5F3CC4 :
+STRUCT
+	{attribute addProperty Name "ENC_Inputs"}
+	ENC_Inputs : ENC_Inputs_B13A87D6;
+	{attribute addProperty Name "ENC_Inputs_1"}
+	ENC_Inputs_1 : ENC_Inputs_AC51B8A0;
+	{attribute addProperty Name "ENC_Outputs"}
+	ENC_Outputs : ENC_Outputs_90374C53;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

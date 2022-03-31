@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2521_AAA4F324" Id="{7214c8a2-3758-40e4-a1bc-b131e51600c5}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL2521-0000-1022"}
+{attribute addProperty Id "PTO_StatusAT %I*PTO_Status_2733EA481620ENC_Status_compactAT %I*ENC_Status_compact_AB1B76193240PTO_ControlAT %Q*PTO_Control_0A6210C33240PTO_Target_compactAT %Q*PTO_Target_compact_C80C22BB1620ENC_Control_compactAT %Q*ENC_Control_compact_B20E0FB13240WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2857044691"}
+{attribute addProperty SizeInBites "224"}
+{attribute addProperty SizeInBytes "28"}
+TYPE EL2521_AAA4F324 :
+STRUCT
+	{attribute addProperty Name "PTO_Status"}
+	PTO_Status : PTO_Status_2733EA48;
+	{attribute addProperty Name "ENC_Status_compact"}
+	ENC_Status_compact : ENC_Status_compact_AB1B7619;
+	{attribute addProperty Name "PTO_Control"}
+	PTO_Control : PTO_Control_0A6210C3;
+	{attribute addProperty Name "PTO_Target_compact"}
+	PTO_Target_compact : PTO_Target_compact_C80C22BB;
+	{attribute addProperty Name "ENC_Control_compact"}
+	ENC_Control_compact : ENC_Control_compact_B20E0FB1;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

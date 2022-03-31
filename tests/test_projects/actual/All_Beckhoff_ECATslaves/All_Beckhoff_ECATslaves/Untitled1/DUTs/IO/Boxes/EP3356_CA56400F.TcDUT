@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP3356_CA56400F" Id="{f46d93bf-ae6c-4c3c-a23b-f18b68209989}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EP3356-0022-0016"}
+{attribute addProperty Id "RMB_StatusAT %I*RMB_Status_7F71BA301620RMB_Value_INT32AT %I*RMB_Value_INT_1F5759573240RMB_ControlAT %Q*RMB_Control_D468E5481620WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2026441263"}
+{attribute addProperty SizeInBites "160"}
+{attribute addProperty SizeInBytes "20"}
+TYPE EP3356_CA56400F :
+STRUCT
+	{attribute addProperty Name "RMB_Status"}
+	RMB_Status : RMB_Status_7F71BA30;
+	{attribute addProperty Name "RMB_Value_INT32"}
+	RMB_Value_INT32 : RMB_Value_INT_1F575957;
+	{attribute addProperty Name "RMB_Control"}
+	RMB_Control : RMB_Control_D468E548;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

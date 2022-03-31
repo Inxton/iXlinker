@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELX3181_02AD9A79" Id="{dd88a15f-02f8-4bfa-8f12-8619e2bdc636}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELX3181-0000-0016"}
+{attribute addProperty Id "Ch_1Ch_1_9A58320E3240WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_275E3363128160"}
+{attribute addProperty CRC "3737880813"}
+{attribute addProperty SizeInBites "176"}
+{attribute addProperty SizeInBytes "22"}
+TYPE ELX3181_02AD9A79 :
+STRUCT
+	{attribute addProperty Name "Ch_1"}
+	Ch_1 : Ch_1_9A58320E;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_275E3363;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

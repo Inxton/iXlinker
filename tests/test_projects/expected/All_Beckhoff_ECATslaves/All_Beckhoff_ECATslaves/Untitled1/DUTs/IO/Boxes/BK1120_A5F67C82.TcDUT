@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="BK1120_A5F67C82" Id="{23eb81ce-4da0-4b9c-a953-96432592e388}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "BK1120-0000-0001"}
+{attribute addProperty Id "InputsAT %I*Inputs_6F058048000OutputsAT %I*Outputs_9C14F798000WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_275E3363128160"}
+{attribute addProperty CRC "1440038096"}
+{attribute addProperty SizeInBites "144"}
+{attribute addProperty SizeInBytes "18"}
+TYPE BK1120_A5F67C82 :
+STRUCT
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_6F058048;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_9C14F798;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_275E3363;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

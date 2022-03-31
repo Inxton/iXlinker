@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELX1054_FE7182BE" Id="{058f9d43-58e2-40e4-bb92-18b9e01814e0}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "ELX1054-0000-0016"}
+{attribute addProperty Id "ChannelAT %I*ARRAY[0..3] OF Channel_E18390666480Input_Type_NCAT %I*Input_Type_NC_3EE6969D3240WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "715122290"}
+{attribute addProperty SizeInBites "128"}
+{attribute addProperty SizeInBytes "16"}
+TYPE ELX1054_FE7182BE :
+STRUCT
+	{attribute addProperty Name "Channel"}
+	Channel : ARRAY[0..3] OF Channel_E1839066;
+	{attribute addProperty Name "Input_Type_NC"}
+	Input_Type_NC : Input_Type_NC_3EE6969D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_192954DE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

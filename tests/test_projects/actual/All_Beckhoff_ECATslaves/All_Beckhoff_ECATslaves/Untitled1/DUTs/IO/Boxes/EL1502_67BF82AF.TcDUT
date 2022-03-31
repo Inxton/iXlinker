@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL1502_67BF82AF" Id="{77f6e1cc-eae5-4626-91ce-99074e729c21}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL1502-0000-0001"}
+{attribute addProperty Id "CNT_InputsAT %I*CNT_Inputs_5EC64B2496120CNT_OutputsAT %Q*CNT_Outputs_5A50AE9A6480WcStateAT %I*WcState_F855686C1620InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3848467326"}
+{attribute addProperty SizeInBites "256"}
+{attribute addProperty SizeInBytes "32"}
+TYPE EL1502_67BF82AF :
+STRUCT
+	{attribute addProperty Name "CNT_Inputs"}
+	CNT_Inputs : CNT_Inputs_5EC64B24;
+	{attribute addProperty Name "CNT_Outputs"}
+	CNT_Outputs : CNT_Outputs_5A50AE9A;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_F855686C;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BC63D37F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

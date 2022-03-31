@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0056_AT2050_0501_0017_83727358" Id="{6a76c910-5213-423b-9d3d-03e412f6d1cd}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "AT2050-0501-0017"}
+{attribute addProperty Id "A_0088_AT2050_5501_0017_AT2050_5501AT2050_3DCFC8D064080"}
+{attribute addProperty CRC "2205315928"}
+{attribute addProperty SizeInBites "640"}
+{attribute addProperty SizeInBytes "80"}
+TYPE A_0056_AT2050_0501_0017_83727358 EXTENDS AT2050_9506A482 :
+STRUCT
+	{attribute addProperty Name "A_0088_AT2050_5501_0017_AT2050_5501"}
+	A_0088_AT2050_5501_0017_AT2050_5501 : AT2050_3DCFC8D0;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
