@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL5152_9ECEB739" Id="{a2371b1c-5e95-4d23-908f-e6695de01ee0}">
+  <DUT Name="EL5152_9ECEB739" Id="{36aa85ed-3422-4dd8-8434-acc4f13f1ae4}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL5152-0000-0018"}
-{attribute addProperty Id "ENC_Status_compact_Channel_1AT %I*ENC_Status_compact_Channel_E2D0904D3240ENC_Period_Channel_1AT %I*ENC_Period_Channel_AC51B8A03240ENC_Status_compact_Channel_2AT %I*ENC_Status_compact_Channel_E2D0904D3240ENC_Period_Channel_2AT %I*ENC_Period_Channel_AC51B8A03240ENC_Control_compact_ChannelAT %Q*ARRAY[0..2] OF ENC_Control_compact_Channel_B20E0FB16480WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "4247351466"}
+{attribute addProperty Id "ENC_Status_compact_Channel_1AT %I*ENC_Status_compact_Channel_E2D0904D3240ENC_Period_Channel_1AT %I*ENC_Period_Channel_AC51B8A03240ENC_Status_compact_Channel_2AT %I*ENC_Status_compact_Channel_E2D0904D3240ENC_Period_Channel_2AT %I*ENC_Period_Channel_AC51B8A03240ENC_Control_compact_ChannelAT %Q*ARRAY[0..1] OF ENC_Control_compact_Channel_B20E0FB16480WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2390566314"}
 {attribute addProperty SizeInBites "274"}
 {attribute addProperty SizeInBytes "34.25"}
 TYPE EL5152_9ECEB739 :
@@ -17,7 +17,7 @@ STRUCT
 	{attribute addProperty Name "ENC_Period_Channel_2"}
 	ENC_Period_Channel_2 : ENC_Period_Channel_AC51B8A0;
 	{attribute addProperty Name "ENC_Control_compact_Channel"}
-	ENC_Control_compact_Channel : ARRAY[0..2] OF ENC_Control_compact_Channel_B20E0FB1;
+	ENC_Control_compact_Channel : ARRAY[0..1] OF ENC_Control_compact_Channel_B20E0FB1;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3204_207AEEE0" Id="{4857e609-0e89-4eeb-b567-6bb1a6cb9837}">
+  <DUT Name="EL3204_207AEEE0" Id="{9fa7eaed-ef50-43a7-83fa-49acb32b86a6}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL3204-0000-0016"}
-{attribute addProperty Id "RTD_Inputs_ChannelAT %I*ARRAY[0..24] OF RTD_Inputs_Channel_BC62E3BB288360WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "1356698097"}
+{attribute addProperty Id "RTD_Inputs_ChannelAT %I*ARRAY[0..3] OF RTD_Inputs_Channel_BC62E3BB288360WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "4291586409"}
 {attribute addProperty SizeInBites "370"}
 {attribute addProperty SizeInBytes "46.25"}
 TYPE EL3204_207AEEE0 :
 STRUCT
 	{attribute addProperty Name "RTD_Inputs_Channel"}
-	RTD_Inputs_Channel : ARRAY[0..24] OF RTD_Inputs_Channel_BC62E3BB;
+	RTD_Inputs_Channel : ARRAY[0..3] OF RTD_Inputs_Channel_BC62E3BB;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

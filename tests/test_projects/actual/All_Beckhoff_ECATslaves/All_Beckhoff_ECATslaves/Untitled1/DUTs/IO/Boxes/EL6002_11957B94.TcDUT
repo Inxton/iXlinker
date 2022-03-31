@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6002_11957B94" Id="{4854f7e2-b21c-4f1e-ae1f-039d8d6f594d}">
+  <DUT Name="EL6002_11957B94" Id="{affc3905-e65a-4e23-b646-aaeb660447c8}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL6002-0000-0016"}
-{attribute addProperty Id "COM_Inputs_ChannelAT %I*ARRAY[0..23] OF COM_Inputs_Channel_DABE08D339849.750COM_Outputs_ChannelAT %Q*ARRAY[0..23] OF COM_Outputs_Channel_60FF225E440550WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "2904526792"}
+{attribute addProperty Id "COM_Inputs_ChannelAT %I*ARRAY[0..1] OF COM_Inputs_Channel_DABE08D339849.750COM_Outputs_ChannelAT %Q*ARRAY[0..1] OF COM_Outputs_Channel_60FF225E440550WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "502578839"}
 {attribute addProperty SizeInBites "920"}
 {attribute addProperty SizeInBytes "115"}
 TYPE EL6002_11957B94 :
 STRUCT
 	{attribute addProperty Name "COM_Inputs_Channel"}
-	COM_Inputs_Channel : ARRAY[0..23] OF COM_Inputs_Channel_DABE08D3;
+	COM_Inputs_Channel : ARRAY[0..1] OF COM_Inputs_Channel_DABE08D3;
 	{attribute addProperty Name "COM_Outputs_Channel"}
-	COM_Outputs_Channel : ARRAY[0..23] OF COM_Outputs_Channel_60FF225E;
+	COM_Outputs_Channel : ARRAY[0..1] OF COM_Outputs_Channel_60FF225E;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

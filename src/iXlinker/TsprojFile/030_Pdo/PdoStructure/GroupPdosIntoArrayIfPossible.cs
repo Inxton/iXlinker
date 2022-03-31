@@ -91,13 +91,13 @@ namespace TsprojFile.Scan
                                 {
                                     mapableItems[k].VarA = ValidatePlcItem.Link(mapableItems[k].VarA.Replace(actMemberPrefix + "_" + actIndex.ToString(), actMemberPrefix + actMemberSuffix + "[" + arrayIndex.ToString() + "]"));
                                     itemsModified++;
-                                    arrayIndex++;
                                 }
                                 else
                                 {
                                     break;
                                 }
                             }
+                            arrayIndex++; 
                         }
                         j++;
                     }

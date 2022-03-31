@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP4314_D38CD2FF" Id="{be50c4d8-5d5b-499a-89e6-f59abe3ccb60}">
+  <DUT Name="EP4314_D38CD2FF" Id="{a9ac29de-4c85-4a0a-b804-741a269b1444}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EP4314-1002-0016"}
-{attribute addProperty Id "DI_InputsAT %I*DI_Inputs_ECDEFC7F3240AI_Standard_ChannelAT %I*ARRAY[0..2] OF AI_Standard_Channel_F16A160D6480AO_Standard_ChannelAT %Q*ARRAY[0..1] OF AO_Standard_Channel_F57FA4F93240WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "1506208644"}
+{attribute addProperty Id "DI_InputsAT %I*DI_Inputs_ECDEFC7F3240AI_Standard_ChannelAT %I*ARRAY[0..1] OF AI_Standard_Channel_F16A160D6480AO_Standard_ChannelAT %Q*ARRAY[0..1] OF AO_Standard_Channel_F57FA4F93240WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1100742640"}
 {attribute addProperty SizeInBites "210"}
 {attribute addProperty SizeInBytes "26.25"}
 TYPE EP4314_D38CD2FF :
@@ -11,7 +11,7 @@ STRUCT
 	{attribute addProperty Name "DI_Inputs"}
 	DI_Inputs : DI_Inputs_ECDEFC7F;
 	{attribute addProperty Name "AI_Standard_Channel"}
-	AI_Standard_Channel : ARRAY[0..2] OF AI_Standard_Channel_F16A160D;
+	AI_Standard_Channel : ARRAY[0..1] OF AI_Standard_Channel_F16A160D;
 	{attribute addProperty Name "AO_Standard_Channel"}
 	AO_Standard_Channel : ARRAY[0..1] OF AO_Standard_Channel_F57FA4F9;
 	{attribute addProperty Name "WcState"}

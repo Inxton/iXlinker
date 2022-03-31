@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AX5203_7BA23180" Id="{b2f527cc-ba26-4675-94b8-2d8a1ce2c4db}">
+  <DUT Name="AX5203_7BA23180" Id="{f43fd975-0ee3-46fd-b36c-a772acb2c67a}">
     <Declaration><![CDATA[{attribute addProperty BoxType "AX5203-0000-0210-0210"}
-{attribute addProperty Id "AT_xAT %I*ARRAY[0..3] OF AT_15FCA3A6160200MDTAT %Q*ARRAY[0..2] OF MDT_C2B17B7F96120WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_81099714160200"}
-{attribute addProperty CRC "2852748137"}
+{attribute addProperty Id "AT_xAT %I*ARRAY[0..1] OF AT_15FCA3A6160200MDTAT %Q*ARRAY[0..1] OF MDT_C2B17B7F96120WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_81099714160200"}
+{attribute addProperty CRC "3871957761"}
 {attribute addProperty SizeInBites "418"}
 {attribute addProperty SizeInBytes "52.25"}
 TYPE AX5203_7BA23180 :
 STRUCT
 	{attribute addProperty Name "AT"}
-	AT_x : ARRAY[0..3] OF AT_15FCA3A6;
+	AT_x : ARRAY[0..1] OF AT_15FCA3A6;
 	{attribute addProperty Name "MDT"}
-	MDT : ARRAY[0..2] OF MDT_C2B17B7F;
+	MDT : ARRAY[0..1] OF MDT_C2B17B7F;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

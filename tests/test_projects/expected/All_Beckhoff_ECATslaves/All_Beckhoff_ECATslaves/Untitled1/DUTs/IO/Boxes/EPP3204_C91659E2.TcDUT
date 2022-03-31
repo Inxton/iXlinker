@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP3204_C91659E2" Id="{0c1a3384-db88-43f6-b24c-9d82772280fa}">
+  <DUT Name="EPP3204_C91659E2" Id="{accba651-e099-4ae3-9394-dce310aa6f90}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EPP3204-0002-0017"}
-{attribute addProperty Id "RTD_RTDInputs_ChannelAT %I*ARRAY[0..6] OF RTD_RTDInputs_Channel_F16A160D128160WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "216835468"}
+{attribute addProperty Id "RTD_RTDInputs_ChannelAT %I*ARRAY[0..3] OF RTD_RTDInputs_Channel_F16A160D128160WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "236071750"}
 {attribute addProperty SizeInBites "210"}
 {attribute addProperty SizeInBytes "26.25"}
 TYPE EPP3204_C91659E2 :
 STRUCT
 	{attribute addProperty Name "RTD_RTDInputs_Channel"}
-	RTD_RTDInputs_Channel : ARRAY[0..6] OF RTD_RTDInputs_Channel_F16A160D;
+	RTD_RTDInputs_Channel : ARRAY[0..3] OF RTD_RTDInputs_Channel_F16A160D;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

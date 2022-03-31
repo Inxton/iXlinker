@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2202_B7733B6A" Id="{2dee4ff0-0501-4b37-ae51-4979733774ed}">
+  <DUT Name="EL2202_B7733B6A" Id="{bcddf38a-03d2-4720-bdd8-d44d1f9b762f}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL2202-0000-0016"}
-{attribute addProperty Id "ChannelAT %Q*ARRAY[0..2] OF Channel_D43BF62A3240WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_192954DE1620"}
-{attribute addProperty CRC "372252385"}
+{attribute addProperty Id "ChannelAT %Q*ARRAY[0..1] OF Channel_D43BF62A3240WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_192954DE1620"}
+{attribute addProperty CRC "2606121292"}
 {attribute addProperty SizeInBites "49"}
 {attribute addProperty SizeInBytes "6.125"}
 TYPE EL2202_B7733B6A :
 STRUCT
 	{attribute addProperty Name "Channel"}
-	Channel : ARRAY[0..2] OF Channel_D43BF62A;
+	Channel : ARRAY[0..1] OF Channel_D43BF62A;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_28A86775;
 	{attribute addProperty Name "InfoData"}

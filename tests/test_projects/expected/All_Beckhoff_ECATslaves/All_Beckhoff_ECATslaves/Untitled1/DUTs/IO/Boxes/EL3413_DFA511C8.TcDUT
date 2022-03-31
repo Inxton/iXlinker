@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3413_DFA511C8" Id="{ec781236-b43f-46fd-aa92-dfae50cde01d}">
+  <DUT Name="EL3413_DFA511C8" Id="{868a12ee-9537-4042-bf7b-18cf20b7c44f}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL3413-0000-0016"}
-{attribute addProperty Id "PM_Inputs_ChannelAT %I*ARRAY[0..12] OF PM_Inputs_Channel_9FC8B9E8456570PM_Inputs_AuxiliaryAT %I*PM_Inputs_Auxiliary_4ACBD5CC6480PM_Outputs_ChannelAT %Q*ARRAY[0..2] OF PM_Outputs_Channel_A1108FBB2430PM_Outputs_AuxiliaryAT %Q*PM_Outputs_Auxiliary_4169B4F31620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "625489467"}
+{attribute addProperty Id "PM_Inputs_ChannelAT %I*ARRAY[0..2] OF PM_Inputs_Channel_9FC8B9E8456570PM_Inputs_AuxiliaryAT %I*PM_Inputs_Auxiliary_4ACBD5CC6480PM_Outputs_ChannelAT %Q*ARRAY[0..2] OF PM_Outputs_Channel_A1108FBB2430PM_Outputs_AuxiliaryAT %Q*PM_Outputs_Auxiliary_4169B4F31620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1809922854"}
 {attribute addProperty SizeInBites "642"}
 {attribute addProperty SizeInBytes "80.25"}
 TYPE EL3413_DFA511C8 :
 STRUCT
 	{attribute addProperty Name "PM_Inputs_Channel"}
-	PM_Inputs_Channel : ARRAY[0..12] OF PM_Inputs_Channel_9FC8B9E8;
+	PM_Inputs_Channel : ARRAY[0..2] OF PM_Inputs_Channel_9FC8B9E8;
 	{attribute addProperty Name "PM_Inputs_Auxiliary"}
 	PM_Inputs_Auxiliary : PM_Inputs_Auxiliary_4ACBD5CC;
 	{attribute addProperty Name "PM_Outputs_Channel"}

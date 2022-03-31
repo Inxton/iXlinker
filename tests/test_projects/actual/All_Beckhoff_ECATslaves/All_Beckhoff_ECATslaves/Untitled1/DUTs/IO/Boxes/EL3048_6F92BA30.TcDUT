@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3048_6F92BA30" Id="{1cdadfc8-9796-4d58-8d0e-809281635e46}">
+  <DUT Name="EL3048_6F92BA30" Id="{c8e23e37-70a1-4355-8238-811f0f55b60f}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL3048-0000-0017"}
-{attribute addProperty Id "AI_Standard_ChannelAT %I*ARRAY[0..14] OF AI_Standard_Channel_B51B79FC648810WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "3084020167"}
+{attribute addProperty Id "AI_Standard_ChannelAT %I*ARRAY[0..7] OF AI_Standard_Channel_B51B79FC648810WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1498765698"}
 {attribute addProperty SizeInBites "730"}
 {attribute addProperty SizeInBytes "91.25"}
 TYPE EL3048_6F92BA30 :
 STRUCT
 	{attribute addProperty Name "AI_Standard_Channel"}
-	AI_Standard_Channel : ARRAY[0..14] OF AI_Standard_Channel_B51B79FC;
+	AI_Standard_Channel : ARRAY[0..7] OF AI_Standard_Channel_B51B79FC;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

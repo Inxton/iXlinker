@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP1816_8758F163" Id="{0d411125-73e6-42b2-afb3-de48e960c322}">
+  <DUT Name="EP1816_8758F163" Id="{1501830c-d9fd-45c3-bceb-28526947b5ac}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EP1816-0003-0016"}
-{attribute addProperty Id "DIG_Inputs_ChannelAT %I*ARRAY[0..10] OF DIG_Inputs_Channel_C8B92B82160200WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "1738665866"}
+{attribute addProperty Id "DIG_Inputs_ChannelAT %I*ARRAY[0..1] OF DIG_Inputs_Channel_C8B92B82160200WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2428839517"}
 {attribute addProperty SizeInBites "242"}
 {attribute addProperty SizeInBytes "30.25"}
 TYPE EP1816_8758F163 :
 STRUCT
 	{attribute addProperty Name "DIG_Inputs_Channel"}
-	DIG_Inputs_Channel : ARRAY[0..10] OF DIG_Inputs_Channel_C8B92B82;
+	DIG_Inputs_Channel : ARRAY[0..1] OF DIG_Inputs_Channel_C8B92B82;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

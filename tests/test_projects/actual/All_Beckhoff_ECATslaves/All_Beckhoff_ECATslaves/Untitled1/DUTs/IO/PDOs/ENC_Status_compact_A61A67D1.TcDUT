@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Status_compact_A61A67D1" Id="{30020575-dfe4-4943-8676-7c449e09e016}">
+  <DUT Name="ENC_Status_compact_A61A67D1" Id="{a7d05615-d88f-4f75-9367-f65a7165983e}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL5101-0000-1019"}
 {attribute addProperty Id "Latch_C_validAT %I*BOOL811Latch_extern_validAT %I*BOOL812Set_counter_doneAT %I*BOOL813Counter_underflowAT %I*BOOL814Counter_overflowAT %I*BOOL815Status_of_input_statusAT %I*BOOL816Open_circuitAT %I*BOOL817Extrapolation_stallAT %I*BOOL818Status_of_input_AAT %I*BOOL819Status_of_input_BAT %I*BOOL8110Status_of_input_CAT %I*BOOL8111Status_of_input_gateAT %I*BOOL8112Status_of_extern_latchAT %I*BOOL8113Sync_ErrorAT %I*BOOL8132TxPDO_StateAT %I*BOOL817TxPDO_ToggleAT %I*BOOL819Counter_valueAT %I*UINT16217Latch_valueAT %I*UINT16218"}
 {attribute addProperty CRC "2786748369"}

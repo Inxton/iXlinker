@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EM7004_197B868B" Id="{e3f9cf61-4597-4b4a-a3fb-f93e27b72b0c}">
+  <DUT Name="EM7004_197B868B" Id="{18367e25-312d-42f5-ae51-3bc85cb7c40f}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EM7004-0000-0016"}
-{attribute addProperty Id "DI_InputsAT %I*DI_Inputs_42B6F5B2128160ENC_Inputs_ChannelAT %I*ARRAY[0..27] OF ENC_Inputs_Channel_8F9896EF352440PLS_InputsAT %I*PLS_Inputs_213E75F71620DO_OutputsAT %Q*DO_Outputs_BF554446128160AO_Outputs_ChannelAT %Q*ARRAY[0..3] OF AO_Outputs_Channel_F57FA4F96480ENC_Outputs_ChannelAT %Q*ARRAY[0..12] OF ENC_Outputs_Channel_14754A39160200PLS_OutputsAT %Q*PLS_Outputs_F618EC1A810WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "919666261"}
+{attribute addProperty Id "DI_InputsAT %I*DI_Inputs_42B6F5B2128160ENC_Inputs_ChannelAT %I*ARRAY[0..3] OF ENC_Inputs_Channel_8F9896EF352440PLS_InputsAT %I*PLS_Inputs_213E75F71620DO_OutputsAT %Q*DO_Outputs_BF554446128160AO_Outputs_ChannelAT %Q*ARRAY[0..3] OF AO_Outputs_Channel_F57FA4F96480ENC_Outputs_ChannelAT %Q*ARRAY[0..3] OF ENC_Outputs_Channel_14754A39160200PLS_OutputsAT %Q*PLS_Outputs_F618EC1A810WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1378676902"}
 {attribute addProperty SizeInBites "938"}
 {attribute addProperty SizeInBytes "117.25"}
 TYPE EM7004_197B868B :
@@ -11,7 +11,7 @@ STRUCT
 	{attribute addProperty Name "DI_Inputs"}
 	DI_Inputs : DI_Inputs_42B6F5B2;
 	{attribute addProperty Name "ENC_Inputs_Channel"}
-	ENC_Inputs_Channel : ARRAY[0..27] OF ENC_Inputs_Channel_8F9896EF;
+	ENC_Inputs_Channel : ARRAY[0..3] OF ENC_Inputs_Channel_8F9896EF;
 	{attribute addProperty Name "PLS_Inputs"}
 	PLS_Inputs : PLS_Inputs_213E75F7;
 	{attribute addProperty Name "DO_Outputs"}
@@ -19,7 +19,7 @@ STRUCT
 	{attribute addProperty Name "AO_Outputs_Channel"}
 	AO_Outputs_Channel : ARRAY[0..3] OF AO_Outputs_Channel_F57FA4F9;
 	{attribute addProperty Name "ENC_Outputs_Channel"}
-	ENC_Outputs_Channel : ARRAY[0..12] OF ENC_Outputs_Channel_14754A39;
+	ENC_Outputs_Channel : ARRAY[0..3] OF ENC_Outputs_Channel_14754A39;
 	{attribute addProperty Name "PLS_Outputs"}
 	PLS_Outputs : PLS_Outputs_F618EC1A;
 	{attribute addProperty Name "WcState"}

@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP2816_68098FB0" Id="{f8de8171-dc7c-46f0-9339-5d9ba08ac1be}">
+  <DUT Name="EP2816_68098FB0" Id="{2c6357ef-f130-48a3-b78e-71a227b5ecc0}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EP2816-0004-0016"}
-{attribute addProperty Id "DO_Outputs_ChannelAT %Q*ARRAY[0..8] OF DO_Outputs_Channel_33B76376128160WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "1412542612"}
+{attribute addProperty Id "DO_Outputs_ChannelAT %Q*ARRAY[0..1] OF DO_Outputs_Channel_33B76376128160WcStateAT %I*WcState_28A8677510.1250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "3351054581"}
 {attribute addProperty SizeInBites "209"}
 {attribute addProperty SizeInBytes "26.125"}
 TYPE EP2816_68098FB0 :
 STRUCT
 	{attribute addProperty Name "DO_Outputs_Channel"}
-	DO_Outputs_Channel : ARRAY[0..8] OF DO_Outputs_Channel_33B76376;
+	DO_Outputs_Channel : ARRAY[0..1] OF DO_Outputs_Channel_33B76376;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_28A86775;
 	{attribute addProperty Name "InfoData"}

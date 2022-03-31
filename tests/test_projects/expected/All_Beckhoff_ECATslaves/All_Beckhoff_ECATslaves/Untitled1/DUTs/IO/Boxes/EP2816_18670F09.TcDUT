@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP2816_18670F09" Id="{fcfbab1a-5ec2-4ec2-8440-9efb38b139f4}">
+  <DUT Name="EP2816_18670F09" Id="{5a307be4-453e-4b0d-abe5-20fa0a1b7b99}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EP2816-0008-0016"}
-{attribute addProperty Id "DO_Inputs_ChannelAT %I*ARRAY[0..8] OF DO_Inputs_Channel_AC4A9AF0128160DO_Inputs_DeviceAT %I*DO_Inputs_Device_213DCE554050DO_Outputs_ChannelAT %Q*ARRAY[0..8] OF DO_Outputs_Channel_33B76376128160DO_Outputs_DeviceAT %Q*DO_Outputs_Device_735003021620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "2952473917"}
+{attribute addProperty Id "DO_Inputs_ChannelAT %I*ARRAY[0..1] OF DO_Inputs_Channel_AC4A9AF0128160DO_Inputs_DeviceAT %I*DO_Inputs_Device_213DCE554050DO_Outputs_ChannelAT %Q*ARRAY[0..1] OF DO_Outputs_Channel_33B76376128160DO_Outputs_DeviceAT %Q*DO_Outputs_Device_735003021620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2177469935"}
 {attribute addProperty SizeInBites "394"}
 {attribute addProperty SizeInBytes "49.25"}
 TYPE EP2816_18670F09 :
 STRUCT
 	{attribute addProperty Name "DO_Inputs_Channel"}
-	DO_Inputs_Channel : ARRAY[0..8] OF DO_Inputs_Channel_AC4A9AF0;
+	DO_Inputs_Channel : ARRAY[0..1] OF DO_Inputs_Channel_AC4A9AF0;
 	{attribute addProperty Name "DO_Inputs_Device"}
 	DO_Inputs_Device : DO_Inputs_Device_213DCE55;
 	{attribute addProperty Name "DO_Outputs_Channel"}
-	DO_Outputs_Channel : ARRAY[0..8] OF DO_Outputs_Channel_33B76376;
+	DO_Outputs_Channel : ARRAY[0..1] OF DO_Outputs_Channel_33B76376;
 	{attribute addProperty Name "DO_Outputs_Device"}
 	DO_Outputs_Device : DO_Outputs_Device_73500302;
 	{attribute addProperty Name "WcState"}

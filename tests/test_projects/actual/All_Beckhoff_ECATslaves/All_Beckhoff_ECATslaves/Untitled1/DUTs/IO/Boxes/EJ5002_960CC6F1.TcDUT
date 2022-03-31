@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ5002_960CC6F1" Id="{29236e51-9af0-4174-b8cd-553436a0b72b}">
+  <DUT Name="EJ5002_960CC6F1" Id="{eb4d1366-5f78-4fae-9e72-59fe510fa5b0}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EJ5002-0000-0017"}
-{attribute addProperty Id "SSI_Inputs_ChannelAT %I*ARRAY[0..2] OF SSI_Inputs_Channel_32C7114D96120WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "3984045230"}
+{attribute addProperty Id "SSI_Inputs_ChannelAT %I*ARRAY[0..1] OF SSI_Inputs_Channel_32C7114D96120WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2742835684"}
 {attribute addProperty SizeInBites "178"}
 {attribute addProperty SizeInBytes "22.25"}
 TYPE EJ5002_960CC6F1 :
 STRUCT
 	{attribute addProperty Name "SSI_Inputs_Channel"}
-	SSI_Inputs_Channel : ARRAY[0..2] OF SSI_Inputs_Channel_32C7114D;
+	SSI_Inputs_Channel : ARRAY[0..1] OF SSI_Inputs_Channel_32C7114D;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

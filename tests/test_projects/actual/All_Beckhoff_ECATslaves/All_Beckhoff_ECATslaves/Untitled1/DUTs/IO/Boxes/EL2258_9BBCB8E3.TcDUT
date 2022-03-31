@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2258_9BBCB8E3" Id="{eddf238f-5a42-4aaf-bd1e-10562ec37653}">
+  <DUT Name="EL2258_9BBCB8E3" Id="{79c45a5d-bc25-419a-ab51-551e8ab7a4ba}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL2258-0000-0017"}
-{attribute addProperty Id "MTO_Inputs_ChannelAT %I*ARRAY[0..7] OF MTO_Inputs_Channel_5AD475AF8721090MTO_Outputs_10x_ChannelAT %Q*ARRAY[0..84] OF MTO_Outputs_10x_Channel_24D255B145285660WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_0BDED7BF144180"}
-{attribute addProperty CRC "36537729"}
+{attribute addProperty Id "MTO_Inputs_ChannelAT %I*ARRAY[0..7] OF MTO_Inputs_Channel_5AD475AF8721090MTO_Outputs_10x_ChannelAT %Q*ARRAY[0..7] OF MTO_Outputs_10x_Channel_24D255B145285660WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_0BDED7BF144180"}
+{attribute addProperty CRC "3190949968"}
 {attribute addProperty SizeInBites "5546"}
 {attribute addProperty SizeInBytes "693.25"}
 TYPE EL2258_9BBCB8E3 :
@@ -11,7 +11,7 @@ STRUCT
 	{attribute addProperty Name "MTO_Inputs_Channel"}
 	MTO_Inputs_Channel : ARRAY[0..7] OF MTO_Inputs_Channel_5AD475AF;
 	{attribute addProperty Name "MTO_Outputs_10x_Channel"}
-	MTO_Outputs_10x_Channel : ARRAY[0..84] OF MTO_Outputs_10x_Channel_24D255B1;
+	MTO_Outputs_10x_Channel : ARRAY[0..7] OF MTO_Outputs_10x_Channel_24D255B1;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

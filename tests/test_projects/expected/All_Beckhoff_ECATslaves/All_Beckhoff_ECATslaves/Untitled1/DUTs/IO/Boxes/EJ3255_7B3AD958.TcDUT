@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ3255_7B3AD958" Id="{d0eae663-57dc-4a6e-baeb-f442c3afd2e3}">
+  <DUT Name="EJ3255_7B3AD958" Id="{0a0e9375-0a6f-43c9-9632-f8612996d380}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EJ3255-0000-0023"}
-{attribute addProperty Id "AI_Standard_ChannelAT %I*ARRAY[0..8] OF AI_Standard_Channel_087F71C7160200WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "220768616"}
+{attribute addProperty Id "AI_Standard_ChannelAT %I*ARRAY[0..4] OF AI_Standard_Channel_087F71C7160200WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2735661269"}
 {attribute addProperty SizeInBites "242"}
 {attribute addProperty SizeInBytes "30.25"}
 TYPE EJ3255_7B3AD958 :
 STRUCT
 	{attribute addProperty Name "AI_Standard_Channel"}
-	AI_Standard_Channel : ARRAY[0..8] OF AI_Standard_Channel_087F71C7;
+	AI_Standard_Channel : ARRAY[0..4] OF AI_Standard_Channel_087F71C7;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

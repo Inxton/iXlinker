@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3204_4BD7F063" Id="{2b052651-2ea1-4d8d-8b9a-0e9c3969d88d}">
+  <DUT Name="EL3204_4BD7F063" Id="{4b0c024d-c819-4727-817e-86c1957db9ca}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL3204-0162-0016"}
-{attribute addProperty Id "RTD_Inputs_ChannelAT %I*ARRAY[0..2] OF RTD_Inputs_Channel_F16A160D6480AI_Standard_ChannelAT %I*ARRAY[0..2] OF AI_Standard_Channel_5763EEB96480WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "4238703748"}
+{attribute addProperty Id "RTD_Inputs_ChannelAT %I*ARRAY[0..1] OF RTD_Inputs_Channel_F16A160D6480AI_Standard_ChannelAT %I*ARRAY[0..1] OF AI_Standard_Channel_5763EEB96480WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "204963063"}
 {attribute addProperty SizeInBites "210"}
 {attribute addProperty SizeInBytes "26.25"}
 TYPE EL3204_4BD7F063 :
 STRUCT
 	{attribute addProperty Name "RTD_Inputs_Channel"}
-	RTD_Inputs_Channel : ARRAY[0..2] OF RTD_Inputs_Channel_F16A160D;
+	RTD_Inputs_Channel : ARRAY[0..1] OF RTD_Inputs_Channel_F16A160D;
 	{attribute addProperty Name "AI_Standard_Channel"}
-	AI_Standard_Channel : ARRAY[0..2] OF AI_Standard_Channel_5763EEB9;
+	AI_Standard_Channel : ARRAY[0..1] OF AI_Standard_Channel_5763EEB9;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

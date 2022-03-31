@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2522_58A1BC1F" Id="{bff7cae6-7be4-4f4f-92eb-8d5f832d09e9}">
+  <DUT Name="EL2522_58A1BC1F" Id="{422c9576-71b8-4fc1-8646-cacc719b4f9e}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EL2522-0000-0017"}
-{attribute addProperty Id "PTO_Status_ChannelAT %I*ARRAY[0..1] OF PTO_Status_Channel_B9BB57FE3240ENC_Status_ChannelAT %I*ARRAY[0..2] OF ENC_Status_Channel_D7F8917396120PTO_Control_Channel_1AT %Q*PTO_Control_Channel_0A6210C33240PTO_Target_Channel_1AT %Q*PTO_Target_Channel_3945899C3240PTO_Control_Channel_2AT %Q*PTO_Control_Channel_0A6210C33240PTO_Target_Channel_2AT %Q*PTO_Target_Channel_3945899C3240ENC_Control_ChannelAT %Q*ARRAY[0..2] OF ENC_Control_Channel_8309D56E96120WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "1184876195"}
+{attribute addProperty Id "PTO_Status_ChannelAT %I*ARRAY[0..1] OF PTO_Status_Channel_B9BB57FE3240ENC_Status_ChannelAT %I*ARRAY[0..1] OF ENC_Status_Channel_D7F8917396120PTO_Control_Channel_1AT %Q*PTO_Control_Channel_0A6210C33240PTO_Target_Channel_1AT %Q*PTO_Target_Channel_3945899C3240PTO_Control_Channel_2AT %Q*PTO_Control_Channel_0A6210C33240PTO_Target_Channel_2AT %Q*PTO_Target_Channel_3945899C3240ENC_Control_ChannelAT %Q*ARRAY[0..1] OF ENC_Control_Channel_8309D56E96120WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "976169167"}
 {attribute addProperty SizeInBites "434"}
 {attribute addProperty SizeInBytes "54.25"}
 TYPE EL2522_58A1BC1F :
@@ -11,7 +11,7 @@ STRUCT
 	{attribute addProperty Name "PTO_Status_Channel"}
 	PTO_Status_Channel : ARRAY[0..1] OF PTO_Status_Channel_B9BB57FE;
 	{attribute addProperty Name "ENC_Status_Channel"}
-	ENC_Status_Channel : ARRAY[0..2] OF ENC_Status_Channel_D7F89173;
+	ENC_Status_Channel : ARRAY[0..1] OF ENC_Status_Channel_D7F89173;
 	{attribute addProperty Name "PTO_Control_Channel_1"}
 	PTO_Control_Channel_1 : PTO_Control_Channel_0A6210C3;
 	{attribute addProperty Name "PTO_Target_Channel_1"}
@@ -21,7 +21,7 @@ STRUCT
 	{attribute addProperty Name "PTO_Target_Channel_2"}
 	PTO_Target_Channel_2 : PTO_Target_Channel_3945899C;
 	{attribute addProperty Name "ENC_Control_Channel"}
-	ENC_Control_Channel : ARRAY[0..2] OF ENC_Control_Channel_8309D56E;
+	ENC_Control_Channel : ARRAY[0..1] OF ENC_Control_Channel_8309D56E;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

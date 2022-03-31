@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DPO_Inputs_Device_301DB633" Id="{1a92b7c3-e313-4cd7-83ed-a1f3cb269479}">
+  <DUT Name="DPO_Inputs_Device_301DB633" Id="{75fa9d7b-55b3-45fc-bfdb-218316a52da2}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EP9224-0023-0016"}
 {attribute addProperty Id "Temperature_WarningAT %I*BOOL811Temperature_ErrorAT %I*BOOL812Us_WarningAT %I*BOOL813Us_ErrorAT %I*BOOL814Up_WarningAT %I*BOOL815Up_ErrorAT %I*BOOL816Global_Error_BitAT %I*BOOL817Sum_Current_WarningAT %I*BOOL818Sum_Current_ErrorAT %I*BOOL819Reset_InputAT %I*BOOL8112TxPDO_StateAT %I*BOOL8115TxPDO_ToggleAT %I*BOOL8116Current_UsAT %I*INT16217Current_UpAT %I*INT16218Voltage_UsAT %I*INT16219Voltage_UpAT %I*INT16220TemperatureAT %I*INT16221"}
 {attribute addProperty CRC "807253555"}

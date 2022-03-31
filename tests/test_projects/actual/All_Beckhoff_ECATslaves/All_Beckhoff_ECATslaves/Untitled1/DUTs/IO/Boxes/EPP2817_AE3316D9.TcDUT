@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP2817_AE3316D9" Id="{43de6e6a-d764-48cb-8b73-e7a8f7b09d64}">
+  <DUT Name="EPP2817_AE3316D9" Id="{015ed03f-a3ef-4f61-a4db-0881830a2bfa}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EPP2817-0008-0016"}
-{attribute addProperty Id "DIG_Diag_Inputs_ChannelAT %I*ARRAY[0..16] OF DIG_Diag_Inputs_Channel_AC4A9AF0192240DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_2C95E2596480DIG_Output_ChannelAT %Q*ARRAY[0..16] OF DIG_Output_Channel_33B76376192240DIG_Outputs_DeviceAT %Q*DIG_Outputs_Device_735003021620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "127485317"}
+{attribute addProperty Id "DIG_Diag_Inputs_ChannelAT %I*ARRAY[0..2] OF DIG_Diag_Inputs_Channel_AC4A9AF0192240DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_2C95E2596480DIG_Output_ChannelAT %Q*ARRAY[0..2] OF DIG_Output_Channel_33B76376192240DIG_Outputs_DeviceAT %Q*DIG_Outputs_Device_735003021620WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "741575485"}
 {attribute addProperty SizeInBites "546"}
 {attribute addProperty SizeInBytes "68.25"}
 TYPE EPP2817_AE3316D9 :
 STRUCT
 	{attribute addProperty Name "DIG_Diag_Inputs_Channel"}
-	DIG_Diag_Inputs_Channel : ARRAY[0..16] OF DIG_Diag_Inputs_Channel_AC4A9AF0;
+	DIG_Diag_Inputs_Channel : ARRAY[0..2] OF DIG_Diag_Inputs_Channel_AC4A9AF0;
 	{attribute addProperty Name "DIG_Inputs_Device"}
 	DIG_Inputs_Device : DIG_Inputs_Device_2C95E259;
 	{attribute addProperty Name "DIG_Output_Channel"}
-	DIG_Output_Channel : ARRAY[0..16] OF DIG_Output_Channel_33B76376;
+	DIG_Output_Channel : ARRAY[0..2] OF DIG_Output_Channel_33B76376;
 	{attribute addProperty Name "DIG_Outputs_Device"}
 	DIG_Outputs_Device : DIG_Outputs_Device_73500302;
 	{attribute addProperty Name "WcState"}

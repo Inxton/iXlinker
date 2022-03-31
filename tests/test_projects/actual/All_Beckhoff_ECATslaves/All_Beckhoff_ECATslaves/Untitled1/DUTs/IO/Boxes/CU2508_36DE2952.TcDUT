@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="CU2508_36DE2952" Id="{6dc02924-9ce7-4fad-b1d5-2cc5c07fad7f}">
+  <DUT Name="CU2508_36DE2952" Id="{c1398ed5-f714-497f-9ad1-18628757e1b4}">
     <Declaration><![CDATA[{attribute addProperty BoxType "CU2508-0000-0017"}
-{attribute addProperty Id "EPM_Inputs_ChannelAT %I*ARRAY[0..18] OF EPM_Inputs_Channel_7B63A807160200WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "2816817870"}
+{attribute addProperty Id "EPM_Inputs_ChannelAT %I*ARRAY[0..9] OF EPM_Inputs_Channel_7B63A807160200WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1695214060"}
 {attribute addProperty SizeInBites "242"}
 {attribute addProperty SizeInBytes "30.25"}
 TYPE CU2508_36DE2952 :
 STRUCT
 	{attribute addProperty Name "EPM_Inputs_Channel"}
-	EPM_Inputs_Channel : ARRAY[0..18] OF EPM_Inputs_Channel_7B63A807;
+	EPM_Inputs_Channel : ARRAY[0..9] OF EPM_Inputs_Channel_7B63A807;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

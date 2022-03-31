@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ER3184_6082EBFD" Id="{33568038-d1fa-4fbf-9ab7-6b921f9994a5}">
+  <DUT Name="ER3184_6082EBFD" Id="{97cfd56c-a10a-4147-9a49-3a5c5211a20d}">
     <Declaration><![CDATA[{attribute addProperty BoxType "ER3184-0002-0019"}
-{attribute addProperty Id "AI_Standard_ChannelAT %I*ARRAY[0..6] OF AI_Standard_Channel_904746A2128160WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "1539253693"}
+{attribute addProperty Id "AI_Standard_ChannelAT %I*ARRAY[0..3] OF AI_Standard_Channel_904746A2128160WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "1712706657"}
 {attribute addProperty SizeInBites "210"}
 {attribute addProperty SizeInBytes "26.25"}
 TYPE ER3184_6082EBFD :
 STRUCT
 	{attribute addProperty Name "AI_Standard_Channel"}
-	AI_Standard_Channel : ARRAY[0..6] OF AI_Standard_Channel_904746A2;
+	AI_Standard_Channel : ARRAY[0..3] OF AI_Standard_Channel_904746A2;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}

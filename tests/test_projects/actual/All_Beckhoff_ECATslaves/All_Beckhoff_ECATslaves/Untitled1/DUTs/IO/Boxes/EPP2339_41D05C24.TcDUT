@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP2339_41D05C24" Id="{7abcc028-6257-4e69-876f-eac19f997a30}">
+  <DUT Name="EPP2339_41D05C24" Id="{e3b80c4a-a8c4-4637-a0b8-4a57e4d4964e}">
     <Declaration><![CDATA[{attribute addProperty BoxType "EPP2339-0003-0016"}
-{attribute addProperty Id "DI_Inputs_ChannelAT %I*ARRAY[0..11] OF DI_Inputs_Channel_595007DD176220DO_Outputs_ChannelAT %Q*ARRAY[0..8] OF DO_Outputs_Channel_33B76376128160WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
-{attribute addProperty CRC "1382427570"}
+{attribute addProperty Id "DI_Inputs_ChannelAT %I*ARRAY[0..1] OF DI_Inputs_Channel_595007DD176220DO_Outputs_ChannelAT %Q*ARRAY[0..1] OF DO_Outputs_Channel_33B76376128160WcStateAT %I*WcState_98A4DF7520.250InfoDataAT %I*InfoData_BC63D37F80100"}
+{attribute addProperty CRC "2211595632"}
 {attribute addProperty SizeInBites "386"}
 {attribute addProperty SizeInBytes "48.25"}
 TYPE EPP2339_41D05C24 :
 STRUCT
 	{attribute addProperty Name "DI_Inputs_Channel"}
-	DI_Inputs_Channel : ARRAY[0..11] OF DI_Inputs_Channel_595007DD;
+	DI_Inputs_Channel : ARRAY[0..1] OF DI_Inputs_Channel_595007DD;
 	{attribute addProperty Name "DO_Outputs_Channel"}
-	DO_Outputs_Channel : ARRAY[0..8] OF DO_Outputs_Channel_33B76376;
+	DO_Outputs_Channel : ARRAY[0..1] OF DO_Outputs_Channel_33B76376;
 	{attribute addProperty Name "WcState"}
 	WcState : WcState_98A4DF75;
 	{attribute addProperty Name "InfoData"}
