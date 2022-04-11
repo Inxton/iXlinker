@@ -12,9 +12,9 @@ namespace TsprojFile.Scan
         private MappableObject GetAllVarGrpVarsAsOneStructure(PdoViewModel pdoViewModel, ObservableCollection<PdoEntryViewModel> varGrpVars)
         {
             string pdoViewModelName = pdoViewModel.Name;
-            if (pdoViewModelName.Contains(ioSlotSeparator))
+            if (pdoViewModelName.Contains(tmpSlotSeparator))
             {
-                pdoViewModelName = pdoViewModelName.Substring(pdoViewModelName.LastIndexOf(ioSlotSeparator, StringComparison.Ordinal) + 1);
+                pdoViewModelName = pdoViewModelName.Substring(pdoViewModelName.LastIndexOf(tmpSlotSeparator, StringComparison.Ordinal) + 1);
             }
 
             PdoStructViewModel actVarGrpStruct = new PdoStructViewModel() { Prefix = ValidatePlcItem.StructurePrefix(pdoViewModel.Name), Id = "", BoxOrderCode = pdoViewModel.BoxOrderCode };
@@ -50,7 +50,8 @@ namespace TsprojFile.Scan
                 member.SubIndex = _var.SubIndex;
                 member.SubIndexNumber = _var.SubIndexNumber;
                 actVarGrpStruct.StructMembers.Add(member);
-                actVarGrpStruct.Id = actVarGrpStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                //actVarGrpStruct.Id = actVarGrpStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                actVarGrpStruct.Id = actVarGrpStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                 actVarGrpStruct.SizeInBites = actVarGrpStruct.SizeInBites + member.SizeInBites;
                 actVarGrpStruct.SizeInBytes = actVarGrpStruct.SizeInBytes + member.SizeInBytes;
 

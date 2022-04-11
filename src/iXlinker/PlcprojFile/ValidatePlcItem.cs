@@ -68,8 +68,9 @@ namespace PlcprojFile
             if (!string.IsNullOrEmpty(ret))
             {
                 string[] s = ret.Split('[');
-                if (    s[0].ToUpper().EndsWith("LIMIT") 
-                    ||  s[0].ToUpper().EndsWith("AT"))
+                if (    s[0].ToUpper().EndsWith("LIMIT")
+                    || s[0].ToUpper().EndsWith("AT")
+                    || s[0].ToUpper().EndsWith("BYTE"))
                 {
                     s[0] = s[0] + "_x";
                 }
@@ -171,16 +172,51 @@ namespace PlcprojFile
             {
                 ret = ReplacePlusMinus(ret);
                 ret = ReplaceSpecialChars(ret, SpecialCharsLink);
-                ret = ret.Replace("_" + TcModel.tmpLevelSeparator, TcModel.tmpLevelSeparator);
                 ret = ReplaceKeywords(ret);
                 ret = RemoveDiacritics(ret);
                 ret = ReplaceDoubleUnderscores(ret);
                 ret = AddUnderscorePrefixIfStartsWithNumber(ret);
                 ret = AddUnderscorePrefixIfContainsDotNetKeyword(ret);
-                ret = ret.Replace("_" + TcModel.plcStructSeparator, TcModel.plcStructSeparator);
+                ret = ret.Replace("_" + TcModel.tmpLevelSeparator, TcModel.tmpLevelSeparator);
+                ret = ret.Replace("_" + TcModel.tmpSlotSeparator, TcModel.tmpSlotSeparator);
+                ret = ret.Replace("_" + TcModel.tmpStructSeparator, TcModel.tmpStructSeparator);
+
             }
             return ret;
         }
+
+        public static string LinkA(string link)
+        {
+            string ret = link;
+            if (!string.IsNullOrEmpty(ret))
+            {
+                ret = ReplaceSpecialChars(ret, SpecialCharsLink);
+                ret = ReplaceKeywords(ret);
+                ret = ret.Replace("_" + TcModel.tmpLevelSeparator, TcModel.tmpLevelSeparator);
+                ret = ret.Replace("_" + TcModel.tmpSlotSeparator, TcModel.tmpSlotSeparator);
+                ret = ret.Replace("_" + TcModel.tmpStructSeparator, TcModel.tmpStructSeparator);
+                ret = ret.Replace(TcModel.tmpLevelSeparator, TcModel.plcStructSeparator);
+                ret = ret.Replace(TcModel.tmpSlotSeparator, TcModel.plcStructSeparator);
+                ret = ret.Replace(TcModel.tmpStructSeparator, TcModel.hwStructSeparator);
+            }
+            return ret;
+        }
+
+        public static string LinkB(string link)
+        {
+            string ret = link;
+            if (!string.IsNullOrEmpty(ret))
+            {
+                ret = ret.Replace(TcModel.tmpLevelSeparator, TcModel.ioLevelSeparator);
+                ret = ret.Replace(TcModel.tmpSlotSeparator, TcModel.ioLevelSeparator);
+                ret = ret.Replace(TcModel.tmpStructSeparator, TcModel.ioLevelSeparator);
+                ret = ret.Replace("&lt;", "<");
+                ret = ret.Replace("&gt;", ">");
+
+            }
+            return ret;
+        }
+
         public static string StructurePrefix(string s)
         {
             string ret = ValidatePlcItem.Name(s);

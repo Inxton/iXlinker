@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+  <DataTypes>
+    <DataType>
+      <Name GUID="{B09613FD-8359-8102-713A-ECFAFB581F05}" AutoDeleteType="true">Status_EBD4BD79</Name>
+      <BitSize>64</BitSize>
+      <SubItem>
+        <Name>Underrange</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Overrange</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>8</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Limit_1</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>16</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Limit_2</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>24</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Error</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Sync_error</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>40</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>TxPDO_State</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>48</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>TxPDO_Toggle</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>56</BitOffs>
+      </SubItem>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
+      <BitSize>48</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+      <ArrayInfo>
+        <LBound>0</LBound>
+        <Elements>6</Elements>
+      </ArrayInfo>
+      <Format>
+        <Printf>%d.%d.%d.%d.%d.%d</Printf>
+        <Parameter>[0]</Parameter>
+        <Parameter>[1]</Parameter>
+        <Parameter>[2]</Parameter>
+        <Parameter>[3]</Parameter>
+        <Parameter>[4]</Parameter>
+        <Parameter>[5]</Parameter>
+      </Format>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-000000000042}" TcBaseType="true" CName="AmsAddr">AMSADDR</Name>
+      <BitSize>64</BitSize>
+      <SubItem>
+        <Name>netId</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+        <BitSize>48</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>port</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>48</BitOffs>
+      </SubItem>
+      <Format>
+        <Printf>%d.%d.%d.%d.%d.%d:%d</Printf>
+        <Parameter>.netId[0]</Parameter>
+        <Parameter>.netId[1]</Parameter>
+        <Parameter>.netId[2]</Parameter>
+        <Parameter>.netId[3]</Parameter>
+        <Parameter>.netId[4]</Parameter>
+        <Parameter>.netId[5]</Parameter>
+        <Parameter>.port</Parameter>
+      </Format>
+      <Format Name="Iec">
+        <Printf>(netId:=[%d.%d.%d.%d.%d.%d], port :=%d)</Printf>
+        <Parameter>.netId[0]</Parameter>
+        <Parameter>.netId[1]</Parameter>
+        <Parameter>.netId[2]</Parameter>
+        <Parameter>.netId[3]</Parameter>
+        <Parameter>.netId[4]</Parameter>
+        <Parameter>.netId[5]</Parameter>
+        <Parameter>.port</Parameter>
+      </Format>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
+      <BitSize>1</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+      <ArrayInfo>
+        <LBound>0</LBound>
+        <Elements>1</Elements>
+      </ArrayInfo>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-002000000005}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..4] OF BIT</Name>
+      <BitSize>5</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+      <ArrayInfo>
+        <LBound>0</LBound>
+        <Elements>5</Elements>
+      </ArrayInfo>
+    </DataType>
+  </DataTypes>
+  <ImageDatas>
+    <ImageData Id="1000">424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000C40E0000C40E00000000000000000000FF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080808080808080808080808080808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C000FFFFC0C0C000FFFF808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0FF0000C0C0C0FF0000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C00000FFC0C0C00000FF808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0008000C0C0C0008000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF</ImageData>
+    <ImageData Id="1001">424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000C40E0000C40E00000000000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF808080808080808080808080808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000FFFFC0C0C000FFFF808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0FF0000C0C0C0FF0000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF00FF0000FF0000FF0000FF0000FF0000FF00C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FF00FF0000FF0000FF0000FF0000FF0000FF00C0C0C00000FFC0C0C00000FF808080FF00FFFF00FFFF00FFFF00FFFF00FF00FF0000FF0000FF0000FF0000FF0000FF00C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF00FF0000FF0000FF0000FF0000FF0000FF00C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FF00FF0000FF0000FF0000FF0000FF0000FF00C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF00FF0000FF0000FF0000FF0000FF0000FF00C0C0C0008000C0C0C0008000808080FF00FFFF00FFFF00FFFF00FFFF00FF00FF0000FF0000FF0000FF0000FF0000FF00C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF</ImageData>
+  </ImageDatas>
+  <Project ProjectGUID="{920AAEF1-0EFA-44AB-99AD-06C0F02903D8}" Target64Bit="true" ShowHideConfigurations="#x106">
+    <System>
+      <Tasks>
+        <Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+          <Name>PlcTask</Name>
+        </Task>
+      </Tasks>
+    </System>
+    <Plc>
+      <Project GUID="{225ECC4D-F94E-4AF7-B551-C96FF9961B38}" Name="Plc" PrjFilePath="Plc.plcproj" TmcFilePath="Plc.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+        <Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="Plc.tmc">
+          <Name>Plc Instance</Name>
+          <CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+          <Vars VarGrpType="1">
+            <Name>PlcTask Inputs</Name>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status</Name>
+              <Type GUID="{B09613FD-8359-8102-713A-ECFAFB581F05}">Status_EBD4BD79</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Value</Name>
+              <Type>INT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status</Name>
+              <Type GUID="{B09613FD-8359-8102-713A-ECFAFB581F05}">Status_EBD4BD79</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Value</Name>
+              <Type>INT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status</Name>
+              <Type GUID="{B09613FD-8359-8102-713A-ECFAFB581F05}">Status_EBD4BD79</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Value</Name>
+              <Type>INT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status</Name>
+              <Type GUID="{B09613FD-8359-8102-713A-ECFAFB581F05}">Status_EBD4BD79</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Value</Name>
+              <Type>INT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.WcState.InputToggle</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.InfoData.AdsAddr</Name>
+              <Type GUID="{18071995-0000-0000-0000-000000000042}">AMSADDR</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.unreferenced.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.unreferenced.InfoData.ObjectId</Name>
+              <Type>OTCID</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.unreferenced.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.unreferenced.InfoData.SlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.ObjectId</Name>
+              <Type>OTCID</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.SlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Inputs.SlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Inputs.DevState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.ChangeCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.DevId</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.AmsNetId</Name>
+              <Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.CfgSlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.DcToTcTimeOffset</Name>
+              <Type>LINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.DcToExtTimeOffset</Name>
+              <Type>LINT</Type>
+            </Var>
+          </Vars>
+          <Vars VarGrpType="2">
+            <Name>PlcTask Outputs</Name>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Outputs.DevCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Outputs.Frm0Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Outputs.Frm0WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+          </Vars>
+          <Contexts>
+            <Context>
+              <Id NeedCalleeCall="true">0</Id>
+              <Name>PlcTask</Name>
+              <ManualConfig>
+                <OTCID>#x02010030</OTCID>
+              </ManualConfig>
+              <Priority>20</Priority>
+              <CycleTime>10000000</CycleTime>
+            </Context>
+          </Contexts>
+          <TaskPouOids>
+            <TaskPouOid Prio="20" OTCID="#x08502001" />
+          </TaskPouOids>
+        </Instance>
+      </Project>
+    </Plc>
+    <Io>
+      <Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="172.20.30.238.2.1" RemoteName="Device 1 (EtherCAT)">
+        <Name>Device 1 (EtherCAT)</Name>
+        <AddressInfo>
+          <Pnp>
+            <DeviceDesc />
+            <DeviceName />
+            <DeviceData>000000000000</DeviceData>
+          </Pnp>
+        </AddressInfo>
+        <Image Id="1" AddrType="9" ImageType="3">
+          <Name>Image</Name>
+        </Image>
+        <Box Id="1" BoxType="9099">
+          <Name>Term 1 (EK1100)</Name>
+          <ImageId>1000</ImageId>
+          <EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x00ffffff" />
+          <Box Id="2" BoxType="9099" BoxFlags="#x00000020">
+            <Name>Term 2 (EL3164)</Name>
+            <ImageId>1001</ImageId>
+            <EtherCAT SlaveType="2" PdiType="#x0405" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x0c5c3052" RevisionNo="#x00140000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL3164 4Ch. Ana. Input 0-10V" Desc="EL3164" PortABoxInfo="#x01000001">
+              <SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+              <SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+              <SyncMan>001100000400000003000000000000000000001104000000</SyncMan>
+              <SyncMan>801110002000010004000000000000001000801120010000</SyncMan>
+              <Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+              <Fmmu>00000000000000000D0800010100000003000000000000000000000000000000</Fmmu>
+              <BootStrapData>0010F400F410F400</BootStrapData>
+              <DcMode>53796E6368726F6E00000000000000004672656552756E2F534D2D53796E6368726F6E00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+              <DcMode>4443000000000000000000000000000044432D53796E6368726F6E0000000000000000000000000000000000000000000000000000000000A8610000000000070100000000000000000000000000000000000000000000000000000000000000</DcMode>
+              <DcMode>4443494E00000000000000000000000044432D53796E6368726F6E2028696E7075742062617365642900000000000000000000006079FEFFA8610000000000070100000000000000000001000000000000000000000000000000000000000000</DcMode>
+              <Pdo Name="AI Standard Channel 1" Index="#x1a00" Flags="#x0010" SyncMan="3">
+                <ExcludePdo>#x1a01</ExcludePdo>
+                <Entry Name="Status__Underrange" Index="#x6000" Sub="#x01">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when upper value limit exceeded</Comment>
+                </Entry>
+                <Entry Name="Status__Overrange" Index="#x6000" Sub="#x02">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when lower value limit exceeded</Comment>
+                </Entry>
+                <Entry Name="Status__Limit 1" Index="#x6000" Sub="#x03">
+                  <Type>BIT2</Type>
+                  <Comment>Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1</Comment>
+                </Entry>
+                <Entry Name="Status__Limit 2" Index="#x6000" Sub="#x05">
+                  <Type>BIT2</Type>
+                  <Comment>Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2</Comment>
+                </Entry>
+                <Entry Name="Status__Error" Index="#x6000" Sub="#x07">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when Over- or Underrange</Comment>
+                </Entry>
+                <Entry Name="Status__">
+                  <Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+                </Entry>
+                <Entry Name="Status__">
+                  <Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+                </Entry>
+                <Entry Name="Status__Sync error" Index="#x6000" Sub="#x0e">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Status__TxPDO State" Index="#x6000" Sub="#x0f">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Status__TxPDO Toggle" Index="#x6000" Sub="#x10">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Value" Index="#x6000" Sub="#x11" Flags="#x00020000">
+                  <Type>INT</Type>
+                </Entry>
+              </Pdo>
+              <Pdo Name="AI Compact Channel 1" Index="#x1a01" Flags="#x0010">
+                <ExcludePdo>#x1a00</ExcludePdo>
+                <Entry Name="Value" Index="#x6000" Sub="#x11" Flags="#x00020000">
+                  <Type>INT</Type>
+                </Entry>
+              </Pdo>
+              <Pdo Name="AI Standard Channel 2" Index="#x1a02" Flags="#x0010" SyncMan="3">
+                <ExcludePdo>#x1a03</ExcludePdo>
+                <Entry Name="Status__Underrange" Index="#x6010" Sub="#x01">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when upper value limit exceeded</Comment>
+                </Entry>
+                <Entry Name="Status__Overrange" Index="#x6010" Sub="#x02">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when lower value limit exceeded</Comment>
+                </Entry>
+                <Entry Name="Status__Limit 1" Index="#x6010" Sub="#x03">
+                  <Type>BIT2</Type>
+                  <Comment>Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1</Comment>
+                </Entry>
+                <Entry Name="Status__Limit 2" Index="#x6010" Sub="#x05">
+                  <Type>BIT2</Type>
+                  <Comment>Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2</Comment>
+                </Entry>
+                <Entry Name="Status__Error" Index="#x6010" Sub="#x07">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when Over- or Underrange</Comment>
+                </Entry>
+                <Entry Name="Status__">
+                  <Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+                </Entry>
+                <Entry Name="Status__">
+                  <Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+                </Entry>
+                <Entry Name="Status__Sync error" Index="#x6010" Sub="#x0e">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Status__TxPDO State" Index="#x6010" Sub="#x0f">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Status__TxPDO Toggle" Index="#x6010" Sub="#x10">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Value" Index="#x6010" Sub="#x11" Flags="#x00020000">
+                  <Type>INT</Type>
+                </Entry>
+              </Pdo>
+              <Pdo Name="AI Compact Channel 2" Index="#x1a03" Flags="#x0010">
+                <ExcludePdo>#x1a02</ExcludePdo>
+                <Entry Name="Value" Index="#x6010" Sub="#x11" Flags="#x00020000">
+                  <Type>INT</Type>
+                </Entry>
+              </Pdo>
+              <Pdo Name="AI Standard Channel 3" Index="#x1a04" Flags="#x0010" SyncMan="3">
+                <ExcludePdo>#x1a05</ExcludePdo>
+                <Entry Name="Status__Underrange" Index="#x6020" Sub="#x01">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when upper value limit exceeded</Comment>
+                </Entry>
+                <Entry Name="Status__Overrange" Index="#x6020" Sub="#x02">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when lower value limit exceeded</Comment>
+                </Entry>
+                <Entry Name="Status__Limit 1" Index="#x6020" Sub="#x03">
+                  <Type>BIT2</Type>
+                  <Comment>Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1</Comment>
+                </Entry>
+                <Entry Name="Status__Limit 2" Index="#x6020" Sub="#x05">
+                  <Type>BIT2</Type>
+                  <Comment>Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2</Comment>
+                </Entry>
+                <Entry Name="Status__Error" Index="#x6020" Sub="#x07">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when Over- or Underrange</Comment>
+                </Entry>
+                <Entry Name="Status__">
+                  <Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+                </Entry>
+                <Entry Name="Status__">
+                  <Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+                </Entry>
+                <Entry Name="Status__Sync error" Index="#x6020" Sub="#x0e">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Status__TxPDO State" Index="#x6020" Sub="#x0f">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Status__TxPDO Toggle" Index="#x6020" Sub="#x10">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Value" Index="#x6020" Sub="#x11" Flags="#x00020000">
+                  <Type>INT</Type>
+                </Entry>
+              </Pdo>
+              <Pdo Name="AI Compact Channel 3" Index="#x1a05" Flags="#x0010">
+                <ExcludePdo>#x1a04</ExcludePdo>
+                <Entry Name="Value" Index="#x6020" Sub="#x11" Flags="#x00020000">
+                  <Type>INT</Type>
+                </Entry>
+              </Pdo>
+              <Pdo Name="AI Standard Channel 4" Index="#x1a06" Flags="#x0010" SyncMan="3">
+                <ExcludePdo>#x1a07</ExcludePdo>
+                <Entry Name="Status__Underrange" Index="#x6030" Sub="#x01">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when upper value limit exceeded</Comment>
+                </Entry>
+                <Entry Name="Status__Overrange" Index="#x6030" Sub="#x02">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when lower value limit exceeded</Comment>
+                </Entry>
+                <Entry Name="Status__Limit 1" Index="#x6030" Sub="#x03">
+                  <Type>BIT2</Type>
+                  <Comment>Bit0: Value greater than Limit1
+Bit1: Value smaller than Limit1</Comment>
+                </Entry>
+                <Entry Name="Status__Limit 2" Index="#x6030" Sub="#x05">
+                  <Type>BIT2</Type>
+                  <Comment>Bit0: Value greater than Limit2
+Bit1: Value smaller than Limit2</Comment>
+                </Entry>
+                <Entry Name="Status__Error" Index="#x6030" Sub="#x07">
+                  <Type>BIT</Type>
+                  <Comment>Bit set when Over- or Underrange</Comment>
+                </Entry>
+                <Entry Name="Status__">
+                  <Type GUID="{18071995-0000-0000-0000-002000000001}">ARRAY [0..0] OF BIT</Type>
+                </Entry>
+                <Entry Name="Status__">
+                  <Type GUID="{18071995-0000-0000-0000-002000000005}">ARRAY [0..4] OF BIT</Type>
+                </Entry>
+                <Entry Name="Status__Sync error" Index="#x6030" Sub="#x0e">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Status__TxPDO State" Index="#x6030" Sub="#x0f">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Status__TxPDO Toggle" Index="#x6030" Sub="#x10">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Value" Index="#x6030" Sub="#x11" Flags="#x00020000">
+                  <Type>INT</Type>
+                </Entry>
+              </Pdo>
+              <Pdo Name="AI Compact Channel 4" Index="#x1a07" Flags="#x0010">
+                <ExcludePdo>#x1a06</ExcludePdo>
+                <Entry Name="Value" Index="#x6030" Sub="#x11" Flags="#x00020000">
+                  <Type>INT</Type>
+                </Entry>
+              </Pdo>
+              <CoeProfile ProfileNo="19665801" />
+              <CoeProfile ProfileNo="19665801" />
+              <CoeProfile ProfileNo="19665801" />
+              <CoeProfile ProfileNo="19665801" />
+            </EtherCAT>
+          </Box>
+        </Box>
+        <EtherCAT />
+      </Device>
+    </Io>
+  </Project>
+  <Mappings>
+    <OwnerA Name="TIPC^Plc^Plc Instance">
+      <OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.InfoData.State" VarB="InfoData^State" />
+      </OwnerB>
+      <OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL3164)">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status^Limit_2" VarB="AI Standard Channel 1^Status^Limit 2" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status^Error" VarB="AI Standard Channel 1^Status^Error" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status^Sync_error" VarB="AI Standard Channel 1^Status^Sync error" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status^TxPDO_State" VarB="AI Standard Channel 1^Status^TxPDO State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status^TxPDO_Toggle" VarB="AI Standard Channel 1^Status^TxPDO Toggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Value" VarB="AI Standard Channel 1^Value" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status^Underrange" VarB="AI Standard Channel 2^Status^Underrange" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status^Overrange" VarB="AI Standard Channel 2^Status^Overrange" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status^Limit_1" VarB="AI Standard Channel 2^Status^Limit 1" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status^Limit_2" VarB="AI Standard Channel 2^Status^Limit 2" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status^Error" VarB="AI Standard Channel 2^Status^Error" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status^Sync_error" VarB="AI Standard Channel 2^Status^Sync error" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status^TxPDO_State" VarB="AI Standard Channel 2^Status^TxPDO State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status^TxPDO_Toggle" VarB="AI Standard Channel 2^Status^TxPDO Toggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Value" VarB="AI Standard Channel 2^Value" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status^Underrange" VarB="AI Standard Channel 3^Status^Underrange" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status^Overrange" VarB="AI Standard Channel 3^Status^Overrange" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status^Limit_1" VarB="AI Standard Channel 3^Status^Limit 1" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status^Limit_2" VarB="AI Standard Channel 3^Status^Limit 2" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status^Error" VarB="AI Standard Channel 3^Status^Error" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status^Sync_error" VarB="AI Standard Channel 3^Status^Sync error" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status^TxPDO_State" VarB="AI Standard Channel 3^Status^TxPDO State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status^TxPDO_Toggle" VarB="AI Standard Channel 3^Status^TxPDO Toggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Value" VarB="AI Standard Channel 3^Value" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status^Underrange" VarB="AI Standard Channel 4^Status^Underrange" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status^Overrange" VarB="AI Standard Channel 4^Status^Overrange" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status^Limit_1" VarB="AI Standard Channel 4^Status^Limit 1" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status^Limit_2" VarB="AI Standard Channel 4^Status^Limit 2" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status^Error" VarB="AI Standard Channel 4^Status^Error" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status^Sync_error" VarB="AI Standard Channel 4^Status^Sync error" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status^TxPDO_State" VarB="AI Standard Channel 4^Status^TxPDO State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status^TxPDO_Toggle" VarB="AI Standard Channel 4^Status^TxPDO Toggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Value" VarB="AI Standard Channel 4^Value" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.WcState.WcState" VarB="WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.WcState.InputToggle" VarB="WcState^InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.InfoData.State" VarB="InfoData^State" />
+      </OwnerB>
+      <OwnerB Name="TIID^Device 1 (EtherCAT)">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default._unreferenced.WcState.WcState" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default._unreferenced.InfoData.ObjectId" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^InfoData^ObjectId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default._unreferenced.InfoData.State" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^InfoData^State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default._unreferenced.InfoData.SlaveCount" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^InfoData^SlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.WcState.WcState" VarB="SyncUnits^&lt;default&gt;^PlcTask^WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.ObjectId" VarB="SyncUnits^&lt;default&gt;^PlcTask^InfoData^ObjectId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.State" VarB="SyncUnits^&lt;default&gt;^PlcTask^InfoData^State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.SlaveCount" VarB="SyncUnits^&lt;default&gt;^PlcTask^InfoData^SlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Inputs.SlaveCount" VarB="Inputs^SlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Inputs.DevState" VarB="Inputs^DevState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0State" VarB="Inputs^Frm0State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0WcState" VarB="Inputs^Frm0WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0InputToggle" VarB="Inputs^Frm0InputToggle" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.Device_1_EtherCAT.Outputs.DevCtrl" VarB="Outputs^DevCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.Device_1_EtherCAT.Outputs.Frm0Ctrl" VarB="Outputs^Frm0Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.Device_1_EtherCAT.Outputs.Frm0WcCtrl" VarB="Outputs^Frm0WcCtrl" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.ChangeCount" VarB="InfoData^ChangeCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.DevId" VarB="InfoData^DevId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.AmsNetId" VarB="InfoData^AmsNetId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.CfgSlaveCount" VarB="InfoData^CfgSlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.DcToTcTimeOffset" VarB="InfoData^DcToTcTimeOffset" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.DcToExtTimeOffset" VarB="InfoData^DcToExtTimeOffset" />
+      </OwnerB>
+    </OwnerA>
+  </Mappings>
+</TcSmProject>

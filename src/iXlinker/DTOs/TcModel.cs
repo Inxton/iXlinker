@@ -6,10 +6,12 @@ namespace iXlinkerDtos
 {
     public class TcModel : NotifiableBase
     {
-        public const string tmpLevelSeparator = "\u0001";
+        public const string tmpLevelSeparator = "\x1";
+        public const string tmpSlotSeparator = "\x2";
+        public const string tmpStructSeparator = "\x3";
         public const string ioLevelSeparator = "^";
         public const string plcStructSeparator = ".";
-        public const string ioSlotSeparator = "\x2";
+        public const string hwStructSeparator = "^";
         public const string attributeHide = "{attribute 'hide'}";
         public const bool exportDuplicities = false;
         public const string emptyStructure = "EMPTY_STRUCTURE";

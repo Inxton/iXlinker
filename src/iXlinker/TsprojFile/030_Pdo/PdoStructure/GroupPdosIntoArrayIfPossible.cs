@@ -149,7 +149,8 @@ namespace TsprojFile.Scan
                         ret.BoxOrderCode = member.BoxOrderCode;
                     }
                     ret.StructMembers.Add(member);
-                    ret.Id = ret.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                    //ret.Id = ret.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                    ret.Id = ret.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                     ret.SizeInBites = ret.SizeInBites + member.SizeInBites;
                     ret.SizeInBytes = ret.SizeInBytes + member.SizeInBytes;
                 }

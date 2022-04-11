@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3164_88885600" Id="{4651bb78-7267-42a8-be83-25f126c56a6d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL3164-0000-0020"}
+{attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_BDD14BAD10AI_Standard_Channel_2AT %I*AI_Standard_Channel_BDD14BAD10AI_Standard_Channel_3AT %I*AI_Standard_Channel_BDD14BAD10AI_Standard_Channel_4AT %I*AI_Standard_Channel_BDD14BAD10WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "2290636288"}
+{attribute addProperty SizeInBites "416"}
+{attribute addProperty SizeInBytes "52"}
+TYPE EL3164_88885600 :
+STRUCT
+	{attribute addProperty Name "AI_Standard_Channel_1"}
+	AI_Standard_Channel_1 : AI_Standard_Channel_BDD14BAD;
+	{attribute addProperty Name "AI_Standard_Channel_2"}
+	AI_Standard_Channel_2 : AI_Standard_Channel_BDD14BAD;
+	{attribute addProperty Name "AI_Standard_Channel_3"}
+	AI_Standard_Channel_3 : AI_Standard_Channel_BDD14BAD;
+	{attribute addProperty Name "AI_Standard_Channel_4"}
+	AI_Standard_Channel_4 : AI_Standard_Channel_BDD14BAD;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

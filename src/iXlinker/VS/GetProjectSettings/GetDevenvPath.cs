@@ -7,7 +7,7 @@ using iXlinker.Utils;
 
 namespace iXlinker.TsprojFile.Mapping
 {
-    partial class VS
+    internal partial class VS
     {
         private static string GetDevenvPath()
         {

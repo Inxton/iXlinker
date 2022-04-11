@@ -51,7 +51,8 @@ namespace TsprojFile.Scan
                         member.SizeInBites = mapableObject.SizeInBites;
                         member.SizeInBytes = mapableObject.SizeInBytes;
                         actTopologyStruct.StructMembers.Add(member);
-                        actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
+                        //actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
+                        actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                         actTopologyStruct.SizeInBites = actTopologyStruct.SizeInBites + member.SizeInBites;
                         actTopologyStruct.SizeInBytes = actTopologyStruct.SizeInBytes + member.SizeInBytes;
 
@@ -145,7 +146,8 @@ namespace TsprojFile.Scan
                         member.SizeInBites = mapableObject.SizeInBites;
                         member.SizeInBytes = mapableObject.SizeInBytes;
                         actTopologyStruct.StructMembers.Add(member);
-                        actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
+                        //actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
+                        actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                         actTopologyStruct.SizeInBites = actTopologyStruct.SizeInBites + member.SizeInBites;
                         actTopologyStruct.SizeInBytes = actTopologyStruct.SizeInBytes + member.SizeInBytes;
                     }

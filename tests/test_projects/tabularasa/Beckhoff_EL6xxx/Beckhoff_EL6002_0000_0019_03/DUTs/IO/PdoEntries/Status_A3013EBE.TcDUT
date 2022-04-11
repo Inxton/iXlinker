@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_A3013EBE" Id="{7271f08f-95bb-4df3-8990-f5b327baf60d}">
+    <Declaration><![CDATA[{attribute addProperty BoxType "EL6002-0000-0019"}
+{attribute addProperty Id "Transmit_acceptedBOOL81Receive_requestBOOL81Init_acceptedBOOL81Buffer_fullBOOL81Parity_errorBOOL81Framing_errorBOOL81Overrun_errorBOOL81Input_lengthUSINT81"}
+{attribute addProperty CRC "2734767806"}
+{attribute addProperty SizeInBites "64"}
+{attribute addProperty SizeInBytes "8"}
+TYPE Status_A3013EBE :
+STRUCT
+	{attribute addProperty Name "Transmit_accepted"}
+	Transmit_accepted : BOOL;
+	{attribute addProperty Name "Receive_request"}
+	Receive_request : BOOL;
+	{attribute addProperty Name "Init_accepted"}
+	Init_accepted : BOOL;
+	{attribute addProperty Name "Buffer_full"}
+	Buffer_full : BOOL;
+	{attribute addProperty Name "Parity_error"}
+	Parity_error : BOOL;
+	{attribute addProperty Name "Framing_error"}
+	Framing_error : BOOL;
+	{attribute addProperty Name "Overrun_error"}
+	Overrun_error : BOOL;
+	{attribute addProperty Name "Input_length"}
+	Input_length : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,8 +1,8 @@
 ﻿namespace iXlinker.TsprojFile.Mapping
 {
-    partial class VS
+    internal partial class VS
     {
-        private static bool ValidateActiveTargetPlatform(string activeTargetPlatform)
+        public static bool ValidateActiveTargetPlatform(string activeTargetPlatform)
         {
             bool valid = false;
             string[] validTargetProfiles = { "Debug", "Release" };

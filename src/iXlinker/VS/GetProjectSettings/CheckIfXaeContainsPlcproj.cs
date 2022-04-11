@@ -6,9 +6,9 @@ using TwincatXmlSchemas.TcSmProject;
 
 namespace iXlinker.TsprojFile.Mapping
 {
-    partial class VS
+    internal partial class VS
     {
-        private static bool CheckIfXaeContainsPlcproj(string tsProjFilePath, string plcProjFilePath)
+        internal static bool CheckIfXaeContainsPlcproj(string tsProjFilePath, string plcProjFilePath)
         {
             bool ret = false;
 

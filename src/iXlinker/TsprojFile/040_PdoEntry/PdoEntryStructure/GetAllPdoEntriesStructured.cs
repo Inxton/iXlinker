@@ -130,7 +130,8 @@ namespace TsprojFile.Scan
                                     actPdoEntryStruct.StructMembers.Add(member);
                                     if (!PdoEntryIsHidden(pdoEntryAttributes))
                                     {
-                                        actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                        //actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                        actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                                     }
                                     actPdoEntryStruct.SizeInBites = actPdoEntryStruct.SizeInBites + member.SizeInBites;
                                     actPdoEntryStruct.SizeInBytes = actPdoEntryStruct.SizeInBytes + member.SizeInBytes;
@@ -168,7 +169,8 @@ namespace TsprojFile.Scan
                                 actPdoEntryStruct.StructMembers.Add(member);
                                 if (!PdoEntryIsHidden(pdoEntryAttributes))
                                 {
-                                    actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                    //actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                    actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                                 }
                                 actPdoEntryStruct.SizeInBites = actPdoEntryStruct.SizeInBites + member.SizeInBites;
                                 actPdoEntryStruct.SizeInBytes = actPdoEntryStruct.SizeInBytes + member.SizeInBytes;
@@ -206,7 +208,8 @@ namespace TsprojFile.Scan
                             actPdoEntryStruct.StructMembers.Add(member);
                             if (!PdoEntryIsHidden(pdoEntryAttributes))
                             {
-                                actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                //actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                             }
                             actPdoEntryStruct.SizeInBites = actPdoEntryStruct.SizeInBites + member.SizeInBites;
                             actPdoEntryStruct.SizeInBytes = actPdoEntryStruct.SizeInBytes + member.SizeInBytes;

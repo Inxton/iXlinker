@@ -199,5 +199,23 @@
                 }
             }
         }
+
+        private MappableObject mapableObject;
+        public MappableObject MapableObject
+        {
+            get
+            {
+                return this.mapableObject ?? (this.mapableObject = new MappableObject());
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.mapableObject = value;
+                    NotifyPropertyChanged(nameof(MapableObject));
+                }
+            }
+        }
+
     }
 }

@@ -32,6 +32,20 @@ namespace iXlinkerDtos
             }
         }
 
+        private string nameUnmodified;
+        public string NameUnmodified
+        {
+            get { return this.nameUnmodified; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.nameUnmodified = value;
+                    NotifyPropertyChanged(nameof(NameUnmodified));
+                }
+            }
+        }
+
         private string type_value;
         public string Type_Value
         {
@@ -131,6 +145,20 @@ namespace iXlinkerDtos
             {
                 this.subIndexNumber = value;
                 NotifyPropertyChanged(nameof(SubIndexNumber));
+            }
+        }
+
+        private string inOut = "";
+        public string InOut
+        {
+            get { return this.inOut; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.inOut = value;
+                    NotifyPropertyChanged(nameof(InOut));
+                }
             }
         }
 

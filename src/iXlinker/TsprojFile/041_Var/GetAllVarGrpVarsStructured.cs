@@ -110,7 +110,8 @@ namespace TsprojFile.Scan
                                 member.SizeInBytes = PlcBaseTypes.GetSizeInBytes(baseType);
                                 member.SubIndexNumber = varUnstructured.SubIndexNumber;
                                 actVarStruct.StructMembers.Add(member);
-                                actVarStruct.Id = actVarStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                //actVarStruct.Id = actVarStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                actVarStruct.Id = actVarStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                                 actVarStruct.SizeInBites = actVarStruct.SizeInBites + member.SizeInBites;
                                 actVarStruct.SizeInBytes = actVarStruct.SizeInBytes + member.SizeInBytes;
                             }
@@ -125,7 +126,8 @@ namespace TsprojFile.Scan
                             member.SizeInBytes = PlcBaseTypes.GetSizeInBytes(baseType);
                             member.SubIndexNumber = varUnstructured.SubIndexNumber;
                             actVarStruct.StructMembers.Add(member);
-                            actVarStruct.Id = actVarStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                            //actVarStruct.Id = actVarStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                            actVarStruct.Id = actVarStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                             actVarStruct.SizeInBites = actVarStruct.SizeInBites + member.SizeInBites;
                             actVarStruct.SizeInBytes = actVarStruct.SizeInBytes + member.SizeInBytes;
                         }
@@ -140,7 +142,8 @@ namespace TsprojFile.Scan
                         member.SizeInBytes = PlcBaseTypes.GetSizeInBytes(varUnstructured.Type_Value);
                         member.SubIndexNumber = varUnstructured.SubIndexNumber;
                         actVarStruct.StructMembers.Add(member);
-                        actVarStruct.Id = actVarStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                        //actVarStruct.Id = actVarStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                        actVarStruct.Id = actVarStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                         actVarStruct.SizeInBites = actVarStruct.SizeInBites + member.SizeInBites;
                         actVarStruct.SizeInBytes = actVarStruct.SizeInBytes + member.SizeInBytes;
                     }

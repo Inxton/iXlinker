@@ -12,9 +12,9 @@ namespace TsprojFile.Scan
         private MappableObject GetAllPdoEntriesAsOneStructure(PdoViewModel pdoViewModel, ObservableCollection<PdoEntryViewModel> pdoEntries)
         {
             string pdoViewModelName = pdoViewModel.Name;
-            if (pdoViewModelName.Contains(ioSlotSeparator))
+            if (pdoViewModelName.Contains(tmpSlotSeparator))
             {
-                pdoViewModelName = pdoViewModelName.Substring(pdoViewModelName.LastIndexOf(ioSlotSeparator, StringComparison.Ordinal) + 1);
+                pdoViewModelName = pdoViewModelName.Substring(pdoViewModelName.LastIndexOf(tmpSlotSeparator, StringComparison.Ordinal) + 1);
             }
             PdoStructViewModel actPdoStruct = new PdoStructViewModel() { Prefix = ValidatePlcItem.StructurePrefix(pdoViewModelName), Id = "", BoxOrderCode = pdoViewModel.BoxOrderCode };
             MappableObject mapableObject = new MappableObject();
@@ -53,11 +53,13 @@ namespace TsprojFile.Scan
                     actPdoStruct.StructMembers.Add(member);
                     if (pdoEntries.Count > 1) 
                     {
-                        actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                        //actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                        actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                     }
                     else
                     {
-                        actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes;
+                        //actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes;
+                        actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                     }
                     actPdoStruct.SizeInBites = actPdoStruct.SizeInBites + member.SizeInBites;
                     actPdoStruct.SizeInBytes = actPdoStruct.SizeInBytes + member.SizeInBytes;

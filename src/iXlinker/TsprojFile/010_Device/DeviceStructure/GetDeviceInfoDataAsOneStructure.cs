@@ -125,8 +125,9 @@ namespace TsprojFile.Scan
                 member.SubIndex = pdoEntry.SubIndex;
                 member.SubIndexNumber = pdoEntry.SubIndexNumber;
                 actPdoStruct.StructMembers.Add(member);
-                actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
-                actPdoStruct.SizeInBites = actPdoStruct.SizeInBites + member.SizeInBites;
+                //actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
+                actPdoStruct.SizeInBites = actPdoStruct.SizeInBites + member.SizeInBites; actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
                 actPdoStruct.SizeInBytes = actPdoStruct.SizeInBytes + member.SizeInBytes;
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");

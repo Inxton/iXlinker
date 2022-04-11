@@ -40,7 +40,8 @@ namespace TsprojFile.Scan
                 member.Index = pdo.Index;
                 member.IndexNumber = pdo.IndexNumber;
                 actBoxStruct.StructMembers.Add(member);
-                actBoxStruct.Id = actBoxStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
+                //actBoxStruct.Id = actBoxStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
+                actBoxStruct.Id = actBoxStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
                 actBoxStruct.SizeInBites = actBoxStruct.SizeInBites + member.SizeInBites;
                 actBoxStruct.SizeInBytes = actBoxStruct.SizeInBytes + member.SizeInBytes;
 
