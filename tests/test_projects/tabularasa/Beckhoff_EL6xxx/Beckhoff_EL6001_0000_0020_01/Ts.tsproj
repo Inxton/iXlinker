@@ -2,56 +2,70 @@
 <TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.22">
   <DataTypes>
     <DataType>
-      <Name GUID="{B09613FD-8359-8102-713A-ECFAFB581F05}" AutoDeleteType="true">Status_EBD4BD79</Name>
+      <Name GUID="{40C24555-DEF2-9415-2EF6-B9438A4D2B02}" AutoDeleteType="true">Status_3D84275F</Name>
       <BitSize>64</BitSize>
       <SubItem>
-        <Name>Underrange</Name>
+        <Name>Transmit_accepted</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
         <BitSize>8</BitSize>
         <BitOffs>0</BitOffs>
       </SubItem>
       <SubItem>
-        <Name>Overrange</Name>
+        <Name>Receive_request</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
         <BitSize>8</BitSize>
         <BitOffs>8</BitOffs>
       </SubItem>
       <SubItem>
-        <Name>Limit_1</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+        <Name>Init_accepted</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
         <BitSize>8</BitSize>
         <BitOffs>16</BitOffs>
       </SubItem>
       <SubItem>
-        <Name>Limit_2</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+        <Name>Buffer_full</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
         <BitSize>8</BitSize>
         <BitOffs>24</BitOffs>
       </SubItem>
       <SubItem>
-        <Name>Error</Name>
+        <Name>Parity_error</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
         <BitSize>8</BitSize>
         <BitOffs>32</BitOffs>
       </SubItem>
       <SubItem>
-        <Name>Sync_error</Name>
+        <Name>Framing_error</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
         <BitSize>8</BitSize>
         <BitOffs>40</BitOffs>
       </SubItem>
       <SubItem>
-        <Name>TxPDO_State</Name>
+        <Name>Overrun_error</Name>
         <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
         <BitSize>8</BitSize>
         <BitOffs>48</BitOffs>
       </SubItem>
       <SubItem>
-        <Name>TxPDO_Toggle</Name>
-        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <Name>Input_length</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
         <BitSize>8</BitSize>
         <BitOffs>56</BitOffs>
       </SubItem>
+      <Properties>
+        <Property>
+          <Name>GeneratedUsingTerminal: EL6001-0000-0020</Name>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name GUID="{CB182E9B-438F-9DEC-C42C-37428084161D}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..21] OF USINT</Name>
+      <BitSize>176</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000002}">USINT</BaseType>
+      <ArrayInfo>
+        <LBound>0</LBound>
+        <Elements>22</Elements>
+      </ArrayInfo>
     </DataType>
     <DataType>
       <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -108,6 +122,45 @@
       </Format>
     </DataType>
     <DataType>
+      <Name GUID="{2341A65B-C461-99F9-C919-25ED25ED75D9}" AutoDeleteType="true">Ctrl_71604E86</Name>
+      <BitSize>40</BitSize>
+      <SubItem>
+        <Name>Transmit_request</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Receive_accepted</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>8</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Init_request</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>16</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Send_continues</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>24</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Output_length</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000002}">USINT</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>GeneratedUsingTerminal: EL6001-0000-0020</Name>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
       <Name GUID="{18071995-0000-0000-0000-002000000001}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..0] OF BIT</Name>
       <BitSize>1</BitSize>
       <BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
@@ -117,7 +170,7 @@
       </ArrayInfo>
     </DataType>
     <DataType>
-      <Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
+      <Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
       <BitSize>4</BitSize>
       <BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
       <ArrayInfo>
@@ -150,51 +203,27 @@
               <Type>UINT</Type>
             </Var>
             <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status</Name>
-              <Type GUID="{B09613FD-8359-8102-713A-ECFAFB581F05}">Status_EBD4BD79</Type>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL6001.COM_Inputs.Status</Name>
+              <Type GUID="{40C24555-DEF2-9415-2EF6-B9438A4D2B02}">Status_3D84275F</Type>
             </Var>
             <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Value</Name>
-              <Type>INT</Type>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL6001.COM_Inputs.Data_In</Name>
+              <Type GUID="{CB182E9B-438F-9DEC-C42C-37428084161D}">ARRAY [0..21] OF USINT</Type>
             </Var>
             <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status</Name>
-              <Type GUID="{B09613FD-8359-8102-713A-ECFAFB581F05}">Status_EBD4BD79</Type>
-            </Var>
-            <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Value</Name>
-              <Type>INT</Type>
-            </Var>
-            <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status</Name>
-              <Type GUID="{B09613FD-8359-8102-713A-ECFAFB581F05}">Status_EBD4BD79</Type>
-            </Var>
-            <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Value</Name>
-              <Type>INT</Type>
-            </Var>
-            <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status</Name>
-              <Type GUID="{B09613FD-8359-8102-713A-ECFAFB581F05}">Status_EBD4BD79</Type>
-            </Var>
-            <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Value</Name>
-              <Type>INT</Type>
-            </Var>
-            <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.WcState.WcState</Name>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL6001.WcState.WcState</Name>
               <Type>BOOL</Type>
             </Var>
             <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.WcState.InputToggle</Name>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL6001.WcState.InputToggle</Name>
               <Type>BOOL</Type>
             </Var>
             <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.InfoData.AdsAddr</Name>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL6001.InfoData.AdsAddr</Name>
               <Type GUID="{18071995-0000-0000-0000-000000000042}">AMSADDR</Type>
             </Var>
             <Var>
-              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.InfoData.State</Name>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL6001.InfoData.State</Name>
               <Type>UINT</Type>
             </Var>
             <Var>
@@ -276,6 +305,14 @@
           </Vars>
           <Vars VarGrpType="2">
             <Name>PlcTask Outputs</Name>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL6001.COM_Outputs.Ctrl</Name>
+              <Type GUID="{2341A65B-C461-99F9-C919-25ED25ED75D9}">Ctrl_71604E86</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL6001.COM_Outputs.Data_Out</Name>
+              <Type GUID="{CB182E9B-438F-9DEC-C42C-37428084161D}">ARRAY [0..21] OF USINT</Type>
+            </Var>
             <Var>
               <Name>GVL_iXlinker.Device_1_EtherCAT.Outputs.DevCtrl</Name>
               <Type>UINT</Type>

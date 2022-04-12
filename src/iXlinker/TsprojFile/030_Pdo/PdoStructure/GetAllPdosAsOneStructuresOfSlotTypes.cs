@@ -64,21 +64,16 @@ namespace TsprojFile.Scan
                     member.BoxOrderCode = pdo.BoxOrderCode;
                     member.Type_Value = typeValue;
                     member.TypeNamespace = pdo.TypeNamespace;
-                    //member.InOutPlcProj = pdo.InOutPlcProj;
-                    //member.InOutMappings = pdo.InOutMappings;
                     member.OwnerBname = pdo.OwnerBname;
-                    member.SizeInBites = pdo.SizeInBites;
-                    member.SizeInBytes = pdo.SizeInBytes;
+                    member.Size = pdo.Size;
                     member.Index = pdo.Index;
                     member.IndexNumber = pdo.IndexNumber;
 
                     PdoStructViewModel actStruct = new PdoStructViewModel() { Prefix = ValidatePlcItem.Name(slotName) };
                     int slotIndex = slotStructs.FindIndex(info => info.Prefix == actStruct.Prefix);
                     slotStructs[slotIndex].StructMembers.Add(member);
-                    //slotStructs[slotIndex].Id = slotStructs[slotIndex].Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
-                    slotStructs[slotIndex].Id = slotStructs[slotIndex].Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
-                    slotStructs[slotIndex].SizeInBites = slotStructs[slotIndex].SizeInBites + member.SizeInBites;
-                    slotStructs[slotIndex].SizeInBytes = slotStructs[slotIndex].SizeInBytes + member.SizeInBytes;
+                    slotStructs[slotIndex].Id = slotStructs[slotIndex].Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                    slotStructs[slotIndex].Size = slotStructs[slotIndex].Size + member.Size;
 
                     foreach (PdoEntryViewModel pdoEntry in pdo.PdoEntriesUnstructured)
                     {
@@ -124,15 +119,13 @@ namespace TsprojFile.Scan
                     pdoViewModels[i].InOutPlcProj = firstStructMember.InOutPlcProj;
                     pdoViewModels[i].InOutMappings = firstStructMember.InOutMappings;
                     pdoViewModels[i].BoxOrderCode = firstStructMember.BoxOrderCode;
-                    pdoViewModels[i].SizeInBites = actSlotStruct.SizeInBites;
-                    pdoViewModels[i].SizeInBytes = actSlotStruct.SizeInBytes;
+                    pdoViewModels[i].Size = actSlotStruct.Size;
 
                     mapableObjects[i].Name = ValidatePlcItem.Name(boxViewModel.Name);
                     mapableObjects[i].Type_Value =ValidatePlcItem.Type(actSlotStruct.Name);
                     mapableObjects[i].TypeNamespace =actSlotStruct.TypeNamespace;
 
-                    mapableObjects[i].SizeInBites = actSlotStruct.SizeInBites;
-                    mapableObjects[i].SizeInBytes = actSlotStruct.SizeInBytes;
+                    mapableObjects[i].Size = actSlotStruct.Size;
 
                     pdoViewModels[i].MapableObject = mapableObjects[i];
                 }

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="InfoData_32EB74EA" Id="{8a1639ef-b60c-40ee-a33a-923df00758ff}">
-    <Declaration><![CDATA[{attribute addProperty BoxType "EL6001-0000-0020"}
+  <DUT Name="InfoData_32EB74EA" Id="{51859ad3-d6fe-45b4-844c-d99d58753f89}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
+{attribute addProperty BoxType "EL6001-0000-0020"}
 {attribute addProperty Id "AdsAddrAT %I*AMSADDR8StateAT %I*UINT2"}
 {attribute addProperty CRC "854291690"}
-{attribute addProperty SizeInBites "80"}
-{attribute addProperty SizeInBytes "10"}
+{attribute addProperty Size "10"}
 TYPE InfoData_32EB74EA :
 STRUCT
 	{attribute addProperty Name "AdsAddr"}

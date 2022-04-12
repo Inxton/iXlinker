@@ -29,15 +29,12 @@ namespace TsprojFile.Scan
                 member.InOutPlcProj = pdo.InOutPlcProj;
                 member.InOutMappings = pdo.InOutMappings;
                 member.OwnerBname = pdo.OwnerBname;
-                member.SizeInBites = pdo.SizeInBites;
-                member.SizeInBytes = pdo.SizeInBytes;
+                member.Size = pdo.Size;
                 member.Index = pdo.Index;
                 member.IndexNumber = pdo.IndexNumber;
                 actDevStruct.StructMembers.Add(member);
-                //actDevStruct.Id = actDevStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
-                actDevStruct.Id = actDevStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
-                actDevStruct.SizeInBites = actDevStruct.SizeInBites + member.SizeInBites;
-                actDevStruct.SizeInBytes = actDevStruct.SizeInBytes + member.SizeInBytes;
+                actDevStruct.Id = actDevStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                actDevStruct.Size = actDevStruct.Size + member.Size;
 
                 foreach (PdoEntryViewModel pdoEntry in pdo.PdoEntriesStructured)
                 {
@@ -66,14 +63,12 @@ namespace TsprojFile.Scan
                 SyncUnitTask.InOutPlcProj = firstStructMember.InOutPlcProj;
                 SyncUnitTask.InOutMappings = firstStructMember.InOutMappings;
                 SyncUnitTask.BoxOrderCode = firstStructMember.BoxOrderCode;
-                SyncUnitTask.SizeInBites = actDevStruct.SizeInBites;
-                SyncUnitTask.SizeInBytes = actDevStruct.SizeInBytes;
+                SyncUnitTask.Size = actDevStruct.Size;
 
                 mapableObject.Name = ValidatePlcItem.Name(actDevStruct.Prefix);
                 mapableObject.Type_Value = ValidatePlcItem.Type(actDevStruct.Name);
                 mapableObject.TypeNamespace = actDevStruct.TypeNamespace;
-                mapableObject.SizeInBites = actDevStruct.SizeInBites;
-                mapableObject.SizeInBytes = actDevStruct.SizeInBytes;
+                mapableObject.Size = actDevStruct.Size;
 
                 SyncUnitTask.MapableObject = mapableObject;
             }

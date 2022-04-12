@@ -78,8 +78,7 @@ namespace TsprojFile.Scan
                             pdoViewModel.InOutMappings = "Inputs";
                         }
                         member.OwnerBname = pdoEntryUnstructured.OwnerBname;
-                        member.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryUnstructured.Type_Value);
-                        member.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryUnstructured.Type_Value);
+                        member.Size = PlcBaseTypes.GetSize(pdoEntryUnstructured.Type_Value);
                         member.Index = pdoEntryUnstructured.Index;
                         member.IndexNumber = pdoEntryUnstructured.IndexNumber;
                         member.SubIndex = pdoEntryUnstructured.SubIndex;
@@ -101,7 +100,7 @@ namespace TsprojFile.Scan
                             if (IsArrayOfPdoEntryStructureItem(actPdoEntryStruct, out int lowIndex, out int highIndex, out string typeValue, out string typeNamespace))
                             {
                                 PdoEntryStructMemberViewModel firstStructMember = actPdoEntryStruct.StructMembers.FirstOrDefault();
-                                PdoEntryViewModel pdoEntryArray = new PdoEntryViewModel() { Name = pdoEntryName, Type_Value = "ARRAY [0.." + (highIndex - lowIndex).ToString() + "] OF " + ValidatePlcItem.NameIncludingNamespace(typeNamespace, typeValue), OwnerBname = actPdoEntryStruct.StructMembers.FirstOrDefault().OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, SizeInBites = actPdoEntryStruct.SizeInBites, SizeInBytes = actPdoEntryStruct.SizeInBytes };
+                                PdoEntryViewModel pdoEntryArray = new PdoEntryViewModel() { Name = pdoEntryName, Type_Value = "ARRAY [0.." + (highIndex - lowIndex).ToString() + "] OF " + ValidatePlcItem.NameIncludingNamespace(typeNamespace, typeValue), OwnerBname = actPdoEntryStruct.StructMembers.FirstOrDefault().OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, Size = actPdoEntryStruct.Size };
                                 pdoEntryArray = CreateMappingsForThePdoEntriesOfArrayType(pdoEntryArray, actPdoEntryStruct);
                                 pdoEntriesStructured.Add(pdoEntryArray);
                                 //delete actPdoEntryStruct
@@ -112,11 +111,10 @@ namespace TsprojFile.Scan
                             {
                                 SavePdoEntryStructure(ref actPdoEntryStruct);
                                 PdoEntryStructMemberViewModel firstStructMember = actPdoEntryStruct.StructMembers.FirstOrDefault();
-                                PdoEntryViewModel pdoEntryStructured = new PdoEntryViewModel() { Name = pdoEntryName, TypeNamespace = actPdoEntryStruct.TypeNamespace, Type_Value = actPdoEntryStruct.Name, OwnerBname = pdoEntryUnstructured.OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, SizeInBites = actPdoEntryStruct.SizeInBites, SizeInBytes = actPdoEntryStruct.SizeInBytes };
+                                PdoEntryViewModel pdoEntryStructured = new PdoEntryViewModel() { Name = pdoEntryName, TypeNamespace = actPdoEntryStruct.TypeNamespace, Type_Value = actPdoEntryStruct.Name, OwnerBname = pdoEntryUnstructured.OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, Size = actPdoEntryStruct.Size };
                                 pdoEntryStructured.MapableObject = CreateMappingsForThePdoEntriesStructured(pdoEntryStructured, actPdoEntryStruct);
                                 //add to the return value list
-                                pdoEntryStructured.SizeInBites = actPdoEntryStruct.SizeInBites;
-                                pdoEntryStructured.SizeInBytes = actPdoEntryStruct.SizeInBytes;
+                                pdoEntryStructured.Size = actPdoEntryStruct.Size;
                                 pdoEntriesStructured.Add(pdoEntryStructured);
                                 //delete actPdoEntryStruct
                                 actPdoEntryStruct = null;
@@ -132,15 +130,13 @@ namespace TsprojFile.Scan
                             pdoEntryUnstructured.Name = ValidatePlcItem.Name(pdoEntryUnstructured.Name);
                             pdoEntryUnstructured.Type_Value = ValidatePlcItem.Type(pdoEntryUnstructured.Type_Value);
                             pdoEntryUnstructured.TypeNamespace = pdoEntryUnstructured.TypeNamespace;
-                            pdoEntryUnstructured.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryUnstructured.Type_Value);
-                            pdoEntryUnstructured.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryUnstructured.Type_Value);
+                            pdoEntryUnstructured.Size = PlcBaseTypes.GetSize(pdoEntryUnstructured.Type_Value);
                             pdoEntryUnstructured.MapableObject = new MappableObject() 
                             {
                                 Name = pdoViewModel.Name, 
                                 Type_Value = pdoEntryUnstructured.Type_Value , 
                                 TypeNamespace = pdoEntryUnstructured.TypeNamespace,
-                                SizeInBites = pdoEntryUnstructured.SizeInBites,
-                                SizeInBytes = pdoEntryUnstructured.SizeInBytes,
+                                Size = pdoEntryUnstructured.Size,
                                 MapableItems = new ObservableCollection<MappableItem>() 
                                 { 
                                     new MappableItem() 

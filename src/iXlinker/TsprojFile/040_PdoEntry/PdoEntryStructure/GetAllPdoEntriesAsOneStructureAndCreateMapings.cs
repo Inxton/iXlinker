@@ -44,25 +44,14 @@ namespace TsprojFile.Scan
                         pdoViewModel.InOutMappings = "Inputs";
                     }
                     member.OwnerBname = pdoEntry.OwnerBname;
-                    member.SizeInBites = pdoEntry.SizeInBites;
-                    member.SizeInBytes = pdoEntry.SizeInBytes;
+                    member.Size = pdoEntry.Size;
                     member.Index = pdoEntry.Index;
                     member.IndexNumber = pdoEntry.IndexNumber;
                     member.SubIndex = pdoEntry.SubIndex;
                     member.SubIndexNumber = pdoEntry.SubIndexNumber;
                     actPdoStruct.StructMembers.Add(member);
-                    if (pdoEntries.Count > 1) 
-                    {
-                        //actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
-                        actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
-                    }
-                    else
-                    {
-                        //actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes;
-                        actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
-                    }
-                    actPdoStruct.SizeInBites = actPdoStruct.SizeInBites + member.SizeInBites;
-                    actPdoStruct.SizeInBytes = actPdoStruct.SizeInBytes + member.SizeInBytes;
+                    actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                    actPdoStruct.Size = actPdoStruct.Size + member.Size;
 
                     foreach (MappableItem mapableItem in pdoEntry.MapableObject.MapableItems)
                     {
@@ -94,11 +83,9 @@ namespace TsprojFile.Scan
             mapableObject.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
             mapableObject.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);
             mapableObject.TypeNamespace = actPdoStruct.TypeNamespace;
-            mapableObject.SizeInBites = actPdoStruct.SizeInBites;
-            mapableObject.SizeInBytes = actPdoStruct.SizeInBytes;
+            mapableObject.Size = actPdoStruct.Size;
 
-            pdoViewModel.SizeInBites = actPdoStruct.SizeInBites;
-            pdoViewModel.SizeInBytes = actPdoStruct.SizeInBytes;
+            pdoViewModel.Size = actPdoStruct.Size;
             pdoViewModel.Type_Value = actPdoStruct.Name;
             pdoViewModel.TypeNamespace = actPdoStruct.TypeNamespace;
 

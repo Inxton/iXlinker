@@ -157,8 +157,7 @@ namespace TsprojFile.Scan
                 pdoEntryViewModel.InOut = pdoViewModel.InOut;
                 pdoEntryViewModel.Type_GUID = pdoEntryType_GUID;
                 pdoEntryViewModel.Type_Value = pdoEntryType_Value;
-                pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                 pdoEntryViewModel.OwnerBname = pdoOwnerBname;
                 pdoEntryViewModel.VarB = pdoEntryVarB;
                 pdoEntryViewModel.VarA = pdoEntryVarA;

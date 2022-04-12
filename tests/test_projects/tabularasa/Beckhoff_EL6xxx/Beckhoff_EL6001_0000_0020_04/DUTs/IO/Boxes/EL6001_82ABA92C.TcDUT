@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6001_82ABA92C" Id="{701d0622-3c49-4910-ab69-09c3daba01a2}">
-    <Declaration><![CDATA[{attribute addProperty BoxType "EL6001-0000-0020"}
+  <DUT Name="EL6001_82ABA92C" Id="{c87d0723-c4f8-489a-8dc8-dd2943ab148a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
+{attribute addProperty BoxType "EL6001-0000-0020"}
 {attribute addProperty Id "InputsAT %I*Inputs_E5D489814OutputsAT %Q*Outputs_1EA344054WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2192288044"}
-{attribute addProperty SizeInBites "160"}
-{attribute addProperty SizeInBytes "20"}
+{attribute addProperty Size "20"}
 TYPE EL6001_82ABA92C :
 STRUCT
 	{attribute addProperty Name "Inputs"}

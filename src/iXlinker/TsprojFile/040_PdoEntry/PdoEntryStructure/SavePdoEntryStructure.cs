@@ -10,8 +10,7 @@ namespace TsprojFile.Scan
         private void SavePdoEntryStructure(ref PdoEntryStructViewModel actPdoEntryStruct)
         {
             string Id = "";
-            uint sizeInBites = 0;
-            double sizeInBytes = 0;
+            double size = 0;
 
             foreach (PdoEntryStructMemberViewModel member in actPdoEntryStruct.StructMembers)
             {
@@ -19,13 +18,11 @@ namespace TsprojFile.Scan
                 List<string> memberAttributes = new List<string>();
                 memberAttributes.Add("{attribute addProperty Name \"" + member.Name + "\"}");
                 member.Attributes = memberAttributes;
-                Id = Id + member.Name + member.TypeNamespace + member.Type_Value + member.SizeInBites + member.SizeInBytes;
-                sizeInBites = sizeInBites + member.SizeInBites;
-                sizeInBytes = sizeInBytes + member.SizeInBytes;
+                Id = Id + member.Name + member.TypeNamespace + member.Type_Value + member.Size;
+                size = size + member.Size;
             }
             actPdoEntryStruct.Id = Id;
-            actPdoEntryStruct.SizeInBites = sizeInBites;
-            actPdoEntryStruct.SizeInBytes = sizeInBytes;
+            actPdoEntryStruct.Size = size;
             actPdoEntryStruct.Crc32 = CRC32.Calculate_CRC32(Id);
             actPdoEntryStruct.Name = actPdoEntryStruct.Prefix + "_" + actPdoEntryStruct.Crc32.ToString("X8");
 

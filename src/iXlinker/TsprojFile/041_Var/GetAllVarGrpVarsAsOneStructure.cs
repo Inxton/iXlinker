@@ -43,17 +43,14 @@ namespace TsprojFile.Scan
                     pdoViewModel.InOutMappings = "Inputs";
                 }
                 member.OwnerBname = _var.OwnerBname;
-                member.SizeInBites = _var.SizeInBites;
-                member.SizeInBytes = _var.SizeInBytes;
+                member.Size = _var.Size;
                 member.Index = _var.Index;
                 member.IndexNumber = _var.IndexNumber;
                 member.SubIndex = _var.SubIndex;
                 member.SubIndexNumber = _var.SubIndexNumber;
                 actVarGrpStruct.StructMembers.Add(member);
-                //actVarGrpStruct.Id = actVarGrpStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
-                actVarGrpStruct.Id = actVarGrpStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
-                actVarGrpStruct.SizeInBites = actVarGrpStruct.SizeInBites + member.SizeInBites;
-                actVarGrpStruct.SizeInBytes = actVarGrpStruct.SizeInBytes + member.SizeInBytes;
+                actVarGrpStruct.Id = actVarGrpStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                actVarGrpStruct.Size = actVarGrpStruct.Size + member.Size;
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
                 MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = _var.VarA, VarB = _var.VarB };
@@ -76,11 +73,9 @@ namespace TsprojFile.Scan
             mapableObject.Name = ValidatePlcItem.Name(actVarGrpStruct.Prefix);
             mapableObject.Type_Value = ValidatePlcItem.Type(actVarGrpStruct.Name);
             mapableObject.TypeNamespace = actVarGrpStruct.TypeNamespace;
-            mapableObject.SizeInBites = actVarGrpStruct.SizeInBites;
-            mapableObject.SizeInBytes = actVarGrpStruct.SizeInBytes;
+            mapableObject.Size = actVarGrpStruct.Size;
 
-            pdoViewModel.SizeInBites = actVarGrpStruct.SizeInBites;
-            pdoViewModel.SizeInBytes = actVarGrpStruct.SizeInBytes;
+            pdoViewModel.Size = actVarGrpStruct.Size;
             pdoViewModel.Type_Value = actVarGrpStruct.Name;
             pdoViewModel.TypeNamespace = actVarGrpStruct.TypeNamespace;
 

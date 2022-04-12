@@ -105,8 +105,7 @@ namespace TsprojFile.Scan
                             arrayMember.InOutPlcProj = sMembersIn[i].InOutPlcProj;
                             arrayMember.InOutMappings = sMembersIn[i].InOutMappings;
                             arrayMember.OwnerBname = sMembersIn[i].OwnerBname;
-                            arrayMember.SizeInBites = sMembersIn[i].SizeInBites * (uint)arrayDimension;
-                            arrayMember.SizeInBytes = sMembersIn[i].SizeInBytes * arrayDimension;
+                            arrayMember.Size = sMembersIn[i].Size * arrayDimension;
                             arrayMember.Index = sMembersIn[i].Index;
                             arrayMember.IndexNumber = sMembersIn[i].IndexNumber;
                             sMembersOut.Add(arrayMember);
@@ -157,10 +156,8 @@ namespace TsprojFile.Scan
                         ret.BoxOrderCode = member.BoxOrderCode;
                     }
                     ret.StructMembers.Add(member);
-                    //ret.Id = ret.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
-                    ret.Id = ret.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
-                    ret.SizeInBites = ret.SizeInBites + member.SizeInBites;
-                    ret.SizeInBytes = ret.SizeInBytes + member.SizeInBytes;
+                    ret.Id = ret.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                    ret.Size = ret.Size + member.Size;
                 }
 
                 ret.Crc32 = CRC32.Calculate_CRC32(ret.Id);

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="WcState_9091E0EB" Id="{1917cd0e-c655-41f1-8d6f-24d61a6fb28f}">
-    <Declaration><![CDATA[{attribute addProperty BoxType "EL6001-0000-0020"}
+  <DUT Name="WcState_9091E0EB" Id="{21bd35a5-8088-4422-ba67-219570924379}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
+{attribute addProperty BoxType "EL6001-0000-0020"}
 {attribute addProperty Id "WcStateAT %I*BOOL1InputToggleAT %I*BOOL1"}
 {attribute addProperty CRC "2425479403"}
-{attribute addProperty SizeInBites "16"}
-{attribute addProperty SizeInBytes "2"}
+{attribute addProperty Size "2"}
 TYPE WcState_9091E0EB :
 STRUCT
 	{attribute addProperty Name "WcState"}

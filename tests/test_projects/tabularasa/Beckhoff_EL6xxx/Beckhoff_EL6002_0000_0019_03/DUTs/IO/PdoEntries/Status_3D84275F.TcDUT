@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Status_A3013EBE" Id="{3f994932-7bdf-4080-9c84-41d2b2086785}">
-    <Declaration><![CDATA[{attribute addProperty BoxType "EL6001-0000-0020"}
-{attribute addProperty Id "Transmit_acceptedBOOL81Receive_requestBOOL81Init_acceptedBOOL81Buffer_fullBOOL81Parity_errorBOOL81Framing_errorBOOL81Overrun_errorBOOL81Input_lengthUSINT81"}
-{attribute addProperty CRC "2734767806"}
-{attribute addProperty SizeInBites "64"}
-{attribute addProperty SizeInBytes "8"}
-TYPE Status_A3013EBE :
+  <DUT Name="Status_3D84275F" Id="{2009e645-d5e1-4b94-b55e-8c86d28d8cc0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6002-0000-0019'}
+{attribute addProperty BoxType "EL6002-0000-0019"}
+{attribute addProperty Id "Transmit_acceptedBOOL1Receive_requestBOOL1Init_acceptedBOOL1Buffer_fullBOOL1Parity_errorBOOL1Framing_errorBOOL1Overrun_errorBOOL1Input_lengthUSINT1"}
+{attribute addProperty CRC "1032071007"}
+{attribute addProperty Size "8"}
+TYPE Status_3D84275F :
 STRUCT
 	{attribute addProperty Name "Transmit_accepted"}
 	Transmit_accepted : BOOL;

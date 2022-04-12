@@ -14,27 +14,22 @@ namespace TsprojFile.Scan
             ObservableCollection<PdoEntryViewModel> InputEntries = new ObservableCollection<PdoEntryViewModel>();
 
             PdoEntryViewModel pdo = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "SlaveCount" , VarB = "Inputs" + tmpLevelSeparator + "SlaveCount", VarA = "Inputs" + tmpLevelSeparator + "SlaveCount", Type_Value = "UINT", InOut = "0" };
-            pdo.SizeInBites = PlcBaseTypes.GetSizeInBites(pdo.Type_Value);
-            pdo.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdo.Type_Value);
+            pdo.Size = PlcBaseTypes.GetSize(pdo.Type_Value);
             InputEntries.Add(pdo);
             pdo = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "DevState", VarB = "Inputs" + tmpLevelSeparator + "DevState", VarA = "Inputs" + tmpLevelSeparator + "DevState", Type_Value = "UINT", InOut = "0" };
-            pdo.SizeInBites = PlcBaseTypes.GetSizeInBites(pdo.Type_Value);
-            pdo.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdo.Type_Value);
+            pdo.Size = PlcBaseTypes.GetSize(pdo.Type_Value);
             InputEntries.Add(pdo);
 
             for (int i = 0; i <= frames; i++)
             {
                 pdo = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "Frm" + i.ToString() + "State" , VarB = "Inputs" + tmpLevelSeparator + "Frm" + i.ToString() + "State", VarA = "Inputs" + tmpLevelSeparator + "Frm" + i.ToString() + "State", Type_Value = "UINT", InOut = "0" };
-                pdo.SizeInBites = PlcBaseTypes.GetSizeInBites(pdo.Type_Value);
-                pdo.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdo.Type_Value);
+                pdo.Size = PlcBaseTypes.GetSize(pdo.Type_Value);
                 InputEntries.Add(pdo);
                 pdo = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "Frm" + i.ToString() + "WcState", VarB = "Inputs" + tmpLevelSeparator + "Frm" + i.ToString() + "WcState", VarA = "Inputs" + tmpLevelSeparator + "Frm" + i.ToString() + "WcState", Type_Value = "UINT", InOut = "0" };
-                pdo.SizeInBites = PlcBaseTypes.GetSizeInBites(pdo.Type_Value);
-                pdo.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdo.Type_Value);
+                pdo.Size = PlcBaseTypes.GetSize(pdo.Type_Value);
                 InputEntries.Add(pdo);
                 pdo = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "Frm" + i.ToString() + "InputToggle", VarB = "Inputs" + tmpLevelSeparator + "Frm" + i.ToString() + "InputToggle", VarA = "Inputs" + tmpLevelSeparator + "Frm" + i.ToString() + "InputToggle", Type_Value = "UINT", InOut = "0" };
-                pdo.SizeInBites = PlcBaseTypes.GetSizeInBites(pdo.Type_Value);
-                pdo.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdo.Type_Value);
+                pdo.Size = PlcBaseTypes.GetSize(pdo.Type_Value);
                 InputEntries.Add(pdo);
             }
 
@@ -61,17 +56,14 @@ namespace TsprojFile.Scan
                     member.InOutMappings = "Inputs";
                 }
                 member.OwnerBname = pdoEntry.OwnerBname;
-                member.SizeInBites = pdoEntry.SizeInBites;
-                member.SizeInBytes = pdoEntry.SizeInBytes;
+                member.Size = pdoEntry.Size;
                 member.Index = pdoEntry.Index;
                 member.IndexNumber = pdoEntry.IndexNumber;
                 member.SubIndex = pdoEntry.SubIndex;
                 member.SubIndexNumber = pdoEntry.SubIndexNumber;
                 actPdoStruct.StructMembers.Add(member);
-                //actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
-                actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBytes;
-                actPdoStruct.SizeInBites = actPdoStruct.SizeInBites + member.SizeInBites;
-                actPdoStruct.SizeInBytes = actPdoStruct.SizeInBytes + member.SizeInBytes;
+                actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                actPdoStruct.Size = actPdoStruct.Size + member.Size;
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
                 MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
@@ -99,14 +91,12 @@ namespace TsprojFile.Scan
                 Inputs.InOutPlcProj = firstStructMember.InOutPlcProj;
                 Inputs.InOutMappings = firstStructMember.InOutMappings;
                 Inputs.BoxOrderCode = firstStructMember.BoxOrderCode;
-                Inputs.SizeInBites = actPdoStruct.SizeInBites;
-                Inputs.SizeInBytes = actPdoStruct.SizeInBytes;
+                Inputs.Size = actPdoStruct.Size;
 
                 mapableObject.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
                 mapableObject.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);
                 mapableObject.TypeNamespace = actPdoStruct.TypeNamespace;
-                mapableObject.SizeInBites = actPdoStruct.SizeInBites;
-                mapableObject.SizeInBytes = actPdoStruct.SizeInBytes;
+                mapableObject.Size = actPdoStruct.Size;
 
                 Inputs.MapableObject = mapableObject;
             }

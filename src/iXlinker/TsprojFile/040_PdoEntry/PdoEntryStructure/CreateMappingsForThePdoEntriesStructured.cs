@@ -32,8 +32,7 @@ namespace TsprojFile.Scan
             mapableObject.Name = ValidatePlcItem.Name(actPdoEntryStruct.Prefix);
             mapableObject.Type_Value = ValidatePlcItem.Type(actPdoEntryStruct.Name);
             mapableObject.TypeNamespace = actPdoEntryStruct.TypeNamespace;
-            mapableObject.SizeInBites = actPdoEntryStruct.SizeInBites;
-            mapableObject.SizeInBytes = actPdoEntryStruct.SizeInBytes;
+            mapableObject.Size = actPdoEntryStruct.Size;
 
             return mapableObject;
         }

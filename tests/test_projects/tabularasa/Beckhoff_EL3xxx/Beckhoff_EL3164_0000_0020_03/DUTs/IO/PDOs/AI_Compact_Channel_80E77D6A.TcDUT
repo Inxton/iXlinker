@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AI_Compact_Channel_80E77D6A" Id="{47a70b4b-280c-4bc9-b8c2-a9823650db3d}">
-    <Declaration><![CDATA[{attribute addProperty BoxType "EL3164-0000-0020"}
+  <DUT Name="AI_Compact_Channel_80E77D6A" Id="{d4053cf0-5646-4926-8bc4-f87bbb3efca1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3164-0000-0020'}
+{attribute addProperty BoxType "EL3164-0000-0020"}
 {attribute addProperty Id "ValueAT %I*INT2"}
 {attribute addProperty CRC "2162654570"}
-{attribute addProperty SizeInBites "16"}
-{attribute addProperty SizeInBytes "2"}
+{attribute addProperty Size "2"}
 TYPE AI_Compact_Channel_80E77D6A :
 STRUCT
 	{attribute addProperty Name "Value"}

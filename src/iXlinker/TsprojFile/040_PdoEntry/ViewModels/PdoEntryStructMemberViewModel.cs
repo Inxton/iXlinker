@@ -74,25 +74,14 @@ namespace iXlinkerDtos
             }
         }
 
-        private uint sizeInBites;
-        public uint SizeInBites
+        private double size;
+        public double Size
         {
-            get { return this.sizeInBites; }
+            get { return this.size; }
             set
             {
-                this.sizeInBites = value;
-                NotifyPropertyChanged(nameof(SizeInBites));
-            }
-        }
-
-        private double sizeInBytes;
-        public double SizeInBytes
-        {
-            get { return this.sizeInBytes; }
-            set
-            {
-                this.sizeInBytes = value;
-                NotifyPropertyChanged(nameof(SizeInBytes));
+                this.size = value;
+                NotifyPropertyChanged(nameof(Size));
             }
         }
 

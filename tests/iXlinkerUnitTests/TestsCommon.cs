@@ -97,7 +97,14 @@ namespace iXlinkerUnitTests
             string[] expected = File.ReadAllLines(pathExpected);
             string[] generated = File.ReadAllLines(pathGenerated);
 
-            if(expected.Length == generated.Length)
+            if (pathExpected.EndsWith(".TcDUT"))
+            {
+                if (!AreTcDUTFilesEqual(pathExpected, pathGenerated))
+                {
+                    areEqual = false;
+                }
+            }
+            else if (expected.Length == generated.Length)
             {
                 for (int row = 0; row < expected.Length; row++)
                 {
@@ -109,13 +116,6 @@ namespace iXlinkerUnitTests
                         Console.WriteLine(@"Generated: ""{0}""", generated[row]);
                         areEqual = false;
                     }
-                }
-            }
-            else if (pathExpected.EndsWith(".TcDUT"))
-            {
-                if (!AreTcDUTFilesEqual(pathExpected, pathGenerated))
-                {
-                    areEqual = false;
                 }
             }
             else
@@ -188,10 +188,10 @@ namespace iXlinkerUnitTests
         private static List<string> GetAllRelevantTcDutDelarationLines(string declarationField)
         {
             string[] exludedPrefixes = {
-                    "{attribute addProperty BoxType",
-                    "{attribute addProperty Id",
-                    "{attribute addProperty CRC",
-                    "{attribute addProperty SizeInBites"
+                "{attribute 'GeneratedUsingTerminal: ",
+                "{attribute addProperty BoxType",
+                "{attribute addProperty Id",
+                "{attribute addProperty CRC",
                 };
 
             List<string> declarationFiltered = new List<string>();

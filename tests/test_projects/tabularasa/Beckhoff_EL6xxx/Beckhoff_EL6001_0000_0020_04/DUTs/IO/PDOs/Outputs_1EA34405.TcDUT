@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Outputs_1EA34405" Id="{5b03230a-a594-441d-8148-225e0655c033}">
-    <Declaration><![CDATA[{attribute addProperty BoxType "EL6001-0000-0020"}
+  <DUT Name="Outputs_1EA34405" Id="{ac429a3b-4bcf-4034-ae10-50dd56b607ce}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
+{attribute addProperty BoxType "EL6001-0000-0020"}
 {attribute addProperty Id "CtrlAT %Q*USINT1Data_OutAT %Q*ARRAY[0..2] OF USINT3"}
 {attribute addProperty CRC "622567651"}
-{attribute addProperty SizeInBites "32"}
-{attribute addProperty SizeInBytes "4"}
+{attribute addProperty Size "4"}
 TYPE Outputs_1EA34405 :
 STRUCT
 	{attribute addProperty Name "Ctrl"}
