@@ -9,9 +9,8 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void SearchDevices(Solution vs)
+        internal void SearchDevices(Solution vs)
         {
-
             XmlSerializer serializer = new XmlSerializer(typeof(TcSmProject));
             StreamReader reader = new StreamReader(vs.TsProject.CompletePathInFileSystem);
 

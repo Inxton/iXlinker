@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL2809_F0D0C9F8" Id="{41043d79-8d00-44c6-8c95-9bbc31c3a271}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2809'}
+{attribute addProperty BoxType "KL2809"}
+{attribute addProperty Id "Channel_1AT %Q*Channel_460B8C400Channel_2AT %Q*Channel_460B8C400Channel_3AT %Q*Channel_460B8C400Channel_4AT %Q*Channel_460B8C400Channel_5AT %Q*Channel_460B8C400Channel_6AT %Q*Channel_460B8C400Channel_7AT %Q*Channel_460B8C400Channel_8AT %Q*Channel_460B8C400Channel_9AT %Q*Channel_460B8C400Channel_10AT %Q*Channel_460B8C400Channel_11AT %Q*Channel_460B8C400Channel_12AT %Q*Channel_460B8C400Channel_13AT %Q*Channel_460B8C400Channel_14AT %Q*Channel_460B8C400Channel_15AT %Q*Channel_460B8C400Channel_16AT %Q*Channel_460B8C400"}
+{attribute addProperty CRC "4040215032"}
+{attribute addProperty Size "0"}
+TYPE KL2809_F0D0C9F8 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_3"}
+	Channel_3 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_4"}
+	Channel_4 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_5"}
+	Channel_5 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_6"}
+	Channel_6 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_7"}
+	Channel_7 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_8"}
+	Channel_8 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_9"}
+	Channel_9 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_10"}
+	Channel_10 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_11"}
+	Channel_11 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_12"}
+	Channel_12 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_13"}
+	Channel_13 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_14"}
+	Channel_14 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_15"}
+	Channel_15 : Channel_460B8C40;
+	{attribute addProperty Name "Channel_16"}
+	Channel_16 : Channel_460B8C40;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

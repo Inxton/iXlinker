@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="OCP_Inputs_Channel_794A321B" Id="{5cb9423f-9d83-4237-93d9-bb274905f393}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9227-4433-0018'}
+{attribute addProperty BoxType "EL9227-4433-0018"}
+{attribute addProperty Id "StatusAT %I*Status_1D9409A420LoadAT %I*UINT2CurrentAT %I*UINT2Voltage_InAT %I*UINT2Voltage_OutAT %I*UINT2"}
+{attribute addProperty CRC "2034905627"}
+{attribute addProperty Size "28"}
+TYPE OCP_Inputs_Channel_794A321B :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_1D9409A4;
+	{attribute addProperty Name "Load"}
+	Load AT %I* : UINT;
+	{attribute addProperty Name "Current"}
+	Current AT %I* : UINT;
+	{attribute addProperty Name "Voltage_In"}
+	Voltage_In AT %I* : UINT;
+	{attribute addProperty Name "Voltage_Out"}
+	Voltage_Out AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

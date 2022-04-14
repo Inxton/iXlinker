@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL_E4BD2B38" Id="{4ca703bc-a689-4bff-a089-88bc2f0d1d85}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9505-0010'}
+{attribute addProperty BoxType "KL9505-0010"}
+{attribute addProperty Id "Diag_1AT %I*Diag_1F4F45730"}
+{attribute addProperty CRC "3837602616"}
+{attribute addProperty Size "0"}
+TYPE KL_E4BD2B38 :
+STRUCT
+	{attribute addProperty Name "Diag_1"}
+	Diag_1 : Diag_1F4F4573;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

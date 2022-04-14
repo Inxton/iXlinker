@@ -8,7 +8,7 @@ namespace TsprojFile.Scan
         {
             string pdoEntryName = pdoEntry.Name.Split('_')[2];
 
-            PdoEntryStructMemberViewModel pdoEntryStructMemberViewModel = new PdoEntryStructMemberViewModel() { Name = pdoEntryName , Type_Value = pdoEntry.Type_Value ,TypeNamespace = pdoEntry.TypeNamespace};
+            PdoEntryStructMemberViewModel pdoEntryStructMemberViewModel = new PdoEntryStructMemberViewModel() { NameA = pdoEntryName , Type_Value = pdoEntry.Type_Value ,TypeNamespace = pdoEntry.TypeNamespace};
 
             return pdoEntryStructMemberViewModel;
 

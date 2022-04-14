@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_72C27E80" Id="{ce39f5d9-01b0-47d4-8520-376234463477}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
+{attribute addProperty BoxType "ER8309-1022-0018"}
+{attribute addProperty Id "Ready_to_enableBOOL1WarningBOOL1ErrorBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "1925348992"}
+{attribute addProperty Size "4"}
+TYPE Status_72C27E80 :
+STRUCT
+	{attribute addProperty Name "Ready_to_enable"}
+	Ready_to_enable : BOOL;
+	{attribute addProperty Name "Warning"}
+	Warning : BOOL;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

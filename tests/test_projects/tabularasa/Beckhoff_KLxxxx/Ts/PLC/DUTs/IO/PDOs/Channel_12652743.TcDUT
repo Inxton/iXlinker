@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_12652743" Id="{8c0edba1-f0d4-4d86-bdf5-b75fa6cd2c86}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9999'}
+{attribute addProperty BoxType "KL9999"}
+{attribute addProperty Id "VarInAT %I*UINT0VarOutAT %Q*UINT0"}
+{attribute addProperty CRC "308619075"}
+{attribute addProperty Size "0"}
+TYPE Channel_12652743 :
+STRUCT
+	{attribute addProperty Name "VarIn"}
+	VarIn AT %I* : UINT;
+	{attribute addProperty Name "VarOut"}
+	VarOut AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

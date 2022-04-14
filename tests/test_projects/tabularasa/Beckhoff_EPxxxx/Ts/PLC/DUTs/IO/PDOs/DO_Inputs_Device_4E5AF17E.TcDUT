@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Inputs_Device_4E5AF17E" Id="{a0c2d557-d826-4a2f-89a3-5c8c31c29f36}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2816-0008-0016'}
+{attribute addProperty BoxType "EP2816-0008-0016"}
+{attribute addProperty Id "Safe_state_activeAT %I*BOOL1Error_channelAT %I*ARRAY[0..1] OF BOOL2Sync_ErrorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
+{attribute addProperty CRC "3040730866"}
+{attribute addProperty Size "5"}
+TYPE DO_Inputs_Device_4E5AF17E :
+STRUCT
+	{attribute addProperty Name "Safe_state_active"}
+	Safe_state_active AT %I* : BOOL;
+	{attribute addProperty Name "Error_channel"}
+	Error_channel AT %I* : ARRAY[0..1] OF BOOL;
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

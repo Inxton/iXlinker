@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_0D1929F0" Id="{422a7f1d-e6d4-4817-8fba-b2457eb131d1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2531-0001'}
+{attribute addProperty BoxType "KL2531-0001"}
+{attribute addProperty Id "StatusAT %I*USINT0PositionAT %I*UDINT0ExtStatusAT %I*UINT0CtrlAT %Q*USINT0VelocityAT %Q*DINT0ExtCtrlAT %Q*UINT0"}
+{attribute addProperty CRC "219752944"}
+{attribute addProperty Size "0"}
+TYPE Channel_0D1929F0 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : USINT;
+	{attribute addProperty Name "Position"}
+	Position AT %I* : UDINT;
+	{attribute addProperty Name "ExtStatus"}
+	ExtStatus AT %I* : UINT;
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : USINT;
+	{attribute addProperty Name "Velocity"}
+	Velocity AT %Q* : DINT;
+	{attribute addProperty Name "ExtCtrl"}
+	ExtCtrl AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

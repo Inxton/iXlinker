@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Status_compact_EA7A730E" Id="{14f5f3f5-514a-4b54-8d6b-8746ff6b9a3d}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0000-1016'}
+{attribute addProperty BoxType "EL2521-0000-1016"}
+{attribute addProperty Id "Set_counter_doneAT %I*BOOL1Counter_underflowAT %I*BOOL1Counter_overflowAT %I*BOOL1Sync_ErrorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Counter_valueAT %I*UINT2"}
+{attribute addProperty CRC "3933893390"}
+{attribute addProperty Size "7"}
+TYPE ENC_Status_compact_EA7A730E :
+STRUCT
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done AT %I* : BOOL;
+	{attribute addProperty Name "Counter_underflow"}
+	Counter_underflow AT %I* : BOOL;
+	{attribute addProperty Name "Counter_overflow"}
+	Counter_overflow AT %I* : BOOL;
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

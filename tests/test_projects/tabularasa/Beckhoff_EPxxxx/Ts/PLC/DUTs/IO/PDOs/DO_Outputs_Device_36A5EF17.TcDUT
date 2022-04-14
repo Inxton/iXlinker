@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Outputs_Device_36A5EF17" Id="{977a81b4-502f-4409-ade2-6b8187b3c5c3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0016'}
+{attribute addProperty BoxType "EP2316-0008-0016"}
+{attribute addProperty Id "Set_safe_stateAT %Q*BOOL1Reset_outputsAT %Q*BOOL1"}
+{attribute addProperty CRC "916844311"}
+{attribute addProperty Size "2"}
+TYPE DO_Outputs_Device_36A5EF17 :
+STRUCT
+	{attribute addProperty Name "Set_safe_state"}
+	Set_safe_state AT %Q* : BOOL;
+	{attribute addProperty Name "Reset_outputs"}
+	Reset_outputs AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

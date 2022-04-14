@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIG_Inputs_697E0EF2" Id="{006b48bf-9a49-44ee-ab4c-ad3a93552947}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP3744-0041-0016'}
+{attribute addProperty BoxType "EPP3744-0041-0016"}
+{attribute addProperty Id "InputAT %I*ARRAY[0..5] OF BOOL6"}
+{attribute addProperty CRC "390650255"}
+{attribute addProperty Size "6"}
+TYPE DIG_Inputs_697E0EF2 :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : ARRAY[0..5] OF BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

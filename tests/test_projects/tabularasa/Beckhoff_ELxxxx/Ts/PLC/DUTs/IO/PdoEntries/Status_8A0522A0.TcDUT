@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_8A0522A0" Id="{b5f6e0d8-e055-474d-bdbc-069ed71747ca}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2502-0010-0020'}
+{attribute addProperty BoxType "EL2502-0010-0020"}
+{attribute addProperty Id "OvertemperatureBOOL1Short_Circuit_to_24_VBOOL1Feedback_PWMBOOL1Err_Start_TimeBOOL1"}
+{attribute addProperty CRC "2315592352"}
+{attribute addProperty Size "4"}
+TYPE Status_8A0522A0 :
+STRUCT
+	{attribute addProperty Name "Overtemperature"}
+	Overtemperature : BOOL;
+	{attribute addProperty Name "Short_Circuit_to_24_V"}
+	Short_Circuit_to_24_V : BOOL;
+	{attribute addProperty Name "Feedback_PWM"}
+	Feedback_PWM : BOOL;
+	{attribute addProperty Name "Err_Start_Time"}
+	Err_Start_Time : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

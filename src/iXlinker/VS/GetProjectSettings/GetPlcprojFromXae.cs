@@ -6,7 +6,7 @@ using TwincatXmlSchemas.TcSmProject;
 
 namespace iXlinker.TsprojFile.Mapping
 {
-    partial class VS
+    internal partial class VS
     {
         private static string GetPlcprojFromXae(string tsProjFilePath)
         {

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL3041_6148C904" Id="{3b4b553f-d33d-4566-a1d9-3bb76e5436d7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL3041'}
+{attribute addProperty BoxType "KL3041"}
+{attribute addProperty Id "Channel_1AT %Q*Channel_6576A6810"}
+{attribute addProperty CRC "1632160004"}
+{attribute addProperty Size "0"}
+TYPE KL3041_6148C904 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_6576A681;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

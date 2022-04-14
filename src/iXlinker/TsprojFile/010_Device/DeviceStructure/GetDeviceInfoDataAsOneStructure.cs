@@ -16,27 +16,34 @@ namespace TsprojFile.Scan
         {
             ObservableCollection<PdoEntryViewModel> InfoDataEntries = new ObservableCollection<PdoEntryViewModel>();
 
+            //bool infoDataSupport = true;
+            //bool infoDataId = true;
+            //bool infoDataNetId = true;
+            //bool infoDataChangeCnt = true;
+            //bool infoDataCfgSlaveCnt = true;
+            //bool infoDataDcTimeOffsets = false;
+            //try
+            //{
+            //    TcSmDevDefEtherCAT tcSmDevDefEtherCAT = (TcSmDevDefEtherCAT)device.Items[0];
+
+            //    if (tcSmDevDefEtherCAT.InfoDataSupportSpecified && !tcSmDevDefEtherCAT.InfoDataSupport) infoDataSupport = false;
+            //    if (tcSmDevDefEtherCAT.InfoDataIdSpecified && !tcSmDevDefEtherCAT.InfoDataId) infoDataId = false;
+            //    if (tcSmDevDefEtherCAT.InfoDataNetIdSpecified && !tcSmDevDefEtherCAT.InfoDataNetId) infoDataNetId = false;
+            //    if (tcSmDevDefEtherCAT.InfoDataChangeCntSpecified && !tcSmDevDefEtherCAT.InfoDataChangeCnt) infoDataChangeCnt = false;
+            //    if (tcSmDevDefEtherCAT.InfoDataCfgSlaveCntSpecified && !tcSmDevDefEtherCAT.InfoDataCfgSlaveCnt) infoDataCfgSlaveCnt = false;
+            //    if (tcSmDevDefEtherCAT.InfoDataDcTimeOffsetsSpecified && tcSmDevDefEtherCAT.InfoDataDcTimeOffsets) infoDataDcTimeOffsets = true;
+            //}
+            //catch (Exception ex)
+            //{
+            //    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+            //}
+            //Try to avoid the same structure for the device info data, even in the case when for example DcTimeOffsets are not used
             bool infoDataSupport = true;
             bool infoDataId = true;
             bool infoDataNetId = true;
             bool infoDataChangeCnt = true;
             bool infoDataCfgSlaveCnt = true;
-            bool infoDataDcTimeOffsets = false;
-            try
-            {
-                TcSmDevDefEtherCAT tcSmDevDefEtherCAT = (TcSmDevDefEtherCAT)device.Items[0];
-
-                if (tcSmDevDefEtherCAT.InfoDataSupportSpecified && !tcSmDevDefEtherCAT.InfoDataSupport) infoDataSupport = false;
-                if (tcSmDevDefEtherCAT.InfoDataIdSpecified && !tcSmDevDefEtherCAT.InfoDataId) infoDataId = false;
-                if (tcSmDevDefEtherCAT.InfoDataNetIdSpecified && !tcSmDevDefEtherCAT.InfoDataNetId) infoDataNetId = false;
-                if (tcSmDevDefEtherCAT.InfoDataChangeCntSpecified && !tcSmDevDefEtherCAT.InfoDataChangeCnt) infoDataChangeCnt = false;
-                if (tcSmDevDefEtherCAT.InfoDataCfgSlaveCntSpecified && !tcSmDevDefEtherCAT.InfoDataCfgSlaveCnt) infoDataCfgSlaveCnt = false;
-                if (tcSmDevDefEtherCAT.InfoDataDcTimeOffsetsSpecified && tcSmDevDefEtherCAT.InfoDataDcTimeOffsets) infoDataDcTimeOffsets = true;
-            }
-            catch (Exception ex)
-            {
-                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-            }
+            bool infoDataDcTimeOffsets = true;
 
             deviceViewModel.InfoDataSupport = infoDataSupport;
             deviceViewModel.InfoDataId = infoDataId;
@@ -50,40 +57,34 @@ namespace TsprojFile.Scan
                 if (infoDataChangeCnt)
                 {
                     PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "ChangeCount", VarB = "InfoData" + tmpLevelSeparator + "ChangeCount", VarA = "InfoData" + tmpLevelSeparator + "ChangeCount", Type_Value = "UINT", InOut = "0" };
-                    pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                    pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                    pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                     InfoDataEntries.Add(pdoEntryViewModel);
                 }
                 if (infoDataId)
                 {
                     PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "DevId", VarB = "InfoData" + tmpLevelSeparator + "DevId", VarA = "InfoData" + tmpLevelSeparator + "DevId", Type_Value = "UINT", InOut = "0" };
-                    pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                    pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                    pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                     InfoDataEntries.Add(pdoEntryViewModel);
                 }
                 if (infoDataNetId)
                 {
                     PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "AmsNetId", VarB = "InfoData" + tmpLevelSeparator + "AmsNetId", VarA = "InfoData" + tmpLevelSeparator + "AmsNetId", Type_Value = "AMSNETID", InOut = "0" };
-                    pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                    pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                    pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                     InfoDataEntries.Add(pdoEntryViewModel);
                 }
                 if (infoDataCfgSlaveCnt)
                 {
                     PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "CfgSlaveCount", VarB = "InfoData" + tmpLevelSeparator + "CfgSlaveCount", VarA = "InfoData" + tmpLevelSeparator + "CfgSlaveCount", Type_Value = "UINT", InOut = "0" };
-                    pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                    pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                    pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                     InfoDataEntries.Add(pdoEntryViewModel);
                 }
                 if (infoDataDcTimeOffsets)
                 {
                     PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "DcToTcTimeOffset", VarB = "InfoData" + tmpLevelSeparator + "DcToTcTimeOffset", VarA = "InfoData" + tmpLevelSeparator + "DcToTcTimeOffset", Type_Value = "LINT", InOut = "0" };
-                    pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                    pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                    pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                     InfoDataEntries.Add(pdoEntryViewModel);
                     pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "DcToExtTimeOffset", VarB = "InfoData" + tmpLevelSeparator + "DcToExtTimeOffset", VarA = "InfoData" + tmpLevelSeparator + "DcToExtTimeOffset", Type_Value = "LINT", InOut = "0" };
-                    pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                    pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                    pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                     InfoDataEntries.Add(pdoEntryViewModel);
                 }
             }
@@ -111,16 +112,14 @@ namespace TsprojFile.Scan
                     member.InOutMappings = "Inputs";
                 }
                 member.OwnerBname = pdoEntry.OwnerBname;
-                member.SizeInBites = pdoEntry.SizeInBites;
-                member.SizeInBytes = pdoEntry.SizeInBytes;
+                member.Size = pdoEntry.Size;
                 member.Index = pdoEntry.Index;
                 member.IndexNumber = pdoEntry.IndexNumber;
                 member.SubIndex = pdoEntry.SubIndex;
                 member.SubIndexNumber = pdoEntry.SubIndexNumber;
                 actPdoStruct.StructMembers.Add(member);
-                actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
-                actPdoStruct.SizeInBites = actPdoStruct.SizeInBites + member.SizeInBites;
-                actPdoStruct.SizeInBytes = actPdoStruct.SizeInBytes + member.SizeInBytes;
+                actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                actPdoStruct.Size = actPdoStruct.Size + member.Size;
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
                 MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
@@ -137,7 +136,6 @@ namespace TsprojFile.Scan
                 if (CheckIfPdoStructureDoesNotExist(actPdoStruct))
                 {
                     //if not add to the structure list
-                    //actPdoStruct.TypeNamespace = "*";
                     PdoStructures.Add(actPdoStruct);
                 }
                 PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
@@ -148,15 +146,12 @@ namespace TsprojFile.Scan
                 InfoData.InOutPlcProj = firstStructMember.InOutPlcProj;
                 InfoData.InOutMappings = firstStructMember.InOutMappings;
                 InfoData.BoxOrderCode = firstStructMember.BoxOrderCode;
-                InfoData.SizeInBites = actPdoStruct.SizeInBites;
-                InfoData.SizeInBytes = actPdoStruct.SizeInBytes;
+                InfoData.Size = actPdoStruct.Size;
 
                 mapableObject.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
-                //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actPdoStruct.TypeNamespace, ValidatePlcItem.Type(actPdoStruct.Name));
                 mapableObject.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);
                 mapableObject.TypeNamespace = actPdoStruct.TypeNamespace;
-                mapableObject.SizeInBites = actPdoStruct.SizeInBites;
-                mapableObject.SizeInBytes = actPdoStruct.SizeInBytes;
+                mapableObject.Size = actPdoStruct.Size;
 
                 InfoData.MapableObject = mapableObject;
             }

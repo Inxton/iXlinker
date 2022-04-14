@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_A35B59FC" Id="{378d79a9-eaf1-4318-bae5-209bbddd5f49}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5122-0000-0016'}
+{attribute addProperty BoxType "EL5122-0000-0016"}
+{attribute addProperty Id "Enable_latch_extern_on_positive_edgeBOOL1Set_counterBOOL1Enable_latch_extern_on_negative_edgeBOOL1Set_software_gateBOOL1Set_counter_on_latch_extern_on_positive_edgeBOOL1Set_counter_on_latch_extern_on_negative_edgeBOOL1"}
+{attribute addProperty CRC "2740673020"}
+{attribute addProperty Size "6"}
+TYPE Control_A35B59FC :
+STRUCT
+	{attribute addProperty Name "Enable_latch_extern_on_positive_edge"}
+	Enable_latch_extern_on_positive_edge : BOOL;
+	{attribute addProperty Name "Set_counter"}
+	Set_counter : BOOL;
+	{attribute addProperty Name "Enable_latch_extern_on_negative_edge"}
+	Enable_latch_extern_on_negative_edge : BOOL;
+	{attribute addProperty Name "Set_software_gate"}
+	Set_software_gate : BOOL;
+	{attribute addProperty Name "Set_counter_on_latch_extern_on_positive_edge"}
+	Set_counter_on_latch_extern_on_positive_edge : BOOL;
+	{attribute addProperty Name "Set_counter_on_latch_extern_on_negative_edge"}
+	Set_counter_on_latch_extern_on_negative_edge : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

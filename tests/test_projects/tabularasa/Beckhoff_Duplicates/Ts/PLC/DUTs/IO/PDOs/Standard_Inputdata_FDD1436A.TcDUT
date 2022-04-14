@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Standard_Inputdata_FDD1436A" Id="{e9e47bcc-415b-4c55-8ab1-d03f4ae8db8c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
+{attribute addProperty BoxType "AX8108-0100-0101-0101"}
+{attribute addProperty Id "FSOEAT %I*FSOE_3C294B218"}
+{attribute addProperty CRC "4258349930"}
+{attribute addProperty Size "8"}
+TYPE Standard_Inputdata_FDD1436A :
+STRUCT
+	{attribute addProperty Name "FSOE"}
+	FSOE AT %I* : FSOE_3C294B21;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

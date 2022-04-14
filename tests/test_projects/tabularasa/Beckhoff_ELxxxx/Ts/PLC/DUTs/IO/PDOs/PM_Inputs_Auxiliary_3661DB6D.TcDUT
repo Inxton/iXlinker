@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PM_Inputs_Auxiliary_3661DB6D" Id="{514f14ea-c2ba-4e18-8cac-a1e905beac38}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3413-0000-0019'}
+{attribute addProperty BoxType "EL3413-0000-0019"}
+{attribute addProperty Id "STATUSAT %I*STATUS_58431BA93IndexAT %I*USINT1ChannelAT %I*USINT1ValueAT %I*DINT4"}
+{attribute addProperty CRC "912382829"}
+{attribute addProperty Size "9"}
+TYPE PM_Inputs_Auxiliary_3661DB6D :
+STRUCT
+	{attribute addProperty Name "STATUS"}
+	STATUS AT %I* : STATUS_58431BA9;
+	{attribute addProperty Name "Index"}
+	Index AT %I* : USINT;
+	{attribute addProperty Name "Channel"}
+	Channel AT %I* : USINT;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

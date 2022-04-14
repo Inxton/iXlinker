@@ -18,16 +18,30 @@ namespace iXlinkerDtos
             }
         }
 
-        private string name;
-        public string Name
+        private string nameA;
+        public string NameA
         {
-            get { return this.name; }
+            get { return this.nameA; }
             set
             {
                 if (!string.IsNullOrEmpty(value))
                 {
-                    this.name = value;
-                    NotifyPropertyChanged(nameof(Name));
+                    this.nameA = value;
+                    NotifyPropertyChanged(nameof(NameA));
+                }
+            }
+        }
+
+        private string nameB;
+        public string NameB
+        {
+            get { return this.nameB; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.nameB = value;
+                    NotifyPropertyChanged(nameof(NameB));
                 }
             }
         }
@@ -60,25 +74,14 @@ namespace iXlinkerDtos
             }
         }
 
-        private uint sizeInBites;
-        public uint SizeInBites
+        private double size;
+        public double Size
         {
-            get { return this.sizeInBites; }
+            get { return this.size; }
             set
             {
-                this.sizeInBites = value;
-                NotifyPropertyChanged(nameof(SizeInBites));
-            }
-        }
-
-        private double sizeInBytes;
-        public double SizeInBytes
-        {
-            get { return this.sizeInBytes; }
-            set
-            {
-                this.sizeInBytes = value;
-                NotifyPropertyChanged(nameof(SizeInBytes));
+                this.size = value;
+                NotifyPropertyChanged(nameof(Size));
             }
         }
 
@@ -131,6 +134,20 @@ namespace iXlinkerDtos
             {
                 this.subIndexNumber = value;
                 NotifyPropertyChanged(nameof(SubIndexNumber));
+            }
+        }
+
+        private string inOut = "";
+        public string InOut
+        {
+            get { return this.inOut; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.inOut = value;
+                    NotifyPropertyChanged(nameof(InOut));
+                }
             }
         }
 

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_ACC8459F" Id="{d94da2a6-5676-4ff9-90ff-b530aa846cd1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5002-0000-0016'}
+{attribute addProperty BoxType "EJ5002-0000-0016"}
+{attribute addProperty Id "Data_errorBOOL1Frame_errorBOOL1Power_failureBOOL1Sync_errorBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "2898806175"}
+{attribute addProperty Size "6"}
+TYPE Status_ACC8459F :
+STRUCT
+	{attribute addProperty Name "Data_error"}
+	Data_error : BOOL;
+	{attribute addProperty Name "Frame_error"}
+	Frame_error : BOOL;
+	{attribute addProperty Name "Power_failure"}
+	Power_failure : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

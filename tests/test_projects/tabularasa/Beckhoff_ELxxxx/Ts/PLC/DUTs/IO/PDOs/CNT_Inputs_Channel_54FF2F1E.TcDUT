@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CNT_Inputs_Channel_54FF2F1E" Id="{cbb201e0-f648-4d1d-a79c-f833c15fd2f2}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1512-0000-0017'}
+{attribute addProperty BoxType "EL1512-0000-0017"}
+{attribute addProperty Id "StatusAT %I*Status_8AD1B54B4Counter_valueAT %I*UDINT4"}
+{attribute addProperty CRC "1426009886"}
+{attribute addProperty Size "8"}
+TYPE CNT_Inputs_Channel_54FF2F1E :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_8AD1B54B;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

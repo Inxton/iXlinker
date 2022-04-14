@@ -26,7 +26,8 @@ namespace TsprojFile.Scan
                         pdoViewModel.InOutPlcProj = "AT %I*";
                         pdoViewModel.InOutMappings = "Inputs";
                     }
-                    if (pdoEntryViewModel.Name != null || pdoEntryViewModel.Type_Value != null || pdoEntryViewModel.Type_GUID != null)
+
+                    if (pdoEntryViewModel.Index != null)
                     {
                         pdoEntriesUnstructured.Add(pdoEntryViewModel);
                     }

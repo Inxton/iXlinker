@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ER6001_40883D03" Id="{9d4acfd6-f788-4de6-b6c6-9642736ed826}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER6001-0002-0016'}
+{attribute addProperty BoxType "ER6001-0002-0016"}
+{attribute addProperty Id "COM_InputsAT %I*COM_Inputs_6C2FC20224COM_OutputsAT %Q*COM_Outputs_5D00B5E724WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1082670339"}
+{attribute addProperty Size "60"}
+TYPE ER6001_40883D03 :
+STRUCT
+	{attribute addProperty Name "COM_Inputs"}
+	COM_Inputs : COM_Inputs_6C2FC202;
+	{attribute addProperty Name "COM_Outputs"}
+	COM_Outputs : COM_Outputs_5D00B5E7;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

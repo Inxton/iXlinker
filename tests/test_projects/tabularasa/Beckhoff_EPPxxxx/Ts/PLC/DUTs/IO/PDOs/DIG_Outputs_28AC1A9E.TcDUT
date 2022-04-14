@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIG_Outputs_28AC1A9E" Id="{1e2df102-3258-4971-95aa-36112729a493}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP2316-0003-0016'}
+{attribute addProperty BoxType "EPP2316-0003-0016"}
+{attribute addProperty Id "OutputAT %Q*ARRAY[0..7] OF BOOL8"}
+{attribute addProperty CRC "1253840710"}
+{attribute addProperty Size "8"}
+TYPE DIG_Outputs_28AC1A9E :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : ARRAY[0..7] OF BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

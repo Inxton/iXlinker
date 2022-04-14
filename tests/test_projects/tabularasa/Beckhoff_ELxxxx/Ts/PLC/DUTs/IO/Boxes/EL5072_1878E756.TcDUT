@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5072_1878E756" Id="{82e2c4ad-c3d1-43c6-827f-070ebaceb5e8}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5072-0000-0016'}
+{attribute addProperty BoxType "EL5072-0000-0016"}
+{attribute addProperty Id "IND_Inputs_Channel_1AT %I*IND_Inputs_Channel_BBE8401F18IND_Inputs_Channel_2AT %I*IND_Inputs_Channel_BBE8401F18IND_Outputs_Channel_1AT %Q*IND_Outputs_Channel_02FDE6C97IND_Outputs_Channel_2AT %Q*IND_Outputs_Channel_02FDE6C97WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "410576726"}
+{attribute addProperty Size "62"}
+TYPE EL5072_1878E756 :
+STRUCT
+	{attribute addProperty Name "IND_Inputs_Channel_1"}
+	IND_Inputs_Channel_1 : IND_Inputs_Channel_BBE8401F;
+	{attribute addProperty Name "IND_Inputs_Channel_2"}
+	IND_Inputs_Channel_2 : IND_Inputs_Channel_BBE8401F;
+	{attribute addProperty Name "IND_Outputs_Channel_1"}
+	IND_Outputs_Channel_1 : IND_Outputs_Channel_02FDE6C9;
+	{attribute addProperty Name "IND_Outputs_Channel_2"}
+	IND_Outputs_Channel_2 : IND_Outputs_Channel_02FDE6C9;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_6CCA259F" Id="{a6dd0f7a-5bb8-4d59-9908-be94e5f93475}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
+{attribute addProperty BoxType "ER8309-1022-0018"}
+{attribute addProperty Id "Error_Input_ABOOL1Input_Status_ABOOL1Error_Input_BBOOL1Input_Status_BBOOL1Speed_Below_ThresholdBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "1825187231"}
+{attribute addProperty Size "6"}
+TYPE Status_6CCA259F :
+STRUCT
+	{attribute addProperty Name "Error_Input_A"}
+	Error_Input_A : BOOL;
+	{attribute addProperty Name "Input_Status_A"}
+	Input_Status_A : BOOL;
+	{attribute addProperty Name "Error_Input_B"}
+	Error_Input_B : BOOL;
+	{attribute addProperty Name "Input_Status_B"}
+	Input_Status_B : BOOL;
+	{attribute addProperty Name "Speed_Below_Threshold"}
+	Speed_Below_Threshold : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

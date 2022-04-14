@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="MTO_Inputs_Channel_53C09E8B" Id="{5f1b01ca-9516-404b-ae28-d1498b35aff6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1259-0000-0016'}
+{attribute addProperty BoxType "EL1259-0000-0016"}
+{attribute addProperty Id "StatusAT %I*Status_642C2ED16"}
+{attribute addProperty CRC "1405132427"}
+{attribute addProperty Size "6"}
+TYPE MTO_Inputs_Channel_53C09E8B :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_642C2ED1;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

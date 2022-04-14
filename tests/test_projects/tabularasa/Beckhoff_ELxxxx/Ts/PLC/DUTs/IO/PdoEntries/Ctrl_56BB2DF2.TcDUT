@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ctrl_56BB2DF2" Id="{57ebaf74-e179-44c7-8f27-c1a942b7b213}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0017'}
+{attribute addProperty BoxType "EL3681-0000-0017"}
+{attribute addProperty Id "Enable_autorangeBOOL1ModeBYTE1RangeSINT1"}
+{attribute addProperty CRC "1455107570"}
+{attribute addProperty Size "3"}
+TYPE Ctrl_56BB2DF2 :
+STRUCT
+	{attribute addProperty Name "Enable_autorange"}
+	Enable_autorange : BOOL;
+	{attribute addProperty Name "Mode"}
+	Mode : BYTE;
+	{attribute addProperty Name "Range"}
+	Range : SINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

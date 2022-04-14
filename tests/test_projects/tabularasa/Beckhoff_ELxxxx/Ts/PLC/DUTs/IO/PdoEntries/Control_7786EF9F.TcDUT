@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_7786EF9F" Id="{cd34f15f-c143-44a2-980f-14c1e65953d3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0124-0018'}
+{attribute addProperty BoxType "EL2521-0124-0018"}
+{attribute addProperty Id "Enable_PLSBOOL1OutputBOOL1"}
+{attribute addProperty CRC "2005331871"}
+{attribute addProperty Size "2"}
+TYPE Control_7786EF9F :
+STRUCT
+	{attribute addProperty Name "Enable_PLS"}
+	Enable_PLS : BOOL;
+	{attribute addProperty Name "Output"}
+	Output : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

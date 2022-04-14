@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Outputs_A7E1DFAB" Id="{402ed03d-dc31-4166-a3e0-4b836f7ce85c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9996'}
+{attribute addProperty BoxType "EM7004-0000-9996"}
+{attribute addProperty Id "OutputAT %Q*ARRAY[0..15] OF BOOL16"}
+{attribute addProperty CRC "1538723034"}
+{attribute addProperty Size "16"}
+TYPE DO_Outputs_A7E1DFAB :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : ARRAY[0..15] OF BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

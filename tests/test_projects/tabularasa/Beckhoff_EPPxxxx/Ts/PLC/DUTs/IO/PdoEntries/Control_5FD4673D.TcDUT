@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_5FD4673D" Id="{c5721f3b-6d93-4dd2-8bbf-a079e66ab04e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP7041-1002-0016'}
+{attribute addProperty BoxType "EPP7041-1002-0016"}
+{attribute addProperty Id "EnableBOOL1ResetBOOL1Reduce_torqueBOOL1Digital_output_1BOOL1"}
+{attribute addProperty CRC "1607755581"}
+{attribute addProperty Size "4"}
+TYPE Control_5FD4673D :
+STRUCT
+	{attribute addProperty Name "Enable"}
+	Enable : BOOL;
+	{attribute addProperty Name "Reset"}
+	Reset : BOOL;
+	{attribute addProperty Name "Reduce_torque"}
+	Reduce_torque : BOOL;
+	{attribute addProperty Name "Digital_output_1"}
+	Digital_output_1 : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

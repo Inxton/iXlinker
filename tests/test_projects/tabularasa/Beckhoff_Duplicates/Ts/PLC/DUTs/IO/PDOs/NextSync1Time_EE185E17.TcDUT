@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="NextSync1Time_EE185E17" Id="{2d7c7ae0-1377-4ced-af68-dddbfafb42c1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1262-0000-0002'}
+{attribute addProperty BoxType "EL1262-0000-0002"}
+{attribute addProperty Id "StartTimeNextLatchAT %I*UDINT4"}
+{attribute addProperty CRC "3994574359"}
+{attribute addProperty Size "4"}
+TYPE NextSync1Time_EE185E17 :
+STRUCT
+	{attribute addProperty Name "StartTimeNextLatch"}
+	StartTimeNextLatch AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

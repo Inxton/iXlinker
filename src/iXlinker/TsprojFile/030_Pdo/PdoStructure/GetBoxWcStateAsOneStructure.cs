@@ -17,45 +17,39 @@ namespace TsprojFile.Scan
 
             if (boxViewModel.WcStateWcState && !boxViewModel.SyncUnitDefinedOnAtLeastOnePdo && boxViewModel.TotalNumberOfPdos > 0)
             {
-                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "WcState", VarB = "WcState" + tmpLevelSeparator + "WcState", VarA = "WcState" + tmpLevelSeparator + "WcState", Type_Value = "BIT", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
-                pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "WcState", VarB = "WcState" + tmpLevelSeparator + "WcState", VarA = "WcState" + tmpLevelSeparator + "WcState", Type_Value = "BOOL", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
+                pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                 WcStateEntriesStructured.Add(pdoEntryViewModel);
                 WcStateEntriesUnstructured.Add(pdoEntryViewModel);
             }
             if (boxViewModel.WcStateWcState && boxViewModel.SyncUnitDefinedOnAtLeastOnePdo)
             {
-                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "WcState0", VarB = "WcState" + tmpLevelSeparator + "WcState0", VarA = "WcState" + tmpLevelSeparator + "WcState0", Type_Value = "BIT", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
-                pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "WcState0", VarB = "WcState" + tmpLevelSeparator + "WcState0", VarA = "WcState" + tmpLevelSeparator + "WcState0", Type_Value = "BOOL", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
+                pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                 WcStateEntriesStructured.Add(pdoEntryViewModel);
                 WcStateEntriesUnstructured.Add(pdoEntryViewModel);
 
-                pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "WcState1", VarB = "WcState" + tmpLevelSeparator + "WcState1", VarA = "WcState" + tmpLevelSeparator + "WcState1", Type_Value = "BIT", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
-                pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "WcState1", VarB = "WcState" + tmpLevelSeparator + "WcState1", VarA = "WcState" + tmpLevelSeparator + "WcState1", Type_Value = "BOOL", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
+                pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                 WcStateEntriesStructured.Add(pdoEntryViewModel);
                 WcStateEntriesUnstructured.Add(pdoEntryViewModel);
             }
             if (boxViewModel.WcStateInputToggle && !boxViewModel.SyncUnitDefinedOnAtLeastOnePdo)
             {
-                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "InputToggle", VarB = "WcState" + tmpLevelSeparator + "InputToggle", VarA = "WcState" + tmpLevelSeparator + "InputToggle", Type_Value = "BIT", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
-                pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "InputToggle", VarB = "WcState" + tmpLevelSeparator + "InputToggle", VarA = "WcState" + tmpLevelSeparator + "InputToggle", Type_Value = "BOOL", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
+                pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                 WcStateEntriesStructured.Add(pdoEntryViewModel);
                 WcStateEntriesUnstructured.Add(pdoEntryViewModel);
             }
             if (boxViewModel.WcStateInputToggle && boxViewModel.SyncUnitDefinedOnAtLeastOnePdo)
             {
-                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "InputToggle0", VarB = "WcState" + tmpLevelSeparator + "InputToggle0", VarA = "WcState" + tmpLevelSeparator + "InputToggle0", Type_Value = "BIT", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
-                pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "InputToggle0", VarB = "WcState" + tmpLevelSeparator + "InputToggle0", VarA = "WcState" + tmpLevelSeparator + "InputToggle0", Type_Value = "BOOL", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
+                pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                 WcStateEntriesStructured.Add(pdoEntryViewModel);
                 WcStateEntriesUnstructured.Add(pdoEntryViewModel);
 
-                pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "InputToggle1", VarB = "WcState" + tmpLevelSeparator + "InputToggle1", VarA = "WcState" + tmpLevelSeparator + "InputToggle1", Type_Value = "BIT", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
-                pdoEntryViewModel.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryViewModel.Type_Value);
-                pdoEntryViewModel.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryViewModel.Type_Value);
+                pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "InputToggle1", VarB = "WcState" + tmpLevelSeparator + "InputToggle1", VarA = "WcState" + tmpLevelSeparator + "InputToggle1", Type_Value = "BOOL", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
+                pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                 WcStateEntriesStructured.Add(pdoEntryViewModel);
                 WcStateEntriesUnstructured.Add(pdoEntryViewModel);
             }
@@ -85,16 +79,14 @@ namespace TsprojFile.Scan
                     member.InOutMappings = "Inputs";
                 }
                 member.OwnerBname = pdoEntry.OwnerBname;
-                member.SizeInBites = pdoEntry.SizeInBites;
-                member.SizeInBytes = pdoEntry.SizeInBytes;
+                member.Size = pdoEntry.Size;
                 member.Index = pdoEntry.Index;
                 member.IndexNumber = pdoEntry.IndexNumber;
                 member.SubIndex = pdoEntry.SubIndex;
                 member.SubIndexNumber = pdoEntry.SubIndexNumber;
                 actPdoStruct.StructMembers.Add(member);
-                actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
-                actPdoStruct.SizeInBites = actPdoStruct.SizeInBites + member.SizeInBites;
-                actPdoStruct.SizeInBytes = actPdoStruct.SizeInBytes + member.SizeInBytes;
+                actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                actPdoStruct.Size = actPdoStruct.Size + member.Size;
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
                 MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};
@@ -117,7 +109,6 @@ namespace TsprojFile.Scan
                 if (CheckIfPdoStructureDoesNotExist(actPdoStruct))
                 {
                     //if not add to the structure list
-                    //actPdoStruct.TypeNamespace = "*";
                     PdoStructures.Add(actPdoStruct);
                 }
                 PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
@@ -128,15 +119,12 @@ namespace TsprojFile.Scan
                 WcState.InOutPlcProj = firstStructMember.InOutPlcProj;
                 WcState.InOutMappings = firstStructMember.InOutMappings;
                 WcState.BoxOrderCode = firstStructMember.BoxOrderCode;
-                WcState.SizeInBites = actPdoStruct.SizeInBites;
-                WcState.SizeInBytes = actPdoStruct.SizeInBytes;
+                WcState.Size = actPdoStruct.Size;
 
                 mapableObject.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
-                //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actPdoStruct.TypeNamespace, ValidatePlcItem.Type(actPdoStruct.Name));
                 mapableObject.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);
                 mapableObject.TypeNamespace = actPdoStruct.TypeNamespace;
-                mapableObject.SizeInBites = actPdoStruct.SizeInBites;
-                mapableObject.SizeInBytes = actPdoStruct.SizeInBytes;
+                mapableObject.Size = actPdoStruct.Size;
 
                 WcState.MapableObject = mapableObject;
             }

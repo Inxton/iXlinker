@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L1_Voltage_Samples_A8076B5D" Id="{ccf3e84c-33e0-42c8-bd78-1e9d51929d86}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3783-0000-0018'}
+{attribute addProperty BoxType "EL3783-0000-0018"}
+{attribute addProperty Id "U1_SamplesAT %I*U1_Samples_1109DCAA40"}
+{attribute addProperty CRC "2819058525"}
+{attribute addProperty Size "40"}
+TYPE L1_Voltage_Samples_A8076B5D :
+STRUCT
+	{attribute addProperty Name "U1_Samples"}
+	U1_Samples AT %I* : U1_Samples_1109DCAA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Total_Interval_Energy_37FCCEB0" Id="{79bb2625-5ddb-4f64-85d6-f50fee731c41}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0016'}
+{attribute addProperty BoxType "EL3423-0000-0016"}
+{attribute addProperty Id "TxPDO_ToggleAT %I*BOOL1Active_EnergyAT %I*REAL4Active_Energy_PositiveAT %I*REAL4Active_Energy_NegativeAT %I*REAL4Apparent_EnergyAT %I*REAL4Apparent_Energy_PositiveAT %I*REAL4Apparent_Energy_NegativeAT %I*REAL4Reactive_EnergyAT %I*REAL4Reactive_Energy_PositiveAT %I*REAL4Reactive_Energy_NegativeAT %I*REAL4"}
+{attribute addProperty CRC "939314864"}
+{attribute addProperty Size "37"}
+TYPE Total_Interval_Energy_37FCCEB0 :
+STRUCT
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Active_Energy"}
+	Active_Energy AT %I* : REAL;
+	{attribute addProperty Name "Active_Energy_Positive"}
+	Active_Energy_Positive AT %I* : REAL;
+	{attribute addProperty Name "Active_Energy_Negative"}
+	Active_Energy_Negative AT %I* : REAL;
+	{attribute addProperty Name "Apparent_Energy"}
+	Apparent_Energy AT %I* : REAL;
+	{attribute addProperty Name "Apparent_Energy_Positive"}
+	Apparent_Energy_Positive AT %I* : REAL;
+	{attribute addProperty Name "Apparent_Energy_Negative"}
+	Apparent_Energy_Negative AT %I* : REAL;
+	{attribute addProperty Name "Reactive_Energy"}
+	Reactive_Energy AT %I* : REAL;
+	{attribute addProperty Name "Reactive_Energy_Positive"}
+	Reactive_Energy_Positive AT %I* : REAL;
+	{attribute addProperty Name "Reactive_Energy_Negative"}
+	Reactive_Energy_Negative AT %I* : REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

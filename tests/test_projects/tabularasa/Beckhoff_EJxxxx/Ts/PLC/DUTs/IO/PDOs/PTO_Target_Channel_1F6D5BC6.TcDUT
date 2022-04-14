@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PTO_Target_Channel_1F6D5BC6" Id="{c5806eb4-2949-423e-8800-1eb6e13304bf}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2522-0000-0022'}
+{attribute addProperty BoxType "EJ2522-0000-0022"}
+{attribute addProperty Id "Target_counter_valueAT %Q*UDINT4"}
+{attribute addProperty CRC "527260614"}
+{attribute addProperty Size "4"}
+TYPE PTO_Target_Channel_1F6D5BC6 :
+STRUCT
+	{attribute addProperty Name "Target_counter_value"}
+	Target_counter_value AT %Q* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

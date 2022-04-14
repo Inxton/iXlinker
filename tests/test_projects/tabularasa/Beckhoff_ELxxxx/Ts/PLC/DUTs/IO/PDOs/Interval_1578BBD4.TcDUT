@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Interval_1578BBD4" Id="{666fec09-10e1-4da9-8d8a-f7aed8fb52ca}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0016'}
+{attribute addProperty BoxType "EL3423-0000-0016"}
+{attribute addProperty Id "Reset_IntervalAT %Q*BOOL1"}
+{attribute addProperty CRC "360233940"}
+{attribute addProperty Size "1"}
+TYPE Interval_1578BBD4 :
+STRUCT
+	{attribute addProperty Name "Reset_Interval"}
+	Reset_Interval AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

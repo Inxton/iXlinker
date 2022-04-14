@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6631_210A1A8D" Id="{dd1f45ee-45f3-421d-b189-41d217a40717}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6631-0000-0016'}
+{attribute addProperty BoxType "EL6631-0000-0016"}
+{attribute addProperty Id "InfoDataAT %I*InfoData_90184F0C16"}
+{attribute addProperty CRC "554310285"}
+{attribute addProperty Size "16"}
+TYPE EL6631_210A1A8D :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_90184F0C;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

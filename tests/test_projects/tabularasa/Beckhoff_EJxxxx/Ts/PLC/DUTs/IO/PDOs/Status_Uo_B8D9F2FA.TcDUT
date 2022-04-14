@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_Uo_B8D9F2FA" Id="{4de66823-115b-4000-a4a4-4daf297ba7d9}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ9505-0000-0016'}
+{attribute addProperty BoxType "EJ9505-0000-0016"}
+{attribute addProperty Id "Power_OKAT %I*BOOL1OverloadAT %I*BOOL1"}
+{attribute addProperty CRC "3101291258"}
+{attribute addProperty Size "2"}
+TYPE Status_Uo_B8D9F2FA :
+STRUCT
+	{attribute addProperty Name "Power_OK"}
+	Power_OK AT %I* : BOOL;
+	{attribute addProperty Name "Overload"}
+	Overload AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

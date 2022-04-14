@@ -18,9 +18,9 @@ namespace TsprojFile.Scan
 
             foreach (PdoViewModel pdo in pdos)
             {
-                if (pdo.Name.Contains(ioSlotSeparator))
+                if (pdo.Name.Contains(tmpSlotSeparator))
                 {
-                    string slotName = ValidatePlcItem.Name(pdo.Name.Substring(0, pdo.Name.IndexOf(ioSlotSeparator, StringComparison.Ordinal)));
+                    string slotName = ValidatePlcItem.Name(pdo.Name.Substring(0, pdo.Name.IndexOf(tmpSlotSeparator, StringComparison.Ordinal)));
                     
                     //Check if slot structure already exists
                     bool slotStructAlreadyExists = false;
@@ -48,36 +48,32 @@ namespace TsprojFile.Scan
 
             foreach (PdoViewModel pdo in pdos)
             {
-                if (pdo.Name.Contains(ioSlotSeparator))
+                if (pdo.Name.Contains(tmpSlotSeparator))
                 {
                     //Create the struct member
                     PdoStructMemberViewModel member = new PdoStructMemberViewModel();
-                    string slotName = ValidatePlcItem.Name(pdo.Name.Substring(0, pdo.Name.IndexOf(ioSlotSeparator, StringComparison.Ordinal)));
-                    string pdoName = ValidatePlcItem.Name(pdo.Name.Substring(pdo.Name.LastIndexOf(ioSlotSeparator, StringComparison.Ordinal) + 1));
+                    string slotName = ValidatePlcItem.Name(pdo.Name.Substring(0, pdo.Name.IndexOf(tmpSlotSeparator, StringComparison.Ordinal)));
+                    string pdoName = ValidatePlcItem.Name(pdo.Name.Substring(pdo.Name.LastIndexOf(tmpSlotSeparator, StringComparison.Ordinal) + 1));
                     string typeValue = pdo.Type_Value;
-                    if (typeValue.Contains(ioSlotSeparator))
+                    if (typeValue.Contains(tmpSlotSeparator))
                     {
-                        typeValue = typeValue.Substring(typeValue.LastIndexOf(ioSlotSeparator, StringComparison.Ordinal) + 1);
+                        typeValue = typeValue.Substring(typeValue.LastIndexOf(tmpSlotSeparator, StringComparison.Ordinal) + 1);
                     }
                     member.Attributes.Add("{attribute addProperty Name \"" + pdoName + "\"}");
                     member.Name = pdoName;
                     member.BoxOrderCode = pdo.BoxOrderCode;
                     member.Type_Value = typeValue;
                     member.TypeNamespace = pdo.TypeNamespace;
-                    //member.InOutPlcProj = pdo.InOutPlcProj;
-                    //member.InOutMappings = pdo.InOutMappings;
                     member.OwnerBname = pdo.OwnerBname;
-                    member.SizeInBites = pdo.SizeInBites;
-                    member.SizeInBytes = pdo.SizeInBytes;
+                    member.Size = pdo.Size;
                     member.Index = pdo.Index;
                     member.IndexNumber = pdo.IndexNumber;
 
                     PdoStructViewModel actStruct = new PdoStructViewModel() { Prefix = ValidatePlcItem.Name(slotName) };
                     int slotIndex = slotStructs.FindIndex(info => info.Prefix == actStruct.Prefix);
                     slotStructs[slotIndex].StructMembers.Add(member);
-                    slotStructs[slotIndex].Id = slotStructs[slotIndex].Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
-                    slotStructs[slotIndex].SizeInBites = slotStructs[slotIndex].SizeInBites + member.SizeInBites;
-                    slotStructs[slotIndex].SizeInBytes = slotStructs[slotIndex].SizeInBytes + member.SizeInBytes;
+                    slotStructs[slotIndex].Id = slotStructs[slotIndex].Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                    slotStructs[slotIndex].Size = slotStructs[slotIndex].Size + member.Size;
 
                     foreach (PdoEntryViewModel pdoEntry in pdo.PdoEntriesUnstructured)
                     {
@@ -113,7 +109,6 @@ namespace TsprojFile.Scan
                     if (CheckIfPdoStructureDoesNotExist(actSlotStruct))
                     {
                         //if not add to the structure list
-                        //actSlotStruct.TypeNamespace = "*";
                         PdoStructures.Add(actSlotStruct);
                     }
                     PdoStructMemberViewModel firstStructMember = actSlotStruct.StructMembers.FirstOrDefault();
@@ -124,16 +119,13 @@ namespace TsprojFile.Scan
                     pdoViewModels[i].InOutPlcProj = firstStructMember.InOutPlcProj;
                     pdoViewModels[i].InOutMappings = firstStructMember.InOutMappings;
                     pdoViewModels[i].BoxOrderCode = firstStructMember.BoxOrderCode;
-                    pdoViewModels[i].SizeInBites = actSlotStruct.SizeInBites;
-                    pdoViewModels[i].SizeInBytes = actSlotStruct.SizeInBytes;
+                    pdoViewModels[i].Size = actSlotStruct.Size;
 
                     mapableObjects[i].Name = ValidatePlcItem.Name(boxViewModel.Name);
-                    //mapableObjects[i].Type_Value = ValidatePlcItem.NameIncludingNamespace(actSlotStruct.TypeNamespace, ValidatePlcItem.Type(actSlotStruct.Name));
                     mapableObjects[i].Type_Value =ValidatePlcItem.Type(actSlotStruct.Name);
                     mapableObjects[i].TypeNamespace =actSlotStruct.TypeNamespace;
 
-                    mapableObjects[i].SizeInBites = actSlotStruct.SizeInBites;
-                    mapableObjects[i].SizeInBytes = actSlotStruct.SizeInBytes;
+                    mapableObjects[i].Size = actSlotStruct.Size;
 
                     pdoViewModels[i].MapableObject = mapableObjects[i];
                 }

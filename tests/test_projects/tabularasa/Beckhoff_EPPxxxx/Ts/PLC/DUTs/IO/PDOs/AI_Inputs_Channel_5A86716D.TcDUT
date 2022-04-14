@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AI_Inputs_Channel_5A86716D" Id="{c3506ce0-0b96-4a10-8f24-84f0371038a5}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP3752-0000-0017'}
+{attribute addProperty BoxType "EPP3752-0000-0017"}
+{attribute addProperty Id "StatusAT %I*Status_8F1D55D83ValueAT %I*INT2"}
+{attribute addProperty CRC "1518760301"}
+{attribute addProperty Size "5"}
+TYPE AI_Inputs_Channel_5A86716D :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_8F1D55D8;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

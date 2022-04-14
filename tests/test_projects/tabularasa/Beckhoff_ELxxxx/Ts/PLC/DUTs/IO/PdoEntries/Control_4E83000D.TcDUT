@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_4E83000D" Id="{800642bb-df8c-45e2-be87-fca578a3ffea}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2212-0000-0018'}
+{attribute addProperty BoxType "EL2212-0000-0018"}
+{attribute addProperty Id "OutputBOOL1TristateBOOL1ResetBOOL1"}
+{attribute addProperty CRC "1317208077"}
+{attribute addProperty Size "3"}
+TYPE Control_4E83000D :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output : BOOL;
+	{attribute addProperty Name "Tristate"}
+	Tristate : BOOL;
+	{attribute addProperty Name "Reset"}
+	Reset : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

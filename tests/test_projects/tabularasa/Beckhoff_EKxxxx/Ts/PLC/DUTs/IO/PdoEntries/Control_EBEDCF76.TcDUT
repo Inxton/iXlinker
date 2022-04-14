@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_EBEDCF76" Id="{f5236796-b1fa-4232-a762-b43d9cbb70ce}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EKM1101-0000-0016'}
+{attribute addProperty BoxType "EKM1101-0000-0016"}
+{attribute addProperty Id "Up_Out_OFFBOOL1"}
+{attribute addProperty CRC "3958230902"}
+{attribute addProperty Size "1"}
+TYPE Control_EBEDCF76 :
+STRUCT
+	{attribute addProperty Name "Up_Out_OFF"}
+	Up_Out_OFF : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

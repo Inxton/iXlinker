@@ -30,14 +30,12 @@ namespace TsprojFile.Scan
                 member.InOutPlcProj = varGrp.InOutPlcProj;
                 member.InOutMappings = varGrp.InOutMappings;
                 member.OwnerBname = varGrp.OwnerBname;
-                member.SizeInBites = varGrp.SizeInBites;
-                member.SizeInBytes = varGrp.SizeInBytes;
+                member.Size = varGrp.Size;
                 member.Index = varGrp.Index;
                 member.IndexNumber = varGrp.IndexNumber;
                 actBoxStruct.StructMembers.Add(member);
-                actBoxStruct.Id = actBoxStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
-                actBoxStruct.SizeInBites = actBoxStruct.SizeInBites + member.SizeInBites;
-                actBoxStruct.SizeInBytes = actBoxStruct.SizeInBytes + member.SizeInBytes;
+                actBoxStruct.Id = actBoxStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                actBoxStruct.Size = actBoxStruct.Size + member.Size;
 
                 foreach (PdoEntryViewModel pdoEntry in varGrp.PdoEntriesUnstructured)
                 {
@@ -66,7 +64,6 @@ namespace TsprojFile.Scan
                 if (CheckIfBoxStructureDoesNotExist(actBoxStruct))
                 {
                     //if not add to the structure list
-                    //actBoxStruct.TypeNamespace = "*";
                     BoxStructures.Add(actBoxStruct);
                 }
                 BoxStructMemberViewModel firstStructMember = actBoxStruct.StructMembers.FirstOrDefault();
@@ -77,15 +74,12 @@ namespace TsprojFile.Scan
                 pdoViewModel.InOutPlcProj = firstStructMember.InOutPlcProj;
                 pdoViewModel.InOutMappings = firstStructMember.InOutMappings;
                 pdoViewModel.BoxOrderCode = firstStructMember.BoxOrderCode;
-                pdoViewModel.SizeInBites = actBoxStruct.SizeInBites;
-                pdoViewModel.SizeInBytes = actBoxStruct.SizeInBytes;
+                pdoViewModel.Size = actBoxStruct.Size;
 
                 mapableObject.Name = ValidatePlcItem.Name(boxViewModel.Name);
-                //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actBoxStruct.TypeNamespace, ValidatePlcItem.Type(actBoxStruct.Name));
                 mapableObject.Type_Value = ValidatePlcItem.Type(actBoxStruct.Name);
                 mapableObject.TypeNamespace = actBoxStruct.TypeNamespace;
-                mapableObject.SizeInBites = actBoxStruct.SizeInBites;
-                mapableObject.SizeInBytes = actBoxStruct.SizeInBytes;
+                mapableObject.Size = actBoxStruct.Size;
 
                 pdoViewModel.MapableObject = mapableObject;
             }

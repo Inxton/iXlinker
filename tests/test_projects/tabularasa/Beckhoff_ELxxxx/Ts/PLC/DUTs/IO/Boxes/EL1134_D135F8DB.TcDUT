@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL1134_D135F8DB" Id="{32a5769c-b7b2-41ed-b2b0-2d6b27939a99}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1134-0000-0016'}
+{attribute addProperty BoxType "EL1134-0000-0016"}
+{attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "3509975259"}
+{attribute addProperty Size "8"}
+TYPE EL1134_D135F8DB :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_830843C1;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_830843C1;
+	{attribute addProperty Name "Channel_3"}
+	Channel_3 : Channel_830843C1;
+	{attribute addProperty Name "Channel_4"}
+	Channel_4 : Channel_830843C1;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

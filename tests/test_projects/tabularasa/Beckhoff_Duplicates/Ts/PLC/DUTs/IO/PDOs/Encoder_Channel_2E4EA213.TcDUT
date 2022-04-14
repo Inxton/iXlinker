@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Encoder_Channel_2E4EA213" Id="{206f4574-a1e2-4045-86ae-76b163356ab6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9995'}
+{attribute addProperty BoxType "EM7004-0000-9995"}
+{attribute addProperty Id "StatusAT %I*UINT2ValueAT %I*UINT2LatchAT %I*UINT2"}
+{attribute addProperty CRC "776905235"}
+{attribute addProperty Size "6"}
+TYPE Encoder_Channel_2E4EA213 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : UINT;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : UINT;
+	{attribute addProperty Name "Latch"}
+	Latch AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

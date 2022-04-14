@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Status_compact_Channel_DC559AB0" Id="{75eaba14-6b7b-48a4-9ced-ed1618e0e496}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7342-0002-0016'}
+{attribute addProperty BoxType "EP7342-0002-0016"}
+{attribute addProperty Id "StatusAT %I*Status_3035BE2E10Counter_valueAT %I*UINT2Latch_valueAT %I*UINT2"}
+{attribute addProperty CRC "3696597680"}
+{attribute addProperty Size "14"}
+TYPE ENC_Status_compact_Channel_DC559AB0 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_3035BE2E;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UINT;
+	{attribute addProperty Name "Latch_value"}
+	Latch_value AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

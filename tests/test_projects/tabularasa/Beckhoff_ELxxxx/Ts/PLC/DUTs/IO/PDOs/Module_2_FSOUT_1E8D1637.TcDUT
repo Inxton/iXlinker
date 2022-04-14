@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Module_2_FSOUT_1E8D1637" Id="{d82f8a26-f7aa-430c-9e39-a8795d10698f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2911-0000-0016'}
+{attribute addProperty BoxType "EL2911-0000-0016"}
+{attribute addProperty Id "OutputsOutputs_A2CAA4461"}
+{attribute addProperty CRC "512562743"}
+{attribute addProperty Size "1"}
+TYPE Module_2_FSOUT_1E8D1637 :
+STRUCT
+	{attribute addProperty Name "Outputs"}
+	Outputs  : Outputs_A2CAA446;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

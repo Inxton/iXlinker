@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Total_Statistic_Power_092925BE" Id="{ee697e48-e30b-4b3a-b6de-245b941a8076}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0016'}
+{attribute addProperty BoxType "EL3423-0000-0016"}
+{attribute addProperty Id "Active_Power_AvgAT %I*REAL4Active_Power_MinAT %I*REAL4Active_Power_MaxAT %I*REAL4Apparent_Power_AvgAT %I*REAL4Apparent_Power_MinAT %I*REAL4Apparent_Power_MaxAT %I*REAL4Reactive_Power_AvgAT %I*REAL4Reactive_Power_MinAT %I*REAL4Reactive_Power_MaxAT %I*REAL4"}
+{attribute addProperty CRC "153691582"}
+{attribute addProperty Size "36"}
+TYPE Total_Statistic_Power_092925BE :
+STRUCT
+	{attribute addProperty Name "Active_Power_Avg"}
+	Active_Power_Avg AT %I* : REAL;
+	{attribute addProperty Name "Active_Power_Min"}
+	Active_Power_Min AT %I* : REAL;
+	{attribute addProperty Name "Active_Power_Max"}
+	Active_Power_Max AT %I* : REAL;
+	{attribute addProperty Name "Apparent_Power_Avg"}
+	Apparent_Power_Avg AT %I* : REAL;
+	{attribute addProperty Name "Apparent_Power_Min"}
+	Apparent_Power_Min AT %I* : REAL;
+	{attribute addProperty Name "Apparent_Power_Max"}
+	Apparent_Power_Max AT %I* : REAL;
+	{attribute addProperty Name "Reactive_Power_Avg"}
+	Reactive_Power_Avg AT %I* : REAL;
+	{attribute addProperty Name "Reactive_Power_Min"}
+	Reactive_Power_Min AT %I* : REAL;
+	{attribute addProperty Name "Reactive_Power_Max"}
+	Reactive_Power_Max AT %I* : REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

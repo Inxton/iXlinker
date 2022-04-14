@@ -1,0 +1,1635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+  <DataTypes>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
+      <BitSize>48</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+      <ArrayInfo>
+        <LBound>0</LBound>
+        <Elements>6</Elements>
+      </ArrayInfo>
+      <Format>
+        <Printf>%d.%d.%d.%d.%d.%d</Printf>
+        <Parameter>[0]</Parameter>
+        <Parameter>[1]</Parameter>
+        <Parameter>[2]</Parameter>
+        <Parameter>[3]</Parameter>
+        <Parameter>[4]</Parameter>
+        <Parameter>[5]</Parameter>
+      </Format>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-000000000042}" TcBaseType="true" CName="AmsAddr">AMSADDR</Name>
+      <BitSize>64</BitSize>
+      <SubItem>
+        <Name>netId</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+        <BitSize>48</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>port</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>48</BitOffs>
+      </SubItem>
+      <Format>
+        <Printf>%d.%d.%d.%d.%d.%d:%d</Printf>
+        <Parameter>.netId[0]</Parameter>
+        <Parameter>.netId[1]</Parameter>
+        <Parameter>.netId[2]</Parameter>
+        <Parameter>.netId[3]</Parameter>
+        <Parameter>.netId[4]</Parameter>
+        <Parameter>.netId[5]</Parameter>
+        <Parameter>.port</Parameter>
+      </Format>
+      <Format Name="Iec">
+        <Printf>(netId:=[%d.%d.%d.%d.%d.%d], port :=%d)</Printf>
+        <Parameter>.netId[0]</Parameter>
+        <Parameter>.netId[1]</Parameter>
+        <Parameter>.netId[2]</Parameter>
+        <Parameter>.netId[3]</Parameter>
+        <Parameter>.netId[4]</Parameter>
+        <Parameter>.netId[5]</Parameter>
+        <Parameter>.port</Parameter>
+      </Format>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-002000000004}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..3] OF BIT</Name>
+      <BitSize>4</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+      <ArrayInfo>
+        <LBound>0</LBound>
+        <Elements>4</Elements>
+      </ArrayInfo>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-00200000000E}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..13] OF BIT</Name>
+      <BitSize>14</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+      <ArrayInfo>
+        <LBound>0</LBound>
+        <Elements>14</Elements>
+      </ArrayInfo>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-002000000002}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..1] OF BIT</Name>
+      <BitSize>2</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+      <ArrayInfo>
+        <LBound>0</LBound>
+        <Elements>2</Elements>
+      </ArrayInfo>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-00200000000C}" IecBaseType="true" BitType="true" AutoDeleteType="true" HideSubItems="true">ARRAY [0..11] OF BIT</Name>
+      <BitSize>12</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000010}">BIT</BaseType>
+      <ArrayInfo>
+        <LBound>0</LBound>
+        <Elements>12</Elements>
+      </ArrayInfo>
+    </DataType>
+  </DataTypes>
+  <ImageDatas>
+    <ImageData Id="1000">424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000C40E0000C40E00000000000000000000FF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080808080808080808080808080808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C000FFFFC0C0C000FFFF808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0FF0000C0C0C0FF0000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C00000FFC0C0C00000FF808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0008000C0C0C0008000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF</ImageData>
+    <ImageData Id="1001">424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000120B0000120B00000000000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF808080808080808080808080808080808080808080808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0808080808080808080C0C0C0C0C0C080808000BFFFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C080808080808080808000BFFF00BFFF00BFFF00BFFF00BFFFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0808080808080808080C0C0C0C0C0C080808000BFFFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0808080808080808080C0C0C0C0C0C080808000BFFFFF00FF007FFF007FFF007FFF007FFF007FFF007FFFC0C0C0C0C0C080808080808080808000BFFF00BFFF00BFFF00BFFF00BFFF007FFF007FFF007FFF007FFF007FFF007FFFC0C0C0C0C0C0808080808080808080C0C0C0C0C0C080808000BFFFFF00FF007FFF007FFF007FFF007FFF007FFF007FFFC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FF007FFF007FFF007FFF007FFF007FFF007FFFC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FF007FFF007FFF007FFF007FFF007FFF007FFFC0C0C0C0C0C0C0C0C0BBC2BBC0C0C0C0C0C0C0C0C0808080FF00FFFF00FF007FFF007FFF007FFF007FFF007FFF007FFFC0C0C0C0C0C0BAC2BA0BFC0BC0C0C0C0C0C0C0C0C0808080FF00FFFF00FF007FFF007FFF007FFF007FFF007FFF007FFFC0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FF</ImageData>
+    <ImageData Id="1002">424DD6020000000000003600000028000000100000000E0000000100180000000000A002000000000000000000000000000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000000000000000000000000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF0000000000000000000000000000000000000000000909FF0909FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000000000000000000000000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000FF00FFFF00FF000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF000000000000000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FF</ImageData>
+  </ImageDatas>
+  <Project ProjectGUID="{8313F13A-2AC6-4BF2-B0BE-F250080352BE}" Target64Bit="true" ShowHideConfigurations="#x106">
+    <System>
+      <Tasks>
+        <Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+          <Name>PlcTask</Name>
+        </Task>
+        <Task Id="4" Priority="21" CycleTime="100000" AmsPort="351" AdtTasks="true">
+          <Name>PlcTask1</Name>
+        </Task>
+      </Tasks>
+    </System>
+    <Plc>
+      <Project GUID="{66FE7546-9F1D-40F9-BBA1-FE29D660132A}" Name="PLC" PrjFilePath="PLC\PLC.plcproj" TmcFilePath="PLC\PLC.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+        <Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="PLC\PLC.tmc">
+          <Name>PLC Instance</Name>
+          <CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+          <Vars VarGrpType="1">
+            <Name>PlcTask Inputs</Name>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.Beckhoff_AMI8xxxsub_EK1100.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.FB_Position.Position</Name>
+              <Type>UDINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.DRV_Statusword.Statusword</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.DRV_Following_error_actual_value.Following_error_actual_value</Name>
+              <Type>DINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.WcState.InputToggle</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.AdsAddr</Name>
+              <Type GUID="{18071995-0000-0000-0000-000000000042}">AMSADDR</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.DcOutputShift</Name>
+              <Type>DINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.DcInputShift</Name>
+              <Type>DINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.Chn0</Name>
+              <Type>USINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.Chn1</Name>
+              <Type>USINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.Chn2</Name>
+              <Type>USINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.FB_Position.Position</Name>
+              <Type>UDINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.DRV_Statusword.Statusword</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.DRV_Following_error_actual_value.Following_error_actual_value</Name>
+              <Type>DINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.WcState.InputToggle</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.AdsAddr</Name>
+              <Type GUID="{18071995-0000-0000-0000-000000000042}">AMSADDR</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.DcOutputShift</Name>
+              <Type>DINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.DcInputShift</Name>
+              <Type>DINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.Chn0</Name>
+              <Type>USINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.Chn1</Name>
+              <Type>USINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.Chn2</Name>
+              <Type>USINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.unreferenced.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.unreferenced.InfoData.ObjectId</Name>
+              <Type>OTCID</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.unreferenced.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.unreferenced.InfoData.SlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask.InfoData.ObjectId</Name>
+              <Type>OTCID</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask.InfoData.SlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask1.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask1.InfoData.ObjectId</Name>
+              <Type>OTCID</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask1.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask1.InfoData.SlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.SlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.DevState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm0State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm0WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm0InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm1State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm1WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm1InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm2State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm2WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm2InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm3State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm3WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm3InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm4State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm4WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm4InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm5State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm5WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm5InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm6State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm6WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm6InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm7State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm7WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm7InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm8State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm8WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm8InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm9State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm9WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm9InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm10State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm10WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm10InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm11State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm11WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm11InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm12State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm12WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm12InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm13State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm13WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm13InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm14State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm14WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm14InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm15State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm15WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm15InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm16State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm16WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm16InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm17State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm17WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm17InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm18State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm18WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm18InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm19State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm19WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm19InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm20State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm20WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm20InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm21State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm21WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm21InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm22State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm22WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm22InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm23State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm23WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm23InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm24State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm24WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm24InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm25State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm25WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm25InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.ChangeCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.DevId</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.AmsNetId</Name>
+              <Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.CfgSlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.DcToTcTimeOffset</Name>
+              <Type>LINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.DcToExtTimeOffset</Name>
+              <Type>LINT</Type>
+            </Var>
+          </Vars>
+          <Vars VarGrpType="2">
+            <Name>PlcTask Outputs</Name>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.DRV_Controlword.Controlword</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.DRV_Target_position.Target_position</Name>
+              <Type>UDINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.DRV_Controlword.Controlword</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.DRV_Target_position.Target_position</Name>
+              <Type>UDINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.DevCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm0Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm0WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm1Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm1WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm2Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm2WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm3Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm3WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm4Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm4WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm5Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm5WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm6Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm6WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm7Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm7WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm8Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm8WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm9Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm9WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm10Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm10WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm11Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm11WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm12Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm12WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm13Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm13WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm14Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm14WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm15Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm15WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm16Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm16WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm17Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm17WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm18Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm18WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm19Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm19WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm20Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm20WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm21Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm21WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm22Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm22WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm23Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm23WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm24Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm24WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm25Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm25WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+          </Vars>
+          <Contexts>
+            <Context>
+              <Id NeedCalleeCall="true">0</Id>
+              <Name>PlcTask</Name>
+              <ManualConfig>
+                <OTCID>#x02010040</OTCID>
+              </ManualConfig>
+              <Priority>21</Priority>
+              <CycleTime>10000000</CycleTime>
+            </Context>
+          </Contexts>
+          <TaskPouOids>
+            <TaskPouOid Prio="21" OTCID="#x08502001" />
+          </TaskPouOids>
+        </Instance>
+      </Project>
+    </Plc>
+    <Io>
+      <Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="172.20.30.238.2.1" RemoteName="EtherCAT Master AMIxxxx">
+        <Name>EtherCAT_Master_AMIxxxx</Name>
+        <AddressInfo>
+          <Pnp>
+            <DeviceDesc>ECAT (TwinCAT-Intel PCI Ethernet Adapter (Gigabit))</DeviceDesc>
+            <DeviceName>\DEVICE\{95FEEA8F-0001-41DC-8F47-BE31DB549CFB}</DeviceName>
+            <DeviceData>0001052CE2AA</DeviceData>
+          </Pnp>
+        </AddressInfo>
+        <Image Id="1" AddrType="9" ImageType="3">
+          <Name>Image</Name>
+        </Image>
+        <Box Id="1" BoxType="9099">
+          <Name>EK1100_Beckhoff AMI8xxx</Name>
+          <ImageId>1000</ImageId>
+          <EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x00ffffff" />
+          <Box Id="2" BoxType="9099">
+            <Name>Beckhoff AMI8xxxEK1122</Name>
+            <ImageId>1001</ImageId>
+            <EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x04622c52" RevisionNo="#x00120000" PortPhys="4883" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1122 2 port EtherCAT junction" Desc="EK1122" PortABoxInfo="#x01000001" />
+            <Box Id="3" BoxType="9099">
+              <Name>Beckhoff AMI8xxxsub EK1100</Name>
+              <ImageId>1000</ImageId>
+              <EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x03000002" />
+            </Box>
+            <Box Id="4" BoxType="9099" BoxFlags="#x00000020">
+              <Name>A_0001(AMI8000-0000-0016)</Name>
+              <ImageId>1002</ImageId>
+              <EtherCAT SlaveType="2" PdiType="#x0c80" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x368ecc09" RevisionNo="#x00100000" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="AMI8000-0000 Servo motor 48 V DC" Desc="AMI8000-0000" PortABoxInfo="#x02000003">
+                <SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
+                <SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
+                <SyncMan>001206002400010003000000000000000800001224010000</SyncMan>
+                <SyncMan>00140A002000010004000000000000000A00001420010000</SyncMan>
+                <Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+                <Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+                <Fmmu>00000000000000000D0800010100000003000000000000000000000000000000</Fmmu>
+                <BootStrapData>0010F400F410F400</BootStrapData>
+                <DcData>0007000024F4000000000000000000000000FFFF000000000000000000000000</DcData>
+                <DcMode>4443000000000000000000000000000044432D53796E6368726F6E00000000000000000000000000000000000000000024F400000000000000000000FFFF00070000000000000000000000000000000000000000000000000000000000000000</DcMode>
+                <DcMode>53796E6368726F6E0000000000000000534D2D53796E6368726F6E000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+                <MBoxUserCmdData>004003000C0000000000000003000000000000000000000000000000000000002081F001040000000000100000</MBoxUserCmdData>
+                <MBoxUserCmdData>004003000A00000000000000030010000000000000000000000000000000000020F3100502000000010000</MBoxUserCmdData>
+                <Pdo Name="FB Position" Index="#x1a00" Flags="#x0010" SyncMan="3">
+                  <Entry Name="Position" Index="#x6000" Sub="#x11">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Statusword" Index="#x1a01" Flags="#x0010" SyncMan="3">
+                  <Entry Name="Statusword" Index="#x6010" Sub="#x01">
+                    <Type>UINT</Type>
+                    <Comment>Bit 0 : Ready to switch on
+Bit 1 : Switched on
+Bit 2 : Operation enabled
+Bit 3 : Fault
+Bit 4 : reserved
+Bit 5 : reserved
+Bit 6 : Switch on disabled
+Bit 7 : Warning
+Bit 8 + 9 : reserved
+Bit 10 : TxPDOToggle
+Bit 11 : Internal limit active
+Bit 12 : Drive follows the command value
+Bit 13 : Input cycle counter
+Bit 14 - 15 : reserved</Comment>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Velocity actual value" Index="#x1a02" Flags="#x0010">
+                  <Entry Name="Velocity actual value" Index="#x6010" Sub="#x07">
+                    <Type>DINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Torque actual value" Index="#x1a03" Flags="#x0010">
+                  <Entry Name="Torque actual value" Index="#x6010" Sub="#x08">
+                    <Type>INT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Info data 1" Index="#x1a04" Flags="#x0010">
+                  <Entry Name="Info data 1" Index="#x6010" Sub="#x12">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Info data 2" Index="#x1a05" Flags="#x0010">
+                  <Entry Name="Info data 2" Index="#x6010" Sub="#x13">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Following error actual value" Index="#x1a06" Flags="#x0010" SyncMan="3">
+                  <Entry Name="Following error actual value" Index="#x6010" Sub="#x06">
+                    <Type>DINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe status" Index="#x1a07" Flags="#x0010">
+                  <Entry Name="Touch probe status__TP1 Enable" Index="#x6001" Sub="#x01">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP1 Pos value stored" Index="#x6001" Sub="#x02">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP1 Neg value stored" Index="#x6001" Sub="#x03">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__">
+                    <Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP1 Input" Index="#x6001" Sub="#x08">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP2 Enable" Index="#x6001" Sub="#x09">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP2 Pos value stored" Index="#x6001" Sub="#x0a">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP2 Neg value stored" Index="#x6001" Sub="#x0b">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__">
+                    <Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP2 Input" Index="#x6001" Sub="#x10">
+                    <Type>BIT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 1 pos position" Index="#x1a08" Flags="#x0010">
+                  <Entry Name="TP1 Pos position" Index="#x6001" Sub="#x11">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 1 neg position" Index="#x1a09" Flags="#x0010">
+                  <Entry Name="TP1 Neg position" Index="#x6001" Sub="#x12">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 2 pos position" Index="#x1a0a" Flags="#x0010">
+                  <Entry Name="TP2 Pos position" Index="#x6001" Sub="#x13">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 2 neg position" Index="#x1a0b" Flags="#x0010">
+                  <Entry Name="TP2 Neg position" Index="#x6001" Sub="#x14">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Info data 3" Index="#x1a0d" Flags="#x0010">
+                  <Entry Name="Info data 3" Index="#x6010" Sub="#x14">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DI Inputs" Index="#x1a10" Flags="#x0010">
+                  <Entry Name="Input 1" Index="#x6020" Sub="#x01">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Input 2" Index="#x6020" Sub="#x02">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry>
+                    <Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 1 pos timestamp" Index="#x1a11" Flags="#x0010">
+                  <Entry Name="TP1 Pos timestamp" Index="#x6001" Sub="#x15">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 1 neg timestamp" Index="#x1a12" Flags="#x0010">
+                  <Entry Name="TP1 Neg timestamp" Index="#x6001" Sub="#x16">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 2 pos timestamp" Index="#x1a13" Flags="#x0010">
+                  <Entry Name="TP2 Pos timestamp" Index="#x6001" Sub="#x17">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 2 neg timestamp" Index="#x1a14" Flags="#x0010">
+                  <Entry Name="TP2 Neg timestamp" Index="#x6001" Sub="#x18">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Controlword" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+                  <Entry Name="Controlword" Index="#x7010" Sub="#x01">
+                    <Type>UINT</Type>
+                    <Comment>Bit 0 : Switch on
+Bit 1 : Enable voltage
+Bit 2 : reserved
+Bit 3 : Enable operation
+Bit 4 - 6 : reserved
+Bit 7 : Fault reset
+Bit 8 - 15 : reserved</Comment>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Target velocity" Index="#x1601" InOut="1" Flags="#x0010">
+                  <Entry Name="Target velocity" Index="#x7010" Sub="#x06">
+                    <Type>DINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Target torque" Index="#x1602" InOut="1" Flags="#x0010">
+                  <Entry Name="Target torque" Index="#x7010" Sub="#x09">
+                    <Type>INT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Commutation angle" Index="#x1603" InOut="1" Flags="#x0010">
+                  <Entry Name="Commutation angle" Index="#x7010" Sub="#x0e">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Torque limitation" Index="#x1604" InOut="1" Flags="#x0010">
+                  <Entry Name="Torque limitation" Index="#x7010" Sub="#x0b">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Torque offset" Index="#x1605" InOut="1" Flags="#x0010">
+                  <Entry Name="Torque offset" Index="#x7010" Sub="#x0a">
+                    <Type>INT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Target position" Index="#x1606" InOut="1" Flags="#x0010" SyncMan="2">
+                  <Entry Name="Target position" Index="#x7010" Sub="#x05">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe control" Index="#x1607" InOut="1" Flags="#x0010">
+                  <Entry Name="Touch probe function__TP1 Enable" Index="#x7001" Sub="#x01">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP1 Continous" Index="#x7001" Sub="#x02">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP1 Trigger mode" Index="#x7001" Sub="#x03">
+                    <Type>BIT2</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP1 Enable pos edge" Index="#x7001" Sub="#x05">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP1 Enable neg edge" Index="#x7001" Sub="#x06">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__">
+                    <Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP2 Enable" Index="#x7001" Sub="#x09">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP2 Continous" Index="#x7001" Sub="#x0a">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP2 Trigger mode" Index="#x7001" Sub="#x0b">
+                    <Type>BIT2</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP2 Enable pos edge" Index="#x7001" Sub="#x0d">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP2 Enable neg edge" Index="#x7001" Sub="#x0e">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__">
+                    <Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Velocity offset" Index="#x1609" InOut="1" Flags="#x0010">
+                  <Entry Name="Velocity offset" Index="#x7010" Sub="#x0f">
+                    <Type>DINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Positive torque limit value" Index="#x160a" InOut="1" Flags="#x0010">
+                  <Entry Name="Positive torque limit value" Index="#x7010" Sub="#x10">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Negative torque lmit value" Index="#x160b" InOut="1" Flags="#x0010">
+                  <Entry Name="Negative torque limit value" Index="#x7010" Sub="#x11">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DO Outputs" Index="#x1610" InOut="1" Flags="#x0010">
+                  <Entry Name="Output 1" Index="#x7030" Sub="#x01">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Output 2" Index="#x7030" Sub="#x02">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry>
+                    <Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+                  </Entry>
+                </Pdo>
+                <CoeProfile ProfileNo="33624969" DisplayName="Servo interface" />
+                <CoeProfile ProfileNo="48632713" DisplayName="Servo interface" />
+                <CoeProfile ProfileNo="6558601" />
+                <CoeProfile ProfileNo="13112201" />
+              </EtherCAT>
+            </Box>
+            <Box Id="5" BoxType="9099" BoxFlags="#x00000020">
+              <Name>A_0002(AMI8000-0090-0016)</Name>
+              <ImageId>1002</ImageId>
+              <EtherCAT SlaveType="2" PdiType="#x0c80" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="39" FoeType="1" VendorId="#x00000002" ProductCode="#x368ecc09" RevisionNo="#x0010005a" InfoDataAddr="true" InfoDataSoeDS401="true" InfoDataDcTimes="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="17" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="AMI8000-0090 Servo motor 48 V DC" Desc="AMI8000-0090" PortABoxInfo="#x01000004">
+                <SyncMan>001000012600010001000000800000010001001026010000</SyncMan>
+                <SyncMan>001100012200010002000000800000010001001122010000</SyncMan>
+                <SyncMan>001206002400010003000000000000000800001224010000</SyncMan>
+                <SyncMan>00140A002000010004000000000000000A00001420010000</SyncMan>
+                <Fmmu>0000000000000000001200020100000001000000000000000000000000000000</Fmmu>
+                <Fmmu>0000000000000000001400010100000002000000000000000000000000000000</Fmmu>
+                <Fmmu>00000000000000000D0800010100000003000000000000000000000000000000</Fmmu>
+                <BootStrapData>0010F400F410F400</BootStrapData>
+                <DcData>0007000024F4000000000000000000000000FFFF000000000000000000000000</DcData>
+                <DcMode>4443000000000000000000000000000044432D53796E6368726F6E00000000000000000000000000000000000000000024F400000000000000000000FFFF00070000000000000000000000000000000000000000000000000000000000000000</DcMode>
+                <DcMode>53796E6368726F6E0000000000000000534D2D53796E6368726F6E000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</DcMode>
+                <MBoxUserCmdData>004003000C0000000000000003000000000000000000000000000000000000002081F001040000005A00100000</MBoxUserCmdData>
+                <MBoxUserCmdData>004003000A00000000000000030010000000000000000000000000000000000020F3100502000000010000</MBoxUserCmdData>
+                <Pdo Name="FB Position" Index="#x1a00" Flags="#x0010" SyncMan="3">
+                  <Entry Name="Position" Index="#x6000" Sub="#x11">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Statusword" Index="#x1a01" Flags="#x0010" SyncMan="3">
+                  <Entry Name="Statusword" Index="#x6010" Sub="#x01">
+                    <Type>UINT</Type>
+                    <Comment>Bit 0 : Ready to switch on
+Bit 1 : Switched on
+Bit 2 : Operation enabled
+Bit 3 : Fault
+Bit 4 : reserved
+Bit 5 : reserved
+Bit 6 : Switch on disabled
+Bit 7 : Warning
+Bit 8 + 9 : reserved
+Bit 10 : TxPDOToggle
+Bit 11 : Internal limit active
+Bit 12 : Drive follows the command value
+Bit 13 : Input cycle counter
+Bit 14 - 15 : reserved</Comment>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Velocity actual value" Index="#x1a02" Flags="#x0010">
+                  <Entry Name="Velocity actual value" Index="#x6010" Sub="#x07">
+                    <Type>DINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Torque actual value" Index="#x1a03" Flags="#x0010">
+                  <Entry Name="Torque actual value" Index="#x6010" Sub="#x08">
+                    <Type>INT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Info data 1" Index="#x1a04" Flags="#x0010">
+                  <Entry Name="Info data 1" Index="#x6010" Sub="#x12">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Info data 2" Index="#x1a05" Flags="#x0010">
+                  <Entry Name="Info data 2" Index="#x6010" Sub="#x13">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Following error actual value" Index="#x1a06" Flags="#x0010" SyncMan="3">
+                  <Entry Name="Following error actual value" Index="#x6010" Sub="#x06">
+                    <Type>DINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe status" Index="#x1a07" Flags="#x0010">
+                  <Entry Name="Touch probe status__TP1 Enable" Index="#x6001" Sub="#x01">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP1 Pos value stored" Index="#x6001" Sub="#x02">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP1 Neg value stored" Index="#x6001" Sub="#x03">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__">
+                    <Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP1 Input" Index="#x6001" Sub="#x08">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP2 Enable" Index="#x6001" Sub="#x09">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP2 Pos value stored" Index="#x6001" Sub="#x0a">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP2 Neg value stored" Index="#x6001" Sub="#x0b">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__">
+                    <Type GUID="{18071995-0000-0000-0000-002000000004}">ARRAY [0..3] OF BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe status__TP2 Input" Index="#x6001" Sub="#x10">
+                    <Type>BIT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 1 pos position" Index="#x1a08" Flags="#x0010">
+                  <Entry Name="TP1 Pos position" Index="#x6001" Sub="#x11">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 1 neg position" Index="#x1a09" Flags="#x0010">
+                  <Entry Name="TP1 Neg position" Index="#x6001" Sub="#x12">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 2 pos position" Index="#x1a0a" Flags="#x0010">
+                  <Entry Name="TP2 Pos position" Index="#x6001" Sub="#x13">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 2 neg position" Index="#x1a0b" Flags="#x0010">
+                  <Entry Name="TP2 Neg position" Index="#x6001" Sub="#x14">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Info data 3" Index="#x1a0d" Flags="#x0010">
+                  <Entry Name="Info data 3" Index="#x6010" Sub="#x14">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DI Inputs" Index="#x1a10" Flags="#x0010">
+                  <Entry Name="Input 1" Index="#x6020" Sub="#x01">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Input 2" Index="#x6020" Sub="#x02">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Input 3" Index="#x6020" Sub="#x03">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Input 4" Index="#x6020" Sub="#x04">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry>
+                    <Type GUID="{18071995-0000-0000-0000-00200000000C}">ARRAY [0..11] OF BIT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 1 pos timestamp" Index="#x1a11" Flags="#x0010">
+                  <Entry Name="TP1 Pos timestamp" Index="#x6001" Sub="#x15">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 1 neg timestamp" Index="#x1a12" Flags="#x0010">
+                  <Entry Name="TP1 Neg timestamp" Index="#x6001" Sub="#x16">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 2 pos timestamp" Index="#x1a13" Flags="#x0010">
+                  <Entry Name="TP2 Pos timestamp" Index="#x6001" Sub="#x17">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe 2 neg timestamp" Index="#x1a14" Flags="#x0010">
+                  <Entry Name="TP2 Neg timestamp" Index="#x6001" Sub="#x18">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Controlword" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+                  <Entry Name="Controlword" Index="#x7010" Sub="#x01">
+                    <Type>UINT</Type>
+                    <Comment>Bit 0 : Switch on
+Bit 1 : Enable voltage
+Bit 2 : reserved
+Bit 3 : Enable operation
+Bit 4 - 6 : reserved
+Bit 7 : Fault reset
+Bit 8 - 15 : reserved</Comment>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Target velocity" Index="#x1601" InOut="1" Flags="#x0010">
+                  <Entry Name="Target velocity" Index="#x7010" Sub="#x06">
+                    <Type>DINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Target torque" Index="#x1602" InOut="1" Flags="#x0010">
+                  <Entry Name="Target torque" Index="#x7010" Sub="#x09">
+                    <Type>INT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Commutation angle" Index="#x1603" InOut="1" Flags="#x0010">
+                  <Entry Name="Commutation angle" Index="#x7010" Sub="#x0e">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Torque limitation" Index="#x1604" InOut="1" Flags="#x0010">
+                  <Entry Name="Torque limitation" Index="#x7010" Sub="#x0b">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Torque offset" Index="#x1605" InOut="1" Flags="#x0010">
+                  <Entry Name="Torque offset" Index="#x7010" Sub="#x0a">
+                    <Type>INT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Target position" Index="#x1606" InOut="1" Flags="#x0010" SyncMan="2">
+                  <Entry Name="Target position" Index="#x7010" Sub="#x05">
+                    <Type>UDINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="FB Touch probe control" Index="#x1607" InOut="1" Flags="#x0010">
+                  <Entry Name="Touch probe function__TP1 Enable" Index="#x7001" Sub="#x01">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP1 Continous" Index="#x7001" Sub="#x02">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP1 Trigger mode" Index="#x7001" Sub="#x03">
+                    <Type>BIT2</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP1 Enable pos edge" Index="#x7001" Sub="#x05">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP1 Enable neg edge" Index="#x7001" Sub="#x06">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__">
+                    <Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP2 Enable" Index="#x7001" Sub="#x09">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP2 Continous" Index="#x7001" Sub="#x0a">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP2 Trigger mode" Index="#x7001" Sub="#x0b">
+                    <Type>BIT2</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP2 Enable pos edge" Index="#x7001" Sub="#x0d">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__TP2 Enable neg edge" Index="#x7001" Sub="#x0e">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Touch probe function__">
+                    <Type GUID="{18071995-0000-0000-0000-002000000002}">ARRAY [0..1] OF BIT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Velocity offset" Index="#x1609" InOut="1" Flags="#x0010">
+                  <Entry Name="Velocity offset" Index="#x7010" Sub="#x0f">
+                    <Type>DINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Positive torque limit value" Index="#x160a" InOut="1" Flags="#x0010">
+                  <Entry Name="Positive torque limit value" Index="#x7010" Sub="#x10">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DRV Negative torque lmit value" Index="#x160b" InOut="1" Flags="#x0010">
+                  <Entry Name="Negative torque limit value" Index="#x7010" Sub="#x11">
+                    <Type>UINT</Type>
+                  </Entry>
+                </Pdo>
+                <Pdo Name="DO Outputs" Index="#x1610" InOut="1" Flags="#x0010">
+                  <Entry Name="Output 1" Index="#x7030" Sub="#x01">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry Name="Output 2" Index="#x7030" Sub="#x02">
+                    <Type>BIT</Type>
+                  </Entry>
+                  <Entry>
+                    <Type GUID="{18071995-0000-0000-0000-00200000000E}">ARRAY [0..13] OF BIT</Type>
+                  </Entry>
+                </Pdo>
+                <CoeProfile ProfileNo="33624969" DisplayName="Servo interface" />
+                <CoeProfile ProfileNo="48632713" DisplayName="Servo interface" />
+                <CoeProfile ProfileNo="6558601" />
+                <CoeProfile ProfileNo="13112201" />
+              </EtherCAT>
+            </Box>
+          </Box>
+        </Box>
+        <EtherCAT DcSyncMode="3" />
+      </Device>
+    </Io>
+  </Project>
+  <Mappings>
+    <OwnerA Name="TIPC^PLC^PLC Instance">
+      <OwnerB Name="TIID^EtherCAT_Master_AMIxxxx^EK1100_Beckhoff AMI8xxx">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.InfoData.State" VarB="InfoData^State" />
+      </OwnerB>
+      <OwnerB Name="TIID^EtherCAT_Master_AMIxxxx^EK1100_Beckhoff AMI8xxx^Beckhoff AMI8xxxEK1122">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.InfoData.State" VarB="InfoData^State" />
+      </OwnerB>
+      <OwnerB Name="TIID^EtherCAT_Master_AMIxxxx^EK1100_Beckhoff AMI8xxx^Beckhoff AMI8xxxEK1122^Beckhoff AMI8xxxsub EK1100">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.Beckhoff_AMI8xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
+      </OwnerB>
+      <OwnerB Name="TIID^EtherCAT_Master_AMIxxxx^EK1100_Beckhoff AMI8xxx^Beckhoff AMI8xxxEK1122^A_0001(AMI8000-0000-0016)">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.FB_Position.Position" VarB="FB Position^Position" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.DRV_Following_error_actual_value.Following_error_actual_value" VarB="DRV Following error actual value^Following error actual value" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.DRV_Target_position.Target_position" VarB="DRV Target position^Target position" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.WcState.WcState" VarB="WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.WcState.InputToggle" VarB="WcState^InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.DcOutputShift" VarB="InfoData^DcOutputShift" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.Chn0" VarB="InfoData^Chn0" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.Chn1" VarB="InfoData^Chn1" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.Chn2" VarB="InfoData^Chn2" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0001_AMI8000_0000_0016.InfoData.State" VarB="InfoData^State" />
+      </OwnerB>
+      <OwnerB Name="TIID^EtherCAT_Master_AMIxxxx^EK1100_Beckhoff AMI8xxx^Beckhoff AMI8xxxEK1122^A_0002(AMI8000-0090-0016)">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.FB_Position.Position" VarB="FB Position^Position" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.DRV_Following_error_actual_value.Following_error_actual_value" VarB="DRV Following error actual value^Following error actual value" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.DRV_Target_position.Target_position" VarB="DRV Target position^Target position" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.WcState.WcState" VarB="WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.WcState.InputToggle" VarB="WcState^InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.DcOutputShift" VarB="InfoData^DcOutputShift" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.Chn0" VarB="InfoData^Chn0" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.Chn1" VarB="InfoData^Chn1" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.Chn2" VarB="InfoData^Chn2" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.EK1100_Beckhoff_AMI8xxx.Beckhoff_AMI8xxxEK1122.A_0002_AMI8000_0090_0016.InfoData.State" VarB="InfoData^State" />
+      </OwnerB>
+      <OwnerB Name="TIID^EtherCAT_Master_AMIxxxx">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default._unreferenced.WcState.WcState" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default._unreferenced.InfoData.ObjectId" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^InfoData^ObjectId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default._unreferenced.InfoData.State" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^InfoData^State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default._unreferenced.InfoData.SlaveCount" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^InfoData^SlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask.WcState.WcState" VarB="SyncUnits^&lt;default&gt;^PlcTask^WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask.InfoData.ObjectId" VarB="SyncUnits^&lt;default&gt;^PlcTask^InfoData^ObjectId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask.InfoData.State" VarB="SyncUnits^&lt;default&gt;^PlcTask^InfoData^State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask.InfoData.SlaveCount" VarB="SyncUnits^&lt;default&gt;^PlcTask^InfoData^SlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask1.WcState.WcState" VarB="SyncUnits^&lt;default&gt;^PlcTask1^WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask1.InfoData.ObjectId" VarB="SyncUnits^&lt;default&gt;^PlcTask1^InfoData^ObjectId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask1.InfoData.State" VarB="SyncUnits^&lt;default&gt;^PlcTask1^InfoData^State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.SyncUnits._default.PlcTask1.InfoData.SlaveCount" VarB="SyncUnits^&lt;default&gt;^PlcTask1^InfoData^SlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.SlaveCount" VarB="Inputs^SlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.DevState" VarB="Inputs^DevState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm0State" VarB="Inputs^Frm0State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm0WcState" VarB="Inputs^Frm0WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm0InputToggle" VarB="Inputs^Frm0InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm1State" VarB="Inputs^Frm1State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm1WcState" VarB="Inputs^Frm1WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm1InputToggle" VarB="Inputs^Frm1InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm2State" VarB="Inputs^Frm2State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm2WcState" VarB="Inputs^Frm2WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm2InputToggle" VarB="Inputs^Frm2InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm3State" VarB="Inputs^Frm3State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm3WcState" VarB="Inputs^Frm3WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm3InputToggle" VarB="Inputs^Frm3InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm4State" VarB="Inputs^Frm4State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm4WcState" VarB="Inputs^Frm4WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm4InputToggle" VarB="Inputs^Frm4InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm5State" VarB="Inputs^Frm5State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm5WcState" VarB="Inputs^Frm5WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm5InputToggle" VarB="Inputs^Frm5InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm6State" VarB="Inputs^Frm6State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm6WcState" VarB="Inputs^Frm6WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm6InputToggle" VarB="Inputs^Frm6InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm7State" VarB="Inputs^Frm7State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm7WcState" VarB="Inputs^Frm7WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm7InputToggle" VarB="Inputs^Frm7InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm8State" VarB="Inputs^Frm8State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm8WcState" VarB="Inputs^Frm8WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm8InputToggle" VarB="Inputs^Frm8InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm9State" VarB="Inputs^Frm9State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm9WcState" VarB="Inputs^Frm9WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm9InputToggle" VarB="Inputs^Frm9InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm10State" VarB="Inputs^Frm10State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm10WcState" VarB="Inputs^Frm10WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm10InputToggle" VarB="Inputs^Frm10InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm11State" VarB="Inputs^Frm11State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm11WcState" VarB="Inputs^Frm11WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm11InputToggle" VarB="Inputs^Frm11InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm12State" VarB="Inputs^Frm12State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm12WcState" VarB="Inputs^Frm12WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm12InputToggle" VarB="Inputs^Frm12InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm13State" VarB="Inputs^Frm13State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm13WcState" VarB="Inputs^Frm13WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm13InputToggle" VarB="Inputs^Frm13InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm14State" VarB="Inputs^Frm14State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm14WcState" VarB="Inputs^Frm14WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm14InputToggle" VarB="Inputs^Frm14InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm15State" VarB="Inputs^Frm15State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm15WcState" VarB="Inputs^Frm15WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm15InputToggle" VarB="Inputs^Frm15InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm16State" VarB="Inputs^Frm16State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm16WcState" VarB="Inputs^Frm16WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm16InputToggle" VarB="Inputs^Frm16InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm17State" VarB="Inputs^Frm17State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm17WcState" VarB="Inputs^Frm17WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm17InputToggle" VarB="Inputs^Frm17InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm18State" VarB="Inputs^Frm18State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm18WcState" VarB="Inputs^Frm18WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm18InputToggle" VarB="Inputs^Frm18InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm19State" VarB="Inputs^Frm19State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm19WcState" VarB="Inputs^Frm19WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm19InputToggle" VarB="Inputs^Frm19InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm20State" VarB="Inputs^Frm20State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm20WcState" VarB="Inputs^Frm20WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm20InputToggle" VarB="Inputs^Frm20InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm21State" VarB="Inputs^Frm21State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm21WcState" VarB="Inputs^Frm21WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm21InputToggle" VarB="Inputs^Frm21InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm22State" VarB="Inputs^Frm22State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm22WcState" VarB="Inputs^Frm22WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm22InputToggle" VarB="Inputs^Frm22InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm23State" VarB="Inputs^Frm23State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm23WcState" VarB="Inputs^Frm23WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm23InputToggle" VarB="Inputs^Frm23InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm24State" VarB="Inputs^Frm24State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm24WcState" VarB="Inputs^Frm24WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm24InputToggle" VarB="Inputs^Frm24InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm25State" VarB="Inputs^Frm25State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm25WcState" VarB="Inputs^Frm25WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Inputs.Frm25InputToggle" VarB="Inputs^Frm25InputToggle" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.DevCtrl" VarB="Outputs^DevCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm0Ctrl" VarB="Outputs^Frm0Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm0WcCtrl" VarB="Outputs^Frm0WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm1Ctrl" VarB="Outputs^Frm1Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm1WcCtrl" VarB="Outputs^Frm1WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm2Ctrl" VarB="Outputs^Frm2Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm2WcCtrl" VarB="Outputs^Frm2WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm3Ctrl" VarB="Outputs^Frm3Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm3WcCtrl" VarB="Outputs^Frm3WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm4Ctrl" VarB="Outputs^Frm4Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm4WcCtrl" VarB="Outputs^Frm4WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm5Ctrl" VarB="Outputs^Frm5Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm5WcCtrl" VarB="Outputs^Frm5WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm6Ctrl" VarB="Outputs^Frm6Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm6WcCtrl" VarB="Outputs^Frm6WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm7Ctrl" VarB="Outputs^Frm7Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm7WcCtrl" VarB="Outputs^Frm7WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm8Ctrl" VarB="Outputs^Frm8Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm8WcCtrl" VarB="Outputs^Frm8WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm9Ctrl" VarB="Outputs^Frm9Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm9WcCtrl" VarB="Outputs^Frm9WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm10Ctrl" VarB="Outputs^Frm10Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm10WcCtrl" VarB="Outputs^Frm10WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm11Ctrl" VarB="Outputs^Frm11Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm11WcCtrl" VarB="Outputs^Frm11WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm12Ctrl" VarB="Outputs^Frm12Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm12WcCtrl" VarB="Outputs^Frm12WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm13Ctrl" VarB="Outputs^Frm13Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm13WcCtrl" VarB="Outputs^Frm13WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm14Ctrl" VarB="Outputs^Frm14Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm14WcCtrl" VarB="Outputs^Frm14WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm15Ctrl" VarB="Outputs^Frm15Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm15WcCtrl" VarB="Outputs^Frm15WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm16Ctrl" VarB="Outputs^Frm16Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm16WcCtrl" VarB="Outputs^Frm16WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm17Ctrl" VarB="Outputs^Frm17Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm17WcCtrl" VarB="Outputs^Frm17WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm18Ctrl" VarB="Outputs^Frm18Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm18WcCtrl" VarB="Outputs^Frm18WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm19Ctrl" VarB="Outputs^Frm19Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm19WcCtrl" VarB="Outputs^Frm19WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm20Ctrl" VarB="Outputs^Frm20Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm20WcCtrl" VarB="Outputs^Frm20WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm21Ctrl" VarB="Outputs^Frm21Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm21WcCtrl" VarB="Outputs^Frm21WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm22Ctrl" VarB="Outputs^Frm22Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm22WcCtrl" VarB="Outputs^Frm22WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm23Ctrl" VarB="Outputs^Frm23Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm23WcCtrl" VarB="Outputs^Frm23WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm24Ctrl" VarB="Outputs^Frm24Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm24WcCtrl" VarB="Outputs^Frm24WcCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm25Ctrl" VarB="Outputs^Frm25Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.Outputs.Frm25WcCtrl" VarB="Outputs^Frm25WcCtrl" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.ChangeCount" VarB="InfoData^ChangeCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.DevId" VarB="InfoData^DevId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.AmsNetId" VarB="InfoData^AmsNetId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.CfgSlaveCount" VarB="InfoData^CfgSlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.DcToTcTimeOffset" VarB="InfoData^DcToTcTimeOffset" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_AMIxxxx.InfoData.DcToExtTimeOffset" VarB="InfoData^DcToExtTimeOffset" />
+      </OwnerB>
+    </OwnerA>
+  </Mappings>
+</TcSmProject>

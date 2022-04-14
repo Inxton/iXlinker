@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Module_2_DeviceState_Inputs_BD6C7035" Id="{eccb641b-3e37-4698-a0b8-95f6b8a4dae9}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6224-0090-0016'}
+{attribute addProperty BoxType "EL6224-0090-0016"}
+{attribute addProperty Id "DeviceState_InputsDeviceState_Inputs_4751FF764"}
+{attribute addProperty CRC "3178000437"}
+{attribute addProperty Size "4"}
+TYPE Module_2_DeviceState_Inputs_BD6C7035 :
+STRUCT
+	{attribute addProperty Name "DeviceState_Inputs"}
+	DeviceState_Inputs  : DeviceState_Inputs_4751FF76;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

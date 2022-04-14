@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_36731094" Id="{b71e0210-dc75-4a95-8473-1a3299ff3e60}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5072-0000-0016'}
+{attribute addProperty BoxType "EL5072-0000-0016"}
+{attribute addProperty Id "UnderrangeBOOL1OverrangeBOOL1Excitation_errorBOOL1Input_errorBOOL1Digital_inputBOOL1Latch_extern_validBOOL1Set_position_doneBOOL1DiagBOOL1TxPDO_StateBOOL1Input_cycle_counterBYTE1"}
+{attribute addProperty CRC "913510548"}
+{attribute addProperty Size "10"}
+TYPE Status_36731094 :
+STRUCT
+	{attribute addProperty Name "Underrange"}
+	Underrange : BOOL;
+	{attribute addProperty Name "Overrange"}
+	Overrange : BOOL;
+	{attribute addProperty Name "Excitation_error"}
+	Excitation_error : BOOL;
+	{attribute addProperty Name "Input_error"}
+	Input_error : BOOL;
+	{attribute addProperty Name "Digital_input"}
+	Digital_input : BOOL;
+	{attribute addProperty Name "Latch_extern_valid"}
+	Latch_extern_valid : BOOL;
+	{attribute addProperty Name "Set_position_done"}
+	Set_position_done : BOOL;
+	{attribute addProperty Name "Diag"}
+	Diag : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="STM_Velocity_A47A3F41" Id="{aafc3fa5-559f-4ae2-b954-5dfa966c990f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7031-0000-0016'}
+{attribute addProperty BoxType "EL7031-0000-0016"}
+{attribute addProperty Id "VelocityAT %Q*INT2"}
+{attribute addProperty CRC "2759475009"}
+{attribute addProperty Size "2"}
+TYPE STM_Velocity_A47A3F41 :
+STRUCT
+	{attribute addProperty Name "Velocity"}
+	Velocity AT %Q* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

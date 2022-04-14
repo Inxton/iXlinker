@@ -10,7 +10,7 @@ using System.Xml.Linq;
 
 namespace iXlinker.TsprojFile.Mapping
 {
-    partial class VS
+    internal partial class VS
     {
         internal static ObservableCollection<PlcLibRepository> GetPlcLibraryRepositories()
         {

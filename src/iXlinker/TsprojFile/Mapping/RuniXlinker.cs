@@ -2,7 +2,6 @@
 using TwincatXmlSchemas.TcPlcProj;
 using iXlinker.TsprojFile.Mapping;
 using System.Threading;
-//using iXlinker.Utils;
 using System.Diagnostics;
 using System;
 using iXlinker.Utils;
@@ -16,23 +15,16 @@ namespace TsprojFile.Scan
             Stopwatch sw = new Stopwatch();
             sw.Start();
 
-            //VS.CheckDotNetCore();
+            VS.CheckDotNetCore();
 
             //Get details like paths, platform etc.
             Solution vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath, maxEthercatFrameIndex);
 
-            //Moved inside GetXaeProjectDetails
-            ////Get list of all PLC library repositories
-            //vs.PlcLibRepositories = VS.GetPlcLibraryRepositories();
-
-            ////Get list of all PLC libraries
-            //vs.PlcLibraries = VS.GetPlcLibraries(vs);
-
-            ////Get list of all PLC structures in PLC libraries
-            //vs.PlcStructuresInPlcLibraries = VS.GetPlcStructuresInPlcLibraries(vs);
-
             //Search all devices and their boxes in the Twincat project.
             SearchDevices(vs);
+
+            //Environment.Exit(0);
+
             //Generate all structures and mappings           
             GenerateStructures(vs);
             //Build XAE project

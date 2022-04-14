@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9410_6BC01D14" Id="{07f171d5-3cb8-4b14-8a40-7fa32bc582f4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9410-0000-0017'}
+{attribute addProperty BoxType "EL9410-0000-0017"}
+{attribute addProperty Id "Status_UsAT %I*Status_Us_B1E819A21Status_UpAT %I*Status_Up_B1E819A21WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "1807752468"}
+{attribute addProperty Size "6"}
+TYPE EL9410_6BC01D14 :
+STRUCT
+	{attribute addProperty Name "Status_Us"}
+	Status_Us : Status_Us_B1E819A2;
+	{attribute addProperty Name "Status_Up"}
+	Status_Up : Status_Up_B1E819A2;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

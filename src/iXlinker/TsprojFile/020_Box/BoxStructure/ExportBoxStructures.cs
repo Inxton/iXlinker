@@ -71,21 +71,11 @@ namespace TsprojFile.Scan
                     {
                         EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
-                    uint sizeInBites = 0;
 
+                    double size = 0;
                     try
                     {
-                        sizeInBites = boxStructViewModel.SizeInBites;
-                    }
-                    catch (Exception ex)
-                    {
-                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                    }
-
-                    double sizeInBytes = 0;
-                    try
-                    {
-                        sizeInBytes = boxStructViewModel.SizeInBytes;
+                        size = boxStructViewModel.Size;
                     }
                     catch (Exception ex)
                     {
@@ -96,11 +86,12 @@ namespace TsprojFile.Scan
 
                     sw.WriteLine("<TcPlcObject>");
                     sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
-                    sw.WriteLine("\t\t<Declaration><![CDATA[{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
+                    //sw.WriteLine("\t\t<Declaration><![CDATA[{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
+                    sw.WriteLine("\t\t<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: " + boxOrderCode + "'}");
+                    sw.WriteLine("{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
                     sw.WriteLine("{attribute addProperty Id \"" + id + "\"}");
                     sw.WriteLine("{attribute addProperty CRC \"" + crc.ToString() + "\"}");
-                    sw.WriteLine("{attribute addProperty SizeInBites \"" + sizeInBites.ToString() + "\"}");
-                    sw.WriteLine("{attribute addProperty SizeInBytes \"" + sizeInBytes.ToString() + "\"}");
+                    sw.WriteLine("{attribute addProperty Size \"" + size.ToString() + "\"}");
                     sw.WriteLine("TYPE " + structName + " :");
                     sw.WriteLine("STRUCT");
 
@@ -110,8 +101,6 @@ namespace TsprojFile.Scan
                         {
                             sw.WriteLine("\t" + attribute);
                         }
-                        //string varName = ValidatePlcItem.Name(boxStructMemberViewModel.Name);
-                        //string varType = ValidatePlcItem.Type(boxStructMemberViewModel.Type_Value);
                         string varName = boxStructMemberViewModel.Name;
                         string varType = ValidatePlcItem.NameIncludingNamespace(boxStructMemberViewModel.TypeNamespace , boxStructMemberViewModel.Type_Value);
                         sw.WriteLine("\t" + varName + " : " + varType + ";");

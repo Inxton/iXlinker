@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Device_Status_033C68E9" Id="{0290e321-be50-4cb9-adc6-2a69082d192f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9224-0037-0017'}
+{attribute addProperty BoxType "EP9224-0037-0017"}
+{attribute addProperty Id "Warning_TemperatureBOOL1Error_TemperatureBOOL1Warning_UsBOOL1Error_UsBOOL1Warning_UpBOOL1Error_UpBOOL1Global_Error_BitBOOL1Warning_Sum_CurrentBOOL1Error_Sum_CurrentBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "54290665"}
+{attribute addProperty Size "11"}
+TYPE Device_Status_033C68E9 :
+STRUCT
+	{attribute addProperty Name "Warning_Temperature"}
+	Warning_Temperature : BOOL;
+	{attribute addProperty Name "Error_Temperature"}
+	Error_Temperature : BOOL;
+	{attribute addProperty Name "Warning_Us"}
+	Warning_Us : BOOL;
+	{attribute addProperty Name "Error_Us"}
+	Error_Us : BOOL;
+	{attribute addProperty Name "Warning_Up"}
+	Warning_Up : BOOL;
+	{attribute addProperty Name "Error_Up"}
+	Error_Up : BOOL;
+	{attribute addProperty Name "Global_Error_Bit"}
+	Global_Error_Bit : BOOL;
+	{attribute addProperty Name "Warning_Sum_Current"}
+	Warning_Sum_Current : BOOL;
+	{attribute addProperty Name "Error_Sum_Current"}
+	Error_Sum_Current : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

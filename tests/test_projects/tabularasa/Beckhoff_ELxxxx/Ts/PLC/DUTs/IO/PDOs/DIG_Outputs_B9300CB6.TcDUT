@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIG_Outputs_B9300CB6" Id="{20eba04b-3269-4784-83b3-1254a7fbfda1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2819-0000-0016'}
+{attribute addProperty BoxType "EL2819-0000-0016"}
+{attribute addProperty Id "Channel_1AT %Q*Channel_D623F56C1Channel_2AT %Q*Channel_D623F56C1Channel_3AT %Q*Channel_D623F56C1Channel_4AT %Q*Channel_D623F56C1Channel_5AT %Q*Channel_D623F56C1Channel_6AT %Q*Channel_D623F56C1Channel_7AT %Q*Channel_D623F56C1Channel_8AT %Q*Channel_D623F56C1Channel_9AT %Q*Channel_D623F56C1Channel_10AT %Q*Channel_D623F56C1Channel_11AT %Q*Channel_D623F56C1Channel_12AT %Q*Channel_D623F56C1Channel_13AT %Q*Channel_D623F56C1Channel_14AT %Q*Channel_D623F56C1Channel_15AT %Q*Channel_D623F56C1Channel_16AT %Q*Channel_D623F56C1"}
+{attribute addProperty CRC "3106933942"}
+{attribute addProperty Size "16"}
+TYPE DIG_Outputs_B9300CB6 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_3"}
+	Channel_3 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_4"}
+	Channel_4 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_5"}
+	Channel_5 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_6"}
+	Channel_6 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_7"}
+	Channel_7 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_8"}
+	Channel_8 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_9"}
+	Channel_9 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_10"}
+	Channel_10 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_11"}
+	Channel_11 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_12"}
+	Channel_12 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_13"}
+	Channel_13 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_14"}
+	Channel_14 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_15"}
+	Channel_15 AT %Q* : Channel_D623F56C;
+	{attribute addProperty Name "Channel_16"}
+	Channel_16 AT %Q* : Channel_D623F56C;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

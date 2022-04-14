@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_AA25F79C" Id="{a17c4f36-7b41-4bdb-bc46-346ec825894e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5102-0000-0016'}
+{attribute addProperty BoxType "EL5102-0000-0016"}
+{attribute addProperty Id "Latch_C_validBOOL1Latch_extern_validBOOL1Set_counter_doneBOOL1Counter_underflowBOOL1Counter_overflowBOOL1Status_of_input_statusBOOL1Open_circuitBOOL1Extrapolation_stallBOOL1Status_of_input_ABOOL1Status_of_input_BBOOL1Status_of_input_CBOOL1Status_of_input_gateBOOL1DiagBOOL1TxPDO_StateBOOL1Input_cycle_counterBYTE1Software_gate_validBOOL1Latch_extern_2_validBOOL1Direction_inversion_detectedBOOL1Status_of_extern_latchBOOL1Counter_value_out_of_rangeBOOL1"}
+{attribute addProperty CRC "2854614940"}
+{attribute addProperty Size "20"}
+TYPE Status_AA25F79C :
+STRUCT
+	{attribute addProperty Name "Latch_C_valid"}
+	Latch_C_valid : BOOL;
+	{attribute addProperty Name "Latch_extern_valid"}
+	Latch_extern_valid : BOOL;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BOOL;
+	{attribute addProperty Name "Counter_underflow"}
+	Counter_underflow : BOOL;
+	{attribute addProperty Name "Counter_overflow"}
+	Counter_overflow : BOOL;
+	{attribute addProperty Name "Status_of_input_status"}
+	Status_of_input_status : BOOL;
+	{attribute addProperty Name "Open_circuit"}
+	Open_circuit : BOOL;
+	{attribute addProperty Name "Extrapolation_stall"}
+	Extrapolation_stall : BOOL;
+	{attribute addProperty Name "Status_of_input_A"}
+	Status_of_input_A : BOOL;
+	{attribute addProperty Name "Status_of_input_B"}
+	Status_of_input_B : BOOL;
+	{attribute addProperty Name "Status_of_input_C"}
+	Status_of_input_C : BOOL;
+	{attribute addProperty Name "Status_of_input_gate"}
+	Status_of_input_gate : BOOL;
+	{attribute addProperty Name "Diag"}
+	Diag : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter : BYTE;
+	{attribute addProperty Name "Software_gate_valid"}
+	Software_gate_valid : BOOL;
+	{attribute addProperty Name "Latch_extern_2_valid"}
+	Latch_extern_2_valid : BOOL;
+	{attribute addProperty Name "Direction_inversion_detected"}
+	Direction_inversion_detected : BOOL;
+	{attribute addProperty Name "Status_of_extern_latch"}
+	Status_of_extern_latch : BOOL;
+	{attribute addProperty Name "Counter_value_out_of_range"}
+	Counter_value_out_of_range : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

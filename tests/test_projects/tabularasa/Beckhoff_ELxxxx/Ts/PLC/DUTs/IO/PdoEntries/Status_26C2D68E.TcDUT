@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_26C2D68E" Id="{e10571a6-8682-4723-bd3f-82354efdde1e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1502-0000-0018'}
+{attribute addProperty BoxType "EL1502-0000-0018"}
+{attribute addProperty Id "Output_functions_enabledBOOL1Status_of_outputBOOL1Set_counter_doneBOOL1Counter_inhibitedBOOL1Status_of_input_UDBOOL1Status_of_input_clockBOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "650303118"}
+{attribute addProperty Size "8"}
+TYPE Status_26C2D68E :
+STRUCT
+	{attribute addProperty Name "Output_functions_enabled"}
+	Output_functions_enabled : BOOL;
+	{attribute addProperty Name "Status_of_output"}
+	Status_of_output : BOOL;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BOOL;
+	{attribute addProperty Name "Counter_inhibited"}
+	Counter_inhibited : BOOL;
+	{attribute addProperty Name "Status_of_input_UD"}
+	Status_of_input_UD : BOOL;
+	{attribute addProperty Name "Status_of_input_clock"}
+	Status_of_input_clock : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

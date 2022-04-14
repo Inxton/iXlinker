@@ -106,7 +106,7 @@ namespace TsprojFile.Scan
                                 {
                                     PdoEntryStructMemberViewModel member = new PdoEntryStructMemberViewModel();
                                     member.Attributes = pdoEntryAttributes;
-                                    member.Name = pdoEntryName + "_" + baseType + "_" + i.ToString();
+                                    member.NameA = pdoEntryName + "_" + baseType + "_" + i.ToString();
                                     member.BoxOrderCode = pdoEntryUnstructured.BoxOrderCode;
                                     member.Type_Value = baseType;
                                     member.TypeNamespace = pdoEntryUnstructured.TypeNamespace;
@@ -121,8 +121,7 @@ namespace TsprojFile.Scan
                                     {
                                     }
                                     member.OwnerBname = pdoEntryUnstructured.OwnerBname;
-                                    member.SizeInBites = PlcBaseTypes.GetSizeInBites(baseType);
-                                    member.SizeInBytes = PlcBaseTypes.GetSizeInBytes(baseType);
+                                    member.Size = PlcBaseTypes.GetSize(baseType);
                                     member.Index = pdoEntryUnstructured.Index;
                                     member.IndexNumber = pdoEntryUnstructured.IndexNumber;
                                     member.SubIndex = pdoEntryUnstructured.SubIndex;
@@ -130,17 +129,16 @@ namespace TsprojFile.Scan
                                     actPdoEntryStruct.StructMembers.Add(member);
                                     if (!PdoEntryIsHidden(pdoEntryAttributes))
                                     {
-                                        actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                        actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
                                     }
-                                    actPdoEntryStruct.SizeInBites = actPdoEntryStruct.SizeInBites + member.SizeInBites;
-                                    actPdoEntryStruct.SizeInBytes = actPdoEntryStruct.SizeInBytes + member.SizeInBytes;
+                                    actPdoEntryStruct.Size = actPdoEntryStruct.Size + member.Size;
                                 }
                             }
                             else
                             {
                                 PdoEntryStructMemberViewModel member = new PdoEntryStructMemberViewModel();
                                 member.Attributes = pdoEntryAttributes;
-                                member.Name = ValidatePlcItem.Name(pdoEntryName);
+                                member.NameA = ValidatePlcItem.Name(pdoEntryName);
                                 member.BoxOrderCode = pdoEntryUnstructured.BoxOrderCode;
                                 member.Type_Value = baseType;
                                 member.TypeNamespace = pdoEntryUnstructured.TypeNamespace;
@@ -159,8 +157,7 @@ namespace TsprojFile.Scan
                                     pdoViewModel.InOutMappings = "Inputs";
                                 }
                                 member.OwnerBname = pdoEntryUnstructured.OwnerBname;
-                                member.SizeInBites = PlcBaseTypes.GetSizeInBites(baseType);
-                                member.SizeInBytes = PlcBaseTypes.GetSizeInBytes(baseType);
+                                member.Size = PlcBaseTypes.GetSize(baseType);
                                 member.Index = pdoEntryUnstructured.Index;
                                 member.IndexNumber = pdoEntryUnstructured.IndexNumber;
                                 member.SubIndex = pdoEntryUnstructured.SubIndex;
@@ -168,17 +165,16 @@ namespace TsprojFile.Scan
                                 actPdoEntryStruct.StructMembers.Add(member);
                                 if (!PdoEntryIsHidden(pdoEntryAttributes))
                                 {
-                                    actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                    actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
                                 }
-                                actPdoEntryStruct.SizeInBites = actPdoEntryStruct.SizeInBites + member.SizeInBites;
-                                actPdoEntryStruct.SizeInBytes = actPdoEntryStruct.SizeInBytes + member.SizeInBytes;
+                                actPdoEntryStruct.Size = actPdoEntryStruct.Size + member.Size;
                             }
                         }
                         else
                         {
                             PdoEntryStructMemberViewModel member = new PdoEntryStructMemberViewModel();
                             member.Attributes = pdoEntryAttributes;
-                            member.Name = pdoEntryName;
+                            member.NameA = pdoEntryName;
                             member.BoxOrderCode = pdoEntryUnstructured.BoxOrderCode;
                             member.Type_Value = pdoEntryUnstructured.Type_Value;
                             member.TypeNamespace= pdoEntryUnstructured.TypeNamespace;
@@ -197,8 +193,7 @@ namespace TsprojFile.Scan
                                 pdoViewModel.InOutMappings = "Inputs";
                             }
                             member.OwnerBname = pdoEntryUnstructured.OwnerBname;
-                            member.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryUnstructured.Type_Value);
-                            member.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryUnstructured.Type_Value);
+                            member.Size = PlcBaseTypes.GetSize(pdoEntryUnstructured.Type_Value);
                             member.Index = pdoEntryUnstructured.Index;
                             member.IndexNumber = pdoEntryUnstructured.IndexNumber;
                             member.SubIndex = pdoEntryUnstructured.SubIndex;
@@ -206,10 +201,9 @@ namespace TsprojFile.Scan
                             actPdoEntryStruct.StructMembers.Add(member);
                             if (!PdoEntryIsHidden(pdoEntryAttributes))
                             {
-                                actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
+                                actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
                             }
-                            actPdoEntryStruct.SizeInBites = actPdoEntryStruct.SizeInBites + member.SizeInBites;
-                            actPdoEntryStruct.SizeInBytes = actPdoEntryStruct.SizeInBytes + member.SizeInBytes;
+                            actPdoEntryStruct.Size = actPdoEntryStruct.Size + member.Size;
                         }
                         if (pdoEntryUnstructured.Name != null && pdoEntryUnstructured.Name.Contains("__"))
                         {
@@ -231,9 +225,8 @@ namespace TsprojFile.Scan
                             if (isArray)
                             {
                                 PdoEntryStructMemberViewModel firstStructMember = actPdoEntryStruct.StructMembers.FirstOrDefault();
-                                PdoEntryViewModel pdoEntryArray = new PdoEntryViewModel() { Name = ValidatePlcItem.Name(actPdoEntryStruct.Prefix), Type_Value = firstStructMember.Type_Value, OwnerBname = firstStructMember.OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, SizeInBites = actPdoEntryStruct.SizeInBites, SizeInBytes = actPdoEntryStruct.SizeInBytes };
-                                pdoEntryArray.SizeInBites = actPdoEntryStruct.SizeInBites;
-                                pdoEntryArray.SizeInBytes = actPdoEntryStruct.SizeInBytes;
+                                PdoEntryViewModel pdoEntryArray = new PdoEntryViewModel() { Name = ValidatePlcItem.Name(actPdoEntryStruct.Prefix), Type_Value = firstStructMember.Type_Value, OwnerBname = firstStructMember.OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, Size = actPdoEntryStruct.Size };
+                                pdoEntryArray.Size = actPdoEntryStruct.Size;
                                 pdoEntriesStructured.Add(pdoEntryArray);
                                 //delete actPdoEntryStruct
                                 actPdoEntryStruct = null;
@@ -248,40 +241,57 @@ namespace TsprojFile.Scan
                                 if (CheckIfPdoEntryStructureDoesNotExist(actPdoEntryStruct))
                                 {
                                     //if not add to the structure list
-                                    //actPdoEntryStruct.TypeNamespace = "*";
                                     PdoEntryStructures.Add(actPdoEntryStruct);
                                 }
+                                //only for testing purpose
+                                string s1 = actPdoEntryStruct.Name;
+
+
                                 //create pdo entry of the structured type
                                 PdoEntryStructMemberViewModel firstStructMember = actPdoEntryStruct.StructMembers.FirstOrDefault();
-                                PdoEntryViewModel pdoEntryStructured = new PdoEntryViewModel() { Name = ValidatePlcItem.Name(actPdoEntryStruct.Prefix),  TypeNamespace = actPdoEntryStruct.TypeNamespace, Type_Value = ValidatePlcItem.Type(actPdoEntryStruct.Name), OwnerBname = pdoEntryUnstructured.OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, SizeInBites = actPdoEntryStruct.SizeInBites, SizeInBytes = actPdoEntryStruct.SizeInBytes };
+                                PdoEntryViewModel pdoEntryStructured = new PdoEntryViewModel() { Name = ValidatePlcItem.Name(actPdoEntryStruct.Prefix),  TypeNamespace = actPdoEntryStruct.TypeNamespace, Type_Value = ValidatePlcItem.Type(actPdoEntryStruct.Name), OwnerBname = pdoEntryUnstructured.OwnerBname, InOut = pdoEntryUnstructured.InOut, VarB = actPdoEntryStruct.PdoEntryVarB, VarA = actPdoEntryStruct.PdoEntryVarA, BoxOrderCode = pdoViewModel.BoxOrderCode, Index = firstStructMember.Index, IndexNumber = firstStructMember.IndexNumber, SubIndex = firstStructMember.SubIndex, SubIndexNumber = firstStructMember.SubIndexNumber, Size = actPdoEntryStruct.Size };
                                 //add to the return value list
-                                pdoEntryStructured.SizeInBites = actPdoEntryStruct.SizeInBites;
-                                pdoEntryStructured.SizeInBytes = actPdoEntryStruct.SizeInBytes;
+                                pdoEntryStructured.Size = actPdoEntryStruct.Size;
                                 pdoEntriesStructured.Add(pdoEntryStructured);
+
+
+                                //only for testing purpose
+                                if (!string.IsNullOrEmpty(s1) && !string.IsNullOrEmpty(actPdoEntryStruct.Name) && !s1.Equals(actPdoEntryStruct.Name))
+                                {
+
+                                }
+
+
                                 //delete actPdoEntryStruct
                                 actPdoEntryStruct = null;
                                 structOpen = false;
+
+
                             }
                         }
                     }
 
                     else
                     {
-                        //if (string.IsNullOrEmpty(pdoEntryUnstructured.Name) && pdoEntryUnstructured.Type_GUID != null)
-                        //{
-                        //    pdoEntryUnstructured.Name = "reserve_" + reserveIndex.ToString();
-                        //    reserveIndex++;
-                        //}
                         if (pdoEntryUnstructured.Name != null)
                         {
                             pdoEntryUnstructured.Name = ValidatePlcItem.Name(pdoEntryUnstructured.Name);
+
+                            //only for testing purpose
+                            string s1 = !string.IsNullOrEmpty(pdoEntryUnstructured.Type_Value) ? pdoEntryUnstructured.Type_Value : null;
+
                             pdoEntryUnstructured.Type_Value = ValidatePlcItem.Type(pdoEntryUnstructured.Type_Value);
-                            pdoEntryUnstructured.TypeNamespace = ValidatePlcItem.Type(pdoEntryUnstructured.TypeNamespace);
-                            //if (pdoEntryUnstructured.Index != null || (pdoEntryUnstructured.Name.Contains("reserve_") && pdoEntryUnstructured.Type_GUID != null))
+
+                            //only for testing purpose
+                            if (!string.IsNullOrEmpty(s1) && !string.IsNullOrEmpty(pdoEntryUnstructured.Type_Value) && !s1.Equals(pdoEntryUnstructured.Type_Value))
+                            {
+
+                            }
+
+                            pdoEntryUnstructured.TypeNamespace = pdoEntryUnstructured.TypeNamespace;
                             if (pdoEntryUnstructured.Index != null )
                             {
-                                pdoEntryUnstructured.SizeInBites = PlcBaseTypes.GetSizeInBites(pdoEntryUnstructured.Type_Value);
-                                pdoEntryUnstructured.SizeInBytes = PlcBaseTypes.GetSizeInBytes(pdoEntryUnstructured.Type_Value);
+                                pdoEntryUnstructured.Size = PlcBaseTypes.GetSize(pdoEntryUnstructured.Type_Value);
                                 pdoEntriesStructured.Add(pdoEntryUnstructured);
                             }
                         }

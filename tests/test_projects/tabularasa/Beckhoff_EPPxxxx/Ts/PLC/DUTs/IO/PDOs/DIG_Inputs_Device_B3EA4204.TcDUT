@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIG_Inputs_Device_B3EA4204" Id="{6c12d2ea-ba26-404f-9373-de74a31d3d8b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1816-3008-0016'}
+{attribute addProperty BoxType "EPP1816-3008-0016"}
+{attribute addProperty Id "Us_UndervoltageAT %I*BOOL1Up_UndervoltageAT %I*BOOL1Sync_errorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
+{attribute addProperty CRC "3018473988"}
+{attribute addProperty Size "4"}
+TYPE DIG_Inputs_Device_B3EA4204 :
+STRUCT
+	{attribute addProperty Name "Us_Undervoltage"}
+	Us_Undervoltage AT %I* : BOOL;
+	{attribute addProperty Name "Up_Undervoltage"}
+	Up_Undervoltage AT %I* : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

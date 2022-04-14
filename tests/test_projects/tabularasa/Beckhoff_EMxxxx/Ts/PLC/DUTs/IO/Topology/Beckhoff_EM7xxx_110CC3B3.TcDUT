@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EM7xxx_110CC3B3" Id="{ae85a1f6-2ac1-4623-885c-63a377e26906}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_EM7xxxEK1122Beckhoff_EM7xxxEK1122_DEE9974A2A_0001_EM7004_0000_9995EM7004_866015E192A_0002_EM7004_0000_9996EM7004_917A374F115A_0003_EM7004_0000_9997EM7004_917A374F115A_0004_EM7004_0000_0016EM7004_614C91AC119A_0005_EM7004_0000_0017EM7004_02D89B55119A_0006_EM7004_0000_0018EM7004_02D89B55119"}
+{attribute addProperty CRC "286049203"}
+{attribute addProperty Size "681"}
+TYPE Beckhoff_EM7xxx_110CC3B3 EXTENDS EK1100_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EM7xxxEK1122"}
+	Beckhoff_EM7xxxEK1122 : Beckhoff_EM7xxxEK1122_DEE9974A;
+	{attribute addProperty Name "A_0001_EM7004_0000_9995"}
+	A_0001_EM7004_0000_9995 : EM7004_866015E1;
+	{attribute addProperty Name "A_0002_EM7004_0000_9996"}
+	A_0002_EM7004_0000_9996 : EM7004_917A374F;
+	{attribute addProperty Name "A_0003_EM7004_0000_9997"}
+	A_0003_EM7004_0000_9997 : EM7004_917A374F;
+	{attribute addProperty Name "A_0004_EM7004_0000_0016"}
+	A_0004_EM7004_0000_0016 : EM7004_614C91AC;
+	{attribute addProperty Name "A_0005_EM7004_0000_0017"}
+	A_0005_EM7004_0000_0017 : EM7004_02D89B55;
+	{attribute addProperty Name "A_0006_EM7004_0000_0018"}
+	A_0006_EM7004_0000_0018 : EM7004_02D89B55;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

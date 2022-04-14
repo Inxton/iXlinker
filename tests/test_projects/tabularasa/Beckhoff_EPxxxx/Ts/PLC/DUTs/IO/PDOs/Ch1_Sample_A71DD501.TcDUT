@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch1_Sample_A71DD501" Id="{2d9e94c6-ca9f-43c6-b19d-4cc536c48046}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3632-0001-0016'}
+{attribute addProperty BoxType "EP3632-0001-0016"}
+{attribute addProperty Id "Ch1_ValueAT %I*INT2"}
+{attribute addProperty CRC "2803750145"}
+{attribute addProperty Size "2"}
+TYPE Ch1_Sample_A71DD501 :
+STRUCT
+	{attribute addProperty Name "Ch1_Value"}
+	Ch1_Value AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

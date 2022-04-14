@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL2701_DE78D366" Id="{8a172dc5-debb-4cf8-82cc-f172991d5dec}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2701'}
+{attribute addProperty BoxType "KL2701"}
+{attribute addProperty Id "Channel_1AT %Q*Channel_460B8C400"}
+{attribute addProperty CRC "3732460390"}
+{attribute addProperty Size "0"}
+TYPE KL2701_DE78D366 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_460B8C40;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

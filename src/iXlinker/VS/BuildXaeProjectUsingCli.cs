@@ -6,7 +6,7 @@ using iXlinkerDtos;
 
 namespace iXlinker.TsprojFile.Mapping
 {
-    partial class VS
+    internal partial class VS
     {
         public static void BuildXaeProjectUsingCli(Solution vs)
         {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace iXlinker.TsprojFile.Mapping
 {
-    partial class VS
+    internal partial class VS
     {
         internal static bool CheckDotNetCore()
         {

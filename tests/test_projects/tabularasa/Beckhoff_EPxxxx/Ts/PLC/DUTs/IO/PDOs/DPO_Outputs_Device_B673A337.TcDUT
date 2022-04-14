@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DPO_Outputs_Device_B673A337" Id="{063e1871-f991-46d8-a32a-433fb71d5d8b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9214-0023-0019'}
+{attribute addProperty BoxType "EP9214-0023-0019"}
+{attribute addProperty Id "Enable_Control_Via_FieldbusAT %Q*BOOL1Global_ResetAT %Q*BOOL1"}
+{attribute addProperty CRC "3061031735"}
+{attribute addProperty Size "2"}
+TYPE DPO_Outputs_Device_B673A337 :
+STRUCT
+	{attribute addProperty Name "Enable_Control_Via_Fieldbus"}
+	Enable_Control_Via_Fieldbus AT %Q* : BOOL;
+	{attribute addProperty Name "Global_Reset"}
+	Global_Reset AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

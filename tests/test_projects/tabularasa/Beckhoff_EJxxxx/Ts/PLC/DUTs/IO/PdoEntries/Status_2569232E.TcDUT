@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_2569232E" Id="{c7f47102-c39d-4614-8421-068c4e566c17}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7334-0008-0016'}
+{attribute addProperty BoxType "EJ7334-0008-0016"}
+{attribute addProperty Id "Ready_to_enableBOOL1ReadyBOOL1WarningBOOL1ErrorBOOL1Moving_positiveBOOL1Moving_negativeBOOL1Limit_xBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "627647278"}
+{attribute addProperty Size "8"}
+TYPE Status_2569232E :
+STRUCT
+	{attribute addProperty Name "Ready_to_enable"}
+	Ready_to_enable : BOOL;
+	{attribute addProperty Name "Ready"}
+	Ready : BOOL;
+	{attribute addProperty Name "Warning"}
+	Warning : BOOL;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "Moving_positive"}
+	Moving_positive : BOOL;
+	{attribute addProperty Name "Moving_negative"}
+	Moving_negative : BOOL;
+	{attribute addProperty Name "Limit_x"}
+	Limit_x : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

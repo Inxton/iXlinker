@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Diag_A72B1E17" Id="{2edd14cf-261e-47a6-9dd9-552fe5619f0f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2032--0000'}
+{attribute addProperty BoxType "EL2032--0000"}
+{attribute addProperty Id "DiagAT %I*BOOL1"}
+{attribute addProperty CRC "2804620823"}
+{attribute addProperty Size "1"}
+TYPE Diag_A72B1E17 :
+STRUCT
+	{attribute addProperty Name "Diag"}
+	Diag AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

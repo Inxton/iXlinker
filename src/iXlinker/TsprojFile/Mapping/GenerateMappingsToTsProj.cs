@@ -11,7 +11,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void GenerateMappingsToTsProj(Solution vs)
+        internal void GenerateMappingsToTsProj(Solution vs)
         {
             EventLogger.Instance.Logger.Information("Generating mappings into the project file {0}!!!", vs.TsProject.CompletePathInFileSystem);
 
@@ -42,9 +42,8 @@ namespace TsprojFile.Scan
                     }
                     prevOwnerBname = ownerBname;
 
-                    string varA = mapableItem.VarAprefix.Replace(tmpLevelSeparator, ioLevelSeparator).Replace(ioSlotSeparator, ioLevelSeparator) + plcStructSeparator + ValidatePlcItem.Link(mapableItem.VarA).Replace(tmpLevelSeparator, plcStructSeparator).Replace(ioSlotSeparator, plcStructSeparator);
-                    varA = varA.Replace("_" + plcStructSeparator,plcStructSeparator);
-                    string varB = mapableItem.VarB.Replace(tmpLevelSeparator, ioLevelSeparator).Replace(ioSlotSeparator, ioLevelSeparator).Replace("&lt;", "<").Replace("&gt;", ">");
+                    string varA = mapableItem.VarAprefix.Replace(tmpLevelSeparator, ioLevelSeparator) + plcStructSeparator + ValidatePlcItem.LinkA(mapableItem.VarA);
+                    string varB = ValidatePlcItem.LinkB(mapableItem.VarB);
 
                     MappingsTypeOwnerAOwnerBLink link = new MappingsTypeOwnerAOwnerBLink() { VarA = varA, VarB = varB };
                     linkList.Add(link);

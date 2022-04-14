@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Outputs_63C46CC8" Id="{a3a71de6-8521-4bb9-87dc-d849f8f8a02e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1960-0000-0019'}
+{attribute addProperty BoxType "EK1960-0000-0019"}
+{attribute addProperty Id "Module_1_Channel_1_Standard_Output_X5_1AT %Q*BOOL1Module_1_Channel_2_Standard_Output_X5_2AT %Q*BOOL1Module_1_Channel_3_Standard_Output_X5_3AT %Q*BOOL1Module_1_Channel_4_Standard_Output_X5_4AT %Q*BOOL1Module_2_Channel_1_Standard_Output_X5_5AT %Q*BOOL1Module_2_Channel_2_Standard_Output_X5_6AT %Q*BOOL1Module_2_Channel_3_Standard_Output_X5_7AT %Q*BOOL1Module_2_Channel_4_Standard_Output_X5_8AT %Q*BOOL1Module_3_Channel_1_Standard_Output_X7_1AT %Q*BOOL1Module_3_Channel_2_Standard_Output_X7_2AT %Q*BOOL1Module_3_Channel_3_Standard_Output_X7_3AT %Q*BOOL1Module_3_Channel_4_Standard_Output_X7_4AT %Q*BOOL1Module_4_Channel_1_Standard_Output_X7_5AT %Q*BOOL1Module_4_Channel_2_Standard_Output_X7_6AT %Q*BOOL1Module_4_Channel_3_Standard_Output_X7_7AT %Q*BOOL1Module_4_Channel_4_Standard_Output_X7_8AT %Q*BOOL1Module_5_Channel_1_Standard_Output_X9_1AT %Q*BOOL1Module_5_Channel_2_Standard_Output_X9_2AT %Q*BOOL1Module_5_Channel_3_Standard_Output_X9_3AT %Q*BOOL1Module_5_Channel_4_Standard_Output_X9_4AT %Q*BOOL1Module_6_Channel_1_Standard_Output_X9_5AT %Q*BOOL1Module_6_Channel_2_Standard_Output_X9_6AT %Q*BOOL1Module_6_Channel_3_Standard_Output_X9_7AT %Q*BOOL1Module_6_Channel_4_Standard_Output_X9_8AT %Q*BOOL1Relais_Module_Channel_1_Standard_Output_X4_1_X4_5AT %Q*BOOL1Relais_Module_Channel_2_Standard_Output_X4_2_X4_6AT %Q*BOOL1Relais_Module_Channel_3_Standard_Output_X4_3_X4_7AT %Q*BOOL1Relais_Module_Channel_4_Standard_Output_X4_4_X4_8AT %Q*BOOL1"}
+{attribute addProperty CRC "1673817288"}
+{attribute addProperty Size "28"}
+TYPE Outputs_63C46CC8 :
+STRUCT
+	{attribute addProperty Name "Module_1_Channel_1_Standard_Output_X5_1"}
+	Module_1_Channel_1_Standard_Output_X5_1 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_1_Channel_2_Standard_Output_X5_2"}
+	Module_1_Channel_2_Standard_Output_X5_2 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_1_Channel_3_Standard_Output_X5_3"}
+	Module_1_Channel_3_Standard_Output_X5_3 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_1_Channel_4_Standard_Output_X5_4"}
+	Module_1_Channel_4_Standard_Output_X5_4 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_2_Channel_1_Standard_Output_X5_5"}
+	Module_2_Channel_1_Standard_Output_X5_5 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_2_Channel_2_Standard_Output_X5_6"}
+	Module_2_Channel_2_Standard_Output_X5_6 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_2_Channel_3_Standard_Output_X5_7"}
+	Module_2_Channel_3_Standard_Output_X5_7 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_2_Channel_4_Standard_Output_X5_8"}
+	Module_2_Channel_4_Standard_Output_X5_8 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_3_Channel_1_Standard_Output_X7_1"}
+	Module_3_Channel_1_Standard_Output_X7_1 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_3_Channel_2_Standard_Output_X7_2"}
+	Module_3_Channel_2_Standard_Output_X7_2 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_3_Channel_3_Standard_Output_X7_3"}
+	Module_3_Channel_3_Standard_Output_X7_3 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_3_Channel_4_Standard_Output_X7_4"}
+	Module_3_Channel_4_Standard_Output_X7_4 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_4_Channel_1_Standard_Output_X7_5"}
+	Module_4_Channel_1_Standard_Output_X7_5 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_4_Channel_2_Standard_Output_X7_6"}
+	Module_4_Channel_2_Standard_Output_X7_6 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_4_Channel_3_Standard_Output_X7_7"}
+	Module_4_Channel_3_Standard_Output_X7_7 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_4_Channel_4_Standard_Output_X7_8"}
+	Module_4_Channel_4_Standard_Output_X7_8 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_5_Channel_1_Standard_Output_X9_1"}
+	Module_5_Channel_1_Standard_Output_X9_1 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_5_Channel_2_Standard_Output_X9_2"}
+	Module_5_Channel_2_Standard_Output_X9_2 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_5_Channel_3_Standard_Output_X9_3"}
+	Module_5_Channel_3_Standard_Output_X9_3 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_5_Channel_4_Standard_Output_X9_4"}
+	Module_5_Channel_4_Standard_Output_X9_4 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_6_Channel_1_Standard_Output_X9_5"}
+	Module_6_Channel_1_Standard_Output_X9_5 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_6_Channel_2_Standard_Output_X9_6"}
+	Module_6_Channel_2_Standard_Output_X9_6 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_6_Channel_3_Standard_Output_X9_7"}
+	Module_6_Channel_3_Standard_Output_X9_7 AT %Q* : BOOL;
+	{attribute addProperty Name "Module_6_Channel_4_Standard_Output_X9_8"}
+	Module_6_Channel_4_Standard_Output_X9_8 AT %Q* : BOOL;
+	{attribute addProperty Name "Relais_Module_Channel_1_Standard_Output_X4_1_X4_5"}
+	Relais_Module_Channel_1_Standard_Output_X4_1_X4_5 AT %Q* : BOOL;
+	{attribute addProperty Name "Relais_Module_Channel_2_Standard_Output_X4_2_X4_6"}
+	Relais_Module_Channel_2_Standard_Output_X4_2_X4_6 AT %Q* : BOOL;
+	{attribute addProperty Name "Relais_Module_Channel_3_Standard_Output_X4_3_X4_7"}
+	Relais_Module_Channel_3_Standard_Output_X4_3_X4_7 AT %Q* : BOOL;
+	{attribute addProperty Name "Relais_Module_Channel_4_Standard_Output_X4_4_X4_8"}
+	Relais_Module_Channel_4_Standard_Output_X4_4_X4_8 AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

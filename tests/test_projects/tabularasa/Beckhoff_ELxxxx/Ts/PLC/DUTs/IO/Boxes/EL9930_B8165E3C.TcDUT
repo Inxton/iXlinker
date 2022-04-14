@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9930_B8165E3C" Id="{f6e3fc0d-87e8-4a80-bc8c-87ffa702189a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9930-0000-0017'}
+{attribute addProperty BoxType "EL9930-0000-0017"}
+{attribute addProperty Id "IO_InputsEMPTY_STRUCTURE0IO_OutputsEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "3088473660"}
+{attribute addProperty Size "12"}
+TYPE EL9930_B8165E3C :
+STRUCT
+	{attribute addProperty Name "IO_Inputs"}
+	IO_Inputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "IO_Outputs"}
+	IO_Outputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

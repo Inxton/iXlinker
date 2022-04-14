@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_854091F6" Id="{fbc1b21d-70d8-41d5-96f3-99aeac412833}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1502-0000-0018'}
+{attribute addProperty BoxType "EL1502-0000-0018"}
+{attribute addProperty Id "Enable_output_functionsBOOL1Set_outputBOOL1Set_counterBOOL1Inhibit_counterBOOL1"}
+{attribute addProperty CRC "2235601398"}
+{attribute addProperty Size "4"}
+TYPE Control_854091F6 :
+STRUCT
+	{attribute addProperty Name "Enable_output_functions"}
+	Enable_output_functions : BOOL;
+	{attribute addProperty Name "Set_output"}
+	Set_output : BOOL;
+	{attribute addProperty Name "Set_counter"}
+	Set_counter : BOOL;
+	{attribute addProperty Name "Inhibit_counter"}
+	Inhibit_counter : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

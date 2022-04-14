@@ -29,7 +29,7 @@ namespace TsprojFile.Scan
                                     int pdoIndex = Convert.ToInt32(pdo.Index.Replace("#x", ""), 16);
                                     if (!slotName.Equals("") && !slotId.Equals("") && slotPdoIndex != 0 && pdoIndex != 0 && slotPdoIndex == pdoIndex)
                                     {
-                                        pdo.Name = slotName + ioSlotSeparator + pdoName;
+                                        pdo.Name = slotName + tmpSlotSeparator + pdoName;
                                     }
                                 }
                             }

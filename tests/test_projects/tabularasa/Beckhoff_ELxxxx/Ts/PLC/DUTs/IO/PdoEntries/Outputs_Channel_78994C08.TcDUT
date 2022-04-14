@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Outputs_Channel_78994C08" Id="{d0a62a78-5d95-4add-bc9f-e8e33ee87f53}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM2642-0000-0016'}
+{attribute addProperty BoxType "ELM2642-0000-0016"}
+{attribute addProperty Id "Y1BOOL1Y2BOOL1Y3BOOL1Y4BOOL1"}
+{attribute addProperty CRC "2023312392"}
+{attribute addProperty Size "4"}
+TYPE Outputs_Channel_78994C08 :
+STRUCT
+	{attribute addProperty Name "Y1"}
+	Y1 : BOOL;
+	{attribute addProperty Name "Y2"}
+	Y2 : BOOL;
+	{attribute addProperty Name "Y3"}
+	Y3 : BOOL;
+	{attribute addProperty Name "Y4"}
+	Y4 : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

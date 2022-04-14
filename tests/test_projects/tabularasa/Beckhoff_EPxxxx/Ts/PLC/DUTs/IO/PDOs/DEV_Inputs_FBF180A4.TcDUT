@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DEV_Inputs_FBF180A4" Id="{d1152d11-aa87-4708-8ade-a92dc69897d0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP8309-0022-0021'}
+{attribute addProperty BoxType "EP8309-0022-0021"}
+{attribute addProperty Id "Undervoltage_UsAT %I*BOOL1Undervoltage_UpAT %I*BOOL1"}
+{attribute addProperty CRC "4226908324"}
+{attribute addProperty Size "2"}
+TYPE DEV_Inputs_FBF180A4 :
+STRUCT
+	{attribute addProperty Name "Undervoltage_Us"}
+	Undervoltage_Us AT %I* : BOOL;
+	{attribute addProperty Name "Undervoltage_Up"}
+	Undervoltage_Up AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

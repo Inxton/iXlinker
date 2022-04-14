@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DC_1A6E6625" Id="{804ebf34-c223-4ef5-bd00-8847ea660a5d}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1202-0100-0016'}
+{attribute addProperty BoxType "EL1202-0100-0016"}
+{attribute addProperty Id "NextLatchTimeAT %I*ULINT8"}
+{attribute addProperty CRC "443442725"}
+{attribute addProperty Size "8"}
+TYPE DC_1A6E6625 :
+STRUCT
+	{attribute addProperty Name "NextLatchTime"}
+	NextLatchTime AT %I* : ULINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_1DB604F4" Id="{c3caec0f-3ab5-4341-a769-0cab71fd8e8c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2914-0000-0017'}
+{attribute addProperty BoxType "EJ2914-0000-0017"}
+{attribute addProperty Id "FSoE_CommandUSINT1FSOUT_Module_Channel_1_OutputBOOL1FSOUT_Module_Channel_2_OutputBOOL1FSOUT_Module_Channel_3_OutputBOOL1FSOUT_Module_Channel_4_OutputBOOL1FSOUT_Module_ErrAckBOOL1FSoE_CRC_000UINT2FSoE_Connection_IDUINT2"}
+{attribute addProperty CRC "498468084"}
+{attribute addProperty Size "10"}
+TYPE FSOE_1DB604F4 :
+STRUCT
+	{attribute addProperty Name "FSoE_Command"}
+	FSoE_Command : USINT;
+	{attribute addProperty Name "FSOUT_Module_Channel_1_Output"}
+	FSOUT_Module_Channel_1_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_Channel_2_Output"}
+	FSOUT_Module_Channel_2_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_Channel_3_Output"}
+	FSOUT_Module_Channel_3_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_Channel_4_Output"}
+	FSOUT_Module_Channel_4_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_ErrAck"}
+	FSOUT_Module_ErrAck : BOOL;
+	{attribute addProperty Name "FSoE_CRC_000"}
+	FSoE_CRC_000 : UINT;
+	{attribute addProperty Name "FSoE_Connection_ID"}
+	FSoE_Connection_ID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

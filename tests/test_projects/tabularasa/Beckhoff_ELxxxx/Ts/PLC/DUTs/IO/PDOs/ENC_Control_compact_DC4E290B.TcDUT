@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Control_compact_DC4E290B" Id="{60515fbb-39e7-4a63-9e58-dbf7ada1f89e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0124-0016'}
+{attribute addProperty BoxType "EL2521-0124-0016"}
+{attribute addProperty Id "Enable_latch_extern_on_positive_edgeAT %Q*BOOL1Set_counterAT %Q*BOOL1Enable_latch_extern_on_negative_edgeAT %Q*BOOL1Set_counter_valueAT %Q*UINT2"}
+{attribute addProperty CRC "3696109835"}
+{attribute addProperty Size "5"}
+TYPE ENC_Control_compact_DC4E290B :
+STRUCT
+	{attribute addProperty Name "Enable_latch_extern_on_positive_edge"}
+	Enable_latch_extern_on_positive_edge AT %Q* : BOOL;
+	{attribute addProperty Name "Set_counter"}
+	Set_counter AT %Q* : BOOL;
+	{attribute addProperty Name "Enable_latch_extern_on_negative_edge"}
+	Enable_latch_extern_on_negative_edge AT %Q* : BOOL;
+	{attribute addProperty Name "Set_counter_value"}
+	Set_counter_value AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

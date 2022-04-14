@@ -5,7 +5,7 @@ using iXlinkerDtos;
 
 namespace iXlinker.TsprojFile.Mapping
 {
-    partial class VS
+    internal partial class VS
     {
         public static Solution GetXaeProjectDetails(string tsProjFilePath, string activeTargetPlatform, string plcProjFilePath, bool doNotGenerateDisabled, string devenvPath, ushort maxEthercatFrameIndex)
         {

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AO_Standard_Channel_BA7EBB7C" Id="{b816dc59-8174-4043-952f-ab5e93577890}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP4314-1002-0016'}
+{attribute addProperty BoxType "EPP4314-1002-0016"}
+{attribute addProperty Id "Analog_outputAT %Q*INT2"}
+{attribute addProperty CRC "3128867708"}
+{attribute addProperty Size "2"}
+TYPE AO_Standard_Channel_BA7EBB7C :
+STRUCT
+	{attribute addProperty Name "Analog_output"}
+	Analog_output AT %Q* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

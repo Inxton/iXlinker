@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Outputs_47E26D6A" Id="{a3764781-9c10-42d0-a78d-abb0d4aad448}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
+{attribute addProperty BoxType "EM7004-0000-0017"}
+{attribute addProperty Id "OutputAT %Q*Output_FFFF807A16"}
+{attribute addProperty CRC "1206021482"}
+{attribute addProperty Size "16"}
+TYPE DO_Outputs_47E26D6A :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : Output_FFFF807A;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

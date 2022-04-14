@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DCM_Outputs_Channel_F77F51CE" Id="{8d4e0875-4ffd-4ee9-aa84-45573a4e28b4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7334-0008-0016'}
+{attribute addProperty BoxType "EJ7334-0008-0016"}
+{attribute addProperty Id "ControlAT %Q*Control_FF5AB9B22VelocityAT %Q*INT2"}
+{attribute addProperty CRC "4152316366"}
+{attribute addProperty Size "4"}
+TYPE DCM_Outputs_Channel_F77F51CE :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_FF5AB9B2;
+	{attribute addProperty Name "Velocity"}
+	Velocity AT %Q* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

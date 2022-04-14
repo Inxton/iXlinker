@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP1809_AA84A50E" Id="{1e137842-427c-43b9-aa27-89303f0f5aba}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1809-0042-0018'}
+{attribute addProperty BoxType "EP1809-0042-0018"}
+{attribute addProperty Id "DI_X01_Pin4AT %I*DI_X01_Pin_830843C11DI_X01_Pin2AT %I*DI_X01_Pin_830843C11DI_X02_Pin4AT %I*DI_X02_Pin_830843C11DI_X02_Pin2AT %I*DI_X02_Pin_830843C11DI_X03_Pin4AT %I*DI_X03_Pin_830843C11DI_X03_Pin2AT %I*DI_X03_Pin_830843C11DI_X04_Pin4AT %I*DI_X04_Pin_830843C11DI_X04_Pin2AT %I*DI_X04_Pin_830843C11DI_X05_Pin4AT %I*DI_X05_Pin_830843C11DI_X05_Pin2AT %I*DI_X05_Pin_830843C11DI_X06_Pin4AT %I*DI_X06_Pin_830843C11DI_X06_Pin2AT %I*DI_X06_Pin_830843C11DI_X07_Pin4AT %I*DI_X07_Pin_830843C11DI_X07_Pin2AT %I*DI_X07_Pin_830843C11DI_X08_Pin4AT %I*DI_X08_Pin_830843C11DI_X08_Pin2AT %I*DI_X08_Pin_830843C11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "2860819726"}
+{attribute addProperty Size "20"}
+TYPE EP1809_AA84A50E :
+STRUCT
+	{attribute addProperty Name "DI_X01_Pin4"}
+	DI_X01_Pin4 : DI_X01_Pin_830843C1;
+	{attribute addProperty Name "DI_X01_Pin2"}
+	DI_X01_Pin2 : DI_X01_Pin_830843C1;
+	{attribute addProperty Name "DI_X02_Pin4"}
+	DI_X02_Pin4 : DI_X02_Pin_830843C1;
+	{attribute addProperty Name "DI_X02_Pin2"}
+	DI_X02_Pin2 : DI_X02_Pin_830843C1;
+	{attribute addProperty Name "DI_X03_Pin4"}
+	DI_X03_Pin4 : DI_X03_Pin_830843C1;
+	{attribute addProperty Name "DI_X03_Pin2"}
+	DI_X03_Pin2 : DI_X03_Pin_830843C1;
+	{attribute addProperty Name "DI_X04_Pin4"}
+	DI_X04_Pin4 : DI_X04_Pin_830843C1;
+	{attribute addProperty Name "DI_X04_Pin2"}
+	DI_X04_Pin2 : DI_X04_Pin_830843C1;
+	{attribute addProperty Name "DI_X05_Pin4"}
+	DI_X05_Pin4 : DI_X05_Pin_830843C1;
+	{attribute addProperty Name "DI_X05_Pin2"}
+	DI_X05_Pin2 : DI_X05_Pin_830843C1;
+	{attribute addProperty Name "DI_X06_Pin4"}
+	DI_X06_Pin4 : DI_X06_Pin_830843C1;
+	{attribute addProperty Name "DI_X06_Pin2"}
+	DI_X06_Pin2 : DI_X06_Pin_830843C1;
+	{attribute addProperty Name "DI_X07_Pin4"}
+	DI_X07_Pin4 : DI_X07_Pin_830843C1;
+	{attribute addProperty Name "DI_X07_Pin2"}
+	DI_X07_Pin2 : DI_X07_Pin_830843C1;
+	{attribute addProperty Name "DI_X08_Pin4"}
+	DI_X08_Pin4 : DI_X08_Pin_830843C1;
+	{attribute addProperty Name "DI_X08_Pin2"}
+	DI_X08_Pin2 : DI_X08_Pin_830843C1;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

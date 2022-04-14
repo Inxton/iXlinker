@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_87176C1F" Id="{986cc22a-9f3c-4747-a9f9-a49a89bf1625}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2212-0000-0020'}
+{attribute addProperty BoxType "EL2212-0000-0020"}
+{attribute addProperty Id "OutputBOOL1TristateBOOL1PWMBOOL1ResetBOOL1"}
+{attribute addProperty CRC "2266459167"}
+{attribute addProperty Size "4"}
+TYPE Control_87176C1F :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output : BOOL;
+	{attribute addProperty Name "Tristate"}
+	Tristate : BOOL;
+	{attribute addProperty Name "PWM"}
+	PWM : BOOL;
+	{attribute addProperty Name "Reset"}
+	Reset : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CU2508_EEB2FEF4" Id="{70853111-7483-4929-9887-4e67817c89e3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CU2508-0000-0016'}
+{attribute addProperty BoxType "CU2508-0000-0016"}
+{attribute addProperty Id "InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "4004708084"}
+{attribute addProperty Size "10"}
+TYPE CU2508_EEB2FEF4 :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

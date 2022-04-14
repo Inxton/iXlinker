@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSLOGIC_Inputs_EEE9388E" Id="{adb824af-fa5f-43bd-8ff9-7d6061e20e77}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1960-0000-0019'}
+{attribute addProperty BoxType "EK1960-0000-0019"}
+{attribute addProperty Id "Safe_Logic_StateAT %I*USINT1Cycle_CounterAT %I*USINT1"}
+{attribute addProperty CRC "4008261774"}
+{attribute addProperty Size "2"}
+TYPE FSLOGIC_Inputs_EEE9388E :
+STRUCT
+	{attribute addProperty Name "Safe_Logic_State"}
+	Safe_Logic_State AT %I* : USINT;
+	{attribute addProperty Name "Cycle_Counter"}
+	Cycle_Counter AT %I* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

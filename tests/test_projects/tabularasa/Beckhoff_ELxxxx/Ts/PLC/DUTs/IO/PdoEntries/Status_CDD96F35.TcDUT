@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_CDD96F35" Id="{2683182d-2ae5-4722-ba92-7a5606db2ffd}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0000-1019'}
+{attribute addProperty BoxType "EL2521-0000-1019"}
+{attribute addProperty Id "Set_counter_doneBOOL1Counter_underflowBOOL1Counter_overflowBOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "3453579061"}
+{attribute addProperty Size "5"}
+TYPE Status_CDD96F35 :
+STRUCT
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BOOL;
+	{attribute addProperty Name "Counter_underflow"}
+	Counter_underflow : BOOL;
+	{attribute addProperty Name "Counter_overflow"}
+	Counter_overflow : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

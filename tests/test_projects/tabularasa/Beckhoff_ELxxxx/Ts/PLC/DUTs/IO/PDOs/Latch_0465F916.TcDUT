@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Latch_0465F916" Id="{491122f5-5944-4863-8407-4d42f1285a4b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1254--0000'}
+{attribute addProperty BoxType "EL1254--0000"}
+{attribute addProperty Id "Status3AT %I*USINT1Status4AT %I*USINT1Status1AT %I*USINT1Status2AT %I*USINT1LatchPos1AT %I*ULINT8LatchNeg1AT %I*ULINT8LatchPos2AT %I*ULINT8LatchNeg2AT %I*ULINT8LatchPos3AT %I*ULINT8LatchNeg3AT %I*ULINT8LatchPos4AT %I*ULINT8LatchNeg4AT %I*ULINT8"}
+{attribute addProperty CRC "73791766"}
+{attribute addProperty Size "68"}
+TYPE Latch_0465F916 :
+STRUCT
+	{attribute addProperty Name "Status3"}
+	Status3 AT %I* : USINT;
+	{attribute addProperty Name "Status4"}
+	Status4 AT %I* : USINT;
+	{attribute addProperty Name "Status1"}
+	Status1 AT %I* : USINT;
+	{attribute addProperty Name "Status2"}
+	Status2 AT %I* : USINT;
+	{attribute addProperty Name "LatchPos1"}
+	LatchPos1 AT %I* : ULINT;
+	{attribute addProperty Name "LatchNeg1"}
+	LatchNeg1 AT %I* : ULINT;
+	{attribute addProperty Name "LatchPos2"}
+	LatchPos2 AT %I* : ULINT;
+	{attribute addProperty Name "LatchNeg2"}
+	LatchNeg2 AT %I* : ULINT;
+	{attribute addProperty Name "LatchPos3"}
+	LatchPos3 AT %I* : ULINT;
+	{attribute addProperty Name "LatchNeg3"}
+	LatchNeg3 AT %I* : ULINT;
+	{attribute addProperty Name "LatchPos4"}
+	LatchPos4 AT %I* : ULINT;
+	{attribute addProperty Name "LatchNeg4"}
+	LatchNeg4 AT %I* : ULINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

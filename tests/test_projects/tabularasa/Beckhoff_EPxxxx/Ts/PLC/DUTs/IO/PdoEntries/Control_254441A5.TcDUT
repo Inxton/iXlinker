@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_254441A5" Id="{246ee3d0-a9e1-4620-8a59-16bdfeb44aba}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP8309-0022-0021'}
+{attribute addProperty BoxType "EP8309-0022-0021"}
+{attribute addProperty Id "Enable_ditheringBOOL1EnableBOOL1ResetBOOL1"}
+{attribute addProperty CRC "625230245"}
+{attribute addProperty Size "3"}
+TYPE Control_254441A5 :
+STRUCT
+	{attribute addProperty Name "Enable_dithering"}
+	Enable_dithering : BOOL;
+	{attribute addProperty Name "Enable"}
+	Enable : BOOL;
+	{attribute addProperty Name "Reset"}
+	Reset : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

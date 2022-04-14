@@ -33,8 +33,7 @@ namespace TsprojFile.Scan
                     mapableObjectVM.Name = ValidatePlcItem.Name(mapableObject.Name);
                     mapableObjectVM.Type_Value = mapableObject.Type_Value;
                     mapableObjectVM.TypeNamespace= mapableObject.TypeNamespace;
-                    mapableObjectVM.SizeInBites = mapableObject.SizeInBites;
-                    mapableObjectVM.SizeInBytes = mapableObject.SizeInBytes;
+                    mapableObjectVM.Size = mapableObject.Size;
                 }
                 else if (mapableObjects.Count >= 1)
                 {
@@ -48,12 +47,10 @@ namespace TsprojFile.Scan
                         member.Name = ValidatePlcItem.Name(mapableObject.Name);
                         member.Type_Value = mapableObject.Type_Value;
                         member.TypeNamespace= mapableObject.TypeNamespace;
-                        member.SizeInBites = mapableObject.SizeInBites;
-                        member.SizeInBytes = mapableObject.SizeInBytes;
+                        member.Size = mapableObject.Size;
                         actTopologyStruct.StructMembers.Add(member);
-                        actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
-                        actTopologyStruct.SizeInBites = actTopologyStruct.SizeInBites + member.SizeInBites;
-                        actTopologyStruct.SizeInBytes = actTopologyStruct.SizeInBytes + member.SizeInBytes;
+                        actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                        actTopologyStruct.Size = actTopologyStruct.Size + member.Size;
 
                         foreach (MappableItem mapableItem in mapableObject.MapableItems)
                         {
@@ -85,11 +82,9 @@ namespace TsprojFile.Scan
                         }
 
                         mapableObjectVM.Name = ValidatePlcItem.Name(deviceViewModel.Name);
-                        //mapableObjectVM.Type_Value = ValidatePlcItem.NameIncludingNamespace(actTopologyStruct.TypeNamespace, ValidatePlcItem.Type(actTopologyStruct.Name));
                         mapableObjectVM.Type_Value = ValidatePlcItem.Type(actTopologyStruct.Name);
                         mapableObjectVM.TypeNamespace = actTopologyStruct.TypeNamespace;
-                        mapableObjectVM.SizeInBites = actTopologyStruct.SizeInBites;
-                        mapableObjectVM.SizeInBytes = actTopologyStruct.SizeInBytes;
+                        mapableObjectVM.Size = actTopologyStruct.Size;
 
                     }
                     else
@@ -123,8 +118,7 @@ namespace TsprojFile.Scan
                 mapableObjectVM.Name = ValidatePlcItem.Name(mapableObject.Name);
                 mapableObjectVM.Type_Value = ValidatePlcItem.Type(mapableObject.Type_Value);
                 mapableObjectVM.TypeNamespace= mapableObject.TypeNamespace;
-                mapableObjectVM.SizeInBites = mapableObject.SizeInBites;
-                mapableObjectVM.SizeInBytes = mapableObject.SizeInBytes;
+                mapableObjectVM.Size = mapableObject.Size;
             }
             else if (mapableObjects.Count >= 1)
             {
@@ -143,12 +137,10 @@ namespace TsprojFile.Scan
                         member.Name = ValidatePlcItem.Name(mapableObject.Name);
                         member.Type_Value = ValidatePlcItem.Type(mapableObject.Type_Value);
                         member.TypeNamespace =mapableObject.TypeNamespace;
-                        member.SizeInBites = mapableObject.SizeInBites;
-                        member.SizeInBytes = mapableObject.SizeInBytes;
+                        member.Size = mapableObject.Size;
                         actTopologyStruct.StructMembers.Add(member);
-                        actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.Type_Value + member.SizeInBites + member.SizeInBytes;
-                        actTopologyStruct.SizeInBites = actTopologyStruct.SizeInBites + member.SizeInBites;
-                        actTopologyStruct.SizeInBytes = actTopologyStruct.SizeInBytes + member.SizeInBytes;
+                        actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                        actTopologyStruct.Size = actTopologyStruct.Size + member.Size;
                     }
 
                     foreach (MappableItem mapableItem in mapableObject.MapableItems)
@@ -181,11 +173,9 @@ namespace TsprojFile.Scan
                     }
 
                     mapableObjectVM.Name = ValidatePlcItem.Name(boxViewModel.Name);
-                    //mapableObjectVM.Type_Value = ValidatePlcItem.NameIncludingNamespace(actTopologyStruct.TypeNamespace, ValidatePlcItem.Type(actTopologyStruct.Name));
                     mapableObjectVM.Type_Value = ValidatePlcItem.Type(actTopologyStruct.Name);
                     mapableObjectVM.TypeNamespace = actTopologyStruct.TypeNamespace;
-                    mapableObjectVM.SizeInBites = actTopologyStruct.SizeInBites;
-                    mapableObjectVM.SizeInBytes = actTopologyStruct.SizeInBytes;
+                    mapableObjectVM.Size = actTopologyStruct.Size;
                 }
                 else
                 {

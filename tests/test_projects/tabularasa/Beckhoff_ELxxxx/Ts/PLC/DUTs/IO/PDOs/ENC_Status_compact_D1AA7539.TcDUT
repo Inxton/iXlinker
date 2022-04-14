@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Status_compact_D1AA7539" Id="{64c515e1-40d9-474f-a6f4-fbdc621e67f5}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5101-0000-1019'}
+{attribute addProperty BoxType "EL5101-0000-1019"}
+{attribute addProperty Id "Latch_C_validAT %I*BOOL1Latch_extern_validAT %I*BOOL1Set_counter_doneAT %I*BOOL1Counter_underflowAT %I*BOOL1Counter_overflowAT %I*BOOL1Status_of_input_statusAT %I*BOOL1Open_circuitAT %I*BOOL1Extrapolation_stallAT %I*BOOL1Status_of_input_AAT %I*BOOL1Status_of_input_BAT %I*BOOL1Status_of_input_CAT %I*BOOL1Status_of_input_gateAT %I*BOOL1Status_of_extern_latchAT %I*BOOL1Sync_ErrorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Counter_valueAT %I*UINT2Latch_valueAT %I*UINT2"}
+{attribute addProperty CRC "3517609273"}
+{attribute addProperty Size "20"}
+TYPE ENC_Status_compact_D1AA7539 :
+STRUCT
+	{attribute addProperty Name "Latch_C_valid"}
+	Latch_C_valid AT %I* : BOOL;
+	{attribute addProperty Name "Latch_extern_valid"}
+	Latch_extern_valid AT %I* : BOOL;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done AT %I* : BOOL;
+	{attribute addProperty Name "Counter_underflow"}
+	Counter_underflow AT %I* : BOOL;
+	{attribute addProperty Name "Counter_overflow"}
+	Counter_overflow AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_status"}
+	Status_of_input_status AT %I* : BOOL;
+	{attribute addProperty Name "Open_circuit"}
+	Open_circuit AT %I* : BOOL;
+	{attribute addProperty Name "Extrapolation_stall"}
+	Extrapolation_stall AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_A"}
+	Status_of_input_A AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_B"}
+	Status_of_input_B AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_C"}
+	Status_of_input_C AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_gate"}
+	Status_of_input_gate AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_extern_latch"}
+	Status_of_extern_latch AT %I* : BOOL;
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UINT;
+	{attribute addProperty Name "Latch_value"}
+	Latch_value AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

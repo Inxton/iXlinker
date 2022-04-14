@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L1_Current_Samples_89E07818" Id="{f5c86ed0-91a8-4872-b0c6-3ab551496acd}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
+{attribute addProperty BoxType "EL3773-0000-0016"}
+{attribute addProperty Id "I1_STATUSAT %I*I1_STATUS_B07533568"}
+{attribute addProperty CRC "2313189400"}
+{attribute addProperty Size "8"}
+TYPE L1_Current_Samples_89E07818 :
+STRUCT
+	{attribute addProperty Name "I1_STATUS"}
+	I1_STATUS AT %I* : I1_STATUS_B0753356;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

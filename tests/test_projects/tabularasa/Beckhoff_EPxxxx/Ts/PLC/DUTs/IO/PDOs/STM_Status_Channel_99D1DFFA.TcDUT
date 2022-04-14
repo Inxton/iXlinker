@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="STM_Status_Channel_99D1DFFA" Id="{cd0b5f76-2148-4494-a1b4-7178078f774e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7402-0057-0017'}
+{attribute addProperty BoxType "EP7402-0057-0017"}
+{attribute addProperty Id "StatusAT %I*Status_725F98F27"}
+{attribute addProperty CRC "2580668410"}
+{attribute addProperty Size "7"}
+TYPE STM_Status_Channel_99D1DFFA :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_725F98F2;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

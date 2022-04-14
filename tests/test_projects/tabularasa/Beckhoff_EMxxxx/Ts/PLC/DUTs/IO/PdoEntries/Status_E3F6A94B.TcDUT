@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_E3F6A94B" Id="{adbd2e5c-ba46-4c9b-a381-9f863cd350ae}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM3701-0000-0016'}
+{attribute addProperty BoxType "EM3701-0000-0016"}
+{attribute addProperty Id "UnderrangeBOOL1OverrangeBOOL1Limit_1BYTE1Limit_2BYTE1ErrorBOOL1TxPDO_StateBOOL1"}
+{attribute addProperty CRC "3824593227"}
+{attribute addProperty Size "6"}
+TYPE Status_E3F6A94B :
+STRUCT
+	{attribute addProperty Name "Underrange"}
+	Underrange : BOOL;
+	{attribute addProperty Name "Overrange"}
+	Overrange : BOOL;
+	{attribute addProperty Name "Limit_1"}
+	Limit_1 : BYTE;
+	{attribute addProperty Name "Limit_2"}
+	Limit_2 : BYTE;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL9999_7A10A7F6" Id="{b14c4c95-954b-42d1-b02c-07e5cc88c695}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9999'}
+{attribute addProperty BoxType "KL9999"}
+{attribute addProperty Id "Channel_1AT %Q*Channel_126527430"}
+{attribute addProperty CRC "2047911926"}
+{attribute addProperty Size "0"}
+TYPE KL9999_7A10A7F6 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_12652743;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

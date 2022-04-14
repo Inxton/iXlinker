@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_1D9409A4" Id="{d4fb808d-656b-4b50-90ff-3e213baccd05}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9227-4433-0018'}
+{attribute addProperty BoxType "EL9227-4433-0018"}
+{attribute addProperty Id "EnabledBOOL1TrippedBOOL1Short_CircuitBOOL1OverloadBOOL1Hardware_ProtectionBOOL1OvervoltageBOOL1UndervoltageBOOL1Current_Level_WarningBOOL1Cool_Down_LockBOOL1Disabled_By_SwitchBOOL1Disabled_By_DIBOOL1Disabled_By_OutputBOOL1DiagBOOL1TxPDO_StateBOOL1Input_cycle_counterBYTE1State_Device_SwitchBOOL1State_Digital_InputBOOL1ErrorBOOL1State_ResetBOOL1State_SwitchBOOL1"}
+{attribute addProperty CRC "496241060"}
+{attribute addProperty Size "20"}
+TYPE Status_1D9409A4 :
+STRUCT
+	{attribute addProperty Name "Enabled"}
+	Enabled : BOOL;
+	{attribute addProperty Name "Tripped"}
+	Tripped : BOOL;
+	{attribute addProperty Name "Short_Circuit"}
+	Short_Circuit : BOOL;
+	{attribute addProperty Name "Overload"}
+	Overload : BOOL;
+	{attribute addProperty Name "Hardware_Protection"}
+	Hardware_Protection : BOOL;
+	{attribute addProperty Name "Overvoltage"}
+	Overvoltage : BOOL;
+	{attribute addProperty Name "Undervoltage"}
+	Undervoltage : BOOL;
+	{attribute addProperty Name "Current_Level_Warning"}
+	Current_Level_Warning : BOOL;
+	{attribute addProperty Name "Cool_Down_Lock"}
+	Cool_Down_Lock : BOOL;
+	{attribute addProperty Name "Disabled_By_Switch"}
+	Disabled_By_Switch : BOOL;
+	{attribute addProperty Name "Disabled_By_DI"}
+	Disabled_By_DI : BOOL;
+	{attribute addProperty Name "Disabled_By_Output"}
+	Disabled_By_Output : BOOL;
+	{attribute addProperty Name "Diag"}
+	Diag : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter : BYTE;
+	{attribute addProperty Name "State_Device_Switch"}
+	State_Device_Switch : BOOL;
+	{attribute addProperty Name "State_Digital_Input"}
+	State_Digital_Input : BOOL;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "State_Reset"}
+	State_Reset : BOOL;
+	{attribute addProperty Name "State_Switch"}
+	State_Switch : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -18,29 +18,29 @@ namespace TsprojFile.Scan
             {
                 foreach (PdoEntryStructMemberViewModel structMember in actStruct.StructMembers)
                 {
-                    if (structEntryNames.Contains(structMember.Name))
+                    if (structEntryNames.Contains(structMember.NameA))
                     {
-                        if (!structEntryNamesDuplicities.Contains(structMember.Name))
+                        if (!structEntryNamesDuplicities.Contains(structMember.NameA))
                         {
                             sameNameIndex = 1;
-                            structEntryNamesDuplicities.Add(structMember.Name);
+                            structEntryNamesDuplicities.Add(structMember.NameA);
                         }
-                        EventLogger.Instance.Logger.Information("Not unique pdo entry struct member name {0} found in the structure name {1}, in the box type {2}!!!", structMember.Name, actStruct.Name, actStruct.BoxOrderCode);
+                        EventLogger.Instance.Logger.Information("Not unique pdo entry struct member name {0} found in the structure name {1}, in the box type {2}!!!", structMember.NameA, actStruct.Name, actStruct.BoxOrderCode);
                         if (exportDuplicities)
                         {
                             using (StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\VarGrpStructMemberNamesDuplicities.txt", true))
                             {
-                                sw.WriteLine("{0} ; {1} ; {2}", actStruct.BoxOrderCode, actStruct.Prefix, structMember.Name);
+                                sw.WriteLine("{0} ; {1} ; {2}", actStruct.BoxOrderCode, actStruct.Prefix, structMember.NameA);
                             }
                         }
-                        structMember.Name = structMember.Name + "_" + sameNameIndex.ToString();
+                        structMember.NameA = structMember.NameA + "_" + sameNameIndex.ToString();
                         sameNameIndex++;
-                        EventLogger.Instance.Logger.Information("\t Renamed to {0}!!!", structMember.Name);
-                        structEntryNames.Add(structMember.Name);
+                        EventLogger.Instance.Logger.Information("\t Renamed to {0}!!!", structMember.NameA);
+                        structEntryNames.Add(structMember.NameA);
                     }
                     else
                     {
-                        structEntryNames.Add(structMember.Name);
+                        structEntryNames.Add(structMember.NameA);
                     }
                 }
             }

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_A4B48F2D" Id="{a004e130-af6f-48a3-a959-a4d9a306d7c5}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL6821'}
+{attribute addProperty BoxType "KL6821"}
+{attribute addProperty Id "StateAT %I*UINT0Data_In_0AT %I*USINT0Data_In_1AT %I*USINT0Data_In_2AT %I*USINT0Data_In_3AT %I*USINT0CtrlAT %Q*UINT0Data_Out_0AT %Q*USINT0Data_Out_1AT %Q*USINT0Data_Out_2AT %Q*USINT0Data_Out_3AT %Q*USINT0"}
+{attribute addProperty CRC "2763296557"}
+{attribute addProperty Size "0"}
+TYPE Channel_A4B48F2D :
+STRUCT
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+	{attribute addProperty Name "Data_In_0"}
+	Data_In_0 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_1"}
+	Data_In_1 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_2"}
+	Data_In_2 AT %I* : USINT;
+	{attribute addProperty Name "Data_In_3"}
+	Data_In_3 AT %I* : USINT;
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : UINT;
+	{attribute addProperty Name "Data_Out_0"}
+	Data_Out_0 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_1"}
+	Data_Out_1 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_2"}
+	Data_Out_2 AT %Q* : USINT;
+	{attribute addProperty Name "Data_Out_3"}
+	Data_Out_3 AT %Q* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

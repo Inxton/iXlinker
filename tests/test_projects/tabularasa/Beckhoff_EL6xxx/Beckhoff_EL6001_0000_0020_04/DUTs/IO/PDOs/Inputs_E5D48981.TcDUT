@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Inputs_E5D48981" Id="{5cfa6716-7541-4e01-b560-02399087119e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
+{attribute addProperty BoxType "EL6001-0000-0020"}
+{attribute addProperty Id "StatusAT %I*USINT1Data_InAT %I*ARRAY[0..2] OF USINT3"}
+{attribute addProperty CRC "3386977609"}
+{attribute addProperty Size "4"}
+TYPE Inputs_E5D48981 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : USINT;
+	{attribute addProperty Name "Data_In"}
+	Data_In AT %I* : ARRAY[0..2] OF USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

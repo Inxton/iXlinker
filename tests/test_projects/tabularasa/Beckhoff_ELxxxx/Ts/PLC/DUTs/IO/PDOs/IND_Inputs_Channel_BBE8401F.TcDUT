@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="IND_Inputs_Channel_BBE8401F" Id="{e364970c-12e7-4db9-99c4-9f5bb85a01b1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5072-0000-0016'}
+{attribute addProperty BoxType "EL5072-0000-0016"}
+{attribute addProperty Id "StatusAT %I*Status_3673109410PositionAT %I*DINT4Latch_valueAT %I*DINT4"}
+{attribute addProperty CRC "3152560159"}
+{attribute addProperty Size "18"}
+TYPE IND_Inputs_Channel_BBE8401F :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_36731094;
+	{attribute addProperty Name "Position"}
+	Position AT %I* : DINT;
+	{attribute addProperty Name "Latch_value"}
+	Latch_value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

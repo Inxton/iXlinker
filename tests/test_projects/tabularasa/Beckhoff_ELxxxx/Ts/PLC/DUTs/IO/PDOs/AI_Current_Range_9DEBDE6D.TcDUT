@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AI_Current_Range_9DEBDE6D" Id="{0b659b49-e3ef-4a3d-a5c2-4a3ce127c413}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3783-0000-0018'}
+{attribute addProperty BoxType "EL3783-0000-0018"}
+{attribute addProperty Id "High_Current_RangeAT %I*High_Current_Range_489677624High_Current_Range_ActiveAT %I*BOOL1"}
+{attribute addProperty CRC "2649480813"}
+{attribute addProperty Size "5"}
+TYPE AI_Current_Range_9DEBDE6D :
+STRUCT
+	{attribute addProperty Name "High_Current_Range"}
+	High_Current_Range AT %I* : High_Current_Range_48967762;
+	{attribute addProperty Name "High_Current_Range_Active"}
+	High_Current_Range_Active AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

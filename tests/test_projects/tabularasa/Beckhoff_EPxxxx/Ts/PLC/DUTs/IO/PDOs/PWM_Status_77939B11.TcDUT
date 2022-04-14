@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PWM_Status_77939B11" Id="{31ed4470-6a41-4a70-9572-897e5a399b8e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP8309-0022-0021'}
+{attribute addProperty BoxType "EP8309-0022-0021"}
+{attribute addProperty Id "StatusAT %I*Status_72C27E804"}
+{attribute addProperty CRC "2006162193"}
+{attribute addProperty Size "4"}
+TYPE PWM_Status_77939B11 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_72C27E80;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

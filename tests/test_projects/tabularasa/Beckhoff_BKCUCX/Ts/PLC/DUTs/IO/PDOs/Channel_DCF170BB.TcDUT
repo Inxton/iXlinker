@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_DCF170BB" Id="{320707e1-d6a5-408c-828b-c5bf1c3023bc}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2212'}
+{attribute addProperty BoxType "KL2212"}
+{attribute addProperty Id "WireBreakAT %I*BOOL0CurcuitAT %I*BOOL0OutputAT %Q*BOOL0"}
+{attribute addProperty CRC "3706810555"}
+{attribute addProperty Size "0"}
+TYPE Channel_DCF170BB :
+STRUCT
+	{attribute addProperty Name "WireBreak"}
+	WireBreak AT %I* : BOOL;
+	{attribute addProperty Name "Curcuit"}
+	Curcuit AT %I* : BOOL;
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3318_44C149FC" Id="{3226d51c-95ad-418c-b2cb-c61629cb76bb}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3318-0000-0016'}
+{attribute addProperty BoxType "EL3318-0000-0016"}
+{attribute addProperty Id "TC_Channel_1AT %I*TC_Channel_9575FEA17TC_Channel_2AT %I*TC_Channel_9575FEA17TC_Channel_3AT %I*TC_Channel_9575FEA17TC_Channel_4AT %I*TC_Channel_9575FEA17TC_Channel_5AT %I*TC_Channel_9575FEA17TC_Channel_6AT %I*TC_Channel_9575FEA17TC_Channel_7AT %I*TC_Channel_9575FEA17TC_Channel_8AT %I*TC_Channel_9575FEA17WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1153518076"}
+{attribute addProperty Size "68"}
+TYPE EL3318_44C149FC :
+STRUCT
+	{attribute addProperty Name "TC_Channel_1"}
+	TC_Channel_1 : TC_Channel_9575FEA1;
+	{attribute addProperty Name "TC_Channel_2"}
+	TC_Channel_2 : TC_Channel_9575FEA1;
+	{attribute addProperty Name "TC_Channel_3"}
+	TC_Channel_3 : TC_Channel_9575FEA1;
+	{attribute addProperty Name "TC_Channel_4"}
+	TC_Channel_4 : TC_Channel_9575FEA1;
+	{attribute addProperty Name "TC_Channel_5"}
+	TC_Channel_5 : TC_Channel_9575FEA1;
+	{attribute addProperty Name "TC_Channel_6"}
+	TC_Channel_6 : TC_Channel_9575FEA1;
+	{attribute addProperty Name "TC_Channel_7"}
+	TC_Channel_7 : TC_Channel_9575FEA1;
+	{attribute addProperty Name "TC_Channel_8"}
+	TC_Channel_8 : TC_Channel_9575FEA1;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DRV_Controlword_F3F14721" Id="{ae2997d0-6cf2-4446-b70b-afb23d6e4c99}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7411-0000-0016'}
+{attribute addProperty BoxType "EL7411-0000-0016"}
+{attribute addProperty Id "ControlwordAT %Q*UINT2"}
+{attribute addProperty CRC "4092675873"}
+{attribute addProperty Size "2"}
+TYPE DRV_Controlword_F3F14721 :
+STRUCT
+	{attribute addProperty Name "Controlword"}
+	Controlword AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="YVR_Outputs_31F2CBB3" Id="{bd69540a-1c89-43cc-9db6-45fa486ba7d4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: APS1003-7000-0016'}
+{attribute addProperty BoxType "APS1003-7000-0016"}
+{attribute addProperty Id "ControlWordAT %Q*UINT2Current_D_0X0AT %Q*INT2Current_D_0X1AT %Q*INT2Current_D_0X2AT %Q*INT2Current_D_0Y0AT %Q*INT2Current_D_0Y1AT %Q*INT2Current_D_0Y2AT %Q*INT2Current_D_1X0AT %Q*INT2Current_D_1X1AT %Q*INT2Current_D_1X2AT %Q*INT2Current_D_1Y0AT %Q*INT2Current_D_1Y1AT %Q*INT2Current_D_1Y2AT %Q*INT2Current_D_2X0AT %Q*INT2Current_D_2X1AT %Q*INT2Current_D_2X2AT %Q*INT2Current_D_2Y0AT %Q*INT2Current_D_2Y1AT %Q*INT2Current_D_2Y2AT %Q*INT2Current_D_3X0AT %Q*INT2Current_D_3X1AT %Q*INT2Current_D_3X2AT %Q*INT2Current_D_3Y0AT %Q*INT2Current_D_3Y1AT %Q*INT2Current_D_3Y2AT %Q*INT2Current_Q_0X0AT %Q*INT2Current_Q_0X1AT %Q*INT2Current_Q_0X2AT %Q*INT2Current_Q_0Y0AT %Q*INT2Current_Q_0Y1AT %Q*INT2Current_Q_0Y2AT %Q*INT2Current_Q_1X0AT %Q*INT2Current_Q_1X1AT %Q*INT2Current_Q_1X2AT %Q*INT2Current_Q_1Y0AT %Q*INT2Current_Q_1Y1AT %Q*INT2Current_Q_1Y2AT %Q*INT2Current_Q_2X0AT %Q*INT2Current_Q_2X1AT %Q*INT2Current_Q_2X2AT %Q*INT2Current_Q_2Y0AT %Q*INT2Current_Q_2Y1AT %Q*INT2Current_Q_2Y2AT %Q*INT2Current_Q_3X0AT %Q*INT2Current_Q_3X1AT %Q*INT2Current_Q_3X2AT %Q*INT2Current_Q_3Y0AT %Q*INT2Current_Q_3Y1AT %Q*INT2Current_Q_3Y2AT %Q*INT2PhiE_0X0AT %Q*UINT2PhiE_0X1AT %Q*UINT2PhiE_0X2AT %Q*UINT2PhiE_0Y0AT %Q*UINT2PhiE_0Y1AT %Q*UINT2PhiE_0Y2AT %Q*UINT2PhiE_1X0AT %Q*UINT2PhiE_1X1AT %Q*UINT2PhiE_1X2AT %Q*UINT2PhiE_1Y0AT %Q*UINT2PhiE_1Y1AT %Q*UINT2PhiE_1Y2AT %Q*UINT2PhiE_2X0AT %Q*UINT2PhiE_2X1AT %Q*UINT2PhiE_2X2AT %Q*UINT2PhiE_2Y0AT %Q*UINT2PhiE_2Y1AT %Q*UINT2PhiE_2Y2AT %Q*UINT2PhiE_3X0AT %Q*UINT2PhiE_3X1AT %Q*UINT2PhiE_3X2AT %Q*UINT2PhiE_3Y0AT %Q*UINT2PhiE_3Y1AT %Q*UINT2PhiE_3Y2AT %Q*UINT2"}
+{attribute addProperty CRC "837995443"}
+{attribute addProperty Size "146"}
+TYPE YVR_Outputs_31F2CBB3 :
+STRUCT
+	{attribute addProperty Name "ControlWord"}
+	ControlWord AT %Q* : UINT;
+	{attribute addProperty Name "Current_D_0X0"}
+	Current_D_0X0 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_0X1"}
+	Current_D_0X1 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_0X2"}
+	Current_D_0X2 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_0Y0"}
+	Current_D_0Y0 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_0Y1"}
+	Current_D_0Y1 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_0Y2"}
+	Current_D_0Y2 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_1X0"}
+	Current_D_1X0 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_1X1"}
+	Current_D_1X1 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_1X2"}
+	Current_D_1X2 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_1Y0"}
+	Current_D_1Y0 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_1Y1"}
+	Current_D_1Y1 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_1Y2"}
+	Current_D_1Y2 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_2X0"}
+	Current_D_2X0 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_2X1"}
+	Current_D_2X1 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_2X2"}
+	Current_D_2X2 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_2Y0"}
+	Current_D_2Y0 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_2Y1"}
+	Current_D_2Y1 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_2Y2"}
+	Current_D_2Y2 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_3X0"}
+	Current_D_3X0 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_3X1"}
+	Current_D_3X1 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_3X2"}
+	Current_D_3X2 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_3Y0"}
+	Current_D_3Y0 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_3Y1"}
+	Current_D_3Y1 AT %Q* : INT;
+	{attribute addProperty Name "Current_D_3Y2"}
+	Current_D_3Y2 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_0X0"}
+	Current_Q_0X0 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_0X1"}
+	Current_Q_0X1 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_0X2"}
+	Current_Q_0X2 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_0Y0"}
+	Current_Q_0Y0 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_0Y1"}
+	Current_Q_0Y1 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_0Y2"}
+	Current_Q_0Y2 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_1X0"}
+	Current_Q_1X0 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_1X1"}
+	Current_Q_1X1 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_1X2"}
+	Current_Q_1X2 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_1Y0"}
+	Current_Q_1Y0 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_1Y1"}
+	Current_Q_1Y1 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_1Y2"}
+	Current_Q_1Y2 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_2X0"}
+	Current_Q_2X0 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_2X1"}
+	Current_Q_2X1 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_2X2"}
+	Current_Q_2X2 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_2Y0"}
+	Current_Q_2Y0 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_2Y1"}
+	Current_Q_2Y1 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_2Y2"}
+	Current_Q_2Y2 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_3X0"}
+	Current_Q_3X0 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_3X1"}
+	Current_Q_3X1 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_3X2"}
+	Current_Q_3X2 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_3Y0"}
+	Current_Q_3Y0 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_3Y1"}
+	Current_Q_3Y1 AT %Q* : INT;
+	{attribute addProperty Name "Current_Q_3Y2"}
+	Current_Q_3Y2 AT %Q* : INT;
+	{attribute addProperty Name "PhiE_0X0"}
+	PhiE_0X0 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_0X1"}
+	PhiE_0X1 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_0X2"}
+	PhiE_0X2 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_0Y0"}
+	PhiE_0Y0 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_0Y1"}
+	PhiE_0Y1 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_0Y2"}
+	PhiE_0Y2 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_1X0"}
+	PhiE_1X0 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_1X1"}
+	PhiE_1X1 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_1X2"}
+	PhiE_1X2 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_1Y0"}
+	PhiE_1Y0 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_1Y1"}
+	PhiE_1Y1 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_1Y2"}
+	PhiE_1Y2 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_2X0"}
+	PhiE_2X0 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_2X1"}
+	PhiE_2X1 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_2X2"}
+	PhiE_2X2 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_2Y0"}
+	PhiE_2Y0 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_2Y1"}
+	PhiE_2Y1 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_2Y2"}
+	PhiE_2Y2 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_3X0"}
+	PhiE_3X0 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_3X1"}
+	PhiE_3X1 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_3X2"}
+	PhiE_3X2 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_3Y0"}
+	PhiE_3Y0 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_3Y1"}
+	PhiE_3Y1 AT %Q* : UINT;
+	{attribute addProperty Name "PhiE_3Y2"}
+	PhiE_3Y2 AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

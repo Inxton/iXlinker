@@ -8,7 +8,7 @@ using iXlinkerDtos;
 
 namespace iXlinker.TsprojFile.Mapping
 {
-    partial class VS
+    internal partial class VS
     {
         private static string GetActiveTargetPlatform(string slnFolderPath, string slnName)
         {

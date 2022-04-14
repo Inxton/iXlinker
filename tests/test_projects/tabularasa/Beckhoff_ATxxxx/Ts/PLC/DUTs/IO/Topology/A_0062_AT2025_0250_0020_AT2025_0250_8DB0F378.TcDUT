@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0062_AT2025_0250_0020_AT2025_0250_8DB0F378" Id="{396e2d03-30e5-4b63-be49-2ff0dd154e1a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2025-0250-0020'}
+{attribute addProperty BoxType "AT2025-0250-0020"}
+{attribute addProperty Id "A_0074_AT2000_5250_0017_AT2000_5250AT2000_33A3DF1B80"}
+{attribute addProperty CRC "2377184120"}
+{attribute addProperty Size "80"}
+TYPE A_0062_AT2025_0250_0020_AT2025_0250_8DB0F378 EXTENDS AT2025_2EA6C9BF :
+STRUCT
+	{attribute addProperty Name "A_0074_AT2000_5250_0017_AT2000_5250"}
+	A_0074_AT2000_5250_0017_AT2000_5250 : AT2000_33A3DF1B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

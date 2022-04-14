@@ -12,9 +12,9 @@ namespace TsprojFile.Scan
         private MappableObject GetAllVarGrpVarsAsOneStructure(PdoViewModel pdoViewModel, ObservableCollection<PdoEntryViewModel> varGrpVars)
         {
             string pdoViewModelName = pdoViewModel.Name;
-            if (pdoViewModelName.Contains(ioSlotSeparator))
+            if (pdoViewModelName.Contains(tmpSlotSeparator))
             {
-                pdoViewModelName = pdoViewModelName.Substring(pdoViewModelName.LastIndexOf(ioSlotSeparator, StringComparison.Ordinal) + 1);
+                pdoViewModelName = pdoViewModelName.Substring(pdoViewModelName.LastIndexOf(tmpSlotSeparator, StringComparison.Ordinal) + 1);
             }
 
             PdoStructViewModel actVarGrpStruct = new PdoStructViewModel() { Prefix = ValidatePlcItem.StructurePrefix(pdoViewModel.Name), Id = "", BoxOrderCode = pdoViewModel.BoxOrderCode };
@@ -43,16 +43,14 @@ namespace TsprojFile.Scan
                     pdoViewModel.InOutMappings = "Inputs";
                 }
                 member.OwnerBname = _var.OwnerBname;
-                member.SizeInBites = _var.SizeInBites;
-                member.SizeInBytes = _var.SizeInBytes;
+                member.Size = _var.Size;
                 member.Index = _var.Index;
                 member.IndexNumber = _var.IndexNumber;
                 member.SubIndex = _var.SubIndex;
                 member.SubIndexNumber = _var.SubIndexNumber;
                 actVarGrpStruct.StructMembers.Add(member);
-                actVarGrpStruct.Id = actVarGrpStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.SizeInBites + member.SizeInBytes + member.SubIndexNumber;
-                actVarGrpStruct.SizeInBites = actVarGrpStruct.SizeInBites + member.SizeInBites;
-                actVarGrpStruct.SizeInBytes = actVarGrpStruct.SizeInBytes + member.SizeInBytes;
+                actVarGrpStruct.Id = actVarGrpStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                actVarGrpStruct.Size = actVarGrpStruct.Size + member.Size;
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
                 MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = _var.VarA, VarB = _var.VarB };
@@ -68,20 +66,16 @@ namespace TsprojFile.Scan
             if (CheckIfPdoStructureDoesNotExist(actVarGrpStruct))
             {
                 //if not add to the structure list
-                //actVarGrpStruct.TypeNamespace = "*";
                 PdoStructures.Add(actVarGrpStruct);
             }
             //create varGrp of the structured type
             PdoStructMemberViewModel firstStructMember = actVarGrpStruct.StructMembers.FirstOrDefault();
             mapableObject.Name = ValidatePlcItem.Name(actVarGrpStruct.Prefix);
-            //mapableObject.Type_Value = ValidatePlcItem.NameIncludingNamespace(actVarGrpStruct.TypeNamespace, ValidatePlcItem.Type(actVarGrpStruct.Name));
             mapableObject.Type_Value = ValidatePlcItem.Type(actVarGrpStruct.Name);
             mapableObject.TypeNamespace = actVarGrpStruct.TypeNamespace;
-            mapableObject.SizeInBites = actVarGrpStruct.SizeInBites;
-            mapableObject.SizeInBytes = actVarGrpStruct.SizeInBytes;
+            mapableObject.Size = actVarGrpStruct.Size;
 
-            pdoViewModel.SizeInBites = actVarGrpStruct.SizeInBites;
-            pdoViewModel.SizeInBytes = actVarGrpStruct.SizeInBytes;
+            pdoViewModel.Size = actVarGrpStruct.Size;
             pdoViewModel.Type_Value = actVarGrpStruct.Name;
             pdoViewModel.TypeNamespace = actVarGrpStruct.TypeNamespace;
 

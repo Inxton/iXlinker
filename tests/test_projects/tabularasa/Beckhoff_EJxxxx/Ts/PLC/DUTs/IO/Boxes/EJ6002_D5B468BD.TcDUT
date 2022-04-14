@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ6002_D5B468BD" Id="{ca6fed44-153a-4e69-890a-c06a184771e7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6002-0000-0016'}
+{attribute addProperty BoxType "EJ6002-0000-0016"}
+{attribute addProperty Id "COM_Inputs_Channel_1AT %I*COM_Inputs_Channel_3801C95E30COM_Inputs_Channel_2AT %I*COM_Inputs_Channel_3801C95E30COM_Outputs_Channel_1AT %Q*COM_Outputs_Channel_EADA2E0D27COM_Outputs_Channel_2AT %Q*COM_Outputs_Channel_EADA2E0D27WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "3585370301"}
+{attribute addProperty Size "126"}
+TYPE EJ6002_D5B468BD :
+STRUCT
+	{attribute addProperty Name "COM_Inputs_Channel_1"}
+	COM_Inputs_Channel_1 : COM_Inputs_Channel_3801C95E;
+	{attribute addProperty Name "COM_Inputs_Channel_2"}
+	COM_Inputs_Channel_2 : COM_Inputs_Channel_3801C95E;
+	{attribute addProperty Name "COM_Outputs_Channel_1"}
+	COM_Outputs_Channel_1 : COM_Outputs_Channel_EADA2E0D;
+	{attribute addProperty Name "COM_Outputs_Channel_2"}
+	COM_Outputs_Channel_2 : COM_Outputs_Channel_EADA2E0D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

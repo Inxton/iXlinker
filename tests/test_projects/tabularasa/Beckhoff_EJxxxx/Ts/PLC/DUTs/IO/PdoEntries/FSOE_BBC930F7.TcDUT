@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_BBC930F7" Id="{d5bae483-bd73-45a8-b753-e56f84679d31}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1957-0000-0017'}
+{attribute addProperty BoxType "EJ1957-0000-0017"}
+{attribute addProperty Id "FSoE_CommandUSINT1FSOUT_Module_Module_FaultBOOL1FSIN_Module_1_Channel_1_InputBOOL1FSIN_Module_1_Channel_2_InputBOOL1FSIN_Module_1_Module_FaultBOOL1FSIN_Module_2_Channel_1_InputBOOL1FSIN_Module_2_Channel_2_InputBOOL1FSIN_Module_2_Module_FaultBOOL1FSIN_Module_3_Channel_1_InputBOOL1FSIN_Module_3_Channel_2_InputBOOL1FSIN_Module_3_Module_FaultBOOL1FSIN_Module_4_Channel_1_InputBOOL1FSIN_Module_4_Channel_2_InputBOOL1FSIN_Module_4_Module_FaultBOOL1FSoE_CRC_000UINT2FSoE_Connection_IDUINT2"}
+{attribute addProperty CRC "3150524663"}
+{attribute addProperty Size "18"}
+TYPE FSOE_BBC930F7 :
+STRUCT
+	{attribute addProperty Name "FSoE_Command"}
+	FSoE_Command : USINT;
+	{attribute addProperty Name "FSOUT_Module_Module_Fault"}
+	FSOUT_Module_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_1_Channel_1_Input"}
+	FSIN_Module_1_Channel_1_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_1_Channel_2_Input"}
+	FSIN_Module_1_Channel_2_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_1_Module_Fault"}
+	FSIN_Module_1_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_Channel_1_Input"}
+	FSIN_Module_2_Channel_1_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_Channel_2_Input"}
+	FSIN_Module_2_Channel_2_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_Module_Fault"}
+	FSIN_Module_2_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_3_Channel_1_Input"}
+	FSIN_Module_3_Channel_1_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_3_Channel_2_Input"}
+	FSIN_Module_3_Channel_2_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_3_Module_Fault"}
+	FSIN_Module_3_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_4_Channel_1_Input"}
+	FSIN_Module_4_Channel_1_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_4_Channel_2_Input"}
+	FSIN_Module_4_Channel_2_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_4_Module_Fault"}
+	FSIN_Module_4_Module_Fault : BOOL;
+	{attribute addProperty Name "FSoE_CRC_000"}
+	FSoE_CRC_000 : UINT;
+	{attribute addProperty Name "FSoE_Connection_ID"}
+	FSoE_Connection_ID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_A7436BC6" Id="{4c7da2d4-4be5-4503-a888-82fc98ea7e24}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1258-0001-0016'}
+{attribute addProperty BoxType "EPP1258-0001-0016"}
+{attribute addProperty Id "DcOutputShiftAT %I*DINT4DcInputShiftAT %I*DINT4StateAT %I*UINT2"}
+{attribute addProperty CRC "2806213574"}
+{attribute addProperty Size "10"}
+TYPE InfoData_A7436BC6 :
+STRUCT
+	{attribute addProperty Name "DcOutputShift"}
+	DcOutputShift AT %I* : DINT;
+	{attribute addProperty Name "DcInputShift"}
+	DcInputShift AT %I* : DINT;
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

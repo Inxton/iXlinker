@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L3_Voltage_Samples_CAC3758E" Id="{d2a4e6af-033c-49b5-893c-8465053b5485}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
+{attribute addProperty BoxType "EL3773-0000-0016"}
+{attribute addProperty Id "U3_SAMPLESAT %I*U3_SAMPLES_2D13B74B20"}
+{attribute addProperty CRC "3401807246"}
+{attribute addProperty Size "20"}
+TYPE L3_Voltage_Samples_CAC3758E :
+STRUCT
+	{attribute addProperty Name "U3_SAMPLES"}
+	U3_SAMPLES AT %I* : U3_SAMPLES_2D13B74B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

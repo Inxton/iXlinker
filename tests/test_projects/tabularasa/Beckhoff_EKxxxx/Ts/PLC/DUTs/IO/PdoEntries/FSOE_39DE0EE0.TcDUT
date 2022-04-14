@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_39DE0EE0" Id="{e9771ffb-8445-47ff-af77-59e93559a4c3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1960-0000-0021'}
+{attribute addProperty BoxType "EK1960-0000-0021"}
+{attribute addProperty Id "FSoE_CommandUSINT1FSOUT_Module_1_Module_FaultBOOL1FSOUT_Module_2_Module_FaultBOOL1FSOUT_Module_3_Module_FaultBOOL1FSOUT_Module_4_Module_FaultBOOL1FSOUT_Module_5_Module_FaultBOOL1FSOUT_Module_6_Module_FaultBOOL1FSIN_Module_1_Channel_1_Input_X6_1BOOL1FSIN_Module_1_Channel_2_Input_X6_2BOOL1FSIN_Module_1_Module_FaultBOOL1FSIN_Module_2_Channel_1_Input_X6_3BOOL1FSIN_Module_2_Channel_2_Input_X6_4BOOL1FSIN_Module_2_Module_FaultBOOL1FSIN_Module_3_Channel_1_Input_X6_5BOOL1FSIN_Module_3_Channel_2_Input_X6_6BOOL1FSIN_Module_3_Module_FaultBOOL1FSoE_CRC_000UINT2FSIN_Module_4_Channel_1_Input_X6_7BOOL1FSIN_Module_4_Channel_2_Input_X6_8BOOL1FSIN_Module_4_Module_FaultBOOL1FSIN_Module_5_Channel_1_Input_X6_9BOOL1FSIN_Module_5_Channel_2_Input_X6_10BOOL1FSIN_Module_5_Module_FaultBOOL1FSIN_Module_6_Channel_1_Input_X8_1BOOL1FSIN_Module_6_Channel_2_Input_X8_2BOOL1FSIN_Module_6_Module_FaultBOOL1FSIN_Module_7_Channel_1_Input_X8_3BOOL1FSIN_Module_7_Channel_2_Input_X8_4BOOL1FSIN_Module_7_Module_FaultBOOL1FSIN_Module_8_Channel_1_Input_X8_5BOOL1FSIN_Module_8_Channel_2_Input_X8_6BOOL1FSIN_Module_8_Module_FaultBOOL1FSIN_Module_9_Channel_1_Input_X8_7BOOL1FSoE_CRC_001UINT2FSIN_Module_9_Channel_2_Input_X8_8BOOL1FSIN_Module_9_Module_Fault_1BOOL1FSIN_Module_9_Module_Fault_2BOOL1FSIN_Module_10_Channel_1_Input_X8_9BOOL1FSIN_Module_10_Channel_2_Input_X8_10BOOL1FSIN_Module_10_Module_Fault_1BOOL1FSIN_Module_10_Module_Fault_2BOOL1FSoE_CRC_002UINT2FSoE_Connection_IDUINT2"}
+{attribute addProperty CRC "970854112"}
+{attribute addProperty Size "47"}
+TYPE FSOE_39DE0EE0 :
+STRUCT
+	{attribute addProperty Name "FSoE_Command"}
+	FSoE_Command : USINT;
+	{attribute addProperty Name "FSOUT_Module_1_Module_Fault"}
+	FSOUT_Module_1_Module_Fault : BOOL;
+	{attribute addProperty Name "FSOUT_Module_2_Module_Fault"}
+	FSOUT_Module_2_Module_Fault : BOOL;
+	{attribute addProperty Name "FSOUT_Module_3_Module_Fault"}
+	FSOUT_Module_3_Module_Fault : BOOL;
+	{attribute addProperty Name "FSOUT_Module_4_Module_Fault"}
+	FSOUT_Module_4_Module_Fault : BOOL;
+	{attribute addProperty Name "FSOUT_Module_5_Module_Fault"}
+	FSOUT_Module_5_Module_Fault : BOOL;
+	{attribute addProperty Name "FSOUT_Module_6_Module_Fault"}
+	FSOUT_Module_6_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_1_Channel_1_Input_X6_1"}
+	FSIN_Module_1_Channel_1_Input_X6_1 : BOOL;
+	{attribute addProperty Name "FSIN_Module_1_Channel_2_Input_X6_2"}
+	FSIN_Module_1_Channel_2_Input_X6_2 : BOOL;
+	{attribute addProperty Name "FSIN_Module_1_Module_Fault"}
+	FSIN_Module_1_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_Channel_1_Input_X6_3"}
+	FSIN_Module_2_Channel_1_Input_X6_3 : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_Channel_2_Input_X6_4"}
+	FSIN_Module_2_Channel_2_Input_X6_4 : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_Module_Fault"}
+	FSIN_Module_2_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_3_Channel_1_Input_X6_5"}
+	FSIN_Module_3_Channel_1_Input_X6_5 : BOOL;
+	{attribute addProperty Name "FSIN_Module_3_Channel_2_Input_X6_6"}
+	FSIN_Module_3_Channel_2_Input_X6_6 : BOOL;
+	{attribute addProperty Name "FSIN_Module_3_Module_Fault"}
+	FSIN_Module_3_Module_Fault : BOOL;
+	{attribute addProperty Name "FSoE_CRC_000"}
+	FSoE_CRC_000 : UINT;
+	{attribute addProperty Name "FSIN_Module_4_Channel_1_Input_X6_7"}
+	FSIN_Module_4_Channel_1_Input_X6_7 : BOOL;
+	{attribute addProperty Name "FSIN_Module_4_Channel_2_Input_X6_8"}
+	FSIN_Module_4_Channel_2_Input_X6_8 : BOOL;
+	{attribute addProperty Name "FSIN_Module_4_Module_Fault"}
+	FSIN_Module_4_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_5_Channel_1_Input_X6_9"}
+	FSIN_Module_5_Channel_1_Input_X6_9 : BOOL;
+	{attribute addProperty Name "FSIN_Module_5_Channel_2_Input_X6_10"}
+	FSIN_Module_5_Channel_2_Input_X6_10 : BOOL;
+	{attribute addProperty Name "FSIN_Module_5_Module_Fault"}
+	FSIN_Module_5_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_6_Channel_1_Input_X8_1"}
+	FSIN_Module_6_Channel_1_Input_X8_1 : BOOL;
+	{attribute addProperty Name "FSIN_Module_6_Channel_2_Input_X8_2"}
+	FSIN_Module_6_Channel_2_Input_X8_2 : BOOL;
+	{attribute addProperty Name "FSIN_Module_6_Module_Fault"}
+	FSIN_Module_6_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_7_Channel_1_Input_X8_3"}
+	FSIN_Module_7_Channel_1_Input_X8_3 : BOOL;
+	{attribute addProperty Name "FSIN_Module_7_Channel_2_Input_X8_4"}
+	FSIN_Module_7_Channel_2_Input_X8_4 : BOOL;
+	{attribute addProperty Name "FSIN_Module_7_Module_Fault"}
+	FSIN_Module_7_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_8_Channel_1_Input_X8_5"}
+	FSIN_Module_8_Channel_1_Input_X8_5 : BOOL;
+	{attribute addProperty Name "FSIN_Module_8_Channel_2_Input_X8_6"}
+	FSIN_Module_8_Channel_2_Input_X8_6 : BOOL;
+	{attribute addProperty Name "FSIN_Module_8_Module_Fault"}
+	FSIN_Module_8_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_9_Channel_1_Input_X8_7"}
+	FSIN_Module_9_Channel_1_Input_X8_7 : BOOL;
+	{attribute addProperty Name "FSoE_CRC_001"}
+	FSoE_CRC_001 : UINT;
+	{attribute addProperty Name "FSIN_Module_9_Channel_2_Input_X8_8"}
+	FSIN_Module_9_Channel_2_Input_X8_8 : BOOL;
+	{attribute addProperty Name "FSIN_Module_9_Module_Fault_1"}
+	FSIN_Module_9_Module_Fault_1 : BOOL;
+	{attribute addProperty Name "FSIN_Module_9_Module_Fault_2"}
+	FSIN_Module_9_Module_Fault_2 : BOOL;
+	{attribute addProperty Name "FSIN_Module_10_Channel_1_Input_X8_9"}
+	FSIN_Module_10_Channel_1_Input_X8_9 : BOOL;
+	{attribute addProperty Name "FSIN_Module_10_Channel_2_Input_X8_10"}
+	FSIN_Module_10_Channel_2_Input_X8_10 : BOOL;
+	{attribute addProperty Name "FSIN_Module_10_Module_Fault_1"}
+	FSIN_Module_10_Module_Fault_1 : BOOL;
+	{attribute addProperty Name "FSIN_Module_10_Module_Fault_2"}
+	FSIN_Module_10_Module_Fault_2 : BOOL;
+	{attribute addProperty Name "FSoE_CRC_002"}
+	FSoE_CRC_002 : UINT;
+	{attribute addProperty Name "FSoE_Connection_ID"}
+	FSoE_Connection_ID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

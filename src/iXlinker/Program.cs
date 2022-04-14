@@ -21,7 +21,7 @@ namespace iXlinker
                        EventLogger.Instance.Logger.Information($"iXlinker started");
 
                        var linker = new ScanTcProjFile();
-                       linker.RuniXlinker(o.TsProjectFile, o.ActiveTargetPlatform, o.PlcProjectFile, o.GenerateMappings == "yes" ? true : false, o.DevenvPath,o.MaxEthercatFrameIndex);                       
+                       linker.RuniXlinker(o.TsProjectFile, o.ActiveTargetPlatform, o.PlcProjectFile, o.GenerateMappings == "yes" ? true : false, o.DevenvPath,ushort.Parse(o.MaxEthercatFrameIndex));                       
                    })
                    .WithNotParsed(o => 
                    {
@@ -36,9 +36,9 @@ namespace iXlinker
         public string TsProjectFile { get { return this.tsProjectFile; } set { if (!string.IsNullOrEmpty(value)){ this.tsProjectFile = ReplaceDoubleBackslash(value); } } }
 
         [Option('p', "platform", Default = "Release|TwinCAT RT (x64)", HelpText = "Active target platform")]
-        public string ActiveTargetPlatform { get; set; }
+        public string ActiveTargetPlatform { get { return this.activeTargetPlatform; } set { if (!string.IsNullOrEmpty(value)) { this.activeTargetPlatform = value; } } }
 
-        [Option('c', "plcproj", Required = true, HelpText = "Plc project file [.plcproj].")]
+        [Option('c', "plcproj", HelpText = "Plc project file [.plcproj]. If not specified and TwinCAT project contains only one PLC project, this one is used.")]
         public string PlcProjectFile { get { return this.plcProjectFile; } set { if (!string.IsNullOrEmpty(value)) { this.plcProjectFile = ReplaceDoubleBackslash(value); } } }
 
         [Option('g', "generate", Default = "yes", HelpText = "Generate mappings")]
@@ -47,16 +47,18 @@ namespace iXlinker
         [Option('d', "devenv", Default = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com", HelpText = "Path to devenv.com")]
         public string DevenvPath { get { return this.devenvPath; } set { if (!string.IsNullOrEmpty(value)) { this.devenvPath = ReplaceDoubleBackslash(value); } } }
 
-        [Option('n', "platform", Default = "0", HelpText = "Highest index of the ethercat frame")]
-        public ushort MaxEthercatFrameIndex { get; set; }
+        [Option('n', "maxframes", Default = "0", HelpText = "Highest index of the ethercat frame")]
+        public string  MaxEthercatFrameIndex { get { return this.maxEthercatFrameIndex.ToString(); } set { if (!string.IsNullOrEmpty(value) && ushort.TryParse(value, out this.maxEthercatFrameIndex)) { } } }
 
         [Option('v', "verbosity", Default = "Information", HelpText = "Verbosity")]
         public string Verbosity { get { return this.verbosity; } set { if (!string.IsNullOrEmpty(value)) { this.verbosity = value; } } }
 
         private string tsProjectFile;
+        private string activeTargetPlatform;
         private string plcProjectFile;
         private string generateMappings;
         private string devenvPath;
+        private ushort maxEthercatFrameIndex;
         private string verbosity;
         private string ReplaceDoubleBackslash(string path)
         {

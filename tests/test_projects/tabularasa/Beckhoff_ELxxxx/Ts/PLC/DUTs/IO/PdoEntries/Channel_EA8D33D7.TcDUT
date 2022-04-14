@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_EA8D33D7" Id="{218ec4d1-53d4-4c45-b805-8304b78ea432}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2014-0000-0016'}
+{attribute addProperty BoxType "EL2014-0000-0016"}
+{attribute addProperty Id "OvertemperatureBOOL1Open_LoadBOOL1OvercurrentBOOL1Short_Circuit_to_24VBOOL1"}
+{attribute addProperty CRC "3935122391"}
+{attribute addProperty Size "4"}
+TYPE Channel_EA8D33D7 :
+STRUCT
+	{attribute addProperty Name "Overtemperature"}
+	Overtemperature : BOOL;
+	{attribute addProperty Name "Open_Load"}
+	Open_Load : BOOL;
+	{attribute addProperty Name "Overcurrent"}
+	Overcurrent : BOOL;
+	{attribute addProperty Name "Short_Circuit_to_24V"}
+	Short_Circuit_to_24V : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

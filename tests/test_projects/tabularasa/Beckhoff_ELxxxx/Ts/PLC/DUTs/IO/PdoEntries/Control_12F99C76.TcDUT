@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_12F99C76" Id="{eea84bea-13af-4c32-ba00-27e5d652fae0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2596-0000-0017'}
+{attribute addProperty BoxType "EL2596-0000-0017"}
+{attribute addProperty Id "EnableBOOL1OutputBOOL1Input_trigger_enableBOOL1Output_trigger_enableBOOL1ResetBOOL1"}
+{attribute addProperty CRC "318348406"}
+{attribute addProperty Size "5"}
+TYPE Control_12F99C76 :
+STRUCT
+	{attribute addProperty Name "Enable"}
+	Enable : BOOL;
+	{attribute addProperty Name "Output"}
+	Output : BOOL;
+	{attribute addProperty Name "Input_trigger_enable"}
+	Input_trigger_enable : BOOL;
+	{attribute addProperty Name "Output_trigger_enable"}
+	Output_trigger_enable : BOOL;
+	{attribute addProperty Name "Reset"}
+	Reset : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

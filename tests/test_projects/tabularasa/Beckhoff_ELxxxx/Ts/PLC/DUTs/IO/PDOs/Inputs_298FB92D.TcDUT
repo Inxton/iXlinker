@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Inputs_298FB92D" Id="{6782ce38-4a6d-498c-9227-5fced382e8b6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2602-0010-0016'}
+{attribute addProperty BoxType "EL2602-0010-0016"}
+{attribute addProperty Id "StatusAT %I*BOOL1"}
+{attribute addProperty CRC "697284909"}
+{attribute addProperty Size "1"}
+TYPE Inputs_298FB92D :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

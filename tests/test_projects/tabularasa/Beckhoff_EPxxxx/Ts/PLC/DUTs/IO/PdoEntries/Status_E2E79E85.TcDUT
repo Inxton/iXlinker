@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_E2E79E85" Id="{4e47f4c7-2c14-4ed5-a812-b0b697374f14}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP5101-2011-0016'}
+{attribute addProperty BoxType "EP5101-2011-0016"}
+{attribute addProperty Id "Latch_C_validBOOL1Latch_extern_validBOOL1Set_counter_doneBOOL1Status_of_input_statusBOOL1Open_circuitBOOL1Status_of_input_ABOOL1Status_of_input_BBOOL1Status_of_input_CBOOL1Status_of_input_gateBOOL1Status_of_extern_latchBOOL1Sync_errorBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "3806830213"}
+{attribute addProperty Size "13"}
+TYPE Status_E2E79E85 :
+STRUCT
+	{attribute addProperty Name "Latch_C_valid"}
+	Latch_C_valid : BOOL;
+	{attribute addProperty Name "Latch_extern_valid"}
+	Latch_extern_valid : BOOL;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BOOL;
+	{attribute addProperty Name "Status_of_input_status"}
+	Status_of_input_status : BOOL;
+	{attribute addProperty Name "Open_circuit"}
+	Open_circuit : BOOL;
+	{attribute addProperty Name "Status_of_input_A"}
+	Status_of_input_A : BOOL;
+	{attribute addProperty Name "Status_of_input_B"}
+	Status_of_input_B : BOOL;
+	{attribute addProperty Name "Status_of_input_C"}
+	Status_of_input_C : BOOL;
+	{attribute addProperty Name "Status_of_input_gate"}
+	Status_of_input_gate : BOOL;
+	{attribute addProperty Name "Status_of_extern_latch"}
+	Status_of_extern_latch : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

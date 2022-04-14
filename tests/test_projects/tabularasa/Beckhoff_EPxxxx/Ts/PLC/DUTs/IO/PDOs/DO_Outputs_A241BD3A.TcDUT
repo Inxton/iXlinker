@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Outputs_A241BD3A" Id="{5a9cbcdf-f81e-4173-b450-fe3876dfaef5}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7402-0057-0017'}
+{attribute addProperty BoxType "EP7402-0057-0017"}
+{attribute addProperty Id "OutputAT %Q*ARRAY[0..3] OF BOOL4Control_outputAT %Q*ARRAY[0..3] OF BOOL4"}
+{attribute addProperty CRC "905683247"}
+{attribute addProperty Size "8"}
+TYPE DO_Outputs_A241BD3A :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : ARRAY[0..3] OF BOOL;
+	{attribute addProperty Name "Control_output"}
+	Control_output AT %Q* : ARRAY[0..3] OF BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

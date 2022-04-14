@@ -122,11 +122,12 @@ namespace TsprojFile.Scan
             pdoEntryViewModel.InOut = varInout;
             pdoEntryViewModel.Type_GUID = varType_GUID;
             pdoEntryViewModel.Type_Value = varType_Value;
-            //pdoEntryViewModel.TypeNamespace = "*";
             pdoEntryViewModel.OwnerBname = varOwnerBname;
             pdoEntryViewModel.VarB = varEntryVarB;
             pdoEntryViewModel.VarA = pdoEntryVarA;
             pdoEntryViewModel.BoxOrderCode = boxOrderCode;
+
+            pdoEntryViewModel.Type_Value = iXlinker.TsprojFile.Var.Validate.Type_Value(pdoEntryViewModel);
 
             return pdoEntryViewModel;
 

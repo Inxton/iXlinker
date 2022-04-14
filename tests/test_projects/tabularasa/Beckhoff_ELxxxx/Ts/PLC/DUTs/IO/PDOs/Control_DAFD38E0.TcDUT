@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_DAFD38E0" Id="{c36e96a4-1c65-4bc1-8d38-146d15b26186}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6080-0000-0018'}
+{attribute addProperty BoxType "EL6080-0000-0018"}
+{attribute addProperty Id "ControlAT %Q*UINT2"}
+{attribute addProperty CRC "3674028256"}
+{attribute addProperty Size "2"}
+TYPE Control_DAFD38E0 :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

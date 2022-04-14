@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="STATUS_58431BA9" Id="{5414ad23-7fc9-4b92-a4e5-8a5580ef03d3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3413-0000-0019'}
+{attribute addProperty BoxType "EL3413-0000-0019"}
+{attribute addProperty Id "OvercurrentBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "1480793001"}
+{attribute addProperty Size "3"}
+TYPE STATUS_58431BA9 :
+STRUCT
+	{attribute addProperty Name "Overcurrent"}
+	Overcurrent : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

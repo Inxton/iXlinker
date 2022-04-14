@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIG_Inputs_Channel_38F9DD27" Id="{cc3dbaf8-df24-4d81-8b81-5a67979700c9}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1816-1008-0016'}
+{attribute addProperty BoxType "EP1816-1008-0016"}
+{attribute addProperty Id "InputAT %I*ARRAY[0..7] OF BOOL8"}
+{attribute addProperty CRC "3697175534"}
+{attribute addProperty Size "8"}
+TYPE DIG_Inputs_Channel_38F9DD27 :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : ARRAY[0..7] OF BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
