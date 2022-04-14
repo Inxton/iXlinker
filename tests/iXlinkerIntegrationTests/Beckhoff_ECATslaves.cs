@@ -24,28 +24,30 @@ namespace iXlinkerIntegrationTests
             TestFolderPath = Path.GetFullPath(@"..\..\..\..\test_projects\", executingAssemblyFolder);
             SourcePath = (TestFolderPath + "\\tabularasa").Replace("\\\\", "\\");
             expectedDir = new DirectoryInfo((TestFolderPath + "\\expected").Replace("\\\\", "\\"));
-            expectedDir.Delete(true);
+            if (Directory.Exists(expectedDir.FullName))
+            {
+                expectedDir.Delete(true);
+            }
             expectedDir.Create();
             generatedDir = new DirectoryInfo((TestFolderPath + "\\generated").Replace("\\\\", "\\"));
-            generatedDir.Delete(true);
+            if(Directory.Exists(generatedDir.FullName))
+            {
+                generatedDir.Delete(true);
+            }
             generatedDir.Create();
             EventLogger.VerbosityLevel = Serilog.Events.LogEventLevel.Information;
         }
         [OneTimeTearDown]
         public void OneTimeTearDown()
         {
-            expectedDir.Delete(true);
-            expectedDir.Create();
-            generatedDir.Delete(true);
-            generatedDir.Create();
-        }
-
-
-        [Test, Order(100)]
-        public void All_Beckhoff_ECATslaves()
-        {
-            string TestCaseFolder = "All_Beckhoff_ECATslaves";
-            TestRun(TestCaseFolder);
+            if (Directory.Exists(expectedDir.FullName))
+            {
+                expectedDir.Delete(true);
+            }
+            if (Directory.Exists(generatedDir.FullName))
+            {
+                generatedDir.Delete(true);
+            }
         }
 
         [Test, Order(101)]

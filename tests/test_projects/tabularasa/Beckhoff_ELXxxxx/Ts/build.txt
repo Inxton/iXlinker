@@ -74,3 +74,29 @@ WRN | 4/14/2022 1:35:51 PM 042 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_00
 WRN | 4/14/2022 1:35:51 PM 043 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0028(ELX5151-0090-0016)' may to low (-445 mA) - please check!
 ========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 66030 bytes
+Size of global data: 16613 bytes
+Total allocated memory size for code and data: 467072 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 467072, largest contiguous memory gap: 581504 bytes (55 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 4/14/2022 4:10:18 PM 010 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0023(ELX3351-0090-0016)' may to low (-35 mA) - please check!
+WRN | 4/14/2022 4:10:18 PM 011 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0024(ELX4154-0000-0016)' may to low (-95 mA) - please check!
+WRN | 4/14/2022 4:10:18 PM 013 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0025(ELX4181-0000-0016)' may to low (-190 mA) - please check!
+WRN | 4/14/2022 4:10:18 PM 014 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0026(ELX4181-0000-0017)' may to low (-285 mA) - please check!
+WRN | 4/14/2022 4:10:18 PM 015 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0027(ELX5151-0000-0016)' may to low (-365 mA) - please check!
+WRN | 4/14/2022 4:10:18 PM 016 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0028(ELX5151-0090-0016)' may to low (-445 mA) - please check!
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+
+Catastrophic failure (Exception from HRESULT: 0x8000FFFF (E_UNEXPECTED))

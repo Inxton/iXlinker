@@ -29,28 +29,44 @@ namespace iXlinkerUnitTests
             TestFolderPath = Path.GetFullPath(@"..\..\..\..\test_projects\", executingAssemblyFolder);
             SourcePath = (TestFolderPath + "\\tabularasa").Replace("\\\\","\\");
             expectedDir = new DirectoryInfo((TestFolderPath + "\\expected").Replace("\\\\", "\\"));
-            expectedDir.Delete(true);
+            if (Directory.Exists(expectedDir.FullName))
+            {
+                expectedDir.Delete(true);
+            }
             expectedDir.Create();
             generatedDir = new DirectoryInfo((TestFolderPath + "\\generated").Replace("\\\\", "\\"));
-            generatedDir.Delete(true);
+            if (Directory.Exists(generatedDir.FullName))
+            {
+                generatedDir.Delete(true);
+            }
             generatedDir.Create();
             EventLogger.VerbosityLevel = Serilog.Events.LogEventLevel.Error;
         }
 
         internal static void Setup()
         {
-            expectedDir.Delete(true);
+            if (Directory.Exists(expectedDir.FullName))
+            {
+                expectedDir.Delete(true);
+            }
             expectedDir.Create();
-            generatedDir.Delete(true);
+            if (Directory.Exists(generatedDir.FullName))
+            {
+                generatedDir.Delete(true);
+            }
             generatedDir.Create();
         }
 
         internal static void OneTimeTearDown()
         {
-            expectedDir.Delete(true);
-            expectedDir.Create();
-            generatedDir.Delete(true);
-            generatedDir.Create();
+            if (Directory.Exists(expectedDir.FullName))
+            {
+                expectedDir.Delete(true);
+            }
+            if (Directory.Exists(generatedDir.FullName))
+            {
+                generatedDir.Delete(true);
+            }
         }
         
         private static void CopyFilesRecursively(string sourcePath, string targetPath)
