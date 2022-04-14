@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ9576_6D7359CA" Id="{2ab38167-038b-4968-8138-6eeac79d7c65}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ9576-0000-0018'}
+{attribute addProperty BoxType "EJ9576-0000-0018"}
+{attribute addProperty Id "BCT_InputsAT %I*BCT_Inputs_8E55234D16WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1836276170"}
+{attribute addProperty Size "28"}
+TYPE EJ9576_6D7359CA :
+STRUCT
+	{attribute addProperty Name "BCT_Inputs"}
+	BCT_Inputs : BCT_Inputs_8E55234D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

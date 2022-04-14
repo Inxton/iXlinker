@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="STATUS_1538B4EA" Id="{a92e5b21-f442-4fff-a9d0-e9a89c8ce41e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3413-0000-0016'}
+{attribute addProperty BoxType "EL3413-0000-0016"}
+{attribute addProperty Id "OvervoltageBOOL1UndervoltageBOOL1OvercurrentBOOL1Phase_sequence_cwBOOL1Phase_sequence_ccwBOOL1Missing_zero_crossingBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "356037866"}
+{attribute addProperty Size "8"}
+TYPE STATUS_1538B4EA :
+STRUCT
+	{attribute addProperty Name "Overvoltage"}
+	Overvoltage : BOOL;
+	{attribute addProperty Name "Undervoltage"}
+	Undervoltage : BOOL;
+	{attribute addProperty Name "Overcurrent"}
+	Overcurrent : BOOL;
+	{attribute addProperty Name "Phase_sequence_cw"}
+	Phase_sequence_cw : BOOL;
+	{attribute addProperty Name "Phase_sequence_ccw"}
+	Phase_sequence_ccw : BOOL;
+	{attribute addProperty Name "Missing_zero_crossing"}
+	Missing_zero_crossing : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

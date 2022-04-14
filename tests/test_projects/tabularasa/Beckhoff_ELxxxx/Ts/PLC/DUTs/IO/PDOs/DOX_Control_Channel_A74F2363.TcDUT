@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DOX_Control_Channel_A74F2363" Id="{d64c8ed8-5ded-4bcc-9cc3-77dce9a7f58a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2212-0000-0018'}
+{attribute addProperty BoxType "EL2212-0000-0018"}
+{attribute addProperty Id "ControlAT %Q*Control_4E83000D3"}
+{attribute addProperty CRC "2806981475"}
+{attribute addProperty Size "3"}
+TYPE DOX_Control_Channel_A74F2363 :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_4E83000D;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

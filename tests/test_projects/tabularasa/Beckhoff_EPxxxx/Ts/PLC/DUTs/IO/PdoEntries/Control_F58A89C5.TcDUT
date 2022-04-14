@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_F58A89C5" Id="{b490dd69-07c5-4c00-916a-376f390be6cb}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7402-0057-0017'}
+{attribute addProperty BoxType "EP7402-0057-0017"}
+{attribute addProperty Id "EnableBOOL1ResetBOOL1Invert_directionBOOL1Brake_outputBOOL1"}
+{attribute addProperty CRC "4119497157"}
+{attribute addProperty Size "4"}
+TYPE Control_F58A89C5 :
+STRUCT
+	{attribute addProperty Name "Enable"}
+	Enable : BOOL;
+	{attribute addProperty Name "Reset"}
+	Reset : BOOL;
+	{attribute addProperty Name "Invert_direction"}
+	Invert_direction : BOOL;
+	{attribute addProperty Name "Brake_output"}
+	Brake_output : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

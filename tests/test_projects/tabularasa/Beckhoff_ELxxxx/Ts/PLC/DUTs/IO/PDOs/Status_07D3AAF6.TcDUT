@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_07D3AAF6" Id="{eb2b8588-5a6d-4177-8fab-fb7acf109b8e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6080-0000-0018'}
+{attribute addProperty BoxType "EL6080-0000-0018"}
+{attribute addProperty Id "StatusAT %I*UINT2"}
+{attribute addProperty CRC "131312374"}
+{attribute addProperty Size "2"}
+TYPE Status_07D3AAF6 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

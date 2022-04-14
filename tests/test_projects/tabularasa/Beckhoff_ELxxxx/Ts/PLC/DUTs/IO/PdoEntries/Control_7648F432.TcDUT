@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_7648F432" Id="{9603acca-9709-4016-ada6-0dc648eacefc}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2595-0000-0018'}
+{attribute addProperty BoxType "EL2595-0000-0018"}
+{attribute addProperty Id "OutputBOOL1Input_trigger_enableBOOL1ResetBOOL1"}
+{attribute addProperty CRC "1984492594"}
+{attribute addProperty Size "3"}
+TYPE Control_7648F432 :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output : BOOL;
+	{attribute addProperty Name "Input_trigger_enable"}
+	Input_trigger_enable : BOOL;
+	{attribute addProperty Name "Reset"}
+	Reset : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

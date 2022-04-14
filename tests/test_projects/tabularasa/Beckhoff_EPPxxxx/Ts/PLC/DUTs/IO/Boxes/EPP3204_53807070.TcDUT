@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP3204_53807070" Id="{e362503a-0c0e-44b7-8008-2dc1f82eecd3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP3204-0002-0017'}
+{attribute addProperty BoxType "EPP3204-0002-0017"}
+{attribute addProperty Id "RTD_RTDInputs_Channel_1AT %I*RTD_RTDInputs_Channel_4A3944819RTD_RTDInputs_Channel_2AT %I*RTD_RTDInputs_Channel_4A3944819RTD_RTDInputs_Channel_3AT %I*RTD_RTDInputs_Channel_4A3944819RTD_RTDInputs_Channel_4AT %I*RTD_RTDInputs_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1400926320"}
+{attribute addProperty Size "48"}
+TYPE EPP3204_53807070 :
+STRUCT
+	{attribute addProperty Name "RTD_RTDInputs_Channel_1"}
+	RTD_RTDInputs_Channel_1 : RTD_RTDInputs_Channel_4A394481;
+	{attribute addProperty Name "RTD_RTDInputs_Channel_2"}
+	RTD_RTDInputs_Channel_2 : RTD_RTDInputs_Channel_4A394481;
+	{attribute addProperty Name "RTD_RTDInputs_Channel_3"}
+	RTD_RTDInputs_Channel_3 : RTD_RTDInputs_Channel_4A394481;
+	{attribute addProperty Name "RTD_RTDInputs_Channel_4"}
+	RTD_RTDInputs_Channel_4 : RTD_RTDInputs_Channel_4A394481;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DOX_Status_Channel_09DD45C8" Id="{eea4ddb7-89d4-4cb2-9dbd-3fe03b236739}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2212-0000-0018'}
+{attribute addProperty BoxType "EL2212-0000-0018"}
+{attribute addProperty Id "StatusAT %I*Status_D9DC9C1B7"}
+{attribute addProperty CRC "165496264"}
+{attribute addProperty Size "7"}
+TYPE DOX_Status_Channel_09DD45C8 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_D9DC9C1B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

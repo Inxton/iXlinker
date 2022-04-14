@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2602_47E63F27" Id="{e34b18f3-f28c-4b33-9cc4-ca8ec3bcbc97}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2602-0010-0016'}
+{attribute addProperty BoxType "EL2602-0010-0016"}
+{attribute addProperty Id "InputsAT %I*Inputs_298FB92D1Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "1206271783"}
+{attribute addProperty Size "7"}
+TYPE EL2602_47E63F27 :
+STRUCT
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_298FB92D;
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_42CA91F7;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

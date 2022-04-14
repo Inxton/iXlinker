@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELM3602_B416BFEF" Id="{6d26b148-74e3-4cfe-8555-2eea468f193a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM3602-0000-0017'}
+{attribute addProperty BoxType "ELM3602-0000-0017"}
+{attribute addProperty Id "PAI_Status_Channel_1AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_1AT %I*PAI_Samples_1_Channel_EEA517254PAI_Timestamp_Channel_1AT %I*PAI_Timestamp_Channel_6DC4D2968PAI_Status_Channel_2AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_2AT %I*PAI_Samples_1_Channel_EEA517254WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
+{attribute addProperty CRC "3021389807"}
+{attribute addProperty Size "50"}
+TYPE ELM3602_B416BFEF :
+STRUCT
+	{attribute addProperty Name "PAI_Status_Channel_1"}
+	PAI_Status_Channel_1 : PAI_Status_Channel_AE4AC104;
+	{attribute addProperty Name "PAI_Samples_1_Channel_1"}
+	PAI_Samples_1_Channel_1 : PAI_Samples_1_Channel_EEA51725;
+	{attribute addProperty Name "PAI_Timestamp_Channel_1"}
+	PAI_Timestamp_Channel_1 : PAI_Timestamp_Channel_6DC4D296;
+	{attribute addProperty Name "PAI_Status_Channel_2"}
+	PAI_Status_Channel_2 : PAI_Status_Channel_AE4AC104;
+	{attribute addProperty Name "PAI_Samples_1_Channel_2"}
+	PAI_Samples_1_Channel_2 : PAI_Samples_1_Channel_EEA51725;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BEF6B88E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

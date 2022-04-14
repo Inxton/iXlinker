@@ -57,8 +57,8 @@ namespace TsprojFile.Scan
                         string pdoEntryItemName = pdoEntryUnstructured.Name.Split("__")[1];
 
                         PdoEntryStructMemberViewModel member = new PdoEntryStructMemberViewModel();
-                        member.Name = pdoEntryItemName;
-                        member.NameUnmodified = pdoEntryItemName;
+                        member.NameA = pdoEntryItemName;
+                        member.NameB = pdoEntryItemName;
                         member.BoxOrderCode = pdoEntryUnstructured.BoxOrderCode;
                         member.Type_Value = pdoEntryUnstructured.Type_Value;
                         member.TypeNamespace = pdoEntryUnstructured.TypeNamespace;

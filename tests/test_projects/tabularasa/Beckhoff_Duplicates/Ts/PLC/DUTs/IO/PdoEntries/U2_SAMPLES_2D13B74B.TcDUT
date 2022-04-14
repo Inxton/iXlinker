@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="U2_SAMPLES_2D13B74B" Id="{a27921f9-326a-42f7-83af-1ff2f4fc79a6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
+{attribute addProperty BoxType "EL3773-0000-0016"}
+{attribute addProperty Id "Sample_1INT2Sample_2INT2Sample_3INT2Sample_4INT2Sample_5INT2Sample_6INT2Sample_7INT2Sample_8INT2Sample_9INT2Sample_10INT2"}
+{attribute addProperty CRC "756266827"}
+{attribute addProperty Size "20"}
+TYPE U2_SAMPLES_2D13B74B :
+STRUCT
+	{attribute addProperty Name "Sample_1"}
+	Sample_1 : INT;
+	{attribute addProperty Name "Sample_2"}
+	Sample_2 : INT;
+	{attribute addProperty Name "Sample_3"}
+	Sample_3 : INT;
+	{attribute addProperty Name "Sample_4"}
+	Sample_4 : INT;
+	{attribute addProperty Name "Sample_5"}
+	Sample_5 : INT;
+	{attribute addProperty Name "Sample_6"}
+	Sample_6 : INT;
+	{attribute addProperty Name "Sample_7"}
+	Sample_7 : INT;
+	{attribute addProperty Name "Sample_8"}
+	Sample_8 : INT;
+	{attribute addProperty Name "Sample_9"}
+	Sample_9 : INT;
+	{attribute addProperty Name "Sample_10"}
+	Sample_10 : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

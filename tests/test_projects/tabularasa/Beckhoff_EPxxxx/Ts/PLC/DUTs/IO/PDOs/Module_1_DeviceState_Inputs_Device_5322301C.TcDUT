@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Module_1_DeviceState_Inputs_Device_5322301C" Id="{624fb0f3-cedc-4bd8-bd01-404bd8f40dc9}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP6224-0002-0016'}
+{attribute addProperty BoxType "EP6224-0002-0016"}
+{attribute addProperty Id "DeviceState_Inputs_DeviceDeviceState_Inputs_Device_A12105982"}
+{attribute addProperty CRC "1394749468"}
+{attribute addProperty Size "2"}
+TYPE Module_1_DeviceState_Inputs_Device_5322301C :
+STRUCT
+	{attribute addProperty Name "DeviceState_Inputs_Device"}
+	DeviceState_Inputs_Device  : DeviceState_Inputs_Device_A1210598;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

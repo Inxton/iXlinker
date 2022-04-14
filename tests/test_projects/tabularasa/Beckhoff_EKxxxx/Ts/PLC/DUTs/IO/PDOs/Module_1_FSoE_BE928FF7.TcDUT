@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Module_1_FSoE_BE928FF7" Id="{37b75ada-fda5-42e0-bfbc-24f2d69aa3ba}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1960-0000-0019'}
+{attribute addProperty BoxType "EK1960-0000-0019"}
+{attribute addProperty Id "FSoE_InputsFSoE_Inputs_9283FC6947FSoE_OutputsFSoE_Outputs_79E75DAB51"}
+{attribute addProperty CRC "3197276151"}
+{attribute addProperty Size "98"}
+TYPE Module_1_FSoE_BE928FF7 :
+STRUCT
+	{attribute addProperty Name "FSoE_Inputs"}
+	FSoE_Inputs  : FSoE_Inputs_9283FC69;
+	{attribute addProperty Name "FSoE_Outputs"}
+	FSoE_Outputs  : FSoE_Outputs_79E75DAB;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

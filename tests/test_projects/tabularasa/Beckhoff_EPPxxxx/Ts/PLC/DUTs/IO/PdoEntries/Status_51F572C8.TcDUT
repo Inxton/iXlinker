@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_51F572C8" Id="{7e6226fb-902c-4247-a482-cbd004ed88e3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP9022-0060-0017'}
+{attribute addProperty BoxType "EPP9022-0060-0017"}
+{attribute addProperty Id "Voltage_min_errorBOOL1Voltage_max_errorBOOL1Current_max_errorBOOL1Voltage_min_warningBOOL1Voltage_max_warningBOOL1Current_max_warningBOOL1Channel_errorBOOL1Channel_warningBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "1375040200"}
+{attribute addProperty Size "10"}
+TYPE Status_51F572C8 :
+STRUCT
+	{attribute addProperty Name "Voltage_min_error"}
+	Voltage_min_error : BOOL;
+	{attribute addProperty Name "Voltage_max_error"}
+	Voltage_max_error : BOOL;
+	{attribute addProperty Name "Current_max_error"}
+	Current_max_error : BOOL;
+	{attribute addProperty Name "Voltage_min_warning"}
+	Voltage_min_warning : BOOL;
+	{attribute addProperty Name "Voltage_max_warning"}
+	Voltage_max_warning : BOOL;
+	{attribute addProperty Name "Current_max_warning"}
+	Current_max_warning : BOOL;
+	{attribute addProperty Name "Channel_error"}
+	Channel_error : BOOL;
+	{attribute addProperty Name "Channel_warning"}
+	Channel_warning : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

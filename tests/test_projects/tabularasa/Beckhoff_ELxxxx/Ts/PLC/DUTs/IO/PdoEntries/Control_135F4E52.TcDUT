@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_135F4E52" Id="{a530f913-7548-4450-b15e-39707ab1c389}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5151-0021-0018'}
+{attribute addProperty BoxType "EL5151-0021-0018"}
+{attribute addProperty Id "Enable_latch_CBOOL1Enable_latch_extern_on_positive_edgeBOOL1Set_counterBOOL1Enable_latch_extern_on_negative_edgeBOOL1Set_outputBOOL1Enable_output_functionsBOOL1Enable_measurementBOOL1Set_counter_on_latch_CBOOL1"}
+{attribute addProperty CRC "325013074"}
+{attribute addProperty Size "8"}
+TYPE Control_135F4E52 :
+STRUCT
+	{attribute addProperty Name "Enable_latch_C"}
+	Enable_latch_C : BOOL;
+	{attribute addProperty Name "Enable_latch_extern_on_positive_edge"}
+	Enable_latch_extern_on_positive_edge : BOOL;
+	{attribute addProperty Name "Set_counter"}
+	Set_counter : BOOL;
+	{attribute addProperty Name "Enable_latch_extern_on_negative_edge"}
+	Enable_latch_extern_on_negative_edge : BOOL;
+	{attribute addProperty Name "Set_output"}
+	Set_output : BOOL;
+	{attribute addProperty Name "Enable_output_functions"}
+	Enable_output_functions : BOOL;
+	{attribute addProperty Name "Enable_measurement"}
+	Enable_measurement : BOOL;
+	{attribute addProperty Name "Set_counter_on_latch_C"}
+	Set_counter_on_latch_C : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

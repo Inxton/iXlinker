@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_543010BE" Id="{93866852-9f7c-4d2a-8deb-88e236a85b45}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3751-0000-0020'}
+{attribute addProperty BoxType "EL3751-0000-0020"}
+{attribute addProperty Id "No_of_SamplesUSINT1ErrorBOOL1UnderrangeBOOL1OverrangeBOOL1DiagBOOL1TxPDO_StateBOOL1Input_cycle_counterBYTE1"}
+{attribute addProperty CRC "1412436158"}
+{attribute addProperty Size "7"}
+TYPE Status_543010BE :
+STRUCT
+	{attribute addProperty Name "No_of_Samples"}
+	No_of_Samples : USINT;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "Underrange"}
+	Underrange : BOOL;
+	{attribute addProperty Name "Overrange"}
+	Overrange : BOOL;
+	{attribute addProperty Name "Diag"}
+	Diag : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

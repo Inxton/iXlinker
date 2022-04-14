@@ -16,6 +16,12 @@ namespace iXlinkerUnitTests
             TestsCommon.Setup();
         }
 
+        [OneTimeTearDown]
+        public void OneTimeTearDown()
+        {
+            TestsCommon.OneTimeTearDown();
+        }
+
         [Test, Order(100)]
         public void Beckhoff_EL6001_0000_0020_01()
         {

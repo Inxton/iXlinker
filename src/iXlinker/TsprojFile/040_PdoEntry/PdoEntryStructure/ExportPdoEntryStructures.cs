@@ -99,7 +99,7 @@ namespace TsprojFile.Scan
                         {
                             sw.WriteLine("\t" + attribute);
                         }
-                        string varName = pdoEntryStructMemberViewModel.Name;
+                        string varName = pdoEntryStructMemberViewModel.NameA;
                         string varType = ValidatePlcItem.NameIncludingNamespace(pdoEntryStructMemberViewModel.TypeNamespace, pdoEntryStructMemberViewModel.Type_Value);
                         sw.WriteLine("\t" + varName + " : " + varType + ";");
                     }

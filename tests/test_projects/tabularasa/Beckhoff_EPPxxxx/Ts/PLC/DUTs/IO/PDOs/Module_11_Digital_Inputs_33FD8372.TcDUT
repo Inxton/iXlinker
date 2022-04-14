@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Module_11_Digital_Inputs_33FD8372" Id="{3caf2cef-d9bb-455c-9365-e3efda92574f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP6228-0022-0016'}
+{attribute addProperty BoxType "EPP6228-0022-0016"}
+{attribute addProperty Id "Digital_InputsDigital_Inputs_83D7E7828"}
+{attribute addProperty CRC "872252274"}
+{attribute addProperty Size "8"}
+TYPE Module_11_Digital_Inputs_33FD8372 :
+STRUCT
+	{attribute addProperty Name "Digital_Inputs"}
+	Digital_Inputs  : Digital_Inputs_83D7E782;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="RMB_Value_INT_E9189C4B" Id="{2f6d1e72-628d-4128-9fff-9de0236bc825}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3351-0000-0016'}
+{attribute addProperty BoxType "ELX3351-0000-0016"}
+{attribute addProperty Id "ValueAT %I*DINT4"}
+{attribute addProperty CRC "3910704203"}
+{attribute addProperty Size "4"}
+TYPE RMB_Value_INT_E9189C4B :
+STRUCT
+	{attribute addProperty Name "Value"}
+	Value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

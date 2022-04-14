@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PWM_Inputs_Channel_304DC245" Id="{79ddb4d5-7d1e-49df-9864-368c6df7ef71}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2564-0000-0016'}
+{attribute addProperty BoxType "EL2564-0000-0016"}
+{attribute addProperty Id "StatusAT %I*Status_6BD97C373"}
+{attribute addProperty CRC "810402373"}
+{attribute addProperty Size "3"}
+TYPE PWM_Inputs_Channel_304DC245 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_6BD97C37;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

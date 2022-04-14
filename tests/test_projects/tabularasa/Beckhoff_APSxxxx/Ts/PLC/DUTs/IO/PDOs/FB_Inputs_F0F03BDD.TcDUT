@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FB_Inputs_F0F03BDD" Id="{bbd7f70c-914b-4589-8a96-13329b37fcce}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: APS1003-5000-0016'}
+{attribute addProperty BoxType "APS1003-5000-0016"}
+{attribute addProperty Id "StatusAT %I*LWORD8A0_X_FieldAT %I*INT2A0_Y_FieldAT %I*INT2A0_Z_FieldAT %I*INT2A2_X_FieldAT %I*INT2A2_Y_FieldAT %I*INT2A2_Z_FieldAT %I*INT2A4_X_FieldAT %I*INT2A4_Y_FieldAT %I*INT2A4_Z_FieldAT %I*INT2A6_X_FieldAT %I*INT2A6_Y_FieldAT %I*INT2A6_Z_FieldAT %I*INT2A8_X_FieldAT %I*INT2A8_Y_FieldAT %I*INT2A8_Z_FieldAT %I*INT2B1_X_FieldAT %I*INT2B1_Y_FieldAT %I*INT2B1_Z_FieldAT %I*INT2B3_X_FieldAT %I*INT2B3_Y_FieldAT %I*INT2B3_Z_FieldAT %I*INT2B5_X_FieldAT %I*INT2B5_Y_FieldAT %I*INT2B5_Z_FieldAT %I*INT2B7_X_FieldAT %I*INT2B7_Y_FieldAT %I*INT2B7_Z_FieldAT %I*INT2B9_X_FieldAT %I*INT2B9_Y_FieldAT %I*INT2B9_Z_FieldAT %I*INT2C0_X_FieldAT %I*INT2C0_Y_FieldAT %I*INT2C0_Z_FieldAT %I*INT2C2_X_FieldAT %I*INT2C2_Y_FieldAT %I*INT2C2_Z_FieldAT %I*INT2C4_X_FieldAT %I*INT2C4_Y_FieldAT %I*INT2C4_Z_FieldAT %I*INT2C6_X_FieldAT %I*INT2C6_Y_FieldAT %I*INT2C6_Z_FieldAT %I*INT2C8_X_FieldAT %I*INT2C8_Y_FieldAT %I*INT2C8_Z_FieldAT %I*INT2D1_X_FieldAT %I*INT2D1_Y_FieldAT %I*INT2D1_Z_FieldAT %I*INT2D3_X_FieldAT %I*INT2D3_Y_FieldAT %I*INT2D3_Z_FieldAT %I*INT2D5_X_FieldAT %I*INT2D5_Y_FieldAT %I*INT2D5_Z_FieldAT %I*INT2D7_X_FieldAT %I*INT2D7_Y_FieldAT %I*INT2D7_Z_FieldAT %I*INT2D9_X_FieldAT %I*INT2D9_Y_FieldAT %I*INT2D9_Z_FieldAT %I*INT2E0_X_FieldAT %I*INT2E0_Y_FieldAT %I*INT2E0_Z_FieldAT %I*INT2E2_X_FieldAT %I*INT2E2_Y_FieldAT %I*INT2E2_Z_FieldAT %I*INT2E4_X_FieldAT %I*INT2E4_Y_FieldAT %I*INT2E4_Z_FieldAT %I*INT2E6_X_FieldAT %I*INT2E6_Y_FieldAT %I*INT2E6_Z_FieldAT %I*INT2E8_X_FieldAT %I*INT2E8_Y_FieldAT %I*INT2E8_Z_FieldAT %I*INT2F1_X_FieldAT %I*INT2F1_Y_FieldAT %I*INT2F1_Z_FieldAT %I*INT2F3_X_FieldAT %I*INT2F3_Y_FieldAT %I*INT2F3_Z_FieldAT %I*INT2F5_X_FieldAT %I*INT2F5_Y_FieldAT %I*INT2F5_Z_FieldAT %I*INT2F7_X_FieldAT %I*INT2F7_Y_FieldAT %I*INT2F7_Z_FieldAT %I*INT2F9_X_FieldAT %I*INT2F9_Y_FieldAT %I*INT2F9_Z_FieldAT %I*INT2G0_X_FieldAT %I*INT2G0_Y_FieldAT %I*INT2G0_Z_FieldAT %I*INT2G2_X_FieldAT %I*INT2G2_Y_FieldAT %I*INT2G2_Z_FieldAT %I*INT2G4_X_FieldAT %I*INT2G4_Y_FieldAT %I*INT2G4_Z_FieldAT %I*INT2G6_X_FieldAT %I*INT2G6_Y_FieldAT %I*INT2G6_Z_FieldAT %I*INT2G8_X_FieldAT %I*INT2G8_Y_FieldAT %I*INT2G8_Z_FieldAT %I*INT2H1_X_FieldAT %I*INT2H1_Y_FieldAT %I*INT2H1_Z_FieldAT %I*INT2H3_X_FieldAT %I*INT2H3_Y_FieldAT %I*INT2H3_Z_FieldAT %I*INT2H5_X_FieldAT %I*INT2H5_Y_FieldAT %I*INT2H5_Z_FieldAT %I*INT2H7_X_FieldAT %I*INT2H7_Y_FieldAT %I*INT2H7_Z_FieldAT %I*INT2H9_X_FieldAT %I*INT2H9_Y_FieldAT %I*INT2H9_Z_FieldAT %I*INT2I0_X_FieldAT %I*INT2I0_Y_FieldAT %I*INT2I0_Z_FieldAT %I*INT2I2_X_FieldAT %I*INT2I2_Y_FieldAT %I*INT2I2_Z_FieldAT %I*INT2I4_X_FieldAT %I*INT2I4_Y_FieldAT %I*INT2I4_Z_FieldAT %I*INT2I6_X_FieldAT %I*INT2I6_Y_FieldAT %I*INT2I6_Z_FieldAT %I*INT2I8_X_FieldAT %I*INT2I8_Y_FieldAT %I*INT2I8_Z_FieldAT %I*INT2J1_X_FieldAT %I*INT2J1_Y_FieldAT %I*INT2J1_Z_FieldAT %I*INT2J3_X_FieldAT %I*INT2J3_Y_FieldAT %I*INT2J3_Z_FieldAT %I*INT2J5_X_FieldAT %I*INT2J5_Y_FieldAT %I*INT2J5_Z_FieldAT %I*INT2J7_X_FieldAT %I*INT2J7_Y_FieldAT %I*INT2J7_Z_FieldAT %I*INT2J9_X_FieldAT %I*INT2J9_Y_FieldAT %I*INT2J9_Z_FieldAT %I*INT2"}
+{attribute addProperty CRC "4042275805"}
+{attribute addProperty Size "308"}
+TYPE FB_Inputs_F0F03BDD :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : LWORD;
+	{attribute addProperty Name "A0_X_Field"}
+	A0_X_Field AT %I* : INT;
+	{attribute addProperty Name "A0_Y_Field"}
+	A0_Y_Field AT %I* : INT;
+	{attribute addProperty Name "A0_Z_Field"}
+	A0_Z_Field AT %I* : INT;
+	{attribute addProperty Name "A2_X_Field"}
+	A2_X_Field AT %I* : INT;
+	{attribute addProperty Name "A2_Y_Field"}
+	A2_Y_Field AT %I* : INT;
+	{attribute addProperty Name "A2_Z_Field"}
+	A2_Z_Field AT %I* : INT;
+	{attribute addProperty Name "A4_X_Field"}
+	A4_X_Field AT %I* : INT;
+	{attribute addProperty Name "A4_Y_Field"}
+	A4_Y_Field AT %I* : INT;
+	{attribute addProperty Name "A4_Z_Field"}
+	A4_Z_Field AT %I* : INT;
+	{attribute addProperty Name "A6_X_Field"}
+	A6_X_Field AT %I* : INT;
+	{attribute addProperty Name "A6_Y_Field"}
+	A6_Y_Field AT %I* : INT;
+	{attribute addProperty Name "A6_Z_Field"}
+	A6_Z_Field AT %I* : INT;
+	{attribute addProperty Name "A8_X_Field"}
+	A8_X_Field AT %I* : INT;
+	{attribute addProperty Name "A8_Y_Field"}
+	A8_Y_Field AT %I* : INT;
+	{attribute addProperty Name "A8_Z_Field"}
+	A8_Z_Field AT %I* : INT;
+	{attribute addProperty Name "B1_X_Field"}
+	B1_X_Field AT %I* : INT;
+	{attribute addProperty Name "B1_Y_Field"}
+	B1_Y_Field AT %I* : INT;
+	{attribute addProperty Name "B1_Z_Field"}
+	B1_Z_Field AT %I* : INT;
+	{attribute addProperty Name "B3_X_Field"}
+	B3_X_Field AT %I* : INT;
+	{attribute addProperty Name "B3_Y_Field"}
+	B3_Y_Field AT %I* : INT;
+	{attribute addProperty Name "B3_Z_Field"}
+	B3_Z_Field AT %I* : INT;
+	{attribute addProperty Name "B5_X_Field"}
+	B5_X_Field AT %I* : INT;
+	{attribute addProperty Name "B5_Y_Field"}
+	B5_Y_Field AT %I* : INT;
+	{attribute addProperty Name "B5_Z_Field"}
+	B5_Z_Field AT %I* : INT;
+	{attribute addProperty Name "B7_X_Field"}
+	B7_X_Field AT %I* : INT;
+	{attribute addProperty Name "B7_Y_Field"}
+	B7_Y_Field AT %I* : INT;
+	{attribute addProperty Name "B7_Z_Field"}
+	B7_Z_Field AT %I* : INT;
+	{attribute addProperty Name "B9_X_Field"}
+	B9_X_Field AT %I* : INT;
+	{attribute addProperty Name "B9_Y_Field"}
+	B9_Y_Field AT %I* : INT;
+	{attribute addProperty Name "B9_Z_Field"}
+	B9_Z_Field AT %I* : INT;
+	{attribute addProperty Name "C0_X_Field"}
+	C0_X_Field AT %I* : INT;
+	{attribute addProperty Name "C0_Y_Field"}
+	C0_Y_Field AT %I* : INT;
+	{attribute addProperty Name "C0_Z_Field"}
+	C0_Z_Field AT %I* : INT;
+	{attribute addProperty Name "C2_X_Field"}
+	C2_X_Field AT %I* : INT;
+	{attribute addProperty Name "C2_Y_Field"}
+	C2_Y_Field AT %I* : INT;
+	{attribute addProperty Name "C2_Z_Field"}
+	C2_Z_Field AT %I* : INT;
+	{attribute addProperty Name "C4_X_Field"}
+	C4_X_Field AT %I* : INT;
+	{attribute addProperty Name "C4_Y_Field"}
+	C4_Y_Field AT %I* : INT;
+	{attribute addProperty Name "C4_Z_Field"}
+	C4_Z_Field AT %I* : INT;
+	{attribute addProperty Name "C6_X_Field"}
+	C6_X_Field AT %I* : INT;
+	{attribute addProperty Name "C6_Y_Field"}
+	C6_Y_Field AT %I* : INT;
+	{attribute addProperty Name "C6_Z_Field"}
+	C6_Z_Field AT %I* : INT;
+	{attribute addProperty Name "C8_X_Field"}
+	C8_X_Field AT %I* : INT;
+	{attribute addProperty Name "C8_Y_Field"}
+	C8_Y_Field AT %I* : INT;
+	{attribute addProperty Name "C8_Z_Field"}
+	C8_Z_Field AT %I* : INT;
+	{attribute addProperty Name "D1_X_Field"}
+	D1_X_Field AT %I* : INT;
+	{attribute addProperty Name "D1_Y_Field"}
+	D1_Y_Field AT %I* : INT;
+	{attribute addProperty Name "D1_Z_Field"}
+	D1_Z_Field AT %I* : INT;
+	{attribute addProperty Name "D3_X_Field"}
+	D3_X_Field AT %I* : INT;
+	{attribute addProperty Name "D3_Y_Field"}
+	D3_Y_Field AT %I* : INT;
+	{attribute addProperty Name "D3_Z_Field"}
+	D3_Z_Field AT %I* : INT;
+	{attribute addProperty Name "D5_X_Field"}
+	D5_X_Field AT %I* : INT;
+	{attribute addProperty Name "D5_Y_Field"}
+	D5_Y_Field AT %I* : INT;
+	{attribute addProperty Name "D5_Z_Field"}
+	D5_Z_Field AT %I* : INT;
+	{attribute addProperty Name "D7_X_Field"}
+	D7_X_Field AT %I* : INT;
+	{attribute addProperty Name "D7_Y_Field"}
+	D7_Y_Field AT %I* : INT;
+	{attribute addProperty Name "D7_Z_Field"}
+	D7_Z_Field AT %I* : INT;
+	{attribute addProperty Name "D9_X_Field"}
+	D9_X_Field AT %I* : INT;
+	{attribute addProperty Name "D9_Y_Field"}
+	D9_Y_Field AT %I* : INT;
+	{attribute addProperty Name "D9_Z_Field"}
+	D9_Z_Field AT %I* : INT;
+	{attribute addProperty Name "E0_X_Field"}
+	E0_X_Field AT %I* : INT;
+	{attribute addProperty Name "E0_Y_Field"}
+	E0_Y_Field AT %I* : INT;
+	{attribute addProperty Name "E0_Z_Field"}
+	E0_Z_Field AT %I* : INT;
+	{attribute addProperty Name "E2_X_Field"}
+	E2_X_Field AT %I* : INT;
+	{attribute addProperty Name "E2_Y_Field"}
+	E2_Y_Field AT %I* : INT;
+	{attribute addProperty Name "E2_Z_Field"}
+	E2_Z_Field AT %I* : INT;
+	{attribute addProperty Name "E4_X_Field"}
+	E4_X_Field AT %I* : INT;
+	{attribute addProperty Name "E4_Y_Field"}
+	E4_Y_Field AT %I* : INT;
+	{attribute addProperty Name "E4_Z_Field"}
+	E4_Z_Field AT %I* : INT;
+	{attribute addProperty Name "E6_X_Field"}
+	E6_X_Field AT %I* : INT;
+	{attribute addProperty Name "E6_Y_Field"}
+	E6_Y_Field AT %I* : INT;
+	{attribute addProperty Name "E6_Z_Field"}
+	E6_Z_Field AT %I* : INT;
+	{attribute addProperty Name "E8_X_Field"}
+	E8_X_Field AT %I* : INT;
+	{attribute addProperty Name "E8_Y_Field"}
+	E8_Y_Field AT %I* : INT;
+	{attribute addProperty Name "E8_Z_Field"}
+	E8_Z_Field AT %I* : INT;
+	{attribute addProperty Name "F1_X_Field"}
+	F1_X_Field AT %I* : INT;
+	{attribute addProperty Name "F1_Y_Field"}
+	F1_Y_Field AT %I* : INT;
+	{attribute addProperty Name "F1_Z_Field"}
+	F1_Z_Field AT %I* : INT;
+	{attribute addProperty Name "F3_X_Field"}
+	F3_X_Field AT %I* : INT;
+	{attribute addProperty Name "F3_Y_Field"}
+	F3_Y_Field AT %I* : INT;
+	{attribute addProperty Name "F3_Z_Field"}
+	F3_Z_Field AT %I* : INT;
+	{attribute addProperty Name "F5_X_Field"}
+	F5_X_Field AT %I* : INT;
+	{attribute addProperty Name "F5_Y_Field"}
+	F5_Y_Field AT %I* : INT;
+	{attribute addProperty Name "F5_Z_Field"}
+	F5_Z_Field AT %I* : INT;
+	{attribute addProperty Name "F7_X_Field"}
+	F7_X_Field AT %I* : INT;
+	{attribute addProperty Name "F7_Y_Field"}
+	F7_Y_Field AT %I* : INT;
+	{attribute addProperty Name "F7_Z_Field"}
+	F7_Z_Field AT %I* : INT;
+	{attribute addProperty Name "F9_X_Field"}
+	F9_X_Field AT %I* : INT;
+	{attribute addProperty Name "F9_Y_Field"}
+	F9_Y_Field AT %I* : INT;
+	{attribute addProperty Name "F9_Z_Field"}
+	F9_Z_Field AT %I* : INT;
+	{attribute addProperty Name "G0_X_Field"}
+	G0_X_Field AT %I* : INT;
+	{attribute addProperty Name "G0_Y_Field"}
+	G0_Y_Field AT %I* : INT;
+	{attribute addProperty Name "G0_Z_Field"}
+	G0_Z_Field AT %I* : INT;
+	{attribute addProperty Name "G2_X_Field"}
+	G2_X_Field AT %I* : INT;
+	{attribute addProperty Name "G2_Y_Field"}
+	G2_Y_Field AT %I* : INT;
+	{attribute addProperty Name "G2_Z_Field"}
+	G2_Z_Field AT %I* : INT;
+	{attribute addProperty Name "G4_X_Field"}
+	G4_X_Field AT %I* : INT;
+	{attribute addProperty Name "G4_Y_Field"}
+	G4_Y_Field AT %I* : INT;
+	{attribute addProperty Name "G4_Z_Field"}
+	G4_Z_Field AT %I* : INT;
+	{attribute addProperty Name "G6_X_Field"}
+	G6_X_Field AT %I* : INT;
+	{attribute addProperty Name "G6_Y_Field"}
+	G6_Y_Field AT %I* : INT;
+	{attribute addProperty Name "G6_Z_Field"}
+	G6_Z_Field AT %I* : INT;
+	{attribute addProperty Name "G8_X_Field"}
+	G8_X_Field AT %I* : INT;
+	{attribute addProperty Name "G8_Y_Field"}
+	G8_Y_Field AT %I* : INT;
+	{attribute addProperty Name "G8_Z_Field"}
+	G8_Z_Field AT %I* : INT;
+	{attribute addProperty Name "H1_X_Field"}
+	H1_X_Field AT %I* : INT;
+	{attribute addProperty Name "H1_Y_Field"}
+	H1_Y_Field AT %I* : INT;
+	{attribute addProperty Name "H1_Z_Field"}
+	H1_Z_Field AT %I* : INT;
+	{attribute addProperty Name "H3_X_Field"}
+	H3_X_Field AT %I* : INT;
+	{attribute addProperty Name "H3_Y_Field"}
+	H3_Y_Field AT %I* : INT;
+	{attribute addProperty Name "H3_Z_Field"}
+	H3_Z_Field AT %I* : INT;
+	{attribute addProperty Name "H5_X_Field"}
+	H5_X_Field AT %I* : INT;
+	{attribute addProperty Name "H5_Y_Field"}
+	H5_Y_Field AT %I* : INT;
+	{attribute addProperty Name "H5_Z_Field"}
+	H5_Z_Field AT %I* : INT;
+	{attribute addProperty Name "H7_X_Field"}
+	H7_X_Field AT %I* : INT;
+	{attribute addProperty Name "H7_Y_Field"}
+	H7_Y_Field AT %I* : INT;
+	{attribute addProperty Name "H7_Z_Field"}
+	H7_Z_Field AT %I* : INT;
+	{attribute addProperty Name "H9_X_Field"}
+	H9_X_Field AT %I* : INT;
+	{attribute addProperty Name "H9_Y_Field"}
+	H9_Y_Field AT %I* : INT;
+	{attribute addProperty Name "H9_Z_Field"}
+	H9_Z_Field AT %I* : INT;
+	{attribute addProperty Name "I0_X_Field"}
+	I0_X_Field AT %I* : INT;
+	{attribute addProperty Name "I0_Y_Field"}
+	I0_Y_Field AT %I* : INT;
+	{attribute addProperty Name "I0_Z_Field"}
+	I0_Z_Field AT %I* : INT;
+	{attribute addProperty Name "I2_X_Field"}
+	I2_X_Field AT %I* : INT;
+	{attribute addProperty Name "I2_Y_Field"}
+	I2_Y_Field AT %I* : INT;
+	{attribute addProperty Name "I2_Z_Field"}
+	I2_Z_Field AT %I* : INT;
+	{attribute addProperty Name "I4_X_Field"}
+	I4_X_Field AT %I* : INT;
+	{attribute addProperty Name "I4_Y_Field"}
+	I4_Y_Field AT %I* : INT;
+	{attribute addProperty Name "I4_Z_Field"}
+	I4_Z_Field AT %I* : INT;
+	{attribute addProperty Name "I6_X_Field"}
+	I6_X_Field AT %I* : INT;
+	{attribute addProperty Name "I6_Y_Field"}
+	I6_Y_Field AT %I* : INT;
+	{attribute addProperty Name "I6_Z_Field"}
+	I6_Z_Field AT %I* : INT;
+	{attribute addProperty Name "I8_X_Field"}
+	I8_X_Field AT %I* : INT;
+	{attribute addProperty Name "I8_Y_Field"}
+	I8_Y_Field AT %I* : INT;
+	{attribute addProperty Name "I8_Z_Field"}
+	I8_Z_Field AT %I* : INT;
+	{attribute addProperty Name "J1_X_Field"}
+	J1_X_Field AT %I* : INT;
+	{attribute addProperty Name "J1_Y_Field"}
+	J1_Y_Field AT %I* : INT;
+	{attribute addProperty Name "J1_Z_Field"}
+	J1_Z_Field AT %I* : INT;
+	{attribute addProperty Name "J3_X_Field"}
+	J3_X_Field AT %I* : INT;
+	{attribute addProperty Name "J3_Y_Field"}
+	J3_Y_Field AT %I* : INT;
+	{attribute addProperty Name "J3_Z_Field"}
+	J3_Z_Field AT %I* : INT;
+	{attribute addProperty Name "J5_X_Field"}
+	J5_X_Field AT %I* : INT;
+	{attribute addProperty Name "J5_Y_Field"}
+	J5_Y_Field AT %I* : INT;
+	{attribute addProperty Name "J5_Z_Field"}
+	J5_Z_Field AT %I* : INT;
+	{attribute addProperty Name "J7_X_Field"}
+	J7_X_Field AT %I* : INT;
+	{attribute addProperty Name "J7_Y_Field"}
+	J7_Y_Field AT %I* : INT;
+	{attribute addProperty Name "J7_Z_Field"}
+	J7_Z_Field AT %I* : INT;
+	{attribute addProperty Name "J9_X_Field"}
+	J9_X_Field AT %I* : INT;
+	{attribute addProperty Name "J9_Y_Field"}
+	J9_Y_Field AT %I* : INT;
+	{attribute addProperty Name "J9_Z_Field"}
+	J9_Z_Field AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_A9D94975" Id="{ad63d16c-455b-4d03-8bf5-6a201ad21108}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5021-0000-0016'}
+{attribute addProperty BoxType "EL5021-0000-0016"}
+{attribute addProperty Id "Latch_C_validBOOL1Set_counter_doneBOOL1Frequency_errorBOOL1Amplitude_errorBOOL1Status_of_input_CBOOL1Sync_errorBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "2849589621"}
+{attribute addProperty Size "8"}
+TYPE Status_A9D94975 :
+STRUCT
+	{attribute addProperty Name "Latch_C_valid"}
+	Latch_C_valid : BOOL;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BOOL;
+	{attribute addProperty Name "Frequency_error"}
+	Frequency_error : BOOL;
+	{attribute addProperty Name "Amplitude_error"}
+	Amplitude_error : BOOL;
+	{attribute addProperty Name "Status_of_input_C"}
+	Status_of_input_C : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

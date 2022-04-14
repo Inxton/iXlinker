@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_Duplicates_CB89F35C" Id="{a9c9d1e5-c9fa-454a-8de6-b498187895a6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "boxesboxes_178979725785A_0076_AMP8000_0030_0103AMP8000_F7A82895113SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
+{attribute addProperty CRC "3414815580"}
+{attribute addProperty Size "6210"}
+TYPE EtherCAT_Master_Duplicates_CB89F35C :
+STRUCT
+	{attribute addProperty Name "boxes"}
+	boxes : boxes_17897972;
+	{attribute addProperty Name "A_0076_AMP8000_0030_0103"}
+	A_0076_AMP8000_0030_0103 : AMP8000_F7A82895;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_99E584AF;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_25A0042B;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_2397A10E;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_E68C61CD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SAI_Feedback_BDBF6DA9" Id="{7b172a5b-e2c7-45f3-b617-37bf28957e81}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0021'}
+{attribute addProperty BoxType "EL3681-0000-0021"}
+{attribute addProperty Id "SettingsAT %I*Settings_24C049402"}
+{attribute addProperty CRC "3183439273"}
+{attribute addProperty Size "2"}
+TYPE SAI_Feedback_BDBF6DA9 :
+STRUCT
+	{attribute addProperty Name "Settings"}
+	Settings AT %I* : Settings_24C04940;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

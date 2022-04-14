@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_C03E2495" Id="{6a1e1580-a33a-44fe-84d8-220f2a5aa651}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5002-0000-0020'}
+{attribute addProperty BoxType "EL5002-0000-0020"}
+{attribute addProperty Id "Data_errorBOOL1Frame_errorBOOL1Power_failureBOOL1Data_mismatchBOOL1Sync_errorBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "3225298069"}
+{attribute addProperty Size "7"}
+TYPE Status_C03E2495 :
+STRUCT
+	{attribute addProperty Name "Data_error"}
+	Data_error : BOOL;
+	{attribute addProperty Name "Frame_error"}
+	Frame_error : BOOL;
+	{attribute addProperty Name "Power_failure"}
+	Power_failure : BOOL;
+	{attribute addProperty Name "Data_mismatch"}
+	Data_mismatch : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

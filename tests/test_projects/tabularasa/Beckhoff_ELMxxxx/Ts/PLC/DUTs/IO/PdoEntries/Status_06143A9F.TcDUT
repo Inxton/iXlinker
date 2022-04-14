@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_06143A9F" Id="{c3ae3b7a-2867-4e61-918f-b568613cbec2}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM9410-0000-0016'}
+{attribute addProperty BoxType "ELM9410-0000-0016"}
+{attribute addProperty Id "DiagBOOL1ErrorBOOL1Input_cycle_CounterBYTE1TxPDO_StateBOOL1"}
+{attribute addProperty CRC "101989023"}
+{attribute addProperty Size "4"}
+TYPE Status_06143A9F :
+STRUCT
+	{attribute addProperty Name "Diag"}
+	Diag : BOOL;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "Input_cycle_Counter"}
+	Input_cycle_Counter : BYTE;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

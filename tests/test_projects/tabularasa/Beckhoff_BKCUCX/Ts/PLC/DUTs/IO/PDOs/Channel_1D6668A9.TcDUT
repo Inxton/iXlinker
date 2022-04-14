@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_1D6668A9" Id="{8908ba35-e35f-4006-a41d-3877b9e6bd39}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1904'}
+{attribute addProperty BoxType "KL1904"}
+{attribute addProperty Id "Safety_InAT %I*ARRAY[0..5] OF BYTE0Safety_OutAT %Q*ARRAY[0..5] OF BYTE0"}
+{attribute addProperty CRC "493250729"}
+{attribute addProperty Size "0"}
+TYPE Channel_1D6668A9 :
+STRUCT
+	{attribute addProperty Name "Safety_In"}
+	Safety_In AT %I* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_Out"}
+	Safety_Out AT %Q* : ARRAY[0..5] OF BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_1F44E1B4" Id="{d0dd6632-953d-4bf2-93fd-2df6492d43fc}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1914-0000-0017'}
+{attribute addProperty BoxType "EJ1914-0000-0017"}
+{attribute addProperty Id "FSoE_CommandUSINT1FSIN_Module_1_Channel_1_InputBOOL1FSIN_Module_1_Channel_2_InputBOOL1FSIN_Module_1_Module_FaultBOOL1FSIN_Module_2_Channel_1_InputBOOL1FSIN_Module_2_Channel_2_InputBOOL1FSIN_Module_2_Module_FaultBOOL1FSoE_CRC_000UINT2FSoE_Connection_IDUINT2"}
+{attribute addProperty CRC "524607924"}
+{attribute addProperty Size "11"}
+TYPE FSOE_1F44E1B4 :
+STRUCT
+	{attribute addProperty Name "FSoE_Command"}
+	FSoE_Command : USINT;
+	{attribute addProperty Name "FSIN_Module_1_Channel_1_Input"}
+	FSIN_Module_1_Channel_1_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_1_Channel_2_Input"}
+	FSIN_Module_1_Channel_2_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_1_Module_Fault"}
+	FSIN_Module_1_Module_Fault : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_Channel_1_Input"}
+	FSIN_Module_2_Channel_1_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_Channel_2_Input"}
+	FSIN_Module_2_Channel_2_Input : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_Module_Fault"}
+	FSIN_Module_2_Module_Fault : BOOL;
+	{attribute addProperty Name "FSoE_CRC_000"}
+	FSoE_CRC_000 : UINT;
+	{attribute addProperty Name "FSoE_Connection_ID"}
+	FSoE_Connection_ID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

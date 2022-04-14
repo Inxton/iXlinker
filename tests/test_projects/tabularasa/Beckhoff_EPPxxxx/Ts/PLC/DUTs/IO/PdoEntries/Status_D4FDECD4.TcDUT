@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_D4FDECD4" Id="{8f7b5148-ac4a-42f1-b35f-8d8cb3bbeeb6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1518-0002-0016'}
+{attribute addProperty BoxType "EPP1518-0002-0016"}
+{attribute addProperty Id "Error_channel_1BOOL1Error_channel_2BOOL1Sync_errorBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "3573411028"}
+{attribute addProperty Size "5"}
+TYPE Status_D4FDECD4 :
+STRUCT
+	{attribute addProperty Name "Error_channel_1"}
+	Error_channel_1 : BOOL;
+	{attribute addProperty Name "Error_channel_2"}
+	Error_channel_2 : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

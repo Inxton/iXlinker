@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L3_Voltage_Status_273F7295" Id="{9085bac3-8080-477c-9586-1e3014d07200}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0018'}
+{attribute addProperty BoxType "EL3773-0000-0018"}
+{attribute addProperty Id "U3_StatusAT %I*U3_Status_DC9039207"}
+{attribute addProperty CRC "658469525"}
+{attribute addProperty Size "7"}
+TYPE L3_Voltage_Status_273F7295 :
+STRUCT
+	{attribute addProperty Name "U3_Status"}
+	U3_Status AT %I* : U3_Status_DC903920;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

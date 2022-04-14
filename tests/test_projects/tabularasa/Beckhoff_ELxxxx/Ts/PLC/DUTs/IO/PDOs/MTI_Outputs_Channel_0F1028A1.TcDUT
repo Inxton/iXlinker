@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="MTI_Outputs_Channel_0F1028A1" Id="{20bf89b9-4b3d-4ecb-a928-e106581c4ad8}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1258-0000-0016'}
+{attribute addProperty BoxType "EL1258-0000-0016"}
+{attribute addProperty Id "CtrlAT %Q*Ctrl_F19EAB212"}
+{attribute addProperty CRC "252717217"}
+{attribute addProperty Size "2"}
+TYPE MTI_Outputs_Channel_0F1028A1 :
+STRUCT
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : Ctrl_F19EAB21;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

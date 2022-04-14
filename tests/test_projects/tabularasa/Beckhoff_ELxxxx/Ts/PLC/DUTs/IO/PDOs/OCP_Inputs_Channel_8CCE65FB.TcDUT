@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="OCP_Inputs_Channel_8CCE65FB" Id="{a81dfac9-a561-4cd2-b0d3-8f60431bf32a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9222-4433-0018'}
+{attribute addProperty BoxType "EL9222-4433-0018"}
+{attribute addProperty Id "StatusAT %I*Status_FCAFFB9E11"}
+{attribute addProperty CRC "2362336763"}
+{attribute addProperty Size "11"}
+TYPE OCP_Inputs_Channel_8CCE65FB :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_FCAFFB9E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

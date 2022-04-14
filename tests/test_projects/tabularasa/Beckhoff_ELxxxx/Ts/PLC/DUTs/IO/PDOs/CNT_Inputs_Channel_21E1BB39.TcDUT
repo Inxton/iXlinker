@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CNT_Inputs_Channel_21E1BB39" Id="{d737bc33-f79f-4149-9e7f-0b6d93da6148}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1512-0000-0016'}
+{attribute addProperty BoxType "EL1512-0000-0016"}
+{attribute addProperty Id "Set_counter_doneAT %I*BOOL1Counter_inhibitedAT %I*BOOL1Status_of_input_clockAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Counter_valueAT %I*UDINT4"}
+{attribute addProperty CRC "568441657"}
+{attribute addProperty Size "8"}
+TYPE CNT_Inputs_Channel_21E1BB39 :
+STRUCT
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done AT %I* : BOOL;
+	{attribute addProperty Name "Counter_inhibited"}
+	Counter_inhibited AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_clock"}
+	Status_of_input_clock AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP9128_1FC0878B" Id="{6ea128fa-f927-42ab-879d-ffcb0ba49b04}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9128-0020-0016'}
+{attribute addProperty BoxType "EP9128-0020-0016"}
+{attribute addProperty Id "InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "532711307"}
+{attribute addProperty Size "2"}
+TYPE EP9128_1FC0878B :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

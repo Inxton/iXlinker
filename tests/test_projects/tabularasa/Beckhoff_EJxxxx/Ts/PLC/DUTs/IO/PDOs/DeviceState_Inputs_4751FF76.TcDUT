@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DeviceState_Inputs_4751FF76" Id="{a9e403ce-9b54-4200-9ccc-b93c057caaaf}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6224-0000-0016'}
+{attribute addProperty BoxType "EJ6224-0000-0016"}
+{attribute addProperty Id "State_Ch1AT %I*USINT1State_Ch2AT %I*USINT1State_Ch3AT %I*USINT1State_Ch4AT %I*USINT1"}
+{attribute addProperty CRC "1196556150"}
+{attribute addProperty Size "4"}
+TYPE DeviceState_Inputs_4751FF76 :
+STRUCT
+	{attribute addProperty Name "State_Ch1"}
+	State_Ch1 AT %I* : USINT;
+	{attribute addProperty Name "State_Ch2"}
+	State_Ch2 AT %I* : USINT;
+	{attribute addProperty Name "State_Ch3"}
+	State_Ch3 AT %I* : USINT;
+	{attribute addProperty Name "State_Ch4"}
+	State_Ch4 AT %I* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_D13646E3" Id="{d00992f0-3925-4f86-882c-1829f59f44fc}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL8519'}
+{attribute addProperty BoxType "KL8519"}
+{attribute addProperty Id "StateAT %I*USINT0Data_In_1AT %I*BYTE0Data_In_2AT %I*BYTE0CtrlAT %Q*USINT0LED_Out_green_1AT %Q*BYTE0LED_Out_green_2AT %Q*BYTE0LED_Out_red_1AT %Q*BYTE0LED_Out_red_2AT %Q*BYTE0"}
+{attribute addProperty CRC "3509995235"}
+{attribute addProperty Size "0"}
+TYPE Channel_D13646E3 :
+STRUCT
+	{attribute addProperty Name "State"}
+	State AT %I* : USINT;
+	{attribute addProperty Name "Data_In_1"}
+	Data_In_1 AT %I* : BYTE;
+	{attribute addProperty Name "Data_In_2"}
+	Data_In_2 AT %I* : BYTE;
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : USINT;
+	{attribute addProperty Name "LED_Out_green_1"}
+	LED_Out_green_1 AT %Q* : BYTE;
+	{attribute addProperty Name "LED_Out_green_2"}
+	LED_Out_green_2 AT %Q* : BYTE;
+	{attribute addProperty Name "LED_Out_red_1"}
+	LED_Out_red_1 AT %Q* : BYTE;
+	{attribute addProperty Name "LED_Out_red_2"}
+	LED_Out_red_2 AT %Q* : BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_1E008DB9" Id="{70cfeda8-213a-4dad-9fe3-9f8f1743a9d1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER7041-3002-0021'}
+{attribute addProperty BoxType "ER7041-3002-0021"}
+{attribute addProperty Id "Ready_to_enableBOOL1ReadyBOOL1WarningBOOL1ErrorBOOL1Moving_positiveBOOL1Moving_negativeBOOL1Torque_reducedBOOL1Motor_stallBOOL1Digital_input_1BOOL1Digital_input_2BOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "503352761"}
+{attribute addProperty Size "12"}
+TYPE Status_1E008DB9 :
+STRUCT
+	{attribute addProperty Name "Ready_to_enable"}
+	Ready_to_enable : BOOL;
+	{attribute addProperty Name "Ready"}
+	Ready : BOOL;
+	{attribute addProperty Name "Warning"}
+	Warning : BOOL;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "Moving_positive"}
+	Moving_positive : BOOL;
+	{attribute addProperty Name "Moving_negative"}
+	Moving_negative : BOOL;
+	{attribute addProperty Name "Torque_reduced"}
+	Torque_reduced : BOOL;
+	{attribute addProperty Name "Motor_stall"}
+	Motor_stall : BOOL;
+	{attribute addProperty Name "Digital_input_1"}
+	Digital_input_1 : BOOL;
+	{attribute addProperty Name "Digital_input_2"}
+	Digital_input_2 : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

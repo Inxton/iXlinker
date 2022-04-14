@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL_E882B8F1" Id="{2e69a0fd-1d8e-4cf8-bf78-58dc8130ef45}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1008-0050'}
+{attribute addProperty BoxType "KL1008-0050"}
+{attribute addProperty Id "Channel_1AT %I*Channel_87C95E760Channel_2AT %I*Channel_87C95E760Channel_3AT %I*Channel_87C95E760Channel_4AT %I*Channel_87C95E760Channel_5AT %I*Channel_87C95E760Channel_6AT %I*Channel_87C95E760Channel_7AT %I*Channel_87C95E760Channel_8AT %I*Channel_87C95E760Channel_9AT %I*Channel_87C95E760Channel_10AT %I*Channel_87C95E760Channel_11AT %I*Channel_87C95E760Channel_12AT %I*Channel_87C95E760Channel_13AT %I*Channel_87C95E760Channel_14AT %I*Channel_87C95E760Channel_15AT %I*Channel_87C95E760Channel_16AT %I*Channel_87C95E760Channel_17AT %I*Channel_87C95E760Channel_18AT %I*Channel_87C95E760Channel_19AT %I*Channel_87C95E760Channel_20AT %I*Channel_87C95E760Channel_21AT %I*Channel_87C95E760Channel_22AT %I*Channel_87C95E760Channel_23AT %I*Channel_87C95E760Channel_24AT %I*Channel_87C95E760Channel_25AT %I*Channel_87C95E760Channel_26AT %I*Channel_87C95E760Channel_27AT %I*Channel_87C95E760Channel_28AT %I*Channel_87C95E760Channel_29AT %I*Channel_87C95E760Channel_30AT %I*Channel_87C95E760Channel_31AT %I*Channel_87C95E760Channel_32AT %I*Channel_87C95E760Channel_33AT %I*Channel_87C95E760Channel_34AT %I*Channel_87C95E760Channel_35AT %I*Channel_87C95E760Channel_36AT %I*Channel_87C95E760Channel_37AT %I*Channel_87C95E760Channel_38AT %I*Channel_87C95E760Channel_39AT %I*Channel_87C95E760Channel_40AT %I*Channel_87C95E760Channel_41AT %I*Channel_87C95E760Channel_42AT %I*Channel_87C95E760Channel_43AT %I*Channel_87C95E760Channel_44AT %I*Channel_87C95E760Channel_45AT %I*Channel_87C95E760Channel_46AT %I*Channel_87C95E760Channel_47AT %I*Channel_87C95E760Channel_48AT %I*Channel_87C95E760Channel_49AT %I*Channel_87C95E760Channel_50AT %I*Channel_87C95E760Channel_51AT %I*Channel_87C95E760Channel_52AT %I*Channel_87C95E760Channel_53AT %I*Channel_87C95E760Channel_54AT %I*Channel_87C95E760Channel_55AT %I*Channel_87C95E760Channel_56AT %I*Channel_87C95E760Channel_57AT %I*Channel_87C95E760Channel_58AT %I*Channel_87C95E760Channel_59AT %I*Channel_87C95E760Channel_60AT %I*Channel_87C95E760Channel_61AT %I*Channel_87C95E760Channel_62AT %I*Channel_87C95E760Channel_63AT %I*Channel_87C95E760Channel_64AT %I*Channel_87C95E760"}
+{attribute addProperty CRC "3900881137"}
+{attribute addProperty Size "0"}
+TYPE KL_E882B8F1 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_3"}
+	Channel_3 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_4"}
+	Channel_4 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_5"}
+	Channel_5 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_6"}
+	Channel_6 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_7"}
+	Channel_7 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_8"}
+	Channel_8 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_9"}
+	Channel_9 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_10"}
+	Channel_10 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_11"}
+	Channel_11 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_12"}
+	Channel_12 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_13"}
+	Channel_13 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_14"}
+	Channel_14 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_15"}
+	Channel_15 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_16"}
+	Channel_16 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_17"}
+	Channel_17 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_18"}
+	Channel_18 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_19"}
+	Channel_19 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_20"}
+	Channel_20 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_21"}
+	Channel_21 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_22"}
+	Channel_22 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_23"}
+	Channel_23 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_24"}
+	Channel_24 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_25"}
+	Channel_25 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_26"}
+	Channel_26 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_27"}
+	Channel_27 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_28"}
+	Channel_28 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_29"}
+	Channel_29 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_30"}
+	Channel_30 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_31"}
+	Channel_31 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_32"}
+	Channel_32 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_33"}
+	Channel_33 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_34"}
+	Channel_34 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_35"}
+	Channel_35 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_36"}
+	Channel_36 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_37"}
+	Channel_37 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_38"}
+	Channel_38 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_39"}
+	Channel_39 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_40"}
+	Channel_40 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_41"}
+	Channel_41 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_42"}
+	Channel_42 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_43"}
+	Channel_43 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_44"}
+	Channel_44 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_45"}
+	Channel_45 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_46"}
+	Channel_46 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_47"}
+	Channel_47 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_48"}
+	Channel_48 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_49"}
+	Channel_49 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_50"}
+	Channel_50 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_51"}
+	Channel_51 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_52"}
+	Channel_52 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_53"}
+	Channel_53 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_54"}
+	Channel_54 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_55"}
+	Channel_55 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_56"}
+	Channel_56 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_57"}
+	Channel_57 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_58"}
+	Channel_58 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_59"}
+	Channel_59 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_60"}
+	Channel_60 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_61"}
+	Channel_61 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_62"}
+	Channel_62 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_63"}
+	Channel_63 : Channel_87C95E76;
+	{attribute addProperty Name "Channel_64"}
+	Channel_64 : Channel_87C95E76;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

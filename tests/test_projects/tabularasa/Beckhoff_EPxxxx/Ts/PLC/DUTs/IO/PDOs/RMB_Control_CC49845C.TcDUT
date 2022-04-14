@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="RMB_Control_CC49845C" Id="{3e3b9ec5-9e5e-45c1-954e-4404bee62df6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3356-0022-0016'}
+{attribute addProperty BoxType "EP3356-0022-0016"}
+{attribute addProperty Id "CtrlAT %Q*Ctrl_B9DDD3FF5"}
+{attribute addProperty CRC "3427370076"}
+{attribute addProperty Size "5"}
+TYPE RMB_Control_CC49845C :
+STRUCT
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : Ctrl_B9DDD3FF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

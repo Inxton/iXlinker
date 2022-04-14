@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DEV_Inputs_Device_5F4E175E" Id="{b57e90aa-2047-4308-a197-9aad8e2936b2}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3744-0041-0016'}
+{attribute addProperty BoxType "EP3744-0041-0016"}
+{attribute addProperty Id "Safe_State_ActiveAT %I*BOOL1Sync_errorAT %I*BOOL1Undervoltage_UsAT %I*BOOL1Undervoltage_UpAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
+{attribute addProperty CRC "1598953310"}
+{attribute addProperty Size "5"}
+TYPE DEV_Inputs_Device_5F4E175E :
+STRUCT
+	{attribute addProperty Name "Safe_State_Active"}
+	Safe_State_Active AT %I* : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error AT %I* : BOOL;
+	{attribute addProperty Name "Undervoltage_Us"}
+	Undervoltage_Us AT %I* : BOOL;
+	{attribute addProperty Name "Undervoltage_Up"}
+	Undervoltage_Up AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

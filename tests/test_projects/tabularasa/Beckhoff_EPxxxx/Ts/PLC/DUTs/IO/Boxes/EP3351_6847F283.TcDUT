@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP3351_6847F283" Id="{aae25da1-3593-47a4-8e41-b6af032ad66a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3351-2022-0016'}
+{attribute addProperty BoxType "EP3351-2022-0016"}
+{attribute addProperty Id "AIBridge_InputsAT %I*AIBridge_Inputs_555AA1E89AISupply_InputsAT %I*AISupply_Inputs_555AA1E89WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1749545603"}
+{attribute addProperty Size "30"}
+TYPE EP3351_6847F283 :
+STRUCT
+	{attribute addProperty Name "AIBridge_Inputs"}
+	AIBridge_Inputs : AIBridge_Inputs_555AA1E8;
+	{attribute addProperty Name "AISupply_Inputs"}
+	AISupply_Inputs : AISupply_Inputs_555AA1E8;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

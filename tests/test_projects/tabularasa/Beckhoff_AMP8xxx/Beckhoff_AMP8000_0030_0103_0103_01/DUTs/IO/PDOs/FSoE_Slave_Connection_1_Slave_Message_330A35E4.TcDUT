@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSoE_Slave_Connection_1_Slave_Message_330A35E4" Id="{83c7ecc7-608c-426a-9a8d-e94f3b4587e0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AMP8000-0030-0103-0103'}
+{attribute addProperty BoxType "AMP8000-0030-0103-0103"}
+{attribute addProperty Id "FSOEAT %I*FSOE_31BB7F2A21"}
+{attribute addProperty CRC "856307172"}
+{attribute addProperty Size "21"}
+TYPE FSoE_Slave_Connection_1_Slave_Message_330A35E4 :
+STRUCT
+	{attribute addProperty Name "FSOE"}
+	FSOE AT %I* : FSOE_31BB7F2A;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

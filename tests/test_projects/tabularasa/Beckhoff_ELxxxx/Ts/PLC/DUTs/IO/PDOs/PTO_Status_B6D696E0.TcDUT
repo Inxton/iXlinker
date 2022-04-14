@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PTO_Status_B6D696E0" Id="{6853ddbb-40a8-483d-b3b0-25fefd288a25}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0000-1016'}
+{attribute addProperty BoxType "EL2521-0000-1016"}
+{attribute addProperty Id "Sel_Ack_End_counterAT %I*BOOL1Ramp_activeAT %I*BOOL1Status_of_input_targetAT %I*BOOL1Status_of_input_zeroAT %I*BOOL1ErrorAT %I*BOOL1Sync_ErrorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
+{attribute addProperty CRC "3067516640"}
+{attribute addProperty Size "7"}
+TYPE PTO_Status_B6D696E0 :
+STRUCT
+	{attribute addProperty Name "Sel_Ack_End_counter"}
+	Sel_Ack_End_counter AT %I* : BOOL;
+	{attribute addProperty Name "Ramp_active"}
+	Ramp_active AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_target"}
+	Status_of_input_target AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_zero"}
+	Status_of_input_zero AT %I* : BOOL;
+	{attribute addProperty Name "Error"}
+	Error AT %I* : BOOL;
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -14,11 +14,11 @@ namespace TsprojFile.Scan
 
             foreach (PdoEntryStructMemberViewModel member in actPdoEntryStruct.StructMembers)
             {
-                member.Name = ValidatePlcItem.Name(member.NameUnmodified);
+                member.NameA = ValidatePlcItem.Name(member.NameA);
                 List<string> memberAttributes = new List<string>();
-                memberAttributes.Add("{attribute addProperty Name \"" + member.Name + "\"}");
+                memberAttributes.Add("{attribute addProperty Name \"" + member.NameA + "\"}");
                 member.Attributes = memberAttributes;
-                Id = Id + member.Name + member.TypeNamespace + member.Type_Value + member.Size;
+                Id = Id + member.NameA + member.TypeNamespace + member.Type_Value + member.Size;
                 size = size + member.Size;
             }
             actPdoEntryStruct.Id = Id;

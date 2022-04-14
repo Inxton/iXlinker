@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DMX_Status_5716F9AF" Id="{b7fcfdd3-ddec-4e9b-b0de-2c875652d954}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6851-0000-0017'}
+{attribute addProperty BoxType "EL6851-0000-0017"}
+{attribute addProperty Id "Transmit_acceptedAT %I*BOOL1Receive_toggleAT %I*BOOL1Cyclic_TxD_disabledAT %I*BOOL1Default_data_sentAT %I*BOOL1Frame_sent_toggleAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Channel_lengthAT %I*UINT2Start_codeAT %I*USINT1"}
+{attribute addProperty CRC "1461123503"}
+{attribute addProperty Size "9"}
+TYPE DMX_Status_5716F9AF :
+STRUCT
+	{attribute addProperty Name "Transmit_accepted"}
+	Transmit_accepted AT %I* : BOOL;
+	{attribute addProperty Name "Receive_toggle"}
+	Receive_toggle AT %I* : BOOL;
+	{attribute addProperty Name "Cyclic_TxD_disabled"}
+	Cyclic_TxD_disabled AT %I* : BOOL;
+	{attribute addProperty Name "Default_data_sent"}
+	Default_data_sent AT %I* : BOOL;
+	{attribute addProperty Name "Frame_sent_toggle"}
+	Frame_sent_toggle AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Channel_length"}
+	Channel_length AT %I* : UINT;
+	{attribute addProperty Name "Start_code"}
+	Start_code AT %I* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

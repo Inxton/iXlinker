@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Status_Channel_A9252C48" Id="{31951107-c580-49f1-a952-61500f831f71}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2522-0000-0017'}
+{attribute addProperty BoxType "EL2522-0000-0017"}
+{attribute addProperty Id "StatusAT %I*Status_70E023F86Counter_valueAT %I*UDINT4"}
+{attribute addProperty CRC "2837785672"}
+{attribute addProperty Size "10"}
+TYPE ENC_Status_Channel_A9252C48 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_70E023F8;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

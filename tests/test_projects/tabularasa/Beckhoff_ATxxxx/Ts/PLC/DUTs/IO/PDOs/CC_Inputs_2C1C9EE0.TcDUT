@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CC_Inputs_2C1C9EE0" Id="{105ac21d-dc2b-497c-b0b8-134489f72557}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2020-0250-0019'}
+{attribute addProperty BoxType "AT2020-0250-0019"}
+{attribute addProperty Id "StatusAT %I*UINT2Current_actual_value_ChAT %I*ARRAY[0..14] OF INT30"}
+{attribute addProperty CRC "4120755276"}
+{attribute addProperty Size "32"}
+TYPE CC_Inputs_2C1C9EE0 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : UINT;
+	{attribute addProperty Name "Current_actual_value_Ch"}
+	Current_actual_value_Ch AT %I* : ARRAY[0..14] OF INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

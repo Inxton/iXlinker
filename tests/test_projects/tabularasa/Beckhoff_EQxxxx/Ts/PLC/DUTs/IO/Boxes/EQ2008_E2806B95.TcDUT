@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EQ2008_E2806B95" Id="{ea4933af-8482-4317-8773-d6ac14f24458}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EQ2008-0002-0016'}
+{attribute addProperty BoxType "EQ2008-0002-0016"}
+{attribute addProperty Id "Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71Channel_3AT %Q*Channel_42CA91F71Channel_4AT %Q*Channel_42CA91F71Channel_5AT %Q*Channel_42CA91F71Channel_6AT %Q*Channel_42CA91F71Channel_7AT %Q*Channel_42CA91F71Channel_8AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "3800066965"}
+{attribute addProperty Size "11"}
+TYPE EQ2008_E2806B95 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_3"}
+	Channel_3 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_4"}
+	Channel_4 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_5"}
+	Channel_5 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_6"}
+	Channel_6 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_7"}
+	Channel_7 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_8"}
+	Channel_8 : Channel_42CA91F7;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_0B2B16F9;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

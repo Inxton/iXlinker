@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DMX_Control_8D35CC31" Id="{0e965514-7413-4e46-b873-0387b06a23da}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6851-0000-0017'}
+{attribute addProperty BoxType "EL6851-0000-0017"}
+{attribute addProperty Id "Transmit_requestAT %Q*BOOL1Disable_cyclic_TxDAT %Q*BOOL1Send_default_dataAT %Q*BOOL1Channel_lengthAT %Q*UINT2Start_codeAT %Q*USINT1"}
+{attribute addProperty CRC "2369113137"}
+{attribute addProperty Size "6"}
+TYPE DMX_Control_8D35CC31 :
+STRUCT
+	{attribute addProperty Name "Transmit_request"}
+	Transmit_request AT %Q* : BOOL;
+	{attribute addProperty Name "Disable_cyclic_TxD"}
+	Disable_cyclic_TxD AT %Q* : BOOL;
+	{attribute addProperty Name "Send_default_data"}
+	Send_default_data AT %Q* : BOOL;
+	{attribute addProperty Name "Channel_length"}
+	Channel_length AT %Q* : UINT;
+	{attribute addProperty Name "Start_code"}
+	Start_code AT %Q* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_FCAFFB9E" Id="{e958a288-f3f2-497e-90bb-54445644386b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9221-4030-0018'}
+{attribute addProperty BoxType "EL9221-4030-0018"}
+{attribute addProperty Id "EnabledBOOL1TrippedBOOL1Hardware_ProtectionBOOL1Current_Level_WarningBOOL1Cool_Down_LockBOOL1DiagBOOL1TxPDO_StateBOOL1Input_cycle_counterBYTE1ErrorBOOL1State_ResetBOOL1State_SwitchBOOL1"}
+{attribute addProperty CRC "4239391646"}
+{attribute addProperty Size "11"}
+TYPE Status_FCAFFB9E :
+STRUCT
+	{attribute addProperty Name "Enabled"}
+	Enabled : BOOL;
+	{attribute addProperty Name "Tripped"}
+	Tripped : BOOL;
+	{attribute addProperty Name "Hardware_Protection"}
+	Hardware_Protection : BOOL;
+	{attribute addProperty Name "Current_Level_Warning"}
+	Current_Level_Warning : BOOL;
+	{attribute addProperty Name "Cool_Down_Lock"}
+	Cool_Down_Lock : BOOL;
+	{attribute addProperty Name "Diag"}
+	Diag : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "Input_cycle_counter"}
+	Input_cycle_counter : BYTE;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "State_Reset"}
+	State_Reset : BOOL;
+	{attribute addProperty Name "State_Switch"}
+	State_Switch : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

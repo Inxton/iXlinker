@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Slave_28_Inputs_11D3A878" Id="{5368ba87-8289-467c-965c-6863cd3db3bf}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6201-0000-0017'}
+{attribute addProperty BoxType "EL6201-0000-0017"}
+{attribute addProperty Id "Slave_28A_DI0BOOL1Slave_28A_DI1BOOL1Slave_28A_DI2BOOL1Slave_28A_DI3BOOL1Slave_28B_DI0BOOL1Slave_28B_DI1BOOL1Slave_28B_DI2BOOL1Slave_28B_DI3BOOL1"}
+{attribute addProperty CRC "299083896"}
+{attribute addProperty Size "8"}
+TYPE Slave_28_Inputs_11D3A878 :
+STRUCT
+	{attribute addProperty Name "Slave_28A_DI0"}
+	Slave_28A_DI0 : BOOL;
+	{attribute addProperty Name "Slave_28A_DI1"}
+	Slave_28A_DI1 : BOOL;
+	{attribute addProperty Name "Slave_28A_DI2"}
+	Slave_28A_DI2 : BOOL;
+	{attribute addProperty Name "Slave_28A_DI3"}
+	Slave_28A_DI3 : BOOL;
+	{attribute addProperty Name "Slave_28B_DI0"}
+	Slave_28B_DI0 : BOOL;
+	{attribute addProperty Name "Slave_28B_DI1"}
+	Slave_28B_DI1 : BOOL;
+	{attribute addProperty Name "Slave_28B_DI2"}
+	Slave_28B_DI2 : BOOL;
+	{attribute addProperty Name "Slave_28B_DI3"}
+	Slave_28B_DI3 : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

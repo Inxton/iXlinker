@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="High_Current_Range_48967762" Id="{b0909c3e-18a1-4213-8fb4-173fd424dc17}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3783-0000-0018'}
+{attribute addProperty BoxType "EL3783-0000-0018"}
+{attribute addProperty Id "HCR_0USINT1HCR_1USINT1HCR_2USINT1HCR_3USINT1"}
+{attribute addProperty CRC "1217820514"}
+{attribute addProperty Size "4"}
+TYPE High_Current_Range_48967762 :
+STRUCT
+	{attribute addProperty Name "HCR_0"}
+	HCR_0 : USINT;
+	{attribute addProperty Name "HCR_1"}
+	HCR_1 : USINT;
+	{attribute addProperty Name "HCR_2"}
+	HCR_2 : USINT;
+	{attribute addProperty Name "HCR_3"}
+	HCR_3 : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

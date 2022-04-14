@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_8AD1B54B" Id="{e1215b1c-50d3-4d2c-9abe-b63ec71e195c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1512-0000-0017'}
+{attribute addProperty BoxType "EL1512-0000-0017"}
+{attribute addProperty Id "Set_counter_doneBOOL1Counter_inhibitedBOOL1Status_of_input_clockBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "2328999243"}
+{attribute addProperty Size "4"}
+TYPE Status_8AD1B54B :
+STRUCT
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BOOL;
+	{attribute addProperty Name "Counter_inhibited"}
+	Counter_inhibited : BOOL;
+	{attribute addProperty Name "Status_of_input_clock"}
+	Status_of_input_clock : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

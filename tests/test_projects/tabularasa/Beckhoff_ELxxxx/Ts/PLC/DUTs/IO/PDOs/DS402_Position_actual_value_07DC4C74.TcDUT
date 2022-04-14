@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DS402_Position_actual_value_07DC4C74" Id="{12db90db-4bf1-4080-9fd8-601e9a0cb4bd}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7201-0001-0017'}
+{attribute addProperty BoxType "EL7201-0001-0017"}
+{attribute addProperty Id "Position_actual_valueAT %I*UDINT4"}
+{attribute addProperty CRC "131878004"}
+{attribute addProperty Size "4"}
+TYPE DS402_Position_actual_value_07DC4C74 :
+STRUCT
+	{attribute addProperty Name "Position_actual_value"}
+	Position_actual_value AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

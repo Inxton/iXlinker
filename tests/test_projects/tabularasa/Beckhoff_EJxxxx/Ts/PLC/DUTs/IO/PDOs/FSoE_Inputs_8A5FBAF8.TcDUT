@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSoE_Inputs_8A5FBAF8" Id="{eb746a73-fc4d-4d2d-a9bd-36c2be57ed70}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1957-0000-0017'}
+{attribute addProperty BoxType "EJ1957-0000-0017"}
+{attribute addProperty Id "FSOEAT %I*FSOE_BBC930F718"}
+{attribute addProperty CRC "2321529592"}
+{attribute addProperty Size "18"}
+TYPE FSoE_Inputs_8A5FBAF8 :
+STRUCT
+	{attribute addProperty Name "FSOE"}
+	FSOE AT %I* : FSOE_BBC930F7;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

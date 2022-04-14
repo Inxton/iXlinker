@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_56494C1D" Id="{674f04d4-0d8b-4a22-8894-10d9053622b6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5152-0000-0018'}
+{attribute addProperty BoxType "EL5152-0000-0018"}
+{attribute addProperty Id "Set_counter_doneBOOL1Extrapolation_stallBOOL1Status_of_input_ABOOL1Status_of_input_BBOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "1447644189"}
+{attribute addProperty Size "6"}
+TYPE Status_56494C1D :
+STRUCT
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BOOL;
+	{attribute addProperty Name "Extrapolation_stall"}
+	Extrapolation_stall : BOOL;
+	{attribute addProperty Name "Status_of_input_A"}
+	Status_of_input_A : BOOL;
+	{attribute addProperty Name "Status_of_input_B"}
+	Status_of_input_B : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

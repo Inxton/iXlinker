@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L3_Status_12B1E6BB" Id="{4d5d9293-e279-4d08-905a-d9c5dc9b224a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3483-0000-0016'}
+{attribute addProperty BoxType "EL3483-0000-0016"}
+{attribute addProperty Id "OvervoltageAT %I*BOOL1Inaccurate_VoltageAT %I*BOOL1Voltage_Guard_WarningAT %I*BOOL1Voltage_Guard_ErrorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
+{attribute addProperty CRC "313648827"}
+{attribute addProperty Size "5"}
+TYPE L3_Status_12B1E6BB :
+STRUCT
+	{attribute addProperty Name "Overvoltage"}
+	Overvoltage AT %I* : BOOL;
+	{attribute addProperty Name "Inaccurate_Voltage"}
+	Inaccurate_Voltage AT %I* : BOOL;
+	{attribute addProperty Name "Voltage_Guard_Warning"}
+	Voltage_Guard_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Voltage_Guard_Error"}
+	Voltage_Guard_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

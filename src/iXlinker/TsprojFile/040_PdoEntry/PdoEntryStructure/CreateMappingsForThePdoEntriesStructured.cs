@@ -17,7 +17,7 @@ namespace TsprojFile.Scan
                 foreach (PdoEntryStructMemberViewModel member in actPdoEntryStruct.StructMembers)
                 {
                     string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
-                    MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntryViewModel.VarA + tmpStructSeparator + member.Name, VarB = pdoEntryViewModel.VarB + tmpStructSeparator + member.NameUnmodified };
+                    MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntryViewModel.VarA + tmpStructSeparator + member.NameA, VarB = pdoEntryViewModel.VarB + tmpStructSeparator + member.NameB };
                     mapableObject.MapableItems.Add(mapableItem);
                 }
             }

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Input_97D1F313" Id="{19b37087-a670-4f0c-8f01-edbaa8fc841e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
+{attribute addProperty BoxType "EM7004-0000-0017"}
+{attribute addProperty Id "Input_0BOOL1Input_1BOOL1Input_2BOOL1Input_3BOOL1Input_4BOOL1Input_5BOOL1Input_6BOOL1Input_7BOOL1Input_8BOOL1Input_9BOOL1Input_10BOOL1Input_11BOOL1Input_12BOOL1Input_13BOOL1Input_14BOOL1Input_15BOOL1"}
+{attribute addProperty CRC "2547118867"}
+{attribute addProperty Size "16"}
+TYPE Input_97D1F313 :
+STRUCT
+	{attribute addProperty Name "Input_0"}
+	Input_0 : BOOL;
+	{attribute addProperty Name "Input_1"}
+	Input_1 : BOOL;
+	{attribute addProperty Name "Input_2"}
+	Input_2 : BOOL;
+	{attribute addProperty Name "Input_3"}
+	Input_3 : BOOL;
+	{attribute addProperty Name "Input_4"}
+	Input_4 : BOOL;
+	{attribute addProperty Name "Input_5"}
+	Input_5 : BOOL;
+	{attribute addProperty Name "Input_6"}
+	Input_6 : BOOL;
+	{attribute addProperty Name "Input_7"}
+	Input_7 : BOOL;
+	{attribute addProperty Name "Input_8"}
+	Input_8 : BOOL;
+	{attribute addProperty Name "Input_9"}
+	Input_9 : BOOL;
+	{attribute addProperty Name "Input_10"}
+	Input_10 : BOOL;
+	{attribute addProperty Name "Input_11"}
+	Input_11 : BOOL;
+	{attribute addProperty Name "Input_12"}
+	Input_12 : BOOL;
+	{attribute addProperty Name "Input_13"}
+	Input_13 : BOOL;
+	{attribute addProperty Name "Input_14"}
+	Input_14 : BOOL;
+	{attribute addProperty Name "Input_15"}
+	Input_15 : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

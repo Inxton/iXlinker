@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELM3504_9E251EA4" Id="{5ccfcb28-3efe-49d8-8d39-95f8f7d7fba8}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM3504-0000-0016'}
+{attribute addProperty BoxType "ELM3504-0000-0016"}
+{attribute addProperty Id "PAI_Status_Channel_1AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_1AT %I*PAI_Samples_1_Channel_EEA517254PAI_Timestamp_Channel_1AT %I*PAI_Timestamp_Channel_6DC4D2968PAI_Status_Channel_2AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_2AT %I*PAI_Samples_1_Channel_EEA517254PAI_Status_Channel_3AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_3AT %I*PAI_Samples_1_Channel_EEA517254PAI_Status_Channel_4AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_4AT %I*PAI_Samples_1_Channel_EEA517254WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
+{attribute addProperty CRC "2653232804"}
+{attribute addProperty Size "72"}
+TYPE ELM3504_9E251EA4 :
+STRUCT
+	{attribute addProperty Name "PAI_Status_Channel_1"}
+	PAI_Status_Channel_1 : PAI_Status_Channel_AE4AC104;
+	{attribute addProperty Name "PAI_Samples_1_Channel_1"}
+	PAI_Samples_1_Channel_1 : PAI_Samples_1_Channel_EEA51725;
+	{attribute addProperty Name "PAI_Timestamp_Channel_1"}
+	PAI_Timestamp_Channel_1 : PAI_Timestamp_Channel_6DC4D296;
+	{attribute addProperty Name "PAI_Status_Channel_2"}
+	PAI_Status_Channel_2 : PAI_Status_Channel_AE4AC104;
+	{attribute addProperty Name "PAI_Samples_1_Channel_2"}
+	PAI_Samples_1_Channel_2 : PAI_Samples_1_Channel_EEA51725;
+	{attribute addProperty Name "PAI_Status_Channel_3"}
+	PAI_Status_Channel_3 : PAI_Status_Channel_AE4AC104;
+	{attribute addProperty Name "PAI_Samples_1_Channel_3"}
+	PAI_Samples_1_Channel_3 : PAI_Samples_1_Channel_EEA51725;
+	{attribute addProperty Name "PAI_Status_Channel_4"}
+	PAI_Status_Channel_4 : PAI_Status_Channel_AE4AC104;
+	{attribute addProperty Name "PAI_Samples_1_Channel_4"}
+	PAI_Samples_1_Channel_4 : PAI_Samples_1_Channel_EEA51725;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BEF6B88E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

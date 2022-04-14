@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_0B2F8B70" Id="{bf6461e0-8c6f-44b1-942b-c793bab3da09}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1518-0002-0016'}
+{attribute addProperty BoxType "EPP1518-0002-0016"}
+{attribute addProperty Id "Set_counterBOOL1Inhibit_counterBOOL1"}
+{attribute addProperty CRC "187665264"}
+{attribute addProperty Size "2"}
+TYPE Control_0B2F8B70 :
+STRUCT
+	{attribute addProperty Name "Set_counter"}
+	Set_counter : BOOL;
+	{attribute addProperty Name "Inhibit_counter"}
+	Inhibit_counter : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

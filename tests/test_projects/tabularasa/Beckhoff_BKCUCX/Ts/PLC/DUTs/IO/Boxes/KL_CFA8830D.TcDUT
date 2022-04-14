@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL_CFA8830D" Id="{c8e09075-5641-4fcb-976e-87212a07ab19}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9900-0058'}
+{attribute addProperty BoxType "KL9900-0058"}
+{attribute addProperty Id "Channel_1AT %Q*Channel_16463F740"}
+{attribute addProperty CRC "3483927309"}
+{attribute addProperty Size "0"}
+TYPE KL_CFA8830D :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_16463F74;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

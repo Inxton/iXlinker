@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ctrl_F19EAB21" Id="{c33659f6-f0f9-4b96-ab89-d09a22503899}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1258-0000-0016'}
+{attribute addProperty BoxType "EL1258-0000-0016"}
+{attribute addProperty Id "Input_buffer_resetBOOL1Input_order_counterUSINT1"}
+{attribute addProperty CRC "4053707553"}
+{attribute addProperty Size "2"}
+TYPE Ctrl_F19EAB21 :
+STRUCT
+	{attribute addProperty Name "Input_buffer_reset"}
+	Input_buffer_reset : BOOL;
+	{attribute addProperty Name "Input_order_counter"}
+	Input_order_counter : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

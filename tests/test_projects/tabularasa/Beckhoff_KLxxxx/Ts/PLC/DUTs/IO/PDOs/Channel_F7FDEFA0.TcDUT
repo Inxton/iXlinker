@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_F7FDEFA0" Id="{0e24836a-3fbf-4aab-be9b-c0ed3c6f9ee9}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL6581-0002'}
+{attribute addProperty BoxType "KL6581-0002"}
+{attribute addProperty Id "StatusAT %I*USINT0Input_CNODEAT %I*USINT0Input_ORGAT %I*USINT0Input_DB0AT %I*USINT0Input_DB1AT %I*USINT0Input_DB2AT %I*USINT0Input_DB3AT %I*USINT0Input_ID0AT %I*USINT0Input_ID1AT %I*USINT0Input_ID2AT %I*USINT0Input_ID3AT %I*USINT0Input_STATUSAT %I*USINT0ControlAT %Q*USINT0Output_CNODEAT %Q*USINT0Output_ORGAT %Q*USINT0Output_DB0AT %Q*USINT0Output_DB1AT %Q*USINT0Output_DB2AT %Q*USINT0Output_DB3AT %Q*USINT0Output_ID0AT %Q*USINT0Output_ID1AT %Q*USINT0Output_ID2AT %Q*USINT0Output_ID3AT %Q*USINT0Output_STATUSAT %Q*USINT0"}
+{attribute addProperty CRC "4160614304"}
+{attribute addProperty Size "0"}
+TYPE Channel_F7FDEFA0 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : USINT;
+	{attribute addProperty Name "Input_CNODE"}
+	Input_CNODE AT %I* : USINT;
+	{attribute addProperty Name "Input_ORG"}
+	Input_ORG AT %I* : USINT;
+	{attribute addProperty Name "Input_DB0"}
+	Input_DB0 AT %I* : USINT;
+	{attribute addProperty Name "Input_DB1"}
+	Input_DB1 AT %I* : USINT;
+	{attribute addProperty Name "Input_DB2"}
+	Input_DB2 AT %I* : USINT;
+	{attribute addProperty Name "Input_DB3"}
+	Input_DB3 AT %I* : USINT;
+	{attribute addProperty Name "Input_ID0"}
+	Input_ID0 AT %I* : USINT;
+	{attribute addProperty Name "Input_ID1"}
+	Input_ID1 AT %I* : USINT;
+	{attribute addProperty Name "Input_ID2"}
+	Input_ID2 AT %I* : USINT;
+	{attribute addProperty Name "Input_ID3"}
+	Input_ID3 AT %I* : USINT;
+	{attribute addProperty Name "Input_STATUS"}
+	Input_STATUS AT %I* : USINT;
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : USINT;
+	{attribute addProperty Name "Output_CNODE"}
+	Output_CNODE AT %Q* : USINT;
+	{attribute addProperty Name "Output_ORG"}
+	Output_ORG AT %Q* : USINT;
+	{attribute addProperty Name "Output_DB0"}
+	Output_DB0 AT %Q* : USINT;
+	{attribute addProperty Name "Output_DB1"}
+	Output_DB1 AT %Q* : USINT;
+	{attribute addProperty Name "Output_DB2"}
+	Output_DB2 AT %Q* : USINT;
+	{attribute addProperty Name "Output_DB3"}
+	Output_DB3 AT %Q* : USINT;
+	{attribute addProperty Name "Output_ID0"}
+	Output_ID0 AT %Q* : USINT;
+	{attribute addProperty Name "Output_ID1"}
+	Output_ID1 AT %Q* : USINT;
+	{attribute addProperty Name "Output_ID2"}
+	Output_ID2 AT %Q* : USINT;
+	{attribute addProperty Name "Output_ID3"}
+	Output_ID3 AT %Q* : USINT;
+	{attribute addProperty Name "Output_STATUS"}
+	Output_STATUS AT %Q* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

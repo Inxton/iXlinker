@@ -1,4 +1,4 @@
-runas /TrustLevel:0x40000 "powershell.exe %CD%\Update.ps1"
+runas /TrustLevel:0x40000 "powershell.exe /WAIT %CD%\Update.ps1"
 
 
 

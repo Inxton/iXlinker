@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_DAEE1D52" Id="{2630753e-08f0-43e9-9773-ee39f73d2736}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
+{attribute addProperty BoxType "EJ2521-0224-0016"}
+{attribute addProperty Id "Frequency_selectBOOL1Disable_rampBOOL1Go_counterBOOL1"}
+{attribute addProperty CRC "3673038162"}
+{attribute addProperty Size "3"}
+TYPE Control_DAEE1D52 :
+STRUCT
+	{attribute addProperty Name "Frequency_select"}
+	Frequency_select : BOOL;
+	{attribute addProperty Name "Disable_ramp"}
+	Disable_ramp : BOOL;
+	{attribute addProperty Name "Go_counter"}
+	Go_counter : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

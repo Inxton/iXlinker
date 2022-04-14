@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_D1C9D1EA" Id="{7b3e60fe-c425-4db0-8a79-fe246fc57b11}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1957-0000-0017'}
+{attribute addProperty BoxType "EJ1957-0000-0017"}
+{attribute addProperty Id "FSoE_CommandUSINT1FSOUT_Module_Channel_1_OutputBOOL1FSOUT_Module_Channel_2_OutputBOOL1FSOUT_Module_Channel_3_OutputBOOL1FSOUT_Module_Channel_4_OutputBOOL1FSOUT_Module_ErrAckBOOL1FSIN_Module_1_ErrAckBOOL1FSIN_Module_2_ErrAckBOOL1FSIN_Module_3_ErrAckBOOL1FSIN_Module_4_ErrAckBOOL1FSoE_CRC_000UINT2FSoE_Connection_IDUINT2"}
+{attribute addProperty CRC "3519664618"}
+{attribute addProperty Size "14"}
+TYPE FSOE_D1C9D1EA :
+STRUCT
+	{attribute addProperty Name "FSoE_Command"}
+	FSoE_Command : USINT;
+	{attribute addProperty Name "FSOUT_Module_Channel_1_Output"}
+	FSOUT_Module_Channel_1_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_Channel_2_Output"}
+	FSOUT_Module_Channel_2_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_Channel_3_Output"}
+	FSOUT_Module_Channel_3_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_Channel_4_Output"}
+	FSOUT_Module_Channel_4_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_ErrAck"}
+	FSOUT_Module_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_1_ErrAck"}
+	FSIN_Module_1_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_ErrAck"}
+	FSIN_Module_2_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_3_ErrAck"}
+	FSIN_Module_3_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_4_ErrAck"}
+	FSIN_Module_4_ErrAck : BOOL;
+	{attribute addProperty Name "FSoE_CRC_000"}
+	FSoE_CRC_000 : UINT;
+	{attribute addProperty Name "FSoE_Connection_ID"}
+	FSoE_Connection_ID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

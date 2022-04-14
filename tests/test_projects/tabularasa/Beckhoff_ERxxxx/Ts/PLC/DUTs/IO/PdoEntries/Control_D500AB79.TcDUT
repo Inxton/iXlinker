@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_D500AB79" Id="{fb433649-356c-416a-8465-b2a584f1b782}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER5101-0002-0019'}
+{attribute addProperty BoxType "ER5101-0002-0019"}
+{attribute addProperty Id "Enable_latch_CBOOL1Set_counterBOOL1"}
+{attribute addProperty CRC "3573590905"}
+{attribute addProperty Size "2"}
+TYPE Control_D500AB79 :
+STRUCT
+	{attribute addProperty Name "Enable_latch_C"}
+	Enable_latch_C : BOOL;
+	{attribute addProperty Name "Set_counter"}
+	Set_counter : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3068_335F857B" Id="{43bd73d2-c2af-4af8-a2b8-b2100de20548}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3068-0000-0017'}
+{attribute addProperty BoxType "EL3068-0000-0017"}
+{attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_2AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_3AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_4AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_5AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_6AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_7AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_8AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "861898107"}
+{attribute addProperty Size "84"}
+TYPE EL3068_335F857B :
+STRUCT
+	{attribute addProperty Name "AI_Standard_Channel_1"}
+	AI_Standard_Channel_1 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "AI_Standard_Channel_2"}
+	AI_Standard_Channel_2 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "AI_Standard_Channel_3"}
+	AI_Standard_Channel_3 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "AI_Standard_Channel_4"}
+	AI_Standard_Channel_4 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "AI_Standard_Channel_5"}
+	AI_Standard_Channel_5 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "AI_Standard_Channel_6"}
+	AI_Standard_Channel_6 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "AI_Standard_Channel_7"}
+	AI_Standard_Channel_7 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "AI_Standard_Channel_8"}
+	AI_Standard_Channel_8 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

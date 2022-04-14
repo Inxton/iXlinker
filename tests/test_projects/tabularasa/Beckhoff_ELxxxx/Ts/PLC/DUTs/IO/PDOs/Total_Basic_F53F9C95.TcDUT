@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Total_Basic_F53F9C95" Id="{16c694c9-6c46-436d-87b9-44a78fc3b418}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3453-0000-0017'}
+{attribute addProperty BoxType "EL3453-0000-0017"}
+{attribute addProperty Id "FrequencyAT %I*REAL4Power_FactorAT %I*REAL4Calculated_Error_CurrentAT %I*REAL4Neutral_Line_CurrentAT %I*REAL4ROCOFAT %I*REAL4"}
+{attribute addProperty CRC "4114586773"}
+{attribute addProperty Size "20"}
+TYPE Total_Basic_F53F9C95 :
+STRUCT
+	{attribute addProperty Name "Frequency"}
+	Frequency AT %I* : REAL;
+	{attribute addProperty Name "Power_Factor"}
+	Power_Factor AT %I* : REAL;
+	{attribute addProperty Name "Calculated_Error_Current"}
+	Calculated_Error_Current AT %I* : REAL;
+	{attribute addProperty Name "Neutral_Line_Current"}
+	Neutral_Line_Current AT %I* : REAL;
+	{attribute addProperty Name "ROCOF"}
+	ROCOF AT %I* : REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

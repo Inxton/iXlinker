@@ -45,6 +45,14 @@ namespace iXlinkerUnitTests
             generatedDir.Create();
         }
 
+        internal static void OneTimeTearDown()
+        {
+            expectedDir.Delete(true);
+            expectedDir.Create();
+            generatedDir.Delete(true);
+            generatedDir.Create();
+        }
+        
         private static void CopyFilesRecursively(string sourcePath, string targetPath)
         {
             //Now Create all of the directories
@@ -272,7 +280,6 @@ namespace iXlinkerUnitTests
             tcProj.GenerateStructures(vs);
             tcProj.GenerateMappingsToTsProj(vs);
         }
-
     }
 }
 

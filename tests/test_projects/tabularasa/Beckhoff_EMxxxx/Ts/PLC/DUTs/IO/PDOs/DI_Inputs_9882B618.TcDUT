@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DI_Inputs_9882B618" Id="{28cc5687-3da7-4c12-88d6-6be8d3b2f7cc}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
+{attribute addProperty BoxType "EM7004-0000-0017"}
+{attribute addProperty Id "InputAT %I*Input_97D1F31316"}
+{attribute addProperty CRC "2558703128"}
+{attribute addProperty Size "16"}
+TYPE DI_Inputs_9882B618 :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : Input_97D1F313;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

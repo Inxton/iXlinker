@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch2_Status_75824485" Id="{0699f19c-fb20-4814-b994-6ac6f0e65eff}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3632-0000-0016'}
+{attribute addProperty BoxType "EL3632-0000-0016"}
+{attribute addProperty Id "STATUSAT %I*STATUS_B07533568"}
+{attribute addProperty CRC "1971471493"}
+{attribute addProperty Size "8"}
+TYPE Ch2_Status_75824485 :
+STRUCT
+	{attribute addProperty Name "STATUS"}
+	STATUS AT %I* : STATUS_B0753356;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

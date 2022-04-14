@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_7D202F58" Id="{bcae94b1-bb2e-4b73-8095-a8649bebdfe9}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9900-0060'}
+{attribute addProperty BoxType "KL9900-0060"}
+{attribute addProperty Id "Key_1AT %I*BOOL0Key_2AT %I*BOOL0Key_3AT %I*BOOL0Key_4AT %I*BOOL0Key_5AT %I*BOOL0Key_6AT %I*BOOL0Key_7AT %I*BOOL0Key_8AT %I*BOOL0Key_9AT %I*BOOL0Key_10AT %I*BOOL0Key_11AT %I*BOOL0Key_12AT %I*BOOL0Key_13AT %I*BOOL0Key_14AT %I*BOOL0Key_15AT %I*BOOL0Key_16AT %I*BOOL0Key_17AT %I*BOOL0Key_18AT %I*BOOL0Key_19AT %I*BOOL0Key_20AT %I*BOOL0Key_21AT %I*BOOL0Key_22AT %I*BOOL0Key_23AT %I*BOOL0Key_24AT %I*BOOL0Key_25AT %I*BOOL0Key_26AT %I*BOOL0Key_27AT %I*BOOL0Key_28AT %I*BOOL0LED_1AT %Q*BOOL0LED_2AT %Q*BOOL0LED_3AT %Q*BOOL0LED_4AT %Q*BOOL0LED_5AT %Q*BOOL0LED_6AT %Q*BOOL0LED_7AT %Q*BOOL0LED_8AT %Q*BOOL0LED_9AT %Q*BOOL0LED_10AT %Q*BOOL0LED_11AT %Q*BOOL0LED_12AT %Q*BOOL0LED_13AT %Q*BOOL0LED_14AT %Q*BOOL0LED_15AT %Q*BOOL0LED_16AT %Q*BOOL0LED_17AT %Q*BOOL0LED_18AT %Q*BOOL0LED_19AT %Q*BOOL0LED_20AT %Q*BOOL0LED_21AT %Q*BOOL0LED_22AT %Q*BOOL0LED_23AT %Q*BOOL0LED_24AT %Q*BOOL0LED_25AT %Q*BOOL0LED_26AT %Q*BOOL0LED_27AT %Q*BOOL0LED_28AT %Q*BOOL0"}
+{attribute addProperty CRC "2099261272"}
+{attribute addProperty Size "0"}
+TYPE Channel_7D202F58 :
+STRUCT
+	{attribute addProperty Name "Key_1"}
+	Key_1 AT %I* : BOOL;
+	{attribute addProperty Name "Key_2"}
+	Key_2 AT %I* : BOOL;
+	{attribute addProperty Name "Key_3"}
+	Key_3 AT %I* : BOOL;
+	{attribute addProperty Name "Key_4"}
+	Key_4 AT %I* : BOOL;
+	{attribute addProperty Name "Key_5"}
+	Key_5 AT %I* : BOOL;
+	{attribute addProperty Name "Key_6"}
+	Key_6 AT %I* : BOOL;
+	{attribute addProperty Name "Key_7"}
+	Key_7 AT %I* : BOOL;
+	{attribute addProperty Name "Key_8"}
+	Key_8 AT %I* : BOOL;
+	{attribute addProperty Name "Key_9"}
+	Key_9 AT %I* : BOOL;
+	{attribute addProperty Name "Key_10"}
+	Key_10 AT %I* : BOOL;
+	{attribute addProperty Name "Key_11"}
+	Key_11 AT %I* : BOOL;
+	{attribute addProperty Name "Key_12"}
+	Key_12 AT %I* : BOOL;
+	{attribute addProperty Name "Key_13"}
+	Key_13 AT %I* : BOOL;
+	{attribute addProperty Name "Key_14"}
+	Key_14 AT %I* : BOOL;
+	{attribute addProperty Name "Key_15"}
+	Key_15 AT %I* : BOOL;
+	{attribute addProperty Name "Key_16"}
+	Key_16 AT %I* : BOOL;
+	{attribute addProperty Name "Key_17"}
+	Key_17 AT %I* : BOOL;
+	{attribute addProperty Name "Key_18"}
+	Key_18 AT %I* : BOOL;
+	{attribute addProperty Name "Key_19"}
+	Key_19 AT %I* : BOOL;
+	{attribute addProperty Name "Key_20"}
+	Key_20 AT %I* : BOOL;
+	{attribute addProperty Name "Key_21"}
+	Key_21 AT %I* : BOOL;
+	{attribute addProperty Name "Key_22"}
+	Key_22 AT %I* : BOOL;
+	{attribute addProperty Name "Key_23"}
+	Key_23 AT %I* : BOOL;
+	{attribute addProperty Name "Key_24"}
+	Key_24 AT %I* : BOOL;
+	{attribute addProperty Name "Key_25"}
+	Key_25 AT %I* : BOOL;
+	{attribute addProperty Name "Key_26"}
+	Key_26 AT %I* : BOOL;
+	{attribute addProperty Name "Key_27"}
+	Key_27 AT %I* : BOOL;
+	{attribute addProperty Name "Key_28"}
+	Key_28 AT %I* : BOOL;
+	{attribute addProperty Name "LED_1"}
+	LED_1 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_2"}
+	LED_2 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_3"}
+	LED_3 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_4"}
+	LED_4 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_5"}
+	LED_5 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_6"}
+	LED_6 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_7"}
+	LED_7 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_8"}
+	LED_8 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_9"}
+	LED_9 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_10"}
+	LED_10 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_11"}
+	LED_11 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_12"}
+	LED_12 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_13"}
+	LED_13 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_14"}
+	LED_14 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_15"}
+	LED_15 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_16"}
+	LED_16 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_17"}
+	LED_17 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_18"}
+	LED_18 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_19"}
+	LED_19 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_20"}
+	LED_20 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_21"}
+	LED_21 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_22"}
+	LED_22 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_23"}
+	LED_23 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_24"}
+	LED_24 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_25"}
+	LED_25 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_26"}
+	LED_26 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_27"}
+	LED_27 AT %Q* : BOOL;
+	{attribute addProperty Name "LED_28"}
+	LED_28 AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

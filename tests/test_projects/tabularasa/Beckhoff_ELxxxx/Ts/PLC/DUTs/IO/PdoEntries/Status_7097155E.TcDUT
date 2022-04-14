@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_7097155E" Id="{c0ead6bd-769f-4d63-ab43-46d55cd04ac3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0124-0018'}
+{attribute addProperty BoxType "EL2521-0124-0018"}
+{attribute addProperty Id "PLS_EnabledBOOL1Status_of_outputBOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "1888949598"}
+{attribute addProperty Size "4"}
+TYPE Status_7097155E :
+STRUCT
+	{attribute addProperty Name "PLS_Enabled"}
+	PLS_Enabled : BOOL;
+	{attribute addProperty Name "Status_of_output"}
+	Status_of_output : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

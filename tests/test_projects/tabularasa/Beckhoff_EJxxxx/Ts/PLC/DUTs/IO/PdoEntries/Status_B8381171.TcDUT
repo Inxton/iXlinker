@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_B8381171" Id="{dd3c9523-a1d7-47c2-90ce-4a64529df67e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
+{attribute addProperty BoxType "EJ2521-0224-0016"}
+{attribute addProperty Id "Sel_Ack_End_counterBOOL1Ramp_activeBOOL1ErrorBOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "3090682225"}
+{attribute addProperty Size "5"}
+TYPE Status_B8381171 :
+STRUCT
+	{attribute addProperty Name "Sel_Ack_End_counter"}
+	Sel_Ack_End_counter : BOOL;
+	{attribute addProperty Name "Ramp_active"}
+	Ramp_active : BOOL;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_BF3661CD" Id="{a3dccc68-242f-43fd-afd5-5e7ce27c013e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2641-0001'}
+{attribute addProperty BoxType "KL2641-0001"}
+{attribute addProperty Id "Manual_StateAT %I*BOOL0ReservedAT %I*BOOL0OutputAT %Q*BOOL0"}
+{attribute addProperty CRC "3208012237"}
+{attribute addProperty Size "0"}
+TYPE Channel_BF3661CD :
+STRUCT
+	{attribute addProperty Name "Manual_State"}
+	Manual_State AT %I* : BOOL;
+	{attribute addProperty Name "Reserved"}
+	Reserved AT %I* : BOOL;
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

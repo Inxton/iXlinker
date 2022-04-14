@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_70C997F3" Id="{8459a07a-ac93-4fd1-82a0-307429ce7a07}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1859'}
+{attribute addProperty BoxType "KL1859"}
+{attribute addProperty Id "InputAT %I*BOOL0OutputAT %Q*BOOL0"}
+{attribute addProperty CRC "1892259827"}
+{attribute addProperty Size "0"}
+TYPE Channel_70C997F3 :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : BOOL;
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

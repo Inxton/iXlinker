@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIG_Inputs_495F5DA4" Id="{53d5999d-9744-4a7c-9ba5-ec8c00644ac7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP8309-0022-0021'}
+{attribute addProperty BoxType "EP8309-0022-0021"}
+{attribute addProperty Id "Digital_Input_X4_Pin4AT %I*BOOL1Digital_Input_X4_Pin2AT %I*BOOL1Digital_Input_X5_Pin4AT %I*BOOL1Digital_Input_X5_Pin2AT %I*BOOL1Digital_Input_X6_Pin4AT %I*BOOL1Digital_Input_X6_Pin2AT %I*BOOL1Digital_Input_X7_Pin4AT %I*BOOL1Digital_Input_X7_Pin2AT %I*BOOL1"}
+{attribute addProperty CRC "1230986660"}
+{attribute addProperty Size "8"}
+TYPE DIG_Inputs_495F5DA4 :
+STRUCT
+	{attribute addProperty Name "Digital_Input_X4_Pin4"}
+	Digital_Input_X4_Pin4 AT %I* : BOOL;
+	{attribute addProperty Name "Digital_Input_X4_Pin2"}
+	Digital_Input_X4_Pin2 AT %I* : BOOL;
+	{attribute addProperty Name "Digital_Input_X5_Pin4"}
+	Digital_Input_X5_Pin4 AT %I* : BOOL;
+	{attribute addProperty Name "Digital_Input_X5_Pin2"}
+	Digital_Input_X5_Pin2 AT %I* : BOOL;
+	{attribute addProperty Name "Digital_Input_X6_Pin4"}
+	Digital_Input_X6_Pin4 AT %I* : BOOL;
+	{attribute addProperty Name "Digital_Input_X6_Pin2"}
+	Digital_Input_X6_Pin2 AT %I* : BOOL;
+	{attribute addProperty Name "Digital_Input_X7_Pin4"}
+	Digital_Input_X7_Pin4 AT %I* : BOOL;
+	{attribute addProperty Name "Digital_Input_X7_Pin2"}
+	Digital_Input_X7_Pin2 AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

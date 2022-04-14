@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PAI_Samples_1_Channel_EEA51725" Id="{63b1bc3a-6bdc-49b5-b91a-76f8cc0236ae}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM3002-0000-0016'}
+{attribute addProperty BoxType "ELM3002-0000-0016"}
+{attribute addProperty Id "SamplesAT %I*Samples_F24E104A4"}
+{attribute addProperty CRC "4003796773"}
+{attribute addProperty Size "4"}
+TYPE PAI_Samples_1_Channel_EEA51725 :
+STRUCT
+	{attribute addProperty Name "Samples"}
+	Samples AT %I* : Samples_F24E104A;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

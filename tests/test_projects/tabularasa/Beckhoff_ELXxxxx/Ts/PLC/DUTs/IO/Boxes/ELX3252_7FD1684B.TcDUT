@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELX3252_7FD1684B" Id="{fa9fc942-4ad1-4f30-955f-9a460ceb3e82}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3252-0000-0016'}
+{attribute addProperty BoxType "ELX3252-0000-0016"}
+{attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_3D09D60D7AI_Standard_Channel_2AT %I*AI_Standard_Channel_3D09D60D7WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "2144430155"}
+{attribute addProperty Size "26"}
+TYPE ELX3252_7FD1684B :
+STRUCT
+	{attribute addProperty Name "AI_Standard_Channel_1"}
+	AI_Standard_Channel_1 : AI_Standard_Channel_3D09D60D;
+	{attribute addProperty Name "AI_Standard_Channel_2"}
+	AI_Standard_Channel_2 : AI_Standard_Channel_3D09D60D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

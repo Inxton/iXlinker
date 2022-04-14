@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9260_B3C0CA83" Id="{d9876b3e-cbd6-4ff6-9a5d-1515d97618f4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9260-0000-0016'}
+{attribute addProperty BoxType "EL9260-0000-0016"}
+{attribute addProperty Id "PowerOKAT %I*PowerOK_CEB2FD121FuseErrorAT %I*FuseError_1EC650DA1WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "3015756419"}
+{attribute addProperty Size "6"}
+TYPE EL9260_B3C0CA83 :
+STRUCT
+	{attribute addProperty Name "PowerOK"}
+	PowerOK : PowerOK_CEB2FD12;
+	{attribute addProperty Name "FuseError"}
+	FuseError : FuseError_1EC650DA;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

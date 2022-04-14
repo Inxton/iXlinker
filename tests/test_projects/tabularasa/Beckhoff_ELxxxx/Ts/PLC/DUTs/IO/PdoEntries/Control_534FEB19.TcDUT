@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_534FEB19" Id="{1f66ee3c-ff61-4d40-af8b-84707038442b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9221-4030-0018'}
+{attribute addProperty BoxType "EL9221-4030-0018"}
+{attribute addProperty Id "ResetBOOL1SwitchBOOL1"}
+{attribute addProperty CRC "1397746457"}
+{attribute addProperty Size "2"}
+TYPE Control_534FEB19 :
+STRUCT
+	{attribute addProperty Name "Reset"}
+	Reset : BOOL;
+	{attribute addProperty Name "Switch"}
+	Switch : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL4712_4B3D3BDA" Id="{ec129824-b09a-4a6b-8af1-9a3fde45445c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL4712--0000'}
+{attribute addProperty BoxType "EL4712--0000"}
+{attribute addProperty Id "Ch1_CycleCountAT %Q*Ch1_CycleCount_08F5A7EF2Ch1_Sample_0AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_1AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_2AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_3AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_4AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_5AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_6AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_7AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_8AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_9AT %Q*Ch1_Sample_C81C74F62Ch2_CycleCountAT %Q*Ch2_CycleCount_0221DD9F2Ch2_Sample_0AT %Q*Ch2_Sample_F06927112Ch2_Sample_1AT %Q*Ch2_Sample_F06927112Ch2_Sample_2AT %Q*Ch2_Sample_F06927112Ch2_Sample_3AT %Q*Ch2_Sample_F06927112Ch2_Sample_4AT %Q*Ch2_Sample_F06927112Ch2_Sample_5AT %Q*Ch2_Sample_F06927112Ch2_Sample_6AT %Q*Ch2_Sample_F06927112Ch2_Sample_7AT %Q*Ch2_Sample_F06927112Ch2_Sample_8AT %Q*Ch2_Sample_F06927112Ch2_Sample_9AT %Q*Ch2_Sample_F06927112WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_A7436BC610"}
+{attribute addProperty CRC "1262304218"}
+{attribute addProperty Size "55"}
+TYPE EL4712_4B3D3BDA :
+STRUCT
+	{attribute addProperty Name "Ch1_CycleCount"}
+	Ch1_CycleCount : Ch1_CycleCount_08F5A7EF;
+	{attribute addProperty Name "Ch1_Sample_0"}
+	Ch1_Sample_0 : Ch1_Sample_C81C74F6;
+	{attribute addProperty Name "Ch1_Sample_1"}
+	Ch1_Sample_1 : Ch1_Sample_C81C74F6;
+	{attribute addProperty Name "Ch1_Sample_2"}
+	Ch1_Sample_2 : Ch1_Sample_C81C74F6;
+	{attribute addProperty Name "Ch1_Sample_3"}
+	Ch1_Sample_3 : Ch1_Sample_C81C74F6;
+	{attribute addProperty Name "Ch1_Sample_4"}
+	Ch1_Sample_4 : Ch1_Sample_C81C74F6;
+	{attribute addProperty Name "Ch1_Sample_5"}
+	Ch1_Sample_5 : Ch1_Sample_C81C74F6;
+	{attribute addProperty Name "Ch1_Sample_6"}
+	Ch1_Sample_6 : Ch1_Sample_C81C74F6;
+	{attribute addProperty Name "Ch1_Sample_7"}
+	Ch1_Sample_7 : Ch1_Sample_C81C74F6;
+	{attribute addProperty Name "Ch1_Sample_8"}
+	Ch1_Sample_8 : Ch1_Sample_C81C74F6;
+	{attribute addProperty Name "Ch1_Sample_9"}
+	Ch1_Sample_9 : Ch1_Sample_C81C74F6;
+	{attribute addProperty Name "Ch2_CycleCount"}
+	Ch2_CycleCount : Ch2_CycleCount_0221DD9F;
+	{attribute addProperty Name "Ch2_Sample_0"}
+	Ch2_Sample_0 : Ch2_Sample_F0692711;
+	{attribute addProperty Name "Ch2_Sample_1"}
+	Ch2_Sample_1 : Ch2_Sample_F0692711;
+	{attribute addProperty Name "Ch2_Sample_2"}
+	Ch2_Sample_2 : Ch2_Sample_F0692711;
+	{attribute addProperty Name "Ch2_Sample_3"}
+	Ch2_Sample_3 : Ch2_Sample_F0692711;
+	{attribute addProperty Name "Ch2_Sample_4"}
+	Ch2_Sample_4 : Ch2_Sample_F0692711;
+	{attribute addProperty Name "Ch2_Sample_5"}
+	Ch2_Sample_5 : Ch2_Sample_F0692711;
+	{attribute addProperty Name "Ch2_Sample_6"}
+	Ch2_Sample_6 : Ch2_Sample_F0692711;
+	{attribute addProperty Name "Ch2_Sample_7"}
+	Ch2_Sample_7 : Ch2_Sample_F0692711;
+	{attribute addProperty Name "Ch2_Sample_8"}
+	Ch2_Sample_8 : Ch2_Sample_F0692711;
+	{attribute addProperty Name "Ch2_Sample_9"}
+	Ch2_Sample_9 : Ch2_Sample_F0692711;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_0B2B16F9;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_A7436BC6;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

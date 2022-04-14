@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_9E293686" Id="{7da5cf94-0597-4592-b573-a11f9560175c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL6904'}
+{attribute addProperty BoxType "KL6904"}
+{attribute addProperty Id "StatusAT %I*BYTE0Register_InAT %I*UINT0Standard_QX_1AT %I*BYTE0Standard_QX_2AT %I*BYTE0Standard_QX_3AT %I*BYTE0Safety_QB_1AT %I*ARRAY[0..5] OF BYTE0Safety_QB_2AT %I*ARRAY[0..5] OF BYTE0Safety_QB_3AT %I*ARRAY[0..5] OF BYTE0Safety_QB_4AT %I*ARRAY[0..5] OF BYTE0Safety_QB_5AT %I*ARRAY[0..5] OF BYTE0Safety_QB_6AT %I*ARRAY[0..5] OF BYTE0Safety_QB_7AT %I*ARRAY[0..5] OF BYTE0ControlAT %Q*BYTE0Register_OutAT %Q*UINT0Standard_IX_1AT %Q*BYTE0Standard_IX_2AT %Q*BYTE0Standard_IX_3AT %Q*BYTE0Safety_IB_1AT %Q*ARRAY[0..5] OF BYTE0Safety_IB_2AT %Q*ARRAY[0..5] OF BYTE0Safety_IB_3AT %Q*ARRAY[0..5] OF BYTE0Safety_IB_4AT %Q*ARRAY[0..5] OF BYTE0Safety_IB_5AT %Q*ARRAY[0..5] OF BYTE0Safety_IB_6AT %Q*ARRAY[0..5] OF BYTE0Safety_IB_7AT %Q*ARRAY[0..5] OF BYTE0"}
+{attribute addProperty CRC "2653501062"}
+{attribute addProperty Size "0"}
+TYPE Channel_9E293686 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : BYTE;
+	{attribute addProperty Name "Register_In"}
+	Register_In AT %I* : UINT;
+	{attribute addProperty Name "Standard_QX_1"}
+	Standard_QX_1 AT %I* : BYTE;
+	{attribute addProperty Name "Standard_QX_2"}
+	Standard_QX_2 AT %I* : BYTE;
+	{attribute addProperty Name "Standard_QX_3"}
+	Standard_QX_3 AT %I* : BYTE;
+	{attribute addProperty Name "Safety_QB_1"}
+	Safety_QB_1 AT %I* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_QB_2"}
+	Safety_QB_2 AT %I* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_QB_3"}
+	Safety_QB_3 AT %I* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_QB_4"}
+	Safety_QB_4 AT %I* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_QB_5"}
+	Safety_QB_5 AT %I* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_QB_6"}
+	Safety_QB_6 AT %I* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_QB_7"}
+	Safety_QB_7 AT %I* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : BYTE;
+	{attribute addProperty Name "Register_Out"}
+	Register_Out AT %Q* : UINT;
+	{attribute addProperty Name "Standard_IX_1"}
+	Standard_IX_1 AT %Q* : BYTE;
+	{attribute addProperty Name "Standard_IX_2"}
+	Standard_IX_2 AT %Q* : BYTE;
+	{attribute addProperty Name "Standard_IX_3"}
+	Standard_IX_3 AT %Q* : BYTE;
+	{attribute addProperty Name "Safety_IB_1"}
+	Safety_IB_1 AT %Q* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_IB_2"}
+	Safety_IB_2 AT %Q* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_IB_3"}
+	Safety_IB_3 AT %Q* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_IB_4"}
+	Safety_IB_4 AT %Q* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_IB_5"}
+	Safety_IB_5 AT %Q* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_IB_6"}
+	Safety_IB_6 AT %Q* : ARRAY[0..5] OF BYTE;
+	{attribute addProperty Name "Safety_IB_7"}
+	Safety_IB_7 AT %Q* : ARRAY[0..5] OF BYTE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Outputs_FB9F3520" Id="{eab59ade-2310-4cac-8ed3-f740fc0fd642}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2918-0000-0017'}
+{attribute addProperty BoxType "EJ2918-0000-0017"}
+{attribute addProperty Id "Module_1_Channel_1_Standard_OutputAT %Q*BOOL1Module_1_Channel_2_Standard_OutputAT %Q*BOOL1Module_1_Channel_3_Standard_OutputAT %Q*BOOL1Module_1_Channel_4_Standard_OutputAT %Q*BOOL1Module_2_Channel_1_Standard_OutputAT %Q*BOOL1Module_2_Channel_2_Standard_OutputAT %Q*BOOL1Module_2_Channel_3_Standard_OutputAT %Q*BOOL1Module_2_Channel_4_Standard_OutputAT %Q*BOOL1"}
+{attribute addProperty CRC "4221515040"}
+{attribute addProperty Size "8"}
+TYPE Outputs_FB9F3520 :
+STRUCT
+	{attribute addProperty Name "Module_1_Channel_1_Standard_Output"}
+	Module_1_Channel_1_Standard_Output AT %Q* : BOOL;
+	{attribute addProperty Name "Module_1_Channel_2_Standard_Output"}
+	Module_1_Channel_2_Standard_Output AT %Q* : BOOL;
+	{attribute addProperty Name "Module_1_Channel_3_Standard_Output"}
+	Module_1_Channel_3_Standard_Output AT %Q* : BOOL;
+	{attribute addProperty Name "Module_1_Channel_4_Standard_Output"}
+	Module_1_Channel_4_Standard_Output AT %Q* : BOOL;
+	{attribute addProperty Name "Module_2_Channel_1_Standard_Output"}
+	Module_2_Channel_1_Standard_Output AT %Q* : BOOL;
+	{attribute addProperty Name "Module_2_Channel_2_Standard_Output"}
+	Module_2_Channel_2_Standard_Output AT %Q* : BOOL;
+	{attribute addProperty Name "Module_2_Channel_3_Standard_Output"}
+	Module_2_Channel_3_Standard_Output AT %Q* : BOOL;
+	{attribute addProperty Name "Module_2_Channel_4_Standard_Output"}
+	Module_2_Channel_4_Standard_Output AT %Q* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

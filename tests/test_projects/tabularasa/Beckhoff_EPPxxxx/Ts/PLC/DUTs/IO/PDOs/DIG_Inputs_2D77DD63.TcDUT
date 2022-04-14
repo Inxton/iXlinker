@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIG_Inputs_2D77DD63" Id="{10532965-1d83-4c8f-9ade-03f7c75d2783}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP2316-0003-0018'}
+{attribute addProperty BoxType "EPP2316-0003-0018"}
+{attribute addProperty Id "InputAT %I*ARRAY[0..7] OF BOOL8Sync_errorAT %I*BOOL1"}
+{attribute addProperty CRC "1191329926"}
+{attribute addProperty Size "9"}
+TYPE DIG_Inputs_2D77DD63 :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : ARRAY[0..7] OF BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

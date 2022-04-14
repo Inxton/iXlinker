@@ -106,7 +106,7 @@ namespace TsprojFile.Scan
                                 {
                                     PdoEntryStructMemberViewModel member = new PdoEntryStructMemberViewModel();
                                     member.Attributes = pdoEntryAttributes;
-                                    member.Name = pdoEntryName + "_" + baseType + "_" + i.ToString();
+                                    member.NameA = pdoEntryName + "_" + baseType + "_" + i.ToString();
                                     member.BoxOrderCode = pdoEntryUnstructured.BoxOrderCode;
                                     member.Type_Value = baseType;
                                     member.TypeNamespace = pdoEntryUnstructured.TypeNamespace;
@@ -129,7 +129,7 @@ namespace TsprojFile.Scan
                                     actPdoEntryStruct.StructMembers.Add(member);
                                     if (!PdoEntryIsHidden(pdoEntryAttributes))
                                     {
-                                        actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                                        actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
                                     }
                                     actPdoEntryStruct.Size = actPdoEntryStruct.Size + member.Size;
                                 }
@@ -138,7 +138,7 @@ namespace TsprojFile.Scan
                             {
                                 PdoEntryStructMemberViewModel member = new PdoEntryStructMemberViewModel();
                                 member.Attributes = pdoEntryAttributes;
-                                member.Name = ValidatePlcItem.Name(pdoEntryName);
+                                member.NameA = ValidatePlcItem.Name(pdoEntryName);
                                 member.BoxOrderCode = pdoEntryUnstructured.BoxOrderCode;
                                 member.Type_Value = baseType;
                                 member.TypeNamespace = pdoEntryUnstructured.TypeNamespace;
@@ -165,7 +165,7 @@ namespace TsprojFile.Scan
                                 actPdoEntryStruct.StructMembers.Add(member);
                                 if (!PdoEntryIsHidden(pdoEntryAttributes))
                                 {
-                                    actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                                    actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
                                 }
                                 actPdoEntryStruct.Size = actPdoEntryStruct.Size + member.Size;
                             }
@@ -174,7 +174,7 @@ namespace TsprojFile.Scan
                         {
                             PdoEntryStructMemberViewModel member = new PdoEntryStructMemberViewModel();
                             member.Attributes = pdoEntryAttributes;
-                            member.Name = pdoEntryName;
+                            member.NameA = pdoEntryName;
                             member.BoxOrderCode = pdoEntryUnstructured.BoxOrderCode;
                             member.Type_Value = pdoEntryUnstructured.Type_Value;
                             member.TypeNamespace= pdoEntryUnstructured.TypeNamespace;
@@ -201,7 +201,7 @@ namespace TsprojFile.Scan
                             actPdoEntryStruct.StructMembers.Add(member);
                             if (!PdoEntryIsHidden(pdoEntryAttributes))
                             {
-                                actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                                actPdoEntryStruct.Id = actPdoEntryStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
                             }
                             actPdoEntryStruct.Size = actPdoEntryStruct.Size + member.Size;
                         }

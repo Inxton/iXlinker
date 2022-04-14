@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AIBridge_Inputs_555AA1E8" Id="{cfb824ad-2e63-4e71-b69f-f593ffde11ba}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3351-2022-0016'}
+{attribute addProperty BoxType "EP3351-2022-0016"}
+{attribute addProperty Id "UnderrangeAT %I*BOOL1OverrangeAT %I*BOOL1ErrorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1ValueAT %I*DINT4"}
+{attribute addProperty CRC "1432003048"}
+{attribute addProperty Size "9"}
+TYPE AIBridge_Inputs_555AA1E8 :
+STRUCT
+	{attribute addProperty Name "Underrange"}
+	Underrange AT %I* : BOOL;
+	{attribute addProperty Name "Overrange"}
+	Overrange AT %I* : BOOL;
+	{attribute addProperty Name "Error"}
+	Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Device_Safety_C21945A1" Id="{58e16a09-35b7-47fd-bdcc-0490b2f34ecf}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AMP8000-0030-0103-0103'}
+{attribute addProperty BoxType "AMP8000-0030-0103-0103"}
+{attribute addProperty Id "FSoE_Slave_Connection_1_Slave_MessageFSoE_Slave_Connection_1_Slave_Message_330A35E421Standard_InputdataStandard_Inputdata_FDD1436A8FSLOGIC_InputsFSLOGIC_Inputs_CD3F9A932FSoE_Slave_Connection_1_Master_MessageFSoE_Slave_Connection_1_Master_Message_7109E4F021Standard_OutputdataStandard_Outputdata_59C030BE8FSLOGIC_OutputsEMPTY_STRUCTURE0"}
+{attribute addProperty CRC "3256436129"}
+{attribute addProperty Size "60"}
+TYPE Device_Safety_C21945A1 :
+STRUCT
+	{attribute addProperty Name "FSoE_Slave_Connection_1_Slave_Message"}
+	FSoE_Slave_Connection_1_Slave_Message  : FSoE_Slave_Connection_1_Slave_Message_330A35E4;
+	{attribute addProperty Name "Standard_Inputdata"}
+	Standard_Inputdata  : Standard_Inputdata_FDD1436A;
+	{attribute addProperty Name "FSLOGIC_Inputs"}
+	FSLOGIC_Inputs  : FSLOGIC_Inputs_CD3F9A93;
+	{attribute addProperty Name "FSoE_Slave_Connection_1_Master_Message"}
+	FSoE_Slave_Connection_1_Master_Message  : FSoE_Slave_Connection_1_Master_Message_7109E4F0;
+	{attribute addProperty Name "Standard_Outputdata"}
+	Standard_Outputdata  : Standard_Outputdata_59C030BE;
+	{attribute addProperty Name "FSLOGIC_Outputs"}
+	FSLOGIC_Outputs  : EMPTY_STRUCTURE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

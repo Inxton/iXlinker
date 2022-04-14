@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSLOGIC_Inputs_CD3F9A93" Id="{1a9f5aa5-f512-4a31-aa7b-bcea679055de}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
+{attribute addProperty BoxType "AX8108-0100-0101-0101"}
+{attribute addProperty Id "FSOEAT %I*FSOE_13BCEA3F2"}
+{attribute addProperty CRC "3443497619"}
+{attribute addProperty Size "2"}
+TYPE FSLOGIC_Inputs_CD3F9A93 :
+STRUCT
+	{attribute addProperty Name "FSOE"}
+	FSOE AT %I* : FSOE_13BCEA3F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

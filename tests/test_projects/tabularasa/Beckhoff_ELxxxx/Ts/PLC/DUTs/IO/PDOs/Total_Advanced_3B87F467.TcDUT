@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Total_Advanced_3B87F467" Id="{3b6cc393-aa58-4d83-b68e-aa2c7fa00ded}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0016'}
+{attribute addProperty BoxType "EL3423-0000-0016"}
+{attribute addProperty Id "Unbalance_Guard_WarningAT %I*BOOL1Unbalance_Guard_ErrorAT %I*BOOL1"}
+{attribute addProperty CRC "998765671"}
+{attribute addProperty Size "2"}
+TYPE Total_Advanced_3B87F467 :
+STRUCT
+	{attribute addProperty Name "Unbalance_Guard_Warning"}
+	Unbalance_Guard_Warning AT %I* : BOOL;
+	{attribute addProperty Name "Unbalance_Guard_Error"}
+	Unbalance_Guard_Error AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

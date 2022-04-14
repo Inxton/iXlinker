@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_F189B737" Id="{655a70ec-5356-489b-8a39-3a80daf52fba}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7342-0002-0016'}
+{attribute addProperty BoxType "EP7342-0002-0016"}
+{attribute addProperty Id "Enable_latch_extern_on_positive_edgeBOOL1Set_counterBOOL1Enable_latch_extern_on_negative_edgeBOOL1"}
+{attribute addProperty CRC "4052334391"}
+{attribute addProperty Size "3"}
+TYPE Control_F189B737 :
+STRUCT
+	{attribute addProperty Name "Enable_latch_extern_on_positive_edge"}
+	Enable_latch_extern_on_positive_edge : BOOL;
+	{attribute addProperty Name "Set_counter"}
+	Set_counter : BOOL;
+	{attribute addProperty Name "Enable_latch_extern_on_negative_edge"}
+	Enable_latch_extern_on_negative_edge : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

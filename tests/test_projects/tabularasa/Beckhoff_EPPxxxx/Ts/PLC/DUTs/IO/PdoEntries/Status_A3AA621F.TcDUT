@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_A3AA621F" Id="{3d8d4030-e9a3-4bda-aad2-b6c72867bf85}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1816-3008-0016'}
+{attribute addProperty BoxType "EPP1816-3008-0016"}
+{attribute addProperty Id "ErrorBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "2745852447"}
+{attribute addProperty Size "2"}
+TYPE Status_A3AA621F :
+STRUCT
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

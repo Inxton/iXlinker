@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SSI_Inputs_3B70A311" Id="{114610f7-230b-42c8-b6fa-aa1ae540208c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5001-0011-0016'}
+{attribute addProperty BoxType "EL5001-0011-0016"}
+{attribute addProperty Id "Data_errorAT %I*BOOL1Frame_errorAT %I*BOOL1Power_failureAT %I*BOOL1Sync_ErrorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Counter_valueAT %I*UDINT4"}
+{attribute addProperty CRC "997237521"}
+{attribute addProperty Size "10"}
+TYPE SSI_Inputs_3B70A311 :
+STRUCT
+	{attribute addProperty Name "Data_error"}
+	Data_error AT %I* : BOOL;
+	{attribute addProperty Name "Frame_error"}
+	Frame_error AT %I* : BOOL;
+	{attribute addProperty Name "Power_failure"}
+	Power_failure AT %I* : BOOL;
+	{attribute addProperty Name "Sync_Error"}
+	Sync_Error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UDINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

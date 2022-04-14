@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_8300A75E" Id="{54d5b195-e194-4ffb-a0f1-816822a39a49}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-9414-0030'}
+{attribute addProperty BoxType "EJ7211-9414-0030"}
+{attribute addProperty Id "AdsAddrAT %I*AMSADDR8DcOutputShiftAT %I*DINT4DcInputShiftAT %I*DINT4Chn0AT %I*USINT1Chn1AT %I*USINT1Chn2AT %I*USINT1StateAT %I*UINT2"}
+{attribute addProperty CRC "2197858142"}
+{attribute addProperty Size "21"}
+TYPE InfoData_8300A75E :
+STRUCT
+	{attribute addProperty Name "AdsAddr"}
+	AdsAddr AT %I* : AMSADDR;
+	{attribute addProperty Name "DcOutputShift"}
+	DcOutputShift AT %I* : DINT;
+	{attribute addProperty Name "DcInputShift"}
+	DcInputShift AT %I* : DINT;
+	{attribute addProperty Name "Chn0"}
+	Chn0 AT %I* : USINT;
+	{attribute addProperty Name "Chn1"}
+	Chn1 AT %I* : USINT;
+	{attribute addProperty Name "Chn2"}
+	Chn2 AT %I* : USINT;
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

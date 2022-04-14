@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Status_compact_Channel_0EF60376" Id="{e0c6b6a1-cb15-4ea1-b7d5-e58505ff1a29}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5152-0000-0016'}
+{attribute addProperty BoxType "EL5152-0000-0016"}
+{attribute addProperty Id "Set_counter_doneAT %I*BOOL1Extrapolation_stallAT %I*BOOL1Status_of_input_AAT %I*BOOL1Status_of_input_BAT %I*BOOL1Sync_errorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Counter_valueAT %I*UINT2"}
+{attribute addProperty CRC "251003766"}
+{attribute addProperty Size "8"}
+TYPE ENC_Status_compact_Channel_0EF60376 :
+STRUCT
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done AT %I* : BOOL;
+	{attribute addProperty Name "Extrapolation_stall"}
+	Extrapolation_stall AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_A"}
+	Status_of_input_A AT %I* : BOOL;
+	{attribute addProperty Name "Status_of_input_B"}
+	Status_of_input_B AT %I* : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Counter_value"}
+	Counter_value AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

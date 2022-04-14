@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="RMB_Status_C0E100AA" Id="{798a175c-9d7c-4ba7-bb81-2ebc9257c5db}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3356-0022-0016'}
+{attribute addProperty BoxType "EP3356-0022-0016"}
+{attribute addProperty Id "StatusAT %I*Status_7BCDA9217"}
+{attribute addProperty CRC "3235971242"}
+{attribute addProperty Size "7"}
+TYPE RMB_Status_C0E100AA :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_7BCDA921;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

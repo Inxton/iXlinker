@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_F7635245" Id="{5e3f0f85-8634-4c94-89b8-b655908108dd}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2912-0000-0016'}
+{attribute addProperty BoxType "EL2912-0000-0016"}
+{attribute addProperty Id "FSoE_CommandUSINT1FSOUT_Module_1_OutputBOOL1FSOUT_Module_1_ErrAckBOOL1FSOUT_Module_2_OutputBOOL1FSOUT_Module_2_ErrAckBOOL1FSoE_CRC_000UINT2FSoE_Connection_IDUINT2"}
+{attribute addProperty CRC "4150481477"}
+{attribute addProperty Size "9"}
+TYPE FSOE_F7635245 :
+STRUCT
+	{attribute addProperty Name "FSoE_Command"}
+	FSoE_Command : USINT;
+	{attribute addProperty Name "FSOUT_Module_1_Output"}
+	FSOUT_Module_1_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_1_ErrAck"}
+	FSOUT_Module_1_ErrAck : BOOL;
+	{attribute addProperty Name "FSOUT_Module_2_Output"}
+	FSOUT_Module_2_Output : BOOL;
+	{attribute addProperty Name "FSOUT_Module_2_ErrAck"}
+	FSOUT_Module_2_ErrAck : BOOL;
+	{attribute addProperty Name "FSoE_CRC_000"}
+	FSoE_CRC_000 : UINT;
+	{attribute addProperty Name "FSoE_Connection_ID"}
+	FSoE_Connection_ID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

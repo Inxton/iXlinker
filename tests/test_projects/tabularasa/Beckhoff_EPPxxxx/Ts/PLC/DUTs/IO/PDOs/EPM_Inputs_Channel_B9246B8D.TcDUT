@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPM_Inputs_Channel_B9246B8D" Id="{c0f509ec-1515-4367-9cf3-7f1c66990c0b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP9022-0060-0017'}
+{attribute addProperty BoxType "EPP9022-0060-0017"}
+{attribute addProperty Id "StatusAT %I*Status_51F572C810VoltageAT %I*DINT4CurrentAT %I*DINT4"}
+{attribute addProperty CRC "3106171789"}
+{attribute addProperty Size "18"}
+TYPE EPM_Inputs_Channel_B9246B8D :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_51F572C8;
+	{attribute addProperty Name "Voltage"}
+	Voltage AT %I* : DINT;
+	{attribute addProperty Name "Current"}
+	Current AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DI_Inputs_Channel_91AC31B7" Id="{8cbeb8ea-bc65-46d9-8a9b-858a492d3260}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP2339-0003-0016'}
+{attribute addProperty BoxType "EPP2339-0003-0016"}
+{attribute addProperty Id "InputAT %I*ARRAY[0..7] OF BOOL8Sync_errorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
+{attribute addProperty CRC "1559998493"}
+{attribute addProperty Size "11"}
+TYPE DI_Inputs_Channel_91AC31B7 :
+STRUCT
+	{attribute addProperty Name "Input"}
+	Input AT %I* : ARRAY[0..7] OF BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Outputs_Group_78994C08" Id="{13dda2e7-65fc-4235-a5ac-445416441771}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2642-0000-0016'}
+{attribute addProperty BoxType "EL2642-0000-0016"}
+{attribute addProperty Id "Y1BOOL1Y2BOOL1Y3BOOL1Y4BOOL1"}
+{attribute addProperty CRC "2023312392"}
+{attribute addProperty Size "4"}
+TYPE Outputs_Group_78994C08 :
+STRUCT
+	{attribute addProperty Name "Y1"}
+	Y1 : BOOL;
+	{attribute addProperty Name "Y2"}
+	Y2 : BOOL;
+	{attribute addProperty Name "Y3"}
+	Y3 : BOOL;
+	{attribute addProperty Name "Y4"}
+	Y4 : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

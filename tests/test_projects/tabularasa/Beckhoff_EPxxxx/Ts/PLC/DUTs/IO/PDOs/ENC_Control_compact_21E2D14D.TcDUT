@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Control_compact_21E2D14D" Id="{90be33aa-3e2b-4090-9bb3-3f1ad065997a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP5101-0011-0016'}
+{attribute addProperty BoxType "EP5101-0011-0016"}
+{attribute addProperty Id "ControlAT %Q*Control_6EF2C5D04Set_counter_valueAT %Q*UINT2"}
+{attribute addProperty CRC "568512845"}
+{attribute addProperty Size "6"}
+TYPE ENC_Control_compact_21E2D14D :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_6EF2C5D0;
+	{attribute addProperty Name "Set_counter_value"}
+	Set_counter_value AT %Q* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+  <DataTypes>
+    <DataType>
+      <Name GUID="{4CFF017A-BDAF-16D2-4FA1-8E6B3C006D7D}" AutoDeleteType="true">Status_F2CE6D91</Name>
+      <BitSize>56</BitSize>
+      <SubItem>
+        <Name>Underrange</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Overrange</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>8</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Limit_1</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>16</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Limit_2</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000001}">BYTE</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>24</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>Error</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>32</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>TxPDO_State</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>40</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>TxPDO_Toggle</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000030}">BOOL</Type>
+        <BitSize>8</BitSize>
+        <BitOffs>48</BitOffs>
+      </SubItem>
+      <Properties>
+        <Property>
+          <Name>GeneratedUsingTerminal: EL3064-0000-0020</Name>
+        </Property>
+      </Properties>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
+      <BitSize>48</BitSize>
+      <BaseType GUID="{18071995-0000-0000-0000-000000000001}">BYTE</BaseType>
+      <ArrayInfo>
+        <LBound>0</LBound>
+        <Elements>6</Elements>
+      </ArrayInfo>
+      <Format>
+        <Printf>%d.%d.%d.%d.%d.%d</Printf>
+        <Parameter>[0]</Parameter>
+        <Parameter>[1]</Parameter>
+        <Parameter>[2]</Parameter>
+        <Parameter>[3]</Parameter>
+        <Parameter>[4]</Parameter>
+        <Parameter>[5]</Parameter>
+      </Format>
+    </DataType>
+    <DataType>
+      <Name GUID="{18071995-0000-0000-0000-000000000042}" TcBaseType="true" CName="AmsAddr">AMSADDR</Name>
+      <BitSize>64</BitSize>
+      <SubItem>
+        <Name>netId</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+        <BitSize>48</BitSize>
+        <BitOffs>0</BitOffs>
+      </SubItem>
+      <SubItem>
+        <Name>port</Name>
+        <Type GUID="{18071995-0000-0000-0000-000000000004}">WORD</Type>
+        <BitSize>16</BitSize>
+        <BitOffs>48</BitOffs>
+      </SubItem>
+      <Format>
+        <Printf>%d.%d.%d.%d.%d.%d:%d</Printf>
+        <Parameter>.netId[0]</Parameter>
+        <Parameter>.netId[1]</Parameter>
+        <Parameter>.netId[2]</Parameter>
+        <Parameter>.netId[3]</Parameter>
+        <Parameter>.netId[4]</Parameter>
+        <Parameter>.netId[5]</Parameter>
+        <Parameter>.port</Parameter>
+      </Format>
+      <Format Name="Iec">
+        <Printf>(netId:=[%d.%d.%d.%d.%d.%d], port :=%d)</Printf>
+        <Parameter>.netId[0]</Parameter>
+        <Parameter>.netId[1]</Parameter>
+        <Parameter>.netId[2]</Parameter>
+        <Parameter>.netId[3]</Parameter>
+        <Parameter>.netId[4]</Parameter>
+        <Parameter>.netId[5]</Parameter>
+        <Parameter>.port</Parameter>
+      </Format>
+    </DataType>
+  </DataTypes>
+  <ImageDatas>
+    <ImageData Id="1000">424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000C40E0000C40E00000000000000000000FF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080808080808080808080808080808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C000FFFFC0C0C000FFFF808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0FF0000C0C0C0FF0000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C00000FFC0C0C00000FF808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000BFFF00BFFFC0C0C0808080C0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0008000C0C0C0008000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080C0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF</ImageData>
+    <ImageData Id="1001">424DD6020000000000003600000028000000100000000E0000000100180000000000A0020000120B0000120B00000000000000000000FF00FFFF00FFFF00FFFF00FFFF00FFFF00FF808080808080808080808080808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C000FFFFC0C0C000FFFF808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0FF0000C0C0C0FF0000808080FF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFFF00FFC0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FFC0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FFC0C0C00000FFC0C0C00000FF808080FF00FFFF00FFFF00FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FFC0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FFC0C0C0000000C0C0C0000000808080FF00FFFF00FFFF00FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FFC0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FFC0C0C0008000C0C0C0008000808080FF00FFFF00FFFF00FFFF00FFFF00FF0000FF0000FF0000FF0000FF0000FF0000FFC0C0C0C0C0C0C0C0C0C0C0C0808080FF00FFFF00FFFF00FFFF00FFFF00FF</ImageData>
+  </ImageDatas>
+  <Project ProjectGUID="{920AAEF1-0EFA-44AB-99AD-06C0F02903D8}" Target64Bit="true" ShowHideConfigurations="#x106">
+    <System>
+      <Tasks>
+        <Task Id="3" Priority="20" CycleTime="100000" AmsPort="350" AdtTasks="true">
+          <Name>PlcTask</Name>
+        </Task>
+      </Tasks>
+    </System>
+    <Plc>
+      <Project GUID="{225ECC4D-F94E-4AF7-B551-C96FF9961B38}" Name="Plc" PrjFilePath="Plc.plcproj" TmcFilePath="Plc.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e" SymbolicMapping="true">
+        <Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="Plc.tmc">
+          <Name>Plc Instance</Name>
+          <CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
+          <Vars VarGrpType="1">
+            <Name>PlcTask Inputs</Name>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.AI_Standard_Channel_1.Status</Name>
+              <Type GUID="{4CFF017A-BDAF-16D2-4FA1-8E6B3C006D7D}">Status_F2CE6D91</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.AI_Standard_Channel_1.Value</Name>
+              <Type>INT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.AI_Standard_Channel_2.Status</Name>
+              <Type GUID="{4CFF017A-BDAF-16D2-4FA1-8E6B3C006D7D}">Status_F2CE6D91</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.AI_Standard_Channel_2.Value</Name>
+              <Type>INT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.AI_Standard_Channel_3.Status</Name>
+              <Type GUID="{4CFF017A-BDAF-16D2-4FA1-8E6B3C006D7D}">Status_F2CE6D91</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.AI_Standard_Channel_3.Value</Name>
+              <Type>INT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.AI_Standard_Channel_4.Status</Name>
+              <Type GUID="{4CFF017A-BDAF-16D2-4FA1-8E6B3C006D7D}">Status_F2CE6D91</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.AI_Standard_Channel_4.Value</Name>
+              <Type>INT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.WcState.InputToggle</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.InfoData.AdsAddr</Name>
+              <Type GUID="{18071995-0000-0000-0000-000000000042}">AMSADDR</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3064.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.unreferenced.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.unreferenced.InfoData.ObjectId</Name>
+              <Type>OTCID</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.unreferenced.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.unreferenced.InfoData.SlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.WcState.WcState</Name>
+              <Type>BOOL</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.ObjectId</Name>
+              <Type>OTCID</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.SlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Inputs.SlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Inputs.DevState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0State</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0WcState</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0InputToggle</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.ChangeCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.DevId</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.AmsNetId</Name>
+              <Type GUID="{18071995-0000-0000-0000-000000000041}">AMSNETID</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.CfgSlaveCount</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.DcToTcTimeOffset</Name>
+              <Type>LINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.InfoData.DcToExtTimeOffset</Name>
+              <Type>LINT</Type>
+            </Var>
+          </Vars>
+          <Vars VarGrpType="2">
+            <Name>PlcTask Outputs</Name>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Outputs.DevCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Outputs.Frm0Ctrl</Name>
+              <Type>UINT</Type>
+            </Var>
+            <Var>
+              <Name>GVL_iXlinker.Device_1_EtherCAT.Outputs.Frm0WcCtrl</Name>
+              <Type>UINT</Type>
+            </Var>
+          </Vars>
+          <Contexts>
+            <Context>
+              <Id NeedCalleeCall="true">0</Id>
+              <Name>PlcTask</Name>
+              <ManualConfig>
+                <OTCID>#x02010030</OTCID>
+              </ManualConfig>
+              <Priority>20</Priority>
+              <CycleTime>10000000</CycleTime>
+            </Context>
+          </Contexts>
+          <TaskPouOids>
+            <TaskPouOid Prio="20" OTCID="#x08502001" />
+          </TaskPouOids>
+        </Instance>
+      </Project>
+    </Plc>
+    <Io>
+      <Device Id="1" DevType="111" DevFlags="#x0003" AmsPort="28673" AmsNetId="172.20.30.238.2.1" RemoteName="Device 1 (EtherCAT)">
+        <Name>Device 1 (EtherCAT)</Name>
+        <AddressInfo>
+          <Pnp>
+            <DeviceDesc />
+            <DeviceName />
+            <DeviceData>000000000000</DeviceData>
+          </Pnp>
+        </AddressInfo>
+        <Image Id="1" AddrType="9" ImageType="3">
+          <Name>Image</Name>
+        </Image>
+        <Box Id="1" BoxType="9099">
+          <Name>Term 1 (EK1100)</Name>
+          <ImageId>1000</ImageId>
+          <EtherCAT SlaveType="1" PdiType="#x0d00" CycleMBoxPollingTime="0" VendorId="#x00000002" ProductCode="#x044c2c52" RevisionNo="#x00120000" PortPhys="305" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EK1100 EtherCAT Coupler (2A E-Bus)" Desc="EK1100" PortABoxInfo="#x00ffffff" />
+          <Box Id="2" BoxType="9099" BoxFlags="#x00000020">
+            <Name>Term 2 (EL2014)</Name>
+            <ImageId>1001</ImageId>
+            <EtherCAT SlaveType="2" PdiType="#x0005" MboxDataLinkLayer="true" StateMBoxPolling="true" CycleMBoxPollingTime="0" CoeType="7" FoeType="1" VendorId="#x00000002" ProductCode="#x07de3052" RevisionNo="#x00110000" InfoDataAddr="true" TimeoutMailbox2="2000" CheckRevisionNoType="3" PortPhys="51" MaxSlotCount="256" MaxSlotGroupCount="1" SlotPdoIncrement="1" SlotIndexIncrement="16" Type="EL2014 4Ch. Dig. Output 24V, 0,5A, Diagnostic" Desc="EL2014" PortABoxInfo="#x01000001">
+              <SyncMan>001080002600010001000000800080008000001026010000</SyncMan>
+              <SyncMan>801080002200010002000000800080008000801022010000</SyncMan>
+              <SyncMan>001101002400010003000000000000000100001124010000</SyncMan>
+              <SyncMan>801101002000010004000000000000000300801120010000</SyncMan>
+              <Fmmu>0000000000000000001100020100000001000000000000000000000000000000</Fmmu>
+              <Fmmu>0000000000000000801100010100000002000000000000000000000000000000</Fmmu>
+              <Fmmu>00000000000000000D0800010100000003000000000000000000000000000000</Fmmu>
+              <BootStrapData>0010F400F410F400</BootStrapData>
+              <Pdo Name="DIG Diag Inputs" Index="#x1a00" Flags="#x0010">
+                <Entry Name="Channel 1__Overtemperature" Index="#x6001" Sub="#x01">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 1__Open Load" Index="#x6001" Sub="#x02">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 1__Overcurrent" Index="#x6001" Sub="#x03">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 1__Short Circuit to 24V" Index="#x6001" Sub="#x04">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 2__Overtemperature" Index="#x6011" Sub="#x01">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 2__Open Load" Index="#x6011" Sub="#x02">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 2__Overcurrent" Index="#x6011" Sub="#x03">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 2__Short Circuit to 24V" Index="#x6011" Sub="#x04">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 3__Overtemperature" Index="#x6021" Sub="#x01">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 3__Open Load" Index="#x6021" Sub="#x02">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 3__Overcurrent" Index="#x6021" Sub="#x03">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 3__Short Circuit to 24V" Index="#x6021" Sub="#x04">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 4__Overtemperature" Index="#x6031" Sub="#x01">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 4__Open Load" Index="#x6031" Sub="#x02">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 4__Overcurrent" Index="#x6031" Sub="#x03">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 4__Short Circuit to 24V" Index="#x6031" Sub="#x04">
+                  <Type>BIT</Type>
+                </Entry>
+              </Pdo>
+              <Pdo Name="DIG Inputs Device" Index="#x1a02" Flags="#x0010" SyncMan="3">
+                <Entry Name="Common Fault" Index="#xf600" Sub="#x11">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Overtemperature Device" Index="#xf600" Sub="#x12">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Undervoltage" Index="#xf600" Sub="#x13">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Missing Voltage" Index="#xf600" Sub="#x14">
+                  <Type>BIT</Type>
+                </Entry>
+              </Pdo>
+              <Pdo Name="DIG Outputs" Index="#x1600" InOut="1" Flags="#x0010" SyncMan="2">
+                <Entry Name="Channel 1__Output" Index="#x7000" Sub="#x01">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 2__Output" Index="#x7010" Sub="#x01">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 3__Output" Index="#x7020" Sub="#x01">
+                  <Type>BIT</Type>
+                </Entry>
+                <Entry Name="Channel 4__Output" Index="#x7030" Sub="#x01">
+                  <Type>BIT</Type>
+                </Entry>
+              </Pdo>
+              <CoeProfile ProfileNo="18355081" />
+              <CoeProfile ProfileNo="18355081" />
+              <CoeProfile ProfileNo="18355081" />
+              <CoeProfile ProfileNo="18355081" />
+            </EtherCAT>
+          </Box>
+        </Box>
+        <EtherCAT />
+      </Device>
+    </Io>
+  </Project>
+  <Mappings>
+    <OwnerA Name="TIPC^Plc^Plc Instance">
+      <OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.InfoData.State" VarB="InfoData^State" />
+      </OwnerB>
+      <OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1100)^Term 2 (EL2014)">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.DIG_Inputs_Device.Common_Fault" VarB="DIG Inputs Device^Common Fault" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.DIG_Inputs_Device.Overtemperature_Device" VarB="DIG Inputs Device^Overtemperature Device" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.DIG_Inputs_Device.Undervoltage" VarB="DIG Inputs Device^Undervoltage" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.DIG_Inputs_Device.Missing_Voltage" VarB="DIG Inputs Device^Missing Voltage" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.DIG_Outputs.Channel_1^Output" VarB="DIG Outputs^Channel 1^Output" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.DIG_Outputs.Channel_2^Output" VarB="DIG Outputs^Channel 2^Output" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.DIG_Outputs.Channel_3^Output" VarB="DIG Outputs^Channel 3^Output" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.DIG_Outputs.Channel_4^Output" VarB="DIG Outputs^Channel 4^Output" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.WcState.WcState" VarB="WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.WcState.InputToggle" VarB="WcState^InputToggle" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL2014.InfoData.State" VarB="InfoData^State" />
+      </OwnerB>
+      <OwnerB Name="TIID^Device 1 (EtherCAT)">
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default._unreferenced.WcState.WcState" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default._unreferenced.InfoData.ObjectId" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^InfoData^ObjectId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default._unreferenced.InfoData.State" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^InfoData^State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default._unreferenced.InfoData.SlaveCount" VarB="SyncUnits^&lt;default&gt;^&lt;unreferenced&gt;^InfoData^SlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.WcState.WcState" VarB="SyncUnits^&lt;default&gt;^PlcTask^WcState^WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.ObjectId" VarB="SyncUnits^&lt;default&gt;^PlcTask^InfoData^ObjectId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.State" VarB="SyncUnits^&lt;default&gt;^PlcTask^InfoData^State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.SyncUnits._default.PlcTask.InfoData.SlaveCount" VarB="SyncUnits^&lt;default&gt;^PlcTask^InfoData^SlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Inputs.SlaveCount" VarB="Inputs^SlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Inputs.DevState" VarB="Inputs^DevState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0State" VarB="Inputs^Frm0State" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0WcState" VarB="Inputs^Frm0WcState" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.Inputs.Frm0InputToggle" VarB="Inputs^Frm0InputToggle" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.Device_1_EtherCAT.Outputs.DevCtrl" VarB="Outputs^DevCtrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.Device_1_EtherCAT.Outputs.Frm0Ctrl" VarB="Outputs^Frm0Ctrl" />
+        <Link VarA="PlcTask Outputs^GVL_iXlinker.Device_1_EtherCAT.Outputs.Frm0WcCtrl" VarB="Outputs^Frm0WcCtrl" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.ChangeCount" VarB="InfoData^ChangeCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.DevId" VarB="InfoData^DevId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.AmsNetId" VarB="InfoData^AmsNetId" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.CfgSlaveCount" VarB="InfoData^CfgSlaveCount" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.DcToTcTimeOffset" VarB="InfoData^DcToTcTimeOffset" />
+        <Link VarA="PlcTask Inputs^GVL_iXlinker.Device_1_EtherCAT.InfoData.DcToExtTimeOffset" VarB="InfoData^DcToExtTimeOffset" />
+      </OwnerB>
+    </OwnerA>
+  </Mappings>
+</TcSmProject>

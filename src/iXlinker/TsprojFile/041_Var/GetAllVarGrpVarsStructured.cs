@@ -103,13 +103,13 @@ namespace TsprojFile.Scan
                             {
                                 PdoEntryStructMemberViewModel member = new PdoEntryStructMemberViewModel();
                                 member.Attributes = pdoEntryAttributes;
-                                member.Name = pdoEntryName + "_" + baseType + "_" + i.ToString();
+                                member.NameA = pdoEntryName + "_" + baseType + "_" + i.ToString();
                                 member.Type_Value = baseType;
                                 member.TypeNamespace = varUnstructured.TypeNamespace;
                                 member.Size = PlcBaseTypes.GetSize(baseType);
                                 member.SubIndexNumber = varUnstructured.SubIndexNumber;
                                 actVarStruct.StructMembers.Add(member);
-                                actVarStruct.Id = actVarStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                                actVarStruct.Id = actVarStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
                                 actVarStruct.Size = actVarStruct.Size + member.Size;
                             }
                         }
@@ -117,12 +117,12 @@ namespace TsprojFile.Scan
                         {
                             PdoEntryStructMemberViewModel member = new PdoEntryStructMemberViewModel();
                             member.Attributes = pdoEntryAttributes;
-                            member.Name = ValidatePlcItem.Name( pdoEntryName) ;
+                            member.NameA = ValidatePlcItem.Name( pdoEntryName) ;
                             member.Type_Value = baseType;
                             member.Size = PlcBaseTypes.GetSize(baseType);
                             member.SubIndexNumber = varUnstructured.SubIndexNumber;
                             actVarStruct.StructMembers.Add(member);
-                            actVarStruct.Id = actVarStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                            actVarStruct.Id = actVarStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
                             actVarStruct.Size = actVarStruct.Size + member.Size;
                         }
                     }
@@ -130,12 +130,12 @@ namespace TsprojFile.Scan
                     {
                         PdoEntryStructMemberViewModel member = new PdoEntryStructMemberViewModel();
                         member.Attributes = pdoEntryAttributes;
-                        member.Name = pdoEntryName;
+                        member.NameA = pdoEntryName;
                         member.Type_Value = varUnstructured.Type_Value;
                         member.Size = PlcBaseTypes.GetSize(varUnstructured.Type_Value);
                         member.SubIndexNumber = varUnstructured.SubIndexNumber;
                         actVarStruct.StructMembers.Add(member);
-                        actVarStruct.Id = actVarStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                        actVarStruct.Id = actVarStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
                         actVarStruct.Size = actVarStruct.Size + member.Size;
                     }
                     if(varUnstructured.Name != null && varUnstructured.Name.Contains("__"))

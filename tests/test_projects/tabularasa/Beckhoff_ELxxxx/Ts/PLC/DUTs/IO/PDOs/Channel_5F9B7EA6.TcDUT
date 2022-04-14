@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_5F9B7EA6" Id="{e9106ea7-3057-4f30-bcf1-b019287b5f8b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL4102--0000'}
+{attribute addProperty BoxType "EL4102--0000"}
+{attribute addProperty Id "OutputAT %Q*INT2"}
+{attribute addProperty CRC "1604026022"}
+{attribute addProperty Size "2"}
+TYPE Channel_5F9B7EA6 :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output AT %Q* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

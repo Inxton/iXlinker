@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_9A7ED3DD" Id="{d995a433-4ac0-4164-b207-369ffe7991e8}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1914-0000-0017'}
+{attribute addProperty BoxType "EJ1914-0000-0017"}
+{attribute addProperty Id "FSoE_CommandUSINT1FSIN_Module_1_ErrAckBOOL1FSIN_Module_2_ErrAckBOOL1FSoE_CRC_000UINT2FSoE_Connection_IDUINT2"}
+{attribute addProperty CRC "2592003037"}
+{attribute addProperty Size "7"}
+TYPE FSOE_9A7ED3DD :
+STRUCT
+	{attribute addProperty Name "FSoE_Command"}
+	FSoE_Command : USINT;
+	{attribute addProperty Name "FSIN_Module_1_ErrAck"}
+	FSIN_Module_1_ErrAck : BOOL;
+	{attribute addProperty Name "FSIN_Module_2_ErrAck"}
+	FSIN_Module_2_ErrAck : BOOL;
+	{attribute addProperty Name "FSoE_CRC_000"}
+	FSoE_CRC_000 : UINT;
+	{attribute addProperty Name "FSoE_Connection_ID"}
+	FSoE_Connection_ID : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

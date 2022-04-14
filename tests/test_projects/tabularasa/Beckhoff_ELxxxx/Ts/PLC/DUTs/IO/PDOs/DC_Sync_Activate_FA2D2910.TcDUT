@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DC_Sync_Activate_FA2D2910" Id="{0ffeb7d7-0f4e-4b2a-8114-cf7d2d979052}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2252--0000'}
+{attribute addProperty BoxType "EL2252--0000"}
+{attribute addProperty Id "ActivateAT %Q*USINT1"}
+{attribute addProperty CRC "4197263632"}
+{attribute addProperty Size "1"}
+TYPE DC_Sync_Activate_FA2D2910 :
+STRUCT
+	{attribute addProperty Name "Activate"}
+	Activate AT %Q* : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

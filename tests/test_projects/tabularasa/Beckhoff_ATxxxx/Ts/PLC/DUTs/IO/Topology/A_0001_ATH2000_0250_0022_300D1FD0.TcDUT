@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0001_ATH2000_0250_0022_300D1FD0" Id="{aa07f708-8b81-492e-92da-b5e6ca2f43e1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ATH2000-0250-0022'}
+{attribute addProperty BoxType "ATH2000-0250-0022"}
+{attribute addProperty Id "A_0014_ATH2050_5501_0022ATH2050_6EC099B714"}
+{attribute addProperty CRC "806166480"}
+{attribute addProperty Size "14"}
+TYPE A_0001_ATH2000_0250_0022_300D1FD0 EXTENDS ATH2000_2EA6C9BF :
+STRUCT
+	{attribute addProperty Name "A_0014_ATH2050_5501_0022"}
+	A_0014_ATH2050_5501_0022 : ATH2050_6EC099B7;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

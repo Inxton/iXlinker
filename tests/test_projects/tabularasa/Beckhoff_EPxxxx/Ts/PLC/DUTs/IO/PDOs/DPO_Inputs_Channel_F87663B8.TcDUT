@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DPO_Inputs_Channel_F87663B8" Id="{1c973fd6-b5d0-46f8-8a2d-40deb1802941}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9224-0023-0016'}
+{attribute addProperty BoxType "EP9224-0023-0016"}
+{attribute addProperty Id "Error_UsAT %I*BOOL1Error_UpAT %I*BOOL1Warning_UsAT %I*BOOL1Warning_UpAT %I*BOOL1Status_UsAT %I*BOOL1Status_UpAT %I*BOOL1Channel_ErrorAT %I*BOOL1Error_Sum_CurrentAT %I*BOOL1Warning_Sum_CurrentAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Current_UsAT %I*INT2Current_UpAT %I*INT2"}
+{attribute addProperty CRC "4168508344"}
+{attribute addProperty Size "15"}
+TYPE DPO_Inputs_Channel_F87663B8 :
+STRUCT
+	{attribute addProperty Name "Error_Us"}
+	Error_Us AT %I* : BOOL;
+	{attribute addProperty Name "Error_Up"}
+	Error_Up AT %I* : BOOL;
+	{attribute addProperty Name "Warning_Us"}
+	Warning_Us AT %I* : BOOL;
+	{attribute addProperty Name "Warning_Up"}
+	Warning_Up AT %I* : BOOL;
+	{attribute addProperty Name "Status_Us"}
+	Status_Us AT %I* : BOOL;
+	{attribute addProperty Name "Status_Up"}
+	Status_Up AT %I* : BOOL;
+	{attribute addProperty Name "Channel_Error"}
+	Channel_Error AT %I* : BOOL;
+	{attribute addProperty Name "Error_Sum_Current"}
+	Error_Sum_Current AT %I* : BOOL;
+	{attribute addProperty Name "Warning_Sum_Current"}
+	Warning_Sum_Current AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Current_Us"}
+	Current_Us AT %I* : INT;
+	{attribute addProperty Name "Current_Up"}
+	Current_Up AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

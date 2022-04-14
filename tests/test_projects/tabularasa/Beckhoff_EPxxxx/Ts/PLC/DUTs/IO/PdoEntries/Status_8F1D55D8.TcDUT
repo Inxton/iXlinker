@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_8F1D55D8" Id="{01375f15-716e-4507-95a5-ad3f2f48aff4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3752-0000-0017'}
+{attribute addProperty BoxType "EP3752-0000-0017"}
+{attribute addProperty Id "ErrorBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "2401064408"}
+{attribute addProperty Size "3"}
+TYPE Status_8F1D55D8 :
+STRUCT
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

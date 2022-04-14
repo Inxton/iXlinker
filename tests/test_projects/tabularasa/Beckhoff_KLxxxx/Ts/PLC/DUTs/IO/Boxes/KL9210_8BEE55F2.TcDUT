@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL9210_8BEE55F2" Id="{668398c4-5465-47a5-9175-88c2845945fd}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9210'}
+{attribute addProperty BoxType "KL9210"}
+{attribute addProperty Id "Channel_1AT %I*Channel_64AAC8C70"}
+{attribute addProperty CRC "2347652594"}
+{attribute addProperty Size "0"}
+TYPE KL9210_8BEE55F2 :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_64AAC8C7;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="STM_Control_Channel_F193EBCD" Id="{2ee0b253-b006-4431-b434-ab8f204ef8e7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7402-0057-0017'}
+{attribute addProperty BoxType "EP7402-0057-0017"}
+{attribute addProperty Id "ControlAT %Q*Control_F58A89C54"}
+{attribute addProperty CRC "4053003213"}
+{attribute addProperty Size "4"}
+TYPE STM_Control_Channel_F193EBCD :
+STRUCT
+	{attribute addProperty Name "Control"}
+	Control AT %Q* : Control_F58A89C5;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

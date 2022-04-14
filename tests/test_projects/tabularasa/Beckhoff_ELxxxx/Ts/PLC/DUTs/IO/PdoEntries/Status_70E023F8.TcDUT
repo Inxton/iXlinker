@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_70E023F8" Id="{91e391b9-1b14-42a8-a970-bdcd7050a539}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2522-0000-0017'}
+{attribute addProperty BoxType "EL2522-0000-0017"}
+{attribute addProperty Id "Set_counter_doneBOOL1Counter_underflowBOOL1Counter_overflowBOOL1Sync_errorBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "1893737464"}
+{attribute addProperty Size "6"}
+TYPE Status_70E023F8 :
+STRUCT
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BOOL;
+	{attribute addProperty Name "Counter_underflow"}
+	Counter_underflow : BOOL;
+	{attribute addProperty Name "Counter_overflow"}
+	Counter_overflow : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

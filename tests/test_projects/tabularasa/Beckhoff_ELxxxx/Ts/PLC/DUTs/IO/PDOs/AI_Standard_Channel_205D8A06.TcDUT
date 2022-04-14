@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AI_Standard_Channel_205D8A06" Id="{35e2adb2-2b64-419c-b223-820972faf9ce}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7031-0030-0016'}
+{attribute addProperty BoxType "EL7031-0030-0016"}
+{attribute addProperty Id "UnderrangeAT %I*BOOL1OverrangeAT %I*BOOL1Limit_xAT %I*ARRAY[0..1] OF BYTE2TxPDO_ToggleAT %I*BOOL1ValueAT %I*INT2"}
+{attribute addProperty CRC "3065336466"}
+{attribute addProperty Size "7"}
+TYPE AI_Standard_Channel_205D8A06 :
+STRUCT
+	{attribute addProperty Name "Underrange"}
+	Underrange AT %I* : BOOL;
+	{attribute addProperty Name "Overrange"}
+	Overrange AT %I* : BOOL;
+	{attribute addProperty Name "Limit"}
+	Limit_x AT %I* : ARRAY[0..1] OF BYTE;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : INT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

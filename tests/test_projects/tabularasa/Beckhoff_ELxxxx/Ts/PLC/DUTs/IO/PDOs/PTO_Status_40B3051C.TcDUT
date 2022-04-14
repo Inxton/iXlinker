@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PTO_Status_40B3051C" Id="{97f67d29-8bd5-4d1e-8451-5e5110a9492d}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0000-1019'}
+{attribute addProperty BoxType "EL2521-0000-1019"}
+{attribute addProperty Id "StatusAT %I*Status_5E172F147"}
+{attribute addProperty CRC "1085474076"}
+{attribute addProperty Size "7"}
+TYPE PTO_Status_40B3051C :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_5E172F14;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

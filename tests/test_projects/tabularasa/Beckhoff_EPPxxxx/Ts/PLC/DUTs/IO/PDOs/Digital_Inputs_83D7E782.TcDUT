@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Digital_Inputs_83D7E782" Id="{ba49fc09-bdc1-48df-90f2-3b713b792370}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP6228-0022-0016'}
+{attribute addProperty BoxType "EPP6228-0022-0016"}
+{attribute addProperty Id "Pin2_Ch1AT %I*BOOL1Pin2_Ch2AT %I*BOOL1Pin2_Ch3AT %I*BOOL1Pin2_Ch4AT %I*BOOL1Pin2_Ch5AT %I*BOOL1Pin2_Ch6AT %I*BOOL1Pin2_Ch7AT %I*BOOL1Pin2_Ch8AT %I*BOOL1"}
+{attribute addProperty CRC "2211964802"}
+{attribute addProperty Size "8"}
+TYPE Digital_Inputs_83D7E782 :
+STRUCT
+	{attribute addProperty Name "Pin2_Ch1"}
+	Pin2_Ch1 AT %I* : BOOL;
+	{attribute addProperty Name "Pin2_Ch2"}
+	Pin2_Ch2 AT %I* : BOOL;
+	{attribute addProperty Name "Pin2_Ch3"}
+	Pin2_Ch3 AT %I* : BOOL;
+	{attribute addProperty Name "Pin2_Ch4"}
+	Pin2_Ch4 AT %I* : BOOL;
+	{attribute addProperty Name "Pin2_Ch5"}
+	Pin2_Ch5 AT %I* : BOOL;
+	{attribute addProperty Name "Pin2_Ch6"}
+	Pin2_Ch6 AT %I* : BOOL;
+	{attribute addProperty Name "Pin2_Ch7"}
+	Pin2_Ch7 AT %I* : BOOL;
+	{attribute addProperty Name "Pin2_Ch8"}
+	Pin2_Ch8 AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

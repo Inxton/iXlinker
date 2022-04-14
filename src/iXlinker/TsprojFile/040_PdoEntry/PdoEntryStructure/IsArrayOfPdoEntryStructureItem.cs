@@ -15,8 +15,8 @@ namespace TsprojFile.Scan
 
             if (actPdoEntryStruct.StructMembers.Count > 1)
             {
-                string firstMemberNamePrefix = (firstMember.Name != null && firstMember.Name.Contains("_")) ? firstMember.Name.Substring(0, firstMember.Name.LastIndexOf("_", StringComparison.Ordinal)) : null;
-                string firstMemberArrayIndex = firstMemberNamePrefix != null ? firstMemberArrayIndex = firstMember.Name.Substring(firstMember.Name.LastIndexOf("_", StringComparison.Ordinal) + 1) : null;
+                string firstMemberNamePrefix = (firstMember.NameA != null && firstMember.NameA.Contains("_")) ? firstMember.NameA.Substring(0, firstMember.NameA.LastIndexOf("_", StringComparison.Ordinal)) : null;
+                string firstMemberArrayIndex = firstMemberNamePrefix != null ? firstMemberArrayIndex = firstMember.NameA.Substring(firstMember.NameA.LastIndexOf("_", StringComparison.Ordinal) + 1) : null;
 
                 if (firstMemberNamePrefix == null || firstMemberArrayIndex == null || !Int32.TryParse(firstMemberArrayIndex, out _lowIndex) || firstMember.Type_Value.Equals("BIT"))
                 {
@@ -27,7 +27,7 @@ namespace TsprojFile.Scan
                     PdoEntryStructMemberViewModel prevMember = firstMember;
                     foreach (PdoEntryStructMemberViewModel member in actPdoEntryStruct.StructMembers)
                     {
-                        string memberNamePrefix = (member.Name != null && member.Name.Contains("_")) ? member.Name.Substring(0, member.Name.LastIndexOf("_", StringComparison.Ordinal)) : null;
+                        string memberNamePrefix = (member.NameA != null && member.NameA.Contains("_")) ? member.NameA.Substring(0, member.NameA.LastIndexOf("_", StringComparison.Ordinal)) : null;
                         if (memberNamePrefix != firstMemberNamePrefix || member.Type_Value != firstMember.Type_Value || member.Index != firstMember.Index || (member.SubIndex != firstMember.SubIndex && member.SubIndexNumber != prevMember.SubIndexNumber + 1))
                         {
                             isArray = false;
@@ -35,7 +35,7 @@ namespace TsprojFile.Scan
                         }
                         prevMember = member;
                     }
-                    string lastMemberArrayIndex = (prevMember.Name != null && prevMember.Name.Contains("_")) ? prevMember.Name.Substring(prevMember.Name.LastIndexOf("_", StringComparison.Ordinal) + 1) : null;
+                    string lastMemberArrayIndex = (prevMember.NameA != null && prevMember.NameA.Contains("_")) ? prevMember.NameA.Substring(prevMember.NameA.LastIndexOf("_", StringComparison.Ordinal) + 1) : null;
 
                     if (lastMemberArrayIndex == null || !Int32.TryParse(lastMemberArrayIndex, out _highIndex))
                     {

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Total_Total_L_L_Voltage_28813519" Id="{6cccf2f6-9d0d-4363-9fb3-d7876b0f7597}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3443-0000-0017'}
+{attribute addProperty BoxType "EL3443-0000-0017"}
+{attribute addProperty Id "L1_L2_VoltageAT %I*REAL4L2_L3_VoltageAT %I*REAL4L3_L1_VoltageAT %I*REAL4"}
+{attribute addProperty CRC "679556377"}
+{attribute addProperty Size "12"}
+TYPE Total_Total_L_L_Voltage_28813519 :
+STRUCT
+	{attribute addProperty Name "L1_L2_Voltage"}
+	L1_L2_Voltage AT %I* : REAL;
+	{attribute addProperty Name "L2_L3_Voltage"}
+	L2_L3_Voltage AT %I* : REAL;
+	{attribute addProperty Name "L3_L1_Voltage"}
+	L3_L1_Voltage AT %I* : REAL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

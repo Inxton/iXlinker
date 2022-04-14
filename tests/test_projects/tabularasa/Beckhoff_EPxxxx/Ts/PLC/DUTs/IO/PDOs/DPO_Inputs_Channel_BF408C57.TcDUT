@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DPO_Inputs_Channel_BF408C57" Id="{17aa7bbd-4dd2-4170-86be-6f79ca63f1a4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9214-0023-0019'}
+{attribute addProperty BoxType "EP9214-0023-0019"}
+{attribute addProperty Id "Error_UsAT %I*BOOL1Error_UpAT %I*BOOL1Warning_UsAT %I*BOOL1Warning_UpAT %I*BOOL1Status_UsAT %I*BOOL1Status_UpAT %I*BOOL1Channel_ErrorAT %I*BOOL1Sync_errorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
+{attribute addProperty CRC "3208678487"}
+{attribute addProperty Size "10"}
+TYPE DPO_Inputs_Channel_BF408C57 :
+STRUCT
+	{attribute addProperty Name "Error_Us"}
+	Error_Us AT %I* : BOOL;
+	{attribute addProperty Name "Error_Up"}
+	Error_Up AT %I* : BOOL;
+	{attribute addProperty Name "Warning_Us"}
+	Warning_Us AT %I* : BOOL;
+	{attribute addProperty Name "Warning_Up"}
+	Warning_Up AT %I* : BOOL;
+	{attribute addProperty Name "Status_Us"}
+	Status_Us AT %I* : BOOL;
+	{attribute addProperty Name "Status_Up"}
+	Status_Up AT %I* : BOOL;
+	{attribute addProperty Name "Channel_Error"}
+	Channel_Error AT %I* : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_State"}
+	TxPDO_State AT %I* : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle AT %I* : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

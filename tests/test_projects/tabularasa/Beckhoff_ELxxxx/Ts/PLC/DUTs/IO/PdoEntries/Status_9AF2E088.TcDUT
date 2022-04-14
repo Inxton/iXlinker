@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_9AF2E088" Id="{9f312868-9b05-4c95-bbdf-f4bd288d1533}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2595-0000-0019'}
+{attribute addProperty BoxType "EL2595-0000-0019"}
+{attribute addProperty Id "Ready_to_activateBOOL1Output_activeBOOL1Switching_operation_counterBYTE1WarningBOOL1ErrorBOOL1Digital_inputBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "2599608456"}
+{attribute addProperty Size "7"}
+TYPE Status_9AF2E088 :
+STRUCT
+	{attribute addProperty Name "Ready_to_activate"}
+	Ready_to_activate : BOOL;
+	{attribute addProperty Name "Output_active"}
+	Output_active : BOOL;
+	{attribute addProperty Name "Switching_operation_counter"}
+	Switching_operation_counter : BYTE;
+	{attribute addProperty Name "Warning"}
+	Warning : BOOL;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "Digital_input"}
+	Digital_input : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

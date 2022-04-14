@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Inputs_B90637B9" Id="{99de533d-4327-47af-9087-323ccebdc878}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5101-0000-0001'}
+{attribute addProperty BoxType "EL5101-0000-0001"}
+{attribute addProperty Id "StatusAT %I*USINT1ValueAT %I*UINT2LatchAT %I*UINT2"}
+{attribute addProperty CRC "3104192441"}
+{attribute addProperty Size "5"}
+TYPE Inputs_B90637B9 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : USINT;
+	{attribute addProperty Name "Value"}
+	Value AT %I* : UINT;
+	{attribute addProperty Name "Latch"}
+	Latch AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

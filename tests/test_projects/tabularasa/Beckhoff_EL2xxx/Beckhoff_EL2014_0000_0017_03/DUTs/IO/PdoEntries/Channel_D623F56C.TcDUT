@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_D623F56C" Id="{f6dd7317-11db-45a9-b1fa-310524bd78bd}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2014-0000-0017'}
+{attribute addProperty BoxType "EL2014-0000-0017"}
+{attribute addProperty Id "OutputBOOL1"}
+{attribute addProperty CRC "3592680812"}
+{attribute addProperty Size "1"}
+TYPE Channel_D623F56C :
+STRUCT
+	{attribute addProperty Name "Output"}
+	Output : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

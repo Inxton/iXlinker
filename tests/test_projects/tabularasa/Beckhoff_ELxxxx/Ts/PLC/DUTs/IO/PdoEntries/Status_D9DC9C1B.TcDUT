@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_D9DC9C1B" Id="{71d4b75b-3733-4ab3-a32c-c7a609fb6dbd}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2212-0000-0018'}
+{attribute addProperty BoxType "EL2212-0000-0018"}
+{attribute addProperty Id "Ready_to_activateBOOL1Output_activeBOOL1Tristate_activeBOOL1WarningBOOL1ErrorBOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "3655113755"}
+{attribute addProperty Size "7"}
+TYPE Status_D9DC9C1B :
+STRUCT
+	{attribute addProperty Name "Ready_to_activate"}
+	Ready_to_activate : BOOL;
+	{attribute addProperty Name "Output_active"}
+	Output_active : BOOL;
+	{attribute addProperty Name "Tristate_active"}
+	Tristate_active : BOOL;
+	{attribute addProperty Name "Warning"}
+	Warning : BOOL;
+	{attribute addProperty Name "Error"}
+	Error : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DIS_Inputs_E0E384E3" Id="{b4e45ca3-83c7-4012-8c1a-235d5149acc6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6090-0000-0016'}
+{attribute addProperty BoxType "EL6090-0000-0016"}
+{attribute addProperty Id "StatusAT %I*Status_E3E7FD126"}
+{attribute addProperty CRC "3773007075"}
+{attribute addProperty Size "6"}
+TYPE DIS_Inputs_E0E384E3 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_E3E7FD12;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

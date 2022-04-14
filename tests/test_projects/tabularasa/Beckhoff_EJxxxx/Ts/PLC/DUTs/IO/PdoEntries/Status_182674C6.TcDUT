@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_182674C6" Id="{dd101f41-c1a5-494a-8c48-3b4b5f39b7b7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
+{attribute addProperty BoxType "EJ2521-0224-0016"}
+{attribute addProperty Id "Latch_extern_validBOOL1Set_counter_doneBOOL1Counter_underflowBOOL1Counter_overflowBOOL1Status_of_extern_latchBOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
+{attribute addProperty CRC "405173446"}
+{attribute addProperty Size "7"}
+TYPE Status_182674C6 :
+STRUCT
+	{attribute addProperty Name "Latch_extern_valid"}
+	Latch_extern_valid : BOOL;
+	{attribute addProperty Name "Set_counter_done"}
+	Set_counter_done : BOOL;
+	{attribute addProperty Name "Counter_underflow"}
+	Counter_underflow : BOOL;
+	{attribute addProperty Name "Counter_overflow"}
+	Counter_overflow : BOOL;
+	{attribute addProperty Name "Status_of_extern_latch"}
+	Status_of_extern_latch : BOOL;
+	{attribute addProperty Name "Sync_error"}
+	Sync_error : BOOL;
+	{attribute addProperty Name "TxPDO_Toggle"}
+	TxPDO_Toggle : BOOL;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

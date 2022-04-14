@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch_B_PositionControl_Inputs_C884000A" Id="{b7c41b57-223b-43df-a3f9-1a595190e0c0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0101-0101'}
+{attribute addProperty BoxType "AX8206-0100-0101-0101"}
+{attribute addProperty Id "Ch_B_Following_error_actual_valueAT %I*DINT4"}
+{attribute addProperty CRC "3364093962"}
+{attribute addProperty Size "4"}
+TYPE Ch_B_PositionControl_Inputs_C884000A :
+STRUCT
+	{attribute addProperty Name "Ch_B_Following_error_actual_value"}
+	Ch_B_Following_error_actual_value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

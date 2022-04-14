@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="COM_RxPDO_Map_Outputs_Channel_B336F4EE" Id="{ec5a887d-c3ba-4fcc-8dab-1598e1c2ffa0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP6002-0002-0016'}
+{attribute addProperty BoxType "EPP6002-0002-0016"}
+{attribute addProperty Id "CtrlAT %Q*WORD2Data_OutAT %Q*ARRAY[0..21] OF USINT22"}
+{attribute addProperty CRC "1305863315"}
+{attribute addProperty Size "24"}
+TYPE COM_RxPDO_Map_Outputs_Channel_B336F4EE :
+STRUCT
+	{attribute addProperty Name "Ctrl"}
+	Ctrl AT %Q* : WORD;
+	{attribute addProperty Name "Data_Out"}
+	Data_Out AT %Q* : ARRAY[0..21] OF USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

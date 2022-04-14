@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_7BCA2D07" Id="{1cf48bb1-2a93-45fb-98a8-247046ce2c78}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6861-0000-0016'}
+{attribute addProperty BoxType "EL6861-0000-0016"}
+{attribute addProperty Id "Transmit_acceptedBOOL1Receive_requestBOOL1Init_acceptedBOOL1Buffer_fullBOOL1Parity_errorBOOL1Framing_errorBOOL1Overrun_errorBOOL1Tx_buffer_emptyBOOL1Input_lengthUSINT1"}
+{attribute addProperty CRC "2076847367"}
+{attribute addProperty Size "9"}
+TYPE Status_7BCA2D07 :
+STRUCT
+	{attribute addProperty Name "Transmit_accepted"}
+	Transmit_accepted : BOOL;
+	{attribute addProperty Name "Receive_request"}
+	Receive_request : BOOL;
+	{attribute addProperty Name "Init_accepted"}
+	Init_accepted : BOOL;
+	{attribute addProperty Name "Buffer_full"}
+	Buffer_full : BOOL;
+	{attribute addProperty Name "Parity_error"}
+	Parity_error : BOOL;
+	{attribute addProperty Name "Framing_error"}
+	Framing_error : BOOL;
+	{attribute addProperty Name "Overrun_error"}
+	Overrun_error : BOOL;
+	{attribute addProperty Name "Tx_buffer_empty"}
+	Tx_buffer_empty : BOOL;
+	{attribute addProperty Name "Input_length"}
+	Input_length : USINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

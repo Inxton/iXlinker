@@ -18,30 +18,30 @@ namespace iXlinkerDtos
             }
         }
 
-        private string name;
-        public string Name
+        private string nameA;
+        public string NameA
         {
-            get { return this.name; }
+            get { return this.nameA; }
             set
             {
                 if (!string.IsNullOrEmpty(value))
                 {
-                    this.name = value;
-                    NotifyPropertyChanged(nameof(Name));
+                    this.nameA = value;
+                    NotifyPropertyChanged(nameof(NameA));
                 }
             }
         }
 
-        private string nameUnmodified;
-        public string NameUnmodified
+        private string nameB;
+        public string NameB
         {
-            get { return this.nameUnmodified; }
+            get { return this.nameB; }
             set
             {
                 if (!string.IsNullOrEmpty(value))
                 {
-                    this.nameUnmodified = value;
-                    NotifyPropertyChanged(nameof(NameUnmodified));
+                    this.nameB = value;
+                    NotifyPropertyChanged(nameof(NameB));
                 }
             }
         }

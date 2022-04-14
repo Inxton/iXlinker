@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="MMS_Device_Inputs_7D6F8734" Id="{2c1c18a1-a0fd-4699-a1e7-f5ae37145a0c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM9410-0000-0016'}
+{attribute addProperty BoxType "ELM9410-0000-0016"}
+{attribute addProperty Id "StatusAT %I*Status_06143A9F4"}
+{attribute addProperty CRC "2104461108"}
+{attribute addProperty Size "4"}
+TYPE MMS_Device_Inputs_7D6F8734 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status AT %I* : Status_06143A9F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

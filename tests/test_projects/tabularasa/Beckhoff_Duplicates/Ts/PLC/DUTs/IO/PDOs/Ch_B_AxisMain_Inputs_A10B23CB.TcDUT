@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch_B_AxisMain_Inputs_A10B23CB" Id="{d43f79b1-10d9-4857-a6b8-71454c3781df}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0101-0101'}
+{attribute addProperty BoxType "AX8206-0100-0101-0101"}
+{attribute addProperty Id "Ch_B_Position_actual_value_invalidAT %I*BOOL1Ch_B_1st_Additional_position_actual_value_invalidAT %I*BOOL1Ch_B_StatuswordAT %I*UINT2Ch_B_Position_actual_valueAT %I*DINT4"}
+{attribute addProperty CRC "2701861835"}
+{attribute addProperty Size "8"}
+TYPE Ch_B_AxisMain_Inputs_A10B23CB :
+STRUCT
+	{attribute addProperty Name "Ch_B_Position_actual_value_invalid"}
+	Ch_B_Position_actual_value_invalid AT %I* : BOOL;
+	{attribute addProperty Name "Ch_B_1st_Additional_position_actual_value_invalid"}
+	Ch_B_1st_Additional_position_actual_value_invalid AT %I* : BOOL;
+	{attribute addProperty Name "Ch_B_Statusword"}
+	Ch_B_Statusword AT %I* : UINT;
+	{attribute addProperty Name "Ch_B_Position_actual_value"}
+	Ch_B_Position_actual_value AT %I* : DINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
