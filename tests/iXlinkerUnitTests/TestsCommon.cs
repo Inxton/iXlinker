@@ -288,9 +288,8 @@ namespace iXlinkerUnitTests
             string tsProjFilePath = generatedDir.FullName + "\\Ts.tsproj";
             string plcProjFilePath = generatedDir.FullName + "\\Plc.plcproj";
             string activeTargetPlatform = "Release|TwinCAT RT(x64)";
-            string devenvPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com";
 
-            Solution vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, true, devenvPath, 0);
+            Solution vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, true, "", 0);
             ScanTcProjFile tcProj = new ScanTcProjFile();
             tcProj.SearchDevices(vs);
             tcProj.GenerateStructures(vs);

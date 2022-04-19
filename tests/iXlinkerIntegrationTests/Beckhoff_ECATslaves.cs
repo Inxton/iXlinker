@@ -168,13 +168,8 @@ namespace iXlinkerIntegrationTests
             string TsProjFilePath = @$"{generatedDir.FullName}\Ts\Ts.tsproj";
             string ActiveTargetPlatform = "Release|TwinCAT RT (x64)";
             string PlcProjFilePath = @$"{generatedDir.FullName}\Ts\PLC\PLC.plcproj";
-            bool DoNotGenerateDisabled = true;
-            string DevenvPath = @"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.com";
-            ushort MaxEthercatFrameIndex = 25;
 
-            var args = new string[] { $"-t", $"{TsProjFilePath}", "-p", $"{ActiveTargetPlatform}", "-c", $"{PlcProjFilePath}", "-g", $"{DoNotGenerateDisabled}", "-d", $"{DevenvPath}", "-n", $"{MaxEthercatFrameIndex}" };
-
-            Solution vs = VS.GetXaeProjectDetails(TsProjFilePath, ActiveTargetPlatform, PlcProjFilePath, DoNotGenerateDisabled, DevenvPath, MaxEthercatFrameIndex);
+            Solution vs = VS.GetXaeProjectDetails(TsProjFilePath, ActiveTargetPlatform, PlcProjFilePath, true, "", 25);
             ScanTcProjFile tcProj = new ScanTcProjFile();
             tcProj.SearchDevices(vs);
             tcProj.GenerateStructures(vs);
