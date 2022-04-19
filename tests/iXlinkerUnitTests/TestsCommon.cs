@@ -12,6 +12,8 @@ using iXlinker.Utils;
 using System.Xml.Serialization;
 using System;
 using TwincatXmlSchemas.TcPlcObject;
+using TwincatXmlSchemas.TcSmProject;
+using TwincatXmlSchemas.TcPlcProj;
 
 namespace iXlinkerUnitTests
 {
@@ -27,7 +29,7 @@ namespace iXlinkerUnitTests
             var executingAssemblyPath = new FileInfo(Assembly.GetExecutingAssembly().Location);
             var executingAssemblyFolder = executingAssemblyPath.Directory.FullName;
             TestFolderPath = Path.GetFullPath(@"..\..\..\..\test_projects\", executingAssemblyFolder);
-            SourcePath = (TestFolderPath + "\\tabularasa").Replace("\\\\","\\");
+            SourcePath = (TestFolderPath + "\\tabularasa").Replace("\\\\", "\\");
             expectedDir = new DirectoryInfo((TestFolderPath + "\\expected").Replace("\\\\", "\\"));
             if (Directory.Exists(expectedDir.FullName))
             {
@@ -68,7 +70,7 @@ namespace iXlinkerUnitTests
                 generatedDir.Delete(true);
             }
         }
-        
+
         private static void CopyFilesRecursively(string sourcePath, string targetPath)
         {
             //Now Create all of the directories
@@ -91,7 +93,7 @@ namespace iXlinkerUnitTests
             string[] expectedFiles = Directory.GetFiles(expectedFolder, "*", enumerationOptions);
             foreach (string expectedFile in expectedFiles)
             {
-                string generatedFile = expectedFile.Replace(expectedFolder,generatedFolder);
+                string generatedFile = expectedFile.Replace(expectedFolder, generatedFolder);
                 if (File.Exists(generatedFile))
                 {
                     if (!AreFilesEqual(expectedFile, generatedFile))
@@ -104,7 +106,7 @@ namespace iXlinkerUnitTests
                 }
                 else
                 {
-                    Console.WriteLine(@"Generated file ""{0}"" not exists.", generatedFile.Replace(generatedFolder,".."));
+                    Console.WriteLine(@"Generated file ""{0}"" not exists.", generatedFile.Replace(generatedFolder, ".."));
                     areEqual = false;
                 }
             }
@@ -135,7 +137,7 @@ namespace iXlinkerUnitTests
                     if (!expected[row].Equals(generated[row]))
                     {
                         int column = GetFirstDiffIndex(expected[row], generated[row]);
-                        Console.WriteLine(@"File content ""{0}"" differs. Row: {1} , column: {2}.", pathGenerated.Replace(generatedDir.FullName,".."), row,column);
+                        Console.WriteLine(@"File content ""{0}"" differs. Row: {1} , column: {2}.", pathGenerated.Replace(generatedDir.FullName, ".."), row, column);
                         Console.WriteLine(@"Expected: ""{0}""", expected[row]);
                         Console.WriteLine(@"Generated: ""{0}""", generated[row]);
                         areEqual = false;
@@ -154,7 +156,7 @@ namespace iXlinkerUnitTests
             bool areEqual = true;
             TcPlcObjectBaseDeclType dutExpected = GetTcDUTContent(pathExpected);
             TcPlcObjectBaseDeclType dutGenerated = GetTcDUTContent(pathGenerated);
-            if (dutExpected ==null || dutGenerated == null)
+            if (dutExpected == null || dutGenerated == null)
             {
                 areEqual = false;
             }
@@ -233,7 +235,7 @@ namespace iXlinkerUnitTests
                         break;
                     }
                 }
-                if(included) declarationFiltered.Add(item);
+                if (included) declarationFiltered.Add(item);
             }
             return declarationFiltered;
         }
@@ -270,18 +272,84 @@ namespace iXlinkerUnitTests
             return baseDeclType;
         }
 
+        private static void CopyTsprojFileWithoutMappings(string source, string destination)
+        {
+            try
+            {
+                File.Copy(source, destination);
+                TcSmProject tsProj = new TcSmProject();
+                //Read and deserialize content of the tsProj file located on the destination path
+                using (StreamReader reader = new StreamReader(destination))
+                {
+                    XmlSerializer deserializer = new XmlSerializer(typeof(TcSmProject));
+                    tsProj = (TcSmProject)deserializer.Deserialize(reader);
+                }
+                //By creating new mapping, all existing mappings are overwritten
+                tsProj.Mappings = new MappingsType();
+                //Serialize and write content of the tsProj to the file located on the destination path
+                using (StreamWriter writer = new StreamWriter(destination))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(TcSmProject));
+                    serializer.Serialize(writer, tsProj);
+                }
+            }
+            catch (Exception ex)
+            {
+                EventLogger.Instance.Logger.Error(MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+            }
+        }
+
+        private static void CopyPlcprojFileWithoutGeneratedItems(string source, string destination)
+        {
+            try
+            {
+                File.Copy(source, destination);
+                Project plcProj = new Project();
+                //Read and deserialize content of the plcProj file located on the destination path
+                using (StreamReader reader = new StreamReader(destination))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(Project));
+                    plcProj = (Project)serializer.Deserialize(reader);
+                }
+                //Remove generated items
+                foreach (ProjectItemGroup item in plcProj.ItemGroup)
+                {
+                    if (item.Compile != null)
+                    {
+                        List<ProjectItemGroupCompile> itemCompileList = item.Compile.ToList();
+                        itemCompileList.RemoveAll(item => (item.SubType.Equals("Code") && (item.Include.Equals(@"GVLs\GVL_iXlinker.TcGVL") || (item.Include.StartsWith(@"DUTs\IO") && item.Include.EndsWith(".TcDUT")))));
+                        item.Compile = itemCompileList.ToArray();
+                    }
+                }
+                //Serialize and write content of the tsProj to the file located on the destination path
+                using (StreamWriter writer = new StreamWriter(destination))
+                {
+                    XmlSerializer serializer = new XmlSerializer(typeof(Project));
+                    serializer.Serialize(writer, plcProj);
+                }
+            }
+            catch (Exception ex)
+            {
+                EventLogger.Instance.Logger.Error(MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+            }
+        }
+
+
         internal static void Arrange(string patternPath)
         {
             CopyFilesRecursively(SourcePath + "\\" + patternPath, expectedDir.FullName);
             Assert.IsTrue(File.Exists(expectedDir.FullName + "\\Ts.tsproj"));
             Assert.IsTrue(File.Exists(expectedDir.FullName + "\\Plc.plcproj"));
             Assert.IsTrue(File.Exists(expectedDir.FullName + "\\PlcTask.TcTTO"));
-            File.Copy(expectedDir.FullName + "\\Ts.tsproj", generatedDir.FullName + "\\Ts.tsproj");
-            File.Copy(expectedDir.FullName + "\\Plc.plcproj", generatedDir.FullName + "\\Plc.plcproj");
+            CopyTsprojFileWithoutMappings(expectedDir.FullName + "\\Ts.tsproj", generatedDir.FullName + "\\Ts.tsproj");
+            CopyPlcprojFileWithoutGeneratedItems(expectedDir.FullName + "\\Plc.plcproj", generatedDir.FullName + "\\Plc.plcproj");
             File.Copy(expectedDir.FullName + "\\PlcTask.TcTTO", generatedDir.FullName + "\\PlcTask.TcTTO");
-            Assert.IsTrue(File.Exists(expectedDir.FullName + "\\Ts.tsproj"));
-            Assert.IsTrue(File.Exists(expectedDir.FullName + "\\Plc.plcproj"));
-            Assert.IsTrue(File.Exists(expectedDir.FullName + "\\PlcTask.TcTTO"));
+            Assert.IsTrue(File.Exists(generatedDir.FullName + "\\Ts.tsproj"));
+            Assert.IsTrue(File.Exists(generatedDir.FullName + "\\Plc.plcproj"));
+            Assert.IsTrue(File.Exists(generatedDir.FullName + "\\PlcTask.TcTTO"));
+            Assert.IsFalse(AreFileContentsEqual(expectedDir.FullName + "\\Ts.tsproj", generatedDir.FullName + "\\Ts.tsproj"));
+            Assert.IsFalse(AreFileContentsEqual(expectedDir.FullName + "\\Plc.plcproj", generatedDir.FullName + "\\Plc.plcproj"));
+            Assert.IsTrue(AreFileContentsEqual(expectedDir.FullName + "\\PlcTask.TcTTO", generatedDir.FullName + "\\PlcTask.TcTTO"));
         }
         internal static void Act()
         {
