@@ -86,6 +86,10 @@ namespace iXlinkerTestHelper
             }
         }
 
+        internal static bool AllFilesAreEqual()
+        {
+            return AllFilesAreEqual(expectedDir.FullName, generatedDir.FullName);
+        }
         internal static bool AllFilesAreEqual(string expectedFolder, string generatedFolder)
         {
             bool areEqual = true;
@@ -96,13 +100,7 @@ namespace iXlinkerTestHelper
                 string generatedFile = expectedFile.Replace(expectedFolder, generatedFolder);
                 if (File.Exists(generatedFile))
                 {
-                    if (!AreFilesEqual(expectedFile, generatedFile))
-                    {
-                        if (!AreFileContentsEqual(expectedFile, generatedFile))
-                        {
-                            areEqual = false;
-                        }
-                    }
+                    areEqual = AreFilesEqual(expectedFile, generatedFile) ? areEqual : false;
                 }
                 else
                 {
@@ -112,11 +110,22 @@ namespace iXlinkerTestHelper
             }
             return areEqual;
         }
-        internal static bool AllFilesAreEqual()
+        internal static bool AreFilesEqual(string path1, string path2)
         {
-            return AllFilesAreEqual(expectedDir.FullName, generatedDir.FullName);
+            bool areEqual = false;
+            if (AreFilesBytwiseEqual(path1, path2))
+            {
+                areEqual = true;
+            }
+            else if (AreFileContentsEqual(path1, path2))
+            {
+                areEqual = true;
+            }
+
+            return areEqual;
         }
-        internal static bool AreFilesEqual(string path1, string path2) => File.ReadAllBytes(path1).SequenceEqual(File.ReadAllBytes(path2));
+
+        private static bool AreFilesBytwiseEqual(string path1, string path2) => File.ReadAllBytes(path1).SequenceEqual(File.ReadAllBytes(path2));
         private static bool AreFileContentsEqual(string pathExpected, string pathGenerated)
         {
             bool areEqual = true;
@@ -126,6 +135,13 @@ namespace iXlinkerTestHelper
             if (pathExpected.EndsWith(".TcDUT"))
             {
                 if (!AreTcDUTFilesEqual(pathExpected, pathGenerated))
+                {
+                    areEqual = false;
+                }
+            }
+            else if (pathExpected.EndsWith(".tsproj"))
+            {
+                if (!DevicesAndMappingsInsideTsprojFilesAreEqual(pathExpected, pathGenerated))
                 {
                     areEqual = false;
                 }
@@ -170,8 +186,8 @@ namespace iXlinkerTestHelper
 
             if (dutExpected.Declaration != dutGenerated.Declaration)
             {
-                string[] expected = GetAllRelevantTcDutDelarationLines(dutExpected.Declaration).ToArray();
-                string[] generated = GetAllRelevantTcDutDelarationLines(dutGenerated.Declaration).ToArray();
+                string[] expected = GetAllRelevantTcDutDeclarationLines(dutExpected.Declaration).ToArray();
+                string[] generated = GetAllRelevantTcDutDeclarationLines(dutGenerated.Declaration).ToArray();
                 if (expected.Length != generated.Length)
                 {
                     Console.WriteLine(@"Different number of the declaration rows in the file: ""{0}""", pathGenerated.Replace(generatedDir.FullName, ".."));
@@ -195,6 +211,86 @@ namespace iXlinkerTestHelper
 
             return areEqual;
         }
+        private static bool DevicesAndMappingsInsideTsprojFilesAreEqual(string pathExpected, string pathGenerated)
+        {
+            return DevicesInsideTsprojFilesAreEqual(pathExpected, pathGenerated) && MappingsInsideTsprojFilesAreEqual(pathExpected, pathGenerated);
+        }
+        private static bool DevicesInsideTsprojFilesAreEqual(string pathExpected, string pathGenerated)
+        {
+            bool areEqual = true;
+            try
+            {
+                TcSmProject tsProjSource = new TcSmProject();
+                using (StreamReader reader = new StreamReader(pathExpected))
+                {
+                    XmlSerializer deserializer = new XmlSerializer(typeof(TcSmProject));
+                    tsProjSource = (TcSmProject)deserializer.Deserialize(reader);
+                }
+                TcSmProject tsProjDest = new TcSmProject();
+                using (StreamReader reader = new StreamReader(pathGenerated))
+                {
+                    XmlSerializer deserializer = new XmlSerializer(typeof(TcSmProject));
+                    tsProjDest = (TcSmProject)deserializer.Deserialize(reader);
+                }
+                MemoryStream src = new MemoryStream();
+                MemoryStream dest = new MemoryStream();
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(TcSmProjectProjectIO));
+                xmlSerializer.Serialize(src, tsProjSource.Project.Io);
+                xmlSerializer.Serialize(dest, tsProjDest.Project.Io);
+                if (src.Length != dest.Length)
+                {
+                    areEqual = false;
+                }
+                else if (!src.ToArray().SequenceEqual(dest.ToArray()))
+                {
+                    areEqual = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                EventLogger.Instance.Logger.Error(MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                areEqual = false;
+            }
+            return areEqual;
+        }
+        private static bool MappingsInsideTsprojFilesAreEqual(string pathExpected, string pathGenerated)
+        {
+            bool areEqual = true;
+            try
+            {
+                TcSmProject tsProjSource = new TcSmProject();
+                using (StreamReader reader = new StreamReader(pathExpected))
+                {
+                    XmlSerializer deserializer = new XmlSerializer(typeof(TcSmProject));
+                    tsProjSource = (TcSmProject)deserializer.Deserialize(reader);
+                }
+                TcSmProject tsProjDest = new TcSmProject();
+                using (StreamReader reader = new StreamReader(pathGenerated))
+                {
+                    XmlSerializer deserializer = new XmlSerializer(typeof(TcSmProject));
+                    tsProjDest = (TcSmProject)deserializer.Deserialize(reader);
+                }
+                MemoryStream src = new MemoryStream();
+                MemoryStream dest = new MemoryStream();
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(MappingsType));
+                xmlSerializer.Serialize(src, tsProjSource.Mappings);
+                xmlSerializer.Serialize(dest, tsProjDest.Mappings);
+                if (src.Length != dest.Length)
+                {
+                    areEqual = false;
+                }
+                else if (!src.ToArray().SequenceEqual(dest.ToArray()))
+                {
+                    areEqual = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                EventLogger.Instance.Logger.Error(MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                areEqual = false;
+            }
+            return areEqual;
+        }
         private static int GetFirstDiffIndex(string str1, string str2)
         {
             if (str1 == null || str2 == null) return -1;
@@ -211,7 +307,7 @@ namespace iXlinkerTestHelper
 
             return -1;
         }
-        private static List<string> GetAllRelevantTcDutDelarationLines(string declarationField)
+        private static List<string> GetAllRelevantTcDutDeclarationLines(string declarationField)
         {
             string[] exludedPrefixes = {
                 "{attribute 'GeneratedUsingTerminal: ",
@@ -271,7 +367,6 @@ namespace iXlinkerTestHelper
 
             return baseDeclType;
         }
-
         internal static void CopyTsprojFileWithoutMappings(string source, string destination)
         {
             try

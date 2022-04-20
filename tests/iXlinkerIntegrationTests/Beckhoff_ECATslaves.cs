@@ -17,7 +17,6 @@ namespace iXlinkerIntegrationTests
 {
     public class Integration
     {
-        internal static string TestFolderPath { get; private set; }
         internal static string SourcePath { get; private set; }
         internal static DirectoryInfo expectedDir { get; private set; }
         internal static DirectoryInfo generatedDir { get; private set; }
@@ -25,35 +24,22 @@ namespace iXlinkerIntegrationTests
         [OneTimeSetUp]
         public void OneTimeSetup()
         {
-            var executingAssemblyPath = new FileInfo(Assembly.GetExecutingAssembly().Location);
-            var executingAssemblyFolder = executingAssemblyPath.Directory.FullName;
-            TestFolderPath = Path.GetFullPath(@"..\..\..\..\test_projects\", executingAssemblyFolder);
-            SourcePath = (TestFolderPath + "\\tabularasa").Replace("\\\\", "\\");
-            expectedDir = new DirectoryInfo((TestFolderPath + "\\expected").Replace("\\\\", "\\"));
-            if (Directory.Exists(expectedDir.FullName))
-            {
-                expectedDir.Delete(true);
-            }
-            expectedDir.Create();
-            generatedDir = new DirectoryInfo((TestFolderPath + "\\generated").Replace("\\\\", "\\"));
-            if(Directory.Exists(generatedDir.FullName))
-            {
-                generatedDir.Delete(true);
-            }
-            generatedDir.Create();
-            EventLogger.VerbosityLevel = Serilog.Events.LogEventLevel.Information;
+            TestsCommon.OneTimeSetup();
+            SourcePath = TestsCommon.SourcePath;
+            expectedDir = TestsCommon.expectedDir;
+            generatedDir = TestsCommon.generatedDir;
         }
+
+        [SetUp]
+        public void Setup()
+        {
+            TestsCommon.Setup();
+        }
+
         [OneTimeTearDown]
         public void OneTimeTearDown()
         {
-            if (Directory.Exists(expectedDir.FullName))
-            {
-                expectedDir.Delete(true);
-            }
-            if (Directory.Exists(generatedDir.FullName))
-            {
-                generatedDir.Delete(true);
-            }
+            TestsCommon.OneTimeTearDown();
         }
 
         [Test, Order(101)]
@@ -230,7 +216,6 @@ namespace iXlinkerIntegrationTests
             File.Copy(expectedDir.FullName + str, generatedDir.FullName + str);
             Assert.IsTrue(File.Exists(generatedDir.FullName + str));
             Assert.IsTrue(TestsCommon.AreFilesEqual(expectedDir.FullName + str, generatedDir.FullName + str));
-
         }
     }
 }
