@@ -1,11 +1,17 @@
 using iXlinker.TsprojFile.Mapping;
 using iXlinker.Utils;
 using iXlinkerDtos;
+using iXlinkerTestHelper;
 using NUnit.Framework;
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Xml.Serialization;
 using TsprojFile.Scan;
+using TwincatXmlSchemas.TcPlcProj;
+using TwincatXmlSchemas.TcSmProject;
 
 namespace iXlinkerIntegrationTests
 {
@@ -176,15 +182,15 @@ namespace iXlinkerIntegrationTests
             tcProj.GenerateMappingsToTsProj(vs);
 
 
-            Assert.IsTrue(AreFileContentsEqual(TsProjFilePath, @$"{expectedDir.FullName}\Ts\Ts.tsproj"));
-            Assert.IsTrue(AreFileContentsEqual(PlcProjFilePath, @$"{expectedDir.FullName}\Ts\PLC\PLC.plcproj"));
+            Assert.IsTrue(TestsCommon.AreFilesEqual(TsProjFilePath, @$"{expectedDir.FullName}\Ts\Ts.tsproj"));
+            Assert.IsTrue(TestsCommon.AreFilesEqual(PlcProjFilePath, @$"{expectedDir.FullName}\Ts\PLC\PLC.plcproj"));
 
             var expectedDutFiles = Directory.EnumerateFiles(@$"{expectedDir.FullName}\Ts\PLC\DUTs\IO\").ToList();
             var generatedDutFiles = Directory.EnumerateFiles(@$"{generatedDir.FullName}\Ts\PLC\DUTs\IO\").ToList();
 
             for (int i = 0; i < expectedDutFiles.Count(); i++)
             {
-                Assert.IsTrue(AreFileContentsEqual(expectedDutFiles[i], generatedDutFiles[i]));
+                Assert.IsTrue(TestsCommon.AreFilesEqual(expectedDutFiles[i], generatedDutFiles[i]));
             }
 
             var expectedGvlFiles = Directory.EnumerateFiles(@$"{expectedDir.FullName}\Ts\PLC\GVLs\").ToList();
@@ -192,30 +198,39 @@ namespace iXlinkerIntegrationTests
 
             for (int i = 0; i < expectedDutFiles.Count(); i++)
             {
-                Assert.IsTrue(AreFileContentsEqual(expectedGvlFiles[i], generatedGvlFiles[i]));
+                Assert.IsTrue(TestsCommon.AreFilesEqual(expectedGvlFiles[i], generatedGvlFiles[i]));
             }
         }
-        public static bool AreFileContentsEqual(string path1, string path2) =>
-              File.ReadAllBytes(path1).SequenceEqual(File.ReadAllBytes(path2));
 
-        private static void CopyFilesRecursively(string sourcePath, string targetPath)
-        {
-            //Now Create all of the directories
-            foreach (string dirPath in Directory.GetDirectories(sourcePath, "*", SearchOption.AllDirectories))
-            {
-                Directory.CreateDirectory(dirPath.Replace(sourcePath, targetPath));
-            }
-
-            //Copy all the files & Replaces any files with the same name
-            foreach (string newPath in Directory.GetFiles(sourcePath, "*.*", SearchOption.AllDirectories))
-            {
-                File.Copy(newPath, newPath.Replace(sourcePath, targetPath), true);
-            }
-        }
         private static void CopyTestFiles(string source)
         {
-            CopyFilesRecursively(source, expectedDir.FullName);
-            CopyFilesRecursively(source, generatedDir.FullName);
+            TestsCommon.CopyFilesRecursively(source, expectedDir.FullName);
+
+            string str = generatedDir.FullName + @"\Ts";
+            if (Directory.Exists(str))
+                Directory.Delete(str,true);
+            Directory.CreateDirectory(str);
+
+            str = str + @"\PLC";
+            if (Directory.Exists(str))
+                Directory.Delete(str,true);
+            Directory.CreateDirectory(str);
+
+            str = @"\Ts\Ts.tsproj";
+            TestsCommon.CopyTsprojFileWithoutMappings(expectedDir.FullName + str, generatedDir.FullName + str);
+            Assert.IsTrue(File.Exists(generatedDir.FullName + str));
+            Assert.IsFalse(TestsCommon.AreFilesEqual(expectedDir.FullName + str, generatedDir.FullName + str));
+
+            str = @"\Ts\PLC\Plc.plcproj";
+            TestsCommon.CopyPlcprojFileWithoutGeneratedItems(expectedDir.FullName + str, generatedDir.FullName + str);
+            Assert.IsTrue(File.Exists(generatedDir.FullName + str));
+            Assert.IsFalse(TestsCommon.AreFilesEqual(expectedDir.FullName + str, generatedDir.FullName + str));
+
+            str = @"\Ts\PLC\PlcTask.TcTTO";
+            File.Copy(expectedDir.FullName + str, generatedDir.FullName + str);
+            Assert.IsTrue(File.Exists(generatedDir.FullName + str));
+            Assert.IsTrue(TestsCommon.AreFilesEqual(expectedDir.FullName + str, generatedDir.FullName + str));
+
         }
     }
 }
