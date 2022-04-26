@@ -80,7 +80,6 @@ namespace TsprojFile.Scan
                 EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
 
-            string varGrpType = "";
             try
             {
                 if (varGrp.VarGrpTypeSpecified && varGrp.VarGrpType == 2 )

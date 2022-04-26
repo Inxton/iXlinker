@@ -37,13 +37,6 @@ namespace TsprojFile.Scan
                             varGrpNamesDuplicities.Add(varGrp.Name);
                         }
                         EventLogger.Instance.Logger.Information("Not unique varGrp name {0} found in box name {1}!!!", varGrp.Name, box.Name);
-                        if (exportDuplicities)
-                        {
-                            using (StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\VarGrpNamesDuplicities.txt", true))
-                            {
-                                sw.WriteLine("{0} ; {1} ; {2}", box.Name, varGrp.Name);
-                            }
-                        }
                         varGrp.Name = varGrp.Name + "_" + sameNameIndex.ToString();
                         sameNameIndex++;
                         EventLogger.Instance.Logger.Information("\t Renamed to {0}!!!", varGrp.Name);
@@ -76,13 +69,6 @@ namespace TsprojFile.Scan
                             varGrpNamesDuplicities.Add(varGrp.Name);
                         }
                         EventLogger.Instance.Logger.Information("Not unique varGrp name {0} found in box name {1}!!!", varGrp.Name, box.Name);
-                        if (exportDuplicities)
-                        {
-                            using (StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\VarGrpsDuplicities.txt", true))
-                            {
-                                sw.WriteLine("{0} ; {1} ; {2}", box.Name, varGrp.Name);
-                            }
-                        }
                         varGrp.Name = varGrp.Name + "_" + sameNameIndex.ToString();
                         sameNameIndex++;
                         EventLogger.Instance.Logger.Information("\t Renamed to {0}!!!", varGrp.Name);

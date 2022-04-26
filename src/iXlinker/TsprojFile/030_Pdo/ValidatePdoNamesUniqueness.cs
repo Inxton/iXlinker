@@ -33,13 +33,6 @@ namespace TsprojFile.Scan
                                 pdoNamesDuplicities.Add(pdo.Name);
                             }
                             EventLogger.Instance.Logger.Information("Not unique pdo name {0} found in box name {1}, box type {2}!!!", pdo.Name, box.Name, boxItem.Desc);
-                            if (exportDuplicities)
-                            {
-                                using (StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\PdoNamesDuplicities.txt", true))
-                                {
-                                    sw.WriteLine("{0} ; {1} ; {2}", box.Name, boxItem.Desc, pdo.Name);
-                                }
-                            }
                             pdo.Name = pdo.Name + "_" + sameNameIndex.ToString();
                             sameNameIndex++;
                             EventLogger.Instance.Logger.Information("\t Renamed to {0}!!!", pdo.Name);

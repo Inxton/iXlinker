@@ -28,14 +28,6 @@ namespace TsprojFile.Scan
                             newName = structMember.NameA + "_" + sameNameIndex.ToString();
                         }
                         EventLogger.Instance.Logger.Information("Not unique pdo entry struct member name {0} found in the structure name {1}, in the box type {2}!!!", structMember.NameA, actStruct.Prefix, actStruct.BoxOrderCode);
-                        if (exportDuplicities)
-                        {
-                            using (StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\PdoEntryStructMemberNamesDuplicities.txt", true))
-                            {
-                                sw.WriteLine("{0} ; {1} ; {2}", actStruct.BoxOrderCode, actStruct.Prefix, structMember.NameA);
-                            }
-                        }
-
                         EventLogger.Instance.Logger.Information(@"\t Renamed to from ""{0}"" to ""{1}"" !!!", previousName,newName);
                         structMember.NameA = newName;
                         structMember.NameB = newName;

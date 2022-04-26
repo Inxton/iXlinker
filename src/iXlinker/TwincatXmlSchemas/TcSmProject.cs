@@ -13,7 +13,6 @@
 // 
 namespace TwincatXmlSchemas.TcSmProject
 {
-    using System.Xml.Serialization;
 
 
     /// <remarks/>

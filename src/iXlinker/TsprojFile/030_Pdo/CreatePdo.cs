@@ -14,15 +14,8 @@ namespace TsprojFile.Scan
             ObservableCollection<PdoEntryViewModel> pdoEntriesUnstructured = GetAllPdoEntriesUnstructured(pdo, pdoViewModel);
             pdoViewModel.PdoEntriesUnstructured = pdoEntriesUnstructured;
 
-            //ObservableCollection<PdoEntryViewModel> pdoEntriesStructured = GetAllPdoEntriesStructured(pdo, pdoViewModel, pdoEntriesUnstructured);
-            //pdoViewModel.PdoEntriesStructured = pdoEntriesStructured;
-
-
             ObservableCollection<PdoEntryViewModel> pdoEntriesStructured = CreateStructuresForPdoEntries(pdo, pdoViewModel, pdoEntriesUnstructured);
             pdoViewModel.PdoEntriesStructured = pdoEntriesStructured;
-
-            //MappableObject mapableObject = GetAllPdoEntriesAsOneStructure(pdoViewModel, pdoEntriesStructured);
-            //pdoViewModel.MapableObject = mapableObject;
 
             GetAllPdoEntriesAsOneStructureAndCreateMapings(pdoEntriesStructured , ref pdoViewModel );
 

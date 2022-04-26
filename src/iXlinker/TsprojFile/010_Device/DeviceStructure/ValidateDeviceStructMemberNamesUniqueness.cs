@@ -25,13 +25,7 @@ namespace TsprojFile.Scan
                             structEntryNamesDuplicities.Add(structMember.Name);
                         }
                         EventLogger.Instance.Logger.Information("Not unique device struct member name {0} found in the structure name {1}, in the device type {2}!!!", structMember.Name, actStruct.Prefix, actStruct.BoxOrderCode);
-                        if (exportDuplicities)
-                        {
-                            using(StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\DeviceStructMemberNamesDuplicities.txt", true))
-                            {
-                                sw.WriteLine("{0} ; {1} ; {2}", actStruct.BoxOrderCode, actStruct.Prefix, structMember.Name);
-                            }
-                        }
+
                         structMember.Name = structMember.Name + "_" + sameNameIndex.ToString();
                         sameNameIndex++;
                         EventLogger.Instance.Logger.Information("\t Renamed to {0}!!!", structMember.Name);

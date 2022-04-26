@@ -26,13 +26,6 @@ namespace TsprojFile.Scan
                             structEntryNamesDuplicities.Add(structMember.Name);
                         }
                         EventLogger.Instance.Logger.Information("Not unique topology struct member name {0} found in the structure name {1}, in the box type {2}!!!", structMember.Name, actStruct.Name, actStruct.BoxOrderCode);
-                        if (exportDuplicities)
-                        {
-                            using (StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\TopologyStructMemberNamesDuplicities.txt", true))
-                            {
-                                sw.WriteLine("{0} ; {1} ; {2}", actStruct.BoxOrderCode, actStruct.Prefix, structMember.Name);
-                            }
-                        }
                         structMember.Name = structMember.Name + "_" + sameNameIndex.ToString();
                         sameNameIndex++;
                         EventLogger.Instance.Logger.Information("\t Renamed to {0}!!!", structMember.Name);

@@ -13,7 +13,6 @@ namespace iXlinkerDtos
         public const string plcStructSeparator = ".";
         public const string hwStructSeparator = "^";
         public const string attributeHide = "{attribute 'hide'}";
-        public const bool exportDuplicities = false;
         public const string emptyStructure = "EMPTY_STRUCTURE";
 
         private TcSmProject tc;

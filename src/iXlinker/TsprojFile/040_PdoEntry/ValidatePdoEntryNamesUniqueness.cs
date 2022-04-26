@@ -29,13 +29,6 @@ namespace TsprojFile.Scan
                         if (string.IsNullOrEmpty(pdoEntry.Type.GUID))
                         {
                             EventLogger.Instance.Logger.Information("Not unique pdo entry name {0} found in the pdo name {1}, in the box type {2}!!!", pdoEntry.Name, pdo.Name, pdoViewModel.BoxOrderCode);
-                            if (exportDuplicities)
-                            {
-                                using (StreamWriter sw = new StreamWriter(@"D:\Inxton\iXlinker\PdoEntryNamesDuplicities.txt", true))
-                                {
-                                    sw.WriteLine("{0} ; {1} ; {2}", pdoViewModel.BoxOrderCode, pdo.Name, pdoEntry.Name);
-                                }
-                            }
                         }
                         pdoEntry.Name = pdoEntry.Name + "_" + sameNameIndex.ToString();
                         sameNameIndex++;

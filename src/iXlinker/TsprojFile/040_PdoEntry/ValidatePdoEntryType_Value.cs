@@ -44,24 +44,6 @@ namespace iXlinker.TsprojFile.PdoEntry
                         @"Unexpected type: " + type + " in the terminal : " + pdoEntry.BoxOrderCode + " in the item : " + pdoEntry.VarA.Replace(TcModel.tmpLevelSeparator, TcModel.ioLevelSeparator));
                 }
             }
-
-            if (type != null && !type.Equals(unmodified) && !String.IsNullOrEmpty(pdoEntry.Name))
-            {
-                try
-                {
-                    //Stream fs = isStructured ? new FileStream((AppDomain.CurrentDomain.BaseDirectory + "\\modifiedPdoEntryTypeStructured.txt").Replace("\\\\", "\\"), FileMode.Append) : new FileStream((AppDomain.CurrentDomain.BaseDirectory + "\\modifiedPdoEntryTypeUnstructured.txt").Replace("\\\\", "\\"), FileMode.Append);
-                    Stream fs = new FileStream("D:\\_tmp\\modifiedPdoEntryType.txt", FileMode.Append);
-
-                    using (StreamWriter sw = new StreamWriter(fs))
-                    {
-                        sw.WriteLine(@"{0};{1};{2};{3};{4}", pdoEntry.BoxOrderCode, (pdoEntry.VarA).Replace(TcModel.tmpLevelSeparator, TcModel.ioLevelSeparator), pdoEntry.Name, unmodified, type);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                }
-            }
             return type;
         }
 

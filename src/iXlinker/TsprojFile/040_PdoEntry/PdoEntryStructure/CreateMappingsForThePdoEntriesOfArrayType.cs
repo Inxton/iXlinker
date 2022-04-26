@@ -11,7 +11,6 @@ namespace TsprojFile.Scan
     {
         private PdoEntryViewModel CreateMappingsForThePdoEntriesOfArrayType(PdoEntryViewModel pdoEntryViewModel, PdoEntryStructViewModel actPdoEntryStruct)
         {
-            PdoEntryViewModel _pdoEntryViewModel = pdoEntryViewModel;
             MappableObject mapableObject = new MappableObject();
 
             int arrayIndex = 0;
