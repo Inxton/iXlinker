@@ -103,7 +103,6 @@ namespace TsprojFile.Scan
 
                     sw.WriteLine("<TcPlcObject>");
                     sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
-                    //sw.WriteLine("\t\t<Declaration><![CDATA[{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
                     sw.WriteLine("\t\t<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: " + boxOrderCode + "'}");
                     sw.WriteLine("{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
                     sw.WriteLine("{attribute addProperty Id \"" + id + "\"}");

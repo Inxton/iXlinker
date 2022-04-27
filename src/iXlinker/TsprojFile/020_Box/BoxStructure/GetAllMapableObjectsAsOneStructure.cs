@@ -129,7 +129,7 @@ namespace TsprojFile.Scan
                     TopologyStructMemberViewModel member = new TopologyStructMemberViewModel();
                     if (ValidatePlcItem.Name(boxViewModel.Name).Equals(mapableObject.Name) && mapableObjects.IndexOf(mapableObject) == 0)
                     {
-                        actTopologyStruct.Extends = mapableObject.Type_Value;
+                        actTopologyStruct.Extends = ValidatePlcItem.NameIncludingNamespace(mapableObject.TypeNamespace, mapableObject.Type_Value);
                     }
                     else
                     {
