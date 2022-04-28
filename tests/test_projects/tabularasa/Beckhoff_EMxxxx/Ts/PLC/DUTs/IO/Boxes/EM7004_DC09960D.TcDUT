@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EM7004_DC09960D" Id="{75e85489-3f7e-4fa5-ab6f-f7acf26a8064}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9996'}
+{attribute addProperty BoxType "EM7004-0000-9996"}
+{attribute addProperty Id "EtcSlaveTerminalBaseDI_InputsAT %I*DI_Inputs_BD004D6F16ENC_Inputs_Channel_1AT %I*ENC_Inputs_Channel_69C51E8E10ENC_Inputs_Channel_2AT %I*ENC_Inputs_Channel_69C51E8E10ENC_Inputs_Channel_3AT %I*ENC_Inputs_Channel_69C51E8E10ENC_Inputs_Channel_4AT %I*ENC_Inputs_Channel_69C51E8E10PLS_InputsAT %I*PLS_Inputs_5A35B63D2DO_OutputsAT %Q*DO_Outputs_A7E1DFAB16AO_Outputs_Channel_1AT %Q*AO_Outputs_Channel_BA7EBB7C2AO_Outputs_Channel_2AT %Q*AO_Outputs_Channel_BA7EBB7C2AO_Outputs_Channel_3AT %Q*AO_Outputs_Channel_BA7EBB7C2AO_Outputs_Channel_4AT %Q*AO_Outputs_Channel_BA7EBB7C2ENC_Outputs_Channel_1AT %Q*ENC_Outputs_Channel_DC4E290B5ENC_Outputs_Channel_2AT %Q*ENC_Outputs_Channel_DC4E290B5ENC_Outputs_Channel_3AT %Q*ENC_Outputs_Channel_DC4E290B5ENC_Outputs_Channel_4AT %Q*ENC_Outputs_Channel_DC4E290B5PLS_OutputsAT %Q*PLS_Outputs_AFB7DAF51WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "3691615757"}
+{attribute addProperty Size "115"}
+TYPE EM7004_DC09960D EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "DI_Inputs"}
+	DI_Inputs : DI_Inputs_BD004D6F;
+	{attribute addProperty Name "ENC_Inputs_Channel_1"}
+	ENC_Inputs_Channel_1 : ENC_Inputs_Channel_69C51E8E;
+	{attribute addProperty Name "ENC_Inputs_Channel_2"}
+	ENC_Inputs_Channel_2 : ENC_Inputs_Channel_69C51E8E;
+	{attribute addProperty Name "ENC_Inputs_Channel_3"}
+	ENC_Inputs_Channel_3 : ENC_Inputs_Channel_69C51E8E;
+	{attribute addProperty Name "ENC_Inputs_Channel_4"}
+	ENC_Inputs_Channel_4 : ENC_Inputs_Channel_69C51E8E;
+	{attribute addProperty Name "PLS_Inputs"}
+	PLS_Inputs : PLS_Inputs_5A35B63D;
+	{attribute addProperty Name "DO_Outputs"}
+	DO_Outputs : DO_Outputs_A7E1DFAB;
+	{attribute addProperty Name "AO_Outputs_Channel_1"}
+	AO_Outputs_Channel_1 : AO_Outputs_Channel_BA7EBB7C;
+	{attribute addProperty Name "AO_Outputs_Channel_2"}
+	AO_Outputs_Channel_2 : AO_Outputs_Channel_BA7EBB7C;
+	{attribute addProperty Name "AO_Outputs_Channel_3"}
+	AO_Outputs_Channel_3 : AO_Outputs_Channel_BA7EBB7C;
+	{attribute addProperty Name "AO_Outputs_Channel_4"}
+	AO_Outputs_Channel_4 : AO_Outputs_Channel_BA7EBB7C;
+	{attribute addProperty Name "ENC_Outputs_Channel_1"}
+	ENC_Outputs_Channel_1 : ENC_Outputs_Channel_DC4E290B;
+	{attribute addProperty Name "ENC_Outputs_Channel_2"}
+	ENC_Outputs_Channel_2 : ENC_Outputs_Channel_DC4E290B;
+	{attribute addProperty Name "ENC_Outputs_Channel_3"}
+	ENC_Outputs_Channel_3 : ENC_Outputs_Channel_DC4E290B;
+	{attribute addProperty Name "ENC_Outputs_Channel_4"}
+	ENC_Outputs_Channel_4 : ENC_Outputs_Channel_DC4E290B;
+	{attribute addProperty Name "PLS_Outputs"}
+	PLS_Outputs : PLS_Outputs_AFB7DAF5;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6910_1C5593A0" Id="{730a2d8e-b6e1-4e26-8dc9-3e0e9cd8880b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6910-0000-0017'}
+{attribute addProperty BoxType "EL6910-0000-0017"}
+{attribute addProperty Id "EtcSlaveTerminalBaseFSLOGIC_InputsAT %I*FSLOGIC_Inputs_EEE9388E2FSLOGIC_OutputsAT %I*EMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "475370400"}
+{attribute addProperty Size "14"}
+TYPE EL6910_1C5593A0 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "FSLOGIC_Inputs"}
+	FSLOGIC_Inputs : FSLOGIC_Inputs_EEE9388E;
+	{attribute addProperty Name "FSLOGIC_Outputs"}
+	FSLOGIC_Outputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

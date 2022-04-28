@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2252_BBB10966" Id="{67486aed-64b8-4d8d-ba99-e8cc32f3a3c8}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2252-0000-0017'}
+{attribute addProperty BoxType "EL2252-0000-0017"}
+{attribute addProperty Id "EtcSlaveTerminalBaseDC_Sync_ActivateAT %Q*DC_Sync_Activate_FA2D29101DC_Sync_StartAT %Q*DC_Sync_Start_E82E92338Channel_1AT %Q*Channel_54BE63B32Channel_2AT %Q*Channel_54BE63B32ReservedEMPTY_STRUCTURE0WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_A7436BC610"}
+{attribute addProperty CRC "3148941670"}
+{attribute addProperty Size "24"}
+TYPE EL2252_BBB10966 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "DC_Sync_Activate"}
+	DC_Sync_Activate : DC_Sync_Activate_FA2D2910;
+	{attribute addProperty Name "DC_Sync_Start"}
+	DC_Sync_Start : DC_Sync_Start_E82E9233;
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_54BE63B3;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_54BE63B3;
+	{attribute addProperty Name "Reserved"}
+	Reserved : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_0B2B16F9;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_A7436BC6;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5001_E4817D50" Id="{48a1d027-9af2-4650-99a8-3d8c878cdb54}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5001-0011-0016'}
+{attribute addProperty BoxType "EL5001-0011-0016"}
+{attribute addProperty Id "EtcSlaveTerminalBaseSSI_InputsAT %I*SSI_Inputs_3B70A31110WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
+{attribute addProperty CRC "3833691472"}
+{attribute addProperty Size "30"}
+TYPE EL5001_E4817D50 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "SSI_Inputs"}
+	SSI_Inputs : SSI_Inputs_3B70A311;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BEF6B88E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

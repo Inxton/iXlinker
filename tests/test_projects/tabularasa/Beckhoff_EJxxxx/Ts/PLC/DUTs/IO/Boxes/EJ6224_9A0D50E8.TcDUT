@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ6224_9A0D50E8" Id="{b2f2c650-69b9-459d-8b33-eefe9576b00a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6224-0000-0016'}
+{attribute addProperty BoxType "EJ6224-0000-0016"}
+{attribute addProperty Id "EtcSlaveTerminalBaseModule_1_DeviceState_Inputs_DeviceModule_1_DeviceState_Inputs_Device_5322301C2Module_2_DeviceState_InputsModule_2_DeviceState_Inputs_BD6C70354WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_90184F0C16"}
+{attribute addProperty CRC "2584563944"}
+{attribute addProperty Size "24"}
+TYPE EJ6224_9A0D50E8 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "Module_1_DeviceState_Inputs_Device"}
+	Module_1_DeviceState_Inputs_Device : Module_1_DeviceState_Inputs_Device_5322301C;
+	{attribute addProperty Name "Module_2_DeviceState_Inputs"}
+	Module_2_DeviceState_Inputs : Module_2_DeviceState_Inputs_BD6C7035;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_90184F0C;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,6 +1,3 @@
-runas /TrustLevel:0x40000 "powershell.exe /WAIT %CD%\Update.ps1"
-
-
-
+powershell -ExecutionPolicy RemoteSigned -File %CD%\Update.ps1
 
 

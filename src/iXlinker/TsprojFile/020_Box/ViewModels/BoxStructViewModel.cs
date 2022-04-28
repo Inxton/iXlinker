@@ -4,6 +4,19 @@
 
     public class BoxStructViewModel : PouStructBase
     {
+        private string extends;
+        public string Extends
+        {
+            get { return this.extends; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.extends = value;
+                    NotifyPropertyChanged(nameof(Extends));
+                }
+            }
+        }
 
         private ObservableCollection<BoxStructMemberViewModel> structMembers;
         public ObservableCollection<BoxStructMemberViewModel> StructMembers
@@ -21,6 +34,5 @@
                 }
             }
         }
-
     }
 }

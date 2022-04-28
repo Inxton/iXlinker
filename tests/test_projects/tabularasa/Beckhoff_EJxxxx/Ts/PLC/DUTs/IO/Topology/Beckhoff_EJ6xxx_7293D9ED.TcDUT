@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EJ6xxx_7293D9ED" Id="{9bbe60e3-bdad-425c-a6ec-8550ecb11996}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_EJ6xxxEK1122Beckhoff_EJ6xxxEK1122_9D4EE9182A_0001_EJ6002_0000_0016EJ6002_8C488D21126A_0002_EJ6224_0000_0016EJ6224_9A0D50E824A_0003_EJ6224_0090_0016EJ6224_9A0D50E824"}
+{attribute addProperty CRC "1922292205"}
+{attribute addProperty Size "176"}
+TYPE Beckhoff_EJ6xxx_7293D9ED EXTENDS EK1100_AB5A9467 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EJ6xxxEK1122"}
+	Beckhoff_EJ6xxxEK1122 : Beckhoff_EJ6xxxEK1122_9D4EE918;
+	{attribute addProperty Name "A_0001_EJ6002_0000_0016"}
+	A_0001_EJ6002_0000_0016 : EJ6002_8C488D21;
+	{attribute addProperty Name "A_0002_EJ6224_0000_0016"}
+	A_0002_EJ6224_0000_0016 : EJ6224_9A0D50E8;
+	{attribute addProperty Name "A_0003_EJ6224_0090_0016"}
+	A_0003_EJ6224_0090_0016 : EJ6224_9A0D50E8;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

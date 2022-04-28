@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP1518_1B7BBD86" Id="{50e32e27-1617-42f2-a45a-8ac39437acbb}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1518-0002-0016'}
+{attribute addProperty BoxType "EP1518-0002-0016"}
+{attribute addProperty Id "EtcSlaveTerminalBaseCNT_Input_Channel_1AT %I*CNT_Input_Channel_FF10BD3C11CNT_Input_Channel_2AT %I*CNT_Input_Channel_FF10BD3C11DIG_InputsAT %I*DIG_Inputs_CAFF60048DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_1F4E72EB5CNT_Output_Channel_1AT %Q*CNT_Output_Channel_550BB6DF6CNT_Output_Channel_2AT %Q*CNT_Output_Channel_550BB6DF6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "461094278"}
+{attribute addProperty Size "59"}
+TYPE EP1518_1B7BBD86 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "CNT_Input_Channel_1"}
+	CNT_Input_Channel_1 : CNT_Input_Channel_FF10BD3C;
+	{attribute addProperty Name "CNT_Input_Channel_2"}
+	CNT_Input_Channel_2 : CNT_Input_Channel_FF10BD3C;
+	{attribute addProperty Name "DIG_Inputs"}
+	DIG_Inputs : DIG_Inputs_CAFF6004;
+	{attribute addProperty Name "DIG_Inputs_Device"}
+	DIG_Inputs_Device : DIG_Inputs_Device_1F4E72EB;
+	{attribute addProperty Name "CNT_Output_Channel_1"}
+	CNT_Output_Channel_1 : CNT_Output_Channel_550BB6DF;
+	{attribute addProperty Name "CNT_Output_Channel_2"}
+	CNT_Output_Channel_2 : CNT_Output_Channel_550BB6DF;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

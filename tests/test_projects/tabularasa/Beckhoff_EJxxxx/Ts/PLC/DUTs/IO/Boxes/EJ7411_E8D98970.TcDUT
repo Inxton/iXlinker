@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ7411_E8D98970" Id="{7f66e004-a958-4a83-860b-310eb398c3df}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7411-0000-0018'}
+{attribute addProperty BoxType "EJ7411-0000-0018"}
+{attribute addProperty Id "EtcSlaveTerminalBaseFB_PositionAT %I*FB_Position_3FA094ED4DRV_StatuswordAT %I*DRV_Statusword_9B36FDFC2DRV_Following_error_actual_valueAT %I*DRV_Following_error_actual_value_5AA320BF4DRV_ControlwordAT %Q*DRV_Controlword_F3F147212DRV_Target_positionAT %Q*DRV_Target_position_05240F144WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6185D47C20"}
+{attribute addProperty CRC "3906570608"}
+{attribute addProperty Size "38"}
+TYPE EJ7411_E8D98970 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "FB_Position"}
+	FB_Position : FB_Position_3FA094ED;
+	{attribute addProperty Name "DRV_Statusword"}
+	DRV_Statusword : DRV_Statusword_9B36FDFC;
+	{attribute addProperty Name "DRV_Following_error_actual_value"}
+	DRV_Following_error_actual_value : DRV_Following_error_actual_value_5AA320BF;
+	{attribute addProperty Name "DRV_Controlword"}
+	DRV_Controlword : DRV_Controlword_F3F14721;
+	{attribute addProperty Name "DRV_Target_position"}
+	DRV_Target_position : DRV_Target_position_05240F14;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6185D47C;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

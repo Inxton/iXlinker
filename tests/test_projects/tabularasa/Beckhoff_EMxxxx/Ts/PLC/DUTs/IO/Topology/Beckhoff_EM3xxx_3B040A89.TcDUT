@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EM3xxx_3B040A89" Id="{e81328c4-3831-4e18-ad77-bf950851dbf7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_EM3xxxEK1122Beckhoff_EM3xxxEK1122_10CD167B2A_0001_EM3701_0000_0016EM3701_0A93FF2B20A_0002_EM3702_0000_0016EM3702_FD22E8C928A_0003_EM3712_0000_0016EM3712_FD22E8C928"}
+{attribute addProperty CRC "990120585"}
+{attribute addProperty Size "78"}
+TYPE Beckhoff_EM3xxx_3B040A89 EXTENDS EK1100_AB5A9467 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EM3xxxEK1122"}
+	Beckhoff_EM3xxxEK1122 : Beckhoff_EM3xxxEK1122_10CD167B;
+	{attribute addProperty Name "A_0001_EM3701_0000_0016"}
+	A_0001_EM3701_0000_0016 : EM3701_0A93FF2B;
+	{attribute addProperty Name "A_0002_EM3702_0000_0016"}
+	A_0002_EM3702_0000_0016 : EM3702_FD22E8C9;
+	{attribute addProperty Name "A_0003_EM3712_0000_0016"}
+	A_0003_EM3712_0000_0016 : EM3712_FD22E8C9;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

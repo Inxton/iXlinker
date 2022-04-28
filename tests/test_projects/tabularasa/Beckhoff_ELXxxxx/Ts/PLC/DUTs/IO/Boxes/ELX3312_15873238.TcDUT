@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELX3312_15873238" Id="{6fd312a0-cc4a-4683-b591-36cf657a31ec}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3312-0000-0016'}
+{attribute addProperty BoxType "ELX3312-0000-0016"}
+{attribute addProperty Id "EtcSlaveTerminalBaseTC_Inputs_Channel_1AT %I*TC_Inputs_Channel_4A3944819TC_Inputs_Channel_2AT %I*TC_Inputs_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "361181752"}
+{attribute addProperty Size "30"}
+TYPE ELX3312_15873238 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "TC_Inputs_Channel_1"}
+	TC_Inputs_Channel_1 : TC_Inputs_Channel_4A394481;
+	{attribute addProperty Name "TC_Inputs_Channel_2"}
+	TC_Inputs_Channel_2 : TC_Inputs_Channel_4A394481;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

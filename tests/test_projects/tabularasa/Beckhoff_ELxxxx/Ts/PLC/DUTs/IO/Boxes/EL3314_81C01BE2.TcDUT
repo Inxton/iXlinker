@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3314_81C01BE2" Id="{c7d54d6c-99db-4227-8394-9dc6d7288e9d}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3314-0002-0016'}
+{attribute addProperty BoxType "EL3314-0002-0016"}
+{attribute addProperty Id "EtcSlaveTerminalBaseTC_Inputs_Channel_1AT %I*TC_Inputs_Channel_4521310411TC_Inputs_Channel_2AT %I*TC_Inputs_Channel_4521310411TC_Inputs_Channel_3AT %I*TC_Inputs_Channel_4521310411TC_Inputs_Channel_4AT %I*TC_Inputs_Channel_4521310411WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "2176850914"}
+{attribute addProperty Size "56"}
+TYPE EL3314_81C01BE2 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "TC_Inputs_Channel_1"}
+	TC_Inputs_Channel_1 : TC_Inputs_Channel_45213104;
+	{attribute addProperty Name "TC_Inputs_Channel_2"}
+	TC_Inputs_Channel_2 : TC_Inputs_Channel_45213104;
+	{attribute addProperty Name "TC_Inputs_Channel_3"}
+	TC_Inputs_Channel_3 : TC_Inputs_Channel_45213104;
+	{attribute addProperty Name "TC_Inputs_Channel_4"}
+	TC_Inputs_Channel_4 : TC_Inputs_Channel_45213104;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

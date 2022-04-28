@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELX5151_5B556A90" Id="{a543470c-d36b-4e43-b8ee-8156badde8ec}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX5151-0000-0016'}
+{attribute addProperty BoxType "ELX5151-0000-0016"}
+{attribute addProperty Id "EtcSlaveTerminalBaseENC_Status_compactAT %I*ENC_Status_compact_BFB16BB410ENC_Control_compactAT %Q*ENC_Control_compact_2ED727EF3WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1532324496"}
+{attribute addProperty Size "25"}
+TYPE ELX5151_5B556A90 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "ENC_Status_compact"}
+	ENC_Status_compact : ENC_Status_compact_BFB16BB4;
+	{attribute addProperty Name "ENC_Control_compact"}
+	ENC_Control_compact : ENC_Control_compact_2ED727EF;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

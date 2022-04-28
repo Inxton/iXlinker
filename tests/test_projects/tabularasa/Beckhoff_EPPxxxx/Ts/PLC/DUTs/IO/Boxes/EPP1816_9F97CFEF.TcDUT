@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP1816_9F97CFEF" Id="{8b13779a-83ca-4726-9c59-f1f89657c9d9}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1816-0003-0016'}
+{attribute addProperty BoxType "EPP1816-0003-0016"}
+{attribute addProperty Id "EtcSlaveTerminalBaseDIG_Inputs_Channel_1AT %I*DIG_Inputs_Channel_ACAA042510DIG_Inputs_Channel_2AT %I*DIG_Inputs_Channel_ACAA042510WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "2677526511"}
+{attribute addProperty Size "32"}
+TYPE EPP1816_9F97CFEF EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "DIG_Inputs_Channel_1"}
+	DIG_Inputs_Channel_1 : DIG_Inputs_Channel_ACAA0425;
+	{attribute addProperty Name "DIG_Inputs_Channel_2"}
+	DIG_Inputs_Channel_2 : DIG_Inputs_Channel_ACAA0425;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

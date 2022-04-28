@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_ERxxxx_3A895043" Id="{30c77ec8-6ecc-4d7a-ab4a-aff067a0e6e0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_ER1xxxBeckhoff_ER1xxx_6C839CAC508Beckhoff_ER2xxxBeckhoff_ER2xxx_44916F8D910Beckhoff_ER3xxxBeckhoff_ER3xxx_601C7D5C618Beckhoff_ER4xxxBeckhoff_ER4xxx_58EA543B112Beckhoff_ER5xxxBeckhoff_ER5xxx_B9C53C37104Beckhoff_ER6xxxBeckhoff_ER6xxx_7A6E6B23446Beckhoff_ER7xxxBeckhoff_ER7xxx_66A1C3CD686Beckhoff_ER8xxxBeckhoff_ER8xxx_92AB3A6372SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
+{attribute addProperty CRC "982077507"}
+{attribute addProperty Size "3768"}
+TYPE EtherCAT_Master_ERxxxx_3A895043 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_ER1xxx"}
+	Beckhoff_ER1xxx : Beckhoff_ER1xxx_6C839CAC;
+	{attribute addProperty Name "Beckhoff_ER2xxx"}
+	Beckhoff_ER2xxx : Beckhoff_ER2xxx_44916F8D;
+	{attribute addProperty Name "Beckhoff_ER3xxx"}
+	Beckhoff_ER3xxx : Beckhoff_ER3xxx_601C7D5C;
+	{attribute addProperty Name "Beckhoff_ER4xxx"}
+	Beckhoff_ER4xxx : Beckhoff_ER4xxx_58EA543B;
+	{attribute addProperty Name "Beckhoff_ER5xxx"}
+	Beckhoff_ER5xxx : Beckhoff_ER5xxx_B9C53C37;
+	{attribute addProperty Name "Beckhoff_ER6xxx"}
+	Beckhoff_ER6xxx : Beckhoff_ER6xxx_7A6E6B23;
+	{attribute addProperty Name "Beckhoff_ER7xxx"}
+	Beckhoff_ER7xxx : Beckhoff_ER7xxx_66A1C3CD;
+	{attribute addProperty Name "Beckhoff_ER8xxx"}
+	Beckhoff_ER8xxx : Beckhoff_ER8xxx_92AB3A63;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_99E584AF;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_25A0042B;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_2397A10E;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_E68C61CD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

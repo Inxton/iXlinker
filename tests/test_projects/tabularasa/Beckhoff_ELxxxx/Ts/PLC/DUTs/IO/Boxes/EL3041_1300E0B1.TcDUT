@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3041_1300E0B1" Id="{4df2d140-8055-497c-8a97-3007e418a109}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3041-0000-0017'}
+{attribute addProperty BoxType "EL3041-0000-0017"}
+{attribute addProperty Id "EtcSlaveTerminalBaseAI_StandardAT %I*AI_Standard_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "318824625"}
+{attribute addProperty Size "21"}
+TYPE EL3041_1300E0B1 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "AI_Standard"}
+	AI_Standard : AI_Standard_4A394481;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

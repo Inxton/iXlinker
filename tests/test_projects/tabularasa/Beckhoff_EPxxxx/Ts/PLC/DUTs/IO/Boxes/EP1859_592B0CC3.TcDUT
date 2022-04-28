@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP1859_592B0CC3" Id="{ecde16bf-cefc-4cb9-85bb-7db4375bc724}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1859-0042-0019'}
+{attribute addProperty BoxType "EP1859-0042-0019"}
+{attribute addProperty Id "EtcSlaveTerminalBaseDI_X01_4AT %I*DI_X_830843C11DI_X01_2AT %I*DI_X_830843C11DI_X02_4AT %I*DI_X_830843C11DI_X02_2AT %I*DI_X_830843C11DI_X03_4AT %I*DI_X_830843C11DI_X03_2AT %I*DI_X_830843C11DI_X04_4AT %I*DI_X_830843C11DI_X04_2AT %I*DI_X_830843C11DO_X05_4AT %Q*DO_X_42CA91F71DO_X05_2AT %Q*DO_X_42CA91F71DO_X06_4AT %Q*DO_X_42CA91F71DO_X06_2AT %Q*DO_X_42CA91F71DO_X07_4AT %Q*DO_X_42CA91F71DO_X07_2AT %Q*DO_X_42CA91F71DO_X08_4AT %Q*DO_X_42CA91F71DO_X08_2AT %Q*DO_X_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "1495993539"}
+{attribute addProperty Size "20"}
+TYPE EP1859_592B0CC3 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "DI_X01_4"}
+	DI_X01_4 : DI_X_830843C1;
+	{attribute addProperty Name "DI_X01_2"}
+	DI_X01_2 : DI_X_830843C1;
+	{attribute addProperty Name "DI_X02_4"}
+	DI_X02_4 : DI_X_830843C1;
+	{attribute addProperty Name "DI_X02_2"}
+	DI_X02_2 : DI_X_830843C1;
+	{attribute addProperty Name "DI_X03_4"}
+	DI_X03_4 : DI_X_830843C1;
+	{attribute addProperty Name "DI_X03_2"}
+	DI_X03_2 : DI_X_830843C1;
+	{attribute addProperty Name "DI_X04_4"}
+	DI_X04_4 : DI_X_830843C1;
+	{attribute addProperty Name "DI_X04_2"}
+	DI_X04_2 : DI_X_830843C1;
+	{attribute addProperty Name "DO_X05_4"}
+	DO_X05_4 : DO_X_42CA91F7;
+	{attribute addProperty Name "DO_X05_2"}
+	DO_X05_2 : DO_X_42CA91F7;
+	{attribute addProperty Name "DO_X06_4"}
+	DO_X06_4 : DO_X_42CA91F7;
+	{attribute addProperty Name "DO_X06_2"}
+	DO_X06_2 : DO_X_42CA91F7;
+	{attribute addProperty Name "DO_X07_4"}
+	DO_X07_4 : DO_X_42CA91F7;
+	{attribute addProperty Name "DO_X07_2"}
+	DO_X07_2 : DO_X_42CA91F7;
+	{attribute addProperty Name "DO_X08_4"}
+	DO_X08_4 : DO_X_42CA91F7;
+	{attribute addProperty Name "DO_X08_2"}
+	DO_X08_2 : DO_X_42CA91F7;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

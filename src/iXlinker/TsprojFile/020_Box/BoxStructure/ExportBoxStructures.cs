@@ -55,10 +55,29 @@ namespace TsprojFile.Scan
                     string id = "";
                     try
                     {
-                        id = boxStructViewModel.Id.Replace('{','[').Replace('}',']');
+                        id = string.IsNullOrEmpty(boxStructViewModel.Id) ? "" : boxStructViewModel.Id.Replace('{','[').Replace('}',']');
                     }
                     catch (Exception ex)
                     {
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    }
+
+                    string extends = "";
+                    try
+                    {
+                        extends = boxStructViewModel.Extends;
+                        if (!string.IsNullOrEmpty(extends))
+                        {
+                            extends = " EXTENDS " + extends + " :";
+                        }
+                        else
+                        {
+                            extends = " :";
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        extends = " :";
                         EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
@@ -91,7 +110,7 @@ namespace TsprojFile.Scan
                     sw.WriteLine("{attribute addProperty Id \"" + id + "\"}");
                     sw.WriteLine("{attribute addProperty CRC \"" + crc.ToString() + "\"}");
                     sw.WriteLine("{attribute addProperty Size \"" + size.ToString() + "\"}");
-                    sw.WriteLine("TYPE " + structName + " :");
+                    sw.WriteLine("TYPE " + structName + extends);
                     sw.WriteLine("STRUCT");
 
                     foreach (BoxStructMemberViewModel boxStructMemberViewModel in boxStructViewModel.StructMembers)

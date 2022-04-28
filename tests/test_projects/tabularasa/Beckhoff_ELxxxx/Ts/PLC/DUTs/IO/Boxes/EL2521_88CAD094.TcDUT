@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2521_88CAD094" Id="{2c8b3731-e583-453f-ab31-8240d4187bf8}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0124-0018'}
+{attribute addProperty BoxType "EL2521-0124-0018"}
+{attribute addProperty Id "EtcSlaveTerminalBasePTO_StatusAT %I*PTO_Status_E0EB10E85ENC_Status_compactAT %I*ENC_Status_compact_3C6E2C4411PLS_StatusAT %I*PLS_Status_70E7A1E24PTO_ControlAT %Q*PTO_Control_9287F8E45PTO_Target_compactAT %Q*PTO_Target_compact_5C359F7D2ENC_Control_compactAT %Q*ENC_Control_compact_2E82BC435PLS_Control_compactAT %Q*PLS_Control_compact_CD6E44DE6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "2294993044"}
+{attribute addProperty Size "50"}
+TYPE EL2521_88CAD094 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "PTO_Status"}
+	PTO_Status : PTO_Status_E0EB10E8;
+	{attribute addProperty Name "ENC_Status_compact"}
+	ENC_Status_compact : ENC_Status_compact_3C6E2C44;
+	{attribute addProperty Name "PLS_Status"}
+	PLS_Status : PLS_Status_70E7A1E2;
+	{attribute addProperty Name "PTO_Control"}
+	PTO_Control : PTO_Control_9287F8E4;
+	{attribute addProperty Name "PTO_Target_compact"}
+	PTO_Target_compact : PTO_Target_compact_5C359F7D;
+	{attribute addProperty Name "ENC_Control_compact"}
+	ENC_Control_compact : ENC_Control_compact_2E82BC43;
+	{attribute addProperty Name "PLS_Control_compact"}
+	PLS_Control_compact : PLS_Control_compact_CD6E44DE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

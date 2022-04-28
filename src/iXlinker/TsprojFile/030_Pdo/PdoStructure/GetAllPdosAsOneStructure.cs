@@ -22,7 +22,17 @@ namespace TsprojFile.Scan
             {
                 structName = structName.Substring(0, structName.IndexOf("-", StringComparison.Ordinal));
             }
-            BoxStructViewModel actBoxStruct = new BoxStructViewModel() { Prefix = ValidatePlcItem.Name(structName), Id = "", BoxOrderCode = boxViewModel.BoxOrderCode };
+
+            //BoxStructViewModel actBoxStruct = new BoxStructViewModel() { Prefix = ValidatePlcItem.Name(structName), Id = "", BoxOrderCode = boxViewModel.BoxOrderCode };
+            BoxStructViewModel actBoxStruct = new BoxStructViewModel() { Prefix = ValidatePlcItem.Name(structName), BoxOrderCode = boxViewModel.BoxOrderCode };
+            //Check if box base structure exists
+            if (CheckIfBoxBaseStructDoesNotExist(actBoxStruct))
+            {
+                //if not add to the structure list
+                BoxStructures.Add(new BoxStructViewModel() { Name = etcSlaveBaseStructName });
+            }
+            actBoxStruct.Id = actBoxStruct.Extends;
+
             foreach (PdoViewModel pdo in slotPdos)
             {
                 BoxStructMemberViewModel member = new BoxStructMemberViewModel();

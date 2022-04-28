@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2212_AE0BECE4" Id="{845e5d64-fb84-4fda-b462-58264bad0c24}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2212-0000-0020'}
+{attribute addProperty BoxType "EL2212-0000-0020"}
+{attribute addProperty Id "EtcSlaveTerminalBaseDOX_Status_Channel_1AT %I*DOX_Status_Channel_6FDDBA987DOX_Status_Channel_2AT %I*DOX_Status_Channel_6FDDBA987DOX_Control_Channel_1AT %Q*DOX_Control_Channel_E69306414DOX_Control_Channel_2AT %Q*DOX_Control_Channel_E69306414WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "2920017124"}
+{attribute addProperty Size "34"}
+TYPE EL2212_AE0BECE4 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "DOX_Status_Channel_1"}
+	DOX_Status_Channel_1 : DOX_Status_Channel_6FDDBA98;
+	{attribute addProperty Name "DOX_Status_Channel_2"}
+	DOX_Status_Channel_2 : DOX_Status_Channel_6FDDBA98;
+	{attribute addProperty Name "DOX_Control_Channel_1"}
+	DOX_Control_Channel_1 : DOX_Control_Channel_E6930641;
+	{attribute addProperty Name "DOX_Control_Channel_2"}
+	DOX_Control_Channel_2 : DOX_Control_Channel_E6930641;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0004_CU1128_0000_0000_A9D31A95" Id="{6e203709-e741-4c48-884b-2a4f158f757f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CU1128--0000'}
+{attribute addProperty BoxType "CU1128--0000"}
+{attribute addProperty Id "A_0005_CU1128_0000_0001A_0005_CU1128_0000_0001_C5A8C857120A_0004_CU1128_0000_0000_2_CU1128_BCU1128_AB5A94672A_0004_CU1128_0000_0000_3_CU1128_CCU1128_AB5A94672"}
+{attribute addProperty CRC "2849184405"}
+{attribute addProperty Size "124"}
+TYPE A_0004_CU1128_0000_0000_A9D31A95 EXTENDS CU1128_AB5A9467 :
+STRUCT
+	{attribute addProperty Name "A_0005_CU1128_0000_0001"}
+	A_0005_CU1128_0000_0001 : A_0005_CU1128_0000_0001_C5A8C857;
+	{attribute addProperty Name "A_0004_CU1128_0000_0000_2_CU1128_B"}
+	A_0004_CU1128_0000_0000_2_CU1128_B : CU1128_AB5A9467;
+	{attribute addProperty Name "A_0004_CU1128_0000_0000_3_CU1128_C"}
+	A_0004_CU1128_0000_0000_3_CU1128_C : CU1128_AB5A9467;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

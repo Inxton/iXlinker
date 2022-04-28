@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_ELMxxxx_E78EB55B" Id="{1bfb3d06-06fb-489d-a34f-3bec22f89e78}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_ELM3xxxBeckhoff_ELM3xxx_76BEE368440Beckhoff_ELM31xxBeckhoff_ELM31xx_87020EAA1242Beckhoff_ELM35xxBeckhoff_ELM35xx_21E304B5490Beckhoff_ELM36xxBeckhoff_ELM36xx_084D282D612Beckhoff_ELM37xxBeckhoff_ELM37xx_111FA9D6584Beckhoff_ELM3xxx_0030Beckhoff_ELM3xxx_0030_7574CD15368Beckhoff_ELM9xxxBeckhoff_ELM9xxx_E19B33B6407SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
+{attribute addProperty CRC "3884889435"}
+{attribute addProperty Size "4455"}
+TYPE EtherCAT_Master_ELMxxxx_E78EB55B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_ELM3xxx"}
+	Beckhoff_ELM3xxx : Beckhoff_ELM3xxx_76BEE368;
+	{attribute addProperty Name "Beckhoff_ELM31xx"}
+	Beckhoff_ELM31xx : Beckhoff_ELM31xx_87020EAA;
+	{attribute addProperty Name "Beckhoff_ELM35xx"}
+	Beckhoff_ELM35xx : Beckhoff_ELM35xx_21E304B5;
+	{attribute addProperty Name "Beckhoff_ELM36xx"}
+	Beckhoff_ELM36xx : Beckhoff_ELM36xx_084D282D;
+	{attribute addProperty Name "Beckhoff_ELM37xx"}
+	Beckhoff_ELM37xx : Beckhoff_ELM37xx_111FA9D6;
+	{attribute addProperty Name "Beckhoff_ELM3xxx_0030"}
+	Beckhoff_ELM3xxx_0030 : Beckhoff_ELM3xxx_0030_7574CD15;
+	{attribute addProperty Name "Beckhoff_ELM9xxx"}
+	Beckhoff_ELM9xxx : Beckhoff_ELM9xxx_E19B33B6;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_99E584AF;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_25A0042B;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_2397A10E;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_E68C61CD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0024_EP9521_0020_0000_16465A9C" Id="{c5c494a6-a9b1-4218-bf45-bdd0af4850b3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9521-0020-0000'}
+{attribute addProperty BoxType "EP9521-0020-0000"}
+{attribute addProperty Id "A_0025_EP9576_1032_0016EP9576_C60EFF2F29"}
+{attribute addProperty CRC "373709468"}
+{attribute addProperty Size "29"}
+TYPE A_0024_EP9521_0020_0000_16465A9C EXTENDS EP9521_AB5A9467 :
+STRUCT
+	{attribute addProperty Name "A_0025_EP9576_1032_0016"}
+	A_0025_EP9576_1032_0016 : EP9576_C60EFF2F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2521_593D4A32" Id="{cba79361-fa69-4ca8-a6b2-e87d2905b5ee}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-1001-0000'}
+{attribute addProperty BoxType "EL2521-1001-0000"}
+{attribute addProperty Id "EtcSlaveTerminalBaseInputsAT %I*Inputs_0292EF133OutputsAT %Q*Outputs_905E7D863WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1497188914"}
+{attribute addProperty Size "18"}
+TYPE EL2521_593D4A32 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_0292EF13;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_905E7D86;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

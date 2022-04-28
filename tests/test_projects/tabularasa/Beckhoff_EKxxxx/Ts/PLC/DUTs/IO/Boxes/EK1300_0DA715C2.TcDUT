@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EK1300_0DA715C2" Id="{ac1623b7-d0b8-4b7f-83af-42f8b33421dc}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1300-0000-0017'}
+{attribute addProperty BoxType "EK1300-0000-0017"}
+{attribute addProperty Id "EtcSlaveTerminalBaseStatus_UsAT %I*Status_Us_B1E819A21Status_UpAT %I*Status_Up_B1E819A21WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "229053890"}
+{attribute addProperty Size "6"}
+TYPE EK1300_0DA715C2 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "Status_Us"}
+	Status_Us : Status_Us_B1E819A2;
+	{attribute addProperty Name "Status_Up"}
+	Status_Up : Status_Up_B1E819A2;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

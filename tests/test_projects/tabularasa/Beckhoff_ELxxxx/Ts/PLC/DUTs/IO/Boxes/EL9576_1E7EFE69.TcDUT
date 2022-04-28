@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9576_1E7EFE69" Id="{c57fa5bd-8f74-43ba-957e-a4bc1b1a056f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9576-0000-0016'}
+{attribute addProperty BoxType "EL9576-0000-0016"}
+{attribute addProperty Id "EtcSlaveTerminalBaseBCT_InputsAT %I*BCT_Inputs_28C1780C15WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "511639145"}
+{attribute addProperty Size "27"}
+TYPE EL9576_1E7EFE69 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "BCT_Inputs"}
+	BCT_Inputs : BCT_Inputs_28C1780C;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

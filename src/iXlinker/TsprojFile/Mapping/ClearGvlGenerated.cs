@@ -87,7 +87,7 @@ namespace TsprojFile.Scan
             }
             else
             {
-                Directory.CreateDirectory(vs.GvlExported.Path);
+                Directory.CreateDirectory(vs.GvlExported.FolderPathInFileSystem);
             }
             EventLogger.Instance.Logger.Information("Existing GVL cleared!");
         }

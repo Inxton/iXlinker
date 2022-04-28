@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0054_EP7402_0057_0017_518F105B" Id="{f33f20d2-c1bf-435d-8302-08cbc5746f29}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7402-0057-0017'}
+{attribute addProperty BoxType "EP7402-0057-0017"}
+{attribute addProperty Id "A_0055_EP7402_0057_0018EP7402_E132E05C99"}
+{attribute addProperty CRC "1368330331"}
+{attribute addProperty Size "99"}
+TYPE A_0054_EP7402_0057_0017_518F105B EXTENDS EP7402_E132E05C :
+STRUCT
+	{attribute addProperty Name "A_0055_EP7402_0057_0018"}
+	A_0055_EP7402_0057_0018 : EP7402_E132E05C;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

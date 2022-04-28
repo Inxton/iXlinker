@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP2624_15DDA43F" Id="{39c3ffda-9b41-420b-b3b8-63b856ef327f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2624-0002-0016'}
+{attribute addProperty BoxType "EP2624-0002-0016"}
+{attribute addProperty Id "EtcSlaveTerminalBaseChannel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71Channel_3AT %Q*Channel_42CA91F71Channel_4AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "366847039"}
+{attribute addProperty Size "7"}
+TYPE EP2624_15DDA43F EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_3"}
+	Channel_3 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_4"}
+	Channel_4 : Channel_42CA91F7;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_0B2B16F9;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6851_CAB27A31" Id="{545f3156-256b-4111-bb93-207364e797d9}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6851-0010-0016'}
+{attribute addProperty BoxType "EL6851-0010-0016"}
+{attribute addProperty Id "EtcSlaveTerminalBaseDMX_StatusAT %I*DMX_Status_5ECDEABE8DMX_Channel_1_64AT %I*DMX_Channel_005FDEFD64WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "3400694321"}
+{attribute addProperty Size "84"}
+TYPE EL6851_CAB27A31 EXTENDS EtcSlaveTerminalBase :
+STRUCT
+	{attribute addProperty Name "DMX_Status"}
+	DMX_Status : DMX_Status_5ECDEABE;
+	{attribute addProperty Name "DMX_Channel_1_64"}
+	DMX_Channel_1_64 : DMX_Channel_005FDEFD;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

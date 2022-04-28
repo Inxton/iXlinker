@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_ER6xxxEK1122_AE47C095" Id="{f7b11365-5553-4a85-90cb-deb52a4d89dd}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
+{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "Beckhoff_ER6xxxsub_EK1100EK1100_AB5A94672A_0001_ER6001_0002_0016ER6001_B965E9F560A_0002_ER6001_0002_0021ER6001_B965E9F560A_0003_ER6002_0002_0021ER6002_EA7A2404108A_0004_ER6002_0002_0022ER6002_EECF1379108A_0005_ER6002_0002_0023ER6002_EECF1379108"}
+{attribute addProperty CRC "2923937941"}
+{attribute addProperty Size "446"}
+TYPE Beckhoff_ER6xxxEK1122_AE47C095 EXTENDS EK1122_AB5A9467 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_ER6xxxsub_EK1100"}
+	Beckhoff_ER6xxxsub_EK1100 : EK1100_AB5A9467;
+	{attribute addProperty Name "A_0001_ER6001_0002_0016"}
+	A_0001_ER6001_0002_0016 : ER6001_B965E9F5;
+	{attribute addProperty Name "A_0002_ER6001_0002_0021"}
+	A_0002_ER6001_0002_0021 : ER6001_B965E9F5;
+	{attribute addProperty Name "A_0003_ER6002_0002_0021"}
+	A_0003_ER6002_0002_0021 : ER6002_EA7A2404;
+	{attribute addProperty Name "A_0004_ER6002_0002_0022"}
+	A_0004_ER6002_0002_0022 : ER6002_EECF1379;
+	{attribute addProperty Name "A_0005_ER6002_0002_0023"}
+	A_0005_ER6002_0002_0023 : ER6002_EECF1379;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
