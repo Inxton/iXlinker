@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Beckhoff_EL47xx_E2BDD8A5" Id="{630020e4-60b8-4f77-af40-860b87a04dab}">
+  <DUT Name="Beckhoff_EL47xx_E2BDD8A5" Id="{0f0233f1-ccaa-47e7-afd5-b4f619972bea}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
 {attribute addProperty BoxType "EK1100-0000-0018"}
 {attribute addProperty Id "Beckhoff_EL47xxEK1122Beckhoff_EL47xxEK1122_34036CA02A_0001_EL4712_0000_0000EL4712_0367CF4D55A_0002_EL4712_0000_0001EL4712_0367CF4D55A_0003_EL4732_0001_0000EL4732_C5A3328317A_0004_EL4732_0000_0002EL4732_0367CF4D55A_0005_EL4732_0000_0003EL4732_0367CF4D55A_0006_EL4732_0000_0004EL4732_0367CF4D55"}
@@ -9,18 +9,25 @@
 TYPE Beckhoff_EL47xx_E2BDD8A5 EXTENDS EK1100_AB5A9467 :
 STRUCT
 	{attribute addProperty Name "Beckhoff_EL47xxEK1122"}
+	{attribute addProperty PreviousPort "Beckhoff EL47xx : B"}
 	Beckhoff_EL47xxEK1122 : Beckhoff_EL47xxEK1122_34036CA0;
 	{attribute addProperty Name "A_0001_EL4712_0000_0000"}
+	{attribute addProperty PreviousPort "Beckhoff EL47xxEK1122 : C"}
 	A_0001_EL4712_0000_0000 : EL4712_0367CF4D;
 	{attribute addProperty Name "A_0002_EL4712_0000_0001"}
+	{attribute addProperty PreviousPort "A_0001(EL4712-0000-0000) : B"}
 	A_0002_EL4712_0000_0001 : EL4712_0367CF4D;
 	{attribute addProperty Name "A_0003_EL4732_0001_0000"}
+	{attribute addProperty PreviousPort "A_0002(EL4712-0000-0001) : B"}
 	A_0003_EL4732_0001_0000 : EL4732_C5A33283;
 	{attribute addProperty Name "A_0004_EL4732_0000_0002"}
+	{attribute addProperty PreviousPort "A_0003(EL4732-0001-0000) : B"}
 	A_0004_EL4732_0000_0002 : EL4732_0367CF4D;
 	{attribute addProperty Name "A_0005_EL4732_0000_0003"}
+	{attribute addProperty PreviousPort "A_0004(EL4732-0000-0002) : B"}
 	A_0005_EL4732_0000_0003 : EL4732_0367CF4D;
 	{attribute addProperty Name "A_0006_EL4732_0000_0004"}
+	{attribute addProperty PreviousPort "A_0005(EL4732-0000-0003) : B"}
 	A_0006_EL4732_0000_0004 : EL4732_0367CF4D;
 END_STRUCT
 END_TYPE

@@ -365,24 +365,27 @@ namespace iXlinkerTestHelper
                 "{attribute addProperty BoxType",
                 "{attribute addProperty Id",
                 "{attribute addProperty CRC",
+                "{attribute addProperty PreviousPort",
                 };
 
             List<string> declarationFiltered = new List<string>();
 
-            string[] declarationItems = declarationField.Split(new string[] { "\n"}, StringSplitOptions.None);
+            string[] declarationLines = declarationField.Split(new string[] { "\n"}, StringSplitOptions.None);
 
-            foreach (string item in declarationItems)
+            foreach (string declarationLine in declarationLines)
             {
+                string declarationItem = declarationLine.Replace("\t","");
                 bool included = true;
                 foreach (string excluded in exludedPrefixes)
                 {
-                    if (item.StartsWith(excluded))
+                    if (declarationItem.StartsWith(excluded))
                     {
                         included = false;
                         break;
                     }
                 }
-                if (included) declarationFiltered.Add(item);
+                if (included) declarationFiltered.Add(declarationItem);
+
             }
             return declarationFiltered;
         }

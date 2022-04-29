@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Beckhoff_EP9xxx_33F6D646" Id="{93f70e8d-c0f5-45d2-aee2-4d38f3ab38cd}">
+  <DUT Name="Beckhoff_EP9xxx_33F6D646" Id="{90b32e1f-6ef0-491f-a776-dcc2043d5da1}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
 {attribute addProperty BoxType "EK1100-0000-0018"}
 {attribute addProperty Id "Beckhoff_EP9xxxEK1122Beckhoff_EP9xxxEK1122_E84A0D33595A_0023_EP9224_1037_0017EP9224_AB5A94672A_0015_EP9128_2021_0019EP9128_AB5A94672A_0014_EP9128_1021_0019EP9128_AB5A94672A_0012_EP9128_2021_0018EP9128_AB5A94672A_0011_EP9128_1021_0018EP9128_AB5A94672A_0009_EP9128_2021_0017EP9128_AB5A94672A_0008_EP9128_1021_0017EP9128_AB5A94672A_0006_EP9128_2021_0016EP9128_AB5A94672A_0005_EP9128_1021_0016EP9128_AB5A94672A_0003_EP9128_2020_0016EP9128_AB5A94672A_0002_EP9128_1020_0016EP9128_AB5A94672"}
@@ -9,28 +9,40 @@
 TYPE Beckhoff_EP9xxx_33F6D646 EXTENDS EK1100_AB5A9467 :
 STRUCT
 	{attribute addProperty Name "Beckhoff_EP9xxxEK1122"}
+	{attribute addProperty PreviousPort "Beckhoff EP9xxx : B"}
 	Beckhoff_EP9xxxEK1122 : Beckhoff_EP9xxxEK1122_E84A0D33;
 	{attribute addProperty Name "A_0023_EP9224_1037_0017"}
+	{attribute addProperty PreviousPort "Beckhoff EP9xxxEK1122 : C"}
 	A_0023_EP9224_1037_0017 : EP9224_AB5A9467;
 	{attribute addProperty Name "A_0015_EP9128_2021_0019"}
+	{attribute addProperty PreviousPort "Beckhoff EP9xxxEK1122 : C"}
 	A_0015_EP9128_2021_0019 : EP9128_AB5A9467;
 	{attribute addProperty Name "A_0014_EP9128_1021_0019"}
+	{attribute addProperty PreviousPort "Beckhoff EP9xxxEK1122 : C"}
 	A_0014_EP9128_1021_0019 : EP9128_AB5A9467;
 	{attribute addProperty Name "A_0012_EP9128_2021_0018"}
+	{attribute addProperty PreviousPort "A_0014(EP9128-1021-0019) : C"}
 	A_0012_EP9128_2021_0018 : EP9128_AB5A9467;
 	{attribute addProperty Name "A_0011_EP9128_1021_0018"}
+	{attribute addProperty PreviousPort "Beckhoff EP9xxxEK1122 : C"}
 	A_0011_EP9128_1021_0018 : EP9128_AB5A9467;
 	{attribute addProperty Name "A_0009_EP9128_2021_0017"}
+	{attribute addProperty PreviousPort "A_0011(EP9128-1021-0018) : C"}
 	A_0009_EP9128_2021_0017 : EP9128_AB5A9467;
 	{attribute addProperty Name "A_0008_EP9128_1021_0017"}
+	{attribute addProperty PreviousPort "Beckhoff EP9xxxEK1122 : C"}
 	A_0008_EP9128_1021_0017 : EP9128_AB5A9467;
 	{attribute addProperty Name "A_0006_EP9128_2021_0016"}
+	{attribute addProperty PreviousPort "A_0008(EP9128-1021-0017) : C"}
 	A_0006_EP9128_2021_0016 : EP9128_AB5A9467;
 	{attribute addProperty Name "A_0005_EP9128_1021_0016"}
+	{attribute addProperty PreviousPort "Beckhoff EP9xxxEK1122 : C"}
 	A_0005_EP9128_1021_0016 : EP9128_AB5A9467;
 	{attribute addProperty Name "A_0003_EP9128_2020_0016"}
+	{attribute addProperty PreviousPort "A_0005(EP9128-1021-0016) : C"}
 	A_0003_EP9128_2020_0016 : EP9128_AB5A9467;
 	{attribute addProperty Name "A_0002_EP9128_1020_0016"}
+	{attribute addProperty PreviousPort "Beckhoff EP9xxxEK1122 : C"}
 	A_0002_EP9128_1020_0016 : EP9128_AB5A9467;
 END_STRUCT
 END_TYPE

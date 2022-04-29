@@ -21,6 +21,7 @@ namespace TsprojFile.Scan
                 TopologyStructures.Clear();
                 PlcLibraries.Clear();
                 PlcStructuresInPlcLibraries.Clear();
+                BoxIdentificationList.Clear();
 
                 // Reset counters
                 TotalNumberOfDevices = 0;

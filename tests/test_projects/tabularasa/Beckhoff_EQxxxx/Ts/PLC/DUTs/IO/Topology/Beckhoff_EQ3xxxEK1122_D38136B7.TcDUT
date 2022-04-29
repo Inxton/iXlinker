@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Beckhoff_EQ3xxxEK1122_D38136B7" Id="{d2d6307f-4e4e-48ea-9ad4-52764ff07317}">
+  <DUT Name="Beckhoff_EQ3xxxEK1122_D38136B7" Id="{7e5b6bd3-fe7b-4cad-b2da-b5965a6818a7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
 {attribute addProperty BoxType "EK1122-0000-0018"}
 {attribute addProperty Id "Beckhoff_EQ3xxxsub_EK1100EK1100_AB5A94672A_0001_EQ3174_0002_0016EQ3174_0E4717A052A_0002_EQ3174_0002_0017EQ3174_0E4717A052A_0003_EQ3174_0002_0021EQ3174_0E4717A052A_0004_EQ3174_0002_0022EQ3174_0E4717A052A_0005_EQ3174_0002_0023EQ3174_0E4717A052A_0006_EQ3204_0002_0016EQ3204_7A00DD1E52A_0007_EQ3204_0002_0017EQ3204_7A00DD1E52A_0008_EQ3204_0002_0020EQ3204_7A00DD1E52A_0009_EQ3204_0002_0021EQ3204_BF0B7ECE48A_0010_EQ3204_0002_0022EQ3204_BF0B7ECE48A_0011_EQ3314_0002_0016EQ3314_CE6B02DE52A_0012_EQ3314_0002_0017EQ3314_CE6B02DE52A_0013_EQ3314_0002_0021EQ3314_CE6B02DE52A_0014_EQ3314_0002_0022EQ3314_6BF23D5548"}
@@ -9,34 +9,49 @@
 TYPE Beckhoff_EQ3xxxEK1122_D38136B7 EXTENDS EK1122_AB5A9467 :
 STRUCT
 	{attribute addProperty Name "Beckhoff_EQ3xxxsub_EK1100"}
+	{attribute addProperty PreviousPort "Beckhoff EQ3xxxEK1122 : D"}
 	Beckhoff_EQ3xxxsub_EK1100 : EK1100_AB5A9467;
 	{attribute addProperty Name "A_0001_EQ3174_0002_0016"}
+	{attribute addProperty PreviousPort "Beckhoff EQ3xxxsub EK1100 : C"}
 	A_0001_EQ3174_0002_0016 : EQ3174_0E4717A0;
 	{attribute addProperty Name "A_0002_EQ3174_0002_0017"}
+	{attribute addProperty PreviousPort "A_0001(EQ3174-0002-0016) : B"}
 	A_0002_EQ3174_0002_0017 : EQ3174_0E4717A0;
 	{attribute addProperty Name "A_0003_EQ3174_0002_0021"}
+	{attribute addProperty PreviousPort "A_0002(EQ3174-0002-0017) : B"}
 	A_0003_EQ3174_0002_0021 : EQ3174_0E4717A0;
 	{attribute addProperty Name "A_0004_EQ3174_0002_0022"}
+	{attribute addProperty PreviousPort "A_0003(EQ3174-0002-0021) : B"}
 	A_0004_EQ3174_0002_0022 : EQ3174_0E4717A0;
 	{attribute addProperty Name "A_0005_EQ3174_0002_0023"}
+	{attribute addProperty PreviousPort "A_0004(EQ3174-0002-0022) : B"}
 	A_0005_EQ3174_0002_0023 : EQ3174_0E4717A0;
 	{attribute addProperty Name "A_0006_EQ3204_0002_0016"}
+	{attribute addProperty PreviousPort "A_0005(EQ3174-0002-0023) : B"}
 	A_0006_EQ3204_0002_0016 : EQ3204_7A00DD1E;
 	{attribute addProperty Name "A_0007_EQ3204_0002_0017"}
+	{attribute addProperty PreviousPort "A_0006(EQ3204-0002-0016) : B"}
 	A_0007_EQ3204_0002_0017 : EQ3204_7A00DD1E;
 	{attribute addProperty Name "A_0008_EQ3204_0002_0020"}
+	{attribute addProperty PreviousPort "A_0007(EQ3204-0002-0017) : B"}
 	A_0008_EQ3204_0002_0020 : EQ3204_7A00DD1E;
 	{attribute addProperty Name "A_0009_EQ3204_0002_0021"}
+	{attribute addProperty PreviousPort "A_0008(EQ3204-0002-0020) : B"}
 	A_0009_EQ3204_0002_0021 : EQ3204_BF0B7ECE;
 	{attribute addProperty Name "A_0010_EQ3204_0002_0022"}
+	{attribute addProperty PreviousPort "A_0009(EQ3204-0002-0021) : B"}
 	A_0010_EQ3204_0002_0022 : EQ3204_BF0B7ECE;
 	{attribute addProperty Name "A_0011_EQ3314_0002_0016"}
+	{attribute addProperty PreviousPort "A_0010(EQ3204-0002-0022) : B"}
 	A_0011_EQ3314_0002_0016 : EQ3314_CE6B02DE;
 	{attribute addProperty Name "A_0012_EQ3314_0002_0017"}
+	{attribute addProperty PreviousPort "A_0011(EQ3314-0002-0016) : B"}
 	A_0012_EQ3314_0002_0017 : EQ3314_CE6B02DE;
 	{attribute addProperty Name "A_0013_EQ3314_0002_0021"}
+	{attribute addProperty PreviousPort "A_0012(EQ3314-0002-0017) : B"}
 	A_0013_EQ3314_0002_0021 : EQ3314_CE6B02DE;
 	{attribute addProperty Name "A_0014_EQ3314_0002_0022"}
+	{attribute addProperty PreviousPort "A_0013(EQ3314-0002-0021) : B"}
 	A_0014_EQ3314_0002_0022 : EQ3314_6BF23D55;
 END_STRUCT
 END_TYPE

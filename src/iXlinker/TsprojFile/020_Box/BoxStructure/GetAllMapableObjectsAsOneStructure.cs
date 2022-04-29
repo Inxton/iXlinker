@@ -44,6 +44,10 @@ namespace TsprojFile.Scan
                         TopologyStructMemberViewModel member = new TopologyStructMemberViewModel();
 
                         member.Attributes.Add("{attribute addProperty Name \"" + mapableObject.Name + "\"}");
+                        if (!string.IsNullOrEmpty(mapableObject.PreviousPort))
+                        {
+                            member.Attributes.Add("{attribute addProperty PreviousPort \"" + mapableObject.PreviousPort + "\"}");
+                        }
                         member.Name = ValidatePlcItem.Name(mapableObject.Name);
                         member.Type_Value = mapableObject.Type_Value;
                         member.TypeNamespace= mapableObject.TypeNamespace;
@@ -134,6 +138,10 @@ namespace TsprojFile.Scan
                     else
                     {
                         member.Attributes.Add("{attribute addProperty Name \"" + mapableObject.Name + "\"}");
+                        if (!string.IsNullOrEmpty(mapableObject.PreviousPort))
+                        {
+                            member.Attributes.Add("{attribute addProperty PreviousPort \"" + mapableObject.PreviousPort + "\"}");
+                        }
                         member.Name = ValidatePlcItem.Name(mapableObject.Name);
                         member.Type_Value = ValidatePlcItem.Type(mapableObject.Type_Value);
                         member.TypeNamespace =mapableObject.TypeNamespace;

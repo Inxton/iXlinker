@@ -28,6 +28,7 @@ namespace TsprojFile.Scan
                     }
                 }
                 boxViewModel.MapableObjectGrouped = GetAllMapableObjectsAsOneStructure(boxViewModel, boxViewModel.MapableObjects);
+                boxViewModel.MapableObjectGrouped.PreviousPort = boxViewModel.PreviousPort;
             }
             else if ((!vs.DoNotGenerateDisabled || !box.DisabledSpecified || !box.Disabled) && box.BusCoupler != null)
             {
@@ -49,6 +50,7 @@ namespace TsprojFile.Scan
                     }
                 }
                 boxViewModel.MapableObjectGrouped = GetAllMapableObjectsAsOneStructure(boxViewModel, boxViewModel.MapableObjects);
+                boxViewModel.MapableObjectGrouped.PreviousPort = boxViewModel.PreviousPort;
             }
             return boxViewModel;
         }

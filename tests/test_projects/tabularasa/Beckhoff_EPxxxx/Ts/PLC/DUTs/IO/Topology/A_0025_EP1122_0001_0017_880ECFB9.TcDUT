@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="A_0025_EP1122_0001_0017_880ECFB9" Id="{68ad0fe5-4119-4c92-acbd-8cc7a5a477f3}">
+  <DUT Name="A_0025_EP1122_0001_0017_880ECFB9" Id="{5639c000-638b-492f-9536-647a0a807531}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1122-0001-0017'}
 {attribute addProperty BoxType "EP1122-0001-0017"}
 {attribute addProperty Id "A_0026_EP1122_0001_0018A_0026_EP1122_0001_0018_E52E64B31450"}
@@ -9,6 +9,7 @@
 TYPE A_0025_EP1122_0001_0017_880ECFB9 EXTENDS EP1122_AB5A9467 :
 STRUCT
 	{attribute addProperty Name "A_0026_EP1122_0001_0018"}
+	{attribute addProperty PreviousPort "A_0025(EP1122-0001-0017) : D"}
 	A_0026_EP1122_0001_0018 : A_0026_EP1122_0001_0018_E52E64B3;
 END_STRUCT
 END_TYPE

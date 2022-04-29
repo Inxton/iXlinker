@@ -13,11 +13,9 @@ namespace TsprojFile.Scan
             BoxViewModel boxViewModel = new BoxViewModel();
             string ownerB_name = "";
 
-            TcSmBoxDefEtherCAT boxItem;
-
             if (box.Item is TcSmBoxDefEtherCAT)
             {
-                boxItem = (TcSmBoxDefEtherCAT)box.Item;
+                TcSmBoxDefEtherCAT boxItem = (TcSmBoxDefEtherCAT)box.Item;
 
                 if (boxItem.SuName != null)
                 {
@@ -129,8 +127,8 @@ namespace TsprojFile.Scan
     
                 string box_PortABoxInfo = "";
                 string connectedToPort = "";
-                int connectedToBox = 0;
-                string connection = "";
+                int connectedToBoxId = 0;
+                string previousPort = "";
                 try
                 {
                     if (boxItem.PortABoxInfo != null)
@@ -161,18 +159,19 @@ namespace TsprojFile.Scan
                                     break;
                             }
 
-                            connectedToBox = int.Parse(boxNumber, System.Globalization.NumberStyles.HexNumber);
+                            connectedToBoxId = int.Parse(boxNumber, System.Globalization.NumberStyles.HexNumber);
                             if (connectedToPort == "A" || connectedToPort == "B" || connectedToPort == "C" || connectedToPort == "D")
                             {
-                                connection = @"I am connected with my port A to the port " + connectedToPort + " of the box with ID= " + connectedToBox.ToString();
+                                //previousPort = @"I am connected with my port A to the port " + connectedToPort + " of the box with ID= " + connectedToBoxId.ToString();
+                                previousPort = GetBoxNameFromId(connectedToBoxId) + " : " + connectedToPort;
                             }
                         }
                         else
                         {
                             ownerB_name = parent_path;
                             connectedToPort = "";
-                            connectedToBox = 0;
-                            connection = @"I am directly connected with my port A to the device with ID= " + device.Id.ToString();
+                            connectedToBoxId = 0;
+                            previousPort = device.Name.ToString() + " : Master";
                         }
                     }
                 }
@@ -232,8 +231,9 @@ namespace TsprojFile.Scan
                 boxViewModel.RevisionNo = box_revision_number;
                 boxViewModel.PortABoxInfo = box_PortABoxInfo;
                 boxViewModel.ConnectedToPort = connectedToPort;
-                boxViewModel.ConnectedToBox = connectedToBox;
-                boxViewModel.ConnectionDesc = connection;
+                boxViewModel.ConnectedToBoxId = connectedToBoxId;
+                boxViewModel.ConnectedToBox = "";
+                boxViewModel.PreviousPort = previousPort;
                 boxViewModel.ContainsSubBoxes = containsSubBoxes;
                 boxViewModel.NumberOfSubBoxes = 0;
                 boxViewModel.TotalNumberOfBoxes = 0;
@@ -300,6 +300,7 @@ namespace TsprojFile.Scan
                 {
                     TotalNumberOfVariableBoxes++;
                 }
+                BoxIdentificationList.Add(new BoxIdentification() { Name = boxViewModel.Name, Id = boxViewModel.Id});
                 TotalNumberOfBoxes++;
             }
             return boxViewModel;

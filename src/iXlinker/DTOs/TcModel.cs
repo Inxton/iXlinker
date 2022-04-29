@@ -312,5 +312,22 @@ namespace iXlinkerDtos
             }
         }
 
+        private ObservableCollection<BoxIdentification> boxIdentificationList;
+        public ObservableCollection<BoxIdentification> BoxIdentificationList
+        {
+            get
+            {
+                return this.boxIdentificationList ?? (this.boxIdentificationList = new ObservableCollection<BoxIdentification>());
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.boxIdentificationList = value;
+                    NotifyPropertyChanged(nameof(BoxIdentificationList));
+                }
+            }
+        }
+
     }
 }

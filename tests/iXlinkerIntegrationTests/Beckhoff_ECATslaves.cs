@@ -171,21 +171,8 @@ namespace iXlinkerIntegrationTests
             Assert.IsTrue(TestsCommon.AreFilesEqual(TsProjFilePath, @$"{expectedDir.FullName}\Ts\Ts.tsproj"));
             Assert.IsTrue(TestsCommon.AreFilesEqual(PlcProjFilePath, @$"{expectedDir.FullName}\Ts\PLC\PLC.plcproj"));
 
-            var expectedDutFiles = Directory.EnumerateFiles(@$"{expectedDir.FullName}\Ts\PLC\DUTs\IO\").ToList();
-            var generatedDutFiles = Directory.EnumerateFiles(@$"{generatedDir.FullName}\Ts\PLC\DUTs\IO\").ToList();
-
-            for (int i = 0; i < expectedDutFiles.Count(); i++)
-            {
-                Assert.IsTrue(TestsCommon.AreFilesEqual(expectedDutFiles[i], generatedDutFiles[i]));
-            }
-
-            var expectedGvlFiles = Directory.EnumerateFiles(@$"{expectedDir.FullName}\Ts\PLC\GVLs\").ToList();
-            var generatedGvlFiles = Directory.EnumerateFiles(@$"{generatedDir.FullName}\Ts\PLC\GVLs\").ToList();
-
-            for (int i = 0; i < expectedDutFiles.Count(); i++)
-            {
-                Assert.IsTrue(TestsCommon.AreFilesEqual(expectedGvlFiles[i], generatedGvlFiles[i]));
-            }
+            Assert.IsTrue(TestsCommon.AllFilesAreEqual(@$"{expectedDir.FullName}\Ts\PLC\DUTs\IO\", @$"{generatedDir.FullName}\Ts\PLC\DUTs\IO\"));
+            Assert.IsTrue(TestsCommon.AllFilesAreEqual(@$"{expectedDir.FullName}\Ts\PLC\GVLs\", @$"{generatedDir.FullName}\Ts\PLC\GVLs\"));
         }
 
         private static void CopyTestFiles(string source)

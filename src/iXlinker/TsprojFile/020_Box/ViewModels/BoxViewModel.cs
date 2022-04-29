@@ -154,27 +154,41 @@
             }
         }
 
-        private int connectedToBox;
-        public int ConnectedToBox
+        private int connectedToBoxId;
+        public int ConnectedToBoxId
+        {
+            get { return this.connectedToBoxId; }
+            set
+            {
+                    this.connectedToBoxId = value;
+                    NotifyPropertyChanged(nameof(ConnectedToBoxId));
+            }
+        }
+
+        private string connectedToBox;
+        public string ConnectedToBox
         {
             get { return this.connectedToBox; }
             set
             {
+                if (!string.IsNullOrEmpty(value))
+                {
                     this.connectedToBox = value;
                     NotifyPropertyChanged(nameof(ConnectedToBox));
+                }
             }
         }
 
-        private string connectionDesc;
-        public string ConnectionDesc
+        private string previousPort;
+        public string PreviousPort
         {
-            get { return this.connectionDesc; }
+            get { return this.previousPort; }
             set
             {
                 if (!string.IsNullOrEmpty(value))
                 {
-                    this.connectionDesc = value;
-                    NotifyPropertyChanged(nameof(ConnectionDesc));
+                    this.previousPort = value;
+                    NotifyPropertyChanged(nameof(PreviousPort));
                 }
             }
         }

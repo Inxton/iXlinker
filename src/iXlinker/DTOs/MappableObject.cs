@@ -57,6 +57,20 @@ namespace iXlinkerDtos
             }
         }
 
+        private string previousPort;
+        public string PreviousPort
+        {
+            get { return this.previousPort; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.previousPort = value;
+                    NotifyPropertyChanged(nameof(PreviousPort));
+                }
+            }
+        }
+
         private ObservableCollection<MappableItem> mapableItems;
         public ObservableCollection<MappableItem> MapableItems 
         {

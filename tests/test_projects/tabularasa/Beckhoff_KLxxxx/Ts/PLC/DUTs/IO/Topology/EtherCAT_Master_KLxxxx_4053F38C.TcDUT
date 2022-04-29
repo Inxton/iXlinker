@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EtherCAT_Master_KLxxxx_4053F38C" Id="{cebc02f6-c85f-4cef-a600-4b9d42269ab7}">
+  <DUT Name="EtherCAT_Master_KLxxxx_4053F38C" Id="{e63a7283-dea1-4ae5-8f35-f1dd5713e463}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "TcTerminals210_1EK1100TcTerminals210_1EK1100_5C7783790TcTerminals210_2EK1100TcTerminals210_2EK1100_50C143310SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
@@ -9,8 +9,10 @@
 TYPE EtherCAT_Master_KLxxxx_4053F38C :
 STRUCT
 	{attribute addProperty Name "TcTerminals210_1EK1100"}
+	{attribute addProperty PreviousPort "EtherCAT_Master_KLxxxx : Master"}
 	TcTerminals210_1EK1100 : TcTerminals210_1EK1100_5C778379;
 	{attribute addProperty Name "TcTerminals210_2EK1100"}
+	{attribute addProperty PreviousPort "TcTerminals210_1EK1100 : C"}
 	TcTerminals210_2EK1100 : TcTerminals210_2EK1100_50C14331;
 	{attribute addProperty Name "SyncUnits"}
 	SyncUnits : SyncUnits_99E584AF;
