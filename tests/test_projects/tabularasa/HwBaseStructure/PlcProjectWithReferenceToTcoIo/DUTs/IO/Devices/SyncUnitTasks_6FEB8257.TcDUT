@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SyncUnitTasks_6FEB8257" Id="{2f845071-272b-4f96-a093-bec25e2f1f47}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: '}
+{attribute addProperty BoxType ""}
+{attribute addProperty Id "unreferencedAT %I*SyncUnitTask_2D604ED59PlcTaskAT %I*SyncUnitTask_2D604ED59"}
+{attribute addProperty CRC "1877705303"}
+{attribute addProperty Size "18"}
+TYPE SyncUnitTasks_6FEB8257 :
+STRUCT
+	{attribute addProperty Name "unreferenced"}
+	unreferenced : TcoIo.SyncUnitTask_2D604ED5;
+	{attribute addProperty Name "PlcTask"}
+	PlcTask : TcoIo.SyncUnitTask_2D604ED5;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

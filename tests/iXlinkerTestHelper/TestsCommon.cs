@@ -139,6 +139,13 @@ namespace iXlinkerTestHelper
                     areEqual = false;
                 }
             }
+            else if (pathExpected.EndsWith(".TcGVL"))
+            {
+                if (!AreTcGVLFilesEqual(pathExpected, pathGenerated))
+                {
+                    areEqual = false;
+                }
+            }
             else if (pathExpected.EndsWith(".tsproj"))
             {
                 if (!DevicesAndMappingsInsideTsprojFilesAreEqual(pathExpected, pathGenerated))
@@ -201,6 +208,50 @@ namespace iXlinkerTestHelper
                     {
                         int column = GetFirstDiffIndex(expected[item], generated[item]);
                         Console.WriteLine(@"File: ""{0}"", declaration part of the structure: {1} differs. Item: {2} , column: {3}.", pathGenerated.Replace(generatedDir.FullName, ".."), dutExpected.Name, item, column);
+                        Console.WriteLine(@"Expected: ""{0}""", expected[item]);
+                        Console.WriteLine(@"Generated: ""{0}""", generated[item]);
+                        areEqual = false;
+                    }
+                }
+
+            }
+
+            return areEqual;
+        }
+        private static bool AreTcGVLFilesEqual(string pathExpected, string pathGenerated)
+        {
+            bool areEqual = true;
+            TcPlcObjectBaseDeclType gvlExpected = GetTcGvlContent(pathExpected);
+            TcPlcObjectBaseDeclType gvlGenerated = GetTcGvlContent(pathGenerated);
+            if (gvlExpected == null || gvlGenerated == null)
+            {
+                areEqual = false;
+            }
+            if (gvlExpected.Name != gvlGenerated.Name)
+            {
+                Console.WriteLine(@"Different structure names found inside file: ""{0}""", pathGenerated.Replace(generatedDir.FullName, ".."));
+                Console.WriteLine(@"Expected: ""{0}""", gvlExpected.Name);
+                Console.WriteLine(@"Generated: ""{0}""", gvlGenerated.Name);
+                areEqual = false;
+            }
+
+            if (gvlExpected.Declaration != gvlGenerated.Declaration)
+            {
+                string[] expected = GetAllRelevantTcGvlDeclarationLines(gvlExpected.Declaration).ToArray();
+                string[] generated = GetAllRelevantTcGvlDeclarationLines(gvlGenerated.Declaration).ToArray();
+                if (expected.Length != generated.Length)
+                {
+                    Console.WriteLine(@"Different number of the declaration rows in the file: ""{0}""", pathGenerated.Replace(generatedDir.FullName, ".."));
+                    Console.WriteLine(@"Expected: ""{0}""", expected.Length);
+                    Console.WriteLine(@"Generated: ""{0}""", generated.Length);
+                    areEqual = false;
+                }
+                for (int item = 0; item < expected.Length; item++)
+                {
+                    if (!expected[item].Equals(generated[item]))
+                    {
+                        int column = GetFirstDiffIndex(expected[item], generated[item]);
+                        Console.WriteLine(@"File: ""{0}"", declaration part of the structure: {1} differs. Item: {2} , column: {3}.", pathGenerated.Replace(generatedDir.FullName, ".."), gvlExpected.Name, item, column);
                         Console.WriteLine(@"Expected: ""{0}""", expected[item]);
                         Console.WriteLine(@"Generated: ""{0}""", generated[item]);
                         areEqual = false;
@@ -318,7 +369,7 @@ namespace iXlinkerTestHelper
 
             List<string> declarationFiltered = new List<string>();
 
-            string[] declarationItems = declarationField.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+            string[] declarationItems = declarationField.Split(new string[] { "\n"}, StringSplitOptions.None);
 
             foreach (string item in declarationItems)
             {
@@ -367,6 +418,63 @@ namespace iXlinkerTestHelper
 
             return baseDeclType;
         }
+        private static List<string> GetAllRelevantTcGvlDeclarationLines(string declarationField)
+        {
+            string[] exludedPrefixes = {
+                "{attribute "
+                };
+
+            List<string> declarationFiltered = new List<string>();
+
+            string[] declarationItems = declarationField.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+
+            foreach (string item in declarationItems)
+            {
+                bool included = true;
+                foreach (string excluded in exludedPrefixes)
+                {
+                    if (item.StartsWith(excluded))
+                    {
+                        included = false;
+                        break;
+                    }
+                }
+                if (included) declarationFiltered.Add(item);
+            }
+            return declarationFiltered;
+        }
+        private static TcPlcObjectBaseDeclType GetTcGvlContent(string path)
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(TcPlcObject));
+            StreamReader reader = new StreamReader(path);
+            TcPlcObject tcGVL = new TcPlcObject();
+            TcPlcObjectBaseDeclType baseDeclType = new TcPlcObjectBaseDeclType();
+            try
+            {
+                tcGVL = (TcPlcObject)serializer.Deserialize(reader);
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(@"Unable to retrieve: ""{0}""", path);
+                Console.WriteLine(MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                tcGVL = null;
+                reader.Close();
+            }
+
+            try
+            {
+                baseDeclType = (TcPlcObjectBaseDeclType)tcGVL.Item;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(@"Unable to cast declaration part of the global variable list: ""{0}"" in the file:""{1}""", tcGVL.Item, path);
+                Console.WriteLine(MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                baseDeclType = null;
+            }
+
+            return baseDeclType;
+        }
         internal static void CopyTsprojFileWithoutMappings(string source, string destination)
         {
             try
@@ -393,7 +501,6 @@ namespace iXlinkerTestHelper
                 EventLogger.Instance.Logger.Error(MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
         }
-
         internal static void CopyPlcprojFileWithoutGeneratedItems(string source, string destination)
         {
             try
@@ -428,7 +535,6 @@ namespace iXlinkerTestHelper
                 EventLogger.Instance.Logger.Error(MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
             }
         }
-
         internal static void Arrange(string patternPath)
         {
             CopyFilesRecursively(SourcePath + "\\" + patternPath, expectedDir.FullName);
@@ -457,6 +563,22 @@ namespace iXlinkerTestHelper
             tcProj.GenerateStructures(vs);
             tcProj.GenerateMappingsToTsProj(vs);
         }
-    }
+        internal static string GetTypeFromWhichDtuExtends(string path)
+        {
+            string ret = "";
+            TcPlcObjectBaseDeclType dut = GetTcDUTContent(path);
+            List<string> declarationLines = GetAllRelevantTcDutDeclarationLines(dut.Declaration);
+            foreach (string declarationLine in declarationLines)
+            {
+                if (declarationLine.StartsWith("TYPE") && declarationLine.Contains("EXTENDS"))
+                {
+                    ret = declarationLine.Split("EXTENDS")[1].Replace(" ","").Replace(":", "");
 
+                    break;
+                }
+            }
+
+                return ret;
+        }
+    }
 }
