@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Ch_B_AxisMain_Inputs_3D4AF970">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0102-0102'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch_B_AxisMain_Inputs_3D4AF970" Id="{7eba093c-3edb-42da-8632-f90d1e46c606}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0102-0102'}
 {attribute addProperty BoxType "AX8206-0100-0102-0102"}
 {attribute addProperty Id "Position_actual_value_invalidAT %I*BOOL1_1st_Additional_position_actual_value_invalidAT %I*BOOL1Ch_B_StatuswordAT %I*UINT2Ch_B_Position_actual_valueAT %I*DINT4"}
 {attribute addProperty CRC "1028323696"}
@@ -18,5 +19,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

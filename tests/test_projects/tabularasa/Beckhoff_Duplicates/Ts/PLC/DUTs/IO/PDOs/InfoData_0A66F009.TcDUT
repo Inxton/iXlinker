@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="InfoData_0A66F009">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2339-0021-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_0A66F009" Id="{22ca0c4d-5825-4ddb-904c-f284735943c6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2339-0021-0016'}
 {attribute addProperty BoxType "EP2339-0021-0016"}
 {attribute addProperty Id "AoeNetIdAT %I*AMSNETID6StateAT %I*UINT2"}
 {attribute addProperty CRC "174518281"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

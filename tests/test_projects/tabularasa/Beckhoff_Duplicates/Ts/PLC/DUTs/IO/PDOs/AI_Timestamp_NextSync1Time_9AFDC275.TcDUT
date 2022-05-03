@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="AI_Timestamp_NextSync1Time_9AFDC275">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AI_Timestamp_NextSync1Time_9AFDC275" Id="{1d5ccf24-a6f4-46ff-80ac-45766fb76177}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
 {attribute addProperty BoxType "EL3773-0000-0016"}
 {attribute addProperty Id "StartTimeNextLatchAT %I*ULINT8"}
 {attribute addProperty CRC "2600321653"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

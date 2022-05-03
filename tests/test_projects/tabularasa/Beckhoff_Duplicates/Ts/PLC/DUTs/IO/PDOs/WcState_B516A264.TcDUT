@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="WcState_B516A264">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="WcState_B516A264" Id="{f0f66873-1444-46ec-83e4-46c33e560995}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
 {attribute addProperty BoxType "AX8108-0100-0101-0101"}
 {attribute addProperty Id "WcState0AT %I*BOOL1WcState1AT %I*BOOL1InputToggle0AT %I*BOOL1InputToggle1AT %I*BOOL1"}
 {attribute addProperty CRC "3038159460"}
@@ -18,5 +19,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

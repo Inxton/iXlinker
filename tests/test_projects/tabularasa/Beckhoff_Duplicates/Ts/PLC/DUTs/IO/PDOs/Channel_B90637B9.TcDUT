@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Channel_B90637B9">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5101--0000'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_B90637B9" Id="{4d91e163-6b22-42f2-b15d-a91cd948635f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5101--0000'}
 {attribute addProperty BoxType "EL5101--0000"}
 {attribute addProperty Id "StatusAT %I*USINT1ValueAT %I*UINT2LatchAT %I*UINT2"}
 {attribute addProperty CRC "3104192441"}
@@ -16,5 +17,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

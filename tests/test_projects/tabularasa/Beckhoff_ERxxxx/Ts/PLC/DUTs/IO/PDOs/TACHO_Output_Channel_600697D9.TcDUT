@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="TACHO_Output_Channel_600697D9">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="TACHO_Output_Channel_600697D9" Id="{a41b5bfd-2953-476b-b638-3c21c4de47fd}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
 {attribute addProperty BoxType "ER8309-1022-0018"}
 {attribute addProperty Id "Reset_ErrorAT %Q*BOOL1"}
 {attribute addProperty CRC "1611044825"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

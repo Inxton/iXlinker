@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="FSOE_13BCEA3F">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_13BCEA3F" Id="{aa5e9680-66a2-4432-80b4-5c567654671d}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
 {attribute addProperty BoxType "AX8108-0100-0101-0101"}
 {attribute addProperty Id "Safe_Logic_StateUSINT1Cycle_CounterUSINT1"}
 {attribute addProperty CRC "331147839"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

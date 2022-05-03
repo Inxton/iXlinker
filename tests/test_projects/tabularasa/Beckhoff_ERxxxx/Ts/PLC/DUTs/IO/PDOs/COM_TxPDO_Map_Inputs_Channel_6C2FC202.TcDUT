@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="COM_TxPDO_Map_Inputs_Channel_6C2FC202">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER6002-0002-0022'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="COM_TxPDO_Map_Inputs_Channel_6C2FC202" Id="{e49c296f-597e-4cae-a260-360500bcaf92}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER6002-0002-0022'}
 {attribute addProperty BoxType "ER6002-0002-0022"}
 {attribute addProperty Id "StatusAT %I*UINT2Data_InAT %I*ARRAY[0..21] OF USINT22"}
 {attribute addProperty CRC "1367962124"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

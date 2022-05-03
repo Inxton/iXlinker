@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="ER7342_2AE9C6B3">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER7342-0002-0020'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ER7342_2AE9C6B3" Id="{f3c00b66-0abc-4523-b3bc-d0d3db7247af}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER7342-0002-0020'}
 {attribute addProperty BoxType "ER7342-0002-0020"}
 {attribute addProperty Id "ENC_Status_compact_Channel_1AT %I*ENC_Status_compact_Channel_DC559AB014ENC_Status_compact_Channel_2AT %I*ENC_Status_compact_Channel_DC559AB014DCM_Status_Channel_1AT %I*DCM_Status_Channel_36ED096F11DCM_Status_Channel_2AT %I*DCM_Status_Channel_36ED096F11ENC_Control_compact_Channel_1AT %Q*ENC_Control_compact_Channel_2E82BC435ENC_Control_compact_Channel_2AT %Q*ENC_Control_compact_Channel_2E82BC435DCM_Control_Channel_1AT %Q*DCM_Control_Channel_5A8B50163DCM_Velocity_Channel_1AT %Q*DCM_Velocity_Channel_A47A3F412DCM_Control_Channel_2AT %Q*DCM_Control_Channel_5A8B50163DCM_Velocity_Channel_2AT %Q*DCM_Velocity_Channel_A47A3F412WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_939F71B614"}
 {attribute addProperty CRC "719963827"}
@@ -34,5 +35,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

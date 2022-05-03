@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Status_57491DF1">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1518-0002-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_57491DF1" Id="{72a99142-3555-4399-96ec-6fbfacf9ac46}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1518-0002-0018'}
 {attribute addProperty BoxType "ER1518-0002-0018"}
 {attribute addProperty Id "Set_counter_doneBOOL1Counter_inhibitedBOOL1Status_of_input_UDBOOL1Status_of_input_clockBOOL1Sync_errorBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
 {attribute addProperty CRC "1464409585"}
@@ -24,5 +25,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

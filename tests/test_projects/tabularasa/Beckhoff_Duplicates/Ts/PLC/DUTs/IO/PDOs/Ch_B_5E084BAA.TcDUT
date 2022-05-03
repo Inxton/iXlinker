@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Ch_B_5E084BAA">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0101-0101'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch_B_5E084BAA" Id="{9182f5c9-0c13-49f6-8dab-0a736300808f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0101-0101'}
 {attribute addProperty BoxType "AX8206-0100-0101-0101"}
 {attribute addProperty Id "Ch_B_AxisMain_InputsCh_B_AxisMain_Inputs_A10B23CB8Ch_B_AxisMain_OutputsCh_B_AxisMain_Outputs_526A47F82Ch_B_Interpolator_OutputsCh_B_Interpolator_Outputs_F819AE728Ch_B_PositionControl_InputsCh_B_PositionControl_Inputs_C884000A4"}
 {attribute addProperty CRC "1577601962"}
@@ -18,5 +19,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

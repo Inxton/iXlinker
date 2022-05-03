@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Ch2_Input_78ADA90C">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1262-0000-0002'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch2_Input_78ADA90C" Id="{6edcb5df-fcb6-4c23-b707-4069006fba0b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1262-0000-0002'}
 {attribute addProperty BoxType "EL1262-0000-0002"}
 {attribute addProperty Id "Ch2_InputAT %I*BOOL1"}
 {attribute addProperty CRC "2024646924"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

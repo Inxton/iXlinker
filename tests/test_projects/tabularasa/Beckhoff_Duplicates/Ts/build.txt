@@ -743,3 +743,70 @@ One or more projects in the solution were not loaded correctly.
 Please see the Output Window for details.Build started...
 ========== Build: 0 succeeded or up-to-date, 0 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 89270 bytes
+Size of global data: 25829 bytes
+Total allocated memory size for code and data: 499528 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 499528, largest contiguous memory gap: 549048 bytes (52 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 5/3/2022 9:49:52 PM 575 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0017(EL5151-0000-0018 )' may to low (-80 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 578 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0018(EL5151-0000-0019 )' may to low (-210 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 580 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0019(EL5151-0000-0020 )' may to low (-290 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 581 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0020(EL5151-0000-0025 )' may to low (-420 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 582 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0021(EL5151-0000-0026 )' may to low (-550 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 583 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0022(EL5151-0080-0016 )' may to low (-680 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 585 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0023(EL5151-0080-0017 )' may to low (-760 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 586 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0024(EL5151-0080-0018 )' may to low (-840 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 590 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0025(EL5151-0080-0019 )' may to low (-970 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 591 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0026(EL5151-0080-0020 )' may to low (-1100 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 593 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0027(EL5151-0080-0021 )' may to low (-1230 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 594 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0028(EL3773-0000-0016 )' may to low (-1430 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 595 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0029(EM7004-0000-9995 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 597 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0041(AX8108-0100-0101 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 598 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0042(AX8108-0100-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 601 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0043(AX8108-0100-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 602 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0044(AX8108-0100-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 603 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0045(AX8108-0110-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 604 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0046(AX8108-0110-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 606 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0047(AX8108-0110-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 607 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0048(AX8108-0200-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 608 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0049(AX8108-0200-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 611 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0050(AX8108-0210-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 612 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0051(AX8108-0210-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 614 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0052(AX8118-0100-0101 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 615 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0053(AX8118-0100-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 617 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0054(AX8118-0100-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 618 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0055(AX8118-0100-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 619 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0056(AX8118-0110-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 623 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0057(AX8118-0110-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 624 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0058(AX8118-0110-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 626 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0059(AX8118-0200-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 627 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0060(AX8118-0200-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 628 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0061(AX8118-0210-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 629 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0062(AX8118-0210-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 633 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0063(AX8206-0100-0101 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 635 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0064(AX8206-0100-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 636 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0065(AX8206-0100-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 638 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0066(AX8206-0100-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 639 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0067(AX8206-0110-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 641 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0068(AX8206-0110-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 644 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0069(AX8206-0110-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 646 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0070(AX8206-0200-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 647 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0071(AX8206-0200-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 649 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0072(AX8206-0210-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 651 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0073(AX8206-0210-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 652 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0074(EM7004-0000-9995)' may to low (-1850 mA) - please check!
+WRN | 5/3/2022 9:49:52 PM 655 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0075(AX8118-0100-0101)' may to low (-1850 mA) - please check!
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+

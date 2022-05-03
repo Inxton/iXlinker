@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Setting_24C04940">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Setting_24C04940" Id="{a0dbf44b-57dd-46d4-b245-ac1a53886ea7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0017'}
 {attribute addProperty BoxType "EL3681-0000-0017"}
 {attribute addProperty Id "ModeBYTE1RangeSINT1"}
 {attribute addProperty CRC "616581440"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

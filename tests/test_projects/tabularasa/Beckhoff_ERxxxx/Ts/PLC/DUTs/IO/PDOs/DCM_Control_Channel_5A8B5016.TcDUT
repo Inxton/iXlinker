@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="DCM_Control_Channel_5A8B5016">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER7342-0002-0020'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DCM_Control_Channel_5A8B5016" Id="{0cebd38a-9116-4cc4-a929-cfc41c841aae}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER7342-0002-0020'}
 {attribute addProperty BoxType "ER7342-0002-0020"}
 {attribute addProperty Id "ControlAT %Q*Control_C948E0F23"}
 {attribute addProperty CRC "1519079446"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

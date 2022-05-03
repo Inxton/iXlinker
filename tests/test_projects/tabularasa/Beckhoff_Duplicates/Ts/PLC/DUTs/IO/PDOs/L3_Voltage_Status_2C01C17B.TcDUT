@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="L3_Voltage_Status_2C01C17B">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L3_Voltage_Status_2C01C17B" Id="{e63bf2ba-479d-493b-a509-db5a3608059f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
 {attribute addProperty BoxType "EL3773-0000-0016"}
 {attribute addProperty Id "U3_STATUSAT %I*U3_STATUS_B07533568"}
 {attribute addProperty CRC "738312571"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

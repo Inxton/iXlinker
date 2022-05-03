@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="DO_Diag_Inputs_212B82C1">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Diag_Inputs_212B82C1" Id="{a07d88ee-bae9-488d-b5d3-d28ae10aab35}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0017'}
 {attribute addProperty BoxType "EP2316-0008-0017"}
 {attribute addProperty Id "Diag_InputAT %I*ARRAY[0..7] OF BOOL8Sync_ErrorAT %I*BOOL1"}
 {attribute addProperty CRC "3811544510"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

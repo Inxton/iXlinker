@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="DO_Outputs_28AC1A9E">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Outputs_28AC1A9E" Id="{a492b599-50fa-4195-bd92-51deaf5dc568}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0017'}
 {attribute addProperty BoxType "EP2316-0008-0017"}
 {attribute addProperty Id "OutputAT %Q*ARRAY[0..7] OF BOOL8"}
 {attribute addProperty CRC "1253840710"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

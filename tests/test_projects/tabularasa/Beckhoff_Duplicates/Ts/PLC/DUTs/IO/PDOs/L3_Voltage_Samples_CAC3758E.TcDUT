@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="L3_Voltage_Samples_CAC3758E">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="L3_Voltage_Samples_CAC3758E" Id="{e610d0e9-237e-4c02-b848-8ef39a0c4872}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
 {attribute addProperty BoxType "EL3773-0000-0016"}
 {attribute addProperty Id "U3_SAMPLESAT %I*U3_SAMPLES_2D13B74B20"}
 {attribute addProperty CRC "3401807246"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

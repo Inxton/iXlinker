@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="CNT_Output_Channel_550BB6DF">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1518-0002-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CNT_Output_Channel_550BB6DF" Id="{4a1230ba-66e1-4ca8-ba7b-6db32c3065a4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1518-0002-0018'}
 {attribute addProperty BoxType "ER1518-0002-0018"}
 {attribute addProperty Id "ControlAT %Q*Control_0B2F8B702Set_counter_valueAT %Q*UDINT4"}
 {attribute addProperty CRC "1426831071"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="DO_Outputs_Device_36A5EF17">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DO_Outputs_Device_36A5EF17" Id="{73b10d68-c0dd-4c99-923d-5794030cc1d3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0017'}
 {attribute addProperty BoxType "EP2316-0008-0017"}
 {attribute addProperty Id "Set_safe_stateAT %Q*BOOL1Reset_outputsAT %Q*BOOL1"}
 {attribute addProperty CRC "916844311"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

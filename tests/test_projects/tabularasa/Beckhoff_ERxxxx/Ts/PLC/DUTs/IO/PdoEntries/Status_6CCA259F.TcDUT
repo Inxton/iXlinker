@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Status_6CCA259F">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_6CCA259F" Id="{6fb23e00-325e-4212-9868-327b0b9544ef}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
 {attribute addProperty BoxType "ER8309-1022-0018"}
 {attribute addProperty Id "Error_Input_ABOOL1Input_Status_ABOOL1Error_Input_BBOOL1Input_Status_BBOOL1Speed_Below_ThresholdBOOL1TxPDO_ToggleBOOL1"}
 {attribute addProperty CRC "1825187231"}
@@ -22,5 +23,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

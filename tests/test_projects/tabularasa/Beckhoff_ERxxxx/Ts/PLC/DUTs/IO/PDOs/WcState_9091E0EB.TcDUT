@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="WcState_9091E0EB">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1008-0001-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="WcState_9091E0EB" Id="{1e0fefd0-2823-4c8f-8bb0-2d25c1fe3499}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1008-0001-0016'}
 {attribute addProperty BoxType "ER1008-0001-0016"}
 {attribute addProperty Id "WcStateAT %I*BOOL1InputToggleAT %I*BOOL1"}
 {attribute addProperty CRC "2425479403"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

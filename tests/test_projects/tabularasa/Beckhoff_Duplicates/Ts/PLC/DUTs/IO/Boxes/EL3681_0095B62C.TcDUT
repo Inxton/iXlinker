@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EL3681_0095B62C">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3681_0095B62C" Id="{b355bd5f-d8ed-4b0d-a0dd-12a23fe09f99}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0018'}
 {attribute addProperty BoxType "EL3681-0000-0018"}
 {attribute addProperty Id "SAI_InputsAT %I*SAI_Inputs_84B29FE914SAI_RangeAT %I*SAI_Range_BDBF6DA92SAI_Range_1AT %Q*SAI_Range_2A187FC54WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "9811500"}
@@ -20,5 +21,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

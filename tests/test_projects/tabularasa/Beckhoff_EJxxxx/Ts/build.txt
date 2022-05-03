@@ -593,3 +593,57 @@ WRN | 5/3/2022 9:27:56 PM 549 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_001
 WRN | 5/3/2022 9:27:56 PM 550 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0012(EJ6910-0000-0020)' may to low (-1550 mA) - please check!
 ========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 104574 bytes
+Size of global data: 27297 bytes
+Total allocated memory size for code and data: 516296 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 516296, largest contiguous memory gap: 532280 bytes (50 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 5/3/2022 9:49:49 PM 548 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0011(EJ3108-0000-0017)' may to low (-10 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 549 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0012(EJ3108-0000-0018)' may to low (-310 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 551 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0013(EJ3108-0000-0019)' may to low (-610 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 553 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0014(EJ3202-0000-0019)' may to low (-775 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 554 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0015(EJ3202-0000-0020)' may to low (-940 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 556 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0016(EJ3202-0000-0021)' may to low (-1105 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 557 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0017(EJ3214-0000-0016)' may to low (-1265 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 558 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0018(EJ3255-0000-0023)' may to low (-1355 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 562 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0019(EJ3318-0000-0017)' may to low (-1535 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 563 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0013(EJ7211-0010-0030)' may to low (-10 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 565 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0014(EJ7211-0010-0031)' may to low (-140 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 566 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0015(EJ7211-0010-0032)' may to low (-270 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 568 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0016(EJ7211-0011-0026)' may to low (-390 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 570 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0017(EJ7211-0011-0027)' may to low (-515 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 572 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0018(EJ7211-0011-0028)' may to low (-640 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 573 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0019(EJ7211-0011-0029)' may to low (-770 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 575 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0020(EJ7211-0011-0030)' may to low (-900 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 576 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0021(EJ7211-0011-0031)' may to low (-1030 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 578 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0022(EJ7211-0011-0032)' may to low (-1160 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 581 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0023(EJ7211-9414-0029)' may to low (-1290 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 582 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0024(EJ7211-9414-0030)' may to low (-1420 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 584 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0025(EJ7211-9414-0031)' may to low (-1550 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 585 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0026(EJ7211-9414-0032)' may to low (-1680 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 587 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0027(EJ7211-9415-0029)' may to low (-1810 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 588 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0028(EJ7211-9415-0030)' may to low (-1940 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 592 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0029(EJ7211-9415-0031)' may to low (-2070 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 593 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0030(EJ7211-9415-0032)' may to low (-2200 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 595 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0031(EJ7334-0008-0016)' may to low (-2350 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 596 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0032(EJ7411-0000-0018)' may to low (-2630 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 598 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0007(EJ2914-0000-0017)' may to low (-240 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 599 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0008(EJ2914-0000-0018)' may to low (-510 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 602 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0009(EJ2918-0000-0017)' may to low (-820 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 603 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0010(EJ2918-0000-0018)' may to low (-1130 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 605 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0011(EJ6910-0000-0018)' may to low (-1320 mA) - please check!
+WRN | 5/3/2022 9:49:49 PM 606 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0012(EJ6910-0000-0020)' may to low (-1550 mA) - please check!
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+

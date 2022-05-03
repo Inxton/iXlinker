@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="SAI_Range_C3200E78">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SAI_Range_C3200E78" Id="{8ac4aafb-f15e-49d4-bbcd-ab0783add25f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0017'}
 {attribute addProperty BoxType "EL3681-0000-0017"}
 {attribute addProperty Id "SettingAT %I*Setting_24C049402"}
 {attribute addProperty CRC "3273657976"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

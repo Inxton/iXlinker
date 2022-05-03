@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="COM_Outputs_5D00B5E7">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER6001-0002-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="COM_Outputs_5D00B5E7" Id="{9fc684bf-6ce9-4d11-8f8e-1437864c2352}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER6001-0002-0016'}
 {attribute addProperty BoxType "ER6001-0002-0016"}
 {attribute addProperty Id "CtrlAT %Q*UINT2Data_OutAT %Q*ARRAY[0..21] OF USINT22"}
 {attribute addProperty CRC "875731620"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>
