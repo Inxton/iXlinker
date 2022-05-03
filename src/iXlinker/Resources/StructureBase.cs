@@ -59,12 +59,7 @@ namespace iXlinker.Resources
             }
         }
 
-        //public StructureBase()
-        //{
-
-        //}
-
-        public StructureBase(string structureName, string structureType , string baseStructurePrefix , ObservableCollection<PlcStruct> PlcStructuresInPlcLibraries)
+         public StructureBase(string structureName, string structureType , string baseStructurePrefix , ObservableCollection<PlcStruct> PlcStructuresInPlcLibraries)
         {
 
             this.structureName = structureName;
@@ -86,13 +81,6 @@ namespace iXlinker.Resources
         {
             return new StructureBase(structureName, structureType, baseStructurePrefix, PlcStructuresInPlcLibraries);
         }
-
-
-        //public StructureBase WithName(string structureName)
-        //{
-        //    this.structureName = structureName;
-        //    return this;
-        //}
 
         public StructureBase AddAttribute(string attribute)
         {

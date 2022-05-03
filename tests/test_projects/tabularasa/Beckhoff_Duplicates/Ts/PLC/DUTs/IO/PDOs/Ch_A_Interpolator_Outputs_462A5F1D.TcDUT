@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Ch_A_Interpolator_Outputs_462A5F1D" Id="{0efd9e19-4226-4a67-88ee-c310377d6f83}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
+<TcPlcObject>
+	<DUT Name="Ch_A_Interpolator_Outputs_462A5F1D">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
 {attribute addProperty BoxType "AX8108-0100-0101-0101"}
 {attribute addProperty Id "Ch_A_Target_positionAT %Q*DINT4Ch_A_Target_velocityAT %Q*DINT4"}
 {attribute addProperty CRC "1177181981"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

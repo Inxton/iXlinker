@@ -51,6 +51,25 @@ namespace TsprojFile.Scan
                         EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
 
+                    string extends = "";
+                    try
+                    {
+                        extends = pdoStructViewModel.Extends;
+                        if (!string.IsNullOrEmpty(extends))
+                        {
+                            extends = " EXTENDS " + extends + " :";
+                        }
+                        else
+                        {
+                            extends = " :";
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        extends = " :";
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    }
+
                     string id = "";
                     try
                     {
@@ -84,13 +103,12 @@ namespace TsprojFile.Scan
 
                     sw.WriteLine("<TcPlcObject>");
                     sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
-                    //sw.WriteLine("\t\t<Declaration><![CDATA[{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
                     sw.WriteLine("\t\t<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: " + boxOrderCode + "'}");
                     sw.WriteLine("{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
                     sw.WriteLine("{attribute addProperty Id \"" + id + "\"}");
                     sw.WriteLine("{attribute addProperty CRC \"" + crc.ToString() + "\"}");
                     sw.WriteLine("{attribute addProperty Size \"" + size.ToString() + "\"}");
-                    sw.WriteLine("TYPE " + structName + " :");
+                    sw.WriteLine("TYPE " + structName + extends);
                     sw.WriteLine("STRUCT");
 
                     foreach (PdoStructMemberViewModel pdoStructMemberViewModel in pdoStructViewModel.StructMembers)

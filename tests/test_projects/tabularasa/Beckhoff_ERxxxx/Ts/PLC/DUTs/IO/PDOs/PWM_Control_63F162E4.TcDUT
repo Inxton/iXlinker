@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PWM_Control_63F162E4" Id="{8241602a-49ed-4229-8089-6b177e1754a5}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
+<TcPlcObject>
+	<DUT Name="PWM_Control_63F162E4">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
 {attribute addProperty BoxType "ER8309-1022-0018"}
 {attribute addProperty Id "ControlAT %Q*Control_254441A53PWM_outputAT %Q*INT2"}
 {attribute addProperty CRC "1676763876"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

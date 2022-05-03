@@ -1,17 +1,16 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_830843C1" Id="{8c050cb9-d834-4457-a0c0-1a8611a0d6c8}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1008-0001-0016'}
+<TcPlcObject>
+	<DUT Name="Channel_830843C1">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1008-0001-0016'}
 {attribute addProperty BoxType "ER1008-0001-0016"}
 {attribute addProperty Id "InputAT %I*BOOL1"}
 {attribute addProperty CRC "2198356929"}
 {attribute addProperty Size "1"}
-TYPE Channel_830843C1 :
+TYPE Channel_830843C1 EXTENDS DigitalInputBase_50022E7B :
 STRUCT
 	{attribute addProperty Name "Input"}
 	Input AT %I* : BOOL;
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

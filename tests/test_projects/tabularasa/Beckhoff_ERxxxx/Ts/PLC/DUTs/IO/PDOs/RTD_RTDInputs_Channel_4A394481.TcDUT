@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="RTD_RTDInputs_Channel_4A394481" Id="{0fba151b-857f-4885-8a82-b502848d6da5}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER3204-0002-0021'}
+<TcPlcObject>
+	<DUT Name="RTD_RTDInputs_Channel_4A394481">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER3204-0002-0021'}
 {attribute addProperty BoxType "ER3204-0002-0021"}
 {attribute addProperty Id "StatusAT %I*Status_F2CE6D917ValueAT %I*INT2"}
 {attribute addProperty CRC "1245267073"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

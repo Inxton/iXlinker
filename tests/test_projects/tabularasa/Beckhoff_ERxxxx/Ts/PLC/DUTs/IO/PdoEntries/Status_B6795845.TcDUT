@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Status_B6795845" Id="{587fe586-5cbd-447a-ad43-79f9044906d7}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER7041-0002-0024'}
+<TcPlcObject>
+	<DUT Name="Status_B6795845">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER7041-0002-0024'}
 {attribute addProperty BoxType "ER7041-0002-0024"}
 {attribute addProperty Id "Ready_to_enableBOOL1ReadyBOOL1WarningBOOL1ErrorBOOL1Moving_positiveBOOL1Moving_negativeBOOL1Torque_reducedBOOL1Digital_input_1BOOL1Digital_input_2BOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
 {attribute addProperty CRC "3061405765"}
@@ -33,5 +32,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

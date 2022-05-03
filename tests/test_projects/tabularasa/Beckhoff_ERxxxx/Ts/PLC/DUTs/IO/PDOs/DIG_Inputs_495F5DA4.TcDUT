@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIG_Inputs_495F5DA4" Id="{0040b901-bf5b-47bb-9256-23aef400fe09}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
+<TcPlcObject>
+	<DUT Name="DIG_Inputs_495F5DA4">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
 {attribute addProperty BoxType "ER8309-1022-0018"}
 {attribute addProperty Id "Digital_Input_X4_Pin4AT %I*BOOL1Digital_Input_X4_Pin2AT %I*BOOL1Digital_Input_X5_Pin4AT %I*BOOL1Digital_Input_X5_Pin2AT %I*BOOL1Digital_Input_X6_Pin4AT %I*BOOL1Digital_Input_X6_Pin2AT %I*BOOL1Digital_Input_X7_Pin4AT %I*BOOL1Digital_Input_X7_Pin2AT %I*BOOL1"}
 {attribute addProperty CRC "1230986660"}
@@ -27,5 +26,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

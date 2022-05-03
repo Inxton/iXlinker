@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Ch_A_AxisMain_Outputs_A99AE12E" Id="{ccb12b20-f09f-4de3-b3f7-9f4b58f11fbe}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
+<TcPlcObject>
+	<DUT Name="Ch_A_AxisMain_Outputs_A99AE12E">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
 {attribute addProperty BoxType "AX8108-0100-0101-0101"}
 {attribute addProperty Id "Ch_A_ControlwordAT %Q*UINT2"}
 {attribute addProperty CRC "2845499694"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

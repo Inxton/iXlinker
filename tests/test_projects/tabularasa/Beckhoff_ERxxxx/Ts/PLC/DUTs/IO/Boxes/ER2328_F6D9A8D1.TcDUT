@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ER2328_F6D9A8D1" Id="{cb63e19c-b33c-4d07-95e1-997939a74e83}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER2328-0001-0017'}
+<TcPlcObject>
+	<DUT Name="ER2328_F6D9A8D1">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER2328-0001-0017'}
 {attribute addProperty BoxType "ER2328-0001-0017"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %Q*Channel_42CA91F71Channel_6AT %Q*Channel_42CA91F71Channel_7AT %Q*Channel_42CA91F71Channel_8AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "4141459665"}
@@ -31,5 +30,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

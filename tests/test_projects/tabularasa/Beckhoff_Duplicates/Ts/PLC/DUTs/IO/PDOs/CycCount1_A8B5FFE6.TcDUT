@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="CycCount1_A8B5FFE6" Id="{92008d59-2676-4e83-8974-012ae2571334}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2262-0000-0002'}
+<TcPlcObject>
+	<DUT Name="CycCount1_A8B5FFE6">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2262-0000-0002'}
 {attribute addProperty BoxType "EL2262-0000-0002"}
 {attribute addProperty Id "Cycle_Counter1AT %Q*UINT2"}
 {attribute addProperty CRC "2830499814"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

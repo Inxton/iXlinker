@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Control_0B2F8B70" Id="{5b86beea-d1df-4432-9b07-691f3f76a100}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1518-0002-0018'}
+<TcPlcObject>
+	<DUT Name="Control_0B2F8B70">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1518-0002-0018'}
 {attribute addProperty BoxType "ER1518-0002-0018"}
 {attribute addProperty Id "Set_counterBOOL1Inhibit_counterBOOL1"}
 {attribute addProperty CRC "187665264"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

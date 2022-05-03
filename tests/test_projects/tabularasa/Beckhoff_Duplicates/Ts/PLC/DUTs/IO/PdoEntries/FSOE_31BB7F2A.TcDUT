@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FSOE_31BB7F2A" Id="{ab5ac5d5-0694-4760-b0dd-5a4b5850d28a}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
+<TcPlcObject>
+	<DUT Name="FSOE_31BB7F2A">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
 {attribute addProperty BoxType "AX8108-0100-0101-0101"}
 {attribute addProperty Id "FSoE_Slave_CmdUSINT1Axis_A_STOBOOL1Safe_Input_1BOOL1Safe_Input_2BOOL1Safe_Input_3BOOL1Safe_Input_4BOOL1Safe_Input_5BOOL1Safe_Input_6BOOL1Safe_Input_7BOOL1Axis_B_STOBOOL1Safe_Input_9BOOL1Safe_Input_10BOOL1Safe_Input_11BOOL1Safe_Input_12BOOL1Safe_Input_13BOOL1Safe_Input_14BOOL1Safe_Input_15BOOL1FSoE_Slave_CRC_0UINT2FSoE_Slave_ConnIDUINT2"}
 {attribute addProperty CRC "834371370"}
@@ -49,5 +48,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

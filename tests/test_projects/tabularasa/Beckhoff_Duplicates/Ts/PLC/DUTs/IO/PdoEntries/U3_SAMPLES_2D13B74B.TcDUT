@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="U3_SAMPLES_2D13B74B" Id="{156ea632-e231-4223-a18d-2d3a0c731278}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
+<TcPlcObject>
+	<DUT Name="U3_SAMPLES_2D13B74B">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
 {attribute addProperty BoxType "EL3773-0000-0016"}
 {attribute addProperty Id "Sample_1INT2Sample_2INT2Sample_3INT2Sample_4INT2Sample_5INT2Sample_6INT2Sample_7INT2Sample_8INT2Sample_9INT2Sample_10INT2"}
 {attribute addProperty CRC "756266827"}
@@ -31,5 +30,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

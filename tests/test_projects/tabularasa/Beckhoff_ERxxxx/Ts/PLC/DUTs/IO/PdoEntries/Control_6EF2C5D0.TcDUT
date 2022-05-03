@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Control_6EF2C5D0" Id="{e26a0050-673d-4d0f-aa26-3c71854f207d}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER5151-0002-0018'}
+<TcPlcObject>
+	<DUT Name="Control_6EF2C5D0">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER5151-0002-0018'}
 {attribute addProperty BoxType "ER5151-0002-0018"}
 {attribute addProperty Id "Enable_latch_CBOOL1Enable_latch_extern_on_positive_edgeBOOL1Set_counterBOOL1Enable_latch_extern_on_negative_edgeBOOL1"}
 {attribute addProperty CRC "1861404112"}
@@ -19,5 +18,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

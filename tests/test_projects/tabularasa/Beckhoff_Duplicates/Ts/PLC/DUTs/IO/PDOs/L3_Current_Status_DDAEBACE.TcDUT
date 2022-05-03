@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="L3_Current_Status_DDAEBACE" Id="{a0b49519-91a3-4590-af08-3fa7275fc5e9}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
+<TcPlcObject>
+	<DUT Name="L3_Current_Status_DDAEBACE">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
 {attribute addProperty BoxType "EL3773-0000-0016"}
 {attribute addProperty Id "I3_STATUSAT %I*I3_STATUS_B07533568"}
 {attribute addProperty CRC "3719215822"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ER2338_7699BCF6" Id="{7c02a870-57b1-4007-9c79-1a7ce36e86fb}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER2338-0001-0022'}
+<TcPlcObject>
+	<DUT Name="ER2338_7699BCF6">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER2338-0001-0022'}
 {attribute addProperty BoxType "ER2338-0001-0022"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %I*Channel_830843C11Channel_6AT %I*Channel_830843C11Channel_7AT %I*Channel_830843C11Channel_8AT %I*Channel_830843C11Channel_9AT %Q*Channel_42CA91F71Channel_10AT %Q*Channel_42CA91F71Channel_11AT %Q*Channel_42CA91F71Channel_12AT %Q*Channel_42CA91F71Channel_13AT %Q*Channel_42CA91F71Channel_14AT %Q*Channel_42CA91F71Channel_15AT %Q*Channel_42CA91F71Channel_16AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "1989786870"}
@@ -47,5 +46,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

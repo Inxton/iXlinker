@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="InfoData_358A59CF" Id="{761e8539-ab18-4055-9307-7090286ea543}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
+<TcPlcObject>
+	<DUT Name="InfoData_358A59CF">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
 {attribute addProperty BoxType "AX8108-0100-0101-0101"}
 {attribute addProperty Id "AdsAddrAT %I*AMSADDR8DcOutputShiftAT %I*DINT4DcInputShiftAT %I*DINT4AoeNetIdAT %I*AMSNETID6Chn0AT %I*USINT1StateAT %I*UINT2"}
 {attribute addProperty CRC "898259407"}
@@ -23,5 +22,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

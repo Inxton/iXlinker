@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Status_51F0A924" Id="{23db4abb-7159-4c75-86ce-1c87a3a1cc22}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0018'}
+<TcPlcObject>
+	<DUT Name="Status_51F0A924">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0018'}
 {attribute addProperty BoxType "EL3681-0000-0018"}
 {attribute addProperty Id "UnderrangeBOOL1OverrangeBOOL1Extended_rangeBOOL1Data_invalidBOOL1Range_invalidBOOL1Autorange_disabledBOOL1ErrorBOOL1Calibration_in_progressBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
 {attribute addProperty CRC "1374726436"}
@@ -31,5 +30,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Status_compact_F4F89583" Id="{050934b2-0f79-452a-9b08-ebba3deb18a9}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER5101-0002-0019'}
+<TcPlcObject>
+	<DUT Name="ENC_Status_compact_F4F89583">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER5101-0002-0019'}
 {attribute addProperty BoxType "ER5101-0002-0019"}
 {attribute addProperty Id "StatusAT %I*Status_3A9E406C12Counter_valueAT %I*UINT2Latch_valueAT %I*UINT2"}
 {attribute addProperty CRC "4109931907"}
@@ -17,5 +16,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

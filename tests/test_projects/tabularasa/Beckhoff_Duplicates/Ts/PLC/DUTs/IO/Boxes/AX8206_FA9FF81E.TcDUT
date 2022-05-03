@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AX8206_FA9FF81E" Id="{524a643d-81b1-43a0-9c3e-a93f6c6dc450}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0102-0102'}
+<TcPlcObject>
+	<DUT Name="AX8206_FA9FF81E">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0102-0102'}
 {attribute addProperty BoxType "AX8206-0100-0102-0102"}
 {attribute addProperty Id "DeviceDevice_6E2575772Device_SafetyDevice_Safety_C21945A160Ch_ACh_A_D18C6F1622Ch_BCh_B_647F9A0C22WcStateAT %I*WcState_B516A2644InfoDataAT %I*InfoData_386C00A526"}
 {attribute addProperty CRC "4204787742"}
@@ -23,5 +22,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

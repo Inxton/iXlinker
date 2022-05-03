@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ER4174_D2A7C9B7" Id="{288b5561-c3d5-4e56-96dc-2017e6266b57}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER4174-0002-0016'}
+<TcPlcObject>
+	<DUT Name="ER4174_D2A7C9B7">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER4174-0002-0016'}
 {attribute addProperty BoxType "ER4174-0002-0016"}
 {attribute addProperty Id "AO_Outputs_Channel_1AT %Q*AO_Outputs_Channel_BA7EBB7C2AO_Outputs_Channel_2AT %Q*AO_Outputs_Channel_BA7EBB7C2AO_Outputs_Channel_3AT %Q*AO_Outputs_Channel_BA7EBB7C2AO_Outputs_Channel_4AT %Q*AO_Outputs_Channel_BA7EBB7C2WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3534211511"}
@@ -23,5 +22,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>
