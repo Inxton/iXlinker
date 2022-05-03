@@ -12,6 +12,7 @@ namespace TsprojFile.Scan
             AddBoxStructuresToPlcproj(vs, ref tcPlcProj);
             AddDeviceStructuresToPlcproj(vs, ref tcPlcProj);
             AddTopologyStructuresToPlcproj(vs, ref tcPlcProj);
+            AddBaseStructuresToPlcproj(vs, ref tcPlcProj);
         }
     }
 }

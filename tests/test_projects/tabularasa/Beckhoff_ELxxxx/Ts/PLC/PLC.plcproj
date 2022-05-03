@@ -1968,9 +1968,6 @@
     <Compile Include="DUTs\IO\PDOs\Outputs_2397A10E.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EtcSlaveTerminalBase_947E5A46.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="DUTs\IO\Boxes\EK1100_1FC0878B.TcDUT">
       <SubType>Code</SubType>
     </Compile>
@@ -3372,6 +3369,12 @@
     <Compile Include="DUTs\IO\Topology\EtherCAT_Master_ELxxxx_4B2B17FC.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\IO\Base\EtcSlaveTerminalBase_947E5A46.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\DigitalInputBase_50022E7B.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GVLs\GVL_iXlinker.TcGVL">
       <SubType>Code</SubType>
     </Compile>
@@ -3387,6 +3390,7 @@
     <Folder Include="DUTs\IO\Boxes" />
     <Folder Include="DUTs\IO\Devices" />
     <Folder Include="DUTs\IO\Topology" />
+    <Folder Include="DUTs\IO\Base" />
   </ItemGroup>
   <ItemGroup>
     <PlaceholderReference Include="Tc2_Standard">

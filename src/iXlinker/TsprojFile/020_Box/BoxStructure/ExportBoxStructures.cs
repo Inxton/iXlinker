@@ -106,20 +106,11 @@ namespace TsprojFile.Scan
 
                     sw.WriteLine("<TcPlcObject>");
                     sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
-                    if (structName.Equals(EtcSlaveBaseStructNameFinal))
-                    {
-                        sw.WriteLine("\t\t<Declaration><![CDATA[{attribute clr[Container(Layout.Stack)]}");
-                        sw.WriteLine("{attribute clr[Group(Layout.GroupBox)]}");
-                        sw.WriteLine("{attribute addProperty PreviousPort \"Unknown\"}");
-                    }
-                    else
-                    {
-                        sw.WriteLine("\t\t<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: " + boxOrderCode + "'}");
-                        sw.WriteLine("{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
-                        sw.WriteLine("{attribute addProperty Id \"" + id + "\"}");
-                        sw.WriteLine("{attribute addProperty CRC \"" + crc.ToString() + "\"}");
-                        sw.WriteLine("{attribute addProperty Size \"" + size.ToString() + "\"}");
-                    }
+                    sw.WriteLine("\t\t<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: " + boxOrderCode + "'}");
+                    sw.WriteLine("{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
+                    sw.WriteLine("{attribute addProperty Id \"" + id + "\"}");
+                    sw.WriteLine("{attribute addProperty CRC \"" + crc.ToString() + "\"}");
+                    sw.WriteLine("{attribute addProperty Size \"" + size.ToString() + "\"}");
                     sw.WriteLine("TYPE " + structName + extends);
                     sw.WriteLine("STRUCT");
 

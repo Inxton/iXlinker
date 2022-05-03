@@ -172,6 +172,17 @@ namespace iXlinkerDtos
             }
         }
 
+        private ProjectItem dutsIoBase;
+        public ProjectItem DutsIoBase
+        {
+            get { return this.dutsIoBase; }
+            set
+            {
+                this.dutsIoBase = value ?? new ProjectItem();
+                NotifyPropertyChanged(nameof(DutsIoBase));
+            }
+        }
+
         private ObservableCollection<PlcLibRepository> plcLibRepositories;
         public ObservableCollection<PlcLibRepository> PlcLibRepositories
         {
@@ -189,39 +200,7 @@ namespace iXlinkerDtos
             }
         }
 
-        //private ObservableCollection<PlcLibrary> plcLibraries;
-        //public ObservableCollection<PlcLibrary> PlcLibraries
-        //{
-        //    get
-        //    {
-        //        return this.plcLibraries ?? (this.plcLibraries = new ObservableCollection<PlcLibrary>());
-        //    }
-        //    set
-        //    {
-        //        if (value != null)
-        //        {
-        //            this.plcLibraries = value;
-        //            NotifyPropertyChanged(nameof(PlcLibraries));
-        //        }
-        //    }
-        //}
 
-        //private ObservableCollection<PlcStruct> plcStructuresInPlcLibraries;
-        //public ObservableCollection<PlcStruct> PlcStructuresInPlcLibraries
-        //{
-        //    get
-        //    {
-        //        return this.plcStructuresInPlcLibraries ?? (this.plcStructuresInPlcLibraries = new ObservableCollection<PlcStruct>());
-        //    }
-        //    set
-        //    {
-        //        if (value != null)
-        //        {
-        //            this.plcStructuresInPlcLibraries = value;
-        //            NotifyPropertyChanged(nameof(PlcStructuresInPlcLibraries));
-        //        }
-        //    }
-        //}
 
     }
 }

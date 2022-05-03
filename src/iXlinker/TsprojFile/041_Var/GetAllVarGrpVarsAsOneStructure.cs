@@ -66,6 +66,7 @@ namespace TsprojFile.Scan
             if (CheckIfPdoStructureDoesNotExist(actVarGrpStruct))
             {
                 //if not add to the structure list
+                AddExtensionFromBasePdoStructure(actVarGrpStruct);
                 PdoStructures.Add(actVarGrpStruct);
             }
             //create varGrp of the structured type

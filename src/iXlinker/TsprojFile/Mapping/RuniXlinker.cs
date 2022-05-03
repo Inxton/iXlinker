@@ -1,10 +1,8 @@
 ﻿using iXlinkerDtos;
-using TwincatXmlSchemas.TcPlcProj;
 using iXlinker.TsprojFile.Mapping;
-using System.Threading;
 using System.Diagnostics;
-using System;
 using iXlinker.Utils;
+using System;
 
 namespace TsprojFile.Scan
 {
@@ -19,7 +17,6 @@ namespace TsprojFile.Scan
 
             //Get details like paths, platform etc.
             Solution vs = VS.GetXaeProjectDetails(tsProjFilePath, activeTargetPlatform, plcProjFilePath, doNotGenerateDisabled, devenvPath, maxEthercatFrameIndex);
-
             //Search all devices and their boxes in the Twincat project.
             SearchDevices(vs);
 

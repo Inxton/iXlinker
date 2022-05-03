@@ -68,9 +68,6 @@
     <Compile Include="DUTs\IO\PDOs\Outputs_23C0ED1D.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EtcSlaveTerminalBase_947E5A46.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="DUTs\IO\Boxes\EK1100_1FC0878B.TcDUT">
       <SubType>Code</SubType>
     </Compile>
@@ -92,6 +89,12 @@
     <Compile Include="DUTs\IO\Topology\Device_1_EtherCAT_08F7A448.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\IO\Base\EtcSlaveTerminalBase_947E5A46.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\DigitalInputBase_50022E7B.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GVLs\GVL_iXlinker.TcGVL">
       <SubType>Code</SubType>
     </Compile>
@@ -110,6 +113,7 @@
     <Folder Include="DUTs\IO\PDOs" />
     <Folder Include="DUTs\IO\Topology" />
     <Folder Include="GVLs" />
+    <Folder Include="DUTs\IO\Base" />
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>

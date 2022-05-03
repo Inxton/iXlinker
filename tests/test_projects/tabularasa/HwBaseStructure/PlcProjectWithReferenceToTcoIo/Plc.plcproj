@@ -45,6 +45,9 @@
     <Compile Include="DUTs\IO\PDOs\InfoData_6F19DB2B.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\IO\PDOs\Channel_830843C1.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\IO\PDOs\WcState_9091E0EB.TcDUT">
       <SubType>Code</SubType>
     </Compile>
@@ -84,6 +87,7 @@
     <Folder Include="DUTs\IO\PDOs" />
     <Folder Include="DUTs\IO\Topology" />
     <Folder Include="GVLs" />
+    <Folder Include="DUTs\IO\Base" />
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>

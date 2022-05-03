@@ -4,6 +4,19 @@ namespace iXlinkerDtos
 {
     public class PdoStructViewModel : PouStructBase
     {
+        private string extends;
+        public string Extends
+        {
+            get { return this.extends; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.extends = value;
+                    NotifyPropertyChanged(nameof(Extends));
+                }
+            }
+        }
 
         private ObservableCollection<PdoStructMemberViewModel> structMembers;
         public ObservableCollection<PdoStructMemberViewModel> StructMembers

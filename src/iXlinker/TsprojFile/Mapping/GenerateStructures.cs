@@ -1,6 +1,4 @@
-﻿using System;
-using System.IO;
-using iXlinkerDtos;
+﻿using iXlinkerDtos;
 using TwincatXmlSchemas.TcPlcProj;
 
 namespace TsprojFile.Scan

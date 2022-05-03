@@ -109,6 +109,7 @@ namespace TsprojFile.Scan
                     if (CheckIfPdoStructureDoesNotExist(actSlotStruct))
                     {
                         //if not add to the structure list
+                        AddExtensionFromBasePdoStructure(actSlotStruct);
                         PdoStructures.Add(actSlotStruct);
                     }
                     PdoStructMemberViewModel firstStructMember = actSlotStruct.StructMembers.FirstOrDefault();

@@ -31,6 +31,9 @@ namespace TsprojFile.Scan
 
             GetPlcStructuresInPlcLibraries(vs);
 
+            //Fill list of the base empty structures that are later extended by the required structure
+            FillStructureBaseResourseDictionary();
+
             EventLogger.Instance.Logger.Information(@"Reading IO devices in the XAE project: ""{0}""!!!", vs.TsProject.Name);
             TcSmProjectProjectPlcProject plcProj = new TcSmProjectProjectPlcProject();
             for (int i = 0; i < Tc.Project.Plc.Project.Length; i++)

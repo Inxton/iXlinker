@@ -77,6 +77,7 @@ namespace TsprojFile.Scan
             if (CheckIfPdoStructureDoesNotExist(actPdoStruct))
             {
                 //if not add to the structure list
+                AddExtensionFromBasePdoStructure(actPdoStruct);
                 PdoStructures.Add(actPdoStruct);
             }
             //create pdo of the structured type

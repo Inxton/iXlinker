@@ -20,6 +20,7 @@ namespace TsprojFile.Scan
             FoldersToClear.Add(vs.DutsIoBox);
             FoldersToClear.Add(vs.DutsIoDevice);
             FoldersToClear.Add(vs.DutsIoTopology);
+            FoldersToClear.Add(vs.DutsIoBase);
 
             //Delete all items in the PLC project that are inside "FoldersToClear"
             //As the "item.Compile" is an array, "deleting" is made such a way that in the first foreach loop, there is just counted the number of the items to be removed.

@@ -1,4 +1,5 @@
 ﻿
+using iXlinker.Resources;
 using System.Collections.ObjectModel;
 using TwincatXmlSchemas.TcSmProject;
 
@@ -14,9 +15,9 @@ namespace iXlinkerDtos
         public const string hwStructSeparator = "^";
         public const string attributeHide = "{attribute 'hide'}";
         public const string emptyStructure = "EMPTY_STRUCTURE";
-        public const string plcLibContainingHwBaseName = "TcoIo";
-        public const string etcSlaveBaseStructName = "EtcSlaveTerminalBase";
-        public static string EtcSlaveBaseStructNameFinal = "";
+        //public const string plcLibContainingHwBaseName = "TcoIo";
+        //public const string etcSlaveBaseStructPrefix = "EtcSlaveTerminalBase";
+        //public static string etcSlaveBaseStructName = "";
 
         private TcSmProject tc;
         public TcSmProject Tc { get => tc; set => tc = value; }
@@ -324,6 +325,23 @@ namespace iXlinkerDtos
                 {
                     this.boxIdentificationList = value;
                     NotifyPropertyChanged(nameof(BoxIdentificationList));
+                }
+            }
+        }
+
+        private ObservableCollection<StructureBase> structureBasesResourceDictionary;
+        public ObservableCollection<StructureBase> StructureBasesResourceDictionary
+        {
+            get
+            {
+                return this.structureBasesResourceDictionary ?? (this.structureBasesResourceDictionary = new ObservableCollection<StructureBase>());
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.structureBasesResourceDictionary = value;
+                    NotifyPropertyChanged(nameof(StructureBasesResourceDictionary));
                 }
             }
         }

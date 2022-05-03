@@ -89,6 +89,10 @@ namespace iXlinker.TsprojFile.Mapping
                         vs.DutsIoTopology = new ProjectItem() { Name = "DUTs_IO_Topology_folder" };
                         vs.DutsIoTopology.Path = vs.DutsIo.Path + "\\Topology";
                         vs.DutsIoTopology.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoTopology.Path;
+
+                        vs.DutsIoBase = new ProjectItem() { Name = "DUTs_Base_folder" };
+                        vs.DutsIoBase.Path = vs.DutsIo.Path + "\\Base";
+                        vs.DutsIoBase.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoBase.Path;
                     }
                 }
                 else
