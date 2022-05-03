@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="SSI_Inputs_Channel_EDA16284" Id="{05878ad1-ca8d-49b8-83ec-b3127c9bc164}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5002-0000-0017'}
+<TcPlcObject>
+	<DUT Name="SSI_Inputs_Channel_EDA16284">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5002-0000-0017'}
 {attribute addProperty BoxType "EJ5002-0000-0017"}
 {attribute addProperty Id "StatusAT %I*Status_C03E24957Counter_valueAT %I*UDINT4"}
 {attribute addProperty CRC "3986776708"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

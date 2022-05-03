@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ELX1058_7670813D" Id="{f4a7d38f-83d2-484f-8ea5-da172fc2b8d9}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX1058-0000-0016'}
+<TcPlcObject>
+	<DUT Name="ELX1058_7670813D">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX1058-0000-0016'}
 {attribute addProperty BoxType "ELX1058-0000-0016"}
 {attribute addProperty Id "Channel_1AT %I*Channel_31CEFA7F2Channel_2AT %I*Channel_31CEFA7F2Channel_3AT %I*Channel_31CEFA7F2Channel_4AT %I*Channel_31CEFA7F2Channel_5AT %I*Channel_31CEFA7F2Channel_6AT %I*Channel_31CEFA7F2Channel_7AT %I*Channel_31CEFA7F2Channel_8AT %I*Channel_31CEFA7F2WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1987084605"}
@@ -31,5 +30,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="InfoData_32EB74EA" Id="{23cbb329-1c16-4237-b2c7-74b7c61e5af7}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1101-0022-0016'}
+<TcPlcObject>
+	<DUT Name="InfoData_32EB74EA">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1101-0022-0016'}
 {attribute addProperty BoxType "EJ1101-0022-0016"}
 {attribute addProperty Id "AdsAddrAT %I*AMSADDR8StateAT %I*UINT2"}
 {attribute addProperty CRC "854291690"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

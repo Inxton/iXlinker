@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ3108_35AE5324" Id="{9911deba-1ada-47aa-87f4-a7e737b8023c}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3108-0000-0018'}
+<TcPlcObject>
+	<DUT Name="EJ3108_35AE5324">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3108-0000-0018'}
 {attribute addProperty BoxType "EJ3108-0000-0018"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_2AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_3AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_4AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_5AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_6AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_7AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_8AT %I*AI_Standard_Channel_A8DF64E310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "900616996"}
@@ -31,5 +30,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,11 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DigitalOutputBase_1FE0D5EE" Id="{729ccaa4-a071-4410-8c11-2b04eee4e90b}">
-    <Declaration><![CDATA[
+<TcPlcObject>
+	<DUT Name="DigitalOutputBase_1FE0D5EE">
+		<Declaration><![CDATA[
 TYPE DigitalOutputBase_1FE0D5EE :
 STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Status_182674C6" Id="{6e3cf90d-61fd-47f4-b9bb-61a8dd8564d0}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
+<TcPlcObject>
+	<DUT Name="Status_182674C6">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
 {attribute addProperty BoxType "EJ2521-0224-0016"}
 {attribute addProperty Id "Latch_extern_validBOOL1Set_counter_doneBOOL1Counter_underflowBOOL1Counter_overflowBOOL1Status_of_extern_latchBOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
 {attribute addProperty CRC "405173446"}
@@ -25,5 +24,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Input_Type_NC_5EE69541" Id="{afdb2379-70c0-4965-924c-89d583dc6e33}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX1054-0000-0016'}
+<TcPlcObject>
+	<DUT Name="Input_Type_NC_5EE69541">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX1054-0000-0016'}
 {attribute addProperty BoxType "ELX1054-0000-0016"}
 {attribute addProperty Id "ChannelAT %I*ARRAY[0..3] OF BOOL4"}
 {attribute addProperty CRC "1364972313"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DRV_Target_position_05240F14" Id="{243946cb-8032-4efa-bce8-7e08ada710b0}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7411-0000-0018'}
+<TcPlcObject>
+	<DUT Name="DRV_Target_position_05240F14">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7411-0000-0018'}
 {attribute addProperty BoxType "EJ7411-0000-0018"}
 {attribute addProperty Id "Target_positionAT %Q*UDINT4"}
 {attribute addProperty CRC "86249236"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

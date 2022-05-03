@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Module_3_FSLOGIC_DEAB4522" Id="{bd664ead-3f2c-4e75-98c7-2898305fd928}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1914-0000-0017'}
+<TcPlcObject>
+	<DUT Name="Module_3_FSLOGIC_DEAB4522">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1914-0000-0017'}
 {attribute addProperty BoxType "EJ1914-0000-0017"}
 {attribute addProperty Id "FSLOGIC_InputsFSLOGIC_Inputs_EEE9388E2FSLOGIC_OutputsEMPTY_STRUCTURE0"}
 {attribute addProperty CRC "3735766306"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DCM_Velocity_Channel_A47A3F41" Id="{5b3fc906-3ea8-433b-8542-01223f4f09cd}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7342-0000-0019'}
+<TcPlcObject>
+	<DUT Name="DCM_Velocity_Channel_A47A3F41">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7342-0000-0019'}
 {attribute addProperty BoxType "EJ7342-0000-0019"}
 {attribute addProperty Id "VelocityAT %Q*INT2"}
 {attribute addProperty CRC "2759475009"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

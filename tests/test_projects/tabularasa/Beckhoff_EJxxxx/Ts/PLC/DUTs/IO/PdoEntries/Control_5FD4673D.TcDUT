@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Control_5FD4673D" Id="{32578232-05ad-40f2-92a5-9c29a2e2a053}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7037-0000-0020'}
+<TcPlcObject>
+	<DUT Name="Control_5FD4673D">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7037-0000-0020'}
 {attribute addProperty BoxType "EJ7037-0000-0020"}
 {attribute addProperty Id "EnableBOOL1ResetBOOL1Reduce_torqueBOOL1Digital_output_1BOOL1"}
 {attribute addProperty CRC "1607755581"}
@@ -19,5 +18,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

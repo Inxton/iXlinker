@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FSOE_D94E700C" Id="{2fcafe53-15a7-4892-9e9e-371b4e02e535}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2914-0000-0017'}
+<TcPlcObject>
+	<DUT Name="FSOE_D94E700C">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2914-0000-0017'}
 {attribute addProperty BoxType "EJ2914-0000-0017"}
 {attribute addProperty Id "FSoE_CommandUSINT1FSOUT_Module_Module_FaultBOOL1FSoE_CRC_000UINT2FSoE_Connection_IDUINT2"}
 {attribute addProperty CRC "3645796364"}
@@ -19,5 +18,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

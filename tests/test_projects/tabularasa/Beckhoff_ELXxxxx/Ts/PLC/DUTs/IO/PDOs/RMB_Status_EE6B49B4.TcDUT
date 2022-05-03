@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="RMB_Status_EE6B49B4" Id="{d78ea30f-4513-4b58-bc48-b6674af1fae9}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3351-0000-0016'}
+<TcPlcObject>
+	<DUT Name="RMB_Status_EE6B49B4">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3351-0000-0016'}
 {attribute addProperty BoxType "ELX3351-0000-0016"}
 {attribute addProperty Id "StatusAT %I*Status_D17852406"}
 {attribute addProperty CRC "4000008628"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

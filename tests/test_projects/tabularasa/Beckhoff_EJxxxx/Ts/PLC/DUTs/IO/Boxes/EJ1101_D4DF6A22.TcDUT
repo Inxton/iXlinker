@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ1101_D4DF6A22" Id="{aff97815-c4f0-4a63-afbb-532e3be99f2a}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1101-0022-0016'}
+<TcPlcObject>
+	<DUT Name="EJ1101_D4DF6A22">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1101-0022-0016'}
 {attribute addProperty BoxType "EJ1101-0022-0016"}
 {attribute addProperty Id "WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3571411490"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

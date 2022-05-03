@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Status_2569232E" Id="{f8d7f7b7-3050-4ecf-9daa-537f55489e33}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7334-0008-0016'}
+<TcPlcObject>
+	<DUT Name="Status_2569232E">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7334-0008-0016'}
 {attribute addProperty BoxType "EJ7334-0008-0016"}
 {attribute addProperty Id "Ready_to_enableBOOL1ReadyBOOL1WarningBOOL1ErrorBOOL1Moving_positiveBOOL1Moving_negativeBOOL1Limit_xBOOL1TxPDO_ToggleBOOL1"}
 {attribute addProperty CRC "627647278"}
@@ -27,5 +26,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

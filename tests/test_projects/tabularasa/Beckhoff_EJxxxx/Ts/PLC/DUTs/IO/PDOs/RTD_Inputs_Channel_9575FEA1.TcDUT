@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="RTD_Inputs_Channel_9575FEA1" Id="{2420e0bc-2e13-465f-bc33-ee9044e16822}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3214-0000-0016'}
+<TcPlcObject>
+	<DUT Name="RTD_Inputs_Channel_9575FEA1">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3214-0000-0016'}
 {attribute addProperty BoxType "EJ3214-0000-0016"}
 {attribute addProperty Id "StatusAT %I*Status_68C33E995ValueAT %I*INT2"}
 {attribute addProperty CRC "2507538081"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

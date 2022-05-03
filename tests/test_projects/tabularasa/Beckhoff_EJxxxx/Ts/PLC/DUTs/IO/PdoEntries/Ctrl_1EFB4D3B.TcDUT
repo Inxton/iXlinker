@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Ctrl_1EFB4D3B" Id="{7b7cb275-2630-4061-85cf-7ded3facedd1}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6002-0000-0016'}
+<TcPlcObject>
+	<DUT Name="Ctrl_1EFB4D3B">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6002-0000-0016'}
 {attribute addProperty BoxType "EJ6002-0000-0016"}
 {attribute addProperty Id "Transmit_requestBOOL1Receive_acceptedBOOL1Init_requestBOOL1Send_continuousBOOL1Output_lengthUSINT1"}
 {attribute addProperty CRC "519785787"}
@@ -21,5 +20,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>
