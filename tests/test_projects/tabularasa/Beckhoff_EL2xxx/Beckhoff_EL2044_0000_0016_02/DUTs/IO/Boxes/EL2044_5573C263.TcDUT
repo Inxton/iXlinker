@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2044_5573C263" Id="{b086e69e-3a8b-44a8-a619-824ae2924954}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2044-0000-0016'}
+{attribute addProperty BoxType "EL2044-0000-0016"}
+{attribute addProperty Id "DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_A1F150A94DIG_OutputsAT %Q*DIG_Outputs_F9744C664WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1433649763"}
+{attribute addProperty Size "20"}
+TYPE EL2044_5573C263 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "DIG_Inputs_Device"}
+	DIG_Inputs_Device : DIG_Inputs_Device_A1F150A9;
+	{attribute addProperty Name "DIG_Outputs"}
+	DIG_Outputs : DIG_Outputs_F9744C66;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

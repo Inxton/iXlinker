@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_APS1xxxEK1122_94631AF6" Id="{6f0165c3-ddff-48ae-8cc2-bfff5b795063}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
+{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "Beckhoff_APS1xxxsub_EK1100EK1100_1FC0878B2A_0001_APS1003_7000_0016APS1003_C6D7567B264"}
+{attribute addProperty CRC "2489522934"}
+{attribute addProperty Size "266"}
+TYPE Beckhoff_APS1xxxEK1122_94631AF6 EXTENDS EK1122_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_APS1xxxsub_EK1100"}
+	{attribute addProperty PreviousPort "Beckhoff APS1xxxEK1122 : D"}
+	Beckhoff_APS1xxxsub_EK1100 : EK1100_1FC0878B;
+	{attribute addProperty Name "A_0001_APS1003_7000_0016"}
+	{attribute addProperty PreviousPort "Beckhoff APS1xxxsub EK1100 : C"}
+	A_0001_APS1003_7000_0016 : APS1003_C6D7567B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

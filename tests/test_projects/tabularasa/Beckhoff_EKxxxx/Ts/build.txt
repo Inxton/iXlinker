@@ -161,3 +161,30 @@ WRN | 4/29/2022 2:45:56 PM 885 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_00
 WRN | 4/29/2022 2:45:56 PM 886 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0009(EK1521-0000-0016)' may to low (-2900 mA) - please check!
 ========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 74870 bytes
+Size of global data: 19137 bytes
+Total allocated memory size for code and data: 478432 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 478432, largest contiguous memory gap: 570144 bytes (54 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 5/2/2022 10:41:44 PM 620 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0016(EK1521-0010-0017)' may to low (-285 mA) - please check!
+WRN | 5/2/2022 10:41:44 PM 621 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0015(EK1521-0010-0016)' may to low (-685 mA) - please check!
+WRN | 5/2/2022 10:41:44 PM 622 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0014(EK1521-0000-0021)' may to low (-1035 mA) - please check!
+WRN | 5/2/2022 10:41:44 PM 623 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0013(EK1521-0000-0020)' may to low (-1385 mA) - please check!
+WRN | 5/2/2022 10:41:44 PM 625 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0012(EK1521-0000-0019)' may to low (-1700 mA) - please check!
+WRN | 5/2/2022 10:41:44 PM 626 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0011(EK1521-0000-0018)' may to low (-2100 mA) - please check!
+WRN | 5/2/2022 10:41:44 PM 627 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0010(EK1521-0000-0017)' may to low (-2500 mA) - please check!
+WRN | 5/2/2022 10:41:44 PM 628 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0009(EK1521-0000-0016)' may to low (-2900 mA) - please check!
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+

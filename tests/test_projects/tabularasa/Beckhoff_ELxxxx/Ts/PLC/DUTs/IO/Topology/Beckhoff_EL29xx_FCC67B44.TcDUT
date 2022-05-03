@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EL29xx_FCC67B44" Id="{13031297-2920-42d0-b719-8ad2a6ad8cda}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_EL29xxEK1122Beckhoff_EL29xxEK1122_F1BDF7ED2A_0001_EL2911_0000_0016EL2911_3424714D38A_0002_EL2912_0000_0016EL2912_BFF8CF1936"}
+{attribute addProperty CRC "4240866116"}
+{attribute addProperty Size "76"}
+TYPE Beckhoff_EL29xx_FCC67B44 EXTENDS EK1100_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EL29xxEK1122"}
+	{attribute addProperty PreviousPort "Beckhoff EL29xx : B"}
+	Beckhoff_EL29xxEK1122 : Beckhoff_EL29xxEK1122_F1BDF7ED;
+	{attribute addProperty Name "A_0001_EL2911_0000_0016"}
+	{attribute addProperty PreviousPort "Beckhoff EL29xxEK1122 : C"}
+	A_0001_EL2911_0000_0016 : EL2911_3424714D;
+	{attribute addProperty Name "A_0002_EL2912_0000_0016"}
+	{attribute addProperty PreviousPort "A_0001(EL2911-0000-0016) : B"}
+	A_0002_EL2912_0000_0016 : EL2912_BFF8CF19;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -94,5 +94,16 @@
             }
         }
 
+        private uint numberOfUses;
+        public uint NumberOfUses
+        {
+            get { return this.numberOfUses; }
+            set
+            {
+                this.numberOfUses = value;
+                NotifyPropertyChanged(nameof(NumberOfUses));
+            }
+        }
+
     }
 }

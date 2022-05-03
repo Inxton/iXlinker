@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3052_63BCF660" Id="{999d7866-885a-4859-8a9f-3444b6812014}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3052-0000-0017'}
+{attribute addProperty BoxType "EL3052-0000-0017"}
+{attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_2AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1673328224"}
+{attribute addProperty Size "30"}
+TYPE EL3052_63BCF660 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "AI_Standard_Channel_1"}
+	AI_Standard_Channel_1 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "AI_Standard_Channel_2"}
+	AI_Standard_Channel_2 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

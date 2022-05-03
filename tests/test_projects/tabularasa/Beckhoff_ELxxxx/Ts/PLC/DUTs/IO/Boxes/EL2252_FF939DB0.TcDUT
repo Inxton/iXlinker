@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2252_FF939DB0" Id="{6a9798e3-e9f0-4490-87ce-870d9b626619}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2252--0000'}
+{attribute addProperty BoxType "EL2252--0000"}
+{attribute addProperty Id "DC_Sync_ActivateAT %Q*DC_Sync_Activate_FA2D29101DC_Sync_StartAT %Q*DC_Sync_Start_9CCB0E514Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_A7436BC610"}
+{attribute addProperty CRC "4287864240"}
+{attribute addProperty Size "18"}
+TYPE EL2252_FF939DB0 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "DC_Sync_Activate"}
+	DC_Sync_Activate : DC_Sync_Activate_FA2D2910;
+	{attribute addProperty Name "DC_Sync_Start"}
+	DC_Sync_Start : DC_Sync_Start_9CCB0E51;
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_42CA91F7;
+	{attribute addProperty Name "Channel_2"}
+	Channel_2 : Channel_42CA91F7;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_0B2B16F9;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_A7436BC6;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5151_84FDBA5C" Id="{35660861-c4b3-421c-b0e5-3625d57894a8}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5151-0000-0016'}
+{attribute addProperty BoxType "EL5151-0000-0016"}
+{attribute addProperty Id "ENC_InputsAT %I*ENC_Inputs_3399C5AA16ENC_Inputs_1AT %I*ENC_Inputs_24B63C534ENC_OutputsAT %Q*ENC_Outputs_2E45048F8WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "2231220828"}
+{attribute addProperty Size "40"}
+TYPE EL5151_84FDBA5C EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "ENC_Inputs"}
+	ENC_Inputs : ENC_Inputs_3399C5AA;
+	{attribute addProperty Name "ENC_Inputs_1"}
+	ENC_Inputs_1 : ENC_Inputs_24B63C53;
+	{attribute addProperty Name "ENC_Outputs"}
+	ENC_Outputs : ENC_Outputs_2E45048F;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

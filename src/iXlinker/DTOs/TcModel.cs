@@ -16,8 +16,7 @@ namespace iXlinkerDtos
         public const string emptyStructure = "EMPTY_STRUCTURE";
         public const string plcLibContainingHwBaseName = "TcoIo";
         public const string etcSlaveBaseStructName = "EtcSlaveTerminalBase";
-
-
+        public static string EtcSlaveBaseStructNameFinal = "";
 
         private TcSmProject tc;
         public TcSmProject Tc { get => tc; set => tc = value; }

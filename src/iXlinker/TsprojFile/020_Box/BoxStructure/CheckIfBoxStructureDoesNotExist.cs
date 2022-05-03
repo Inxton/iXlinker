@@ -7,11 +7,13 @@ namespace TsprojFile.Scan
         private bool CheckIfBoxStructureDoesNotExist(BoxStructViewModel actBoxStruct)
         {
             bool ret = true;
-            foreach(BoxStructViewModel structVM in BoxStructures)
+            actBoxStruct.NumberOfUses = 1;
+            foreach (BoxStructViewModel structVM in BoxStructures)
             {
                 if (actBoxStruct.Name.Equals(structVM.Name) && actBoxStruct.Crc32.Equals(structVM.Crc32) && actBoxStruct.Id.Equals(structVM.Id))
                 {
                     ret = false;
+                    structVM.NumberOfUses++;
                     break;
                 }
             }
@@ -21,6 +23,7 @@ namespace TsprojFile.Scan
                 {
                     actBoxStruct.TypeNamespace = plcStruct.Namespace;
                     ret = false;
+                    plcStruct.NumberOfUses++;
                     break;
                 }
             }

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5002_31A396E2" Id="{8c764acb-ba64-47da-bd50-816f163a3105}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5002-0000-0020'}
+{attribute addProperty BoxType "EL5002-0000-0020"}
+{attribute addProperty Id "SSI_Inputs_Channel_1AT %I*SSI_Inputs_Channel_EDA1628411SSI_Inputs_Channel_2AT %I*SSI_Inputs_Channel_EDA1628411WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "832804578"}
+{attribute addProperty Size "34"}
+TYPE EL5002_31A396E2 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "SSI_Inputs_Channel_1"}
+	SSI_Inputs_Channel_1 : SSI_Inputs_Channel_EDA16284;
+	{attribute addProperty Name "SSI_Inputs_Channel_2"}
+	SSI_Inputs_Channel_2 : SSI_Inputs_Channel_EDA16284;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

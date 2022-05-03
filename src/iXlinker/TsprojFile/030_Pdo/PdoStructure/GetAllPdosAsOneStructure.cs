@@ -25,12 +25,15 @@ namespace TsprojFile.Scan
 
             BoxStructViewModel actBoxStruct = new BoxStructViewModel() { Prefix = ValidatePlcItem.Name(structName), BoxOrderCode = boxViewModel.BoxOrderCode };
             //Check if box base structure exists
+            EtcSlaveBaseStructNameFinal = etcSlaveBaseStructName + "_" + CRC32.Calculate_CRC32(etcSlaveBaseStructName).ToString("X8");
             if (CheckIfBoxBaseStructDoesNotExist(actBoxStruct))
             {
-                //if not add to the structure list
-                BoxStructures.Add(new BoxStructViewModel() { Name = etcSlaveBaseStructName });
+                //if not create and add to the structure list
+                BoxStructViewModel EtcSlaveBaseStructName = new BoxStructViewModel() { Name = EtcSlaveBaseStructNameFinal};
+                BoxStructures.Add(EtcSlaveBaseStructName);
             }
-            actBoxStruct.Id = actBoxStruct.Extends;
+            //PLC library name should not be included in the final CRC of the structure
+            //actBoxStruct.Id = actBoxStruct.Extends;
 
             foreach (PdoViewModel pdo in slotPdos)
             {

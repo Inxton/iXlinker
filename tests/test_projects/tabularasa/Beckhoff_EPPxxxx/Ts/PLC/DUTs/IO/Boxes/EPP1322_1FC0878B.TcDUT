@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP1322_1FC0878B" Id="{5987c226-6c18-4e28-85cc-17d860d7299b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1322-0001-0016'}
+{attribute addProperty BoxType "EPP1322-0001-0016"}
+{attribute addProperty Id "InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "532711307"}
+{attribute addProperty Size "2"}
+TYPE EPP1322_1FC0878B EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

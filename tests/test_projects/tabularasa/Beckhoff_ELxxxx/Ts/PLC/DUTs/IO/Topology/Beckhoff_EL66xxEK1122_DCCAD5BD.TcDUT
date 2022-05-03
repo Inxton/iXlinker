@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EL66xxEK1122_DCCAD5BD" Id="{9796f9de-dd52-4dd2-b781-37e687da5c3a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
+{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "Beckhoff_EL66xxsub_EK1100EK1100_1FC0878B2A_0032_EL6690_0002_0000EL6690_3564888A5A_0033_EL6690_0002_0016EL6690_3564888A5A_0034_EL6690_0002_0017EL6690_3564888A5A_0035_EL6690_0002_0018EL6690_3564888A5A_0036_EL6690_0002_0019EL6690_3564888A5A_0040_EL6692_0002_0016EL6692_F12D40B324A_0041_EL6692_0002_0017EL6692_F12D40B324A_0042_EL6692_0002_0018EL6692_F12D40B324A_0043_EL6692_0002_0019EL6692_F12D40B324A_0044_EL6692_0002_0020EL6692_F12D40B324A_0046_EL6695_0002_0001EL6695_258CDFB421A_0048_EL6695_0002_0002EL6695_258CDFB421A_0050_EL6695_0002_0003EL6695_258CDFB421A_0052_EL6695_0002_0004EL6695_258CDFB421A_0054_EL6695_0002_0005EL6695_258CDFB421A_0056_EL6695_0002_0006EL6695_258CDFB421"}
+{attribute addProperty CRC "3704280509"}
+{attribute addProperty Size "273"}
+TYPE Beckhoff_EL66xxEK1122_DCCAD5BD EXTENDS EK1122_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EL66xxsub_EK1100"}
+	{attribute addProperty PreviousPort "Beckhoff EL66xxEK1122 : D"}
+	Beckhoff_EL66xxsub_EK1100 : EK1100_1FC0878B;
+	{attribute addProperty Name "A_0032_EL6690_0002_0000"}
+	{attribute addProperty PreviousPort "Beckhoff EL66xxsub EK1100 : C"}
+	A_0032_EL6690_0002_0000 : EL6690_3564888A;
+	{attribute addProperty Name "A_0033_EL6690_0002_0016"}
+	{attribute addProperty PreviousPort "A_0032(EL6690-0002-0000) : B"}
+	A_0033_EL6690_0002_0016 : EL6690_3564888A;
+	{attribute addProperty Name "A_0034_EL6690_0002_0017"}
+	{attribute addProperty PreviousPort "A_0033(EL6690-0002-0016) : B"}
+	A_0034_EL6690_0002_0017 : EL6690_3564888A;
+	{attribute addProperty Name "A_0035_EL6690_0002_0018"}
+	{attribute addProperty PreviousPort "A_0034(EL6690-0002-0017) : B"}
+	A_0035_EL6690_0002_0018 : EL6690_3564888A;
+	{attribute addProperty Name "A_0036_EL6690_0002_0019"}
+	{attribute addProperty PreviousPort "A_0035(EL6690-0002-0018) : B"}
+	A_0036_EL6690_0002_0019 : EL6690_3564888A;
+	{attribute addProperty Name "A_0040_EL6692_0002_0016"}
+	{attribute addProperty PreviousPort "A_0036(EL6690-0002-0019) : B"}
+	A_0040_EL6692_0002_0016 : EL6692_F12D40B3;
+	{attribute addProperty Name "A_0041_EL6692_0002_0017"}
+	{attribute addProperty PreviousPort "A_0040(EL6692-0002-0016) : B"}
+	A_0041_EL6692_0002_0017 : EL6692_F12D40B3;
+	{attribute addProperty Name "A_0042_EL6692_0002_0018"}
+	{attribute addProperty PreviousPort "A_0041(EL6692-0002-0017) : B"}
+	A_0042_EL6692_0002_0018 : EL6692_F12D40B3;
+	{attribute addProperty Name "A_0043_EL6692_0002_0019"}
+	{attribute addProperty PreviousPort "A_0042(EL6692-0002-0018) : B"}
+	A_0043_EL6692_0002_0019 : EL6692_F12D40B3;
+	{attribute addProperty Name "A_0044_EL6692_0002_0020"}
+	{attribute addProperty PreviousPort "A_0043(EL6692-0002-0019) : B"}
+	A_0044_EL6692_0002_0020 : EL6692_F12D40B3;
+	{attribute addProperty Name "A_0046_EL6695_0002_0001"}
+	{attribute addProperty PreviousPort "A_0044(EL6692-0002-0020) : B"}
+	A_0046_EL6695_0002_0001 : EL6695_258CDFB4;
+	{attribute addProperty Name "A_0048_EL6695_0002_0002"}
+	{attribute addProperty PreviousPort "A_0046(EL6695-0002-0001) : B"}
+	A_0048_EL6695_0002_0002 : EL6695_258CDFB4;
+	{attribute addProperty Name "A_0050_EL6695_0002_0003"}
+	{attribute addProperty PreviousPort "A_0048(EL6695-0002-0002) : B"}
+	A_0050_EL6695_0002_0003 : EL6695_258CDFB4;
+	{attribute addProperty Name "A_0052_EL6695_0002_0004"}
+	{attribute addProperty PreviousPort "A_0050(EL6695-0002-0003) : B"}
+	A_0052_EL6695_0002_0004 : EL6695_258CDFB4;
+	{attribute addProperty Name "A_0054_EL6695_0002_0005"}
+	{attribute addProperty PreviousPort "A_0052(EL6695-0002-0004) : B"}
+	A_0054_EL6695_0002_0005 : EL6695_258CDFB4;
+	{attribute addProperty Name "A_0056_EL6695_0002_0006"}
+	{attribute addProperty PreviousPort "A_0054(EL6695-0002-0005) : B"}
+	A_0056_EL6695_0002_0006 : EL6695_258CDFB4;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

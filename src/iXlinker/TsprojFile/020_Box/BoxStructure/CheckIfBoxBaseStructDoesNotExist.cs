@@ -1,4 +1,5 @@
 ﻿using iXlinkerDtos;
+using Utils;
 
 namespace TsprojFile.Scan
 {
@@ -9,9 +10,9 @@ namespace TsprojFile.Scan
             bool ret = true;
             foreach (PlcStruct plcStruct in PlcStructuresInPlcLibraries)
             {
-                if (plcStruct.Name.Equals(etcSlaveBaseStructName) && plcStruct.Namespace.Equals(plcLibContainingHwBaseName))
+                if (plcStruct.Name.Equals(EtcSlaveBaseStructNameFinal) && plcStruct.Namespace.Equals(plcLibContainingHwBaseName))
                 {
-                    actBoxStruct.Extends = plcLibContainingHwBaseName + "." + etcSlaveBaseStructName;
+                    actBoxStruct.Extends = plcLibContainingHwBaseName + "." + EtcSlaveBaseStructNameFinal;
                     ret = false;
                     break;
                 }
@@ -19,7 +20,7 @@ namespace TsprojFile.Scan
 
             foreach(BoxStructViewModel structVM in BoxStructures)
             {
-                if (structVM.Name.Equals(etcSlaveBaseStructName))
+                if (structVM.Name.Equals(EtcSlaveBaseStructNameFinal))
                 {
                     ret = false;
                     break;
@@ -27,9 +28,10 @@ namespace TsprojFile.Scan
             }
             if (string.IsNullOrEmpty(actBoxStruct.Extends))
             {
-                actBoxStruct.Extends = etcSlaveBaseStructName;
+                actBoxStruct.Extends = EtcSlaveBaseStructNameFinal;
             }
             return ret;
         }
     }
 }
+

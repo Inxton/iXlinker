@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ5002_6DCBC4C0" Id="{c61eb06e-2c25-44a9-bc36-006ef4cd5ae7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5002-0000-0016'}
+{attribute addProperty BoxType "EJ5002-0000-0016"}
+{attribute addProperty Id "SSI_Inputs_Channel_1AT %I*SSI_Inputs_Channel_0E3D8E3310SSI_Inputs_Channel_2AT %I*SSI_Inputs_Channel_0E3D8E3310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1842070720"}
+{attribute addProperty Size "32"}
+TYPE EJ5002_6DCBC4C0 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "SSI_Inputs_Channel_1"}
+	SSI_Inputs_Channel_1 : SSI_Inputs_Channel_0E3D8E33;
+	{attribute addProperty Name "SSI_Inputs_Channel_2"}
+	SSI_Inputs_Channel_2 : SSI_Inputs_Channel_0E3D8E33;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -7,11 +7,13 @@ namespace TsprojFile.Scan
         private bool CheckIfPdoEntryStructureDoesNotExist(PdoEntryStructViewModel actPdoEntryStruct)
         {
             bool ret = true;
-            foreach(PdoEntryStructViewModel structVM in PdoEntryStructures)
+            actPdoEntryStruct.NumberOfUses = 1;
+            foreach (PdoEntryStructViewModel structVM in PdoEntryStructures)
             {
                 if (actPdoEntryStruct.Name.Equals(structVM.Name) && actPdoEntryStruct.Crc32.Equals(structVM.Crc32) && actPdoEntryStruct.Id.Equals(structVM.Id))
                 {
                     ret = false;
+                    structVM.NumberOfUses++;
                     break;
                 }
 
@@ -22,6 +24,7 @@ namespace TsprojFile.Scan
                 {
                     actPdoEntryStruct.TypeNamespace = plcStruct.Namespace;
                     ret = false;
+                    plcStruct.NumberOfUses++;
                     break;
                 }
             }

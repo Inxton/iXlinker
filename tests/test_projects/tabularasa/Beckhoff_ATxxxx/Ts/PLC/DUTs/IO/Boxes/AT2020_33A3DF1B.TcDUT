@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AT2020_33A3DF1B" Id="{e6ef24d8-6d65-44c2-b3e6-1e774e1622d6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2020-5250-0019'}
+{attribute addProperty BoxType "AT2020-5250-0019"}
+{attribute addProperty Id "FB_InputsAT %I*FB_Inputs_4BC4AA0166FB_OutputsAT %Q*FB_Outputs_DAFD38E02WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_A7436BC610"}
+{attribute addProperty CRC "866377499"}
+{attribute addProperty Size "80"}
+TYPE AT2020_33A3DF1B EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "FB_Inputs"}
+	FB_Inputs : FB_Inputs_4BC4AA01;
+	{attribute addProperty Name "FB_Outputs"}
+	FB_Outputs : FB_Outputs_DAFD38E0;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_A7436BC6;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

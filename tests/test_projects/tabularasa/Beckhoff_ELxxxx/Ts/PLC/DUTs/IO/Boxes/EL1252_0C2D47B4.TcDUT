@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL1252_0C2D47B4" Id="{8ec60d50-9704-414f-b793-2482e49e0aba}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1252-0000-0017'}
+{attribute addProperty BoxType "EL1252-0000-0017"}
+{attribute addProperty Id "LatchAT %I*Latch_8E41329534Channel_0AT %I*Channel_830843C11Channel_1AT %I*Channel_830843C11ReservedEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_A7436BC610"}
+{attribute addProperty CRC "204294068"}
+{attribute addProperty Size "48"}
+TYPE EL1252_0C2D47B4 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "Latch"}
+	Latch : Latch_8E413295;
+	{attribute addProperty Name "Channel_0"}
+	Channel_0 : Channel_830843C1;
+	{attribute addProperty Name "Channel_1"}
+	Channel_1 : Channel_830843C1;
+	{attribute addProperty Name "Reserved"}
+	Reserved : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_A7436BC6;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

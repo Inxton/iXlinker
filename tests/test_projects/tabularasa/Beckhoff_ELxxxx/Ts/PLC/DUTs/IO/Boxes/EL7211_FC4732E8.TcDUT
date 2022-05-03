@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL7211_FC4732E8" Id="{08a71b1a-1e9c-4f36-a361-486fa46fcad5}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7211-0010-0030'}
+{attribute addProperty BoxType "EL7211-0010-0030"}
+{attribute addProperty Id "FB_PositionAT %I*FB_Position_3FA094ED4DRV_StatuswordAT %I*DRV_Statusword_9B36FDFC2DRV_ControlwordAT %Q*DRV_Controlword_F3F147212DRV_Target_velocityAT %Q*DRV_Target_velocity_08A9583B4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6185D47C20"}
+{attribute addProperty CRC "4232524520"}
+{attribute addProperty Size "34"}
+TYPE EL7211_FC4732E8 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "FB_Position"}
+	FB_Position : FB_Position_3FA094ED;
+	{attribute addProperty Name "DRV_Statusword"}
+	DRV_Statusword : DRV_Statusword_9B36FDFC;
+	{attribute addProperty Name "DRV_Controlword"}
+	DRV_Controlword : DRV_Controlword_F3F14721;
+	{attribute addProperty Name "DRV_Target_velocity"}
+	DRV_Target_velocity : DRV_Target_velocity_08A9583B;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6185D47C;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EL99xx_FA66A12D" Id="{f81ea35b-c906-4dd3-9bff-9427651d2b98}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_EL99xxEK1122Beckhoff_EL99xxEK1122_6AD982772A_0001_EL9930_0000_0016A_0001_EL9930_0000_0016_F7CB469B8"}
+{attribute addProperty CRC "4201029933"}
+{attribute addProperty Size "10"}
+TYPE Beckhoff_EL99xx_FA66A12D EXTENDS EK1100_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EL99xxEK1122"}
+	{attribute addProperty PreviousPort "Beckhoff EL99xx : B"}
+	Beckhoff_EL99xxEK1122 : Beckhoff_EL99xxEK1122_6AD98277;
+	{attribute addProperty Name "A_0001_EL9930_0000_0016"}
+	{attribute addProperty PreviousPort "Beckhoff EL99xxEK1122 : C"}
+	A_0001_EL9930_0000_0016 : A_0001_EL9930_0000_0016_F7CB469B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

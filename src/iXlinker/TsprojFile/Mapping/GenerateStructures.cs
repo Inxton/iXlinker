@@ -21,6 +21,8 @@ namespace TsprojFile.Scan
             AddGvlToPlcProj(vs, ref tcPlcProj);
             //Write changes on the PLC project to it's .plcproj file.
             ApplyChangesToPlcProj(vs, tcPlcProj);
+
+            ExportAllStructuresByNumberOfUses(@"D:\_tmp\iXlinkerStructs");
         }
     }
 }

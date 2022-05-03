@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ9001_1FC0878B" Id="{1ad2ccd3-6a14-4f8c-8ccb-da889db7fdd0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ9001-0000-0016'}
+{attribute addProperty BoxType "EJ9001-0000-0016"}
+{attribute addProperty Id "InfoDataAT %I*InfoData_6F19DB2B2"}
+{attribute addProperty CRC "532711307"}
+{attribute addProperty Size "2"}
+TYPE EJ9001_1FC0878B EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6F19DB2B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

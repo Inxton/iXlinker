@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="TcTerminals210_1EK1100_5C778379" Id="{9a3ab9a3-4ab2-4b32-86e3-0f4f14a80374}">
+  <DUT Name="TcTerminals210_1EK1100_5C778379" Id="{e5c47be9-81c3-43d9-aa47-fd04c80e2f72}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
 {attribute addProperty BoxType "EK1100-0000-0018"}
 {attribute addProperty Id "TcTerminals210_1BK1250TcTerminals210_1BK1250_A7ABB5AA0"}
 {attribute addProperty CRC "1551336313"}
 {attribute addProperty Size "0"}
-TYPE TcTerminals210_1EK1100_5C778379 EXTENDS EK1100_AB5A9467 :
+TYPE TcTerminals210_1EK1100_5C778379 EXTENDS EK1100_1FC0878B :
 STRUCT
 	{attribute addProperty Name "TcTerminals210_1BK1250"}
 	{attribute addProperty PreviousPort "TcTerminals210_1EK1100 : B"}

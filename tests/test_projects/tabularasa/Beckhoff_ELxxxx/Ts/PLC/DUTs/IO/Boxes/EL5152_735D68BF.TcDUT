@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5152_735D68BF" Id="{f04629d2-addc-4803-99c3-c11eb6c91978}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5152-0000-0018'}
+{attribute addProperty BoxType "EL5152-0000-0018"}
+{attribute addProperty Id "ENC_Status_compact_Channel_1AT %I*ENC_Status_compact_Channel_FA024B168ENC_Period_Channel_1AT %I*ENC_Period_Channel_24B63C534ENC_Status_compact_Channel_2AT %I*ENC_Status_compact_Channel_FA024B168ENC_Period_Channel_2AT %I*ENC_Period_Channel_24B63C534ENC_Control_compact_Channel_1AT %Q*ENC_Control_compact_Channel_2ED727EF3ENC_Control_compact_Channel_2AT %Q*ENC_Control_compact_Channel_2ED727EF3WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1935501503"}
+{attribute addProperty Size "42"}
+TYPE EL5152_735D68BF EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "ENC_Status_compact_Channel_1"}
+	ENC_Status_compact_Channel_1 : ENC_Status_compact_Channel_FA024B16;
+	{attribute addProperty Name "ENC_Period_Channel_1"}
+	ENC_Period_Channel_1 : ENC_Period_Channel_24B63C53;
+	{attribute addProperty Name "ENC_Status_compact_Channel_2"}
+	ENC_Status_compact_Channel_2 : ENC_Status_compact_Channel_FA024B16;
+	{attribute addProperty Name "ENC_Period_Channel_2"}
+	ENC_Period_Channel_2 : ENC_Period_Channel_24B63C53;
+	{attribute addProperty Name "ENC_Control_compact_Channel_1"}
+	ENC_Control_compact_Channel_1 : ENC_Control_compact_Channel_2ED727EF;
+	{attribute addProperty Name "ENC_Control_compact_Channel_2"}
+	ENC_Control_compact_Channel_2 : ENC_Control_compact_Channel_2ED727EF;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
