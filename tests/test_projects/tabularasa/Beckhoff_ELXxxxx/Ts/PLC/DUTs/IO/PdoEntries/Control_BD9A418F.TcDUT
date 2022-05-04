@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Control_BD9A418F">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX5151-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_BD9A418F" Id="{19d393d7-bdcb-4176-a21d-e275411d697a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX5151-0000-0016'}
 {attribute addProperty BoxType "ELX5151-0000-0016"}
 {attribute addProperty Id "Set_counterBOOL1"}
 {attribute addProperty CRC "3181003151"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

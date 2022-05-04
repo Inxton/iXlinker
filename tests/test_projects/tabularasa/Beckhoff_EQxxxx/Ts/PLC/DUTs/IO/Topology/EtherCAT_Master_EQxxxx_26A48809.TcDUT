@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_EQxxxx_26A48809" Id="{b549affc-975e-468e-af6d-f1ff5b5d2681}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_EQ1xxxBeckhoff_EQ1xxx_F67C323D78Beckhoff_EQ2xxxBeckhoff_EQ2xxx_A19B669C247Beckhoff_EQ3xxxBeckhoff_EQ3xxx_AF38E98E606SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_C76BEFB322"}
+{attribute addProperty CRC "648316937"}
+{attribute addProperty Size "1237"}
+TYPE EtherCAT_Master_EQxxxx_26A48809 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EQ1xxx"}
+	{attribute addProperty PreviousPort "EtherCAT_Master_EQxxxx : Master"}
+	Beckhoff_EQ1xxx : Beckhoff_EQ1xxx_F67C323D;
+	{attribute addProperty Name "Beckhoff_EQ2xxx"}
+	{attribute addProperty PreviousPort "Beckhoff EQ1xxx : C"}
+	Beckhoff_EQ2xxx : Beckhoff_EQ2xxx_A19B669C;
+	{attribute addProperty Name "Beckhoff_EQ3xxx"}
+	{attribute addProperty PreviousPort "Beckhoff EQ2xxx : C"}
+	Beckhoff_EQ3xxx : Beckhoff_EQ3xxx_AF38E98E;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_99E584AF;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_25A0042B;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_2397A10E;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_C76BEFB3;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

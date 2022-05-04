@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3068_69B83C12" Id="{0806d28d-c679-4f8b-aac4-610038314b35}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3068-0000-0016'}
+{attribute addProperty BoxType "EL3068-0000-0016"}
+{attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_2AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_3AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_4AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_5AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_6AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_7AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_8AT %I*AI_Standard_Channel_EA9DF21E9WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "1773681682"}
+{attribute addProperty Size "76"}
+TYPE EL3068_69B83C12 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "AI_Standard_Channel_1"}
+	AI_Standard_Channel_1 : AI_Standard_Channel_EA9DF21E;
+	{attribute addProperty Name "AI_Standard_Channel_2"}
+	AI_Standard_Channel_2 : AI_Standard_Channel_EA9DF21E;
+	{attribute addProperty Name "AI_Standard_Channel_3"}
+	AI_Standard_Channel_3 : AI_Standard_Channel_EA9DF21E;
+	{attribute addProperty Name "AI_Standard_Channel_4"}
+	AI_Standard_Channel_4 : AI_Standard_Channel_EA9DF21E;
+	{attribute addProperty Name "AI_Standard_Channel_5"}
+	AI_Standard_Channel_5 : AI_Standard_Channel_EA9DF21E;
+	{attribute addProperty Name "AI_Standard_Channel_6"}
+	AI_Standard_Channel_6 : AI_Standard_Channel_EA9DF21E;
+	{attribute addProperty Name "AI_Standard_Channel_7"}
+	AI_Standard_Channel_7 : AI_Standard_Channel_EA9DF21E;
+	{attribute addProperty Name "AI_Standard_Channel_8"}
+	AI_Standard_Channel_8 : AI_Standard_Channel_EA9DF21E;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

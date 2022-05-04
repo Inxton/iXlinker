@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Status_ACC8459F">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5002-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_ACC8459F" Id="{bee13df5-c58c-40f7-8aef-bf3a9ef95797}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5002-0000-0016'}
 {attribute addProperty BoxType "EJ5002-0000-0016"}
 {attribute addProperty Id "Data_errorBOOL1Frame_errorBOOL1Power_failureBOOL1Sync_errorBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
 {attribute addProperty CRC "2898806175"}
@@ -22,5 +23,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

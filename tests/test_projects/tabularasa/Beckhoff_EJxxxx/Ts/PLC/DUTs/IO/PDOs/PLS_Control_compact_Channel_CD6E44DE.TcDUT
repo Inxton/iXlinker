@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="PLS_Control_compact_Channel_CD6E44DE">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="PLS_Control_compact_Channel_CD6E44DE" Id="{52bf22c3-1232-4b23-a4af-9d5680043d51}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
 {attribute addProperty BoxType "EJ2521-0224-0016"}
 {attribute addProperty Id "ControlAT %Q*Control_7786EF9F2Switch_on_valueAT %Q*UINT2Switch_off_valueAT %Q*UINT2"}
 {attribute addProperty CRC "3446555870"}
@@ -16,5 +17,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

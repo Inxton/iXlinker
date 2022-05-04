@@ -1,11 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="WcStateInputToggleBase_F68C23A9" Id="{bb0bed1f-9cfd-42eb-8e11-6adc66394633}">
-    <Declaration><![CDATA[
+<TcPlcObject>
+	<DUT Name="WcStateInputToggleBase_F68C23A9">
+		<Declaration><![CDATA[
 TYPE WcStateInputToggleBase_F68C23A9 :
 STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

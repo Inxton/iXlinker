@@ -20,10 +20,10 @@ namespace TsprojFile.Scan
 
             if (boxViewModel.InfoDataAddr)
             {
-                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "AdsAddr", VarB = "InfoData" + tmpLevelSeparator + "AdsAddr", VarA = "InfoData" + tmpLevelSeparator + "AdsAddr", Type_Value = "AMSADDR", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
+                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "AdsAddr", VarB = "InfoData" + tmpLevelSeparator + "AdsAddr", VarA = "InfoData" + tmpLevelSeparator + "AdsAddr", Type_Value = ReplaceSpecialPlcTypeIfFoundInLibrary("AMSADDR"), InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
                 pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                 InfoDataEntriesStructured.Add(pdoEntryViewModel);
-                pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "netId", VarB = "InfoData" + tmpLevelSeparator + "AdsAddr.netId", VarA = "InfoData" + tmpLevelSeparator + "AdsAddr.netId", Type_Value = "AMSNETID", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
+                pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "netId", VarB = "InfoData" + tmpLevelSeparator + "AdsAddr.netId", VarA = "InfoData" + tmpLevelSeparator + "AdsAddr.netId", Type_Value = ReplaceSpecialPlcTypeIfFoundInLibrary("AMSNETID"), InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
                 pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                 InfoDataEntriesUnstructured.Add(pdoEntryViewModel);
                 pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "port", VarB = "InfoData" + tmpLevelSeparator + "AdsAddr.port", VarA = "InfoData" + tmpLevelSeparator + "AdsAddr.port", Type_Value = "WORD", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
@@ -45,7 +45,7 @@ namespace TsprojFile.Scan
             }
             if (boxViewModel.InfoDataNetId)
             {
-                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "AoeNetId", VarB = "InfoData" + tmpLevelSeparator + "AoeNetId", VarA = "InfoData" + tmpLevelSeparator + "AoeNetId", Type_Value = "AMSNETID", InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
+                PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = boxViewModel.OwnerBname + tmpLevelSeparator + boxViewModel.Name, Name = "AoeNetId", VarB = "InfoData" + tmpLevelSeparator + "AoeNetId", VarA = "InfoData" + tmpLevelSeparator + "AoeNetId", Type_Value = ReplaceSpecialPlcTypeIfFoundInLibrary("AMSNETID"), InOut = "0", BoxOrderCode = boxViewModel.BoxOrderCode };
                 pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                 InfoDataEntriesStructured.Add(pdoEntryViewModel);
                 InfoDataEntriesUnstructured.Add(pdoEntryViewModel);

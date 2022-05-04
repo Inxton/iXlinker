@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="ENC_Status_Channel_A9252C48">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2522-0000-0022'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ENC_Status_Channel_A9252C48" Id="{7748971f-c8af-47a9-88c8-74096702b792}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2522-0000-0022'}
 {attribute addProperty BoxType "EJ2522-0000-0022"}
 {attribute addProperty Id "StatusAT %I*Status_70E023F86Counter_valueAT %I*UDINT4"}
 {attribute addProperty CRC "2837785672"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

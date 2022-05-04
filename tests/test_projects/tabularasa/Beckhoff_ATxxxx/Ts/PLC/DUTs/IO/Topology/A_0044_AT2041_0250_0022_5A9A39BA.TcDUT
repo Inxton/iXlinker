@@ -1,12 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="A_0044_AT2041_0250_0022_5A9A39BA" Id="{32287b42-0f3a-4497-ba82-7b5d96859b7e}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2041-0250-0022'}
+<TcPlcObject>
+	<DUT Name="A_0044_AT2041_0250_0022_5A9A39BA">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2041-0250-0022'}
 {attribute addProperty BoxType "AT2041-0250-0022"}
 {attribute addProperty Id "A_0100_AT2040_5250_0019_AT2040_5250AT2040_33A3DF1B80"}
 {attribute addProperty CRC "1520056762"}
 {attribute addProperty Size "80"}
-TYPE A_0044_AT2041_0250_0022_5A9A39BA EXTENDS AT2041_2EA6C9BF :
+TYPE A_0044_AT2041_0250_0022_5A9A39BA EXTENDS AT2041_A7FEA1CF :
 STRUCT
 	{attribute addProperty Name "A_0100_AT2040_5250_0019_AT2040_5250"}
 	{attribute addProperty PreviousPort "A_0044(AT2041-0250-0022) : B"}
@@ -14,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

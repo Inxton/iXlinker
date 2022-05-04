@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="COM_Inputs_Channel_3801C95E">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6002-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="COM_Inputs_Channel_3801C95E" Id="{40194dc9-698c-4b82-8372-a386794423f0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6002-0000-0016'}
 {attribute addProperty BoxType "EJ6002-0000-0016"}
 {attribute addProperty Id "StatusAT %I*Status_3D84275F8Data_InAT %I*ARRAY[0..21] OF USINT22"}
 {attribute addProperty CRC "1334739266"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

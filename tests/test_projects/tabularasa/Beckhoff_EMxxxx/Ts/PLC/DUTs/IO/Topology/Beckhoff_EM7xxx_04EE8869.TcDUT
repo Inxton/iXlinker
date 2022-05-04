@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EM7xxx_04EE8869" Id="{3df33a76-507a-438f-997e-1014a3571a3d}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_EM7xxxEK1122Beckhoff_EM7xxxEK1122_DEE9974A2A_0001_EM7004_0000_9995EM7004_C205438B84A_0002_EM7004_0000_9996EM7004_812B9CFF107A_0003_EM7004_0000_9997EM7004_812B9CFF107A_0004_EM7004_0000_0016EM7004_5FF6BFB2111A_0005_EM7004_0000_0017EM7004_3D300C45111A_0006_EM7004_0000_0018EM7004_3D300C45111"}
+{attribute addProperty CRC "82741353"}
+{attribute addProperty Size "633"}
+TYPE Beckhoff_EM7xxx_04EE8869 EXTENDS EK1100_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EM7xxxEK1122"}
+	{attribute addProperty PreviousPort "Beckhoff EM7xxx : B"}
+	Beckhoff_EM7xxxEK1122 : Beckhoff_EM7xxxEK1122_DEE9974A;
+	{attribute addProperty Name "A_0001_EM7004_0000_9995"}
+	{attribute addProperty PreviousPort "Beckhoff EM7xxxEK1122 : C"}
+	A_0001_EM7004_0000_9995 : EM7004_C205438B;
+	{attribute addProperty Name "A_0002_EM7004_0000_9996"}
+	{attribute addProperty PreviousPort "A_0001(EM7004-0000-9995) : B"}
+	A_0002_EM7004_0000_9996 : EM7004_812B9CFF;
+	{attribute addProperty Name "A_0003_EM7004_0000_9997"}
+	{attribute addProperty PreviousPort "A_0002(EM7004-0000-9996) : B"}
+	A_0003_EM7004_0000_9997 : EM7004_812B9CFF;
+	{attribute addProperty Name "A_0004_EM7004_0000_0016"}
+	{attribute addProperty PreviousPort "A_0003(EM7004-0000-9997) : B"}
+	A_0004_EM7004_0000_0016 : EM7004_5FF6BFB2;
+	{attribute addProperty Name "A_0005_EM7004_0000_0017"}
+	{attribute addProperty PreviousPort "A_0004(EM7004-0000-0016) : B"}
+	A_0005_EM7004_0000_0017 : EM7004_3D300C45;
+	{attribute addProperty Name "A_0006_EM7004_0000_0018"}
+	{attribute addProperty PreviousPort "A_0005(EM7004-0000-0017) : B"}
+	A_0006_EM7004_0000_0018 : EM7004_3D300C45;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

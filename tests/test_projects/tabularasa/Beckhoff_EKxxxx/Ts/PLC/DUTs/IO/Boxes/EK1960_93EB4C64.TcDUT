@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EK1960_93EB4C64" Id="{b5b059a7-2363-4695-81a2-539306981807}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1960-0000-0019'}
+{attribute addProperty BoxType "EK1960-0000-0019"}
+{attribute addProperty Id "Module_1_FSoEModule_1_FSoE_BE928FF798Module_2_FSOUTModule_2_FSOUT_E84B1B0028Module_3_FSLOGICModule_3_FSLOGIC_DEAB45222WcStateAT %I*WcState_B516A2644InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "2481671268"}
+{attribute addProperty Size "134"}
+TYPE EK1960_93EB4C64 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "Module_1_FSoE"}
+	Module_1_FSoE : Module_1_FSoE_BE928FF7;
+	{attribute addProperty Name "Module_2_FSOUT"}
+	Module_2_FSOUT : Module_2_FSOUT_E84B1B00;
+	{attribute addProperty Name "Module_3_FSLOGIC"}
+	Module_3_FSLOGIC : Module_3_FSLOGIC_DEAB4522;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_B516A264;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

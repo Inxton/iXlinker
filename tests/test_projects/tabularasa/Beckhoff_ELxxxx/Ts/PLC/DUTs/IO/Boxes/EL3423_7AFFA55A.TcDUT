@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3423_7AFFA55A" Id="{75b0cc7e-ea29-4178-97da-535c46b5204e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0017'}
+{attribute addProperty BoxType "EL3423-0000-0017"}
+{attribute addProperty Id "Total_StatusAT %I*Total_Status_1ACE98F018Total_AdvancedAT %I*Total_Advanced_3B87F4672Total_ActiveAT %I*Total_Active_C9A69AC124Total_ApparentAT %I*Total_Apparent_8F93F98524Total_ReactiveAT %I*Total_Reactive_EF01DEFD24Total_Statistic_PowerAT %I*Total_Statistic_Power_092925BE36Total_Statistic_PQFAT %I*Total_Statistic_PQF_E024324412Total_Interval_EnergyAT %I*Total_Interval_Energy_37FCCEB037Total_IntervalAT %Q*Total_Interval_1578BBD41WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "2063574362"}
+{attribute addProperty Size "182"}
+TYPE EL3423_7AFFA55A EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "Total_Status"}
+	Total_Status : Total_Status_1ACE98F0;
+	{attribute addProperty Name "Total_Advanced"}
+	Total_Advanced : Total_Advanced_3B87F467;
+	{attribute addProperty Name "Total_Active"}
+	Total_Active : Total_Active_C9A69AC1;
+	{attribute addProperty Name "Total_Apparent"}
+	Total_Apparent : Total_Apparent_8F93F985;
+	{attribute addProperty Name "Total_Reactive"}
+	Total_Reactive : Total_Reactive_EF01DEFD;
+	{attribute addProperty Name "Total_Statistic_Power"}
+	Total_Statistic_Power : Total_Statistic_Power_092925BE;
+	{attribute addProperty Name "Total_Statistic_PQF"}
+	Total_Statistic_PQF : Total_Statistic_PQF_E0243244;
+	{attribute addProperty Name "Total_Interval_Energy"}
+	Total_Interval_Energy : Total_Interval_Energy_37FCCEB0;
+	{attribute addProperty Name "Total_Interval"}
+	Total_Interval : Total_Interval_1578BBD4;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

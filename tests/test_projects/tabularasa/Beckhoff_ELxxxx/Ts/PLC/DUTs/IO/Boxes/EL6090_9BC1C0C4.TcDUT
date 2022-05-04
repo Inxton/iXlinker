@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6090_9BC1C0C4" Id="{3ace90d7-02d9-4851-8150-8c733dbb8d48}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6090-0000-0016'}
+{attribute addProperty BoxType "EL6090-0000-0016"}
+{attribute addProperty Id "DIS_InputsAT %I*DIS_Inputs_E0E384E36DIS_OutputsAT %Q*DIS_Outputs_6C9BFFEE4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "2613166276"}
+{attribute addProperty Size "14"}
+TYPE EL6090_9BC1C0C4 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "DIS_Inputs"}
+	DIS_Inputs : DIS_Inputs_E0E384E3;
+	{attribute addProperty Name "DIS_Outputs"}
+	DIS_Outputs : DIS_Outputs_6C9BFFEE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

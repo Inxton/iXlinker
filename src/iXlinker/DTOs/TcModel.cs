@@ -15,9 +15,6 @@ namespace iXlinkerDtos
         public const string hwStructSeparator = "^";
         public const string attributeHide = "{attribute 'hide'}";
         public const string emptyStructure = "EMPTY_STRUCTURE";
-        //public const string plcLibContainingHwBaseName = "TcoIo";
-        //public const string etcSlaveBaseStructPrefix = "EtcSlaveTerminalBase";
-        //public static string etcSlaveBaseStructName = "";
 
         private TcSmProject tc;
         public TcSmProject Tc { get => tc; set => tc = value; }
@@ -346,5 +343,21 @@ namespace iXlinkerDtos
             }
         }
 
+        private ObservableCollection<SpecialPlcType> specialPlcTypes;
+        public ObservableCollection<SpecialPlcType> SpecialPlcTypes
+        {
+            get
+            {
+                return this.specialPlcTypes ?? (this.specialPlcTypes = new ObservableCollection<SpecialPlcType>());
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.specialPlcTypes = value;
+                    NotifyPropertyChanged(nameof(SpecialPlcTypes));
+                }
+            }
+        }
     }
 }

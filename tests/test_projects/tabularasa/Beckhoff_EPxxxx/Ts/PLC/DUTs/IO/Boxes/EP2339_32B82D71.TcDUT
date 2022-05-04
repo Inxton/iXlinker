@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP2339_32B82D71" Id="{e68c20be-1abb-49f7-aef7-a4fdd54f1b07}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2339-0003-0016'}
+{attribute addProperty BoxType "EP2339-0003-0016"}
+{attribute addProperty Id "DI_Inputs_Channel_1AT %I*DI_Inputs_Channel_91AC31B711DI_Inputs_Channel_2AT %I*DI_Inputs_Channel_91AC31B711DO_Outputs_Channel_1AT %Q*DO_Outputs_Channel_28AC1A9E8DO_Outputs_Channel_2AT %Q*DO_Outputs_Channel_28AC1A9E8WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "850931057"}
+{attribute addProperty Size "42"}
+TYPE EP2339_32B82D71 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "DI_Inputs_Channel_1"}
+	DI_Inputs_Channel_1 : DI_Inputs_Channel_91AC31B7;
+	{attribute addProperty Name "DI_Inputs_Channel_2"}
+	DI_Inputs_Channel_2 : DI_Inputs_Channel_91AC31B7;
+	{attribute addProperty Name "DO_Outputs_Channel_1"}
+	DO_Outputs_Channel_1 : DO_Outputs_Channel_28AC1A9E;
+	{attribute addProperty Name "DO_Outputs_Channel_2"}
+	DO_Outputs_Channel_2 : DO_Outputs_Channel_28AC1A9E;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

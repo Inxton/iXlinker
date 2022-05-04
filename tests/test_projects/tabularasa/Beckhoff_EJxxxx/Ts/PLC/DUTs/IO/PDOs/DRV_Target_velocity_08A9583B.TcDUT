@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="DRV_Target_velocity_08A9583B">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0010-0026'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DRV_Target_velocity_08A9583B" Id="{a1f967e1-e6f4-4f22-821a-6d9c30a1222b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0010-0026'}
 {attribute addProperty BoxType "EJ7211-0010-0026"}
 {attribute addProperty Id "Target_velocityAT %Q*DINT4"}
 {attribute addProperty CRC "145315899"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

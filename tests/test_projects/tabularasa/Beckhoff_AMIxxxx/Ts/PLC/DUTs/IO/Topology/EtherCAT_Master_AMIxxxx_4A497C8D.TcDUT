@@ -1,0 +1,25 @@
+<TcPlcObject>
+	<DUT Name="EtherCAT_Master_AMIxxxx_4A497C8D">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "EK1100_Beckhoff_AMI8xxxEK1100_Beckhoff_AMI8xxx_E055904164SyncUnitsSyncUnits_3DFA47ED27InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_C76BEFB322"}
+{attribute addProperty CRC "1246329997"}
+{attribute addProperty Size "379"}
+TYPE EtherCAT_Master_AMIxxxx_4A497C8D :
+STRUCT
+	{attribute addProperty Name "EK1100_Beckhoff_AMI8xxx"}
+	{attribute addProperty PreviousPort "EtherCAT_Master_AMIxxxx : Master"}
+	EK1100_Beckhoff_AMI8xxx : EK1100_Beckhoff_AMI8xxx_E0559041;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_3DFA47ED;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_25A0042B;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_2397A10E;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_C76BEFB3;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+	</DUT>
+</TcPlcObject>

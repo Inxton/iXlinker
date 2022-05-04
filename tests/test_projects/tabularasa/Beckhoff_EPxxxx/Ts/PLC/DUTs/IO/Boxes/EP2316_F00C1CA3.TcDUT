@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP2316_F00C1CA3" Id="{cbf4a7d8-6cbb-42e8-9be9-13101a5066e8}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0016'}
+{attribute addProperty BoxType "EP2316-0008-0016"}
+{attribute addProperty Id "DO_InputsAT %I*DO_Inputs_CC4551489DO_Diag_InputsAT %I*DO_Diag_Inputs_584303BF8DO_Inputs_DeviceAT %I*DO_Inputs_Device_AF161A9E4DO_OutputsAT %Q*DO_Outputs_28AC1A9E8DO_Outputs_DeviceAT %Q*DO_Outputs_Device_36A5EF172WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "4027325603"}
+{attribute addProperty Size "35"}
+TYPE EP2316_F00C1CA3 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "DO_Inputs"}
+	DO_Inputs : DO_Inputs_CC455148;
+	{attribute addProperty Name "DO_Diag_Inputs"}
+	DO_Diag_Inputs : DO_Diag_Inputs_584303BF;
+	{attribute addProperty Name "DO_Inputs_Device"}
+	DO_Inputs_Device : DO_Inputs_Device_AF161A9E;
+	{attribute addProperty Name "DO_Outputs"}
+	DO_Outputs : DO_Outputs_28AC1A9E;
+	{attribute addProperty Name "DO_Outputs_Device"}
+	DO_Outputs_Device : DO_Outputs_Device_36A5EF17;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

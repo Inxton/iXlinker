@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ3202_353C76AA" Id="{d33df8e8-28af-40b5-b6a2-4e3566f6aedb}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3202-0000-0019'}
+{attribute addProperty BoxType "EJ3202-0000-0019"}
+{attribute addProperty Id "RTD_Inputs_Channel_1AT %I*RTD_Inputs_Channel_4A3944819RTD_Inputs_Channel_2AT %I*RTD_Inputs_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "893154986"}
+{attribute addProperty Size "22"}
+TYPE EJ3202_353C76AA EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "RTD_Inputs_Channel_1"}
+	RTD_Inputs_Channel_1 : RTD_Inputs_Channel_4A394481;
+	{attribute addProperty Name "RTD_Inputs_Channel_2"}
+	RTD_Inputs_Channel_2 : RTD_Inputs_Channel_4A394481;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

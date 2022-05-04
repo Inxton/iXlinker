@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6070_77C76A86" Id="{b490415e-38d4-401b-a23e-b097d0c8899a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6070-0000-0016'}
+{attribute addProperty BoxType "EL6070-0000-0016"}
+{attribute addProperty Id "InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "2009557638"}
+{attribute addProperty Size "2"}
+TYPE EL6070_77C76A86 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

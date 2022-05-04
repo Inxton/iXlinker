@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ATH2000_D874080E" Id="{8781349e-d8b1-46e3-a72c-66fe45fdc8a1}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ATH2000-5250-0022'}
+<TcPlcObject>
+	<DUT Name="ATH2000_D874080E">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ATH2000-5250-0022'}
 {attribute addProperty BoxType "ATH2000-5250-0022"}
 {attribute addProperty Id "FB_InputsAT %I*FB_Inputs_2D6658510FB_OutputsAT %Q*FB_Outputs_DAFD38E02WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "3631482894"}
@@ -19,5 +18,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

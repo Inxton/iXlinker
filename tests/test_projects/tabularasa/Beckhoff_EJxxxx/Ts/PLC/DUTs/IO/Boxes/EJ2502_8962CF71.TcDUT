@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ2502_8962CF71" Id="{7f2e8596-c3b1-496a-872d-6d2dfdd6d0d7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2502-0000-0023'}
+{attribute addProperty BoxType "EJ2502-0000-0023"}
+{attribute addProperty Id "PWM_Outputs_Channel_1AT %Q*PWM_Outputs_Channel_4C6289CD2PWM_Outputs_Channel_2AT %Q*PWM_Outputs_Channel_4C6289CD2WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "2304954225"}
+{attribute addProperty Size "7"}
+TYPE EJ2502_8962CF71 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "PWM_Outputs_Channel_1"}
+	PWM_Outputs_Channel_1 : PWM_Outputs_Channel_4C6289CD;
+	{attribute addProperty Name "PWM_Outputs_Channel_2"}
+	PWM_Outputs_Channel_2 : PWM_Outputs_Channel_4C6289CD;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_0B2B16F9;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

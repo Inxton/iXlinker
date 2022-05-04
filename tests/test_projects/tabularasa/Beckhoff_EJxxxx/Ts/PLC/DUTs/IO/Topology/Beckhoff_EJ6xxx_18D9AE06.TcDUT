@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EJ6xxx_18D9AE06" Id="{846a2289-3b9e-46e8-89c3-067e4da1a454}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_EJ6xxxEK1122Beckhoff_EJ6xxxEK1122_737473AE2A_0001_EJ6002_0000_0016EJ6002_44251D5B118A_0002_EJ6224_0000_0016EJ6224_21A73D0010A_0003_EJ6224_0090_0016EJ6224_21A73D0010"}
+{attribute addProperty CRC "416919046"}
+{attribute addProperty Size "140"}
+TYPE Beckhoff_EJ6xxx_18D9AE06 EXTENDS EK1100_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EJ6xxxEK1122"}
+	{attribute addProperty PreviousPort "Beckhoff EJ6xxx : B"}
+	Beckhoff_EJ6xxxEK1122 : Beckhoff_EJ6xxxEK1122_737473AE;
+	{attribute addProperty Name "A_0001_EJ6002_0000_0016"}
+	{attribute addProperty PreviousPort "Beckhoff EJ6xxxEK1122 : C"}
+	A_0001_EJ6002_0000_0016 : EJ6002_44251D5B;
+	{attribute addProperty Name "A_0002_EJ6224_0000_0016"}
+	{attribute addProperty PreviousPort "A_0001(EJ6002-0000-0016) : B"}
+	A_0002_EJ6224_0000_0016 : EJ6224_21A73D00;
+	{attribute addProperty Name "A_0003_EJ6224_0090_0016"}
+	{attribute addProperty PreviousPort "A_0002(EJ6224-0000-0016) : B"}
+	A_0003_EJ6224_0090_0016 : EJ6224_21A73D00;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

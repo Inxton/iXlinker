@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL4014_57A43C64" Id="{9857f52a-c04c-4445-a9ef-fe9e6bae7923}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL4014-0000-0018'}
+{attribute addProperty BoxType "EL4014-0000-0018"}
+{attribute addProperty Id "AO_Output_Channel_1AT %Q*AO_Output_Channel_BA7EBB7C2AO_Output_Channel_2AT %Q*AO_Output_Channel_BA7EBB7C2AO_Output_Channel_3AT %Q*AO_Output_Channel_BA7EBB7C2AO_Output_Channel_4AT %Q*AO_Output_Channel_BA7EBB7C2WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "1470381156"}
+{attribute addProperty Size "11"}
+TYPE EL4014_57A43C64 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "AO_Output_Channel_1"}
+	AO_Output_Channel_1 : AO_Output_Channel_BA7EBB7C;
+	{attribute addProperty Name "AO_Output_Channel_2"}
+	AO_Output_Channel_2 : AO_Output_Channel_BA7EBB7C;
+	{attribute addProperty Name "AO_Output_Channel_3"}
+	AO_Output_Channel_3 : AO_Output_Channel_BA7EBB7C;
+	{attribute addProperty Name "AO_Output_Channel_4"}
+	AO_Output_Channel_4 : AO_Output_Channel_BA7EBB7C;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_0B2B16F9;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="DS402_Statusword_9B36FDFC">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0011-0026'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DS402_Statusword_9B36FDFC" Id="{1654670d-7f24-493c-a69a-8a3b763a7a3a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0011-0026'}
 {attribute addProperty BoxType "EJ7211-0011-0026"}
 {attribute addProperty Id "StatuswordAT %I*UINT2"}
 {attribute addProperty CRC "2604072444"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ2521_E2FDA3CB" Id="{6b3e2785-1f77-4cd4-b808-61ff3e578131}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
+{attribute addProperty BoxType "EJ2521-0224-0016"}
+{attribute addProperty Id "PTO_StatusAT %I*PTO_Status_E0EB10E85ENC_Status_compactAT %I*ENC_Status_compact_3C6E2C4411PLS_Status_Channel_1AT %I*PLS_Status_Channel_70E7A1E24PLS_Status_Channel_2AT %I*PLS_Status_Channel_70E7A1E24PTO_ControlAT %Q*PTO_Control_9287F8E45PTO_Target_compactAT %Q*PTO_Target_compact_5C359F7D2ENC_Control_compactAT %Q*ENC_Control_compact_2E82BC435PLS_Control_compact_Channel_1AT %Q*PLS_Control_compact_Channel_CD6E44DE6PLS_Control_compact_Channel_2AT %Q*PLS_Control_compact_Channel_CD6E44DE6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "3808273355"}
+{attribute addProperty Size "52"}
+TYPE EJ2521_E2FDA3CB EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "PTO_Status"}
+	PTO_Status : PTO_Status_E0EB10E8;
+	{attribute addProperty Name "ENC_Status_compact"}
+	ENC_Status_compact : ENC_Status_compact_3C6E2C44;
+	{attribute addProperty Name "PLS_Status_Channel_1"}
+	PLS_Status_Channel_1 : PLS_Status_Channel_70E7A1E2;
+	{attribute addProperty Name "PLS_Status_Channel_2"}
+	PLS_Status_Channel_2 : PLS_Status_Channel_70E7A1E2;
+	{attribute addProperty Name "PTO_Control"}
+	PTO_Control : PTO_Control_9287F8E4;
+	{attribute addProperty Name "PTO_Target_compact"}
+	PTO_Target_compact : PTO_Target_compact_5C359F7D;
+	{attribute addProperty Name "ENC_Control_compact"}
+	ENC_Control_compact : ENC_Control_compact_2E82BC43;
+	{attribute addProperty Name "PLS_Control_compact_Channel_1"}
+	PLS_Control_compact_Channel_1 : PLS_Control_compact_Channel_CD6E44DE;
+	{attribute addProperty Name "PLS_Control_compact_Channel_2"}
+	PLS_Control_compact_Channel_2 : PLS_Control_compact_Channel_CD6E44DE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

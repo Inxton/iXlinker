@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ1101_7DD28DC4" Id="{5410bb84-dda4-4a1b-85cc-07f6a862587a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1101-0022-0016'}
+{attribute addProperty BoxType "EJ1101-0022-0016"}
+{attribute addProperty Id "WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "2110950852"}
+{attribute addProperty Size "3"}
+TYPE EJ1101_7DD28DC4 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_0B2B16F9;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

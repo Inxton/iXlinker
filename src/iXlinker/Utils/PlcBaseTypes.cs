@@ -40,9 +40,9 @@ namespace Utils
                     return 8;
                 case "LREAL":
                     return 8;
-                case "AMSNETID":
+                case "AMSNETID" or "TcoAmsNetId":
                     return 6;
-                case "AMSADDR":
+                case "AMSADDR" or "TcoAmsAddr":
                     return 8;
                 case "OTCID":
                     return 4;

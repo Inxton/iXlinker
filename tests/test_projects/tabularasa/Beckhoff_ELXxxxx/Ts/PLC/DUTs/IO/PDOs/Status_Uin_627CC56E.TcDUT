@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Status_Uin_627CC56E">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX9560-0000-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_Uin_627CC56E" Id="{8e98d1ee-904b-48b8-bcb6-9e8171f6054a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX9560-0000-0018'}
 {attribute addProperty BoxType "ELX9560-0000-0018"}
 {attribute addProperty Id "Uin_OKAT %I*BOOL1"}
 {attribute addProperty CRC "1652344174"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

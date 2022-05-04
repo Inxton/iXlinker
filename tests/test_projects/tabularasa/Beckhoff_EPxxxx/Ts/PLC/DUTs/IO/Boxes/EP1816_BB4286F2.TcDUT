@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP1816_BB4286F2" Id="{8f3b94f2-a987-4e6a-a085-6e1b1260c4e6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1816-0008-0016'}
+{attribute addProperty BoxType "EP1816-0008-0016"}
+{attribute addProperty Id "DO_Inputs_Channel_1AT %I*DO_Inputs_Channel_CC4551489DO_Inputs_Channel_2AT %I*DO_Inputs_Channel_CC4551489WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "3141699314"}
+{attribute addProperty Size "22"}
+TYPE EP1816_BB4286F2 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "DO_Inputs_Channel_1"}
+	DO_Inputs_Channel_1 : DO_Inputs_Channel_CC455148;
+	{attribute addProperty Name "DO_Inputs_Channel_2"}
+	DO_Inputs_Channel_2 : DO_Inputs_Channel_CC455148;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELX3351_8D50BB63" Id="{2e4fcaec-a91a-4eed-94e6-b935f4121631}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3351-0000-0016'}
+{attribute addProperty BoxType "ELX3351-0000-0016"}
+{attribute addProperty Id "RMB_StatusAT %I*RMB_Status_EE6B49B46RMB_Value_INT32AT %I*RMB_Value_INT_E9189C4B4RMB_ControlAT %Q*RMB_Control_4997AEF64WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "2370878307"}
+{attribute addProperty Size "18"}
+TYPE ELX3351_8D50BB63 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "RMB_Status"}
+	RMB_Status : RMB_Status_EE6B49B4;
+	{attribute addProperty Name "RMB_Value_INT32"}
+	RMB_Value_INT32 : RMB_Value_INT_E9189C4B;
+	{attribute addProperty Name "RMB_Control"}
+	RMB_Control : RMB_Control_4997AEF6;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

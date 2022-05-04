@@ -1,7 +1,7 @@
 function Generate{
     param([string] $path,[string]$type)
         $workdir = $path.Replace("\Ts.tsproj","");
-        $iXlinkerExe = ($workdir | split-path -parent | split-path -parent | split-path -parent | split-path -parent | split-path -parent) +  "\src\iXlinker\bin\Release\net5.0\iXlinker.exe"
+        $iXlinkerExe = ($workdir | split-path -parent | split-path -parent | split-path -parent | split-path -parent | split-path -parent) +  "\src\iXlinker\bin\Debug\net5.0\iXlinker.exe"
         Start-Process -Wait -FilePath $iXlinkerExe -ArgumentList ("-t " + $path)
         $AllFolders = New-Object System.Collections.Generic.List[string] 
         $AllFolders = Get-ChildItem -Path $workdir -Recurse -Directory -Force -ErrorAction SilentlyContinue | Select-Object FullName

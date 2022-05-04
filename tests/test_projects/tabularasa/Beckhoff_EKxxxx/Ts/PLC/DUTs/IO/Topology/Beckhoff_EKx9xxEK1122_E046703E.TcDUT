@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EKx9xxEK1122_E046703E" Id="{cc5d90e4-83c7-4ce7-a0cd-af302c622d8f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
+{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "Beckhoff_EKx9xxsub_EK1100EK1100_1FC0878B2A_0001_EK1960_0000_0019EK1960_93EB4C64134A_0002_EK1960_0000_0021EK1960_2CE304A9130A_0003_EK1960_0008_0019EK1960_93EB4C64134A_0004_EK1960_0008_0021EK1960_2CE304A9130A_0005_EK1960_2600_0019EK1960_9C7DD8C8140A_0006_EK1960_2600_0021EK1960_08D53615140A_0007_EK1960_2608_0019EK1960_9C7DD8C8140A_0008_EK1960_2608_0021EK1960_08D53615140"}
+{attribute addProperty CRC "3762712638"}
+{attribute addProperty Size "1090"}
+TYPE Beckhoff_EKx9xxEK1122_E046703E EXTENDS EK1122_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EKx9xxsub_EK1100"}
+	{attribute addProperty PreviousPort "Beckhoff EKx9xxEK1122 : D"}
+	Beckhoff_EKx9xxsub_EK1100 : EK1100_1FC0878B;
+	{attribute addProperty Name "A_0001_EK1960_0000_0019"}
+	{attribute addProperty PreviousPort "Beckhoff EKx9xxsub EK1100 : C"}
+	A_0001_EK1960_0000_0019 : EK1960_93EB4C64;
+	{attribute addProperty Name "A_0002_EK1960_0000_0021"}
+	{attribute addProperty PreviousPort "A_0001(EK1960-0000-0019) : C"}
+	A_0002_EK1960_0000_0021 : EK1960_2CE304A9;
+	{attribute addProperty Name "A_0003_EK1960_0008_0019"}
+	{attribute addProperty PreviousPort "A_0002(EK1960-0000-0021) : C"}
+	A_0003_EK1960_0008_0019 : EK1960_93EB4C64;
+	{attribute addProperty Name "A_0004_EK1960_0008_0021"}
+	{attribute addProperty PreviousPort "A_0003(EK1960-0008-0019) : C"}
+	A_0004_EK1960_0008_0021 : EK1960_2CE304A9;
+	{attribute addProperty Name "A_0005_EK1960_2600_0019"}
+	{attribute addProperty PreviousPort "A_0004(EK1960-0008-0021) : C"}
+	A_0005_EK1960_2600_0019 : EK1960_9C7DD8C8;
+	{attribute addProperty Name "A_0006_EK1960_2600_0021"}
+	{attribute addProperty PreviousPort "A_0005(EK1960-2600-0019) : C"}
+	A_0006_EK1960_2600_0021 : EK1960_08D53615;
+	{attribute addProperty Name "A_0007_EK1960_2608_0019"}
+	{attribute addProperty PreviousPort "A_0006(EK1960-2600-0021) : C"}
+	A_0007_EK1960_2608_0019 : EK1960_9C7DD8C8;
+	{attribute addProperty Name "A_0008_EK1960_2608_0021"}
+	{attribute addProperty PreviousPort "A_0007(EK1960-2608-0019) : C"}
+	A_0008_EK1960_2608_0021 : EK1960_08D53615;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

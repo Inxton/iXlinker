@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP2816_082894A4" Id="{713e3c54-98f4-4a81-a500-91192eeb9fa0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2816-0008-0018'}
+{attribute addProperty BoxType "EP2816-0008-0018"}
+{attribute addProperty Id "DIG_Diag_Inputs_Channel_1AT %I*DIG_Diag_Inputs_Channel_584303BF8DIG_Diag_Inputs_Channel_2AT %I*DIG_Diag_Inputs_Channel_584303BF8DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_4E5AF17E5DIG_Outputs_Channel_1AT %Q*DIG_Outputs_Channel_28AC1A9E8DIG_Outputs_Channel_2AT %Q*DIG_Outputs_Channel_28AC1A9E8DIG_Outputs_DeviceAT %Q*DIG_Outputs_Device_36A5EF172WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "136877220"}
+{attribute addProperty Size "43"}
+TYPE EP2816_082894A4 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "DIG_Diag_Inputs_Channel_1"}
+	DIG_Diag_Inputs_Channel_1 : DIG_Diag_Inputs_Channel_584303BF;
+	{attribute addProperty Name "DIG_Diag_Inputs_Channel_2"}
+	DIG_Diag_Inputs_Channel_2 : DIG_Diag_Inputs_Channel_584303BF;
+	{attribute addProperty Name "DIG_Inputs_Device"}
+	DIG_Inputs_Device : DIG_Inputs_Device_4E5AF17E;
+	{attribute addProperty Name "DIG_Outputs_Channel_1"}
+	DIG_Outputs_Channel_1 : DIG_Outputs_Channel_28AC1A9E;
+	{attribute addProperty Name "DIG_Outputs_Channel_2"}
+	DIG_Outputs_Channel_2 : DIG_Outputs_Channel_28AC1A9E;
+	{attribute addProperty Name "DIG_Outputs_Device"}
+	DIG_Outputs_Device : DIG_Outputs_Device_36A5EF17;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

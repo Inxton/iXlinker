@@ -877,3 +877,194 @@ WRN | 5/3/2022 10:55:04 PM 555 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_00
 WRN | 5/3/2022 10:55:04 PM 558 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0075(AX8118-0100-0101)' may to low (-1850 mA) - please check!
 ========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 89470 bytes
+Size of global data: 25941 bytes
+Total allocated memory size for code and data: 499840 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 499840, largest contiguous memory gap: 548736 bytes (52 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 5/4/2022 10:08:26 AM 633 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0017(EL5151-0000-0018 )' may to low (-80 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 634 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0018(EL5151-0000-0019 )' may to low (-210 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 635 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0019(EL5151-0000-0020 )' may to low (-290 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 637 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0020(EL5151-0000-0025 )' may to low (-420 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 638 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0021(EL5151-0000-0026 )' may to low (-550 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 640 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0022(EL5151-0080-0016 )' may to low (-680 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 644 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0023(EL5151-0080-0017 )' may to low (-760 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 646 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0024(EL5151-0080-0018 )' may to low (-840 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 647 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0025(EL5151-0080-0019 )' may to low (-970 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 649 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0026(EL5151-0080-0020 )' may to low (-1100 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 650 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0027(EL5151-0080-0021 )' may to low (-1230 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 651 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0028(EL3773-0000-0016 )' may to low (-1430 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 655 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0029(EM7004-0000-9995 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 657 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0041(AX8108-0100-0101 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 659 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0042(AX8108-0100-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 660 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0043(AX8108-0100-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 662 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0044(AX8108-0100-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 663 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0045(AX8108-0110-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 666 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0046(AX8108-0110-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 667 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0047(AX8108-0110-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 669 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0048(AX8108-0200-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 670 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0049(AX8108-0200-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 672 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0050(AX8108-0210-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 673 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0051(AX8108-0210-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 674 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0052(AX8118-0100-0101 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 677 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0053(AX8118-0100-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 679 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0054(AX8118-0100-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 680 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0055(AX8118-0100-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 682 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0056(AX8118-0110-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 683 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0057(AX8118-0110-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 684 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0058(AX8118-0110-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 688 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0059(AX8118-0200-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 689 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0060(AX8118-0200-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 690 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0061(AX8118-0210-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 692 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0062(AX8118-0210-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 694 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0063(AX8206-0100-0101 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 698 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0064(AX8206-0100-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 699 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0065(AX8206-0100-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 700 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0066(AX8206-0100-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 702 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0067(AX8206-0110-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 703 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0068(AX8206-0110-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 705 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0069(AX8206-0110-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 709 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0070(AX8206-0200-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 711 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0071(AX8206-0200-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 712 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0072(AX8206-0210-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 714 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0073(AX8206-0210-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 715 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0074(EM7004-0000-9995)' may to low (-1850 mA) - please check!
+WRN | 5/4/2022 10:08:26 AM 717 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0075(AX8118-0100-0101)' may to low (-1850 mA) - please check!
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 89574 bytes
+Size of global data: 25985 bytes
+Total allocated memory size for code and data: 499984 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 499984, largest contiguous memory gap: 548592 bytes (52 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 5/4/2022 7:28:03 PM 091 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0017(EL5151-0000-0018 )' may to low (-80 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 092 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0018(EL5151-0000-0019 )' may to low (-210 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 094 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0019(EL5151-0000-0020 )' may to low (-290 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 095 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0020(EL5151-0000-0025 )' may to low (-420 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 097 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0021(EL5151-0000-0026 )' may to low (-550 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 098 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0022(EL5151-0080-0016 )' may to low (-680 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 099 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0023(EL5151-0080-0017 )' may to low (-760 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 100 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0024(EL5151-0080-0018 )' may to low (-840 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 103 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0025(EL5151-0080-0019 )' may to low (-970 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 104 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0026(EL5151-0080-0020 )' may to low (-1100 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 106 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0027(EL5151-0080-0021 )' may to low (-1230 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 107 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0028(EL3773-0000-0016 )' may to low (-1430 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 108 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0029(EM7004-0000-9995 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 109 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0041(AX8108-0100-0101 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 110 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0042(AX8108-0100-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 113 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0043(AX8108-0100-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 115 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0044(AX8108-0100-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 116 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0045(AX8108-0110-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 117 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0046(AX8108-0110-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 118 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0047(AX8108-0110-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 119 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0048(AX8108-0200-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 121 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0049(AX8108-0200-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 124 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0050(AX8108-0210-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 126 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0051(AX8108-0210-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 127 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0052(AX8118-0100-0101 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 128 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0053(AX8118-0100-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 130 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0054(AX8118-0100-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 131 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0055(AX8118-0100-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 133 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0056(AX8118-0110-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 136 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0057(AX8118-0110-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 138 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0058(AX8118-0110-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 139 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0059(AX8118-0200-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 141 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0060(AX8118-0200-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 143 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0061(AX8118-0210-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 146 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0062(AX8118-0210-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 147 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0063(AX8206-0100-0101 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 149 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0064(AX8206-0100-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 150 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0065(AX8206-0100-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 152 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0066(AX8206-0100-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 153 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0067(AX8206-0110-0102 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 156 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0068(AX8206-0110-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 157 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0069(AX8206-0110-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 159 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0070(AX8206-0200-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 160 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0071(AX8206-0200-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 161 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0072(AX8206-0210-0103 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 162 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0073(AX8206-0210-0104 )' may to low (-1640 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 164 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0074(EM7004-0000-9995)' may to low (-1850 mA) - please check!
+WRN | 5/4/2022 7:28:03 PM 167 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0075(AX8118-0100-0101)' may to low (-1850 mA) - please check!
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_07DD5D1A.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_D1E293FD.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_D1E293FD.TcDUT(15) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_FD1CC0AA.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_FD1CC0AA.TcDUT(15) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 8 errors, 0 warnings
+Build complete -- 8 errors, 0 warnings : no download possible!
+WRN | 5/4/2022 8:38:39 PM 476 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_07DD5D1A.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_D1E293FD.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_D1E293FD.TcDUT(15) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_FD1CC0AA.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_FD1CC0AA.TcDUT(15) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 8 errors, 0 warnings
+Build complete -- 8 errors, 0 warnings : no download possible!
+WRN | 5/4/2022 9:16:31 PM 989 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_07DD5D1A.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_D1E293FD.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_D1E293FD.TcDUT(15) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_FD1CC0AA.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_FD1CC0AA.TcDUT(15) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_Duplicates\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 8 errors, 0 warnings
+Build complete -- 8 errors, 0 warnings : no download possible!
+WRN | 5/4/2022 9:34:38 PM 094 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+

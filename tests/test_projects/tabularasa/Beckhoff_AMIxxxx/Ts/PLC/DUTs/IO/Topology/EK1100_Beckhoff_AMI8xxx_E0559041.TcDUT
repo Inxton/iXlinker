@@ -1,0 +1,17 @@
+<TcPlcObject>
+	<DUT Name="EK1100_Beckhoff_AMI8xxx_E0559041">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_AMI8xxxEK1122Beckhoff_AMI8xxxEK1122_C30D03F864"}
+{attribute addProperty CRC "3763703873"}
+{attribute addProperty Size "64"}
+TYPE EK1100_Beckhoff_AMI8xxx_E0559041 EXTENDS EK1100_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_AMI8xxxEK1122"}
+	{attribute addProperty PreviousPort "EK1100_Beckhoff AMI8xxx : B"}
+	Beckhoff_AMI8xxxEK1122 : Beckhoff_AMI8xxxEK1122_C30D03F8;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+	</DUT>
+</TcPlcObject>

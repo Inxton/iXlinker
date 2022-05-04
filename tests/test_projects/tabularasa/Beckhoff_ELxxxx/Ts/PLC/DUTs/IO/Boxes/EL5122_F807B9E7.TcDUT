@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL5122_F807B9E7" Id="{6b95f2db-4b81-4667-9912-a8ecd0267526}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5122-0000-0016'}
+{attribute addProperty BoxType "EL5122-0000-0016"}
+{attribute addProperty Id "ENC_Status_Channel_1AT %I*ENC_Status_Channel_04F16FC020ENC_Status_Channel_2AT %I*ENC_Status_Channel_04F16FC020ENC_Control_Channel_1AT %Q*ENC_Control_Channel_B930862D10ENC_Control_Channel_2AT %Q*ENC_Control_Channel_B930862D10WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "4161255911"}
+{attribute addProperty Size "64"}
+TYPE EL5122_F807B9E7 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "ENC_Status_Channel_1"}
+	ENC_Status_Channel_1 : ENC_Status_Channel_04F16FC0;
+	{attribute addProperty Name "ENC_Status_Channel_2"}
+	ENC_Status_Channel_2 : ENC_Status_Channel_04F16FC0;
+	{attribute addProperty Name "ENC_Control_Channel_1"}
+	ENC_Control_Channel_1 : ENC_Control_Channel_B930862D;
+	{attribute addProperty Name "ENC_Control_Channel_2"}
+	ENC_Control_Channel_2 : ENC_Control_Channel_B930862D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

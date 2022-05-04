@@ -41,7 +41,7 @@
     <Compile Include="DUTs\IO\PDOs\InfoData_6F19DB2B.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\PDOs\InfoData_E68C61CD.TcDUT">
+    <Compile Include="DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\PDOs\WcState_0B2B16F9.TcDUT">
@@ -74,7 +74,7 @@
     <Compile Include="DUTs\IO\Topology\Term_1_EK1100_DF650C4A.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Device_1_EtherCAT_CCC4D377.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Device_1_EtherCAT_8E02EE27.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\EtcSlaveTerminalBase_947E5A46.TcDUT">
@@ -87,6 +87,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\WcStateInputToggleBase_F68C23A9.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InfoDataAdsAddrStateBase_1916E49F.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\WcStateBase_A2171C4E.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GVLs\GVL_iXlinker.TcGVL">

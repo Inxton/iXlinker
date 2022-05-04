@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="WcState_9091E0EB" Id="{3a160ed8-5d7c-4cde-95ee-eac7d781ad4c}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2020-0250-0019'}
+<TcPlcObject>
+	<DUT Name="WcState_9091E0EB">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2020-0250-0019'}
 {attribute addProperty BoxType "AT2020-0250-0019"}
 {attribute addProperty Id "WcStateAT %I*BOOL1InputToggleAT %I*BOOL1"}
 {attribute addProperty CRC "2425479403"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

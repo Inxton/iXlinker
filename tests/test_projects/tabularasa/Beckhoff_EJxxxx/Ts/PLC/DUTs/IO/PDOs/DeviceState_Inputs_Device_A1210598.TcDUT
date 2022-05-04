@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="DeviceState_Inputs_Device_A1210598">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6224-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DeviceState_Inputs_Device_A1210598" Id="{899a4d77-3484-4cb1-8c95-5a8f92ebb1e3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6224-0000-0016'}
 {attribute addProperty BoxType "EJ6224-0000-0016"}
 {attribute addProperty Id "Device_DiagAT %I*BOOL1Device_StateAT %I*BOOL1"}
 {attribute addProperty CRC "2703295896"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

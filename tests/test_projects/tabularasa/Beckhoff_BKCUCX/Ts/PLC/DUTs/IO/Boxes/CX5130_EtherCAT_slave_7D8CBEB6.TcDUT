@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CX5130_EtherCAT_slave_7D8CBEB6" Id="{5b490af2-18be-4a83-8837-03436b873a65}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CX5130 EtherCAT slave-1b82-0016'}
+{attribute addProperty BoxType "CX5130 EtherCAT slave-1b82-0016"}
+{attribute addProperty Id "IO_InputsEMPTY_STRUCTURE0Device_Status_MappingAT %I*Device_Status_Mapping_61F790772IO_OutputsEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_41C547A32"}
+{attribute addProperty CRC "2106375862"}
+{attribute addProperty Size "6"}
+TYPE CX5130_EtherCAT_slave_7D8CBEB6 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "IO_Inputs"}
+	IO_Inputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "Device_Status_Mapping"}
+	Device_Status_Mapping : Device_Status_Mapping_61F79077;
+	{attribute addProperty Name "IO_Outputs"}
+	IO_Outputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_41C547A3;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

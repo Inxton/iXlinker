@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="AO_Outputs_Channel_BA7EBB7C">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX4154-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AO_Outputs_Channel_BA7EBB7C" Id="{2fb93a0c-8398-44a1-a21d-d4b08b46e5a6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX4154-0000-0016'}
 {attribute addProperty BoxType "ELX4154-0000-0016"}
 {attribute addProperty Id "Analog_outputAT %Q*INT2"}
 {attribute addProperty CRC "3128867708"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

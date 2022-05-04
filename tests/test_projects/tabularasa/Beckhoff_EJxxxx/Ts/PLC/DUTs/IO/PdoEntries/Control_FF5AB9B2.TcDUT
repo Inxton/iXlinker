@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Control_FF5AB9B2">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7334-0008-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Control_FF5AB9B2" Id="{d1358741-bd0f-4948-a344-c96fda6aa6c7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7334-0008-0016'}
 {attribute addProperty BoxType "EJ7334-0008-0016"}
 {attribute addProperty Id "EnableBOOL1ResetBOOL1"}
 {attribute addProperty CRC "4284135858"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

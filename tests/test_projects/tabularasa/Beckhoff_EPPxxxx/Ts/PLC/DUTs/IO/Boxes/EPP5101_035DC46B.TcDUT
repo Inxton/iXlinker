@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP5101_035DC46B" Id="{6d401eaa-b749-4c65-955e-cb11ae1c1fc6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP5101-0002-0016'}
+{attribute addProperty BoxType "EPP5101-0002-0016"}
+{attribute addProperty Id "ENC_Status_compactAT %I*ENC_Status_compact_F4F8958316ENC_Control_compactAT %Q*ENC_Control_compact_E6DC9B254WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "56476779"}
+{attribute addProperty Size "24"}
+TYPE EPP5101_035DC46B EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "ENC_Status_compact"}
+	ENC_Status_compact : ENC_Status_compact_F4F89583;
+	{attribute addProperty Name "ENC_Control_compact"}
+	ENC_Control_compact : ENC_Control_compact_E6DC9B25;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

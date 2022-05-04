@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2502_0F237449" Id="{cfb48f99-478a-45ef-a7ce-07ff7589f4c1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2502-0010-0020'}
+{attribute addProperty BoxType "EL2502-0010-0020"}
+{attribute addProperty Id "PWM_Inputs_Channel_1AT %I*PWM_Inputs_Channel_4239F6524PWM_SysTime_Channel_1AT %I*PWM_SysTime_Channel_10DC69458PWM_Per_DC_Outputs_Channel_1AT %Q*PWM_Per_DC_Outputs_Channel_C8E719F317WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "253981769"}
+{attribute addProperty Size "33"}
+TYPE EL2502_0F237449 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "PWM_Inputs_Channel_1"}
+	PWM_Inputs_Channel_1 : PWM_Inputs_Channel_4239F652;
+	{attribute addProperty Name "PWM_SysTime_Channel_1"}
+	PWM_SysTime_Channel_1 : PWM_SysTime_Channel_10DC6945;
+	{attribute addProperty Name "PWM_Per_DC_Outputs_Channel_1"}
+	PWM_Per_DC_Outputs_Channel_1 : PWM_Per_DC_Outputs_Channel_C8E719F3;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

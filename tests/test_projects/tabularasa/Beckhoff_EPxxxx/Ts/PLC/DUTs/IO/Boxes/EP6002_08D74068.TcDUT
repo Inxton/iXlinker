@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP6002_08D74068" Id="{320202fc-9b3c-4579-bb7a-e06192477c68}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP6002-0002-0016'}
+{attribute addProperty BoxType "EP6002-0002-0016"}
+{attribute addProperty Id "COM_Inputs_Channel_1AT %I*COM_Inputs_Channel_C252EAC224COM_Inputs_Channel_2AT %I*COM_Inputs_Channel_C252EAC224COM_Outputs_Channel_1AT %Q*COM_Outputs_Channel_B336F4EE24COM_Outputs_Channel_2AT %Q*COM_Outputs_Channel_B336F4EE24WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "148324456"}
+{attribute addProperty Size "100"}
+TYPE EP6002_08D74068 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "COM_Inputs_Channel_1"}
+	COM_Inputs_Channel_1 : COM_Inputs_Channel_C252EAC2;
+	{attribute addProperty Name "COM_Inputs_Channel_2"}
+	COM_Inputs_Channel_2 : COM_Inputs_Channel_C252EAC2;
+	{attribute addProperty Name "COM_Outputs_Channel_1"}
+	COM_Outputs_Channel_1 : COM_Outputs_Channel_B336F4EE;
+	{attribute addProperty Name "COM_Outputs_Channel_2"}
+	COM_Outputs_Channel_2 : COM_Outputs_Channel_B336F4EE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

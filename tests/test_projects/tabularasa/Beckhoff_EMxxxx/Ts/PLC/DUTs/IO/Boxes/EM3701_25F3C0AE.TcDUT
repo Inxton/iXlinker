@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EM3701_25F3C0AE" Id="{0752bf0c-5af4-4f10-a318-d2cf1e0c0163}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM3701-0000-0016'}
+{attribute addProperty BoxType "EM3701-0000-0016"}
+{attribute addProperty Id "AI_InputsAT %I*AI_Inputs_5AF6604E8WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "636731566"}
+{attribute addProperty Size "12"}
+TYPE EM3701_25F3C0AE EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "AI_Inputs"}
+	AI_Inputs : AI_Inputs_5AF6604E;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

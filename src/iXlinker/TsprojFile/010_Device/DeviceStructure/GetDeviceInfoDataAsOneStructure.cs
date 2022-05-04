@@ -68,7 +68,7 @@ namespace TsprojFile.Scan
                 }
                 if (infoDataNetId)
                 {
-                    PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "AmsNetId", VarB = "InfoData" + tmpLevelSeparator + "AmsNetId", VarA = "InfoData" + tmpLevelSeparator + "AmsNetId", Type_Value = "AMSNETID", InOut = "0" };
+                    PdoEntryViewModel pdoEntryViewModel = new PdoEntryViewModel() { OwnerBname = "TIID" + tmpLevelSeparator + device.Name, Name = "AmsNetId", VarB = "InfoData" + tmpLevelSeparator + "AmsNetId", VarA = "InfoData" + tmpLevelSeparator + "AmsNetId", Type_Value = ReplaceSpecialPlcTypeIfFoundInLibrary("AMSNETID"), InOut = "0" };
                     pdoEntryViewModel.Size = PlcBaseTypes.GetSize(pdoEntryViewModel.Type_Value);
                     InfoDataEntries.Add(pdoEntryViewModel);
                 }

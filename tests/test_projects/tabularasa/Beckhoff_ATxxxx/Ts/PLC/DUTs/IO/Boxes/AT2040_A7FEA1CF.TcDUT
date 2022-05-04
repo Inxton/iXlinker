@@ -1,0 +1,22 @@
+<TcPlcObject>
+	<DUT Name="AT2040_A7FEA1CF">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2040-0250-0018'}
+{attribute addProperty BoxType "AT2040-0250-0018"}
+{attribute addProperty Id "CC_InputsAT %I*CC_Inputs_2C1C9EE032CC_OutputsAT %Q*CC_Outputs_69F9BE1432WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_1088C70510"}
+{attribute addProperty CRC "2818482639"}
+{attribute addProperty Size "76"}
+TYPE AT2040_A7FEA1CF EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "CC_Inputs"}
+	CC_Inputs : CC_Inputs_2C1C9EE0;
+	{attribute addProperty Name "CC_Outputs"}
+	CC_Outputs : CC_Outputs_69F9BE14;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_1088C705;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+	</DUT>
+</TcPlcObject>

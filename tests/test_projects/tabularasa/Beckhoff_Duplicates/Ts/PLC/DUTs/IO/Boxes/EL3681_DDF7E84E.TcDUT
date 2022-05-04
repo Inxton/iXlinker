@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3681_DDF7E84E" Id="{614a4c4e-1817-4baa-891c-3af68bc5ea45}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0018'}
+{attribute addProperty BoxType "EL3681-0000-0018"}
+{attribute addProperty Id "SAI_InputsAT %I*SAI_Inputs_84B29FE914SAI_RangeAT %I*SAI_Range_BDBF6DA92SAI_Range_1AT %Q*SAI_Range_2A187FC54WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "3724011598"}
+{attribute addProperty Size "24"}
+TYPE EL3681_DDF7E84E EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "SAI_Inputs"}
+	SAI_Inputs : SAI_Inputs_84B29FE9;
+	{attribute addProperty Name "SAI_Range"}
+	SAI_Range : SAI_Range_BDBF6DA9;
+	{attribute addProperty Name "SAI_Range_1"}
+	SAI_Range_1 : SAI_Range_2A187FC5;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

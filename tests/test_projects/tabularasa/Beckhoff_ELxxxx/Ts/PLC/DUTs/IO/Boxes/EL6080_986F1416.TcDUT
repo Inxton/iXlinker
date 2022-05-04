@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6080_986F1416" Id="{03685039-ac9e-489f-a1b1-50c3a191f1e8}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6080-0000-0016'}
+{attribute addProperty BoxType "EL6080-0000-0016"}
+{attribute addProperty Id "StatusAT %I*Status_EF5E6C280InputsEMPTY_STRUCTURE0ControlAT %Q*Control_883019540OutputsEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "2557416470"}
+{attribute addProperty Size "4"}
+TYPE EL6080_986F1416 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "Status"}
+	Status : Status_EF5E6C28;
+	{attribute addProperty Name "Inputs"}
+	Inputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "Control"}
+	Control : Control_88301954;
+	{attribute addProperty Name "Outputs"}
+	Outputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

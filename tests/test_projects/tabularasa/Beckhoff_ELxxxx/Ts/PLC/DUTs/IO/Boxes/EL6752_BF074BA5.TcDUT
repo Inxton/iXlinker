@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6752_BF074BA5" Id="{ae202464-aa12-4820-a4f6-b4d2c673f735}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6752--0000'}
+{attribute addProperty BoxType "EL6752--0000"}
+{attribute addProperty Id "InfoDataAT %I*InfoData_41C547A32"}
+{attribute addProperty CRC "3204926373"}
+{attribute addProperty Size "2"}
+TYPE EL6752_BF074BA5 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_41C547A3;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

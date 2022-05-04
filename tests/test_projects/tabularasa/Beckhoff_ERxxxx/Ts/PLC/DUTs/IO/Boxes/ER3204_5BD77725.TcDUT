@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ER3204_5BD77725" Id="{0ca99019-ed2d-4cbf-8e4e-2731cb30532a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER3204-0002-0021'}
+{attribute addProperty BoxType "ER3204-0002-0021"}
+{attribute addProperty Id "RTD_RTDInputs_Channel_1AT %I*RTD_RTDInputs_Channel_4A3944819RTD_RTDInputs_Channel_2AT %I*RTD_RTDInputs_Channel_4A3944819RTD_RTDInputs_Channel_3AT %I*RTD_RTDInputs_Channel_4A3944819RTD_RTDInputs_Channel_4AT %I*RTD_RTDInputs_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "1540847397"}
+{attribute addProperty Size "40"}
+TYPE ER3204_5BD77725 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "RTD_RTDInputs_Channel_1"}
+	RTD_RTDInputs_Channel_1 : RTD_RTDInputs_Channel_4A394481;
+	{attribute addProperty Name "RTD_RTDInputs_Channel_2"}
+	RTD_RTDInputs_Channel_2 : RTD_RTDInputs_Channel_4A394481;
+	{attribute addProperty Name "RTD_RTDInputs_Channel_3"}
+	RTD_RTDInputs_Channel_3 : RTD_RTDInputs_Channel_4A394481;
+	{attribute addProperty Name "RTD_RTDInputs_Channel_4"}
+	RTD_RTDInputs_Channel_4 : RTD_RTDInputs_Channel_4A394481;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

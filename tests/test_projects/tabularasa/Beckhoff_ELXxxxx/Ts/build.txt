@@ -286,3 +286,84 @@ WRN | 5/3/2022 10:53:47 PM 528 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_00
 Error: The operation could not be completed. Unspecified error 
 ========== Build: 0 succeeded or up-to-date, 1 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 5/4/2022 10:06:28 AM 422 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0023(ELX3351-0090-0016)' may to low (-35 mA) - please check!
+WRN | 5/4/2022 10:06:28 AM 470 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0024(ELX4154-0000-0016)' may to low (-95 mA) - please check!
+WRN | 5/4/2022 10:06:28 AM 486 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0025(ELX4181-0000-0016)' may to low (-190 mA) - please check!
+WRN | 5/4/2022 10:06:28 AM 489 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0026(ELX4181-0000-0017)' may to low (-285 mA) - please check!
+WRN | 5/4/2022 10:06:28 AM 491 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0027(ELX5151-0000-0016)' may to low (-365 mA) - please check!
+WRN | 5/4/2022 10:06:28 AM 495 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0028(ELX5151-0090-0016)' may to low (-445 mA) - please check!
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 1 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 67726 bytes
+Size of global data: 16877 bytes
+Total allocated memory size for code and data: 469032 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 469032, largest contiguous memory gap: 579544 bytes (55 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 5/4/2022 7:27:12 PM 866 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0023(ELX3351-0090-0016)' may to low (-35 mA) - please check!
+WRN | 5/4/2022 7:27:12 PM 868 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0024(ELX4154-0000-0016)' may to low (-95 mA) - please check!
+WRN | 5/4/2022 7:27:12 PM 873 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0025(ELX4181-0000-0016)' may to low (-190 mA) - please check!
+WRN | 5/4/2022 7:27:12 PM 876 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0026(ELX4181-0000-0017)' may to low (-285 mA) - please check!
+WRN | 5/4/2022 7:27:12 PM 883 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0027(ELX5151-0000-0016)' may to low (-365 mA) - please check!
+WRN | 5/4/2022 7:27:12 PM 885 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0028(ELX5151-0090-0016)' may to low (-445 mA) - please check!
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_41C547A3.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_41C547A3.TcDUT(11) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 4 errors, 0 warnings
+Build complete -- 4 errors, 0 warnings : no download possible!
+WRN | 5/4/2022 8:37:27 PM 892 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_41C547A3.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_41C547A3.TcDUT(11) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 4 errors, 0 warnings
+Build complete -- 4 errors, 0 warnings : no download possible!
+WRN | 5/4/2022 9:15:01 PM 904 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_41C547A3.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_41C547A3.TcDUT(11) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 4 errors, 0 warnings
+Build complete -- 4 errors, 0 warnings : no download possible!
+WRN | 5/4/2022 9:32:56 PM 595 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+

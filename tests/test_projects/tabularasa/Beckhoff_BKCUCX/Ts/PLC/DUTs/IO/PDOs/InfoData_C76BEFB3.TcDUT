@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_C76BEFB3" Id="{7c0ca474-a227-47b2-ad93-0a0438d316be}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "ChangeCountAT %I*UINT2DevIdAT %I*UINT2AmsNetIdAT %I*.TcoAmsNetId0CfgSlaveCountAT %I*UINT2DcToTcTimeOffsetAT %I*LINT8DcToExtTimeOffsetAT %I*LINT8"}
+{attribute addProperty CRC "3345739699"}
+{attribute addProperty Size "22"}
+TYPE InfoData_C76BEFB3 :
+STRUCT
+	{attribute addProperty Name "ChangeCount"}
+	ChangeCount AT %I* : UINT;
+	{attribute addProperty Name "DevId"}
+	DevId AT %I* : UINT;
+	{attribute addProperty Name "AmsNetId"}
+	AmsNetId AT %I* : .TcoAmsNetId;
+	{attribute addProperty Name "CfgSlaveCount"}
+	CfgSlaveCount AT %I* : UINT;
+	{attribute addProperty Name "DcToTcTimeOffset"}
+	DcToTcTimeOffset AT %I* : LINT;
+	{attribute addProperty Name "DcToExtTimeOffset"}
+	DcToExtTimeOffset AT %I* : LINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

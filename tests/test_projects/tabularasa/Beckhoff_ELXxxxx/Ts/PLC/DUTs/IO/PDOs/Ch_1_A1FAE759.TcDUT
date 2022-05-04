@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Ch_1_A1FAE759">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3181-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ch_1_A1FAE759" Id="{544b6ed8-0900-4d84-bb38-f2d583b0e507}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3181-0000-0016'}
 {attribute addProperty BoxType "ELX3181-0000-0016"}
 {attribute addProperty Id "Ch_1_Al_InputsCh_1_Al_Inputs_4794C08310"}
 {attribute addProperty CRC "2717575001"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

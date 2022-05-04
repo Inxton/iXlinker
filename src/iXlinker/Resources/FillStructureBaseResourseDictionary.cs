@@ -21,6 +21,10 @@ namespace TsprojFile.Scan
             StructureBasesResourceDictionary.Add(StructureBase.Build("Channel_830843C1", pdo, "DigitalInputBase", PlcStructuresInPlcLibraries));
             StructureBasesResourceDictionary.Add(StructureBase.Build("Channel_42CA91F7", pdo, "DigitalOutputBase", PlcStructuresInPlcLibraries));
             StructureBasesResourceDictionary.Add(StructureBase.Build("WcState_9091E0EB", pdo, "WcStateInputToggleBase", PlcStructuresInPlcLibraries));
+            StructureBasesResourceDictionary.Add(StructureBase.Build("InfoData_32EB74EA", pdo, "InfoDataAdsAddrStateBase", PlcStructuresInPlcLibraries));
+            StructureBasesResourceDictionary.Add(StructureBase.Build("WcState_0B2B16F9", pdo, "WcStateBase", PlcStructuresInPlcLibraries));
+
+
         }
     }
 }

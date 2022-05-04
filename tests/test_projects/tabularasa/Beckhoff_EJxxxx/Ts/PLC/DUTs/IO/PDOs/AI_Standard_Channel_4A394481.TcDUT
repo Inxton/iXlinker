@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="AI_Standard_Channel_4A394481">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3004-0000-0019'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AI_Standard_Channel_4A394481" Id="{d3423790-95d8-47fd-b037-3afb73df07ef}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3004-0000-0019'}
 {attribute addProperty BoxType "EJ3004-0000-0019"}
 {attribute addProperty Id "StatusAT %I*Status_F2CE6D917ValueAT %I*INT2"}
 {attribute addProperty CRC "1245267073"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

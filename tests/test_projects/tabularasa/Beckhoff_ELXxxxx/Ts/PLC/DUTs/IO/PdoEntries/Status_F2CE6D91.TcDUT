@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Status_F2CE6D91">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3202-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_F2CE6D91" Id="{71b72ed0-bf6b-4ab3-86cf-c7ff9a08c848}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3202-0000-0016'}
 {attribute addProperty BoxType "ELX3202-0000-0016"}
 {attribute addProperty Id "UnderrangeBOOL1OverrangeBOOL1Limit_1BYTE1Limit_2BYTE1ErrorBOOL1TxPDO_StateBOOL1TxPDO_ToggleBOOL1"}
 {attribute addProperty CRC "4073614737"}
@@ -24,5 +25,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

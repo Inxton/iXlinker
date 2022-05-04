@@ -254,3 +254,70 @@ PLC.PLC : message: generate boot information...
 ------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
 ========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 92062 bytes
+Size of global data: 22413 bytes
+Total allocated memory size for code and data: 498904 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 498904, largest contiguous memory gap: 549672 bytes (52 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_07DD5D1A.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_3B4F4E8A.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_F796F579.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 5 errors, 0 warnings
+Build complete -- 5 errors, 0 warnings : no download possible!
+WRN | 5/4/2022 8:37:51 PM 054 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_07DD5D1A.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_3B4F4E8A.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_F796F579.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 5 errors, 0 warnings
+Build complete -- 5 errors, 0 warnings : no download possible!
+WRN | 5/4/2022 9:15:45 PM 699 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_07DD5D1A.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_3B4F4E8A.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_F796F579.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ERxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 5 errors, 0 warnings
+Build complete -- 5 errors, 0 warnings : no download possible!
+WRN | 5/4/2022 9:33:09 PM 203 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+

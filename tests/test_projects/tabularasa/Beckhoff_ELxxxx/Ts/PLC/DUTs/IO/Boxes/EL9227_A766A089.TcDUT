@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9227_A766A089" Id="{9dd87510-514c-4398-8894-6c48f3ae1574}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9227-4433-0018'}
+{attribute addProperty BoxType "EL9227-4433-0018"}
+{attribute addProperty Id "OCP_Inputs_Channel_1AT %I*OCP_Inputs_Channel_794A321B28OCP_Inputs_Channel_2AT %I*OCP_Inputs_Channel_794A321B28OCP_Outputs_Channel_1AT %Q*OCP_Outputs_Channel_010149342OCP_Outputs_Channel_2AT %Q*OCP_Outputs_Channel_010149342WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "2808520841"}
+{attribute addProperty Size "64"}
+TYPE EL9227_A766A089 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "OCP_Inputs_Channel_1"}
+	OCP_Inputs_Channel_1 : OCP_Inputs_Channel_794A321B;
+	{attribute addProperty Name "OCP_Inputs_Channel_2"}
+	OCP_Inputs_Channel_2 : OCP_Inputs_Channel_794A321B;
+	{attribute addProperty Name "OCP_Outputs_Channel_1"}
+	OCP_Outputs_Channel_1 : OCP_Outputs_Channel_01014934;
+	{attribute addProperty Name "OCP_Outputs_Channel_2"}
+	OCP_Outputs_Channel_2 : OCP_Outputs_Channel_01014934;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

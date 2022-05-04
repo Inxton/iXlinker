@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ7334_074992E9" Id="{20d888a2-29bd-4464-a759-d34b0d3f423e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7334-0008-0016'}
+{attribute addProperty BoxType "EJ7334-0008-0016"}
+{attribute addProperty Id "DCM_Status_Channel_1AT %I*DCM_Status_Channel_45521CDC8DCM_Status_Channel_2AT %I*DCM_Status_Channel_45521CDC8DCM_Status_Channel_3AT %I*DCM_Status_Channel_45521CDC8DCM_Status_Channel_4AT %I*DCM_Status_Channel_45521CDC8DCM_Outputs_Channel_1AT %Q*DCM_Outputs_Channel_F77F51CE4DCM_Outputs_Channel_2AT %Q*DCM_Outputs_Channel_F77F51CE4DCM_Outputs_Channel_3AT %Q*DCM_Outputs_Channel_F77F51CE4DCM_Outputs_Channel_4AT %Q*DCM_Outputs_Channel_F77F51CE4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "122262249"}
+{attribute addProperty Size "52"}
+TYPE EJ7334_074992E9 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "DCM_Status_Channel_1"}
+	DCM_Status_Channel_1 : DCM_Status_Channel_45521CDC;
+	{attribute addProperty Name "DCM_Status_Channel_2"}
+	DCM_Status_Channel_2 : DCM_Status_Channel_45521CDC;
+	{attribute addProperty Name "DCM_Status_Channel_3"}
+	DCM_Status_Channel_3 : DCM_Status_Channel_45521CDC;
+	{attribute addProperty Name "DCM_Status_Channel_4"}
+	DCM_Status_Channel_4 : DCM_Status_Channel_45521CDC;
+	{attribute addProperty Name "DCM_Outputs_Channel_1"}
+	DCM_Outputs_Channel_1 : DCM_Outputs_Channel_F77F51CE;
+	{attribute addProperty Name "DCM_Outputs_Channel_2"}
+	DCM_Outputs_Channel_2 : DCM_Outputs_Channel_F77F51CE;
+	{attribute addProperty Name "DCM_Outputs_Channel_3"}
+	DCM_Outputs_Channel_3 : DCM_Outputs_Channel_F77F51CE;
+	{attribute addProperty Name "DCM_Outputs_Channel_4"}
+	DCM_Outputs_Channel_4 : DCM_Outputs_Channel_F77F51CE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

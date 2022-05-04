@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="ELX9560_F22EDCF2">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX9560-0000-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ELX9560_F22EDCF2" Id="{a4bfd59d-9d58-4a98-8b80-333d9e96f9d9}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX9560-0000-0018'}
 {attribute addProperty BoxType "ELX9560-0000-0018"}
 {attribute addProperty Id "Status_UinAT %I*Status_Uin_627CC56E1Status_UexAT %I*Status_Uex_834F30501WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "4063157490"}
@@ -18,5 +19,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

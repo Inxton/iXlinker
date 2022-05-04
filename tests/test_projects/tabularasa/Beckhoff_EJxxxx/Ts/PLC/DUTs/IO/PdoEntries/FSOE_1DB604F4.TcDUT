@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="FSOE_1DB604F4">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2914-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FSOE_1DB604F4" Id="{86c4d11d-6b4a-4cfb-b2be-261e6c24336d}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2914-0000-0017'}
 {attribute addProperty BoxType "EJ2914-0000-0017"}
 {attribute addProperty Id "FSoE_CommandUSINT1FSOUT_Module_Channel_1_OutputBOOL1FSOUT_Module_Channel_2_OutputBOOL1FSOUT_Module_Channel_3_OutputBOOL1FSOUT_Module_Channel_4_OutputBOOL1FSOUT_Module_ErrAckBOOL1FSoE_CRC_000UINT2FSoE_Connection_IDUINT2"}
 {attribute addProperty CRC "498468084"}
@@ -26,5 +27,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>
