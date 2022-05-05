@@ -1,8 +1,9 @@
-<TcPlcObject>
-	<GVL Name="GVL_iXlinker">
-		<Declaration><![CDATA[{attribute 'qualified_only'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <GVL Name="GVL_iXlinker" Id="{c1372164-39b8-43df-8ad2-c1cefd0f2205}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
 VAR_GLOBAL
 		EtherCAT_Master_AMIxxxx : EtherCAT_Master_AMIxxxx_4A497C8D;
-END_VAR]]></Declaration >
-	</GVL>
+END_VAR]]></Declaration>
+  </GVL>
 </TcPlcObject>

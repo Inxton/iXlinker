@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="ATH2040_41437DDC">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ATH2040-5250-0022'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ATH2040_41437DDC" Id="{827313a0-6d66-4667-a225-fc33c247ce18}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ATH2040-5250-0022'}
 {attribute addProperty BoxType "ATH2040-5250-0022"}
 {attribute addProperty Id "FB_InputsAT %I*FB_Inputs_01C600450FB_OutputsAT %Q*FB_Outputs_DAFD38E02WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "1094942172"}
@@ -18,5 +19,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

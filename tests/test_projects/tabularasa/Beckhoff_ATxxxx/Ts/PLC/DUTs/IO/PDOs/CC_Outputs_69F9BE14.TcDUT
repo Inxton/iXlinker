@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="CC_Outputs_69F9BE14">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2020-0250-0019'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CC_Outputs_69F9BE14" Id="{3862295e-179f-411e-8567-c03e134eb1c4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2020-0250-0019'}
 {attribute addProperty BoxType "AT2020-0250-0019"}
 {attribute addProperty Id "ControlAT %Q*UINT2Current_setpoint_value_ChAT %Q*ARRAY[0..14] OF INT30"}
 {attribute addProperty CRC "3100183749"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

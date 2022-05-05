@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EtcSlaveTerminalBase_947E5A46">
-		<Declaration><![CDATA[
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtcSlaveTerminalBase_947E5A46" Id="{8cab2a0b-3e26-4f4a-99a6-69c53de9b554}">
+    <Declaration><![CDATA[
 {attribute clr[Container(Layout.Stack)]}
 {attribute clr[Group(Layout.GroupBox)]}
 {attribute addProperty PreviousPort "Unknown"}
@@ -9,5 +10,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

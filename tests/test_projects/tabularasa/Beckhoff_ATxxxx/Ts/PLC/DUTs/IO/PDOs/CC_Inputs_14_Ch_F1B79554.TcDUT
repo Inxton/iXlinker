@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="CC_Inputs_14_Ch_F1B79554">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2000-0233-0022'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CC_Inputs_14_Ch_F1B79554" Id="{10e76d0a-75fb-4fb4-a4a8-b7538bd6fdc4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2000-0233-0022'}
 {attribute addProperty BoxType "AT2000-0233-0022"}
 {attribute addProperty Id "StatusAT %I*UINT2Current_actual_value_ChAT %I*ARRAY[0..13] OF INT28"}
 {attribute addProperty CRC "3830004940"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>
