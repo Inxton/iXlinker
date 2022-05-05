@@ -71,10 +71,7 @@ namespace TsprojFile.Scan
 
                     PdoStructViewModel actStruct = new PdoStructViewModel() { Prefix = ValidatePlcItem.Name(slotName) };
                     int slotIndex = slotStructs.FindIndex(info => info.Prefix == actStruct.Prefix);
-                    slotStructs[slotIndex].StructMembers.Add(member);
-                    slotStructs[slotIndex].Id = slotStructs[slotIndex].Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
-                    slotStructs[slotIndex].Size = slotStructs[slotIndex].Size + member.Size;
-
+                    slotStructs[slotIndex].AddMemberAndUpdateIdAndSize(member);
                     foreach (PdoEntryViewModel pdoEntry in pdo.PdoEntriesUnstructured)
                     {
                         pdoViewModels[slotIndex].PdoEntriesUnstructured.Add(pdoEntry);

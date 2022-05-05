@@ -33,9 +33,7 @@ namespace TsprojFile.Scan
                 member.Size = varGrp.Size;
                 member.Index = varGrp.Index;
                 member.IndexNumber = varGrp.IndexNumber;
-                actBoxStruct.StructMembers.Add(member);
-                actBoxStruct.Id = actBoxStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
-                actBoxStruct.Size = actBoxStruct.Size + member.Size;
+                actBoxStruct.AddMemberAndUpdateIdAndSize(member);
 
                 foreach (PdoEntryViewModel pdoEntry in varGrp.PdoEntriesUnstructured)
                 {

@@ -18,6 +18,7 @@ namespace TsprojFile.Scan
                 if (originalType.Equals(specialPlcType.OriginalType))
                 {
                     ret = specialPlcType.ReplacementTypeNamespace + "." + specialPlcType.ReplacementType;
+                    break;
                 }
             }
             return ret;

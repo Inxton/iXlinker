@@ -49,10 +49,7 @@ namespace TsprojFile.Scan
                     member.IndexNumber = pdoEntry.IndexNumber;
                     member.SubIndex = pdoEntry.SubIndex;
                     member.SubIndexNumber = pdoEntry.SubIndexNumber;
-                    actPdoStruct.StructMembers.Add(member);
-                    actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
-                    actPdoStruct.Size = actPdoStruct.Size + member.Size;
-
+                    actPdoStruct.AddMemberAndUpdateIdAndSize(member);
                     foreach (MappableItem mapableItem in pdoEntry.MapableObject.MapableItems)
                     {
                         mapableObject.MapableItems.Add(mapableItem);

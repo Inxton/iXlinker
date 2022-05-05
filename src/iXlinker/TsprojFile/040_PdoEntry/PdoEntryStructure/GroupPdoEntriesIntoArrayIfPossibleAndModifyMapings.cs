@@ -155,9 +155,7 @@ namespace TsprojFile.Scan
                     {
                         ret.BoxOrderCode = member.BoxOrderCode;
                     }
-                    ret.StructMembers.Add(member);
-                    ret.Id = ret.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
-                    ret.Size = ret.Size + member.Size;
+                    ret.AddMemberAndUpdateIdAndSize(member);
                 }
 
                 ret.Crc32 = CRC32.Calculate_CRC32(ret.Id);

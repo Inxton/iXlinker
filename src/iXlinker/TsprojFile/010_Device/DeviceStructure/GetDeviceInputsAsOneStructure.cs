@@ -61,9 +61,7 @@ namespace TsprojFile.Scan
                 member.IndexNumber = pdoEntry.IndexNumber;
                 member.SubIndex = pdoEntry.SubIndex;
                 member.SubIndexNumber = pdoEntry.SubIndexNumber;
-                actPdoStruct.StructMembers.Add(member);
-                actPdoStruct.Id = actPdoStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
-                actPdoStruct.Size = actPdoStruct.Size + member.Size;
+                actPdoStruct.AddMemberAndUpdateIdAndSize(member);
 
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
                 MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = pdoEntry.VarA, VarB = pdoEntry.VarB};

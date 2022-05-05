@@ -108,9 +108,7 @@ namespace TsprojFile.Scan
                                 member.TypeNamespace = varUnstructured.TypeNamespace;
                                 member.Size = PlcBaseTypes.GetSize(baseType);
                                 member.SubIndexNumber = varUnstructured.SubIndexNumber;
-                                actVarStruct.StructMembers.Add(member);
-                                actVarStruct.Id = actVarStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
-                                actVarStruct.Size = actVarStruct.Size + member.Size;
+                                actVarStruct.AddMemberAndUpdateIdAndSize(member);
                             }
                         }
                         else
@@ -121,9 +119,7 @@ namespace TsprojFile.Scan
                             member.Type_Value = baseType;
                             member.Size = PlcBaseTypes.GetSize(baseType);
                             member.SubIndexNumber = varUnstructured.SubIndexNumber;
-                            actVarStruct.StructMembers.Add(member);
-                            actVarStruct.Id = actVarStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
-                            actVarStruct.Size = actVarStruct.Size + member.Size;
+                            actVarStruct.AddMemberAndUpdateIdAndSize(member);
                         }
                     }
                     else
@@ -134,9 +130,7 @@ namespace TsprojFile.Scan
                         member.Type_Value = varUnstructured.Type_Value;
                         member.Size = PlcBaseTypes.GetSize(varUnstructured.Type_Value);
                         member.SubIndexNumber = varUnstructured.SubIndexNumber;
-                        actVarStruct.StructMembers.Add(member);
-                        actVarStruct.Id = actVarStruct.Id + member.NameA + member.InOutPlcProj + member.Type_Value + member.Size;
-                        actVarStruct.Size = actVarStruct.Size + member.Size;
+                        actVarStruct.AddMemberAndUpdateIdAndSize(member);
                     }
                     if(varUnstructured.Name != null && varUnstructured.Name.Contains("__"))
                     {  

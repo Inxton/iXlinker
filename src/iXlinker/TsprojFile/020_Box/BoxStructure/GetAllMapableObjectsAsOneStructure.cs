@@ -52,9 +52,7 @@ namespace TsprojFile.Scan
                         member.Type_Value = mapableObject.Type_Value;
                         member.TypeNamespace= mapableObject.TypeNamespace;
                         member.Size = mapableObject.Size;
-                        actTopologyStruct.StructMembers.Add(member);
-                        actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
-                        actTopologyStruct.Size = actTopologyStruct.Size + member.Size;
+                        actTopologyStruct.AddMemberAndUpdateIdAndSize(member);
 
                         foreach (MappableItem mapableItem in mapableObject.MapableItems)
                         {
@@ -146,9 +144,10 @@ namespace TsprojFile.Scan
                         member.Type_Value = ValidatePlcItem.Type(mapableObject.Type_Value);
                         member.TypeNamespace =mapableObject.TypeNamespace;
                         member.Size = mapableObject.Size;
-                        actTopologyStruct.StructMembers.Add(member);
-                        actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
-                        actTopologyStruct.Size = actTopologyStruct.Size + member.Size;
+                        actTopologyStruct.AddMemberAndUpdateIdAndSize(member);
+                        //actTopologyStruct.StructMembers.Add(member);
+                        //actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                        //actTopologyStruct.Size = actTopologyStruct.Size + member.Size;
                     }
 
                     foreach (MappableItem mapableItem in mapableObject.MapableItems)

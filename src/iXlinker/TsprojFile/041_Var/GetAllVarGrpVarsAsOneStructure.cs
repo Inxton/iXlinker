@@ -48,10 +48,7 @@ namespace TsprojFile.Scan
                 member.IndexNumber = _var.IndexNumber;
                 member.SubIndex = _var.SubIndex;
                 member.SubIndexNumber = _var.SubIndexNumber;
-                actVarGrpStruct.StructMembers.Add(member);
-                actVarGrpStruct.Id = actVarGrpStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
-                actVarGrpStruct.Size = actVarGrpStruct.Size + member.Size;
-
+                actVarGrpStruct.AddMemberAndUpdateIdAndSize(member);
                 string varAprefix = Context + " " + member.InOutMappings + tmpLevelSeparator + NameOfTheExportedGVL + tmpLevelSeparator + (member.OwnerBname).Replace("TIID" + tmpLevelSeparator, "");
                 MappableItem mapableItem = new MappableItem() { VarAprefix = varAprefix, OwnerBname = member.OwnerBname, VarA = _var.VarA, VarB = _var.VarB };
                 mapableObject.MapableItems.Add(mapableItem);
