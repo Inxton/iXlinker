@@ -64,7 +64,7 @@ namespace TsprojFile.Scan
             PdoViewModel Outputs = new PdoViewModel(); ;
             if (OutputEntries.Count > 0)
             {
-                AddPdoStructureToTheExportList(actPdoStruct);
+                AddPdoStructureToTheExportList(actPdoStruct, true);
 
                 PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
                 Outputs.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);

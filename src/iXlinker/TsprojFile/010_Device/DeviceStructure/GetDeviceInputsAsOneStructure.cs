@@ -70,7 +70,7 @@ namespace TsprojFile.Scan
             PdoViewModel Inputs = new PdoViewModel(); ;
             if (InputEntries.Count > 0)
             {
-                AddPdoStructureToTheExportList(actPdoStruct);
+                AddPdoStructureToTheExportList(actPdoStruct, true);
 
                 PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
                 Inputs.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);

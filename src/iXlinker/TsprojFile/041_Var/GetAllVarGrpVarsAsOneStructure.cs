@@ -54,7 +54,7 @@ namespace TsprojFile.Scan
                 mapableObject.MapableItems.Add(mapableItem);
             }
 
-            AddPdoStructureToTheExportList(actVarGrpStruct);
+            AddPdoStructureToTheExportList(actVarGrpStruct,true);
 
             //create varGrp of the structured type
             PdoStructMemberViewModel firstStructMember = actVarGrpStruct.StructMembers.FirstOrDefault();

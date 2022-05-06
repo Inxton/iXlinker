@@ -98,7 +98,7 @@ namespace TsprojFile.Scan
                 ValidatePdoStructMemberNamesUniqueness(ref actSlotStruct);
                 if (actSlotStruct.StructMembers.Count > 0)
                 {
-                    AddPdoStructureToTheExportList(actSlotStruct);
+                    AddPdoStructureToTheExportList(actSlotStruct,true);
 
                     PdoStructMemberViewModel firstStructMember = actSlotStruct.StructMembers.FirstOrDefault();
                     pdoViewModels[i].Name = ValidatePlcItem.Name(actSlotStruct.Prefix);

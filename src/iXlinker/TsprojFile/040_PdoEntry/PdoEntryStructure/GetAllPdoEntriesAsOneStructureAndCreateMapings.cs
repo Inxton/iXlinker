@@ -68,16 +68,10 @@ namespace TsprojFile.Scan
                 actPdoStruct.Id = emptyStructure;
                 actPdoStruct.Crc32 = 0;
             }
+
             GroupPdoEntriesIntoArrayIfPossibleAndModifyMapings(ref actPdoStruct, ref pdoViewModel);
 
-            //Check if such an structure exists
-            if (CheckIfPdoStructureDoesNotExist(actPdoStruct))
-            {
-                //if not add to the structure list
-                AddExtensionFromBasePdoStructure(actPdoStruct);
-                PdoStructures.Add(actPdoStruct);
-            }
-            //AddPdoStructureToTheExportList(actPdoStruct);
+            AddPdoStructureToTheExportList(actPdoStruct,false);
 
             //create pdo of the structured type
             mapableObject.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);

@@ -62,7 +62,7 @@ namespace TsprojFile.Scan
             }
             if (InfoDataEntries.Count > 0)
             {
-                AddPdoStructureToTheExportList(actPdoStruct);
+                AddPdoStructureToTheExportList(actPdoStruct, true);
 
                 PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
                 InfoData.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);

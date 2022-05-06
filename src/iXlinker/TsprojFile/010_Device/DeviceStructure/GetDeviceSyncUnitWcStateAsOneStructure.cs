@@ -60,7 +60,7 @@ namespace TsprojFile.Scan
 
             if (WcStateEntries.Count > 0)
             {
-                AddPdoStructureToTheExportList(actPdoStruct);
+                AddPdoStructureToTheExportList(actPdoStruct, true);
 
                 PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
                 WcState.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);

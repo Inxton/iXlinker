@@ -6,13 +6,15 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddPdoStructureToTheExportList(PdoStructViewModel actPdoStruct)
+        private void AddPdoStructureToTheExportList(PdoStructViewModel actPdoStruct , bool calculateCRC32)
         {
             ValidatePdoStructMemberNamesUniqueness(ref actPdoStruct);
             //Calculate CRC of the actPdoStruct.Id
-            actPdoStruct.Crc32 = CRC32.Calculate_CRC32(actPdoStruct.Id);
-            actPdoStruct.Name = ValidatePlcItem.Name(actPdoStruct.Prefix + "_" + actPdoStruct.Crc32.ToString("X8"));
-
+            if(calculateCRC32)
+            { 
+                actPdoStruct.Crc32 = CRC32.Calculate_CRC32(actPdoStruct.Id);
+                actPdoStruct.Name = ValidatePlcItem.Name(actPdoStruct.Prefix + "_" + actPdoStruct.Crc32.ToString("X8"));
+            }
             ReplacePdoStructureNameByItsReplacement(actPdoStruct);
             AddExtensionFromBasePdoStructure(actPdoStruct);
 
