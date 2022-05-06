@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Outputs_D8BAB3B3">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: BK1250-0000-0019'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Outputs_D8BAB3B3" Id="{16d0067f-5a5c-47f4-b09c-69b50e0ee1a1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: BK1250-0000-0019'}
 {attribute addProperty BoxType "BK1250-0000-0019"}
 {attribute addProperty Id "CouplerCtrlAT %I*UINT0"}
 {attribute addProperty CRC "3636114355"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

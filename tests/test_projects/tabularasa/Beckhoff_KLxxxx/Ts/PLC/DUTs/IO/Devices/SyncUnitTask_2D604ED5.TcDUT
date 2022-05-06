@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="SyncUnitTask_2D604ED5">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="SyncUnitTask_2D604ED5" Id="{fca9fc22-f177-44fc-8d02-c9347254b263}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_2A97D6CF8"}
 {attribute addProperty CRC "761286357"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

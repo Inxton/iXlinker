@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="KL_6576A681">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL8610'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL_6576A681" Id="{987dbb26-2b00-4268-a93c-896b41597aab}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL8610'}
 {attribute addProperty BoxType "KL8610"}
 {attribute addProperty Id "StateAT %I*USINT0Data_InAT %I*INT0CtrlAT %Q*USINT0Data_OutAT %Q*INT0"}
 {attribute addProperty CRC "1702274689"}
@@ -18,5 +19,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="KL2032_DCA75612">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2032'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL2032_DCA75612" Id="{3fe7e4bb-ba3e-493b-8dba-69e602923558}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2032'}
 {attribute addProperty BoxType "KL2032"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_460B8C400Channel_2AT %Q*Channel_460B8C400"}
 {attribute addProperty CRC "3701954066"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

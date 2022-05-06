@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="ER3314_0E0DF94E" Id="{c9287bae-09ea-4e76-ac0a-5ed8d2000ed8}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER3314-0002-0021'}
+{attribute addProperty BoxType "ER3314-0002-0021"}
+{attribute addProperty Id "TC_Inputs_Channel_1AT %I*AI_Standard_Channel_4A3944819TC_Inputs_Channel_2AT %I*AI_Standard_Channel_4A3944819TC_Inputs_Channel_3AT %I*AI_Standard_Channel_4A3944819TC_Inputs_Channel_4AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_94A18F5E2"}
+{attribute addProperty CRC "235796814"}
+{attribute addProperty Size "40"}
+TYPE ER3314_0E0DF94E EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "TC_Inputs_Channel_1"}
+	TC_Inputs_Channel_1 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "TC_Inputs_Channel_2"}
+	TC_Inputs_Channel_2 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "TC_Inputs_Channel_3"}
+	TC_Inputs_Channel_3 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "TC_Inputs_Channel_4"}
+	TC_Inputs_Channel_4 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_94A18F5E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

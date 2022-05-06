@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Channel_FEA3DBF8">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2531'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_FEA3DBF8" Id="{d353bb28-e440-48b3-aac9-60b2a22d9479}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2531'}
 {attribute addProperty BoxType "KL2531"}
 {attribute addProperty Id "StatusAT %I*USINT0PositionAT %I*UINT0ExtStatusAT %I*UINT0CtrlAT %Q*USINT0VelocityAT %Q*INT0ExtCtrlAT %Q*UINT0"}
 {attribute addProperty CRC "4272151544"}
@@ -22,5 +23,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

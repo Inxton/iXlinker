@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="COM_RxPDO_Map_Outputs_Channel_EADA2E0D" Id="{1cd6440a-ead9-4a08-b724-6538911d4b3f}">
+  <DUT Name="COM_RxPDO_Map_Outputs_Channel_EADA2E0D" Id="{44843c13-83b0-4ae4-a03f-0d729e40497b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6002-0000-0017'}
 {attribute addProperty BoxType "EL6002-0000-0017"}
 {attribute addProperty Id "CtrlAT %Q*Ctrl_1EFB4D3B5Data_OutAT %Q*ARRAY[0..21] OF USINT22"}
 {attribute addProperty CRC "3494673196"}
 {attribute addProperty Size "27"}
-TYPE COM_RxPDO_Map_Outputs_Channel_EADA2E0D :
+TYPE COM_RxPDO_Map_Outputs_Channel_EADA2E0D EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Ctrl"}
 	Ctrl AT %Q* : Ctrl_1EFB4D3B;

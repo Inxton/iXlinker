@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EP4xxxEK1122_BC01358E" Id="{0687f8fd-4c97-405e-a7bb-68585c681ed0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
+{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "Beckhoff_EP4xxxsub_EK1100EK1100_1FC0878B2A_0001_EP4174_0002_0016EP4174_EB925BA911A_0002_EP4174_0002_0017EP4174_EB925BA911A_0003_EP4174_0002_0018EP4174_EB925BA911A_0004_EP4174_0002_0019EP4174_EB925BA911A_0005_EP4314_1002_0016EP4314_14CD744030A_0006_EP4374_0002_0016EP4374_36CD753728A_0007_EP4374_0002_0017EP4374_42492B0B28A_0008_EP4374_0002_0018EP4374_42492B0B28A_0009_EP4374_0002_0019EP4374_42492B0B28A_0010_EP4378_1022_0017EP4378_FB41671B68"}
+{attribute addProperty CRC "3154195854"}
+{attribute addProperty Size "256"}
+TYPE Beckhoff_EP4xxxEK1122_BC01358E EXTENDS EK1122_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EP4xxxsub_EK1100"}
+	{attribute addProperty PreviousPort "Beckhoff EP4xxxEK1122 : D"}
+	Beckhoff_EP4xxxsub_EK1100 : EK1100_1FC0878B;
+	{attribute addProperty Name "A_0001_EP4174_0002_0016"}
+	{attribute addProperty PreviousPort "Beckhoff EP4xxxsub EK1100 : C"}
+	A_0001_EP4174_0002_0016 : EP4174_EB925BA9;
+	{attribute addProperty Name "A_0002_EP4174_0002_0017"}
+	{attribute addProperty PreviousPort "A_0001(EP4174-0002-0016) : B"}
+	A_0002_EP4174_0002_0017 : EP4174_EB925BA9;
+	{attribute addProperty Name "A_0003_EP4174_0002_0018"}
+	{attribute addProperty PreviousPort "A_0002(EP4174-0002-0017) : B"}
+	A_0003_EP4174_0002_0018 : EP4174_EB925BA9;
+	{attribute addProperty Name "A_0004_EP4174_0002_0019"}
+	{attribute addProperty PreviousPort "A_0003(EP4174-0002-0018) : B"}
+	A_0004_EP4174_0002_0019 : EP4174_EB925BA9;
+	{attribute addProperty Name "A_0005_EP4314_1002_0016"}
+	{attribute addProperty PreviousPort "A_0004(EP4174-0002-0019) : B"}
+	A_0005_EP4314_1002_0016 : EP4314_14CD7440;
+	{attribute addProperty Name "A_0006_EP4374_0002_0016"}
+	{attribute addProperty PreviousPort "A_0005(EP4314-1002-0016) : B"}
+	A_0006_EP4374_0002_0016 : EP4374_36CD7537;
+	{attribute addProperty Name "A_0007_EP4374_0002_0017"}
+	{attribute addProperty PreviousPort "A_0006(EP4374-0002-0016) : B"}
+	A_0007_EP4374_0002_0017 : EP4374_42492B0B;
+	{attribute addProperty Name "A_0008_EP4374_0002_0018"}
+	{attribute addProperty PreviousPort "A_0007(EP4374-0002-0017) : B"}
+	A_0008_EP4374_0002_0018 : EP4374_42492B0B;
+	{attribute addProperty Name "A_0009_EP4374_0002_0019"}
+	{attribute addProperty PreviousPort "A_0008(EP4374-0002-0018) : B"}
+	A_0009_EP4374_0002_0019 : EP4374_42492B0B;
+	{attribute addProperty Name "A_0010_EP4378_1022_0017"}
+	{attribute addProperty PreviousPort "A_0009(EP4374-0002-0019) : B"}
+	A_0010_EP4378_1022_0017 : EP4378_FB41671B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

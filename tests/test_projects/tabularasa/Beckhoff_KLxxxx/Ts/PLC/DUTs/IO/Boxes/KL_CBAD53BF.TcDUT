@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="KL_CBAD53BF">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2018-0020'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="KL_CBAD53BF" Id="{0dae0a42-f431-4133-907c-4a6c0c6162ea}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2018-0020'}
 {attribute addProperty BoxType "KL2018-0020"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_460B8C400Channel_2AT %Q*Channel_460B8C400Channel_3AT %Q*Channel_460B8C400Channel_4AT %Q*Channel_460B8C400Channel_5AT %Q*Channel_460B8C400Channel_6AT %Q*Channel_460B8C400Channel_7AT %Q*Channel_460B8C400Channel_8AT %Q*Channel_460B8C400"}
 {attribute addProperty CRC "3417134015"}
@@ -26,5 +27,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

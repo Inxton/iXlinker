@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_ELxxxx_AC10C052" Id="{f1e9c446-4f5c-4911-bfed-44931812fe65}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_EL1xxxBeckhoff_EL1xxx_E53419E76188Beckhoff_EL2xxxBeckhoff_EL2xxx_888707842840Beckhoff_EL3xxxBeckhoff_EL3xxx_B327966B1493Beckhoff_EL3xxx_0030Beckhoff_EL3xxx_0030_862B38F8209Beckhoff_EL4xxxBeckhoff_EL4xxx_897C084E1325Beckhoff_EL5xxxBeckhoff_EL5xxx_F1766D3B2398Beckhoff_EL6xxxBeckhoff_EL6xxx_84B2C6573667Beckhoff_EL7xxxBeckhoff_EL7xxx_5CEF3B582242Beckhoff_EL9xxxBeckhoff_EL9xxx_6E0F67B11046Beckhoff_EL15xxBeckhoff_EL15xx_6F54255F409Beckhoff_EL19xxBeckhoff_EL19xx_4D0B455442Beckhoff_EL25xxBeckhoff_EL25xx_0189423D2032Beckhoff_EL29xxBeckhoff_EL29xx_83454F7E60Beckhoff_EL30xxBeckhoff_EL30xx_81C0C2454129Beckhoff_EL31xxBeckhoff_EL31xx_81D10F452850Beckhoff_EL32xxBeckhoff_EL32xx_E63009F22021Beckhoff_EL33xxBeckhoff_EL33xx_52D9F7941931Beckhoff_EL34xxBeckhoff_EL34xx_4782681310969Beckhoff_EL37xxBeckhoff_EL37xx_066584A82101Beckhoff_EL47xxBeckhoff_EL47xx_F9F61196294Beckhoff_EL66xxBeckhoff_EL66xx_AB05B570446Beckhoff_EL67xxBeckhoff_EL67xx_411843E2148Beckhoff_EL68xxBeckhoff_EL68xx_9FCA11C33509Beckhoff_EL69xxBeckhoff_EL69xx_98B0B14C110Beckhoff_EL72xxBeckhoff_EL72xx_33400A612567Beckhoff_EL73xxBeckhoff_EL73xx_BFA903EC1126Beckhoff_EL99xxBeckhoff_EL99xx_FA66A12D10SyncUnitsSyncUnits_9F8710E11242InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_C76BEFB322"}
+{attribute addProperty CRC "2886778962"}
+{attribute addProperty Size "57692"}
+TYPE EtherCAT_Master_ELxxxx_AC10C052 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EL1xxx"}
+	{attribute addProperty PreviousPort "EtherCAT_Master_ELxxxx : Master"}
+	Beckhoff_EL1xxx : Beckhoff_EL1xxx_E53419E7;
+	{attribute addProperty Name "Beckhoff_EL2xxx"}
+	{attribute addProperty PreviousPort "Beckhoff EL1xxx : C"}
+	Beckhoff_EL2xxx : Beckhoff_EL2xxx_88870784;
+	{attribute addProperty Name "Beckhoff_EL3xxx"}
+	{attribute addProperty PreviousPort "Beckhoff EL2xxx : C"}
+	Beckhoff_EL3xxx : Beckhoff_EL3xxx_B327966B;
+	{attribute addProperty Name "Beckhoff_EL3xxx_0030"}
+	{attribute addProperty PreviousPort "Beckhoff EL3xxx : C"}
+	Beckhoff_EL3xxx_0030 : Beckhoff_EL3xxx_0030_862B38F8;
+	{attribute addProperty Name "Beckhoff_EL4xxx"}
+	{attribute addProperty PreviousPort "Beckhoff EL3xxx-0030 : C"}
+	Beckhoff_EL4xxx : Beckhoff_EL4xxx_897C084E;
+	{attribute addProperty Name "Beckhoff_EL5xxx"}
+	{attribute addProperty PreviousPort "Beckhoff EL4xxx : C"}
+	Beckhoff_EL5xxx : Beckhoff_EL5xxx_F1766D3B;
+	{attribute addProperty Name "Beckhoff_EL6xxx"}
+	{attribute addProperty PreviousPort "Beckhoff EL5xxx : C"}
+	Beckhoff_EL6xxx : Beckhoff_EL6xxx_84B2C657;
+	{attribute addProperty Name "Beckhoff_EL7xxx"}
+	{attribute addProperty PreviousPort "Beckhoff EL6xxx : C"}
+	Beckhoff_EL7xxx : Beckhoff_EL7xxx_5CEF3B58;
+	{attribute addProperty Name "Beckhoff_EL9xxx"}
+	{attribute addProperty PreviousPort "Beckhoff EL7xxx : C"}
+	Beckhoff_EL9xxx : Beckhoff_EL9xxx_6E0F67B1;
+	{attribute addProperty Name "Beckhoff_EL15xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL9xxx : C"}
+	Beckhoff_EL15xx : Beckhoff_EL15xx_6F54255F;
+	{attribute addProperty Name "Beckhoff_EL19xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL15xx : C"}
+	Beckhoff_EL19xx : Beckhoff_EL19xx_4D0B4554;
+	{attribute addProperty Name "Beckhoff_EL25xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL19xx : C"}
+	Beckhoff_EL25xx : Beckhoff_EL25xx_0189423D;
+	{attribute addProperty Name "Beckhoff_EL29xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL25xx : C"}
+	Beckhoff_EL29xx : Beckhoff_EL29xx_83454F7E;
+	{attribute addProperty Name "Beckhoff_EL30xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL29xx : C"}
+	Beckhoff_EL30xx : Beckhoff_EL30xx_81C0C245;
+	{attribute addProperty Name "Beckhoff_EL31xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL30xx : C"}
+	Beckhoff_EL31xx : Beckhoff_EL31xx_81D10F45;
+	{attribute addProperty Name "Beckhoff_EL32xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL31xx : C"}
+	Beckhoff_EL32xx : Beckhoff_EL32xx_E63009F2;
+	{attribute addProperty Name "Beckhoff_EL33xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL32xx : C"}
+	Beckhoff_EL33xx : Beckhoff_EL33xx_52D9F794;
+	{attribute addProperty Name "Beckhoff_EL34xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL33xx : C"}
+	Beckhoff_EL34xx : Beckhoff_EL34xx_47826813;
+	{attribute addProperty Name "Beckhoff_EL37xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL34xx : C"}
+	Beckhoff_EL37xx : Beckhoff_EL37xx_066584A8;
+	{attribute addProperty Name "Beckhoff_EL47xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL37xx : C"}
+	Beckhoff_EL47xx : Beckhoff_EL47xx_F9F61196;
+	{attribute addProperty Name "Beckhoff_EL66xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL47xx : C"}
+	Beckhoff_EL66xx : Beckhoff_EL66xx_AB05B570;
+	{attribute addProperty Name "Beckhoff_EL67xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL66xx : C"}
+	Beckhoff_EL67xx : Beckhoff_EL67xx_411843E2;
+	{attribute addProperty Name "Beckhoff_EL68xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL67xx : C"}
+	Beckhoff_EL68xx : Beckhoff_EL68xx_9FCA11C3;
+	{attribute addProperty Name "Beckhoff_EL69xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL68xx : C"}
+	Beckhoff_EL69xx : Beckhoff_EL69xx_98B0B14C;
+	{attribute addProperty Name "Beckhoff_EL72xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL69xx : C"}
+	Beckhoff_EL72xx : Beckhoff_EL72xx_33400A61;
+	{attribute addProperty Name "Beckhoff_EL73xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL72xx : C"}
+	Beckhoff_EL73xx : Beckhoff_EL73xx_BFA903EC;
+	{attribute addProperty Name "Beckhoff_EL99xx"}
+	{attribute addProperty PreviousPort "Beckhoff EL73xx : C"}
+	Beckhoff_EL99xx : Beckhoff_EL99xx_FA66A12D;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_9F8710E1;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_25A0042B;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_2397A10E;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_C76BEFB3;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

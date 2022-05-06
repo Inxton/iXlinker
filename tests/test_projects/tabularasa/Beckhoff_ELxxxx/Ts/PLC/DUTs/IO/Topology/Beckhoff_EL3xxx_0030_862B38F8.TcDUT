@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EL3xxx_0030_862B38F8" Id="{3a331007-c8a4-40ac-8f67-ab527a3571ad}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_EL3xxx_0030EK1122Beckhoff_EL3xxx_0030EK1122_55DAE3CA2A_0001_EL3174_0030_0016EL3174_BE8A5C9E44A_0002_EL3314_0030_0021EL3314_0E22E2FB40A_0003_EL3681_0030_0021EL3681_9137925424A_0004_EL3201_0030_0022EL3201_CE4554FB13A_0005_EL3202_0030_0022EL3202_C88B586A22A_0006_EL3356_0030_0025EL3356_D0D81AD820A_0007_EL3692_0030_0021EL3692_0035731744"}
+{attribute addProperty CRC "2250979576"}
+{attribute addProperty Size "209"}
+TYPE Beckhoff_EL3xxx_0030_862B38F8 EXTENDS EK1100_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EL3xxx_0030EK1122"}
+	{attribute addProperty PreviousPort "Beckhoff EL3xxx-0030 : B"}
+	Beckhoff_EL3xxx_0030EK1122 : Beckhoff_EL3xxx_0030EK1122_55DAE3CA;
+	{attribute addProperty Name "A_0001_EL3174_0030_0016"}
+	{attribute addProperty PreviousPort "Beckhoff EL3xxx-0030EK1122 : C"}
+	A_0001_EL3174_0030_0016 : EL3174_BE8A5C9E;
+	{attribute addProperty Name "A_0002_EL3314_0030_0021"}
+	{attribute addProperty PreviousPort "A_0001(EL3174-0030-0016) : B"}
+	A_0002_EL3314_0030_0021 : EL3314_0E22E2FB;
+	{attribute addProperty Name "A_0003_EL3681_0030_0021"}
+	{attribute addProperty PreviousPort "A_0002(EL3314-0030-0021) : B"}
+	A_0003_EL3681_0030_0021 : EL3681_91379254;
+	{attribute addProperty Name "A_0004_EL3201_0030_0022"}
+	{attribute addProperty PreviousPort "A_0003(EL3681-0030-0021) : B"}
+	A_0004_EL3201_0030_0022 : EL3201_CE4554FB;
+	{attribute addProperty Name "A_0005_EL3202_0030_0022"}
+	{attribute addProperty PreviousPort "A_0004(EL3201-0030-0022) : B"}
+	A_0005_EL3202_0030_0022 : EL3202_C88B586A;
+	{attribute addProperty Name "A_0006_EL3356_0030_0025"}
+	{attribute addProperty PreviousPort "A_0005(EL3202-0030-0022) : B"}
+	A_0006_EL3356_0030_0025 : EL3356_D0D81AD8;
+	{attribute addProperty Name "A_0007_EL3692_0030_0021"}
+	{attribute addProperty PreviousPort "A_0006(EL3356-0030-0025) : B"}
+	A_0007_EL3692_0030_0021 : EL3692_00357317;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

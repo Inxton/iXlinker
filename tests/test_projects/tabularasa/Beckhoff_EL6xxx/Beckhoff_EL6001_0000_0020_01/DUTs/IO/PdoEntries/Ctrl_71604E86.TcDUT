@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Ctrl_71604E86">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Ctrl_71604E86" Id="{39f3bd50-f6e2-4ad9-828c-0a2aacb22d83}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
 {attribute addProperty BoxType "EL6001-0000-0020"}
 {attribute addProperty Id "Transmit_requestBOOL1Receive_acceptedBOOL1Init_requestBOOL1Send_continuesBOOL1Output_lengthUSINT1"}
 {attribute addProperty CRC "1902136966"}
@@ -20,5 +21,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Channel_64AAC8C7">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9110'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_64AAC8C7" Id="{a8a01b92-4af4-46b7-8cd1-83de4ef2f268}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9110'}
 {attribute addProperty BoxType "KL9110"}
 {attribute addProperty Id "PowerAT %I*BOOL0ShortCircuitAT %I*BOOL0"}
 {attribute addProperty CRC "1688914119"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

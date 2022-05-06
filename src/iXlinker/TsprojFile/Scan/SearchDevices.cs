@@ -35,6 +35,8 @@ namespace TsprojFile.Scan
             FillStructureBaseResourseDictionary();
             //Fill the list of the PLC structures that need to replaced by the replicated structures
             FillSpecialPlcTypesReplacementDictionary();
+            //Fill the list of the PDO structures that need to replaced as its content is identical
+            FillPdoStructuresReplacementDictionary();
 
             EventLogger.Instance.Logger.Information(@"Reading IO devices in the XAE project: ""{0}""!!!", vs.TsProject.Name);
             TcSmProjectProjectPlcProject plcProj = new TcSmProjectProjectPlcProject();

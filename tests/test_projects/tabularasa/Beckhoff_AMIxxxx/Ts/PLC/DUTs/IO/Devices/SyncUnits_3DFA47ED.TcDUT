@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="SyncUnits_3DFA47ED" Id="{bd0f249b-355c-4f33-9f9e-bbf1f31b6038}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: '}
+<TcPlcObject>
+	<DUT Name="SyncUnits_3DFA47ED">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: '}
 {attribute addProperty BoxType ""}
 {attribute addProperty Id "_defaultAT %I*SyncUnitTasks_D3C9946A27"}
 {attribute addProperty CRC "1039812589"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

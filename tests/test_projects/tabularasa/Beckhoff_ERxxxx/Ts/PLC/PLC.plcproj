@@ -135,13 +135,10 @@
     <Compile Include="DUTs\IO\PDOs\RTD_RTDInputs_Channel_A8DF64E3.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\PDOs\RTD_RTDInputs_Channel_4A394481.TcDUT">
+    <Compile Include="DUTs\IO\PDOs\AI_Standard_Channel_4A394481.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\PDOs\TC_Inputs_Channel_4A394481.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DUTs\IO\PDOs\AO_Outputs_Channel_BA7EBB7C.TcDUT">
+    <Compile Include="DUTs\IO\PDOs\AO_Output_Channel_BA7EBB7C.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\PDOs\AI_Inputs_Channel_A8DF64E3.TcDUT">
@@ -318,16 +315,16 @@
     <Compile Include="DUTs\IO\Boxes\ER3204_09993524.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\ER3204_5BD77725.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\ER3204_5F3CD6E0.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\ER3314_98626A31.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\ER3314_0E0DF94E.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\ER4174_4A1E805A.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\ER4174_EB925BA9.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\ER4374_87C2517B.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\ER4374_42492B0B.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Boxes\ER5101_035DC46B.TcDUT">
@@ -378,16 +375,16 @@
     <Compile Include="DUTs\IO\Topology\Beckhoff_ER2xxx_DC95CE44.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_ER3xxxEK1122_FC5AAA23.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_ER3xxxEK1122_F460F72F.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_ER3xxx_BE1A9A27.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_ER3xxx_28EA77F5.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_ER4xxxEK1122_A814343A.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_ER4xxxEK1122_D7F64BCE.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_ER4xxx_CB8AF3F0.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_ER4xxx_F39C2750.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Topology\Beckhoff_ER5xxxEK1122_4863E8E6.TcDUT">
@@ -414,7 +411,7 @@
     <Compile Include="DUTs\IO\Topology\Beckhoff_ER8xxx_177550BF.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\EtherCAT_Master_ERxxxx_C27A2F0F.TcDUT">
+    <Compile Include="DUTs\IO\Topology\EtherCAT_Master_ERxxxx_9BCC69C2.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\EtcSlaveTerminalBase_947E5A46.TcDUT">
@@ -427,6 +424,30 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">

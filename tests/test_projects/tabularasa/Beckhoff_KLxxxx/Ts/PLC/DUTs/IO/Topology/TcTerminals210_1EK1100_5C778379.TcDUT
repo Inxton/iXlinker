@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="TcTerminals210_1EK1100_5C778379">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="TcTerminals210_1EK1100_5C778379" Id="{5d875a01-c73a-49d3-bf7d-035118cf5f13}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
 {attribute addProperty BoxType "EK1100-0000-0018"}
 {attribute addProperty Id "TcTerminals210_1BK1250TcTerminals210_1BK1250_A7ABB5AA0"}
 {attribute addProperty CRC "1551336313"}
@@ -13,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

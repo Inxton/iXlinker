@@ -195,10 +195,7 @@
     <Compile Include="DUTs\IO\PDOs\RTD_RTDInputs_Channel_A8DF64E3.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\PDOs\RTD_RTDInputs_Channel_4A394481.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DUTs\IO\PDOs\TC_Inputs_Channel_4A394481.TcDUT">
+    <Compile Include="DUTs\IO\PDOs\AI_Standard_Channel_4A394481.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\PDOs\Ch1_Status_75824485.TcDUT">
@@ -240,16 +237,10 @@
     <Compile Include="DUTs\IO\PDOs\AI_Inputs_Channel_5A86716D.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\PDOs\AO_Outputs_Channel_BA7EBB7C.TcDUT">
+    <Compile Include="DUTs\IO\PDOs\AO_Output_Channel_BA7EBB7C.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\PDOs\DI_Inputs_1F3A9325.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DUTs\IO\PDOs\AI_Standard_Channel_4A394481.TcDUT">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DUTs\IO\PDOs\AO_Standard_Channel_BA7EBB7C.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\PDOs\AI_Inputs_Channel_A8DF64E3.TcDUT">
@@ -489,10 +480,10 @@
     <Compile Include="DUTs\IO\Boxes\EPP3204_09993524.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EPP3204_5BD77725.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EPP3204_5F3CD6E0.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EPP3314_98626A31.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EPP3314_0E0DF94E.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Boxes\EPP3632_6BE1E22C.TcDUT">
@@ -504,13 +495,13 @@
     <Compile Include="DUTs\IO\Boxes\EPP3752_5E5AA0E4.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EPP4174_4A1E805A.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EPP4174_EB925BA9.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EPP4314_EC3AE27B.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EPP4314_14CD7440.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EPP4374_87C2517B.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EPP4374_42492B0B.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Boxes\EPP5001_99DBD72E.TcDUT">
@@ -597,16 +588,16 @@
     <Compile Include="DUTs\IO\Topology\Beckhoff_EPP2xxx_CC9FFF9D.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_EPP3xxxEK1122_56CB9FB3.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_EPP3xxxEK1122_E46F4483.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_EPP3xxx_6AF20696.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_EPP3xxx_4631FCE9.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_EPP4xxxEK1122_7B2A71B7.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_EPP4xxxEK1122_A3CF6D4E.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_EPP4xxx_F9671039.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_EPP4xxx_870717BD.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Topology\Beckhoff_EPP5xxxEK1122_A42C9514.TcDUT">
@@ -633,7 +624,7 @@
     <Compile Include="DUTs\IO\Topology\Beckhoff_EPP9xxx_2BBF558F.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\EtherCAT_Master_EPPxxxx_A19A478E.TcDUT">
+    <Compile Include="DUTs\IO\Topology\EtherCAT_Master_EPPxxxx_CD6B700E.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\EtcSlaveTerminalBase_947E5A46.TcDUT">
@@ -646,6 +637,30 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
