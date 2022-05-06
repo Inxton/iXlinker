@@ -373,3 +373,25 @@ WRN | 5/5/2022 4:11:45 PM 765 ms | 'TwinCAT XAE': Project 'PLC' build for platfo
 Error: The operation could not be completed. Unspecified error 
 ========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EPPxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EPPxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EPPxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_41C547A3.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EPPxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_41C547A3.TcDUT(11) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EPPxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_3B4F4E8A.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EPPxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_F796F579.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EPPxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+IecTaskModule.TcGetObjectName : error: Cannot convert type 'Unknown type: 'MIN(UDINT_TO_DINT((nameLen - UDINT#1)), LEN(m_objName))'' to type 'DINT' [tc3_module, 3.3.21.0 (beckhoff automation gmbh)]
+IecTaskModule.TcGetObjectName : error: Unknown type: 'LEN(m_objName)' [tc3_module, 3.3.21.0 (beckhoff automation gmbh)]
+IecTaskModule.TcGetObjectName : error: Identifier 'LEN' not defined [tc3_module, 3.3.21.0 (beckhoff automation gmbh)]
+IecTaskModule.TcGetObjectName : error: Program name, function or function block instance expected instead of 'LEN' [tc3_module, 3.3.21.0 (beckhoff automation gmbh)]
+Compile complete -- 11 errors, 0 warnings
+Build complete -- 11 errors, 0 warnings : no download possible!
+WRN | 5/6/2022 4:06:05 PM 038 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="KL1859_C5B2A062" Id="{a778f602-ec51-4ebb-8fd4-01640410b3b7}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1859'}
+<TcPlcObject>
+	<DUT Name="KL1859_C5B2A062">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1859'}
 {attribute addProperty BoxType "KL1859"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_70C997F30Channel_2AT %Q*Channel_70C997F30Channel_3AT %Q*Channel_70C997F30Channel_4AT %Q*Channel_70C997F30Channel_5AT %Q*Channel_70C997F30Channel_6AT %Q*Channel_70C997F30Channel_7AT %Q*Channel_70C997F30Channel_8AT %Q*Channel_70C997F30"}
 {attribute addProperty CRC "3316818018"}
@@ -27,5 +26,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

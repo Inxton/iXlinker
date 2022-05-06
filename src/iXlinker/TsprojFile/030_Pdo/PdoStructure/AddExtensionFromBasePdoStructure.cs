@@ -1,6 +1,5 @@
 ﻿using iXlinker.Resources;
 using iXlinkerDtos;
-using Utils;
 using PlcprojFile;
 
 namespace TsprojFile.Scan

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Status_3D84275F" Id="{0ab69a38-bfb0-4df9-90dd-a2b036e1d50e}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
+<TcPlcObject>
+	<DUT Name="Status_3D84275F">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
 {attribute addProperty BoxType "EL6001-0000-0020"}
 {attribute addProperty Id "Transmit_acceptedBOOL1Receive_requestBOOL1Init_acceptedBOOL1Buffer_fullBOOL1Parity_errorBOOL1Framing_errorBOOL1Overrun_errorBOOL1Input_lengthUSINT1"}
 {attribute addProperty CRC "1032071007"}
@@ -27,5 +26,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -126,17 +126,8 @@ namespace TsprojFile.Scan
             PdoViewModel InfoData = new PdoViewModel(); ;
             if (InfoDataEntries.Count > 0)
             {
-                ValidatePdoStructMemberNamesUniqueness(ref actPdoStruct);
-                //Calculate CRC of the actPdoStruct.Id
-                actPdoStruct.Crc32 = CRC32.Calculate_CRC32(actPdoStruct.Id);
-                actPdoStruct.Name = ValidatePlcItem.Name(actPdoStruct.Prefix + "_" + actPdoStruct.Crc32.ToString("X8"));
-                //Check if such an structure exists
-                if (CheckIfPdoStructureDoesNotExist(actPdoStruct))
-                {
-                    //if not add to the structure list
-                    AddExtensionFromBasePdoStructure(actPdoStruct);
-                    PdoStructures.Add(actPdoStruct);
-                }
+                AddPdoStructureToTheExportList(actPdoStruct);
+
                 PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
                 InfoData.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
                 InfoData.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);

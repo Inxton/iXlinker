@@ -367,3 +367,64 @@ WRN | 5/5/2022 4:10:44 PM 406 ms | 'TwinCAT XAE': Project 'PLC' build for platfo
 Error: The operation could not be completed. Unspecified error 
 ========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+PlcTaskFB : error: No definition found for base class 'IecTaskModule'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EQxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EQxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+fb_init : error: Expression of type 'BOOL' expected in this place
+fb_init : error: Unknown type: 'm_eState'
+fb_init : error: Identifier 'm_eState' not defined
+fb_init : error: Cannot convert type 'PLCTASKFB' to type 'ITcUnknown'
+fb_init : error: Identifier 'm_oid' not defined
+fb_init : error: 'm_oid' is no valid assignment target
+fb_init : error: Identifier 'm_oid' not defined
+fb_init : error: 'm_oid' is no valid assignment target
+fb_init : error: Identifier 'm_oidApp' not defined
+fb_init : error: 'm_oidApp' is no valid assignment target
+fb_init : error: Identifier 'm_oidParent' not defined
+fb_init : error: 'm_oidParent' is no valid assignment target
+fb_init : error: Identifier 'm_oidApp' not defined
+fb_init : error: 'm_oidApp' is no valid assignment target
+fb_init : error: Identifier 'm_oidParent' not defined
+fb_init : error: 'm_oidParent' is no valid assignment target
+fb_init : error: Identifier 'CLSID_TASKMODULE' not defined
+fb_init : error: 'Data1' is no valid assignment target
+fb_init : error: Identifier 'CLSID_TASKMODULE' not defined
+fb_init : error: 'Data4' is no valid assignment target
+fb_init : error: Identifier 'CLSID_TASKMODULE' not defined
+fb_init : error: 'Data4' is no valid assignment target
+fb_init : error: Identifier 'm_moduleInfo' not defined
+fb_init : error: 'oidTask' is no valid assignment target
+fb_init : error: Identifier 'm_moduleInfo' not defined
+fb_init : error: 'context' is no valid assignment target
+fb_init : error: Identifier 'm_moduleInfo' not defined
+fb_init : error: 'oidTask' is no valid assignment target
+fb_init : error: Identifier 'm_moduleInfo' not defined
+fb_init : error: 'context' is no valid assignment target
+fb_init : error: Identifier 'm_moduleInfo' not defined
+fb_init : error: 'itf' is no valid assignment target
+fb_init : error: Expression of type 'BOOL' expected in this place
+fb_init : error: Unknown type: 'FW_ObjMgr_GetObjectServer(m_oidApp, ADR(ipSrv))'
+fb_init : error: Identifier 'FW_ObjMgr_GetObjectServer' not defined
+fb_init : error: Program name, function or function block instance expected instead of 'FW_ObjMgr_GetObjectServer'
+fb_init : error: Identifier 'm_oidApp' not defined
+fb_init : error: Identifier 'm_objName' not defined
+fb_init : error: 'm_objName' is no valid assignment target
+fb_init : error: Identifier 'SetObjStateIP' not defined
+fb_init : error: Program name, function or function block instance expected instead of 'SetObjStateIP'
+fb_init : error: Identifier 'm_eState' not defined
+fb_init : error: 'm_eState' is no valid assignment target
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EQxxxx\Ts\PLC\PlcTask.TcTTO : error: Cannot convert type 'Unknown type: 'S_OK'' to type 'DINT'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EQxxxx\Ts\PLC\PlcTask.TcTTO : error: Identifier 'S_OK' not defined
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EQxxxx\Ts\PLC\PlcTask.TcTTO : error: Cannot convert type 'Unknown type: 'S_OK'' to type 'DINT'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EQxxxx\Ts\PLC\PlcTask.TcTTO : error: Identifier 'S_OK' not defined
+Compile complete -- 50 errors, 0 warnings
+Build complete -- 50 errors, 0 warnings : no download possible!
+WRN | 5/6/2022 4:05:48 PM 816 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="KL2442_DCA75612" Id="{65566571-effd-4119-9c4d-15aee25dd9e6}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2442'}
+<TcPlcObject>
+	<DUT Name="KL2442_DCA75612">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL2442'}
 {attribute addProperty BoxType "KL2442"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_460B8C400Channel_2AT %Q*Channel_460B8C400"}
 {attribute addProperty CRC "3701954066"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -98,17 +98,8 @@ namespace TsprojFile.Scan
                 ValidatePdoStructMemberNamesUniqueness(ref actSlotStruct);
                 if (actSlotStruct.StructMembers.Count > 0)
                 {
+                    AddPdoStructureToTheExportList(actSlotStruct);
 
-                    //Calculate CRC of the actPdoStruct.Id
-                    actSlotStruct.Crc32 = CRC32.Calculate_CRC32(actSlotStruct.Id);
-                    actSlotStruct.Name = ValidatePlcItem.Name(actSlotStruct.Prefix + "_" + actSlotStruct.Crc32.ToString("X8"));
-                    //Check if such an structure exists
-                    if (CheckIfPdoStructureDoesNotExist(actSlotStruct))
-                    {
-                        //if not add to the structure list
-                        AddExtensionFromBasePdoStructure(actSlotStruct);
-                        PdoStructures.Add(actSlotStruct);
-                    }
                     PdoStructMemberViewModel firstStructMember = actSlotStruct.StructMembers.FirstOrDefault();
                     pdoViewModels[i].Name = ValidatePlcItem.Name(actSlotStruct.Prefix);
                     pdoViewModels[i].Type_Value = actSlotStruct.Name;

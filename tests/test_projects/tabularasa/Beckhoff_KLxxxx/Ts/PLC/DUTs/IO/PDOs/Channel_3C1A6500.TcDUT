@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_3C1A6500" Id="{554519ba-28f0-4da7-866c-ebc4fa62e481}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1501'}
+<TcPlcObject>
+	<DUT Name="Channel_3C1A6500">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1501'}
 {attribute addProperty BoxType "KL1501"}
 {attribute addProperty Id "StateAT %I*USINT0Data_InAT %I*ARRAY [0..1] OF UINT0CtrlAT %Q*USINT0Data_OutAT %Q*ARRAY [0..1] OF UINT0"}
 {attribute addProperty CRC "1008362752"}
@@ -19,5 +18,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_6B723A16" Id="{93cfaf54-7671-4cdc-88a2-105756522c9b}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1644-0050'}
+<TcPlcObject>
+	<DUT Name="Channel_6B723A16">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1644-0050'}
 {attribute addProperty BoxType "KL1644-0050"}
 {attribute addProperty Id "SwitchAT %I*BOOL0OutputAT %Q*BOOL0"}
 {attribute addProperty CRC "1802648086"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

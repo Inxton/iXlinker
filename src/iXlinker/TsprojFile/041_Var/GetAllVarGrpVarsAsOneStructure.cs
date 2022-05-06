@@ -54,18 +54,8 @@ namespace TsprojFile.Scan
                 mapableObject.MapableItems.Add(mapableItem);
             }
 
-            ValidatePdoStructMemberNamesUniqueness(ref actVarGrpStruct);
+            AddPdoStructureToTheExportList(actVarGrpStruct);
 
-            //Calculate CRC of the actVarGrpStruct.Id
-            actVarGrpStruct.Crc32 = CRC32.Calculate_CRC32(actVarGrpStruct.Id);
-            actVarGrpStruct.Name = ValidatePlcItem.Name(actVarGrpStruct.Prefix + "_" + actVarGrpStruct.Crc32.ToString("X8"));
-            //Check if such an structure exists
-            if (CheckIfPdoStructureDoesNotExist(actVarGrpStruct))
-            {
-                //if not add to the structure list
-                AddExtensionFromBasePdoStructure(actVarGrpStruct);
-                PdoStructures.Add(actVarGrpStruct);
-            }
             //create varGrp of the structured type
             PdoStructMemberViewModel firstStructMember = actVarGrpStruct.StructMembers.FirstOrDefault();
             mapableObject.Name = ValidatePlcItem.Name(actVarGrpStruct.Prefix);

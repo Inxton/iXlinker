@@ -99,16 +99,8 @@ namespace TsprojFile.Scan
 
             if (actPdoStruct.StructMembers.Count > 0)
             {
-                //Calculate CRC of the actPdoStruct.Id
-                actPdoStruct.Crc32 = CRC32.Calculate_CRC32(actPdoStruct.Id);
-                actPdoStruct.Name = ValidatePlcItem.Name(actPdoStruct.Prefix + "_" + actPdoStruct.Crc32.ToString("X8"));
-                //Check if such an structure exists
-                if (CheckIfPdoStructureDoesNotExist(actPdoStruct))
-                {
-                    //if not add to the structure list
-                    AddExtensionFromBasePdoStructure(actPdoStruct);
-                    PdoStructures.Add(actPdoStruct);
-                }
+                AddPdoStructureToTheExportList(actPdoStruct);
+
                 PdoStructMemberViewModel firstStructMember = actPdoStruct.StructMembers.FirstOrDefault();
                 WcState.Name = ValidatePlcItem.Name(actPdoStruct.Prefix);
                 WcState.Type_Value = ValidatePlcItem.Type(actPdoStruct.Name);

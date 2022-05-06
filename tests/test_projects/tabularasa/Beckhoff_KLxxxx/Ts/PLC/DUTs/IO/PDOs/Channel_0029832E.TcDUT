@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_0029832E" Id="{a2151f5d-1cbd-4a6e-bdb4-5313de61661c}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9528'}
+<TcPlcObject>
+	<DUT Name="Channel_0029832E">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9528'}
 {attribute addProperty BoxType "KL9528"}
 {attribute addProperty Id "OverloadAT %I*BOOL0UndervoltageAT %I*BOOL0ResetAT %Q*BOOL0"}
 {attribute addProperty CRC "2720558"}
@@ -17,5 +16,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

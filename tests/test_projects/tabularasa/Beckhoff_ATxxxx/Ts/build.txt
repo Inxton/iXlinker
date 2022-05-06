@@ -341,3 +341,16 @@ WRN | 5/5/2022 4:10:50 PM 216 ms | 'TwinCAT XAE': Project 'PLC' build for platfo
 Error: The operation could not be completed. Unspecified error 
 ========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ATxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ATxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 2 errors, 0 warnings
+Build complete -- 2 errors, 0 warnings : no download possible!
+WRN | 5/6/2022 4:06:13 PM 522 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+

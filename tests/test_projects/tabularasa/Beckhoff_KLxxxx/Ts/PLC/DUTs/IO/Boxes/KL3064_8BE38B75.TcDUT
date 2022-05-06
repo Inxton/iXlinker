@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="KL3064_8BE38B75" Id="{8aa76fe8-361b-4604-9720-9b7da974899f}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL3064'}
+<TcPlcObject>
+	<DUT Name="KL3064_8BE38B75">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL3064'}
 {attribute addProperty BoxType "KL3064"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_6576A6810Channel_2AT %Q*Channel_6576A6810Channel_3AT %Q*Channel_6576A6810Channel_4AT %Q*Channel_6576A6810"}
 {attribute addProperty CRC "2346945397"}
@@ -19,5 +18,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

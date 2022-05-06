@@ -359,5 +359,22 @@ namespace iXlinkerDtos
                 }
             }
         }
+
+        private ObservableCollection<PdoStructureDuplicate> pdoStructureDuplicates;
+        public ObservableCollection<PdoStructureDuplicate> PdoStructureDuplicates
+        {
+            get
+            {
+                return this.pdoStructureDuplicates ?? (this.pdoStructureDuplicates = new ObservableCollection<PdoStructureDuplicate>());
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.pdoStructureDuplicates = value;
+                    NotifyPropertyChanged(nameof(PdoStructureDuplicates));
+                }
+            }
+        }
     }
 }

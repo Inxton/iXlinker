@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="KL1232_BB38DA8F" Id="{b8df3b86-a83e-4822-9b87-bc7d0baa83a1}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1232'}
+<TcPlcObject>
+	<DUT Name="KL1232_BB38DA8F">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL1232'}
 {attribute addProperty BoxType "KL1232"}
 {attribute addProperty Id "Channel_1AT %I*Channel_87C95E760Channel_2AT %I*Channel_87C95E760"}
 {attribute addProperty CRC "3141065359"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

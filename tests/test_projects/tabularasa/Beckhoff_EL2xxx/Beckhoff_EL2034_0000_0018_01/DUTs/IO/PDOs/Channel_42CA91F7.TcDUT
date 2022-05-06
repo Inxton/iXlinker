@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_42CA91F7" Id="{b602bf2c-81e6-4df7-8798-384b2504db7b}">
+  <DUT Name="Channel_42CA91F7" Id="{f2611c2b-3f1e-4864-b10b-3078dd104f4a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2034-0000-0018'}
 {attribute addProperty BoxType "EL2034-0000-0018"}
 {attribute addProperty Id "OutputAT %Q*BOOL1"}
 {attribute addProperty CRC "1120571895"}
 {attribute addProperty Size "1"}
-TYPE Channel_42CA91F7 EXTENDS DigitalOutputBase_1FE0D5EE :
+TYPE Channel_42CA91F7 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Output"}
 	Output AT %Q* : BOOL;
