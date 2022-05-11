@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="MMS_Acceleration_Status_11769099" Id="{d0241fb9-da69-461d-8058-c3e3cb0e5e08}">
+  <DUT Name="MMS_Acceleration_Status_11769099" Id="{4b6cd323-3222-4b52-b59e-8014b513bda2}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EKM1101-0000-0016'}
 {attribute addProperty BoxType "EKM1101-0000-0016"}
 {attribute addProperty Id "StatusAT %I*Status_BA3D1C5D7Number_of_samplesAT %I*UINT2"}
 {attribute addProperty CRC "292982937"}
 {attribute addProperty Size "9"}
-TYPE MMS_Acceleration_Status_11769099 :
+TYPE MMS_Acceleration_Status_11769099 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_BA3D1C5D;

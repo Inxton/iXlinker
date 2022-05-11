@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="OCP_Inputs_8CCE65FB" Id="{71fb7963-afb3-4a76-bad2-ce7bdb9efa4a}">
+  <DUT Name="OCP_Inputs_8CCE65FB" Id="{67e12ce4-e526-462f-80e2-9a3fceaf8022}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9221-4030-0018'}
 {attribute addProperty BoxType "EL9221-4030-0018"}
 {attribute addProperty Id "StatusAT %I*Status_FCAFFB9E11"}
 {attribute addProperty CRC "2362336763"}
 {attribute addProperty Size "11"}
-TYPE OCP_Inputs_8CCE65FB :
+TYPE OCP_Inputs_8CCE65FB EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_FCAFFB9E;

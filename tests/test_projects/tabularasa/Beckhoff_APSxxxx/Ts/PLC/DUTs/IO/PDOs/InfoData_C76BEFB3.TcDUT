@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="InfoData_C76BEFB3" Id="{94d713a5-5967-4288-a9f9-da5ac45b754f}">
+  <DUT Name="InfoData_C76BEFB3" Id="{3138b87a-5344-487d-8714-f953fd6b1830}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "ChangeCountAT %I*UINT2DevIdAT %I*UINT2AmsNetIdAT %I*.TcoAmsNetId0CfgSlaveCountAT %I*UINT2DcToTcTimeOffsetAT %I*LINT8DcToExtTimeOffsetAT %I*LINT8"}
 {attribute addProperty CRC "3345739699"}
 {attribute addProperty Size "22"}
-TYPE InfoData_C76BEFB3 :
+TYPE InfoData_C76BEFB3 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "ChangeCount"}
 	ChangeCount AT %I* : UINT;

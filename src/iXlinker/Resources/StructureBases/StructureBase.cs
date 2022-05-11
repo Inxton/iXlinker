@@ -61,19 +61,29 @@ namespace iXlinker.Resources
 
          public StructureBase(string structureName, string structureType , string baseStructurePrefix , ObservableCollection<PlcStruct> PlcStructuresInPlcLibraries)
         {
-
-            this.structureName = structureName;
-            this.structureType = structureType;
-            this.baseStructureName = baseStructurePrefix + "_" + CRC32.Calculate_CRC32(baseStructurePrefix).ToString("X8");
-            this.baseStructurePrefix = baseStructurePrefix;
-            this.baseStructureNamespace = "";
-            foreach (PlcStruct plcStruct in PlcStructuresInPlcLibraries)
+            if (!baseStructurePrefix.Equals("!"))
             {
-                if (plcStruct.Name.Equals(baseStructureName))
+                this.structureName = structureName;
+                this.structureType = structureType;
+                this.baseStructureName = baseStructurePrefix + "_" + CRC32.Calculate_CRC32(baseStructurePrefix).ToString("X8");
+                this.baseStructurePrefix = baseStructurePrefix;
+                this.baseStructureNamespace = "";
+                foreach (PlcStruct plcStruct in PlcStructuresInPlcLibraries)
                 {
-                    this.baseStructureNamespace = plcStruct.Namespace;
-                    break;
+                    if (plcStruct.Name.Equals(baseStructureName))
+                    {
+                        this.baseStructureNamespace = plcStruct.Namespace;
+                        break;
+                    }
                 }
+            }
+            else
+            {
+                this.structureName = structureName;
+                this.structureType = structureType;
+                this.baseStructureName = baseStructurePrefix;
+                this.baseStructurePrefix = baseStructurePrefix;
+                this.baseStructureNamespace = baseStructurePrefix;
             }
         }
 
@@ -87,5 +97,7 @@ namespace iXlinker.Resources
             Attributes.Add(attribute);
             return this;
         }
+
+
     }
 }

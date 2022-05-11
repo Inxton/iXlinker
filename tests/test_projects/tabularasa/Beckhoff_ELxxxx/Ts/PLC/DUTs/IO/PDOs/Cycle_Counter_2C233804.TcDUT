@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Cycle_Counter_2C233804" Id="{d5c36de3-3704-4a73-ad5c-9c3085bc4e0c}">
+  <DUT Name="Cycle_Counter_2C233804" Id="{04807b69-fd73-4246-a372-c252112e036a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2262--0000'}
 {attribute addProperty BoxType "EL2262--0000"}
 {attribute addProperty Id "Cycle_CounterAT %Q*UINT2"}
 {attribute addProperty CRC "740505604"}
 {attribute addProperty Size "2"}
-TYPE Cycle_Counter_2C233804 :
+TYPE Cycle_Counter_2C233804 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Cycle_Counter"}
 	Cycle_Counter AT %Q* : UINT;

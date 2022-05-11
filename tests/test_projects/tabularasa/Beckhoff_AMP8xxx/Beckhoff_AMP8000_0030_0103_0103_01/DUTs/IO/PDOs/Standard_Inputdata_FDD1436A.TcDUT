@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Standard_Inputdata_FDD1436A" Id="{863ef8fe-d174-4e3a-9f86-5b30417e8b8e}">
+  <DUT Name="Standard_Inputdata_FDD1436A" Id="{8b259d2c-00a3-42a4-afa5-a5cab0cdb5f4}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AMP8000-0030-0103-0103'}
 {attribute addProperty BoxType "AMP8000-0030-0103-0103"}
 {attribute addProperty Id "FSOEAT %I*FSOE_3C294B218"}
 {attribute addProperty CRC "4258349930"}
 {attribute addProperty Size "8"}
-TYPE Standard_Inputdata_FDD1436A :
+TYPE Standard_Inputdata_FDD1436A EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "FSOE"}
 	FSOE AT %I* : FSOE_3C294B21;

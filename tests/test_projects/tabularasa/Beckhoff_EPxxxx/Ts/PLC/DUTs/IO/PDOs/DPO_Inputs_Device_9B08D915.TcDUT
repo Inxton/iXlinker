@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DPO_Inputs_Device_9B08D915" Id="{68cb2483-bdf2-48ff-8bc8-eccddbcb0b2f}">
+  <DUT Name="DPO_Inputs_Device_9B08D915" Id="{107cf564-89b3-4a41-92f8-b60d2f5f4539}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9214-0023-0019'}
 {attribute addProperty BoxType "EP9214-0023-0019"}
 {attribute addProperty Id "Temperature_WarningAT %I*BOOL1Temperature_ErrorAT %I*BOOL1Us_WarningAT %I*BOOL1Us_ErrorAT %I*BOOL1Up_WarningAT %I*BOOL1Up_ErrorAT %I*BOOL1Global_Error_BitAT %I*BOOL1Reset_InputAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
 {attribute addProperty CRC "2601048341"}
 {attribute addProperty Size "10"}
-TYPE DPO_Inputs_Device_9B08D915 :
+TYPE DPO_Inputs_Device_9B08D915 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Temperature_Warning"}
 	Temperature_Warning AT %I* : BOOL;

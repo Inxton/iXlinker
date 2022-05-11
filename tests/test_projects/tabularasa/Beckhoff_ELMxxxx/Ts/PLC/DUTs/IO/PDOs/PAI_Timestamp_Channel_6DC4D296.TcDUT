@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PAI_Timestamp_Channel_6DC4D296" Id="{9acfd2ed-e47f-4b3c-b099-cdeffddab0fc}">
+  <DUT Name="PAI_Timestamp_Channel_6DC4D296" Id="{4b5d368a-6e04-4464-bc58-2ee1be9739af}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM3002-0000-0016'}
 {attribute addProperty BoxType "ELM3002-0000-0016"}
 {attribute addProperty Id "StartTimeNextLatchAT %I*StartTimeNextLatch_02E0C1C88"}
 {attribute addProperty CRC "1841615510"}
 {attribute addProperty Size "8"}
-TYPE PAI_Timestamp_Channel_6DC4D296 :
+TYPE PAI_Timestamp_Channel_6DC4D296 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "StartTimeNextLatch"}
 	StartTimeNextLatch AT %I* : StartTimeNextLatch_02E0C1C8;

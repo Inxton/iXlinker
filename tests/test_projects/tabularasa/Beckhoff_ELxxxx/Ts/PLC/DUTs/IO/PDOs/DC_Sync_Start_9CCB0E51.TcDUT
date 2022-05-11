@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DC_Sync_Start_9CCB0E51" Id="{02a99bd8-d8f1-44c9-b4b1-e1fd6369bb47}">
+  <DUT Name="DC_Sync_Start_9CCB0E51" Id="{347f94fc-6246-42c3-b64a-86dbf907c25d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2252--0000'}
 {attribute addProperty BoxType "EL2252--0000"}
 {attribute addProperty Id "StartTimeAT %Q*UDINT4"}
 {attribute addProperty CRC "2630553169"}
 {attribute addProperty Size "4"}
-TYPE DC_Sync_Start_9CCB0E51 :
+TYPE DC_Sync_Start_9CCB0E51 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "StartTime"}
 	StartTime AT %Q* : UDINT;

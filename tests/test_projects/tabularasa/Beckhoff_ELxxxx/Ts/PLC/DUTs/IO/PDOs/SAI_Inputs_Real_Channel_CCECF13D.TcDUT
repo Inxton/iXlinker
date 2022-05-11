@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="SAI_Inputs_Real_Channel_CCECF13D" Id="{acc3ac47-8f0e-488a-af51-8262de1e173b}">
+  <DUT Name="SAI_Inputs_Real_Channel_CCECF13D" Id="{7ae93593-16f6-45b8-884f-8a50160161fc}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3692-0000-0017'}
 {attribute addProperty BoxType "EL3692-0000-0017"}
 {attribute addProperty Id "ValueAT %I*REAL4"}
 {attribute addProperty CRC "3438080317"}
 {attribute addProperty Size "4"}
-TYPE SAI_Inputs_Real_Channel_CCECF13D :
+TYPE SAI_Inputs_Real_Channel_CCECF13D EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Value"}
 	Value AT %I* : REAL;

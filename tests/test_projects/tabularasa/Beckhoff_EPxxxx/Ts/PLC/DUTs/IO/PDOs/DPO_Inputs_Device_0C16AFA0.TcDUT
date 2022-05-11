@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DPO_Inputs_Device_0C16AFA0" Id="{7749f899-c157-48a5-9b81-93e388562511}">
+  <DUT Name="DPO_Inputs_Device_0C16AFA0" Id="{6f31df09-1756-4611-b160-a05eb80fe280}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9224-0037-0017'}
 {attribute addProperty BoxType "EP9224-0037-0017"}
 {attribute addProperty Id "Device_StatusAT %I*Device_Status_033C68E911Current_UsAT %I*INT2Current_UpAT %I*INT2Voltage_UsAT %I*INT2Voltage_UpAT %I*INT2TemperatureAT %I*INT2"}
 {attribute addProperty CRC "202813344"}
 {attribute addProperty Size "21"}
-TYPE DPO_Inputs_Device_0C16AFA0 :
+TYPE DPO_Inputs_Device_0C16AFA0 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Device_Status"}
 	Device_Status AT %I* : Device_Status_033C68E9;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DO_Group_1_Outputs_59D8C01C" Id="{7ab95e2c-c621-4b4c-8990-14b3f288f981}">
+  <DUT Name="DO_Group_1_Outputs_59D8C01C" Id="{0bf4e4d2-0f72-4478-8d86-5bbdb3a933f5}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2642-0000-0016'}
 {attribute addProperty BoxType "EL2642-0000-0016"}
 {attribute addProperty Id "Outputs_Group_1AT %Q*Outputs_Group_78994C084"}
 {attribute addProperty CRC "1507377180"}
 {attribute addProperty Size "4"}
-TYPE DO_Group_1_Outputs_59D8C01C :
+TYPE DO_Group_1_Outputs_59D8C01C EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Outputs_Group_1"}
 	Outputs_Group_1 AT %Q* : Outputs_Group_78994C08;

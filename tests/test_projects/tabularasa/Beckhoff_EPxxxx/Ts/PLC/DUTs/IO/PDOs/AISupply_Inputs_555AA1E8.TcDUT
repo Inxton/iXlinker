@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AISupply_Inputs_555AA1E8" Id="{2e39551f-f8eb-4953-a9e3-066154fff1b4}">
+  <DUT Name="AISupply_Inputs_555AA1E8" Id="{08d97629-241e-4b90-b853-61b7aa7bc3d6}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3351-2022-0016'}
 {attribute addProperty BoxType "EP3351-2022-0016"}
 {attribute addProperty Id "UnderrangeAT %I*BOOL1OverrangeAT %I*BOOL1ErrorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1ValueAT %I*DINT4"}
 {attribute addProperty CRC "1432003048"}
 {attribute addProperty Size "9"}
-TYPE AISupply_Inputs_555AA1E8 :
+TYPE AISupply_Inputs_555AA1E8 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Underrange"}
 	Underrange AT %I* : BOOL;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PTO_Control_392B4D2E" Id="{e05b290f-38af-4c93-9b51-f3864c9fe53a}">
+  <DUT Name="PTO_Control_392B4D2E" Id="{762722ba-f492-46b6-8595-30c46cc7053f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0000-1016'}
 {attribute addProperty BoxType "EL2521-0000-1016"}
 {attribute addProperty Id "Frequency_selectAT %Q*BOOL1Disable_rampAT %Q*BOOL1Go_counterAT %Q*BOOL1Frequency_valueAT %Q*UINT2"}
 {attribute addProperty CRC "959139118"}
 {attribute addProperty Size "5"}
-TYPE PTO_Control_392B4D2E :
+TYPE PTO_Control_392B4D2E EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Frequency_select"}
 	Frequency_select AT %Q* : BOOL;

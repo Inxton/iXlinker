@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AI_Sample_Count_B1A935A2" Id="{38be2402-c414-4d48-b65d-469c9223b56c}">
+  <DUT Name="AI_Sample_Count_B1A935A2" Id="{0a3afa64-26b8-4c4c-9d53-24156cbf184b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0017'}
 {attribute addProperty BoxType "EL3773-0000-0017"}
 {attribute addProperty Id "Cycle_CountAT %I*UINT2"}
 {attribute addProperty CRC "2980656546"}
 {attribute addProperty Size "2"}
-TYPE AI_Sample_Count_B1A935A2 :
+TYPE AI_Sample_Count_B1A935A2 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Cycle_Count"}
 	Cycle_Count AT %I* : UINT;

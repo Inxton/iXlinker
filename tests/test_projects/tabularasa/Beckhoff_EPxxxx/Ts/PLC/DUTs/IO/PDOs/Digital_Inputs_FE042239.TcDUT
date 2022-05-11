@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Digital_Inputs_FE042239" Id="{6c6fe1e6-e360-4fc9-a0ec-d445bf003c3a}">
+  <DUT Name="Digital_Inputs_FE042239" Id="{dce6c4ca-6390-4e09-9b7d-82bf97c8440f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP6224-0002-0016'}
 {attribute addProperty BoxType "EP6224-0002-0016"}
 {attribute addProperty Id "DI_X01_Pin2AT %I*BOOL1DI_X02_Pin2AT %I*BOOL1DI_X03_Pin2AT %I*BOOL1DI_X04_Pin2AT %I*BOOL1"}
 {attribute addProperty CRC "4261683769"}
 {attribute addProperty Size "4"}
-TYPE Digital_Inputs_FE042239 :
+TYPE Digital_Inputs_FE042239 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "DI_X01_Pin2"}
 	DI_X01_Pin2 AT %I* : BOOL;

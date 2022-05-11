@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PowerOK_830843C1" Id="{7714e164-b828-406b-a7f7-06d1df8567a4}">
+  <DUT Name="PowerOK_830843C1" Id="{a58946cc-cdff-434f-9efe-55a94f9f8e25}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9110-0000-0016'}
 {attribute addProperty BoxType "EL9110-0000-0016"}
 {attribute addProperty Id "InputAT %I*BOOL1"}
 {attribute addProperty CRC "2198356929"}
 {attribute addProperty Size "1"}
-TYPE PowerOK_830843C1 :
+TYPE PowerOK_830843C1 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Input"}
 	Input AT %I* : BOOL;

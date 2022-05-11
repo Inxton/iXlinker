@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="CNT_Inputs_Channel_54FF2F1E" Id="{c58d0f4e-0ead-41eb-9aae-67a8ada93522}">
+  <DUT Name="CNT_Inputs_Channel_54FF2F1E" Id="{995a6c9a-cc1d-492e-9be0-9aa12b210152}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1512-0000-0017'}
 {attribute addProperty BoxType "EL1512-0000-0017"}
 {attribute addProperty Id "StatusAT %I*Status_8AD1B54B4Counter_valueAT %I*UDINT4"}
 {attribute addProperty CRC "1426009886"}
 {attribute addProperty Size "8"}
-TYPE CNT_Inputs_Channel_54FF2F1E :
+TYPE CNT_Inputs_Channel_54FF2F1E EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_8AD1B54B;

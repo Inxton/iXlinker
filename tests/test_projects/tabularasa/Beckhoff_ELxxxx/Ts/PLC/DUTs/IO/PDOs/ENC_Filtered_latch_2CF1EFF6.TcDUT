@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Filtered_latch_2CF1EFF6" Id="{397744fa-7bc5-424f-abba-74986d9878ae}">
+  <DUT Name="ENC_Filtered_latch_2CF1EFF6" Id="{ef59b40c-4202-4835-a431-dbaf85c65f6f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5151-0021-0018'}
 {attribute addProperty BoxType "EL5151-0021-0018"}
 {attribute addProperty Id "Latch_value_rising_edgeAT %I*UDINT4Latch_value_falling_edgeAT %I*UDINT4"}
 {attribute addProperty CRC "754053110"}
 {attribute addProperty Size "8"}
-TYPE ENC_Filtered_latch_2CF1EFF6 :
+TYPE ENC_Filtered_latch_2CF1EFF6 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Latch_value_rising_edge"}
 	Latch_value_rising_edge AT %I* : UDINT;

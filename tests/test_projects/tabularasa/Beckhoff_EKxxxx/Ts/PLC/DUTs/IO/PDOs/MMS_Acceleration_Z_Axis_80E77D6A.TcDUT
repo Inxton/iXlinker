@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="MMS_Acceleration_Z_Axis_80E77D6A" Id="{785182ab-1cde-4d25-ae74-980a06acec38}">
+  <DUT Name="MMS_Acceleration_Z_Axis_80E77D6A" Id="{c093cea3-7c13-4cf2-9817-3c5d7c444c88}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EKM1101-0000-0016'}
 {attribute addProperty BoxType "EKM1101-0000-0016"}
 {attribute addProperty Id "ValueAT %I*INT2"}
 {attribute addProperty CRC "2162654570"}
 {attribute addProperty Size "2"}
-TYPE MMS_Acceleration_Z_Axis_80E77D6A :
+TYPE MMS_Acceleration_Z_Axis_80E77D6A EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Value"}
 	Value AT %I* : INT;

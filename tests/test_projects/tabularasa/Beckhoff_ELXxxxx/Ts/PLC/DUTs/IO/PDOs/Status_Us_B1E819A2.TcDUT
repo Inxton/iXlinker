@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Status_Us_B1E819A2" Id="{9db66a4d-b680-4d8f-91aa-5ed962f71ea2}">
+  <DUT Name="Status_Us_B1E819A2" Id="{37023d63-709e-421f-b41c-4f66a84646e6}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX9410-0000-0016'}
 {attribute addProperty BoxType "ELX9410-0000-0016"}
 {attribute addProperty Id "UndervoltageAT %I*BOOL1"}
 {attribute addProperty CRC "2984778146"}
 {attribute addProperty Size "1"}
-TYPE Status_Us_B1E819A2 :
+TYPE Status_Us_B1E819A2 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Undervoltage"}
 	Undervoltage AT %I* : BOOL;

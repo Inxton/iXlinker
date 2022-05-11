@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="STM_Control_BA4CE352" Id="{e9c49de0-4728-4405-a203-1435750fffea}">
+  <DUT Name="STM_Control_BA4CE352" Id="{63229da6-7974-4700-89cf-c706532e5f9c}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7037-0000-0020'}
 {attribute addProperty BoxType "EJ7037-0000-0020"}
 {attribute addProperty Id "ControlAT %Q*Control_5FD4673D4"}
 {attribute addProperty CRC "3125601106"}
 {attribute addProperty Size "4"}
-TYPE STM_Control_BA4CE352 :
+TYPE STM_Control_BA4CE352 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_5FD4673D;

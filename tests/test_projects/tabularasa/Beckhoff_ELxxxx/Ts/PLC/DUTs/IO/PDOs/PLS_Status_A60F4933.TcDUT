@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PLS_Status_A60F4933" Id="{1c6e50f3-c4b5-4c3d-b562-132ea1a59e04}">
+  <DUT Name="PLS_Status_A60F4933" Id="{d0917c58-adb2-42df-9a6b-8f1ffd95a4f0}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0124-0016'}
 {attribute addProperty BoxType "EL2521-0124-0016"}
 {attribute addProperty Id "PLS_EnabledAT %I*BOOL1Status_of_outputAT %I*BOOL1Sync_ErrorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
 {attribute addProperty CRC "2786019635"}
 {attribute addProperty Size "4"}
-TYPE PLS_Status_A60F4933 :
+TYPE PLS_Status_A60F4933 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "PLS_Enabled"}
 	PLS_Enabled AT %I* : BOOL;

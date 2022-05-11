@@ -10,11 +10,8 @@ namespace iXlinkerDtos
             get { return this.extends; }
             set
             {
-                if (!string.IsNullOrEmpty(value))
-                {
-                    this.extends = value;
-                    NotifyPropertyChanged(nameof(Extends));
-                }
+                this.extends = value;
+                NotifyPropertyChanged(nameof(Extends));
             }
         }
 

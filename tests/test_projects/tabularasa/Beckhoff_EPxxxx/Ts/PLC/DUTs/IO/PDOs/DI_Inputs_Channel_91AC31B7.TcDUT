@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DI_Inputs_Channel_91AC31B7" Id="{123912d9-50a7-46d2-8159-cae46642b45f}">
+  <DUT Name="DI_Inputs_Channel_91AC31B7" Id="{b7213f3e-3fb3-4ab0-93aa-8309de57a5d5}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2339-0003-0016'}
 {attribute addProperty BoxType "EP2339-0003-0016"}
 {attribute addProperty Id "InputAT %I*ARRAY[0..7] OF BOOL8Sync_errorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
 {attribute addProperty CRC "1559998493"}
 {attribute addProperty Size "11"}
-TYPE DI_Inputs_Channel_91AC31B7 :
+TYPE DI_Inputs_Channel_91AC31B7 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Input"}
 	Input AT %I* : ARRAY[0..7] OF BOOL;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="MMS_Acceleration_Timestamp_8B9FE1A2" Id="{b5b31a74-f568-4bfa-a9e1-ccfd1d008ddb}">
+  <DUT Name="MMS_Acceleration_Timestamp_8B9FE1A2" Id="{e6dac5fb-ccd1-4676-ade4-1cd1963030cf}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EKM1101-0000-0016'}
 {attribute addProperty BoxType "EKM1101-0000-0016"}
 {attribute addProperty Id "TimestampAT %I*ULINT8"}
 {attribute addProperty CRC "2342511010"}
 {attribute addProperty Size "8"}
-TYPE MMS_Acceleration_Timestamp_8B9FE1A2 :
+TYPE MMS_Acceleration_Timestamp_8B9FE1A2 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Timestamp"}
 	Timestamp AT %I* : ULINT;

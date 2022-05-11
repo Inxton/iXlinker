@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="L2_Current_Samples_7973F81C" Id="{47d1b893-e0e1-440d-894b-11140fe58ce7}">
+  <DUT Name="L2_Current_Samples_7973F81C" Id="{be3a1082-c326-4da9-b033-f7ecf25fada0}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0018'}
 {attribute addProperty BoxType "EL3773-0000-0018"}
 {attribute addProperty Id "I2_SamplesAT %I*I2_Samples_2D13B74B20"}
 {attribute addProperty CRC "2037643292"}
 {attribute addProperty Size "20"}
-TYPE L2_Current_Samples_7973F81C :
+TYPE L2_Current_Samples_7973F81C EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "I2_Samples"}
 	I2_Samples AT %I* : I2_Samples_2D13B74B;

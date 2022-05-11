@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DEV_Outputs_Device_59FFD247" Id="{db457448-afc9-4739-bda6-e8585fa11b42}">
+  <DUT Name="DEV_Outputs_Device_59FFD247" Id="{c4453d2b-e1a2-4162-a3b7-cf1435eb3fd3}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3744-0041-0016'}
 {attribute addProperty BoxType "EP3744-0041-0016"}
 {attribute addProperty Id "Set_safe_stateAT %Q*BOOL1"}
 {attribute addProperty CRC "1509937735"}
 {attribute addProperty Size "1"}
-TYPE DEV_Outputs_Device_59FFD247 :
+TYPE DEV_Outputs_Device_59FFD247 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Set_safe_state"}
 	Set_safe_state AT %Q* : BOOL;

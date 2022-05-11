@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIG_Outputs_DE230DD5" Id="{cc54ca9e-8348-47dd-bcd9-f1fbcde38678}">
+  <DUT Name="DIG_Outputs_DE230DD5" Id="{54c2e165-ce0d-4090-a64b-d44251330fad}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP3744-0041-0016'}
 {attribute addProperty BoxType "EPP3744-0041-0016"}
 {attribute addProperty Id "OutputAT %Q*ARRAY[0..1] OF BOOL2"}
 {attribute addProperty CRC "2036329114"}
 {attribute addProperty Size "2"}
-TYPE DIG_Outputs_DE230DD5 :
+TYPE DIG_Outputs_DE230DD5 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Output"}
 	Output AT %Q* : ARRAY[0..1] OF BOOL;

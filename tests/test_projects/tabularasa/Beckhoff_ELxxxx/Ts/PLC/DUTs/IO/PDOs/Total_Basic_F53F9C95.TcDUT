@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Total_Basic_F53F9C95" Id="{d6be31a1-357c-4f50-aa36-1c649f2a56c2}">
+  <DUT Name="Total_Basic_F53F9C95" Id="{ac471122-5c9c-4c3c-b730-bec7f0215a92}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3453-0000-0017'}
 {attribute addProperty BoxType "EL3453-0000-0017"}
 {attribute addProperty Id "FrequencyAT %I*REAL4Power_FactorAT %I*REAL4Calculated_Error_CurrentAT %I*REAL4Neutral_Line_CurrentAT %I*REAL4ROCOFAT %I*REAL4"}
 {attribute addProperty CRC "4114586773"}
 {attribute addProperty Size "20"}
-TYPE Total_Basic_F53F9C95 :
+TYPE Total_Basic_F53F9C95 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Frequency"}
 	Frequency AT %I* : REAL;

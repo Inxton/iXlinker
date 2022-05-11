@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="TC_Inputs_EA9DF21E" Id="{5dc0f8ed-bb9a-40e0-9744-7d248f0f9f75}">
+  <DUT Name="TC_Inputs_EA9DF21E" Id="{3017457b-7187-4516-afa7-0e7c395eb476}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3311-0000-0016'}
 {attribute addProperty BoxType "EL3311-0000-0016"}
 {attribute addProperty Id "UnderrangeAT %I*BOOL1OverrangeAT %I*BOOL1Limit_xAT %I*ARRAY[0..1] OF BYTE2ErrorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1ValueAT %I*INT2"}
 {attribute addProperty CRC "1583108878"}
 {attribute addProperty Size "9"}
-TYPE TC_Inputs_EA9DF21E :
+TYPE TC_Inputs_EA9DF21E EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Underrange"}
 	Underrange AT %I* : BOOL;

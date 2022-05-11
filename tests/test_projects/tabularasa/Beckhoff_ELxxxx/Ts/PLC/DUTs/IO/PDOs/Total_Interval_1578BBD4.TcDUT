@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Total_Interval_1578BBD4" Id="{a7e99734-45e1-44c8-94f3-c38c0afcc4b6}">
+  <DUT Name="Total_Interval_1578BBD4" Id="{6332a57b-92c3-407d-80cc-af89779576d8}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0017'}
 {attribute addProperty BoxType "EL3423-0000-0017"}
 {attribute addProperty Id "Reset_IntervalAT %Q*BOOL1"}
 {attribute addProperty CRC "360233940"}
 {attribute addProperty Size "1"}
-TYPE Total_Interval_1578BBD4 :
+TYPE Total_Interval_1578BBD4 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Reset_Interval"}
 	Reset_Interval AT %Q* : BOOL;

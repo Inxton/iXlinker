@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FSLOGIC_Inputs_EEE9388E" Id="{970bdc36-7ddc-46c1-9030-8ca4a3c1286c}">
+  <DUT Name="FSLOGIC_Inputs_EEE9388E" Id="{2d6e2104-8cfc-4924-bf19-e9bf33330bcd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1914-0000-0017'}
 {attribute addProperty BoxType "EJ1914-0000-0017"}
 {attribute addProperty Id "Safe_Logic_StateAT %I*USINT1Cycle_CounterAT %I*USINT1"}
 {attribute addProperty CRC "4008261774"}
 {attribute addProperty Size "2"}
-TYPE FSLOGIC_Inputs_EEE9388E :
+TYPE FSLOGIC_Inputs_EEE9388E EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Safe_Logic_State"}
 	Safe_Logic_State AT %I* : USINT;

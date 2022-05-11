@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PWM_Outputs_Channel_4C6289CD" Id="{18497145-2425-4b4a-970b-2d2b2766bfc2}">
+  <DUT Name="PWM_Outputs_Channel_4C6289CD" Id="{43315c79-15eb-4225-ac15-b198b3a9eeda}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2502-0000-0023'}
 {attribute addProperty BoxType "EJ2502-0000-0023"}
 {attribute addProperty Id "PWM_outputAT %Q*UINT2"}
 {attribute addProperty CRC "1281526221"}
 {attribute addProperty Size "2"}
-TYPE PWM_Outputs_Channel_4C6289CD :
+TYPE PWM_Outputs_Channel_4C6289CD EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "PWM_output"}
 	PWM_output AT %Q* : UINT;

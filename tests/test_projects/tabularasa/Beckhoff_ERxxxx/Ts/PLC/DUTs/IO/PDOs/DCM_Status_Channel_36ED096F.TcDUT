@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DCM_Status_Channel_36ED096F" Id="{cb36bf36-5d1b-416b-b888-fc88a127248a}">
+  <DUT Name="DCM_Status_Channel_36ED096F" Id="{8168566b-1c3f-4c86-8b49-be2cee3387ad}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER7342-0002-0020'}
 {attribute addProperty BoxType "ER7342-0002-0020"}
 {attribute addProperty Id "StatusAT %I*Status_B679584511"}
 {attribute addProperty CRC "921504111"}
 {attribute addProperty Size "11"}
-TYPE DCM_Status_Channel_36ED096F :
+TYPE DCM_Status_Channel_36ED096F EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_B6795845;

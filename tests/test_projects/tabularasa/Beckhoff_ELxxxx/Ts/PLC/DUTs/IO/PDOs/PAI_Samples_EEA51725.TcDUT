@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PAI_Samples_EEA51725" Id="{29e07fa4-f69f-44bc-8eb4-f63c9b043133}">
+  <DUT Name="PAI_Samples_EEA51725" Id="{2d4cfe63-6de5-4c8c-8e23-ea139814dce4}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3751-0000-0020'}
 {attribute addProperty BoxType "EL3751-0000-0020"}
 {attribute addProperty Id "SamplesAT %I*Samples_F24E104A4"}
 {attribute addProperty CRC "4003796773"}
 {attribute addProperty Size "4"}
-TYPE PAI_Samples_EEA51725 :
+TYPE PAI_Samples_EEA51725 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Samples"}
 	Samples AT %I* : Samples_F24E104A;

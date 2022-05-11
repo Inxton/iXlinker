@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Outputs_Channel_DC4E290B" Id="{3d05d932-2c9f-4d6b-8204-fbcc48bb60c8}">
+  <DUT Name="ENC_Outputs_Channel_DC4E290B" Id="{7bb41a86-de28-41c6-95ad-c7373be5a16b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9996'}
 {attribute addProperty BoxType "EM7004-0000-9996"}
 {attribute addProperty Id "Enable_latch_extern_on_positive_edgeAT %Q*BOOL1Set_counterAT %Q*BOOL1Enable_latch_extern_on_negative_edgeAT %Q*BOOL1Set_counter_valueAT %Q*UINT2"}
 {attribute addProperty CRC "3696109835"}
 {attribute addProperty Size "5"}
-TYPE ENC_Outputs_Channel_DC4E290B :
+TYPE ENC_Outputs_Channel_DC4E290B EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Enable_latch_extern_on_positive_edge"}
 	Enable_latch_extern_on_positive_edge AT %Q* : BOOL;

@@ -361,3 +361,30 @@ WRN | 5/6/2022 6:48:44 PM 138 ms | 'TwinCAT XAE': Project 'PLC' build for platfo
 Error: The operation could not be completed. Unspecified error 
 ========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\YVR_Inputs_4719D0DB.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\YVR_Outputs_31F2CBB3.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\FB_Inputs_F0F03BDD.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_A7436BC6.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\APS_Inputs_4719D0DB.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\APS_Diagdata_CE5B986F.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\APS_Comm_Inputs_388FE28E.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\APS_Outputs_31F2CBB3.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\APS_Comm_Outputs_082002A4.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_2A97D6CF.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\Inputs_25A0042B.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\Outputs_2397A10E.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_APSxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+Compile complete -- 16 errors, 0 warnings
+Build complete -- 16 errors, 0 warnings : no download possible!
+WRN | 5/11/2022 8:17:00 PM 086 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+

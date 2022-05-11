@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="SSI_Inputs_8BC18DAC" Id="{55e792dc-0266-497b-af2d-ab48634fd444}">
+  <DUT Name="SSI_Inputs_8BC18DAC" Id="{b5e4889b-0632-4487-936c-29c4779a6194}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5001-0011-0019'}
 {attribute addProperty BoxType "EL5001-0011-0019"}
 {attribute addProperty Id "StatusAT %I*Status_536663CA5Counter_valueAT %I*UDINT4"}
 {attribute addProperty CRC "2344717740"}
 {attribute addProperty Size "9"}
-TYPE SSI_Inputs_8BC18DAC :
+TYPE SSI_Inputs_8BC18DAC EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_536663CA;

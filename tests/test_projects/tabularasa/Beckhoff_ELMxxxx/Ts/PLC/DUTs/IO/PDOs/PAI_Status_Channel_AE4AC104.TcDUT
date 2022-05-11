@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PAI_Status_Channel_AE4AC104" Id="{335f8363-3570-4f87-b869-12369ac01477}">
+  <DUT Name="PAI_Status_Channel_AE4AC104" Id="{e99e6649-f6d7-40e5-b1db-cc8cb77ba891}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM3002-0000-0016'}
 {attribute addProperty BoxType "ELM3002-0000-0016"}
 {attribute addProperty Id "StatusAT %I*Status_543010BE7"}
 {attribute addProperty CRC "2924134660"}
 {attribute addProperty Size "7"}
-TYPE PAI_Status_Channel_AE4AC104 :
+TYPE PAI_Status_Channel_AE4AC104 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_543010BE;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FuseError_1EC650DA" Id="{befef899-9c44-4bac-83b8-228607f4dc3e}">
+  <DUT Name="FuseError_1EC650DA" Id="{59ee9e48-6f3e-4523-8ec3-17ee0f2fb7ff}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9210-0000-0016'}
 {attribute addProperty BoxType "EL9210-0000-0016"}
 {attribute addProperty Id "FuseErrorAT %I*BOOL1"}
 {attribute addProperty CRC "516313306"}
 {attribute addProperty Size "1"}
-TYPE FuseError_1EC650DA :
+TYPE FuseError_1EC650DA EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "FuseError"}
 	FuseError AT %I* : BOOL;

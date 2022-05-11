@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Status_D30DC33F" Id="{8c48a06a-339c-4fc5-9f9b-14f4da80c7f7}">
+  <DUT Name="Status_D30DC33F" Id="{84762453-ead1-4e37-975b-6cebf40cf403}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6690-0002-0000'}
 {attribute addProperty BoxType "EL6690-0002-0000"}
 {attribute addProperty Id "CycleTimerAT %I*ARRAY [0..2] OF USINT0ErrorCodeAT %I*BYTE1"}
 {attribute addProperty CRC "3540894527"}
 {attribute addProperty Size "1"}
-TYPE Status_D30DC33F :
+TYPE Status_D30DC33F EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "CycleTimer"}
 	CycleTimer AT %I* : ARRAY [0..2] OF USINT;

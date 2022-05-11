@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="L1_Basic_9F3F6F48" Id="{cafabcb3-138b-422d-8a81-5a4f74b8a601}">
+  <DUT Name="L1_Basic_9F3F6F48" Id="{eab223d9-fc9b-4cf6-b94e-d1eff5129870}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3483-0060-0018'}
 {attribute addProperty BoxType "EL3483-0060-0018"}
 {attribute addProperty Id "VoltageAT %I*REAL4"}
 {attribute addProperty CRC "2671734600"}
 {attribute addProperty Size "4"}
-TYPE L1_Basic_9F3F6F48 :
+TYPE L1_Basic_9F3F6F48 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Voltage"}
 	Voltage AT %I* : REAL;

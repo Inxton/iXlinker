@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Inputs_A65FACA4" Id="{54516fb6-dd22-41f6-88a5-c8051cc56e04}">
+  <DUT Name="Inputs_A65FACA4" Id="{97a6a765-2b6d-43ae-a20b-bc464b38a79f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "SlaveCountAT %I*UINT2DevStateAT %I*UINT2Frm0StateAT %I*UINT2Frm0WcStateAT %I*UINT2Frm0InputToggleAT %I*UINT2"}
 {attribute addProperty CRC "2791287972"}
 {attribute addProperty Size "10"}
-TYPE Inputs_A65FACA4 :
+TYPE Inputs_A65FACA4 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "SlaveCount"}
 	SlaveCount AT %I* : UINT;

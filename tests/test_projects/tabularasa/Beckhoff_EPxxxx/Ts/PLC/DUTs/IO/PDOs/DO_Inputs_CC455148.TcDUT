@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DO_Inputs_CC455148" Id="{a6b3394d-050f-4b37-9765-054cf19d32e0}">
+  <DUT Name="DO_Inputs_CC455148" Id="{b804430b-13eb-43d0-a9b0-e9eaf0f5a6e1}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0016'}
 {attribute addProperty BoxType "EP2316-0008-0016"}
 {attribute addProperty Id "InputAT %I*ARRAY[0..7] OF BOOL8Sync_ErrorAT %I*BOOL1"}
 {attribute addProperty CRC "2788215981"}
 {attribute addProperty Size "9"}
-TYPE DO_Inputs_CC455148 :
+TYPE DO_Inputs_CC455148 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Input"}
 	Input AT %I* : ARRAY[0..7] OF BOOL;

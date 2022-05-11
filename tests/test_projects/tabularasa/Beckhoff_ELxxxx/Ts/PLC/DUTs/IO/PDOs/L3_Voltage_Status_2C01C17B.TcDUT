@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="L3_Voltage_Status_2C01C17B" Id="{6c6837eb-9d91-436b-99d0-57850f8294cc}">
+  <DUT Name="L3_Voltage_Status_2C01C17B" Id="{24ce8ebc-deff-4445-8565-ad2e13fe52d1}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3773-0000-0016'}
 {attribute addProperty BoxType "EL3773-0000-0016"}
 {attribute addProperty Id "U3_STATUSAT %I*U3_STATUS_B07533568"}
 {attribute addProperty CRC "738312571"}
 {attribute addProperty Size "8"}
-TYPE L3_Voltage_Status_2C01C17B :
+TYPE L3_Voltage_Status_2C01C17B EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "U3_STATUS"}
 	U3_STATUS AT %I* : U3_STATUS_B0753356;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PWM_Status_77939B11" Id="{bbd2a4cf-0b30-48d5-84d6-aa7ce6209037}">
+  <DUT Name="PWM_Status_77939B11" Id="{e0db96bc-1fde-4576-b4c5-7f8b96e815aa}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP8309-0022-0021'}
 {attribute addProperty BoxType "EP8309-0022-0021"}
 {attribute addProperty Id "StatusAT %I*Status_72C27E804"}
 {attribute addProperty CRC "2006162193"}
 {attribute addProperty Size "4"}
-TYPE PWM_Status_77939B11 :
+TYPE PWM_Status_77939B11 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_72C27E80;

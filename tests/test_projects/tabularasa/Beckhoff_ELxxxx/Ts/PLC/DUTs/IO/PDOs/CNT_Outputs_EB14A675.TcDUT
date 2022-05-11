@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="CNT_Outputs_EB14A675" Id="{380ef1d2-0214-4f38-b889-625089e34d8d}">
+  <DUT Name="CNT_Outputs_EB14A675" Id="{fffda3f0-99e4-4fe1-9322-3b4ad169698f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1502--0000'}
 {attribute addProperty BoxType "EL1502--0000"}
 {attribute addProperty Id "Enable_output_functionsAT %Q*BOOL1Set_outputAT %Q*BOOL1Set_counterAT %Q*BOOL1Inhibit_counterAT %Q*BOOL1Set_counter_valueAT %Q*UDINT4"}
 {attribute addProperty CRC "3943999093"}
 {attribute addProperty Size "8"}
-TYPE CNT_Outputs_EB14A675 :
+TYPE CNT_Outputs_EB14A675 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Enable_output_functions"}
 	Enable_output_functions AT %Q* : BOOL;

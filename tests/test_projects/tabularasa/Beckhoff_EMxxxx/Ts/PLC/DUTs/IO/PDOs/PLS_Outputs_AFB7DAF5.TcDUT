@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PLS_Outputs_AFB7DAF5" Id="{20a1cd14-5bd4-48e0-b703-2852d364751b}">
+  <DUT Name="PLS_Outputs_AFB7DAF5" Id="{a90c16de-b76f-44fb-9ae4-5f60456c8bf1}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9996'}
 {attribute addProperty BoxType "EM7004-0000-9996"}
 {attribute addProperty Id "Enable_PLSAT %Q*BOOL1"}
 {attribute addProperty CRC "2948061941"}
 {attribute addProperty Size "1"}
-TYPE PLS_Outputs_AFB7DAF5 :
+TYPE PLS_Outputs_AFB7DAF5 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Enable_PLS"}
 	Enable_PLS AT %Q* : BOOL;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Device_Status_Mapping_61F79077" Id="{f6011b28-b23d-4a82-aea3-8197a9175f88}">
+  <DUT Name="Device_Status_Mapping_61F79077" Id="{4a1b815b-184d-4abc-921f-0211a91d174c}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CX5010 EtherCAT slave-1b82-0016'}
 {attribute addProperty BoxType "CX5010 EtherCAT slave-1b82-0016"}
 {attribute addProperty Id "TxPdoStateAT %I*BOOL1TxPdoToggleAT %I*BOOL1"}
 {attribute addProperty CRC "1643614327"}
 {attribute addProperty Size "2"}
-TYPE Device_Status_Mapping_61F79077 :
+TYPE Device_Status_Mapping_61F79077 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "TxPdoState"}
 	TxPdoState AT %I* : BOOL;

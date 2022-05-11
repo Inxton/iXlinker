@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="InfoData_A7436BC6" Id="{d51aa3fb-f0fc-4db6-9f05-8040fe5ec261}">
+  <DUT Name="InfoData_A7436BC6" Id="{45e8a028-854d-43d2-ba8e-39b1c87bad4b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: APS1003-5000-0016'}
 {attribute addProperty BoxType "APS1003-5000-0016"}
 {attribute addProperty Id "DcOutputShiftAT %I*DINT4DcInputShiftAT %I*DINT4StateAT %I*UINT2"}
 {attribute addProperty CRC "2806213574"}
 {attribute addProperty Size "10"}
-TYPE InfoData_A7436BC6 :
+TYPE InfoData_A7436BC6 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "DcOutputShift"}
 	DcOutputShift AT %I* : DINT;

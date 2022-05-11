@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPM_Inputs_Channel_385E794A" Id="{a5f5098e-b4d7-45b3-97bc-78c55dade628}">
+  <DUT Name="EPM_Inputs_Channel_385E794A" Id="{d6947ca0-fc78-44aa-8bad-26ed762735b7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CU2508-0000-0017'}
 {attribute addProperty BoxType "CU2508-0000-0017"}
 {attribute addProperty Id "Dropped_frames_rxAT %I*USINT1Dropped_frames_txAT %I*USINT1"}
 {attribute addProperty CRC "945715530"}
 {attribute addProperty Size "2"}
-TYPE EPM_Inputs_Channel_385E794A :
+TYPE EPM_Inputs_Channel_385E794A EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Dropped_frames_rx"}
 	Dropped_frames_rx AT %I* : USINT;

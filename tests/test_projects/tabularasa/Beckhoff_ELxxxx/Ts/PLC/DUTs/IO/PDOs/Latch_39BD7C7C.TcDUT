@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Latch_39BD7C7C" Id="{02ad29d6-7eaa-4d1c-9b07-790245fb9814}">
+  <DUT Name="Latch_39BD7C7C" Id="{c5326f53-efeb-453c-809e-d7725b366039}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1252-0000-0018'}
 {attribute addProperty BoxType "EL1252-0000-0018"}
 {attribute addProperty Id "Status1AT %I*USINT1Status2AT %I*USINT1LatchPos1AT %I*ULINT8LatchNeg1AT %I*ULINT8LatchPos2AT %I*ULINT8LatchNeg2AT %I*ULINT8"}
 {attribute addProperty CRC "968719484"}
 {attribute addProperty Size "34"}
-TYPE Latch_39BD7C7C :
+TYPE Latch_39BD7C7C EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status1"}
 	Status1 AT %I* : USINT;

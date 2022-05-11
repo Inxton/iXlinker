@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DO_Inputs_Device_4A9049C5" Id="{c97b1d16-ec77-4c73-ab80-e0c30645aa76}">
+  <DUT Name="DO_Inputs_Device_4A9049C5" Id="{0d3209a6-e108-4729-b66e-647eeab79431}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2642-0000-0016'}
 {attribute addProperty BoxType "EL2642-0000-0016"}
 {attribute addProperty Id "Device_statusAT %I*Device_status_8568DBCA3"}
 {attribute addProperty CRC "1250970053"}
 {attribute addProperty Size "3"}
-TYPE DO_Inputs_Device_4A9049C5 :
+TYPE DO_Inputs_Device_4A9049C5 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Device_status"}
 	Device_status AT %I* : Device_status_8568DBCA;

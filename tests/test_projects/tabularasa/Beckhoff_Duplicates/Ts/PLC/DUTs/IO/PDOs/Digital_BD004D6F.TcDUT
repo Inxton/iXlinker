@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Digital_BD004D6F" Id="{2352c52a-e81c-46b6-b5c3-f990087d7485}">
+  <DUT Name="Digital_BD004D6F" Id="{a01f1ade-3b70-468e-9f6e-e357347b780a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9995'}
 {attribute addProperty BoxType "EM7004-0000-9995"}
 {attribute addProperty Id "InputAT %I*ARRAY[0..15] OF BOOL16"}
 {attribute addProperty CRC "2621435360"}
 {attribute addProperty Size "16"}
-TYPE Digital_BD004D6F :
+TYPE Digital_BD004D6F EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Input"}
 	Input AT %I* : ARRAY[0..15] OF BOOL;

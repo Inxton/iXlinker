@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Inputs_24B63C53" Id="{2a1e1ab9-afe7-491b-a584-4077be6737fc}">
+  <DUT Name="ENC_Inputs_24B63C53" Id="{e316c5d8-b6f9-490b-b08a-123f6697413c}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5151-0000-0016'}
 {attribute addProperty BoxType "EJ5151-0000-0016"}
 {attribute addProperty Id "Period_valueAT %I*UDINT4"}
 {attribute addProperty CRC "615922771"}
 {attribute addProperty Size "4"}
-TYPE ENC_Inputs_24B63C53 :
+TYPE ENC_Inputs_24B63C53 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Period_value"}
 	Period_value AT %I* : UDINT;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DeviceState_Inputs_Device_A1210598" Id="{b0ca4e8d-c315-43f6-95a8-7d65d3af5fc9}">
+  <DUT Name="DeviceState_Inputs_Device_A1210598" Id="{9f6973b1-a329-472e-a8af-017862b551bd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6224-0000-0021'}
 {attribute addProperty BoxType "EL6224-0000-0021"}
 {attribute addProperty Id "Device_DiagAT %I*BOOL1Device_StateAT %I*BOOL1"}
 {attribute addProperty CRC "2703295896"}
 {attribute addProperty Size "2"}
-TYPE DeviceState_Inputs_Device_A1210598 :
+TYPE DeviceState_Inputs_Device_A1210598 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Device_Diag"}
 	Device_Diag AT %I* : BOOL;

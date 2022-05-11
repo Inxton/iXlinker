@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Status_Uin_627CC56E" Id="{fbcd6d4a-d909-4c68-b411-21f730b99029}">
+  <DUT Name="Status_Uin_627CC56E" Id="{8847470e-d5cf-421a-8ed3-c1293cdbe6a6}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX9560-0000-0018'}
 {attribute addProperty BoxType "ELX9560-0000-0018"}
 {attribute addProperty Id "Uin_OKAT %I*BOOL1"}
 {attribute addProperty CRC "1652344174"}
 {attribute addProperty Size "1"}
-TYPE Status_Uin_627CC56E :
+TYPE Status_Uin_627CC56E EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Uin_OK"}
 	Uin_OK AT %I* : BOOL;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Control_Channel_4C8A7395" Id="{0971527f-d506-40f5-908f-099a6120f14e}">
+  <DUT Name="ENC_Control_Channel_4C8A7395" Id="{04ac17f9-c8d8-4e19-8b9f-9b251d84b92e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5102-0000-0016'}
 {attribute addProperty BoxType "EL5102-0000-0016"}
 {attribute addProperty Id "ControlAT %Q*Control_D4F3D88010Set_counter_valueAT %Q*UDINT4"}
 {attribute addProperty CRC "1284141973"}
 {attribute addProperty Size "14"}
-TYPE ENC_Control_Channel_4C8A7395 :
+TYPE ENC_Control_Channel_4C8A7395 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_D4F3D880;

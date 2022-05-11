@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DEVICE_Inputs_745C19EA" Id="{424237a7-e1da-4955-b59e-d2994eb77052}">
+  <DUT Name="DEVICE_Inputs_745C19EA" Id="{6e17fc1d-2caa-427c-848a-ac89595a1227}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6900-0000-0016'}
 {attribute addProperty BoxType "EL6900-0000-0016"}
 {attribute addProperty Id "Safety_Project_StateAT %I*BYTE1Login_ActiveAT %I*BOOL1Input_Size_MismatchAT %I*BOOL1Output_Size_MismatchAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
 {attribute addProperty CRC "1952193002"}
 {attribute addProperty Size "6"}
-TYPE DEVICE_Inputs_745C19EA :
+TYPE DEVICE_Inputs_745C19EA EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Safety_Project_State"}
 	Safety_Project_State AT %I* : BYTE;

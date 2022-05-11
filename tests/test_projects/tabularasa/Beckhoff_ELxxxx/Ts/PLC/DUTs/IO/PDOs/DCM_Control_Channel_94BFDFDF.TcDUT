@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DCM_Control_Channel_94BFDFDF" Id="{4c73fcce-86a5-459e-ad06-f5c6f007956f}">
+  <DUT Name="DCM_Control_Channel_94BFDFDF" Id="{825a2de0-3853-4b8f-ba4e-16f3d8d941c7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7342-0000-0023'}
 {attribute addProperty BoxType "EL7342-0000-0023"}
 {attribute addProperty Id "ControlAT %Q*Control_4AE59EC24"}
 {attribute addProperty CRC "2495602655"}
 {attribute addProperty Size "4"}
-TYPE DCM_Control_Channel_94BFDFDF :
+TYPE DCM_Control_Channel_94BFDFDF EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_4AE59EC2;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="TC_TCInputs_Channel_A8DF64E3" Id="{2f9c47f0-35e0-49fd-903e-447f5a8cce8b}">
+  <DUT Name="TC_TCInputs_Channel_A8DF64E3" Id="{b55cb0ee-de06-4ee6-a554-5fd4c164cf28}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3314-0002-0016'}
 {attribute addProperty BoxType "EP3314-0002-0016"}
 {attribute addProperty Id "StatusAT %I*Status_B07533568ValueAT %I*INT2"}
 {attribute addProperty CRC "2833212643"}
 {attribute addProperty Size "10"}
-TYPE TC_TCInputs_Channel_A8DF64E3 :
+TYPE TC_TCInputs_Channel_A8DF64E3 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_B0753356;

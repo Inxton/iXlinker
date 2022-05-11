@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="IND_Outputs_Channel_02FDE6C9" Id="{f8c661ff-eda8-41ea-90b8-4684ebb0ee6a}">
+  <DUT Name="IND_Outputs_Channel_02FDE6C9" Id="{73d00c46-bfdf-42f1-8bc8-a08933876c6e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5072-0000-0016'}
 {attribute addProperty BoxType "EL5072-0000-0016"}
 {attribute addProperty Id "Set_positionAT %Q*BOOL1Set_position_on_digital_inputAT %Q*BOOL1Enable_latch_on_digital_inputAT %Q*BOOL1Set_position_valueAT %Q*DINT4"}
 {attribute addProperty CRC "50194121"}
 {attribute addProperty Size "7"}
-TYPE IND_Outputs_Channel_02FDE6C9 :
+TYPE IND_Outputs_Channel_02FDE6C9 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Set_position"}
 	Set_position AT %Q* : BOOL;

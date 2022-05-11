@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="InfoData_1088C705" Id="{9c844efa-ba3c-4a44-b838-be5de2666d11}">
+  <DUT Name="InfoData_1088C705" Id="{cc440421-982c-4230-88c8-a94361df7d21}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: APS1003-7000-0016'}
 {attribute addProperty BoxType "APS1003-7000-0016"}
 {attribute addProperty Id "AdsAddrAT %I*.TcoAmsAddr0DcOutputShiftAT %I*DINT4DcInputShiftAT %I*DINT4StateAT %I*UINT2"}
 {attribute addProperty CRC "277399301"}
 {attribute addProperty Size "10"}
-TYPE InfoData_1088C705 :
+TYPE InfoData_1088C705 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "AdsAddr"}
 	AdsAddr AT %I* : .TcoAmsAddr;

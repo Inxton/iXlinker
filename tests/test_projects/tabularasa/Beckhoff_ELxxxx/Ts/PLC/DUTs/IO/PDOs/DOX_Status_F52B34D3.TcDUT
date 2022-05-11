@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DOX_Status_F52B34D3" Id="{7dd7aff5-c6a0-480c-b5c8-8cc31d1ed805}">
+  <DUT Name="DOX_Status_F52B34D3" Id="{73480b19-407c-4844-899e-dfa4192d1d3e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2595-0000-0019'}
 {attribute addProperty BoxType "EL2595-0000-0019"}
 {attribute addProperty Id "StatusAT %I*Status_9AF2E0887"}
 {attribute addProperty CRC "4113249491"}
 {attribute addProperty Size "7"}
-TYPE DOX_Status_F52B34D3 :
+TYPE DOX_Status_F52B34D3 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_9AF2E088;

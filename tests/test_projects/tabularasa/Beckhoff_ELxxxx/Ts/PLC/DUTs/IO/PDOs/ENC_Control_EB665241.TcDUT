@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Control_EB665241" Id="{8ab1c5ab-dc37-4d60-bfdc-8687643600b1}">
+  <DUT Name="ENC_Control_EB665241" Id="{12249645-f782-4bf2-b6a9-2166f19a906d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5151-0021-0018'}
 {attribute addProperty BoxType "EL5151-0021-0018"}
 {attribute addProperty Id "ControlAT %Q*Control_135F4E528Set_counter_valueAT %Q*UDINT4Switch_on_threshold_valueAT %Q*UDINT4Switch_off_threshold_valueAT %Q*UDINT4"}
 {attribute addProperty CRC "3949351489"}
 {attribute addProperty Size "20"}
-TYPE ENC_Control_EB665241 :
+TYPE ENC_Control_EB665241 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_135F4E52;

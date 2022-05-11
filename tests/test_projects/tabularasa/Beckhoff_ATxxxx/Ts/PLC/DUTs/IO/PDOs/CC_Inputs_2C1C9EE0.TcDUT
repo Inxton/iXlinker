@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="CC_Inputs_2C1C9EE0" Id="{d53ca209-3e0a-41ca-83d9-fd89359554a5}">
+  <DUT Name="CC_Inputs_2C1C9EE0" Id="{8f3a7eef-e474-477d-a358-b8aeae47750b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2020-0250-0019'}
 {attribute addProperty BoxType "AT2020-0250-0019"}
 {attribute addProperty Id "StatusAT %I*UINT2Current_actual_value_ChAT %I*ARRAY[0..14] OF INT30"}
 {attribute addProperty CRC "4120755276"}
 {attribute addProperty Size "32"}
-TYPE CC_Inputs_2C1C9EE0 :
+TYPE CC_Inputs_2C1C9EE0 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : UINT;

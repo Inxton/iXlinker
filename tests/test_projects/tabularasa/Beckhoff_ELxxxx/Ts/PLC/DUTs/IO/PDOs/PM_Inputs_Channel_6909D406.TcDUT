@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PM_Inputs_Channel_6909D406" Id="{f58fb76b-2808-426c-bf2c-cb08076fb2ca}">
+  <DUT Name="PM_Inputs_Channel_6909D406" Id="{cf9c56e9-60f5-4cff-8d4a-c9f5e63edd12}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3403-0000-0017'}
 {attribute addProperty BoxType "EL3403-0000-0017"}
 {attribute addProperty Id "Sync_ErrorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1CurrentAT %I*DINT4VoltageAT %I*DINT4Active_powerAT %I*DINT4IndexAT %I*USINT1VariantValueAT %I*DINT4"}
 {attribute addProperty CRC "1762251782"}
 {attribute addProperty Size "19"}
-TYPE PM_Inputs_Channel_6909D406 :
+TYPE PM_Inputs_Channel_6909D406 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Sync_Error"}
 	Sync_Error AT %I* : BOOL;

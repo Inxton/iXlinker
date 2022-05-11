@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Total_Statistic_Power_092925BE" Id="{44d91187-7e58-471f-b409-127fa2286af0}">
+  <DUT Name="Total_Statistic_Power_092925BE" Id="{6dcc75a4-7e3d-4fbf-ad6e-dfa984bef753}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0016'}
 {attribute addProperty BoxType "EL3423-0000-0016"}
 {attribute addProperty Id "Active_Power_AvgAT %I*REAL4Active_Power_MinAT %I*REAL4Active_Power_MaxAT %I*REAL4Apparent_Power_AvgAT %I*REAL4Apparent_Power_MinAT %I*REAL4Apparent_Power_MaxAT %I*REAL4Reactive_Power_AvgAT %I*REAL4Reactive_Power_MinAT %I*REAL4Reactive_Power_MaxAT %I*REAL4"}
 {attribute addProperty CRC "153691582"}
 {attribute addProperty Size "36"}
-TYPE Total_Statistic_Power_092925BE :
+TYPE Total_Statistic_Power_092925BE EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Active_Power_Avg"}
 	Active_Power_Avg AT %I* : REAL;

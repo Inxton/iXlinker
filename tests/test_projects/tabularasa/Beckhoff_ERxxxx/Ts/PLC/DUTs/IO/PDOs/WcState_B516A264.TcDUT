@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="WcState_B516A264" Id="{055fe7d1-0aaf-4c47-bccb-2140c67cbc72}">
+  <DUT Name="WcState_B516A264" Id="{1f4c315d-1b83-494c-87d7-2440a8acaf5b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1258-0001-0019'}
 {attribute addProperty BoxType "ER1258-0001-0019"}
 {attribute addProperty Id "WcState0AT %I*BOOL1WcState1AT %I*BOOL1InputToggle0AT %I*BOOL1InputToggle1AT %I*BOOL1"}
 {attribute addProperty CRC "3038159460"}
 {attribute addProperty Size "4"}
-TYPE WcState_B516A264 :
+TYPE WcState_B516A264 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "WcState0"}
 	WcState0 AT %I* : BOOL;

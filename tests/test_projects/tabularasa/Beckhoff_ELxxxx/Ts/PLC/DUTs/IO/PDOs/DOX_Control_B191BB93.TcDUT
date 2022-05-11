@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DOX_Control_B191BB93" Id="{663c3dd9-adc4-4cc1-9e03-dd6be3403382}">
+  <DUT Name="DOX_Control_B191BB93" Id="{d04f8d37-170c-45e7-876d-f5bceea4903b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2596-0000-0017'}
 {attribute addProperty BoxType "EL2596-0000-0017"}
 {attribute addProperty Id "ControlAT %Q*Control_12F99C765"}
 {attribute addProperty CRC "2979117971"}
 {attribute addProperty Size "5"}
-TYPE DOX_Control_B191BB93 :
+TYPE DOX_Control_B191BB93 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_12F99C76;

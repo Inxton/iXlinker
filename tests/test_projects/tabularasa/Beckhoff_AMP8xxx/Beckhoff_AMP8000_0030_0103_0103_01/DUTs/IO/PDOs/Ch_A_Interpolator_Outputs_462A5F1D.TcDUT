@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Ch_A_Interpolator_Outputs_462A5F1D" Id="{8d6e2e7b-51d8-47a5-91d6-69ece53c4eb4}">
+  <DUT Name="Ch_A_Interpolator_Outputs_462A5F1D" Id="{f91ebe9c-b874-4d6d-be01-aeee41bc128d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AMP8000-0030-0103-0103'}
 {attribute addProperty BoxType "AMP8000-0030-0103-0103"}
 {attribute addProperty Id "Ch_A_Target_positionAT %Q*DINT4Ch_A_Target_velocityAT %Q*DINT4"}
 {attribute addProperty CRC "1177181981"}
 {attribute addProperty Size "8"}
-TYPE Ch_A_Interpolator_Outputs_462A5F1D :
+TYPE Ch_A_Interpolator_Outputs_462A5F1D EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Ch_A_Target_position"}
 	Ch_A_Target_position AT %Q* : DINT;

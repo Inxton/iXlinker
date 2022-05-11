@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="MMS_Device_Outputs_E6E6F9D1" Id="{bf260a6f-da4f-4f3c-852d-38a9f24732ab}">
+  <DUT Name="MMS_Device_Outputs_E6E6F9D1" Id="{f58f033a-53e0-4fe3-87ee-4196349f0e31}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM9410-0000-0016'}
 {attribute addProperty BoxType "ELM9410-0000-0016"}
 {attribute addProperty Id "ControlAT %Q*Control_EBEDCF761"}
 {attribute addProperty CRC "3873896913"}
 {attribute addProperty Size "1"}
-TYPE MMS_Device_Outputs_E6E6F9D1 :
+TYPE MMS_Device_Outputs_E6E6F9D1 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_EBEDCF76;

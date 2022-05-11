@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FSoE_Inputs_6CB74C4A" Id="{f12aa44e-e01c-4a6b-95ee-2cf7cadbe213}">
+  <DUT Name="FSoE_Inputs_6CB74C4A" Id="{c0fe628e-d458-4297-a96c-dfd757e17c78}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1960-0000-0021'}
 {attribute addProperty BoxType "EK1960-0000-0021"}
 {attribute addProperty Id "FSOEAT %I*FSOE_39DE0EE047"}
 {attribute addProperty CRC "1823951946"}
 {attribute addProperty Size "47"}
-TYPE FSoE_Inputs_6CB74C4A :
+TYPE FSoE_Inputs_6CB74C4A EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "FSOE"}
 	FSOE AT %I* : FSOE_39DE0EE0;

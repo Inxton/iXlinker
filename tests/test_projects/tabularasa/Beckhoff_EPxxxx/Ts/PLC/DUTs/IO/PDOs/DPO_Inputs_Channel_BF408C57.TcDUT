@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DPO_Inputs_Channel_BF408C57" Id="{3701f810-f27a-4fa7-a00b-d8be0862e182}">
+  <DUT Name="DPO_Inputs_Channel_BF408C57" Id="{45f8c3c0-55e2-45b8-ba36-506bca32c46e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9214-0023-0019'}
 {attribute addProperty BoxType "EP9214-0023-0019"}
 {attribute addProperty Id "Error_UsAT %I*BOOL1Error_UpAT %I*BOOL1Warning_UsAT %I*BOOL1Warning_UpAT %I*BOOL1Status_UsAT %I*BOOL1Status_UpAT %I*BOOL1Channel_ErrorAT %I*BOOL1Sync_errorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
 {attribute addProperty CRC "3208678487"}
 {attribute addProperty Size "10"}
-TYPE DPO_Inputs_Channel_BF408C57 :
+TYPE DPO_Inputs_Channel_BF408C57 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Error_Us"}
 	Error_Us AT %I* : BOOL;

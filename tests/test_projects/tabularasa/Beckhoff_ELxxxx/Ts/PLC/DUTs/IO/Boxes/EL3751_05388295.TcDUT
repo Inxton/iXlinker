@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3751_C20F7FA5" Id="{cc1ba6dc-3556-4e1b-974b-e9ef319f3ef6}">
+  <DUT Name="EL3751_05388295" Id="{4f6bf136-24aa-471f-ad66-8de7c6dd2b40}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3751-0000-0020'}
 {attribute addProperty BoxType "EL3751-0000-0020"}
-{attribute addProperty Id "PAI_StatusAT %I*PAI_Status_AE4AC1047PAI_Samples_1AT %I*PAI_Samples_EEA517254PAI_TimestampAT %I*PAI_Timestamp_6DC4D2968WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_1088C70510"}
-{attribute addProperty CRC "3255795621"}
+{attribute addProperty Id "PAI_StatusAT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1AT %I*PAI_Samples_EEA517254PAI_TimestampAT %I*PAI_Timestamp_6DC4D2968WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_1088C70510"}
+{attribute addProperty CRC "87589525"}
 {attribute addProperty Size "31"}
-TYPE EL3751_C20F7FA5 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+TYPE EL3751_05388295 EXTENDS EtcSlaveTerminalBase_947E5A46 :
 STRUCT
 	{attribute addProperty Name "PAI_Status"}
-	PAI_Status : PAI_Status_AE4AC104;
+	PAI_Status : PAI_Status_Channel_AE4AC104;
 	{attribute addProperty Name "PAI_Samples_1"}
 	PAI_Samples_1 : PAI_Samples_EEA51725;
 	{attribute addProperty Name "PAI_Timestamp"}

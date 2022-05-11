@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Diag_1F4F4573" Id="{6075f76d-9427-4ed5-9bbe-96054fb0505c}">
+  <DUT Name="Diag_1F4F4573" Id="{0456876c-13ca-4ca2-a22e-15c50827e40d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9505-0010'}
 {attribute addProperty BoxType "KL9505-0010"}
 {attribute addProperty Id "Supply_Voltage_OKAT %I*BOOL0Over_currentAT %I*BOOL0"}
 {attribute addProperty CRC "525288819"}
 {attribute addProperty Size "0"}
-TYPE Diag_1F4F4573 :
+TYPE Diag_1F4F4573 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Supply_Voltage_OK"}
 	Supply_Voltage_OK AT %I* : BOOL;

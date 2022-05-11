@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="IO_Link_Port2_out_F2E0F4CF" Id="{804264c1-fdbb-47d0-bbce-e0a721dac24a}">
+  <DUT Name="IO_Link_Port2_out_F2E0F4CF" Id="{d1cbb3ef-13b3-4386-9331-ef3abe44a851}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6224-0000-0021'}
 {attribute addProperty BoxType "EL6224-0000-0021"}
 {attribute addProperty Id "Bitheader_1AT %Q*BYTE1Byte_xAT %Q*ARRAY[0..7] OF BYTE8Bitheader_2AT %Q*BYTE1"}
 {attribute addProperty CRC "2855058970"}
 {attribute addProperty Size "10"}
-TYPE IO_Link_Port2_out_F2E0F4CF :
+TYPE IO_Link_Port2_out_F2E0F4CF EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Bitheader_1"}
 	Bitheader_1 AT %Q* : BYTE;

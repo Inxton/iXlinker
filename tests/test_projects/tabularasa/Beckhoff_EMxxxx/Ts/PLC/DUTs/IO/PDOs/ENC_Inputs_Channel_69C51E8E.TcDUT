@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Inputs_Channel_69C51E8E" Id="{faf83b7c-2fa2-4c28-98a7-106301d9b2b4}">
+  <DUT Name="ENC_Inputs_Channel_69C51E8E" Id="{8883e19d-40da-4d2a-b505-ea9a8ed79a7c}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9996'}
 {attribute addProperty BoxType "EM7004-0000-9996"}
 {attribute addProperty Id "Latch_extern_validAT %I*BOOL1Set_counter_doneAT %I*BOOL1Status_of_input_AAT %I*BOOL1Status_of_input_BAT %I*BOOL1Status_of_input_gateAT %I*BOOL1Status_of_extern_latchAT %I*BOOL1Counter_valueAT %I*UINT2Latch_valueAT %I*UINT2"}
 {attribute addProperty CRC "1774526094"}
 {attribute addProperty Size "10"}
-TYPE ENC_Inputs_Channel_69C51E8E :
+TYPE ENC_Inputs_Channel_69C51E8E EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Latch_extern_valid"}
 	Latch_extern_valid AT %I* : BOOL;

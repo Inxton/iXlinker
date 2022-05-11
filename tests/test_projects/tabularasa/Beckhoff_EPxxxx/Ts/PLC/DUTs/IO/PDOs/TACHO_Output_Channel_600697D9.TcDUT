@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="TACHO_Output_Channel_600697D9" Id="{3d3d6239-54bb-4752-b6a6-1f0f3d184194}">
+  <DUT Name="TACHO_Output_Channel_600697D9" Id="{72167b8a-1e3a-4025-8049-931c059d29fd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP8309-0022-0021'}
 {attribute addProperty BoxType "EP8309-0022-0021"}
 {attribute addProperty Id "Reset_ErrorAT %Q*BOOL1"}
 {attribute addProperty CRC "1611044825"}
 {attribute addProperty Size "1"}
-TYPE TACHO_Output_Channel_600697D9 :
+TYPE TACHO_Output_Channel_600697D9 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Reset_Error"}
 	Reset_Error AT %Q* : BOOL;

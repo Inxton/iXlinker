@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FB_Inputs_Channel_74050988" Id="{f0b1aa86-3ee5-4e86-8ea0-39ff51534166}">
+  <DUT Name="FB_Inputs_Channel_74050988" Id="{cbbd8330-8506-48fe-9416-ecede92c1908}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5032-0000-0021'}
 {attribute addProperty BoxType "EL5032-0000-0021"}
 {attribute addProperty Id "StatusAT %I*Status_81FEA7676PositionAT %I*ULINT8"}
 {attribute addProperty CRC "1946487176"}
 {attribute addProperty Size "14"}
-TYPE FB_Inputs_Channel_74050988 :
+TYPE FB_Inputs_Channel_74050988 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_81FEA767;

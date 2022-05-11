@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Total_Apparent_8F93F985" Id="{00d0b736-4028-4d56-8ebf-854b1179e24b}">
+  <DUT Name="Total_Apparent_8F93F985" Id="{3dc2519e-2a24-475f-801e-82a62498957a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0016'}
 {attribute addProperty BoxType "EL3423-0000-0016"}
 {attribute addProperty Id "Apparent_EnergyAT %I*LINT8Apparent_Positive_EnergyAT %I*ULINT8Apparent_Negative_EnergyAT %I*ULINT8"}
 {attribute addProperty CRC "2408839557"}
 {attribute addProperty Size "24"}
-TYPE Total_Apparent_8F93F985 :
+TYPE Total_Apparent_8F93F985 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Apparent_Energy"}
 	Apparent_Energy AT %I* : LINT;

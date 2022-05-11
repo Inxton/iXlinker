@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AI_Inputs_Channel_A8DF64E3" Id="{0244d001-d123-4a79-932c-fe1494563d65}">
+  <DUT Name="AI_Inputs_Channel_A8DF64E3" Id="{8f148b7c-6668-44d8-b76b-796d31569c18}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER4374-0002-0018'}
 {attribute addProperty BoxType "ER4374-0002-0018"}
 {attribute addProperty Id "StatusAT %I*Status_B07533568ValueAT %I*INT2"}
 {attribute addProperty CRC "2833212643"}
 {attribute addProperty Size "10"}
-TYPE AI_Inputs_Channel_A8DF64E3 :
+TYPE AI_Inputs_Channel_A8DF64E3 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_B0753356;

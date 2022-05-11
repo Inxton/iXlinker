@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="InfoData_2A97D6CF" Id="{0c41cdca-925d-4883-9804-b6d1b1129fb6}">
+  <DUT Name="InfoData_2A97D6CF" Id="{b94a52e3-89bc-470a-8e80-0396e3ef26fe}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "ObjectIdAT %I*OTCID4StateAT %I*UINT2SlaveCountAT %I*UINT2"}
 {attribute addProperty CRC "714593999"}
 {attribute addProperty Size "8"}
-TYPE InfoData_2A97D6CF :
+TYPE InfoData_2A97D6CF EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "ObjectId"}
 	ObjectId AT %I* : OTCID;

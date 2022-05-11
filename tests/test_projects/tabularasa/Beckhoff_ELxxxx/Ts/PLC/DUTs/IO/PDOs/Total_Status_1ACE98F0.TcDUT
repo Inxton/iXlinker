@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Total_Status_1ACE98F0" Id="{10d20521-ee30-40d0-8867-4d96b0243b7c}">
+  <DUT Name="Total_Status_1ACE98F0" Id="{572bfac4-854e-4874-a92b-2a6132da8463}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0016'}
 {attribute addProperty BoxType "EL3423-0000-0016"}
 {attribute addProperty Id "System_StateAT %I*BOOL1Grid_DirectionAT %I*BOOL1Frequency_Guard_WarningAT %I*BOOL1Frequency_Guard_ErrorAT %I*BOOL1Neutral_Current_Guard_WarningAT %I*BOOL1Neutral_Current_Guard_ErrorAT %I*BOOL1Active_Power_Guard_WarningAT %I*BOOL1Active_Power_Guard_ErrorAT %I*BOOL1Apparent_Power_Guard_WarningAT %I*BOOL1Apparent_Power_Guard_ErrorAT %I*BOOL1Power_Quality_Guard_WarningAT %I*BOOL1Power_Quality_Guard_ErrorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Power_Quality_FactorAT %I*REAL4"}
 {attribute addProperty CRC "449747184"}
 {attribute addProperty Size "18"}
-TYPE Total_Status_1ACE98F0 :
+TYPE Total_Status_1ACE98F0 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "System_State"}
 	System_State AT %I* : BOOL;

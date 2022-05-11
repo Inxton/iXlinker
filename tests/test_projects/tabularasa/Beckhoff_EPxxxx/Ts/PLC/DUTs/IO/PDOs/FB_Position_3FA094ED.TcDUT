@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FB_Position_3FA094ED" Id="{275bc055-b5fb-47da-b222-0271966711f1}">
+  <DUT Name="FB_Position_3FA094ED" Id="{d409bc5f-b2e7-45ea-af96-f60bb436dc9f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7211-0034-0029'}
 {attribute addProperty BoxType "EP7211-0034-0029"}
 {attribute addProperty Id "PositionAT %I*UDINT4"}
 {attribute addProperty CRC "1067488493"}
 {attribute addProperty Size "4"}
-TYPE FB_Position_3FA094ED :
+TYPE FB_Position_3FA094ED EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Position"}
 	Position AT %I* : UDINT;

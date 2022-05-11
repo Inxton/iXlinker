@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FB_Inputs_39145651" Id="{e22cf99f-5bcf-4fc2-8be2-aac3195e2175}">
+  <DUT Name="FB_Inputs_39145651" Id="{6067a40a-b79e-4179-b222-a1ad65d57dd4}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ATH2050-5501-0022'}
 {attribute addProperty BoxType "ATH2050-5501-0022"}
 {attribute addProperty Id "BinaryDataAT %I*ARRAY [0..55] OF BYTE0"}
 {attribute addProperty CRC "957634129"}
 {attribute addProperty Size "0"}
-TYPE FB_Inputs_39145651 :
+TYPE FB_Inputs_39145651 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "BinaryData"}
 	BinaryData AT %I* : ARRAY [0..55] OF BYTE;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_TxPdo_1_Samples_Counter_value_215818C6" Id="{275c2abb-410a-4058-bb9d-9eaf5adf508b}">
+  <DUT Name="ENC_TxPdo_1_Samples_Counter_value_215818C6" Id="{2ef8c810-cbec-4abc-a936-7e8fb06c9d27}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5101-0011-0016'}
 {attribute addProperty BoxType "EL5101-0011-0016"}
 {attribute addProperty Id "Counter_valueAT %I*Counter_value_E1FCE22B4"}
 {attribute addProperty CRC "559421638"}
 {attribute addProperty Size "4"}
-TYPE ENC_TxPdo_1_Samples_Counter_value_215818C6 :
+TYPE ENC_TxPdo_1_Samples_Counter_value_215818C6 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Counter_value"}
 	Counter_value AT %I* : Counter_value_E1FCE22B;

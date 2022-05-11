@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DO_Group_2_Outputs_3033EF65" Id="{47b5d3d6-01be-4caf-a838-aec328b00e30}">
+  <DUT Name="DO_Group_2_Outputs_3033EF65" Id="{c5dbcb03-f2ed-4947-a5cf-97c4b237bedc}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM2642-0000-0016'}
 {attribute addProperty BoxType "ELM2642-0000-0016"}
 {attribute addProperty Id "Outputs_Channel_2AT %Q*Outputs_Channel_78994C084"}
 {attribute addProperty CRC "808709989"}
 {attribute addProperty Size "4"}
-TYPE DO_Group_2_Outputs_3033EF65 :
+TYPE DO_Group_2_Outputs_3033EF65 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Outputs_Channel_2"}
 	Outputs_Channel_2 AT %Q* : Outputs_Channel_78994C08;

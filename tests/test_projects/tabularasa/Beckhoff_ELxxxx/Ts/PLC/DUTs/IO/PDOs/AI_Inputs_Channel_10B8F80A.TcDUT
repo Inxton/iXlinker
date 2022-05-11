@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AI_Inputs_Channel_10B8F80A" Id="{6c3dc787-2a58-4839-9b47-81f3e67c4041}">
+  <DUT Name="AI_Inputs_Channel_10B8F80A" Id="{7c5e50e6-6622-4641-a6aa-78552fe1339f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3602-0000-0016'}
 {attribute addProperty BoxType "EL3602-0000-0016"}
 {attribute addProperty Id "UnderrangeAT %I*BOOL1OverrangeAT %I*BOOL1Limit_xAT %I*ARRAY[0..1] OF BYTE2ErrorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1ValueAT %I*DINT4"}
 {attribute addProperty CRC "2133005224"}
 {attribute addProperty Size "11"}
-TYPE AI_Inputs_Channel_10B8F80A :
+TYPE AI_Inputs_Channel_10B8F80A EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Underrange"}
 	Underrange AT %I* : BOOL;

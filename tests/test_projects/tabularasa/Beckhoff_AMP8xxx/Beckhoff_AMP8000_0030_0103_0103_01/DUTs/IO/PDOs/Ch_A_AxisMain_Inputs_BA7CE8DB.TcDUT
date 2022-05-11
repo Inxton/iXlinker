@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Ch_A_AxisMain_Inputs_BA7CE8DB" Id="{ebee6b82-e378-42e1-b2b3-5493f81d2753}">
+  <DUT Name="Ch_A_AxisMain_Inputs_BA7CE8DB" Id="{27aa703b-5868-47bd-b21d-6546e3d17372}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AMP8000-0030-0103-0103'}
 {attribute addProperty BoxType "AMP8000-0030-0103-0103"}
 {attribute addProperty Id "Position_actual_value_invalidAT %I*BOOL1_1st_Additional_position_actual_value_invalidAT %I*BOOL1Ch_A_StatuswordAT %I*UINT2Ch_A_Position_actual_valueAT %I*DINT4"}
 {attribute addProperty CRC "3128748251"}
 {attribute addProperty Size "8"}
-TYPE Ch_A_AxisMain_Inputs_BA7CE8DB :
+TYPE Ch_A_AxisMain_Inputs_BA7CE8DB EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Position_actual_value_invalid"}
 	Position_actual_value_invalid AT %I* : BOOL;

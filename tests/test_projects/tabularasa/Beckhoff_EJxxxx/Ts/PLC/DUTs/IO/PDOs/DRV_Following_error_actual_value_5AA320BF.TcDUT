@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DRV_Following_error_actual_value_5AA320BF" Id="{68446d89-aae0-42b8-b154-e647ad2f4c47}">
+  <DUT Name="DRV_Following_error_actual_value_5AA320BF" Id="{7a4f9341-2ec0-4cda-b9ef-b31466aa5584}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7411-0000-0018'}
 {attribute addProperty BoxType "EJ7411-0000-0018"}
 {attribute addProperty Id "Following_error_actual_valueAT %I*DINT4"}
 {attribute addProperty CRC "1520640191"}
 {attribute addProperty Size "4"}
-TYPE DRV_Following_error_actual_value_5AA320BF :
+TYPE DRV_Following_error_actual_value_5AA320BF EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Following_error_actual_value"}
 	Following_error_actual_value AT %I* : DINT;

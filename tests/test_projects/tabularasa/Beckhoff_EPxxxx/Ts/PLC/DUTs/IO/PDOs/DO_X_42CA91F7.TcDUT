@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DO_X_42CA91F7" Id="{9a10b91c-f811-447f-87c2-bd33e2b39d26}">
+  <DUT Name="DO_X_42CA91F7" Id="{86f84a32-5efd-4f2c-890c-fd4cab5d37c9}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1859-0042-0019'}
 {attribute addProperty BoxType "EP1859-0042-0019"}
 {attribute addProperty Id "OutputAT %Q*BOOL1"}
 {attribute addProperty CRC "1120571895"}
 {attribute addProperty Size "1"}
-TYPE DO_X_42CA91F7 :
+TYPE DO_X_42CA91F7 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Output"}
 	Output AT %Q* : BOOL;

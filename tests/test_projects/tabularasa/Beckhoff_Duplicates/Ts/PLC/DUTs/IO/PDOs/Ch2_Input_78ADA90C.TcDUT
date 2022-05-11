@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Ch2_Input_78ADA90C" Id="{9dd7519c-9247-42b7-975d-d1088b8eb95d}">
+  <DUT Name="Ch2_Input_78ADA90C" Id="{5f9081f6-b2fc-4568-a60b-d1f421962109}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1262-0000-0002'}
 {attribute addProperty BoxType "EL1262-0000-0002"}
 {attribute addProperty Id "Ch2_InputAT %I*BOOL1"}
 {attribute addProperty CRC "2024646924"}
 {attribute addProperty Size "1"}
-TYPE Ch2_Input_78ADA90C :
+TYPE Ch2_Input_78ADA90C EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Ch2_Input"}
 	Ch2_Input AT %I* : BOOL;

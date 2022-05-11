@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DO_Outputs_28AC1A9E" Id="{d5aff35e-63c3-40bb-a6f6-c40b3218f225}">
+  <DUT Name="DO_Outputs_28AC1A9E" Id="{811b6be3-8501-4e66-89d9-25fc6451f276}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0016'}
 {attribute addProperty BoxType "EP2316-0008-0016"}
 {attribute addProperty Id "OutputAT %Q*ARRAY[0..7] OF BOOL8"}
 {attribute addProperty CRC "1253840710"}
 {attribute addProperty Size "8"}
-TYPE DO_Outputs_28AC1A9E :
+TYPE DO_Outputs_28AC1A9E EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Output"}
 	Output AT %Q* : ARRAY[0..7] OF BOOL;

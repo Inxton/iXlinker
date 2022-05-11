@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_64AAC8C7" Id="{45631ea7-5095-443c-94da-3a18e0671539}">
+  <DUT Name="Channel_64AAC8C7" Id="{87654564-8036-4418-b005-408951abfe6f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9110'}
 {attribute addProperty BoxType "KL9110"}
 {attribute addProperty Id "PowerAT %I*BOOL0ShortCircuitAT %I*BOOL0"}
 {attribute addProperty CRC "1688914119"}
 {attribute addProperty Size "0"}
-TYPE Channel_64AAC8C7 :
+TYPE Channel_64AAC8C7 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Power"}
 	Power AT %I* : BOOL;

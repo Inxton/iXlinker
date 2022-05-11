@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="InfoData_07DD5D1A" Id="{c2300cc5-9ccc-44e6-9350-b6469da51dc7}">
+  <DUT Name="InfoData_07DD5D1A" Id="{46e4815a-64c0-4612-8599-888c5724a9b7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER2339-0021-0018'}
 {attribute addProperty BoxType "ER2339-0021-0018"}
 {attribute addProperty Id "AoeNetIdAT %I*.TcoAmsNetId0StateAT %I*UINT2"}
 {attribute addProperty CRC "131947802"}
 {attribute addProperty Size "2"}
-TYPE InfoData_07DD5D1A :
+TYPE InfoData_07DD5D1A EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "AoeNetId"}
 	AoeNetId AT %I* : .TcoAmsNetId;

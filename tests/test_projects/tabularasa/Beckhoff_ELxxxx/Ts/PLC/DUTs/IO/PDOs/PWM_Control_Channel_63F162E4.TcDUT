@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PWM_Control_Channel_63F162E4" Id="{d782f630-e6b1-4205-8b92-965de43005f4}">
+  <DUT Name="PWM_Control_Channel_63F162E4" Id="{4860b4a5-db78-4110-b079-501ce3e091e2}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2535-0000-0016'}
 {attribute addProperty BoxType "EL2535-0000-0016"}
 {attribute addProperty Id "ControlAT %Q*Control_254441A53PWM_outputAT %Q*INT2"}
 {attribute addProperty CRC "1676763876"}
 {attribute addProperty Size "5"}
-TYPE PWM_Control_Channel_63F162E4 :
+TYPE PWM_Control_Channel_63F162E4 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_254441A5;

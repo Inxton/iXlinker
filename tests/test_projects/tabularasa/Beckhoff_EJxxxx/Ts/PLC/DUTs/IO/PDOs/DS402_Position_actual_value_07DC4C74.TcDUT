@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DS402_Position_actual_value_07DC4C74" Id="{a15f2d4f-fca1-4f42-9833-918474a4c88c}">
+  <DUT Name="DS402_Position_actual_value_07DC4C74" Id="{772b9103-a8fd-488f-81ac-1db543c225f9}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0011-0026'}
 {attribute addProperty BoxType "EJ7211-0011-0026"}
 {attribute addProperty Id "Position_actual_valueAT %I*UDINT4"}
 {attribute addProperty CRC "131878004"}
 {attribute addProperty Size "4"}
-TYPE DS402_Position_actual_value_07DC4C74 :
+TYPE DS402_Position_actual_value_07DC4C74 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Position_actual_value"}
 	Position_actual_value AT %I* : UDINT;

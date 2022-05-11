@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="SSI_Inputs_Channel_EDA16284" Id="{f620ce45-f5c7-4864-8dec-a1afef4309ba}">
+  <DUT Name="SSI_Inputs_Channel_EDA16284" Id="{ae31b7da-371d-46a5-917d-161936bdd7a9}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5002-0000-0017'}
 {attribute addProperty BoxType "EJ5002-0000-0017"}
 {attribute addProperty Id "StatusAT %I*Status_C03E24957Counter_valueAT %I*UDINT4"}
 {attribute addProperty CRC "3986776708"}
 {attribute addProperty Size "11"}
-TYPE SSI_Inputs_Channel_EDA16284 :
+TYPE SSI_Inputs_Channel_EDA16284 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_C03E2495;

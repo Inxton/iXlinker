@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Outputs_FB9F3520" Id="{0d32f0d0-e744-4785-910f-1be23de961a1}">
+  <DUT Name="Outputs_FB9F3520" Id="{9ff1b017-552d-483a-a9bb-ec37ff25147a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2918-0000-0017'}
 {attribute addProperty BoxType "EJ2918-0000-0017"}
 {attribute addProperty Id "Module_1_Channel_1_Standard_OutputAT %Q*BOOL1Module_1_Channel_2_Standard_OutputAT %Q*BOOL1Module_1_Channel_3_Standard_OutputAT %Q*BOOL1Module_1_Channel_4_Standard_OutputAT %Q*BOOL1Module_2_Channel_1_Standard_OutputAT %Q*BOOL1Module_2_Channel_2_Standard_OutputAT %Q*BOOL1Module_2_Channel_3_Standard_OutputAT %Q*BOOL1Module_2_Channel_4_Standard_OutputAT %Q*BOOL1"}
 {attribute addProperty CRC "4221515040"}
 {attribute addProperty Size "8"}
-TYPE Outputs_FB9F3520 :
+TYPE Outputs_FB9F3520 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Module_1_Channel_1_Standard_Output"}
 	Module_1_Channel_1_Standard_Output AT %Q* : BOOL;

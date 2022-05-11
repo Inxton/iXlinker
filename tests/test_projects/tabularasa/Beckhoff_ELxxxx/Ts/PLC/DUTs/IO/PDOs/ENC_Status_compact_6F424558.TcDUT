@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Status_compact_6F424558" Id="{4a99cbfb-52b9-4081-bb32-775defce8b8f}">
+  <DUT Name="ENC_Status_compact_6F424558" Id="{6430a470-98cb-4700-a60e-8f8a3183824f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5101-0000-1020'}
 {attribute addProperty BoxType "EL5101-0000-1020"}
 {attribute addProperty Id "StatusAT %I*Status_6D6CFE2016Counter_valueAT %I*UINT2Latch_valueAT %I*UINT2"}
 {attribute addProperty CRC "1866614104"}
 {attribute addProperty Size "20"}
-TYPE ENC_Status_compact_6F424558 :
+TYPE ENC_Status_compact_6F424558 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_6D6CFE20;

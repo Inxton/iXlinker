@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Control_compact_2ED727EF" Id="{4b51b983-c8c9-444b-b252-804305075add}">
+  <DUT Name="ENC_Control_compact_2ED727EF" Id="{f72a27b0-9ebb-41af-9f99-52a299b7292d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX5151-0000-0016'}
 {attribute addProperty BoxType "ELX5151-0000-0016"}
 {attribute addProperty Id "ControlAT %Q*Control_BD9A418F1Set_counter_valueAT %Q*UINT2"}
 {attribute addProperty CRC "785852399"}
 {attribute addProperty Size "3"}
-TYPE ENC_Control_compact_2ED727EF :
+TYPE ENC_Control_compact_2ED727EF EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_BD9A418F;

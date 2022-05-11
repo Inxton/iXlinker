@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Inputs_CC16D1F4" Id="{16f5775c-10ec-4a1e-8000-4a2149808b57}">
+  <DUT Name="Inputs_CC16D1F4" Id="{d279a067-4cad-4553-aedf-492ad5316db1}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: BK1250-0000-0019'}
 {attribute addProperty BoxType "BK1250-0000-0019"}
 {attribute addProperty Id "CouplerStateAT %I*UINT0"}
 {attribute addProperty CRC "3424047604"}
 {attribute addProperty Size "0"}
-TYPE Inputs_CC16D1F4 :
+TYPE Inputs_CC16D1F4 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "CouplerState"}
 	CouplerState AT %I* : UINT;

@@ -41,34 +41,37 @@ namespace TsprojFile.Scan
                 //Exports only base structure that has an empty namespace, that means it does not exists in any PLC library used in this PLC project
                 if (string.IsNullOrEmpty(structureBase.BaseStructureNamespace))
                 {
-                    string structName = structureBase.BaseStructureName;
-                    StreamWriter sw = new StreamWriter(exportDir + "\\" + structName + ".TcDUT");
-                    try
+                    if (!structureBase.BaseStructurePrefix.Equals("!"))
                     {
-                        sw.WriteLine("<TcPlcObject>");
-                        sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
-                        sw.WriteLine("\t\t<Declaration><![CDATA[");
-                        foreach (string attribute in structureBase.Attributes)
+                        string structName = structureBase.BaseStructureName;
+                        StreamWriter sw = new StreamWriter(exportDir + "\\" + structName + ".TcDUT");
+                        try
                         {
-                            sw.WriteLine(attribute);
+                            sw.WriteLine("<TcPlcObject>");
+                            sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
+                            sw.WriteLine("\t\t<Declaration><![CDATA[");
+                            foreach (string attribute in structureBase.Attributes)
+                            {
+                                sw.WriteLine(attribute);
+                            }
+                            sw.WriteLine("TYPE " + structName + " :");
+                            sw.WriteLine("STRUCT");
+                            sw.WriteLine("END_STRUCT");
+                            sw.WriteLine("END_TYPE");
+                            sw.WriteLine("]]></Declaration>");
+                            sw.WriteLine("\t</DUT>");
+                            sw.WriteLine("</TcPlcObject>");
+                            sw.Close();
                         }
-                        sw.WriteLine("TYPE " + structName + " :");
-                        sw.WriteLine("STRUCT");
-                        sw.WriteLine("END_STRUCT");
-                        sw.WriteLine("END_TYPE");
-                        sw.WriteLine("]]></Declaration>");
-                        sw.WriteLine("\t</DUT>");
-                        sw.WriteLine("</TcPlcObject>");
-                        sw.Close();
-                    }
-                    catch (Exception ex)
-                    {
-                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                        sw.Dispose();
-                    }
-                    finally
-                    {
-                        sw.Close();
+                        catch (Exception ex)
+                        {
+                            EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                            sw.Dispose();
+                        }
+                        finally
+                        {
+                            sw.Close();
+                        }
                     }
                 }
             }

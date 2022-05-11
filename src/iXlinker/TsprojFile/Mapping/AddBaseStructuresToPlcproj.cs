@@ -35,13 +35,15 @@ namespace TsprojFile.Scan
                         //Exports only base structure that has an empty namespace, that means it does not exists in any PLC library used in this PLC project
                         if (string.IsNullOrEmpty(structureBase.BaseStructureNamespace))
                         {
-                            string structName = vs.DutsIoBase.Path + "\\" + structureBase.BaseStructureName + ".TcDUT";
-                            ProjectItemGroupCompile itemCompile = new ProjectItemGroupCompile() { Include = structName, SubType = "Code" };
-                            newItemCompile[compileIndex] = itemCompile;
-                            compileIndex++;
+                            if (!structureBase.BaseStructurePrefix.Equals("!"))
+                            {
+                                string structName = vs.DutsIoBase.Path + "\\" + structureBase.BaseStructureName + ".TcDUT";
+                                ProjectItemGroupCompile itemCompile = new ProjectItemGroupCompile() { Include = structName, SubType = "Code" };
+                                newItemCompile[compileIndex] = itemCompile;
+                                compileIndex++;
+                            }
                         }
                     }
-
                     item.Compile = newItemCompile;
                 }
             }

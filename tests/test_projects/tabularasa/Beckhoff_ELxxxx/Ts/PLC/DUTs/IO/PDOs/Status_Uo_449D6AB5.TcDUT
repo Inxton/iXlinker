@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Status_Uo_449D6AB5" Id="{ec9cccf7-592d-4536-8725-ab245d9236b0}">
+  <DUT Name="Status_Uo_449D6AB5" Id="{adc0002e-7ed8-46dc-9e30-90514f838fff}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9560-0000-0016'}
 {attribute addProperty BoxType "EL9560-0000-0016"}
 {attribute addProperty Id "Power_OKAT %I*BOOL1"}
 {attribute addProperty CRC "1151167157"}
 {attribute addProperty Size "1"}
-TYPE Status_Uo_449D6AB5 :
+TYPE Status_Uo_449D6AB5 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Power_OK"}
 	Power_OK AT %I* : BOOL;

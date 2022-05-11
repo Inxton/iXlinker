@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Inputs_F139456B" Id="{cbf4cd1d-a4d0-4034-9505-e1eff9249f25}">
+  <DUT Name="ENC_Inputs_F139456B" Id="{52bb9757-441f-4549-a5d2-0c094fc52118}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5151-0080-0016'}
 {attribute addProperty BoxType "EL5151-0080-0016"}
 {attribute addProperty Id "Latch_C_validAT %I*BOOL1Latch_extern_validAT %I*BOOL1Set_counter_doneAT %I*BOOL1Extrapolation_stallAT %I*BOOL1Status_of_input_AAT %I*BOOL1Status_of_input_BAT %I*BOOL1Status_of_input_CAT %I*BOOL1Status_of_extern_latchAT %I*BOOL1Sync_ErrorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Counter_valueAT %I*UINT2Latch_valueAT %I*UINT2"}
 {attribute addProperty CRC "4047062379"}
 {attribute addProperty Size "14"}
-TYPE ENC_Inputs_F139456B :
+TYPE ENC_Inputs_F139456B EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Latch_C_valid"}
 	Latch_C_valid AT %I* : BOOL;

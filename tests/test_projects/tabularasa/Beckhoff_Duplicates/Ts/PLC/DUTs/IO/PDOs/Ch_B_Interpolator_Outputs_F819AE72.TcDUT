@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Ch_B_Interpolator_Outputs_F819AE72" Id="{8a8a6ace-479b-4b59-a0c4-5649cf2e021b}">
+  <DUT Name="Ch_B_Interpolator_Outputs_F819AE72" Id="{9dd06a60-caef-4054-ac26-a103a90368b1}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0101-0101'}
 {attribute addProperty BoxType "AX8206-0100-0101-0101"}
 {attribute addProperty Id "Ch_B_Target_positionAT %Q*DINT4Ch_B_Target_velocityAT %Q*DINT4"}
 {attribute addProperty CRC "4162432626"}
 {attribute addProperty Size "8"}
-TYPE Ch_B_Interpolator_Outputs_F819AE72 :
+TYPE Ch_B_Interpolator_Outputs_F819AE72 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Ch_B_Target_position"}
 	Ch_B_Target_position AT %Q* : DINT;

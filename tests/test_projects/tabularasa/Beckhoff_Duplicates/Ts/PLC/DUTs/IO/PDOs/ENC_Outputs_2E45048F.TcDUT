@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Outputs_2E45048F" Id="{5750d22b-72b5-4a60-ac61-48579dbb0607}">
+  <DUT Name="ENC_Outputs_2E45048F" Id="{156681f7-86d0-428c-ac46-115776597270}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5151-0000-0016'}
 {attribute addProperty BoxType "EL5151-0000-0016"}
 {attribute addProperty Id "Enable_latch_CAT %Q*BOOL1Enable_latch_extern_on_positive_edgeAT %Q*BOOL1Set_counterAT %Q*BOOL1Enable_latch_extern_on_negative_edgeAT %Q*BOOL1Set_counter_valueAT %Q*UDINT4"}
 {attribute addProperty CRC "776275087"}
 {attribute addProperty Size "8"}
-TYPE ENC_Outputs_2E45048F :
+TYPE ENC_Outputs_2E45048F EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Enable_latch_C"}
 	Enable_latch_C AT %Q* : BOOL;

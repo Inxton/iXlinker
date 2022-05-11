@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Digital_A7E1DFAB" Id="{d9ad4ad4-cc3c-4f3e-b419-8db9294570f1}">
+  <DUT Name="Digital_A7E1DFAB" Id="{448d6559-73f1-4bfb-bfbf-4646852e8e8f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9995'}
 {attribute addProperty BoxType "EM7004-0000-9995"}
 {attribute addProperty Id "OutputAT %Q*ARRAY[0..15] OF BOOL16"}
 {attribute addProperty CRC "1538723034"}
 {attribute addProperty Size "16"}
-TYPE Digital_A7E1DFAB :
+TYPE Digital_A7E1DFAB EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Output"}
 	Output AT %Q* : ARRAY[0..15] OF BOOL;

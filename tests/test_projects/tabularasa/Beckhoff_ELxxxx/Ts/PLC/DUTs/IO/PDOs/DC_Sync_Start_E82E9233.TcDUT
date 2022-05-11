@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DC_Sync_Start_E82E9233" Id="{cc6af816-6ca9-40b8-ab55-a7f5f3d7c5f1}">
+  <DUT Name="DC_Sync_Start_E82E9233" Id="{e1bdea8d-a8bc-4f2b-a696-dc75ffb5ae99}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2252-0000-0016'}
 {attribute addProperty BoxType "EL2252-0000-0016"}
 {attribute addProperty Id "StartTimeAT %Q*ULINT8"}
 {attribute addProperty CRC "3895366195"}
 {attribute addProperty Size "8"}
-TYPE DC_Sync_Start_E82E9233 :
+TYPE DC_Sync_Start_E82E9233 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "StartTime"}
 	StartTime AT %Q* : ULINT;

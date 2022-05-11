@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="CC_Outputs_14_Ch_45965511" Id="{212ef807-f889-4c58-9472-7f77bc78bcd6}">
+  <DUT Name="CC_Outputs_14_Ch_45965511" Id="{1dec650f-0859-4f43-9f7a-a5d5d2f6ae9e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2000-0233-0022'}
 {attribute addProperty BoxType "AT2000-0233-0022"}
 {attribute addProperty Id "ControlAT %Q*UINT2Current_setpoint_value_ChAT %Q*ARRAY[0..13] OF INT28"}
 {attribute addProperty CRC "2837285957"}
 {attribute addProperty Size "30"}
-TYPE CC_Outputs_14_Ch_45965511 :
+TYPE CC_Outputs_14_Ch_45965511 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : UINT;

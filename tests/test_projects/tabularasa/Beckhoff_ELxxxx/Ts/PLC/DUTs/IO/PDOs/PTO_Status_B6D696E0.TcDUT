@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PTO_Status_B6D696E0" Id="{74e8b962-91a1-469f-b61f-1f00a4d1b732}">
+  <DUT Name="PTO_Status_B6D696E0" Id="{ca52fbaf-349a-4cbb-a172-5570e91843ed}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0000-1016'}
 {attribute addProperty BoxType "EL2521-0000-1016"}
 {attribute addProperty Id "Sel_Ack_End_counterAT %I*BOOL1Ramp_activeAT %I*BOOL1Status_of_input_targetAT %I*BOOL1Status_of_input_zeroAT %I*BOOL1ErrorAT %I*BOOL1Sync_ErrorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
 {attribute addProperty CRC "3067516640"}
 {attribute addProperty Size "7"}
-TYPE PTO_Status_B6D696E0 :
+TYPE PTO_Status_B6D696E0 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Sel_Ack_End_counter"}
 	Sel_Ack_End_counter AT %I* : BOOL;

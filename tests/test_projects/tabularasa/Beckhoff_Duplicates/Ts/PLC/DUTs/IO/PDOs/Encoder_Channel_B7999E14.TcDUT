@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Encoder_Channel_B7999E14" Id="{4ead9050-62ab-400a-a22a-872edae8b47c}">
+  <DUT Name="Encoder_Channel_B7999E14" Id="{efdf37cd-cde5-47c4-a150-8dc477e2a307}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9995'}
 {attribute addProperty BoxType "EM7004-0000-9995"}
 {attribute addProperty Id "CtrlAT %Q*UINT2ValueAT %Q*UINT2"}
 {attribute addProperty CRC "3080298004"}
 {attribute addProperty Size "4"}
-TYPE Encoder_Channel_B7999E14 :
+TYPE Encoder_Channel_B7999E14 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Ctrl"}
 	Ctrl AT %Q* : UINT;

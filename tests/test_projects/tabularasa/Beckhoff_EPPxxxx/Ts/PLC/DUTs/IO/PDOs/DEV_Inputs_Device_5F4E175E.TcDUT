@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DEV_Inputs_Device_5F4E175E" Id="{0a33f7d8-e8e3-49ff-95ce-1fc722c910b5}">
+  <DUT Name="DEV_Inputs_Device_5F4E175E" Id="{2cdbc7e9-d09d-4095-9995-3bb1a7975c2d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP3744-0041-0016'}
 {attribute addProperty BoxType "EPP3744-0041-0016"}
 {attribute addProperty Id "Safe_State_ActiveAT %I*BOOL1Sync_errorAT %I*BOOL1Undervoltage_UsAT %I*BOOL1Undervoltage_UpAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
 {attribute addProperty CRC "1598953310"}
 {attribute addProperty Size "5"}
-TYPE DEV_Inputs_Device_5F4E175E :
+TYPE DEV_Inputs_Device_5F4E175E EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Safe_State_Active"}
 	Safe_State_Active AT %I* : BOOL;

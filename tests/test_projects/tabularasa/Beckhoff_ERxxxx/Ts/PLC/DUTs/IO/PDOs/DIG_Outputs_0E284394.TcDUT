@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIG_Outputs_0E284394" Id="{e105de63-8648-41e8-82bb-cf623cb0678f}">
+  <DUT Name="DIG_Outputs_0E284394" Id="{693e1c40-c7c4-4c3d-9363-9535982bc5ed}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
 {attribute addProperty BoxType "ER8309-1022-0018"}
 {attribute addProperty Id "Digital_Output_X4_Pin4AT %Q*BOOL1Digital_Output_X4_Pin2AT %Q*BOOL1Digital_Output_X5_Pin4AT %Q*BOOL1Digital_Output_X5_Pin2AT %Q*BOOL1Digital_Output_X6_Pin4AT %Q*BOOL1Digital_Output_X6_Pin2AT %Q*BOOL1Digital_Output_X7_Pin4AT %Q*BOOL1Digital_Output_X7_Pin2AT %Q*BOOL1"}
 {attribute addProperty CRC "237519764"}
 {attribute addProperty Size "8"}
-TYPE DIG_Outputs_0E284394 :
+TYPE DIG_Outputs_0E284394 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Digital_Output_X4_Pin4"}
 	Digital_Output_X4_Pin4 AT %Q* : BOOL;

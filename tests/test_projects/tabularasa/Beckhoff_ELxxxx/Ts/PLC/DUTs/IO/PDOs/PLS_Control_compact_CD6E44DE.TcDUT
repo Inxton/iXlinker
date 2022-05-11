@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PLS_Control_compact_CD6E44DE" Id="{3ea8ae68-f9cf-4e15-87fe-818525fc1144}">
+  <DUT Name="PLS_Control_compact_CD6E44DE" Id="{9752c529-da48-4b32-b1ac-728cd71f23e2}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0124-0018'}
 {attribute addProperty BoxType "EL2521-0124-0018"}
 {attribute addProperty Id "ControlAT %Q*Control_7786EF9F2Switch_on_valueAT %Q*UINT2Switch_off_valueAT %Q*UINT2"}
 {attribute addProperty CRC "3446555870"}
 {attribute addProperty Size "6"}
-TYPE PLS_Control_compact_CD6E44DE :
+TYPE PLS_Control_compact_CD6E44DE EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_7786EF9F;

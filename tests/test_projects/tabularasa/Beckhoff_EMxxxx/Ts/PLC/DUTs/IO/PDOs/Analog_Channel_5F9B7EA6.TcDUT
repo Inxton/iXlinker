@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Analog_Channel_5F9B7EA6" Id="{84c71ec8-b76c-40bd-bfac-991184afc6d7}">
+  <DUT Name="Analog_Channel_5F9B7EA6" Id="{861c4fdf-dd4d-498f-b822-98bd2d60d386}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9995'}
 {attribute addProperty BoxType "EM7004-0000-9995"}
 {attribute addProperty Id "OutputAT %Q*INT2"}
 {attribute addProperty CRC "1604026022"}
 {attribute addProperty Size "2"}
-TYPE Analog_Channel_5F9B7EA6 :
+TYPE Analog_Channel_5F9B7EA6 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Output"}
 	Output AT %Q* : INT;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Total_Reactive_EF01DEFD" Id="{1e2074dc-0cdd-435a-be7f-2250c759fe55}">
+  <DUT Name="Total_Reactive_EF01DEFD" Id="{6e08684f-d73e-4979-8dc1-786ba4c2ff7f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0016'}
 {attribute addProperty BoxType "EL3423-0000-0016"}
 {attribute addProperty Id "Reactive_EnergyAT %I*LINT8Reactive_Positive_EnergyAT %I*ULINT8Reactive_Negative_EnergyAT %I*ULINT8"}
 {attribute addProperty CRC "4009877245"}
 {attribute addProperty Size "24"}
-TYPE Total_Reactive_EF01DEFD :
+TYPE Total_Reactive_EF01DEFD EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Reactive_Energy"}
 	Reactive_Energy AT %I* : LINT;

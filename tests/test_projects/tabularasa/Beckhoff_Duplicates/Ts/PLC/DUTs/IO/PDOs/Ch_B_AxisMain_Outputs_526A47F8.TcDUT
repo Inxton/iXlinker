@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Ch_B_AxisMain_Outputs_526A47F8" Id="{e0e54292-d5fc-4375-96ab-babba98cd143}">
+  <DUT Name="Ch_B_AxisMain_Outputs_526A47F8" Id="{a936abd4-55f6-458f-88c5-7f3560ff442f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0101-0101'}
 {attribute addProperty BoxType "AX8206-0100-0101-0101"}
 {attribute addProperty Id "Ch_B_ControlwordAT %Q*UINT2"}
 {attribute addProperty CRC "1382696952"}
 {attribute addProperty Size "2"}
-TYPE Ch_B_AxisMain_Outputs_526A47F8 :
+TYPE Ch_B_AxisMain_Outputs_526A47F8 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Ch_B_Controlword"}
 	Ch_B_Controlword AT %Q* : UINT;

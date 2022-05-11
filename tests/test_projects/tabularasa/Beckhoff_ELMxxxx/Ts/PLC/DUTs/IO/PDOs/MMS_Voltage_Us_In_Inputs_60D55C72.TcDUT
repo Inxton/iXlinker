@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="MMS_Voltage_Us_In_Inputs_60D55C72" Id="{aed19a0d-d6e5-4412-9714-4bfc0fe637fe}">
+  <DUT Name="MMS_Voltage_Us_In_Inputs_60D55C72" Id="{8bac6334-1a05-431d-93ab-b42e0fbe5a48}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM9410-0000-0016'}
 {attribute addProperty BoxType "ELM9410-0000-0016"}
 {attribute addProperty Id "StatusAT %I*Status_F2CE6D917ValueAT %I*REAL4"}
 {attribute addProperty CRC "1624595570"}
 {attribute addProperty Size "11"}
-TYPE MMS_Voltage_Us_In_Inputs_60D55C72 :
+TYPE MMS_Voltage_Us_In_Inputs_60D55C72 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_F2CE6D91;

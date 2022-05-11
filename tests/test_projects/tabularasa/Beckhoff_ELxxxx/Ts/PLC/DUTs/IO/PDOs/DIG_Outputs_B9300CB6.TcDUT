@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIG_Outputs_B9300CB6" Id="{d4df0d19-a816-4423-a1d9-43c77fcd95ad}">
+  <DUT Name="DIG_Outputs_B9300CB6" Id="{4b5a5564-8502-4036-99da-57a19799b1ea}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2819-0000-0016'}
 {attribute addProperty BoxType "EL2819-0000-0016"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_D623F56C1Channel_2AT %Q*Channel_D623F56C1Channel_3AT %Q*Channel_D623F56C1Channel_4AT %Q*Channel_D623F56C1Channel_5AT %Q*Channel_D623F56C1Channel_6AT %Q*Channel_D623F56C1Channel_7AT %Q*Channel_D623F56C1Channel_8AT %Q*Channel_D623F56C1Channel_9AT %Q*Channel_D623F56C1Channel_10AT %Q*Channel_D623F56C1Channel_11AT %Q*Channel_D623F56C1Channel_12AT %Q*Channel_D623F56C1Channel_13AT %Q*Channel_D623F56C1Channel_14AT %Q*Channel_D623F56C1Channel_15AT %Q*Channel_D623F56C1Channel_16AT %Q*Channel_D623F56C1"}
 {attribute addProperty CRC "3106933942"}
 {attribute addProperty Size "16"}
-TYPE DIG_Outputs_B9300CB6 :
+TYPE DIG_Outputs_B9300CB6 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Channel_1"}
 	Channel_1 AT %Q* : Channel_D623F56C;

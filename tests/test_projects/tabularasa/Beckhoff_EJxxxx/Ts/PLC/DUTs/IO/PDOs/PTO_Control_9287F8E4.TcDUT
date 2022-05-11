@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PTO_Control_9287F8E4" Id="{011e0a0b-2995-465c-bac5-d9ea72b4a09c}">
+  <DUT Name="PTO_Control_9287F8E4" Id="{55fba0ea-8fc2-4acd-8365-666f6b9e6fa8}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
 {attribute addProperty BoxType "EJ2521-0224-0016"}
 {attribute addProperty Id "ControlAT %Q*Control_DAEE1D523Frequency_valueAT %Q*UINT2"}
 {attribute addProperty CRC "2458384612"}
 {attribute addProperty Size "5"}
-TYPE PTO_Control_9287F8E4 :
+TYPE PTO_Control_9287F8E4 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_DAEE1D52;

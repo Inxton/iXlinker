@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DMX_Channel_005FDEFD" Id="{a88aab7c-92c3-4c8c-9a97-77bfe6848975}">
+  <DUT Name="DMX_Channel_005FDEFD" Id="{bf6adbb2-fe0a-4290-a347-0aff99fdce7a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6851-0010-0016'}
 {attribute addProperty BoxType "EL6851-0010-0016"}
 {attribute addProperty Id "ChannelAT %I*ARRAY[0..63] OF USINT64"}
 {attribute addProperty CRC "2289174522"}
 {attribute addProperty Size "64"}
-TYPE DMX_Channel_005FDEFD :
+TYPE DMX_Channel_005FDEFD EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Channel"}
 	Channel AT %I* : ARRAY[0..63] OF USINT;

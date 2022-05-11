@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AI_X02_Pin2_Standard_A8DF64E3" Id="{11758aa9-2d47-468e-ac58-6dd72d5115c7}">
+  <DUT Name="AI_X02_Pin2_Standard_A8DF64E3" Id="{400b1798-7c30-4ee9-806e-d024a021c2a7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP4378-1022-0017'}
 {attribute addProperty BoxType "EP4378-1022-0017"}
 {attribute addProperty Id "StatusAT %I*Status_B07533568ValueAT %I*INT2"}
 {attribute addProperty CRC "2833212643"}
 {attribute addProperty Size "10"}
-TYPE AI_X02_Pin2_Standard_A8DF64E3 :
+TYPE AI_X02_Pin2_Standard_A8DF64E3 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_B0753356;

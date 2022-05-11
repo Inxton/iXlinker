@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIG_Inputs_Device_1F4E72EB" Id="{b3d686ed-dc5d-4197-a8ab-49c8f23d158f}">
+  <DUT Name="DIG_Inputs_Device_1F4E72EB" Id="{e0ea52d7-b094-4e07-92e4-27e7bf006b34}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1518-0002-0018'}
 {attribute addProperty BoxType "ER1518-0002-0018"}
 {attribute addProperty Id "StatusAT %I*Status_D4FDECD45"}
 {attribute addProperty CRC "525234923"}
 {attribute addProperty Size "5"}
-TYPE DIG_Inputs_Device_1F4E72EB :
+TYPE DIG_Inputs_Device_1F4E72EB EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_D4FDECD4;

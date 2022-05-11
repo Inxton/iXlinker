@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIG_Diag_Inputs_58F3E2A8" Id="{35a847d4-244f-4554-a52d-78736bd4b29c}">
+  <DUT Name="DIG_Diag_Inputs_58F3E2A8" Id="{c06d70f9-70ea-4d1b-af0c-fbb4ecb4e9c7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2044-0000-0016'}
 {attribute addProperty BoxType "EL2044-0000-0016"}
 {attribute addProperty Id "Channel_1AT %I*Channel_EA8D33D74Channel_2AT %I*Channel_EA8D33D74Channel_3AT %I*Channel_EA8D33D74Channel_4AT %I*Channel_EA8D33D74"}
 {attribute addProperty CRC "1492378280"}
 {attribute addProperty Size "16"}
-TYPE DIG_Diag_Inputs_58F3E2A8 :
+TYPE DIG_Diag_Inputs_58F3E2A8 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Channel_1"}
 	Channel_1 AT %I* : Channel_EA8D33D7;

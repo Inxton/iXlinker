@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="MTI_Inputs_10x_Channel_C3ED30FD" Id="{bc300a2b-fb71-486f-ac35-5a0d5cb9066f}">
+  <DUT Name="MTI_Inputs_10x_Channel_C3ED30FD" Id="{1b9b4e75-7023-492e-ad11-9b2828af9d69}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1258-0000-0016'}
 {attribute addProperty BoxType "EL1258-0000-0016"}
 {attribute addProperty Id "StatusAT %I*Status_56B69FDC6InputsAT %I*Inputs_62625F9410Input_event_timeAT %I*ARRAY[0..9] OF UDINT40"}
 {attribute addProperty CRC "827289277"}
 {attribute addProperty Size "56"}
-TYPE MTI_Inputs_10x_Channel_C3ED30FD :
+TYPE MTI_Inputs_10x_Channel_C3ED30FD EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_56B69FDC;

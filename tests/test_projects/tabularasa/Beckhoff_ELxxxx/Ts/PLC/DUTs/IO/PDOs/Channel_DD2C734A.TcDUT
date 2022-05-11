@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_DD2C734A" Id="{f08a2fa2-bf7b-453c-bceb-bf6506d35d8a}">
+  <DUT Name="Channel_DD2C734A" Id="{bce8f287-9cfd-47e4-be51-dff68e140a78}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5001-0000-1016'}
 {attribute addProperty BoxType "EL5001-0000-1016"}
 {attribute addProperty Id "StatusAT %I*USINT1ValueAT %I*UDINT4"}
 {attribute addProperty CRC "3710677834"}
 {attribute addProperty Size "5"}
-TYPE Channel_DD2C734A :
+TYPE Channel_DD2C734A EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : USINT;

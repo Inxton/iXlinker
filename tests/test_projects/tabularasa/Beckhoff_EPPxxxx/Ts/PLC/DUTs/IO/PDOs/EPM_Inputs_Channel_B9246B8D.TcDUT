@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPM_Inputs_Channel_B9246B8D" Id="{7034c021-c9a2-43e8-9d40-d9896720f954}">
+  <DUT Name="EPM_Inputs_Channel_B9246B8D" Id="{23916365-9cb6-4708-a786-7131aba74c86}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP9022-0060-0017'}
 {attribute addProperty BoxType "EPP9022-0060-0017"}
 {attribute addProperty Id "StatusAT %I*Status_51F572C810VoltageAT %I*DINT4CurrentAT %I*DINT4"}
 {attribute addProperty CRC "3106171789"}
 {attribute addProperty Size "18"}
-TYPE EPM_Inputs_Channel_B9246B8D :
+TYPE EPM_Inputs_Channel_B9246B8D EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_51F572C8;

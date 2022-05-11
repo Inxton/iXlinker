@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIG_Inputs_495F5DA4" Id="{de6fbcb6-191f-4851-bc92-2a2bb7eb5e79}">
+  <DUT Name="DIG_Inputs_495F5DA4" Id="{4d7c76cf-308d-43d1-ac30-03fbfd4a2700}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP8309-0022-0021'}
 {attribute addProperty BoxType "EP8309-0022-0021"}
 {attribute addProperty Id "Digital_Input_X4_Pin4AT %I*BOOL1Digital_Input_X4_Pin2AT %I*BOOL1Digital_Input_X5_Pin4AT %I*BOOL1Digital_Input_X5_Pin2AT %I*BOOL1Digital_Input_X6_Pin4AT %I*BOOL1Digital_Input_X6_Pin2AT %I*BOOL1Digital_Input_X7_Pin4AT %I*BOOL1Digital_Input_X7_Pin2AT %I*BOOL1"}
 {attribute addProperty CRC "1230986660"}
 {attribute addProperty Size "8"}
-TYPE DIG_Inputs_495F5DA4 :
+TYPE DIG_Inputs_495F5DA4 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Digital_Input_X4_Pin4"}
 	Digital_Input_X4_Pin4 AT %I* : BOOL;

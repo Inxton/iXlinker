@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIG_Diag_Inputs_584303BF" Id="{d20755ea-dc09-49e6-aedf-f7059eca8d04}">
+  <DUT Name="DIG_Diag_Inputs_584303BF" Id="{a749bd2b-d703-4b12-9bad-7830af595163}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0003-0016'}
 {attribute addProperty BoxType "EP2316-0003-0016"}
 {attribute addProperty Id "Diag_InputAT %I*ARRAY[0..7] OF BOOL8"}
 {attribute addProperty CRC "568896300"}
 {attribute addProperty Size "8"}
-TYPE DIG_Diag_Inputs_584303BF :
+TYPE DIG_Diag_Inputs_584303BF EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Diag_Input"}
 	Diag_Input AT %I* : ARRAY[0..7] OF BOOL;

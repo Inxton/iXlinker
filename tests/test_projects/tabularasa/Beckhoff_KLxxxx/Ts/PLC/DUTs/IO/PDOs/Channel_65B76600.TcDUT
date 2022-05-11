@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_65B76600" Id="{082bb20f-46a6-4e87-8290-766f588432f3}">
+  <DUT Name="Channel_65B76600" Id="{966412f4-7fe9-40dd-ac1d-8ec06a90bc18}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: KL9900-0062'}
 {attribute addProperty BoxType "KL9900-0062"}
 {attribute addProperty Id "E_StopAT %I*BOOL0"}
 {attribute addProperty CRC "1706518016"}
 {attribute addProperty Size "0"}
-TYPE Channel_65B76600 :
+TYPE Channel_65B76600 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "E_Stop"}
 	E_Stop AT %I* : BOOL;

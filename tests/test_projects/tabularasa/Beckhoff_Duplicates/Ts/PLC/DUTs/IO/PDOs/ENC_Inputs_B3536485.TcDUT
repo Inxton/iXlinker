@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Inputs_B3536485" Id="{d6e01523-ffaf-4552-b7e8-ae009280ebd6}">
+  <DUT Name="ENC_Inputs_B3536485" Id="{2f7ffc5c-ee6f-42db-b5a7-16235dc6336c}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5151-0000-0016'}
 {attribute addProperty BoxType "EJ5151-0000-0016"}
 {attribute addProperty Id "StatusAT %I*Status_3E6F3FF310Counter_valueAT %I*UINT2Latch_valueAT %I*UINT2"}
 {attribute addProperty CRC "3008586885"}
 {attribute addProperty Size "14"}
-TYPE ENC_Inputs_B3536485 :
+TYPE ENC_Inputs_B3536485 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_3E6F3FF3;

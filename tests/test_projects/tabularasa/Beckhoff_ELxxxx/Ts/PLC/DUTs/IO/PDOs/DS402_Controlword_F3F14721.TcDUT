@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DS402_Controlword_F3F14721" Id="{e0362a5c-5f8c-4fce-bdfa-d92fe8c8fad9}">
+  <DUT Name="DS402_Controlword_F3F14721" Id="{4efec8d0-f1cf-472e-b3e1-6457355e8d49}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7201-0001-0017'}
 {attribute addProperty BoxType "EL7201-0001-0017"}
 {attribute addProperty Id "ControlwordAT %Q*UINT2"}
 {attribute addProperty CRC "4092675873"}
 {attribute addProperty Size "2"}
-TYPE DS402_Controlword_F3F14721 :
+TYPE DS402_Controlword_F3F14721 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Controlword"}
 	Controlword AT %Q* : UINT;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PTO_Target_Channel_1F6D5BC6" Id="{312bf461-474f-416d-9644-8d03f49345d8}">
+  <DUT Name="PTO_Target_Channel_1F6D5BC6" Id="{d6b24292-8f30-4adb-b7ec-92e818adda75}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2522-0000-0017'}
 {attribute addProperty BoxType "EL2522-0000-0017"}
 {attribute addProperty Id "Target_counter_valueAT %Q*UDINT4"}
 {attribute addProperty CRC "527260614"}
 {attribute addProperty Size "4"}
-TYPE PTO_Target_Channel_1F6D5BC6 :
+TYPE PTO_Target_Channel_1F6D5BC6 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Target_counter_value"}
 	Target_counter_value AT %Q* : UDINT;

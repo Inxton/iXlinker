@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="STM_Inputs_Device_A41D8456" Id="{f2f98867-8408-40bc-8ab0-787c200a2246}">
+  <DUT Name="STM_Inputs_Device_A41D8456" Id="{95225bed-10e5-4e11-aaaf-aeb381a9314f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7402-0057-0017'}
 {attribute addProperty BoxType "EP7402-0057-0017"}
 {attribute addProperty Id "Device_DiagAT %I*Device_Diag_1464ECF921"}
 {attribute addProperty CRC "2753397846"}
 {attribute addProperty Size "21"}
-TYPE STM_Inputs_Device_A41D8456 :
+TYPE STM_Inputs_Device_A41D8456 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Device_Diag"}
 	Device_Diag AT %I* : Device_Diag_1464ECF9;

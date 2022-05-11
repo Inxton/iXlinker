@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIG_Inputs_Device_A1F150A9" Id="{653561bb-e194-4592-8c7e-918e7c2b2953}">
+  <DUT Name="DIG_Inputs_Device_A1F150A9" Id="{128f352d-3f29-4cd6-b26b-e4c3f785c5f6}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2014-0000-0016'}
 {attribute addProperty BoxType "EL2014-0000-0016"}
 {attribute addProperty Id "Common_FaultAT %I*BOOL1Overtemperature_DeviceAT %I*BOOL1UndervoltageAT %I*BOOL1Missing_VoltageAT %I*BOOL1"}
 {attribute addProperty CRC "2716946601"}
 {attribute addProperty Size "4"}
-TYPE DIG_Inputs_Device_A1F150A9 :
+TYPE DIG_Inputs_Device_A1F150A9 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Common_Fault"}
 	Common_Fault AT %I* : BOOL;

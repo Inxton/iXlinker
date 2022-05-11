@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Status_compact_EA7A730E" Id="{7c02e8b2-30e6-4b2b-bb89-56df523c428a}">
+  <DUT Name="ENC_Status_compact_EA7A730E" Id="{a51429d1-d824-44d6-b5a3-8fd8e473c5d3}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0000-1016'}
 {attribute addProperty BoxType "EL2521-0000-1016"}
 {attribute addProperty Id "Set_counter_doneAT %I*BOOL1Counter_underflowAT %I*BOOL1Counter_overflowAT %I*BOOL1Sync_ErrorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Counter_valueAT %I*UINT2"}
 {attribute addProperty CRC "3933893390"}
 {attribute addProperty Size "7"}
-TYPE ENC_Status_compact_EA7A730E :
+TYPE ENC_Status_compact_EA7A730E EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Set_counter_done"}
 	Set_counter_done AT %I* : BOOL;

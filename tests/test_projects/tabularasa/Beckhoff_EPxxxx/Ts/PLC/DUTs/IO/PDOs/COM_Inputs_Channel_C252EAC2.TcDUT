@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="COM_Inputs_Channel_C252EAC2" Id="{54dd46d0-3fb9-4c69-bb05-717e3f65763e}">
+  <DUT Name="COM_Inputs_Channel_C252EAC2" Id="{25ebc1fb-cad3-4949-8a04-187d51f9932f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP6002-0002-0016'}
 {attribute addProperty BoxType "EP6002-0002-0016"}
 {attribute addProperty Id "StatusAT %I*WORD2Data_InAT %I*ARRAY[0..21] OF USINT22"}
 {attribute addProperty CRC "3532970676"}
 {attribute addProperty Size "24"}
-TYPE COM_Inputs_Channel_C252EAC2 :
+TYPE COM_Inputs_Channel_C252EAC2 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : WORD;

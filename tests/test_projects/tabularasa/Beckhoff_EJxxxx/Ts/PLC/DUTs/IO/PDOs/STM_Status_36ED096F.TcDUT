@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="STM_Status_36ED096F" Id="{1867d599-26bb-44b0-a6ae-22095bc5ccc8}">
+  <DUT Name="STM_Status_36ED096F" Id="{907fba67-0a4a-4071-b7a4-91a675e3f41e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7031-0000-0026'}
 {attribute addProperty BoxType "EJ7031-0000-0026"}
 {attribute addProperty Id "StatusAT %I*Status_B679584511"}
 {attribute addProperty CRC "921504111"}
 {attribute addProperty Size "11"}
-TYPE STM_Status_36ED096F :
+TYPE STM_Status_36ED096F EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_B6795845;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Total_Interval_Energy_Reduced_B0A0CDD8" Id="{05f11db3-1533-4d90-9678-45decfd8f61f}">
+  <DUT Name="Total_Interval_Energy_Reduced_B0A0CDD8" Id="{41ab34dc-8d5e-4082-a072-1f53f58511dd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3423-0000-0020'}
 {attribute addProperty BoxType "EL3423-0000-0020"}
 {attribute addProperty Id "TxPDO_ToggleAT %I*BOOL1Active_EnergyAT %I*REAL4Apparent_EnergyAT %I*REAL4Reactive_EnergyAT %I*REAL4"}
 {attribute addProperty CRC "2963328472"}
 {attribute addProperty Size "13"}
-TYPE Total_Interval_Energy_Reduced_B0A0CDD8 :
+TYPE Total_Interval_Energy_Reduced_B0A0CDD8 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "TxPDO_Toggle"}
 	TxPDO_Toggle AT %I* : BOOL;

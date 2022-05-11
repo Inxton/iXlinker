@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIS_Outputs_6C9BFFEE" Id="{96cc1b59-475f-4d52-bb1e-99da1c0ae98a}">
+  <DUT Name="DIS_Outputs_6C9BFFEE" Id="{8d308de5-5770-4e23-8bc6-05280161a6d5}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP6090-0000-0017'}
 {attribute addProperty BoxType "EPP6090-0000-0017"}
 {attribute addProperty Id "Value_rowAT %Q*ARRAY[0..1] OF INT4"}
 {attribute addProperty CRC "4003442326"}
 {attribute addProperty Size "4"}
-TYPE DIS_Outputs_6C9BFFEE :
+TYPE DIS_Outputs_6C9BFFEE EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Value_row"}
 	Value_row AT %Q* : ARRAY[0..1] OF INT;

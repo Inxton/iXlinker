@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Control_compact_245CB94B" Id="{aad4c2da-bf53-469c-b46f-26f0ccfc058c}">
+  <DUT Name="ENC_Control_compact_245CB94B" Id="{0adca3f8-93fd-472c-be9b-6accf5838bcd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0000-1016'}
 {attribute addProperty BoxType "EL2521-0000-1016"}
 {attribute addProperty Id "Set_counterAT %Q*BOOL1Set_counter_valueAT %Q*UINT2"}
 {attribute addProperty CRC "610056523"}
 {attribute addProperty Size "3"}
-TYPE ENC_Control_compact_245CB94B :
+TYPE ENC_Control_compact_245CB94B EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Set_counter"}
 	Set_counter AT %Q* : BOOL;

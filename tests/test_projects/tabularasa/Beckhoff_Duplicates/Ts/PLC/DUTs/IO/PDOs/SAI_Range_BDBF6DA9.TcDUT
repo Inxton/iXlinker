@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="SAI_Range_BDBF6DA9" Id="{e1101c50-9d73-40ba-841b-930c006a147d}">
+  <DUT Name="SAI_Range_BDBF6DA9" Id="{42fa9fa4-3f0f-4004-aa96-aa05436e39fd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0018'}
 {attribute addProperty BoxType "EL3681-0000-0018"}
 {attribute addProperty Id "SettingsAT %I*Settings_24C049402"}
 {attribute addProperty CRC "3183439273"}
 {attribute addProperty Size "2"}
-TYPE SAI_Range_BDBF6DA9 :
+TYPE SAI_Range_BDBF6DA9 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Settings"}
 	Settings AT %I* : Settings_24C04940;

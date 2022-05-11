@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="SSI_Inputs_3B70A311" Id="{fd2380ce-00a1-446e-a4ce-be01dbccf2c6}">
+  <DUT Name="SSI_Inputs_3B70A311" Id="{26235445-001c-4705-a6aa-03169d68730d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5001-0011-0016'}
 {attribute addProperty BoxType "EL5001-0011-0016"}
 {attribute addProperty Id "Data_errorAT %I*BOOL1Frame_errorAT %I*BOOL1Power_failureAT %I*BOOL1Sync_ErrorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Counter_valueAT %I*UDINT4"}
 {attribute addProperty CRC "997237521"}
 {attribute addProperty Size "10"}
-TYPE SSI_Inputs_3B70A311 :
+TYPE SSI_Inputs_3B70A311 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Data_error"}
 	Data_error AT %I* : BOOL;

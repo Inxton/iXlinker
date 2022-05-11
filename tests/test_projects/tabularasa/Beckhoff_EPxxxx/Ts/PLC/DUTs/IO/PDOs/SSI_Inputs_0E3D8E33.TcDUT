@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="SSI_Inputs_0E3D8E33" Id="{1617a1dc-d4c2-4cea-bab6-1328ad6dfb2d}">
+  <DUT Name="SSI_Inputs_0E3D8E33" Id="{f7a1d1a8-0288-4f88-99c6-9f718af61dfd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP5001-0002-0016'}
 {attribute addProperty BoxType "EP5001-0002-0016"}
 {attribute addProperty Id "StatusAT %I*Status_ACC8459F6Counter_valueAT %I*UDINT4"}
 {attribute addProperty CRC "238915123"}
 {attribute addProperty Size "10"}
-TYPE SSI_Inputs_0E3D8E33 :
+TYPE SSI_Inputs_0E3D8E33 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_ACC8459F;

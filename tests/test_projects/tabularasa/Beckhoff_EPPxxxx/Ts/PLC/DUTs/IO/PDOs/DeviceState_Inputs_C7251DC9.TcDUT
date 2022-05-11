@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DeviceState_Inputs_C7251DC9" Id="{e83f004e-6beb-4932-9ca1-2bc917bf4983}">
+  <DUT Name="DeviceState_Inputs_C7251DC9" Id="{cf38a498-cffc-4e4b-a922-ecd4c0633181}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP6228-0022-0016'}
 {attribute addProperty BoxType "EPP6228-0022-0016"}
 {attribute addProperty Id "State_Ch1AT %I*USINT1State_Ch2AT %I*USINT1State_Ch3AT %I*USINT1State_Ch4AT %I*USINT1State_Ch5AT %I*USINT1State_Ch6AT %I*USINT1State_Ch7AT %I*USINT1State_Ch8AT %I*USINT1"}
 {attribute addProperty CRC "3341098441"}
 {attribute addProperty Size "8"}
-TYPE DeviceState_Inputs_C7251DC9 :
+TYPE DeviceState_Inputs_C7251DC9 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "State_Ch1"}
 	State_Ch1 AT %I* : USINT;

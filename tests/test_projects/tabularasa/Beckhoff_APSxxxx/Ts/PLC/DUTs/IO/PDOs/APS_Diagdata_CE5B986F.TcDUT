@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="APS_Diagdata_CE5B986F" Id="{9967d343-25c2-4106-9c28-9d659c402a2b}">
+  <DUT Name="APS_Diagdata_CE5B986F" Id="{5c55a248-efa7-4806-bf5c-d0a64fd3c185}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: APS4322-7000-0017'}
 {attribute addProperty BoxType "APS4322-7000-0017"}
 {attribute addProperty Id "DC_Link_VoltageAT %I*UINT2Power_supply_currentAT %I*INT2"}
 {attribute addProperty CRC "3462109295"}
 {attribute addProperty Size "4"}
-TYPE APS_Diagdata_CE5B986F :
+TYPE APS_Diagdata_CE5B986F EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "DC_Link_Voltage"}
 	DC_Link_Voltage AT %I* : UINT;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DI_X07_Pin_830843C1" Id="{9dbb547c-de84-4f67-863f-780a340ea353}">
+  <DUT Name="DI_X07_Pin_830843C1" Id="{cb3487c3-dc3b-40ca-999d-69b25b6798a4}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1809-0042-0018'}
 {attribute addProperty BoxType "EP1809-0042-0018"}
 {attribute addProperty Id "InputAT %I*BOOL1"}
 {attribute addProperty CRC "2198356929"}
 {attribute addProperty Size "1"}
-TYPE DI_X07_Pin_830843C1 :
+TYPE DI_X07_Pin_830843C1 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Input"}
 	Input AT %I* : BOOL;

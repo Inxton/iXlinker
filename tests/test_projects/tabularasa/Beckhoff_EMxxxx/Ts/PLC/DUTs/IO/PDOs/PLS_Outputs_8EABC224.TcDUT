@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PLS_Outputs_8EABC224" Id="{1f40b9ee-6700-4ff6-ae24-c65302c442b4}">
+  <DUT Name="PLS_Outputs_8EABC224" Id="{68afb4be-531d-46ce-94a0-ce1a619b8124}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
 {attribute addProperty BoxType "EM7004-0000-0017"}
 {attribute addProperty Id "ControlAT %Q*Control_17BA1FC21"}
 {attribute addProperty CRC "2393621028"}
 {attribute addProperty Size "1"}
-TYPE PLS_Outputs_8EABC224 :
+TYPE PLS_Outputs_8EABC224 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : Control_17BA1FC2;

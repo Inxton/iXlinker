@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Channel_C6781B15" Id="{acc981e5-d2f5-48b9-9820-ce9b73006dec}">
+  <DUT Name="Channel_C6781B15" Id="{db059b5c-0758-4d73-8fa7-cfbab3b9b994}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5101--0000'}
 {attribute addProperty BoxType "EL5101--0000"}
 {attribute addProperty Id "CtrlAT %Q*USINT1ValueAT %Q*UINT2"}
 {attribute addProperty CRC "3329760021"}
 {attribute addProperty Size "3"}
-TYPE Channel_C6781B15 :
+TYPE Channel_C6781B15 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Ctrl"}
 	Ctrl AT %Q* : USINT;

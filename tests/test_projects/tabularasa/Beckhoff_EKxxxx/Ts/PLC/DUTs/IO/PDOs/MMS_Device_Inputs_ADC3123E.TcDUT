@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="MMS_Device_Inputs_ADC3123E" Id="{f5c37ecd-aad0-4bd1-93f1-467349d403cf}">
+  <DUT Name="MMS_Device_Inputs_ADC3123E" Id="{9298c755-42eb-4f7d-a791-1269f5866a98}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EKM1101-0000-0016'}
 {attribute addProperty BoxType "EKM1101-0000-0016"}
 {attribute addProperty Id "StatusAT %I*Status_9847B4EF5"}
 {attribute addProperty CRC "2915242558"}
 {attribute addProperty Size "5"}
-TYPE MMS_Device_Inputs_ADC3123E :
+TYPE MMS_Device_Inputs_ADC3123E EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_9847B4EF;

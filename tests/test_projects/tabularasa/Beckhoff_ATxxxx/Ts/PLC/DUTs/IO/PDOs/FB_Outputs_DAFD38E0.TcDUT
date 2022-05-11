@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FB_Outputs_DAFD38E0" Id="{da24bdb0-c381-4610-afb8-6f3e72ec0b0c}">
+  <DUT Name="FB_Outputs_DAFD38E0" Id="{346f9090-0567-4e15-9834-13c2bf4670dd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2050-5500-0018'}
 {attribute addProperty BoxType "AT2050-5500-0018"}
 {attribute addProperty Id "ControlAT %Q*UINT2"}
 {attribute addProperty CRC "3674028256"}
 {attribute addProperty Size "2"}
-TYPE FB_Outputs_DAFD38E0 :
+TYPE FB_Outputs_DAFD38E0 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Control"}
 	Control AT %Q* : UINT;

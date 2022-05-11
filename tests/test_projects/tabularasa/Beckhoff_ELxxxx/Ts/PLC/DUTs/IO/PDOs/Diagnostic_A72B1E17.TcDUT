@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Diagnostic_A72B1E17" Id="{244d0962-8482-4aed-9ddc-07b37d18f484}">
+  <DUT Name="Diagnostic_A72B1E17" Id="{865ebad4-9d5b-4fe8-b5d0-1bb39e5af2da}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2878-0005-0016'}
 {attribute addProperty BoxType "EL2878-0005-0016"}
 {attribute addProperty Id "DiagAT %I*BOOL1"}
 {attribute addProperty CRC "2804620823"}
 {attribute addProperty Size "1"}
-TYPE Diagnostic_A72B1E17 :
+TYPE Diagnostic_A72B1E17 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Diag"}
 	Diag AT %I* : BOOL;

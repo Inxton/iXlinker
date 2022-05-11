@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FIELDVOLTAGE_Field_Voltage_Status_9DC7C349" Id="{3526041b-a373-4ce1-b2ce-64a8aaaeb7fa}">
+  <DUT Name="FIELDVOLTAGE_Field_Voltage_Status_9DC7C349" Id="{5e69163d-47ef-4f86-87d4-247a330173c0}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1914-0000-0017'}
 {attribute addProperty BoxType "EJ1914-0000-0017"}
 {attribute addProperty Id "Fieldvoltage_UnderrangeAT %I*BOOL1Fieldvoltage_OverrangeAT %I*BOOL1"}
 {attribute addProperty CRC "2647114569"}
 {attribute addProperty Size "2"}
-TYPE FIELDVOLTAGE_Field_Voltage_Status_9DC7C349 :
+TYPE FIELDVOLTAGE_Field_Voltage_Status_9DC7C349 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Fieldvoltage_Underrange"}
 	Fieldvoltage_Underrange AT %I* : BOOL;

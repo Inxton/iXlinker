@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="COM_ext_outputs_54D54ACC" Id="{7dc6f419-bec5-46a9-b259-417562be428f}">
+  <DUT Name="COM_ext_outputs_54D54ACC" Id="{d9388a74-0421-4962-b5f6-e1c7be9b30c8}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
 {attribute addProperty BoxType "EL6001-0000-0020"}
 {attribute addProperty Id "CtrlAT %Q*Ctrl_1EFB4D3B5Data_OutAT %Q*ARRAY[0..49] OF UINT100"}
 {attribute addProperty CRC "3984205705"}
 {attribute addProperty Size "105"}
-TYPE COM_ext_outputs_54D54ACC :
+TYPE COM_ext_outputs_54D54ACC EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Ctrl"}
 	Ctrl AT %Q* : Ctrl_1EFB4D3B;

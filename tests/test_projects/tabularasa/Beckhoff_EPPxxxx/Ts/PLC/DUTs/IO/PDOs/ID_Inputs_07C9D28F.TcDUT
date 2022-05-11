@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ID_Inputs_07C9D28F" Id="{231e4017-861d-4212-9f24-620b2b299b49}">
+  <DUT Name="ID_Inputs_07C9D28F" Id="{858ef9ac-8ad5-4e30-bc5c-cef0b6424416}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1111-0000-0016'}
 {attribute addProperty BoxType "EPP1111-0000-0016"}
 {attribute addProperty Id "IDAT %I*UINT2"}
 {attribute addProperty CRC "130667151"}
 {attribute addProperty Size "2"}
-TYPE ID_Inputs_07C9D28F :
+TYPE ID_Inputs_07C9D28F EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "ID"}
 	ID AT %I* : UINT;

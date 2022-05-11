@@ -1,16 +1,17 @@
-<TcPlcObject>
-	<DUT Name="DRV_Following_error_actual_value_5AA320BF">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AMI8000-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DRV_Following_error_actual_value_5AA320BF" Id="{facc65ee-6742-4593-acda-d69223027fd6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AMI8000-0000-0016'}
 {attribute addProperty BoxType "AMI8000-0000-0016"}
 {attribute addProperty Id "Following_error_actual_valueAT %I*DINT4"}
 {attribute addProperty CRC "1520640191"}
 {attribute addProperty Size "4"}
-TYPE DRV_Following_error_actual_value_5AA320BF :
+TYPE DRV_Following_error_actual_value_5AA320BF EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Following_error_actual_value"}
 	Following_error_actual_value AT %I* : DINT;
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

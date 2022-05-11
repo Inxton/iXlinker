@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="RMB_Control_4997AEF6" Id="{b38a4122-9112-40fa-bda7-88979d00f21e}">
+  <DUT Name="RMB_Control_4997AEF6" Id="{aafdd88b-e4f1-4745-bfc2-904e8adf7a77}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3356-0000-0017'}
 {attribute addProperty BoxType "EL3356-0000-0017"}
 {attribute addProperty Id "CtrlAT %Q*Ctrl_AEDC374E4"}
 {attribute addProperty CRC "1234677494"}
 {attribute addProperty Size "4"}
-TYPE RMB_Control_4997AEF6 :
+TYPE RMB_Control_4997AEF6 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Ctrl"}
 	Ctrl AT %Q* : Ctrl_AEDC374E;

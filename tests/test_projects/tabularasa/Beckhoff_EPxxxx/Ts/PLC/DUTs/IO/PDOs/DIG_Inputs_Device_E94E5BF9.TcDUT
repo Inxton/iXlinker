@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DIG_Inputs_Device_E94E5BF9" Id="{3008a4e1-e830-4339-80a4-981bf4cca94e}">
+  <DUT Name="DIG_Inputs_Device_E94E5BF9" Id="{47cf8e08-41b2-483c-83aa-4855e61b4ecc}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0003-0016'}
 {attribute addProperty BoxType "EP2316-0003-0016"}
 {attribute addProperty Id "Safe_state_activeAT %I*BOOL1Error_channelAT %I*ARRAY[0..1] OF BOOL2Sync_errorAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1"}
 {attribute addProperty CRC "304706677"}
 {attribute addProperty Size "5"}
-TYPE DIG_Inputs_Device_E94E5BF9 :
+TYPE DIG_Inputs_Device_E94E5BF9 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Safe_state_active"}
 	Safe_state_active AT %I* : BOOL;

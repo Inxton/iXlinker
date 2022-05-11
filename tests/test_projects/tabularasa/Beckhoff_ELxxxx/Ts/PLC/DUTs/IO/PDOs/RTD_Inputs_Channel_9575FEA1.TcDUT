@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="RTD_Inputs_Channel_9575FEA1" Id="{cf074bec-c53c-4a28-aa1d-3c24f6ab862d}">
+  <DUT Name="RTD_Inputs_Channel_9575FEA1" Id="{73461928-e29d-49a7-b649-60e96b104438}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3204-0200-0016'}
 {attribute addProperty BoxType "EL3204-0200-0016"}
 {attribute addProperty Id "StatusAT %I*Status_68C33E995ValueAT %I*INT2"}
 {attribute addProperty CRC "2507538081"}
 {attribute addProperty Size "7"}
-TYPE RTD_Inputs_Channel_9575FEA1 :
+TYPE RTD_Inputs_Channel_9575FEA1 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_68C33E99;

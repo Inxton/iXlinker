@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="COM_TxPDO_Map_Inputs_Channel_6C2FC202" Id="{6e4c1f7b-93db-447e-b58d-c8256ec90852}">
+  <DUT Name="COM_TxPDO_Map_Inputs_Channel_6C2FC202" Id="{c07936e4-7be0-4bd6-a09a-2ecd688662a9}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP6002-0002-0018'}
 {attribute addProperty BoxType "EPP6002-0002-0018"}
 {attribute addProperty Id "StatusAT %I*UINT2Data_InAT %I*ARRAY[0..21] OF USINT22"}
 {attribute addProperty CRC "1367962124"}
 {attribute addProperty Size "24"}
-TYPE COM_TxPDO_Map_Inputs_Channel_6C2FC202 :
+TYPE COM_TxPDO_Map_Inputs_Channel_6C2FC202 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : UINT;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Ch_A_AxisMain_Inputs_DC14661D" Id="{aab9f00a-59dc-4e42-9e82-f6112876f1bf}">
+  <DUT Name="Ch_A_AxisMain_Inputs_DC14661D" Id="{6f2a4194-9577-404a-8c81-070f6d9ce7f8}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8108-0100-0101-0101'}
 {attribute addProperty BoxType "AX8108-0100-0101-0101"}
 {attribute addProperty Id "Ch_A_Position_actual_value_invalidAT %I*BOOL1Ch_A_1st_Additional_position_actual_value_invalidAT %I*BOOL1Ch_A_StatuswordAT %I*UINT2Ch_A_Position_actual_valueAT %I*DINT4"}
 {attribute addProperty CRC "3692324381"}
 {attribute addProperty Size "8"}
-TYPE Ch_A_AxisMain_Inputs_DC14661D :
+TYPE Ch_A_AxisMain_Inputs_DC14661D EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Ch_A_Position_actual_value_invalid"}
 	Ch_A_Position_actual_value_invalid AT %I* : BOOL;

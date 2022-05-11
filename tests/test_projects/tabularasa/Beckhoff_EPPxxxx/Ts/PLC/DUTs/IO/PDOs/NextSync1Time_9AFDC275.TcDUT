@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="NextSync1Time_9AFDC275" Id="{3ba78047-8b95-46aa-91f7-91b8428f716f}">
+  <DUT Name="NextSync1Time_9AFDC275" Id="{a7461216-a82c-45f9-9b2d-a082eb538af5}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP3632-0001-0016'}
 {attribute addProperty BoxType "EPP3632-0001-0016"}
 {attribute addProperty Id "StartTimeNextLatchAT %I*ULINT8"}
 {attribute addProperty CRC "2600321653"}
 {attribute addProperty Size "8"}
-TYPE NextSync1Time_9AFDC275 :
+TYPE NextSync1Time_9AFDC275 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "StartTimeNextLatch"}
 	StartTimeNextLatch AT %I* : ULINT;

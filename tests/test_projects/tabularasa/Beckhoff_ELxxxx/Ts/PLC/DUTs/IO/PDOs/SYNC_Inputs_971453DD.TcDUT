@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="SYNC_Inputs_971453DD" Id="{352f3687-d545-4eb7-a0bf-88f94fe01aa3}">
+  <DUT Name="SYNC_Inputs_971453DD" Id="{5b38e782-0783-490b-81e0-216fb2fad396}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6688-0000-0016'}
 {attribute addProperty BoxType "EL6688-0000-0016"}
 {attribute addProperty Id "Sync_ModeAT %I*BYTE1Control_value_update_toggleAT %I*BOOL1Time_stamp_update_toggleAT %I*BOOL1External_device_not_connectedAT %I*BOOL1"}
 {attribute addProperty CRC "2534691805"}
 {attribute addProperty Size "4"}
-TYPE SYNC_Inputs_971453DD :
+TYPE SYNC_Inputs_971453DD EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Sync_Mode"}
 	Sync_Mode AT %I* : BYTE;

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DS402_Target_velocity_08A9583B" Id="{0c6488d2-c1fa-435f-98ab-ee8bc05b49bd}">
+  <DUT Name="DS402_Target_velocity_08A9583B" Id="{6c7841ae-63ca-468d-af2d-557223b9e34a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0011-0026'}
 {attribute addProperty BoxType "EJ7211-0011-0026"}
 {attribute addProperty Id "Target_velocityAT %Q*DINT4"}
 {attribute addProperty CRC "145315899"}
 {attribute addProperty Size "4"}
-TYPE DS402_Target_velocity_08A9583B :
+TYPE DS402_Target_velocity_08A9583B EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Target_velocity"}
 	Target_velocity AT %Q* : DINT;

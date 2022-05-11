@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FSoE_Slave_Connection_1_Master_Message_7109E4F0" Id="{4c88a6f1-746a-45eb-82db-bfa4b9223d68}">
+  <DUT Name="FSoE_Slave_Connection_1_Master_Message_7109E4F0" Id="{4a8ae555-b5c8-4e80-8fa4-84f419d634b7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AMP8000-0030-0103-0103'}
 {attribute addProperty BoxType "AMP8000-0030-0103-0103"}
 {attribute addProperty Id "FSOEAT %Q*FSOE_6A82EB9321"}
 {attribute addProperty CRC "1896473840"}
 {attribute addProperty Size "21"}
-TYPE FSoE_Slave_Connection_1_Master_Message_7109E4F0 :
+TYPE FSoE_Slave_Connection_1_Master_Message_7109E4F0 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "FSOE"}
 	FSOE AT %Q* : FSOE_6A82EB93;

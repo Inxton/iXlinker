@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="PWM_Inputs_Channel_4239F652" Id="{43707ee4-cf71-4293-9bde-b74356787680}">
+  <DUT Name="PWM_Inputs_Channel_4239F652" Id="{8e450ed9-925f-40dc-8af8-16804b52abc6}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2502-0010-0020'}
 {attribute addProperty BoxType "EL2502-0010-0020"}
 {attribute addProperty Id "StatusAT %I*Status_8A0522A04"}
 {attribute addProperty CRC "1111094866"}
 {attribute addProperty Size "4"}
-TYPE PWM_Inputs_Channel_4239F652 :
+TYPE PWM_Inputs_Channel_4239F652 EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_8A0522A0;

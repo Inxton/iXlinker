@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="TACHO_Single_Shaft_Mode_Input_Channel_C331CA3E" Id="{7518c492-afa8-4892-a28e-7e31311b7f08}">
+  <DUT Name="TACHO_Single_Shaft_Mode_Input_Channel_C331CA3E" Id="{b37f4a60-c8fc-4308-aadc-0d0be30fd3cf}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER8309-1022-0018'}
 {attribute addProperty BoxType "ER8309-1022-0018"}
 {attribute addProperty Id "StatusAT %I*Status_6CCA259F6Rotational_SpeedAT %I*INT2Rotation_DirectionAT %I*UINT2"}
 {attribute addProperty CRC "3274820158"}
 {attribute addProperty Size "10"}
-TYPE TACHO_Single_Shaft_Mode_Input_Channel_C331CA3E :
+TYPE TACHO_Single_Shaft_Mode_Input_Channel_C331CA3E EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status AT %I* : Status_6CCA259F;

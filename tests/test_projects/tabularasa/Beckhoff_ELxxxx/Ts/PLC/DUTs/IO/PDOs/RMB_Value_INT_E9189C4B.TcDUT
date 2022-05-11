@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="RMB_Value_INT_E9189C4B" Id="{e18932c0-b86d-4399-ab6e-f7ee32408d44}">
+  <DUT Name="RMB_Value_INT_E9189C4B" Id="{b0adc381-14f5-43e9-95cb-2827445959f4}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3356-0030-0025'}
 {attribute addProperty BoxType "EL3356-0030-0025"}
 {attribute addProperty Id "ValueAT %I*DINT4"}
 {attribute addProperty CRC "3910704203"}
 {attribute addProperty Size "4"}
-TYPE RMB_Value_INT_E9189C4B :
+TYPE RMB_Value_INT_E9189C4B EXTENDS InputBase_8311D824 :
 STRUCT
 	{attribute addProperty Name "Value"}
 	Value AT %I* : DINT;

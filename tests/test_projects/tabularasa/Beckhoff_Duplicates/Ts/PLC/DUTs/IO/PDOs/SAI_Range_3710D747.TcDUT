@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="SAI_Range_3710D747" Id="{4aa24480-ed19-47df-9d93-974ff94c969b}">
+  <DUT Name="SAI_Range_3710D747" Id="{e176f130-7323-42ec-a683-c900ab3ae0c3}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3681-0000-0017'}
 {attribute addProperty BoxType "EL3681-0000-0017"}
 {attribute addProperty Id "CtrlAT %Q*Ctrl_56BB2DF23"}
 {attribute addProperty CRC "923850567"}
 {attribute addProperty Size "3"}
-TYPE SAI_Range_3710D747 :
+TYPE SAI_Range_3710D747 EXTENDS OutputBase_10CEE7DE :
 STRUCT
 	{attribute addProperty Name "Ctrl"}
 	Ctrl AT %Q* : Ctrl_56BB2DF2;
