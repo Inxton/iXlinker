@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_ER1xxxEK1122_4914C526" Id="{819e1538-d767-46d5-bcb3-934eec107129}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
+{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "Beckhoff_ER1xxxsub_EK1100EK1100_1FC0878B2A_0001_ER1008_0001_0016ER1008_78E8D3DD12A_0002_ER1008_0001_0018ER1008_78E8D3DD12A_0003_ER1008_0002_0018ER1008_78E8D3DD12A_0004_ER1008_0022_0017ER1008_78E8D3DD12A_0005_ER1018_0001_0018ER1018_78E8D3DD12A_0006_ER1018_0002_0018ER1018_78E8D3DD12A_0007_ER1098_0001_0017ER1098_78E8D3DD12A_0008_ER1258_0001_0019ER1258_58F475DD56A_0009_ER1258_0001_0020ER1258_58F475DD56A_0010_ER1258_0002_0019ER1258_58F475DD56A_0011_ER1258_0002_0020ER1258_58F475DD56A_0012_ER1518_0002_0018ER1518_CC44258859A_0013_ER1518_0002_0019ER1518_CC44258859A_0014_ER1809_0021_0017ER1809_32157CFD20A_0015_ER1809_0022_0018ER1809_32157CFD20A_0016_ER1819_0021_0017ER1819_32157CFD20A_0017_ER1819_0022_0017ER1819_32157CFD20"}
+{attribute addProperty CRC "1226097958"}
+{attribute addProperty Size "508"}
+TYPE Beckhoff_ER1xxxEK1122_4914C526 EXTENDS EK1122_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_ER1xxxsub_EK1100"}
+	{attribute addProperty PreviousPort "Beckhoff ER1xxxEK1122 : D"}
+	Beckhoff_ER1xxxsub_EK1100 : EK1100_1FC0878B;
+	{attribute addProperty Name "A_0001_ER1008_0001_0016"}
+	{attribute addProperty PreviousPort "Beckhoff ER1xxxsub EK1100 : C"}
+	A_0001_ER1008_0001_0016 : ER1008_78E8D3DD;
+	{attribute addProperty Name "A_0002_ER1008_0001_0018"}
+	{attribute addProperty PreviousPort "A_0001(ER1008-0001-0016) : B"}
+	A_0002_ER1008_0001_0018 : ER1008_78E8D3DD;
+	{attribute addProperty Name "A_0003_ER1008_0002_0018"}
+	{attribute addProperty PreviousPort "A_0002(ER1008-0001-0018) : B"}
+	A_0003_ER1008_0002_0018 : ER1008_78E8D3DD;
+	{attribute addProperty Name "A_0004_ER1008_0022_0017"}
+	{attribute addProperty PreviousPort "A_0003(ER1008-0002-0018) : B"}
+	A_0004_ER1008_0022_0017 : ER1008_78E8D3DD;
+	{attribute addProperty Name "A_0005_ER1018_0001_0018"}
+	{attribute addProperty PreviousPort "A_0004(ER1008-0022-0017) : B"}
+	A_0005_ER1018_0001_0018 : ER1018_78E8D3DD;
+	{attribute addProperty Name "A_0006_ER1018_0002_0018"}
+	{attribute addProperty PreviousPort "A_0005(ER1018-0001-0018) : B"}
+	A_0006_ER1018_0002_0018 : ER1018_78E8D3DD;
+	{attribute addProperty Name "A_0007_ER1098_0001_0017"}
+	{attribute addProperty PreviousPort "A_0006(ER1018-0002-0018) : B"}
+	A_0007_ER1098_0001_0017 : ER1098_78E8D3DD;
+	{attribute addProperty Name "A_0008_ER1258_0001_0019"}
+	{attribute addProperty PreviousPort "A_0007(ER1098-0001-0017) : B"}
+	A_0008_ER1258_0001_0019 : ER1258_58F475DD;
+	{attribute addProperty Name "A_0009_ER1258_0001_0020"}
+	{attribute addProperty PreviousPort "A_0008(ER1258-0001-0019) : B"}
+	A_0009_ER1258_0001_0020 : ER1258_58F475DD;
+	{attribute addProperty Name "A_0010_ER1258_0002_0019"}
+	{attribute addProperty PreviousPort "A_0009(ER1258-0001-0020) : B"}
+	A_0010_ER1258_0002_0019 : ER1258_58F475DD;
+	{attribute addProperty Name "A_0011_ER1258_0002_0020"}
+	{attribute addProperty PreviousPort "A_0010(ER1258-0002-0019) : B"}
+	A_0011_ER1258_0002_0020 : ER1258_58F475DD;
+	{attribute addProperty Name "A_0012_ER1518_0002_0018"}
+	{attribute addProperty PreviousPort "A_0011(ER1258-0002-0020) : B"}
+	A_0012_ER1518_0002_0018 : ER1518_CC442588;
+	{attribute addProperty Name "A_0013_ER1518_0002_0019"}
+	{attribute addProperty PreviousPort "A_0012(ER1518-0002-0018) : B"}
+	A_0013_ER1518_0002_0019 : ER1518_CC442588;
+	{attribute addProperty Name "A_0014_ER1809_0021_0017"}
+	{attribute addProperty PreviousPort "A_0013(ER1518-0002-0019) : B"}
+	A_0014_ER1809_0021_0017 : ER1809_32157CFD;
+	{attribute addProperty Name "A_0015_ER1809_0022_0018"}
+	{attribute addProperty PreviousPort "A_0014(ER1809-0021-0017) : B"}
+	A_0015_ER1809_0022_0018 : ER1809_32157CFD;
+	{attribute addProperty Name "A_0016_ER1819_0021_0017"}
+	{attribute addProperty PreviousPort "A_0015(ER1809-0022-0018) : B"}
+	A_0016_ER1819_0021_0017 : ER1819_32157CFD;
+	{attribute addProperty Name "A_0017_ER1819_0022_0017"}
+	{attribute addProperty PreviousPort "A_0016(ER1819-0021-0017) : B"}
+	A_0017_ER1819_0022_0017 : ER1819_32157CFD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

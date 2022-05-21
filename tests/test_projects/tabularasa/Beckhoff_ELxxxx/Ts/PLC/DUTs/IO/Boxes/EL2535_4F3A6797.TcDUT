@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2535_4F3A6797" Id="{c8d9327b-2669-49b4-a390-5eb4c285cb4b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2535-0000-0016'}
+{attribute addProperty BoxType "EL2535-0000-0016"}
+{attribute addProperty Id "PWM_Status_Channel_1AT %I*PWM_Status_Channel_2D1AF3405PWM_Status_Channel_2AT %I*PWM_Status_Channel_2D1AF3405PWM_Control_Channel_1AT %Q*PWM_Control_Channel_63F162E45PWM_Control_Channel_2AT %Q*PWM_Control_Channel_63F162E45WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1329227671"}
+{attribute addProperty Size "32"}
+TYPE EL2535_4F3A6797 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "PWM_Status_Channel_1"}
+	PWM_Status_Channel_1 : PWM_Status_Channel_2D1AF340;
+	{attribute addProperty Name "PWM_Status_Channel_2"}
+	PWM_Status_Channel_2 : PWM_Status_Channel_2D1AF340;
+	{attribute addProperty Name "PWM_Control_Channel_1"}
+	PWM_Control_Channel_1 : PWM_Control_Channel_63F162E4;
+	{attribute addProperty Name "PWM_Control_Channel_2"}
+	PWM_Control_Channel_2 : PWM_Control_Channel_63F162E4;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

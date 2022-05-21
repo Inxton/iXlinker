@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL1259_AB1DE4FC" Id="{11b13d99-56c6-42c8-8fb0-988bfabaf66d}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1259-0000-0017'}
+{attribute addProperty BoxType "EL1259-0000-0017"}
+{attribute addProperty Id "MTO_Inputs_Channel_1AT %I*MTO_Inputs_Channel_53C09E8B6MTO_Inputs_Channel_2AT %I*MTO_Inputs_Channel_53C09E8B6MTO_Inputs_Channel_3AT %I*MTO_Inputs_Channel_53C09E8B6MTO_Inputs_Channel_4AT %I*MTO_Inputs_Channel_53C09E8B6MTO_Inputs_Channel_5AT %I*MTO_Inputs_Channel_53C09E8B6MTO_Inputs_Channel_6AT %I*MTO_Inputs_Channel_53C09E8B6MTO_Inputs_Channel_7AT %I*MTO_Inputs_Channel_53C09E8B6MTO_Inputs_Channel_8AT %I*MTO_Inputs_Channel_53C09E8B6MTI_Inputs_10x_Channel_1AT %I*MTI_Inputs_10x_Channel_C3ED30FD56MTI_Inputs_10x_Channel_2AT %I*MTI_Inputs_10x_Channel_C3ED30FD56MTI_Inputs_10x_Channel_3AT %I*MTI_Inputs_10x_Channel_C3ED30FD56MTI_Inputs_10x_Channel_4AT %I*MTI_Inputs_10x_Channel_C3ED30FD56MTI_Inputs_10x_Channel_5AT %I*MTI_Inputs_10x_Channel_C3ED30FD56MTI_Inputs_10x_Channel_6AT %I*MTI_Inputs_10x_Channel_C3ED30FD56MTI_Inputs_10x_Channel_7AT %I*MTI_Inputs_10x_Channel_C3ED30FD56MTI_Inputs_10x_Channel_8AT %I*MTI_Inputs_10x_Channel_C3ED30FD56MTO_Outputs_10x_Channel_1AT %Q*MTO_Outputs_10x_Channel_A3C0C02256MTO_Outputs_10x_Channel_2AT %Q*MTO_Outputs_10x_Channel_A3C0C02256MTO_Outputs_10x_Channel_3AT %Q*MTO_Outputs_10x_Channel_A3C0C02256MTO_Outputs_10x_Channel_4AT %Q*MTO_Outputs_10x_Channel_A3C0C02256MTO_Outputs_10x_Channel_5AT %Q*MTO_Outputs_10x_Channel_A3C0C02256MTO_Outputs_10x_Channel_6AT %Q*MTO_Outputs_10x_Channel_A3C0C02256MTO_Outputs_10x_Channel_7AT %Q*MTO_Outputs_10x_Channel_A3C0C02256MTO_Outputs_10x_Channel_8AT %Q*MTO_Outputs_10x_Channel_A3C0C02256MTI_Outputs_Channel_1AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_2AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_3AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_4AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_5AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_6AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_7AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_8AT %Q*MTI_Outputs_Channel_0F1028A12WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
+{attribute addProperty CRC "2870863100"}
+{attribute addProperty Size "980"}
+TYPE EL1259_AB1DE4FC EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "MTO_Inputs_Channel_1"}
+	MTO_Inputs_Channel_1 : MTO_Inputs_Channel_53C09E8B;
+	{attribute addProperty Name "MTO_Inputs_Channel_2"}
+	MTO_Inputs_Channel_2 : MTO_Inputs_Channel_53C09E8B;
+	{attribute addProperty Name "MTO_Inputs_Channel_3"}
+	MTO_Inputs_Channel_3 : MTO_Inputs_Channel_53C09E8B;
+	{attribute addProperty Name "MTO_Inputs_Channel_4"}
+	MTO_Inputs_Channel_4 : MTO_Inputs_Channel_53C09E8B;
+	{attribute addProperty Name "MTO_Inputs_Channel_5"}
+	MTO_Inputs_Channel_5 : MTO_Inputs_Channel_53C09E8B;
+	{attribute addProperty Name "MTO_Inputs_Channel_6"}
+	MTO_Inputs_Channel_6 : MTO_Inputs_Channel_53C09E8B;
+	{attribute addProperty Name "MTO_Inputs_Channel_7"}
+	MTO_Inputs_Channel_7 : MTO_Inputs_Channel_53C09E8B;
+	{attribute addProperty Name "MTO_Inputs_Channel_8"}
+	MTO_Inputs_Channel_8 : MTO_Inputs_Channel_53C09E8B;
+	{attribute addProperty Name "MTI_Inputs_10x_Channel_1"}
+	MTI_Inputs_10x_Channel_1 : MTI_Inputs_10x_Channel_C3ED30FD;
+	{attribute addProperty Name "MTI_Inputs_10x_Channel_2"}
+	MTI_Inputs_10x_Channel_2 : MTI_Inputs_10x_Channel_C3ED30FD;
+	{attribute addProperty Name "MTI_Inputs_10x_Channel_3"}
+	MTI_Inputs_10x_Channel_3 : MTI_Inputs_10x_Channel_C3ED30FD;
+	{attribute addProperty Name "MTI_Inputs_10x_Channel_4"}
+	MTI_Inputs_10x_Channel_4 : MTI_Inputs_10x_Channel_C3ED30FD;
+	{attribute addProperty Name "MTI_Inputs_10x_Channel_5"}
+	MTI_Inputs_10x_Channel_5 : MTI_Inputs_10x_Channel_C3ED30FD;
+	{attribute addProperty Name "MTI_Inputs_10x_Channel_6"}
+	MTI_Inputs_10x_Channel_6 : MTI_Inputs_10x_Channel_C3ED30FD;
+	{attribute addProperty Name "MTI_Inputs_10x_Channel_7"}
+	MTI_Inputs_10x_Channel_7 : MTI_Inputs_10x_Channel_C3ED30FD;
+	{attribute addProperty Name "MTI_Inputs_10x_Channel_8"}
+	MTI_Inputs_10x_Channel_8 : MTI_Inputs_10x_Channel_C3ED30FD;
+	{attribute addProperty Name "MTO_Outputs_10x_Channel_1"}
+	MTO_Outputs_10x_Channel_1 : MTO_Outputs_10x_Channel_A3C0C022;
+	{attribute addProperty Name "MTO_Outputs_10x_Channel_2"}
+	MTO_Outputs_10x_Channel_2 : MTO_Outputs_10x_Channel_A3C0C022;
+	{attribute addProperty Name "MTO_Outputs_10x_Channel_3"}
+	MTO_Outputs_10x_Channel_3 : MTO_Outputs_10x_Channel_A3C0C022;
+	{attribute addProperty Name "MTO_Outputs_10x_Channel_4"}
+	MTO_Outputs_10x_Channel_4 : MTO_Outputs_10x_Channel_A3C0C022;
+	{attribute addProperty Name "MTO_Outputs_10x_Channel_5"}
+	MTO_Outputs_10x_Channel_5 : MTO_Outputs_10x_Channel_A3C0C022;
+	{attribute addProperty Name "MTO_Outputs_10x_Channel_6"}
+	MTO_Outputs_10x_Channel_6 : MTO_Outputs_10x_Channel_A3C0C022;
+	{attribute addProperty Name "MTO_Outputs_10x_Channel_7"}
+	MTO_Outputs_10x_Channel_7 : MTO_Outputs_10x_Channel_A3C0C022;
+	{attribute addProperty Name "MTO_Outputs_10x_Channel_8"}
+	MTO_Outputs_10x_Channel_8 : MTO_Outputs_10x_Channel_A3C0C022;
+	{attribute addProperty Name "MTI_Outputs_Channel_1"}
+	MTI_Outputs_Channel_1 : MTI_Outputs_Channel_0F1028A1;
+	{attribute addProperty Name "MTI_Outputs_Channel_2"}
+	MTI_Outputs_Channel_2 : MTI_Outputs_Channel_0F1028A1;
+	{attribute addProperty Name "MTI_Outputs_Channel_3"}
+	MTI_Outputs_Channel_3 : MTI_Outputs_Channel_0F1028A1;
+	{attribute addProperty Name "MTI_Outputs_Channel_4"}
+	MTI_Outputs_Channel_4 : MTI_Outputs_Channel_0F1028A1;
+	{attribute addProperty Name "MTI_Outputs_Channel_5"}
+	MTI_Outputs_Channel_5 : MTI_Outputs_Channel_0F1028A1;
+	{attribute addProperty Name "MTI_Outputs_Channel_6"}
+	MTI_Outputs_Channel_6 : MTI_Outputs_Channel_0F1028A1;
+	{attribute addProperty Name "MTI_Outputs_Channel_7"}
+	MTI_Outputs_Channel_7 : MTI_Outputs_Channel_0F1028A1;
+	{attribute addProperty Name "MTI_Outputs_Channel_8"}
+	MTI_Outputs_Channel_8 : MTI_Outputs_Channel_0F1028A1;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BEF6B88E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

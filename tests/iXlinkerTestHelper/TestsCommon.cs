@@ -30,13 +30,13 @@ namespace iXlinkerTestHelper
             var executingAssemblyFolder = executingAssemblyPath.Directory.FullName;
             TestFolderPath = Path.GetFullPath(@"..\..\..\..\test_projects\", executingAssemblyFolder);
             SourcePath = (TestFolderPath + "\\tabularasa").Replace("\\\\", "\\");
-            expectedDir = new DirectoryInfo((TestFolderPath + "\\expected").Replace("\\\\", "\\"));
+            expectedDir = new DirectoryInfo((TestFolderPath + "\\_expected").Replace("\\\\", "\\"));
             if (Directory.Exists(expectedDir.FullName))
             {
                 expectedDir.Delete(true);
             }
             expectedDir.Create();
-            generatedDir = new DirectoryInfo((TestFolderPath + "\\generated").Replace("\\\\", "\\"));
+            generatedDir = new DirectoryInfo((TestFolderPath + "\\_generated").Replace("\\\\", "\\"));
             if (Directory.Exists(generatedDir.FullName))
             {
                 generatedDir.Delete(true);

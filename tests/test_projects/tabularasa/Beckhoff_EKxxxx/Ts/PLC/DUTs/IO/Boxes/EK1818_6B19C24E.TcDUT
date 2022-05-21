@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EK1818_6B19C24E" Id="{fc0c6123-1146-403a-a215-0b3d6fdf895b}">
+  <DUT Name="EK1818_6B19C24E" Id="{18673b2c-e36f-4b71-b2ba-203c3020cd9b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1818-0000-0016'}
 {attribute addProperty BoxType "EK1818-0000-0016"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %I*Channel_830843C11Channel_6AT %I*Channel_830843C11Channel_7AT %I*Channel_830843C11Channel_8AT %I*Channel_830843C11Channel_9AT %Q*Channel_42CA91F71Channel_10AT %Q*Channel_42CA91F71Channel_11AT %Q*Channel_42CA91F71Channel_12AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "1796850254"}
 {attribute addProperty Size "16"}
-TYPE EK1818_6B19C24E EXTENDS EtcSlaveTerminalBase_947E5A46 :
+TYPE EK1818_6B19C24E EXTENDS EtcSlaveBoxBase_77A0E4A7 :
 STRUCT
 	{attribute addProperty Name "Channel_1"}
 	Channel_1 : Channel_830843C1;

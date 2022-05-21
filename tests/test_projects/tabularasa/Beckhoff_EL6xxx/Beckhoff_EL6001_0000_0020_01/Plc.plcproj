@@ -56,10 +56,10 @@
     <Compile Include="DUTs\IO\PDOs\WcState_9091E0EB.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT">
+    <Compile Include="DUTs\IO\PDOs\InfoData_32EB74EA.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT">
+    <Compile Include="DUTs\IO\PDOs\InfoData_E68C61CD.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\PDOs\WcState_0B2B16F9.TcDUT">
@@ -77,7 +77,7 @@
     <Compile Include="DUTs\IO\Boxes\EK1100_1FC0878B.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EL6001_0471BDA2.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EL6001_B592E1CA.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Devices\SyncUnitTask_2D604ED5.TcDUT">
@@ -89,13 +89,28 @@
     <Compile Include="DUTs\IO\Devices\SyncUnits_99E584AF.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Term_1_EK1100_F7CE7289.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Term_1_EK1100_73C127CB.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Device_1_EtherCAT_C56501E9.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Device_1_EtherCAT_A233EE28.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\EtcSlaveBase_82538BE2.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\EtcSlaveBase_82538BE2.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\EtcSlaveTerminalBase_947E5A46.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\EtcSlaveBoxBase_77A0E4A7.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GVLs\GVL_iXlinker.TcGVL">

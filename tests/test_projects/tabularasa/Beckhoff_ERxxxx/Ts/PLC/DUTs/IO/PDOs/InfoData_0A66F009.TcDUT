@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_0A66F009" Id="{58d211f9-8d17-4e7a-becf-4b7a34f3703a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER2339-0021-0018'}
+{attribute addProperty BoxType "ER2339-0021-0018"}
+{attribute addProperty Id "AoeNetIdAT %I*AMSNETID6StateAT %I*UINT2"}
+{attribute addProperty CRC "174518281"}
+{attribute addProperty Size "8"}
+TYPE InfoData_0A66F009 EXTENDS InputBase_8311D824 :
+STRUCT
+	{attribute addProperty Name "AoeNetId"}
+	AoeNetId AT %I* : AMSNETID;
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

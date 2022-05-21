@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP9022_32A9C19F" Id="{88f51ac1-dafe-4c24-acb3-47666745d38b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP9022-0060-0017'}
+{attribute addProperty BoxType "EPP9022-0060-0017"}
+{attribute addProperty Id "EPM_Inputs_Channel_1AT %I*EPM_Inputs_Channel_B9246B8D18EPM_Inputs_Channel_2AT %I*EPM_Inputs_Channel_B9246B8D18WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "849985951"}
+{attribute addProperty Size "48"}
+TYPE EPP9022_32A9C19F EXTENDS EtcSlaveBoxBase_77A0E4A7 :
+STRUCT
+	{attribute addProperty Name "EPM_Inputs_Channel_1"}
+	EPM_Inputs_Channel_1 : EPM_Inputs_Channel_B9246B8D;
+	{attribute addProperty Name "EPM_Inputs_Channel_2"}
+	EPM_Inputs_Channel_2 : EPM_Inputs_Channel_B9246B8D;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

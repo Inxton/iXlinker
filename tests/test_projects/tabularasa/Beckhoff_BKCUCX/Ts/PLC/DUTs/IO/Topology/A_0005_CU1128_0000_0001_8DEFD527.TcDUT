@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="A_0005_CU1128_0000_0001_8DEFD527" Id="{7df8e2ba-0b9f-4f03-a882-e3de955048a3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CU1128-0000-0001'}
+{attribute addProperty BoxType "CU1128-0000-0001"}
+{attribute addProperty Id "A_0006_CU1128_0000_0002A_0006_CU1128_0000_0002_093CCA2E116A_0005_CU1128_0000_0001_2_CU1128_BCU1128_1FC0878B2A_0005_CU1128_0000_0001_3_CU1128_CCU1128_1FC0878B2"}
+{attribute addProperty CRC "2381305127"}
+{attribute addProperty Size "120"}
+TYPE A_0005_CU1128_0000_0001_8DEFD527 EXTENDS CU1128_1FC0878B :
+STRUCT
+	{attribute addProperty Name "A_0006_CU1128_0000_0002"}
+	{attribute addProperty PreviousPort "A_0005(CU1128-0000-0001) : D"}
+	A_0006_CU1128_0000_0002 : A_0006_CU1128_0000_0002_093CCA2E;
+	{attribute addProperty Name "A_0005_CU1128_0000_0001_2_CU1128_B"}
+	{attribute addProperty PreviousPort "A_0005(CU1128-0000-0001) : C"}
+	A_0005_CU1128_0000_0001_2_CU1128_B : CU1128_1FC0878B;
+	{attribute addProperty Name "A_0005_CU1128_0000_0001_3_CU1128_C"}
+	{attribute addProperty PreviousPort "A_0005(CU1128-0000-0001)_2 (CU1128-B) : C"}
+	A_0005_CU1128_0000_0001_3_CU1128_C : CU1128_1FC0878B;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6690_3564888A" Id="{f73ac524-5dda-427e-b0f1-178661525daf}">
+  <DUT Name="EL6690_3564888A" Id="{b0b1a888-6aa5-44c5-bb54-722b3b7fc2d4}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6690-0002-0000'}
 {attribute addProperty BoxType "EL6690-0002-0000"}
 {attribute addProperty Id "StatusAT %I*Status_D30DC33F1InputsEMPTY_STRUCTURE0OutputsEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "895781002"}
 {attribute addProperty Size "5"}
-TYPE EL6690_3564888A EXTENDS EtcSlaveTerminalBase_947E5A46 :
+TYPE EL6690_3564888A EXTENDS EtcSlaveBoxBase_77A0E4A7 :
 STRUCT
 	{attribute addProperty Name "Status"}
 	Status : Status_D30DC33F;

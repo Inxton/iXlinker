@@ -124,7 +124,17 @@ namespace TsprojFile.Scan
                     EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
                 int portPhys = boxItem.PortPhys;
-    
+                
+                string portAPhysics = "";
+
+                switch (portPhys & 0x000F)
+                {
+                    case 1: portAPhysics = "Y"; break;
+                    case 3: portAPhysics = "K"; break;
+                    case 4: portAPhysics = "Y"; break;
+                    default: portAPhysics = ""; break;
+                }
+
                 string box_PortABoxInfo = "";
                 string connectedToPort = "";
                 int connectedToBoxId = 0;
@@ -162,7 +172,6 @@ namespace TsprojFile.Scan
                             connectedToBoxId = int.Parse(boxNumber, System.Globalization.NumberStyles.HexNumber);
                             if (connectedToPort == "A" || connectedToPort == "B" || connectedToPort == "C" || connectedToPort == "D")
                             {
-                                //previousPort = @"I am connected with my port A to the port " + connectedToPort + " of the box with ID= " + connectedToBoxId.ToString();
                                 previousPort = GetBoxNameFromId(connectedToBoxId) + " : " + connectedToPort;
                             }
                         }
@@ -246,6 +255,7 @@ namespace TsprojFile.Scan
                 boxViewModel.InfoDataState = infoDataState;
                 boxViewModel.InfoDataObjectId = infoObjectId;
                 boxViewModel.PortPhys = portPhys;
+                boxViewModel.PortAPhysics= portAPhysics;
 
                 ObservableCollection<PdoViewModel> allPdos = new ObservableCollection<PdoViewModel>();
                 if (boxItem.Pdo != null)

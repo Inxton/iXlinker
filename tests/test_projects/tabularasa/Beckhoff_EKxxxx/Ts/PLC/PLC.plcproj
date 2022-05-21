@@ -117,7 +117,7 @@
     <Compile Include="DUTs\IO\PDOs\MMS_Device_Outputs_E6E6F9D1.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\PDOs\InfoData_1088C705.TcDUT">
+    <Compile Include="DUTs\IO\PDOs\InfoData_BEF6B88E.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\PDOs\FSoE_Inputs_9283FC69.TcDUT">
@@ -138,7 +138,7 @@
     <Compile Include="DUTs\IO\PDOs\WcState_B516A264.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT">
+    <Compile Include="DUTs\IO\PDOs\InfoData_32EB74EA.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\PDOs\Module_1_FSoE_BE928FF7.TcDUT">
@@ -183,7 +183,7 @@
     <Compile Include="DUTs\IO\PDOs\Module_1_FSoE_B78AD590.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT">
+    <Compile Include="DUTs\IO\PDOs\InfoData_E68C61CD.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\PDOs\InfoData_2A97D6CF.TcDUT">
@@ -243,19 +243,19 @@
     <Compile Include="DUTs\IO\Boxes\EK1828_E2806B95.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EKM1101_F6191E52.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EKM1101_7F417622.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EK1960_93EB4C64.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EK1960_14394C51.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EK1960_2CE304A9.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EK1960_9900B192.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EK1960_9C7DD8C8.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EK1960_BAE25DEC.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Boxes\EK1960_08D53615.TcDUT">
+    <Compile Include="DUTs\IO\Boxes\EK1960_2415CDAE.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Devices\SyncUnitTask_2D604ED5.TcDUT">
@@ -297,16 +297,16 @@
     <Compile Include="DUTs\IO\Topology\Beckhoff_EK18xx_88ED272B.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_EKM1xxxEK1122_63323493.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_EKM1xxxEK1122_F03648A5.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_EKM1xxx_1191B5D2.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_EKM1xxx_245084ED.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_EKx9xxEK1122_E046703E.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_EKx9xxEK1122_41BF98AA.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_EKx9xx_85ED516D.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_EKx9xx_36A98EAE.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Topology\Beckhoff_EKxxxx_0080EK1122_9CBA35F2.TcDUT">
@@ -315,10 +315,25 @@
     <Compile Include="DUTs\IO\Topology\Beckhoff_EKxxxx_0080_9DDEF925.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\EtherCAT_Master_EKxxxx_00450659.TcDUT">
+    <Compile Include="DUTs\IO\Topology\EtherCAT_Master_EKxxxx_E740B17E.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\EtcSlaveBase_82538BE2.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\EtcSlaveBase_82538BE2.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\EtcSlaveTerminalBase_947E5A46.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\EtcSlaveBoxBase_77A0E4A7.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\InputBase_8311D824.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GVLs\GVL_iXlinker.TcGVL">

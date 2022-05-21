@@ -36,25 +36,35 @@ namespace TsprojFile.Scan
                 Directory.CreateDirectory(exportDir);
             }
 
-            foreach (StructureBase structureBase in StructureBasesResourceDictionary)
+            foreach (StructureBase structure in StructureBasesResourceDictionary)
             {
                 //Exports only base structure that has an empty namespace, that means it does not exists in any PLC library used in this PLC project
-                if (string.IsNullOrEmpty(structureBase.BaseStructureNamespace))
+                if (string.IsNullOrEmpty(structure.BaseStructureNamespace))
                 {
-                    if (!structureBase.BaseStructurePrefix.Equals("!"))
+                    if (!structure.BaseStructurePrefix.Equals("!"))
                     {
-                        string structName = structureBase.BaseStructureName;
+                        //Apply extension from dictionary
+                        string extends = " :";
+                        foreach (StructureBase structureBase in StructureBasesResourceDictionary)
+                        {
+                            if (structureBase.StructureType.Equals(structure.GetType().ToString()) && (structureBase.StructureName.Equals(structure.BaseStructureName) || structureBase.StructureName.Equals("*")) )
+                            {
+                                extends = " EXTENDS " + ValidatePlcItem.NameIncludingNamespace(structureBase.BaseStructureNamespace, structureBase.BaseStructureName) +" :";
+                                break;
+                            }
+                        }
+                        string structName = structure.BaseStructureName;
                         StreamWriter sw = new StreamWriter(exportDir + "\\" + structName + ".TcDUT");
                         try
                         {
                             sw.WriteLine("<TcPlcObject>");
                             sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
                             sw.WriteLine("\t\t<Declaration><![CDATA[");
-                            foreach (string attribute in structureBase.Attributes)
+                            foreach (string attribute in structure.Attributes)
                             {
                                 sw.WriteLine(attribute);
                             }
-                            sw.WriteLine("TYPE " + structName + " :");
+                            sw.WriteLine("TYPE " + structName + extends);
                             sw.WriteLine("STRUCT");
                             sw.WriteLine("END_STRUCT");
                             sw.WriteLine("END_TYPE");

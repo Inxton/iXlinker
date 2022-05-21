@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6688_8DEED677" Id="{3280df90-0ed3-4249-8504-9597b82d314c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6688-0000-0016'}
+{attribute addProperty BoxType "EL6688-0000-0016"}
+{attribute addProperty Id "SYNC_InputsAT %I*SYNC_Inputs_971453DD4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
+{attribute addProperty CRC "2381239927"}
+{attribute addProperty Size "24"}
+TYPE EL6688_8DEED677 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "SYNC_Inputs"}
+	SYNC_Inputs : SYNC_Inputs_971453DD;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BEF6B88E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_BKCUCX_25A199DC" Id="{c9d12e5e-0caf-4081-b09f-9c10bd327a8b}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_BKxxxxBeckhoff_BKxxxx_735133AB0Beckhoff_CUxxxxBeckhoff_CUxxxx_E9AD9532126Beckhoff_CXxxxxBeckhoff_CXxxxx_7C0A3C1E568TcTerminals210_EK1100_1TcTerminals210_EK1100_1_5C7783790TcTerminals210_EK1100_2TcTerminals210_EK1100_2_50C143310SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
+{attribute addProperty CRC "631347676"}
+{attribute addProperty Size "1006"}
+TYPE EtherCAT_Master_BKCUCX_25A199DC :
+STRUCT
+	{attribute addProperty Name "Beckhoff_BKxxxx"}
+	{attribute addProperty PreviousPort "EtherCAT_Master_BKCUCX : Master"}
+	Beckhoff_BKxxxx : Beckhoff_BKxxxx_735133AB;
+	{attribute addProperty Name "Beckhoff_CUxxxx"}
+	{attribute addProperty PreviousPort "Beckhoff BKxxxx : C"}
+	Beckhoff_CUxxxx : Beckhoff_CUxxxx_E9AD9532;
+	{attribute addProperty Name "Beckhoff_CXxxxx"}
+	{attribute addProperty PreviousPort "Beckhoff CUxxxx : C"}
+	Beckhoff_CXxxxx : Beckhoff_CXxxxx_7C0A3C1E;
+	{attribute addProperty Name "TcTerminals210_EK1100_1"}
+	{attribute addProperty PreviousPort "Beckhoff CXxxxx : C"}
+	TcTerminals210_EK1100_1 : TcTerminals210_EK1100_1_5C778379;
+	{attribute addProperty Name "TcTerminals210_EK1100_2"}
+	{attribute addProperty PreviousPort "TcTerminals210_EK1100_1 : C"}
+	TcTerminals210_EK1100_2 : TcTerminals210_EK1100_2_50C14331;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_99E584AF;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_25A0042B;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_2397A10E;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_E68C61CD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

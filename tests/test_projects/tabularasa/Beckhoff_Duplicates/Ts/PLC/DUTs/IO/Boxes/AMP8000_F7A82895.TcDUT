@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AMP8000_F7A82895" Id="{1ca0c3fd-b5cd-488e-9c69-c776168b330f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AMP8000-0030-0103-0103'}
+{attribute addProperty BoxType "AMP8000-0030-0103-0103"}
+{attribute addProperty Id "DeviceDevice_6E2575772Device_SafetyDevice_Safety_C21945A160Ch_ACh_A_D18C6F1622WcStateAT %I*WcState_B516A2644InfoDataAT %I*InfoData_358A59CF25"}
+{attribute addProperty CRC "4154992789"}
+{attribute addProperty Size "113"}
+TYPE AMP8000_F7A82895 EXTENDS EtcSlaveBoxBase_77A0E4A7 :
+STRUCT
+	{attribute addProperty Name "Device"}
+	Device : Device_6E257577;
+	{attribute addProperty Name "Device_Safety"}
+	Device_Safety : Device_Safety_C21945A1;
+	{attribute addProperty Name "Ch_A"}
+	Ch_A : Ch_A_D18C6F16;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_B516A264;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_358A59CF;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

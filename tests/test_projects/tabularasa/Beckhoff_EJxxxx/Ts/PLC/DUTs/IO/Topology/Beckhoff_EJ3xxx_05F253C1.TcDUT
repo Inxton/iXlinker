@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EJ3xxx_05F253C1" Id="{2cdc208a-9ec0-4225-ac2c-2483dd3f5348}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
+{attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Id "Beckhoff_EJ3xxxEK1122Beckhoff_EJ3xxxEK1122_1A5DA9A52A_0001_EJ3004_0000_0019EJ3004_C4269E3248A_0002_EJ3004_0000_0020EJ3004_C4269E3248A_0003_EJ3004_0000_0021EJ3004_C4269E3248A_0004_EJ3048_0000_0020EJ3048_335F857B84A_0005_EJ3058_0000_0020EJ3058_335F857B84A_0006_EJ3068_0000_0020EJ3068_335F857B84A_0007_EJ3068_0000_0021EJ3068_335F857B84A_0008_EJ3104_0000_0019EJ3104_DCC7866252A_0009_EJ3104_0000_0020EJ3104_DCC7866252A_0010_EJ3104_0000_0021EJ3104_DCC7866252A_0011_EJ3108_0000_0017EJ3108_335F857B84A_0012_EJ3108_0000_0018EJ3108_35AE532492A_0013_EJ3108_0000_0019EJ3108_35AE532492A_0014_EJ3202_0000_0019EJ3202_27F1223730A_0015_EJ3202_0000_0020EJ3202_27F1223730A_0016_EJ3202_0000_0021EJ3202_27F1223730A_0017_EJ3214_0000_0016EJ3214_8BBE23EA40A_0018_EJ3255_0000_0023EJ3255_1972F7C062A_0019_EJ3318_0000_0017EJ3318_BD104D8882"}
+{attribute addProperty CRC "99767233"}
+{attribute addProperty Size "1180"}
+TYPE Beckhoff_EJ3xxx_05F253C1 EXTENDS EK1100_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_EJ3xxxEK1122"}
+	{attribute addProperty PreviousPort "Beckhoff EJ3xxx : B"}
+	Beckhoff_EJ3xxxEK1122 : Beckhoff_EJ3xxxEK1122_1A5DA9A5;
+	{attribute addProperty Name "A_0001_EJ3004_0000_0019"}
+	{attribute addProperty PreviousPort "Beckhoff EJ3xxxEK1122 : C"}
+	A_0001_EJ3004_0000_0019 : EJ3004_C4269E32;
+	{attribute addProperty Name "A_0002_EJ3004_0000_0020"}
+	{attribute addProperty PreviousPort "A_0001(EJ3004-0000-0019) : B"}
+	A_0002_EJ3004_0000_0020 : EJ3004_C4269E32;
+	{attribute addProperty Name "A_0003_EJ3004_0000_0021"}
+	{attribute addProperty PreviousPort "A_0002(EJ3004-0000-0020) : B"}
+	A_0003_EJ3004_0000_0021 : EJ3004_C4269E32;
+	{attribute addProperty Name "A_0004_EJ3048_0000_0020"}
+	{attribute addProperty PreviousPort "A_0003(EJ3004-0000-0021) : B"}
+	A_0004_EJ3048_0000_0020 : EJ3048_335F857B;
+	{attribute addProperty Name "A_0005_EJ3058_0000_0020"}
+	{attribute addProperty PreviousPort "A_0004(EJ3048-0000-0020) : B"}
+	A_0005_EJ3058_0000_0020 : EJ3058_335F857B;
+	{attribute addProperty Name "A_0006_EJ3068_0000_0020"}
+	{attribute addProperty PreviousPort "A_0005(EJ3058-0000-0020) : B"}
+	A_0006_EJ3068_0000_0020 : EJ3068_335F857B;
+	{attribute addProperty Name "A_0007_EJ3068_0000_0021"}
+	{attribute addProperty PreviousPort "A_0006(EJ3068-0000-0020) : B"}
+	A_0007_EJ3068_0000_0021 : EJ3068_335F857B;
+	{attribute addProperty Name "A_0008_EJ3104_0000_0019"}
+	{attribute addProperty PreviousPort "A_0007(EJ3068-0000-0021) : B"}
+	A_0008_EJ3104_0000_0019 : EJ3104_DCC78662;
+	{attribute addProperty Name "A_0009_EJ3104_0000_0020"}
+	{attribute addProperty PreviousPort "A_0008(EJ3104-0000-0019) : B"}
+	A_0009_EJ3104_0000_0020 : EJ3104_DCC78662;
+	{attribute addProperty Name "A_0010_EJ3104_0000_0021"}
+	{attribute addProperty PreviousPort "A_0009(EJ3104-0000-0020) : B"}
+	A_0010_EJ3104_0000_0021 : EJ3104_DCC78662;
+	{attribute addProperty Name "A_0011_EJ3108_0000_0017"}
+	{attribute addProperty PreviousPort "A_0010(EJ3104-0000-0021) : B"}
+	A_0011_EJ3108_0000_0017 : EJ3108_335F857B;
+	{attribute addProperty Name "A_0012_EJ3108_0000_0018"}
+	{attribute addProperty PreviousPort "A_0011(EJ3108-0000-0017) : B"}
+	A_0012_EJ3108_0000_0018 : EJ3108_35AE5324;
+	{attribute addProperty Name "A_0013_EJ3108_0000_0019"}
+	{attribute addProperty PreviousPort "A_0012(EJ3108-0000-0018) : B"}
+	A_0013_EJ3108_0000_0019 : EJ3108_35AE5324;
+	{attribute addProperty Name "A_0014_EJ3202_0000_0019"}
+	{attribute addProperty PreviousPort "A_0013(EJ3108-0000-0019) : B"}
+	A_0014_EJ3202_0000_0019 : EJ3202_27F12237;
+	{attribute addProperty Name "A_0015_EJ3202_0000_0020"}
+	{attribute addProperty PreviousPort "A_0014(EJ3202-0000-0019) : B"}
+	A_0015_EJ3202_0000_0020 : EJ3202_27F12237;
+	{attribute addProperty Name "A_0016_EJ3202_0000_0021"}
+	{attribute addProperty PreviousPort "A_0015(EJ3202-0000-0020) : B"}
+	A_0016_EJ3202_0000_0021 : EJ3202_27F12237;
+	{attribute addProperty Name "A_0017_EJ3214_0000_0016"}
+	{attribute addProperty PreviousPort "A_0016(EJ3202-0000-0021) : B"}
+	A_0017_EJ3214_0000_0016 : EJ3214_8BBE23EA;
+	{attribute addProperty Name "A_0018_EJ3255_0000_0023"}
+	{attribute addProperty PreviousPort "A_0017(EJ3214-0000-0016) : B"}
+	A_0018_EJ3255_0000_0023 : EJ3255_1972F7C0;
+	{attribute addProperty Name "A_0019_EJ3318_0000_0017"}
+	{attribute addProperty PreviousPort "A_0018(EJ3255-0000-0023) : B"}
+	A_0019_EJ3318_0000_0017 : EJ3318_BD104D88;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL2522_EF4C90EB" Id="{ea661873-fa46-49e6-aa64-c93b0e017f17}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2522-0000-0017'}
+{attribute addProperty BoxType "EL2522-0000-0017"}
+{attribute addProperty Id "PTO_Status_Channel_1AT %I*PTO_Status_Channel_E0EB10E85PTO_Status_Channel_2AT %I*PTO_Status_Channel_E0EB10E85ENC_Status_Channel_1AT %I*ENC_Status_Channel_A9252C4810ENC_Status_Channel_2AT %I*ENC_Status_Channel_A9252C4810PTO_Control_Channel_1AT %Q*PTO_Control_Channel_9287F8E45PTO_Target_Channel_1AT %Q*PTO_Target_Channel_1F6D5BC64PTO_Control_Channel_2AT %Q*PTO_Control_Channel_9287F8E45PTO_Target_Channel_2AT %Q*PTO_Target_Channel_1F6D5BC64ENC_Control_Channel_1AT %Q*ENC_Control_Channel_686BB9DC6ENC_Control_Channel_2AT %Q*ENC_Control_Channel_686BB9DC6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "4014772459"}
+{attribute addProperty Size "72"}
+TYPE EL2522_EF4C90EB EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "PTO_Status_Channel_1"}
+	PTO_Status_Channel_1 : PTO_Status_Channel_E0EB10E8;
+	{attribute addProperty Name "PTO_Status_Channel_2"}
+	PTO_Status_Channel_2 : PTO_Status_Channel_E0EB10E8;
+	{attribute addProperty Name "ENC_Status_Channel_1"}
+	ENC_Status_Channel_1 : ENC_Status_Channel_A9252C48;
+	{attribute addProperty Name "ENC_Status_Channel_2"}
+	ENC_Status_Channel_2 : ENC_Status_Channel_A9252C48;
+	{attribute addProperty Name "PTO_Control_Channel_1"}
+	PTO_Control_Channel_1 : PTO_Control_Channel_9287F8E4;
+	{attribute addProperty Name "PTO_Target_Channel_1"}
+	PTO_Target_Channel_1 : PTO_Target_Channel_1F6D5BC6;
+	{attribute addProperty Name "PTO_Control_Channel_2"}
+	PTO_Control_Channel_2 : PTO_Control_Channel_9287F8E4;
+	{attribute addProperty Name "PTO_Target_Channel_2"}
+	PTO_Target_Channel_2 : PTO_Target_Channel_1F6D5BC6;
+	{attribute addProperty Name "ENC_Control_Channel_1"}
+	ENC_Control_Channel_1 : ENC_Control_Channel_686BB9DC;
+	{attribute addProperty Name "ENC_Control_Channel_2"}
+	ENC_Control_Channel_2 : ENC_Control_Channel_686BB9DC;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

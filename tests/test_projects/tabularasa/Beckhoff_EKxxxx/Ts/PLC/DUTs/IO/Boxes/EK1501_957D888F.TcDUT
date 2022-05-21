@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EK1501_957D888F" Id="{77cc2400-af9c-461e-a812-c43877a9e650}">
+  <DUT Name="EK1501_957D888F" Id="{87001b40-33d5-4486-8c8d-140b1958423b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1501-0000-0016'}
 {attribute addProperty BoxType "EK1501-0000-0016"}
 {attribute addProperty Id "IDAT %I*ID_07C9D28F2WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2508032143"}
 {attribute addProperty Size "6"}
-TYPE EK1501_957D888F EXTENDS EtcSlaveTerminalBase_947E5A46 :
+TYPE EK1501_957D888F EXTENDS EtcSlaveBoxBase_77A0E4A7 :
 STRUCT
 	{attribute addProperty Name "ID"}
 	ID : ID_07C9D28F;

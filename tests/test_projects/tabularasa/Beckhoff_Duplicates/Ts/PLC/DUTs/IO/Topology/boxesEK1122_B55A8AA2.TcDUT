@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="boxesEK1122_B55A8AA2" Id="{a1ae8623-59df-4dd8-9c0f-6a89d36cecda}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
+{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "boxessub_EK1100EK1100_1FC0878B2A_0030_EPP2339_0021_0016EPP2339_8DFD155836A_0031_EPP2339_0022_0016EPP2339_8DFD155836A_0032_EPP2349_0021_0016EPP2349_8DFD155836A_0033_EPP2349_0022_0016EPP2349_8DFD155836A_0034_EP2316_0008_0017EP2316_3C06051444A_0035_EP2338_0001_0016EP2338_39FFBC5220A_0036_EP2338_0001_0017EP2338_39FFBC5220A_0037_EP2338_0002_0016EP2338_39FFBC5220A_0038_EP2338_0002_0017EP2338_39FFBC5220A_0039_EP2339_0021_0016EP2339_C2A6198C42A_0040_EP2339_0022_0016EP2339_56BCD6FB36"}
+{attribute addProperty CRC "3042609826"}
+{attribute addProperty Size "348"}
+TYPE boxesEK1122_B55A8AA2 EXTENDS EK1122_1FC0878B :
+STRUCT
+	{attribute addProperty Name "boxessub_EK1100"}
+	{attribute addProperty PreviousPort "boxesEK1122 : D"}
+	boxessub_EK1100 : EK1100_1FC0878B;
+	{attribute addProperty Name "A_0030_EPP2339_0021_0016"}
+	{attribute addProperty PreviousPort "boxessub EK1100 : C"}
+	A_0030_EPP2339_0021_0016 : EPP2339_8DFD1558;
+	{attribute addProperty Name "A_0031_EPP2339_0022_0016"}
+	{attribute addProperty PreviousPort "A_0030(EPP2339-0021-0016 ) : B"}
+	A_0031_EPP2339_0022_0016 : EPP2339_8DFD1558;
+	{attribute addProperty Name "A_0032_EPP2349_0021_0016"}
+	{attribute addProperty PreviousPort "A_0031(EPP2339-0022-0016 ) : B"}
+	A_0032_EPP2349_0021_0016 : EPP2349_8DFD1558;
+	{attribute addProperty Name "A_0033_EPP2349_0022_0016"}
+	{attribute addProperty PreviousPort "A_0032(EPP2349-0021-0016 ) : B"}
+	A_0033_EPP2349_0022_0016 : EPP2349_8DFD1558;
+	{attribute addProperty Name "A_0034_EP2316_0008_0017"}
+	{attribute addProperty PreviousPort "A_0033(EPP2349-0022-0016 ) : B"}
+	A_0034_EP2316_0008_0017 : EP2316_3C060514;
+	{attribute addProperty Name "A_0035_EP2338_0001_0016"}
+	{attribute addProperty PreviousPort "A_0034(EP2316-0008-0017 ) : B"}
+	A_0035_EP2338_0001_0016 : EP2338_39FFBC52;
+	{attribute addProperty Name "A_0036_EP2338_0001_0017"}
+	{attribute addProperty PreviousPort "A_0035(EP2338-0001-0016 ) : B"}
+	A_0036_EP2338_0001_0017 : EP2338_39FFBC52;
+	{attribute addProperty Name "A_0037_EP2338_0002_0016"}
+	{attribute addProperty PreviousPort "A_0036(EP2338-0001-0017 ) : B"}
+	A_0037_EP2338_0002_0016 : EP2338_39FFBC52;
+	{attribute addProperty Name "A_0038_EP2338_0002_0017"}
+	{attribute addProperty PreviousPort "A_0037(EP2338-0002-0016 ) : B"}
+	A_0038_EP2338_0002_0017 : EP2338_39FFBC52;
+	{attribute addProperty Name "A_0039_EP2339_0021_0016"}
+	{attribute addProperty PreviousPort "A_0038(EP2338-0002-0017 ) : B"}
+	A_0039_EP2339_0021_0016 : EP2339_C2A6198C;
+	{attribute addProperty Name "A_0040_EP2339_0022_0016"}
+	{attribute addProperty PreviousPort "A_0039(EP2339-0021-0016 ) : B"}
+	A_0040_EP2339_0022_0016 : EP2339_56BCD6FB;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

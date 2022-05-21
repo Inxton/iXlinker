@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="A_0019_IL2300_B110_0016_AC908CDE" Id="{dd553967-7186-4a29-b5a9-5b2818ec193f}">
+  <DUT Name="A_0019_IL2300_B110_0016_AC908CDE" Id="{403ca541-83cd-4314-b016-f9b25b73ec28}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IL2300-B110-0016'}
 {attribute addProperty BoxType "IL2300-B110-0016"}
 {attribute addProperty Id "Term_19KL_D4CFBC220Term_390_Ix1000KL_8EF4D3E90"}
 {attribute addProperty CRC "2895154398"}
 {attribute addProperty Size "0"}
-TYPE A_0019_IL2300_B110_0016_AC908CDE EXTENDS IL2300_13409EDF :
+TYPE A_0019_IL2300_B110_0016_AC908CDE EXTENDS IL2300_A2FCADE7 :
 STRUCT
 	{attribute addProperty Name "Term_19"}
 	Term_19 : KL_D4CFBC22;

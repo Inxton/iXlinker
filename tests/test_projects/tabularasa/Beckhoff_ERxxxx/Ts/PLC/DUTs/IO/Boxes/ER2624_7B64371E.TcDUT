@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ER2624_7B64371E" Id="{841ed3b7-20c5-4257-bf2b-cc1cf44fef66}">
+  <DUT Name="ER2624_7B64371E" Id="{52cf7026-8a15-48f5-ab38-0b04184fed8f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER2624-0002-0018'}
 {attribute addProperty BoxType "ER2624-0002-0018"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71Channel_3AT %Q*Channel_42CA91F71Channel_4AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2070165278"}
 {attribute addProperty Size "7"}
-TYPE ER2624_7B64371E EXTENDS EtcSlaveTerminalBase_947E5A46 :
+TYPE ER2624_7B64371E EXTENDS EtcSlaveBoxBase_77A0E4A7 :
 STRUCT
 	{attribute addProperty Name "Channel_1"}
 	Channel_1 : Channel_42CA91F7;

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <Target Name="TestMessage" AfterTargets="PreBuildEvent" >
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinker.exe to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(iXlinkerExe)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinker.pdb to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(iXlinkerpdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\Community.VisualStudio.Toolkit.dll to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(CommunityVisualStudioToolkitdll)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\extension.vsixmanifest to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(extensionvsixmanifest)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.dll to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(iXlinkerExtdll)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pdb to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(iXlinkerExtpdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pkgdef to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(iXlinkerExtpkgdef)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.vsix to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(iXlinkerExtvsix)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt256.png to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(iXlinkerExt256png)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+  </Target>
+
+  <ItemGroup>
+    <iXlinkerExe Include="$(MSBuildThisFileDirectory)..\tools\iXlinker.exe"/>
+    <iXlinkerpdb Include="$(MSBuildThisFileDirectory)..\tools\iXlinker.pdb"/>
+    <CommunityVisualStudioToolkitdll Include="$(MSBuildThisFileDirectory)..\tools\Community.VisualStudio.Toolkit.dll"/>
+    <extensionvsixmanifest Include="$(MSBuildThisFileDirectory)..\tools\extension.vsixmanifest"/>
+    <iXlinkerExtdll Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt.dll"/>
+    <iXlinkerExtpdb Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pdb"/>
+    <iXlinkerExtpkgdef Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pkgdef"/>
+    <iXlinkerExtvsix Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt.vsix"/>
+    <iXlinkerExt256png Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt256.png"/>
+
+  </ItemGroup>
+
+</Project>

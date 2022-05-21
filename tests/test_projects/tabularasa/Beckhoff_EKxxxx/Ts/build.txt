@@ -549,3 +549,111 @@ WRN | 5/11/2022 8:17:29 PM 746 ms | 'TwinCAT XAE': Project 'PLC' build for platf
 Error: The operation could not be completed. Unspecified error 
 ========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\ID_07C9D28F.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\Status_Us_B1E819A2.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\Status_Up_B1E819A2.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\Channel_830843C1.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\Channel_42CA91F7.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Device_Inputs_ADC3123E.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Acceleration_Status_11769099.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Acceleration_X_Axis_80E77D6A.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Acceleration_Y_Axis_80E77D6A.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Acceleration_Z_Axis_80E77D6A.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Acceleration_Timestamp_8B9FE1A2.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Voltage_Us_In_Inputs_60D55C72.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Voltage_Up_In_Inputs_60D55C72.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Voltage_Up_Out_Inputs_60D55C72.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Device_Outputs_E6E6F9D1.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\FSoE_Inputs_9283FC69.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\FSoE_Outputs_79E75DAB.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\Outputs_63C46CC8.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\FSLOGIC_Inputs_EEE9388E.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\WcState_B516A264.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\FSoE_Inputs_6CB74C4A.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\FSoE_Outputs_D8082339.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\Outputs_D994E0F9.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\FSoE_Inputs_905C1934.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\FSoE_Outputs_77F9785A.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\FSoE_Inputs_A1F422BE.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\FSoE_Outputs_37DEC564.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_2A97D6CF.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\Inputs_25A0042B.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\Outputs_2397A10E.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+Compile complete -- 36 errors, 0 warnings
+Build complete -- 36 errors, 0 warnings : no download possible!
+WRN | 5/18/2022 9:33:22 AM 158 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_EKxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 3 errors, 0 warnings
+Build complete -- 3 errors, 0 warnings : no download possible!
+WRN | 5/21/2022 6:38:23 PM 874 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 76886 bytes
+Size of global data: 19317 bytes
+Total allocated memory size for code and data: 480632 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 480632, largest contiguous memory gap: 567944 bytes (54 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 5/21/2022 7:50:55 PM 472 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0016(EK1521-0010-0017)' may to low (-285 mA) - please check!
+WRN | 5/21/2022 7:50:55 PM 473 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0015(EK1521-0010-0016)' may to low (-685 mA) - please check!
+WRN | 5/21/2022 7:50:55 PM 476 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0014(EK1521-0000-0021)' may to low (-1035 mA) - please check!
+WRN | 5/21/2022 7:50:55 PM 478 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0013(EK1521-0000-0020)' may to low (-1385 mA) - please check!
+WRN | 5/21/2022 7:50:55 PM 480 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0012(EK1521-0000-0019)' may to low (-1700 mA) - please check!
+WRN | 5/21/2022 7:50:55 PM 482 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0011(EK1521-0000-0018)' may to low (-2100 mA) - please check!
+WRN | 5/21/2022 7:50:55 PM 488 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0010(EK1521-0000-0017)' may to low (-2500 mA) - please check!
+WRN | 5/21/2022 7:50:55 PM 491 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0009(EK1521-0000-0016)' may to low (-2900 mA) - please check!
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+

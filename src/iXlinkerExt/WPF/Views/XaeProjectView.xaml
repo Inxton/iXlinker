@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="iXlinkerExt.WPF.Views.XaeProjectView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:iXlinkerExt.WPF.Views"
+             xmlns:c="clr-namespace:iXlinkerExt.WPF.Converters"           
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <c:PlcProjectCountToEnabledConverter x:Key="PlcProjectCountToEnabledConverter"/>
+        <c:PlcProjectCountToOpacityConverter x:Key="PlcProjectCountToOpacityConverter"/>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <CheckBox  Grid.Row="0" Grid.Column="0" Margin="0,0,5,0" VerticalAlignment="Center" IsEnabled="{Binding PlcProjects.Count,Converter={StaticResource PlcProjectCountToEnabledConverter}}" IsChecked="{Binding IsChecked}"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Margin="0,0,5,0" VerticalAlignment="Center" Opacity="{Binding PlcProjects.Count,Converter={StaticResource PlcProjectCountToOpacityConverter}}" TextWrapping="Wrap" Text="{Binding Name, Mode=OneTime}" FontWeight="Bold" FontSize="14"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Margin="0,0,5,0" VerticalAlignment="Center" Opacity="{Binding PlcProjects.Count,Converter={StaticResource PlcProjectCountToOpacityConverter}}" TextWrapping="Wrap" Text="{Binding UniqueName, Mode=OneTime, StringFormat=({0})}" FontWeight="Bold" FontSize="12"/>
+    </Grid>
+</UserControl>

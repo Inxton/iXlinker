@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP7211_7BF21317" Id="{b18d9f27-a5fc-43a8-b9a4-a17858c30ef5}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7211-0035-0029'}
+{attribute addProperty BoxType "EP7211-0035-0029"}
+{attribute addProperty Id "DS402_StatuswordAT %I*DS402_Statusword_9B36FDFC2DS402_Position_actual_valueAT %I*DS402_Position_actual_value_07DC4C744DS402_ControlwordAT %Q*DS402_Controlword_F3F147212DS402_Target_velocityAT %Q*DS402_Target_velocity_08A9583B4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_96C94FAE19"}
+{attribute addProperty CRC "2079462167"}
+{attribute addProperty Size "33"}
+TYPE EP7211_7BF21317 EXTENDS EtcSlaveBoxBase_77A0E4A7 :
+STRUCT
+	{attribute addProperty Name "DS402_Statusword"}
+	DS402_Statusword : DS402_Statusword_9B36FDFC;
+	{attribute addProperty Name "DS402_Position_actual_value"}
+	DS402_Position_actual_value : DS402_Position_actual_value_07DC4C74;
+	{attribute addProperty Name "DS402_Controlword"}
+	DS402_Controlword : DS402_Controlword_F3F14721;
+	{attribute addProperty Name "DS402_Target_velocity"}
+	DS402_Target_velocity : DS402_Target_velocity_08A9583B;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_96C94FAE;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

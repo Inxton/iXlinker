@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_ER4xxxEK1122_5C895096" Id="{915d225c-97c0-4d0b-adeb-20442a20466a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
+{attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Id "Beckhoff_ER4xxxsub_EK1100EK1100_1FC0878B2A_0001_ER4174_0002_0016ER4174_AB92710E19A_0002_ER4174_0002_0019ER4174_AB92710E19A_0003_ER4374_0002_0018ER4374_A304750F36A_0004_ER4374_0002_0019ER4374_A304750F36"}
+{attribute addProperty CRC "1552502934"}
+{attribute addProperty Size "112"}
+TYPE Beckhoff_ER4xxxEK1122_5C895096 EXTENDS EK1122_1FC0878B :
+STRUCT
+	{attribute addProperty Name "Beckhoff_ER4xxxsub_EK1100"}
+	{attribute addProperty PreviousPort "Beckhoff ER4xxxEK1122 : D"}
+	Beckhoff_ER4xxxsub_EK1100 : EK1100_1FC0878B;
+	{attribute addProperty Name "A_0001_ER4174_0002_0016"}
+	{attribute addProperty PreviousPort "Beckhoff ER4xxxsub EK1100 : C"}
+	A_0001_ER4174_0002_0016 : ER4174_AB92710E;
+	{attribute addProperty Name "A_0002_ER4174_0002_0019"}
+	{attribute addProperty PreviousPort "A_0001(ER4174-0002-0016) : B"}
+	A_0002_ER4174_0002_0019 : ER4174_AB92710E;
+	{attribute addProperty Name "A_0003_ER4374_0002_0018"}
+	{attribute addProperty PreviousPort "A_0002(ER4174-0002-0019) : B"}
+	A_0003_ER4374_0002_0018 : ER4374_A304750F;
+	{attribute addProperty Name "A_0004_ER4374_0002_0019"}
+	{attribute addProperty PreviousPort "A_0003(ER4374-0002-0018) : B"}
+	A_0004_ER4374_0002_0019 : ER4374_A304750F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -822,3 +822,111 @@ WRN | 5/11/2022 8:17:55 PM 610 ms | 'TwinCAT XAE': Project 'PLC' build for platf
 Error: The operation could not be completed. Unspecified error 
 ========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
 
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\PAI_Status_Channel_AE4AC104.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\PAI_Samples_1_Channel_EEA51725.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\PAI_Timestamp_Channel_6DC4D296.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Device_Inputs_7D6F8734.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Acceleration_Status_11769099.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Acceleration_X_Axis_80E77D6A.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Acceleration_Y_Axis_80E77D6A.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Acceleration_Z_Axis_80E77D6A.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Acceleration_Timestamp_8B9FE1A2.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Voltage_Us_In_Inputs_60D55C72.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Voltage_Up_In_Inputs_60D55C72.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Voltage_Up_Out_Inputs_60D55C72.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\MMS_Device_Outputs_E6E6F9D1.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_2A97D6CF.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\Inputs_25A0042B.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\Outputs_2397A10E.TcDUT : error: No definition found for base class 'OutputBase_10CEE7DE'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT : error: No definition found for base class 'InputBase_8311D824'
+Compile complete -- 20 errors, 0 warnings
+Build complete -- 20 errors, 0 warnings : no download possible!
+WRN | 5/18/2022 9:33:31 AM 048 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_1088C705.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELMxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 2 errors, 0 warnings
+Build complete -- 2 errors, 0 warnings : no download possible!
+WRN | 5/21/2022 6:38:43 PM 945 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 72574 bytes
+Size of global data: 20517 bytes
+Total allocated memory size for code and data: 477520 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 477520, largest contiguous memory gap: 571056 bytes (54 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 5/21/2022 7:50:36 PM 693 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0005(ELM3004-0000-0017)' may to low (-180 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 695 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0006(ELM3004-0000-0018)' may to low (-650 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 698 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0007(ELM3004-0000-0019)' may to low (-1120 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 700 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0005(ELM3104-0000-0017)' may to low (-220 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 702 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0006(ELM3104-0000-0018)' may to low (-710 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 705 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0007(ELM3142-0000-0016)' may to low (-920 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 709 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0008(ELM3142-0000-0017)' may to low (-1130 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 711 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0009(ELM3144-0000-0016)' may to low (-1360 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 713 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0010(ELM3144-0000-0017)' may to low (-1590 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 715 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0011(ELM3146-0000-0016)' may to low (-1840 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 717 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0012(ELM3146-0000-0017)' may to low (-2090 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 721 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0013(ELM3146-0000-0018)' may to low (-2340 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 723 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0014(ELM3148-0000-0017)' may to low (-2610 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 725 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0015(ELM3148-0000-0018)' may to low (-2880 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 727 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0016(ELM3148-0000-0019)' may to low (-3150 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 729 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0004(ELM3502-0000-0019)' may to low (-10 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 731 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0005(ELM3504-0000-0016)' may to low (-560 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 735 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0006(ELM3504-0000-0017)' may to low (-1280 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 737 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0007(ELM3504-0000-0018)' may to low (-2000 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 739 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0008(ELM3504-0000-0019)' may to low (-2720 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 742 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0004(ELM3602-0002-0017)' may to low (-60 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 746 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0005(ELM3602-0002-0018)' may to low (-520 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 748 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0006(ELM3604-0000-0017)' may to low (-1170 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 750 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0007(ELM3604-0000-0018)' may to low (-1820 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 752 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0008(ELM3604-0002-0016)' may to low (-2470 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 757 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0009(ELM3604-0002-0017)' may to low (-3120 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 759 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0010(ELM3604-0002-0018)' may to low (-3770 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 761 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0004(ELM3704-0000-0017)' may to low (-840 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 763 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0005(ELM3704-0001-0017)' may to low (-1730 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 767 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0006(ELM3704-0020-0016)' may to low (-2450 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 769 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0007(ELM3702-0101-0016)' may to low (-3030 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 771 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0008(ELM3704-1001-0016)' may to low (-3750 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 773 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0009(ELM3704-1001-0017)' may to low (-4640 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 777 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0005(ELM3502-0030-0019)' may to low (-270 mA) - please check!
+WRN | 5/21/2022 7:50:36 PM 780 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0006(ELM3504-0030-0019)' may to low (-990 mA) - please check!
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+

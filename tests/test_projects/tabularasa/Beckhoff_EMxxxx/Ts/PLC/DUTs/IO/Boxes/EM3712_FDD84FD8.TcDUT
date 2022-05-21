@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EM3712_FDD84FD8" Id="{d0345bf7-a67c-4a6a-ac1a-d272def9b9d4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM3712-0000-0016'}
+{attribute addProperty BoxType "EM3712-0000-0016"}
+{attribute addProperty Id "AI_Input_Channel_1AT %I*AI_Input_Channel_5AF6604E8AI_Input_Channel_2AT %I*AI_Input_Channel_5AF6604E8WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "4258811864"}
+{attribute addProperty Size "28"}
+TYPE EM3712_FDD84FD8 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "AI_Input_Channel_1"}
+	AI_Input_Channel_1 : AI_Input_Channel_5AF6604E;
+	{attribute addProperty Name "AI_Input_Channel_2"}
+	AI_Input_Channel_2 : AI_Input_Channel_5AF6604E;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

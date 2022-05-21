@@ -215,6 +215,20 @@
             }
         }
 
+        private string portAPhysics;
+        public string PortAPhysics
+        {
+            get { return this.portAPhysics; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.portAPhysics = value;
+                    NotifyPropertyChanged(nameof(PortAPhysics));
+                }
+            }
+        }
+
         private int totalNumberOfBoxes;
         public int TotalNumberOfBoxes
         {

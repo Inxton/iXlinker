@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EP6601_EEB2FEF4" Id="{96ea7d15-a3a6-4849-b3ea-defb50164539}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP6601-0002-0018'}
+{attribute addProperty BoxType "EP6601-0002-0018"}
+{attribute addProperty Id "InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "4004708084"}
+{attribute addProperty Size "10"}
+TYPE EP6601_EEB2FEF4 EXTENDS EtcSlaveBoxBase_77A0E4A7 :
+STRUCT
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

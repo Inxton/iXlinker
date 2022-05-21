@@ -2,19 +2,38 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-	<LangVersion>latest</LangVersion>
+	  <LangVersion>latest</LangVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <SignAssembly>true</SignAssembly>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <Configurations>Debug;Release;DebugProjectReferences</Configurations>
     <Authors>Tomas Kovac</Authors>
+    <PackageProjectUrl>https://inxton.com/</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageIconUrl />
+    <PackageTags>INXTON TwinCAT EtherCAT</PackageTags>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <PackageIcon>iXlinker256.png</PackageIcon>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="CommandLineParser" Version="2.8.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Setup.Configuration.Interop" Version="3.0.4492" />
-    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Setup.Configuration.Interop" Version="3.2.2146" />
+    <PackageReference Include="Serilog" Version="2.11.0" />
     <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\iXlinker256.png" IncludeInPackage="true" Pack="true" PackagePath="" />
+    <Content Include="iXlinker.targets" IncludeInPackage="true" Pack="true" CopyToOutputDirectory="Always" PackagePath="build" />
+    <Content Include="_publish\Community.VisualStudio.Toolkit.dll" IncludeInPackage="true" Pack="true" PackagePath="tools" />
+    <Content Include="_publish\extension.vsixmanifest" IncludeInPackage="true" Pack="true" PackagePath="tools" />
+    <Content Include="_publish\iXlinkerExt.dll" IncludeInPackage="true" Pack="true" PackagePath="tools" />
+    <Content Include="_publish\iXlinkerExt.pdb" IncludeInPackage="true" Pack="true" PackagePath="tools" />
+    <Content Include="_publish\iXlinkerExt.pkgdef" IncludeInPackage="true" Pack="true" PackagePath="tools" />
+    <Content Include="_publish\iXlinkerExt.vsix" IncludeInPackage="true" Pack="true" PackagePath="tools" />
+    <Content Include="_publish\Resources\iXlinkerExt256.png" IncludeInPackage="true" Pack="true" PackagePath="tools" />
+    <Content Include="_publish\iXlinker.exe" IncludeInPackage="true" Pack="true" PackagePath="tools" />
+    <Content Include="_publish\iXlinker.pdb" IncludeInPackage="true" Pack="true" PackagePath="tools" />
   </ItemGroup>
 </Project>

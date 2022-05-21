@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("iXlinker")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("CLI for TwinCAT 3 projects providing automated mapping and creating structures based on real EtherCAT hardware configuration.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("INXTON")]
 [assembly: AssemblyProduct("iXlinker")]
@@ -33,5 +33,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("0.1.2.0")]
+[assembly: AssemblyFileVersion("0.1.2.0")]

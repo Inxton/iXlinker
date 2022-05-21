@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EPP4314_454AD8BA" Id="{12995774-835b-401d-8775-2184ac9ab2f1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP4314-1002-0016'}
+{attribute addProperty BoxType "EPP4314-1002-0016"}
+{attribute addProperty Id "DI_InputsAT %I*DI_Inputs_1F3A93254AI_Standard_Channel_1AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_2AT %I*AI_Standard_Channel_4A3944819AO_Standard_Channel_1AT %Q*AO_Output_Channel_BA7EBB7C2AO_Standard_Channel_2AT %Q*AO_Output_Channel_BA7EBB7C2WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1162533050"}
+{attribute addProperty Size "38"}
+TYPE EPP4314_454AD8BA EXTENDS EtcSlaveBoxBase_77A0E4A7 :
+STRUCT
+	{attribute addProperty Name "DI_Inputs"}
+	DI_Inputs : DI_Inputs_1F3A9325;
+	{attribute addProperty Name "AI_Standard_Channel_1"}
+	AI_Standard_Channel_1 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "AI_Standard_Channel_2"}
+	AI_Standard_Channel_2 : AI_Standard_Channel_4A394481;
+	{attribute addProperty Name "AO_Standard_Channel_1"}
+	AO_Standard_Channel_1 : AO_Output_Channel_BA7EBB7C;
+	{attribute addProperty Name "AO_Standard_Channel_2"}
+	AO_Standard_Channel_2 : AO_Output_Channel_BA7EBB7C;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

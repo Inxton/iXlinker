@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="AT2042_2EA6C9BF" Id="{3d1febfd-4d1d-41bd-9d28-58e52569c9b6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2042-0250-0024'}
+{attribute addProperty BoxType "AT2042-0250-0024"}
+{attribute addProperty Id "CC_InputsAT %I*CC_Inputs_2C1C9EE032CC_OutputsAT %Q*CC_Outputs_69F9BE1432WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
+{attribute addProperty CRC "782682559"}
+{attribute addProperty Size "84"}
+TYPE AT2042_2EA6C9BF EXTENDS EtcSlaveBoxBase_77A0E4A7 :
+STRUCT
+	{attribute addProperty Name "CC_Inputs"}
+	CC_Inputs : CC_Inputs_2C1C9EE0;
+	{attribute addProperty Name "CC_Outputs"}
+	CC_Outputs : CC_Outputs_69F9BE14;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BEF6B88E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

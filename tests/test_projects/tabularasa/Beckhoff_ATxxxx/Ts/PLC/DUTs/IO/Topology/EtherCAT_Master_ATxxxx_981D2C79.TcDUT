@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EtherCAT_Master_ATxxxx_981D2C79" Id="{bb13662e-99d4-4026-8e8e-0deddbf37a1a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+{attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
+{attribute addProperty Id "Beckhoff_AT1xxxBeckhoff_AT1xxx_27B721695890Beckhoff_ATH2xxxBeckhoff_ATH2xxx_11442560884SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
+{attribute addProperty CRC "2552048761"}
+{attribute addProperty Size "7086"}
+TYPE EtherCAT_Master_ATxxxx_981D2C79 :
+STRUCT
+	{attribute addProperty Name "Beckhoff_AT1xxx"}
+	{attribute addProperty PreviousPort "EtherCAT_Master_ATxxxx : Master"}
+	Beckhoff_AT1xxx : Beckhoff_AT1xxx_27B72169;
+	{attribute addProperty Name "Beckhoff_ATH2xxx"}
+	{attribute addProperty PreviousPort "Beckhoff AT1xxx : C"}
+	Beckhoff_ATH2xxx : Beckhoff_ATH2xxx_11442560;
+	{attribute addProperty Name "SyncUnits"}
+	SyncUnits : SyncUnits_99E584AF;
+	{attribute addProperty Name "Inputs"}
+	Inputs : Inputs_25A0042B;
+	{attribute addProperty Name "Outputs"}
+	Outputs : Outputs_2397A10E;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_E68C61CD;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

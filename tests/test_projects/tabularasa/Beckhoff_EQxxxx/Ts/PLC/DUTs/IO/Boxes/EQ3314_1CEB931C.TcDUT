@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EQ3314_1CEB931C" Id="{381d12f9-4b0b-491a-a4c0-4637c226dc5f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EQ3314-0002-0016'}
+{attribute addProperty BoxType "EQ3314-0002-0016"}
+{attribute addProperty Id "TC_TCInputs_Channel_1AT %I*TC_TCInputs_Channel_A8DF64E310TC_TCInputs_Channel_2AT %I*TC_TCInputs_Channel_A8DF64E310TC_TCInputs_Channel_3AT %I*TC_TCInputs_Channel_A8DF64E310TC_TCInputs_Channel_4AT %I*TC_TCInputs_Channel_A8DF64E310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "485200668"}
+{attribute addProperty Size "52"}
+TYPE EQ3314_1CEB931C EXTENDS EtcSlaveBoxBase_77A0E4A7 :
+STRUCT
+	{attribute addProperty Name "TC_TCInputs_Channel_1"}
+	TC_TCInputs_Channel_1 : TC_TCInputs_Channel_A8DF64E3;
+	{attribute addProperty Name "TC_TCInputs_Channel_2"}
+	TC_TCInputs_Channel_2 : TC_TCInputs_Channel_A8DF64E3;
+	{attribute addProperty Name "TC_TCInputs_Channel_3"}
+	TC_TCInputs_Channel_3 : TC_TCInputs_Channel_A8DF64E3;
+	{attribute addProperty Name "TC_TCInputs_Channel_4"}
+	TC_TCInputs_Channel_4 : TC_TCInputs_Channel_A8DF64E3;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

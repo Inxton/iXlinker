@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3182_EF3C9D49" Id="{add29873-8c19-44ab-b20f-59831d4232c5}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3182-0000-0016'}
+{attribute addProperty BoxType "EL3182-0000-0016"}
+{attribute addProperty Id "Ch_1Ch_1_A1FAE75910Ch_2Ch_2_D9CD36D210WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_90184F0C16"}
+{attribute addProperty CRC "4013727049"}
+{attribute addProperty Size "38"}
+TYPE EL3182_EF3C9D49 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "Ch_1"}
+	Ch_1 : Ch_1_A1FAE759;
+	{attribute addProperty Name "Ch_2"}
+	Ch_2 : Ch_2_D9CD36D2;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_90184F0C;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

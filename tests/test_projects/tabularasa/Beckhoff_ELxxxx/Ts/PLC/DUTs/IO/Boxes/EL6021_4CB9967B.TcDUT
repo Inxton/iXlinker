@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL6021_4CB9967B" Id="{762d46a8-5e42-400a-a3da-14ea93707a0c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6021-0000-0018'}
+{attribute addProperty BoxType "EL6021-0000-0018"}
+{attribute addProperty Id "COM_TxPDO_Map_InputsAT %I*COM_TxPDO_Map_Inputs_3801C95E30COM_RxPDO_Map_OutputsAT %Q*COM_RxPDO_Map_Outputs_DEF408EC27WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "1287231099"}
+{attribute addProperty Size "69"}
+TYPE EL6021_4CB9967B EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "COM_TxPDO_Map_Inputs"}
+	COM_TxPDO_Map_Inputs : COM_TxPDO_Map_Inputs_3801C95E;
+	{attribute addProperty Name "COM_RxPDO_Map_Outputs"}
+	COM_RxPDO_Map_Outputs : COM_RxPDO_Map_Outputs_DEF408EC;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

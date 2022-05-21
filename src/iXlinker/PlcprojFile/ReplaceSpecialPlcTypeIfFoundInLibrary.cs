@@ -1,9 +1,6 @@
-﻿using System;
-using System.IO;
-using iXlinker.Resources;
-using iXlinker.Utils;
+﻿using iXlinker.Resources;
 using iXlinkerDtos;
-using TwincatXmlSchemas.TcPlcProj;
+using PlcprojFile;
 
 namespace TsprojFile.Scan
 {
@@ -17,8 +14,11 @@ namespace TsprojFile.Scan
             {
                 if (originalType.Equals(specialPlcType.OriginalType))
                 {
-                    ret = specialPlcType.ReplacementTypeNamespace + "." + specialPlcType.ReplacementType;
-                    break;
+                    if (!string.IsNullOrEmpty(specialPlcType.ReplacementTypeNamespace))
+                    {
+                        ret = ValidatePlcItem.NameIncludingNamespace(specialPlcType.ReplacementTypeNamespace, specialPlcType.ReplacementType);
+                        break;
+                    }
                 }
             }
             return ret;

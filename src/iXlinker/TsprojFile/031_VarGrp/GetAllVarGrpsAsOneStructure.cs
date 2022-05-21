@@ -17,7 +17,7 @@ namespace TsprojFile.Scan
             PdoViewModel pdoViewModel = new PdoViewModel();
             string structName = boxViewModel.BoxOrderCode;
 
-            BoxStructViewModel actBoxStruct = new BoxStructViewModel() { Prefix = ValidatePlcItem.StructurePrefix(structName), Id = "", BoxOrderCode = boxViewModel.BoxOrderCode };
+            BoxStructViewModel actBoxStruct = new BoxStructViewModel() { Prefix = ValidatePlcItem.StructurePrefix(structName), Id = "", BoxOrderCode = boxViewModel.BoxOrderCode, PortAPhysics = boxViewModel.PortAPhysics };
             foreach (PdoViewModel varGrp in varGrps)
             {
                 BoxStructMemberViewModel member = new BoxStructMemberViewModel();

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP2338_39FFBC52" Id="{e6fbe648-f006-4715-9f1c-3217d32703ae}">
+  <DUT Name="EP2338_39FFBC52" Id="{630cbdbe-85fa-4c14-8e94-6d11b1a8df08}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2338-0001-0016'}
 {attribute addProperty BoxType "EP2338-0001-0016"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %I*Channel_830843C11Channel_6AT %I*Channel_830843C11Channel_7AT %I*Channel_830843C11Channel_8AT %I*Channel_830843C11Channel_1_1AT %Q*Channel_42CA91F71Channel_2_1AT %Q*Channel_42CA91F71Channel_3_1AT %Q*Channel_42CA91F71Channel_4_1AT %Q*Channel_42CA91F71Channel_5_1AT %Q*Channel_42CA91F71Channel_6_1AT %Q*Channel_42CA91F71Channel_7_1AT %Q*Channel_42CA91F71Channel_8_1AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "973061202"}
 {attribute addProperty Size "20"}
-TYPE EP2338_39FFBC52 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+TYPE EP2338_39FFBC52 EXTENDS EtcSlaveBoxBase_77A0E4A7 :
 STRUCT
 	{attribute addProperty Name "Channel_1"}
 	Channel_1 : Channel_830843C1;

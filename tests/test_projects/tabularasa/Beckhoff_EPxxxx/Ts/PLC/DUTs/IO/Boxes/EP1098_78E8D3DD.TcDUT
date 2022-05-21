@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP1098_78E8D3DD" Id="{9977d358-b2a5-4fa1-96da-5599fa8e1d72}">
+  <DUT Name="EP1098_78E8D3DD" Id="{076bf4f7-5f06-45e0-a99e-b33db91681d0}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1098-0001-0016'}
 {attribute addProperty BoxType "EP1098-0001-0016"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %I*Channel_830843C11Channel_6AT %I*Channel_830843C11Channel_7AT %I*Channel_830843C11Channel_8AT %I*Channel_830843C11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2028524509"}
 {attribute addProperty Size "12"}
-TYPE EP1098_78E8D3DD EXTENDS EtcSlaveTerminalBase_947E5A46 :
+TYPE EP1098_78E8D3DD EXTENDS EtcSlaveBoxBase_77A0E4A7 :
 STRUCT
 	{attribute addProperty Name "Channel_1"}
 	Channel_1 : Channel_830843C1;

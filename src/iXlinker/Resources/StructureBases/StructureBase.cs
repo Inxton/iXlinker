@@ -20,6 +20,12 @@ namespace iXlinker.Resources
             get { return this.structureType; }
         }
 
+        private string propertyFilter;
+        public string PropertyFilter
+        {
+            get { return this.propertyFilter; }
+        }
+
         private string baseStructurePrefix;
         public string BaseStructurePrefix
         {
@@ -46,6 +52,7 @@ namespace iXlinker.Resources
             }
         }
 
+
         private List<string> attributes;
         public List<string> Attributes
         {
@@ -59,11 +66,12 @@ namespace iXlinker.Resources
             }
         }
 
-         public StructureBase(string structureName, string structureType , string baseStructurePrefix , ObservableCollection<PlcStruct> PlcStructuresInPlcLibraries)
+         public StructureBase(string structureName, string structureType , string propertyFilter, string baseStructurePrefix , ObservableCollection<PlcStruct> PlcStructuresInPlcLibraries)
         {
             if (!baseStructurePrefix.Equals("!"))
             {
                 this.structureName = structureName;
+                this.propertyFilter = propertyFilter;
                 this.structureType = structureType;
                 this.baseStructureName = baseStructurePrefix + "_" + CRC32.Calculate_CRC32(baseStructurePrefix).ToString("X8");
                 this.baseStructurePrefix = baseStructurePrefix;
@@ -80,6 +88,7 @@ namespace iXlinker.Resources
             else
             {
                 this.structureName = structureName;
+                this.propertyFilter = propertyFilter;
                 this.structureType = structureType;
                 this.baseStructureName = baseStructurePrefix;
                 this.baseStructurePrefix = baseStructurePrefix;
@@ -87,9 +96,9 @@ namespace iXlinker.Resources
             }
         }
 
-        public static StructureBase Build(string structureName, string structureType, string baseStructurePrefix, ObservableCollection<PlcStruct> PlcStructuresInPlcLibraries)
+        public static StructureBase Build(string structureName, string structureType, string propertyFilter, string baseStructurePrefix, ObservableCollection<PlcStruct> PlcStructuresInPlcLibraries)
         {
-            return new StructureBase(structureName, structureType, baseStructurePrefix, PlcStructuresInPlcLibraries);
+            return new StructureBase(structureName, structureType, propertyFilter, baseStructurePrefix, PlcStructuresInPlcLibraries);
         }
 
         public StructureBase AddAttribute(string attribute)

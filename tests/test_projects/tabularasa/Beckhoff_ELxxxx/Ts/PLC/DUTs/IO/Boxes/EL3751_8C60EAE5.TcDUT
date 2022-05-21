@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL3751_8C60EAE5" Id="{e5e4411e-6c0b-4128-acf6-3dbe568b2b31}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3751-0000-0020'}
+{attribute addProperty BoxType "EL3751-0000-0020"}
+{attribute addProperty Id "PAI_StatusAT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1AT %I*PAI_Samples_EEA517254PAI_TimestampAT %I*PAI_Timestamp_6DC4D2968WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
+{attribute addProperty CRC "2355161829"}
+{attribute addProperty Size "39"}
+TYPE EL3751_8C60EAE5 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "PAI_Status"}
+	PAI_Status : PAI_Status_Channel_AE4AC104;
+	{attribute addProperty Name "PAI_Samples_1"}
+	PAI_Samples_1 : PAI_Samples_EEA51725;
+	{attribute addProperty Name "PAI_Timestamp"}
+	PAI_Timestamp : PAI_Timestamp_6DC4D296;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_BEF6B88E;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

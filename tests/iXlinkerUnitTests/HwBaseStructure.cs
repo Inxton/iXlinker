@@ -36,11 +36,19 @@ namespace iXlinkerUnitTests
             string[] boxStructures = Directory.GetFiles(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Boxes");
             foreach (string boxStructure in boxStructures)
             {
-                if(!boxStructure.Equals(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\EtcSlaveTerminalBase_947E5A46.TcDUT"))
+                if (boxStructure.StartsWith("EK"))
+                {
+                    Assert.AreEqual("EtcSlaveBoxBase_77A0E4A7", TestsCommon.GetTypeFromWhichDtuExtends(boxStructure));
+                }
+                else if (boxStructure.StartsWith("EL"))
                 {
                     Assert.AreEqual("EtcSlaveTerminalBase_947E5A46", TestsCommon.GetTypeFromWhichDtuExtends(boxStructure));
                 }
             }
+            Assert.IsTrue(File.Exists(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\InputBase_8311D824.TcDUT"));
+            Assert.IsTrue(File.Exists(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT"));
+            Assert.IsTrue(File.Exists(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\EtcSlaveBase_82538BE2.TcDUT"));
+            Assert.IsTrue(File.Exists(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\EtcSlaveBoxBase_77A0E4A7.TcDUT"));
             Assert.IsTrue(File.Exists(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\EtcSlaveTerminalBase_947E5A46.TcDUT"));
         }
 
@@ -54,8 +62,19 @@ namespace iXlinkerUnitTests
             string[] boxStructures = Directory.GetFiles(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Boxes");
             foreach (string boxStructure in boxStructures)
             {
-                Assert.AreEqual("TcoIo.EtcSlaveTerminalBase_947E5A46", TestsCommon.GetTypeFromWhichDtuExtends(boxStructure));
+                if (boxStructure.StartsWith("EK"))
+                {
+                    Assert.AreEqual("TcoIo.EtcSlaveBoxBase_77A0E4A7", TestsCommon.GetTypeFromWhichDtuExtends(boxStructure));
+                }
+                else if (boxStructure.StartsWith("EL"))
+                {
+                    Assert.AreEqual("TcoIo.EtcSlaveTerminalBase_947E5A46", TestsCommon.GetTypeFromWhichDtuExtends(boxStructure));
+                }
             }
+            Assert.IsFalse(File.Exists(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\InputBase_8311D824.TcDUT"));
+            Assert.IsFalse(File.Exists(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT"));
+            Assert.IsFalse(File.Exists(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\EtcSlaveBase_82538BE2.TcDUT"));
+            Assert.IsFalse(File.Exists(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\EtcSlaveBoxBase_77A0E4A7.TcDUT"));
             Assert.IsFalse(File.Exists(TestsCommon.generatedDir.FullName + @"\DUTs\IO\Base\EtcSlaveTerminalBase_947E5A46.TcDUT"));
         }
     }

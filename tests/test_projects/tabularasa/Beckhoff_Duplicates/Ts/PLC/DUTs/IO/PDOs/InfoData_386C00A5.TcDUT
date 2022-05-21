@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="InfoData_386C00A5" Id="{42b046fa-ced4-4e23-8416-e3a047e23ccc}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AX8206-0100-0101-0101'}
+{attribute addProperty BoxType "AX8206-0100-0101-0101"}
+{attribute addProperty Id "AdsAddrAT %I*AMSADDR8DcOutputShiftAT %I*DINT4DcInputShiftAT %I*DINT4AoeNetIdAT %I*AMSNETID6Chn0AT %I*USINT1Chn1AT %I*USINT1StateAT %I*UINT2"}
+{attribute addProperty CRC "946602149"}
+{attribute addProperty Size "26"}
+TYPE InfoData_386C00A5 EXTENDS InputBase_8311D824 :
+STRUCT
+	{attribute addProperty Name "AdsAddr"}
+	AdsAddr AT %I* : AMSADDR;
+	{attribute addProperty Name "DcOutputShift"}
+	DcOutputShift AT %I* : DINT;
+	{attribute addProperty Name "DcInputShift"}
+	DcInputShift AT %I* : DINT;
+	{attribute addProperty Name "AoeNetId"}
+	AoeNetId AT %I* : AMSNETID;
+	{attribute addProperty Name "Chn0"}
+	Chn0 AT %I* : USINT;
+	{attribute addProperty Name "Chn1"}
+	Chn1 AT %I* : USINT;
+	{attribute addProperty Name "State"}
+	State AT %I* : UINT;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

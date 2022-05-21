@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EM7004_866015E1" Id="{395b56fa-01bd-45d1-af21-aa7c5c149e4e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9995'}
+{attribute addProperty BoxType "EM7004-0000-9995"}
+{attribute addProperty Id "DigitalAT %I*Digital_BD004D6F16Encoder_Channel_1AT %I*Encoder_Channel_2E4EA2136Encoder_Channel_2AT %I*Encoder_Channel_2E4EA2136Encoder_Channel_3AT %I*Encoder_Channel_2E4EA2136Encoder_Channel_4AT %I*Encoder_Channel_2E4EA2136Digital_1AT %Q*Digital_A7E1DFAB16Analog_Channel_1AT %Q*Analog_Channel_5F9B7EA62Analog_Channel_2AT %Q*Analog_Channel_5F9B7EA62Analog_Channel_3AT %Q*Analog_Channel_5F9B7EA62Analog_Channel_4AT %Q*Analog_Channel_5F9B7EA62Encoder_Channel_1_1AT %Q*Encoder_Channel_B7999E144Encoder_Channel_2_1AT %Q*Encoder_Channel_B7999E144Encoder_Channel_3_1AT %Q*Encoder_Channel_B7999E144Encoder_Channel_4_1AT %Q*Encoder_Channel_B7999E144WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
+{attribute addProperty CRC "2254444001"}
+{attribute addProperty Size "92"}
+TYPE EM7004_866015E1 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "Digital"}
+	Digital : Digital_BD004D6F;
+	{attribute addProperty Name "Encoder_Channel_1"}
+	Encoder_Channel_1 : Encoder_Channel_2E4EA213;
+	{attribute addProperty Name "Encoder_Channel_2"}
+	Encoder_Channel_2 : Encoder_Channel_2E4EA213;
+	{attribute addProperty Name "Encoder_Channel_3"}
+	Encoder_Channel_3 : Encoder_Channel_2E4EA213;
+	{attribute addProperty Name "Encoder_Channel_4"}
+	Encoder_Channel_4 : Encoder_Channel_2E4EA213;
+	{attribute addProperty Name "Digital_1"}
+	Digital_1 : Digital_A7E1DFAB;
+	{attribute addProperty Name "Analog_Channel_1"}
+	Analog_Channel_1 : Analog_Channel_5F9B7EA6;
+	{attribute addProperty Name "Analog_Channel_2"}
+	Analog_Channel_2 : Analog_Channel_5F9B7EA6;
+	{attribute addProperty Name "Analog_Channel_3"}
+	Analog_Channel_3 : Analog_Channel_5F9B7EA6;
+	{attribute addProperty Name "Analog_Channel_4"}
+	Analog_Channel_4 : Analog_Channel_5F9B7EA6;
+	{attribute addProperty Name "Encoder_Channel_1_1"}
+	Encoder_Channel_1_1 : Encoder_Channel_B7999E14;
+	{attribute addProperty Name "Encoder_Channel_2_1"}
+	Encoder_Channel_2_1 : Encoder_Channel_B7999E14;
+	{attribute addProperty Name "Encoder_Channel_3_1"}
+	Encoder_Channel_3_1 : Encoder_Channel_B7999E14;
+	{attribute addProperty Name "Encoder_Channel_4_1"}
+	Encoder_Channel_4_1 : Encoder_Channel_B7999E14;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_32EB74EA;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

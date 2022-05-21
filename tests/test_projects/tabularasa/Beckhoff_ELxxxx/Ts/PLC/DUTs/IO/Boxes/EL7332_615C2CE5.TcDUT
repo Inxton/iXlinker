@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL7332_615C2CE5" Id="{bac145fc-3c3b-4c88-a443-030c7b75d223}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7332-0000-0016'}
+{attribute addProperty BoxType "EL7332-0000-0016"}
+{attribute addProperty Id "DCM_Status_Channel_1AT %I*DCM_Status_Channel_36ED096F11DCM_Status_Channel_2AT %I*DCM_Status_Channel_36ED096F11DCM_Control_Channel_1AT %Q*DCM_Control_Channel_5A8B50163DCM_Velocity_Channel_1AT %Q*DCM_Velocity_Channel_A47A3F412DCM_Control_Channel_2AT %Q*DCM_Control_Channel_5A8B50163DCM_Velocity_Channel_2AT %Q*DCM_Velocity_Channel_A47A3F412WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6538CF5F12"}
+{attribute addProperty CRC "1633430757"}
+{attribute addProperty Size "46"}
+TYPE EL7332_615C2CE5 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+	{attribute addProperty Name "DCM_Status_Channel_1"}
+	DCM_Status_Channel_1 : DCM_Status_Channel_36ED096F;
+	{attribute addProperty Name "DCM_Status_Channel_2"}
+	DCM_Status_Channel_2 : DCM_Status_Channel_36ED096F;
+	{attribute addProperty Name "DCM_Control_Channel_1"}
+	DCM_Control_Channel_1 : DCM_Control_Channel_5A8B5016;
+	{attribute addProperty Name "DCM_Velocity_Channel_1"}
+	DCM_Velocity_Channel_1 : DCM_Velocity_Channel_A47A3F41;
+	{attribute addProperty Name "DCM_Control_Channel_2"}
+	DCM_Control_Channel_2 : DCM_Control_Channel_5A8B5016;
+	{attribute addProperty Name "DCM_Velocity_Channel_2"}
+	DCM_Velocity_Channel_2 : DCM_Velocity_Channel_A47A3F41;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_6538CF5F;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -20,7 +20,7 @@ namespace TsprojFile.Scan
             //Write changes on the PLC project to it's .plcproj file.
             ApplyChangesToPlcProj(vs, tcPlcProj);
 
-            ExportAllStructuresByNumberOfUses(@"D:\_tmp\iXlinkerStructs");
+            //ExportAllStructuresByNumberOfUses(@"D:\_tmp\iXlinkerStructs");
         }
     }
 }

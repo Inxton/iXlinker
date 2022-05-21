@@ -469,3 +469,53 @@ WRN | 5/11/2022 8:18:00 PM 357 ms | 'TwinCAT XAE': Project 'PLC' build for platf
 Error: The operation could not be completed. Unspecified error 
 ========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
 
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+
+Package 'DslDefinitionModelPackage' failed to load.
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_94A18F5E.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_41C547A3.TcDUT(9) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_41C547A3.TcDUT(11) : error: Type definition expected instead of '.'
+D:\github\Inxton\iXlinker\tests\test_projects\tabularasa\Beckhoff_ELXxxxx\Ts\PLC\DUTs\IO\PDOs\InfoData_C76BEFB3.TcDUT(13) : error: Type definition expected instead of '.'
+Compile complete -- 4 errors, 0 warnings
+Build complete -- 4 errors, 0 warnings : no download possible!
+WRN | 5/21/2022 6:38:30 PM 256 ms | 'TwinCAT XAE': Project 'PLC' build for platform 'TwinCAT RT (x64)' failed.
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+Error: The operation could not be completed. Unspecified error 
+========== Build: 0 succeeded or up-to-date, 2 failed, 0 skipped ==========
+
+Build started...
+------ Build started: Project: PLC, Configuration: Release TwinCAT RT (x64) ------
+------ Build started: Application: Ts.PLC -------
+typify code ...
+generate code...
+generate global initializations ...
+generate code initialization ...
+generate relocations ...
+Size of generated code: 68926 bytes
+Size of global data: 16753 bytes
+Total allocated memory size for code and data: 470104 bytes
+Memory area 0 contains  Data, Input, Output, Memory, Code, Persistent Data and Nonsafe Data: size: 1048576 bytes, highest used address: 470104, largest contiguous memory gap: 578472 bytes (55 %)
+Build complete -- 0 errors, 0 warnings : ready for download!
+Generate TMC information ...
+Import symbol information ...
+PLC.PLC : message: generate boot information...
+------ Build started: Project: Ts, Configuration: Release TwinCAT RT (x64) ------
+WRN | 5/21/2022 7:49:57 PM 268 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0023(ELX3351-0090-0016)' may to low (-35 mA) - please check!
+WRN | 5/21/2022 7:49:57 PM 271 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0024(ELX4154-0000-0016)' may to low (-95 mA) - please check!
+WRN | 5/21/2022 7:49:57 PM 273 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0025(ELX4181-0000-0016)' may to low (-190 mA) - please check!
+WRN | 5/21/2022 7:49:57 PM 275 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0026(ELX4181-0000-0017)' may to low (-285 mA) - please check!
+WRN | 5/21/2022 7:49:57 PM 278 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0027(ELX5151-0000-0016)' may to low (-365 mA) - please check!
+WRN | 5/21/2022 7:49:57 PM 283 ms | 'TwinCAT XAE': E-Bus Power of Terminal 'A_0028(ELX5151-0090-0016)' may to low (-445 mA) - please check!
+========== Build: 2 succeeded or up-to-date, 0 failed, 0 skipped ==========
+

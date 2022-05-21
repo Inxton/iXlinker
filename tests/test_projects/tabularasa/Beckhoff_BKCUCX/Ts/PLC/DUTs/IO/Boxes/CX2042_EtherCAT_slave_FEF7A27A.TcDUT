@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="CX2042_EtherCAT_slave_FEF7A27A" Id="{f52e60ce-4097-4543-be4b-13de0f198faa}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CX2042 EtherCAT slave-1b82-0016'}
+{attribute addProperty BoxType "CX2042 EtherCAT slave-1b82-0016"}
+{attribute addProperty Id "IO_InputsEMPTY_STRUCTURE0Device_Status_MappingAT %I*Device_Status_Mapping_61F790772IO_OutputsEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_90184F0C16"}
+{attribute addProperty CRC "4277641850"}
+{attribute addProperty Size "20"}
+TYPE CX2042_EtherCAT_slave_FEF7A27A EXTENDS EtcSlaveBoxBase_77A0E4A7 :
+STRUCT
+	{attribute addProperty Name "IO_Inputs"}
+	IO_Inputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "Device_Status_Mapping"}
+	Device_Status_Mapping : Device_Status_Mapping_61F79077;
+	{attribute addProperty Name "IO_Outputs"}
+	IO_Outputs : EMPTY_STRUCTURE;
+	{attribute addProperty Name "WcState"}
+	WcState : WcState_9091E0EB;
+	{attribute addProperty Name "InfoData"}
+	InfoData : InfoData_90184F0C;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
