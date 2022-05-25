@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
-  <Target Name="TestMessage" AfterTargets="PreBuildEvent" >
-
+  <Target Name="AfterResolveReferences" AfterTargets="AfterResolveReferences" >
     <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinker.exe to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
     <Copy SourceFiles="@(iXlinkerExe)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
 
     <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinker.pdb to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(iXlinkerpdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+    <Copy SourceFiles="@(iXlinkerPdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
 
     <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\Community.VisualStudio.Toolkit.dll to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
     <Copy SourceFiles="@(CommunityVisualStudioToolkitdll)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
@@ -30,11 +29,39 @@
     <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt256.png to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
     <Copy SourceFiles="@(iXlinkerExt256png)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
 
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.exe to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(iXlinkerExtInstallerExe)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.pdb to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy SourceFiles="@(iXlinkerExtInstallerPdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Install iXlinker extension:" Importance="high"/>
+    <PropertyGroup>
+      <Command>$([System.IO.Path]::GetFullPath('$(SolutionDir)'))</Command>
+      <Command>$([System.IO.Path]::Combine('$(SolutionDir)','_Vortex\iXlinker\iXlinkerExtInstaller.exe'))</Command>
+      
+      <Extensions>$([System.IO.Directory]::GetParent('$(PkgDefApplicationConfigFile)'))</Extensions>
+      <Extensions>$([System.IO.Path]::Combine('$(Extensions)','Extensions'))</Extensions>
+      <Extensions>$([System.IO.Path]::GetFullPath('$(Extensions)'))</Extensions>
+
+      <Appiddir>$([System.IO.Directory]::GetParent('$(VSAPPIDDIR)'))</Appiddir>
+      <!--<Appiddir>$([System.IO.Path]::Combine('$(Appiddir)','IDE'))</Appiddir>-->
+
+      <VsixDir>$([System.IO.Path]::GetFullPath('$(SolutionDir)'))</VsixDir>
+      <VsixDir>$([System.IO.Path]::Combine('$(SolutionDir)','_Vortex\iXlinker'))</VsixDir>
+
+      <Arguments>-e "$(Extensions)" -i "$(Appiddir)" -v "$(VsixDir)"</Arguments>
+      
+      <ExtInstallCommand>"$(Command)" $(Arguments)</ExtInstallCommand>
+
+    </PropertyGroup>
+    <Message Text="$(ExtInstallCommand)" Importance="high"/>
+    <Exec WorkingDirectory ="$(SolutionDir)" Command="$(ExtInstallCommand)" Outputs="_Vortex\iXlinker\iXlinkerExtInstall.txt"/>
   </Target>
 
   <ItemGroup>
     <iXlinkerExe Include="$(MSBuildThisFileDirectory)..\tools\iXlinker.exe"/>
-    <iXlinkerpdb Include="$(MSBuildThisFileDirectory)..\tools\iXlinker.pdb"/>
+    <iXlinkerPdb Include="$(MSBuildThisFileDirectory)..\tools\iXlinker.pdb"/>
     <CommunityVisualStudioToolkitdll Include="$(MSBuildThisFileDirectory)..\tools\Community.VisualStudio.Toolkit.dll"/>
     <extensionvsixmanifest Include="$(MSBuildThisFileDirectory)..\tools\extension.vsixmanifest"/>
     <iXlinkerExtdll Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt.dll"/>
@@ -42,7 +69,7 @@
     <iXlinkerExtpkgdef Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pkgdef"/>
     <iXlinkerExtvsix Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt.vsix"/>
     <iXlinkerExt256png Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt256.png"/>
-
+    <iXlinkerExtInstallerExe Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.exe"/>
+    <iXlinkerExtInstallerPdb Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.pdb"/>
   </ItemGroup>
-
 </Project>

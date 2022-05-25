@@ -23,6 +23,7 @@ public static class Program
 
 public class BuildContext : FrostingContext
 {
+    public bool SkipTests => true;
     public string MsBuildConfiguration { get; set; }
     public string WorkDirName => Environment.WorkingDirectory.GetDirectoryName();
     public string RootDir => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, ".."));
@@ -31,6 +32,7 @@ public class BuildContext : FrostingContext
     public string SlnfExt => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\iXlinkerExt.slnf"));
     public string CliProject => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\src\iXlinker\iXlinker.csproj"));
     public string ExtProject => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\src\iXlinkerExt\iXlinkerExt.csproj"));
+    public string ExtInstProject => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\src\iXlinkerExtInstaller\iXlinkerExtInstaller.csproj"));
     public string PublishDir => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\src\iXlinker\_publish"));
     public string NugetDir => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\_nuget"));
     public IEnumerable<string> TestProjects => Directory.EnumerateFiles(RootDir + "\\tests", "*Tests.csproj", SearchOption.AllDirectories);
@@ -79,7 +81,7 @@ public sealed class BuildExtTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
-        context.MSBuild(context.ExtProject, new MSBuildSettings() { Configuration = context.MsBuildConfiguration , PlatformTarget = PlatformTarget.MSIL , MSBuildPlatform= MSBuildPlatform.Automatic});
+        context.MSBuild(context.ExtProject, new MSBuildSettings() { Configuration = context.MsBuildConfiguration, PlatformTarget = PlatformTarget.MSIL, MSBuildPlatform = MSBuildPlatform.Automatic });
     }
 }
 
@@ -93,8 +95,38 @@ public sealed class CopyExtensionTask : FrostingTask<BuildContext>
     }
 }
 
-[TaskName("BuildCli")]
+[TaskName("BuildExtInstaller")]
 [IsDependentOn(typeof(CopyExtensionTask))]
+public sealed class BuildExtInstallerTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        context.DotNetBuild(context.ExtInstProject, new DotNetBuildSettings() { Configuration = context.MsBuildConfiguration});
+    }
+}
+
+[TaskName("PublishExtInstaller")]
+[IsDependentOn(typeof(BuildExtInstallerTask))]
+public sealed class PublishExtInstallerTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        context.PublishSettings.Configuration = context.MsBuildConfiguration;
+        context.PublishSettings.OutputDirectory = context.PublishDir;
+        context.PublishSettings.Framework = "net5.0";
+        context.PublishSettings.Runtime = "win-x64";
+        context.PublishSettings.SelfContained = false;
+        context.PublishSettings.PublishSingleFile = true;
+        context.PublishSettings.PublishReadyToRun = true;
+        context.PublishSettings.PublishTrimmed = false;
+        context.PublishSettings.EnableCompressionInSingleFile = true;
+
+        context.DotNetPublish(context.ExtInstProject , context.PublishSettings);
+    }
+}
+
+[TaskName("BuildCli")]
+[IsDependentOn(typeof(PublishExtInstallerTask))]
 public sealed class BuildCliTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
@@ -111,6 +143,10 @@ public sealed class BuildCliTask : FrostingTask<BuildContext>
 [IsDependentOn(typeof(BuildCliTask))]
 public sealed class TestsRunTask : FrostingTask<BuildContext>
 {
+    public override bool ShouldRun(BuildContext context)
+    {
+        return context.SkipTests.Equals(false);
+    }
     public override void Run(BuildContext context)
     {
         foreach (string TestProject in context.TestProjects)

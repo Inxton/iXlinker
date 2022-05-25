@@ -11,7 +11,7 @@ namespace iXlinkerExt
         public const string Name = "iXlinker";
         public const string Description = @"Gets details from TwinCAT 3 XAE project and calls CLI for TwinCAT 3 projects providing automated mapping and creating structures based on real EtherCAT hardware configuration.";
         public const string Language = "en-US";
-        public const string Version = "1.0";
+        public const string Version = "1.0.0.1";
         public const string Author = "Tomas Kovac";
         public const string Tags = "INXTON TwinCAT EtherCAT";
     }

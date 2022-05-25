@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iXlinkerTestHelper", "tests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iXlinkerExt", "src\iXlinkerExt\iXlinkerExt.csproj", "{D03506FD-042A-4155-94B8-F859164AA822}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iXlinkerExtInstaller", "src\iXlinkerExtInstaller\iXlinkerExtInstaller.csproj", "{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,12 @@ Global
 		{D03506FD-042A-4155-94B8-F859164AA822}.DebugProjectReferences|Any CPU.Build.0 = Debug|Any CPU
 		{D03506FD-042A-4155-94B8-F859164AA822}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D03506FD-042A-4155-94B8-F859164AA822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}.DebugProjectReferences|Any CPU.ActiveCfg = Debug|Any CPU
+		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}.DebugProjectReferences|Any CPU.Build.0 = Debug|Any CPU
+		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +72,7 @@ Global
 		{631B35A4-19EE-4810-B98C-F7E829B810CA} = {6A4A5F1A-088C-4E36-9E3C-080F40DD23B4}
 		{82B263D9-C751-406A-AD36-30DC68E2CE7D} = {6A4A5F1A-088C-4E36-9E3C-080F40DD23B4}
 		{D03506FD-042A-4155-94B8-F859164AA822} = {CB7A1240-5098-42C5-ABB6-2AFA10EC4947}
+		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5} = {CB7A1240-5098-42C5-ABB6-2AFA10EC4947}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {831E7DE9-5ADA-4BC3-8BCB-FF1B3E7E868F}
