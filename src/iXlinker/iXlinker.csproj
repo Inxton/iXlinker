@@ -18,7 +18,11 @@
     <PackageTags>INXTON TwinCAT EtherCAT</PackageTags>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
     <PackageIcon>iXlinker256.png</PackageIcon>
+    <PackageId>Inxton.iXlinker</PackageId>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Inxton.iXlinker.targets" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.9.1" />
     <PackageReference Include="Microsoft.VisualStudio.Setup.Configuration.Interop" Version="3.2.2146" />
@@ -28,7 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\iXlinker256.png" IncludeInPackage="true" Pack="true" PackagePath="" />
-    <Content Include="iXlinker.targets" IncludeInPackage="true" Pack="true" CopyToOutputDirectory="Always" PackagePath="build" />
+    <Content Include="Inxton.iXlinker.targets" IncludeInPackage="true" Pack="true" CopyToOutputDirectory="Always" PackagePath="build" />
     <Content Include="_publish\Community.VisualStudio.Toolkit.dll" IncludeInPackage="true" Pack="true" PackagePath="tools" />
     <Content Include="_publish\extension.vsixmanifest" IncludeInPackage="true" Pack="true" PackagePath="tools" />
     <Content Include="_publish\iXlinkerExt.dll" IncludeInPackage="true" Pack="true" PackagePath="tools" />

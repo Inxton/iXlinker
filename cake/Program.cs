@@ -11,6 +11,8 @@ using Cake.Common.Tools.DotNet.MSBuild;
 using Cake.Core;
 using Cake.Frosting;
 using Cake.Common.Tools.MSBuild;
+using Cake.Core.Diagnostics;
+
 public static class Program
 {
     public static int Main(string[] args)
@@ -119,7 +121,7 @@ public sealed class PublishExtInstallerTask : FrostingTask<BuildContext>
         context.PublishSettings.PublishSingleFile = true;
         context.PublishSettings.PublishReadyToRun = true;
         context.PublishSettings.PublishTrimmed = false;
-        context.PublishSettings.EnableCompressionInSingleFile = true;
+        context.PublishSettings.EnableCompressionInSingleFile = false;
 
         context.DotNetPublish(context.ExtInstProject , context.PublishSettings);
     }
@@ -170,7 +172,7 @@ public sealed class PublishExecutableTask : FrostingTask<BuildContext>
         context.PublishSettings.PublishSingleFile = true;
         context.PublishSettings.PublishReadyToRun = true;
         context.PublishSettings.PublishTrimmed = false;
-        context.PublishSettings.EnableCompressionInSingleFile = true;
+        context.PublishSettings.EnableCompressionInSingleFile = false;
 
         context.DotNetPublish(context.CliProject, context.PublishSettings);
     }
@@ -184,7 +186,14 @@ public sealed class PackNugetPackageTask : FrostingTask<BuildContext>
     {
         System.Console.WriteLine(GitVersionInformation.SemVer);
         Cake.Common.Tools.DotNet.Pack.DotNetPackSettings nuSettings =
-            new Cake.Common.Tools.DotNet.Pack.DotNetPackSettings() { OutputDirectory = context.NugetDir, MSBuildSettings = new DotNetMSBuildSettings() { Version = context.Version }};
+            new Cake.Common.Tools.DotNet.Pack.DotNetPackSettings() 
+            { 
+                OutputDirectory = context.NugetDir, 
+                MSBuildSettings = new DotNetMSBuildSettings() 
+                { 
+                    Version = context.Version 
+                }                 
+            };
        
         context.DotNetPack(context.CliProject, nuSettings);
     }
@@ -195,9 +204,37 @@ public sealed class PackNugetPackageTask : FrostingTask<BuildContext>
 public sealed class PublishNugetPackageTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
-    {
-        //context.PublishNuGets();
-  
+    {              
+        foreach (var nugetFile in Directory.EnumerateFiles(context.NugetDir, "*.nupkg").Select(p => new FileInfo(p)))
+        {
+            context.Log.Information($"Signing {nugetFile.FullName} {System.Environment.GetEnvironmentVariable("gh-inxton-ixlinker-nuget-api")}");
+
+            var arguments = new Cake.Core.IO.ProcessArgumentBuilder();
+            arguments.Append("nuget")
+                     .Append("sign")
+                     .Append(nugetFile.FullName)
+                     .Append("--certificate-path")
+                     .AppendQuotedSecret(System.Environment.GetEnvironmentVariable("cp"))
+                     .Append("--certificate-password")
+                     .AppendSecret(System.Environment.GetEnvironmentVariable("cpw"))
+                     .Append("--timestamper")
+                     .Append("http://timestamp.digicert.com/")
+                     .Append("--overwrite");                     
+                        
+            context.ProcessRunner.Start("dotnet.exe", new Cake.Core.IO.ProcessSettings() { Arguments = arguments, Silent = true }).WaitForExit();
+
+            context.DotNetNuGetPush(nugetFile.FullName, new Cake.Common.Tools.DotNet.NuGet.Push.DotNetNuGetPushSettings() 
+            { 
+                Source = "https://api.nuget.org/v3/index.json", 
+                ApiKey = System.Environment.GetEnvironmentVariable("gh-inxton-ixlinker-nuget-api"),
+                // SymbolApiKey = System.Environment.GetEnvironmentVariable("gh-inxton-ixlinker-nuget-api")
+
+            });
+        }
+
+        
+        // context.PublishNuGets();
+
     }
 }
 

@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB7A1240-5098-42C5-ABB6-2AFA10EC4947}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iXlinker", "src\iXlinker\iXlinker.csproj", "{E60D12A4-D611-4544-BDA0-39A594243021}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6A4A5F1A-088C-4E36-9E3C-080F40DD23B4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iXlinkerIntegrationTests", "tests\iXlinkerIntegrationTests\iXlinkerIntegrationTests.csproj", "{E161951D-F899-44A7-8B9D-9866BA985625}"
@@ -19,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iXlinkerExt", "src\iXlinker
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iXlinkerExtInstaller", "src\iXlinkerExtInstaller\iXlinkerExtInstaller.csproj", "{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iXlinker", "src\iXlinker\iXlinker.csproj", "{6898BC2B-540E-441D-B3CF-57A3157C1673}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,12 +26,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E60D12A4-D611-4544-BDA0-39A594243021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E60D12A4-D611-4544-BDA0-39A594243021}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E60D12A4-D611-4544-BDA0-39A594243021}.DebugProjectReferences|Any CPU.ActiveCfg = DebugProjectReferences|Any CPU
-		{E60D12A4-D611-4544-BDA0-39A594243021}.DebugProjectReferences|Any CPU.Build.0 = DebugProjectReferences|Any CPU
-		{E60D12A4-D611-4544-BDA0-39A594243021}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E60D12A4-D611-4544-BDA0-39A594243021}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E161951D-F899-44A7-8B9D-9866BA985625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E161951D-F899-44A7-8B9D-9866BA985625}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E161951D-F899-44A7-8B9D-9866BA985625}.DebugProjectReferences|Any CPU.ActiveCfg = Debug|Any CPU
@@ -62,17 +56,23 @@ Global
 		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}.DebugProjectReferences|Any CPU.Build.0 = Debug|Any CPU
 		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6898BC2B-540E-441D-B3CF-57A3157C1673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6898BC2B-540E-441D-B3CF-57A3157C1673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6898BC2B-540E-441D-B3CF-57A3157C1673}.DebugProjectReferences|Any CPU.ActiveCfg = DebugProjectReferences|Any CPU
+		{6898BC2B-540E-441D-B3CF-57A3157C1673}.DebugProjectReferences|Any CPU.Build.0 = DebugProjectReferences|Any CPU
+		{6898BC2B-540E-441D-B3CF-57A3157C1673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6898BC2B-540E-441D-B3CF-57A3157C1673}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E60D12A4-D611-4544-BDA0-39A594243021} = {CB7A1240-5098-42C5-ABB6-2AFA10EC4947}
 		{E161951D-F899-44A7-8B9D-9866BA985625} = {6A4A5F1A-088C-4E36-9E3C-080F40DD23B4}
 		{631B35A4-19EE-4810-B98C-F7E829B810CA} = {6A4A5F1A-088C-4E36-9E3C-080F40DD23B4}
 		{82B263D9-C751-406A-AD36-30DC68E2CE7D} = {6A4A5F1A-088C-4E36-9E3C-080F40DD23B4}
 		{D03506FD-042A-4155-94B8-F859164AA822} = {CB7A1240-5098-42C5-ABB6-2AFA10EC4947}
 		{43ACD872-A50A-44A6-B66B-B0A3C4931DB5} = {CB7A1240-5098-42C5-ABB6-2AFA10EC4947}
+		{6898BC2B-540E-441D-B3CF-57A3157C1673} = {CB7A1240-5098-42C5-ABB6-2AFA10EC4947}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {831E7DE9-5ADA-4BC3-8BCB-FF1B3E7E868F}
