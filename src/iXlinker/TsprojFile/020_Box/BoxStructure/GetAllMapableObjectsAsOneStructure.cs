@@ -101,7 +101,7 @@ namespace TsprojFile.Scan
         {
             MappableObject mapableObjectVM = new MappableObject();
 
-            if (mapableObjects.Count == 1)
+            if (mapableObjects.Count == 1 && boxViewModel.Name != null && mapableObjects[0].Name != null && ValidatePlcItem.Name(boxViewModel.Name).Equals(mapableObjects[0].Name))
             {
                 MappableObject mapableObject = mapableObjects.ElementAt(0);
 
