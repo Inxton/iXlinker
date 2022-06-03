@@ -25,7 +25,7 @@ public static class Program
 
 public class BuildContext : FrostingContext
 {
-    public bool SkipTests => false;
+    public bool SkipTests => true;
     public string MsBuildConfiguration { get; set; }
     public string WorkDirName => Environment.WorkingDirectory.GetDirectoryName();
     public string RootDir => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, ".."));
@@ -94,6 +94,7 @@ public sealed class CopyExtensionTask : FrostingTask<BuildContext>
     public override void Run(BuildContext context)
     {
         context.CopyDirectory(context.RootDir + @"\src\iXlinkerExt\bin\" + context.MsBuildConfiguration + @"\", context.PublishDir);
+        context.CopyDirectory(context.RootDir + @"\src\iXlinkerExt\Resources\", context.PublishDir + @"\Resources");
     }
 }
 

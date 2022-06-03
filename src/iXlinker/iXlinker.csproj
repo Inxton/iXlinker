@@ -31,7 +31,8 @@
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="images\iXlinker256.png" IncludeInPackage="true" Pack="true" PackagePath="" />
+    <Content Include="_publish\Resources\iXlinkerExt256.png" IncludeInPackage="true" Pack="true" PackagePath="tools\Resources" />
+    <Content Include="images\iXlinker256.png" IncludeInPackage="true" Pack="true" PackagePath="" />
     <Content Include="Inxton.iXlinker.targets" IncludeInPackage="true" Pack="true" CopyToOutputDirectory="Always" PackagePath="build" />
     <Content Include="_publish\Community.VisualStudio.Toolkit.dll" IncludeInPackage="true" Pack="true" PackagePath="tools" />
     <Content Include="_publish\extension.vsixmanifest" IncludeInPackage="true" Pack="true" PackagePath="tools" />

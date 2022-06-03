@@ -56,8 +56,8 @@
     <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.vsix to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
     <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExtvsix)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
 
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt256.png to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExt256png)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\Resources\iXlinkerExt256.png to $(SolutionDir)_Vortex\iXlinker\Resources" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExt256png)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker\Resources" SkipUnchangedFiles="true"/>
 
     <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.exe to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
     <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExtInstallerExe)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
@@ -80,7 +80,7 @@
     <iXlinkerExtpdb Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pdb"/>
     <iXlinkerExtpkgdef Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pkgdef"/>
     <iXlinkerExtvsix Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt.vsix"/>
-    <iXlinkerExt256png Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExt256.png"/>
+    <iXlinkerExt256png Include="$(MSBuildThisFileDirectory)..\tools\Resources\iXlinkerExt256.png"/>
     <iXlinkerExtInstallerExe Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.exe"/>
     <iXlinkerExtInstallerPdb Include="$(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.pdb"/>
   </ItemGroup>
