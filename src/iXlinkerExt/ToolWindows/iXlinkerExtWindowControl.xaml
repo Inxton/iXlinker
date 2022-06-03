@@ -62,7 +62,7 @@
                     <TextBlock Margin="5,0,5,0" Text="iXlinker CLI version:"/>
                     <TextBlock Margin="5,0,5,0" Name="tbVersionCLI"/>
                 </WrapPanel>
-                <Image Grid.Row="5" Grid.RowSpan="3"  Grid.Column="1" Margin="5,0,5,0" Width="120" Source="iXlinkerExt256.png"/>
+                <Image Grid.Row="5" Grid.RowSpan="3"  Grid.Column="1" Margin="5,0,5,0" Width="120" Source="pack://application:,,,/iXlinkerExt;component/Resources/iXlinkerExt256.png"/>
                 <Button Grid.Row="7"   Grid.Column="0" Margin="5,0,5,0" Content="Generate mappings" Click="generateMappings_Click" Width="120" Height="30" Name="generateMappings"/>
                 <Button Grid.Row="7"   Grid.Column="2" Margin="5,0,5,0" Content="Cancel" Click="cancel_Click" Width="120" Height="30" Name="cancel"/>
             </Grid>
