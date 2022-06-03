@@ -207,7 +207,7 @@ public sealed class PublishNugetPackageTask : FrostingTask<BuildContext>
     {
         foreach (var nugetFile in Directory.EnumerateFiles(context.NugetDir, "*.nupkg").Select(p => new FileInfo(p)))
         {
-            context.Log.Information($"Signing {nugetFile.FullName} {System.Environment.GetEnvironmentVariable("gh-inxton-ixlinker-nuget-api")}");
+            context.Log.Information($"Signing {nugetFile.FullName}");
 
             var arguments = new Cake.Core.IO.ProcessArgumentBuilder();
             arguments.Append("nuget")
