@@ -2,44 +2,21 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <Target Name="AfterResolveReferences" AfterTargets="AfterResolveReferences" >
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinker.exe to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(iXlinkerExe)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinker.pdb to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(iXlinkerPdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\Community.VisualStudio.Toolkit.dll to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(CommunityVisualStudioToolkitdll)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\extension.vsixmanifest to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(extensionvsixmanifest)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.dll to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(iXlinkerExtdll)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pdb to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(iXlinkerExtpdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pkgdef to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(iXlinkerExtpkgdef)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.vsix to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(iXlinkerExtvsix)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt256.png to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(iXlinkerExt256png)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.exe to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(iXlinkerExtInstallerExe)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.pdb to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
-    <Copy SourceFiles="@(iXlinkerExtInstallerPdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
-
-    <Message Text="Install iXlinker extension:" Importance="high"/>
     <PropertyGroup>
+      <SolutionDirEmpty>$([System.String]::IsNullOrEmpty($(SolutionDir)))</SolutionDirEmpty>
+      <SolutionDirUndef>$(SolutionDir.Contains('Undefined'))</SolutionDirUndef>
+      <PkgDefEmpty>$([System.String]::IsNullOrEmpty($(PkgDefApplicationConfigFile)))</PkgDefEmpty>
+      <PkgDefUndef>$(PkgDefApplicationConfigFile.Contains('Undefined'))</PkgDefUndef>
+      <tmpSum>$(SolutionDirEmpty)$(SolutionDirUndef)$(PkgDefEmpty)$(PkgDefUndef)</tmpSum>
+      <RunIxlinkerCopyAndInstall>$([System.Convert]::ToBoolean($(tmpSum.Equals('FalseFalseFalseFalse'))))</RunIxlinkerCopyAndInstall>
+    </PropertyGroup>
+
+    <Message Text="RunIxlinkerCopyAndInstall: $(RunIxlinkerCopyAndInstall)" Importance="high"/>
+
+    <PropertyGroup  Condition="$(RunIxlinkerCopyAndInstall)" >
       <Command>$([System.IO.Path]::GetFullPath('$(SolutionDir)'))</Command>
       <Command>$([System.IO.Path]::Combine('$(SolutionDir)','_Vortex\iXlinker\iXlinkerExtInstaller.exe'))</Command>
-      
+
       <Extensions>$([System.IO.Directory]::GetParent('$(PkgDefApplicationConfigFile)'))</Extensions>
       <Extensions>$([System.IO.Path]::Combine('$(Extensions)','Extensions'))</Extensions>
       <Extensions>$([System.IO.Path]::GetFullPath('$(Extensions)'))</Extensions>
@@ -51,12 +28,47 @@
       <VsixDir>$([System.IO.Path]::Combine('$(SolutionDir)','_Vortex\iXlinker'))</VsixDir>
 
       <Arguments>-e "$(Extensions)" -i "$(Appiddir)" -v "$(VsixDir)"</Arguments>
-      
-      <ExtInstallCommand>"$(Command)" $(Arguments)</ExtInstallCommand>
 
+      <ExtInstallCommand>"$(Command)" $(Arguments)</ExtInstallCommand>
     </PropertyGroup>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinker.exe to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExe)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinker.pdb to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerPdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\Community.VisualStudio.Toolkit.dll to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(CommunityVisualStudioToolkitdll)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\extension.vsixmanifest to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(extensionvsixmanifest)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.dll to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExtdll)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pdb to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExtpdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.pkgdef to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExtpkgdef)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt.vsix to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExtvsix)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExt256.png to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExt256png)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.exe to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExtInstallerExe)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Copy $(MSBuildThisFileDirectory)..\tools\iXlinkerExtInstaller.pdb to $(SolutionDir)_Vortex\iXlinker" Importance="high"/>
+    <Copy Condition="$(RunIxlinkerCopyAndInstall)" SourceFiles="@(iXlinkerExtInstallerPdb)" DestinationFolder="$(SolutionDir)_Vortex\iXlinker" SkipUnchangedFiles="true"/>
+
+    <Message Text="Install iXlinker extension:" Importance="high"/>
+
     <Message Text="$(ExtInstallCommand)" Importance="high"/>
-    <Exec WorkingDirectory ="$(SolutionDir)" Command="$(ExtInstallCommand)" Outputs="_Vortex\iXlinker\iXlinkerExtInstall.txt"/>
+    <Exec Condition="$([System.Convert]::ToBoolean($(RunIxlinkerCopyAndInstall.Equals('True'))))" WorkingDirectory ="$(SolutionDir)" Command="$(ExtInstallCommand)" Outputs="_Vortex\iXlinker\iXlinkerExtInstall.txt"/>
   </Target>
 
   <ItemGroup>
