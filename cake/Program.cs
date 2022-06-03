@@ -25,7 +25,7 @@ public static class Program
 
 public class BuildContext : FrostingContext
 {
-    public bool SkipTests => true;
+    public bool SkipTests => false;
     public string MsBuildConfiguration { get; set; }
     public string WorkDirName => Environment.WorkingDirectory.GetDirectoryName();
     public string RootDir => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, ".."));
@@ -103,7 +103,7 @@ public sealed class BuildExtInstallerTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
-        context.DotNetBuild(context.ExtInstProject, new DotNetBuildSettings() { Configuration = context.MsBuildConfiguration});
+        context.DotNetBuild(context.ExtInstProject, new DotNetBuildSettings() { Configuration = context.MsBuildConfiguration });
     }
 }
 
@@ -123,7 +123,7 @@ public sealed class PublishExtInstallerTask : FrostingTask<BuildContext>
         context.PublishSettings.PublishTrimmed = false;
         context.PublishSettings.EnableCompressionInSingleFile = false;
 
-        context.DotNetPublish(context.ExtInstProject , context.PublishSettings);
+        context.DotNetPublish(context.ExtInstProject, context.PublishSettings);
     }
 }
 
@@ -204,7 +204,7 @@ public sealed class PackNugetPackageTask : FrostingTask<BuildContext>
 public sealed class PublishNugetPackageTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
-    {              
+    {
         foreach (var nugetFile in Directory.EnumerateFiles(context.NugetDir, "*.nupkg").Select(p => new FileInfo(p)))
         {
             context.Log.Information($"Signing {nugetFile.FullName} {System.Environment.GetEnvironmentVariable("gh-inxton-ixlinker-nuget-api")}");
@@ -219,20 +219,20 @@ public sealed class PublishNugetPackageTask : FrostingTask<BuildContext>
                      .AppendSecret(System.Environment.GetEnvironmentVariable("cpw"))
                      .Append("--timestamper")
                      .Append("http://timestamp.digicert.com/")
-                     .Append("--overwrite");                     
-                        
+                     .Append("--overwrite");
+
             context.ProcessRunner.Start("dotnet.exe", new Cake.Core.IO.ProcessSettings() { Arguments = arguments, Silent = true }).WaitForExit();
 
-            context.DotNetNuGetPush(nugetFile.FullName, new Cake.Common.Tools.DotNet.NuGet.Push.DotNetNuGetPushSettings() 
-            { 
-                Source = "https://api.nuget.org/v3/index.json", 
+            context.DotNetNuGetPush(nugetFile.FullName, new Cake.Common.Tools.DotNet.NuGet.Push.DotNetNuGetPushSettings()
+            {
+                Source = "https://api.nuget.org/v3/index.json",
                 ApiKey = System.Environment.GetEnvironmentVariable("gh-inxton-ixlinker-nuget-api"),
                 // SymbolApiKey = System.Environment.GetEnvironmentVariable("gh-inxton-ixlinker-nuget-api")
 
             });
         }
 
-        
+
         // context.PublishNuGets();
 
     }
