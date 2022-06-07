@@ -36,7 +36,9 @@ As the TwinCAT XAE project does not support the nuget packages (or did not suppo
 ## How to use it 
 In the background, the iXlinker is the CLI executable. 
 So it could be placed once somewhere on the hard drive and triggered using the command line with the absolute paths to XAE project and PLC project. Type **iXlinker.exe /?** into the command line in the directory where this file is placed to get the complete list of arguments. In such a case only the iXlinker.exe file is necessary all the others could be deleted.
+
 Or it could be triggered via VSIX extension inside Visual Studio, which prefills the arguments from the currently opened solution and calls the executable placed inside the solution folder.
+![](assets/RunViaExtensionGif.gif)
 
 ----------------------------------
 ## Prerequisites
