@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AT2025_33A3DF1B" Id="{f2b70c81-d1d9-44bc-8797-c74d85f3ad0a}">
+  <DUT Name="AT2025_33A3DF1B" Id="{45a531a8-76cd-47f1-8794-4770118ab78e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2025-5250-0019'}
 {attribute addProperty BoxType "AT2025-5250-0019"}
+{attribute addProperty Description "AT2025-5250 Sensor line -22.5°"}
+{attribute addProperty Physics "K"}
 {attribute addProperty Id "FB_InputsAT %I*FB_Inputs_4BC4AA0166FB_OutputsAT %Q*FB_Outputs_DAFD38E02WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "866377499"}
 {attribute addProperty Size "80"}

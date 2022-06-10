@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ER6001_40883D03" Id="{3972e94f-281b-425d-ac68-f5438c911b45}">
+  <DUT Name="ER6001_40883D03" Id="{2b1ca30b-1ab7-463e-88ef-c9be0de80980}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER6001-0002-0016'}
 {attribute addProperty BoxType "ER6001-0002-0016"}
+{attribute addProperty Description "ER6001-0002 Interface (RS232/422/485)"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "COM_InputsAT %I*COM_Inputs_6C2FC20224COM_OutputsAT %Q*COM_Outputs_5D00B5E724WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1082670339"}
 {attribute addProperty Size "60"}

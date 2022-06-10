@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP6090_18BD01E9" Id="{0be0b3bd-4856-43b8-a4ea-1cc71236bd88}">
+  <DUT Name="EPP6090_18BD01E9" Id="{c4e225a5-ad1d-4025-9bda-a1e648f86973}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP6090-0000-0017'}
 {attribute addProperty BoxType "EPP6090-0000-0017"}
+{attribute addProperty Description "EPP6090 Display box"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "DIS_InputsAT %I*DIS_Inputs_E0E384E36DIS_OutputsAT %Q*DIS_Outputs_6C9BFFEE4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "415039977"}
 {attribute addProperty Size "22"}

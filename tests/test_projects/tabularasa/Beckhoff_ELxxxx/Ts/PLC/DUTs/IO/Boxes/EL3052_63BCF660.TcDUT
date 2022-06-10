@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3052_63BCF660" Id="{5593ef18-23b2-47b2-8daf-976545db6dcd}">
+  <DUT Name="EL3052_63BCF660" Id="{cab968b0-1f49-4246-9e28-ed8e1e183458}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3052-0000-0017'}
 {attribute addProperty BoxType "EL3052-0000-0017"}
+{attribute addProperty Description "EL3052 2Ch. Ana. Input 4-20mA"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_2AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1673328224"}
 {attribute addProperty Size "30"}

@@ -125,16 +125,40 @@ namespace TsprojFile.Scan
                 }
                 int portPhys = boxItem.PortPhys;
                 
-                string portAPhysics = "";
+                string physics = "";
 
                 switch (portPhys & 0x000F)
                 {
-                    case 1: portAPhysics = "Y"; break;
-                    case 3: portAPhysics = "K"; break;
-                    case 4: portAPhysics = "Y"; break;
-                    default: portAPhysics = ""; break;
+                    case 1: physics = "Y"; break;  //EtherCAT
+                    case 3: physics = "K"; break;  //E-Bus
+                    case 4: physics = "H"; break;  //EtherCAT hotswap
+                    default: physics = "_"; break;
                 }
-
+                switch (portPhys & 0x00F0)
+                {
+                    case 16: physics = physics + "Y"; break;    //EtherCAT
+                    case 48: physics = physics + "K"; break;    //E-Bus
+                    case 64: physics = physics + "H"; break;    //EtherCAT hotswap
+                    default: physics = physics + "_"; break;    
+                }
+                switch (portPhys & 0x0F00)
+                {
+                    case 256: physics = physics + "Y"; break;   //EtherCAT
+                    case 768: physics = physics + "K"; break;   //E-Bus
+                    case 1024: physics = physics + "H"; break;  //EtherCAT hotswap
+                    default: physics = physics + "_"; break;
+                }
+                switch (portPhys & 0xF000)
+                {
+                    case 4096: physics = physics + "Y"; break;  //EtherCAT
+                    case 12288: physics = physics + "K"; break; //E-Bus
+                    case 16384: physics = physics + "H"; break; //EtherCAT hotswap
+                    default: physics = physics + "_"; break;
+                }
+                while (physics.EndsWith("_"))
+                {
+                    physics = physics.Substring(0, physics.Length - 1);
+                }
                 string box_PortABoxInfo = "";
                 string connectedToPort = "";
                 int connectedToBoxId = 0;
@@ -188,7 +212,15 @@ namespace TsprojFile.Scan
                 {
                     EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                 }
-
+                string description = "";
+                try
+                {
+                    description = boxItem.Type;
+                }
+                catch (Exception ex)
+                {
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                }
                 bool containsSubBoxes = false;
                 int subBoxesCount = 0;
 
@@ -255,7 +287,8 @@ namespace TsprojFile.Scan
                 boxViewModel.InfoDataState = infoDataState;
                 boxViewModel.InfoDataObjectId = infoObjectId;
                 boxViewModel.PortPhys = portPhys;
-                boxViewModel.PortAPhysics= portAPhysics;
+                boxViewModel.Physics= physics;
+                boxViewModel.Description = description;
 
                 ObservableCollection<PdoViewModel> allPdos = new ObservableCollection<PdoViewModel>();
                 if (boxItem.Pdo != null)

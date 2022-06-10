@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Outputs_FB9F3520" Id="{6b0a1dd7-84f6-4add-8582-526aa2485f16}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2918-0000-0017'}
+<TcPlcObject>
+	<DUT Name="Outputs_FB9F3520">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2918-0000-0017'}
 {attribute addProperty BoxType "EJ2918-0000-0017"}
 {attribute addProperty Id "Module_1_Channel_1_Standard_OutputAT %Q*BOOL1Module_1_Channel_2_Standard_OutputAT %Q*BOOL1Module_1_Channel_3_Standard_OutputAT %Q*BOOL1Module_1_Channel_4_Standard_OutputAT %Q*BOOL1Module_2_Channel_1_Standard_OutputAT %Q*BOOL1Module_2_Channel_2_Standard_OutputAT %Q*BOOL1Module_2_Channel_3_Standard_OutputAT %Q*BOOL1Module_2_Channel_4_Standard_OutputAT %Q*BOOL1"}
 {attribute addProperty CRC "4221515040"}
@@ -27,5 +26,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

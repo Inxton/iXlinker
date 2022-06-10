@@ -71,6 +71,20 @@ namespace iXlinkerDtos
             }
         }
 
+        private string nameOrigin;
+        public string NameOrigin
+        {
+            get { return this.nameOrigin; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.nameOrigin = value;
+                    NotifyPropertyChanged(nameof(NameOrigin));
+                }
+            }
+        }
+
         private ObservableCollection<MappableItem> mapableItems;
         public ObservableCollection<MappableItem> MapableItems 
         {

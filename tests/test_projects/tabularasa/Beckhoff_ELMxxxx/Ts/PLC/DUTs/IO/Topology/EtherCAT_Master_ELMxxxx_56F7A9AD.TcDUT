@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EtherCAT_Master_ELMxxxx_56F7A9AD" Id="{b696b7e2-18dc-49a5-a26e-8e711c5c87c1}">
+  <DUT Name="EtherCAT_Master_ELMxxxx_56F7A9AD" Id="{3a338c1e-d252-4930-83a4-fb9b100f124c}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "Beckhoff_ELM3xxxBeckhoff_ELM3xxx_31A44528440Beckhoff_ELM31xxBeckhoff_ELM31xx_96F66E1E1242Beckhoff_ELM35xxBeckhoff_ELM35xx_B8844D22490Beckhoff_ELM36xxBeckhoff_ELM36xx_2C7C6FAB612Beckhoff_ELM37xxBeckhoff_ELM37xx_73C6C048584Beckhoff_ELM3xxx_0030Beckhoff_ELM3xxx_0030_615BF1E1368Beckhoff_ELM9xxxBeckhoff_ELM9xxx_3A75798B407SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
@@ -8,25 +8,25 @@
 {attribute addProperty Size "4455"}
 TYPE EtherCAT_Master_ELMxxxx_56F7A9AD :
 STRUCT
-	{attribute addProperty Name "Beckhoff_ELM3xxx"}
+	{attribute addProperty Name "Beckhoff ELM3xxx"}
 	{attribute addProperty PreviousPort "EtherCAT_Master_ELMxxxx : Master"}
 	Beckhoff_ELM3xxx : Beckhoff_ELM3xxx_31A44528;
-	{attribute addProperty Name "Beckhoff_ELM31xx"}
+	{attribute addProperty Name "Beckhoff ELM31xx"}
 	{attribute addProperty PreviousPort "Beckhoff ELM3xxx : C"}
 	Beckhoff_ELM31xx : Beckhoff_ELM31xx_96F66E1E;
-	{attribute addProperty Name "Beckhoff_ELM35xx"}
+	{attribute addProperty Name "Beckhoff ELM35xx"}
 	{attribute addProperty PreviousPort "Beckhoff ELM31xx : C"}
 	Beckhoff_ELM35xx : Beckhoff_ELM35xx_B8844D22;
-	{attribute addProperty Name "Beckhoff_ELM36xx"}
+	{attribute addProperty Name "Beckhoff ELM36xx"}
 	{attribute addProperty PreviousPort "Beckhoff ELM35xx : C"}
 	Beckhoff_ELM36xx : Beckhoff_ELM36xx_2C7C6FAB;
-	{attribute addProperty Name "Beckhoff_ELM37xx"}
+	{attribute addProperty Name "Beckhoff ELM37xx"}
 	{attribute addProperty PreviousPort "Beckhoff ELM36xx : C"}
 	Beckhoff_ELM37xx : Beckhoff_ELM37xx_73C6C048;
-	{attribute addProperty Name "Beckhoff_ELM3xxx_0030"}
+	{attribute addProperty Name "Beckhoff ELM3xxx-0030"}
 	{attribute addProperty PreviousPort "Beckhoff ELM37xx : C"}
 	Beckhoff_ELM3xxx_0030 : Beckhoff_ELM3xxx_0030_615BF1E1;
-	{attribute addProperty Name "Beckhoff_ELM9xxx"}
+	{attribute addProperty Name "Beckhoff ELM9xxx"}
 	{attribute addProperty PreviousPort "Beckhoff ELM3xxx-0030 : C"}
 	Beckhoff_ELM9xxx : Beckhoff_ELM9xxx_3A75798B;
 	{attribute addProperty Name "SyncUnits"}

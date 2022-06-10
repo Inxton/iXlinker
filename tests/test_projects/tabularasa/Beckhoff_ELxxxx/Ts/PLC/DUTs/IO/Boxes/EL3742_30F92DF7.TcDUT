@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3742_30F92DF7" Id="{7665c85a-e43c-44e0-af8e-333d52b20ce5}">
+  <DUT Name="EL3742_30F92DF7" Id="{768b561e-02c7-41de-958a-1e8072605132}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3742-0000-0001'}
 {attribute addProperty BoxType "EL3742-0000-0001"}
+{attribute addProperty Description "EL3742 2Ch. Ana. Input 0-20mA, 16bit, DIFF, Oversample"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Ch1_CycleCountAT %I*Ch1_CycleCount_9DBE2BC52Ch1_Sample_0AT %I*Ch1_Sample_A71DD5012Ch2_CycleCountAT %I*Ch2_CycleCount_976A51B52Ch2_Sample_0AT %I*Ch2_Sample_9F6886E62WcStateAT %I*WcState_B516A2644InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "821636599"}
 {attribute addProperty Size "22"}

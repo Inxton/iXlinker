@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3403_B537021B" Id="{8e5f9eb6-45b5-4f4b-aa51-ed9375701091}">
+  <DUT Name="EL3403_B537021B" Id="{d2d1eb10-e996-498e-9b23-7f29ab9c5347}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3403-0000-0018'}
 {attribute addProperty BoxType "EL3403-0000-0018"}
+{attribute addProperty Description "EL3403 3Ch. Power Measuring"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "PM_Inputs_Channel_1AT %I*PM_Inputs_Channel_2468BF1D19PM_Inputs_Channel_2AT %I*PM_Inputs_Channel_2468BF1D19PM_Inputs_Channel_3AT %I*PM_Inputs_Channel_2468BF1D19PM_Status_dataAT %I*PM_Status_data_0FD072A05PM_Outputs_Channel_1AT %Q*PM_Outputs_Channel_E5FBDE301PM_Outputs_Channel_2AT %Q*PM_Outputs_Channel_E5FBDE301PM_Outputs_Channel_3AT %Q*PM_Outputs_Channel_E5FBDE301WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3040281115"}
 {attribute addProperty Size "77"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP1816_CABD51E6" Id="{d8a4a81c-582c-4a07-a99c-470feccf91b0}">
+  <DUT Name="EPP1816_CABD51E6" Id="{6b62d708-68ae-4c55-9756-79a5673cb380}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1816-3008-0016'}
 {attribute addProperty BoxType "EPP1816-3008-0016"}
+{attribute addProperty Description "EPP1816-3008 16Ch. Dig. Input  24V 10µs Acceleration Sensor, DSUB-25"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "DIG_Inputs_Channel_1AT %I*DIG_Inputs_Channel_38F9DD278DIG_Inputs_Channel_2AT %I*DIG_Inputs_Channel_38F9DD278AI_Inputs_Channel_1AT %I*AI_Inputs_Channel_C3DE7A0A4AI_Inputs_Channel_2AT %I*AI_Inputs_Channel_C3DE7A0A4AI_Inputs_Channel_3AT %I*AI_Inputs_Channel_C3DE7A0A4AI_Inputs_Channel_4AT %I*AI_Inputs_Channel_C3DE7A0A4AI_Inputs_Channel_5AT %I*AI_Inputs_Channel_C3DE7A0A4AI_Inputs_Channel_6AT %I*AI_Inputs_Channel_C3DE7A0A4DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_B3EA42044WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3401404902"}
 {attribute addProperty Size "56"}

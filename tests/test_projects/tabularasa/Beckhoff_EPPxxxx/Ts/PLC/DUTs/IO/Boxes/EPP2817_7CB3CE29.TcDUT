@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP2817_7CB3CE29" Id="{ce79ef89-926e-474d-9842-6023bf04f1d1}">
+  <DUT Name="EPP2817_7CB3CE29" Id="{9a0b1e08-ac6b-4453-ab10-91f5043f4390}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP2817-0008-0016'}
 {attribute addProperty BoxType "EPP2817-0008-0016"}
+{attribute addProperty Description "EPP2817-0008 24Ch. Dig. Output 24V 0,5A, Diagnostics, DSUB-25"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "DIG_Diag_Inputs_Channel_1AT %I*DIG_Diag_Inputs_Channel_584303BF8DIG_Diag_Inputs_Channel_2AT %I*DIG_Diag_Inputs_Channel_584303BF8DIG_Diag_Inputs_Channel_3AT %I*DIG_Diag_Inputs_Channel_584303BF8DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_27CCC8668DIG_Output_Channel_1AT %Q*DIG_Output_Channel_28AC1A9E8DIG_Output_Channel_2AT %Q*DIG_Output_Channel_28AC1A9E8DIG_Output_Channel_3AT %Q*DIG_Output_Channel_28AC1A9E8DIG_Outputs_DeviceAT %Q*DIG_Outputs_Device_36A5EF172WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2092158505"}
 {attribute addProperty Size "70"}

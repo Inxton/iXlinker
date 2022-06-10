@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6752_210A1A8D" Id="{67e6af74-71f9-40be-8ef9-4deca4abba4b}">
+  <DUT Name="EL6752_210A1A8D" Id="{efdfcb7c-4c34-4d38-8e5a-e83b5bf86d84}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6752--0000'}
 {attribute addProperty BoxType "EL6752--0000"}
+{attribute addProperty Description "EL6752 DeviceNet Master"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "InfoDataAT %I*InfoData_90184F0C16"}
 {attribute addProperty CRC "554310285"}
 {attribute addProperty Size "16"}

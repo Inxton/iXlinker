@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3204_B6248F5B" Id="{bc6cfd29-8bac-4b5e-9b5e-c8e2d311bd12}">
+  <DUT Name="EL3204_B6248F5B" Id="{7fee9b9f-e9d5-4b90-b7f1-b8033d02a1af}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3204-0000-0017'}
 {attribute addProperty BoxType "EL3204-0000-0017"}
+{attribute addProperty Description "EL3204 4Ch. Ana. Input PT100 (RTD)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "RTD_Inputs_Channel_1AT %I*AI_Standard_Channel_4A3944819RTD_Inputs_Channel_2AT %I*AI_Standard_Channel_4A3944819RTD_Inputs_Channel_3AT %I*AI_Standard_Channel_4A3944819RTD_Inputs_Channel_4AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3055849307"}
 {attribute addProperty Size "48"}

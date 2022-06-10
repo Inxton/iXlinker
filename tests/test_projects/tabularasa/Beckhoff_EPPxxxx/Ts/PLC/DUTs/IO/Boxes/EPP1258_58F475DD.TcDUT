@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP1258_58F475DD" Id="{3092c189-0789-4344-a362-4ceba52897a7}">
+  <DUT Name="EPP1258_58F475DD" Id="{937886f9-d072-4d18-b280-016a7f715905}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1258-0001-0016'}
 {attribute addProperty BoxType "EPP1258-0001-0016"}
+{attribute addProperty Description "EPP1258-0001 8 Ch. Dig. Input 24V, 10µs, DC Latch, M8"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %I*Channel_830843C11Channel_6AT %I*Channel_830843C11Channel_7AT %I*Channel_830843C11Channel_8AT %I*Channel_830843C11LatchAT %I*Latch_8E41329534WcStateAT %I*WcState_B516A2644InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "1492415965"}
 {attribute addProperty Size "56"}

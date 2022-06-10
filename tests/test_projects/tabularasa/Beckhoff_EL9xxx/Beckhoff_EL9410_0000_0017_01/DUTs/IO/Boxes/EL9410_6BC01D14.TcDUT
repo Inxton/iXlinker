@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL9410_6BC01D14" Id="{00db612d-8266-45f6-aa96-bcd9edbf5378}">
+  <DUT Name="EL9410_6BC01D14" Id="{ef747eed-a31b-4482-b261-6dc257415526}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9410-0000-0017'}
 {attribute addProperty BoxType "EL9410-0000-0017"}
+{attribute addProperty Description "EL9410 E-Bus Power Supplier  (Diagnostics)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Status_UsAT %I*Status_Us_B1E819A21Status_UpAT %I*Status_Up_B1E819A21WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "1807752468"}
 {attribute addProperty Size "6"}

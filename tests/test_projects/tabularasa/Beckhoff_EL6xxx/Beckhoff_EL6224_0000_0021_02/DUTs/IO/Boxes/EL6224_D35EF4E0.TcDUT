@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6224_D35EF4E0" Id="{96d67ba1-79f9-4a61-840e-def82c7addb5}">
+  <DUT Name="EL6224_D35EF4E0" Id="{142a07d2-0254-413c-b638-f44b37c6be8f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6224-0000-0021'}
 {attribute addProperty BoxType "EL6224-0000-0021"}
+{attribute addProperty Description "EL6224 (IO Link Master)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "DeviceState_Inputs_DeviceAT %I*DeviceState_Inputs_Device_A12105982DeviceState_InputsAT %I*DeviceState_Inputs_4751FF764IO_Link_Port1_inAT %I*IO_Link_Port1_in_4EEDF10D10IO_Link_Port2_inAT %I*IO_Link_Port2_in_4EEDF10D10IO_Link_Port3_inAT %I*IO_Link_Port3_in_4EEDF10D10IO_Link_Port4_inAT %I*IO_Link_Port4_in_4EEDF10D10IO_Link_Port1_outAT %Q*IO_Link_Port1_out_F2E0F4CF10IO_Link_Port2_outAT %Q*IO_Link_Port2_out_F2E0F4CF10IO_Link_Port3_outAT %Q*IO_Link_Port3_out_F2E0F4CF10IO_Link_Port4_outAT %Q*IO_Link_Port4_out_F2E0F4CF10WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_90184F0C16"}
 {attribute addProperty CRC "3546215648"}
 {attribute addProperty Size "104"}

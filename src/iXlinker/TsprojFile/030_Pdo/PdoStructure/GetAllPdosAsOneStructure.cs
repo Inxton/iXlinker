@@ -23,7 +23,7 @@ namespace TsprojFile.Scan
                 structName = structName.Substring(0, structName.IndexOf("-", StringComparison.Ordinal));
             }
 
-            BoxStructViewModel actBoxStruct = new BoxStructViewModel() { Prefix = ValidatePlcItem.Name(structName), BoxOrderCode = boxViewModel.BoxOrderCode , PortAPhysics = boxViewModel.PortAPhysics};
+            BoxStructViewModel actBoxStruct = new BoxStructViewModel() { Prefix = ValidatePlcItem.Name(structName), BoxOrderCode = boxViewModel.BoxOrderCode , Physics = boxViewModel.Physics, Description = boxViewModel.Description , NameOrigin = boxViewModel.Name };
 
             //PLC library name should not be included in the final CRC of the structure
             //actBoxStruct.Id = actBoxStruct.Extends;

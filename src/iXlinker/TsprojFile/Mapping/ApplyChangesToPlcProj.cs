@@ -10,13 +10,13 @@ namespace TsprojFile.Scan
     {
         private void ApplyChangesToPlcProj(Solution vs , Project plcProj)
         {
-            EventLogger.Instance.Logger.Information("Writing changes of the PLC project {0} into the file {1}!!!", vs.PlcProject.Name,vs.PlcProject.FileNameInFileSystem);
+            EventLogger.Instance.Logger.Information("Writing changes of the PLC project {0} into the file {1}!!!", vs.PlcProject.Plcproj.Name, vs.PlcProject.Plcproj.FileNameInFileSystem);
             Project plcProject = plcProj;
             XmlSerializer serializer = new XmlSerializer(typeof(Project));
-            StreamWriter  writer = new StreamWriter(vs.PlcProject.CompletePathInFileSystem);
+            StreamWriter  writer = new StreamWriter(vs.PlcProject.Plcproj.CompletePathInFileSystem);
             serializer.Serialize(writer, plcProject);
             writer.Close();
-            EventLogger.Instance.Logger.Information("Changes of the PLC project {0} written into the file {1}!!!", vs.PlcProject.Name, vs.PlcProject.FileNameInFileSystem);
+            EventLogger.Instance.Logger.Information("Changes of the PLC project {0} written into the file {1}!!!", vs.PlcProject.Plcproj.Name, vs.PlcProject.Plcproj.FileNameInFileSystem);
         }
     }
 }

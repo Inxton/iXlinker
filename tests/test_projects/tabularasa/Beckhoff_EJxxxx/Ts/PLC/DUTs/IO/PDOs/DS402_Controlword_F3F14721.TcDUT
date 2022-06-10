@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="DS402_Controlword_F3F14721" Id="{1a6b30a0-0def-4d27-bbc5-7f7547078f39}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0011-0026'}
+<TcPlcObject>
+	<DUT Name="DS402_Controlword_F3F14721">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0011-0026'}
 {attribute addProperty BoxType "EJ7211-0011-0026"}
 {attribute addProperty Id "ControlwordAT %Q*UINT2"}
 {attribute addProperty CRC "4092675873"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

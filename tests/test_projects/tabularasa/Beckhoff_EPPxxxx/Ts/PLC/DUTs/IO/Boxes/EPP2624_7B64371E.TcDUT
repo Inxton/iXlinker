@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP2624_7B64371E" Id="{cc62145c-2c31-43b2-8bee-6257decbb8b6}">
+  <DUT Name="EPP2624_7B64371E" Id="{99d868e3-4912-4d6e-a56f-2d7185691025}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP2624-0002-0016'}
 {attribute addProperty BoxType "EPP2624-0002-0016"}
+{attribute addProperty Description "EPP2624-0002 4Ch. Relay Output, NO (125V AC / 30V DC)"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71Channel_3AT %Q*Channel_42CA91F71Channel_4AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2070165278"}
 {attribute addProperty Size "7"}

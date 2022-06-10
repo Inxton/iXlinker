@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3214_8BBE23EA" Id="{22e354cb-fc61-4b4d-8800-4bd9ef8deb9b}">
+  <DUT Name="EL3214_8BBE23EA" Id="{281dc568-3c7a-4a8f-9a66-f10d4565ce62}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3214-0000-0016'}
 {attribute addProperty BoxType "EL3214-0000-0016"}
+{attribute addProperty Description "EL3214 4Ch. Ana. Input PT100 (RTD)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "RTD_Inputs_Channel_1AT %I*RTD_Inputs_Channel_9575FEA17RTD_Inputs_Channel_2AT %I*RTD_Inputs_Channel_9575FEA17RTD_Inputs_Channel_3AT %I*RTD_Inputs_Channel_9575FEA17RTD_Inputs_Channel_4AT %I*RTD_Inputs_Channel_9575FEA17WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2344494058"}
 {attribute addProperty Size "40"}

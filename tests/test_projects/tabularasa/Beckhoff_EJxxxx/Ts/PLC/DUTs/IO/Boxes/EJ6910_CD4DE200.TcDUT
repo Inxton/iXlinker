@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ6910_CD4DE200" Id="{04a603cf-3561-4e2b-aa0b-815a488132cf}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6910-0000-0018'}
+<TcPlcObject>
+	<DUT Name="EJ6910_CD4DE200">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6910-0000-0018'}
 {attribute addProperty BoxType "EJ6910-0000-0018"}
+{attribute addProperty Description "EJ6910, TwinSAFE PLC"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "FSLOGIC_InputsAT %I*FSLOGIC_Inputs_EEE9388E2FSLOGIC_OutputsAT %I*EMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3444433408"}
 {attribute addProperty Size "14"}
@@ -19,5 +20,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

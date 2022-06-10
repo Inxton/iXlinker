@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP3351_6847F283" Id="{9a0603cc-62ae-4881-b5b5-523aeb20da24}">
+  <DUT Name="EP3351_6847F283" Id="{c891701a-8fbd-4810-8342-1708aa9f124f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3351-2022-0016'}
 {attribute addProperty BoxType "EP3351-2022-0016"}
+{attribute addProperty Description "EP3351-2022 1Ch. Ana Input Resistor Bridge, Diff. 16bit "}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "AIBridge_InputsAT %I*AIBridge_Inputs_555AA1E89AISupply_InputsAT %I*AISupply_Inputs_555AA1E89WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1749545603"}
 {attribute addProperty Size "30"}

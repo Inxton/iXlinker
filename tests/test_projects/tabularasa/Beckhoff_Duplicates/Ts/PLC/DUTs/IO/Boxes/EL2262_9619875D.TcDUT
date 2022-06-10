@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2262_9619875D" Id="{30cd0efd-d850-48e4-ab5b-61270739cfea}">
+  <DUT Name="EL2262_9619875D" Id="{d34ae5c4-7247-433b-8bf1-5fe5681a724e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2262-0000-0004'}
 {attribute addProperty BoxType "EL2262-0000-0004"}
+{attribute addProperty Description "EL2262 2Ch. Dig. Output 24V, 1µs, DC Oversample"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "StartTimeNextOutputAT %I*StartTimeNextOutput_228767F44CycCount0AT %Q*CycCount0_AF431CE02Sample0_0AT %Q*Sample_0023574C1Sample0_1AT %Q*Sample_0023574C1Sample0_2AT %Q*Sample_0023574C1Sample0_3AT %Q*Sample_0023574C1Sample0_4AT %Q*Sample_0023574C1Sample0_5AT %Q*Sample_0023574C1Sample0_6AT %Q*Sample_0023574C1Sample0_7AT %Q*Sample_0023574C1Sample0_8AT %Q*Sample_0023574C1Sample0_9AT %Q*Sample_0023574C1GapAT %I*EMPTY_STRUCTURE0CycCount1AT %Q*CycCount1_A8B5FFE62Sample1_0AT %Q*Sample_07D5B44A1Sample1_1AT %Q*Sample_07D5B44A1Sample1_2AT %Q*Sample_07D5B44A1Sample1_3AT %Q*Sample_07D5B44A1Sample1_4AT %Q*Sample_07D5B44A1Sample1_5AT %Q*Sample_07D5B44A1Sample1_6AT %Q*Sample_07D5B44A1Sample1_7AT %Q*Sample_07D5B44A1Sample1_8AT %Q*Sample_07D5B44A1Sample1_9AT %Q*Sample_07D5B44A1Gap_1AT %I*EMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "2518255453"}
 {attribute addProperty Size "40"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3483_E64A5C78" Id="{01fb9708-2b2e-4846-a267-f697a5b38932}">
+  <DUT Name="EL3483_E64A5C78" Id="{617579c9-55e7-4e4a-8f7a-03c77f1e5ed8}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3483-0000-0016'}
 {attribute addProperty BoxType "EL3483-0000-0016"}
+{attribute addProperty Description "EL3483 3Ch. Mains Monitoring "}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "L1_StatusAT %I*L1_Status_12B1E6BB5L2_StatusAT %I*L2_Status_12B1E6BB5L3_StatusAT %I*L3_Status_12B1E6BB5Total_StatusAT %I*Total_Status_AD43C3B912Total_AdvancedAT %I*Total_Advanced_3B87F4672WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3863633016"}
 {attribute addProperty Size "41"}

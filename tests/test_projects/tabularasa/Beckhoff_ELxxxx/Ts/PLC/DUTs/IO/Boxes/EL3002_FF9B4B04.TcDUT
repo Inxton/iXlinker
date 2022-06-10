@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3002_FF9B4B04" Id="{60d8bb51-354f-4f80-b2ae-9cc2a1a80369}">
+  <DUT Name="EL3002_FF9B4B04" Id="{2485eb6d-a234-4a47-8e79-78a3cba826d6}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3002-0000-0016'}
 {attribute addProperty BoxType "EL3002-0000-0016"}
+{attribute addProperty Description "EL3002 2Ch. Ana. Input +/-10V"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_2AT %I*AI_Standard_Channel_EA9DF21E9WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "4288367364"}
 {attribute addProperty Size "30"}

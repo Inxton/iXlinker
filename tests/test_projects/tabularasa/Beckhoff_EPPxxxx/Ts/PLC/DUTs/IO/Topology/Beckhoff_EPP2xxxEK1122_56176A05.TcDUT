@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Beckhoff_EPP2xxxEK1122_56176A05" Id="{ad64ffa1-143a-425d-baf0-caf10ee46166}">
+  <DUT Name="Beckhoff_EPP2xxxEK1122_56176A05" Id="{32dc691b-4f7c-4794-9c37-d221e5ef5d8d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
 {attribute addProperty BoxType "EK1122-0000-0018"}
 {attribute addProperty Id "Beckhoff_EPP2xxxsub_EK1100EK1100_1FC0878B2A_0001_EPP2008_0001_0016EPP2008_E2806B9511A_0002_EPP2008_0001_0017EPP2008_E2806B9511A_0003_EPP2008_0001_0018EPP2008_E2806B9511A_0004_EPP2008_0002_0016EPP2008_E2806B9511A_0005_EPP2008_0002_0017EPP2008_E2806B9511A_0006_EPP2008_0002_0018EPP2008_E2806B9511A_0007_EPP2008_0022_0016EPP2008_E2806B9511A_0008_EPP2028_0001_0016EPP2028_E2806B9511A_0009_EPP2028_0001_0017EPP2028_E2806B9511A_0010_EPP2028_0002_0016EPP2028_E2806B9511A_0011_EPP2028_0002_0017EPP2028_E2806B9511A_0012_EPP2038_0001_0016EPP2038_3AE10DD720A_0013_EPP2038_0002_0016EPP2038_3AE10DD720A_0014_EPP2304_0061_0016EPP2304_473048998A_0015_EPP2304_0061_0017EPP2304_473048998A_0016_EPP2304_0061_0018EPP2304_473048998A_0017_EPP2308_0001_0016EPP2308_F6D9A8D112A_0018_EPP2308_0001_0017EPP2308_F6D9A8D112A_0019_EPP2308_0001_0018EPP2308_F6D9A8D112A_0020_EPP2308_0002_0016EPP2308_F6D9A8D112A_0021_EPP2308_0002_0017EPP2308_F6D9A8D112A_0022_EPP2308_0002_0018EPP2308_F6D9A8D112A_0023_EPP2316_0003_0016EPP2316_CAC4656D44A_0024_EPP2316_0003_0017EPP2316_CAC4656D44A_0025_EPP2316_0003_0018EPP2316_D286688344A_0026_EPP2316_0008_0016EPP2316_CAC4656D44A_0027_EPP2316_0008_0017EPP2316_CAC4656D44A_0028_EPP2316_0008_0018EPP2316_D286688344A_0029_EPP2318_0001_0016EPP2318_F6D9A8D112A_0030_EPP2318_0001_0017EPP2318_F6D9A8D112A_0031_EPP2318_0001_0018EPP2318_F6D9A8D112A_0032_EPP2318_0002_0016EPP2318_F6D9A8D112A_0033_EPP2318_0002_0017EPP2318_F6D9A8D112A_0034_EPP2318_0002_0018EPP2318_F6D9A8D112A_0035_EPP2328_0001_0016EPP2328_F6D9A8D112A_0036_EPP2328_0001_0017EPP2328_F6D9A8D112A_0037_EPP2328_0001_0018EPP2328_F6D9A8D112A_0038_EPP2328_0002_0016EPP2328_F6D9A8D112A_0039_EPP2328_0002_0017EPP2328_F6D9A8D112A_0040_EPP2328_0002_0018EPP2328_F6D9A8D112A_0041_EPP2334_0061_0016EPP2334_F6D9A8D112A_0042_EPP2334_0061_0017EPP2334_F6D9A8D112A_0043_EPP2334_0061_0018EPP2334_F6D9A8D112A_0044_EPP2334_0061_0019EPP2334_F6D9A8D112A_0045_EPP2338_0001_0016EPP2338_7699BCF620A_0046_EPP2338_0001_0017EPP2338_7699BCF620A_0047_EPP2338_0001_0018EPP2338_7699BCF620A_0048_EPP2338_0002_0016EPP2338_7699BCF620A_0049_EPP2338_0002_0017EPP2338_7699BCF620A_0050_EPP2338_0002_0018EPP2338_7699BCF620A_0051_EPP2338_1001_0017EPP2338_7699BCF620A_0052_EPP2338_1001_0018EPP2338_7699BCF620A_0053_EPP2338_1001_0019EPP2338_7699BCF620A_0054_EPP2338_1002_0017EPP2338_7699BCF620A_0055_EPP2338_1002_0018EPP2338_7699BCF620A_0056_EPP2338_1002_0019EPP2338_7699BCF620A_0057_EPP2339_0003_0016EPP2339_B2B612E850A_0058_EPP2339_0021_0016EPP2339_8DFD155836A_0059_EPP2339_0021_0017EPP2339_4CF33DED36A_0060_EPP2339_0021_0018EPP2339_4CF33DED36A_0061_EPP2339_0022_0016EPP2339_8DFD155836A_0062_EPP2339_0022_0017EPP2339_4CF33DED36A_0063_EPP2339_0022_0018EPP2339_4CF33DED36A_0064_EPP2349_0021_0016EPP2349_8DFD155836A_0065_EPP2349_0021_0017EPP2349_4CF33DED36A_0066_EPP2349_0021_0018EPP2349_4CF33DED36A_0067_EPP2349_0022_0016EPP2349_8DFD155836A_0068_EPP2349_0022_0017EPP2349_4CF33DED36A_0069_EPP2349_0022_0018EPP2349_4CF33DED36A_0070_EPP2624_0002_0016EPP2624_7B64371E7A_0071_EPP2809_0021_0016EPP2809_2B6483BD19A_0072_EPP2809_0022_0016EPP2809_2B6483BD19A_0073_EPP2816_0004_0016EPP2816_F9F6AB8251A_0074_EPP2816_0004_0017EPP2816_F9F6AB8251A_0075_EPP2816_0008_0016EPP2816_0129644951A_0076_EPP2816_0008_0017EPP2816_0129644951A_0077_EPP2816_0008_0018EPP2816_0129644951A_0078_EPP2816_0010_0016EPP2816_0129644951A_0079_EPP2816_0010_0017EPP2816_0129644951A_0080_EPP2816_0010_0018EPP2816_0129644951A_0081_EPP2817_0008_0016EPP2817_7CB3CE2970A_0082_EPP2817_0008_0017EPP2817_7CB3CE2970A_0083_EPP2817_0008_0018EPP2817_7CB3CE2970"}
@@ -8,256 +8,256 @@
 {attribute addProperty Size "2100"}
 TYPE Beckhoff_EPP2xxxEK1122_56176A05 EXTENDS EK1122_1FC0878B :
 STRUCT
-	{attribute addProperty Name "Beckhoff_EPP2xxxsub_EK1100"}
+	{attribute addProperty Name "Beckhoff EPP2xxxsub EK1100"}
 	{attribute addProperty PreviousPort "Beckhoff EPP2xxxEK1122 : D"}
 	Beckhoff_EPP2xxxsub_EK1100 : EK1100_1FC0878B;
-	{attribute addProperty Name "A_0001_EPP2008_0001_0016"}
+	{attribute addProperty Name "A_0001(EPP2008-0001-0016)"}
 	{attribute addProperty PreviousPort "Beckhoff EPP2xxxsub EK1100 : C"}
 	A_0001_EPP2008_0001_0016 : EPP2008_E2806B95;
-	{attribute addProperty Name "A_0002_EPP2008_0001_0017"}
+	{attribute addProperty Name "A_0002(EPP2008-0001-0017)"}
 	{attribute addProperty PreviousPort "A_0001(EPP2008-0001-0016) : B"}
 	A_0002_EPP2008_0001_0017 : EPP2008_E2806B95;
-	{attribute addProperty Name "A_0003_EPP2008_0001_0018"}
+	{attribute addProperty Name "A_0003(EPP2008-0001-0018)"}
 	{attribute addProperty PreviousPort "A_0002(EPP2008-0001-0017) : B"}
 	A_0003_EPP2008_0001_0018 : EPP2008_E2806B95;
-	{attribute addProperty Name "A_0004_EPP2008_0002_0016"}
+	{attribute addProperty Name "A_0004(EPP2008-0002-0016)"}
 	{attribute addProperty PreviousPort "A_0003(EPP2008-0001-0018) : B"}
 	A_0004_EPP2008_0002_0016 : EPP2008_E2806B95;
-	{attribute addProperty Name "A_0005_EPP2008_0002_0017"}
+	{attribute addProperty Name "A_0005(EPP2008-0002-0017)"}
 	{attribute addProperty PreviousPort "A_0004(EPP2008-0002-0016) : B"}
 	A_0005_EPP2008_0002_0017 : EPP2008_E2806B95;
-	{attribute addProperty Name "A_0006_EPP2008_0002_0018"}
+	{attribute addProperty Name "A_0006(EPP2008-0002-0018)"}
 	{attribute addProperty PreviousPort "A_0005(EPP2008-0002-0017) : B"}
 	A_0006_EPP2008_0002_0018 : EPP2008_E2806B95;
-	{attribute addProperty Name "A_0007_EPP2008_0022_0016"}
+	{attribute addProperty Name "A_0007(EPP2008-0022-0016)"}
 	{attribute addProperty PreviousPort "A_0006(EPP2008-0002-0018) : B"}
 	A_0007_EPP2008_0022_0016 : EPP2008_E2806B95;
-	{attribute addProperty Name "A_0008_EPP2028_0001_0016"}
+	{attribute addProperty Name "A_0008(EPP2028-0001-0016)"}
 	{attribute addProperty PreviousPort "A_0007(EPP2008-0022-0016) : B"}
 	A_0008_EPP2028_0001_0016 : EPP2028_E2806B95;
-	{attribute addProperty Name "A_0009_EPP2028_0001_0017"}
+	{attribute addProperty Name "A_0009(EPP2028-0001-0017)"}
 	{attribute addProperty PreviousPort "A_0008(EPP2028-0001-0016) : B"}
 	A_0009_EPP2028_0001_0017 : EPP2028_E2806B95;
-	{attribute addProperty Name "A_0010_EPP2028_0002_0016"}
+	{attribute addProperty Name "A_0010(EPP2028-0002-0016)"}
 	{attribute addProperty PreviousPort "A_0009(EPP2028-0001-0017) : B"}
 	A_0010_EPP2028_0002_0016 : EPP2028_E2806B95;
-	{attribute addProperty Name "A_0011_EPP2028_0002_0017"}
+	{attribute addProperty Name "A_0011(EPP2028-0002-0017)"}
 	{attribute addProperty PreviousPort "A_0010(EPP2028-0002-0016) : B"}
 	A_0011_EPP2028_0002_0017 : EPP2028_E2806B95;
-	{attribute addProperty Name "A_0012_EPP2038_0001_0016"}
+	{attribute addProperty Name "A_0012(EPP2038-0001-0016)"}
 	{attribute addProperty PreviousPort "A_0011(EPP2028-0002-0017) : B"}
 	A_0012_EPP2038_0001_0016 : EPP2038_3AE10DD7;
-	{attribute addProperty Name "A_0013_EPP2038_0002_0016"}
+	{attribute addProperty Name "A_0013(EPP2038-0002-0016)"}
 	{attribute addProperty PreviousPort "A_0012(EPP2038-0001-0016) : B"}
 	A_0013_EPP2038_0002_0016 : EPP2038_3AE10DD7;
-	{attribute addProperty Name "A_0014_EPP2304_0061_0016"}
+	{attribute addProperty Name "A_0014(EPP2304-0061-0016)"}
 	{attribute addProperty PreviousPort "A_0013(EPP2038-0002-0016) : B"}
 	A_0014_EPP2304_0061_0016 : EPP2304_47304899;
-	{attribute addProperty Name "A_0015_EPP2304_0061_0017"}
+	{attribute addProperty Name "A_0015(EPP2304-0061-0017)"}
 	{attribute addProperty PreviousPort "A_0014(EPP2304-0061-0016) : B"}
 	A_0015_EPP2304_0061_0017 : EPP2304_47304899;
-	{attribute addProperty Name "A_0016_EPP2304_0061_0018"}
+	{attribute addProperty Name "A_0016(EPP2304-0061-0018)"}
 	{attribute addProperty PreviousPort "A_0015(EPP2304-0061-0017) : B"}
 	A_0016_EPP2304_0061_0018 : EPP2304_47304899;
-	{attribute addProperty Name "A_0017_EPP2308_0001_0016"}
+	{attribute addProperty Name "A_0017(EPP2308-0001-0016)"}
 	{attribute addProperty PreviousPort "A_0016(EPP2304-0061-0018) : B"}
 	A_0017_EPP2308_0001_0016 : EPP2308_F6D9A8D1;
-	{attribute addProperty Name "A_0018_EPP2308_0001_0017"}
+	{attribute addProperty Name "A_0018(EPP2308-0001-0017)"}
 	{attribute addProperty PreviousPort "A_0017(EPP2308-0001-0016) : B"}
 	A_0018_EPP2308_0001_0017 : EPP2308_F6D9A8D1;
-	{attribute addProperty Name "A_0019_EPP2308_0001_0018"}
+	{attribute addProperty Name "A_0019(EPP2308-0001-0018)"}
 	{attribute addProperty PreviousPort "A_0018(EPP2308-0001-0017) : B"}
 	A_0019_EPP2308_0001_0018 : EPP2308_F6D9A8D1;
-	{attribute addProperty Name "A_0020_EPP2308_0002_0016"}
+	{attribute addProperty Name "A_0020(EPP2308-0002-0016)"}
 	{attribute addProperty PreviousPort "A_0019(EPP2308-0001-0018) : B"}
 	A_0020_EPP2308_0002_0016 : EPP2308_F6D9A8D1;
-	{attribute addProperty Name "A_0021_EPP2308_0002_0017"}
+	{attribute addProperty Name "A_0021(EPP2308-0002-0017)"}
 	{attribute addProperty PreviousPort "A_0020(EPP2308-0002-0016) : B"}
 	A_0021_EPP2308_0002_0017 : EPP2308_F6D9A8D1;
-	{attribute addProperty Name "A_0022_EPP2308_0002_0018"}
+	{attribute addProperty Name "A_0022(EPP2308-0002-0018)"}
 	{attribute addProperty PreviousPort "A_0021(EPP2308-0002-0017) : B"}
 	A_0022_EPP2308_0002_0018 : EPP2308_F6D9A8D1;
-	{attribute addProperty Name "A_0023_EPP2316_0003_0016"}
+	{attribute addProperty Name "A_0023(EPP2316-0003-0016)"}
 	{attribute addProperty PreviousPort "A_0022(EPP2308-0002-0018) : B"}
 	A_0023_EPP2316_0003_0016 : EPP2316_CAC4656D;
-	{attribute addProperty Name "A_0024_EPP2316_0003_0017"}
+	{attribute addProperty Name "A_0024(EPP2316-0003-0017)"}
 	{attribute addProperty PreviousPort "A_0023(EPP2316-0003-0016) : B"}
 	A_0024_EPP2316_0003_0017 : EPP2316_CAC4656D;
-	{attribute addProperty Name "A_0025_EPP2316_0003_0018"}
+	{attribute addProperty Name "A_0025(EPP2316-0003-0018)"}
 	{attribute addProperty PreviousPort "A_0024(EPP2316-0003-0017) : B"}
 	A_0025_EPP2316_0003_0018 : EPP2316_D2866883;
-	{attribute addProperty Name "A_0026_EPP2316_0008_0016"}
+	{attribute addProperty Name "A_0026(EPP2316-0008-0016)"}
 	{attribute addProperty PreviousPort "A_0025(EPP2316-0003-0018) : B"}
 	A_0026_EPP2316_0008_0016 : EPP2316_CAC4656D;
-	{attribute addProperty Name "A_0027_EPP2316_0008_0017"}
+	{attribute addProperty Name "A_0027(EPP2316-0008-0017)"}
 	{attribute addProperty PreviousPort "A_0026(EPP2316-0008-0016) : B"}
 	A_0027_EPP2316_0008_0017 : EPP2316_CAC4656D;
-	{attribute addProperty Name "A_0028_EPP2316_0008_0018"}
+	{attribute addProperty Name "A_0028(EPP2316-0008-0018)"}
 	{attribute addProperty PreviousPort "A_0027(EPP2316-0008-0017) : B"}
 	A_0028_EPP2316_0008_0018 : EPP2316_D2866883;
-	{attribute addProperty Name "A_0029_EPP2318_0001_0016"}
+	{attribute addProperty Name "A_0029(EPP2318-0001-0016)"}
 	{attribute addProperty PreviousPort "A_0028(EPP2316-0008-0018) : B"}
 	A_0029_EPP2318_0001_0016 : EPP2318_F6D9A8D1;
-	{attribute addProperty Name "A_0030_EPP2318_0001_0017"}
+	{attribute addProperty Name "A_0030(EPP2318-0001-0017)"}
 	{attribute addProperty PreviousPort "A_0029(EPP2318-0001-0016) : B"}
 	A_0030_EPP2318_0001_0017 : EPP2318_F6D9A8D1;
-	{attribute addProperty Name "A_0031_EPP2318_0001_0018"}
+	{attribute addProperty Name "A_0031(EPP2318-0001-0018)"}
 	{attribute addProperty PreviousPort "A_0030(EPP2318-0001-0017) : B"}
 	A_0031_EPP2318_0001_0018 : EPP2318_F6D9A8D1;
-	{attribute addProperty Name "A_0032_EPP2318_0002_0016"}
+	{attribute addProperty Name "A_0032(EPP2318-0002-0016)"}
 	{attribute addProperty PreviousPort "A_0031(EPP2318-0001-0018) : B"}
 	A_0032_EPP2318_0002_0016 : EPP2318_F6D9A8D1;
-	{attribute addProperty Name "A_0033_EPP2318_0002_0017"}
+	{attribute addProperty Name "A_0033(EPP2318-0002-0017)"}
 	{attribute addProperty PreviousPort "A_0032(EPP2318-0002-0016) : B"}
 	A_0033_EPP2318_0002_0017 : EPP2318_F6D9A8D1;
-	{attribute addProperty Name "A_0034_EPP2318_0002_0018"}
+	{attribute addProperty Name "A_0034(EPP2318-0002-0018)"}
 	{attribute addProperty PreviousPort "A_0033(EPP2318-0002-0017) : B"}
 	A_0034_EPP2318_0002_0018 : EPP2318_F6D9A8D1;
-	{attribute addProperty Name "A_0035_EPP2328_0001_0016"}
+	{attribute addProperty Name "A_0035(EPP2328-0001-0016)"}
 	{attribute addProperty PreviousPort "A_0034(EPP2318-0002-0018) : B"}
 	A_0035_EPP2328_0001_0016 : EPP2328_F6D9A8D1;
-	{attribute addProperty Name "A_0036_EPP2328_0001_0017"}
+	{attribute addProperty Name "A_0036(EPP2328-0001-0017)"}
 	{attribute addProperty PreviousPort "A_0035(EPP2328-0001-0016) : B"}
 	A_0036_EPP2328_0001_0017 : EPP2328_F6D9A8D1;
-	{attribute addProperty Name "A_0037_EPP2328_0001_0018"}
+	{attribute addProperty Name "A_0037(EPP2328-0001-0018)"}
 	{attribute addProperty PreviousPort "A_0036(EPP2328-0001-0017) : B"}
 	A_0037_EPP2328_0001_0018 : EPP2328_F6D9A8D1;
-	{attribute addProperty Name "A_0038_EPP2328_0002_0016"}
+	{attribute addProperty Name "A_0038(EPP2328-0002-0016)"}
 	{attribute addProperty PreviousPort "A_0037(EPP2328-0001-0018) : B"}
 	A_0038_EPP2328_0002_0016 : EPP2328_F6D9A8D1;
-	{attribute addProperty Name "A_0039_EPP2328_0002_0017"}
+	{attribute addProperty Name "A_0039(EPP2328-0002-0017)"}
 	{attribute addProperty PreviousPort "A_0038(EPP2328-0002-0016) : B"}
 	A_0039_EPP2328_0002_0017 : EPP2328_F6D9A8D1;
-	{attribute addProperty Name "A_0040_EPP2328_0002_0018"}
+	{attribute addProperty Name "A_0040(EPP2328-0002-0018)"}
 	{attribute addProperty PreviousPort "A_0039(EPP2328-0002-0017) : B"}
 	A_0040_EPP2328_0002_0018 : EPP2328_F6D9A8D1;
-	{attribute addProperty Name "A_0041_EPP2334_0061_0016"}
+	{attribute addProperty Name "A_0041(EPP2334-0061-0016)"}
 	{attribute addProperty PreviousPort "A_0040(EPP2328-0002-0018) : B"}
 	A_0041_EPP2334_0061_0016 : EPP2334_F6D9A8D1;
-	{attribute addProperty Name "A_0042_EPP2334_0061_0017"}
+	{attribute addProperty Name "A_0042(EPP2334-0061-0017)"}
 	{attribute addProperty PreviousPort "A_0041(EPP2334-0061-0016) : B"}
 	A_0042_EPP2334_0061_0017 : EPP2334_F6D9A8D1;
-	{attribute addProperty Name "A_0043_EPP2334_0061_0018"}
+	{attribute addProperty Name "A_0043(EPP2334-0061-0018)"}
 	{attribute addProperty PreviousPort "A_0042(EPP2334-0061-0017) : B"}
 	A_0043_EPP2334_0061_0018 : EPP2334_F6D9A8D1;
-	{attribute addProperty Name "A_0044_EPP2334_0061_0019"}
+	{attribute addProperty Name "A_0044(EPP2334-0061-0019)"}
 	{attribute addProperty PreviousPort "A_0043(EPP2334-0061-0018) : B"}
 	A_0044_EPP2334_0061_0019 : EPP2334_F6D9A8D1;
-	{attribute addProperty Name "A_0045_EPP2338_0001_0016"}
+	{attribute addProperty Name "A_0045(EPP2338-0001-0016)"}
 	{attribute addProperty PreviousPort "A_0044(EPP2334-0061-0019) : B"}
 	A_0045_EPP2338_0001_0016 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0046_EPP2338_0001_0017"}
+	{attribute addProperty Name "A_0046(EPP2338-0001-0017)"}
 	{attribute addProperty PreviousPort "A_0045(EPP2338-0001-0016) : B"}
 	A_0046_EPP2338_0001_0017 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0047_EPP2338_0001_0018"}
+	{attribute addProperty Name "A_0047(EPP2338-0001-0018)"}
 	{attribute addProperty PreviousPort "A_0046(EPP2338-0001-0017) : B"}
 	A_0047_EPP2338_0001_0018 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0048_EPP2338_0002_0016"}
+	{attribute addProperty Name "A_0048(EPP2338-0002-0016)"}
 	{attribute addProperty PreviousPort "A_0047(EPP2338-0001-0018) : B"}
 	A_0048_EPP2338_0002_0016 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0049_EPP2338_0002_0017"}
+	{attribute addProperty Name "A_0049(EPP2338-0002-0017)"}
 	{attribute addProperty PreviousPort "A_0048(EPP2338-0002-0016) : B"}
 	A_0049_EPP2338_0002_0017 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0050_EPP2338_0002_0018"}
+	{attribute addProperty Name "A_0050(EPP2338-0002-0018)"}
 	{attribute addProperty PreviousPort "A_0049(EPP2338-0002-0017) : B"}
 	A_0050_EPP2338_0002_0018 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0051_EPP2338_1001_0017"}
+	{attribute addProperty Name "A_0051(EPP2338-1001-0017)"}
 	{attribute addProperty PreviousPort "A_0050(EPP2338-0002-0018) : B"}
 	A_0051_EPP2338_1001_0017 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0052_EPP2338_1001_0018"}
+	{attribute addProperty Name "A_0052(EPP2338-1001-0018)"}
 	{attribute addProperty PreviousPort "A_0051(EPP2338-1001-0017) : B"}
 	A_0052_EPP2338_1001_0018 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0053_EPP2338_1001_0019"}
+	{attribute addProperty Name "A_0053(EPP2338-1001-0019)"}
 	{attribute addProperty PreviousPort "A_0052(EPP2338-1001-0018) : B"}
 	A_0053_EPP2338_1001_0019 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0054_EPP2338_1002_0017"}
+	{attribute addProperty Name "A_0054(EPP2338-1002-0017)"}
 	{attribute addProperty PreviousPort "A_0053(EPP2338-1001-0019) : B"}
 	A_0054_EPP2338_1002_0017 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0055_EPP2338_1002_0018"}
+	{attribute addProperty Name "A_0055(EPP2338-1002-0018)"}
 	{attribute addProperty PreviousPort "A_0054(EPP2338-1002-0017) : B"}
 	A_0055_EPP2338_1002_0018 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0056_EPP2338_1002_0019"}
+	{attribute addProperty Name "A_0056(EPP2338-1002-0019)"}
 	{attribute addProperty PreviousPort "A_0055(EPP2338-1002-0018) : B"}
 	A_0056_EPP2338_1002_0019 : EPP2338_7699BCF6;
-	{attribute addProperty Name "A_0057_EPP2339_0003_0016"}
+	{attribute addProperty Name "A_0057(EPP2339-0003-0016)"}
 	{attribute addProperty PreviousPort "A_0056(EPP2338-1002-0019) : B"}
 	A_0057_EPP2339_0003_0016 : EPP2339_B2B612E8;
-	{attribute addProperty Name "A_0058_EPP2339_0021_0016"}
+	{attribute addProperty Name "A_0058(EPP2339-0021-0016)"}
 	{attribute addProperty PreviousPort "A_0057(EPP2339-0003-0016) : B"}
 	A_0058_EPP2339_0021_0016 : EPP2339_8DFD1558;
-	{attribute addProperty Name "A_0059_EPP2339_0021_0017"}
+	{attribute addProperty Name "A_0059(EPP2339-0021-0017)"}
 	{attribute addProperty PreviousPort "A_0058(EPP2339-0021-0016) : B"}
 	A_0059_EPP2339_0021_0017 : EPP2339_4CF33DED;
-	{attribute addProperty Name "A_0060_EPP2339_0021_0018"}
+	{attribute addProperty Name "A_0060(EPP2339-0021-0018)"}
 	{attribute addProperty PreviousPort "A_0059(EPP2339-0021-0017) : B"}
 	A_0060_EPP2339_0021_0018 : EPP2339_4CF33DED;
-	{attribute addProperty Name "A_0061_EPP2339_0022_0016"}
+	{attribute addProperty Name "A_0061(EPP2339-0022-0016)"}
 	{attribute addProperty PreviousPort "A_0060(EPP2339-0021-0018) : B"}
 	A_0061_EPP2339_0022_0016 : EPP2339_8DFD1558;
-	{attribute addProperty Name "A_0062_EPP2339_0022_0017"}
+	{attribute addProperty Name "A_0062(EPP2339-0022-0017)"}
 	{attribute addProperty PreviousPort "A_0061(EPP2339-0022-0016) : B"}
 	A_0062_EPP2339_0022_0017 : EPP2339_4CF33DED;
-	{attribute addProperty Name "A_0063_EPP2339_0022_0018"}
+	{attribute addProperty Name "A_0063(EPP2339-0022-0018)"}
 	{attribute addProperty PreviousPort "A_0062(EPP2339-0022-0017) : B"}
 	A_0063_EPP2339_0022_0018 : EPP2339_4CF33DED;
-	{attribute addProperty Name "A_0064_EPP2349_0021_0016"}
+	{attribute addProperty Name "A_0064(EPP2349-0021-0016)"}
 	{attribute addProperty PreviousPort "A_0063(EPP2339-0022-0018) : B"}
 	A_0064_EPP2349_0021_0016 : EPP2349_8DFD1558;
-	{attribute addProperty Name "A_0065_EPP2349_0021_0017"}
+	{attribute addProperty Name "A_0065(EPP2349-0021-0017)"}
 	{attribute addProperty PreviousPort "A_0064(EPP2349-0021-0016) : B"}
 	A_0065_EPP2349_0021_0017 : EPP2349_4CF33DED;
-	{attribute addProperty Name "A_0066_EPP2349_0021_0018"}
+	{attribute addProperty Name "A_0066(EPP2349-0021-0018)"}
 	{attribute addProperty PreviousPort "A_0065(EPP2349-0021-0017) : B"}
 	A_0066_EPP2349_0021_0018 : EPP2349_4CF33DED;
-	{attribute addProperty Name "A_0067_EPP2349_0022_0016"}
+	{attribute addProperty Name "A_0067(EPP2349-0022-0016)"}
 	{attribute addProperty PreviousPort "A_0066(EPP2349-0021-0018) : B"}
 	A_0067_EPP2349_0022_0016 : EPP2349_8DFD1558;
-	{attribute addProperty Name "A_0068_EPP2349_0022_0017"}
+	{attribute addProperty Name "A_0068(EPP2349-0022-0017)"}
 	{attribute addProperty PreviousPort "A_0067(EPP2349-0022-0016) : B"}
 	A_0068_EPP2349_0022_0017 : EPP2349_4CF33DED;
-	{attribute addProperty Name "A_0069_EPP2349_0022_0018"}
+	{attribute addProperty Name "A_0069(EPP2349-0022-0018)"}
 	{attribute addProperty PreviousPort "A_0068(EPP2349-0022-0017) : B"}
 	A_0069_EPP2349_0022_0018 : EPP2349_4CF33DED;
-	{attribute addProperty Name "A_0070_EPP2624_0002_0016"}
+	{attribute addProperty Name "A_0070(EPP2624-0002-0016)"}
 	{attribute addProperty PreviousPort "A_0069(EPP2349-0022-0018) : B"}
 	A_0070_EPP2624_0002_0016 : EPP2624_7B64371E;
-	{attribute addProperty Name "A_0071_EPP2809_0021_0016"}
+	{attribute addProperty Name "A_0071(EPP2809-0021-0016)"}
 	{attribute addProperty PreviousPort "A_0070(EPP2624-0002-0016) : B"}
 	A_0071_EPP2809_0021_0016 : EPP2809_2B6483BD;
-	{attribute addProperty Name "A_0072_EPP2809_0022_0016"}
+	{attribute addProperty Name "A_0072(EPP2809-0022-0016)"}
 	{attribute addProperty PreviousPort "A_0071(EPP2809-0021-0016) : B"}
 	A_0072_EPP2809_0022_0016 : EPP2809_2B6483BD;
-	{attribute addProperty Name "A_0073_EPP2816_0004_0016"}
+	{attribute addProperty Name "A_0073(EPP2816-0004-0016)"}
 	{attribute addProperty PreviousPort "A_0072(EPP2809-0022-0016) : B"}
 	A_0073_EPP2816_0004_0016 : EPP2816_F9F6AB82;
-	{attribute addProperty Name "A_0074_EPP2816_0004_0017"}
+	{attribute addProperty Name "A_0074(EPP2816-0004-0017)"}
 	{attribute addProperty PreviousPort "A_0073(EPP2816-0004-0016) : B"}
 	A_0074_EPP2816_0004_0017 : EPP2816_F9F6AB82;
-	{attribute addProperty Name "A_0075_EPP2816_0008_0016"}
+	{attribute addProperty Name "A_0075(EPP2816-0008-0016)"}
 	{attribute addProperty PreviousPort "A_0074(EPP2816-0004-0017) : B"}
 	A_0075_EPP2816_0008_0016 : EPP2816_01296449;
-	{attribute addProperty Name "A_0076_EPP2816_0008_0017"}
+	{attribute addProperty Name "A_0076(EPP2816-0008-0017)"}
 	{attribute addProperty PreviousPort "A_0075(EPP2816-0008-0016) : B"}
 	A_0076_EPP2816_0008_0017 : EPP2816_01296449;
-	{attribute addProperty Name "A_0077_EPP2816_0008_0018"}
+	{attribute addProperty Name "A_0077(EPP2816-0008-0018)"}
 	{attribute addProperty PreviousPort "A_0076(EPP2816-0008-0017) : B"}
 	A_0077_EPP2816_0008_0018 : EPP2816_01296449;
-	{attribute addProperty Name "A_0078_EPP2816_0010_0016"}
+	{attribute addProperty Name "A_0078(EPP2816-0010-0016)"}
 	{attribute addProperty PreviousPort "A_0077(EPP2816-0008-0018) : B"}
 	A_0078_EPP2816_0010_0016 : EPP2816_01296449;
-	{attribute addProperty Name "A_0079_EPP2816_0010_0017"}
+	{attribute addProperty Name "A_0079(EPP2816-0010-0017)"}
 	{attribute addProperty PreviousPort "A_0078(EPP2816-0010-0016) : B"}
 	A_0079_EPP2816_0010_0017 : EPP2816_01296449;
-	{attribute addProperty Name "A_0080_EPP2816_0010_0018"}
+	{attribute addProperty Name "A_0080(EPP2816-0010-0018)"}
 	{attribute addProperty PreviousPort "A_0079(EPP2816-0010-0017) : B"}
 	A_0080_EPP2816_0010_0018 : EPP2816_01296449;
-	{attribute addProperty Name "A_0081_EPP2817_0008_0016"}
+	{attribute addProperty Name "A_0081(EPP2817-0008-0016)"}
 	{attribute addProperty PreviousPort "A_0080(EPP2816-0010-0018) : B"}
 	A_0081_EPP2817_0008_0016 : EPP2817_7CB3CE29;
-	{attribute addProperty Name "A_0082_EPP2817_0008_0017"}
+	{attribute addProperty Name "A_0082(EPP2817-0008-0017)"}
 	{attribute addProperty PreviousPort "A_0081(EPP2817-0008-0016) : B"}
 	A_0082_EPP2817_0008_0017 : EPP2817_7CB3CE29;
-	{attribute addProperty Name "A_0083_EPP2817_0008_0018"}
+	{attribute addProperty Name "A_0083(EPP2817-0008-0018)"}
 	{attribute addProperty PreviousPort "A_0082(EPP2817-0008-0017) : B"}
 	A_0083_EPP2817_0008_0018 : EPP2817_7CB3CE29;
 END_STRUCT

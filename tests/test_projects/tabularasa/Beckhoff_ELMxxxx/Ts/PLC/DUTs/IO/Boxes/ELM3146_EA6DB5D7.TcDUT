@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ELM3146_EA6DB5D7" Id="{d9407555-6a48-4b8e-9aa6-e6946066075c}">
+  <DUT Name="ELM3146_EA6DB5D7" Id="{23f00daf-4523-497c-997f-621ff9fd9ada}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM3146-0000-0016'}
 {attribute addProperty BoxType "ELM3146-0000-0016"}
+{attribute addProperty Description "ELM3146-0000 6Ch. Ana. Input +/-10V, +/-20mA, 24 bit, high precision"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "PAI_Status_Channel_1AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_1AT %I*PAI_Samples_1_Channel_EEA517254PAI_Timestamp_Channel_1AT %I*PAI_Timestamp_Channel_6DC4D2968PAI_Status_Channel_2AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_2AT %I*PAI_Samples_1_Channel_EEA517254PAI_Status_Channel_3AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_3AT %I*PAI_Samples_1_Channel_EEA517254PAI_Status_Channel_4AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_4AT %I*PAI_Samples_1_Channel_EEA517254PAI_Status_Channel_5AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_5AT %I*PAI_Samples_1_Channel_EEA517254PAI_Status_Channel_6AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_6AT %I*PAI_Samples_1_Channel_EEA517254WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
 {attribute addProperty CRC "3933058519"}
 {attribute addProperty Size "94"}

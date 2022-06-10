@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP1859_B9D5A785" Id="{3f7dcf7f-7371-4803-a529-10cf0f178dd0}">
+  <DUT Name="EP1859_B9D5A785" Id="{e92eeba3-40f6-47ff-a60f-0a66980e9e9e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1859-0042-0019'}
 {attribute addProperty BoxType "EP1859-0042-0019"}
+{attribute addProperty Description "EP1859-0042 8 Ch. Dig. In, 3ms, 8 Ch. Dig. Out 24V, 0.5A, M12 "}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "DI_X01_4AT %I*DI_X_830843C11DI_X01_2AT %I*DI_X_830843C11DI_X02_4AT %I*DI_X_830843C11DI_X02_2AT %I*DI_X_830843C11DI_X03_4AT %I*DI_X_830843C11DI_X03_2AT %I*DI_X_830843C11DI_X04_4AT %I*DI_X_830843C11DI_X04_2AT %I*DI_X_830843C11DO_X05_4AT %Q*DO_X_42CA91F71DO_X05_2AT %Q*DO_X_42CA91F71DO_X06_4AT %Q*DO_X_42CA91F71DO_X06_2AT %Q*DO_X_42CA91F71DO_X07_4AT %Q*DO_X_42CA91F71DO_X07_2AT %Q*DO_X_42CA91F71DO_X08_4AT %Q*DO_X_42CA91F71DO_X08_2AT %Q*DO_X_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "3117787013"}
 {attribute addProperty Size "20"}

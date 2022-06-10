@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6001_85CBA3B4" Id="{d13772c9-cac3-486b-9acf-20cb11ef9aa3}">
+  <DUT Name="EL6001_85CBA3B4" Id="{cd142694-fbcb-4948-bcdf-7af0232c4fbd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6001-0000-0020'}
 {attribute addProperty BoxType "EL6001-0000-0020"}
+{attribute addProperty Description "EL6001 Interface (RS232)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "InputsAT %I*Inputs_37C8E74C6OutputsAT %Q*Outputs_2CF06B6A6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2244715444"}
 {attribute addProperty Size "24"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2595_D1BA4B80" Id="{e5b71554-29c5-4733-84c5-a2b6b5ba2f77}">
+  <DUT Name="EL2595_D1BA4B80" Id="{9471be79-b45c-4f41-aa34-4ddbdea9b604}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2595-0000-0018'}
 {attribute addProperty BoxType "EL2595-0000-0018"}
+{attribute addProperty Description "EL2595 1Ch. LED constant current terminal"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "DOX_StatusAT %I*DOX_Status_AED8A12A6DOX_ControlAT %Q*DOX_Control_75D5C9E23WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3518647168"}
 {attribute addProperty Size "21"}

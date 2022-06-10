@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Module_2_DeviceState_Inputs_BD6C7035" Id="{9deb9a9e-ce75-4d80-b37b-c8f9be4ec1f9}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6224-0000-0016'}
+<TcPlcObject>
+	<DUT Name="Module_2_DeviceState_Inputs_BD6C7035">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6224-0000-0016'}
 {attribute addProperty BoxType "EJ6224-0000-0016"}
 {attribute addProperty Id "DeviceState_InputsDeviceState_Inputs_4751FF764"}
 {attribute addProperty CRC "3178000437"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

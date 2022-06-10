@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ3255_1972F7C0" Id="{01a24e1a-b29c-4026-9a5f-030ade304ebd}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3255-0000-0023'}
+<TcPlcObject>
+	<DUT Name="EJ3255_1972F7C0">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3255-0000-0023'}
 {attribute addProperty BoxType "EJ3255-0000-0023"}
+{attribute addProperty Description "EJ3255 5Ch. potentiometer measurement with sensor supply"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_2AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_3AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_4AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_5AT %I*AI_Standard_Channel_A8DF64E310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "426964928"}
 {attribute addProperty Size "62"}
@@ -25,5 +26,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

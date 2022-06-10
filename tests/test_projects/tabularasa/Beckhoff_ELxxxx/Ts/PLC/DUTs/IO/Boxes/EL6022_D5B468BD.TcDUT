@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6022_D5B468BD" Id="{88c29e80-adef-4d68-9648-a5dd256c7ccc}">
+  <DUT Name="EL6022_D5B468BD" Id="{9c8b3aab-d4de-4f3f-9de1-26eb9777e9aa}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6022-0000-0016'}
 {attribute addProperty BoxType "EL6022-0000-0016"}
+{attribute addProperty Description "EL6022 Interface 2Ch. (RS422/485)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "COM_Inputs_Channel_1AT %I*COM_Inputs_Channel_3801C95E30COM_Inputs_Channel_2AT %I*COM_Inputs_Channel_3801C95E30COM_Outputs_Channel_1AT %Q*COM_Outputs_Channel_EADA2E0D27COM_Outputs_Channel_2AT %Q*COM_Outputs_Channel_EADA2E0D27WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3585370301"}
 {attribute addProperty Size "126"}

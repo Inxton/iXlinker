@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EM3701_AB0D469D" Id="{7150362d-4bc9-44a7-a646-bb64e2840f41}">
+  <DUT Name="EM3701_AB0D469D" Id="{72e61df7-6d6d-40a1-9ea1-266dffcc90f9}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM3701-0000-0016'}
 {attribute addProperty BoxType "EM3701-0000-0016"}
+{attribute addProperty Description "EM3701, 1Ch. differential pressure measuring terminal 100hPa (100mbar)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_InputsAT %I*AI_Inputs_5AF6604E8WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2869773981"}
 {attribute addProperty Size "20"}

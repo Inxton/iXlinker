@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EK1814_F6D9A8D1" Id="{44211b18-8db7-4106-b277-e4ff8abc5a01}">
+  <DUT Name="EK1814_F6D9A8D1" Id="{57e6f590-d41d-4fc5-a3cc-9e358e875364}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1814-0000-0016'}
 {attribute addProperty BoxType "EK1814-0000-0016"}
+{attribute addProperty Description "EK1814 EtherCAT IO-Coupler  (0,5A E-Bus, 4 Ch. Dig. In, 3ms, 4 Ch. Dig. Out 24V, 0,5A)"}
+{attribute addProperty Physics "YKY"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %Q*Channel_42CA91F71Channel_6AT %Q*Channel_42CA91F71Channel_7AT %Q*Channel_42CA91F71Channel_8AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "4141459665"}
 {attribute addProperty Size "12"}

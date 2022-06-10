@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2722_B0214940" Id="{0a141633-b685-4d23-a3f0-dffbb0311378}">
+  <DUT Name="EL2722_B0214940" Id="{493dd7bf-7850-4792-9a2d-5c0f7d12fa83}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2722-0000-0016'}
 {attribute addProperty BoxType "EL2722-0000-0016"}
+{attribute addProperty Description "EL2722 2Ch. Triac Output 12..230V AC, 1.0A, mutually locked"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2954971456"}
 {attribute addProperty Size "5"}

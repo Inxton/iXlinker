@@ -43,7 +43,14 @@ namespace TsprojFile.Scan
                     {
                         TopologyStructMemberViewModel member = new TopologyStructMemberViewModel();
 
-                        member.Attributes.Add("{attribute addProperty Name \"" + mapableObject.Name + "\"}");
+                        if (!String.IsNullOrEmpty(mapableObject.NameOrigin))
+                        {
+                            member.Attributes.Add("{attribute addProperty Name \"" + mapableObject.NameOrigin + "\"}");
+                        }
+                        else
+                        {
+                            member.Attributes.Add("{attribute addProperty Name \"" + mapableObject.Name + "\"}");
+                        }
                         if (!string.IsNullOrEmpty(mapableObject.PreviousPort))
                         {
                             member.Attributes.Add("{attribute addProperty PreviousPort \"" + mapableObject.PreviousPort + "\"}");
@@ -135,7 +142,14 @@ namespace TsprojFile.Scan
                     }
                     else
                     {
-                        member.Attributes.Add("{attribute addProperty Name \"" + mapableObject.Name + "\"}");
+                        if (!String.IsNullOrEmpty(mapableObject.NameOrigin))
+                        {
+                            member.Attributes.Add("{attribute addProperty Name \"" + mapableObject.NameOrigin + "\"}");
+                        }
+                        else
+                        {
+                            member.Attributes.Add("{attribute addProperty Name \"" + mapableObject.Name + "\"}");
+                        }
                         if (!string.IsNullOrEmpty(mapableObject.PreviousPort))
                         {
                             member.Attributes.Add("{attribute addProperty PreviousPort \"" + mapableObject.PreviousPort + "\"}");

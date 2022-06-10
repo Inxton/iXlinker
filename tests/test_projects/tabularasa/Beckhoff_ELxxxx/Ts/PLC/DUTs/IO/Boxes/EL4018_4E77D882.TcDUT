@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL4018_4E77D882" Id="{6cc50dd5-5e1d-4de1-abb2-127b89703365}">
+  <DUT Name="EL4018_4E77D882" Id="{bbd8ca7e-0957-4c21-9690-8278eae879bf}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL4018-0000-0016'}
 {attribute addProperty BoxType "EL4018-0000-0016"}
+{attribute addProperty Description "EL4018 8Ch. Ana. Output 0-20mA, 12bit"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AO_Outputs_Channel_1AT %Q*AO_Output_Channel_BA7EBB7C2AO_Outputs_Channel_2AT %Q*AO_Output_Channel_BA7EBB7C2AO_Outputs_Channel_3AT %Q*AO_Output_Channel_BA7EBB7C2AO_Outputs_Channel_4AT %Q*AO_Output_Channel_BA7EBB7C2AO_Outputs_Channel_5AT %Q*AO_Output_Channel_BA7EBB7C2AO_Outputs_Channel_6AT %Q*AO_Output_Channel_BA7EBB7C2AO_Outputs_Channel_7AT %Q*AO_Output_Channel_BA7EBB7C2AO_Outputs_Channel_8AT %Q*AO_Output_Channel_BA7EBB7C2WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1316477058"}
 {attribute addProperty Size "27"}

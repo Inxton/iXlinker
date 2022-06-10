@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL9260_B3C0CA83" Id="{e438bd66-68d3-4093-bdaf-5ef1f66d9922}">
+  <DUT Name="EL9260_B3C0CA83" Id="{f49c4bd7-6808-4cbf-a2f2-ac60a4e75d77}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9260-0000-0016'}
 {attribute addProperty BoxType "EL9260-0000-0016"}
+{attribute addProperty Description "EL9260 Power Supplier with LED (230V, Fuse, Diagnostics)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "PowerOKAT %I*PowerOK_CEB2FD121FuseErrorAT %I*FuseError_1EC650DA1WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "3015756419"}
 {attribute addProperty Size "6"}

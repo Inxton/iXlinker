@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2084_7B64371E" Id="{b4560ef9-c659-4859-82a3-d1cf85edec93}">
+  <DUT Name="EL2084_7B64371E" Id="{61536e1d-67f6-42d9-955e-612877cd074a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2084-0000-0016'}
 {attribute addProperty BoxType "EL2084-0000-0016"}
+{attribute addProperty Description "EL2084 4Ch. Dig. Output 24V, 0.5A, switching to negative"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71Channel_3AT %Q*Channel_42CA91F71Channel_4AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2070165278"}
 {attribute addProperty Size "7"}

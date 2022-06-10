@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3314_E65CDB1C" Id="{a9fe26fa-1b0c-4513-a66c-ed9a6df2ee09}">
+  <DUT Name="EL3314_E65CDB1C" Id="{3bd5efb9-704f-47df-932d-fe707088c560}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3314-0000-0018'}
 {attribute addProperty BoxType "EL3314-0000-0018"}
+{attribute addProperty Description "EL3314 4Ch. Ana. Input Thermocouple (TC)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "TC_Inputs_Channel_1AT %I*AI_Standard_Channel_4A3944819TC_Inputs_Channel_2AT %I*AI_Standard_Channel_4A3944819TC_Inputs_Channel_3AT %I*AI_Standard_Channel_4A3944819TC_Inputs_Channel_4AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3864845084"}
 {attribute addProperty Size "48"}

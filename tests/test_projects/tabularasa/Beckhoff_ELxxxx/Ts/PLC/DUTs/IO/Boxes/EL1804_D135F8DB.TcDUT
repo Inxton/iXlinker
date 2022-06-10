@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL1804_D135F8DB" Id="{bf88424a-124d-49f3-bf90-c9f4e6ac8ac7}">
+  <DUT Name="EL1804_D135F8DB" Id="{71911085-78ee-4d30-b3df-1794b693b200}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1804-0000-0016'}
 {attribute addProperty BoxType "EL1804-0000-0016"}
+{attribute addProperty Description "EL1804 4Ch. Dig. Input 24V, 3ms"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "3509975259"}
 {attribute addProperty Size "8"}

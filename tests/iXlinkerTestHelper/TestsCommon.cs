@@ -363,6 +363,8 @@ namespace iXlinkerTestHelper
             string[] exludedPrefixes = {
                 "{attribute 'GeneratedUsingTerminal: ",
                 "{attribute addProperty BoxType",
+                "{attribute addProperty Description",
+                "{attribute addProperty Physics ",
                 "{attribute addProperty Id",
                 "{attribute addProperty CRC",
                 "{attribute addProperty PreviousPort",

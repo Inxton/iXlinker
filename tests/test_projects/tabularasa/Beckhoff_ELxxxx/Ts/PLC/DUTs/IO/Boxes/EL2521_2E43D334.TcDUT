@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2521_2E43D334" Id="{dde7823b-7872-4b54-b41d-31a2aa26ab58}">
+  <DUT Name="EL2521_2E43D334" Id="{18098508-1dc2-4937-828b-77d49f503c5d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521-0124-0018'}
 {attribute addProperty BoxType "EL2521-0124-0018"}
+{attribute addProperty Description "EL2521-0124 1Ch. Pulse Train 24V DC Output Capture/Compare"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "PTO_StatusAT %I*PTO_Status_E0EB10E85ENC_Status_compactAT %I*ENC_Status_compact_3C6E2C4411PLS_StatusAT %I*PLS_Status_70E7A1E24PTO_ControlAT %Q*PTO_Control_9287F8E45PTO_Target_compactAT %Q*PTO_Target_compact_5C359F7D2ENC_Control_compactAT %Q*ENC_Control_compact_2E82BC435PLS_Control_compactAT %Q*PLS_Control_compact_CD6E44DE6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "776196916"}
 {attribute addProperty Size "50"}

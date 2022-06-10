@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL9221_8223B8D7" Id="{782af7dd-da3e-43f0-9734-8cc5152ee42d}">
+  <DUT Name="EL9221_8223B8D7" Id="{a0762847-48e3-438e-a4ea-0855238fe6f2}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9221-4030-0018'}
 {attribute addProperty BoxType "EL9221-4030-0018"}
+{attribute addProperty Description "EL9221-4030 Overcurrent protection 24V DC, 1Ch., 3A"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "OCP_InputsAT %I*OCP_Inputs_8CCE65FB11OCP_OutputsAT %Q*OCP_Outputs_010149342WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2183379159"}
 {attribute addProperty Size "25"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ELX9560_F22EDCF2" Id="{b974aa89-88db-41ab-b136-d86d77543884}">
+  <DUT Name="ELX9560_F22EDCF2" Id="{915fcc60-c096-4de2-a5b6-86134bf298c3}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX9560-0000-0018'}
 {attribute addProperty BoxType "ELX9560-0000-0018"}
+{attribute addProperty Description "ELX9560 Power supply terminal 24V DC (650mA, isolated)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Status_UinAT %I*Status_Uin_627CC56E1Status_UexAT %I*Status_Uex_834F30501WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "4063157490"}
 {attribute addProperty Size "6"}

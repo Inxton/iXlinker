@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3062_63BCF660" Id="{a3edb5e4-4fab-4716-986e-7801dd5d10ec}">
+  <DUT Name="EL3062_63BCF660" Id="{3e1f2242-b90d-4f42-96ef-7b0fa4381527}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3062-0000-0017'}
 {attribute addProperty BoxType "EL3062-0000-0017"}
+{attribute addProperty Description "EL3062 2Ch. Ana. Input 0-10V"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_2AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1673328224"}
 {attribute addProperty Size "30"}

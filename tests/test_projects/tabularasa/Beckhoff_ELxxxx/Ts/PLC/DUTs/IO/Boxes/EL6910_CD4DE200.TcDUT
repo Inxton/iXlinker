@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6910_CD4DE200" Id="{ed3e67ce-7e05-4496-b5e6-df9a5d1b9f80}">
+  <DUT Name="EL6910_CD4DE200" Id="{0fc95b16-b555-4737-af57-d9fa97ae7f51}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6910-0000-0017'}
 {attribute addProperty BoxType "EL6910-0000-0017"}
+{attribute addProperty Description "EL6910, TwinSAFE PLC"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "FSLOGIC_InputsAT %I*FSLOGIC_Inputs_EEE9388E2FSLOGIC_OutputsAT %I*EMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3444433408"}
 {attribute addProperty Size "14"}

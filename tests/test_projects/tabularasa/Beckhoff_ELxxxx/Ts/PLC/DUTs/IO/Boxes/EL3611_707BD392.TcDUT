@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3611_707BD392" Id="{6aa3b85d-7141-41ee-9140-7c227bbe98c6}">
+  <DUT Name="EL3611_707BD392" Id="{8997da62-fe61-4487-9474-be848c083789}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3611-1030-0016'}
 {attribute addProperty BoxType "EL3611-1030-0016"}
+{attribute addProperty Description "EL3611-1030 1Ch. Ana. Input 0-20 mA, Diff. 24bit"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_InputsAT %I*AI_Inputs_4521310411WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1887163282"}
 {attribute addProperty Size "23"}

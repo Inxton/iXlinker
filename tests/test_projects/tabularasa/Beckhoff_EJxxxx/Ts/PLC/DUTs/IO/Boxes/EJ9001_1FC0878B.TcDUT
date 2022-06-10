@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ9001_1FC0878B" Id="{733e69d1-3a8e-4fba-bba8-1e9e1955991c}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ9001-0000-0016'}
+<TcPlcObject>
+	<DUT Name="EJ9001_1FC0878B">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ9001-0000-0016'}
 {attribute addProperty BoxType "EJ9001-0000-0016"}
+{attribute addProperty Description "EJ9001 placeholder module"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "532711307"}
 {attribute addProperty Size "2"}
@@ -13,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

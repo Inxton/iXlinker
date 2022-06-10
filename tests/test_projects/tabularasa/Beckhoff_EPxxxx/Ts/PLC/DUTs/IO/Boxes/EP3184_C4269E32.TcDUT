@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP3184_C4269E32" Id="{36bbb257-aa0f-4524-a865-aefea8ace719}">
+  <DUT Name="EP3184_C4269E32" Id="{b18399a0-9574-497c-9176-c5e5783e98bf}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3184-0002-0016'}
 {attribute addProperty BoxType "EP3184-0002-0016"}
+{attribute addProperty Description "EP3184-0002 4Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable, single ended"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_2AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_3AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_4AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3290865202"}
 {attribute addProperty Size "48"}

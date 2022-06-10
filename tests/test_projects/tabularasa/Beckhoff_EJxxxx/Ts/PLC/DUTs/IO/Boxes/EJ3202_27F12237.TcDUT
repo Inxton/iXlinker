@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ3202_27F12237" Id="{28946af8-50e6-433d-be2d-12f6097619ee}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3202-0000-0019'}
+<TcPlcObject>
+	<DUT Name="EJ3202_27F12237">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3202-0000-0019'}
 {attribute addProperty BoxType "EJ3202-0000-0019"}
+{attribute addProperty Description "EJ3202 2Ch. Ana. Input PT100 (RTD)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "RTD_Inputs_Channel_1AT %I*AI_Standard_Channel_4A3944819RTD_Inputs_Channel_2AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "670114359"}
 {attribute addProperty Size "30"}
@@ -19,5 +20,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

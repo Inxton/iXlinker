@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP5001_0B28D087" Id="{cef24db8-e419-41cf-a433-25f5113a6d68}">
+  <DUT Name="EPP5001_0B28D087" Id="{e31a1cf7-08f9-4e78-ba2b-c49f26143794}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP5001-0002-0016'}
 {attribute addProperty BoxType "EPP5001-0002-0016"}
+{attribute addProperty Description "EPP5001-0002 1Ch. SSI Encoder"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "SSI_InputsAT %I*SSI_Inputs_0E3D8E3310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "187224199"}
 {attribute addProperty Size "22"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6688_747A9CEE" Id="{b5e21b5c-3350-40d7-8372-35f31dc5455b}">
+  <DUT Name="EL6688_747A9CEE" Id="{35e615cb-2511-4b31-bc6a-68aec9d1630b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6688-0000-0017'}
 {attribute addProperty BoxType "EL6688-0000-0017"}
+{attribute addProperty Description "EL6688 - External Synchronisation Interface (IEEE1588)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "External_SyncAT %I*External_Sync_69535D9824WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
 {attribute addProperty CRC "1954192622"}
 {attribute addProperty Size "44"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3182_EF3C9D49" Id="{add29873-8c19-44ab-b20f-59831d4232c5}">
+  <DUT Name="EL3182_EF3C9D49" Id="{852ffbf7-ef85-4e5b-890e-077f9746213f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3182-0000-0016'}
 {attribute addProperty BoxType "EL3182-0000-0016"}
+{attribute addProperty Description "EL3182 2Ch. Ana. Input 4-20mA, HART"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Ch_1Ch_1_A1FAE75910Ch_2Ch_2_D9CD36D210WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_90184F0C16"}
 {attribute addProperty CRC "4013727049"}
 {attribute addProperty Size "38"}

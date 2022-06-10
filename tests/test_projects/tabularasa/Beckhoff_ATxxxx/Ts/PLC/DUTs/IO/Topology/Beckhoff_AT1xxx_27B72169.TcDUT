@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Beckhoff_AT1xxx_27B72169" Id="{0a3207b9-f851-4588-a7d3-b20e43556ed9}">
+  <DUT Name="Beckhoff_AT1xxx_27B72169" Id="{440d2663-bc14-4cee-836c-6be675de4939}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
 {attribute addProperty BoxType "EK1100-0000-0018"}
 {attribute addProperty Id "Beckhoff_AT2xxxEK1122Beckhoff_AT2xxxEK1122_43DD63D75810A_0059_AT2000_5250_0018AT2000_33A3DF1B80"}
@@ -8,10 +8,10 @@
 {attribute addProperty Size "5890"}
 TYPE Beckhoff_AT1xxx_27B72169 EXTENDS EK1100_1FC0878B :
 STRUCT
-	{attribute addProperty Name "Beckhoff_AT2xxxEK1122"}
+	{attribute addProperty Name "Beckhoff AT2xxxEK1122"}
 	{attribute addProperty PreviousPort "Beckhoff AT1xxx : B"}
 	Beckhoff_AT2xxxEK1122 : Beckhoff_AT2xxxEK1122_43DD63D7;
-	{attribute addProperty Name "A_0059_AT2000_5250_0018"}
+	{attribute addProperty Name "A_0059(AT2000-5250-0018)"}
 	{attribute addProperty PreviousPort "Beckhoff AT2xxxEK1122 : C"}
 	A_0059_AT2000_5250_0018 : AT2000_33A3DF1B;
 END_STRUCT

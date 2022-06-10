@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL1202_02444DCB" Id="{8af86da9-1f3e-4b6b-a3c9-1e23e5c81650}">
+  <DUT Name="EL1202_02444DCB" Id="{0854cb76-b218-47c0-b20b-657e6b809782}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1202-0000-0016'}
 {attribute addProperty BoxType "EL1202-0000-0016"}
+{attribute addProperty Description "EL1202 2Ch. Fast Dig. Input 24V, 1µs"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "38030795"}
 {attribute addProperty Size "6"}

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Beckhoff_EK15xx_47CB6E2F" Id="{1e5dbc6c-82d7-457f-ba3b-c4e7f9fa4fcb}">
+  <DUT Name="Beckhoff_EK15xx_47CB6E2F" Id="{4cf9d5ad-95a0-4d79-884b-b61900d1cbb7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
 {attribute addProperty BoxType "EK1100-0000-0018"}
 {attribute addProperty Id "Beckhoff_EK15xxEK1122Beckhoff_EK15xxEK1122_1A424B6268A_0025_EK1561_0000_0018EK1561_1FC0878B2A_0024_EK1561_0000_0017EK1561_1FC0878B2A_0023_EK1561_0000_0016EK1561_1FC0878B2A_0019_EK1521_0010_0020EK1521_1FC0878B2A_0018_EK1521_0010_0019EK1521_1FC0878B2A_0017_EK1521_0010_0018EK1521_1FC0878B2A_0016_EK1521_0010_0017EK1521_1FC0878B2A_0015_EK1521_0010_0016EK1521_1FC0878B2A_0014_EK1521_0000_0021EK1521_1FC0878B2A_0013_EK1521_0000_0020EK1521_1FC0878B2A_0012_EK1521_0000_0019EK1521_1FC0878B2A_0011_EK1521_0000_0018EK1521_1FC0878B2A_0010_EK1521_0000_0017EK1521_1FC0878B2A_0009_EK1521_0000_0016EK1521_1FC0878B2"}
@@ -8,49 +8,49 @@
 {attribute addProperty Size "96"}
 TYPE Beckhoff_EK15xx_47CB6E2F EXTENDS EK1100_1FC0878B :
 STRUCT
-	{attribute addProperty Name "Beckhoff_EK15xxEK1122"}
+	{attribute addProperty Name "Beckhoff EK15xxEK1122"}
 	{attribute addProperty PreviousPort "Beckhoff EK15xx : B"}
 	Beckhoff_EK15xxEK1122 : Beckhoff_EK15xxEK1122_1A424B62;
-	{attribute addProperty Name "A_0025_EK1561_0000_0018"}
+	{attribute addProperty Name "A_0025(EK1561-0000-0018)"}
 	{attribute addProperty PreviousPort "Beckhoff EK15xxEK1122 : C"}
 	A_0025_EK1561_0000_0018 : EK1561_1FC0878B;
-	{attribute addProperty Name "A_0024_EK1561_0000_0017"}
+	{attribute addProperty Name "A_0024(EK1561-0000-0017)"}
 	{attribute addProperty PreviousPort "A_0025(EK1561-0000-0018) : C"}
 	A_0024_EK1561_0000_0017 : EK1561_1FC0878B;
-	{attribute addProperty Name "A_0023_EK1561_0000_0016"}
+	{attribute addProperty Name "A_0023(EK1561-0000-0016)"}
 	{attribute addProperty PreviousPort "A_0024(EK1561-0000-0017) : C"}
 	A_0023_EK1561_0000_0016 : EK1561_1FC0878B;
-	{attribute addProperty Name "A_0019_EK1521_0010_0020"}
+	{attribute addProperty Name "A_0019(EK1521-0010-0020)"}
 	{attribute addProperty PreviousPort "A_0023(EK1561-0000-0016) : C"}
 	A_0019_EK1521_0010_0020 : EK1521_1FC0878B;
-	{attribute addProperty Name "A_0018_EK1521_0010_0019"}
+	{attribute addProperty Name "A_0018(EK1521-0010-0019)"}
 	{attribute addProperty PreviousPort "A_0019(EK1521-0010-0020) : C"}
 	A_0018_EK1521_0010_0019 : EK1521_1FC0878B;
-	{attribute addProperty Name "A_0017_EK1521_0010_0018"}
+	{attribute addProperty Name "A_0017(EK1521-0010-0018)"}
 	{attribute addProperty PreviousPort "A_0018(EK1521-0010-0019) : C"}
 	A_0017_EK1521_0010_0018 : EK1521_1FC0878B;
-	{attribute addProperty Name "A_0016_EK1521_0010_0017"}
+	{attribute addProperty Name "A_0016(EK1521-0010-0017)"}
 	{attribute addProperty PreviousPort "A_0017(EK1521-0010-0018) : C"}
 	A_0016_EK1521_0010_0017 : EK1521_1FC0878B;
-	{attribute addProperty Name "A_0015_EK1521_0010_0016"}
+	{attribute addProperty Name "A_0015(EK1521-0010-0016)"}
 	{attribute addProperty PreviousPort "A_0016(EK1521-0010-0017) : C"}
 	A_0015_EK1521_0010_0016 : EK1521_1FC0878B;
-	{attribute addProperty Name "A_0014_EK1521_0000_0021"}
+	{attribute addProperty Name "A_0014(EK1521-0000-0021)"}
 	{attribute addProperty PreviousPort "A_0015(EK1521-0010-0016) : C"}
 	A_0014_EK1521_0000_0021 : EK1521_1FC0878B;
-	{attribute addProperty Name "A_0013_EK1521_0000_0020"}
+	{attribute addProperty Name "A_0013(EK1521-0000-0020)"}
 	{attribute addProperty PreviousPort "A_0014(EK1521-0000-0021) : C"}
 	A_0013_EK1521_0000_0020 : EK1521_1FC0878B;
-	{attribute addProperty Name "A_0012_EK1521_0000_0019"}
+	{attribute addProperty Name "A_0012(EK1521-0000-0019)"}
 	{attribute addProperty PreviousPort "A_0013(EK1521-0000-0020) : C"}
 	A_0012_EK1521_0000_0019 : EK1521_1FC0878B;
-	{attribute addProperty Name "A_0011_EK1521_0000_0018"}
+	{attribute addProperty Name "A_0011(EK1521-0000-0018)"}
 	{attribute addProperty PreviousPort "A_0012(EK1521-0000-0019) : C"}
 	A_0011_EK1521_0000_0018 : EK1521_1FC0878B;
-	{attribute addProperty Name "A_0010_EK1521_0000_0017"}
+	{attribute addProperty Name "A_0010(EK1521-0000-0017)"}
 	{attribute addProperty PreviousPort "A_0011(EK1521-0000-0018) : C"}
 	A_0010_EK1521_0000_0017 : EK1521_1FC0878B;
-	{attribute addProperty Name "A_0009_EK1521_0000_0016"}
+	{attribute addProperty Name "A_0009(EK1521-0000-0016)"}
 	{attribute addProperty PreviousPort "A_0010(EK1521-0000-0017) : C"}
 	A_0009_EK1521_0000_0016 : EK1521_1FC0878B;
 END_STRUCT

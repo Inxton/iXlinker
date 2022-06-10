@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6614_EEB2FEF4" Id="{d6b67811-de4a-4c58-ba8d-ac20cd33199a}">
+  <DUT Name="EL6614_EEB2FEF4" Id="{1e9013ae-961b-4a08-b718-7a0c64310d87}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6614-0000-0016'}
 {attribute addProperty BoxType "EL6614-0000-0016"}
+{attribute addProperty Description "EL6614 4 Port Switch (Ethernet, CoE)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "4004708084"}
 {attribute addProperty Size "10"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL7041_6D538C60" Id="{6b23fbc9-3af5-4fe7-8146-39d0c56d7c47}">
+  <DUT Name="EL7041_6D538C60" Id="{eca917bc-930c-427a-be24-f40bf83c7567}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7041-0000-0016'}
 {attribute addProperty BoxType "EL7041-0000-0016"}
+{attribute addProperty Description "EL7041 1Ch. Stepper motor output stage (50V, 5A)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "ENC_Status_compactAT %I*ENC_Status_compact_4D066E1A16STM_StatusAT %I*STM_Status_36ED096F11ENC_Control_compactAT %Q*ENC_Control_compact_21E2D14D6STM_ControlAT %Q*STM_Control_5A8B50163STM_VelocityAT %Q*STM_Velocity_A47A3F412WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_8DF4E0C511"}
 {attribute addProperty CRC "1834191968"}
 {attribute addProperty Size "51"}

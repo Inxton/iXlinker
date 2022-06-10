@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ELX3202_27F12237" Id="{063e2f8a-34e0-40d9-9332-17d7974fb3a9}">
+  <DUT Name="ELX3202_27F12237" Id="{25d2b448-dbf5-42c5-ad0b-ff87fe972d3c}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3202-0000-0016'}
 {attribute addProperty BoxType "ELX3202-0000-0016"}
+{attribute addProperty Description "ELX3202 2Ch. Ana. Input PT100 (RTD), Ex i"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "RTD_Inputs_Channel_1AT %I*AI_Standard_Channel_4A3944819RTD_Inputs_Channel_2AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "670114359"}
 {attribute addProperty Size "30"}

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AO_Output_Channel_BA7EBB7C" Id="{47206141-66ab-463e-98a4-29876d55a481}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ4002-0000-0017'}
+<TcPlcObject>
+	<DUT Name="AO_Output_Channel_BA7EBB7C">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ4002-0000-0017'}
 {attribute addProperty BoxType "EJ4002-0000-0017"}
 {attribute addProperty Id "Analog_outputAT %Q*INT2"}
 {attribute addProperty CRC "3128867708"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Beckhoff_ELM3xxx_31A44528" Id="{9bb50a27-8e53-4cef-8748-e3e88cb19f42}">
+  <DUT Name="Beckhoff_ELM3xxx_31A44528" Id="{81f7e766-fedb-4fc7-b213-a8c5fad0ee1d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
 {attribute addProperty BoxType "EK1100-0000-0018"}
 {attribute addProperty Id "Beckhoff_ELM3xxxEK1122Beckhoff_ELM3xxxEK1122_1A0BF0352A_0001_ELM3002_0000_0016ELM3002_B416BFEF50A_0002_ELM3002_0000_0017ELM3002_B416BFEF50A_0003_ELM3002_0000_0018ELM3002_B416BFEF50A_0004_ELM3004_0000_0016ELM3004_9E251EA472A_0005_ELM3004_0000_0017ELM3004_9E251EA472A_0006_ELM3004_0000_0018ELM3004_9E251EA472A_0007_ELM3004_0000_0019ELM3004_9E251EA472"}
@@ -8,28 +8,28 @@
 {attribute addProperty Size "440"}
 TYPE Beckhoff_ELM3xxx_31A44528 EXTENDS EK1100_1FC0878B :
 STRUCT
-	{attribute addProperty Name "Beckhoff_ELM3xxxEK1122"}
+	{attribute addProperty Name "Beckhoff ELM3xxxEK1122"}
 	{attribute addProperty PreviousPort "Beckhoff ELM3xxx : B"}
 	Beckhoff_ELM3xxxEK1122 : Beckhoff_ELM3xxxEK1122_1A0BF035;
-	{attribute addProperty Name "A_0001_ELM3002_0000_0016"}
+	{attribute addProperty Name "A_0001(ELM3002-0000-0016)"}
 	{attribute addProperty PreviousPort "Beckhoff ELM3xxxEK1122 : C"}
 	A_0001_ELM3002_0000_0016 : ELM3002_B416BFEF;
-	{attribute addProperty Name "A_0002_ELM3002_0000_0017"}
+	{attribute addProperty Name "A_0002(ELM3002-0000-0017)"}
 	{attribute addProperty PreviousPort "A_0001(ELM3002-0000-0016) : B"}
 	A_0002_ELM3002_0000_0017 : ELM3002_B416BFEF;
-	{attribute addProperty Name "A_0003_ELM3002_0000_0018"}
+	{attribute addProperty Name "A_0003(ELM3002-0000-0018)"}
 	{attribute addProperty PreviousPort "A_0002(ELM3002-0000-0017) : B"}
 	A_0003_ELM3002_0000_0018 : ELM3002_B416BFEF;
-	{attribute addProperty Name "A_0004_ELM3004_0000_0016"}
+	{attribute addProperty Name "A_0004(ELM3004-0000-0016)"}
 	{attribute addProperty PreviousPort "A_0003(ELM3002-0000-0018) : B"}
 	A_0004_ELM3004_0000_0016 : ELM3004_9E251EA4;
-	{attribute addProperty Name "A_0005_ELM3004_0000_0017"}
+	{attribute addProperty Name "A_0005(ELM3004-0000-0017)"}
 	{attribute addProperty PreviousPort "A_0004(ELM3004-0000-0016) : B"}
 	A_0005_ELM3004_0000_0017 : ELM3004_9E251EA4;
-	{attribute addProperty Name "A_0006_ELM3004_0000_0018"}
+	{attribute addProperty Name "A_0006(ELM3004-0000-0018)"}
 	{attribute addProperty PreviousPort "A_0005(ELM3004-0000-0017) : B"}
 	A_0006_ELM3004_0000_0018 : ELM3004_9E251EA4;
-	{attribute addProperty Name "A_0007_ELM3004_0000_0019"}
+	{attribute addProperty Name "A_0007(ELM3004-0000-0019)"}
 	{attribute addProperty PreviousPort "A_0006(ELM3004-0000-0018) : B"}
 	A_0007_ELM3004_0000_0019 : ELM3004_9E251EA4;
 END_STRUCT

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="STM_Status_DE0D6B37" Id="{51d19647-f1c6-4e6b-99ca-9c4b018796c9}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7037-0000-0020'}
+<TcPlcObject>
+	<DUT Name="STM_Status_DE0D6B37">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7037-0000-0020'}
 {attribute addProperty BoxType "EJ7037-0000-0020"}
 {attribute addProperty Id "StatusAT %I*Status_1E008DB912"}
 {attribute addProperty CRC "3725421367"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

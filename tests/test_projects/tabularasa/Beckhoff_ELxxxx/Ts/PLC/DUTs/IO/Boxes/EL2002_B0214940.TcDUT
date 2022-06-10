@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2002_B0214940" Id="{56441810-27a2-412e-803d-a9997c625887}">
+  <DUT Name="EL2002_B0214940" Id="{65c09aee-683a-40a9-aa65-dfa37e273993}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2002--0000'}
 {attribute addProperty BoxType "EL2002--0000"}
+{attribute addProperty Description "EL2002 2Ch. Dig. Output 24V, 0.5A"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2954971456"}
 {attribute addProperty Size "5"}

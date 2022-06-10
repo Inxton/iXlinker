@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AT2002_33A3DF1B" Id="{bb989b7f-b1b1-4995-8317-9afc8603235a}">
+  <DUT Name="AT2002_33A3DF1B" Id="{65f927f8-81c4-406a-ae22-f904dfc84ba3}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2002-5249-0018'}
 {attribute addProperty BoxType "AT2002-5249-0018"}
+{attribute addProperty Description "AT2002-5249 Sensor line (Track management) with feed"}
+{attribute addProperty Physics "K"}
 {attribute addProperty Id "FB_InputsAT %I*FB_Inputs_4BC4AA0166FB_OutputsAT %Q*FB_Outputs_DAFD38E02WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "866377499"}
 {attribute addProperty Size "80"}

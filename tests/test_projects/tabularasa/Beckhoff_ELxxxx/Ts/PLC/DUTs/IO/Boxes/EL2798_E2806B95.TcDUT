@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2798_E2806B95" Id="{564d4a81-f777-46f3-8a40-ca59d9d6f9c7}">
+  <DUT Name="EL2798_E2806B95" Id="{c59a58bc-5b83-4101-bb28-9ebb175be9c7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2798-0000-0016'}
 {attribute addProperty BoxType "EL2798-0000-0016"}
+{attribute addProperty Description "EL2798 8Ch. Dig. Output 24V AC/DC, 2A, potential-free"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71Channel_3AT %Q*Channel_42CA91F71Channel_4AT %Q*Channel_42CA91F71Channel_5AT %Q*Channel_42CA91F71Channel_6AT %Q*Channel_42CA91F71Channel_7AT %Q*Channel_42CA91F71Channel_8AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "3800066965"}
 {attribute addProperty Size "11"}

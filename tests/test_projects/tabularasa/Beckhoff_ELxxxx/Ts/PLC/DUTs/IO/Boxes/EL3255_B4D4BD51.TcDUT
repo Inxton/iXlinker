@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3255_B4D4BD51" Id="{76d20147-2a4e-4bee-bd75-00a44acabe00}">
+  <DUT Name="EL3255_B4D4BD51" Id="{85c2ddeb-5098-4b02-911a-c90690d69883}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3255-0000-0020'}
 {attribute addProperty BoxType "EL3255-0000-0020"}
+{attribute addProperty Description "EL3255 5Ch. potentiometer measurement with sensor supply"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Compact_Channel_1AT %I*AI_Compact_Channel_80E77D6A2AI_Standard_Channel_3AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_4AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_5AT %I*AI_Standard_Channel_A8DF64E310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3033840977"}
 {attribute addProperty Size "44"}

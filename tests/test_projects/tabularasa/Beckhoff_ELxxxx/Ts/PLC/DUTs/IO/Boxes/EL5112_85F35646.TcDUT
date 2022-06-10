@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL5112_85F35646" Id="{1d0f1723-b612-420e-941e-64750dfde816}">
+  <DUT Name="EL5112_85F35646" Id="{9885327f-f7eb-4207-8e2f-76aa33c4e700}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5112-0000-0016'}
 {attribute addProperty BoxType "EL5112-0000-0016"}
+{attribute addProperty Description "EL5112 2Ch. Inc. Encoder 5V (2xAB or 1xABC RS422,TTL)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "ENC_Status_Channel_1AT %I*ENC_Status_Channel_10A67E5232ENC_Control_Channel_1AT %Q*ENC_Control_Channel_4C8A739514WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2247317062"}
 {attribute addProperty Size "58"}

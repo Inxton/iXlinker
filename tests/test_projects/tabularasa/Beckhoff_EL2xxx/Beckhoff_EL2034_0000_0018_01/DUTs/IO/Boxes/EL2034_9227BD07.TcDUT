@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2034_9227BD07" Id="{b4f83d61-dfa3-4a94-9d25-12302a7ef2f7}">
+  <DUT Name="EL2034_9227BD07" Id="{af3afae6-f843-4b29-8880-cd8d152c3ec3}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2034-0000-0018'}
 {attribute addProperty BoxType "EL2034-0000-0018"}
+{attribute addProperty Description "EL2034 4Ch. Dig. Output 24V, 2A, Diagnostic"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Diag_1AT %I*Diag_A72B1E171Diag_2AT %I*Diag_A72B1E171Diag_3AT %I*Diag_A72B1E171Diag_4AT %I*Diag_A72B1E171Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71Channel_3AT %Q*Channel_42CA91F71Channel_4AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2452077831"}
 {attribute addProperty Size "12"}

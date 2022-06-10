@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP3182_0BD171D7" Id="{d606d4fb-751a-4d1f-8266-5fa9d84d6022}">
+  <DUT Name="EP3182_0BD171D7" Id="{605cbd8a-5345-4d0a-ae29-68ed6fe74d97}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3182-1002-0017'}
 {attribute addProperty BoxType "EP3182-1002-0017"}
+{attribute addProperty Description "EP3182-1002 2Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable, single ended, 2Ch digital output"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_4A3944819AI_Standard_Channel_2AT %I*AI_Standard_Channel_4A3944819DO_OutputsAT %Q*DO_Outputs_C0F4C3832WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "198275543"}
 {attribute addProperty Size "32"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3041_E22DFA28" Id="{f97cbaa5-c47f-4e3f-9939-bc9bfd8e137b}">
+  <DUT Name="EL3041_E22DFA28" Id="{ba16ab35-8273-4e72-9e72-cf6fe721da91}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3041-0000-0017'}
 {attribute addProperty BoxType "EL3041-0000-0017"}
+{attribute addProperty Description "EL3041 1Ch. Ana. Input 0-20mA"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_StandardAT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3794663976"}
 {attribute addProperty Size "21"}

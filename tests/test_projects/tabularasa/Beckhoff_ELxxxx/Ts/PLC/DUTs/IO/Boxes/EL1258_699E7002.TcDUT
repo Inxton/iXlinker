@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL1258_699E7002" Id="{8e2cbc56-2328-41e8-8762-c695c9e15fe6}">
+  <DUT Name="EL1258_699E7002" Id="{b5c49ab8-78a6-476c-991c-a04174e78af1}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1258-0010-0017'}
 {attribute addProperty BoxType "EL1258-0010-0017"}
+{attribute addProperty Description "EL1258-0010 8Ch. Dig Input 24V with Multi-Time-Stamp, ground switching"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "MTI_Inputs_1x_Channel_1AT %I*MTI_Inputs_1x_Channel_CC1B212F11MTI_Inputs_1x_Channel_2AT %I*MTI_Inputs_1x_Channel_CC1B212F11MTI_Inputs_1x_Channel_3AT %I*MTI_Inputs_1x_Channel_CC1B212F11MTI_Inputs_1x_Channel_4AT %I*MTI_Inputs_1x_Channel_CC1B212F11MTI_Inputs_1x_Channel_5AT %I*MTI_Inputs_1x_Channel_CC1B212F11MTI_Inputs_1x_Channel_6AT %I*MTI_Inputs_1x_Channel_CC1B212F11MTI_Inputs_1x_Channel_7AT %I*MTI_Inputs_1x_Channel_CC1B212F11MTI_Inputs_1x_Channel_8AT %I*MTI_Inputs_1x_Channel_CC1B212F11MTI_Outputs_Channel_1AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_2AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_3AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_4AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_5AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_6AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_7AT %Q*MTI_Outputs_Channel_0F1028A12MTI_Outputs_Channel_8AT %Q*MTI_Outputs_Channel_0F1028A12WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
 {attribute addProperty CRC "1771991042"}
 {attribute addProperty Size "124"}

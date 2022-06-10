@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ELX3351_DF51302B" Id="{1e7bc53d-b0bb-40be-8e9d-1c1d00d1fa02}">
+  <DUT Name="ELX3351_DF51302B" Id="{946e449f-f358-4436-b4fb-56ac0a1c9900}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3351-0000-0016'}
 {attribute addProperty BoxType "ELX3351-0000-0016"}
+{attribute addProperty Description "ELX3351 1-channel precise load cell analysis, Ex i"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "RMB_StatusAT %I*RMB_Status_EE6B49B46RMB_Value_INT32AT %I*RMB_Value_INT_E9189C4B4RMB_ControlAT %Q*RMB_Control_4997AEF64WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3746639915"}
 {attribute addProperty Size "26"}

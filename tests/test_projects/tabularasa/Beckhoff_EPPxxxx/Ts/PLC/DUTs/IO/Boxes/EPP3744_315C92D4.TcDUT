@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP3744_315C92D4" Id="{97d8b246-bfdd-4aae-bc48-8f833de95a53}">
+  <DUT Name="EPP3744_315C92D4" Id="{e2aaaa39-11d5-4013-a42d-f792da7a836d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP3744-0041-0016'}
 {attribute addProperty BoxType "EPP3744-0041-0016"}
+{attribute addProperty Description "EPP3744-0041 5Ch. Absolute Pressure 6Ch. Dig. Input 10us 2Ch. Dig. Output 24V 0,5A M8"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "DIG_InputsAT %I*DIG_Inputs_697E0EF26AI_Inputs_Channel_1AT %I*AI_Inputs_Channel_4521310411AI_Inputs_Channel_2AT %I*AI_Inputs_Channel_4521310411AI_Inputs_Channel_3AT %I*AI_Inputs_Channel_4521310411AI_Inputs_Channel_4AT %I*AI_Inputs_Channel_4521310411DEV_Inputs_DeviceAT %I*DEV_Inputs_Device_5F4E175E5DIG_OutputsAT %Q*DIG_Outputs_DE230DD52DEV_Outputs_DeviceAT %Q*DEV_Outputs_Device_59FFD2471WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "828150484"}
 {attribute addProperty Size "70"}

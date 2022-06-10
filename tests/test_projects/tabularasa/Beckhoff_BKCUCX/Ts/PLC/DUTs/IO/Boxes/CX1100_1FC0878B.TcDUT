@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="CX1100_1FC0878B" Id="{d2633629-be70-4fed-83c4-e98f9945e58c}">
+  <DUT Name="CX1100_1FC0878B" Id="{2c9ba5d9-558f-4a70-8fe0-0c161bb1a122}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CX1100-0004-0000'}
 {attribute addProperty BoxType "CX1100-0004-0000"}
+{attribute addProperty Description "CX1100-0004 EtherCAT Power supply (2A E-Bus)"}
+{attribute addProperty Physics "YKY"}
 {attribute addProperty Id "InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "532711307"}
 {attribute addProperty Size "2"}

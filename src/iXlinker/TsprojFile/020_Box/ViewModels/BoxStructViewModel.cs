@@ -18,16 +18,44 @@
             }
         }
 
-        private string portAPhysics;
-        public string PortAPhysics
+        private string physics;
+        public string Physics
         {
-            get { return this.portAPhysics; }
+            get { return this.physics; }
             set
             {
                 if (!string.IsNullOrEmpty(value))
                 {
-                    this.portAPhysics = value;
-                    NotifyPropertyChanged(nameof(PortAPhysics));
+                    this.physics = value;
+                    NotifyPropertyChanged(nameof(Physics));
+                }
+            }
+        }
+
+        private string description;
+        public string Description
+        {
+            get { return this.description; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.description = value;
+                    NotifyPropertyChanged(nameof(Description));
+                }
+            }
+        }
+
+        private string nameOrigin;
+        public string NameOrigin
+        {
+            get { return this.nameOrigin; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.nameOrigin = value;
+                    NotifyPropertyChanged(nameof(NameOrigin));
                 }
             }
         }

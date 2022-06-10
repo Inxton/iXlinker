@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EK1100_1FC0878B" Id="{5e488279-0d04-4a2e-95d2-43f885d8d166}">
+  <DUT Name="EK1100_1FC0878B" Id="{5c6f8431-285c-4d22-80d9-765109b4e8a5}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
 {attribute addProperty BoxType "EK1100-0000-0018"}
+{attribute addProperty Description "EK1100 EtherCAT Coupler (2A E-Bus)"}
+{attribute addProperty Physics "YKY"}
 {attribute addProperty Id "InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "532711307"}
 {attribute addProperty Size "2"}

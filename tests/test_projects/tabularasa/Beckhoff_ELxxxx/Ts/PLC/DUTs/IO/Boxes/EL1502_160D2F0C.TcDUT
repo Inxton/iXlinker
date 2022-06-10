@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL1502_160D2F0C" Id="{907a0ade-6ce5-4258-9e6f-0f6fcc66e9d3}">
+  <DUT Name="EL1502_160D2F0C" Id="{986451a5-40ca-47ca-918b-ecdb35173f7e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1502-0000-0018'}
 {attribute addProperty BoxType "EL1502-0000-0018"}
+{attribute addProperty Description "EL1502 2Ch. +/- Counter 24V, 100kHz"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "CNT_InputsAT %I*CNT_Inputs_B6C38E7112CNT_OutputsAT %Q*CNT_Outputs_458039AE8WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "369962764"}
 {attribute addProperty Size "32"}

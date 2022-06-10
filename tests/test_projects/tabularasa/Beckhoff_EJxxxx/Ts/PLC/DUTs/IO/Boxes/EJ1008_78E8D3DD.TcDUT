@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ1008_78E8D3DD" Id="{d219501c-00e0-4f9e-bd82-b6e9841cc11b}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1008-0000-0017'}
+<TcPlcObject>
+	<DUT Name="EJ1008_78E8D3DD">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1008-0000-0017'}
 {attribute addProperty BoxType "EJ1008-0000-0017"}
+{attribute addProperty Description "EJ1008 8Ch. Dig. Input 24V, 3ms"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %I*Channel_830843C11Channel_6AT %I*Channel_830843C11Channel_7AT %I*Channel_830843C11Channel_8AT %I*Channel_830843C11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2028524509"}
 {attribute addProperty Size "12"}
@@ -31,5 +32,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

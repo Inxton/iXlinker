@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="FSOE_9A7ED3DD" Id="{f8be0c07-8743-4d73-829c-e44d0c979007}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1914-0000-0017'}
+<TcPlcObject>
+	<DUT Name="FSOE_9A7ED3DD">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1914-0000-0017'}
 {attribute addProperty BoxType "EJ1914-0000-0017"}
 {attribute addProperty Id "FSoE_CommandUSINT1FSIN_Module_1_ErrAckBOOL1FSIN_Module_2_ErrAckBOOL1FSoE_CRC_000UINT2FSoE_Connection_IDUINT2"}
 {attribute addProperty CRC "2592003037"}
@@ -21,5 +20,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

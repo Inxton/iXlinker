@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AMI8000_68DB4BA0" Id="{315d654d-043a-4b0b-8347-aff1b0028caa}">
+  <DUT Name="AMI8000_68DB4BA0" Id="{8a643805-8f90-4a2c-8ee9-7ac47c19c8dc}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AMI8000-0000-0016'}
 {attribute addProperty BoxType "AMI8000-0000-0016"}
+{attribute addProperty Description "AMI8000-0000 Servo motor 48 V DC"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "FB_PositionAT %I*FB_Position_3FA094ED4DRV_StatuswordAT %I*DRV_Statusword_9B36FDFC2DRV_Following_error_actual_valueAT %I*DRV_Following_error_actual_value_5AA320BF4DRV_ControlwordAT %Q*DRV_Controlword_F3F147212DRV_Target_positionAT %Q*DRV_Target_position_05240F144WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_8300A75E21"}
 {attribute addProperty CRC "1759202208"}
 {attribute addProperty Size "39"}

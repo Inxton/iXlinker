@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EK1310_6BC01D14" Id="{e9cb7f31-883d-4d6d-b7cf-343933bcfb40}">
+  <DUT Name="EK1310_6BC01D14" Id="{eec0967a-bb1e-4463-ad34-526d2c5316f5}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1310-0000-0017'}
 {attribute addProperty BoxType "EK1310-0000-0017"}
+{attribute addProperty Description "EK1310 EtherCAT P extension with feed-in"}
+{attribute addProperty Physics "KY"}
 {attribute addProperty Id "Status_UsAT %I*Status_Us_B1E819A21Status_UpAT %I*Status_Up_B1E819A21WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "1807752468"}
 {attribute addProperty Size "6"}

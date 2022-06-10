@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2212_25BC0E0A" Id="{f6fdb53b-2015-464e-b866-83bb6eae68a0}">
+  <DUT Name="EL2212_25BC0E0A" Id="{f5148ddd-1125-4c14-84ac-c14bf6a1c630}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2212-0000-0018'}
 {attribute addProperty BoxType "EL2212-0000-0018"}
+{attribute addProperty Description "EL2212 2Ch. dig. output with overexcitation (24V DC, 2.5A, 10A Peak)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "DOX_Status_Channel_1AT %I*DOX_Status_Channel_09DD45C87DOX_Status_Channel_2AT %I*DOX_Status_Channel_09DD45C87DOX_Control_Channel_1AT %Q*DOX_Control_Channel_A74F23633DOX_Control_Channel_2AT %Q*DOX_Control_Channel_A74F23633WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "633081354"}
 {attribute addProperty Size "32"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ER2028_E2806B95" Id="{0acbb753-6148-4f1b-9b89-e01549d9173d}">
+  <DUT Name="ER2028_E2806B95" Id="{17e4e342-eb3b-48f7-8269-718e75022f10}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER2028-0001-0017'}
 {attribute addProperty BoxType "ER2028-0001-0017"}
+{attribute addProperty Description "ER2028-0001 8 Ch. Dig. Output 24V, 2A, M8"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71Channel_3AT %Q*Channel_42CA91F71Channel_4AT %Q*Channel_42CA91F71Channel_5AT %Q*Channel_42CA91F71Channel_6AT %Q*Channel_42CA91F71Channel_7AT %Q*Channel_42CA91F71Channel_8AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "3800066965"}
 {attribute addProperty Size "11"}

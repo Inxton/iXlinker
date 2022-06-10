@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL9540_67D07E0A" Id="{85ae9a82-ebb2-4c40-bd64-a3ef9ce575e3}">
+  <DUT Name="EL9540_67D07E0A" Id="{586405d4-28c5-420a-a2a2-d032bb0c9bbd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9540-0010-0016'}
 {attribute addProperty BoxType "EL9540-0010-0016"}
+{attribute addProperty Description "EL9540-0010 Surge/Overvoltagefilter (Power supply, Diagnostics)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Status_UpAT %I*Status_Up_DB3531282WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "1741717002"}
 {attribute addProperty Size "6"}

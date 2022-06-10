@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ2522_EF4C90EB" Id="{38182adc-eb9a-4705-9558-e803a9facbae}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2522-0000-0022'}
+<TcPlcObject>
+	<DUT Name="EJ2522_EF4C90EB">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2522-0000-0022'}
 {attribute addProperty BoxType "EJ2522-0000-0022"}
+{attribute addProperty Description "EJ2522 2Ch. Pulse Train Output"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "PTO_Status_Channel_1AT %I*PTO_Status_Channel_E0EB10E85PTO_Status_Channel_2AT %I*PTO_Status_Channel_E0EB10E85ENC_Status_Channel_1AT %I*ENC_Status_Channel_A9252C4810ENC_Status_Channel_2AT %I*ENC_Status_Channel_A9252C4810PTO_Control_Channel_1AT %Q*PTO_Control_Channel_9287F8E45PTO_Target_Channel_1AT %Q*PTO_Target_Channel_1F6D5BC64PTO_Control_Channel_2AT %Q*PTO_Control_Channel_9287F8E45PTO_Target_Channel_2AT %Q*PTO_Target_Channel_1F6D5BC64ENC_Control_Channel_1AT %Q*ENC_Control_Channel_686BB9DC6ENC_Control_Channel_2AT %Q*ENC_Control_Channel_686BB9DC6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "4014772459"}
 {attribute addProperty Size "72"}
@@ -35,5 +36,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

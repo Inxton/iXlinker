@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6692_F12D40B3" Id="{2b36d509-c90d-4969-a92a-725bde6cd902}">
+  <DUT Name="EL6692_F12D40B3" Id="{18e2cfed-40e3-4645-bbaa-10426e73fe29}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6692-0002-0016'}
 {attribute addProperty BoxType "EL6692-0002-0016"}
+{attribute addProperty Description "EL6692 EtherCAT Bridge terminal (Secondary)"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "SYNC_InputsAT %I*SYNC_Inputs_462ED3216IO_InputsEMPTY_STRUCTURE0IO_OutputsEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_90184F0C16"}
 {attribute addProperty CRC "4046274739"}
 {attribute addProperty Size "24"}

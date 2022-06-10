@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2732_B0214940" Id="{8f2200f1-0c18-4689-8a66-a70511bddb21}">
+  <DUT Name="EL2732_B0214940" Id="{30f7bf51-93c9-48d6-acfb-95193828e8cb}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2732-0000-0016'}
 {attribute addProperty BoxType "EL2732-0000-0016"}
+{attribute addProperty Description "EL2732 2Ch. Triac Output 12..230V AC, 0.5A, no power contacts"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2954971456"}
 {attribute addProperty Size "5"}

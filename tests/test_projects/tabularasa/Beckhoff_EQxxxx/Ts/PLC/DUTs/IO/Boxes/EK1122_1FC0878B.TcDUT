@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EK1122_1FC0878B" Id="{1e17cd7d-c636-4883-9c19-f24a9f6a1b35}">
+  <DUT Name="EK1122_1FC0878B" Id="{e9e1dc24-14ba-42fc-9ba2-b7af1cc79a1c}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
 {attribute addProperty BoxType "EK1122-0000-0018"}
+{attribute addProperty Description "EK1122 2 port EtherCAT junction"}
+{attribute addProperty Physics "KYKY"}
 {attribute addProperty Id "InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "532711307"}
 {attribute addProperty Size "2"}

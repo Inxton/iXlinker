@@ -42,7 +42,7 @@ namespace TsprojFile.Scan
             TcSmProjectProjectPlcProject plcProj = new TcSmProjectProjectPlcProject();
             for (int i = 0; i < Tc.Project.Plc.Project.Length; i++)
             {
-                string dtePlcProjName = vs.PlcProject.Name;
+                string dtePlcProjName = vs.PlcProject.Plcproj.Name;
                 string tcPlcProjName = Tc.Project.Plc.Project[i].Name;
                 if (dtePlcProjName.Equals(tcPlcProjName))
                 {

@@ -49,7 +49,7 @@ namespace TsprojFile.Scan
         private bool PropertyFilterFit(BoxStructViewModel actBoxStruct, StructureBase structureBase)
         {
             bool ret = false;
-            string PortAPhysicsPropperty = nameof(BoxViewModel.PortAPhysics);
+            string PortAPhysicsPropperty = nameof(BoxViewModel.Physics);
 
             if (structureBase.PropertyFilter.Equals("*"))
             {
@@ -62,7 +62,7 @@ namespace TsprojFile.Scan
 
                 if (propertyName.Equals(PortAPhysicsPropperty))
                 {
-                    if (propertyValue.Equals(actBoxStruct.PortAPhysics))
+                    if (propertyValue.Equals(actBoxStruct.Physics))
                     {
                         ret = true;
                     }
@@ -70,7 +70,7 @@ namespace TsprojFile.Scan
                     {
                         int length = propertyValue.LastIndexOf("*");
                         string baseValue = propertyValue.Substring(0, length);
-                        string actValue = actBoxStruct.PortAPhysics;
+                        string actValue = actBoxStruct.Physics;
                         if (actValue.Length >= length)
                         {
                             actValue = actValue.Substring(0, length);

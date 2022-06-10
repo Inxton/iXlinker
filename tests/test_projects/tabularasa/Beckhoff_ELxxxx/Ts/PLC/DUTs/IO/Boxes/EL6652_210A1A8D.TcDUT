@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6652_210A1A8D" Id="{604386e5-aea0-4829-bf68-aac1533adf8f}">
+  <DUT Name="EL6652_210A1A8D" Id="{3557a511-b43d-419b-ba46-b03fe796312b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6652-0000-0017'}
 {attribute addProperty BoxType "EL6652-0000-0017"}
+{attribute addProperty Description "EL6652 EtherNet/IP Scanner (Master)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "InfoDataAT %I*InfoData_90184F0C16"}
 {attribute addProperty CRC "554310285"}
 {attribute addProperty Size "16"}

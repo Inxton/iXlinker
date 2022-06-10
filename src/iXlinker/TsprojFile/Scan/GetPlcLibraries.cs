@@ -12,7 +12,7 @@ namespace TsprojFile.Scan
     {
         private void GetPlcLibraries(Solution vs)
         {
-            string plcProjPath = vs.PlcProject.CompletePathInFileSystem;
+            string plcProjPath = vs.PlcProject.Plcproj.CompletePathInFileSystem;
             XmlSerializer serializer = new XmlSerializer(typeof(Project));
             StreamReader reader = new StreamReader(plcProjPath);
             Project plcProject = (Project)serializer.Deserialize(reader);

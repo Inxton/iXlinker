@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ7211_FC4732E8" Id="{feb08c8e-1da5-41ea-aa5c-8ae980cdb2a5}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0010-0030'}
+<TcPlcObject>
+	<DUT Name="EJ7211_FC4732E8">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0010-0030'}
 {attribute addProperty BoxType "EJ7211-0010-0030"}
+{attribute addProperty Description "EJ7211-0010 1Ch. MDP742 Servo motor output stage with OCT (50V, 4.5A RMS)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "FB_PositionAT %I*FB_Position_3FA094ED4DRV_StatuswordAT %I*DRV_Statusword_9B36FDFC2DRV_ControlwordAT %Q*DRV_Controlword_F3F147212DRV_Target_velocityAT %Q*DRV_Target_velocity_08A9583B4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6185D47C20"}
 {attribute addProperty CRC "4232524520"}
 {attribute addProperty Size "34"}
@@ -23,5 +24,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

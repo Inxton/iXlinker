@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Beckhoff_EKxxxx_0080EK1122_9CBA35F2" Id="{7dfca217-3bd0-4dd7-b587-5972d0b46801}">
+  <DUT Name="Beckhoff_EKxxxx_0080EK1122_9CBA35F2" Id="{bfb2d875-0a08-49a2-a172-4d966851a558}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
 {attribute addProperty BoxType "EK1122-0000-0018"}
 {attribute addProperty Id "Beckhoff_EKxxxx_0080sub_EK1100EK1100_1FC0878B2"}
@@ -8,7 +8,7 @@
 {attribute addProperty Size "2"}
 TYPE Beckhoff_EKxxxx_0080EK1122_9CBA35F2 EXTENDS EK1122_1FC0878B :
 STRUCT
-	{attribute addProperty Name "Beckhoff_EKxxxx_0080sub_EK1100"}
+	{attribute addProperty Name "Beckhoff EKxxxx-0080sub EK1100"}
 	{attribute addProperty PreviousPort "Beckhoff EKxxxx-0080EK1122 : D"}
 	Beckhoff_EKxxxx_0080sub_EK1100 : EK1100_1FC0878B;
 END_STRUCT

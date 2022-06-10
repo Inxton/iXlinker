@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3433_0EB67A0F" Id="{8e69221d-577c-4de6-9053-be339e7e0747}">
+  <DUT Name="EL3433_0EB67A0F" Id="{92738e6f-2646-4613-8187-4dbac50ae68d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3433-0000-0016'}
 {attribute addProperty BoxType "EL3433-0000-0016"}
+{attribute addProperty Description "EL3433 3Ch. Power Measuring"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "PM_Inputs_Channel_1AT %I*PM_Inputs_Channel_345EAE5425PM_Inputs_Channel_2AT %I*PM_Inputs_Channel_345EAE5425PM_Inputs_Channel_3AT %I*PM_Inputs_Channel_345EAE5425PM_Inputs_AuxiliaryAT %I*PM_Inputs_Auxiliary_3661DB6D9PM_Outputs_Channel_1AT %Q*PM_Outputs_Channel_E5FBDE301PM_Outputs_Channel_2AT %Q*PM_Outputs_Channel_E5FBDE301PM_Outputs_Channel_3AT %Q*PM_Outputs_Channel_E5FBDE301PM_Outputs_AuxiliaryAT %Q*PM_Outputs_Auxiliary_6BC1946F2WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "246839823"}
 {attribute addProperty Size "101"}

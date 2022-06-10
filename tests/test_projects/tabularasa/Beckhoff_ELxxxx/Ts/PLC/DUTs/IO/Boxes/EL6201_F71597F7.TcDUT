@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6201_F71597F7" Id="{8c47c744-2465-4e96-a904-865f2891b453}">
+  <DUT Name="EL6201_F71597F7" Id="{8683e366-0777-45ee-a35f-5b46b792faa0}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6201-0000-0018'}
 {attribute addProperty BoxType "EL6201-0000-0018"}
+{attribute addProperty Description "EL6201 AS-Interface Master Terminal"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "ASI_Inputs_DeviceAT %I*ASI_Inputs_Device_7F2828A5248ASI_StatusAT %I*ASI_Status_279C390313ASI_Outputs_DeviceAT %Q*ASI_Outputs_Device_16036E19248ASI_ControlAT %Q*ASI_Control_2BED18937WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "4145387511"}
 {attribute addProperty Size "528"}

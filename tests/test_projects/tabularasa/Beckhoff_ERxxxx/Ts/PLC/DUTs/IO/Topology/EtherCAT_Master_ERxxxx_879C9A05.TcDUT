@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EtherCAT_Master_ERxxxx_879C9A05" Id="{05efc352-fc7e-4974-b5e8-0e6c0edb167e}">
+  <DUT Name="EtherCAT_Master_ERxxxx_879C9A05" Id="{8dd4f849-92e3-4abc-b265-0f093b81c08f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "Beckhoff_ER1xxxBeckhoff_ER1xxx_A63E075A508Beckhoff_ER2xxxBeckhoff_ER2xxx_CED8BB26910Beckhoff_ER3xxxBeckhoff_ER3xxx_58A653D9618Beckhoff_ER4xxxBeckhoff_ER4xxx_797AEBB5112Beckhoff_ER5xxxBeckhoff_ER5xxx_22A4CB20104Beckhoff_ER6xxxBeckhoff_ER6xxx_896D799E446Beckhoff_ER7xxxBeckhoff_ER7xxx_FFC5AE47686Beckhoff_ER8xxxBeckhoff_ER8xxx_509945A972SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
@@ -8,28 +8,28 @@
 {attribute addProperty Size "3768"}
 TYPE EtherCAT_Master_ERxxxx_879C9A05 :
 STRUCT
-	{attribute addProperty Name "Beckhoff_ER1xxx"}
+	{attribute addProperty Name "Beckhoff ER1xxx"}
 	{attribute addProperty PreviousPort "EtherCAT_Master_ERxxxx : Master"}
 	Beckhoff_ER1xxx : Beckhoff_ER1xxx_A63E075A;
-	{attribute addProperty Name "Beckhoff_ER2xxx"}
+	{attribute addProperty Name "Beckhoff ER2xxx"}
 	{attribute addProperty PreviousPort "Beckhoff ER1xxx : C"}
 	Beckhoff_ER2xxx : Beckhoff_ER2xxx_CED8BB26;
-	{attribute addProperty Name "Beckhoff_ER3xxx"}
+	{attribute addProperty Name "Beckhoff ER3xxx"}
 	{attribute addProperty PreviousPort "Beckhoff ER2xxx : C"}
 	Beckhoff_ER3xxx : Beckhoff_ER3xxx_58A653D9;
-	{attribute addProperty Name "Beckhoff_ER4xxx"}
+	{attribute addProperty Name "Beckhoff ER4xxx"}
 	{attribute addProperty PreviousPort "Beckhoff ER3xxx : C"}
 	Beckhoff_ER4xxx : Beckhoff_ER4xxx_797AEBB5;
-	{attribute addProperty Name "Beckhoff_ER5xxx"}
+	{attribute addProperty Name "Beckhoff ER5xxx"}
 	{attribute addProperty PreviousPort "Beckhoff ER4xxx : C"}
 	Beckhoff_ER5xxx : Beckhoff_ER5xxx_22A4CB20;
-	{attribute addProperty Name "Beckhoff_ER6xxx"}
+	{attribute addProperty Name "Beckhoff ER6xxx"}
 	{attribute addProperty PreviousPort "Beckhoff ER5xxx : C"}
 	Beckhoff_ER6xxx : Beckhoff_ER6xxx_896D799E;
-	{attribute addProperty Name "Beckhoff_ER7xxx"}
+	{attribute addProperty Name "Beckhoff ER7xxx"}
 	{attribute addProperty PreviousPort "Beckhoff ER6xxx : C"}
 	Beckhoff_ER7xxx : Beckhoff_ER7xxx_FFC5AE47;
-	{attribute addProperty Name "Beckhoff_ER8xxx"}
+	{attribute addProperty Name "Beckhoff ER8xxx"}
 	{attribute addProperty PreviousPort "Beckhoff ER7xxx : C"}
 	Beckhoff_ER8xxx : Beckhoff_ER8xxx_509945A9;
 	{attribute addProperty Name "SyncUnits"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3121_ADDA2D08" Id="{f6f06668-7493-4500-b5a7-cf9a8418775d}">
+  <DUT Name="EL3121_ADDA2D08" Id="{194584f5-6d55-4d56-a43b-fde9c6f9d713}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3121-0000-0016'}
 {attribute addProperty BoxType "EL3121-0000-0016"}
+{attribute addProperty Description "EL3121 1Ch. Ana. Input 4-20mA Diff."}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_StandardAT %I*AI_Standard_A8DF64E310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2916756744"}
 {attribute addProperty Size "22"}

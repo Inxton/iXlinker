@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3351_6847F283" Id="{c3be7acf-789f-4e53-8208-22934751fbe9}">
+  <DUT Name="EL3351_6847F283" Id="{b43992bc-07ad-4235-a76a-c238cdb81550}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3351-0000-0016'}
 {attribute addProperty BoxType "EL3351-0000-0016"}
+{attribute addProperty Description "EL3351 1Ch. Ana. Input Resistor Bridge Terminal, Diff. 16bit "}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AIBridge_InputsAT %I*AIBridge_Inputs_555AA1E89AISupply_InputsAT %I*AISupply_Inputs_555AA1E89WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1749545603"}
 {attribute addProperty Size "30"}

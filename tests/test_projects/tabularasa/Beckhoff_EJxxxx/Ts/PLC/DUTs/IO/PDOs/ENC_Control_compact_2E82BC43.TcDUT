@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Control_compact_2E82BC43" Id="{71c6644c-3d0f-4e6d-b18c-cfea4aadf85f}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
+<TcPlcObject>
+	<DUT Name="ENC_Control_compact_2E82BC43">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
 {attribute addProperty BoxType "EJ2521-0224-0016"}
 {attribute addProperty Id "ControlAT %Q*Control_F189B7373Set_counter_valueAT %Q*UINT2"}
 {attribute addProperty CRC "780319811"}
@@ -15,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

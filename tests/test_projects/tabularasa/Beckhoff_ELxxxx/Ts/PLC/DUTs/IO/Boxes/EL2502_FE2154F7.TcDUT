@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2502_FE2154F7" Id="{9a5f4df4-4361-4a1a-acc4-950528b49f38}">
+  <DUT Name="EL2502_FE2154F7" Id="{7b135847-c502-4e2b-8d75-36cf893bb2a7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2502-0000-0016'}
 {attribute addProperty BoxType "EL2502-0000-0016"}
+{attribute addProperty Description "EL2502 2Ch. PWM Output, 24V"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "PWM_Outputs_Channel_1AT %Q*PWM_Outputs_Channel_4C6289CD2PWM_Outputs_Channel_2AT %Q*PWM_Outputs_Channel_4C6289CD2WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "4263597303"}
 {attribute addProperty Size "15"}

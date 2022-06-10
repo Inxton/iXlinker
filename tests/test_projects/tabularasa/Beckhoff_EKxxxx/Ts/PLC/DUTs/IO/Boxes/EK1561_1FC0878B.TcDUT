@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EK1561_1FC0878B" Id="{4eceb662-1be9-4a61-9c38-2dc3cfc09022}">
+  <DUT Name="EK1561_1FC0878B" Id="{25334b03-72b2-4ee9-b518-e446d5f18b68}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1561-0000-0018'}
 {attribute addProperty BoxType "EK1561-0000-0018"}
+{attribute addProperty Description "EK1561 1 port EtherCAT junction (POF)"}
+{attribute addProperty Physics "K_KY"}
 {attribute addProperty Id "InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "532711307"}
 {attribute addProperty Size "2"}

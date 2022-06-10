@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AT2001_2EA6C9BF" Id="{22b36d05-8074-4b1a-8af7-f14f457def72}">
+  <DUT Name="AT2001_2EA6C9BF" Id="{627b07e2-1674-4c22-88e2-0dc719def2ae}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2001-0250-0016'}
 {attribute addProperty BoxType "AT2001-0250-0016"}
+{attribute addProperty Description "AT2001-0250 Motor module with feed 250 mm, 50V"}
+{attribute addProperty Physics "YKY"}
 {attribute addProperty Id "CC_InputsAT %I*CC_Inputs_2C1C9EE032CC_OutputsAT %Q*CC_Outputs_69F9BE1432WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
 {attribute addProperty CRC "782682559"}
 {attribute addProperty Size "84"}

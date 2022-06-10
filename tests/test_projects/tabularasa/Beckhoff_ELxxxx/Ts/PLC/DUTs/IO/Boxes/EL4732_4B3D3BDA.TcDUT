@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL4732_4B3D3BDA" Id="{8584e757-7a00-4d8c-a6c1-3b98e9f9413f}">
+  <DUT Name="EL4732_4B3D3BDA" Id="{f7080cfa-348a-4cf4-aecc-d783d6bdca24}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL4732-0000-0002'}
 {attribute addProperty BoxType "EL4732-0000-0002"}
+{attribute addProperty Description "EL4732 2Ch. Ana. Output +/-10V, Oversample"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Ch1_CycleCountAT %Q*Ch1_CycleCount_08F5A7EF2Ch1_Sample_0AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_1AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_2AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_3AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_4AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_5AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_6AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_7AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_8AT %Q*Ch1_Sample_C81C74F62Ch1_Sample_9AT %Q*Ch1_Sample_C81C74F62Ch2_CycleCountAT %Q*Ch2_CycleCount_0221DD9F2Ch2_Sample_0AT %Q*Ch2_Sample_F06927112Ch2_Sample_1AT %Q*Ch2_Sample_F06927112Ch2_Sample_2AT %Q*Ch2_Sample_F06927112Ch2_Sample_3AT %Q*Ch2_Sample_F06927112Ch2_Sample_4AT %Q*Ch2_Sample_F06927112Ch2_Sample_5AT %Q*Ch2_Sample_F06927112Ch2_Sample_6AT %Q*Ch2_Sample_F06927112Ch2_Sample_7AT %Q*Ch2_Sample_F06927112Ch2_Sample_8AT %Q*Ch2_Sample_F06927112Ch2_Sample_9AT %Q*Ch2_Sample_F06927112WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "1262304218"}
 {attribute addProperty Size "55"}

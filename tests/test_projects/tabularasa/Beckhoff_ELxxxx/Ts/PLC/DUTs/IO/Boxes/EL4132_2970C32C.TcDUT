@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL4132_2970C32C" Id="{25568134-09ee-49f3-8326-15cf00e327da}">
+  <DUT Name="EL4132_2970C32C" Id="{ccc2c724-aa4b-4131-8239-0b1500f21867}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL4132--0000'}
 {attribute addProperty BoxType "EL4132--0000"}
+{attribute addProperty Description "EL4132 2Ch. Ana. Output +/-10V"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_5F9B7EA62Channel_2AT %Q*Channel_5F9B7EA62WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "695255852"}
 {attribute addProperty Size "15"}

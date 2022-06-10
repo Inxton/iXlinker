@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL5151_27CA2A4C" Id="{eb528192-9592-44dd-ac46-750bc9f4a1f4}">
+  <DUT Name="EL5151_27CA2A4C" Id="{039c406b-d39b-462e-91aa-38dd89c89fd7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5151-0021-0018'}
 {attribute addProperty BoxType "EL5151-0021-0018"}
+{attribute addProperty Description "EL5151-0021 1Ch. Inc. Encoder, 24V DC Output"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "ENC_StatusAT %I*ENC_Status_AC51C0C019ENC_Filtered_latchAT %I*ENC_Filtered_latch_2CF1EFF68ENC_ControlAT %Q*ENC_Control_EB66524120WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "667560524"}
 {attribute addProperty Size "59"}

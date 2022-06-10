@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP8309_A0C54F77" Id="{24fcf800-0881-4e7d-a169-398ad19648d3}">
+  <DUT Name="EP8309_A0C54F77" Id="{20116161-e80a-40a2-b116-5659a3775312}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP8309-0022-0021'}
 {attribute addProperty BoxType "EP8309-0022-0021"}
+{attribute addProperty Description "EP8309-0022 2Ch. Ana. Input 4-20mA, 1Ch. Pulse Width Current Output (24V, 1.2A), 1 Ch Ana. Output, 2Ch Dig. Out 24V, 0.5A, 4Ch Dig. In. 24V, 4Ch Dig In/Out 24V, 0.5A, M12"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "AI_Inputs_Channel_1AT %I*AI_Inputs_Channel_A8DF64E310AI_Inputs_Channel_2AT %I*AI_Inputs_Channel_A8DF64E310TACHO_Single_Shaft_Mode_Input_Channel_1AT %I*TACHO_Single_Shaft_Mode_Input_Channel_C331CA3E10DIG_InputsAT %I*DIG_Inputs_495F5DA48PWM_StatusAT %I*PWM_Status_77939B114DEV_InputsAT %I*DEV_Inputs_FBF180A42TACHO_Output_Channel_1AT %Q*TACHO_Output_Channel_600697D91DIG_OutputsAT %Q*DIG_Outputs_0E2843948PWM_ControlAT %Q*PWM_Control_63F162E45WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2697285495"}
 {attribute addProperty Size "70"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3068_E17B118E" Id="{0b471faa-3d4a-4fda-9d97-8d8cabae7d27}">
+  <DUT Name="EL3068_E17B118E" Id="{5978c8e5-f701-4682-813d-4135713a4a01}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3068-0000-0016'}
 {attribute addProperty BoxType "EL3068-0000-0016"}
+{attribute addProperty Description "EL3068 8Ch. Ana. Input 0-10V"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_2AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_3AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_4AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_5AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_6AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_7AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_8AT %I*AI_Standard_Channel_EA9DF21E9WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3782939022"}
 {attribute addProperty Size "84"}

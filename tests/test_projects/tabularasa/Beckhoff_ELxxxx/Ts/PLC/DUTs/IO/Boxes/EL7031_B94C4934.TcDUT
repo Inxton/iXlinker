@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL7031_B94C4934" Id="{91449a3a-1547-4618-a54a-104d0ccace69}">
+  <DUT Name="EL7031_B94C4934" Id="{4667baf2-660e-49a1-8c33-00dfcd56fc96}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7031-0030-0016'}
 {attribute addProperty BoxType "EL7031-0030-0016"}
+{attribute addProperty Description "EL7031-0030 1Ch. Stepper motor output stage (24V, 2.8A)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "ENC_Status_compactAT %I*ENC_Status_compact_3C6E2C4411STM_StatusAT %I*STM_Status_36ED096F11AI_Standard_Channel_1AT %I*AI_Standard_Channel_205D8A067AI_Standard_Channel_2AT %I*AI_Standard_Channel_205D8A067ENC_Control_compactAT %Q*ENC_Control_compact_2E82BC435STM_ControlAT %Q*STM_Control_5A8B50163STM_VelocityAT %Q*STM_Velocity_A47A3F412WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_939F71B614"}
 {attribute addProperty CRC "3108784436"}
 {attribute addProperty Size "62"}
