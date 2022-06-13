@@ -1,5 +1,3 @@
-# WORK IN PROGRESS
-
 # iXLinker
 The **iXLinker** is a tool for Visual Studio and [Twincat 3](https://www.beckhoff.com/en-en/products/automation/twincat/twincat-3-build-4024/) that provides automatic mapping of EtherCAT slaves.
 ## How it works
