@@ -1,16 +1,15 @@
 name: dev
 
-# on: 
-#   push:
-#     branches : 
-#       - dev
-#   pull_request: 
-#     paths:
-#       - 'src/**'
-#       - 'pipelines/**'
-#       - '.github/**'
-#   workflow_dispatch:
-
+on: 
+  # push:
+  #   branches : 
+  #     - dev
+  # pull_request: 
+  #   paths:
+  #     - 'src/**'
+  #     - 'pipelines/**'
+  #     - '.github/**'
+  workflow_dispatch:
 jobs:
   build:
     runs-on: self-hosted
