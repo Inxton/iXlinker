@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ9576_6D7359CA">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ9576-0000-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ9576_6D7359CA" Id="{19da9f7f-cb25-437a-8d08-e0d01ffc3809}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ9576-0000-0018'}
 {attribute addProperty BoxType "EJ9576-0000-0018"}
 {attribute addProperty Description "EJ9576 Brake chopper terminal"}
 {attribute addProperty Physics "KK"}
@@ -18,5 +19,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

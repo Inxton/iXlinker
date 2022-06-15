@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Module_2_FSOUT_9813A38E">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2918-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Module_2_FSOUT_9813A38E" Id="{cd60e185-004d-430b-abf8-dd2519af3bcb}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2918-0000-0017'}
 {attribute addProperty BoxType "EJ2918-0000-0017"}
 {attribute addProperty Id "OutputsOutputs_FB9F35208"}
 {attribute addProperty CRC "2551423886"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

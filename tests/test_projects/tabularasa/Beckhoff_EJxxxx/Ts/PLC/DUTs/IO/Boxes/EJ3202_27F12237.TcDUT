@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ3202_27F12237">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3202-0000-0019'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ3202_27F12237" Id="{d4c9facb-1737-4c73-8490-69296798c93c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3202-0000-0019'}
 {attribute addProperty BoxType "EJ3202-0000-0019"}
 {attribute addProperty Description "EJ3202 2Ch. Ana. Input PT100 (RTD)"}
 {attribute addProperty Physics "KK"}
@@ -20,5 +21,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

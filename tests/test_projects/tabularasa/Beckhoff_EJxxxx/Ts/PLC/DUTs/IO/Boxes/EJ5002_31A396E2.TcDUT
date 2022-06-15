@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ5002_31A396E2">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5002-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ5002_31A396E2" Id="{c00a54ca-91b5-4b7f-bcbc-c05b7e1c0e77}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5002-0000-0017'}
 {attribute addProperty BoxType "EJ5002-0000-0017"}
 {attribute addProperty Description "EJ5002 2Ch. SSI Encoder"}
 {attribute addProperty Physics "KK"}
@@ -20,5 +21,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

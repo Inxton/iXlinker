@@ -43,12 +43,13 @@ namespace iXlinker.TsprojFile.Mapping
                 if (string.IsNullOrEmpty(plcProjFilePath))
                 {
                     EventLogger.Instance.Logger.Information(@"No PLC project name is defined! If the XAE contains only one PLC project, this one is used.!!!");
-                    plcProjFilePath = GetPlcprojFromXae(tsProjFilePath);
+                    GetPlcprojFromXae(vs);
+                    plcProjFilePath = vs.PlcProject.Plcproj.CompletePathInFileSystem;
                 }
 
                 if (File.Exists(plcProjFilePath))
                 {
-                    if(CheckIfXaeContainsPlcproj(tsProjFilePath, plcProjFilePath))
+                    if (vs.PlcProject == null)
                     {
                         vs.PlcProject = new PlcProject();
                         vs.PlcProject.Plcproj.CompletePathInFileSystem = plcProjFilePath;
@@ -57,7 +58,9 @@ namespace iXlinker.TsprojFile.Mapping
                         vs.PlcProject.Plcproj.Name = vs.PlcProject.Plcproj.FileNameInFileSystem.Replace(".plcproj", "");
                         vs.PlcProject.Plcproj.Path = vs.PlcProject.Plcproj.FolderPathInFileSystem.Replace(vs.TsProject.FolderPathInFileSystem + "\\", "");
                         vs.PlcProject.Plcproj.CompleteName = vs.PlcProject.Plcproj.Path + "\\" + vs.PlcProject.Plcproj.FileNameInFileSystem;
-
+                    }
+                    if (CheckIfXaeContainsPlcproj(tsProjFilePath, vs.PlcProject))
+                    {
                         vs.GvlExported = new ProjectItem() { Name = "GVL_iXlinker" };
                         vs.GvlExported.Path = "GVLs";
                         vs.GvlExported.FolderPathInFileSystem = vs.PlcProject.Plcproj.FolderPathInFileSystem + "\\" + vs.GvlExported.Path;

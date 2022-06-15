@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ7211_CE650BCF">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0010-0026'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ7211_CE650BCF" Id="{89a37cfc-3227-434d-a860-60ba760d8128}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0010-0026'}
 {attribute addProperty BoxType "EJ7211-0010-0026"}
 {attribute addProperty Description "EJ7211-0010 1Ch. MDP742 Servo motor output stage with OCT (50V, 4.5A RMS)"}
 {attribute addProperty Physics "KK"}
@@ -24,5 +25,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

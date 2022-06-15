@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ2522_EF4C90EB">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2522-0000-0022'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ2522_EF4C90EB" Id="{b0cc4aa5-e8b2-46ed-b069-88a74ef98508}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2522-0000-0022'}
 {attribute addProperty BoxType "EJ2522-0000-0022"}
 {attribute addProperty Description "EJ2522 2Ch. Pulse Train Output"}
 {attribute addProperty Physics "KK"}
@@ -36,5 +37,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ2502_FE2154F7">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2502-0000-0023'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ2502_FE2154F7" Id="{1f6049a1-1776-4d71-b962-b266c6ac8fa7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2502-0000-0023'}
 {attribute addProperty BoxType "EJ2502-0000-0023"}
 {attribute addProperty Description "EJ2502 2Ch. PWM output, 24V"}
 {attribute addProperty Physics "KK"}
@@ -20,5 +21,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="FB_Position_3FA094ED">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0010-0026'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="FB_Position_3FA094ED" Id="{408e1f3d-fd3b-416c-b3de-cd076c7dd9d5}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-0010-0026'}
 {attribute addProperty BoxType "EJ7211-0010-0026"}
 {attribute addProperty Id "PositionAT %I*UDINT4"}
 {attribute addProperty CRC "1067488493"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

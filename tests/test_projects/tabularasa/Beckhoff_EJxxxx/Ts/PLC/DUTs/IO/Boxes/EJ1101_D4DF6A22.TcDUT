@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ1101_D4DF6A22">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1101-0022-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ1101_D4DF6A22" Id="{dd574e0a-c7c3-4196-a56d-6cfca41291a3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1101-0022-0016'}
 {attribute addProperty BoxType "EJ1101-0022-0016"}
 {attribute addProperty Description "EJ1101-0022 EtherCAT Coupler (ID switch)"}
 {attribute addProperty Physics "YKY"}
@@ -16,5 +17,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

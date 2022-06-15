@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ2008_E2806B95">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2008-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ2008_E2806B95" Id="{6b214f04-3a6d-457e-bbf5-b1e022e6f4b2}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2008-0000-0017'}
 {attribute addProperty BoxType "EJ2008-0000-0017"}
 {attribute addProperty Description "EJ2008 8Ch. Dig. Output 24V, 0.5A"}
 {attribute addProperty Physics "KK"}
@@ -32,5 +33,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

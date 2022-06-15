@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ1957_9A95FC59">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1957-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ1957_9A95FC59" Id="{68a1c7c8-7862-4625-bd51-6aae3d3dab4a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1957-0000-0017'}
 {attribute addProperty BoxType "EJ1957-0000-0017"}
 {attribute addProperty Description "EJ1957-0000-0017"}
 {attribute addProperty Physics "KK"}
@@ -24,5 +25,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

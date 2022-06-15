@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ4002_5AE37D91">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ4002-0000-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ4002_5AE37D91" Id="{f4bc4259-8ce4-4a8c-84ad-ce14bc8a1fef}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ4002-0000-0018'}
 {attribute addProperty BoxType "EJ4002-0000-0018"}
 {attribute addProperty Description "EJ4002 2Ch. Ana. Output 0-10V, 12bit"}
 {attribute addProperty Physics "KK"}
@@ -20,5 +21,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

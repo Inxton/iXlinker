@@ -26,8 +26,8 @@ namespace TsprojFile.Scan
             GenerateStructures(vs);
             //Build XAE project
             VS.BuildXaeProjectUsingCli(vs);
-            //Generate mappings and write them into the .tsproj file.
-            GenerateMappingsToTsProj(vs);
+            //Generate mappings and write them into the .tsproj or .xti file.
+            GenerateMappings(vs);
 
             sw.Stop();
             EventLogger.Instance.Logger.Information("Complete process {0} ms!!!", sw.ElapsedMilliseconds);

@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ4018_4E77D882">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ4018-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ4018_4E77D882" Id="{e6af9ac5-4d25-4c26-b52d-8d317c30f1ab}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ4018-0000-0016'}
 {attribute addProperty BoxType "EJ4018-0000-0016"}
 {attribute addProperty Description "EJ4018 8Ch. Ana. Output 0-20mA, 12bit"}
 {attribute addProperty Physics "KK"}
@@ -32,5 +33,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ4134_15C7AA14">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ4134-0000-0019'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ4134_15C7AA14" Id="{024850cb-4226-4d71-a3f8-9d755a07d42f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ4134-0000-0019'}
 {attribute addProperty BoxType "EJ4134-0000-0019"}
 {attribute addProperty Description "EJ4134 4Ch. Ana. Output -10/+10V, 16bit"}
 {attribute addProperty Physics "KK"}
@@ -24,5 +25,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

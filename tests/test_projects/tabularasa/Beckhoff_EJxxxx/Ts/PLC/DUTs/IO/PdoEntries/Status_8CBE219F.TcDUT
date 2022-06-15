@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Status_8CBE219F">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7037-0000-0020'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Status_8CBE219F" Id="{f924fa07-746c-41fb-91a2-fe062b13fc6f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7037-0000-0020'}
 {attribute addProperty BoxType "EJ7037-0000-0020"}
 {attribute addProperty Id "Latch_C_validBOOL1Latch_extern_validBOOL1Set_counter_doneBOOL1Counter_underflowBOOL1Counter_overflowBOOL1Extrapolation_stallBOOL1Status_of_input_ABOOL1Status_of_input_BBOOL1Status_of_input_CBOOL1Status_of_extern_latchBOOL1Sync_errorBOOL1TxPDO_ToggleBOOL1"}
 {attribute addProperty CRC "2361270687"}
@@ -34,5 +35,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

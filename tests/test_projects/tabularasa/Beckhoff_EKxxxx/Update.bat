@@ -7,4 +7,9 @@ set "iXlinkerPath=%main%\src\iXlinker\bin\Debug\net5.0"
 set "params=-t %tsProj_file% -n 25"
 rem run iXlinker
 start "iXlinker" /D "%iXlinkerPath%" /WAIT "iXlinker.exe" %params%
-rmdir "%CD%\Ts\PLC\_Libraries\beckhoff automation gmbh" /S /Q
+rem Clean irrelevant folders and files
+rmdir "%CD%\Ts\_Boot" /S /Q
+rmdir "%CD%\Ts\PLC\_Libraries" /S /Q
+rmdir "%CD%\Ts\PLC\_CompileInfo" /S /Q
+del "%CD%\Ts\*.txt" /F /Q
+del "%CD%\Ts\*.bak" /F /Q

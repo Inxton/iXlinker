@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Beckhoff_EJ9xxxEK1122_C80E1DB3">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Beckhoff_EJ9xxxEK1122_C80E1DB3" Id="{216e24f4-dfae-4f77-a97d-1d7d4d5a04b3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
 {attribute addProperty BoxType "EK1122-0000-0018"}
 {attribute addProperty Id "Beckhoff_EJ9xxxsub_EK1100EK1100_1FC0878B2"}
 {attribute addProperty CRC "3356368307"}
@@ -13,5 +14,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

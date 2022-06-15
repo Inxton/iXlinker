@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ1889_32157CFD">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1889-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ1889_32157CFD" Id="{8046cd0c-313b-4102-a19d-92998471f9c7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1889-0000-0017'}
 {attribute addProperty BoxType "EJ1889-0000-0017"}
 {attribute addProperty Description "EJ1889 16Ch. Dig. Input 24V, 3ms, negative"}
 {attribute addProperty Physics "KK"}
@@ -48,5 +49,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

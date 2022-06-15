@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ2521_E6A3E301">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ2521_E6A3E301" Id="{dccea88d-e7e1-4cb7-9c1a-377ace9ef4f0}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ2521-0224-0016'}
 {attribute addProperty BoxType "EJ2521-0224-0016"}
 {attribute addProperty Description "EJ2521-0224 1Ch. Pulse Train 24V DC Output Capture/Compare"}
 {attribute addProperty Physics "KK"}
@@ -34,5 +35,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

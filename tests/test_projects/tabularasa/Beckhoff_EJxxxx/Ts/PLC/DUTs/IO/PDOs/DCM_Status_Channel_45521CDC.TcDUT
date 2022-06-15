@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="DCM_Status_Channel_45521CDC">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7334-0008-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="DCM_Status_Channel_45521CDC" Id="{49a5a99c-dca7-4eb7-82ab-889e66df92c3}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7334-0008-0016'}
 {attribute addProperty BoxType "EJ7334-0008-0016"}
 {attribute addProperty Id "StatusAT %I*Status_2569232E8"}
 {attribute addProperty CRC "1163009244"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

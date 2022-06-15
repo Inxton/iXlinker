@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ6224_98EF2419">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6224-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ6224_98EF2419" Id="{f8a39c1b-aece-4cf0-9e11-948b3c89f1a4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ6224-0000-0016'}
 {attribute addProperty BoxType "EJ6224-0000-0016"}
 {attribute addProperty Description "EJ6224 (IO Link Master)"}
 {attribute addProperty Physics "KK"}
@@ -20,5 +21,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

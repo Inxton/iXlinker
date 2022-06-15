@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ3108_35AE5324">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3108-0000-0018'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ3108_35AE5324" Id="{c9bb946c-ac8c-4d37-bd95-95eb22a432b1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ3108-0000-0018'}
 {attribute addProperty BoxType "EJ3108-0000-0018"}
 {attribute addProperty Description "EJ3108 8Ch. Ana. Input +/-10V"}
 {attribute addProperty Physics "KK"}
@@ -32,5 +33,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

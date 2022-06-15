@@ -39,31 +39,62 @@ namespace TsprojFile.Scan
             FillPdoStructuresReplacementDictionary();
 
             EventLogger.Instance.Logger.Information(@"Reading IO devices in the XAE project: ""{0}""!!!", vs.TsProject.Name);
-            TcSmProjectProjectPlcProject plcProj = new TcSmProjectProjectPlcProject();
             for (int i = 0; i < Tc.Project.Plc.Project.Length; i++)
             {
-                string dtePlcProjName = vs.PlcProject.Plcproj.Name;
-                string tcPlcProjName = Tc.Project.Plc.Project[i].Name;
-                if (dtePlcProjName.Equals(tcPlcProjName))
+                if (vs.PlcProject.IsIndependent && vs.PlcProject.Xti.FileNameInFileSystem.Equals(Tc.Project.Plc.Project[i].File))
                 {
+                    XmlSerializer xtiSerializer = new XmlSerializer(typeof(TcSmItem));
+                    StreamReader xtiReader = new StreamReader(vs.PlcProject.Xti.CompletePathInFileSystem);
+
+                    try
+                    {
+                        TcSmItem Xti = (TcSmItem)xtiSerializer.Deserialize(xtiReader);
+                        TcSmItemTypeProject plcProj = (TcSmItemTypeProject)Xti.Items[0];
+                        xtiReader.Close();
+                        //OwnerAPlcName = "TIPC" + tmpLevelSeparator + plcProj.Name + tmpLevelSeparator + plcProj.Instance[0].Name;
+                        OwnerAPlcName = plcProj.Instance[0].Name;
+                        try
+                        {
+                            if (plcProj.Instance[0].Contexts != null) Context = plcProj.Instance[0].Contexts[0].Name;
+                            else Context = "invalid_context";
+                            if (Context == "Default")
+                                Context = "PlcTask";
+                        }
+                        catch (Exception ex)
+                        {
+                            EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                            Context = "invalid_context";
+                        }
+
+                        break;
+                    }
+                    catch (Exception ex)
+                    {
+                        xtiReader.Close();
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    }
+                }
+                else if (vs.PlcProject.Plcproj.Name.Equals(Tc.Project.Plc.Project[i].Name))
+                {
+                    TcSmProjectProjectPlcProject plcProj = new TcSmProjectProjectPlcProject();
                     plcProj = Tc.Project.Plc.Project[i];
+                    OwnerAPlcName = "TIPC" + tmpLevelSeparator + plcProj.Name + tmpLevelSeparator + plcProj.Instance[0].Name;
+                    try
+                    {
+                        if (plcProj.Instance[0].Contexts != null) Context = plcProj.Instance[0].Contexts[0].Name;
+                        else Context = "invalid_context";
+                        if (Context == "Default")
+                            Context = "PlcTask";
+                    }
+                    catch (Exception ex)
+                    {
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                        Context = "invalid_context";
+                    }
                     break;
                 }
             }
 
-            OwnerAPlcName = "TIPC" + tmpLevelSeparator + plcProj.Name + tmpLevelSeparator + plcProj.Instance[0].Name;
-            try
-            {
-                if(plcProj.Instance[0].Contexts != null) Context = plcProj.Instance[0].Contexts[0].Name;
-                else Context = "invalid_context";
-                if (Context == "Default")
-                    Context = "PlcTask";
-            }
-            catch (Exception ex)
-            {
-                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                Context = "invalid_context";
-            }
 
             GetAllTasks();
 

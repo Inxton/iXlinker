@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Channel_42CA91F7">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1859-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="Channel_42CA91F7" Id="{6410f0cb-b4cb-486a-8dce-1abca012dc22}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1859-0000-0017'}
 {attribute addProperty BoxType "EJ1859-0000-0017"}
 {attribute addProperty Id "OutputAT %Q*BOOL1"}
 {attribute addProperty CRC "1120571895"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

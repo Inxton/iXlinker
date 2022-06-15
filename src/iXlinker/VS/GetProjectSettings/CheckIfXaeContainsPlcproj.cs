@@ -1,4 +1,5 @@
 ﻿using iXlinker.Utils;
+using iXlinkerDtos;
 using System;
 using System.IO;
 using System.Xml.Serialization;
@@ -8,8 +9,10 @@ namespace iXlinker.TsprojFile.Mapping
 {
     internal partial class VS
     {
-        internal static bool CheckIfXaeContainsPlcproj(string tsProjFilePath, string plcProjFilePath)
+        internal static bool CheckIfXaeContainsPlcproj(string tsProjFilePath, PlcProject plcProject )
         {
+            string plcProjFilePath = plcProject.Plcproj.CompletePathInFileSystem;
+
             bool ret = false;
 
             XmlSerializer serializer = new XmlSerializer(typeof(TcSmProject));
@@ -27,10 +30,31 @@ namespace iXlinker.TsprojFile.Mapping
 
                     foreach (TcSmProjectProjectPlcProject plcProj in tc.Project.Plc.Project)
                     {
-                        if (plcProj.PrjFilePath.Equals(plcProjName))
+                        if (!String.IsNullOrEmpty(plcProj.PrjFilePath) && String.IsNullOrEmpty(plcProj.File))
                         {
-                            ret = true;
-                            break;
+                            if (plcProj.PrjFilePath.Equals(plcProjName))
+                            {
+                                ret = true;
+                                break;
+                            }
+                        }
+                        else if (String.IsNullOrEmpty(plcProj.PrjFilePath) && !String.IsNullOrEmpty(plcProj.File))
+                        {
+                            if (plcProject.Xti.CompletePathInFileSystem == null)
+                            {
+                                plcProject.IsIndependent = true;
+                                plcProject.Xti.FileNameInFileSystem = plcProj.File;
+                                plcProject.Xti.FolderPathInFileSystem = tsProjFolder + "\\_Config\\PLC";
+                                plcProject.Xti.CompletePathInFileSystem = plcProject.Xti.FolderPathInFileSystem + "\\" + plcProject.Xti.FileNameInFileSystem;
+                                plcProject.Xti.Name = plcProject.Xti.FileNameInFileSystem.Replace(".xti", "");
+                                plcProject.Xti.Path = plcProject.Xti.FolderPathInFileSystem.Replace(tsProjFolder + "\\", "");
+                                plcProject.Xti.CompleteName = plcProject.Xti.Path + "\\" + plcProject.Xti.FileNameInFileSystem;
+                            }
+                            if (plcProj.File.Equals(plcProject.Xti.FileNameInFileSystem))
+                            {
+                                ret = true;
+                                break;
+                            }
                         }
                     }
                 }

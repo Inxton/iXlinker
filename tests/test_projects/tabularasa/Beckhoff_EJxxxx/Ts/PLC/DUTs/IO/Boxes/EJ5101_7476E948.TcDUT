@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ5101_7476E948">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5101-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ5101_7476E948" Id="{57056ca5-85c0-486c-ab36-54da06f4f893}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5101-0000-0016'}
 {attribute addProperty BoxType "EJ5101-0000-0016"}
 {attribute addProperty Description "EJ5101 1Ch. Inc. Encoder 5V"}
 {attribute addProperty Physics "KK"}
@@ -20,5 +21,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

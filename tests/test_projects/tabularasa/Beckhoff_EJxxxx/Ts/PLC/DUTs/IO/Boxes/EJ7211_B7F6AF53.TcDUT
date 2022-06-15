@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EJ7211_B7F6AF53">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-9414-0030'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EJ7211_B7F6AF53" Id="{c4447ae8-24ae-417e-a971-a3172b301fd1}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7211-9414-0030'}
 {attribute addProperty BoxType "EJ7211-9414-0030"}
 {attribute addProperty Description "EJ7211-9414 1Ch. MDP742 Servo motor output stage with OCT (50V, 4.5A RMS) , TwinSAFE SC"}
 {attribute addProperty Physics "KK"}
@@ -24,5 +25,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>
