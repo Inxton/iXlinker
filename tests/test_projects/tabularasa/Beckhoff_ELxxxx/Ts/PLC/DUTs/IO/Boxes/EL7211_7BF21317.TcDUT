@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL7211_7BF21317" Id="{7fd34a6c-ee03-4937-8d11-1c1ede2cfb8e}">
+  <DUT Name="EL7211_7BF21317" Id="{874edeae-b97e-4a34-a666-55392d891344}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7211-0001-0020'}
 {attribute addProperty BoxType "EL7211-0001-0020"}
+{attribute addProperty Description "EL7211-0001 1Ch. DS402 Servo motor output stage (50V, 4.5A RMS)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "DS402_StatuswordAT %I*DS402_Statusword_9B36FDFC2DS402_Position_actual_valueAT %I*DS402_Position_actual_value_07DC4C744DS402_ControlwordAT %Q*DS402_Controlword_F3F147212DS402_Target_velocityAT %Q*DS402_Target_velocity_08A9583B4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_96C94FAE19"}
 {attribute addProperty CRC "2079462167"}
 {attribute addProperty Size "33"}

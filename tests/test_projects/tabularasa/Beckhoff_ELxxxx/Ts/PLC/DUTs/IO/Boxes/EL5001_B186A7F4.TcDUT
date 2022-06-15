@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL5001_B186A7F4" Id="{104a514e-dfff-41b0-8dac-82513d7b48a4}">
+  <DUT Name="EL5001_B186A7F4" Id="{7b1328c3-69c4-4ee4-bef9-f68984640be9}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5001-0000-1016'}
 {attribute addProperty BoxType "EL5001-0000-1016"}
+{attribute addProperty Description "EL5001 1Ch. SSI Encoder"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %I*Channel_DD2C734A5WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2978392052"}
 {attribute addProperty Size "17"}

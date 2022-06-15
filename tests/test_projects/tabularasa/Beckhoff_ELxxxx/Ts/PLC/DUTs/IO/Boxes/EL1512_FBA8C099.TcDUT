@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL1512_FBA8C099" Id="{6c8dcea7-fd1a-4cb9-aeda-114acef48b51}">
+  <DUT Name="EL1512_FBA8C099" Id="{829ff6be-e0ee-4d52-873f-2fc6edda9a91}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1512-0000-0016'}
 {attribute addProperty BoxType "EL1512-0000-0016"}
+{attribute addProperty Description "EL1512 2Ch. +/- Counter 24V, 1kHz"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "CNT_Inputs_Channel_1AT %I*CNT_Inputs_Channel_21E1BB398CNT_Inputs_Channel_2AT %I*CNT_Inputs_Channel_21E1BB398CNT_Outputs_Channel_1AT %Q*CNT_Outputs_Channel_774A30BC6CNT_Outputs_Channel_2AT %Q*CNT_Outputs_Channel_774A30BC6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "4222140569"}
 {attribute addProperty Size "40"}

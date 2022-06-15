@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL9515_19A4723D" Id="{4bcca330-60b3-49e7-b64a-0490cdac634a}">
+  <DUT Name="EL9515_19A4723D" Id="{9748ec4d-3fbe-4ea4-891d-0eee65a06fc7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9515-0000-0016'}
 {attribute addProperty BoxType "EL9515-0000-0016"}
+{attribute addProperty Description "EL9515 Power supply terminal 15V"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Status_UoAT %I*Status_Uo_B8D9F2FA2WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "430207549"}
 {attribute addProperty Size "6"}

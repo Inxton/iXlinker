@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="CX8110_EtherCAT_slave_FEF7A27A" Id="{4288d845-930c-45d9-9c95-47b47e10103f}">
+  <DUT Name="CX8110_EtherCAT_slave_FEF7A27A" Id="{a206bbae-3f49-4a7c-be45-0838d90ec2da}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CX8110 EtherCAT slave-0000-0016'}
 {attribute addProperty BoxType "CX8110 EtherCAT slave-0000-0016"}
+{attribute addProperty Description "CX8110 EtherCAT slave"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "IO_InputsEMPTY_STRUCTURE0Device_Status_MappingAT %I*Device_Status_Mapping_61F790772IO_OutputsEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_90184F0C16"}
 {attribute addProperty CRC "4277641850"}
 {attribute addProperty Size "20"}

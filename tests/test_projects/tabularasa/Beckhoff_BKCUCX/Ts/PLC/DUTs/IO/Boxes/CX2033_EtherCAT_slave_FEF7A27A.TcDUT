@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="CX2033_EtherCAT_slave_FEF7A27A" Id="{15a85ce4-e901-4232-aea1-8608d8d953d8}">
+  <DUT Name="CX2033_EtherCAT_slave_FEF7A27A" Id="{10c6fd81-fbba-42ed-9950-b4c9849dbef6}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CX2033 EtherCAT slave-1b82-0016'}
 {attribute addProperty BoxType "CX2033 EtherCAT slave-1b82-0016"}
+{attribute addProperty Description "CX2033 EtherCAT slave"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "IO_InputsEMPTY_STRUCTURE0Device_Status_MappingAT %I*Device_Status_Mapping_61F790772IO_OutputsEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_90184F0C16"}
 {attribute addProperty CRC "4277641850"}
 {attribute addProperty Size "20"}

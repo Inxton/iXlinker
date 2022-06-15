@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL7211_FC4732E8" Id="{8060907a-7e5e-4d02-b453-a4618f4f09d8}">
+  <DUT Name="EL7211_FC4732E8" Id="{5989a919-4b1e-4867-bb8b-94e4b80304d3}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL7211-0010-0030'}
 {attribute addProperty BoxType "EL7211-0010-0030"}
+{attribute addProperty Description "EL7211-0010 1Ch. MDP742 Servo motor output stage with OCT (50V, 4.5A RMS)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "FB_PositionAT %I*FB_Position_3FA094ED4DRV_StatuswordAT %I*DRV_Statusword_9B36FDFC2DRV_ControlwordAT %Q*DRV_Controlword_F3F147212DRV_Target_velocityAT %Q*DRV_Target_velocity_08A9583B4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6185D47C20"}
 {attribute addProperty CRC "4232524520"}
 {attribute addProperty Size "34"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6690_FD149FC2" Id="{89d81754-6df2-47be-92e3-1d5c6dd8f5dd}">
+  <DUT Name="EL6690_FD149FC2" Id="{cfd1ad85-2e34-4f68-b7a6-574cdb85b8a8}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6690-0001-0000'}
 {attribute addProperty BoxType "EL6690-0001-0000"}
+{attribute addProperty Description "EL6690 EtherCAT Bridge (Primary)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "StatusAT %I*Status_D30DC33F1InputsEMPTY_STRUCTURE0OutputsEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "4245987266"}
 {attribute addProperty Size "13"}

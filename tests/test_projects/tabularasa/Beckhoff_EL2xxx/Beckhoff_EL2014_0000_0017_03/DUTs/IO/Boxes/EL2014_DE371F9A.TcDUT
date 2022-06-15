@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2014_DE371F9A" Id="{02a9bb97-ad7e-4c5b-9572-08ab45b60e28}">
+  <DUT Name="EL2014_DE371F9A" Id="{ca2db455-1dda-4288-8452-0d017f2c6a46}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2014-0000-0017'}
 {attribute addProperty BoxType "EL2014-0000-0017"}
+{attribute addProperty Description "EL2014 4Ch. Dig. Output 24V, 0,5A, Diagnostic"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "DIG_OutputsAT %Q*DIG_Outputs_F9744C664WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3728154522"}
 {attribute addProperty Size "15"}

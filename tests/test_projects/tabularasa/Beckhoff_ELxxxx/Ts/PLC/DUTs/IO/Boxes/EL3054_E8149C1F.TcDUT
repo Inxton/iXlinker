@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3054_E8149C1F" Id="{bd26dee9-c61a-4e81-a6b6-ed6a16e6750f}">
+  <DUT Name="EL3054_E8149C1F" Id="{8c50db57-6b1c-48a7-8c97-9cc6d4cc9854}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3054-0000-0016'}
 {attribute addProperty BoxType "EL3054-0000-0016"}
+{attribute addProperty Description "EL3054 4Ch. Ana. Input 4-20mA"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_2AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_3AT %I*AI_Standard_Channel_EA9DF21E9AI_Standard_Channel_4AT %I*AI_Standard_Channel_EA9DF21E9WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3893664799"}
 {attribute addProperty Size "48"}

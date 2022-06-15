@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2521_68CF8E5F" Id="{0b8cfc54-4833-4d7b-a0cf-1e5e641f5134}">
+  <DUT Name="EL2521_68CF8E5F" Id="{feb2d6f6-d282-4d36-be9a-f0e2a671cbda}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2521--0000'}
 {attribute addProperty BoxType "EL2521--0000"}
+{attribute addProperty Description "EL2521 1Ch. Pulse Train Output"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "InputsAT %I*Inputs_A33354244OutputsAT %Q*Outputs_8F8B60FA4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1758432863"}
 {attribute addProperty Size "20"}

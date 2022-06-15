@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL9576_85AB5804" Id="{94c458b5-32ac-4855-94ac-3942385b97cf}">
+  <DUT Name="EL9576_85AB5804" Id="{b30e9fdc-7ec4-4b44-a1b4-ca3894de64d0}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9576-0000-0019'}
 {attribute addProperty BoxType "EL9576-0000-0019"}
+{attribute addProperty Description "EL9576 Brake chopper terminal"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "BCT_InputsAT %I*BCT_Inputs_4B98789517WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2242598916"}
 {attribute addProperty Size "29"}

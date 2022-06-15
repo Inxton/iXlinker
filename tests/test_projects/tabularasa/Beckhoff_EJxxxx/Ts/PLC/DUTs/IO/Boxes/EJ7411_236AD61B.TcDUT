@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ7411_236AD61B" Id="{79ce5e55-6ff3-4009-8ce3-07d382c79369}">
+  <DUT Name="EJ7411_236AD61B" Id="{10ead7e4-8937-4cdf-b423-55c4f205c005}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7411-0000-0018'}
 {attribute addProperty BoxType "EJ7411-0000-0018"}
+{attribute addProperty Description "EJ7411 BLDC Terminal with incremental encoder/Hall, 50 V DC, 4.5 A"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "FB_PositionAT %I*FB_Position_3FA094ED4DRV_StatuswordAT %I*DRV_Statusword_9B36FDFC2DRV_Following_error_actual_valueAT %I*DRV_Following_error_actual_value_5AA320BF4DRV_ControlwordAT %Q*DRV_Controlword_F3F147212DRV_Target_positionAT %Q*DRV_Target_position_05240F144WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6185D47C20"}
 {attribute addProperty CRC "594204187"}
 {attribute addProperty Size "38"}

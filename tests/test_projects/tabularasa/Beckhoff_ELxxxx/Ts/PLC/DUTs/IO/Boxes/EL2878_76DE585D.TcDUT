@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2878_76DE585D" Id="{d9a38d0e-e03f-4828-8200-9c03f69cb6c2}">
+  <DUT Name="EL2878_76DE585D" Id="{d79c819e-b40f-4c9b-a691-c8238f277d04}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2878-0005-0016'}
 {attribute addProperty BoxType "EL2878-0005-0016"}
+{attribute addProperty Description "EL2878-0005 8Ch. Dig. Output 24V, 0.5A, Diagnostic"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "DiagnosticAT %I*Diagnostic_A72B1E171Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71Channel_3AT %Q*Channel_42CA91F71Channel_4AT %Q*Channel_42CA91F71Channel_5AT %Q*Channel_42CA91F71Channel_6AT %Q*Channel_42CA91F71Channel_7AT %Q*Channel_42CA91F71Channel_8AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "1994283101"}
 {attribute addProperty Size "13"}

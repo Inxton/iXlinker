@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ELM3144_9E251EA4" Id="{1bf32a48-8191-4be9-89be-b3d8f4c00535}">
+  <DUT Name="ELM3144_9E251EA4" Id="{30b9400c-befc-4efc-bdc5-0abf0994430c}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM3144-0000-0016'}
 {attribute addProperty BoxType "ELM3144-0000-0016"}
+{attribute addProperty Description "ELM3144-0000 4Ch. Ana. Input +/-10V, +/-20mA, 24 bit, high precision"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "PAI_Status_Channel_1AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_1AT %I*PAI_Samples_1_Channel_EEA517254PAI_Timestamp_Channel_1AT %I*PAI_Timestamp_Channel_6DC4D2968PAI_Status_Channel_2AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_2AT %I*PAI_Samples_1_Channel_EEA517254PAI_Status_Channel_3AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_3AT %I*PAI_Samples_1_Channel_EEA517254PAI_Status_Channel_4AT %I*PAI_Status_Channel_AE4AC1047PAI_Samples_1_Channel_4AT %I*PAI_Samples_1_Channel_EEA517254WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
 {attribute addProperty CRC "2653232804"}
 {attribute addProperty Size "72"}

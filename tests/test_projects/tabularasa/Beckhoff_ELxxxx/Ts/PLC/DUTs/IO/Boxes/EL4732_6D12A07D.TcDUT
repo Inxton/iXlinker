@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL4732_6D12A07D" Id="{2afdb321-ed12-4939-8e22-03e41832705d}">
+  <DUT Name="EL4732_6D12A07D" Id="{d0edaddf-d75f-497c-bdb3-3c63563f412a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL4732-0001-0000'}
 {attribute addProperty BoxType "EL4732-0001-0000"}
+{attribute addProperty Description "EL4732 2Ch. Ana. Output +/-10V, Oversample"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Cycle_CounterAT %Q*Cycle_Counter_2C2338042Sample_0AT %Q*Sample_B442BB654WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "1829937277"}
 {attribute addProperty Size "17"}

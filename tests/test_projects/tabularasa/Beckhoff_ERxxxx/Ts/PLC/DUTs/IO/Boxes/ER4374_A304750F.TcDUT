@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ER4374_A304750F" Id="{94366df7-362a-4a5e-8802-b3ff4c2bf1c7}">
+  <DUT Name="ER4374_A304750F" Id="{75a196c6-d689-4bc9-ac7e-b567654d3dfd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER4374-0002-0018'}
 {attribute addProperty BoxType "ER4374-0002-0018"}
+{attribute addProperty Description "ER4374-0002 2Ch. Ana. Input +/-10V, 0-10V, 0/4-20mA configurable; 2Ch. Ana. Output +/-10V, 0-10V, 0/4-20mA configurable"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "AI_Inputs_Channel_1AT %I*AI_Inputs_Channel_A8DF64E310AI_Inputs_Channel_2AT %I*AI_Inputs_Channel_A8DF64E310AO_Outputs_Channel_3AT %Q*AO_Output_Channel_BA7EBB7C2AO_Outputs_Channel_4AT %Q*AO_Output_Channel_BA7EBB7C2WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2734978319"}
 {attribute addProperty Size "36"}

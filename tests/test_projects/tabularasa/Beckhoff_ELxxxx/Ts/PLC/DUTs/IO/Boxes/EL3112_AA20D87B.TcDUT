@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3112_AA20D87B" Id="{3fd31cab-3a55-463d-88b9-e03393163ec6}">
+  <DUT Name="EL3112_AA20D87B" Id="{83f09c97-dab4-4c7a-9f01-ac45182003e6}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3112-0000-0016'}
 {attribute addProperty BoxType "EL3112-0000-0016"}
+{attribute addProperty Description "EL3112 2Ch. Ana Input 0-20mA, Diff."}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_2AT %I*AI_Standard_Channel_A8DF64E310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2854279291"}
 {attribute addProperty Size "32"}

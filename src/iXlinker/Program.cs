@@ -19,6 +19,8 @@ namespace iXlinker
                    {
                        EventLogger.VerbosityLevel = CommandLineOptions.GetVerbosity(o.Verbosity);
                        EventLogger.Instance.Logger.Information($"iXlinker started");
+                       EventLogger.Instance.Logger.Information($"with arguments:");
+                       EventLogger.Instance.Logger.Information(string.Join(" ",args));
 
                        var linker = new ScanTcProjFile();
                        linker.RuniXlinker(o.TsProjectFile, o.ActiveTargetPlatform, o.PlcProjectFile, o.GenerateMappings == "yes" ? true : false, o.DevenvPath,ushort.Parse(o.MaxEthercatFrameIndex));                       

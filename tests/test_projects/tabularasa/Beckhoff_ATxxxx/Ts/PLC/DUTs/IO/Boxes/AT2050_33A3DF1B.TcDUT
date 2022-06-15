@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="AT2050_33A3DF1B" Id="{f840631b-446f-4b5d-a8fd-a058d64117b8}">
+  <DUT Name="AT2050_33A3DF1B" Id="{875f4637-2e51-45d9-9579-b96ef3d8ab07}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: AT2050-5500-0018'}
 {attribute addProperty BoxType "AT2050-5500-0018"}
+{attribute addProperty Description "AT2050-5500 Sensor line 90° clothoid, EtherCAT In"}
+{attribute addProperty Physics "K"}
 {attribute addProperty Id "FB_InputsAT %I*FB_Inputs_4BC4AA0166FB_OutputsAT %Q*FB_Outputs_DAFD38E02WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "866377499"}
 {attribute addProperty Size "80"}

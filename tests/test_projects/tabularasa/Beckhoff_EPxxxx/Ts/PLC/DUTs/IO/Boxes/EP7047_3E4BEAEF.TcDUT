@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP7047_3E4BEAEF" Id="{1707f25c-2312-49e4-ae70-36a7315802f4}">
+  <DUT Name="EP7047_3E4BEAEF" Id="{1df74f1b-c5b8-4164-814b-f22e93dd89a9}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7047-1032-0021'}
 {attribute addProperty BoxType "EP7047-1032-0021"}
+{attribute addProperty Description "EP7047-1032 1Ch. Stepper motor output stage (50V, 5A)"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "ENC_Status_compactAT %I*ENC_Status_compact_4D066E1A16STM_StatusAT %I*STM_Status_DE0D6B3712ENC_Control_compactAT %Q*ENC_Control_compact_21E2D14D6STM_ControlAT %Q*STM_Control_BA4CE3524STM_VelocityAT %Q*STM_Velocity_A47A3F412WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6538CF5F12"}
 {attribute addProperty CRC "1045162735"}
 {attribute addProperty Size "54"}

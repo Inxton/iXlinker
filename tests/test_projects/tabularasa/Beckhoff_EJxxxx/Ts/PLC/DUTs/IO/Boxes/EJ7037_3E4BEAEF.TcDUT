@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ7037_3E4BEAEF" Id="{eb17f75a-70c5-4014-b2df-9e323550f963}">
+  <DUT Name="EJ7037_3E4BEAEF" Id="{c5fd34f9-45a3-49f3-9a85-cbb882e9fd7a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ7037-0000-0020'}
 {attribute addProperty BoxType "EJ7037-0000-0020"}
+{attribute addProperty Description "EJ7037 1Ch. Stepper motor output stage (24V, 1.5A)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "ENC_Status_compactAT %I*ENC_Status_compact_4D066E1A16STM_StatusAT %I*STM_Status_DE0D6B3712ENC_Control_compactAT %Q*ENC_Control_compact_21E2D14D6STM_ControlAT %Q*STM_Control_BA4CE3524STM_VelocityAT %Q*STM_Velocity_A47A3F412WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6538CF5F12"}
 {attribute addProperty CRC "1045162735"}
 {attribute addProperty Size "54"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3602_308B0EAB" Id="{036cc126-217d-47a3-9c48-de6d462a1634}">
+  <DUT Name="EL3602_308B0EAB" Id="{b129ab2b-6229-43f0-b511-1b5dc051a1c3}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3602-0002-0016'}
 {attribute addProperty BoxType "EL3602-0002-0016"}
+{attribute addProperty Description "EL3602-0002 2Ch. Ana. Input +/-200mV, Diff. 24bit"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Inputs_Channel_1AT %I*AI_Inputs_Channel_4521310411AI_Inputs_Channel_2AT %I*AI_Inputs_Channel_4521310411WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "814419627"}
 {attribute addProperty Size "34"}

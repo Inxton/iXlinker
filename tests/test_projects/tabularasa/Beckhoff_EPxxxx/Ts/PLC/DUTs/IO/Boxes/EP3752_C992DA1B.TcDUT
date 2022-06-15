@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP3752_C992DA1B" Id="{e60857a2-a8f6-43f2-97bf-9d21449c3e4f}">
+  <DUT Name="EP3752_C992DA1B" Id="{fa0eed53-27eb-4894-87ab-bbb672917e73}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP3752-0000-0017'}
 {attribute addProperty BoxType "EP3752-0000-0017"}
+{attribute addProperty Description "EP3752-0000 Acceleration Sensor"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "AI_Inputs_Channel_1AT %I*AI_Inputs_Channel_5A86716D5AI_Inputs_Channel_2AT %I*AI_Inputs_Channel_5A86716D5AI_Inputs_Channel_3AT %I*AI_Inputs_Channel_5A86716D5AI_Inputs_Channel_4AT %I*AI_Inputs_Channel_5A86716D5AI_Inputs_Channel_5AT %I*AI_Inputs_Channel_5A86716D5AI_Inputs_Channel_6AT %I*AI_Inputs_Channel_5A86716D5WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3381844507"}
 {attribute addProperty Size "42"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP1098_78E8D3DD" Id="{076bf4f7-5f06-45e0-a99e-b33db91681d0}">
+  <DUT Name="EP1098_78E8D3DD" Id="{4d5b69a4-40b4-4fc0-bd48-cac21c5d7314}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1098-0001-0016'}
 {attribute addProperty BoxType "EP1098-0001-0016"}
+{attribute addProperty Description "EP1098-0001 8 Ch. Dig. Input 24V, 10µs, M8, negative"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %I*Channel_830843C11Channel_6AT %I*Channel_830843C11Channel_7AT %I*Channel_830843C11Channel_8AT %I*Channel_830843C11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2028524509"}
 {attribute addProperty Size "12"}

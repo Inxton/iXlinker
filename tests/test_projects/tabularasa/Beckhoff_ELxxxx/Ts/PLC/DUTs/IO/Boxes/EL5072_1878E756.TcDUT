@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL5072_1878E756" Id="{ff83129c-8dc2-4c40-8bc8-91ff6ba507c2}">
+  <DUT Name="EL5072_1878E756" Id="{45ee9d37-624d-43ec-8a3e-d8d9698e1b15}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5072-0000-0016'}
 {attribute addProperty BoxType "EL5072-0000-0016"}
+{attribute addProperty Description "EL5072 2Ch. Inductive sensor interface (LVDT, Half Bridge)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "IND_Inputs_Channel_1AT %I*IND_Inputs_Channel_BBE8401F18IND_Inputs_Channel_2AT %I*IND_Inputs_Channel_BBE8401F18IND_Outputs_Channel_1AT %Q*IND_Outputs_Channel_02FDE6C97IND_Outputs_Channel_2AT %Q*IND_Outputs_Channel_02FDE6C97WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "410576726"}
 {attribute addProperty Size "62"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3201_F37BFE85" Id="{81982f67-7d93-48f1-b33f-91ea955ecf2a}">
+  <DUT Name="EL3201_F37BFE85" Id="{21f8b218-a76b-444e-97ec-013a73732e3a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3201-0030-0022'}
 {attribute addProperty BoxType "EL3201-0030-0022"}
+{attribute addProperty Description "EL3201-0030 1Ch. Ana. Input PT100 (RTD), High Precision, external calibrated"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "RTDAT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "4084989573"}
 {attribute addProperty Size "21"}

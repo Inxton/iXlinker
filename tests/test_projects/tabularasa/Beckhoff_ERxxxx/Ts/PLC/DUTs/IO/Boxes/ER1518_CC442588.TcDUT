@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ER1518_CC442588" Id="{17276db2-fc4a-42d3-882e-9f19906cb8b1}">
+  <DUT Name="ER1518_CC442588" Id="{7c093db7-8959-4410-961d-c8d18525d1fd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ER1518-0002-0018'}
 {attribute addProperty BoxType "ER1518-0002-0018"}
+{attribute addProperty Description "ER1518-0002 8 Ch.digital multi-function input"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "CNT_Input_Channel_1AT %I*CNT_Input_Channel_FF10BD3C11CNT_Input_Channel_2AT %I*CNT_Input_Channel_FF10BD3C11DIG_InputsAT %I*DIG_Inputs_CAFF60048DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_1F4E72EB5CNT_Output_Channel_1AT %Q*CNT_Output_Channel_550BB6DF6CNT_Output_Channel_2AT %Q*CNT_Output_Channel_550BB6DF6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3427018120"}
 {attribute addProperty Size "59"}

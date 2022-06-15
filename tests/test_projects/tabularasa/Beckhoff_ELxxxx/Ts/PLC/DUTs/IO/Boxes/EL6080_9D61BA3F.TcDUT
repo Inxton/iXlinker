@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6080_9D61BA3F" Id="{97f53343-876f-4802-b504-2354b25d6d30}">
+  <DUT Name="EL6080_9D61BA3F" Id="{080fb93c-275a-43b3-946a-a216bc89724f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6080-0000-0018'}
 {attribute addProperty BoxType "EL6080-0000-0018"}
+{attribute addProperty Description "EL6080 EtherCAT Memory Terminal (128kB)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "StatusAT %I*Status_07D3AAF62InputsEMPTY_STRUCTURE0ControlAT %Q*Control_DAFD38E02OutputsEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2640427583"}
 {attribute addProperty Size "16"}

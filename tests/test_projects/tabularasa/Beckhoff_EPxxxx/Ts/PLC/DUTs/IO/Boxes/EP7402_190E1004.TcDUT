@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP7402_190E1004" Id="{e67616c0-ee3e-4a0d-9391-4b192cf01b46}">
+  <DUT Name="EP7402_190E1004" Id="{6c1a2fec-b5ca-4c56-b2a8-e3929d771534}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP7402-0057-0017'}
 {attribute addProperty BoxType "EP7402-0057-0017"}
+{attribute addProperty Description "EP7402-0057 2 Ch. Brushless-DC Motor,  24VDC/2.8A, 8 x digital In/Output, B23 ENP 5G4"}
+{attribute addProperty Physics "YYY"}
 {attribute addProperty Id "DI_InputsAT %I*DI_Inputs_58955D1A8STM_Status_Channel_1AT %I*STM_Status_Channel_99D1DFFA7STM_Synchron_info_data_Channel_1AT %I*STM_Synchron_info_data_Channel_DD535D916STM_Status_Channel_2AT %I*STM_Status_Channel_99D1DFFA7STM_Synchron_info_data_Channel_2AT %I*STM_Synchron_info_data_Channel_DD535D916STM_Inputs_DeviceAT %I*STM_Inputs_Device_A41D845621DO_OutputsAT %Q*DO_Outputs_A241BD3A8STM_Control_Channel_1AT %Q*STM_Control_Channel_F193EBCD4STM_Target_Velocity_Channel_1AT %Q*STM_Target_Velocity_Channel_E69D83256STM_Control_Channel_2AT %Q*STM_Control_Channel_F193EBCD4STM_Target_Velocity_Channel_2AT %Q*STM_Target_Velocity_Channel_E69D83256WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_939F71B614"}
 {attribute addProperty CRC "420352004"}
 {attribute addProperty Size "99"}

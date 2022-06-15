@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2044_12F3E4E3" Id="{f67382f5-359c-4d66-9987-7da71be3149a}">
+  <DUT Name="EL2044_12F3E4E3" Id="{4e9156c0-bb2e-4cac-b7fe-dadec88ab67a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2044-0000-0016'}
 {attribute addProperty BoxType "EL2044-0000-0016"}
+{attribute addProperty Description "EL2044 4Ch. Dig. Output 24V, 2A, Diagnostic"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "DIG_Diag_InputsAT %I*DIG_Diag_Inputs_58F3E2A816DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_A1F150A94DIG_OutputsAT %Q*DIG_Outputs_F9744C664WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "317973731"}
 {attribute addProperty Size "36"}

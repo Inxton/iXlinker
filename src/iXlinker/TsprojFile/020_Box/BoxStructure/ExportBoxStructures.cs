@@ -101,13 +101,32 @@ namespace TsprojFile.Scan
                     {
                         EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
-
+                    string description = "";
+                    try
+                    {
+                        description = string.IsNullOrEmpty(boxStructViewModel.Description) ? "" : boxStructViewModel.Description;
+                    }
+                    catch (Exception ex)
+                    {
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    }
+                    string physics = "";
+                    try
+                    {
+                        physics = string.IsNullOrEmpty(boxStructViewModel.Physics) ? "" : boxStructViewModel.Physics;
+                    }
+                    catch (Exception ex)
+                    {
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    }
 
 
                     sw.WriteLine("<TcPlcObject>");
                     sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
                     sw.WriteLine("\t\t<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: " + boxOrderCode + "'}");
                     sw.WriteLine("{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
+                    sw.WriteLine("{attribute addProperty Description \"" + description + "\"}");
+                    sw.WriteLine("{attribute addProperty Physics \"" + physics + "\"}");
                     sw.WriteLine("{attribute addProperty Id \"" + id + "\"}");
                     sw.WriteLine("{attribute addProperty CRC \"" + crc.ToString() + "\"}");
                     sw.WriteLine("{attribute addProperty Size \"" + size.ToString() + "\"}");

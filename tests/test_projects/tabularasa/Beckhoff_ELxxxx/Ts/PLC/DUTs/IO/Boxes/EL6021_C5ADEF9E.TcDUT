@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6021_C5ADEF9E" Id="{48d83b98-fe63-4333-891d-caf3c1601cc9}">
+  <DUT Name="EL6021_C5ADEF9E" Id="{2cc1d758-69a7-44fe-b7d4-99f9daba8220}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6021--0000'}
 {attribute addProperty BoxType "EL6021--0000"}
+{attribute addProperty Description "EL6021 Interface (RS422/485)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "InputsAT %I*Inputs_6C2FC20224OutputsAT %Q*Outputs_5D00B5E724WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3316510622"}
 {attribute addProperty Size "60"}

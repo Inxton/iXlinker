@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6851_29AB8840" Id="{0ac556a9-d8f9-4587-8a11-8bc3c14f7755}">
+  <DUT Name="EL6851_29AB8840" Id="{2aef7c75-f9ef-4333-b9dc-f36023eb53ea}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6851-0010-0016'}
 {attribute addProperty BoxType "EL6851-0010-0016"}
+{attribute addProperty Description "EL6851-0010 DMX Slave"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "DMX_StatusAT %I*DMX_Status_5ECDEABE8DMX_Channel_1_64AT %I*DMX_Channel_005FDEFD64WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "699107392"}
 {attribute addProperty Size "84"}

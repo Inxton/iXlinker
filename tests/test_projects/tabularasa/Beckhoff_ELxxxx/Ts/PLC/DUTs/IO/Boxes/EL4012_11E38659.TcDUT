@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL4012_11E38659" Id="{bf673d1b-c560-4f3a-bc0e-de8353b44981}">
+  <DUT Name="EL4012_11E38659" Id="{4fdc0ac7-075b-4be4-87a6-c4d2a8806884}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL4012-0000-0016'}
 {attribute addProperty BoxType "EL4012-0000-0016"}
+{attribute addProperty Description "EL4012 2Ch. Ana. Output 0-20mA, 12bit"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AO_Outputs_Channel_1AT %Q*AO_Output_Channel_BA7EBB7C2AO_Outputs_Channel_2AT %Q*AO_Output_Channel_BA7EBB7C2WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "300123737"}
 {attribute addProperty Size "15"}

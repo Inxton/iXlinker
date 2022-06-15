@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP9576_C42142C6" Id="{76ecc53d-8579-47b8-8063-72a067803c3a}">
+  <DUT Name="EP9576_C42142C6" Id="{cf3f63c8-5e8e-4b26-bc31-038a0abbb420}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9576-1032-0016'}
 {attribute addProperty BoxType "EP9576-1032-0016"}
+{attribute addProperty Description "EP9576-1032 Brake chopper box"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "BCT_InputsAT %I*BCT_Inputs_7ACE8FA617WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3290514118"}
 {attribute addProperty Size "29"}

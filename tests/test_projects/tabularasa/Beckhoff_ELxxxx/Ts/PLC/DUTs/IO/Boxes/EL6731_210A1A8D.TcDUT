@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6731_210A1A8D" Id="{509e5411-8793-4309-84ea-a1ab62e6236f}">
+  <DUT Name="EL6731_210A1A8D" Id="{b8a6c024-565f-4c85-87c7-1f5324eea572}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6731--0000'}
 {attribute addProperty BoxType "EL6731--0000"}
+{attribute addProperty Description "EL6731 PROFIBUS Master (HW-Version 01)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "InfoDataAT %I*InfoData_90184F0C16"}
 {attribute addProperty CRC "554310285"}
 {attribute addProperty Size "16"}

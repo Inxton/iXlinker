@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EM3702_FDD84FD8" Id="{acc577a5-c77a-4fd8-bb38-71568b59e3cb}">
+  <DUT Name="EM3702_FDD84FD8" Id="{913c6f9e-f40e-4570-9126-7b8213159e37}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM3702-0000-0016'}
 {attribute addProperty BoxType "EM3702-0000-0016"}
+{attribute addProperty Description "EM3702  2Ch. relative pressure measuring terminal 7,500 hPa (7.5 bar)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Input_Channel_1AT %I*AI_Input_Channel_5AF6604E8AI_Input_Channel_2AT %I*AI_Input_Channel_5AF6604E8WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "4258811864"}
 {attribute addProperty Size "28"}

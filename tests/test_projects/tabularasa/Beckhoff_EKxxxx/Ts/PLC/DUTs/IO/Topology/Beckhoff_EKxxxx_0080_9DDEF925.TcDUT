@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Beckhoff_EKxxxx_0080_9DDEF925" Id="{cf0bdfb3-2434-413c-adf9-272dc67b1ce5}">
+  <DUT Name="Beckhoff_EKxxxx_0080_9DDEF925" Id="{9776be00-7c32-4a8b-a29a-9e9fbbcb575a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1100-0000-0018'}
 {attribute addProperty BoxType "EK1100-0000-0018"}
 {attribute addProperty Id "Beckhoff_EKxxxx_0080EK1122Beckhoff_EKxxxx_0080EK1122_9CBA35F22A_0006_EK1122_0080_0019EK1122_1FC0878B2A_0005_EK1122_0080_0018EK1122_1FC0878B2A_0004_EK1122_0080_0017EK1122_1FC0878B2"}
@@ -8,16 +8,16 @@
 {attribute addProperty Size "8"}
 TYPE Beckhoff_EKxxxx_0080_9DDEF925 EXTENDS EK1100_1FC0878B :
 STRUCT
-	{attribute addProperty Name "Beckhoff_EKxxxx_0080EK1122"}
+	{attribute addProperty Name "Beckhoff EKxxxx-0080EK1122"}
 	{attribute addProperty PreviousPort "Beckhoff EKxxxx-0080 : B"}
 	Beckhoff_EKxxxx_0080EK1122 : Beckhoff_EKxxxx_0080EK1122_9CBA35F2;
-	{attribute addProperty Name "A_0006_EK1122_0080_0019"}
+	{attribute addProperty Name "A_0006(EK1122-0080-0019)"}
 	{attribute addProperty PreviousPort "Beckhoff EKxxxx-0080EK1122 : C"}
 	A_0006_EK1122_0080_0019 : EK1122_1FC0878B;
-	{attribute addProperty Name "A_0005_EK1122_0080_0018"}
+	{attribute addProperty Name "A_0005(EK1122-0080-0018)"}
 	{attribute addProperty PreviousPort "A_0006(EK1122-0080-0019) : C"}
 	A_0005_EK1122_0080_0018 : EK1122_1FC0878B;
-	{attribute addProperty Name "A_0004_EK1122_0080_0017"}
+	{attribute addProperty Name "A_0004(EK1122-0080-0017)"}
 	{attribute addProperty PreviousPort "A_0005(EK1122-0080-0018) : C"}
 	A_0004_EK1122_0080_0017 : EK1122_1FC0878B;
 END_STRUCT

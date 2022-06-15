@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL1002_02444DCB" Id="{cc86dd92-278a-4def-8bcf-05f4dcb68fd5}">
+  <DUT Name="EL1002_02444DCB" Id="{5a6ffc27-8362-4613-867b-cbac9e152e8e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1002--0000'}
 {attribute addProperty BoxType "EL1002--0000"}
+{attribute addProperty Description "EL1002 2Ch. Dig. Input 24V, 3ms"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "38030795"}
 {attribute addProperty Size "6"}

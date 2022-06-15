@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3061_E22DFA28" Id="{dc58d385-6424-443d-9a85-065b2dfb8375}">
+  <DUT Name="EL3061_E22DFA28" Id="{eb8cf9f2-e5bd-41b8-aefb-d66262f9eebb}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3061-0000-0017'}
 {attribute addProperty BoxType "EL3061-0000-0017"}
+{attribute addProperty Description "EL3061 1Ch. Ana. Input 0-10V"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_StandardAT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3794663976"}
 {attribute addProperty Size "21"}

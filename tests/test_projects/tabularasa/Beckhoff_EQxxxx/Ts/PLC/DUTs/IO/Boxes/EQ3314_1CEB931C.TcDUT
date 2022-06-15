@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EQ3314_1CEB931C" Id="{381d12f9-4b0b-491a-a4c0-4637c226dc5f}">
+  <DUT Name="EQ3314_1CEB931C" Id="{49b3d255-1a16-4b4f-8734-6b48c7af4c0d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EQ3314-0002-0016'}
 {attribute addProperty BoxType "EQ3314-0002-0016"}
+{attribute addProperty Description "EQ3314-0002 4Ch. Ana. Input Thermocouple (TC)"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "TC_TCInputs_Channel_1AT %I*TC_TCInputs_Channel_A8DF64E310TC_TCInputs_Channel_2AT %I*TC_TCInputs_Channel_A8DF64E310TC_TCInputs_Channel_3AT %I*TC_TCInputs_Channel_A8DF64E310TC_TCInputs_Channel_4AT %I*TC_TCInputs_Channel_A8DF64E310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "485200668"}
 {attribute addProperty Size "52"}

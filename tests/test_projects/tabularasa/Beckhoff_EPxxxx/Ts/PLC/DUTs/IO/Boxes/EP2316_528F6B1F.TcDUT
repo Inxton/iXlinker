@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP2316_528F6B1F" Id="{52b44cd5-6c9c-4aec-910b-479d90aa991d}">
+  <DUT Name="EP2316_528F6B1F" Id="{e5850641-a2d3-49a4-8a05-d53a9dd21174}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2316-0008-0016'}
 {attribute addProperty BoxType "EP2316-0008-0016"}
+{attribute addProperty Description "EP2316-0008 8 Ch. Dig. In, 10µs, 8Ch. Dig. Out 24V, 0,5A, Diagnostic, D-SUB25"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "DO_InputsAT %I*DO_Inputs_CC4551489DO_Diag_InputsAT %I*DO_Diag_Inputs_584303BF8DO_Inputs_DeviceAT %I*DO_Inputs_Device_AF161A9E4DO_OutputsAT %Q*DO_Outputs_28AC1A9E8DO_Outputs_DeviceAT %Q*DO_Outputs_Device_36A5EF172WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1385130783"}
 {attribute addProperty Size "43"}

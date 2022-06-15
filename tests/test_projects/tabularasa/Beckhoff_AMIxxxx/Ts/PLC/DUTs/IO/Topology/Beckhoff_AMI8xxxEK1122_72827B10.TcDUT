@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Beckhoff_AMI8xxxEK1122_72827B10" Id="{662e994e-06b2-4ad9-8762-4a15773c0854}">
+  <DUT Name="Beckhoff_AMI8xxxEK1122_72827B10" Id="{97688cea-0ad8-4947-aad6-9e44ab794714}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
 {attribute addProperty BoxType "EK1122-0000-0018"}
 {attribute addProperty Id "Beckhoff_AMI8xxxsub_EK1100EK1100_1FC0878B2A_0001_AMI8000_0000_0016AMI8000_68DB4BA039A_0002_AMI8000_0090_0016AMI8000_68DB4BA039"}
@@ -8,13 +8,13 @@
 {attribute addProperty Size "80"}
 TYPE Beckhoff_AMI8xxxEK1122_72827B10 EXTENDS EK1122_1FC0878B :
 STRUCT
-	{attribute addProperty Name "Beckhoff_AMI8xxxsub_EK1100"}
+	{attribute addProperty Name "Beckhoff AMI8xxxsub EK1100"}
 	{attribute addProperty PreviousPort "Beckhoff AMI8xxxEK1122 : D"}
 	Beckhoff_AMI8xxxsub_EK1100 : EK1100_1FC0878B;
-	{attribute addProperty Name "A_0001_AMI8000_0000_0016"}
+	{attribute addProperty Name "A_0001(AMI8000-0000-0016)"}
 	{attribute addProperty PreviousPort "Beckhoff AMI8xxxsub EK1100 : C"}
 	A_0001_AMI8000_0000_0016 : AMI8000_68DB4BA0;
-	{attribute addProperty Name "A_0002_AMI8000_0090_0016"}
+	{attribute addProperty Name "A_0002(AMI8000-0090-0016)"}
 	{attribute addProperty PreviousPort "A_0001(AMI8000-0000-0016) : B"}
 	A_0002_AMI8000_0090_0016 : AMI8000_68DB4BA0;
 END_STRUCT

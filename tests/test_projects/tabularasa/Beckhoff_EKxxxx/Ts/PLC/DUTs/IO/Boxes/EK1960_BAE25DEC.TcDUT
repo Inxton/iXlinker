@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EK1960_BAE25DEC" Id="{89c3bc64-29b7-45f7-be8d-aac3f3f35fca}">
+  <DUT Name="EK1960_BAE25DEC" Id="{97d7e62e-d9fa-4219-99e2-38f476a7339c}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1960-2600-0019'}
 {attribute addProperty BoxType "EK1960-2600-0019"}
+{attribute addProperty Description "EK1960-2600 TwinSAFE-Compact-Controller (4 x Relay, RJ45)"}
+{attribute addProperty Physics "YKY"}
 {attribute addProperty Id "Module_1_FSoEModule_1_FSoE_7E6C60DE104Module_2_FSOUTModule_2_FSOUT_E84B1B0028Module_3_FSLOGICModule_3_FSLOGIC_DEAB45222WcStateAT %I*WcState_B516A2644InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3135397356"}
 {attribute addProperty Size "148"}

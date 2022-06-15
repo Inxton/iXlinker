@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP1816_73178B54" Id="{50e4a105-c87f-4471-9e14-f9699c156cb2}">
+  <DUT Name="EP1816_73178B54" Id="{01e12645-5bac-407b-8758-4057b96ea6a3}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1816-0003-0016'}
 {attribute addProperty BoxType "EP1816-0003-0016"}
+{attribute addProperty Description "EP1816-0003 16 Ch. Dig. Input 24V, 10µs, 10-Pole Plug Connector"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "DIG_Inputs_Channel_1AT %I*DIG_Inputs_Channel_ACAA042510DIG_Inputs_Channel_2AT %I*DIG_Inputs_Channel_ACAA042510WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1930922836"}
 {attribute addProperty Size "32"}

@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL4104_15C7AA14" Id="{e75443bc-c05a-439c-9316-fa38322b6b95}">
+  <DUT Name="EL4104_15C7AA14" Id="{dfdb5154-8a34-41ca-be4b-8a5b5347a32b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL4104-0000-1016'}
 {attribute addProperty BoxType "EL4104-0000-1016"}
+{attribute addProperty Description "EL4104 4Ch. Ana. Output 0-10V, 16bit"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AO_Output_Channel_1AT %Q*AO_Output_Channel_BA7EBB7C2AO_Output_Channel_2AT %Q*AO_Output_Channel_BA7EBB7C2AO_Output_Channel_3AT %Q*AO_Output_Channel_BA7EBB7C2AO_Output_Channel_4AT %Q*AO_Output_Channel_BA7EBB7C2WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "365406740"}
 {attribute addProperty Size "19"}

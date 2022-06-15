@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ5002_6DCBC4C0" Id="{d41623e8-b94d-4f2c-b0bd-1aa70baceea7}">
+  <DUT Name="EJ5002_6DCBC4C0" Id="{692767b2-7ff1-4430-92e5-8f90fa899a67}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ5002-0000-0016'}
 {attribute addProperty BoxType "EJ5002-0000-0016"}
+{attribute addProperty Description "EJ5002 2Ch. SSI Encoder"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "SSI_Inputs_Channel_1AT %I*SSI_Inputs_Channel_0E3D8E3310SSI_Inputs_Channel_2AT %I*SSI_Inputs_Channel_0E3D8E3310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1842070720"}
 {attribute addProperty Size "32"}

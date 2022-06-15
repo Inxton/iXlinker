@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP1816_F50297FE" Id="{d48fdd5d-9fd7-4f43-8baa-8bca415ae209}">
+  <DUT Name="EP1816_F50297FE" Id="{b36143b5-265d-4ebb-aa6a-2d20ecc6008b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP1816-1008-0016'}
 {attribute addProperty BoxType "EP1816-1008-0016"}
+{attribute addProperty Description "EP1816-1008 16Ch. Dig. Input  24V 10µs, DSUB-25"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "DIG_Inputs_Channel_1AT %I*DIG_Inputs_Channel_38F9DD278DIG_Inputs_Channel_2AT %I*DIG_Inputs_Channel_38F9DD278DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_B3EA42044WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "4110587902"}
 {attribute addProperty Size "32"}

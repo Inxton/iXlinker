@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2622_47E63F27" Id="{6ce08540-bf3c-4fbf-84b3-c400d0b9177e}">
+  <DUT Name="EL2622_47E63F27" Id="{3fa27eb8-9551-4c56-993c-5f9ae6d134f6}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2622-0010-0016'}
 {attribute addProperty BoxType "EL2622-0010-0016"}
+{attribute addProperty Description "EL2622-0010 2Ch. Relay Output + ZCD, NO (230V AC / 30V DC)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "InputsAT %I*Inputs_298FB92D1Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "1206271783"}
 {attribute addProperty Size "7"}

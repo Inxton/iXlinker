@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL3144_DCC78662" Id="{5a43578d-063c-40bc-9dd3-904ddcf6a4b5}">
+  <DUT Name="EL3144_DCC78662" Id="{65979f7a-c089-47b7-8291-92b02f8456cf}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3144-0000-0016'}
 {attribute addProperty BoxType "EL3144-0000-0016"}
+{attribute addProperty Description "EL3144 4Ch. Ana. Input 0-20mA"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AI_Standard_Channel_1AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_2AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_3AT %I*AI_Standard_Channel_A8DF64E310AI_Standard_Channel_4AT %I*AI_Standard_Channel_A8DF64E310WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3704063586"}
 {attribute addProperty Size "52"}

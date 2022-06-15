@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="A_0001_ATH2000_0250_0022_300D1FD0" Id="{d077d13c-c352-4083-a3d8-f5fe6ee93f2c}">
+  <DUT Name="A_0001_ATH2000_0250_0022_300D1FD0" Id="{56e19356-7f30-4296-ab98-458e6f683ac9}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ATH2000-0250-0022'}
 {attribute addProperty BoxType "ATH2000-0250-0022"}
 {attribute addProperty Id "A_0014_ATH2050_5501_0022ATH2050_6EC099B714"}
@@ -8,7 +8,7 @@
 {attribute addProperty Size "14"}
 TYPE A_0001_ATH2000_0250_0022_300D1FD0 EXTENDS ATH2000_2EA6C9BF :
 STRUCT
-	{attribute addProperty Name "A_0014_ATH2050_5501_0022"}
+	{attribute addProperty Name "A_0014(ATH2050-5501-0022)"}
 	{attribute addProperty PreviousPort "A_0001(ATH2000-0250-0022) : B"}
 	A_0014_ATH2050_5501_0022 : ATH2050_6EC099B7;
 END_STRUCT

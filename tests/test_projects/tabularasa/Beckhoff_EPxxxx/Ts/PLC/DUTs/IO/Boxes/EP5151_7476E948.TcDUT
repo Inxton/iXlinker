@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP5151_7476E948" Id="{a3c69add-5e38-4419-a515-6554a6970717}">
+  <DUT Name="EP5151_7476E948" Id="{e2a7b4f2-6378-4561-9fd0-0e23b26a1d68}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP5151-0002-0018'}
 {attribute addProperty BoxType "EP5151-0002-0018"}
+{attribute addProperty Description "EP5151-0002 1Ch. Inc. Encoder 24V, M12, single ended"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "ENC_Status_compactAT %I*ENC_Status_compact_7D3464F320ENC_Control_compactAT %Q*ENC_Control_compact_21E2D14D6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "1953950024"}
 {attribute addProperty Size "38"}

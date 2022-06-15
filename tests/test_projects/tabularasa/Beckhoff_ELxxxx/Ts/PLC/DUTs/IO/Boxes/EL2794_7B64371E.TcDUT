@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2794_7B64371E" Id="{2a723c45-37ea-46f5-acab-abd782c8fefb}">
+  <DUT Name="EL2794_7B64371E" Id="{1769c017-34be-4959-84a8-99995a9c8947}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2794-0000-0016'}
 {attribute addProperty BoxType "EL2794-0000-0016"}
+{attribute addProperty Description "EL2794 4Ch. Dig. Output 24V AC/DC, 2A, short-circuit-proof"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_42CA91F71Channel_2AT %Q*Channel_42CA91F71Channel_3AT %Q*Channel_42CA91F71Channel_4AT %Q*Channel_42CA91F71WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "2070165278"}
 {attribute addProperty Size "7"}

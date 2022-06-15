@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EP2816_88324133" Id="{0b8ae930-2abb-4d5c-a97e-8e54b43d4f08}">
+  <DUT Name="EP2816_88324133" Id="{3c30337d-05d5-4f9e-9f7b-a8bb48082c41}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP2816-0004-0016'}
 {attribute addProperty BoxType "EP2816-0004-0016"}
+{attribute addProperty Description "EP2816-0004 16 Ch. Dig. Output 24V, 0,5A, M16"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "DO_Outputs_Channel_1AT %Q*DO_Outputs_Channel_28AC1A9E8DO_Outputs_Channel_2AT %Q*DO_Outputs_Channel_28AC1A9E8WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2284994867"}
 {attribute addProperty Size "27"}

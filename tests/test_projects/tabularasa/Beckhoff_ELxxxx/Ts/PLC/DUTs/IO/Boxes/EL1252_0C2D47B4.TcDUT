@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL1252_0C2D47B4" Id="{ca44ee87-dc77-4f16-bbca-c2312f8491ce}">
+  <DUT Name="EL1252_0C2D47B4" Id="{7ecb2f03-037f-4993-9a48-f3a40f695455}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1252-0000-0017'}
 {attribute addProperty BoxType "EL1252-0000-0017"}
+{attribute addProperty Description "EL1252 2Ch. Fast Dig. Input 24V, 1µs, DC Latch"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "LatchAT %I*Latch_8E41329534Channel_0AT %I*Channel_830843C11Channel_1AT %I*Channel_830843C11ReservedEMPTY_STRUCTURE0WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "204294068"}
 {attribute addProperty Size "48"}

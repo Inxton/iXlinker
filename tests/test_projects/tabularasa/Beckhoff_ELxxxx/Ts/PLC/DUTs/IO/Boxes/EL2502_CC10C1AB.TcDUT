@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2502_CC10C1AB" Id="{ba35eefd-c126-4070-98e4-10fadad25ea1}">
+  <DUT Name="EL2502_CC10C1AB" Id="{6e62721c-06a3-4801-be24-8b2fa1366b5a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2502-0010-0020'}
 {attribute addProperty BoxType "EL2502-0010-0020"}
+{attribute addProperty Description "EL2502-0010 2 Ch. PWM output, 24V, 2 Ch DC Time Stamp"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "PWM_Inputs_Channel_1AT %I*PWM_Inputs_Channel_4239F6524PWM_SysTime_Channel_1AT %I*PWM_SysTime_Channel_10DC69458PWM_Per_DC_Outputs_Channel_1AT %Q*PWM_Per_DC_Outputs_Channel_C8E719F317WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3423650219"}
 {attribute addProperty Size "41"}

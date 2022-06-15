@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ELX3181_05065F7B" Id="{9601b3d6-3988-4c0d-bd37-d23ea6c6ee2a}">
+  <DUT Name="ELX3181_05065F7B" Id="{4a1ce51d-1169-4275-95f4-e4077570f112}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX3181-0000-0016'}
 {attribute addProperty BoxType "ELX3181-0000-0016"}
+{attribute addProperty Description "ELX3181 1Ch. Ana. Input 4-20mA, HART, Ex i"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Ch_1Ch_1_A1FAE75910WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_90184F0C16"}
 {attribute addProperty CRC "84303739"}
 {attribute addProperty Size "28"}

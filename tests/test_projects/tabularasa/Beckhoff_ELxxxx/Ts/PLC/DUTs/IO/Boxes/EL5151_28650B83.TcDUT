@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL5151_28650B83" Id="{8842fb7a-bebe-48b5-b0b7-179afddf1a11}">
+  <DUT Name="EL5151_28650B83" Id="{d6afee90-b19f-49b2-b7c7-be1d1d0972e7}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5151-0000-0021'}
 {attribute addProperty BoxType "EL5151-0000-0021"}
+{attribute addProperty Description "EL5151 1Ch. Inc. Encoder"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "ENC_InputsAT %I*ENC_Inputs_B353648514ENC_Inputs_2AT %I*ENC_Inputs_24B63C534ENC_OutputsAT %Q*ENC_Outputs_21E2D14D6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "677710723"}
 {attribute addProperty Size "36"}

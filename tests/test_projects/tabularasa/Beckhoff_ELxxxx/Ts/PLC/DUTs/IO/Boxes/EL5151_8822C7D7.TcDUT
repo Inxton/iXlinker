@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL5151_8822C7D7" Id="{2edcc67d-4cd0-4a30-8681-0bd2004ccb71}">
+  <DUT Name="EL5151_8822C7D7" Id="{4216d1d7-cae8-474d-92bc-c40ac530cbda}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL5151-0090-0016'}
 {attribute addProperty BoxType "EL5151-0090-0016"}
+{attribute addProperty Description "EL5151-0090 1Ch. Inc. Encoder, TwinSAFE SC"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "ENC_Status_compactAT %I*ENC_Status_compact_B353648514ENC_Control_compactAT %Q*ENC_Control_compact_21E2D14D6WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2283980759"}
 {attribute addProperty Size "32"}

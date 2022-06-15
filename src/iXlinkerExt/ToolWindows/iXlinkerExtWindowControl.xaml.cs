@@ -40,7 +40,7 @@ namespace iXlinkerExt
             string disabledIO = iXlinkerExtCommand.Instance.doNotGenerateDisabledIO.ToString();
             string devenvPath = iXlinkerExtCommand.Instance.devenvPath;
             string maxEthercatFrameIndex = iXlinkerExtCommand.Instance.maxEthercatFrameIndex.ToString();
-
+            bool isIndependent = iXlinkerExtCommand.Instance.PLC.IsIndependent;
 
             List<string> list = new List<string>();
             list.Add($"-t \"{xaePath}\"");
@@ -99,6 +99,10 @@ namespace iXlinkerExt
                     {
                         ivsSolution.OpenSolutionFile((uint)__VSSLNOPENOPTIONS.SLNOPENOPT_DontConvertSLN, slnfPath);
                     }
+                    if (isIndependent)
+                    {
+                        ivsSolution.SaveSolutionElement((uint)__VSSLNSAVEOPTIONS.SLNSAVEOPT_ForceSave, null, 0);
+                    }
                 }
             }
             else
@@ -134,6 +138,5 @@ namespace iXlinkerExt
         {
             iXlinkerExtCommand.CheckIfGenerationCouldStart();
         }
-
     }
 }

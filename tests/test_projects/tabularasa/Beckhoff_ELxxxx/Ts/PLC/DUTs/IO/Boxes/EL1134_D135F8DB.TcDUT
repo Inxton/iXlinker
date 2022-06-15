@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL1134_D135F8DB" Id="{53d7094e-0dd6-410c-a583-d8b408d401e9}">
+  <DUT Name="EL1134_D135F8DB" Id="{c9a71dd8-86e6-4cc5-842f-41f3048eaa33}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL1134-0000-0016'}
 {attribute addProperty BoxType "EL1134-0000-0016"}
+{attribute addProperty Description "EL1134 4Ch. Dig. Input 48V, 10µs, Sensor Power"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "3509975259"}
 {attribute addProperty Size "8"}

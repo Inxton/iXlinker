@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP2316_D2866883" Id="{fbfe8427-6ebb-4aef-ba46-c228dfaed125}">
+  <DUT Name="EPP2316_D2866883" Id="{e2f956b2-6e69-4abe-9758-7c0d4859bf72}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP2316-0003-0018'}
 {attribute addProperty BoxType "EPP2316-0003-0018"}
+{attribute addProperty Description "EPP2316-0003 8 Ch. Dig. In, 10µs, 8Ch. Dig. Out 24V, 0,5A, Diagnostic, 10-Pole Plug Connector"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "DIG_InputsAT %I*DIG_Inputs_2D77DD639DIG_Diag_InputsAT %I*DIG_Diag_Inputs_584303BF8DIG_Inputs_DeviceAT %I*DIG_Inputs_Device_E94E5BF95DIG_OutputsAT %Q*DIG_Outputs_28AC1A9E8DIG_Outputs_DeviceAT %Q*DIG_Outputs_Device_36A5EF172WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3532023939"}
 {attribute addProperty Size "44"}

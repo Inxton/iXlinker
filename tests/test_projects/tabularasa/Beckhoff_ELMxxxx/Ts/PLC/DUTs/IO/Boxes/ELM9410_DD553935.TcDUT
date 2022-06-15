@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ELM9410_DD553935" Id="{c3cea9a1-46e2-442b-87df-30985a0b922c}">
+  <DUT Name="ELM9410_DD553935" Id="{0e276df9-8dc8-413a-b7b7-4a158eb6fd8d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELM9410-0000-0016'}
 {attribute addProperty BoxType "ELM9410-0000-0016"}
+{attribute addProperty Description "ELM9410 E-Bus Power Supplier (Diagnostics, isolated)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "MMS_Device_InputsAT %I*MMS_Device_Inputs_7D6F87344MMS_Acceleration_StatusAT %I*MMS_Acceleration_Status_117690999MMS_Acceleration_X_AxisAT %I*MMS_Acceleration_X_Axis_80E77D6A2MMS_Acceleration_Y_AxisAT %I*MMS_Acceleration_Y_Axis_80E77D6A2MMS_Acceleration_Z_AxisAT %I*MMS_Acceleration_Z_Axis_80E77D6A2MMS_Acceleration_TimestampAT %I*MMS_Acceleration_Timestamp_8B9FE1A28MMS_Voltage_Us_In_InputsAT %I*MMS_Voltage_Us_In_Inputs_60D55C7211MMS_Voltage_Up_In_InputsAT %I*MMS_Voltage_Up_In_Inputs_60D55C7211MMS_Voltage_Up_Out_InputsAT %I*MMS_Voltage_Up_Out_Inputs_60D55C7211MMS_Device_OutputsAT %Q*MMS_Device_Outputs_E6E6F9D11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_BEF6B88E18"}
 {attribute addProperty CRC "3713349941"}
 {attribute addProperty Size "81"}

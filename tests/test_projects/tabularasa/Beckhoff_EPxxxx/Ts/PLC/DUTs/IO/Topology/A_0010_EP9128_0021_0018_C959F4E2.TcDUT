@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="A_0010_EP9128_0021_0018_C959F4E2" Id="{0553d8d0-91f1-4f13-b440-60931e67dc07}">
+  <DUT Name="A_0010_EP9128_0021_0018_C959F4E2" Id="{11b01d77-09ef-4265-9085-abc4a19fb5cb}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EP9128-0021-0018'}
 {attribute addProperty BoxType "EP9128-0021-0018"}
 {attribute addProperty Id "A_0013_EP9128_0021_0019A_0013_EP9128_0021_0019_0DE615A6579A_0010_EP9128_0021_0018_2_EP9128_1021EP9128_1FC0878B2A_0010_EP9128_0021_0018_3_EP9128_2021EP9128_1FC0878B2"}
@@ -8,13 +8,13 @@
 {attribute addProperty Size "583"}
 TYPE A_0010_EP9128_0021_0018_C959F4E2 EXTENDS EP9128_1FC0878B :
 STRUCT
-	{attribute addProperty Name "A_0013_EP9128_0021_0019"}
+	{attribute addProperty Name "A_0013(EP9128-0021-0019)"}
 	{attribute addProperty PreviousPort "A_0010(EP9128-0021-0018) : D"}
 	A_0013_EP9128_0021_0019 : A_0013_EP9128_0021_0019_0DE615A6;
-	{attribute addProperty Name "A_0010_EP9128_0021_0018_2_EP9128_1021"}
+	{attribute addProperty Name "A_0010(EP9128-0021-0018)_2 (EP9128-1021)"}
 	{attribute addProperty PreviousPort "A_0010(EP9128-0021-0018) : C"}
 	A_0010_EP9128_0021_0018_2_EP9128_1021 : EP9128_1FC0878B;
-	{attribute addProperty Name "A_0010_EP9128_0021_0018_3_EP9128_2021"}
+	{attribute addProperty Name "A_0010(EP9128-0021-0018)_3 (EP9128-2021)"}
 	{attribute addProperty PreviousPort "A_0010(EP9128-0021-0018)_2 (EP9128-1021) : C"}
 	A_0010_EP9128_0021_0018_3_EP9128_2021 : EP9128_1FC0878B;
 END_STRUCT

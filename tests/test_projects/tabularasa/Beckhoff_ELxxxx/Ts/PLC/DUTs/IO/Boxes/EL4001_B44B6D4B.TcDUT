@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL4001_B44B6D4B" Id="{69c3ba91-d959-4a78-9d50-919b05825d53}">
+  <DUT Name="EL4001_B44B6D4B" Id="{4dfd79f6-84a4-4a6f-8307-d3e2afb57206}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL4001-0000-0016'}
 {attribute addProperty BoxType "EL4001-0000-0016"}
+{attribute addProperty Description "EL4001 1Ch. Ana. Output 0-10V, 12bit"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "AO_OutputsAT %Q*AO_Output_Channel_BA7EBB7C2WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "3024842059"}
 {attribute addProperty Size "13"}

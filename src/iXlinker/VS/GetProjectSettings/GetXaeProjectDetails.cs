@@ -43,56 +43,59 @@ namespace iXlinker.TsprojFile.Mapping
                 if (string.IsNullOrEmpty(plcProjFilePath))
                 {
                     EventLogger.Instance.Logger.Information(@"No PLC project name is defined! If the XAE contains only one PLC project, this one is used.!!!");
-                    plcProjFilePath = GetPlcprojFromXae(tsProjFilePath);
+                    GetPlcprojFromXae(vs);
+                    plcProjFilePath = vs.PlcProject.Plcproj.CompletePathInFileSystem;
                 }
 
                 if (File.Exists(plcProjFilePath))
                 {
-                    if(CheckIfXaeContainsPlcproj(tsProjFilePath, plcProjFilePath))
+                    if (vs.PlcProject == null)
                     {
                         vs.PlcProject = new PlcProject();
-                        vs.PlcProject.CompletePathInFileSystem = plcProjFilePath;
-                        vs.PlcProject.FolderPathInFileSystem = plcProjFilePath.Substring(0, plcProjFilePath.LastIndexOf("\\", StringComparison.Ordinal));
-                        vs.PlcProject.FileNameInFileSystem = plcProjFilePath.Substring(plcProjFilePath.LastIndexOf("\\", StringComparison.Ordinal) + 1);
-                        vs.PlcProject.Name = vs.PlcProject.FileNameInFileSystem.Replace(".plcproj", "");
-                        vs.PlcProject.Path = vs.PlcProject.FolderPathInFileSystem.Replace(vs.TsProject.FolderPathInFileSystem + "\\", "");
-                        vs.PlcProject.CompleteName = vs.PlcProject.Path + "\\" + vs.PlcProject.FileNameInFileSystem;
-
+                        vs.PlcProject.Plcproj.CompletePathInFileSystem = plcProjFilePath;
+                        vs.PlcProject.Plcproj.FolderPathInFileSystem = plcProjFilePath.Substring(0, plcProjFilePath.LastIndexOf("\\", StringComparison.Ordinal));
+                        vs.PlcProject.Plcproj.FileNameInFileSystem = plcProjFilePath.Substring(plcProjFilePath.LastIndexOf("\\", StringComparison.Ordinal) + 1);
+                        vs.PlcProject.Plcproj.Name = vs.PlcProject.Plcproj.FileNameInFileSystem.Replace(".plcproj", "");
+                        vs.PlcProject.Plcproj.Path = vs.PlcProject.Plcproj.FolderPathInFileSystem.Replace(vs.TsProject.FolderPathInFileSystem + "\\", "");
+                        vs.PlcProject.Plcproj.CompleteName = vs.PlcProject.Plcproj.Path + "\\" + vs.PlcProject.Plcproj.FileNameInFileSystem;
+                    }
+                    if (CheckIfXaeContainsPlcproj(tsProjFilePath, vs.PlcProject))
+                    {
                         vs.GvlExported = new ProjectItem() { Name = "GVL_iXlinker" };
                         vs.GvlExported.Path = "GVLs";
-                        vs.GvlExported.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.GvlExported.Path;
-                        vs.GvlExported.CompleteName = vs.PlcProject.CompleteName + "\\" + vs.GvlExported.Path + "\\" + vs.GvlExported.Name;
+                        vs.GvlExported.FolderPathInFileSystem = vs.PlcProject.Plcproj.FolderPathInFileSystem + "\\" + vs.GvlExported.Path;
+                        vs.GvlExported.CompleteName = vs.PlcProject.Plcproj.CompleteName + "\\" + vs.GvlExported.Path + "\\" + vs.GvlExported.Name;
                         vs.GvlExported.FileNameInFileSystem = vs.GvlExported.Name + ".TcGVL";
                         vs.GvlExported.CompletePathInFileSystem = vs.GvlExported.FolderPathInFileSystem + "\\" + vs.GvlExported.FileNameInFileSystem;
                         TcModel.NameOfTheExportedGVL = vs.GvlExported.Name;
 
                         vs.DutsIo = new ProjectItem() { Name = "DUTs_IO_folder" };
                         vs.DutsIo.Path = "DUTs\\IO";
-                        vs.DutsIo.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIo.Path;
+                        vs.DutsIo.FolderPathInFileSystem = vs.PlcProject.Plcproj.FolderPathInFileSystem + "\\" + vs.DutsIo.Path;
 
                         vs.DutsIoPdoEntry = new ProjectItem() { Name = "DUTs_IO_PdoEntry_folder" };
                         vs.DutsIoPdoEntry.Path = vs.DutsIo.Path + "\\PdoEntries";
-                        vs.DutsIoPdoEntry.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoPdoEntry.Path;
+                        vs.DutsIoPdoEntry.FolderPathInFileSystem = vs.PlcProject.Plcproj.FolderPathInFileSystem + "\\" + vs.DutsIoPdoEntry.Path;
 
                         vs.DutsIoPdo = new ProjectItem() { Name = "DUTs_IO_Pdo_folder" };
                         vs.DutsIoPdo.Path = vs.DutsIo.Path + "\\PDOs";
-                        vs.DutsIoPdo.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoPdo.Path;
+                        vs.DutsIoPdo.FolderPathInFileSystem = vs.PlcProject.Plcproj.FolderPathInFileSystem + "\\" + vs.DutsIoPdo.Path;
 
                         vs.DutsIoBox = new ProjectItem() { Name = "DUTs_IO_Box_folder" };
                         vs.DutsIoBox.Path = vs.DutsIo.Path + "\\Boxes";
-                        vs.DutsIoBox.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoBox.Path;
+                        vs.DutsIoBox.FolderPathInFileSystem = vs.PlcProject.Plcproj.FolderPathInFileSystem + "\\" + vs.DutsIoBox.Path;
 
                         vs.DutsIoDevice = new ProjectItem() { Name = "DUTs_IO_Device_folder" };
                         vs.DutsIoDevice.Path = vs.DutsIo.Path + "\\Devices";
-                        vs.DutsIoDevice.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoDevice.Path;
+                        vs.DutsIoDevice.FolderPathInFileSystem = vs.PlcProject.Plcproj.FolderPathInFileSystem + "\\" + vs.DutsIoDevice.Path;
 
                         vs.DutsIoTopology = new ProjectItem() { Name = "DUTs_IO_Topology_folder" };
                         vs.DutsIoTopology.Path = vs.DutsIo.Path + "\\Topology";
-                        vs.DutsIoTopology.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoTopology.Path;
+                        vs.DutsIoTopology.FolderPathInFileSystem = vs.PlcProject.Plcproj.FolderPathInFileSystem + "\\" + vs.DutsIoTopology.Path;
 
                         vs.DutsIoBase = new ProjectItem() { Name = "DUTs_Base_folder" };
                         vs.DutsIoBase.Path = vs.DutsIo.Path + "\\Base";
-                        vs.DutsIoBase.FolderPathInFileSystem = vs.PlcProject.FolderPathInFileSystem + "\\" + vs.DutsIoBase.Path;
+                        vs.DutsIoBase.FolderPathInFileSystem = vs.PlcProject.Plcproj.FolderPathInFileSystem + "\\" + vs.DutsIoBase.Path;
                     }
                 }
                 else

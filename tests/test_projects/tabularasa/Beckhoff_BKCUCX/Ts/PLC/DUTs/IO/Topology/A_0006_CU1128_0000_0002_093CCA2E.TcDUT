@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="A_0006_CU1128_0000_0002_093CCA2E" Id="{9f2ee209-7ed9-4a95-bf2d-3e40f1ba8501}">
+  <DUT Name="A_0006_CU1128_0000_0002_093CCA2E" Id="{946283d1-94a6-48b9-8870-738d07bbc42b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: CU1128-0000-0002'}
 {attribute addProperty BoxType "CU1128-0000-0002"}
 {attribute addProperty Id "A_0007_CU1521_0010_0000CU1521_1FC0878B2A_0008_CU1561_0000_0000CU1561_1FC0878B2A_0009_CU2508_0000_0000CU2508_1FC0878B2A_0010_CU2508_0000_0016CU2508_EEB2FEF410A_0011_CU2508_0000_0017CU2508_6BF2ACBC32A_0012_CU2508_0000_0018CU2508_6BF2ACBC32A_0013_CU2508_0000_0019CU2508_6BF2ACBC32A_0006_CU1128_0000_0002_2_CU1128_BCU1128_1FC0878B2A_0006_CU1128_0000_0002_3_CU1128_CCU1128_1FC0878B2"}
@@ -8,31 +8,31 @@
 {attribute addProperty Size "116"}
 TYPE A_0006_CU1128_0000_0002_093CCA2E EXTENDS CU1128_1FC0878B :
 STRUCT
-	{attribute addProperty Name "A_0007_CU1521_0010_0000"}
+	{attribute addProperty Name "A_0007(CU1521-0010-0000)"}
 	{attribute addProperty PreviousPort "A_0006(CU1128-0000-0002) : D"}
 	A_0007_CU1521_0010_0000 : CU1521_1FC0878B;
-	{attribute addProperty Name "A_0008_CU1561_0000_0000"}
+	{attribute addProperty Name "A_0008(CU1561-0000-0000)"}
 	{attribute addProperty PreviousPort "A_0007(CU1521-0010-0000) : B"}
 	A_0008_CU1561_0000_0000 : CU1561_1FC0878B;
-	{attribute addProperty Name "A_0009_CU2508_0000_0000"}
+	{attribute addProperty Name "A_0009(CU2508-0000-0000)"}
 	{attribute addProperty PreviousPort "A_0008(CU1561-0000-0000) : B"}
 	A_0009_CU2508_0000_0000 : CU2508_1FC0878B;
-	{attribute addProperty Name "A_0010_CU2508_0000_0016"}
+	{attribute addProperty Name "A_0010(CU2508-0000-0016)"}
 	{attribute addProperty PreviousPort "A_0009(CU2508-0000-0000) : B"}
 	A_0010_CU2508_0000_0016 : CU2508_EEB2FEF4;
-	{attribute addProperty Name "A_0011_CU2508_0000_0017"}
+	{attribute addProperty Name "A_0011(CU2508-0000-0017)"}
 	{attribute addProperty PreviousPort "A_0010(CU2508-0000-0016) : B"}
 	A_0011_CU2508_0000_0017 : CU2508_6BF2ACBC;
-	{attribute addProperty Name "A_0012_CU2508_0000_0018"}
+	{attribute addProperty Name "A_0012(CU2508-0000-0018)"}
 	{attribute addProperty PreviousPort "A_0011(CU2508-0000-0017) : B"}
 	A_0012_CU2508_0000_0018 : CU2508_6BF2ACBC;
-	{attribute addProperty Name "A_0013_CU2508_0000_0019"}
+	{attribute addProperty Name "A_0013(CU2508-0000-0019)"}
 	{attribute addProperty PreviousPort "A_0012(CU2508-0000-0018) : B"}
 	A_0013_CU2508_0000_0019 : CU2508_6BF2ACBC;
-	{attribute addProperty Name "A_0006_CU1128_0000_0002_2_CU1128_B"}
+	{attribute addProperty Name "A_0006(CU1128-0000-0002)_2 (CU1128-B)"}
 	{attribute addProperty PreviousPort "A_0006(CU1128-0000-0002) : C"}
 	A_0006_CU1128_0000_0002_2_CU1128_B : CU1128_1FC0878B;
-	{attribute addProperty Name "A_0006_CU1128_0000_0002_3_CU1128_C"}
+	{attribute addProperty Name "A_0006(CU1128-0000-0002)_3 (CU1128-C)"}
 	{attribute addProperty PreviousPort "A_0006(CU1128-0000-0002)_2 (CU1128-B) : C"}
 	A_0006_CU1128_0000_0002_3_CU1128_C : CU1128_1FC0878B;
 END_STRUCT

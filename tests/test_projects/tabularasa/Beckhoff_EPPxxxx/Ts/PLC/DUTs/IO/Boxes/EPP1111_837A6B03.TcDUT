@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP1111_837A6B03" Id="{1c4781db-7af8-413f-9779-dcdf95e5ff61}">
+  <DUT Name="EPP1111_837A6B03" Id="{3f75c66c-a3f4-4bce-84ac-f4aef4359343}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP1111-0000-0016'}
 {attribute addProperty BoxType "EPP1111-0000-0016"}
+{attribute addProperty Description "EPP1111-0000 ID-Switch"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "ID_InputsAT %I*ID_Inputs_07C9D28F2WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2205838083"}
 {attribute addProperty Size "14"}

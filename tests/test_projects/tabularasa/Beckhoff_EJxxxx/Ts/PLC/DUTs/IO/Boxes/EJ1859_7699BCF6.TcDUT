@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EJ1859_7699BCF6" Id="{3544fb40-dd1e-4d50-a18d-7a9f9893b44c}">
+  <DUT Name="EJ1859_7699BCF6" Id="{3cef7d5e-665b-4cec-9bdd-ebf645634a24}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EJ1859-0000-0017'}
 {attribute addProperty BoxType "EJ1859-0000-0017"}
+{attribute addProperty Description "EJ1859 8Ch. Dig. Input 24V, 3ms, 8Ch. Dig. Output 24V, 0.5A"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %I*Channel_830843C11Channel_6AT %I*Channel_830843C11Channel_7AT %I*Channel_830843C11Channel_8AT %I*Channel_830843C11Channel_9AT %Q*Channel_42CA91F71Channel_10AT %Q*Channel_42CA91F71Channel_11AT %Q*Channel_42CA91F71Channel_12AT %Q*Channel_42CA91F71Channel_13AT %Q*Channel_42CA91F71Channel_14AT %Q*Channel_42CA91F71Channel_15AT %Q*Channel_42CA91F71Channel_16AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "1989786870"}
 {attribute addProperty Size "20"}

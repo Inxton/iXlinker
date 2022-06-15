@@ -25,12 +25,12 @@ namespace iXlinkerExt
                 {
                     foreach (TcSmProjectProjectPlcProject plcProject in tc.Project.Plc.Project)
                     {
-
                         if (!string.IsNullOrEmpty(plcProject.PrjFilePath))
                         {
                             string tsProjFolder = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\"));
 
                             PlcProjectViewModel plcProj = new PlcProjectViewModel();
+
 
                             plcProj.CompletePathInFileSystem = tsProjFolder + "\\" + plcProject.PrjFilePath;
                             plcProj.FileNameInFileSystem = plcProj.CompletePathInFileSystem.Substring(plcProj.CompletePathInFileSystem.LastIndexOf("\\") + 1);
@@ -40,7 +40,14 @@ namespace iXlinkerExt
                             plcProj.UniqueName = plcProject.PrjFilePath;
 
                             plcProj.GUID = Guid.Parse(plcProject.GUID);
+                            plcProj.IsIndependent = false;
 
+                            plcProjs.Add(plcProj);
+                        }
+                        if (!string.IsNullOrEmpty(plcProject.File))
+                        {
+                            string xtiFilePath = new DirectoryInfo(tsProjFilePath).Parent.FullName.ToString() + "\\_Config\\PLC\\" + plcProject.File;
+                            PlcProjectViewModel plcProj = GetPlcprojFromXti(tsProjFilePath, xtiFilePath);
                             plcProjs.Add(plcProj);
                         }
                     }

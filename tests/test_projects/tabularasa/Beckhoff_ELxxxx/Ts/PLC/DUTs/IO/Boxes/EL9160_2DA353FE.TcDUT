@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL9160_2DA353FE" Id="{fd7d9a30-2595-4cef-8277-9207ccb0d28f}">
+  <DUT Name="EL9160_2DA353FE" Id="{3e5ee6ec-9a09-474b-bfbb-17a5ed2f5f3b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9160-0000-0016'}
 {attribute addProperty BoxType "EL9160-0000-0016"}
+{attribute addProperty Description "EL9160 Power Supplier with LED (230V, Diagnostics)"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "PowerOKAT %I*PowerOK_830843C11WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "765678590"}
 {attribute addProperty Size "5"}

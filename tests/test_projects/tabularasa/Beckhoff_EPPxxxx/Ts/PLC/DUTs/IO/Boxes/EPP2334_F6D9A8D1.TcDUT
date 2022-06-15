@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EPP2334_F6D9A8D1" Id="{da27ea37-9613-4485-9987-0b93b8ad9ee9}">
+  <DUT Name="EPP2334_F6D9A8D1" Id="{c837956b-2360-431c-ae23-219b858e32c3}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EPP2334-0061-0016'}
 {attribute addProperty BoxType "EPP2334-0061-0016"}
+{attribute addProperty Description "EPP2334-0061 4 Ch. Dig. Input/Output 24V, 0,5A, M8"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "Channel_1AT %I*Channel_830843C11Channel_2AT %I*Channel_830843C11Channel_3AT %I*Channel_830843C11Channel_4AT %I*Channel_830843C11Channel_5AT %Q*Channel_42CA91F71Channel_6AT %Q*Channel_42CA91F71Channel_7AT %Q*Channel_42CA91F71Channel_8AT %Q*Channel_42CA91F71WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "4141459665"}
 {attribute addProperty Size "12"}

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="A_0003_EL9930_0000_0017_96B57C1D" Id="{24055430-c7f9-4da8-b062-550449af36e7}">
+  <DUT Name="A_0003_EL9930_0000_0017_96B57C1D" Id="{5f1476f8-5ef9-419c-bb31-9dd115202094}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9930-0000-0017'}
 {attribute addProperty BoxType "EL9930-0000-0017"}
 {attribute addProperty Id "A_0004_EL9930_0001_0017EL9930_07FC3A1D4"}
@@ -8,7 +8,7 @@
 {attribute addProperty Size "4"}
 TYPE A_0003_EL9930_0000_0017_96B57C1D EXTENDS EL9930_B8165E3C :
 STRUCT
-	{attribute addProperty Name "A_0004_EL9930_0001_0017"}
+	{attribute addProperty Name "A_0004(EL9930-0001-0017)"}
 	{attribute addProperty PreviousPort "A_0003(EL9930-0000-0017) : B"}
 	A_0004_EL9930_0001_0017 : EL9930_07FC3A1D;
 END_STRUCT

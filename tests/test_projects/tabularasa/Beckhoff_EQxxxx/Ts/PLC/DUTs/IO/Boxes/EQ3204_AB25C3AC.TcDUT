@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EQ3204_AB25C3AC" Id="{05419091-f968-43a5-8310-72cd07e9939a}">
+  <DUT Name="EQ3204_AB25C3AC" Id="{8c573b11-7ac5-4520-9dea-29434b9183ff}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EQ3204-0002-0021'}
 {attribute addProperty BoxType "EQ3204-0002-0021"}
+{attribute addProperty Description "EQ3204-0002 4Ch. Ana. Input PT100 (RTD)"}
+{attribute addProperty Physics "YY"}
 {attribute addProperty Id "RTD_RTDInputs_Channel_1AT %I*AI_Standard_Channel_4A3944819RTD_RTDInputs_Channel_2AT %I*AI_Standard_Channel_4A3944819RTD_RTDInputs_Channel_3AT %I*AI_Standard_Channel_4A3944819RTD_RTDInputs_Channel_4AT %I*AI_Standard_Channel_4A3944819WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "2871378860"}
 {attribute addProperty Size "48"}

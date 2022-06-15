@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL2202_FB12F0C6" Id="{f6ea7a15-c814-47dd-b742-c04c5c31ec04}">
+  <DUT Name="EL2202_FB12F0C6" Id="{b040662f-96dd-42b4-8a1a-ab9e9087cf16}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL2202-0100-0016'}
 {attribute addProperty BoxType "EL2202-0100-0016"}
+{attribute addProperty Description "EL2202-0100 2Ch. Dig. Output 24V, 0.5A, DC Sync"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %Q*Channel_54BE63B32Channel_2AT %Q*Channel_54BE63B32WcStateAT %I*WcState_0B2B16F91InfoDataAT %I*InfoData_A7436BC610"}
 {attribute addProperty CRC "4212322502"}
 {attribute addProperty Size "15"}

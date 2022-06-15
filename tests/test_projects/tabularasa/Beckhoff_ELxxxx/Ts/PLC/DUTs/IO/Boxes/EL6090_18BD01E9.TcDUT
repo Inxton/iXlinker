@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EL6090_18BD01E9" Id="{fdf79ba7-3573-45ae-b08e-e08139a6998f}">
+  <DUT Name="EL6090_18BD01E9" Id="{99e24fe7-c146-4b8a-9bd2-60af35382491}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL6090-0000-0016'}
 {attribute addProperty BoxType "EL6090-0000-0016"}
+{attribute addProperty Description "EL6090 Display terminal"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "DIS_InputsAT %I*DIS_Inputs_E0E384E36DIS_OutputsAT %Q*DIS_Outputs_6C9BFFEE4WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_32EB74EA10"}
 {attribute addProperty CRC "415039977"}
 {attribute addProperty Size "22"}

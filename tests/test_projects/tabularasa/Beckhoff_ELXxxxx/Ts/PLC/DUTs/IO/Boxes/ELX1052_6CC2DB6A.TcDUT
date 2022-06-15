@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ELX1052_6CC2DB6A" Id="{540f380d-4e00-4cd4-8b5e-db64385ba5fe}">
+  <DUT Name="ELX1052_6CC2DB6A" Id="{80c96da3-5cc4-4d1f-acbe-bb3e45fa9edd}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: ELX1052-0000-0016'}
 {attribute addProperty BoxType "ELX1052-0000-0016"}
+{attribute addProperty Description "ELX1052 2Ch. Dig. Input  NAMUR, Ex i"}
+{attribute addProperty Physics "KK"}
 {attribute addProperty Id "Channel_1AT %I*Channel_31CEFA7F2Channel_2AT %I*Channel_31CEFA7F2WcStateAT %I*WcState_9091E0EB2InfoDataAT %I*InfoData_6F19DB2B2"}
 {attribute addProperty CRC "1824709482"}
 {attribute addProperty Size "8"}

@@ -14,8 +14,8 @@ namespace TsprojFile.Scan
             string device = new DeviceStructViewModel().GetType().ToString();
             string topology = new TopologyStructViewModel().GetType().ToString();
             string structureBase = new StructureBase("","","","", new ObservableCollection<PlcStruct>()).GetType().ToString();
-            string KboxFilter = nameof(BoxViewModel.PortAPhysics) + "=K*";
-            string YboxFilter = nameof(BoxViewModel.PortAPhysics) + "=Y*";
+            string KboxFilter = nameof(BoxViewModel.Physics) + "=K*";
+            string YboxFilter = nameof(BoxViewModel.Physics) + "=Y*";
 
 
             StructureBasesResourceDictionary.Add(StructureBase.Build("EtcSlaveTerminalBase_947E5A46",   structureBase, "*", "EtcSlaveBase", PlcStructuresInPlcLibraries));
