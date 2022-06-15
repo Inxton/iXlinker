@@ -1,14 +1,14 @@
 name: dev
 
 on: 
-  push:
-    branches : 
-      - dev
-  pull_request: 
-    paths:
-      - 'src/**'
-      - 'pipelines/**'
-      - '.github/**'
+  # push:
+  #   branches : 
+  #     - dev
+  # pull_request: 
+  #   paths:
+  #     - 'src/**'
+  #     - 'pipelines/**'
+  #     - '.github/**'
   workflow_dispatch:
 jobs:
   build:
@@ -22,5 +22,8 @@ jobs:
       - name: Cake
         env:
           gh-token: ${{ secrets.GH_TOKEN  }}
+          gh-inxton-ixlinker-nuget-api : ${{ secrets.NGT_TOKEN }}
+          cp : ${{ secrets.CP }}
+          cpw : ${{ secrets.CPW }}
         run: >
           .\build.ps1          
