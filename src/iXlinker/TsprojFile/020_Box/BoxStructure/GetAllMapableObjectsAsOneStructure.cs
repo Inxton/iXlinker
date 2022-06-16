@@ -37,7 +37,13 @@ namespace TsprojFile.Scan
                 }
                 else if (mapableObjects.Count >= 1)
                 {
-                    TopologyStructViewModel actTopologyStruct = new TopologyStructViewModel() { Prefix = ValidatePlcItem.Name(deviceViewModel.Name), Id = "", BoxOrderCode = deviceViewModel.Type.ToString()};
+                    string extends = "";
+                    if (deviceViewModel.Type.Equals(DeviceTypes.IODEVICETYPE_ETHERCATPROT))
+                    {
+                        string etcMasterBaseStructPrefix = "EtcMasterBase";
+                        extends = etcMasterBaseStructPrefix + "_" + CRC32.Calculate_CRC32(etcMasterBaseStructPrefix).ToString("X8");
+                    }
+                    TopologyStructViewModel actTopologyStruct = new TopologyStructViewModel() { Prefix = ValidatePlcItem.Name(deviceViewModel.Name), Id = "", BoxOrderCode = deviceViewModel.Type.ToString(), Extends = extends};
 
                     foreach (MappableObject mapableObject in mapableObjects)
                     {
@@ -146,7 +152,7 @@ namespace TsprojFile.Scan
                         {
                             member.Attributes.Add("{attribute addProperty Name \"" + mapableObject.NameOrigin + "\"}");
                         }
-                        else
+                        else if (!String.IsNullOrEmpty(mapableObject.Name))
                         {
                             member.Attributes.Add("{attribute addProperty Name \"" + mapableObject.Name + "\"}");
                         }
@@ -159,9 +165,6 @@ namespace TsprojFile.Scan
                         member.TypeNamespace =mapableObject.TypeNamespace;
                         member.Size = mapableObject.Size;
                         actTopologyStruct.AddMemberAndUpdateIdAndSize(member);
-                        //actTopologyStruct.StructMembers.Add(member);
-                        //actTopologyStruct.Id = actTopologyStruct.Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
-                        //actTopologyStruct.Size = actTopologyStruct.Size + member.Size;
                     }
 
                     foreach (MappableItem mapableItem in mapableObject.MapableItems)

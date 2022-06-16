@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9200_0334B857" Id="{2d91473e-484d-4c73-a9d9-ea7b1efdbb78}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9200--0000'}
+{attribute addProperty BoxType "EL9200--0000"}
+{attribute addProperty Description "EL9200 Power Supplier with LED (24V, Fuse)"}
+{attribute addProperty Physics "KK"}
+{attribute addProperty Id "EL9200"}
+{attribute addProperty CRC "53786711"}
+{attribute addProperty Size "0"}
+TYPE EL9200_0334B857 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

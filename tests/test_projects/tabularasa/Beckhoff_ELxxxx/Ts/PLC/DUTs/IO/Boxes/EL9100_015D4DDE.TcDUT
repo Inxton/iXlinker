@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9100_015D4DDE" Id="{c70df11a-8b0a-49a8-9921-4d5bb3f70ddd}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9100--0000'}
+{attribute addProperty BoxType "EL9100--0000"}
+{attribute addProperty Description "EL9100 Power Supplier with LED (24V)"}
+{attribute addProperty Physics "KK"}
+{attribute addProperty Id "EL9100"}
+{attribute addProperty CRC "22891998"}
+{attribute addProperty Size "0"}
+TYPE EL9100_015D4DDE EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -21,6 +21,7 @@ namespace iXlinkerExt
                 TcSmItem Xti = (TcSmItem)xtiSerializer.Deserialize(xtiReader);
                 TcSmItemTypeProject plcProject = (TcSmItemTypeProject)Xti.Items[0];
                 plcProj.Name = !string.IsNullOrEmpty(plcProject.Name) ? plcProject.Name.ToString() : "";
+                plcProj.XtiPathInFileSystem = xtiFilePath;
                 string plcProjFilePath = !string.IsNullOrEmpty(plcProject.PrjFilePath) ? plcProject.PrjFilePath.ToString() : "";
                 plcProjFilePath = !string.IsNullOrEmpty(plcProjFilePath) ? plcProjFilePath.Replace("..\\", "") : "";
 

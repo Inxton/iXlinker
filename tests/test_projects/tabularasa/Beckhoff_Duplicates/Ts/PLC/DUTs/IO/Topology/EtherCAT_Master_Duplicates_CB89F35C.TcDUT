@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EtherCAT_Master_Duplicates_CB89F35C" Id="{e1fd81cd-54dd-469c-aa3e-b4fb66ebdfec}">
+  <DUT Name="EtherCAT_Master_Duplicates_CB89F35C" Id="{bc826859-e922-4e62-be36-bfd189dba45a}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "boxesboxes_178979725785A_0076_AMP8000_0030_0103AMP8000_F7A82895113SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
 {attribute addProperty CRC "3414815580"}
 {attribute addProperty Size "6210"}
-TYPE EtherCAT_Master_Duplicates_CB89F35C :
+TYPE EtherCAT_Master_Duplicates_CB89F35C EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "boxes"}
 	{attribute addProperty PreviousPort "EtherCAT Master Duplicates : Master"}

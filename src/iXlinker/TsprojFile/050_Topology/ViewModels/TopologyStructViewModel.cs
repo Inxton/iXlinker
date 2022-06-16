@@ -36,10 +36,13 @@
         }
         public void AddMemberAndUpdateIdAndSize(TopologyStructMemberViewModel member)
         {
-            StructMembers.Add(member);
-            Id = Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
-            Size = Size + member.Size;
-            //Id = Id + member.Name + member.InOutPlcProj + member.Type_Value.Substring(member.Type_Value.LastIndexOf(".") + 1) + member.Size;
+            if (member.Name != null)
+            {
+                StructMembers.Add(member);
+                Id = Id + member.Name + member.InOutPlcProj + member.Type_Value + member.Size;
+                Size = Size + member.Size;
+                //Id = Id + member.Name + member.InOutPlcProj + member.Type_Value.Substring(member.Type_Value.LastIndexOf(".") + 1) + member.Size;
+            }
         }
     }
 }
