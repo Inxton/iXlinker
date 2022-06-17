@@ -61,8 +61,12 @@ namespace TsprojFile.Scan
 
 
             ValidateBoxStructMemberNamesUniqueness(ref actBoxStruct);
-            if (actBoxStruct.StructMembers.Count > 0)
+            if (actBoxStruct.StructMembers.Count >= 0)
             {
+                if (actBoxStruct.StructMembers.Count == 0)
+                {
+                    actBoxStruct.Id = actBoxStruct.Prefix;
+                }
                 //Calculate CRC of the actPdoStruct.Id
                 actBoxStruct.Crc32 = CRC32.Calculate_CRC32(actBoxStruct.Id);
                 actBoxStruct.Name = ValidatePlcItem.Name(actBoxStruct.Prefix + "_" + actBoxStruct.Crc32.ToString("X8"));
@@ -76,22 +80,34 @@ namespace TsprojFile.Scan
                     AddExtensionFromBaseBoxStructure(actBoxStruct);
                     BoxStructures.Add(actBoxStruct);
                 }
-                BoxStructMemberViewModel firstStructMember = actBoxStruct.StructMembers.FirstOrDefault();
-                pdoViewModel.Name = ValidatePlcItem.Name(actBoxStruct.Prefix);
-                pdoViewModel.Type_Value = actBoxStruct.Name;
-                pdoViewModel.TypeNamespace = actBoxStruct.TypeNamespace;
-                pdoViewModel.OwnerBname = firstStructMember.OwnerBname;
-                pdoViewModel.InOutPlcProj = firstStructMember.InOutPlcProj;
-                pdoViewModel.InOutMappings = firstStructMember.InOutMappings;
-                pdoViewModel.BoxOrderCode = firstStructMember.BoxOrderCode;
-                pdoViewModel.Size = actBoxStruct.Size;
+                if (actBoxStruct.StructMembers.Count > 0)
+                {
+                    BoxStructMemberViewModel firstStructMember = actBoxStruct.StructMembers.FirstOrDefault();
+                    pdoViewModel.Name = ValidatePlcItem.Name(actBoxStruct.Prefix);
+                    pdoViewModel.Type_Value = actBoxStruct.Name;
+                    pdoViewModel.TypeNamespace = actBoxStruct.TypeNamespace;
+                    pdoViewModel.OwnerBname = firstStructMember.OwnerBname;
+                    pdoViewModel.InOutPlcProj = firstStructMember.InOutPlcProj;
+                    pdoViewModel.InOutMappings = firstStructMember.InOutMappings;
+                    pdoViewModel.BoxOrderCode = firstStructMember.BoxOrderCode;
+                    pdoViewModel.Size = actBoxStruct.Size;
 
-                mapableObject.Name = ValidatePlcItem.Name(boxViewModel.Name);
-                mapableObject.Type_Value = ValidatePlcItem.Type(actBoxStruct.Name);
-                mapableObject.TypeNamespace = actBoxStruct.TypeNamespace;
-                mapableObject.Size = actBoxStruct.Size;
+                    mapableObject.Name = ValidatePlcItem.Name(boxViewModel.Name);
+                    mapableObject.Type_Value = ValidatePlcItem.Type(actBoxStruct.Name);
+                    mapableObject.TypeNamespace = actBoxStruct.TypeNamespace;
+                    mapableObject.Size = actBoxStruct.Size;
 
-                pdoViewModel.MapableObject = mapableObject;
+                    pdoViewModel.MapableObject = mapableObject;
+                }
+                else
+                {
+                    mapableObject.Name = ValidatePlcItem.Name(boxViewModel.Name);
+                    mapableObject.Type_Value = ValidatePlcItem.Type(actBoxStruct.Name);
+                    mapableObject.TypeNamespace = actBoxStruct.TypeNamespace;
+                    mapableObject.Size = actBoxStruct.Size;
+
+                    pdoViewModel.MapableObject = mapableObject;
+                }
             }
             else
             {

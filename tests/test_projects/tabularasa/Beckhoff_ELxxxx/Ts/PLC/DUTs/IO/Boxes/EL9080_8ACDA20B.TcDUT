@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9080_8ACDA20B" Id="{8a6e3313-47c8-4bdb-b864-85d742fcec02}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9080--0000'}
+{attribute addProperty BoxType "EL9080--0000"}
+{attribute addProperty Description "EL9080 Separation terminal"}
+{attribute addProperty Physics "KK"}
+{attribute addProperty Id "EL9080"}
+{attribute addProperty CRC "2328732171"}
+{attribute addProperty Size "0"}
+TYPE EL9080_8ACDA20B EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

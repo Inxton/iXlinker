@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Control_17BA1FC2" Id="{cd7d2daf-a412-4d1e-8c2b-b30f1f1f7254}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
+<TcPlcObject>
+	<DUT Name="Control_17BA1FC2">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
 {attribute addProperty BoxType "EM7004-0000-0017"}
 {attribute addProperty Id "Enable_PLSBOOL1"}
 {attribute addProperty CRC "398073794"}
@@ -13,5 +12,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

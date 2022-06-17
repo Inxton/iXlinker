@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9189_A9DCFE83" Id="{585f7799-ac47-4780-8fe4-17feae21ce0c}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9189--0000'}
+{attribute addProperty BoxType "EL9189--0000"}
+{attribute addProperty Description "EL9189 Potential Connection, 16 x Ground"}
+{attribute addProperty Physics "KK"}
+{attribute addProperty Id "EL9189"}
+{attribute addProperty CRC "2849832579"}
+{attribute addProperty Size "0"}
+TYPE EL9189_A9DCFE83 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

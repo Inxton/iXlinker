@@ -60,22 +60,25 @@ namespace TsprojFile.Scan
                 string propertyName = structureBase.PropertyFilter.Split("=", StringSplitOptions.RemoveEmptyEntries)[0];
                 string propertyValue = structureBase.PropertyFilter.Split("=", StringSplitOptions.RemoveEmptyEntries)[1];
 
-                if (propertyName.Equals(PortAPhysicsPropperty))
+                if (actBoxStruct.Physics != null && propertyValue != null)
                 {
-                    if (propertyValue.Equals(actBoxStruct.Physics))
+                    if (propertyName.Equals(PortAPhysicsPropperty))
                     {
-                        ret = true;
-                    }
-                    else if(propertyValue.Contains("*"))
-                    {
-                        int length = propertyValue.LastIndexOf("*");
-                        string baseValue = propertyValue.Substring(0, length);
-                        string actValue = actBoxStruct.Physics;
-                        if (actValue.Length >= length)
+                        if (propertyValue.Equals(actBoxStruct.Physics))
                         {
-                            actValue = actValue.Substring(0, length);
+                            ret = true;
                         }
-                        ret = baseValue == actValue;
+                        else if (propertyValue.Contains("*"))
+                        {
+                            int length = propertyValue.LastIndexOf("*");
+                            string baseValue = propertyValue.Substring(0, length);
+                            string actValue = actBoxStruct.Physics;
+                            if (actValue.Length >= length)
+                            {
+                                actValue = actValue.Substring(0, length);
+                            }
+                            ret = baseValue == actValue;
+                        }
                     }
                 }
             }

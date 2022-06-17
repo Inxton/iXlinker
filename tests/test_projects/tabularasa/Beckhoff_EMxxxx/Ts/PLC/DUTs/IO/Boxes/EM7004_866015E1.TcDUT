@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EM7004_866015E1" Id="{803de232-0b65-4c17-a49d-273a7661c4af}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9995'}
+<TcPlcObject>
+	<DUT Name="EM7004_866015E1">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9995'}
 {attribute addProperty BoxType "EM7004-0000-9995"}
 {attribute addProperty Description "EM7004 4-Axis Interface Unit"}
 {attribute addProperty Physics "KK"}
@@ -45,5 +44,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="ENC_Inputs_Channel_E5B5E929" Id="{43f74ac5-9fc5-4d53-86ea-b7ef499bc42c}">
-    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
+<TcPlcObject>
+	<DUT Name="ENC_Inputs_Channel_E5B5E929">
+		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
 {attribute addProperty BoxType "EM7004-0000-0017"}
 {attribute addProperty Id "StatusAT %I*Status_B4798D867Counter_valueAT %I*UINT2Latch_valueAT %I*UINT2"}
 {attribute addProperty CRC "3853904169"}
@@ -17,5 +16,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-  </DUT>
+	</DUT>
 </TcPlcObject>

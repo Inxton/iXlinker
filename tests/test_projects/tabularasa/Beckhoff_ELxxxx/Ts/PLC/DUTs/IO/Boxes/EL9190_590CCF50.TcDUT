@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9190_590CCF50" Id="{d7c162bf-e409-4c76-b164-e75899f696d6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9190--0000'}
+{attribute addProperty BoxType "EL9190--0000"}
+{attribute addProperty Description "EL9190 Power Supplier"}
+{attribute addProperty Physics "KK"}
+{attribute addProperty Id "EL9190"}
+{attribute addProperty CRC "1494011728"}
+{attribute addProperty Size "0"}
+TYPE EL9190_590CCF50 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

@@ -18,7 +18,7 @@ namespace TsprojFile.Scan
                     foreach (TcSmBoxDefBox sub_box in box.Box)
                     {
                         BoxViewModel subBoxViewModel = CreateBox(vs, device, ref deviceVm, sub_box, my_childs_path);
-                        if (subBoxViewModel != null && subBoxViewModel.MapableObjectGrouped.Name != null && subBoxViewModel.MapableObjectGrouped.MapableItems.Count > 0)
+                        if (subBoxViewModel != null && subBoxViewModel.MapableObjectGrouped.Name != null) //&& subBoxViewModel.MapableObjectGrouped.MapableItems.Count > 0
                         {
                             boxViewModel.Boxes.Add(subBoxViewModel);
                             boxViewModel.MapableObjects.Add(subBoxViewModel.MapableObjectGrouped);

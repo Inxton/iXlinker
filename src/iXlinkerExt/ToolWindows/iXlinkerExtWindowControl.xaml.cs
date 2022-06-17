@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio;
+﻿using EnvDTE;
+using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using System;
@@ -34,16 +35,20 @@ namespace iXlinkerExt
 
         private void generateMappings_Click(object sender, RoutedEventArgs e)
         {
-            string xaePath = iXlinkerExtCommand.Instance.XAE.CompletePathInFileSystem;
+            string xaeCompletePath = iXlinkerExtCommand.Instance.XAE.CompletePathInFileSystem;
+            string xaeName = iXlinkerExtCommand.Instance.XAE.Name;
+            string xaeUniqueName = iXlinkerExtCommand.Instance.XAE.UniqueName;
             string platform = iXlinkerExtCommand.Instance.targetConfigurationPlatform;
             string plcPath = iXlinkerExtCommand.Instance.PLC.CompletePathInFileSystem;
+            string plcProjName = iXlinkerExtCommand.Instance.PLC.Name;
             string disabledIO = iXlinkerExtCommand.Instance.doNotGenerateDisabledIO.ToString();
             string devenvPath = iXlinkerExtCommand.Instance.devenvPath;
             string maxEthercatFrameIndex = iXlinkerExtCommand.Instance.maxEthercatFrameIndex.ToString();
             bool isIndependent = iXlinkerExtCommand.Instance.PLC.IsIndependent;
+            string xtiPathInFileSystem = iXlinkerExtCommand.Instance.PLC.XtiPathInFileSystem.ToString();
 
             List<string> list = new List<string>();
-            list.Add($"-t \"{xaePath}\"");
+            list.Add($"-t \"{xaeCompletePath}\"");
             list.Add($"-p \"{platform}\"");
             list.Add($"-c \"{plcPath}\"");
             list.Add($"-g {disabledIO}");
@@ -58,6 +63,7 @@ namespace iXlinkerExt
             string iXlinkerExe = (iXlinkerExeFolder + "\\" + "iXlinker.exe").Replace("\\\\", "\\");
             bool isFilteredSolution = solutionDirectory2.Contains(".slnf");
             string slnfPath = string.Empty;
+
             if (isFilteredSolution)
             {
                 slnfPath = SlnfFinder.DiscoverSlnfFilePath();
@@ -65,7 +71,7 @@ namespace iXlinkerExt
 
             iXlinkerExtCommand.CloseToolWindow();
 
-            if (File.Exists(iXlinkerExe))
+            if(File.Exists(iXlinkerExe))
             {
                 int close = -1;
 
@@ -83,6 +89,7 @@ namespace iXlinkerExt
                     {
                         System.Diagnostics.Process exeProcess = System.Diagnostics.Process.Start(startInfo);
                         exeProcess.WaitForExit();
+                        Notification.ShowInStatusBar("iXlinker finished succesfully.");
                     }
                     catch (Exception ex)
                     {
@@ -91,17 +98,32 @@ namespace iXlinkerExt
                             ex.Message),
                             "iXlinkerStart", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
+                    int open = -1;
                     if (!isFilteredSolution)
                     {
-                        ivsSolution.OpenSolutionFile((uint)__VSSLNOPENOPTIONS.SLNOPENOPT_DontConvertSLN, solutionFileName);
+                        open = ivsSolution.OpenSolutionFile((uint)__VSSLNOPENOPTIONS.SLNOPENOPT_DontConvertSLN, solutionFileName);
+                        Notification.ShowInStatusBar("Solution: {" + solutionFileName.ToString() + "} openned succesfully.");
+                        if (open == VSConstants.S_OK)
+                        {
+                            if (isIndependent)
+                            {
+                                DTE dte = (DTE)ServiceProvider.GlobalProvider.GetService(typeof(DTE));
+                                dte.ExecuteCommand("File.SaveAll");
+                                Notification.ShowInStatusBar("Solution: {" + solutionFileName.ToString() + "} saved succesfully.");
+                            }
+                        }
                     }
                     else if (!String.IsNullOrEmpty(slnfPath))
                     {
-                        ivsSolution.OpenSolutionFile((uint)__VSSLNOPENOPTIONS.SLNOPENOPT_DontConvertSLN, slnfPath);
-                    }
-                    if (isIndependent)
-                    {
-                        ivsSolution.SaveSolutionElement((uint)__VSSLNSAVEOPTIONS.SLNSAVEOPT_ForceSave, null, 0);
+                        open = ivsSolution.OpenSolutionFile((uint)__VSSLNOPENOPTIONS.SLNOPENOPT_DontConvertSLN, slnfPath);
+                        Notification.ShowInStatusBar("Filtered solution: {" + slnfPath.ToString() + "} openned succesfully.");
+                        if (open == VSConstants.S_OK)
+                        {
+                            if (isIndependent)
+                            {
+                                Notification.ShowInStatusBar("Filtered solution: {" + slnfPath.ToString() + "} saved succesfully.");
+                            }
+                        }
                     }
                 }
             }

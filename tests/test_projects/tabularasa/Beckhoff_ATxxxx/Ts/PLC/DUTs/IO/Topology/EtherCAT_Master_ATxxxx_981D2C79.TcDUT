@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EtherCAT_Master_ATxxxx_981D2C79" Id="{d9bbefb6-7e7b-44ec-8613-67331798d132}">
+  <DUT Name="EtherCAT_Master_ATxxxx_981D2C79" Id="{89fcc645-b143-48af-bcdc-b66118e597c4}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "Beckhoff_AT1xxxBeckhoff_AT1xxx_27B721695890Beckhoff_ATH2xxxBeckhoff_ATH2xxx_11442560884SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
 {attribute addProperty CRC "2552048761"}
 {attribute addProperty Size "7086"}
-TYPE EtherCAT_Master_ATxxxx_981D2C79 :
+TYPE EtherCAT_Master_ATxxxx_981D2C79 EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "Beckhoff AT1xxx"}
 	{attribute addProperty PreviousPort "EtherCAT_Master_ATxxxx : Master"}

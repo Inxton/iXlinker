@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9180_8B150E8C" Id="{074337eb-95f2-41f7-aa99-61556c72842f}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9180--0000'}
+{attribute addProperty BoxType "EL9180--0000"}
+{attribute addProperty Description "EL9180 Potential Connection, 2 x 24-230V, 2 x PE"}
+{attribute addProperty Physics "KK"}
+{attribute addProperty Id "EL9180"}
+{attribute addProperty CRC "2333413004"}
+{attribute addProperty Size "0"}
+TYPE EL9180_8B150E8C EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

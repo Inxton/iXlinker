@@ -17,18 +17,18 @@ namespace TsprojFile.Scan
             string KboxFilter = nameof(BoxViewModel.Physics) + "=K*";
             string YboxFilter = nameof(BoxViewModel.Physics) + "=Y*";
 
-
             StructureBasesResourceDictionary.Add(StructureBase.Build("EtcSlaveTerminalBase_947E5A46",   structureBase, "*", "EtcSlaveBase", PlcStructuresInPlcLibraries));
             StructureBasesResourceDictionary.Add(StructureBase.Build("EtcSlaveBoxBase_77A0E4A7",        structureBase, "*", "EtcSlaveBase", PlcStructuresInPlcLibraries));
             StructureBasesResourceDictionary.Add(StructureBase.Build("*", box, KboxFilter, "EtcSlaveTerminalBase",  PlcStructuresInPlcLibraries).AddAttribute("{attribute clr[Container(Layout.Stack)]}").AddAttribute("{attribute clr[Group(Layout.GroupBox)]}").AddAttribute("{attribute addProperty PreviousPort \"Unknown\"}"));
             StructureBasesResourceDictionary.Add(StructureBase.Build("*", box, YboxFilter, "EtcSlaveBoxBase",       PlcStructuresInPlcLibraries).AddAttribute("{attribute clr[Container(Layout.Stack)]}").AddAttribute("{attribute clr[Group(Layout.GroupBox)]}").AddAttribute("{attribute addProperty PreviousPort \"Unknown\"}"));
 
-            StructureBasesResourceDictionary.Add(StructureBase.Build("InfoData_23CBA837", pdo, "*","!", PlcStructuresInPlcLibraries));
-            StructureBasesResourceDictionary.Add(StructureBase.Build("InfoData_6F19DB2B", pdo, "*","!", PlcStructuresInPlcLibraries));
-            StructureBasesResourceDictionary.Add(StructureBase.Build("WcState_0B2B16F9",  pdo, "*","!", PlcStructuresInPlcLibraries));
-            StructureBasesResourceDictionary.Add(StructureBase.Build("WcState_9091E0EB", pdo, "*", "!", PlcStructuresInPlcLibraries));
-            StructureBasesResourceDictionary.Add(StructureBase.Build("!", pdo, "*", "InputBase", PlcStructuresInPlcLibraries));
-            StructureBasesResourceDictionary.Add(StructureBase.Build("!", pdo, "*", "OutputBase", PlcStructuresInPlcLibraries));
+            StructureBasesResourceDictionary.Add(StructureBase.Build("InfoData_23CBA837", pdo, "*","!", PlcStructuresInPlcLibraries));  //The structureName is NOT extended by any baseStructure
+            StructureBasesResourceDictionary.Add(StructureBase.Build("InfoData_6F19DB2B", pdo, "*","!", PlcStructuresInPlcLibraries));  //The structureName is NOT extended by any baseStructure
+            StructureBasesResourceDictionary.Add(StructureBase.Build("WcState_0B2B16F9",  pdo, "*","!", PlcStructuresInPlcLibraries));  //The structureName is NOT extended by any baseStructure
+            StructureBasesResourceDictionary.Add(StructureBase.Build("WcState_9091E0EB", pdo, "*", "!", PlcStructuresInPlcLibraries));  //The structureName is NOT extended by any baseStructure
+            StructureBasesResourceDictionary.Add(StructureBase.Build("!", pdo, "*", "InputBase", PlcStructuresInPlcLibraries));         //Only the base structure is created
+            StructureBasesResourceDictionary.Add(StructureBase.Build("!", pdo, "*", "OutputBase", PlcStructuresInPlcLibraries));        //Only the base structure is created
+            StructureBasesResourceDictionary.Add(StructureBase.Build("!", topology, "*", "EtcMasterBase", PlcStructuresInPlcLibraries));//Only the base structure is created
         }
     }
 }

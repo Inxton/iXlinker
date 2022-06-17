@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9550_91021FB7" Id="{80909772-ba3d-4846-99df-9446a8a0dd4e}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9550--0000'}
+{attribute addProperty BoxType "EL9550--0000"}
+{attribute addProperty Description "EL9550 Surge/Overvoltagefilter (Power and system supply)"}
+{attribute addProperty Physics "KK"}
+{attribute addProperty Id "EL9550"}
+{attribute addProperty CRC "2432835511"}
+{attribute addProperty Size "0"}
+TYPE EL9550_91021FB7 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

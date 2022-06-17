@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9195_4EC9A43B" Id="{10b46bd1-721b-4cb2-a6a1-529896f951d6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9195--0000'}
+{attribute addProperty BoxType "EL9195--0000"}
+{attribute addProperty Description "EL9195 Potential Connection, 2 x Shield"}
+{attribute addProperty Physics "KK"}
+{attribute addProperty Id "EL9195"}
+{attribute addProperty CRC "1321837627"}
+{attribute addProperty Size "0"}
+TYPE EL9195_4EC9A43B EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

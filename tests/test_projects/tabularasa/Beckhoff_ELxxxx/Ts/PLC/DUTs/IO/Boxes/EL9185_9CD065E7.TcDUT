@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
+  <DUT Name="EL9185_9CD065E7" Id="{38768f14-ee4b-47cd-b184-c0ecc42df3e4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL9185--0000'}
+{attribute addProperty BoxType "EL9185--0000"}
+{attribute addProperty Description "EL9185 Potential Connection, 4 x 24-230V"}
+{attribute addProperty Physics "KK"}
+{attribute addProperty Id "EL9185"}
+{attribute addProperty CRC "2630903271"}
+{attribute addProperty Size "0"}
+TYPE EL9185_9CD065E7 EXTENDS EtcSlaveTerminalBase_947E5A46 :
+STRUCT
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

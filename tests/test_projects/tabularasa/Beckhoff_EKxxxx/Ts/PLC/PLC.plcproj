@@ -210,6 +210,9 @@
     <Compile Include="DUTs\IO\Boxes\EK1121_1FC0878B.TcDUT">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DUTs\IO\Boxes\EK1200_013D0B49.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DUTs\IO\Boxes\EK1300_6BC01D14.TcDUT">
       <SubType>Code</SubType>
     </Compile>
@@ -273,10 +276,10 @@
     <Compile Include="DUTs\IO\Topology\Beckhoff_EK11xx_811529C6.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_EK12xxEK1122_F03C48A9.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_EK12xxEK1122_F8B8118B.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\Beckhoff_EK12xx_B10606C6.TcDUT">
+    <Compile Include="DUTs\IO\Topology\Beckhoff_EK12xx_F07DE953.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Topology\Beckhoff_EK13xxEK1122_30D1B042.TcDUT">
@@ -315,7 +318,7 @@
     <Compile Include="DUTs\IO\Topology\Beckhoff_EKxxxx_0080_9DDEF925.TcDUT">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DUTs\IO\Topology\EtherCAT_Master_EKxxxx_E740B17E.TcDUT">
+    <Compile Include="DUTs\IO\Topology\EtherCAT_Master_EKxxxx_2095F716.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\EtcSlaveBase_82538BE2.TcDUT">
@@ -334,6 +337,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DUTs\IO\Base\OutputBase_10CEE7DE.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DUTs\IO\Base\EtcMasterBase_62654B43.TcDUT">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="GVLs\GVL_iXlinker.TcGVL">

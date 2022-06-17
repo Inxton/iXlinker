@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EtherCAT_Master_EJxxxx_783A4421" Id="{1591b0f9-f280-44da-a388-287204bbfd27}">
+  <DUT Name="EtherCAT_Master_EJxxxx_F8B494BA" Id="{f9d93508-681b-47b1-937a-5dd2508e3732}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
-{attribute addProperty Id "Beckhoff_EJ1xxxBeckhoff_EJ1xxx_8ABA4DFB121Beckhoff_EJ2xxxBeckhoff_EJ2xxx_F745D3BC254Beckhoff_EJ3xxxBeckhoff_EJ3xxx_05F253C11180Beckhoff_EJ4xxxBeckhoff_EJ4xxx_77B5C5A6177Beckhoff_EJ5xxxBeckhoff_EJ5xxx_E1A62FB7142Beckhoff_EJ6xxxBeckhoff_EJ6xxx_D380D5DE176Beckhoff_EJ7xxxBeckhoff_EJ7xxx_D0F87F471315Beckhoff_EJ9xxxBeckhoff_EJ9xxx_491FB8F7124Beckhoff_EJx9xxBeckhoff_EJx9xx_66D9432D462SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
-{attribute addProperty CRC "2017084449"}
+{attribute addProperty Id "Beckhoff_EJ1xxxBeckhoff_EJ1xxx_8ABA4DFB121Beckhoff_EJ2xxxBeckhoff_EJ2xxx_F745D3BC254Beckhoff_EJ3xxxBeckhoff_EJ3xxx_05F253C11180Beckhoff_EJ4xxxBeckhoff_EJ4xxx_77B5C5A6177Beckhoff_EJ5xxxBeckhoff_EJ5xxx_E1A62FB7142Beckhoff_EJ6xxxBeckhoff_EJ6xxx_D380D5DE176Beckhoff_EJ7xxxBeckhoff_EJ7xxx_D0F87F471315Beckhoff_EJ9xxxBeckhoff_EJ9xxx_428E1E12124Beckhoff_EJx9xxBeckhoff_EJx9xx_66D9432D462SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
+{attribute addProperty CRC "4172584122"}
 {attribute addProperty Size "4263"}
-TYPE EtherCAT_Master_EJxxxx_783A4421 :
+TYPE EtherCAT_Master_EJxxxx_F8B494BA EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "Beckhoff EJ1xxx"}
 	{attribute addProperty PreviousPort "EtherCAT_Master_EJxxxx : Master"}
@@ -31,7 +31,7 @@ STRUCT
 	Beckhoff_EJ7xxx : Beckhoff_EJ7xxx_D0F87F47;
 	{attribute addProperty Name "Beckhoff EJ9xxx"}
 	{attribute addProperty PreviousPort "Beckhoff EJ7xxx : C"}
-	Beckhoff_EJ9xxx : Beckhoff_EJ9xxx_491FB8F7;
+	Beckhoff_EJ9xxx : Beckhoff_EJ9xxx_428E1E12;
 	{attribute addProperty Name "Beckhoff EJx9xx"}
 	{attribute addProperty PreviousPort "Beckhoff EJ9xxx : C"}
 	Beckhoff_EJx9xx : Beckhoff_EJx9xx_66D9432D;
