@@ -5,7 +5,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private void AddDevice(Solution vs, TcSmProjectProjectIODevice device)
+        private void AddDevice(Solution vs, TcSmDevDef device)
         {
             DeviceTypes device_type = (DeviceTypes)device.DevType;
 

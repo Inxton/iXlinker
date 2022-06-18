@@ -8,7 +8,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private BoxViewModel FillBox(TcSmProjectProjectIODevice device, ref DeviceViewModel deviceVm, IBox box, string parent_path)
+        private BoxViewModel FillBox(TcSmDevDef device, ref DeviceViewModel deviceVm, IBox box, string parent_path)
         {
             BoxViewModel boxViewModel = new BoxViewModel();
             string ownerB_name = "";

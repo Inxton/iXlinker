@@ -8,7 +8,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private BoxViewModel FillTerminal(TcSmProjectProjectIODevice device, ref DeviceViewModel deviceVm, TcSmTermDef box, string parent_path)
+        private BoxViewModel FillTerminal(TcSmDevDef device, ref DeviceViewModel deviceVm, TcSmTermDef box, string parent_path)
         {
             BoxViewModel boxViewModel = new BoxViewModel();
             ObservableCollection<PdoViewModel> allPdos = new ObservableCollection<PdoViewModel>();

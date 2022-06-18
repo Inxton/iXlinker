@@ -168,7 +168,7 @@ namespace TsprojFile.Scan
 
                             if (!vs.DoNotGenerateDisabled || !_device.DisabledSpecified || !_device.Disabled)
                             {
-                                AddDevice(vs, device);
+                                AddDevice(vs, _device);
                             }
                         }
 
