@@ -72,7 +72,7 @@ namespace TsprojFile.Scan
 
                 boxViewModel.BoxType = BoxTypes.EtherCAT;
                 boxViewModel.MasterDeviceType = (DeviceTypes)device.DevType;
-                boxViewModel.MasterDeviceName = device.Name;
+                boxViewModel.MasterDeviceName = device.RemoteName != null ? device.RemoteName : device.Name != null ? device.Name : "";
                 boxViewModel.MasterDeviceId = device.Id;
                 boxViewModel.Name = box_name;
                 boxViewModel.BoxOrderCode = box_term_type;

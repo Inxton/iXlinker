@@ -18,13 +18,13 @@ namespace TsprojFile.Scan
             string device_name = "???";
             try
             {
-                if (device.Name != null)
-                {
-                    device_name = device.Name;
-                }
-                else if (device.RemoteName != null)
+                if (device.RemoteName != null)
                 {
                     device_name = device.RemoteName;
+                }
+                else if (device.Name != null)
+                {
+                    device_name = device.Name;
                 }
             }
             catch (Exception ex)

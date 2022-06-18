@@ -30,7 +30,7 @@ namespace TsprojFile.Scan
                             }
                             if (!vs.DoNotGenerateDisabled || !devDefBox.DisabledSpecified || !devDefBox.Disabled)
                             {
-                                boxViewModel = CreateBox(vs, device, ref deviceViewModel, devDefBox, "TIID" + tmpLevelSeparator + device.Name);
+                                boxViewModel = CreateBox(vs, device, ref deviceViewModel, devDefBox, "TIID" + tmpLevelSeparator + deviceViewModel.Name);
                                 deviceViewModel.Boxes.Add(boxViewModel);
 
                                 deviceViewModel.MapableObjects.Add(boxViewModel.MapableObjectGrouped);

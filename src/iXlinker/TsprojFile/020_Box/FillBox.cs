@@ -204,7 +204,7 @@ namespace TsprojFile.Scan
                             ownerB_name = parent_path;
                             connectedToPort = "";
                             connectedToBoxId = 0;
-                            previousPort = device.Name.ToString() + " : Master";
+                            previousPort = device.RemoteName != null ? device.RemoteName.ToString() : device.Name != null ? device.Name.ToString() : "" + " : Master";
                         }
                     }
                 }
@@ -262,7 +262,7 @@ namespace TsprojFile.Scan
                 }
                 boxViewModel.BoxType = BoxTypes.EtherCAT;
                 boxViewModel.MasterDeviceType = (DeviceTypes)device.DevType;
-                boxViewModel.MasterDeviceName = device.Name;
+                boxViewModel.MasterDeviceName = device.RemoteName != null ? device.RemoteName : device.Name != null ? device.Name : "";
                 boxViewModel.MasterDeviceId = device.Id;
                 boxViewModel.Name = box_name;
                 boxViewModel.BoxOrderCode = box_order_code;
