@@ -12,7 +12,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private PdoViewModel GetDeviceInfoDataAsOneStructure(TcSmProjectProjectIODevice device, DeviceViewModel deviceViewModel)
+        private PdoViewModel GetDeviceInfoDataAsOneStructure(TcSmDevDef device, DeviceViewModel deviceViewModel)
         {
             ObservableCollection<PdoEntryViewModel> InfoDataEntries = new ObservableCollection<PdoEntryViewModel>();
 

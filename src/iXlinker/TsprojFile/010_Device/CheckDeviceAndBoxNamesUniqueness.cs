@@ -3,12 +3,15 @@ using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
 using System.Collections.Generic;
 using iXlinker.Utils;
+using System.Linq;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private bool CheckDeviceAndBoxNamesUniqueness(TcSmProjectProjectIO Io)
+        private bool CheckDeviceAndBoxNamesUniqueness(Solution vs, TcSmProjectProjectIO Io)
         {
             List<string> devNames = new List<string>();
 
@@ -17,29 +20,78 @@ namespace TsprojFile.Scan
             {
                 foreach (TcSmProjectProjectIODevice d in Io.Items)
                 {
-                    List<string> boxNames = new List<string>();
-
+                    List<string> TsProjBoxNames = new List<string>();
                     if (!d.DisabledSpecified || !d.DisabledSpecified)
                     {
-
-
-                        if (devNames.Contains(d.Name))
+                        string devName = d.Name != null ? d.Name : d.File != null ? d.File.ToString().Replace(".xti",""): "";
+                        bool isIndependentProjectFile = d.Name == null && d.File != null;
+                        if (devNames.Contains(devName))
                         {
-                            EventLogger.Instance.Logger.Information("Not unique device name {0} found!!!", d.Name);
+                            EventLogger.Instance.Logger.Error("Not unique device name: {0} found in the XAE project file: {1}!!!", devName , vs.TsProject.CompletePathInFileSystem);
                             ret = false;
                         }
                         else
                         {
-                            devNames.Add(d.Name);
+                            devNames.Add(devName);
                         }
-                        if (d.Box != null)
+                        if (!isIndependentProjectFile && d.Box != null)
                         {
                             foreach (TcSmDevDefBox box in d.Box)
                             {
-                                if (!CheckDevDefNameUniqueness(box, ref boxNames))
+                                if (!CheckDevDefNameUniqueness(vs.TsProject.CompletePathInFileSystem, devName + "." + box.Name, box, ref TsProjBoxNames))
                                 {
                                     ret = false;
                                 }
+                            }
+                        }
+                        if (isIndependentProjectFile)
+                        {
+                            string fileName = vs.IndependentIoDevices.Where(c => c.Name.Equals(devName)).Single().CompletePathInFileSystem;
+
+                            if (fileName != null)
+                            {
+                                if (File.Exists(fileName))
+                                {
+                                    XmlSerializer serializer = new XmlSerializer(typeof(TcSmItem));
+                                    StreamReader reader = new StreamReader(fileName);
+                                    List<string> XtiProjBoxNames = new List<string>();
+
+                                    try
+                                    {
+                                        TcSmItem Xti = (TcSmItem)serializer.Deserialize(reader);
+                                        TcSmDevDef device = (TcSmDevDef)Xti.Items[0];
+                                        if (device.Box != null)
+                                        {
+                                            foreach (TcSmDevDefBox box in device.Box)
+                                            {
+                                                if (!CheckDevDefNameUniqueness(fileName, devName + "." + box.Name, box, ref XtiProjBoxNames))
+                                                {
+                                                    ret = false;
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                                    }
+                                    finally
+                                    {
+                                        reader.Close();
+                                    }
+                                }
+                                else
+                                {
+                                    EventLogger.Instance.Logger.Error(@"Unable to find xti file for the device: " + devName + "!!!"
+                                         + Environment.NewLine + @"File: "+ fileName + " not found!!!"
+                                         + Environment.NewLine + System.Reflection.MethodBase.GetCurrentMethod().Name);
+                                }
+                            }
+                            else
+                            {
+                                EventLogger.Instance.Logger.Error(@"Unable to discover complete path to xti file of the device: " + devName
+                                     + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                             }
                         }
                     }
@@ -47,7 +99,7 @@ namespace TsprojFile.Scan
             }
             return ret;
         }
-        private bool CheckDevDefNameUniqueness(TcSmDevDefBox box, ref List<string> boxNames)
+        private bool CheckDevDefNameUniqueness(string fileName, string path, TcSmDevDefBox box, ref List<string> boxNames)
         {
             bool ret = true;
             if (!box.DisabledSpecified || !box.Disabled)
@@ -55,7 +107,7 @@ namespace TsprojFile.Scan
 
                 if (boxNames.Contains(box.Name))
                 {
-                    EventLogger.Instance.Logger.Information("Not unique box name {0} found!!!", box.Name);
+                    EventLogger.Instance.Logger.Error("Not unique box name: {0} found in: {1} in the XAE project file: {2}!!!", box.Name, path, fileName);
                     ret = false;
                 }
                 else
@@ -66,7 +118,7 @@ namespace TsprojFile.Scan
                 {
                     foreach (TcSmBoxDefBox subbox in box.Box)
                     {
-                        if (!CheckBoxDefNameUniqueness(subbox, ref boxNames))
+                        if (!CheckBoxDefNameUniqueness(fileName, path + "." + subbox.Name, subbox, ref boxNames))
                         {
                             ret = false;
                         }
@@ -77,7 +129,7 @@ namespace TsprojFile.Scan
             return ret;
         }
 
-        private bool CheckBoxDefNameUniqueness(TcSmBoxDefBox box, ref List<string> boxNames)
+        private bool CheckBoxDefNameUniqueness(string fileName, string path, TcSmBoxDefBox box, ref List<string> boxNames)
         {
             bool ret = true;
             if (!box.DisabledSpecified || !box.Disabled)
@@ -85,7 +137,7 @@ namespace TsprojFile.Scan
 
                 if (boxNames.Contains(box.Name))
                 {
-                    EventLogger.Instance.Logger.Information("Not unique box name {0} found!!!", box.Name);
+                    EventLogger.Instance.Logger.Error("Not unique box name: {0} found in: {1} in the XAE project file: {2}!!!", box.Name, path, fileName);
                     ret = false;
                 }
                 else
@@ -96,9 +148,8 @@ namespace TsprojFile.Scan
                 {
                     foreach (TcSmBoxDefBox subbox in box.Box)
                     {
-                        if (!CheckBoxDefNameUniqueness(subbox, ref boxNames))
+                        if (!CheckBoxDefNameUniqueness(fileName, path + "." + subbox.Name, subbox, ref boxNames))
                         {
-                            EventLogger.Instance.Logger.Information("Not unique box name {0} found!!!", box.Name);
                             ret = false;
                         }
                     }

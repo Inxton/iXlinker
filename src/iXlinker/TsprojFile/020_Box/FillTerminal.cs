@@ -8,7 +8,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private BoxViewModel FillTerminal(TcSmProjectProjectIODevice device, ref DeviceViewModel deviceVm, TcSmTermDef box, string parent_path)
+        private BoxViewModel FillTerminal(TcSmDevDef device, ref DeviceViewModel deviceVm, TcSmTermDef box, string parent_path)
         {
             BoxViewModel boxViewModel = new BoxViewModel();
             ObservableCollection<PdoViewModel> allPdos = new ObservableCollection<PdoViewModel>();
@@ -72,7 +72,7 @@ namespace TsprojFile.Scan
 
                 boxViewModel.BoxType = BoxTypes.EtherCAT;
                 boxViewModel.MasterDeviceType = (DeviceTypes)device.DevType;
-                boxViewModel.MasterDeviceName = device.Name;
+                boxViewModel.MasterDeviceName = device.RemoteName != null ? device.RemoteName : device.Name != null ? device.Name : "";
                 boxViewModel.MasterDeviceId = device.Id;
                 boxViewModel.Name = box_name;
                 boxViewModel.BoxOrderCode = box_term_type;

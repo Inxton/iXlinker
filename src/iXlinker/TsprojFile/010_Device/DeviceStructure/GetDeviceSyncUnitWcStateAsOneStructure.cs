@@ -9,7 +9,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private PdoViewModel GetDeviceSyncUnitWcStateAsOneStructure(TcSmProjectProjectIODevice device, DeviceViewModel deviceViewModel, string plcTaskA , string plcTaskB)
+        private PdoViewModel GetDeviceSyncUnitWcStateAsOneStructure(TcSmDevDef device, DeviceViewModel deviceViewModel, string plcTaskA , string plcTaskB)
         {
 
             ObservableCollection<PdoEntryViewModel> WcStateEntries = new ObservableCollection<PdoEntryViewModel>();
