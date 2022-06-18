@@ -33,6 +33,23 @@ namespace iXlinkerDtos
             }
         }
 
+        private ObservableCollection<IoDevice> independentIoDevices;
+        public ObservableCollection<IoDevice> IndependentIoDevices
+        {
+            get
+            {
+                return this.independentIoDevices ?? (this.independentIoDevices = new ObservableCollection<IoDevice>());
+            }
+            set
+            {
+                if (value != null)
+                {
+                    this.independentIoDevices = value;
+                    NotifyPropertyChanged(nameof(IndependentIoDevices));
+                }
+            }
+        }
+
         private PlcProject plcProject;
         public PlcProject PlcProject
         {

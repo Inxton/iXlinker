@@ -18,6 +18,7 @@ namespace iXlinker.TsprojFile.Mapping
                 vs.TsProject.CompletePathInFileSystem = tsProjFilePath;
                 vs.TsProject.FolderPathInFileSystem = tsProjFilePath.Substring(0, tsProjFilePath.LastIndexOf("\\", StringComparison.Ordinal));
                 vs.TsProject.FileNameInFileSystem = tsProjFilePath.Substring(tsProjFilePath.LastIndexOf("\\", StringComparison.Ordinal) + 1);
+                vs.TsProject.Name = vs.TsProject.FileNameInFileSystem.Replace(".tsproj","");
 
                 //Active target platform
                 string defaultTargetPlatform = "Release|TwinCAT RT (x64)";
@@ -38,6 +39,8 @@ namespace iXlinker.TsprojFile.Mapping
                         vs.ActiveTargetPlatform = defaultTargetPlatform;
                     }
                 }
+                //Discover paths for devices stored as Independent Project Files
+                GetInpedendentProjectFileIO(vs);
 
                 //Plcproj details
                 if (string.IsNullOrEmpty(plcProjFilePath))

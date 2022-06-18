@@ -8,7 +8,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private ObservableCollection<SyncUnitViewModel> GetAllSyncUnits(TcSmProjectProjectIODevice device)
+        private ObservableCollection<SyncUnitViewModel> GetAllSyncUnits(TcSmDevDef device)
         {
             ObservableCollection<SyncUnitViewModel> syncUnitViewModels = new ObservableCollection<SyncUnitViewModel>();
 

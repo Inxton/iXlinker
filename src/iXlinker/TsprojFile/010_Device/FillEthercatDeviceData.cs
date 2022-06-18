@@ -7,7 +7,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private DeviceViewModel FillEthercatDeviceData(TcSmProjectProjectIODevice device)
+        private DeviceViewModel FillEthercatDeviceData(TcSmDevDef device)
         {
             DeviceViewModel deviceViewModel = new DeviceViewModel();
 

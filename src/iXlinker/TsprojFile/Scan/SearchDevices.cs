@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Xml.Serialization;
 using iXlinker.Utils;
 using iXlinkerDtos;
@@ -11,20 +12,30 @@ namespace TsprojFile.Scan
     {
         internal void SearchDevices(Solution vs)
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(TcSmProject));
-            StreamReader reader = new StreamReader(vs.TsProject.CompletePathInFileSystem);
-
-            try
+            if (File.Exists(vs.TsProject.CompletePathInFileSystem))
             {
-                ClearLists();
+                XmlSerializer serializer = new XmlSerializer(typeof(TcSmProject));
+                StreamReader reader = new StreamReader(vs.TsProject.CompletePathInFileSystem);
 
-                Tc = (TcSmProject)serializer.Deserialize(reader);
-                reader.Close();
+                try
+                {
+                    ClearLists();
+
+                    Tc = (TcSmProject)serializer.Deserialize(reader);
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    EventLogger.Instance.Logger.Error(@"Unable to deserialize XAE project file: " + vs.TsProject.CompletePathInFileSystem + " !!!"
+                          + Environment.NewLine + System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    reader.Close();
+                }
             }
-            catch (Exception ex)
+            else
             {
-                reader.Close();
-                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                EventLogger.Instance.Logger.Error(@"Unable to find XAE project file!!!"
+                     + Environment.NewLine + @"File: " + vs.TsProject.CompletePathInFileSystem + " not found!!!"
+                     + Environment.NewLine + System.Reflection.MethodBase.GetCurrentMethod().Name);
             }
 
             GetPlcLibraries(vs);
@@ -41,6 +52,7 @@ namespace TsprojFile.Scan
             EventLogger.Instance.Logger.Information(@"Reading IO devices in the XAE project: ""{0}""!!!", vs.TsProject.Name);
             for (int i = 0; i < Tc.Project.Plc.Project.Length; i++)
             {
+                //Get OwnerAPlcName  and Context in case of Independent Plc project file
                 if (vs.PlcProject.IsIndependent && vs.PlcProject.Xti.FileNameInFileSystem.Equals(Tc.Project.Plc.Project[i].File))
                 {
                     XmlSerializer xtiSerializer = new XmlSerializer(typeof(TcSmItem));
@@ -51,7 +63,7 @@ namespace TsprojFile.Scan
                         TcSmItem Xti = (TcSmItem)xtiSerializer.Deserialize(xtiReader);
                         TcSmItemTypeProject plcProj = (TcSmItemTypeProject)Xti.Items[0];
                         xtiReader.Close();
-                        //OwnerAPlcName = "TIPC" + tmpLevelSeparator + plcProj.Name + tmpLevelSeparator + plcProj.Instance[0].Name;
+
                         OwnerAPlcName = plcProj.Instance[0].Name;
                         try
                         {
@@ -74,6 +86,7 @@ namespace TsprojFile.Scan
                         EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
                 }
+                //Get OwnerAPlcName  and Context in case of dependent Plc project file
                 else if (vs.PlcProject.Plcproj.Name.Equals(Tc.Project.Plc.Project[i].Name))
                 {
                     TcSmProjectProjectPlcProject plcProj = new TcSmProjectProjectPlcProject();
@@ -95,10 +108,9 @@ namespace TsprojFile.Scan
                 }
             }
 
-
             GetAllTasks();
 
-            if (CheckDeviceAndBoxNamesUniqueness(Tc.Project.Io))
+            if (CheckDeviceAndBoxNamesUniqueness(vs, Tc.Project.Io))
             {
                 if (Tc.Project.Io != null && Tc.Project.Io.Items != null)
                 {
@@ -106,7 +118,55 @@ namespace TsprojFile.Scan
                     {
                         foreach (TcSmProjectProjectIODevice device in Tc.Project.Io.Items)
                         {
-                            if (!vs.DoNotGenerateDisabled || !device.DisabledSpecified || !device.Disabled)
+                            bool isIndependentProjectFile = device.Name == null && device.File != null;
+                            TcSmDevDef _device = new TcSmDevDef();
+                            if (isIndependentProjectFile)
+                            {
+                                string devName = isIndependentProjectFile ? device.File.ToString().Replace(".xti", "") : "";
+                                string fileName = vs.IndependentIoDevices.Where(c => c.Name.Equals(devName)).Single().CompletePathInFileSystem;
+
+                                if (fileName != null)
+                                {
+                                    if (File.Exists(fileName))
+                                    {
+                                        XmlSerializer serializer = new XmlSerializer(typeof(TcSmItem));
+                                        StreamReader reader = new StreamReader(fileName);
+
+                                        try
+                                        {
+                                            TcSmItem Xti = (TcSmItem)serializer.Deserialize(reader);
+                                            _device = (TcSmDevDef)Xti.Items[0];
+
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                                        }
+                                        finally
+                                        {
+                                            reader.Close();
+                                        }
+                                    }
+                                    else
+                                    {
+                                        EventLogger.Instance.Logger.Error(@"Unable to find xti file for the device: " + devName + "!!!"
+                                             + Environment.NewLine + @"File: " + fileName + " not found!!!"
+                                             + Environment.NewLine + System.Reflection.MethodBase.GetCurrentMethod().Name);
+                                    }
+                                }
+                                else
+                                {
+                                    EventLogger.Instance.Logger.Error(@"Unable to discover complete path to xti file of the device: " + devName
+                                         + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
+                                }
+                            }
+                            else
+                            {
+                                _device = (TcSmDevDef)device;
+                            }
+
+
+                            if (!vs.DoNotGenerateDisabled || !_device.DisabledSpecified || !_device.Disabled)
                             {
                                 AddDevice(vs, device);
                             }
