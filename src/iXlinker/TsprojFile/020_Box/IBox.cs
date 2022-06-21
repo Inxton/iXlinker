@@ -15,6 +15,7 @@
         TcSmBoxDefBox[] Box { get; set; }
 
         TcSmVarGrpDef[] Vars { get; set; }
+
     }
 
     public partial class TcSmBoxDefBox : IBox
@@ -22,8 +23,16 @@
 
     }
 
-    public partial class TcSmDevDefBox : IBox
+    public partial class TcSmDevDefBox : IBox 
     {
 
     }
+
+    public partial class TcSmBoxDef : IBox
+    {
+
+    }
+
+    
+
 }

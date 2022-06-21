@@ -20,88 +20,57 @@ namespace TsprojFile.Scan
             {
                 foreach (TcSmProjectProjectIODevice d in Io.Items)
                 {
+                    TcSmDevDef dev = GetDeviceFromXtiFile(vs, d);
                     List<string> TsProjBoxNames = new List<string>();
-                    if (!d.DisabledSpecified || !d.DisabledSpecified)
+                    if (!dev.DisabledSpecified || !dev.DisabledSpecified)
                     {
-                        string devName = d.Name != null ? d.Name : d.File != null ? d.File.ToString().Replace(".xti",""): "";
-                        bool isIndependentProjectFile = d.Name == null && d.File != null;
-                        if (devNames.Contains(devName))
+                        if (devNames.Contains(dev.Name))
                         {
-                            EventLogger.Instance.Logger.Error("Not unique device name: {0} found in the XAE project file: {1}!!!", devName , vs.TsProject.CompletePathInFileSystem);
+                            EventLogger.Instance.Logger.Error("Not unique device name: {0} found in the XAE project file: {1}!!!", dev.Name, vs.TsProject.CompletePathInFileSystem);
                             ret = false;
                         }
                         else
                         {
-                            devNames.Add(devName);
+                            devNames.Add(dev.Name);
                         }
-                        if (!isIndependentProjectFile && d.Box != null)
+                        if ( dev.Box != null)
                         {
-                            foreach (TcSmDevDefBox box in d.Box)
+                            foreach (TcSmDevDefBox box in dev.Box)
                             {
-                                if (!CheckDevDefNameUniqueness(vs.TsProject.CompletePathInFileSystem, devName + "." + box.Name, box, ref TsProjBoxNames))
+                                if (!CheckDevDefNameUniqueness(vs.TsProject.CompletePathInFileSystem, dev.Name , box, ref TsProjBoxNames))
                                 {
                                     ret = false;
                                 }
                             }
                         }
-                        if (isIndependentProjectFile)
-                        {
-                            string fileName = vs.IndependentIoDevices.Where(c => c.Name.Equals(devName)).Single().CompletePathInFileSystem;
-
-                            if (fileName != null)
-                            {
-                                if (File.Exists(fileName))
-                                {
-                                    XmlSerializer serializer = new XmlSerializer(typeof(TcSmItem));
-                                    StreamReader reader = new StreamReader(fileName);
-                                    List<string> XtiProjBoxNames = new List<string>();
-
-                                    try
-                                    {
-                                        TcSmItem Xti = (TcSmItem)serializer.Deserialize(reader);
-                                        TcSmDevDef device = (TcSmDevDef)Xti.Items[0];
-                                        if (device.Box != null)
-                                        {
-                                            foreach (TcSmDevDefBox box in device.Box)
-                                            {
-                                                if (!CheckDevDefNameUniqueness(fileName, devName + "." + box.Name, box, ref XtiProjBoxNames))
-                                                {
-                                                    ret = false;
-                                                }
-                                            }
-                                        }
-
-                                    }
-                                    catch (Exception ex)
-                                    {
-                                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                                    }
-                                    finally
-                                    {
-                                        reader.Close();
-                                    }
-                                }
-                                else
-                                {
-                                    EventLogger.Instance.Logger.Error(@"Unable to find xti file for the device: " + devName + "!!!"
-                                         + Environment.NewLine + @"File: "+ fileName + " not found!!!"
-                                         + Environment.NewLine + System.Reflection.MethodBase.GetCurrentMethod().Name);
-                                }
-                            }
-                            else
-                            {
-                                EventLogger.Instance.Logger.Error(@"Unable to discover complete path to xti file of the device: " + devName
-                                     + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
-                            }
-                        }
                     }
                 }
             }
             return ret;
         }
-        private bool CheckDevDefNameUniqueness(string fileName, string path, TcSmDevDefBox box, ref List<string> boxNames)
+        private bool CheckDevDefNameUniqueness(string fileName, string path, TcSmDevDefBox _box, ref List<string> boxNames)
         {
             bool ret = true;
+            TcSmBoxDef box = _box as TcSmBoxDef;
+            bool isIndependentProjectFile = _box.Name == null && _box.File != null;
+            string folderName = Directory.GetParent(fileName).FullName.ToString();
+            string _fileName = fileName;
+            if (isIndependentProjectFile)
+            {
+                if (path == null)
+                {
+                    EventLogger.Instance.Logger.Error(@"Unable to find xti file: " + _box.File
+                         + Environment.NewLine + @"Input variable 'path' in method: " + System.Reflection.MethodBase.GetCurrentMethod().Name + " is null!!!"
+                         + Environment.NewLine + @"Device will be ignored!!!");
+                    
+                }
+                else
+                {
+                    box = GetBoxFromXtiFile(Path.Combine(folderName, @"_Config\IO", path), _box);
+                    _fileName = Path.Combine(folderName, @"_Config\IO", path, _box.File);
+                }
+            }
+
             if (!box.DisabledSpecified || !box.Disabled)
             {
 
@@ -118,7 +87,7 @@ namespace TsprojFile.Scan
                 {
                     foreach (TcSmBoxDefBox subbox in box.Box)
                     {
-                        if (!CheckBoxDefNameUniqueness(fileName, path + "." + subbox.Name, subbox, ref boxNames))
+                        if (!CheckBoxDefNameUniqueness(_fileName, box.Name, path + "." + box.Name, subbox, ref boxNames))
                         {
                             ret = false;
                         }
@@ -128,10 +97,23 @@ namespace TsprojFile.Scan
 
             return ret;
         }
-
-        private bool CheckBoxDefNameUniqueness(string fileName, string path, TcSmBoxDefBox box, ref List<string> boxNames)
+        private bool CheckBoxDefNameUniqueness(string fileName, string parentBoxName, string path, TcSmBoxDefBox _box, ref List<string> boxNames)
         {
             bool ret = true;
+
+            TcSmBoxDef box = _box as TcSmBoxDef;
+            bool isIndependentProjectFile = _box.Name == null && _box.File != null;
+            string folderName = Directory.GetParent(fileName).FullName.ToString();
+            string _fileName = fileName;
+            if (isIndependentProjectFile)
+            {
+                box = GetBoxFromXtiFile(Path.Combine(folderName, parentBoxName), _box);
+                _fileName = Path.Combine(folderName, parentBoxName, _box.File);
+            }
+
+
+
+
             if (!box.DisabledSpecified || !box.Disabled)
             {
 
@@ -148,7 +130,7 @@ namespace TsprojFile.Scan
                 {
                     foreach (TcSmBoxDefBox subbox in box.Box)
                     {
-                        if (!CheckBoxDefNameUniqueness(fileName, path + "." + subbox.Name, subbox, ref boxNames))
+                        if (!CheckBoxDefNameUniqueness(_fileName, box.Name, path + "." + box.Name, subbox, ref boxNames))
                         {
                             ret = false;
                         }

@@ -119,52 +119,12 @@ namespace TsprojFile.Scan
                         foreach (TcSmProjectProjectIODevice device in Tc.Project.Io.Items)
                         {
                             bool isIndependentProjectFile = device.Name == null && device.File != null;
-                            TcSmDevDef _device = new TcSmDevDef();
+                            TcSmDevDef _device = (TcSmDevDef)device;
                             if (isIndependentProjectFile)
                             {
-                                string devName = isIndependentProjectFile ? device.File.ToString().Replace(".xti", "") : "";
-                                string fileName = vs.IndependentIoDevices.Where(c => c.Name.Equals(devName)).Single().CompletePathInFileSystem;
+                                _device = GetDeviceFromXtiFile(vs, device);
 
-                                if (fileName != null)
-                                {
-                                    if (File.Exists(fileName))
-                                    {
-                                        XmlSerializer serializer = new XmlSerializer(typeof(TcSmItem));
-                                        StreamReader reader = new StreamReader(fileName);
-
-                                        try
-                                        {
-                                            TcSmItem Xti = (TcSmItem)serializer.Deserialize(reader);
-                                            _device = (TcSmDevDef)Xti.Items[0];
-
-                                        }
-                                        catch (Exception ex)
-                                        {
-                                            EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                                        }
-                                        finally
-                                        {
-                                            reader.Close();
-                                        }
-                                    }
-                                    else
-                                    {
-                                        EventLogger.Instance.Logger.Error(@"Unable to find xti file for the device: " + devName + "!!!"
-                                             + Environment.NewLine + @"File: " + fileName + " not found!!!"
-                                             + Environment.NewLine + System.Reflection.MethodBase.GetCurrentMethod().Name);
-                                    }
-                                }
-                                else
-                                {
-                                    EventLogger.Instance.Logger.Error(@"Unable to discover complete path to xti file of the device: " + devName
-                                         + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
-                                }
                             }
-                            else
-                            {
-                                _device = (TcSmDevDef)device;
-                            }
-
 
                             if (!vs.DoNotGenerateDisabled || !_device.DisabledSpecified || !_device.Disabled)
                             {
