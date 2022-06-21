@@ -204,7 +204,7 @@ namespace TsprojFile.Scan
                             ownerB_name = parent_path;
                             connectedToPort = "";
                             connectedToBoxId = 0;
-                            previousPort = device.RemoteName != null ? device.RemoteName.ToString() : device.Name != null ? device.Name.ToString() : "" + " : Master";
+                            previousPort = device.RemoteName != null ? device.RemoteName.ToString() + " : Master" : device.Name != null ? device.Name.ToString() : "" + " : Master";
                         }
                     }
                 }

@@ -33,12 +33,22 @@ namespace TsprojFile.Scan
                                 string details = "";
                                 try
                                 {
-                                    details = "Include: " + (projectItemGroupPlaceholderReference.Include != null ? projectItemGroupPlaceholderReference.Include : "???") + " | "
-                                                   + "Namespace: " + (projectItemGroupPlaceholderReference.Namespace != null ? projectItemGroupPlaceholderReference.Namespace : "???") + " | "
-                                                   + "DefaultResolution: " + (projectItemGroupPlaceholderReference.DefaultResolution != null ? projectItemGroupPlaceholderReference.DefaultResolution : "???");
-
-                                    string[] defaultResolution = projectItemGroupPlaceholderReference.DefaultResolution.Split(',', '(');
-                                    if (defaultResolution.Length == 3)
+                                    details = "Include: " + (projectItemGroupPlaceholderReference.Include != null ? projectItemGroupPlaceholderReference.Include : "null") + " | "
+                                                   + "Namespace: " + (projectItemGroupPlaceholderReference.Namespace != null ? projectItemGroupPlaceholderReference.Namespace : "null") + " | "
+                                                   + "DefaultResolution: " + (projectItemGroupPlaceholderReference.DefaultResolution != null ? projectItemGroupPlaceholderReference.DefaultResolution : "null");
+                                    string[] defaultResolution = null;
+                                    if (projectItemGroupPlaceholderReference.DefaultResolution == null)
+                                    {
+                                        EventLogger.Instance.Logger.Error(@"Unable to discover default resolution for the Plc library: " + details
+                                             + Environment.NewLine + @"Variable: " + EventLoggerDetails.NameOf<ProjectItemGroupPlaceholderReference>(x => x.DefaultResolution) + " has an invalid reference!!!"
+                                             + Environment.NewLine + @"Library is going to be ignored."
+                                             + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
+                                    }
+                                    else
+                                    {
+                                        defaultResolution = projectItemGroupPlaceholderReference.DefaultResolution.Split(',', '(');
+                                    }
+                                    if (defaultResolution != null && defaultResolution.Length == 3)
                                     {
                                         if(projectItemGroupPlaceholderReference.Namespace != null)
                                         {
@@ -59,6 +69,7 @@ namespace TsprojFile.Scan
                                             {
                                                 EventLogger.Instance.Logger.Error(@"Unable to discover Include for the Plc library: " + details
                                                      + Environment.NewLine + @"Variable: " + EventLoggerDetails.NameOf<ProjectItemGroupPlaceholderReference>(x => x.Include) + " has an invalid reference!!!"
+                                                     + Environment.NewLine + @"Library is going to be ignored."
                                                      + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                                             }
                                         }
@@ -66,14 +77,16 @@ namespace TsprojFile.Scan
                                         {
                                             EventLogger.Instance.Logger.Error(@"Unable to discover Namespace for the Plc library: " + details
                                                  + Environment.NewLine + @"Variable: " + EventLoggerDetails.NameOf<ProjectItemGroupPlaceholderReference>(x => x.Namespace) + " has an invalid reference!!!"
+                                                 + Environment.NewLine + @"Library is going to be ignored."
                                                  + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                                         }
 
                                     }
-                                    else
+                                    else if(projectItemGroupPlaceholderReference.DefaultResolution != null)
                                     {
                                         EventLogger.Instance.Logger.Error(@"Unable to discover default resolution for the Plc library: " + details
                                              + Environment.NewLine + @"Variable: " + EventLoggerDetails.NameOf<ProjectItemGroupPlaceholderReference>(x => x.DefaultResolution) + " has the value of: "+ projectItemGroupPlaceholderReference.DefaultResolution.ToString() + "!!!"
+                                             + Environment.NewLine + @"Library is going to be ignored."
                                              + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                                     }
                                 }
@@ -81,6 +94,7 @@ namespace TsprojFile.Scan
                                 {
                                     EventLogger.Instance.Logger.Error(@"Unable to discover default resolution for the Plc library: " + details 
                                          + Environment.NewLine + @"Variable: " + EventLoggerDetails.NameOf<ProjectItemGroupPlaceholderReference>(x => x.DefaultResolution) + " has an invalid reference!!!"
+                                         + Environment.NewLine + @"Library is going to be ignored."
                                          + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                                 }
                             }
@@ -93,10 +107,20 @@ namespace TsprojFile.Scan
                                 string details = "";
                                 try
                                 {
-                                    details = "Include: " + (projectItemGroupPlaceholderResolution.Include != null ? projectItemGroupPlaceholderResolution.Include : "???") + " | "
-                                                   + "Resolution: " + (projectItemGroupPlaceholderResolution.Resolution != null ? projectItemGroupPlaceholderResolution.Resolution : "???");
-                                    string[] Resolution = projectItemGroupPlaceholderResolution.Resolution.Split(',', '(');
-                                    if (Resolution.Length == 3)
+                                    string[] Resolution = null;
+                                    details = "Include: " + (projectItemGroupPlaceholderResolution.Include != null ? projectItemGroupPlaceholderResolution.Include : "null") + " | "
+                                                   + "Resolution: " + (projectItemGroupPlaceholderResolution.Resolution != null ? projectItemGroupPlaceholderResolution.Resolution : "null");
+                                    if (projectItemGroupPlaceholderResolution.Resolution == null)
+                                    {
+                                        EventLogger.Instance.Logger.Error(@"Unable to discover resolution for the Plc library: " + details
+                                             + Environment.NewLine + @"Library is going to be ignored."
+                                             + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
+                                    }
+                                    else
+                                    {
+                                        Resolution = projectItemGroupPlaceholderResolution.Resolution.Split(',', '(');
+                                    }
+                                    if (Resolution != null && Resolution.Length == 3)
                                     {
                                         if (projectItemGroupPlaceholderResolution.Include != null)
                                         {
@@ -125,24 +149,26 @@ namespace TsprojFile.Scan
                                                  }
                                                 else
                                                 {
-                                                    details = "Title: " + (plcLibraryWithDefinedVersion.Title != null ? plcLibraryWithDefinedVersion.Title : "???") + " | "
-                                                            + "Version: " + (plcLibraryWithDefinedVersion.Version != null ? plcLibraryWithDefinedVersion.Version : "???") + " | "
-                                                            + "CompanyName: " + (plcLibraryWithDefinedVersion.CompanyName != null ? plcLibraryWithDefinedVersion.CompanyName : "???") + " | "
-                                                            + "PlaceHolder: " + (plcLibraryWithDefinedVersion.PlaceHolder != null ? plcLibraryWithDefinedVersion.PlaceHolder : "???");
+                                                    details = "Title: " + (plcLibraryWithDefinedVersion.Title != null ? plcLibraryWithDefinedVersion.Title : "null") + " | "
+                                                            + "Version: " + (plcLibraryWithDefinedVersion.Version != null ? plcLibraryWithDefinedVersion.Version : "null") + " | "
+                                                            + "CompanyName: " + (plcLibraryWithDefinedVersion.CompanyName != null ? plcLibraryWithDefinedVersion.CompanyName : "null") + " | "
+                                                            + "PlaceHolder: " + (plcLibraryWithDefinedVersion.PlaceHolder != null ? plcLibraryWithDefinedVersion.PlaceHolder : "null");
 
                                                     EventLogger.Instance.Logger.Error(@"Library with some invalid library details found: " + details
+                                                         + Environment.NewLine + @"Library is going to be ignored."
                                                          + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                                                 }
                                             }
                                             //Library to which the exact version needs to be assigned has not been found
                                             if(plcLibraryWithDefinedVersion != null)
                                             {
-                                                details = "Title: " + (plcLibraryWithDefinedVersion.Title != null ? plcLibraryWithDefinedVersion.Title : "???") + " | "
-                                                        + "Version: " + (plcLibraryWithDefinedVersion.Version != null ? plcLibraryWithDefinedVersion.Version : "???") + " | "
-                                                        + "CompanyName: " + (plcLibraryWithDefinedVersion.CompanyName != null ? plcLibraryWithDefinedVersion.CompanyName : "???") + " | "
-                                                        + "PlaceHolder: " + (plcLibraryWithDefinedVersion.PlaceHolder != null ? plcLibraryWithDefinedVersion.PlaceHolder : "???");
+                                                details = "Title: " + (plcLibraryWithDefinedVersion.Title != null ? plcLibraryWithDefinedVersion.Title : "null") + " | "
+                                                        + "Version: " + (plcLibraryWithDefinedVersion.Version != null ? plcLibraryWithDefinedVersion.Version : "null") + " | "
+                                                        + "CompanyName: " + (plcLibraryWithDefinedVersion.CompanyName != null ? plcLibraryWithDefinedVersion.CompanyName : "null") + " | "
+                                                        + "PlaceHolder: " + (plcLibraryWithDefinedVersion.PlaceHolder != null ? plcLibraryWithDefinedVersion.PlaceHolder : "null");
 
                                                 EventLogger.Instance.Logger.Error(@"Unable to set the version for the library: " + details
+                                                     + Environment.NewLine + @"Library is going to be ignored."
                                                      + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                                             }
                                         }
@@ -150,13 +176,15 @@ namespace TsprojFile.Scan
                                         {
                                             EventLogger.Instance.Logger.Error(@"Unable to discover Include for the Plc library: " + details
                                                  + Environment.NewLine + @"Variable: " + EventLoggerDetails.NameOf<ProjectItemGroupPlaceholderReference>(x => x.Include) + " has an invalid reference!!!"
+                                                 + Environment.NewLine + @"Library is going to be ignored."
                                                  + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                                         }
                                     }
-                                    else
+                                    else if(projectItemGroupPlaceholderResolution.Resolution != null)
                                     {
                                         EventLogger.Instance.Logger.Error(@"Unable to discover the resolution for the Plc library: " + details
                                              + Environment.NewLine + @"Variable: " + EventLoggerDetails.NameOf<ProjectItemGroupPlaceholderResolution>(x => x.Resolution) + " has the value of: " + projectItemGroupPlaceholderResolution.Resolution.ToString() + "!!!"
+                                             + Environment.NewLine + @"Library is going to be ignored."
                                              + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                                     }
                                 }
@@ -164,6 +192,7 @@ namespace TsprojFile.Scan
                                 {
                                     EventLogger.Instance.Logger.Error(@"Unable to discover default resolution for the Plc library: " + details
                                          + Environment.NewLine + @"Variable: " + EventLoggerDetails.NameOf<ProjectItemGroupPlaceholderReference>(x => x.DefaultResolution) + " has an invalid reference!!!"
+                                         + Environment.NewLine + @"Library is going to be ignored."
                                          + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                                 }
                             }
@@ -185,10 +214,10 @@ namespace TsprojFile.Scan
                     {
                         Version _highestVersion = null;
                         string _pathOfTheHighestVersion = null;
-                        string details = "Title: " + (plcLibrary.Title != null ? plcLibrary.Title : "???") + " | "
-                                         + "Version: " + (plcLibrary.Version != null ? plcLibrary.Version : "???") + " | "
-                                         + "CompanyName: " + (plcLibrary.CompanyName != null ? plcLibrary.CompanyName : "???") + " | "
-                                         + "PlaceHolder: " + (plcLibrary.PlaceHolder != null ? plcLibrary.PlaceHolder : "???");
+                        string details = "Title: " + (plcLibrary.Title != null ? plcLibrary.Title : "null") + " | "
+                                         + "Version: " + (plcLibrary.Version != null ? plcLibrary.Version : "null") + " | "
+                                         + "CompanyName: " + (plcLibrary.CompanyName != null ? plcLibrary.CompanyName : "null") + " | "
+                                         + "PlaceHolder: " + (plcLibrary.PlaceHolder != null ? plcLibrary.PlaceHolder : "null");
 
                         if (plcLibrary.Version != null)
                         {
@@ -224,6 +253,7 @@ namespace TsprojFile.Scan
                                 else
                                 {
                                     EventLogger.Instance.Logger.Error(@"Unable to find complete path for Plc library: " + details + " in any Plc repository!!!"
+                                         + Environment.NewLine + @"Library is going to be ignored."
                                          + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                                 }
                             }
@@ -243,6 +273,7 @@ namespace TsprojFile.Scan
                                 if (plcLibrary.Path == null)
                                 {
                                     EventLogger.Instance.Logger.Error(@"Unable to find complete path for Plc library: " + details + " in any Plc repository!!!"
+                                         + Environment.NewLine + @"Library is going to be ignored."
                                          + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                                 }
                             }
@@ -251,6 +282,7 @@ namespace TsprojFile.Scan
                         {
                             EventLogger.Instance.Logger.Error(@"Invalid version of the Plc library: " + details
                                  + Environment.NewLine + @"Variable: " + EventLoggerDetails.NameOf<PlcLibrary>(x => x.Version) + " has an invalid reference!!!"
+                                 + Environment.NewLine + @"Library is going to be ignored."
                                  + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name);
                         }
                     }

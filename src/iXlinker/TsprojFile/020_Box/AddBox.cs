@@ -1,4 +1,7 @@
-﻿using iXlinkerDtos;
+﻿using iXlinker.Utils;
+using iXlinkerDtos;
+using System;
+using System.IO;
 using TwincatXmlSchemas.TcSmProject;
 
 namespace TsprojFile.Scan
@@ -15,8 +18,27 @@ namespace TsprojFile.Scan
                 if (box.Box != null)
                 {
                     string my_childs_path = boxViewModel.OwnerBname + tmpLevelSeparator + box.Name;
-                    foreach (TcSmBoxDefBox sub_box in box.Box)
+                    foreach (TcSmBoxDefBox _sub_box in box.Box)
                     {
+                        TcSmBoxDef sub_box = _sub_box as TcSmBoxDef;
+                        bool isIndependentProjectFile = _sub_box.Name == null && _sub_box.File != null;
+                        string path = Path.Combine(vs.TsProject.FolderPathInFileSystem, @"_Config\IO", my_childs_path.Replace(("TIID" + tmpLevelSeparator), "").Replace(tmpLevelSeparator,@"\"));
+
+                        if (isIndependentProjectFile)
+                        {
+                            sub_box = GetBoxFromXtiFile(path, _sub_box);
+                            try
+                            {
+                                ((EtherCATSlave)sub_box.Item).PortABoxInfo = ((EtherCATSlave)_sub_box.Item).PortABoxInfo;
+                            }
+                            catch (Exception ex)
+                            {
+                                EventLogger.Instance.Logger.Error(@"Unable to discover PortABoxInfo for box: " + sub_box.Name
+                                     + Environment.NewLine + @", in: " + path + "!!!"
+                                     + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                            }
+                        }
+
                         BoxViewModel subBoxViewModel = CreateBox(vs, device, ref deviceVm, sub_box, my_childs_path);
                         if (subBoxViewModel != null && subBoxViewModel.MapableObjectGrouped.Name != null) //&& subBoxViewModel.MapableObjectGrouped.MapableItems.Count > 0
                         {

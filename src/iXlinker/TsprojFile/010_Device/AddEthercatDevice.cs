@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using iXlinker.Utils;
 using iXlinkerDtos;
 using TwincatXmlSchemas.TcSmProject;
@@ -16,8 +17,25 @@ namespace TsprojFile.Scan
                 try
                 {
                     BoxViewModel boxViewModel = new BoxViewModel();
-                    foreach (TcSmDevDefBox devDefBox in device.Box)
+                    foreach (TcSmDevDefBox _devDefBox in device.Box)
                     {
+                        TcSmBoxDef devDefBox = _devDefBox as TcSmBoxDef;
+                        bool isIndependentProjectFile = _devDefBox.Name == null && _devDefBox.File != null;
+                        string path = Path.Combine(vs.TsProject.FolderPathInFileSystem, @"_Config\IO", device.Name);
+                        if (isIndependentProjectFile)
+                        {
+                            devDefBox = GetBoxFromXtiFile(path, _devDefBox);
+                            try
+                            {
+                                ((EtherCATSlave)devDefBox.Item).PortABoxInfo = ((EtherCATSlave)_devDefBox.Item).PortABoxInfo;
+                            }
+                            catch (Exception ex)
+                            {
+                                EventLogger.Instance.Logger.Error(@"Unable to discover PortABoxInfo for box: " + devDefBox.Name
+                                     + Environment.NewLine + @", in: " + path + "!!!"
+                                     + Environment.NewLine + "Method:" + System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                            }
+                        }
                         if (devDefBox != null)
                         {
                             if (vs.DoNotGenerateDisabled && devDefBox.DisabledSpecified && devDefBox.Disabled && devDefBox.Box != null)
