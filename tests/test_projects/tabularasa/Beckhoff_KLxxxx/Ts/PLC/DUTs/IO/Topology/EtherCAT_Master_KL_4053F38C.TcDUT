@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EtherCAT_Master_KLxxxx_4053F38C" Id="{52c18903-0b51-4954-95a9-ad815ff19190}">
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="EtherCAT_Master_KL_4053F38C" Id="{8628deb5-4d65-457b-a62f-96d125e6ef7f}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "TcTerminals210_1EK1100TcTerminals210_1EK1100_5C7783790TcTerminals210_2EK1100TcTerminals210_2EK1100_50C143310SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
 {attribute addProperty CRC "1079243660"}
 {attribute addProperty Size "312"}
-TYPE EtherCAT_Master_KLxxxx_4053F38C EXTENDS EtcMasterBase_62654B43 :
+TYPE EtherCAT_Master_KL_4053F38C EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "TcTerminals210_1EK1100"}
-	{attribute addProperty PreviousPort "EtherCAT_Master_KLxxxx : Master"}
+	{attribute addProperty PreviousPort "EtherCAT Master KL : Master"}
 	TcTerminals210_1EK1100 : TcTerminals210_1EK1100_5C778379;
 	{attribute addProperty Name "TcTerminals210_2EK1100"}
 	{attribute addProperty PreviousPort "TcTerminals210_1EK1100 : C"}

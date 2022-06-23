@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="PLS_Inputs_65C9A3D6">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="PLS_Inputs_65C9A3D6" Id="{16399890-c9e2-424f-a6db-8c55ffbdd247}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
 {attribute addProperty BoxType "EM7004-0000-0017"}
 {attribute addProperty Id "StatusAT %I*Status_882A150F2"}
 {attribute addProperty CRC "1707713494"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

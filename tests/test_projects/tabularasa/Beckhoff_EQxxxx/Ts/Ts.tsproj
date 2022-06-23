@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.29">
   <DataTypes>
     <DataType>
       <Name GUID="{8149EB6F-5D6A-1A48-E2B8-8029933831EE}" AutoDeleteType="true">Status_B0753356</Name>
@@ -6884,16 +6884,16 @@ Bit1: Value is greater than or equal to limit 2</Comment>
   </Project>
   <Mappings>
     <OwnerA Name="TIPC^PLC^PLC Instance">
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ1xxx">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ1xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^Beckhoff EQ1xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^Beckhoff EQ1xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.Beckhoff_EQ1xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^A_0001(EQ1008-0002-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^A_0001(EQ1008-0002-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0001_EQ1008_0002_0016.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0001_EQ1008_0002_0016.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0001_EQ1008_0002_0016.Channel_3.Input" VarB="Channel 3^Input" />
@@ -6906,7 +6906,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0001_EQ1008_0002_0016.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0001_EQ1008_0002_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^A_0002(EQ1008-0002-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^A_0002(EQ1008-0002-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0002_EQ1008_0002_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0002_EQ1008_0002_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0002_EQ1008_0002_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -6919,7 +6919,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0002_EQ1008_0002_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0002_EQ1008_0002_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^A_0003(EQ1008-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^A_0003(EQ1008-0002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0003_EQ1008_0002_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0003_EQ1008_0002_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0003_EQ1008_0002_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -6932,7 +6932,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0003_EQ1008_0002_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0003_EQ1008_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^A_0004(EQ1809-0022-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^A_0004(EQ1809-0022-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0004_EQ1809_0022_0016.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0004_EQ1809_0022_0016.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0004_EQ1809_0022_0016.Channel_3.Input" VarB="Channel 3^Input" />
@@ -6953,7 +6953,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0004_EQ1809_0022_0016.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0004_EQ1809_0022_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^A_0005(EQ1809-0022-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ1xxx^Beckhoff EQ1xxxEK1122^A_0005(EQ1809-0022-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0005_EQ1809_0022_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0005_EQ1809_0022_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0005_EQ1809_0022_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -6974,16 +6974,16 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0005_EQ1809_0022_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ1xxx.Beckhoff_EQ1xxxEK1122.A_0005_EQ1809_0022_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^Beckhoff EQ2xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^Beckhoff EQ2xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.Beckhoff_EQ2xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0001(EQ2008-0002-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0001(EQ2008-0002-0016)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0001_EQ2008_0002_0016.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0001_EQ2008_0002_0016.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0001_EQ2008_0002_0016.Channel_3.Output" VarB="Channel 3^Output" />
@@ -6995,7 +6995,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0001_EQ2008_0002_0016.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0001_EQ2008_0002_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0002(EQ2008-0002-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0002(EQ2008-0002-0017)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0002_EQ2008_0002_0017.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0002_EQ2008_0002_0017.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0002_EQ2008_0002_0017.Channel_3.Output" VarB="Channel 3^Output" />
@@ -7007,7 +7007,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0002_EQ2008_0002_0017.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0002_EQ2008_0002_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0003(EQ2008-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0003(EQ2008-0002-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0003_EQ2008_0002_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0003_EQ2008_0002_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0003_EQ2008_0002_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -7019,7 +7019,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0003_EQ2008_0002_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0003_EQ2008_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0004(EQ2008-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0004(EQ2008-0002-0019)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0004_EQ2008_0002_0019.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0004_EQ2008_0002_0019.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0004_EQ2008_0002_0019.Channel_3.Output" VarB="Channel 3^Output" />
@@ -7031,7 +7031,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0004_EQ2008_0002_0019.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0004_EQ2008_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0005(EQ2339-0022-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0005(EQ2339-0022-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0005_EQ2339_0022_0016.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0005_EQ2339_0022_0016.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0005_EQ2339_0022_0016.Channel_3.Input" VarB="Channel 3^Input" />
@@ -7068,7 +7068,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0005_EQ2339_0022_0016.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0005_EQ2339_0022_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0006(EQ2339-0022-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0006(EQ2339-0022-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0006_EQ2339_0022_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0006_EQ2339_0022_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0006_EQ2339_0022_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -7105,7 +7105,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0006_EQ2339_0022_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0006_EQ2339_0022_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0007(EQ2339-0022-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0007(EQ2339-0022-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0007_EQ2339_0022_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0007_EQ2339_0022_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0007_EQ2339_0022_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -7142,7 +7142,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0007_EQ2339_0022_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0007_EQ2339_0022_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0008(EQ2339-0022-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0008(EQ2339-0022-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0008_EQ2339_0022_0019.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0008_EQ2339_0022_0019.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0008_EQ2339_0022_0019.Channel_3.Input" VarB="Channel 3^Input" />
@@ -7179,7 +7179,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0008_EQ2339_0022_0019.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0008_EQ2339_0022_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0009(EQ2809-0022-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0009(EQ2809-0022-0016)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0009_EQ2809_0022_0016.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0009_EQ2809_0022_0016.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0009_EQ2809_0022_0016.Channel_3.Output" VarB="Channel 3^Output" />
@@ -7199,7 +7199,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0009_EQ2809_0022_0016.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0009_EQ2809_0022_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0010(EQ2809-0022-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0010(EQ2809-0022-0017)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0010_EQ2809_0022_0017.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0010_EQ2809_0022_0017.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0010_EQ2809_0022_0017.Channel_3.Output" VarB="Channel 3^Output" />
@@ -7219,7 +7219,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0010_EQ2809_0022_0017.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0010_EQ2809_0022_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0011(EQ2809-0022-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ2xxx^Beckhoff EQ2xxxEK1122^A_0011(EQ2809-0022-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0011_EQ2809_0022_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0011_EQ2809_0022_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0011_EQ2809_0022_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -7239,16 +7239,16 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0011_EQ2809_0022_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ2xxx.Beckhoff_EQ2xxxEK1122.A_0011_EQ2809_0022_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^Beckhoff EQ3xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^Beckhoff EQ3xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.Beckhoff_EQ3xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0001(EQ3174-0002-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0001(EQ3174-0002-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0001_EQ3174_0002_0016.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0001_EQ3174_0002_0016.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0001_EQ3174_0002_0016.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -7290,7 +7290,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0001_EQ3174_0002_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0001_EQ3174_0002_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0002(EQ3174-0002-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0002(EQ3174-0002-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0002_EQ3174_0002_0017.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0002_EQ3174_0002_0017.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0002_EQ3174_0002_0017.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -7332,7 +7332,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0002_EQ3174_0002_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0002_EQ3174_0002_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0003(EQ3174-0002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0003(EQ3174-0002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0003_EQ3174_0002_0021.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0003_EQ3174_0002_0021.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0003_EQ3174_0002_0021.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -7374,7 +7374,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0003_EQ3174_0002_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0003_EQ3174_0002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0004(EQ3174-0002-0022)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0004(EQ3174-0002-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0004_EQ3174_0002_0022.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0004_EQ3174_0002_0022.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0004_EQ3174_0002_0022.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -7416,7 +7416,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0004_EQ3174_0002_0022.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0004_EQ3174_0002_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0005(EQ3174-0002-0023)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0005(EQ3174-0002-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0005_EQ3174_0002_0023.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0005_EQ3174_0002_0023.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0005_EQ3174_0002_0023.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -7458,7 +7458,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0005_EQ3174_0002_0023.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0005_EQ3174_0002_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0006(EQ3204-0002-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0006(EQ3204-0002-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0006_EQ3204_0002_0016.RTD_RTDInputs_Channel_1.Status^Underrange" VarB="RTD RTDInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0006_EQ3204_0002_0016.RTD_RTDInputs_Channel_1.Status^Overrange" VarB="RTD RTDInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0006_EQ3204_0002_0016.RTD_RTDInputs_Channel_1.Status^Limit_1" VarB="RTD RTDInputs Channel 1^Status^Limit 1" />
@@ -7500,7 +7500,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0006_EQ3204_0002_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0006_EQ3204_0002_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0007(EQ3204-0002-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0007(EQ3204-0002-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0007_EQ3204_0002_0017.RTD_RTDInputs_Channel_1.Status^Underrange" VarB="RTD RTDInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0007_EQ3204_0002_0017.RTD_RTDInputs_Channel_1.Status^Overrange" VarB="RTD RTDInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0007_EQ3204_0002_0017.RTD_RTDInputs_Channel_1.Status^Limit_1" VarB="RTD RTDInputs Channel 1^Status^Limit 1" />
@@ -7542,7 +7542,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0007_EQ3204_0002_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0007_EQ3204_0002_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0008(EQ3204-0002-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0008(EQ3204-0002-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0008_EQ3204_0002_0020.RTD_RTDInputs_Channel_1.Status^Underrange" VarB="RTD RTDInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0008_EQ3204_0002_0020.RTD_RTDInputs_Channel_1.Status^Overrange" VarB="RTD RTDInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0008_EQ3204_0002_0020.RTD_RTDInputs_Channel_1.Status^Limit_1" VarB="RTD RTDInputs Channel 1^Status^Limit 1" />
@@ -7584,7 +7584,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0008_EQ3204_0002_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0008_EQ3204_0002_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0009(EQ3204-0002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0009(EQ3204-0002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0009_EQ3204_0002_0021.RTD_RTDInputs_Channel_1.Status^Underrange" VarB="RTD RTDInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0009_EQ3204_0002_0021.RTD_RTDInputs_Channel_1.Status^Overrange" VarB="RTD RTDInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0009_EQ3204_0002_0021.RTD_RTDInputs_Channel_1.Status^Limit_1" VarB="RTD RTDInputs Channel 1^Status^Limit 1" />
@@ -7622,7 +7622,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0009_EQ3204_0002_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0009_EQ3204_0002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0010(EQ3204-0002-0022)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0010(EQ3204-0002-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0010_EQ3204_0002_0022.RTD_RTDInputs_Channel_1.Status^Underrange" VarB="RTD RTDInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0010_EQ3204_0002_0022.RTD_RTDInputs_Channel_1.Status^Overrange" VarB="RTD RTDInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0010_EQ3204_0002_0022.RTD_RTDInputs_Channel_1.Status^Limit_1" VarB="RTD RTDInputs Channel 1^Status^Limit 1" />
@@ -7660,7 +7660,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0010_EQ3204_0002_0022.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0010_EQ3204_0002_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0011(EQ3314-0002-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0011(EQ3314-0002-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0011_EQ3314_0002_0016.TC_TCInputs_Channel_1.Status^Underrange" VarB="TC TCInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0011_EQ3314_0002_0016.TC_TCInputs_Channel_1.Status^Overrange" VarB="TC TCInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0011_EQ3314_0002_0016.TC_TCInputs_Channel_1.Status^Limit_1" VarB="TC TCInputs Channel 1^Status^Limit 1" />
@@ -7702,7 +7702,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0011_EQ3314_0002_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0011_EQ3314_0002_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0012(EQ3314-0002-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0012(EQ3314-0002-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0012_EQ3314_0002_0017.TC_TCInputs_Channel_1.Status^Underrange" VarB="TC TCInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0012_EQ3314_0002_0017.TC_TCInputs_Channel_1.Status^Overrange" VarB="TC TCInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0012_EQ3314_0002_0017.TC_TCInputs_Channel_1.Status^Limit_1" VarB="TC TCInputs Channel 1^Status^Limit 1" />
@@ -7744,7 +7744,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0012_EQ3314_0002_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0012_EQ3314_0002_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0013(EQ3314-0002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0013(EQ3314-0002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0013_EQ3314_0002_0021.TC_TCInputs_Channel_1.Status^Underrange" VarB="TC TCInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0013_EQ3314_0002_0021.TC_TCInputs_Channel_1.Status^Overrange" VarB="TC TCInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0013_EQ3314_0002_0021.TC_TCInputs_Channel_1.Status^Limit_1" VarB="TC TCInputs Channel 1^Status^Limit 1" />
@@ -7786,7 +7786,7 @@ Bit1: Value is greater than or equal to limit 2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0013_EQ3314_0002_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0013_EQ3314_0002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0014(EQ3314-0002-0022)">
+      <OwnerB Name="TIID^EtherCAT Master EQxxxx^Beckhoff EQ3xxx^Beckhoff EQ3xxxEK1122^A_0014(EQ3314-0002-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0014_EQ3314_0002_0022.TC_Inputs_Channel_1.Status^Underrange" VarB="TC Inputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0014_EQ3314_0002_0022.TC_Inputs_Channel_1.Status^Overrange" VarB="TC Inputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EQxxxx.Beckhoff_EQ3xxx.Beckhoff_EQ3xxxEK1122.A_0014_EQ3314_0002_0022.TC_Inputs_Channel_1.Status^Limit_1" VarB="TC Inputs Channel 1^Status^Limit 1" />

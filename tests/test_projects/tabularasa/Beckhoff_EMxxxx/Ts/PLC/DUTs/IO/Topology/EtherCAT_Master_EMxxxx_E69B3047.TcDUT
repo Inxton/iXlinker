@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EtherCAT_Master_EMxxxx_E69B3047">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="EtherCAT_Master_EMxxxx_E69B3047" Id="{d8bfd226-439d-49b8-84a2-d8b59d1bae2a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "Beckhoff_EM2xxxBeckhoff_EM2xxx_23EB33C640Beckhoff_EM3xxxBeckhoff_EM3xxx_ABA3179978Beckhoff_EM7xxxBeckhoff_EM7xxx_9745B8AE681SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
 {attribute addProperty CRC "3868930119"}
@@ -8,7 +9,7 @@
 TYPE EtherCAT_Master_EMxxxx_E69B3047 EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "Beckhoff EM2xxx"}
-	{attribute addProperty PreviousPort "EtherCAT_Master_EMxxxx : Master"}
+	{attribute addProperty PreviousPort "EtherCAT Master EMxxxx : Master"}
 	Beckhoff_EM2xxx : Beckhoff_EM2xxx_23EB33C6;
 	{attribute addProperty Name "Beckhoff EM3xxx"}
 	{attribute addProperty PreviousPort "Beckhoff EM2xxx : C"}
@@ -27,5 +28,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

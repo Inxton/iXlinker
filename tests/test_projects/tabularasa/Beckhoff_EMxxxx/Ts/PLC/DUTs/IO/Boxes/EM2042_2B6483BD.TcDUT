@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="EM2042_2B6483BD">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM2042-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="EM2042_2B6483BD" Id="{0ea23050-4c28-4966-8a25-c294ee7acf0a}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM2042-0000-0016'}
 {attribute addProperty BoxType "EM2042-0000-0016"}
 {attribute addProperty Description "EM2042 16Ch. Dig. Output 24V, 0.5A, D-Sub connection"}
 {attribute addProperty Physics "KK"}
@@ -48,5 +49,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

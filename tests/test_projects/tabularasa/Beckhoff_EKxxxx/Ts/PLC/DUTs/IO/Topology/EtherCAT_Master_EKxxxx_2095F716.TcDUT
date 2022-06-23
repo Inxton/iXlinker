@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EtherCAT_Master_EKxxxx_2095F716" Id="{c489807b-b4a4-4568-9e9a-fc4dcb7fe269}">
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="EtherCAT_Master_EKxxxx_2095F716" Id="{2d0c9eeb-9b6f-4c48-b015-244c41103da9}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "Beckhoff_EK11xxBeckhoff_EK11xx_811529C670Beckhoff_EK12xxBeckhoff_EK12xx_F07DE9532Beckhoff_EK13xxBeckhoff_EK13xx_7663BCA820Beckhoff_EK15xxBeckhoff_EK15xx_47CB6E2F96Beckhoff_EK18xxBeckhoff_EK18xx_88ED272B179Beckhoff_EKM1xxxBeckhoff_EKM1xxx_245084ED412Beckhoff_EKx9xxBeckhoff_EKx9xx_36A98EAE1154Beckhoff_EKxxxx_0080Beckhoff_EKxxxx_0080_9DDEF9258SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
@@ -9,7 +9,7 @@
 TYPE EtherCAT_Master_EKxxxx_2095F716 EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "Beckhoff EK11xx"}
-	{attribute addProperty PreviousPort "EtherCAT_Master_EKxxxx : Master"}
+	{attribute addProperty PreviousPort "EtherCAT Master EKxxxx : Master"}
 	Beckhoff_EK11xx : Beckhoff_EK11xx_811529C6;
 	{attribute addProperty Name "Beckhoff EK12xx"}
 	{attribute addProperty PreviousPort "A_0014(EK1110-0000-0000) : B"}

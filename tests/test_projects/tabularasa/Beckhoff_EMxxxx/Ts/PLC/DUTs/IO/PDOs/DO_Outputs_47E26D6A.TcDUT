@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="DO_Outputs_47E26D6A">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="DO_Outputs_47E26D6A" Id="{e3d7b4af-bedf-435f-b6a0-8632a74a8bd6}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
 {attribute addProperty BoxType "EM7004-0000-0017"}
 {attribute addProperty Id "OutputAT %Q*Output_FFFF807A16"}
 {attribute addProperty CRC "1206021482"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

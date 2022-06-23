@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Control_F189B737">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="Control_F189B737" Id="{11938c0a-4ee2-4d1c-ad1b-127eac0e2316}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-0017'}
 {attribute addProperty BoxType "EM7004-0000-0017"}
 {attribute addProperty Id "Enable_latch_extern_on_positive_edgeBOOL1Set_counterBOOL1Enable_latch_extern_on_negative_edgeBOOL1"}
 {attribute addProperty CRC "4052334391"}
@@ -16,5 +17,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

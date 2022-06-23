@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="PLS_Inputs_5A35B63D">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9996'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="PLS_Inputs_5A35B63D" Id="{7e913e18-eda1-4c42-a95e-5ea4e50739a4}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9996'}
 {attribute addProperty BoxType "EM7004-0000-9996"}
 {attribute addProperty Id "PLS_EnabledAT %I*BOOL1Unequal_SI_0AT %I*BOOL1"}
 {attribute addProperty CRC "1513469501"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

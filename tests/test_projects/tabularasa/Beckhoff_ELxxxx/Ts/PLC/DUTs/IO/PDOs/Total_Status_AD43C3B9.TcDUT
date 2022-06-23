@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="Total_Status_AD43C3B9" Id="{ad17ee64-bf4d-46d0-8d30-0fcf1dc70a56}">
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="Total_Status_AD43C3B9" Id="{22eb02b9-a3b1-4636-b04d-47086665a4ec}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EL3483-0000-0016'}
 {attribute addProperty BoxType "EL3483-0000-0016"}
 {attribute addProperty Id "System_StateAT %I*BOOL1Grid_DirectionAT %I*BOOL1Frequency_Guard_WarningAT %I*BOOL1Frequency_Guard_ErrorAT %I*BOOL1Power_Quality_Guard_WarningAT %I*BOOL1Power_Quality_Guard_ErrorAT %I*BOOL1TxPDO_StateAT %I*BOOL1TxPDO_ToggleAT %I*BOOL1Power_Quality_FactorAT %I*REAL4"}

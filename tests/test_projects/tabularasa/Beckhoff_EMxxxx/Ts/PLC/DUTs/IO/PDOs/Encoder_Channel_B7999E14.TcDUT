@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="Encoder_Channel_B7999E14">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9995'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="Encoder_Channel_B7999E14" Id="{d14df45b-5a5a-4e45-9aad-8c920c0cf7a7}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9995'}
 {attribute addProperty BoxType "EM7004-0000-9995"}
 {attribute addProperty Id "CtrlAT %Q*UINT2ValueAT %Q*UINT2"}
 {attribute addProperty CRC "3080298004"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>

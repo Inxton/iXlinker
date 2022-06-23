@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.9">
-  <DUT Name="EtherCAT_Master_APSxxxx_214E63DA" Id="{7449eb7d-941c-48c6-8ecd-34fba85c4986}">
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="EtherCAT_Master_APSxxxx_214E63DA" Id="{406b9395-d1f3-47f5-807f-f796204d50c5}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "Beckhoff_APS1xxxBeckhoff_APS1xxx_5C0D85AF586Beckhoff_APS4xxxBeckhoff_APS4xxx_9BEEA20F604SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
@@ -9,7 +9,7 @@
 TYPE EtherCAT_Master_APSxxxx_214E63DA EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "Beckhoff APS1xxx"}
-	{attribute addProperty PreviousPort "EtherCAT_Master_APSxxxx : Master"}
+	{attribute addProperty PreviousPort "EtherCAT Master APSxxxx : Master"}
 	Beckhoff_APS1xxx : Beckhoff_APS1xxx_5C0D85AF;
 	{attribute addProperty Name "Beckhoff APS4xxx"}
 	{attribute addProperty PreviousPort "Beckhoff APS1xxx : C"}

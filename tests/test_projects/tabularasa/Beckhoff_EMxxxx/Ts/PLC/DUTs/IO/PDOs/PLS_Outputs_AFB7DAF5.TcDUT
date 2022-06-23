@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="PLS_Outputs_AFB7DAF5">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9996'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="PLS_Outputs_AFB7DAF5" Id="{53011e82-ea56-436d-b831-b58d265a4bf5}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM7004-0000-9996'}
 {attribute addProperty BoxType "EM7004-0000-9996"}
 {attribute addProperty Id "Enable_PLSAT %Q*BOOL1"}
 {attribute addProperty CRC "2948061941"}
@@ -12,5 +13,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>
