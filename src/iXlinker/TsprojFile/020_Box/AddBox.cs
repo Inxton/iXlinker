@@ -8,7 +8,7 @@ namespace TsprojFile.Scan
 {
     public partial class ScanTcProjFile : TcModel
     {
-        private BoxViewModel AddBox(Solution vs, TcSmDevDef device, ref DeviceViewModel deviceVm, IBox box, string parent_path)
+        private BoxViewModel AddBox(Solution vs, TcSmDevDef device, ref DeviceViewModel deviceVm, IBox box, string parent_path, bool isIndependentProjectFile)
         {
             BoxViewModel boxViewModel = new BoxViewModel();
             if ((!vs.DoNotGenerateDisabled || !box.DisabledSpecified || !box.Disabled) && box.BusCoupler == null)
@@ -21,10 +21,10 @@ namespace TsprojFile.Scan
                     foreach (TcSmBoxDefBox _sub_box in box.Box)
                     {
                         TcSmBoxDef sub_box = _sub_box as TcSmBoxDef;
-                        bool isIndependentProjectFile = _sub_box.Name == null && _sub_box.File != null;
+                        bool _isIndependentProjectFile = _sub_box.Name == null && _sub_box.File != null;
                         string path = Path.Combine(vs.TsProject.FolderPathInFileSystem, @"_Config\IO", my_childs_path.Replace(("TIID" + tmpLevelSeparator), "").Replace(tmpLevelSeparator,@"\"));
 
-                        if (isIndependentProjectFile)
+                        if (_isIndependentProjectFile)
                         {
                             sub_box = GetBoxFromXtiFile(path, _sub_box);
                             try
@@ -39,7 +39,7 @@ namespace TsprojFile.Scan
                             }
                         }
 
-                        BoxViewModel subBoxViewModel = CreateBox(vs, device, ref deviceVm, sub_box, my_childs_path);
+                        BoxViewModel subBoxViewModel = CreateBox(vs, device, ref deviceVm, sub_box, my_childs_path,_isIndependentProjectFile);
                         if (subBoxViewModel != null && subBoxViewModel.MapableObjectGrouped.Name != null) //&& subBoxViewModel.MapableObjectGrouped.MapableItems.Count > 0
                         {
                             boxViewModel.Boxes.Add(subBoxViewModel);
@@ -53,6 +53,12 @@ namespace TsprojFile.Scan
                 boxViewModel.MapableObjectGrouped.PreviousPort = boxViewModel.PreviousPort;
                 boxViewModel.MapableObjectGrouped.NameOrigin = boxViewModel.Name;
             }
+            else if (box.BusCoupler == null)
+            {
+                string boxName = parent_path.Replace(("TIID" + tmpLevelSeparator), "").Replace(tmpLevelSeparator, ".") + "." + box.Name;
+                string fileName = isIndependentProjectFile ? Path.Combine(Directory.GetParent(vs.TsProject.CompletePathInFileSystem).FullName.ToString(), @"_Config\IO", parent_path.Replace(("TIID"+tmpLevelSeparator),"").Replace(tmpLevelSeparator,@"\"), box.Name + ".xti") : vs.TsProject.CompletePathInFileSystem;
+                EventLogger.Instance.Logger.Information("Disabled box: {0} found in the XAE project file: {1}!!!", boxName, fileName);
+            }
             else if ((!vs.DoNotGenerateDisabled || !box.DisabledSpecified || !box.Disabled) && box.BusCoupler != null)
             {
                 boxViewModel = FillBoxData(device, ref deviceVm, box, parent_path);
@@ -62,7 +68,8 @@ namespace TsprojFile.Scan
                     string my_childs_path = boxViewModel.OwnerBname + tmpLevelSeparator + box.Name;
                     foreach (TcSmTermDef sub_box in box.BusCoupler.Term)
                     {
-                        BoxViewModel subBoxViewModel = CreateBox(vs, device, ref deviceVm, sub_box, my_childs_path);
+
+                        BoxViewModel subBoxViewModel = CreateBox(vs, device, ref deviceVm, sub_box, my_childs_path, false); //TODO check if KL terminal can be saved in independent project file
                         if (subBoxViewModel !=null && subBoxViewModel.MapableObjectGrouped.Name != null && subBoxViewModel.MapableObjectGrouped.MapableItems.Count > 0)
                         {
                             boxViewModel.Boxes.Add(subBoxViewModel);
