@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.29">
   <DataTypes>
     <DataType>
       <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -30336,24 +30336,24 @@ Bit 8 - 15 : reserved</Comment>
   </Project>
   <Mappings>
     <OwnerA Name="TIPC^PLC^PLC Instance">
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^Beckhoff EJ1xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^Beckhoff EJ1xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.Beckhoff_EJ1xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^Beckhoff EJ1xxxEK1122^Beckhoff EJ1xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^Beckhoff EJ1xxxEK1122^Beckhoff EJ1xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.Beckhoff_EJ1xxxEK1122.Beckhoff_EJ1xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^Beckhoff EJ1xxxEK1122^A_0001(EJ1100-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^Beckhoff EJ1xxxEK1122^A_0001(EJ1100-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.Beckhoff_EJ1xxxEK1122.A_0001_EJ1100_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^Beckhoff EJ1xxxEK1122^A_0002(EJ1101-0022-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^Beckhoff EJ1xxxEK1122^A_0002(EJ1101-0022-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.Beckhoff_EJ1xxxEK1122.A_0002_EJ1101_0022_0016.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.Beckhoff_EJ1xxxEK1122.A_0002_EJ1101_0022_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.Beckhoff_EJ1xxxEK1122.A_0002_EJ1101_0022_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^A_0004(EJ1008-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^A_0004(EJ1008-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0004_EJ1008_0000_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0004_EJ1008_0000_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0004_EJ1008_0000_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30366,7 +30366,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0004_EJ1008_0000_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0004_EJ1008_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^A_0005(EJ1128-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^A_0005(EJ1128-0000-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0005_EJ1128_0000_0016.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0005_EJ1128_0000_0016.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0005_EJ1128_0000_0016.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30379,7 +30379,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0005_EJ1128_0000_0016.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0005_EJ1128_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^A_0006(EJ1809-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^A_0006(EJ1809-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0006_EJ1809_0000_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0006_EJ1809_0000_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0006_EJ1809_0000_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30400,7 +30400,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0006_EJ1809_0000_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0006_EJ1809_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^A_0007(EJ1819-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^A_0007(EJ1819-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0007_EJ1819_0000_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0007_EJ1819_0000_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0007_EJ1819_0000_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30421,7 +30421,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0007_EJ1819_0000_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0007_EJ1819_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^A_0008(EJ1859-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^A_0008(EJ1859-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0008_EJ1859_0000_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0008_EJ1859_0000_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0008_EJ1859_0000_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30442,7 +30442,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0008_EJ1859_0000_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0008_EJ1859_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^A_0009(EJ1889-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^A_0009(EJ1889-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0009_EJ1889_0000_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0009_EJ1889_0000_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0009_EJ1889_0000_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30463,19 +30463,19 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0009_EJ1889_0000_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0009_EJ1889_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ1xxx^A_0003(EJ1122-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ1xxx^A_0003(EJ1122-0000-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ1xxx.A_0003_EJ1122_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^Beckhoff EJ2xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^Beckhoff EJ2xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.Beckhoff_EJ2xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^Beckhoff EJ2xxxEK1122^Beckhoff EJ2xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^Beckhoff EJ2xxxEK1122^Beckhoff EJ2xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.Beckhoff_EJ2xxxEK1122.Beckhoff_EJ2xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^A_0001(EJ2008-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^A_0001(EJ2008-0000-0017)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0001_EJ2008_0000_0017.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0001_EJ2008_0000_0017.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0001_EJ2008_0000_0017.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30487,7 +30487,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0001_EJ2008_0000_0017.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0001_EJ2008_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^A_0002(EJ2008-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^A_0002(EJ2008-0000-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0002_EJ2008_0000_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0002_EJ2008_0000_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0002_EJ2008_0000_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30499,7 +30499,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0002_EJ2008_0000_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0002_EJ2008_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^A_0003(EJ2128-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^A_0003(EJ2128-0000-0016)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0003_EJ2128_0000_0016.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0003_EJ2128_0000_0016.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0003_EJ2128_0000_0016.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30511,21 +30511,21 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0003_EJ2128_0000_0016.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0003_EJ2128_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^A_0004(EJ2502-0000-0023)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^A_0004(EJ2502-0000-0023)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0004_EJ2502_0000_0023.PWM_Outputs_Channel_1.PWM_output" VarB="PWM Outputs Channel 1^PWM output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0004_EJ2502_0000_0023.PWM_Outputs_Channel_2.PWM_output" VarB="PWM Outputs Channel 2^PWM output" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0004_EJ2502_0000_0023.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0004_EJ2502_0000_0023.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0004_EJ2502_0000_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^A_0005(EJ2502-0000-0024)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^A_0005(EJ2502-0000-0024)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0005_EJ2502_0000_0024.PWM_Outputs_Channel_1.PWM_output" VarB="PWM Outputs Channel 1^PWM output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0005_EJ2502_0000_0024.PWM_Outputs_Channel_2.PWM_output" VarB="PWM Outputs Channel 2^PWM output" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0005_EJ2502_0000_0024.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0005_EJ2502_0000_0024.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0005_EJ2502_0000_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^A_0006(EJ2521-0224-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^A_0006(EJ2521-0224-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0006_EJ2521_0224_0016.PTO_Status.Status^Sel_Ack_End_counter" VarB="PTO Status^Status^Sel. Ack/End counter" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0006_EJ2521_0224_0016.PTO_Status.Status^Ramp_active" VarB="PTO Status^Status^Ramp active" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0006_EJ2521_0224_0016.PTO_Status.Status^Error" VarB="PTO Status^Status^Error" />
@@ -30570,7 +30570,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0006_EJ2521_0224_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0006_EJ2521_0224_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^A_0007(EJ2522-0000-0022)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^A_0007(EJ2522-0000-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0007_EJ2522_0000_0022.PTO_Status_Channel_1.Status^Sel_Ack_End_counter" VarB="PTO Status Channel 1^Status^Sel. Ack/End counter" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0007_EJ2522_0000_0022.PTO_Status_Channel_1.Status^Ramp_active" VarB="PTO Status Channel 1^Status^Ramp active" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0007_EJ2522_0000_0022.PTO_Status_Channel_1.Status^Error" VarB="PTO Status Channel 1^Status^Error" />
@@ -30616,7 +30616,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0007_EJ2522_0000_0022.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0007_EJ2522_0000_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^A_0008(EJ2809-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^A_0008(EJ2809-0000-0017)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0008_EJ2809_0000_0017.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0008_EJ2809_0000_0017.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0008_EJ2809_0000_0017.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30636,7 +30636,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0008_EJ2809_0000_0017.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0008_EJ2809_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^A_0009(EJ2889-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^A_0009(EJ2889-0000-0016)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0009_EJ2889_0000_0016.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0009_EJ2889_0000_0016.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0009_EJ2889_0000_0016.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30656,7 +30656,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0009_EJ2889_0000_0016.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0009_EJ2889_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ2xxx^A_0010(EJ2889-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ2xxx^A_0010(EJ2889-0000-0017)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0010_EJ2889_0000_0017.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0010_EJ2889_0000_0017.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0010_EJ2889_0000_0017.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30676,16 +30676,16 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0010_EJ2889_0000_0017.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ2xxx.A_0010_EJ2889_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^Beckhoff EJ3xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^Beckhoff EJ3xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.Beckhoff_EJ3xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^Beckhoff EJ3xxxEK1122^Beckhoff EJ3xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^Beckhoff EJ3xxxEK1122^Beckhoff EJ3xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.Beckhoff_EJ3xxxEK1122.Beckhoff_EJ3xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0001(EJ3004-0000-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0001(EJ3004-0000-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0001_EJ3004_0000_0019.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0001_EJ3004_0000_0019.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0001_EJ3004_0000_0019.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -30723,7 +30723,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0001_EJ3004_0000_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0001_EJ3004_0000_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0002(EJ3004-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0002(EJ3004-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0002_EJ3004_0000_0020.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0002_EJ3004_0000_0020.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0002_EJ3004_0000_0020.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -30761,7 +30761,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0002_EJ3004_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0002_EJ3004_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0003(EJ3004-0000-0021)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0003(EJ3004-0000-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0003_EJ3004_0000_0021.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0003_EJ3004_0000_0021.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0003_EJ3004_0000_0021.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -30799,7 +30799,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0003_EJ3004_0000_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0003_EJ3004_0000_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0004(EJ3048-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0004(EJ3048-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0004_EJ3048_0000_0020.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0004_EJ3048_0000_0020.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0004_EJ3048_0000_0020.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -30869,7 +30869,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0004_EJ3048_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0004_EJ3048_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0005(EJ3058-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0005(EJ3058-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0005_EJ3058_0000_0020.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0005_EJ3058_0000_0020.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0005_EJ3058_0000_0020.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -30939,7 +30939,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0005_EJ3058_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0005_EJ3058_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0006(EJ3068-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0006(EJ3068-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0006_EJ3068_0000_0020.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0006_EJ3068_0000_0020.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0006_EJ3068_0000_0020.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31009,7 +31009,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0006_EJ3068_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0006_EJ3068_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0007(EJ3068-0000-0021)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0007(EJ3068-0000-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0007_EJ3068_0000_0021.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0007_EJ3068_0000_0021.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0007_EJ3068_0000_0021.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31079,7 +31079,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0007_EJ3068_0000_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0007_EJ3068_0000_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0008(EJ3104-0000-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0008(EJ3104-0000-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0008_EJ3104_0000_0019.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0008_EJ3104_0000_0019.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0008_EJ3104_0000_0019.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31121,7 +31121,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0008_EJ3104_0000_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0008_EJ3104_0000_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0009(EJ3104-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0009(EJ3104-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0009_EJ3104_0000_0020.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0009_EJ3104_0000_0020.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0009_EJ3104_0000_0020.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31163,7 +31163,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0009_EJ3104_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0009_EJ3104_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0010(EJ3104-0000-0021)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0010(EJ3104-0000-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0010_EJ3104_0000_0021.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0010_EJ3104_0000_0021.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0010_EJ3104_0000_0021.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31205,7 +31205,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0010_EJ3104_0000_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0010_EJ3104_0000_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0011(EJ3108-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0011(EJ3108-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0011_EJ3108_0000_0017.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0011_EJ3108_0000_0017.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0011_EJ3108_0000_0017.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31275,7 +31275,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0011_EJ3108_0000_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0011_EJ3108_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0012(EJ3108-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0012(EJ3108-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0012_EJ3108_0000_0018.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0012_EJ3108_0000_0018.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0012_EJ3108_0000_0018.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31353,7 +31353,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0012_EJ3108_0000_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0012_EJ3108_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0013(EJ3108-0000-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0013(EJ3108-0000-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0013_EJ3108_0000_0019.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0013_EJ3108_0000_0019.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0013_EJ3108_0000_0019.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31431,7 +31431,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0013_EJ3108_0000_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0013_EJ3108_0000_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0014(EJ3202-0000-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0014(EJ3202-0000-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0014_EJ3202_0000_0019.RTD_Inputs_Channel_1.Status^Underrange" VarB="RTD Inputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0014_EJ3202_0000_0019.RTD_Inputs_Channel_1.Status^Overrange" VarB="RTD Inputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0014_EJ3202_0000_0019.RTD_Inputs_Channel_1.Status^Limit_1" VarB="RTD Inputs Channel 1^Status^Limit 1" />
@@ -31453,7 +31453,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0014_EJ3202_0000_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0014_EJ3202_0000_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0015(EJ3202-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0015(EJ3202-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0015_EJ3202_0000_0020.RTD_Inputs_Channel_1.Status^Underrange" VarB="RTD Inputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0015_EJ3202_0000_0020.RTD_Inputs_Channel_1.Status^Overrange" VarB="RTD Inputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0015_EJ3202_0000_0020.RTD_Inputs_Channel_1.Status^Limit_1" VarB="RTD Inputs Channel 1^Status^Limit 1" />
@@ -31475,7 +31475,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0015_EJ3202_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0015_EJ3202_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0016(EJ3202-0000-0021)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0016(EJ3202-0000-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0016_EJ3202_0000_0021.RTD_Inputs_Channel_1.Status^Underrange" VarB="RTD Inputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0016_EJ3202_0000_0021.RTD_Inputs_Channel_1.Status^Overrange" VarB="RTD Inputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0016_EJ3202_0000_0021.RTD_Inputs_Channel_1.Status^Limit_1" VarB="RTD Inputs Channel 1^Status^Limit 1" />
@@ -31497,7 +31497,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0016_EJ3202_0000_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0016_EJ3202_0000_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0017(EJ3214-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0017(EJ3214-0000-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0017_EJ3214_0000_0016.RTD_Inputs_Channel_1.Status^Underrange" VarB="RTD Inputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0017_EJ3214_0000_0016.RTD_Inputs_Channel_1.Status^Overrange" VarB="RTD Inputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0017_EJ3214_0000_0016.RTD_Inputs_Channel_1.Status^Error" VarB="RTD Inputs Channel 1^Status^Error" />
@@ -31527,7 +31527,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0017_EJ3214_0000_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0017_EJ3214_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0018(EJ3255-0000-0023)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0018(EJ3255-0000-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0018_EJ3255_0000_0023.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0018_EJ3255_0000_0023.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0018_EJ3255_0000_0023.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31578,7 +31578,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0018_EJ3255_0000_0023.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0018_EJ3255_0000_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ3xxx^A_0019(EJ3318-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ3xxx^A_0019(EJ3318-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0019_EJ3318_0000_0017.TC_Channel_1.Status^Underrange" VarB="TC Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0019_EJ3318_0000_0017.TC_Channel_1.Status^Overrange" VarB="TC Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0019_EJ3318_0000_0017.TC_Channel_1.Status^Error" VarB="TC Channel 1^Status^Error" />
@@ -31644,30 +31644,30 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0019_EJ3318_0000_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ3xxx.A_0019_EJ3318_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^Beckhoff EJ4xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^Beckhoff EJ4xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.Beckhoff_EJ4xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^Beckhoff EJ4xxxEK1122^Beckhoff EJ4xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^Beckhoff EJ4xxxEK1122^Beckhoff EJ4xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.Beckhoff_EJ4xxxEK1122.Beckhoff_EJ4xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^A_0001(EJ4002-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^A_0001(EJ4002-0000-0017)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0001_EJ4002_0000_0017.AO_Outputs_Channel_1.Analog_output" VarB="AO Outputs Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0001_EJ4002_0000_0017.AO_Outputs_Channel_2.Analog_output" VarB="AO Outputs Channel 2^Analog output" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0001_EJ4002_0000_0017.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0001_EJ4002_0000_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0001_EJ4002_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^A_0002(EJ4002-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^A_0002(EJ4002-0000-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0002_EJ4002_0000_0018.AO_Output_Channel_1.Analog_output" VarB="AO Output Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0002_EJ4002_0000_0018.AO_Output_Channel_2.Analog_output" VarB="AO Output Channel 2^Analog output" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0002_EJ4002_0000_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0002_EJ4002_0000_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0002_EJ4002_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^A_0003(EJ4004-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^A_0003(EJ4004-0000-0020)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0003_EJ4004_0000_0020.AO_Outputs_Channel_1.Analog_output" VarB="AO Outputs Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0003_EJ4004_0000_0020.AO_Outputs_Channel_2.Analog_output" VarB="AO Outputs Channel 2^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0003_EJ4004_0000_0020.AO_Outputs_Channel_3.Analog_output" VarB="AO Outputs Channel 3^Analog output" />
@@ -31676,7 +31676,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0003_EJ4004_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0003_EJ4004_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^A_0004(EJ4008-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^A_0004(EJ4008-0000-0020)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0004_EJ4008_0000_0020.AO_Outputs_Channel_1.Analog_output" VarB="AO Outputs Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0004_EJ4008_0000_0020.AO_Outputs_Channel_2.Analog_output" VarB="AO Outputs Channel 2^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0004_EJ4008_0000_0020.AO_Outputs_Channel_3.Analog_output" VarB="AO Outputs Channel 3^Analog output" />
@@ -31689,7 +31689,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0004_EJ4008_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0004_EJ4008_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^A_0005(EJ4018-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^A_0005(EJ4018-0000-0016)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0005_EJ4018_0000_0016.AO_Outputs_Channel_1.Analog_output" VarB="AO Outputs Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0005_EJ4018_0000_0016.AO_Outputs_Channel_2.Analog_output" VarB="AO Outputs Channel 2^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0005_EJ4018_0000_0016.AO_Outputs_Channel_3.Analog_output" VarB="AO Outputs Channel 3^Analog output" />
@@ -31702,7 +31702,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0005_EJ4018_0000_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0005_EJ4018_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^A_0006(EJ4024-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^A_0006(EJ4024-0000-0020)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0006_EJ4024_0000_0020.AO_Outputs_Channel_1.Analog_output" VarB="AO Outputs Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0006_EJ4024_0000_0020.AO_Outputs_Channel_2.Analog_output" VarB="AO Outputs Channel 2^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0006_EJ4024_0000_0020.AO_Outputs_Channel_3.Analog_output" VarB="AO Outputs Channel 3^Analog output" />
@@ -31711,14 +31711,14 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0006_EJ4024_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0006_EJ4024_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^A_0007(EJ4132-0000-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^A_0007(EJ4132-0000-0019)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0007_EJ4132_0000_0019.AO_Outputs_Channel_1.Analog_output" VarB="AO Outputs Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0007_EJ4132_0000_0019.AO_Outputs_Channel_2.Analog_output" VarB="AO Outputs Channel 2^Analog output" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0007_EJ4132_0000_0019.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0007_EJ4132_0000_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0007_EJ4132_0000_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^A_0008(EJ4134-0000-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^A_0008(EJ4134-0000-0019)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0008_EJ4134_0000_0019.AO_Output_Channel_1.Analog_output" VarB="AO Output Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0008_EJ4134_0000_0019.AO_Output_Channel_2.Analog_output" VarB="AO Output Channel 2^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0008_EJ4134_0000_0019.AO_Output_Channel_3.Analog_output" VarB="AO Output Channel 3^Analog output" />
@@ -31727,7 +31727,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0008_EJ4134_0000_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0008_EJ4134_0000_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ4xxx^A_0009(EJ4134-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ4xxx^A_0009(EJ4134-0000-0020)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0009_EJ4134_0000_0020.AO_Output_Channel_1.Analog_output" VarB="AO Output Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0009_EJ4134_0000_0020.AO_Output_Channel_2.Analog_output" VarB="AO Output Channel 2^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0009_EJ4134_0000_0020.AO_Output_Channel_3.Analog_output" VarB="AO Output Channel 3^Analog output" />
@@ -31736,16 +31736,16 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0009_EJ4134_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ4xxx.A_0009_EJ4134_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ5xxx">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ5xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ5xxx^Beckhoff EJ5xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ5xxx^Beckhoff EJ5xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.Beckhoff_EJ5xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ5xxx^Beckhoff EJ5xxxEK1122^Beckhoff EJ5xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ5xxx^Beckhoff EJ5xxxEK1122^Beckhoff EJ5xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.Beckhoff_EJ5xxxEK1122.Beckhoff_EJ5xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ5xxx^A_0001(EJ5002-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ5xxx^A_0001(EJ5002-0000-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0001_EJ5002_0000_0016.SSI_Inputs_Channel_1.Status^Data_error" VarB="SSI Inputs Channel 1^Status^Data error" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0001_EJ5002_0000_0016.SSI_Inputs_Channel_1.Status^Frame_error" VarB="SSI Inputs Channel 1^Status^Frame error" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0001_EJ5002_0000_0016.SSI_Inputs_Channel_1.Status^Power_failure" VarB="SSI Inputs Channel 1^Status^Power failure" />
@@ -31765,7 +31765,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0001_EJ5002_0000_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0001_EJ5002_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ5xxx^A_0002(EJ5002-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ5xxx^A_0002(EJ5002-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0002_EJ5002_0000_0017.SSI_Inputs_Channel_1.Status^Data_error" VarB="SSI Inputs Channel 1^Status^Data error" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0002_EJ5002_0000_0017.SSI_Inputs_Channel_1.Status^Frame_error" VarB="SSI Inputs Channel 1^Status^Frame error" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0002_EJ5002_0000_0017.SSI_Inputs_Channel_1.Status^Power_failure" VarB="SSI Inputs Channel 1^Status^Power failure" />
@@ -31787,7 +31787,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0002_EJ5002_0000_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0002_EJ5002_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ5xxx^A_0003(EJ5101-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ5xxx^A_0003(EJ5101-0000-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0003_EJ5101_0000_0016.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0003_EJ5101_0000_0016.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0003_EJ5101_0000_0016.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -31816,7 +31816,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0003_EJ5101_0000_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0003_EJ5101_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ5xxx^A_0004(EJ5151-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ5xxx^A_0004(EJ5151-0000-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0004_EJ5151_0000_0016.ENC_Inputs.Status^Latch_C_valid" VarB="ENC Inputs^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0004_EJ5151_0000_0016.ENC_Inputs.Status^Latch_extern_valid" VarB="ENC Inputs^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0004_EJ5151_0000_0016.ENC_Inputs.Status^Set_counter_done" VarB="ENC Inputs^Status^Set counter done" />
@@ -31840,16 +31840,16 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0004_EJ5151_0000_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ5xxx.A_0004_EJ5151_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ6xxx">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ6xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ6xxx^Beckhoff EJ6xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ6xxx^Beckhoff EJ6xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.Beckhoff_EJ6xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ6xxx^Beckhoff EJ6xxxEK1122^Beckhoff EJ6xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ6xxx^Beckhoff EJ6xxxEK1122^Beckhoff EJ6xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.Beckhoff_EJ6xxxEK1122.Beckhoff_EJ6xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ6xxx^A_0001(EJ6002-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ6xxx^A_0001(EJ6002-0000-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0001_EJ6002_0000_0016.COM_Inputs_Channel_1.Status^Transmit_accepted" VarB="COM Inputs Channel 1^Status^Transmit accepted" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0001_EJ6002_0000_0016.COM_Inputs_Channel_1.Status^Receive_request" VarB="COM Inputs Channel 1^Status^Receive request" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0001_EJ6002_0000_0016.COM_Inputs_Channel_1.Status^Init_accepted" VarB="COM Inputs Channel 1^Status^Init accepted" />
@@ -31969,7 +31969,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0001_EJ6002_0000_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0001_EJ6002_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ6xxx^A_0002(EJ6224-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ6xxx^A_0002(EJ6224-0000-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0002_EJ6224_0000_0016.Module_1_DeviceState_Inputs_Device.DeviceState_Inputs_Device.Device_Diag" VarB="Module 1 (DeviceState Inputs Device)^DeviceState Inputs Device^Device Diag" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0002_EJ6224_0000_0016.Module_1_DeviceState_Inputs_Device.DeviceState_Inputs_Device.Device_State" VarB="Module 1 (DeviceState Inputs Device)^DeviceState Inputs Device^Device State" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0002_EJ6224_0000_0016.Module_2_DeviceState_Inputs.DeviceState_Inputs.State_Ch1" VarB="Module 2 (DeviceState Inputs)^DeviceState Inputs^State Ch1" />
@@ -31982,7 +31982,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0002_EJ6224_0000_0016.InfoData.AoeNetId" VarB="InfoData^AoeNetId" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0002_EJ6224_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ6xxx^A_0003(EJ6224-0090-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ6xxx^A_0003(EJ6224-0090-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0003_EJ6224_0090_0016.Module_1_DeviceState_Inputs_Device.DeviceState_Inputs_Device.Device_Diag" VarB="Module 1 (DeviceState Inputs Device)^DeviceState Inputs Device^Device Diag" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0003_EJ6224_0090_0016.Module_1_DeviceState_Inputs_Device.DeviceState_Inputs_Device.Device_State" VarB="Module 1 (DeviceState Inputs Device)^DeviceState Inputs Device^Device State" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0003_EJ6224_0090_0016.Module_2_DeviceState_Inputs.DeviceState_Inputs.State_Ch1" VarB="Module 2 (DeviceState Inputs)^DeviceState Inputs^State Ch1" />
@@ -31995,16 +31995,16 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0003_EJ6224_0090_0016.InfoData.AoeNetId" VarB="InfoData^AoeNetId" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ6xxx.A_0003_EJ6224_0090_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^Beckhoff EJ7xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^Beckhoff EJ7xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.Beckhoff_EJ7xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^Beckhoff EJ7xxxEK1122^Beckhoff EJ7xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^Beckhoff EJ7xxxEK1122^Beckhoff EJ7xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.Beckhoff_EJ7xxxEK1122.Beckhoff_EJ7xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0001(EJ7031-0000-0026)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0001(EJ7031-0000-0026)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0001_EJ7031_0000_0026.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0001_EJ7031_0000_0026.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0001_EJ7031_0000_0026.ENC_Status_compact.Status^Counter_underflow" VarB="ENC Status compact^Status^Counter underflow" />
@@ -32040,7 +32040,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0001_EJ7031_0000_0026.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0001_EJ7031_0000_0026.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0002(EJ7037-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0002(EJ7037-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0002_EJ7037_0000_0020.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0002_EJ7037_0000_0020.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0002_EJ7037_0000_0020.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32084,7 +32084,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0002_EJ7037_0000_0020.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0002_EJ7037_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0003(EJ7041-0052-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0003(EJ7041-0052-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0003_EJ7041_0052_0016.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0003_EJ7041_0052_0016.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0003_EJ7041_0052_0016.ENC_Status_compact.Status^Counter_underflow" VarB="ENC Status compact^Status^Counter underflow" />
@@ -32120,7 +32120,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0003_EJ7041_0052_0016.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0003_EJ7041_0052_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0004(EJ7047-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0004(EJ7047-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0004_EJ7047_0000_0018.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0004_EJ7047_0000_0018.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0004_EJ7047_0000_0018.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32164,7 +32164,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0004_EJ7047_0000_0018.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0004_EJ7047_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0005(EJ7047-0000-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0005(EJ7047-0000-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0005_EJ7047_0000_0019.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0005_EJ7047_0000_0019.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0005_EJ7047_0000_0019.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32208,7 +32208,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0005_EJ7047_0000_0019.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0005_EJ7047_0000_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0006(EJ7047-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0006(EJ7047-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0006_EJ7047_0000_0020.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0006_EJ7047_0000_0020.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0006_EJ7047_0000_0020.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32252,7 +32252,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0006_EJ7047_0000_0020.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0006_EJ7047_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0007(EJ7342-0000-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0007(EJ7342-0000-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0007_EJ7342_0000_0019.ENC_Status_compact_Channel_1.Status^Latch_extern_valid" VarB="ENC Status compact Channel 1^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0007_EJ7342_0000_0019.ENC_Status_compact_Channel_1.Status^Set_counter_done" VarB="ENC Status compact Channel 1^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0007_EJ7342_0000_0019.ENC_Status_compact_Channel_1.Status^Counter_underflow" VarB="ENC Status compact Channel 1^Status^Counter underflow" />
@@ -32324,7 +32324,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0007_EJ7342_0000_0019.InfoData.Chn3" VarB="InfoData^Chn3" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0007_EJ7342_0000_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0008(EJ7342-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0008(EJ7342-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0008_EJ7342_0000_0020.ENC_Status_compact_Channel_1.Status^Latch_extern_valid" VarB="ENC Status compact Channel 1^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0008_EJ7342_0000_0020.ENC_Status_compact_Channel_1.Status^Set_counter_done" VarB="ENC Status compact Channel 1^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0008_EJ7342_0000_0020.ENC_Status_compact_Channel_1.Status^Counter_underflow" VarB="ENC Status compact Channel 1^Status^Counter underflow" />
@@ -32396,7 +32396,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0008_EJ7342_0000_0020.InfoData.Chn3" VarB="InfoData^Chn3" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0008_EJ7342_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0009(EJ7211-0010-0026)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0009(EJ7211-0010-0026)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0009_EJ7211_0010_0026.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0009_EJ7211_0010_0026.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0009_EJ7211_0010_0026.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32409,7 +32409,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0009_EJ7211_0010_0026.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0009_EJ7211_0010_0026.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0010(EJ7211-0010-0027)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0010(EJ7211-0010-0027)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0010_EJ7211_0010_0027.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0010_EJ7211_0010_0027.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0010_EJ7211_0010_0027.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32422,7 +32422,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0010_EJ7211_0010_0027.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0010_EJ7211_0010_0027.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0011(EJ7211-0010-0028)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0011(EJ7211-0010-0028)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0011_EJ7211_0010_0028.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0011_EJ7211_0010_0028.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0011_EJ7211_0010_0028.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32435,7 +32435,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0011_EJ7211_0010_0028.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0011_EJ7211_0010_0028.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0012(EJ7211-0010-0029)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0012(EJ7211-0010-0029)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0012_EJ7211_0010_0029.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0012_EJ7211_0010_0029.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0012_EJ7211_0010_0029.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32448,7 +32448,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0012_EJ7211_0010_0029.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0012_EJ7211_0010_0029.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0013(EJ7211-0010-0030)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0013(EJ7211-0010-0030)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0013_EJ7211_0010_0030.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0013_EJ7211_0010_0030.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0013_EJ7211_0010_0030.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32462,7 +32462,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0013_EJ7211_0010_0030.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0013_EJ7211_0010_0030.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0014(EJ7211-0010-0031)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0014(EJ7211-0010-0031)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0014_EJ7211_0010_0031.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0014_EJ7211_0010_0031.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0014_EJ7211_0010_0031.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32476,7 +32476,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0014_EJ7211_0010_0031.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0014_EJ7211_0010_0031.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0015(EJ7211-0010-0032)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0015(EJ7211-0010-0032)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0015_EJ7211_0010_0032.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0015_EJ7211_0010_0032.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0015_EJ7211_0010_0032.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32490,7 +32490,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0015_EJ7211_0010_0032.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0015_EJ7211_0010_0032.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0016(EJ7211-0011-0026)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0016(EJ7211-0011-0026)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0016_EJ7211_0011_0026.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0016_EJ7211_0011_0026.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0016_EJ7211_0011_0026.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32503,7 +32503,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0016_EJ7211_0011_0026.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0016_EJ7211_0011_0026.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0017(EJ7211-0011-0027)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0017(EJ7211-0011-0027)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0017_EJ7211_0011_0027.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0017_EJ7211_0011_0027.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0017_EJ7211_0011_0027.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32516,7 +32516,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0017_EJ7211_0011_0027.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0017_EJ7211_0011_0027.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0018(EJ7211-0011-0028)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0018(EJ7211-0011-0028)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0018_EJ7211_0011_0028.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0018_EJ7211_0011_0028.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0018_EJ7211_0011_0028.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32529,7 +32529,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0018_EJ7211_0011_0028.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0018_EJ7211_0011_0028.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0019(EJ7211-0011-0029)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0019(EJ7211-0011-0029)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0019_EJ7211_0011_0029.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0019_EJ7211_0011_0029.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0019_EJ7211_0011_0029.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32542,7 +32542,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0019_EJ7211_0011_0029.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0019_EJ7211_0011_0029.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0020(EJ7211-0011-0030)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0020(EJ7211-0011-0030)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0020_EJ7211_0011_0030.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0020_EJ7211_0011_0030.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0020_EJ7211_0011_0030.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32555,7 +32555,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0020_EJ7211_0011_0030.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0020_EJ7211_0011_0030.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0021(EJ7211-0011-0031)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0021(EJ7211-0011-0031)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0021_EJ7211_0011_0031.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0021_EJ7211_0011_0031.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0021_EJ7211_0011_0031.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32568,7 +32568,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0021_EJ7211_0011_0031.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0021_EJ7211_0011_0031.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0022(EJ7211-0011-0032)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0022(EJ7211-0011-0032)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0022_EJ7211_0011_0032.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0022_EJ7211_0011_0032.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0022_EJ7211_0011_0032.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32581,7 +32581,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0022_EJ7211_0011_0032.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0022_EJ7211_0011_0032.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0023(EJ7211-9414-0029)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0023(EJ7211-9414-0029)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0023_EJ7211_9414_0029.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0023_EJ7211_9414_0029.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0023_EJ7211_9414_0029.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32594,7 +32594,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0023_EJ7211_9414_0029.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0023_EJ7211_9414_0029.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0024(EJ7211-9414-0030)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0024(EJ7211-9414-0030)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0024_EJ7211_9414_0030.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0024_EJ7211_9414_0030.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0024_EJ7211_9414_0030.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32609,7 +32609,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0024_EJ7211_9414_0030.InfoData.Chn2" VarB="InfoData^Chn2" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0024_EJ7211_9414_0030.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0025(EJ7211-9414-0031)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0025(EJ7211-9414-0031)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0025_EJ7211_9414_0031.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0025_EJ7211_9414_0031.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0025_EJ7211_9414_0031.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32624,7 +32624,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0025_EJ7211_9414_0031.InfoData.Chn2" VarB="InfoData^Chn2" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0025_EJ7211_9414_0031.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0026(EJ7211-9414-0032)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0026(EJ7211-9414-0032)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0026_EJ7211_9414_0032.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0026_EJ7211_9414_0032.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0026_EJ7211_9414_0032.DRV_Controlword.Controlword" VarB="DRV Controlword^Controlword" />
@@ -32639,7 +32639,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0026_EJ7211_9414_0032.InfoData.Chn2" VarB="InfoData^Chn2" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0026_EJ7211_9414_0032.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0027(EJ7211-9415-0029)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0027(EJ7211-9415-0029)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0027_EJ7211_9415_0029.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0027_EJ7211_9415_0029.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0027_EJ7211_9415_0029.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32652,7 +32652,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0027_EJ7211_9415_0029.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0027_EJ7211_9415_0029.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0028(EJ7211-9415-0030)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0028(EJ7211-9415-0030)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0028_EJ7211_9415_0030.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0028_EJ7211_9415_0030.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0028_EJ7211_9415_0030.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32665,7 +32665,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0028_EJ7211_9415_0030.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0028_EJ7211_9415_0030.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0029(EJ7211-9415-0031)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0029(EJ7211-9415-0031)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0029_EJ7211_9415_0031.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0029_EJ7211_9415_0031.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0029_EJ7211_9415_0031.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32678,7 +32678,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0029_EJ7211_9415_0031.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0029_EJ7211_9415_0031.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0030(EJ7211-9415-0032)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0030(EJ7211-9415-0032)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0030_EJ7211_9415_0032.DS402_Statusword.Statusword" VarB="DS402 Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0030_EJ7211_9415_0032.DS402_Position_actual_value.Position_actual_value" VarB="DS402 Position actual value^Position actual value" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0030_EJ7211_9415_0032.DS402_Controlword.Controlword" VarB="DS402 Controlword^Controlword" />
@@ -32691,7 +32691,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0030_EJ7211_9415_0032.InfoData.Chn0" VarB="InfoData^Chn0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0030_EJ7211_9415_0032.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0031(EJ7334-0008-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0031(EJ7334-0008-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0031_EJ7334_0008_0016.DCM_Status_Channel_1.Status^Ready_to_enable" VarB="DCM Status Channel 1^Status^Ready to enable" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0031_EJ7334_0008_0016.DCM_Status_Channel_1.Status^Ready" VarB="DCM Status Channel 1^Status^Ready" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0031_EJ7334_0008_0016.DCM_Status_Channel_1.Status^Warning" VarB="DCM Status Channel 1^Status^Warning" />
@@ -32741,7 +32741,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0031_EJ7334_0008_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0031_EJ7334_0008_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ7xxx^A_0032(EJ7411-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ7xxx^A_0032(EJ7411-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0032_EJ7411_0000_0018.FB_Position.Position" VarB="FB Position^Position" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0032_EJ7411_0000_0018.DRV_Statusword.Statusword" VarB="DRV Statusword^Statusword" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0032_EJ7411_0000_0018.DRV_Following_error_actual_value.Following_error_actual_value" VarB="DRV Following error actual value^Following error actual value" />
@@ -32756,26 +32756,26 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0032_EJ7411_0000_0018.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ7xxx.A_0032_EJ7411_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ9xxx">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ9xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ9xxx^Beckhoff EJ9xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ9xxx^Beckhoff EJ9xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.Beckhoff_EJ9xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ9xxx^Beckhoff EJ9xxxEK1122^Beckhoff EJ9xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ9xxx^Beckhoff EJ9xxxEK1122^Beckhoff EJ9xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.Beckhoff_EJ9xxxEK1122.Beckhoff_EJ9xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ9xxx^A_0001(EJ9001-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ9xxx^A_0001(EJ9001-0000-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0001_EJ9001_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ9xxx^A_0002(EJ9505-0000-0016)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ9xxx^A_0002(EJ9505-0000-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0002_EJ9505_0000_0016.Status_Uo.Power_OK" VarB="Status Uo^Power OK" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0002_EJ9505_0000_0016.Status_Uo.Overload" VarB="Status Uo^Overload" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0002_EJ9505_0000_0016.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0002_EJ9505_0000_0016.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0002_EJ9505_0000_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ9xxx^A_0003(EJ9576-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ9xxx^A_0003(EJ9576-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0003_EJ9576_0000_0018.BCT_Inputs.Terminal_Overtemperature" VarB="BCT Inputs^Terminal Overtemperature" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0003_EJ9576_0000_0018.BCT_Inputs.I2T_error" VarB="BCT Inputs^I2T error" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0003_EJ9576_0000_0018.BCT_Inputs.I2T_warning" VarB="BCT Inputs^I2T warning" />
@@ -32791,7 +32791,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0003_EJ9576_0000_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0003_EJ9576_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ9xxx^A_0004(EJ9576-0000-0019)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ9xxx^A_0004(EJ9576-0000-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0004_EJ9576_0000_0019.BCT_Inputs.Terminal_Overtemperature" VarB="BCT Inputs^Terminal Overtemperature" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0004_EJ9576_0000_0019.BCT_Inputs.I2T_error" VarB="BCT Inputs^I2T error" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0004_EJ9576_0000_0019.BCT_Inputs.I2T_warning" VarB="BCT Inputs^I2T warning" />
@@ -32808,7 +32808,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0004_EJ9576_0000_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0004_EJ9576_0000_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ9xxx^A_0005(EJ9576-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ9xxx^A_0005(EJ9576-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0005_EJ9576_0000_0020.BCT_Inputs.Terminal_Overtemperature" VarB="BCT Inputs^Terminal Overtemperature" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0005_EJ9576_0000_0020.BCT_Inputs.I2T_error" VarB="BCT Inputs^I2T error" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0005_EJ9576_0000_0020.BCT_Inputs.I2T_warning" VarB="BCT Inputs^I2T warning" />
@@ -32824,7 +32824,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0005_EJ9576_0000_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0005_EJ9576_0000_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJ9xxx^A_0006(EJ9576-0000-0022)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJ9xxx^A_0006(EJ9576-0000-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0006_EJ9576_0000_0022.BCT_Inputs.Terminal_Overtemperature" VarB="BCT Inputs^Terminal Overtemperature" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0006_EJ9576_0000_0022.BCT_Inputs.I2T_error" VarB="BCT Inputs^I2T error" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0006_EJ9576_0000_0022.BCT_Inputs.I2T_warning" VarB="BCT Inputs^I2T warning" />
@@ -32841,16 +32841,16 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0006_EJ9576_0000_0022.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJ9xxx.A_0006_EJ9576_0000_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^Beckhoff EJx9xxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^Beckhoff EJx9xxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.Beckhoff_EJx9xxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^Beckhoff EJx9xxEK1122^Beckhoff EJx9xxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^Beckhoff EJx9xxEK1122^Beckhoff EJx9xxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.Beckhoff_EJx9xxEK1122.Beckhoff_EJx9xxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0001(EJ1914-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0001(EJ1914-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0001_EJ1914_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_Command" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE Command" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0001_EJ1914_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSIN_Module_1_Channel_1_Input" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSIN Module 1.Channel 1.Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0001_EJ1914_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSIN_Module_1_Channel_2_Input" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSIN Module 1.Channel 2.Input" />
@@ -32874,7 +32874,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0001_EJ1914_0000_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0001_EJ1914_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0002(EJ1914-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0002(EJ1914-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0002_EJ1914_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_Command" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE Command" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0002_EJ1914_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSIN_Module_1_Channel_1_Input" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSIN Module 1.Channel 1.Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0002_EJ1914_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSIN_Module_1_Channel_2_Input" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSIN Module 1.Channel 2.Input" />
@@ -32898,7 +32898,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0002_EJ1914_0000_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0002_EJ1914_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0003(EJ1918-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0003(EJ1918-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0003_EJ1918_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_Command" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE Command" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0003_EJ1918_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSIN_Module_1_Channel_1_Input" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSIN Module 1.Channel 1.Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0003_EJ1918_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSIN_Module_1_Channel_2_Input" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSIN Module 1.Channel 2.Input" />
@@ -32930,7 +32930,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0003_EJ1918_0000_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0003_EJ1918_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0004(EJ1918-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0004(EJ1918-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0004_EJ1918_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_Command" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE Command" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0004_EJ1918_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSIN_Module_1_Channel_1_Input" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSIN Module 1.Channel 1.Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0004_EJ1918_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSIN_Module_1_Channel_2_Input" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSIN Module 1.Channel 2.Input" />
@@ -32962,7 +32962,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0004_EJ1918_0000_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0004_EJ1918_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0005(EJ1957-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0005(EJ1957-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0005_EJ1957_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_Command" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE Command" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0005_EJ1957_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSOUT_Module_Module_Fault" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSOUT Module.Module Fault" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0005_EJ1957_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSIN_Module_1_Channel_1_Input" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSIN Module 1.Channel 1.Input" />
@@ -33006,7 +33006,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0005_EJ1957_0000_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0005_EJ1957_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0006(EJ1957-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0006(EJ1957-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0006_EJ1957_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_Command" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE Command" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0006_EJ1957_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSOUT_Module_Module_Fault" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSOUT Module.Module Fault" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0006_EJ1957_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSIN_Module_1_Channel_1_Input" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSIN Module 1.Channel 1.Input" />
@@ -33050,7 +33050,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0006_EJ1957_0000_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0006_EJ1957_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0007(EJ2914-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0007(EJ2914-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0007_EJ2914_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_Command" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE Command" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0007_EJ2914_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSOUT_Module_Module_Fault" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSOUT Module.Module Fault" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0007_EJ2914_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_CRC_000" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE CRC 000" />
@@ -33078,7 +33078,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0007_EJ2914_0000_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0007_EJ2914_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0008(EJ2914-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0008(EJ2914-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0008_EJ2914_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_Command" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE Command" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0008_EJ2914_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSOUT_Module_Module_Fault" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSOUT Module.Module Fault" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0008_EJ2914_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_CRC_000" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE CRC 000" />
@@ -33106,7 +33106,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0008_EJ2914_0000_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0008_EJ2914_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0009(EJ2918-0000-0017)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0009(EJ2918-0000-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0009_EJ2918_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_Command" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE Command" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0009_EJ2918_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSOUT_Module_1_Module_Fault" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSOUT Module 1.Module Fault" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0009_EJ2918_0000_0017.Module_1_FSOE.FSoE_Inputs.FSOE^FSOUT_Module_2_Module_Fault" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSOUT Module 2.Module Fault" />
@@ -33144,7 +33144,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0009_EJ2918_0000_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0009_EJ2918_0000_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0010(EJ2918-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0010(EJ2918-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0010_EJ2918_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSoE_Command" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSoE Command" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0010_EJ2918_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSOUT_Module_1_Module_Fault" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSOUT Module 1.Module Fault" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0010_EJ2918_0000_0018.Module_1_FSOE.FSoE_Inputs.FSOE^FSOUT_Module_2_Module_Fault" VarB="Module 1 (FSOE)^FSoE Inputs^FSOE^FSOUT Module 2.Module Fault" />
@@ -33182,7 +33182,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0010_EJ2918_0000_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0010_EJ2918_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0011(EJ6910-0000-0018)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0011(EJ6910-0000-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0011_EJ6910_0000_0018.FSLOGIC_Inputs.Safe_Logic_State" VarB="FSLOGIC Inputs^Safe Logic State" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0011_EJ6910_0000_0018.FSLOGIC_Inputs.Cycle_Counter" VarB="FSLOGIC Inputs^Cycle Counter" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0011_EJ6910_0000_0018.WcState.WcState" VarB="WcState^WcState" />
@@ -33190,7 +33190,7 @@ Bit 8 - 15 : reserved</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0011_EJ6910_0000_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0011_EJ6910_0000_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_EJxxxx^Beckhoff EJx9xx^A_0012(EJ6910-0000-0020)">
+      <OwnerB Name="TIID^EtherCAT Master EJxxxx^Beckhoff EJx9xx^A_0012(EJ6910-0000-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0012_EJ6910_0000_0020.FSLOGIC_Inputs.Safe_Logic_State" VarB="FSLOGIC Inputs^Safe Logic State" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0012_EJ6910_0000_0020.FSLOGIC_Inputs.Cycle_Counter" VarB="FSLOGIC Inputs^Cycle Counter" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_EJxxxx.Beckhoff_EJx9xx.A_0012_EJ6910_0000_0020.WcState.WcState" VarB="WcState^WcState" />

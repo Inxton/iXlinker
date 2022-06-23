@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.29">
   <DataTypes>
     <DataType>
       <Name GUID="{8723B56F-DBB5-CF82-A2D8-39937DA158A4}" IecBaseType="true" AutoDeleteType="true">ARRAY [0..14] OF INT</Name>
@@ -22953,13 +22953,13 @@
   </Project>
   <Mappings>
     <OwnerA Name="TIPC^PLC^PLC Instance">
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0060(AT2020-0250-0019) (AT2020-0250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0060(AT2020-0250-0019) (AT2020-0250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0060_AT2020_0250_0019_AT2020_0250.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0060_AT2020_0250_0019_AT2020_0250.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0060_AT2020_0250_0019_AT2020_0250.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -22999,7 +22999,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0060_AT2020_0250_0019_AT2020_0250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0060_AT2020_0250_0019_AT2020_0250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0060(AT2020-0250-0019) (AT2020-0250)^A_0085(AT2050-5500-0018) (AT2050-5500)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0060(AT2020-0250-0019) (AT2020-0250)^A_0085(AT2050-5500-0018) (AT2050-5500)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0060_AT2020_0250_0019_AT2020_0250.A_0085_AT2050_5500_0018_AT2050_5500.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0060_AT2020_0250_0019_AT2020_0250.A_0085_AT2050_5500_0018_AT2050_5500.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0060_AT2020_0250_0019_AT2020_0250.A_0085_AT2050_5500_0018_AT2050_5500.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -23040,10 +23040,10 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0060_AT2020_0250_0019_AT2020_0250.A_0085_AT2050_5500_0018_AT2050_5500.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0060_AT2020_0250_0019_AT2020_0250.A_0085_AT2050_5500_0018_AT2050_5500.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^Beckhoff AT2xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^Beckhoff AT2xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.Beckhoff_AT2xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0001(AT2000-0233-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0001(AT2000-0233-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0001_AT2000_0233_0022.CC_Inputs_14_Ch.Status" VarB="CC Inputs 14 Ch^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0001_AT2000_0233_0022.CC_Inputs_14_Ch.Current_actual_value_Ch[0]" VarB="CC Inputs 14 Ch^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0001_AT2000_0233_0022.CC_Inputs_14_Ch.Current_actual_value_Ch[1]" VarB="CC Inputs 14 Ch^Current actual value Ch.2" />
@@ -23081,7 +23081,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0001_AT2000_0233_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0001_AT2000_0233_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0002(AT2000-0233-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0002(AT2000-0233-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0002_AT2000_0233_0023.CC_Inputs_14_Ch.Status" VarB="CC Inputs 14 Ch^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0002_AT2000_0233_0023.CC_Inputs_14_Ch.Current_actual_value_Ch[0]" VarB="CC Inputs 14 Ch^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0002_AT2000_0233_0023.CC_Inputs_14_Ch.Current_actual_value_Ch[1]" VarB="CC Inputs 14 Ch^Current actual value Ch.2" />
@@ -23119,7 +23119,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0002_AT2000_0233_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0002_AT2000_0233_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0003(AT2000-0233-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0003(AT2000-0233-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0003_AT2000_0233_0024.CC_Inputs_14_Ch.Status" VarB="CC Inputs 14 Ch^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0003_AT2000_0233_0024.CC_Inputs_14_Ch.Current_actual_value_Ch[0]" VarB="CC Inputs 14 Ch^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0003_AT2000_0233_0024.CC_Inputs_14_Ch.Current_actual_value_Ch[1]" VarB="CC Inputs 14 Ch^Current actual value Ch.2" />
@@ -23157,7 +23157,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0003_AT2000_0233_0024.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0003_AT2000_0233_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0004(AT2000-0250-0016)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0004(AT2000-0250-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0004_AT2000_0250_0016.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0004_AT2000_0250_0016.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0004_AT2000_0250_0016.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23197,7 +23197,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0004_AT2000_0250_0016.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0004_AT2000_0250_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0005(AT2000-0250-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0005(AT2000-0250-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0005_AT2000_0250_0017.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0005_AT2000_0250_0017.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0005_AT2000_0250_0017.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23237,7 +23237,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0005_AT2000_0250_0017.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0005_AT2000_0250_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0006(AT2000-0250-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0006(AT2000-0250-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0006_AT2000_0250_0018.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0006_AT2000_0250_0018.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0006_AT2000_0250_0018.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23277,7 +23277,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0006_AT2000_0250_0018.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0006_AT2000_0250_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0007(AT2000-0250-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0007(AT2000-0250-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0007_AT2000_0250_0019.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0007_AT2000_0250_0019.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0007_AT2000_0250_0019.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23317,7 +23317,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0007_AT2000_0250_0019.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0007_AT2000_0250_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0008(AT2000-0250-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0008(AT2000-0250-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0008_AT2000_0250_0020.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0008_AT2000_0250_0020.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0008_AT2000_0250_0020.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23357,7 +23357,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0008_AT2000_0250_0020.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0008_AT2000_0250_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0009(AT2000-0250-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0009(AT2000-0250-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0009_AT2000_0250_0021.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0009_AT2000_0250_0021.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0009_AT2000_0250_0021.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23397,7 +23397,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0009_AT2000_0250_0021.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0009_AT2000_0250_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0010(AT2000-0250-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0010(AT2000-0250-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0010_AT2000_0250_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0010_AT2000_0250_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0010_AT2000_0250_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23437,7 +23437,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0010_AT2000_0250_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0010_AT2000_0250_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0011(AT2000-0250-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0011(AT2000-0250-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0011_AT2000_0250_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0011_AT2000_0250_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0011_AT2000_0250_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23477,7 +23477,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0011_AT2000_0250_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0011_AT2000_0250_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0012(AT2001-0250-0016)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0012(AT2001-0250-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0012_AT2001_0250_0016.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0012_AT2001_0250_0016.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0012_AT2001_0250_0016.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23517,7 +23517,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0012_AT2001_0250_0016.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0012_AT2001_0250_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0013(AT2001-0250-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0013(AT2001-0250-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0013_AT2001_0250_0017.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0013_AT2001_0250_0017.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0013_AT2001_0250_0017.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23557,7 +23557,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0013_AT2001_0250_0017.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0013_AT2001_0250_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0014(AT2001-0250-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0014(AT2001-0250-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0014_AT2001_0250_0018.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0014_AT2001_0250_0018.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0014_AT2001_0250_0018.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23597,7 +23597,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0014_AT2001_0250_0018.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0014_AT2001_0250_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0015(AT2001-0250-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0015(AT2001-0250-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0015_AT2001_0250_0019.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0015_AT2001_0250_0019.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0015_AT2001_0250_0019.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23637,7 +23637,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0015_AT2001_0250_0019.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0015_AT2001_0250_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0016(AT2001-0250-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0016(AT2001-0250-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0016_AT2001_0250_0020.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0016_AT2001_0250_0020.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0016_AT2001_0250_0020.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23677,7 +23677,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0016_AT2001_0250_0020.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0016_AT2001_0250_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0017(AT2001-0250-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0017(AT2001-0250-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0017_AT2001_0250_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0017_AT2001_0250_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0017_AT2001_0250_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23717,7 +23717,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0017_AT2001_0250_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0017_AT2001_0250_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0018(AT2001-0250-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0018(AT2001-0250-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0018_AT2001_0250_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0018_AT2001_0250_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0018_AT2001_0250_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23757,7 +23757,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0018_AT2001_0250_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0018_AT2001_0250_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0019(AT2001-0250-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0019(AT2001-0250-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0019_AT2001_0250_0024.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0019_AT2001_0250_0024.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0019_AT2001_0250_0024.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23797,7 +23797,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0019_AT2001_0250_0024.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0019_AT2001_0250_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0020(AT2002-0249-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0020(AT2002-0249-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0020_AT2002_0249_0021.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0020_AT2002_0249_0021.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0020_AT2002_0249_0021.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23837,7 +23837,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0020_AT2002_0249_0021.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0020_AT2002_0249_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0021(AT2002-0249-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0021(AT2002-0249-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0021_AT2002_0249_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0021_AT2002_0249_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0021_AT2002_0249_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23877,7 +23877,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0021_AT2002_0249_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0021_AT2002_0249_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0022(AT2002-0249-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0022(AT2002-0249-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0022_AT2002_0249_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0022_AT2002_0249_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0022_AT2002_0249_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23917,7 +23917,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0022_AT2002_0249_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0022_AT2002_0249_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0023(AT2002-0250-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0023(AT2002-0250-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0023_AT2002_0250_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0023_AT2002_0250_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0023_AT2002_0250_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23957,7 +23957,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0023_AT2002_0250_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0023_AT2002_0250_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0024(AT2002-0250-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0024(AT2002-0250-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0024_AT2002_0250_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0024_AT2002_0250_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0024_AT2002_0250_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -23997,7 +23997,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0024_AT2002_0250_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0024_AT2002_0250_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0025(AT2002-0250-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0025(AT2002-0250-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0025_AT2002_0250_0024.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0025_AT2002_0250_0024.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0025_AT2002_0250_0024.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24037,7 +24037,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0025_AT2002_0250_0024.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0025_AT2002_0250_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0026(AT2020-0250-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0026(AT2020-0250-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0026_AT2020_0250_0018.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0026_AT2020_0250_0018.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0026_AT2020_0250_0018.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24077,7 +24077,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0026_AT2020_0250_0018.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0026_AT2020_0250_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0027(AT2020-0250-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0027(AT2020-0250-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0027_AT2020_0250_0021.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0027_AT2020_0250_0021.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0027_AT2020_0250_0021.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24117,7 +24117,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0027_AT2020_0250_0021.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0027_AT2020_0250_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0028(AT2021-0250-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0028(AT2021-0250-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0028_AT2021_0250_0018.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0028_AT2021_0250_0018.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0028_AT2021_0250_0018.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24157,7 +24157,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0028_AT2021_0250_0018.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0028_AT2021_0250_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0029(AT2021-0250-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0029(AT2021-0250-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0029_AT2021_0250_0020.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0029_AT2021_0250_0020.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0029_AT2021_0250_0020.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24197,7 +24197,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0029_AT2021_0250_0020.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0029_AT2021_0250_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0030(AT2025-0250-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0030(AT2025-0250-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0030_AT2025_0250_0018.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0030_AT2025_0250_0018.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0030_AT2025_0250_0018.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24237,7 +24237,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0030_AT2025_0250_0018.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0030_AT2025_0250_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0031(AT2026-0250-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0031(AT2026-0250-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0031_AT2026_0250_0021.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0031_AT2026_0250_0021.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0031_AT2026_0250_0021.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24277,7 +24277,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0031_AT2026_0250_0021.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0031_AT2026_0250_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0032(AT2026-0250-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0032(AT2026-0250-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0032_AT2026_0250_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0032_AT2026_0250_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0032_AT2026_0250_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24317,7 +24317,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0032_AT2026_0250_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0032_AT2026_0250_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0033(AT2040-0250-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0033(AT2040-0250-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0033_AT2040_0250_0018.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0033_AT2040_0250_0018.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0033_AT2040_0250_0018.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24357,7 +24357,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0033_AT2040_0250_0018.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0033_AT2040_0250_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0034(AT2040-0250-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0034(AT2040-0250-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0034_AT2040_0250_0019.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0034_AT2040_0250_0019.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0034_AT2040_0250_0019.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24397,7 +24397,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0034_AT2040_0250_0019.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0034_AT2040_0250_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0035(AT2040-0250-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0035(AT2040-0250-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0035_AT2040_0250_0020.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0035_AT2040_0250_0020.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0035_AT2040_0250_0020.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24437,7 +24437,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0035_AT2040_0250_0020.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0035_AT2040_0250_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0036(AT2040-0250-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0036(AT2040-0250-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0036_AT2040_0250_0021.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0036_AT2040_0250_0021.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0036_AT2040_0250_0021.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24477,7 +24477,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0036_AT2040_0250_0021.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0036_AT2040_0250_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0036(AT2040-0250-0021)^A_0108(AT2000-5233-0019) (AT2000-5233)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0036(AT2040-0250-0021)^A_0108(AT2000-5233-0019) (AT2000-5233)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0036_AT2040_0250_0021.A_0108_AT2000_5233_0019_AT2000_5233.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0036_AT2040_0250_0021.A_0108_AT2000_5233_0019_AT2000_5233.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0036_AT2040_0250_0021.A_0108_AT2000_5233_0019_AT2000_5233.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -24518,7 +24518,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0036_AT2040_0250_0021.A_0108_AT2000_5233_0019_AT2000_5233.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0036_AT2040_0250_0021.A_0108_AT2000_5233_0019_AT2000_5233.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0037(AT2040-0250-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0037(AT2040-0250-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0037_AT2040_0250_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0037_AT2040_0250_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0037_AT2040_0250_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24558,7 +24558,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0037_AT2040_0250_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0037_AT2040_0250_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0037(AT2040-0250-0022)^A_0107(AT2000-5233-0018) (AT2000-5233)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0037(AT2040-0250-0022)^A_0107(AT2000-5233-0018) (AT2000-5233)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0037_AT2040_0250_0022.A_0107_AT2000_5233_0018_AT2000_5233.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0037_AT2040_0250_0022.A_0107_AT2000_5233_0018_AT2000_5233.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0037_AT2040_0250_0022.A_0107_AT2000_5233_0018_AT2000_5233.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -24599,7 +24599,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0037_AT2040_0250_0022.A_0107_AT2000_5233_0018_AT2000_5233.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0037_AT2040_0250_0022.A_0107_AT2000_5233_0018_AT2000_5233.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0038(AT2040-0250-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0038(AT2040-0250-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0038_AT2040_0250_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0038_AT2040_0250_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0038_AT2040_0250_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24639,7 +24639,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0038_AT2040_0250_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0038_AT2040_0250_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0038(AT2040-0250-0023)^A_0106(AT2026-5250-0019) (AT2026-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0038(AT2040-0250-0023)^A_0106(AT2026-5250-0019) (AT2026-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0038_AT2040_0250_0023.A_0106_AT2026_5250_0019_AT2026_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0038_AT2040_0250_0023.A_0106_AT2026_5250_0019_AT2026_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0038_AT2040_0250_0023.A_0106_AT2026_5250_0019_AT2026_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -24680,7 +24680,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0038_AT2040_0250_0023.A_0106_AT2026_5250_0019_AT2026_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0038_AT2040_0250_0023.A_0106_AT2026_5250_0019_AT2026_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0039(AT2040-0250-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0039(AT2040-0250-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0039_AT2040_0250_0024.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0039_AT2040_0250_0024.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0039_AT2040_0250_0024.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24720,7 +24720,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0039_AT2040_0250_0024.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0039_AT2040_0250_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0039(AT2040-0250-0024)^A_0105(AT2026-5250-0018) (AT2026-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0039(AT2040-0250-0024)^A_0105(AT2026-5250-0018) (AT2026-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0039_AT2040_0250_0024.A_0105_AT2026_5250_0018_AT2026_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0039_AT2040_0250_0024.A_0105_AT2026_5250_0018_AT2026_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0039_AT2040_0250_0024.A_0105_AT2026_5250_0018_AT2026_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -24761,7 +24761,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0039_AT2040_0250_0024.A_0105_AT2026_5250_0018_AT2026_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0039_AT2040_0250_0024.A_0105_AT2026_5250_0018_AT2026_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0040(AT2041-0250-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0040(AT2041-0250-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0040_AT2041_0250_0018.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0040_AT2041_0250_0018.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0040_AT2041_0250_0018.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24801,7 +24801,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0040_AT2041_0250_0018.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0040_AT2041_0250_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0040(AT2041-0250-0018)^A_0104(AT2042-5250-0019) (AT2042-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0040(AT2041-0250-0018)^A_0104(AT2042-5250-0019) (AT2042-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0040_AT2041_0250_0018.A_0104_AT2042_5250_0019_AT2042_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0040_AT2041_0250_0018.A_0104_AT2042_5250_0019_AT2042_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0040_AT2041_0250_0018.A_0104_AT2042_5250_0019_AT2042_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -24842,7 +24842,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0040_AT2041_0250_0018.A_0104_AT2042_5250_0019_AT2042_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0040_AT2041_0250_0018.A_0104_AT2042_5250_0019_AT2042_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0041(AT2041-0250-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0041(AT2041-0250-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0041_AT2041_0250_0019.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0041_AT2041_0250_0019.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0041_AT2041_0250_0019.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24882,7 +24882,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0041_AT2041_0250_0019.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0041_AT2041_0250_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0041(AT2041-0250-0019)^A_0103(AT2042-5250-0018) (AT2042-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0041(AT2041-0250-0019)^A_0103(AT2042-5250-0018) (AT2042-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0041_AT2041_0250_0019.A_0103_AT2042_5250_0018_AT2042_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0041_AT2041_0250_0019.A_0103_AT2042_5250_0018_AT2042_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0041_AT2041_0250_0019.A_0103_AT2042_5250_0018_AT2042_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -24923,7 +24923,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0041_AT2041_0250_0019.A_0103_AT2042_5250_0018_AT2042_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0041_AT2041_0250_0019.A_0103_AT2042_5250_0018_AT2042_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0042(AT2041-0250-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0042(AT2041-0250-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0042_AT2041_0250_0020.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0042_AT2041_0250_0020.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0042_AT2041_0250_0020.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -24963,7 +24963,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0042_AT2041_0250_0020.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0042_AT2041_0250_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0042(AT2041-0250-0020)^A_0102(AT2041-5250-0019) (AT2041-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0042(AT2041-0250-0020)^A_0102(AT2041-5250-0019) (AT2041-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0042_AT2041_0250_0020.A_0102_AT2041_5250_0019_AT2041_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0042_AT2041_0250_0020.A_0102_AT2041_5250_0019_AT2041_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0042_AT2041_0250_0020.A_0102_AT2041_5250_0019_AT2041_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25004,7 +25004,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0042_AT2041_0250_0020.A_0102_AT2041_5250_0019_AT2041_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0042_AT2041_0250_0020.A_0102_AT2041_5250_0019_AT2041_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0043(AT2041-0250-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0043(AT2041-0250-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0043_AT2041_0250_0021.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0043_AT2041_0250_0021.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0043_AT2041_0250_0021.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25044,7 +25044,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0043_AT2041_0250_0021.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0043_AT2041_0250_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0043(AT2041-0250-0021)^A_0101(AT2041-5250-0018) (AT2041-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0043(AT2041-0250-0021)^A_0101(AT2041-5250-0018) (AT2041-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0043_AT2041_0250_0021.A_0101_AT2041_5250_0018_AT2041_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0043_AT2041_0250_0021.A_0101_AT2041_5250_0018_AT2041_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0043_AT2041_0250_0021.A_0101_AT2041_5250_0018_AT2041_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25085,7 +25085,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0043_AT2041_0250_0021.A_0101_AT2041_5250_0018_AT2041_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0043_AT2041_0250_0021.A_0101_AT2041_5250_0018_AT2041_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0044(AT2041-0250-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0044(AT2041-0250-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0044_AT2041_0250_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0044_AT2041_0250_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0044_AT2041_0250_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25125,7 +25125,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0044_AT2041_0250_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0044_AT2041_0250_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0044(AT2041-0250-0022)^A_0100(AT2040-5250-0019) (AT2040-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0044(AT2041-0250-0022)^A_0100(AT2040-5250-0019) (AT2040-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0044_AT2041_0250_0022.A_0100_AT2040_5250_0019_AT2040_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0044_AT2041_0250_0022.A_0100_AT2040_5250_0019_AT2040_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0044_AT2041_0250_0022.A_0100_AT2040_5250_0019_AT2040_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25166,7 +25166,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0044_AT2041_0250_0022.A_0100_AT2040_5250_0019_AT2040_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0044_AT2041_0250_0022.A_0100_AT2040_5250_0019_AT2040_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0045(AT2041-0250-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0045(AT2041-0250-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0045_AT2041_0250_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0045_AT2041_0250_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0045_AT2041_0250_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25206,7 +25206,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0045_AT2041_0250_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0045_AT2041_0250_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0045(AT2041-0250-0023)^A_0099(AT2040-5250-0018) (AT2040-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0045(AT2041-0250-0023)^A_0099(AT2040-5250-0018) (AT2040-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0045_AT2041_0250_0023.A_0099_AT2040_5250_0018_AT2040_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0045_AT2041_0250_0023.A_0099_AT2040_5250_0018_AT2040_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0045_AT2041_0250_0023.A_0099_AT2040_5250_0018_AT2040_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25247,7 +25247,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0045_AT2041_0250_0023.A_0099_AT2040_5250_0018_AT2040_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0045_AT2041_0250_0023.A_0099_AT2040_5250_0018_AT2040_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0046(AT2042-0250-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0046(AT2042-0250-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0046_AT2042_0250_0024.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0046_AT2042_0250_0024.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0046_AT2042_0250_0024.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25287,7 +25287,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0046_AT2042_0250_0024.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0046_AT2042_0250_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0046(AT2042-0250-0024)^A_0098(AT2025-5250-0019) (AT2025-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0046(AT2042-0250-0024)^A_0098(AT2025-5250-0019) (AT2025-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0046_AT2042_0250_0024.A_0098_AT2025_5250_0019_AT2025_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0046_AT2042_0250_0024.A_0098_AT2025_5250_0019_AT2025_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0046_AT2042_0250_0024.A_0098_AT2025_5250_0019_AT2025_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25328,7 +25328,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0046_AT2042_0250_0024.A_0098_AT2025_5250_0019_AT2025_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0046_AT2042_0250_0024.A_0098_AT2025_5250_0019_AT2025_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0047(AT2050-0500-0016)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0047(AT2050-0500-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0047_AT2050_0500_0016.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0047_AT2050_0500_0016.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0047_AT2050_0500_0016.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25368,7 +25368,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0047_AT2050_0500_0016.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0047_AT2050_0500_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0047(AT2050-0500-0016)^A_0097(AT2025-5250-0018) (AT2025-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0047(AT2050-0500-0016)^A_0097(AT2025-5250-0018) (AT2025-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0047_AT2050_0500_0016.A_0097_AT2025_5250_0018_AT2025_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0047_AT2050_0500_0016.A_0097_AT2025_5250_0018_AT2025_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0047_AT2050_0500_0016.A_0097_AT2025_5250_0018_AT2025_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25409,7 +25409,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0047_AT2050_0500_0016.A_0097_AT2025_5250_0018_AT2025_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0047_AT2050_0500_0016.A_0097_AT2025_5250_0018_AT2025_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0048(AT2050-0500-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0048(AT2050-0500-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0048_AT2050_0500_0017.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0048_AT2050_0500_0017.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0048_AT2050_0500_0017.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25449,7 +25449,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0048_AT2050_0500_0017.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0048_AT2050_0500_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0048(AT2050-0500-0017)^A_0096(AT2025-5250-0017) (AT2025-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0048(AT2050-0500-0017)^A_0096(AT2025-5250-0017) (AT2025-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0048_AT2050_0500_0017.A_0096_AT2025_5250_0017_AT2025_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0048_AT2050_0500_0017.A_0096_AT2025_5250_0017_AT2025_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0048_AT2050_0500_0017.A_0096_AT2025_5250_0017_AT2025_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25490,7 +25490,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0048_AT2050_0500_0017.A_0096_AT2025_5250_0017_AT2025_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0048_AT2050_0500_0017.A_0096_AT2025_5250_0017_AT2025_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0049(AT2050-0500-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0049(AT2050-0500-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0049_AT2050_0500_0018.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0049_AT2050_0500_0018.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0049_AT2050_0500_0018.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25530,7 +25530,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0049_AT2050_0500_0018.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0049_AT2050_0500_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0049(AT2050-0500-0018)^A_0095(AT2021-5250-0019) (AT2021-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0049(AT2050-0500-0018)^A_0095(AT2021-5250-0019) (AT2021-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0049_AT2050_0500_0018.A_0095_AT2021_5250_0019_AT2021_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0049_AT2050_0500_0018.A_0095_AT2021_5250_0019_AT2021_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0049_AT2050_0500_0018.A_0095_AT2021_5250_0019_AT2021_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25571,7 +25571,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0049_AT2050_0500_0018.A_0095_AT2021_5250_0019_AT2021_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0049_AT2050_0500_0018.A_0095_AT2021_5250_0019_AT2021_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0050(AT2050-0500-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0050(AT2050-0500-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0050_AT2050_0500_0019.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0050_AT2050_0500_0019.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0050_AT2050_0500_0019.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25611,7 +25611,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0050_AT2050_0500_0019.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0050_AT2050_0500_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0050(AT2050-0500-0019)^A_0094(AT2021-5250-0018) (AT2021-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0050(AT2050-0500-0019)^A_0094(AT2021-5250-0018) (AT2021-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0050_AT2050_0500_0019.A_0094_AT2021_5250_0018_AT2021_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0050_AT2050_0500_0019.A_0094_AT2021_5250_0018_AT2021_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0050_AT2050_0500_0019.A_0094_AT2021_5250_0018_AT2021_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25652,7 +25652,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0050_AT2050_0500_0019.A_0094_AT2021_5250_0018_AT2021_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0050_AT2050_0500_0019.A_0094_AT2021_5250_0018_AT2021_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0051(AT2050-0500-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0051(AT2050-0500-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0051_AT2050_0500_0020.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0051_AT2050_0500_0020.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0051_AT2050_0500_0020.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25692,7 +25692,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0051_AT2050_0500_0020.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0051_AT2050_0500_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0051(AT2050-0500-0020)^A_0093(AT2020-5250-0019) (AT2020-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0051(AT2050-0500-0020)^A_0093(AT2020-5250-0019) (AT2020-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0051_AT2050_0500_0020.A_0093_AT2020_5250_0019_AT2020_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0051_AT2050_0500_0020.A_0093_AT2020_5250_0019_AT2020_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0051_AT2050_0500_0020.A_0093_AT2020_5250_0019_AT2020_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25733,7 +25733,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0051_AT2050_0500_0020.A_0093_AT2020_5250_0019_AT2020_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0051_AT2050_0500_0020.A_0093_AT2020_5250_0019_AT2020_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0052(AT2050-0500-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0052(AT2050-0500-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0052_AT2050_0500_0021.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0052_AT2050_0500_0021.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0052_AT2050_0500_0021.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25773,7 +25773,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0052_AT2050_0500_0021.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0052_AT2050_0500_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0052(AT2050-0500-0021)^A_0092(AT2020-5250-0018) (AT2020-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0052(AT2050-0500-0021)^A_0092(AT2020-5250-0018) (AT2020-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0052_AT2050_0500_0021.A_0092_AT2020_5250_0018_AT2020_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0052_AT2050_0500_0021.A_0092_AT2020_5250_0018_AT2020_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0052_AT2050_0500_0021.A_0092_AT2020_5250_0018_AT2020_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25814,7 +25814,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0052_AT2050_0500_0021.A_0092_AT2020_5250_0018_AT2020_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0052_AT2050_0500_0021.A_0092_AT2020_5250_0018_AT2020_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0053(AT2050-0500-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0053(AT2050-0500-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0053_AT2050_0500_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0053_AT2050_0500_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0053_AT2050_0500_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25854,7 +25854,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0053_AT2050_0500_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0053_AT2050_0500_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0053(AT2050-0500-0022)^A_0091(AT2020-5250-0017) (AT2020-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0053(AT2050-0500-0022)^A_0091(AT2020-5250-0017) (AT2020-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0053_AT2050_0500_0022.A_0091_AT2020_5250_0017_AT2020_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0053_AT2050_0500_0022.A_0091_AT2020_5250_0017_AT2020_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0053_AT2050_0500_0022.A_0091_AT2020_5250_0017_AT2020_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25895,7 +25895,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0053_AT2050_0500_0022.A_0091_AT2020_5250_0017_AT2020_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0053_AT2050_0500_0022.A_0091_AT2020_5250_0017_AT2020_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0054(AT2050-0500-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0054(AT2050-0500-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0054_AT2050_0500_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0054_AT2050_0500_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0054_AT2050_0500_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -25935,7 +25935,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0054_AT2050_0500_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0054_AT2050_0500_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0054(AT2050-0500-0023)^A_0090(AT2050-5501-0019) (AT2050-5501)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0054(AT2050-0500-0023)^A_0090(AT2050-5501-0019) (AT2050-5501)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0054_AT2050_0500_0023.A_0090_AT2050_5501_0019_AT2050_5501.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0054_AT2050_0500_0023.A_0090_AT2050_5501_0019_AT2050_5501.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0054_AT2050_0500_0023.A_0090_AT2050_5501_0019_AT2050_5501.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -25976,7 +25976,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0054_AT2050_0500_0023.A_0090_AT2050_5501_0019_AT2050_5501.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0054_AT2050_0500_0023.A_0090_AT2050_5501_0019_AT2050_5501.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0055(AT2050-0500-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0055(AT2050-0500-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0055_AT2050_0500_0024.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0055_AT2050_0500_0024.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0055_AT2050_0500_0024.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26016,7 +26016,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0055_AT2050_0500_0024.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0055_AT2050_0500_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0055(AT2050-0500-0024)^A_0089(AT2050-5501-0018) (AT2050-5501)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0055(AT2050-0500-0024)^A_0089(AT2050-5501-0018) (AT2050-5501)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0055_AT2050_0500_0024.A_0089_AT2050_5501_0018_AT2050_5501.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0055_AT2050_0500_0024.A_0089_AT2050_5501_0018_AT2050_5501.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0055_AT2050_0500_0024.A_0089_AT2050_5501_0018_AT2050_5501.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26057,7 +26057,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0055_AT2050_0500_0024.A_0089_AT2050_5501_0018_AT2050_5501.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0055_AT2050_0500_0024.A_0089_AT2050_5501_0018_AT2050_5501.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0056(AT2050-0501-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0056(AT2050-0501-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0056_AT2050_0501_0017.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0056_AT2050_0501_0017.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0056_AT2050_0501_0017.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26097,7 +26097,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0056_AT2050_0501_0017.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0056_AT2050_0501_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0056(AT2050-0501-0017)^A_0088(AT2050-5501-0017) (AT2050-5501)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0056(AT2050-0501-0017)^A_0088(AT2050-5501-0017) (AT2050-5501)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0056_AT2050_0501_0017.A_0088_AT2050_5501_0017_AT2050_5501.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0056_AT2050_0501_0017.A_0088_AT2050_5501_0017_AT2050_5501.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0056_AT2050_0501_0017.A_0088_AT2050_5501_0017_AT2050_5501.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26138,7 +26138,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0056_AT2050_0501_0017.A_0088_AT2050_5501_0017_AT2050_5501.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0056_AT2050_0501_0017.A_0088_AT2050_5501_0017_AT2050_5501.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0057(AT2050-0501-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0057(AT2050-0501-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0057_AT2050_0501_0020.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0057_AT2050_0501_0020.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0057_AT2050_0501_0020.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26178,7 +26178,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0057_AT2050_0501_0020.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0057_AT2050_0501_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0057(AT2050-0501-0020)^A_0087(AT2050-5501-0016) (AT2050-5501)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0057(AT2050-0501-0020)^A_0087(AT2050-5501-0016) (AT2050-5501)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0057_AT2050_0501_0020.A_0087_AT2050_5501_0016_AT2050_5501.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0057_AT2050_0501_0020.A_0087_AT2050_5501_0016_AT2050_5501.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0057_AT2050_0501_0020.A_0087_AT2050_5501_0016_AT2050_5501.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26219,7 +26219,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0057_AT2050_0501_0020.A_0087_AT2050_5501_0016_AT2050_5501.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0057_AT2050_0501_0020.A_0087_AT2050_5501_0016_AT2050_5501.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0058(AT2050-0501-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0058(AT2050-0501-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0058_AT2050_0501_0021.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0058_AT2050_0501_0021.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0058_AT2050_0501_0021.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26259,7 +26259,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0058_AT2050_0501_0021.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0058_AT2050_0501_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0058(AT2050-0501-0021)^A_0086(AT2050-5500-0019) (AT2050-5500)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0058(AT2050-0501-0021)^A_0086(AT2050-5500-0019) (AT2050-5500)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0058_AT2050_0501_0021.A_0086_AT2050_5500_0019_AT2050_5500.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0058_AT2050_0501_0021.A_0086_AT2050_5500_0019_AT2050_5500.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0058_AT2050_0501_0021.A_0086_AT2050_5500_0019_AT2050_5500.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26300,7 +26300,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0058_AT2050_0501_0021.A_0086_AT2050_5500_0019_AT2050_5500.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0058_AT2050_0501_0021.A_0086_AT2050_5500_0019_AT2050_5500.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0061(AT2020-0250-0023) (AT2020-0250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0061(AT2020-0250-0023) (AT2020-0250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0061_AT2020_0250_0023_AT2020_0250.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0061_AT2020_0250_0023_AT2020_0250.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0061_AT2020_0250_0023_AT2020_0250.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26340,7 +26340,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0061_AT2020_0250_0023_AT2020_0250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0061_AT2020_0250_0023_AT2020_0250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0061(AT2020-0250-0023) (AT2020-0250)^A_0073(AT2000-5250-0016) (AT2000-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0061(AT2020-0250-0023) (AT2020-0250)^A_0073(AT2000-5250-0016) (AT2000-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0061_AT2020_0250_0023_AT2020_0250.A_0073_AT2000_5250_0016_AT2000_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0061_AT2020_0250_0023_AT2020_0250.A_0073_AT2000_5250_0016_AT2000_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0061_AT2020_0250_0023_AT2020_0250.A_0073_AT2000_5250_0016_AT2000_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26381,7 +26381,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0061_AT2020_0250_0023_AT2020_0250.A_0073_AT2000_5250_0016_AT2000_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0061_AT2020_0250_0023_AT2020_0250.A_0073_AT2000_5250_0016_AT2000_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0062(AT2025-0250-0020) (AT2025-0250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0062(AT2025-0250-0020) (AT2025-0250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0062_AT2025_0250_0020_AT2025_0250.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0062_AT2025_0250_0020_AT2025_0250.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0062_AT2025_0250_0020_AT2025_0250.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26421,7 +26421,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0062_AT2025_0250_0020_AT2025_0250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0062_AT2025_0250_0020_AT2025_0250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0062(AT2025-0250-0020) (AT2025-0250)^A_0074(AT2000-5250-0017) (AT2000-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0062(AT2025-0250-0020) (AT2025-0250)^A_0074(AT2000-5250-0017) (AT2000-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0062_AT2025_0250_0020_AT2025_0250.A_0074_AT2000_5250_0017_AT2000_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0062_AT2025_0250_0020_AT2025_0250.A_0074_AT2000_5250_0017_AT2000_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0062_AT2025_0250_0020_AT2025_0250.A_0074_AT2000_5250_0017_AT2000_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26462,7 +26462,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0062_AT2025_0250_0020_AT2025_0250.A_0074_AT2000_5250_0017_AT2000_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0062_AT2025_0250_0020_AT2025_0250.A_0074_AT2000_5250_0017_AT2000_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0063(AT2025-0250-0022) (AT2025-0250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0063(AT2025-0250-0022) (AT2025-0250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0063_AT2025_0250_0022_AT2025_0250.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0063_AT2025_0250_0022_AT2025_0250.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0063_AT2025_0250_0022_AT2025_0250.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26502,7 +26502,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0063_AT2025_0250_0022_AT2025_0250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0063_AT2025_0250_0022_AT2025_0250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0063(AT2025-0250-0022) (AT2025-0250)^A_0075(AT2000-5250-0019) (AT2000-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0063(AT2025-0250-0022) (AT2025-0250)^A_0075(AT2000-5250-0019) (AT2000-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0063_AT2025_0250_0022_AT2025_0250.A_0075_AT2000_5250_0019_AT2000_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0063_AT2025_0250_0022_AT2025_0250.A_0075_AT2000_5250_0019_AT2000_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0063_AT2025_0250_0022_AT2025_0250.A_0075_AT2000_5250_0019_AT2000_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26543,7 +26543,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0063_AT2025_0250_0022_AT2025_0250.A_0075_AT2000_5250_0019_AT2000_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0063_AT2025_0250_0022_AT2025_0250.A_0075_AT2000_5250_0019_AT2000_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0064(AT2025-0250-0023) (AT2025-0250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0064(AT2025-0250-0023) (AT2025-0250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0064_AT2025_0250_0023_AT2025_0250.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0064_AT2025_0250_0023_AT2025_0250.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0064_AT2025_0250_0023_AT2025_0250.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26583,7 +26583,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0064_AT2025_0250_0023_AT2025_0250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0064_AT2025_0250_0023_AT2025_0250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0064(AT2025-0250-0023) (AT2025-0250)^A_0076(AT2001-5250-0017) (AT2001-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0064(AT2025-0250-0023) (AT2025-0250)^A_0076(AT2001-5250-0017) (AT2001-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0064_AT2025_0250_0023_AT2025_0250.A_0076_AT2001_5250_0017_AT2001_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0064_AT2025_0250_0023_AT2025_0250.A_0076_AT2001_5250_0017_AT2001_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0064_AT2025_0250_0023_AT2025_0250.A_0076_AT2001_5250_0017_AT2001_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26624,7 +26624,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0064_AT2025_0250_0023_AT2025_0250.A_0076_AT2001_5250_0017_AT2001_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0064_AT2025_0250_0023_AT2025_0250.A_0076_AT2001_5250_0017_AT2001_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0065(AT2026-0250-0019) (AT2026-0250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0065(AT2026-0250-0019) (AT2026-0250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0065_AT2026_0250_0019_AT2026_0250.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0065_AT2026_0250_0019_AT2026_0250.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0065_AT2026_0250_0019_AT2026_0250.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26664,7 +26664,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0065_AT2026_0250_0019_AT2026_0250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0065_AT2026_0250_0019_AT2026_0250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0065(AT2026-0250-0019) (AT2026-0250)^A_0077(AT2001-5250-0018) (AT2001-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0065(AT2026-0250-0019) (AT2026-0250)^A_0077(AT2001-5250-0018) (AT2001-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0065_AT2026_0250_0019_AT2026_0250.A_0077_AT2001_5250_0018_AT2001_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0065_AT2026_0250_0019_AT2026_0250.A_0077_AT2001_5250_0018_AT2001_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0065_AT2026_0250_0019_AT2026_0250.A_0077_AT2001_5250_0018_AT2001_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26705,7 +26705,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0065_AT2026_0250_0019_AT2026_0250.A_0077_AT2001_5250_0018_AT2001_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0065_AT2026_0250_0019_AT2026_0250.A_0077_AT2001_5250_0018_AT2001_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0066(AT2026-0250-0020) (AT2026-0250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0066(AT2026-0250-0020) (AT2026-0250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0066_AT2026_0250_0020_AT2026_0250.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0066_AT2026_0250_0020_AT2026_0250.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0066_AT2026_0250_0020_AT2026_0250.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26745,7 +26745,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0066_AT2026_0250_0020_AT2026_0250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0066_AT2026_0250_0020_AT2026_0250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0066(AT2026-0250-0020) (AT2026-0250)^A_0078(AT2001-5250-0019) (AT2001-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0066(AT2026-0250-0020) (AT2026-0250)^A_0078(AT2001-5250-0019) (AT2001-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0066_AT2026_0250_0020_AT2026_0250.A_0078_AT2001_5250_0019_AT2001_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0066_AT2026_0250_0020_AT2026_0250.A_0078_AT2001_5250_0019_AT2001_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0066_AT2026_0250_0020_AT2026_0250.A_0078_AT2001_5250_0019_AT2001_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26786,7 +26786,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0066_AT2026_0250_0020_AT2026_0250.A_0078_AT2001_5250_0019_AT2001_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0066_AT2026_0250_0020_AT2026_0250.A_0078_AT2001_5250_0019_AT2001_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0067(AT2026-0250-0022) (AT2026-0250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0067(AT2026-0250-0022) (AT2026-0250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0067_AT2026_0250_0022_AT2026_0250.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0067_AT2026_0250_0022_AT2026_0250.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0067_AT2026_0250_0022_AT2026_0250.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26826,7 +26826,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0067_AT2026_0250_0022_AT2026_0250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0067_AT2026_0250_0022_AT2026_0250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0067(AT2026-0250-0022) (AT2026-0250)^A_0079(AT2002-5249-0018) (AT2002-5249)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0067(AT2026-0250-0022) (AT2026-0250)^A_0079(AT2002-5249-0018) (AT2002-5249)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0067_AT2026_0250_0022_AT2026_0250.A_0079_AT2002_5249_0018_AT2002_5249.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0067_AT2026_0250_0022_AT2026_0250.A_0079_AT2002_5249_0018_AT2002_5249.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0067_AT2026_0250_0022_AT2026_0250.A_0079_AT2002_5249_0018_AT2002_5249.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26867,7 +26867,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0067_AT2026_0250_0022_AT2026_0250.A_0079_AT2002_5249_0018_AT2002_5249.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0067_AT2026_0250_0022_AT2026_0250.A_0079_AT2002_5249_0018_AT2002_5249.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0068(AT2026-0250-0024) (AT2026-0250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0068(AT2026-0250-0024) (AT2026-0250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0068_AT2026_0250_0024_AT2026_0250.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0068_AT2026_0250_0024_AT2026_0250.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0068_AT2026_0250_0024_AT2026_0250.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26907,7 +26907,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0068_AT2026_0250_0024_AT2026_0250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0068_AT2026_0250_0024_AT2026_0250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0068(AT2026-0250-0024) (AT2026-0250)^A_0080(AT2002-5249-0019) (AT2002-5249)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0068(AT2026-0250-0024) (AT2026-0250)^A_0080(AT2002-5249-0019) (AT2002-5249)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0068_AT2026_0250_0024_AT2026_0250.A_0080_AT2002_5249_0019_AT2002_5249.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0068_AT2026_0250_0024_AT2026_0250.A_0080_AT2002_5249_0019_AT2002_5249.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0068_AT2026_0250_0024_AT2026_0250.A_0080_AT2002_5249_0019_AT2002_5249.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -26948,7 +26948,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0068_AT2026_0250_0024_AT2026_0250.A_0080_AT2002_5249_0019_AT2002_5249.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0068_AT2026_0250_0024_AT2026_0250.A_0080_AT2002_5249_0019_AT2002_5249.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0069(AT2050-0501-0019) (AT2050-0501)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0069(AT2050-0501-0019) (AT2050-0501)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0069_AT2050_0501_0019_AT2050_0501.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0069_AT2050_0501_0019_AT2050_0501.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0069_AT2050_0501_0019_AT2050_0501.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -26988,7 +26988,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0069_AT2050_0501_0019_AT2050_0501.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0069_AT2050_0501_0019_AT2050_0501.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0069(AT2050-0501-0019) (AT2050-0501)^A_0081(AT2002-5250-0018) (AT2002-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0069(AT2050-0501-0019) (AT2050-0501)^A_0081(AT2002-5250-0018) (AT2002-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0069_AT2050_0501_0019_AT2050_0501.A_0081_AT2002_5250_0018_AT2002_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0069_AT2050_0501_0019_AT2050_0501.A_0081_AT2002_5250_0018_AT2002_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0069_AT2050_0501_0019_AT2050_0501.A_0081_AT2002_5250_0018_AT2002_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -27029,7 +27029,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0069_AT2050_0501_0019_AT2050_0501.A_0081_AT2002_5250_0018_AT2002_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0069_AT2050_0501_0019_AT2050_0501.A_0081_AT2002_5250_0018_AT2002_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0070(AT2050-0501-0022) (AT2050-0501)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0070(AT2050-0501-0022) (AT2050-0501)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0070_AT2050_0501_0022_AT2050_0501.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0070_AT2050_0501_0022_AT2050_0501.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0070_AT2050_0501_0022_AT2050_0501.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27069,7 +27069,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0070_AT2050_0501_0022_AT2050_0501.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0070_AT2050_0501_0022_AT2050_0501.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0070(AT2050-0501-0022) (AT2050-0501)^A_0082(AT2002-5250-0019) (AT2002-5250)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0070(AT2050-0501-0022) (AT2050-0501)^A_0082(AT2002-5250-0019) (AT2002-5250)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0070_AT2050_0501_0022_AT2050_0501.A_0082_AT2002_5250_0019_AT2002_5250.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0070_AT2050_0501_0022_AT2050_0501.A_0082_AT2002_5250_0019_AT2002_5250.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0070_AT2050_0501_0022_AT2050_0501.A_0082_AT2002_5250_0019_AT2002_5250.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -27110,7 +27110,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0070_AT2050_0501_0022_AT2050_0501.A_0082_AT2002_5250_0019_AT2002_5250.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0070_AT2050_0501_0022_AT2050_0501.A_0082_AT2002_5250_0019_AT2002_5250.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0071(AT2050-0501-0023) (AT2050-0501)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0071(AT2050-0501-0023) (AT2050-0501)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0071_AT2050_0501_0023_AT2050_0501.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0071_AT2050_0501_0023_AT2050_0501.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0071_AT2050_0501_0023_AT2050_0501.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27150,7 +27150,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0071_AT2050_0501_0023_AT2050_0501.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0071_AT2050_0501_0023_AT2050_0501.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0071(AT2050-0501-0023) (AT2050-0501)^A_0083(AT2050-5500-0016) (AT2050-5500)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0071(AT2050-0501-0023) (AT2050-0501)^A_0083(AT2050-5500-0016) (AT2050-5500)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0071_AT2050_0501_0023_AT2050_0501.A_0083_AT2050_5500_0016_AT2050_5500.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0071_AT2050_0501_0023_AT2050_0501.A_0083_AT2050_5500_0016_AT2050_5500.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0071_AT2050_0501_0023_AT2050_0501.A_0083_AT2050_5500_0016_AT2050_5500.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -27191,7 +27191,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0071_AT2050_0501_0023_AT2050_0501.A_0083_AT2050_5500_0016_AT2050_5500.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0071_AT2050_0501_0023_AT2050_0501.A_0083_AT2050_5500_0016_AT2050_5500.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0072(AT2050-0501-0024) (AT2050-0501)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0072(AT2050-0501-0024) (AT2050-0501)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0072_AT2050_0501_0024_AT2050_0501.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0072_AT2050_0501_0024_AT2050_0501.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0072_AT2050_0501_0024_AT2050_0501.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27231,7 +27231,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0072_AT2050_0501_0024_AT2050_0501.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0072_AT2050_0501_0024_AT2050_0501.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0072(AT2050-0501-0024) (AT2050-0501)^A_0084(AT2050-5500-0017) (AT2050-5500)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^Beckhoff AT2xxxEK1122^A_0072(AT2050-0501-0024) (AT2050-0501)^A_0084(AT2050-5500-0017) (AT2050-5500)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0072_AT2050_0501_0024_AT2050_0501.A_0084_AT2050_5500_0017_AT2050_5500.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0072_AT2050_0501_0024_AT2050_0501.A_0084_AT2050_5500_0017_AT2050_5500.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0072_AT2050_0501_0024_AT2050_0501.A_0084_AT2050_5500_0017_AT2050_5500.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -27272,7 +27272,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0072_AT2050_0501_0024_AT2050_0501.A_0084_AT2050_5500_0017_AT2050_5500.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.Beckhoff_AT2xxxEK1122.A_0072_AT2050_0501_0024_AT2050_0501.A_0084_AT2050_5500_0017_AT2050_5500.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff AT1xxx^A_0059(AT2000-5250-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff AT1xxx^A_0059(AT2000-5250-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.A_0059_AT2000_5250_0018.FB_Inputs.Status" VarB="FB Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.A_0059_AT2000_5250_0018.FB_Inputs.Value_Channel[0]" VarB="FB Inputs^Value Channel 01" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.A_0059_AT2000_5250_0018.FB_Inputs.Value_Channel[1]" VarB="FB Inputs^Value Channel 02" />
@@ -27313,16 +27313,16 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.A_0059_AT2000_5250_0018.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_AT1xxx.A_0059_AT2000_5250_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^Beckhoff ATH2xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^Beckhoff ATH2xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.Beckhoff_ATH2xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0001(ATH2000-0250-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0001(ATH2000-0250-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0001_ATH2000_0250_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0001_ATH2000_0250_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0001_ATH2000_0250_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27362,7 +27362,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0001_ATH2000_0250_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0001_ATH2000_0250_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0001(ATH2000-0250-0022)^A_0014(ATH2050-5501-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0001(ATH2000-0250-0022)^A_0014(ATH2050-5501-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0001_ATH2000_0250_0022.A_0014_ATH2050_5501_0022.FB_Inputs.BinaryData" VarB="FB Inputs^BinaryData" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0001_ATH2000_0250_0022.A_0014_ATH2050_5501_0022.FB_Outputs.Control" VarB="FB Outputs^Control" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0001_ATH2000_0250_0022.A_0014_ATH2050_5501_0022.WcState.WcState" VarB="WcState^WcState" />
@@ -27371,7 +27371,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0001_ATH2000_0250_0022.A_0014_ATH2050_5501_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0001_ATH2000_0250_0022.A_0014_ATH2050_5501_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0002(ATH2000-0250-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0002(ATH2000-0250-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0002_ATH2000_0250_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0002_ATH2000_0250_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0002_ATH2000_0250_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27411,7 +27411,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0002_ATH2000_0250_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0002_ATH2000_0250_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0002(ATH2000-0250-0023)^A_0015(ATH2040-5250-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0002(ATH2000-0250-0023)^A_0015(ATH2040-5250-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0002_ATH2000_0250_0023.A_0015_ATH2040_5250_0022.FB_Inputs.BinaryData" VarB="FB Inputs^BinaryData" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0002_ATH2000_0250_0023.A_0015_ATH2040_5250_0022.FB_Outputs.Control" VarB="FB Outputs^Control" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0002_ATH2000_0250_0023.A_0015_ATH2040_5250_0022.WcState.WcState" VarB="WcState^WcState" />
@@ -27420,7 +27420,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0002_ATH2000_0250_0023.A_0015_ATH2040_5250_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0002_ATH2000_0250_0023.A_0015_ATH2040_5250_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0003(ATH2000-0250-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0003(ATH2000-0250-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0003_ATH2000_0250_0024.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0003_ATH2000_0250_0024.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0003_ATH2000_0250_0024.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27460,7 +27460,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0003_ATH2000_0250_0024.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0003_ATH2000_0250_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0004(ATH2040-0250-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0004(ATH2040-0250-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0004_ATH2040_0250_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0004_ATH2040_0250_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0004_ATH2040_0250_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27500,7 +27500,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0004_ATH2040_0250_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0004_ATH2040_0250_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0005(ATH2040-0250-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0005(ATH2040-0250-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0005_ATH2040_0250_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0005_ATH2040_0250_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0005_ATH2040_0250_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27540,7 +27540,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0005_ATH2040_0250_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0005_ATH2040_0250_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0006(ATH2040-0250-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0006(ATH2040-0250-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0006_ATH2040_0250_0024.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0006_ATH2040_0250_0024.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0006_ATH2040_0250_0024.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27580,7 +27580,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0006_ATH2040_0250_0024.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0006_ATH2040_0250_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0007(ATH2050-0500-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0007(ATH2050-0500-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0007_ATH2050_0500_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0007_ATH2050_0500_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0007_ATH2050_0500_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27620,7 +27620,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0007_ATH2050_0500_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0007_ATH2050_0500_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0008(ATH2050-0500-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0008(ATH2050-0500-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0008_ATH2050_0500_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0008_ATH2050_0500_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0008_ATH2050_0500_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27660,7 +27660,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0008_ATH2050_0500_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0008_ATH2050_0500_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0009(ATH2050-0500-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0009(ATH2050-0500-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0009_ATH2050_0500_0024.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0009_ATH2050_0500_0024.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0009_ATH2050_0500_0024.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27700,7 +27700,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0009_ATH2050_0500_0024.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0009_ATH2050_0500_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0010(ATH2050-0501-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0010(ATH2050-0501-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0010_ATH2050_0501_0022.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0010_ATH2050_0501_0022.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0010_ATH2050_0501_0022.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27740,7 +27740,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0010_ATH2050_0501_0022.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0010_ATH2050_0501_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0011(ATH2050-0501-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0011(ATH2050-0501-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0011_ATH2050_0501_0023.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0011_ATH2050_0501_0023.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0011_ATH2050_0501_0023.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27780,7 +27780,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0011_ATH2050_0501_0023.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0011_ATH2050_0501_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0012(ATH2050-0501-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^Beckhoff ATH2xxxEK1122^A_0012(ATH2050-0501-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0012_ATH2050_0501_0024.CC_Inputs.Status" VarB="CC Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0012_ATH2050_0501_0024.CC_Inputs.Current_actual_value_Ch[0]" VarB="CC Inputs^Current actual value Ch.1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0012_ATH2050_0501_0024.CC_Inputs.Current_actual_value_Ch[1]" VarB="CC Inputs^Current actual value Ch.2" />
@@ -27820,7 +27820,7 @@
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0012_ATH2050_0501_0024.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.Beckhoff_ATH2xxxEK1122.A_0012_ATH2050_0501_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ATxxxx^Beckhoff ATH2xxx^A_0013(ATH2000-5250-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ATxxxx^Beckhoff ATH2xxx^A_0013(ATH2000-5250-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.A_0013_ATH2000_5250_0022.FB_Inputs.BinaryData" VarB="FB Inputs^BinaryData" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.A_0013_ATH2000_5250_0022.FB_Outputs.Control" VarB="FB Outputs^Control" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ATxxxx.Beckhoff_ATH2xxx.A_0013_ATH2000_5250_0022.WcState.WcState" VarB="WcState^WcState" />

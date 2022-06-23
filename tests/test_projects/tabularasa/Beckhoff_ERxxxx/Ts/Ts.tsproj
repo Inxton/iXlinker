@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.29">
   <DataTypes>
     <DataType>
       <Name GUID="{38F48062-9700-2542-720B-5F0E4E6619B5}" AutoDeleteType="true">Status_57491DF1</Name>
@@ -30266,16 +30266,16 @@ Bit1: Value smaller than Limit2</Comment>
   </Project>
   <Mappings>
     <OwnerA Name="TIPC^PLC^PLC Instance">
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^Beckhoff ER1xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^Beckhoff ER1xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.Beckhoff_ER1xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0001(ER1008-0001-0016)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0001(ER1008-0001-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0001_ER1008_0001_0016.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0001_ER1008_0001_0016.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0001_ER1008_0001_0016.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30288,7 +30288,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0001_ER1008_0001_0016.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0001_ER1008_0001_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0002(ER1008-0001-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0002(ER1008-0001-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0002_ER1008_0001_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0002_ER1008_0001_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0002_ER1008_0001_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30301,7 +30301,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0002_ER1008_0001_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0002_ER1008_0001_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0003(ER1008-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0003(ER1008-0002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0003_ER1008_0002_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0003_ER1008_0002_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0003_ER1008_0002_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30314,7 +30314,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0003_ER1008_0002_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0003_ER1008_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0004(ER1008-0022-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0004(ER1008-0022-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0004_ER1008_0022_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0004_ER1008_0022_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0004_ER1008_0022_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30327,7 +30327,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0004_ER1008_0022_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0004_ER1008_0022_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0005(ER1018-0001-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0005(ER1018-0001-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0005_ER1018_0001_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0005_ER1018_0001_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0005_ER1018_0001_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30340,7 +30340,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0005_ER1018_0001_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0005_ER1018_0001_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0006(ER1018-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0006(ER1018-0002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0006_ER1018_0002_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0006_ER1018_0002_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0006_ER1018_0002_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30353,7 +30353,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0006_ER1018_0002_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0006_ER1018_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0007(ER1098-0001-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0007(ER1098-0001-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0007_ER1098_0001_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0007_ER1098_0001_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0007_ER1098_0001_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30366,7 +30366,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0007_ER1098_0001_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0007_ER1098_0001_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0008(ER1258-0001-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0008(ER1258-0001-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0008_ER1258_0001_0019.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0008_ER1258_0001_0019.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0008_ER1258_0001_0019.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30389,7 +30389,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0008_ER1258_0001_0019.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0008_ER1258_0001_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0009(ER1258-0001-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0009(ER1258-0001-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0009_ER1258_0001_0020.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0009_ER1258_0001_0020.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0009_ER1258_0001_0020.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30412,7 +30412,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0009_ER1258_0001_0020.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0009_ER1258_0001_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0010(ER1258-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0010(ER1258-0002-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0010_ER1258_0002_0019.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0010_ER1258_0002_0019.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0010_ER1258_0002_0019.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30435,7 +30435,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0010_ER1258_0002_0019.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0010_ER1258_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0011(ER1258-0002-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0011(ER1258-0002-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0011_ER1258_0002_0020.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0011_ER1258_0002_0020.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0011_ER1258_0002_0020.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30458,7 +30458,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0011_ER1258_0002_0020.InfoData.DcInputShift" VarB="InfoData^DcInputShift" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0011_ER1258_0002_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0012(ER1518-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0012(ER1518-0002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0012_ER1518_0002_0018.CNT_Input_Channel_1.Status^Set_counter_done" VarB="CNT Input Channel 1^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0012_ER1518_0002_0018.CNT_Input_Channel_1.Status^Counter_inhibited" VarB="CNT Input Channel 1^Status^Counter inhibited" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0012_ER1518_0002_0018.CNT_Input_Channel_1.Status^Status_of_input_UD" VarB="CNT Input Channel 1^Status^Status of input UD" />
@@ -30499,7 +30499,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0012_ER1518_0002_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0012_ER1518_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0013(ER1518-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0013(ER1518-0002-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0013_ER1518_0002_0019.CNT_Input_Channel_1.Status^Set_counter_done" VarB="CNT Input Channel 1^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0013_ER1518_0002_0019.CNT_Input_Channel_1.Status^Counter_inhibited" VarB="CNT Input Channel 1^Status^Counter inhibited" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0013_ER1518_0002_0019.CNT_Input_Channel_1.Status^Status_of_input_UD" VarB="CNT Input Channel 1^Status^Status of input UD" />
@@ -30540,7 +30540,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0013_ER1518_0002_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0013_ER1518_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0014(ER1809-0021-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0014(ER1809-0021-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0014_ER1809_0021_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0014_ER1809_0021_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0014_ER1809_0021_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30561,7 +30561,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0014_ER1809_0021_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0014_ER1809_0021_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0015(ER1809-0022-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0015(ER1809-0022-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0015_ER1809_0022_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0015_ER1809_0022_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0015_ER1809_0022_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30582,7 +30582,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0015_ER1809_0022_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0015_ER1809_0022_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0016(ER1819-0021-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0016(ER1819-0021-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0016_ER1819_0021_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0016_ER1819_0021_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0016_ER1819_0021_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30603,7 +30603,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0016_ER1819_0021_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0016_ER1819_0021_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0017(ER1819-0022-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER1xxx^Beckhoff ER1xxxEK1122^A_0017(ER1819-0022-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0017_ER1819_0022_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0017_ER1819_0022_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0017_ER1819_0022_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30624,16 +30624,16 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0017_ER1819_0022_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER1xxx.Beckhoff_ER1xxxEK1122.A_0017_ER1819_0022_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^Beckhoff ER2xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^Beckhoff ER2xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.Beckhoff_ER2xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0001(ER2008-0001-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0001(ER2008-0001-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0001_ER2008_0001_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0001_ER2008_0001_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0001_ER2008_0001_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30645,7 +30645,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0001_ER2008_0001_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0001_ER2008_0001_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0002(ER2008-0001-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0002(ER2008-0001-0019)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0002_ER2008_0001_0019.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0002_ER2008_0001_0019.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0002_ER2008_0001_0019.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30657,7 +30657,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0002_ER2008_0001_0019.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0002_ER2008_0001_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0003(ER2008-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0003(ER2008-0002-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0003_ER2008_0002_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0003_ER2008_0002_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0003_ER2008_0002_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30669,7 +30669,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0003_ER2008_0002_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0003_ER2008_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0004(ER2008-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0004(ER2008-0002-0019)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0004_ER2008_0002_0019.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0004_ER2008_0002_0019.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0004_ER2008_0002_0019.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30681,7 +30681,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0004_ER2008_0002_0019.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0004_ER2008_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0005(ER2008-0022-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0005(ER2008-0022-0017)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0005_ER2008_0022_0017.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0005_ER2008_0022_0017.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0005_ER2008_0022_0017.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30693,7 +30693,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0005_ER2008_0022_0017.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0005_ER2008_0022_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0006(ER2008-0022-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0006(ER2008-0022-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0006_ER2008_0022_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0006_ER2008_0022_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0006_ER2008_0022_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30705,7 +30705,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0006_ER2008_0022_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0006_ER2008_0022_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0007(ER2028-0001-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0007(ER2028-0001-0017)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0007_ER2028_0001_0017.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0007_ER2028_0001_0017.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0007_ER2028_0001_0017.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30717,7 +30717,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0007_ER2028_0001_0017.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0007_ER2028_0001_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0008(ER2028-0001-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0008(ER2028-0001-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0008_ER2028_0001_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0008_ER2028_0001_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0008_ER2028_0001_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30729,7 +30729,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0008_ER2028_0001_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0008_ER2028_0001_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0009(ER2028-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0009(ER2028-0002-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0009_ER2028_0002_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0009_ER2028_0002_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0009_ER2028_0002_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30741,7 +30741,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0009_ER2028_0002_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0009_ER2028_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0010(ER2028-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0010(ER2028-0002-0019)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0010_ER2028_0002_0019.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0010_ER2028_0002_0019.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0010_ER2028_0002_0019.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30753,7 +30753,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0010_ER2028_0002_0019.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0010_ER2028_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0011(ER2028-1032-0016)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0011(ER2028-1032-0016)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0011_ER2028_1032_0016.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0011_ER2028_1032_0016.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0011_ER2028_1032_0016.Channel_3.Output" VarB="Channel 3^Output" />
@@ -30765,7 +30765,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0011_ER2028_1032_0016.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0011_ER2028_1032_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0012(ER2038-0001-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0012(ER2038-0001-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0012_ER2038_0001_0017.Diag_Channel_1.Input" VarB="Diag Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0012_ER2038_0001_0017.Diag_Channel_2.Input" VarB="Diag Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0012_ER2038_0001_0017.Diag_Channel_3.Input" VarB="Diag Channel 3^Input" />
@@ -30786,7 +30786,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0012_ER2038_0001_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0012_ER2038_0001_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0013(ER2038-0001-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0013(ER2038-0001-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0013_ER2038_0001_0018.Diag_Channel_1.Input" VarB="Diag Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0013_ER2038_0001_0018.Diag_Channel_2.Input" VarB="Diag Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0013_ER2038_0001_0018.Diag_Channel_3.Input" VarB="Diag Channel 3^Input" />
@@ -30807,7 +30807,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0013_ER2038_0001_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0013_ER2038_0001_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0014(ER2038-0002-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0014(ER2038-0002-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0014_ER2038_0002_0017.Diag_Channel_1.Input" VarB="Diag Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0014_ER2038_0002_0017.Diag_Channel_2.Input" VarB="Diag Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0014_ER2038_0002_0017.Diag_Channel_3.Input" VarB="Diag Channel 3^Input" />
@@ -30828,7 +30828,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0014_ER2038_0002_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0014_ER2038_0002_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0015(ER2038-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0015(ER2038-0002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0015_ER2038_0002_0018.Diag_Channel_1.Input" VarB="Diag Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0015_ER2038_0002_0018.Diag_Channel_2.Input" VarB="Diag Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0015_ER2038_0002_0018.Diag_Channel_3.Input" VarB="Diag Channel 3^Input" />
@@ -30849,7 +30849,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0015_ER2038_0002_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0015_ER2038_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0016(ER2308-0001-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0016(ER2308-0001-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0016_ER2308_0001_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0016_ER2308_0001_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0016_ER2308_0001_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30862,7 +30862,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0016_ER2308_0001_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0016_ER2308_0001_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0017(ER2308-0001-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0017(ER2308-0001-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0017_ER2308_0001_0019.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0017_ER2308_0001_0019.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0017_ER2308_0001_0019.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30875,7 +30875,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0017_ER2308_0001_0019.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0017_ER2308_0001_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0018(ER2308-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0018(ER2308-0002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0018_ER2308_0002_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0018_ER2308_0002_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0018_ER2308_0002_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30888,7 +30888,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0018_ER2308_0002_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0018_ER2308_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0019(ER2308-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0019(ER2308-0002-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0019_ER2308_0002_0019.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0019_ER2308_0002_0019.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0019_ER2308_0002_0019.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30901,7 +30901,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0019_ER2308_0002_0019.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0019_ER2308_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0020(ER2318-0001-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0020(ER2318-0001-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0020_ER2318_0001_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0020_ER2318_0001_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0020_ER2318_0001_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30914,7 +30914,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0020_ER2318_0001_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0020_ER2318_0001_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0021(ER2318-0001-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0021(ER2318-0001-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0021_ER2318_0001_0019.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0021_ER2318_0001_0019.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0021_ER2318_0001_0019.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30927,7 +30927,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0021_ER2318_0001_0019.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0021_ER2318_0001_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0022(ER2318-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0022(ER2318-0002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0022_ER2318_0002_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0022_ER2318_0002_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0022_ER2318_0002_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30940,7 +30940,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0022_ER2318_0002_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0022_ER2318_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0023(ER2318-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0023(ER2318-0002-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0023_ER2318_0002_0019.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0023_ER2318_0002_0019.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0023_ER2318_0002_0019.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30953,7 +30953,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0023_ER2318_0002_0019.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0023_ER2318_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0024(ER2328-0001-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0024(ER2328-0001-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0024_ER2328_0001_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0024_ER2328_0001_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0024_ER2328_0001_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30966,7 +30966,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0024_ER2328_0001_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0024_ER2328_0001_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0025(ER2328-0001-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0025(ER2328-0001-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0025_ER2328_0001_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0025_ER2328_0001_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0025_ER2328_0001_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30979,7 +30979,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0025_ER2328_0001_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0025_ER2328_0001_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0026(ER2328-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0026(ER2328-0002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0026_ER2328_0002_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0026_ER2328_0002_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0026_ER2328_0002_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -30992,7 +30992,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0026_ER2328_0002_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0026_ER2328_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0027(ER2328-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0027(ER2328-0002-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0027_ER2328_0002_0019.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0027_ER2328_0002_0019.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0027_ER2328_0002_0019.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31005,7 +31005,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0027_ER2328_0002_0019.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0027_ER2328_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0028(ER2338-0001-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0028(ER2338-0001-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0028_ER2338_0001_0022.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0028_ER2338_0001_0022.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0028_ER2338_0001_0022.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31026,7 +31026,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0028_ER2338_0001_0022.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0028_ER2338_0001_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0029(ER2338-0001-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0029(ER2338-0001-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0029_ER2338_0001_0023.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0029_ER2338_0001_0023.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0029_ER2338_0001_0023.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31047,7 +31047,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0029_ER2338_0001_0023.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0029_ER2338_0001_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0030(ER2338-0002-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0030(ER2338-0002-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0030_ER2338_0002_0022.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0030_ER2338_0002_0022.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0030_ER2338_0002_0022.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31068,7 +31068,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0030_ER2338_0002_0022.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0030_ER2338_0002_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0031(ER2338-0002-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0031(ER2338-0002-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0031_ER2338_0002_0023.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0031_ER2338_0002_0023.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0031_ER2338_0002_0023.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31089,7 +31089,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0031_ER2338_0002_0023.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0031_ER2338_0002_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0032(ER2338-1001-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0032(ER2338-1001-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0032_ER2338_1001_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0032_ER2338_1001_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0032_ER2338_1001_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31110,7 +31110,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0032_ER2338_1001_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0032_ER2338_1001_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0033(ER2338-1001-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0033(ER2338-1001-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0033_ER2338_1001_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0033_ER2338_1001_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0033_ER2338_1001_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31131,7 +31131,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0033_ER2338_1001_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0033_ER2338_1001_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0034(ER2338-1002-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0034(ER2338-1002-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0034_ER2338_1002_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0034_ER2338_1002_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0034_ER2338_1002_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31152,7 +31152,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0034_ER2338_1002_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0034_ER2338_1002_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0035(ER2338-1002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0035(ER2338-1002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0035_ER2338_1002_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0035_ER2338_1002_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0035_ER2338_1002_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31173,7 +31173,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0035_ER2338_1002_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0035_ER2338_1002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0036(ER2339-0021-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0036(ER2339-0021-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0036_ER2339_0021_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0036_ER2339_0021_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0036_ER2339_0021_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31211,7 +31211,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0036_ER2339_0021_0018.InfoData.AoeNetId" VarB="InfoData^AoeNetId" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0036_ER2339_0021_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0037(ER2339-0021-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0037(ER2339-0021-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0037_ER2339_0021_0019.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0037_ER2339_0021_0019.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0037_ER2339_0021_0019.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31248,7 +31248,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0037_ER2339_0021_0019.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0037_ER2339_0021_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0038(ER2339-0022-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0038(ER2339-0022-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0038_ER2339_0022_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0038_ER2339_0022_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0038_ER2339_0022_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31285,7 +31285,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0038_ER2339_0022_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0038_ER2339_0022_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0039(ER2339-0022-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0039(ER2339-0022-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0039_ER2339_0022_0019.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0039_ER2339_0022_0019.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0039_ER2339_0022_0019.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31322,7 +31322,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0039_ER2339_0022_0019.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0039_ER2339_0022_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0040(ER2349-0021-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0040(ER2349-0021-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0040_ER2349_0021_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0040_ER2349_0021_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0040_ER2349_0021_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31359,7 +31359,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0040_ER2349_0021_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0040_ER2349_0021_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0041(ER2349-0021-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0041(ER2349-0021-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0041_ER2349_0021_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0041_ER2349_0021_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0041_ER2349_0021_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31396,7 +31396,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0041_ER2349_0021_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0041_ER2349_0021_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0042(ER2349-0022-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0042(ER2349-0022-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0042_ER2349_0022_0017.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0042_ER2349_0022_0017.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0042_ER2349_0022_0017.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31433,7 +31433,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0042_ER2349_0022_0017.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0042_ER2349_0022_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0043(ER2349-0022-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0043(ER2349-0022-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0043_ER2349_0022_0018.Channel_1.Input" VarB="Channel 1^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0043_ER2349_0022_0018.Channel_2.Input" VarB="Channel 2^Input" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0043_ER2349_0022_0018.Channel_3.Input" VarB="Channel 3^Input" />
@@ -31470,7 +31470,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0043_ER2349_0022_0018.WcState.InputToggle" VarB="WcState^InputToggle" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0043_ER2349_0022_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0044(ER2624-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0044(ER2624-0002-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0044_ER2624_0002_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0044_ER2624_0002_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0044_ER2624_0002_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -31478,7 +31478,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0044_ER2624_0002_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0044_ER2624_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0045(ER2624-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0045(ER2624-0002-0019)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0045_ER2624_0002_0019.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0045_ER2624_0002_0019.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0045_ER2624_0002_0019.Channel_3.Output" VarB="Channel 3^Output" />
@@ -31486,7 +31486,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0045_ER2624_0002_0019.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0045_ER2624_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0046(ER2809-0021-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0046(ER2809-0021-0017)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0046_ER2809_0021_0017.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0046_ER2809_0021_0017.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0046_ER2809_0021_0017.Channel_3.Output" VarB="Channel 3^Output" />
@@ -31506,7 +31506,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0046_ER2809_0021_0017.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0046_ER2809_0021_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0047(ER2809-0021-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0047(ER2809-0021-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0047_ER2809_0021_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0047_ER2809_0021_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0047_ER2809_0021_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -31526,7 +31526,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0047_ER2809_0021_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0047_ER2809_0021_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0048(ER2809-0022-0016)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0048(ER2809-0022-0016)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0048_ER2809_0022_0016.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0048_ER2809_0022_0016.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0048_ER2809_0022_0016.Channel_3.Output" VarB="Channel 3^Output" />
@@ -31546,7 +31546,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0048_ER2809_0022_0016.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0048_ER2809_0022_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0049(ER2809-0022-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0049(ER2809-0022-0017)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0049_ER2809_0022_0017.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0049_ER2809_0022_0017.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0049_ER2809_0022_0017.Channel_3.Output" VarB="Channel 3^Output" />
@@ -31566,7 +31566,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0049_ER2809_0022_0017.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0049_ER2809_0022_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0050(ER2809-0022-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER2xxx^Beckhoff ER2xxxEK1122^A_0050(ER2809-0022-0018)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0050_ER2809_0022_0018.Channel_1.Output" VarB="Channel 1^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0050_ER2809_0022_0018.Channel_2.Output" VarB="Channel 2^Output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0050_ER2809_0022_0018.Channel_3.Output" VarB="Channel 3^Output" />
@@ -31586,16 +31586,16 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0050_ER2809_0022_0018.WcState.WcState" VarB="WcState^WcState" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER2xxx.Beckhoff_ER2xxxEK1122.A_0050_ER2809_0022_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^Beckhoff ER3xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^Beckhoff ER3xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.Beckhoff_ER3xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0001(ER3174-0002-0016)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0001(ER3174-0002-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0001_ER3174_0002_0016.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0001_ER3174_0002_0016.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0001_ER3174_0002_0016.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31637,7 +31637,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0001_ER3174_0002_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0001_ER3174_0002_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0002(ER3174-0002-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0002(ER3174-0002-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0002_ER3174_0002_0022.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0002_ER3174_0002_0022.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0002_ER3174_0002_0022.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31679,7 +31679,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0002_ER3174_0002_0022.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0002_ER3174_0002_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0003(ER3174-0002-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0003(ER3174-0002-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0003_ER3174_0002_0023.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0003_ER3174_0002_0023.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0003_ER3174_0002_0023.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31721,7 +31721,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0003_ER3174_0002_0023.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0003_ER3174_0002_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0004(ER3184-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0004(ER3184-0002-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0004_ER3184_0002_0019.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0004_ER3184_0002_0019.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0004_ER3184_0002_0019.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31763,7 +31763,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0004_ER3184_0002_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0004_ER3184_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0005(ER3184-0002-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0005(ER3184-0002-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0005_ER3184_0002_0020.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0005_ER3184_0002_0020.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0005_ER3184_0002_0020.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31805,7 +31805,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0005_ER3184_0002_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0005_ER3184_0002_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0006(ER3184-0002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0006(ER3184-0002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0006_ER3184_0002_0021.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0006_ER3184_0002_0021.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0006_ER3184_0002_0021.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31847,7 +31847,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0006_ER3184_0002_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0006_ER3184_0002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0007(ER3184-1002-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0007(ER3184-1002-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0007_ER3184_1002_0020.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0007_ER3184_1002_0020.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0007_ER3184_1002_0020.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31889,7 +31889,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0007_ER3184_1002_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0007_ER3184_1002_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0008(ER3184-1002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0008(ER3184-1002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0008_ER3184_1002_0021.AI_Standard_Channel_1.Status^Underrange" VarB="AI Standard Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0008_ER3184_1002_0021.AI_Standard_Channel_1.Status^Overrange" VarB="AI Standard Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0008_ER3184_1002_0021.AI_Standard_Channel_1.Status^Limit_1" VarB="AI Standard Channel 1^Status^Limit 1" />
@@ -31931,7 +31931,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0008_ER3184_1002_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0008_ER3184_1002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0009(ER3204-0002-0016)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0009(ER3204-0002-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0009_ER3204_0002_0016.RTD_RTDInputs_Channel_1.Status^Underrange" VarB="RTD RTDInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0009_ER3204_0002_0016.RTD_RTDInputs_Channel_1.Status^Overrange" VarB="RTD RTDInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0009_ER3204_0002_0016.RTD_RTDInputs_Channel_1.Status^Limit_1" VarB="RTD RTDInputs Channel 1^Status^Limit 1" />
@@ -31973,7 +31973,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0009_ER3204_0002_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0009_ER3204_0002_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0010(ER3204-0002-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0010(ER3204-0002-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0010_ER3204_0002_0020.RTD_RTDInputs_Channel_1.Status^Underrange" VarB="RTD RTDInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0010_ER3204_0002_0020.RTD_RTDInputs_Channel_1.Status^Overrange" VarB="RTD RTDInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0010_ER3204_0002_0020.RTD_RTDInputs_Channel_1.Status^Limit_1" VarB="RTD RTDInputs Channel 1^Status^Limit 1" />
@@ -32015,7 +32015,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0010_ER3204_0002_0020.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0010_ER3204_0002_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0011(ER3204-0002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0011(ER3204-0002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0011_ER3204_0002_0021.RTD_RTDInputs_Channel_1.Status^Underrange" VarB="RTD RTDInputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0011_ER3204_0002_0021.RTD_RTDInputs_Channel_1.Status^Overrange" VarB="RTD RTDInputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0011_ER3204_0002_0021.RTD_RTDInputs_Channel_1.Status^Limit_1" VarB="RTD RTDInputs Channel 1^Status^Limit 1" />
@@ -32053,7 +32053,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0011_ER3204_0002_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0011_ER3204_0002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0012(ER3314-0002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER3xxx^Beckhoff ER3xxxEK1122^A_0012(ER3314-0002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0012_ER3314_0002_0021.TC_Inputs_Channel_1.Status^Underrange" VarB="TC Inputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0012_ER3314_0002_0021.TC_Inputs_Channel_1.Status^Overrange" VarB="TC Inputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0012_ER3314_0002_0021.TC_Inputs_Channel_1.Status^Limit_1" VarB="TC Inputs Channel 1^Status^Limit 1" />
@@ -32091,16 +32091,16 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0012_ER3314_0002_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER3xxx.Beckhoff_ER3xxxEK1122.A_0012_ER3314_0002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER4xxx">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER4xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122^Beckhoff ER4xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122^Beckhoff ER4xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.Beckhoff_ER4xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122^A_0001(ER4174-0002-0016)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122^A_0001(ER4174-0002-0016)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0001_ER4174_0002_0016.AO_Outputs_Channel_1.Analog_output" VarB="AO Outputs Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0001_ER4174_0002_0016.AO_Outputs_Channel_2.Analog_output" VarB="AO Outputs Channel 2^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0001_ER4174_0002_0016.AO_Outputs_Channel_3.Analog_output" VarB="AO Outputs Channel 3^Analog output" />
@@ -32109,7 +32109,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0001_ER4174_0002_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0001_ER4174_0002_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122^A_0002(ER4174-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122^A_0002(ER4174-0002-0019)">
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0002_ER4174_0002_0019.AO_Outputs_Channel_1.Analog_output" VarB="AO Outputs Channel 1^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0002_ER4174_0002_0019.AO_Outputs_Channel_2.Analog_output" VarB="AO Outputs Channel 2^Analog output" />
         <Link VarA="PlcTask Outputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0002_ER4174_0002_0019.AO_Outputs_Channel_3.Analog_output" VarB="AO Outputs Channel 3^Analog output" />
@@ -32118,7 +32118,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0002_ER4174_0002_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0002_ER4174_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122^A_0003(ER4374-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122^A_0003(ER4374-0002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0003_ER4374_0002_0018.AI_Inputs_Channel_1.Status^Underrange" VarB="AI Inputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0003_ER4374_0002_0018.AI_Inputs_Channel_1.Status^Overrange" VarB="AI Inputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0003_ER4374_0002_0018.AI_Inputs_Channel_1.Status^Limit_1" VarB="AI Inputs Channel 1^Status^Limit 1" />
@@ -32144,7 +32144,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0003_ER4374_0002_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0003_ER4374_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122^A_0004(ER4374-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER4xxx^Beckhoff ER4xxxEK1122^A_0004(ER4374-0002-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0004_ER4374_0002_0019.AI_Inputs_Channel_1.Status^Underrange" VarB="AI Inputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0004_ER4374_0002_0019.AI_Inputs_Channel_1.Status^Overrange" VarB="AI Inputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0004_ER4374_0002_0019.AI_Inputs_Channel_1.Status^Limit_1" VarB="AI Inputs Channel 1^Status^Limit 1" />
@@ -32170,16 +32170,16 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0004_ER4374_0002_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER4xxx.Beckhoff_ER4xxxEK1122.A_0004_ER4374_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER5xxx">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER5xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER5xxx^Beckhoff ER5xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER5xxx^Beckhoff ER5xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER5xxx^Beckhoff ER5xxxEK1122^Beckhoff ER5xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER5xxx^Beckhoff ER5xxxEK1122^Beckhoff ER5xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.Beckhoff_ER5xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER5xxx^Beckhoff ER5xxxEK1122^A_0001(ER5101-0002-0019)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER5xxx^Beckhoff ER5xxxEK1122^A_0001(ER5101-0002-0019)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0001_ER5101_0002_0019.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0001_ER5101_0002_0019.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0001_ER5101_0002_0019.ENC_Status_compact.Status^Counter_underflow" VarB="ENC Status compact^Status^Counter underflow" />
@@ -32202,7 +32202,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0001_ER5101_0002_0019.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0001_ER5101_0002_0019.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER5xxx^Beckhoff ER5xxxEK1122^A_0002(ER5101-1002-0017)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER5xxx^Beckhoff ER5xxxEK1122^A_0002(ER5101-1002-0017)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0002_ER5101_1002_0017.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0002_ER5101_1002_0017.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0002_ER5101_1002_0017.ENC_Status_compact.Status^Counter_underflow" VarB="ENC Status compact^Status^Counter underflow" />
@@ -32225,7 +32225,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0002_ER5101_1002_0017.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0002_ER5101_1002_0017.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER5xxx^Beckhoff ER5xxxEK1122^A_0003(ER5151-0002-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER5xxx^Beckhoff ER5xxxEK1122^A_0003(ER5151-0002-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0003_ER5151_0002_0018.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0003_ER5151_0002_0018.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0003_ER5151_0002_0018.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32254,16 +32254,16 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0003_ER5151_0002_0018.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER5xxx.Beckhoff_ER5xxxEK1122.A_0003_ER5151_0002_0018.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER6xxx">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER6xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^Beckhoff ER6xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^Beckhoff ER6xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.Beckhoff_ER6xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^A_0001(ER6001-0002-0016)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^A_0001(ER6001-0002-0016)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0001_ER6001_0002_0016.COM_Inputs.Status" VarB="COM Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0001_ER6001_0002_0016.COM_Inputs.Data_In[0]" VarB="COM Inputs^Data In 0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0001_ER6001_0002_0016.COM_Inputs.Data_In[1]" VarB="COM Inputs^Data In 1" />
@@ -32315,7 +32315,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0001_ER6001_0002_0016.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0001_ER6001_0002_0016.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^A_0002(ER6001-0002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^A_0002(ER6001-0002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0002_ER6001_0002_0021.COM_Inputs.Status" VarB="COM Inputs^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0002_ER6001_0002_0021.COM_Inputs.Data_In[0]" VarB="COM Inputs^Data In 0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0002_ER6001_0002_0021.COM_Inputs.Data_In[1]" VarB="COM Inputs^Data In 1" />
@@ -32367,7 +32367,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0002_ER6001_0002_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0002_ER6001_0002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^A_0003(ER6002-0002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^A_0003(ER6002-0002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0003_ER6002_0002_0021.COM_TxPDO_Map_Inputs_Channel_1.Status" VarB="COM TxPDO-Map Inputs Channel 1^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0003_ER6002_0002_0021.COM_TxPDO_Map_Inputs_Channel_1.Data_In[0]" VarB="COM TxPDO-Map Inputs Channel 1^Data In 0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0003_ER6002_0002_0021.COM_TxPDO_Map_Inputs_Channel_1.Data_In[1]" VarB="COM TxPDO-Map Inputs Channel 1^Data In 1" />
@@ -32465,7 +32465,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0003_ER6002_0002_0021.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0003_ER6002_0002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^A_0004(ER6002-0002-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^A_0004(ER6002-0002-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0004_ER6002_0002_0022.COM_TxPDO_Map_Inputs_Channel_1.Status" VarB="COM TxPDO-Map Inputs Channel 1^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0004_ER6002_0002_0022.COM_TxPDO_Map_Inputs_Channel_1.Data_In[0]" VarB="COM TxPDO-Map Inputs Channel 1^Data In 0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0004_ER6002_0002_0022.COM_TxPDO_Map_Inputs_Channel_1.Data_In[1]" VarB="COM TxPDO-Map Inputs Channel 1^Data In 1" />
@@ -32563,7 +32563,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0004_ER6002_0002_0022.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0004_ER6002_0002_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^A_0005(ER6002-0002-0023)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER6xxx^Beckhoff ER6xxxEK1122^A_0005(ER6002-0002-0023)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0005_ER6002_0002_0023.COM_TxPDO_Map_Inputs_Channel_1.Status" VarB="COM TxPDO-Map Inputs Channel 1^Status" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0005_ER6002_0002_0023.COM_TxPDO_Map_Inputs_Channel_1.Data_In[0]" VarB="COM TxPDO-Map Inputs Channel 1^Data In 0" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0005_ER6002_0002_0023.COM_TxPDO_Map_Inputs_Channel_1.Data_In[1]" VarB="COM TxPDO-Map Inputs Channel 1^Data In 1" />
@@ -32661,16 +32661,16 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0005_ER6002_0002_0023.InfoData.AdsAddr" VarB="InfoData^AdsAddr" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER6xxx.Beckhoff_ER6xxxEK1122.A_0005_ER6002_0002_0023.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^Beckhoff ER7xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^Beckhoff ER7xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.Beckhoff_ER7xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0001(ER7041-0002-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0001(ER7041-0002-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0001_ER7041_0002_0024.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0001_ER7041_0002_0024.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0001_ER7041_0002_0024.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32713,7 +32713,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0001_ER7041_0002_0024.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0001_ER7041_0002_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0002(ER7041-0002-0025)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0002(ER7041-0002-0025)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0002_ER7041_0002_0025.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0002_ER7041_0002_0025.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0002_ER7041_0002_0025.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32756,7 +32756,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0002_ER7041_0002_0025.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0002_ER7041_0002_0025.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0003(ER7041-1002-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0003(ER7041-1002-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0003_ER7041_1002_0024.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0003_ER7041_1002_0024.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0003_ER7041_1002_0024.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32799,7 +32799,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0003_ER7041_1002_0024.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0003_ER7041_1002_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0004(ER7041-1002-0025)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0004(ER7041-1002-0025)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0004_ER7041_1002_0025.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0004_ER7041_1002_0025.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0004_ER7041_1002_0025.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32842,7 +32842,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0004_ER7041_1002_0025.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0004_ER7041_1002_0025.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0005(ER7041-2002-0024)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0005(ER7041-2002-0024)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0005_ER7041_2002_0024.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0005_ER7041_2002_0024.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0005_ER7041_2002_0024.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32885,7 +32885,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0005_ER7041_2002_0024.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0005_ER7041_2002_0024.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0006(ER7041-2002-0025)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0006(ER7041-2002-0025)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0006_ER7041_2002_0025.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0006_ER7041_2002_0025.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0006_ER7041_2002_0025.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32928,7 +32928,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0006_ER7041_2002_0025.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0006_ER7041_2002_0025.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0007(ER7041-3002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0007(ER7041-3002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0007_ER7041_3002_0021.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0007_ER7041_3002_0021.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0007_ER7041_3002_0021.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -32972,7 +32972,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0007_ER7041_3002_0021.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0007_ER7041_3002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0008(ER7041-3002-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0008(ER7041-3002-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0008_ER7041_3002_0022.ENC_Status_compact.Status^Latch_C_valid" VarB="ENC Status compact^Status^Latch C valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0008_ER7041_3002_0022.ENC_Status_compact.Status^Latch_extern_valid" VarB="ENC Status compact^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0008_ER7041_3002_0022.ENC_Status_compact.Status^Set_counter_done" VarB="ENC Status compact^Status^Set counter done" />
@@ -33016,7 +33016,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0008_ER7041_3002_0022.InfoData.Chn1" VarB="InfoData^Chn1" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0008_ER7041_3002_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0009(ER7342-0002-0020)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0009(ER7342-0002-0020)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0009_ER7342_0002_0020.ENC_Status_compact_Channel_1.Status^Latch_extern_valid" VarB="ENC Status compact Channel 1^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0009_ER7342_0002_0020.ENC_Status_compact_Channel_1.Status^Set_counter_done" VarB="ENC Status compact Channel 1^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0009_ER7342_0002_0020.ENC_Status_compact_Channel_1.Status^Counter_underflow" VarB="ENC Status compact Channel 1^Status^Counter underflow" />
@@ -33088,7 +33088,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0009_ER7342_0002_0020.InfoData.Chn3" VarB="InfoData^Chn3" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0009_ER7342_0002_0020.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0010(ER7342-0002-0021)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0010(ER7342-0002-0021)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0010_ER7342_0002_0021.ENC_Status_compact_Channel_1.Status^Latch_extern_valid" VarB="ENC Status compact Channel 1^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0010_ER7342_0002_0021.ENC_Status_compact_Channel_1.Status^Set_counter_done" VarB="ENC Status compact Channel 1^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0010_ER7342_0002_0021.ENC_Status_compact_Channel_1.Status^Counter_underflow" VarB="ENC Status compact Channel 1^Status^Counter underflow" />
@@ -33160,7 +33160,7 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0010_ER7342_0002_0021.InfoData.Chn3" VarB="InfoData^Chn3" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0010_ER7342_0002_0021.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0011(ER7342-0002-0022)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER7xxx^Beckhoff ER7xxxEK1122^A_0011(ER7342-0002-0022)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0011_ER7342_0002_0022.ENC_Status_compact_Channel_1.Status^Latch_extern_valid" VarB="ENC Status compact Channel 1^Status^Latch extern valid" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0011_ER7342_0002_0022.ENC_Status_compact_Channel_1.Status^Set_counter_done" VarB="ENC Status compact Channel 1^Status^Set counter done" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0011_ER7342_0002_0022.ENC_Status_compact_Channel_1.Status^Counter_underflow" VarB="ENC Status compact Channel 1^Status^Counter underflow" />
@@ -33232,16 +33232,16 @@ Bit1: Value smaller than Limit2</Comment>
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0011_ER7342_0002_0022.InfoData.Chn3" VarB="InfoData^Chn3" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER7xxx.Beckhoff_ER7xxxEK1122.A_0011_ER7342_0002_0022.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER8xxx">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER8xxx">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER8xxx.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER8xxx^Beckhoff ER8xxxEK1122">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER8xxx^Beckhoff ER8xxxEK1122">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER8xxx.Beckhoff_ER8xxxEK1122.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER8xxx^Beckhoff ER8xxxEK1122^Beckhoff ER8xxxsub EK1100">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER8xxx^Beckhoff ER8xxxEK1122^Beckhoff ER8xxxsub EK1100">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER8xxx.Beckhoff_ER8xxxEK1122.Beckhoff_ER8xxxsub_EK1100.InfoData.State" VarB="InfoData^State" />
       </OwnerB>
-      <OwnerB Name="TIID^EtherCAT_Master_ERxxxx^Beckhoff ER8xxx^Beckhoff ER8xxxEK1122^A_0001(ER8309-1022-0018)">
+      <OwnerB Name="TIID^EtherCAT Master ERxxxx^Beckhoff ER8xxx^Beckhoff ER8xxxEK1122^A_0001(ER8309-1022-0018)">
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER8xxx.Beckhoff_ER8xxxEK1122.A_0001_ER8309_1022_0018.AI_Inputs_Channel_1.Status^Underrange" VarB="AI Inputs Channel 1^Status^Underrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER8xxx.Beckhoff_ER8xxxEK1122.A_0001_ER8309_1022_0018.AI_Inputs_Channel_1.Status^Overrange" VarB="AI Inputs Channel 1^Status^Overrange" />
         <Link VarA="PlcTask Inputs^GVL_iXlinker.EtherCAT_Master_ERxxxx.Beckhoff_ER8xxx.Beckhoff_ER8xxxEK1122.A_0001_ER8309_1022_0018.AI_Inputs_Channel_1.Status^Limit_1" VarB="AI Inputs Channel 1^Status^Limit 1" />

@@ -1,6 +1,7 @@
-<TcPlcObject>
-	<DUT Name="AI_Input_Channel_5AF6604E">
-		<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM3702-0000-0016'}
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
+  <DUT Name="AI_Input_Channel_5AF6604E" Id="{1904b576-3a8c-452b-b995-779df537ef12}">
+    <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EM3702-0000-0016'}
 {attribute addProperty BoxType "EM3702-0000-0016"}
 {attribute addProperty Id "StatusAT %I*Status_E3F6A94B6ValueAT %I*INT2"}
 {attribute addProperty CRC "1526095950"}
@@ -14,5 +15,5 @@ STRUCT
 END_STRUCT
 END_TYPE
 ]]></Declaration>
-	</DUT>
+  </DUT>
 </TcPlcObject>
