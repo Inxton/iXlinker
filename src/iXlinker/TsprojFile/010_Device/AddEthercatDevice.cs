@@ -48,7 +48,7 @@ namespace TsprojFile.Scan
                             //}
                             if (!vs.DoNotGenerateDisabled || !devDefBox.DisabledSpecified || !devDefBox.Disabled)
                             {
-                                boxViewModel = CreateBox(vs, device, ref deviceViewModel, devDefBox, "TIID" + tmpLevelSeparator + deviceViewModel.Name);
+                                boxViewModel = CreateBox(vs, device, ref deviceViewModel, devDefBox, "TIID" + tmpLevelSeparator + deviceViewModel.Name, isIndependentProjectFile);
                                 deviceViewModel.Boxes.Add(boxViewModel);
 
                                 deviceViewModel.MapableObjects.Add(boxViewModel.MapableObjectGrouped);
@@ -59,7 +59,7 @@ namespace TsprojFile.Scan
                             else
                             {
                                 bool isIndependent = _devDefBox.Name == null && _devDefBox.File != null;
-                                string fileName = isIndependent ? Path.Combine(Directory.GetParent(vs.TsProject.CompletePathInFileSystem).FullName.ToString(), @"_Config\IO", _devDefBox.File) : vs.TsProject.CompletePathInFileSystem;
+                                string fileName = isIndependent ? Path.Combine(Directory.GetParent(vs.TsProject.CompletePathInFileSystem).FullName.ToString(), @"_Config\IO", device.Name, _devDefBox.File) : vs.TsProject.CompletePathInFileSystem;
                                 EventLogger.Instance.Logger.Information("Disabled box: {0}.{1} found in the XAE project file: {2}!!!", device.Name, devDefBox.Name, fileName);
                             }
                         }
