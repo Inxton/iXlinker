@@ -157,7 +157,7 @@ namespace TsprojFile.Scan
             }
             else
             {
-                EventLogger.Instance.Logger.Information("Tsproj file contains not unique device name or box name! No outputs generated!!!");
+                EventLogger.Instance.Logger.Error("Tsproj file contains not unique device name or box name! No outputs generated!!!");
                 Environment.Exit(0);
             }
             EventLogger.Instance.Logger.Information(@"PdoEntryStructures :{0}", PdoEntryStructures.Count);
