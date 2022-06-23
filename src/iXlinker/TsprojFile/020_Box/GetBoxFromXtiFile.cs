@@ -72,9 +72,7 @@ namespace TsprojFile.Scan
 
             if (isIndependentProjectFile)
             {
-                //string fileName = Path.Combine(path.Replace(".", "\\"), _box.File);//TODO check if dot replacement neccesarry
                 string fileName = Path.Combine(path, _box.File);
-
                 if (fileName != null)
                 {
                     if (File.Exists(fileName))
