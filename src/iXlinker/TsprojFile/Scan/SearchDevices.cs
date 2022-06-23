@@ -116,19 +116,25 @@ namespace TsprojFile.Scan
                 {
                     try
                     {
-                        foreach (TcSmProjectProjectIODevice device in Tc.Project.Io.Items)
+                        foreach (TcSmProjectProjectIODevice _device in Tc.Project.Io.Items)
                         {
-                            bool isIndependentProjectFile = device.Name == null && device.File != null;
-                            TcSmDevDef _device = (TcSmDevDef)device;
+                            bool isIndependentProjectFile = _device.Name == null && _device.File != null;
+                            TcSmDevDef device = (TcSmDevDef)_device;
                             if (isIndependentProjectFile)
                             {
-                                _device = GetDeviceFromXtiFile(vs, device);
+                                device = GetDeviceFromXtiFile(vs, _device);
 
                             }
 
-                            if (!vs.DoNotGenerateDisabled || !_device.DisabledSpecified || !_device.Disabled)
+                            if (!vs.DoNotGenerateDisabled || !device.DisabledSpecified || !device.Disabled)
                             {
-                                AddDevice(vs, _device);
+                                AddDevice(vs, device);
+                            }
+                            else
+                            {
+                                bool isIndependent = _device.Name == null && _device.File != null;
+                                string fileName = isIndependent ? Path.Combine(Directory.GetParent(vs.TsProject.CompletePathInFileSystem).FullName.ToString(), @"_Config\IO", _device.File) : vs.TsProject.CompletePathInFileSystem;
+                                EventLogger.Instance.Logger.Information("Disabled device: {0} found in the XAE project file: {1}!!!", device.Name, fileName);
                             }
                         }
 

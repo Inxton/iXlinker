@@ -44,6 +44,12 @@ namespace TsprojFile.Scan
                             }
                         }
                     }
+                    //else
+                    //{
+                    //    bool isIndependent = d.Name == null && d.File != null;
+                    //    string fileName = isIndependent ? Path.Combine(Directory.GetParent(vs.TsProject.CompletePathInFileSystem).FullName.ToString() , @"_Config\IO",d.File) : vs.TsProject.CompletePathInFileSystem;
+                    //    EventLogger.Instance.Logger.Information("Disabled device: {0} found in the XAE project file: {1}!!!", dev.Name, fileName);
+                    //}
                 }
             }
             return ret;
