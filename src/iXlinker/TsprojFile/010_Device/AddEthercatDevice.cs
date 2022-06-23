@@ -38,14 +38,14 @@ namespace TsprojFile.Scan
                         }
                         if (devDefBox != null)
                         {
-                            if (vs.DoNotGenerateDisabled && devDefBox.DisabledSpecified && devDefBox.Disabled && devDefBox.Box != null)
-                            {
-                                foreach (TcSmBoxDefBox boxDefBox in devDefBox.Box)
-                                {
-                                    boxDefBox.DisabledSpecified = devDefBox.DisabledSpecified;
-                                    boxDefBox.Disabled = devDefBox.Disabled;
-                                }
-                            }
+                            //if (vs.DoNotGenerateDisabled && devDefBox.DisabledSpecified && devDefBox.Disabled && devDefBox.Box != null)
+                            //{
+                            //    foreach (TcSmBoxDefBox boxDefBox in devDefBox.Box)
+                            //    {
+                            //        boxDefBox.DisabledSpecified = devDefBox.DisabledSpecified;
+                            //        boxDefBox.Disabled = devDefBox.Disabled;
+                            //    }
+                            //}
                             if (!vs.DoNotGenerateDisabled || !devDefBox.DisabledSpecified || !devDefBox.Disabled)
                             {
                                 boxViewModel = CreateBox(vs, device, ref deviceViewModel, devDefBox, "TIID" + tmpLevelSeparator + deviceViewModel.Name);
@@ -55,6 +55,12 @@ namespace TsprojFile.Scan
 
                                 deviceViewModel.NumberOfSubBoxes++;
                                 deviceViewModel.TotalNumberOfBoxes = deviceViewModel.TotalNumberOfBoxes + boxViewModel.TotalNumberOfBoxes + 1;
+                            }
+                            else
+                            {
+                                bool isIndependent = _devDefBox.Name == null && _devDefBox.File != null;
+                                string fileName = isIndependent ? Path.Combine(Directory.GetParent(vs.TsProject.CompletePathInFileSystem).FullName.ToString(), @"_Config\IO", _devDefBox.File) : vs.TsProject.CompletePathInFileSystem;
+                                EventLogger.Instance.Logger.Information("Disabled box: {0}.{1} found in the XAE project file: {2}!!!", device.Name, devDefBox.Name, fileName);
                             }
                         }
                         else
