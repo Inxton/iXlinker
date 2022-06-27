@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
-  <DUT Name="Beckhoff_EL34xxEK1122_BFBD64DC" Id="{70400e18-5306-43bc-a0ce-f9f7b2743d79}">
+  <DUT Name="Beckhoff_EL34xxEK1122_BFBD64DC" Id="{5f64691a-9460-4809-89ba-8cecb5c67562}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: EK1122-0000-0018'}
 {attribute addProperty BoxType "EK1122-0000-0018"}
 {attribute addProperty Id "Beckhoff_EL34xxsub_EK1100EK1100_1FC0878B2"}
 {attribute addProperty CRC "3216860380"}
 {attribute addProperty Size "2"}
+{attribute addProperty Name "Beckhoff EL34xxEK1122"}
 TYPE Beckhoff_EL34xxEK1122_BFBD64DC EXTENDS EK1122_1FC0878B :
 STRUCT
 	{attribute addProperty Name "Beckhoff EL34xxsub EK1100"}

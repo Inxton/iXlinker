@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
-  <DUT Name="EtherCAT_Master_EPxxxx_2B438D5B" Id="{25a9d5e6-37c2-4dcc-9e09-daf77462c563}">
+  <DUT Name="EtherCAT_Master_EPxxxx_2B438D5B" Id="{4fa51e92-d0f4-4f91-8687-a21c2680841b}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "Beckhoff_EP1xxxBeckhoff_EP1xxx_617026EA1740Beckhoff_EP2xxxBeckhoff_EP2xxx_5E6BC55D3524Beckhoff_EP3xxxBeckhoff_EP3xxx_05483C403196Beckhoff_EP4xxxBeckhoff_EP4xxx_5F57EEFA336Beckhoff_EP5xxxBeckhoff_EP5xxx_7357566B409Beckhoff_EP6xxxBeckhoff_EP6xxx_09B4DFD61410Beckhoff_EP7xxxBeckhoff_EP7xxx_ED3612242992Beckhoff_EP8xxxBeckhoff_EP8xxx_7FC896F3282Beckhoff_EP9xxxBeckhoff_EP9xxx_0E1CA865617SyncUnitsSyncUnits_2E61B95536InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
 {attribute addProperty CRC "725847387"}
 {attribute addProperty Size "14836"}
+{attribute addProperty Name "EtherCAT Master EPxxxx"}
 TYPE EtherCAT_Master_EPxxxx_2B438D5B EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "Beckhoff EP1xxx"}

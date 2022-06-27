@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
-  <DUT Name="EtherCAT_Master_BKCUCX_25A199DC" Id="{39e9aa41-47fd-4d4c-84e4-4163f9090f6c}">
+  <DUT Name="EtherCAT_Master_BKCUCX_25A199DC" Id="{74d35b4d-7db5-4f37-ad55-a16b334fd552}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "Beckhoff_BKxxxxBeckhoff_BKxxxx_735133AB0Beckhoff_CUxxxxBeckhoff_CUxxxx_E9AD9532126Beckhoff_CXxxxxBeckhoff_CXxxxx_7C0A3C1E568TcTerminals210_EK1100_1TcTerminals210_EK1100_1_5C7783790TcTerminals210_EK1100_2TcTerminals210_EK1100_2_50C143310SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
 {attribute addProperty CRC "631347676"}
 {attribute addProperty Size "1006"}
+{attribute addProperty Name "EtherCAT Master BKCUCX"}
 TYPE EtherCAT_Master_BKCUCX_25A199DC EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "Beckhoff BKxxxx"}
