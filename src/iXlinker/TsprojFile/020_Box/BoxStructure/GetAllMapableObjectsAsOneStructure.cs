@@ -53,7 +53,7 @@ namespace TsprojFile.Scan
                             }
                         }
                     }
-                    TopologyStructViewModel actTopologyStruct = new TopologyStructViewModel() { Prefix = ValidatePlcItem.Name(deviceViewModel.Name), Id = "", BoxOrderCode = deviceViewModel.Type.ToString(), Extends = extends};
+                    TopologyStructViewModel actTopologyStruct = new TopologyStructViewModel() { Prefix = ValidatePlcItem.Name(deviceViewModel.Name), Id = "", BoxOrderCode = deviceViewModel.Type.ToString(), Extends = extends, NameOrigin = deviceViewModel.Name };
 
                     foreach (MappableObject mapableObject in mapableObjects)
                     {
@@ -147,7 +147,7 @@ namespace TsprojFile.Scan
             }
             else if (mapableObjects.Count >= 1)
             {
-                TopologyStructViewModel actTopologyStruct = new TopologyStructViewModel() { Prefix = ValidatePlcItem.Name(boxViewModel.Name), Id = "", BoxOrderCode = boxViewModel.BoxOrderCode};
+                TopologyStructViewModel actTopologyStruct = new TopologyStructViewModel() { Prefix = ValidatePlcItem.Name(boxViewModel.Name), Id = "", BoxOrderCode = boxViewModel.BoxOrderCode, NameOrigin = boxViewModel.Name };
 
                 foreach (MappableObject mapableObject in mapableObjects)
                 {
