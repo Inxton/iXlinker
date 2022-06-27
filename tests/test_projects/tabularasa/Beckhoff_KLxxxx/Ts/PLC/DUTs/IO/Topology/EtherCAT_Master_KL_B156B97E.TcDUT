@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
-  <DUT Name="EtherCAT_Master_KL_B156B97E" Id="{dff7a00f-935f-46e6-b2a7-9a88f8c4abe4}">
+  <DUT Name="EtherCAT_Master_KL_B156B97E" Id="{49bd5119-18cf-49ee-bfbc-fd76c2f9689d}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "TcTerminals210_2EK1100TcTerminals210_2EK1100_50C143310SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
 {attribute addProperty CRC "2975250814"}
 {attribute addProperty Size "312"}
+{attribute addProperty Name "EtherCAT Master KL"}
 TYPE EtherCAT_Master_KL_B156B97E EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "TcTerminals210_2EK1100"}

@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
-  <DUT Name="EtherCAT_Master_AMIxxxx_249E4F49" Id="{4f3819b1-2347-418d-8408-05a76d9b49a6}">
+  <DUT Name="EtherCAT_Master_AMIxxxx_249E4F49" Id="{3774676a-1acf-4fd7-a802-102b1c3e6550}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "EK1100_Beckhoff_AMI8xxxEK1100_Beckhoff_AMI8xxx_3162FD2C80SyncUnitsSyncUnits_3DFA47ED27InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
 {attribute addProperty CRC "614354761"}
 {attribute addProperty Size "401"}
+{attribute addProperty Name "EtherCAT Master AMIxxxx"}
 TYPE EtherCAT_Master_AMIxxxx_249E4F49 EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "EK1100_Beckhoff AMI8xxx"}

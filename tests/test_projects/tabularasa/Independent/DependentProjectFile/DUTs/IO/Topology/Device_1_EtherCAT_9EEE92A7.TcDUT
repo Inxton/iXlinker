@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
-  <DUT Name="Device_1_EtherCAT_9EEE92A7" Id="{cdda4a7e-8948-4484-90de-606564eb882f}">
+  <DUT Name="Device_1_EtherCAT_9EEE92A7" Id="{6aeb4665-2377-4407-bbf1-bda0045e8490}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "Term_1_EK1100Term_1_EK1100_C62D072D20SyncUnitsSyncUnits_99E584AF18InputsInputs_A65FACA410OutputsOutputs_23C0ED1D6InfoDataInfoData_E68C61CD28"}
 {attribute addProperty CRC "2666435239"}
 {attribute addProperty Size "82"}
+{attribute addProperty Name "Device 1 (EtherCAT)"}
 TYPE Device_1_EtherCAT_9EEE92A7 EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "Term 1 (EK1100)"}

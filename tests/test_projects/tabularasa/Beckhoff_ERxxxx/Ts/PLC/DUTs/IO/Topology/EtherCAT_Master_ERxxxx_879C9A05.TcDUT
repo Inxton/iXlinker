@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.2.0.0" ProductVersion="3.1.4024.11">
-  <DUT Name="EtherCAT_Master_ERxxxx_879C9A05" Id="{297ad8f6-4676-429a-a7e7-16b2d19b4b54}">
+  <DUT Name="EtherCAT_Master_ERxxxx_879C9A05" Id="{700a8e52-3ded-4e0f-9b17-1bd4da7ec38e}">
     <Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: IODEVICETYPE_ETHERCATPROT'}
 {attribute addProperty BoxType "IODEVICETYPE_ETHERCATPROT"}
 {attribute addProperty Id "Beckhoff_ER1xxxBeckhoff_ER1xxx_A63E075A508Beckhoff_ER2xxxBeckhoff_ER2xxx_CED8BB26910Beckhoff_ER3xxxBeckhoff_ER3xxx_58A653D9618Beckhoff_ER4xxxBeckhoff_ER4xxx_797AEBB5112Beckhoff_ER5xxxBeckhoff_ER5xxx_22A4CB20104Beckhoff_ER6xxxBeckhoff_ER6xxx_896D799E446Beckhoff_ER7xxxBeckhoff_ER7xxx_FFC5AE47686Beckhoff_ER8xxxBeckhoff_ER8xxx_509945A972SyncUnitsSyncUnits_99E584AF18InputsInputs_25A0042B160OutputsOutputs_2397A10E106InfoDataInfoData_E68C61CD28"}
 {attribute addProperty CRC "2275187205"}
 {attribute addProperty Size "3768"}
+{attribute addProperty Name "EtherCAT Master ERxxxx"}
 TYPE EtherCAT_Master_ERxxxx_879C9A05 EXTENDS EtcMasterBase_62654B43 :
 STRUCT
 	{attribute addProperty Name "Beckhoff ER1xxx"}
