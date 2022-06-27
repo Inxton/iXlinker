@@ -80,6 +80,15 @@ namespace TsprojFile.Scan
                         extends = " :";
                         EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
+                    string nameOrigin = "";
+                    try
+                    {
+                        nameOrigin = topologyStructViewModel.NameOrigin;
+                    }
+                    catch (Exception ex)
+                    {
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    }
 
                     uint crc = 0;
                     try
@@ -108,6 +117,7 @@ namespace TsprojFile.Scan
                     sw.WriteLine("{attribute addProperty Id \"" + id + "\"}");
                     sw.WriteLine("{attribute addProperty CRC \"" + crc.ToString() + "\"}");
                     sw.WriteLine("{attribute addProperty Size \"" + size.ToString() + "\"}");
+                    sw.WriteLine("{attribute addProperty Name \"" + nameOrigin + "\"}");
                     sw.WriteLine("TYPE " + structName + extends);
                     sw.WriteLine("STRUCT");
 

@@ -18,6 +18,20 @@
             }
         }
 
+        private string nameOrigin;
+        public string NameOrigin
+        {
+            get { return this.nameOrigin; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.nameOrigin = value;
+                    NotifyPropertyChanged(nameof(NameOrigin));
+                }
+            }
+        }
+
         private ObservableCollection<TopologyStructMemberViewModel> structMembers;
         public ObservableCollection<TopologyStructMemberViewModel> StructMembers
         {
