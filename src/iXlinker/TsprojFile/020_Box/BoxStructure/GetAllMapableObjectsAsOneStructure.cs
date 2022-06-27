@@ -4,6 +4,7 @@ using Utils;
 using System.Linq;
 using PlcprojFile;
 using System;
+using iXlinker.Resources;
 
 namespace TsprojFile.Scan
 {
@@ -41,7 +42,16 @@ namespace TsprojFile.Scan
                     if (deviceViewModel.Type.Equals(DeviceTypes.IODEVICETYPE_ETHERCATPROT))
                     {
                         string etcMasterBaseStructPrefix = "EtcMasterBase";
-                        extends = etcMasterBaseStructPrefix + "_" + CRC32.Calculate_CRC32(etcMasterBaseStructPrefix).ToString("X8");
+                        string etcMasterBaseStructName = etcMasterBaseStructPrefix + "_" + CRC32.Calculate_CRC32(etcMasterBaseStructPrefix).ToString("X8");
+                        extends = etcMasterBaseStructName;
+                        foreach (StructureBase structureBase in StructureBasesResourceDictionary)
+                        {
+                            if (structureBase.BaseStructureName.Equals(etcMasterBaseStructName))
+                            {
+                                extends = ValidatePlcItem.NameIncludingNamespace(structureBase.BaseStructureNamespace, structureBase.BaseStructureName);
+                                break;
+                            }
+                        }
                     }
                     TopologyStructViewModel actTopologyStruct = new TopologyStructViewModel() { Prefix = ValidatePlcItem.Name(deviceViewModel.Name), Id = "", BoxOrderCode = deviceViewModel.Type.ToString(), Extends = extends};
 
