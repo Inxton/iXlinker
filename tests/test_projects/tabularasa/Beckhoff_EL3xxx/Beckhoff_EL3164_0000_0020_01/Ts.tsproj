@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.22">
+<TcSmProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" TcSmVersion="1.0" TcVersion="3.1.4024.29">
   <DataTypes>
     <DataType>
-      <Name GUID="{068673AC-3B0A-FBD7-381A-9A7041FBF60D}" AutoDeleteType="true">Status_B0753356</Name>
+      <Name GUID="{0922238B-9338-A2A5-F74B-5173347D8A04}" AutoDeleteType="true">Status_B0753356</Name>
       <BitSize>64</BitSize>
       <SubItem>
         <Name>Underrange</Name>
@@ -52,6 +52,11 @@
         <BitSize>8</BitSize>
         <BitOffs>56</BitOffs>
       </SubItem>
+      <Properties>
+        <Property>
+          <Name>GeneratedUsingTerminal: EL3164-0000-0020</Name>
+        </Property>
+      </Properties>
     </DataType>
     <DataType>
       <Name GUID="{18071995-0000-0000-0000-000000000041}" TcBaseType="true" HideSubItems="true" CName="AmsNetId">AMSNETID</Name>
@@ -151,7 +156,7 @@
             </Var>
             <Var>
               <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Status</Name>
-              <Type GUID="{068673AC-3B0A-FBD7-381A-9A7041FBF60D}">Status_B0753356</Type>
+              <Type GUID="{0922238B-9338-A2A5-F74B-5173347D8A04}">Status_B0753356</Type>
             </Var>
             <Var>
               <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_1.Value</Name>
@@ -159,7 +164,7 @@
             </Var>
             <Var>
               <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Status</Name>
-              <Type GUID="{068673AC-3B0A-FBD7-381A-9A7041FBF60D}">Status_B0753356</Type>
+              <Type GUID="{0922238B-9338-A2A5-F74B-5173347D8A04}">Status_B0753356</Type>
             </Var>
             <Var>
               <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_2.Value</Name>
@@ -167,7 +172,7 @@
             </Var>
             <Var>
               <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Status</Name>
-              <Type GUID="{068673AC-3B0A-FBD7-381A-9A7041FBF60D}">Status_B0753356</Type>
+              <Type GUID="{0922238B-9338-A2A5-F74B-5173347D8A04}">Status_B0753356</Type>
             </Var>
             <Var>
               <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_3.Value</Name>
@@ -175,7 +180,7 @@
             </Var>
             <Var>
               <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Status</Name>
-              <Type GUID="{068673AC-3B0A-FBD7-381A-9A7041FBF60D}">Status_B0753356</Type>
+              <Type GUID="{0922238B-9338-A2A5-F74B-5173347D8A04}">Status_B0753356</Type>
             </Var>
             <Var>
               <Name>GVL_iXlinker.Device_1_EtherCAT.Term_1_EK1100.Term_2_EL3164.AI_Standard_Channel_4.Value</Name>

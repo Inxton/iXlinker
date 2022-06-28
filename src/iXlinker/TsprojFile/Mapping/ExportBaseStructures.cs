@@ -54,33 +54,36 @@ namespace TsprojFile.Scan
                             }
                         }
                         string structName = structure.BaseStructureName;
-                        StreamWriter sw = new StreamWriter(exportDir + "\\" + structName + ".TcDUT");
-                        try
+                        if (!File.Exists(exportDir + "\\" + structName + ".TcDUT"))
                         {
-                            sw.WriteLine("<TcPlcObject>");
-                            sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
-                            sw.WriteLine("\t\t<Declaration><![CDATA[");
-                            foreach (string attribute in structure.Attributes)
+                            StreamWriter sw = new StreamWriter(exportDir + "\\" + structName + ".TcDUT");
+                            try
                             {
-                                sw.WriteLine(attribute);
+                                sw.WriteLine("<TcPlcObject>");
+                                sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
+                                sw.WriteLine("\t\t<Declaration><![CDATA[");
+                                foreach (string attribute in structure.Attributes)
+                                {
+                                    sw.WriteLine(attribute);
+                                }
+                                sw.WriteLine("TYPE " + structName + extends);
+                                sw.WriteLine("STRUCT");
+                                sw.WriteLine("END_STRUCT");
+                                sw.WriteLine("END_TYPE");
+                                sw.WriteLine("]]></Declaration>");
+                                sw.WriteLine("\t</DUT>");
+                                sw.WriteLine("</TcPlcObject>");
+                                sw.Close();
                             }
-                            sw.WriteLine("TYPE " + structName + extends);
-                            sw.WriteLine("STRUCT");
-                            sw.WriteLine("END_STRUCT");
-                            sw.WriteLine("END_TYPE");
-                            sw.WriteLine("]]></Declaration>");
-                            sw.WriteLine("\t</DUT>");
-                            sw.WriteLine("</TcPlcObject>");
-                            sw.Close();
-                        }
-                        catch (Exception ex)
-                        {
-                            EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
-                            sw.Dispose();
-                        }
-                        finally
-                        {
-                            sw.Close();
+                            catch (Exception ex)
+                            {
+                                EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                                sw.Dispose();
+                            }
+                            finally
+                            {
+                                sw.Close();
+                            }
                         }
                     }
                 }
