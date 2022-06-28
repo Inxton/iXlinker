@@ -13,3 +13,4 @@ rmdir "%CD%\_Libraries" /S /Q
 rmdir "%CD%\_CompileInfo" /S /Q
 del "%CD%\*.txt" /F /Q
 del "%CD%\*.bak" /F /Q
+exit

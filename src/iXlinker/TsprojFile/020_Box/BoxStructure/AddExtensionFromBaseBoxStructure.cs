@@ -81,6 +81,10 @@ namespace TsprojFile.Scan
                         }
                     }
                 }
+                else if (actBoxStruct.Physics == null && propertyValue == "null")
+                {
+                    ret = true;
+                }
             }
             return ret;
         }
