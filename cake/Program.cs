@@ -12,6 +12,7 @@ using Cake.Core;
 using Cake.Frosting;
 using Cake.Common.Tools.MSBuild;
 using Cake.Core.Diagnostics;
+using Cake.Common.Solution.Project.Properties;
 
 public static class Program
 {
@@ -25,7 +26,7 @@ public static class Program
 
 public class BuildContext : FrostingContext
 {
-    public bool SkipTests => true;
+    public bool SkipTests => false;
     public string MsBuildConfiguration { get; set; }
     public string WorkDirName => Environment.WorkingDirectory.GetDirectoryName();
     public string RootDir => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, ".."));
@@ -33,12 +34,15 @@ public class BuildContext : FrostingContext
     public string SlnfCLI => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\iXlinkerCLI.slnf"));
     public string SlnfExt => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\iXlinkerExt.slnf"));
     public string CliProject => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\src\iXlinker\iXlinker.csproj"));
+    public string CliAssemblyInfoFile => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\src\iXlinker\Properties\AssemblyInfo.cs"));
     public string ExtProject => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\src\iXlinkerExt\iXlinkerExt.csproj"));
     public string ExtInstProject => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\src\iXlinkerExtInstaller\iXlinkerExtInstaller.csproj"));
     public string PublishDir => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\src\iXlinker\_publish"));
     public string NugetDir => Path.GetFullPath(Path.Combine(Environment.WorkingDirectory.FullPath, @"..\_nuget"));
     public IEnumerable<string> TestProjects => Directory.EnumerateFiles(RootDir + "\\tests", "*Tests.csproj", SearchOption.AllDirectories);
     public string Version => GitVersionInformation.SemVer;
+    
+    public string PublishVersion = "";
 
     private DotNetCorePublishSettings publishSettings;
     public DotNetCorePublishSettings PublishSettings { get => publishSettings ?? (publishSettings = new DotNetCorePublishSettings()); set => publishSettings = value; }
@@ -77,8 +81,36 @@ public sealed class RestoreTask : FrostingTask<BuildContext>
     }
 }
 
-[TaskName("BuildExt")]
+[TaskName("CalculateVersion")]
 [IsDependentOn(typeof(RestoreTask))]
+public sealed class CalculateVersionTask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        string[] versionParts = context.Version.Split('.');
+        string publishVersion = "";
+        foreach (string s in versionParts)
+        {
+            foreach (char c in s)
+            {
+                if (char.IsDigit(c))
+                {
+                    publishVersion = publishVersion + c.ToString();
+                }
+                else
+                {
+                    break;
+                }
+            }
+            publishVersion = publishVersion + ".";
+        }
+        publishVersion = publishVersion.EndsWith(".") ? publishVersion.Substring(0, publishVersion.Length - 1) : publishVersion;
+        context.PublishVersion = publishVersion;
+    }
+}
+
+[TaskName("BuildExt")]
+[IsDependentOn(typeof(CalculateVersionTask))]
 public sealed class BuildExtTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
@@ -104,7 +136,7 @@ public sealed class BuildExtInstallerTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
     {
-        context.DotNetBuild(context.ExtInstProject, new DotNetBuildSettings() { Configuration = context.MsBuildConfiguration });
+        context.DotNetBuild(context.ExtInstProject, new DotNetBuildSettings() { Configuration = context.MsBuildConfiguration, MSBuildSettings = new DotNetMSBuildSettings().SetVersion(context.Version).SetAssemblyVersion(context.PublishVersion).SetFileVersion(context.PublishVersion) });
     }
 }
 
@@ -128,8 +160,37 @@ public sealed class PublishExtInstallerTask : FrostingTask<BuildContext>
     }
 }
 
-[TaskName("BuildCli")]
+[TaskName("UpdateAssemblyInfoCLI")]
 [IsDependentOn(typeof(PublishExtInstallerTask))]
+public sealed class UpdateAssemblyInfoCLITask : FrostingTask<BuildContext>
+{
+    public override void Run(BuildContext context)
+    {
+        AssemblyInfoParseResult GetAssemblyInfo = context.ParseAssemblyInfo(context.CliAssemblyInfoFile);
+        AssemblyInfoSettings assemblyInfoSettings = new AssemblyInfoSettings();
+
+        assemblyInfoSettings.CLSCompliant = GetAssemblyInfo.ClsCompliant;
+        assemblyInfoSettings.Company = GetAssemblyInfo.Company;
+        assemblyInfoSettings.ComVisible = GetAssemblyInfo.ComVisible;
+        assemblyInfoSettings.Configuration = GetAssemblyInfo.Configuration;
+        assemblyInfoSettings.Copyright = GetAssemblyInfo.Copyright;
+        assemblyInfoSettings.Description = GetAssemblyInfo.Description;
+        assemblyInfoSettings.Guid = GetAssemblyInfo.Guid;
+        assemblyInfoSettings.Product = GetAssemblyInfo.Product;
+        assemblyInfoSettings.Title = GetAssemblyInfo.Title;
+        assemblyInfoSettings.Trademark = GetAssemblyInfo.Trademark;
+        assemblyInfoSettings.InternalsVisibleTo = GetAssemblyInfo.InternalsVisibleTo;
+        assemblyInfoSettings.Version = context.PublishVersion;
+        assemblyInfoSettings.FileVersion = context.PublishVersion;
+        assemblyInfoSettings.InformationalVersion = context.Version;
+
+        context.CreateAssemblyInfo(context.CliAssemblyInfoFile, assemblyInfoSettings);
+    }
+}
+
+
+[TaskName("BuildCli")]
+[IsDependentOn(typeof(UpdateAssemblyInfoCLITask))]
 public sealed class BuildCliTask : FrostingTask<BuildContext>
 {
     public override void Run(BuildContext context)
@@ -137,8 +198,8 @@ public sealed class BuildCliTask : FrostingTask<BuildContext>
         context.DotNetBuild(context.SlnfCLI, new DotNetBuildSettings()
         {
             Configuration = context.MsBuildConfiguration,
-            MSBuildSettings = new DotNetMSBuildSettings() { Version = context.Version }
-        });
+            MSBuildSettings = new DotNetMSBuildSettings().SetVersion(context.Version).SetAssemblyVersion(context.PublishVersion).SetFileVersion(context.PublishVersion).SetInformationalVersion(context.Version)
+        }); 
     }
 }
 
