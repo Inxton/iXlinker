@@ -32,6 +32,20 @@
             }
         }
 
+        private string vendorId;
+        public string VendorId
+        {
+            get { return this.vendorId; }
+            set
+            {
+                if (!string.IsNullOrEmpty(value))
+                {
+                    this.vendorId = value;
+                    NotifyPropertyChanged(nameof(VendorId));
+                }
+            }
+        }
+
         private string description;
         public string Description
         {

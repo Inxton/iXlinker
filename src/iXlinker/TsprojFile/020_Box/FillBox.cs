@@ -260,6 +260,20 @@ namespace TsprojFile.Scan
                         subBoxesCount = box.BusCoupler.Term.Length;
                     }
                 }
+
+                string box_VendorId = "";
+                try
+                {
+                    if (boxItem.VendorId != null)
+                    {
+                        box_VendorId = boxItem.VendorId;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                }
+
                 boxViewModel.BoxType = BoxTypes.EtherCAT;
                 boxViewModel.MasterDeviceType = (DeviceTypes)device.DevType;
                 boxViewModel.MasterDeviceName = device.RemoteName != null ? device.RemoteName : device.Name != null ? device.Name : "";
@@ -289,6 +303,7 @@ namespace TsprojFile.Scan
                 boxViewModel.PortPhys = portPhys;
                 boxViewModel.Physics= physics;
                 boxViewModel.Description = description;
+                boxViewModel.VendorId = box_VendorId;
 
                 ObservableCollection<PdoViewModel> allPdos = new ObservableCollection<PdoViewModel>();
                 if (boxItem.Pdo != null)
