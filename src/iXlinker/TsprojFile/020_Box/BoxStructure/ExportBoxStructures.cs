@@ -119,11 +119,21 @@ namespace TsprojFile.Scan
                     {
                         EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
                     }
+                    string vendorId = "";
+                    try
+                    {
+                        vendorId = string.IsNullOrEmpty(boxStructViewModel.VendorId) ? "" : boxStructViewModel.VendorId;
+                    }
+                    catch (Exception ex)
+                    {
+                        EventLogger.Instance.Logger.Error(System.Reflection.MethodBase.GetCurrentMethod().Name + Environment.NewLine + ex.Message);
+                    }
 
 
                     sw.WriteLine("<TcPlcObject>");
                     sw.WriteLine("\t<DUT Name=" + @"""" + structName + @""">");
                     sw.WriteLine("\t\t<Declaration><![CDATA[{attribute 'GeneratedUsingTerminal: " + boxOrderCode + "'}");
+                    sw.WriteLine("{attribute addProperty VendorId \"" + vendorId + "\"}");
                     sw.WriteLine("{attribute addProperty BoxType \"" + boxOrderCode + "\"}");
                     sw.WriteLine("{attribute addProperty Description \"" + description + "\"}");
                     sw.WriteLine("{attribute addProperty Physics \"" + physics + "\"}");
