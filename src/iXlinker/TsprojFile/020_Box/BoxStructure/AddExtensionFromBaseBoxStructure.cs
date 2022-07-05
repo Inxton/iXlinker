@@ -15,7 +15,6 @@ namespace TsprojFile.Scan
                 if (TypeEqual(actBoxStruct, structureBase) && NameFilterFit(actBoxStruct, structureBase) && PropertyFilterFit(actBoxStruct, structureBase))
                 {
                     actBoxStruct.Extends = ValidatePlcItem.NameIncludingNamespace(structureBase.BaseStructureNamespace, structureBase.BaseStructureName);
-                    break;
                 }
             }
         }
