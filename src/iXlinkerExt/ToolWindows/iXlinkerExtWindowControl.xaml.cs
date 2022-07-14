@@ -35,17 +35,18 @@ namespace iXlinkerExt
 
         private void generateMappings_Click(object sender, RoutedEventArgs e)
         {
-            string xaeCompletePath = iXlinkerExtCommand.Instance.XAE.CompletePathInFileSystem;
-            string xaeName = iXlinkerExtCommand.Instance.XAE.Name;
-            string xaeUniqueName = iXlinkerExtCommand.Instance.XAE.UniqueName;
-            string platform = iXlinkerExtCommand.Instance.targetConfigurationPlatform;
-            string plcPath = iXlinkerExtCommand.Instance.PLC.CompletePathInFileSystem;
-            string plcProjName = iXlinkerExtCommand.Instance.PLC.Name;
-            string disabledIO = iXlinkerExtCommand.Instance.doNotGenerateDisabledIO.ToString();
-            string devenvPath = iXlinkerExtCommand.Instance.devenvPath;
-            string maxEthercatFrameIndex = iXlinkerExtCommand.Instance.maxEthercatFrameIndex.ToString();
+            string xaeCompletePath = !string.IsNullOrEmpty(iXlinkerExtCommand.Instance.XAE.CompletePathInFileSystem) ? iXlinkerExtCommand.Instance.XAE.CompletePathInFileSystem : "";
+            string xaeName = !string.IsNullOrEmpty(iXlinkerExtCommand.Instance.XAE.Name) ? iXlinkerExtCommand.Instance.XAE.Name : "";
+            string xaeUniqueName = !string.IsNullOrEmpty(iXlinkerExtCommand.Instance.XAE.UniqueName) ? iXlinkerExtCommand.Instance.XAE.UniqueName : "";
+            string platform = !string.IsNullOrEmpty(iXlinkerExtCommand.Instance.targetConfigurationPlatform) ? iXlinkerExtCommand.Instance.targetConfigurationPlatform : "";
+            string plcPath = !string.IsNullOrEmpty(iXlinkerExtCommand.Instance.PLC.CompletePathInFileSystem) ? iXlinkerExtCommand.Instance.PLC.CompletePathInFileSystem : "";
+            string plcProjName = !string.IsNullOrEmpty(iXlinkerExtCommand.Instance.PLC.Name) ? iXlinkerExtCommand.Instance.PLC.Name : "";
+            string disabledIO = !string.IsNullOrEmpty(iXlinkerExtCommand.Instance.doNotGenerateDisabledIO.ToString()) ? iXlinkerExtCommand.Instance.doNotGenerateDisabledIO.ToString() : "";
+            string devenvPath = !string.IsNullOrEmpty(iXlinkerExtCommand.Instance.devenvPath) ? iXlinkerExtCommand.Instance.devenvPath : "";
+            string maxEthercatFrameIndex = !string.IsNullOrEmpty(iXlinkerExtCommand.Instance.maxEthercatFrameIndex.ToString()) ? iXlinkerExtCommand.Instance.maxEthercatFrameIndex.ToString() : "";
             bool isIndependent = iXlinkerExtCommand.Instance.PLC.IsIndependent;
-            string xtiPathInFileSystem = iXlinkerExtCommand.Instance.PLC.XtiPathInFileSystem.ToString();
+            string xtiPathInFileSystem = !string.IsNullOrEmpty(iXlinkerExtCommand.Instance.PLC.XtiPathInFileSystem) ? iXlinkerExtCommand.Instance.PLC.XtiPathInFileSystem.ToString() : "";
+
 
             List<string> list = new List<string>();
             list.Add($"-t \"{xaeCompletePath}\"");
